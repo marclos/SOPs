@@ -3,4 +3,7 @@ Repository of SOPs
 
 ## Repository Goals
 
-1. 
+
+# List of SOPs
+
+1. Soil Texture Analysis SOP
