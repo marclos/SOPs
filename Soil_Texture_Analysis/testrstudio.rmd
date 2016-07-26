@@ -14,11 +14,20 @@ head(sample.df)
 ```
 
 ## Preprocess Data
+```{r preprocess}
+library(mosaic)
 
-
+```
 ## Join Data with Key.
 
 First, I created two files that have only a few columns each so we can test the join function.
+
+```{r joinkeyID}
+reading.tmp <- select(reading.df, sampleKEY, timeElapsed)
+sample.tmp <- select(sample.df, sampleKEY, researcher)
+
+left_join(sample.tmp, reading.tmp, by = "sampleKEY")
+```
 
 
 readingtest <-
