@@ -2,7 +2,7 @@
 %This area before it says begin is like the header area (preamble)
 \author{Isaac}
 \title{SOP for In Vitro Determination of Chlorophyll \textit{a} Concentrations by Fluorescence}
-
+\usepackage{gensymb}
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 \maketitle
@@ -20,13 +20,21 @@
 
 \section{Definitions}
 \begin{description}
-\item[3.1] \textbf{Stock Standard Solution (SSS)} --
-\item[3.2] \textbf{Laboratory Reagent Blank (LRB)} --
-\item[3.3] \textbf{Field duplicates} --
-\item[3.4] \textbf{Quality Control Sample (QCs)} --
+\item[3.1] \textbf{Stock Standard Solution (SSS)} -- a solution prepared in the laboratory using reference materials purchased from a reputable commercial source.
+\item[3.2] \textbf{Laboratory Reagent Blank (LRB)} -- an aliquot of reagent water (Milli-Q/SuperQ) or other blank matrices that are treated the same as the sample including exposure to all glassware, equipment, solvents, reagents, internal standards and surrogates that are used with other samples. The LRB is used to determine if method analytes or other interferences are present in the laboratory environment, reagents or apparatus. 
+\item[3.3]\textbf{Field duplicates}
+\item[3.4] \textbf{Quality Control Sample (QCs)}  
 \end{description}
 
 \section{Interferences}
+\begin{description}
+\item[4.1] Any substance extracted from the filter or acquired from laboratory contamination that fluoresces in the red region of the spectrum may interfere in the accurate measurement of both chlorophyll \textit{a} and pheophytin \textit{a}.
+\item[4.2] Spectral interferences resulting from the fluorescence of the accessory pigment chlorophyll \textit{b}, and the chlorophyll \textit{a} degradation product pheophytin \textit{a}, can result in the overestimation of chlorophyll \textit{a} concentrations. However, highly selective optical filters used in this method minimize these interferences. 
+\item[4.3] Quenching effects are observed in highly concentrated solutions or in the presence of high concentrations of other chlorophylls and carotenoids. Samples should be diluted. 
+\item[4.4] Fluorescence is temperature dependent with higher sensitivity occurring at lower temperatures. Samples, standards, LRBS (section 3.2) and QCs (section 3.4) must be at the same temperature to prevent errors and maximize precision. Analysis of samples at ambient temperatures is required in this method. 
+\item[4.5] All photosynthetic pigments are light and temperature sensitive. Work must be performed in subdued light and all standards, QC materials and filter samples must be stored in the dark at -20\degree C to prevent degradation.
+\end{description}
+
 \section{Safety and Personnnel Protective Equipment}
 \section{Related Documents}
 \section{Materials and Apparatus}
