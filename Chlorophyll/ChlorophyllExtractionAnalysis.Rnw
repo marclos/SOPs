@@ -3,21 +3,29 @@
 \author{Isaac}
 \title{SOP for In Vitro Determination of Chlorophyll \textit{a} Concentrations by Fluorescence}
 
-sdfsdgfsd
-
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 \maketitle
+
 \section{Scope and Application}
-  \subsection{This method provides a procedure for the fluorometric determination of chlorophyll \textit{a} and its magnesium-free derivative, pheophytin \textit{a} in marine and freshwater phytoplankton.}
-  \subsection{This method is modified from the US EPA Method 445.0 and APHA Standard Methods for the Examination of Water and Wastewater, 20\textsuperscript{th} Edition.} 
+\begin{description}
+  \item[1.1] This method provides a procedure for the fluorometric determination of chlorophyll \textit{a} and its magnesium-free derivative, pheophytin \textit{a} in marine and freshwater phytoplankton.
+  \item[1.2] This method is modified from the US EPA Method 445.0 and APHA Standard Methods for the Examination of Water and Wastewater, 22\textsuperscript{nd} Edition. 
+\end{description}
+
 \section{Summary of Method}
-  \subsection{Chlorophyll-containing phytoplankton in a measured volume of sample water are concentrated by filtering at low vacuum (13 cm Hg) through a glass fiber filter (Whatman GF/F). The pigments are extracted from the phytoplankton in 90\% acetone and to ensure thorough extraction of chlorophyll \textit{a}, are allowed to steep for at least 2hrs. The fluorescence of the sample is measured at the excitation wavelength of 485 nm and emission wavelenghts 685 / 50 nm. Sample fluorescence is measured before and after acidification with 0.1M HCl to obtain a corrected chlorophyll \textit{a} concentration.} 
+\begin{description}
+  \item[2.1] Chlorophyll-containing phytoplankton in a measured volume of sample water are concentrated by filtering at low vacuum (13 cm Hg) through a glass fiber filter (Whatman GF/F). The pigments are extracted from the phytoplankton in 90\% acetone and to ensure thorough extraction of chlorophyll \textit{a}, are allowed to steep for at least 2hrs. The fluorescence of the sample is measured at the excitation wavelength of 485 nm and emission wavelenghts 685 / 50 nm. Sample fluorescence is measured before and after acidification with 0.1M HCl to obtain a corrected chlorophyll \textit{a} concentration. 
+\end{description}
+
 \section{Definitions}
-\subsection{\textbf{Stock Standard Solution (SSS)}} --
-\subsection{\textbf{Laboratory Reagent Blank (LRB)}} --
-\subsection{\textbf{Field duplicates}} --
-\subsection{\textbf{Quality Control Sample (QCs)}} --
+\begin{description}
+\item[3.1] \textbf{Stock Standard Solution (SSS)} --
+\item[3.2] \textbf{Laboratory Reagent Blank (LRB)} --
+\item[3.3] \textbf{Field duplicates} --
+\item[3.4] \textbf{Quality Control Sample (QCs)} --
+\end{description}
+
 \section{Interferences}
 \section{Safety and Personnnel Protective Equipment}
 \section{Related Documents}
