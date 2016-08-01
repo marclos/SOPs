@@ -1,4 +1,4 @@
-\documentclass[12pt]{../SOP2}
+\documentclass[12pt]{../SOP_Test}
 \usepackage[english]{babel}
 \usepackage{blindtext}
 \usepackage{lipsum}
@@ -20,7 +20,7 @@
 
 \section{Scope and Application}
 
-\NP \blindtext
+%\poemcontent{\blindtext}
 
 \NP \lipsum[1]
 
