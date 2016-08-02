@@ -7,9 +7,9 @@
 
 %\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
 
-\title{SOP Title}
+\title{Field Safety}
 \date{8/11/2016}
-\author{Reseacher Name}
+\author{Marc Los Huertos}
 \approved{Los Huertos}
 \SOPno{X}
 
@@ -20,9 +20,11 @@
 
 \section{Scope and Application}
 
-\NP \blindtext
+\NP This SOP covers field-based research and class field trips. 
 
-\NP \lipsum[1]
+\NP As part of the field work, we should learn to identify potential risks associated with field work -- and we can't always predict what that might look like.
+
+\NP The risks covered include transportation, weather-based, and biotic hazards.
 
 \section{Health and Safety}
 
@@ -43,46 +45,50 @@ Students using this SOP should be trained for the following SOPsa:
 
 \section{Required Materials}
 
-\subsection{Item 1 w/catalog number!}
-\subsection{Item 2}
+\begin{itemize}
+  \item First Aid Kit
+  \item Cell phone
+\end{itemize}
 
 \section{Estimated Time}
 
 \NP This will take XX minutes...
 
-\section{Procedure}
+\section{Field Hazards}
 
-\NP Field Safety
+\NP All allergies must be recorded in medical files before start of lab. Students with life threatening allergies must bring their Epi-pen to field station and keep it accessible at all times. In addition, backup epinephrine must be present in the first aid kits. Along with diphenhydramine and prednisone. 
 
-Allergies:
+\NP In the case of a mild allergic reaction, 25-50 mg of Diphenhydramine (Benadryl) should be administered. 
 
-All allergies must be recorded in medical files before start of lab. Students with life threatening allergies must bring their Epi-pen to field station and keep it accessible at all times. In addition, backup epinephrine must be present in the first aid kits. Along with diphenhydramine and prednisone. 
+\NP In the case of a severe allergic reaction - defined as swelling of the face/throat and respiratory distress - 0.3mg of Epinephrine must be administered. Such dosage can be re-administered after 5 minutes. Dosage should be followed by 25-50mg of Diphenhydramine and 20-40 mg of Prednisone. Then EVAC from field station. 
 
-In the case of a mild allergic reaction, 25-50mg of Diphenhydramine (Benadryl) should be administered. 
+\section{Weather Related Risks}
 
-In the case of a severe allergic reaction - defined as swelling of the face/throat and respiratory distress - 0.3mg of Epinephrine must be administered. Such dosage can be re-administered after 5 minutes. Dosage should be followed by 25-50mg of Diphenhydramine and 20-40mg of Prednisone. Then EVAC from field station. 
+\NP In the field, we are likely to encounter abiotic hazards such as extreme temperature, pollution, sharp objects, possibly dangerous equipment, etc. 
 
-2. Abiotic Hazards:
-In the field, we are likely to encounter abiotic hazards such as extreme temperature, pollution, sharp objects, possibly dangerous equipment, etc. We will be working outside in Southern California in the fall, and therefore are at risk of overheating, heat stroke, dehydration, and sunburn. There’s also the potential risk during days with especially poor air quality. In such a dry climate, it is easy to underestimate the strength of the sun and thus the rate at which we may become dehydrated or burnt.  On the other end of the spectrum, less frequent environmental events such as thunderstorms bring risk of lightning strikes, which cause harm to people directly or indirectly through forest fires (e.g. the fire last year at Bernard Field Station, across the street from Pitzer’s campus, has made this risk particularly relevant.)
+\NP We will be working outside in Southern California in the fall, and therefore are at risk of overheating, heat stroke, dehydration, and sunburn. 
 
-Hot days and forest fires can both lead to another abiotic risk that is easier to overlook - pollution. Working outside when the ozone levels or levels of other pollutants are too high has a detrimental effect on the health of anyone, but the impact of air pollution on health is most acute in people that already suffer from asthma.A string of hot, dry days worsen the pollution levels, while forest fires nearby degrade the air quality. Thus, students with any respiratory disease that may subject them to higher risks due to pollution should be cautious and report said condition to their instructor or laboratory supervisor. 
+\NP There's also the potential risk during days with especially poor air quality. 
 
-Additionally, we will also have to be careful of material left over from construction (e.g. working in the pit up at Pitzer.) Sharp metallic objects bring risk of injury and expose us to long-term illnesses like tetanus. Students should be aware of their vaccination history as well as how to proceed should they require a new tetanus shot due to injury.
+\NP In such a dry climate, it is easy to underestimate the strength of the sun and thus the rate at which we may become dehydrated or burnt.  
 
+\NP On the other end of the spectrum, less frequent environmental events such as thunderstorms bring risk of lightning strikes, which cause harm to people directly or indirectly through forest fires (e.g. the fire last year at Bernard Field Station, across the street from Pitzer's campus, has made this risk particularly relevant.)
 
-Hazard
-Location
-Cause
-If Encountered
-Prevention
-Heat/Sun:
-Heat exhaustion
-/stroke
-Outside of shade coverage in desert/arid climates especially during hot times in the day
-Lack of shade 
-coverage/ proper sun protection
-Hydrate, place ice packs on neck, armpits etc. If worsens, remove from field.
+\NP Hot days and forest fires can both lead to another abiotic risk that is easier to overlook - pollution. Working outside when the ozone levels or levels of other pollutants are too high has a detrimental effect on the health of anyone, but the impact of air pollution on health is most acute in people that already suffer from asthma. A string of hot, dry days worsen the pollution levels, while forest fires nearby degrade the air quality. Thus, students with any respiratory disease that may subject them to higher risks due to pollution should be cautious and report said condition to their instructor or laboratory supervisor. 
+
+\NP Additionally, we will also have to be careful of material left over from construction (e.g. working in the pit up at Pitzer.) Sharp metallic objects bring risk of injury and expose us to long-term illnesses like tetanus. Students should be aware of their vaccination history as well as how to proceed should they require a new tetanus shot due to injury.
+
+\subsection{Prevention} 
+
+\NP Heat exhaustion/stroke
+
+\NP Outside of shade coverage in desert/arid climates especially during hot times in the day
+
+\NP Lack of shade coverage/ proper sun protection
+
+\NP Hydrate, place ice packs on neck, armpits etc. If worsens, remove from field.
 Use (and reapply) sunscreen), drink plenty of water, wear hats and/or other protective gear
+
 Cold
 Cold places
 Lack of sun
@@ -106,40 +112,44 @@ Seek altitude if flash food
 Check radar. Know risks of area you are in.
 Altitude Illness (HAPE/HACE)
 
+\section{Elevation}
 
+\NP Mountains, specifically high altitudes to which students have not had time to adjust properly. 
 
-Mountains, specifically high altitudes to which students have not had time to adjust properly
-Less Oxygen in atmosphere
-If persistent vomiting and severe headache- evacuate(go down to lower altitude)! If mild symptoms, acclimate, take it easy. Hydrate.
+\NP Less Oxygen in atmosphere
+
+\NP Altitude sickness... If persistent vomiting and severe headache- evacuate(go down to lower altitude)! If mild symptoms, acclimate, take it easy. Hydrate.
 Identify symptoms (headache, nausea, and irritability) early
-Earthquake
-Anywhere in CA (West Coast is a subduction zone)
+
+\subsection{Earthquake}
+
+\NP Anywhere in CA (West Coast is a subduction zone)
 Tectonic plate movement
 Stay away from external building frames, avoid sinkholes, gas lines, and utility wires.
 Be aware of surroundings. If an earthquake happens, remain low to the ground.
-Flood
+
+
+\subsection{Flood}
+
 Near bodies of water (e.g. riverine ecosystems)
 Excessive rainfall
-Find the highest point in the area and go to it. Try not to cross rushing water.
-Be aware of surroundings. Check the forecast for rainfall.
-Exposure to toxic waste
+
+\NP Find the highest point in the area and go to it. Try not to cross rushing water. Be aware of surroundings. Check the forecast for rainfall.
+
+\section{Exposure to toxic waste}
 Unpredictable: We are exposed to it via ingestion, inhalation, or dermal exposure.
 Illegal (most likely) dumping of toxic waste, unless it’s arrived there via. water/wind/erosion.
 Avoid and report.
 Be aware of surroundings, think before interacting with unusual objects.
 
-3. Biotic Hazards:
+\section{Biotic Hazards}
 
-The field is home to a vast diversity of organisms. Being respectful of their environment is crucial to their safety and our own.
+\NP The field is home to a vast diversity of organisms. Being respectful of their environment is crucial to their safety and our own.
 
-In general, we should be aware of biotic hazards such as poisonous plants, poisonous critters, and wild animals. This semester, we will be working primarily at the Farm, the Pit, the Quad, and the Bernard Field Station, where hazards include mosquitos, rodents, mountain lions, snakes, spiders, bees, wasps, fleas and ticks, poison oak, and stinging nettle.
+\NP In general, we should be aware of biotic hazards such as poisonous plants, poisonous critters, and wild animals. This semester, we will be working primarily at the Farm, the Pit, the Quad, and the Bernard Field Station, where hazards include mosquitos, rodents, mountain lions, snakes, spiders, bees, wasps, fleas and ticks, poison oak, and stinging nettle.
 
-Hazard
-Location
-Risk
-If Encountered
-Prevention
-Mosquitos
+\subsection{Mosquitos}
+
 Near stagnant water
 Malaria
 See diseases: malaria
@@ -155,13 +165,18 @@ Native to North/South America
 Severe injury
 Make yourself look larger, don’t run away, throw rocks or sticks
 Avoid being alone 
-Snakes
+
+
+\subsection{Snakes}
+
 Rattlesnakes, cottonmouth, 
 Snakebite
 Back away slowly, no sudden movements
 If bitten, seek immediate medical attention for antivenom
 Walk in open areas, wear heavy boots, listen for rattle.
-Spiders
+
+\subsection{Spiders}
+
 Black widow, brown recluse
 Spider bite, nausea, 
 Go to hospital if bitten
@@ -195,21 +210,25 @@ Stinging sensation generally lessens over time, if not, anti-itch cream.
 Learn to identify
 
 
-4. Other Illness/Injury
+\section{Other Illness/Injury}
 
+\subsection{Fracture/Break}
 
-Fracture/Break:
-Refer to table for abiotic hazards for information on causes/location, prevention, and quick instructions on how to react. Stabilize injured part and try to avoid movements. Go to nearest medical facility for further care.
+\NP Refer to table for abiotic hazards for information on causes/location, prevention, and quick instructions on how to react. Stabilize injured part and try to avoid movements. Go to nearest medical facility for further care.
 Injury from handling equipment(e.g cuts, burns):
-Refer to table for abiotic hazards for information on causes/location, prevention, and quick instructions on how to react. Most importantly, handle all equipment with caution. Carefully read operating procedures. Seek help from fellow students or your instructor, should you have questions or doubts. Do not use any equipment if you are unsure of how to handle it. 
-Epilepsy/Diabetes/Heart Failure:
+
+
+\NP Refer to table for abiotic hazards for information on causes/location, prevention, and quick instructions on how to react. Most importantly, handle all equipment with caution. Carefully read operating procedures. Seek help from fellow students or your instructor, should you have questions or doubts. Do not use any equipment if you are unsure of how to handle it. 
+
+\section{Epilepsy/Diabetes/Heart Failure}
+
 Refer to emergency procedure(SOP, procedure 2).
 Report any chronic conditions to your supervisor.
 Be aware of your surroundings and be prepared to react in an emergency.
 Know where the first aid kit is as well as how to get to the nearest medical facility if necessary. 
 
-5. Preparation
 
+\section{Preparation}
 
 *For more details on preparation, see SOP Procedure 1: Preparation (below)
 Prepare medical and safety gear 
@@ -223,7 +242,7 @@ Create a checklist of materials
 Book accommodations in advance
 Prepare transportation
 
-6. SOP
+\section{SOP}
 
 Procedure 1: Preparation
 Identify potential risks
@@ -234,29 +253,40 @@ Be aware of any special medical conditions of lab team members (including allerg
 Report to supervisor beforehand
 Identify hospital closest to the field site
 
-Make a transportation plan
-Identify meet up/departure times and locations
-Designate a driver
-All state and local laws must be obeyed
 
-Gather necessary materials (*required)
-Personal protective equipment*
-(Full) water bottle*
-Rite in the rain lab notebook + writing utensil
-Sunscreen, sun hat (if necessary)
-Additional clothing/gear
-No sandals or open toed shoes
-May need to cover additional exposed skin depending on environmental conditions (e.g. locations with large growths of poison oak)
-Rain gear (if necessary)
-No excessively loose clothing
-Watch
-First aid kit*
-Cell phone; program the following numbers*
-Emergency personnel
-Lab supervisor
-Lab teammates
+\section{The Transportation Plan}
 
-On site
+\begin{itemize}
+  \item Identify meet up/departure times and locations
+  \item Designate a driver
+  \item All state and local laws must be obeyed
+\end{itemize}
+
+\subsection{Supplies}
+
+\begin{itemize}
+  \item Gather necessary materials (*required)
+  \item Personal protective equipment*
+  \item (Full) water bottle*
+  \item Rite in the rain lab notebook + writing utensil
+  \item Sunscreen, sun hat (if necessary)
+  \item Additional clothing/gear
+  \item No sandals or open-toed shoes
+  \item May need to cover additional exposed skin depending on environmental conditions (e.g. locations with large growths of poison oak)
+  \item Rain gear (if necessary)
+  \item No excessively loose clothing
+  \item Watch
+  \item First aid kit*
+  \item Cell phone; program the following numbers*
+\begin{itemize}
+  \item Emergency personnel
+  \item Lab supervisor and/or instructor
+  \item Lab teammates
+\end{itemize}
+\end{itemize}
+
+\subsection{On site}
+
 Identify a time to meet up to depart (if splitting up)
 Leave no trace
 Ensure that environment remains undisturbed

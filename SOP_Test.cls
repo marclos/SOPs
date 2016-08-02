@@ -29,7 +29,7 @@
 % Create Numbered Paragraphs for Each Section
 \newcounter{paranum}[section] 
 \renewcommand{\theparanum}{\thesection.\arabic{paranum}} 
-\newcommand{\NP}{\vspace{10pt}\noindent\refstepcounter{paranum}\textbf{\theparanum}\ }
+\newcommand{\NP}{\vspace{10pt}\noindent\refstepcounter{paranum}\textbf{\theparanum}\[2em] }
 
 \def\D{\par\noindent\makebox[0em][l]{\refstepcounter{paranum}}\textbf{\theparanum}\hangindent2em}
 
