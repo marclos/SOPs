@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  1 AUG 2016 08:13
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  1 AUG 2016 21:51
 entering extended mode
  %&-line parsing enabled.
 **Picarro_GHG.tex
@@ -420,14 +420,14 @@ tination with the same identifier (name{paranum.1}) has been already used, dupl
 icate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.41   \item S
-              OP2pdfTeX warning (ext4): destination with the same identifier (n
-ame{paranum.1}) has been already used, duplicate ignored
+l.42 \end{itemize}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{paranum.1}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.41   \item S
-              OP2 <../pomona.jpg>]pdfTeX warning (ext4): destination with the s
-ame identifier (name{paranum.1}) has been already used, duplicate ignored
+l.42 \end{itemize}
+                   <../pomona.jpg>]pdfTeX warning (ext4): destination with the 
+same identifier (name{paranum.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.52 \NP
@@ -453,7 +453,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Here is how much of TeX's memory you used:
  5095 strings out of 256214
  69943 string characters out of 1917000
- 223925 words of memory out of 1500000
+ 223958 words of memory out of 1500000
  8283 multiletter control sequences out of 10000+200000
  12773 words of font info for 34 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
@@ -461,7 +461,7 @@ Here is how much of TeX's memory you used:
  </home/CAMPUS/mwl04747/.texlive2007/texmf-var/fonts/p
 k/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cm
 bx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb>
-Output written on Picarro_GHG.pdf (2 pages, 121229 bytes).
+Output written on Picarro_GHG.pdf (2 pages, 121272 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 131072)

@@ -31,11 +31,7 @@
 \renewcommand{\theparanum}{\thesection.\arabic{paranum}} 
 \newcommand{\NP}{\vspace{10pt}\noindent\refstepcounter{paranum}\textbf{\theparanum}\ }
 
-% \hangafter=1
-%{\everypar{\hangafter=1 \setlength{\hangindent}{4em}}}{\par}
-
-%\newcommand{\NP}{\vspace{10pt}\hangafter=1 \setlength{\hangindent}{2em} \refstepcounter{paranum}\textbf{\theparanum}}\
-
+\def\D{\par\noindent\makebox[0em][l]{\refstepcounter{paranum}}\textbf{\theparanum}\hangindent2em}
 
 % Modification of title block
 \RequirePackage{titling}
