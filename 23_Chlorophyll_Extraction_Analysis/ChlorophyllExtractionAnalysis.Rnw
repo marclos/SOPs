@@ -116,9 +116,19 @@ Note(for lab techs): All reusable labware that comes in contact with chlorophyll
 \item[10.1.8] Pour the filter extracts into 15mL falcon tubes and label. Then centrifuge them at (insert the right settings for centrifuge here) for 3 minutes. Or until all filter material is separated from the extration liquid. When removing the tubes from the centrifuge, be careful not to re-suspend filter particles from the bottom of the tubes.
 % the settings for the centrifuge will have to be configured based on the new equipment, need to calculate the correct g force but will need the centrifuges rotational radius for this. (the large one already calculates it). 
 \end{description}
+
 \subsection{Sample Analysis}
 \begin{description}
-\item[10.2.1] 2.5 mL of each sample will be dispensed into a clean glass cuvette
+\item[10.2.1] 2.5 mL of each sample will be dispensed into a clean glass cuvette, again taking care not to resuspend filter particles. 
+\item[10.2.2] Turn on the fluorometer (back left side) and allow 10 minutes to for warmup countdown to complete. Turn on lab computer and open SIS for Turner software to record data. 
+\begin{description}
+\item[10.2.2.1] Use "Measure Raw Fluorescence" to take sample measurements.
+\item[10.2.2.2] Use the 90\% acetone solution for a blank measurement on the sensitivity setting that will be used for sample analysis. % Not sure what is the sensitivity setting this part is referring too. clarify this!
+\end{description}
+\item[10.2.3] Read and record the values for the QCs prior to sample analysis, the Turner Fluorometer will send and accumulate data to the connected computer using the "SIS for Trilogy" program.
+\item[10.2.4] Wipe the outside of the cuvette with a kimwipe before taking a measurement then measure the raw fluorescence of the sample. If the chlorophyll \textit{a} concentration of the sample is 90\% of the upper limit of the LDR (LDR=500 \micro g/L) it will be necessary to perform a dilution. (For a 1:2 dilution, the most likely needed dilution in this case % the way this section was written, it needs a lot of clarification. not sure the 1:2 dilution is correctly stated... Go over this section with Marc before finalizing this SOP
+\item[10.2.5] saf
+\item[10.2.6] adfa
 \end{description}
 
 \section{Data Analysis and Calculations}
