@@ -1,0 +1,85 @@
+\documentclass[12pt]{../SOP2}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+%\documentclass{article}
+
+%\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
+
+\title{Electrical Power in the Field}
+\date{8/11/2016}
+\author{Reseacher Name}
+\approved{Los Huertos}
+\SOPno{X}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP Electrical power can come from infastructure sources, such as outdoor or indoor outlets, portable generators, or solar power.
+
+\NP This documents outlines some of the risks associated with electricity in the field
+
+\NP We develop strategies to mitigate these risks.
+
+\section{Health and Safety}
+
+\NP Getting electricity in the field has risks, thus it's important to develop mitigation plans
+
+\NP Always read and follow the manufacturer's operating instructions before running
+generator
+
+\NP Engines emit carbon monoxide. Never use a generator inside your home, garage, crawl space, or other enclosed areas. Fatal fumes can build up, that neither a fan
+nor open doors and windows can provide enough fresh air.
+
+\NP Only use the generator outdoors, away from open windows, vents, or doors.
+
+\NP Use a battery-powered carbon monoxide detector in the area you're running a generator.
+
+\NP Gasoline and its vapors are extremely flammable. Allow the generator engine to cool at least 2 minutes before refueling and always use fresh gasoline. 
+
+\NP Maintain your generator according to the manufacturer’s maintenance schedule for peak performance and safety.
+
+\NP Never operate the generator near combustible materials.
+
+\NP If you have to use extension cords, be sure they are of the grounded type and are rated for the application. Coiled cords can get extremely hot; always uncoil cords and lay them in flat open locations.
+
+\NP Never plug your generator directly into your home outlet. If you are connecting a generator into your home electrical system, have a qualified electrician install a Power Transfer Switch.
+
+\NP Generators produce powerful voltage - Never operate under wet conditions. Take precautions to protect your generator from exposure to rain and snow. 
+
+\section{Personnel \& Training Responsibilities}
+
+\NP \lipsum[1]
+
+Students using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP 03 Field Safety
+\end{itemize}
+
+
+\section{Required Materials}
+
+\subsection{Item 1 w/catalog number!}
+\subsection{Item 2}
+
+\section{Estimated Time}
+
+\NP This will take XX minutes...
+
+\section{Procedure}
+
+\NP Prepare \dots
+
+\NP If you do not plan to use the generator in 30 days, use fuel stabilizer with gas and drain carborator. 
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\end{document}

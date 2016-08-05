@@ -11,7 +11,7 @@
 \date{8/11/2016}
 \author{Reseacher Name}
 \approved{Los Huertos}
-\SOPno{X}
+\SOPno{37}
 
 \begin{document}
 \SweaveOpts{concordance=TRUE}
@@ -63,6 +63,30 @@ Picarro Questions
 \NP What files do we need to send to marc for him to reprocess them.
 
 \NP N2O is very noisy. Is there a way to reduce the noise?
+
+Picarro
+Data Source/ sensors: allows you to see all sensor readings on picaro
+controller: zoom in/out= right and left mouse click
+
+How to read data from Picarro (must be emailed)
+The Chamber Data Processor program is expecting to find all of the relevant 
+
+%"FRMonitor_0000.log, FRMonitor_0001.log..." 
+files in its own folder. You can freely move these out between sites, but as they contain information about the chamber sequencing, when you are processing a certain date range, you will need to have to correct FRMonitor logs present (the program will start its search with log 0000 and go until it cannot find the next in the sequence). 
+The path for raw analyzer data should always be the same, and should look like:  
+%C:/UserData/DataLog_Forerunner. 
+
+You can set this from the Data menu in the Chamber Data Processor (Data-> Analyzer Data Path).
+
+Days with unexpected data:  These days (159 and 175 or June 8th and June 24th) appear to contain valid chamber measurements. The Julian Day metric is pulled directly from the raw analyzer data and there don't appear to be any cases where a measurement got moved from the proper day. I would check to see if the system and/or local time on the analyzer have been changed, as this could potentially cause problems. You could also compare the processed measurements against your field notes to see if there is an obvious time period with missing data that seems to match with these days.
+
+Days that should have more data: I noticed several errors in the FRMonitor logs that you uploaded. I've fixed these files and attached them to this email. Back up the older versions and try using these instead: I noticed several additional measurements appear once I had updated them. As for where these errors came from, the log files suggest that, at some points at least, chambers were disconnected from the Multiplexer while it was actively running a measurement cycle? If so, I would strongly advise against this, as it can cause the Chamber Data Processor to overlook measurements (especially if the chamber was closed when it was removed). Also, are you using the 1.6.0 or 1.6.2 version of the FRMonitor software? Make sure to use the newer version to schedule measurements.
+
+
+Days where some chambers are missing: I saw several days where Chambers 1 and/or 2 do not appear to be sending any data. This indicates either a communication issue between the Multiplexer and Analyzer, or that the chambers were not connected during this time period. Has the FRMonitor software been recognizing all of the connected chambers on start-up?  If not, then they will not record data (even if they open and close). The System Info button will show you a break down of chamber-specific events, including successfully logged measurements and communication problems. Disconnecting and reconnecting chambers during a measurement cycle can also cause these errors.
+
+
+
 
 
 Forunner Multiplexer Questions
