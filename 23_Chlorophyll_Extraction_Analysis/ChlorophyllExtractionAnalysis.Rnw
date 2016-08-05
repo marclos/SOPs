@@ -4,7 +4,7 @@
 %This area before it says begin is like the header area (preamble)
 
 
-\author{Isaac Medina}
+\author{Kristy Morris -- Revision by Isaac Medina}
 \title{SOP for In Vitro Determination of Chlorophyll \textit{a} Concentrations by Fluorescence}
 \date{8/11/2016}
 \approved{Los Huertos}
@@ -167,9 +167,37 @@ Other SOPs that are currently be developed!
 % Don't thing we have a rubber stoper for the cuvettes can we use parafilm instead? 
 
 \section{Data Analysis and Calculations}
+To calculate 'corrected chlorophyll \textit{a}' values use the following equations: %fix the single opening quote
+
+\NP Variables
+\begin{enumerate}
+\item $[Std]$ = Expected Standard concentration (This is not calculated, use the concentration of one of the standards that are run with the samples and it's corresponding F value)
+%need to define what an F value is
+\item $S_b$ = Standard reading before acidification
+\item $S_a$ Standard reading after acidification
+\item $F_b$ reading before acidification
+\item $F_a$ reading after acidification
+\item $V_e$ volume of extract
+\item $V_s$ volume of sample 
+\end{enumerate}
+
+\NP Equations
+\begin{description}
+\item[Equation 1:] Acid Ratio (AR) = ($S_b$-Blank)/($S_a$-Blank)
+\item[Equation 2:] Interpolation Before (InterpB) = $[Std]$*($F_b$-Blank)/($S_b$-Blank)
+\item[Equation 3:] Interpolation After (InterpA) = $[Std]$*($F_a$-Blank)/($S_b$-Blank)
+\item[Equation 4:] Corrected Chlorophyll \textit{a} = $[AR/(AR-1)]$*(InterpB-InterpA)*($V_e/V_s$)
+\item[Equation 5:] Corrected Pheophytin \textit{a} = ((AR*InterpA)-InterpB)*($V_e/V_s$)
+\end{description}
+Note: Generally, equation 5 is not used. 
 
 \section{QC/QA Criteria}
 
+\NP An LRB is performed every 10 samples. The LRB should be less than the calculated lower detection limit for analysis.
+
+\NP The QCs should be within $\pm$ 20\% of the known value. 
+
+\NP The RSD of the replicate measurements should be within $\pm$ 20\%
 
 
 \end{document}
