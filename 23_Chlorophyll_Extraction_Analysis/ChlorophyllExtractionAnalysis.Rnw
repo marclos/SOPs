@@ -39,28 +39,30 @@
 
 
 \section{Interferences}
-\begin{description}
-\item[4.1] Any substance extracted from the filter or acquired from laboratory contamination that fluoresces in the red region of the spectrum may interfere in the accurate measurement of both chlorophyll \textit{a} and pheophytin \textit{a}.
-\item[4.2] Spectral interferences resulting from the fluorescence of the accessory pigment chlorophyll \textit{b}, and the chlorophyll \textit{a} degradation product pheophytin \textit{a}, can result in the overestimation of chlorophyll \textit{a} concentrations. However, highly selective optical filters used in this method minimize these interferences. 
-\item[4.3] Quenching effects are observed in highly concentrated solutions or in the presence of high concentrations of other chlorophylls and carotenoids. Samples should be diluted. 
-\item[4.4] Fluorescence is temperature dependent with higher sensitivity occurring at lower temperatures. Samples, standards, LRBS (section 3.2) and QCs (section 3.4) must be at the same temperature to prevent errors and maximize precision. Analysis of samples at ambient temperatures is required in this method. 
-\item[4.5] All photosynthetic pigments are light and temperature sensitive. Work must be performed in subdued light and all standards, QC materials and filter samples must be stored in the dark at -20\degree C to prevent degradation.
-\end{description}
+\NP Any substance extracted from the filter or acquired from laboratory contamination that fluoresces in the red region of the spectrum may interfere in the accurate measurement of both chlorophyll \textit{a} and pheophytin \textit{a}.
+
+\NP item Spectral interferences resulting from the fluorescence of the accessory pigment chlorophyll \textit{b}, and the chlorophyll \textit{a} degradation product pheophytin \textit{a}, can result in the overestimation of chlorophyll \textit{a} concentrations. However, highly selective optical filters used in this method minimize these interferences.
+
+\NP Quenching effects are observed in highly concentrated solutions or in the presence of high concentrations of other chlorophylls and carotenoids. Samples should be diluted.
+
+\NP Fluorescence is temperature dependent with higher sensitivity occurring at lower temperatures. Samples, standards, LRBS (section 3.2) and QCs (section 3.4) must be at the same temperature to prevent errors and maximize precision. Analysis of samples at ambient temperatures is required in this method.
+
+\NP All photosynthetic pigments are light and temperature sensitive. Work must be performed in subdued light and all standards, QC materials and filter samples must be stored in the dark at -20\degree C to prevent degradation.
+
 
 \section{Safety and Personnnel Protective Equipment}
-\begin{description}
-\item[5.1] Lab safety-glasses and lab coats are required for all laboritory analysis. Use gloves to avoid skin irritation from contact with acetone; work under fume hood when possible. 
-\item[5.2] Sonication Procedure -- When using the sonicator always wear ear protection. \textbf {Sonicator should never be used outside of solution.}
-\item[5.3] Chemical Hygiene -- Please refer to the Material Data Safety Sheets (MSDS) files for questions concerning a chemical's toxicity and the necessary safety precautions.
-\item[5.4] Waste Disposal-- Dispose of waste in the acetone collection bottle. See "SOP 02 Handling of Hazardous Materials." %Figure out who and how this bottle will be disposed of properly. Most likely the Environmental Health and Safety Officer (Wang??) Ask Marc about what bottles he is planning to use to store organic and inorganic wastes.
-\end{description}
+
+\NP Lab safety-glasses and lab coats are required for all laboritory analysis. Use gloves to avoid skin irritation from contact with acetone; work under fume hood when possible. 
+\NP Sonication Procedure -- When using the sonicator always wear ear protection. \textbf {Sonicator should never be used outside of solution.}
+\NP Chemical Hygiene -- Please refer to the Material Data Safety Sheets (MSDS) files for questions concerning a chemical's toxicity and the necessary safety precautions.
+\NP Waste Disposal-- Dispose of waste in the acetone collection bottle. See "SOP 02 Handling of Hazardous Materials." %Figure out who and how this bottle will be disposed of properly. Most likely the Environmental Health and Safety Officer (Wang??) Ask Marc about what bottles he is planning to use to store organic and inorganic wastes.
 
 \section{Related Documents}
 
 Other SOPs that are currently be developed!
 
 \begin{itemize}
-%
+
 \item "SOP 02 for Handling of Hazardous Materials"
 \item "SOP 10 for using Balances, Pipettes and Glassware"
 \item "SOP 11 for preparing Standards and QCs" %This is the one I think might be tricky because it's so generic. 
@@ -92,37 +94,21 @@ Other SOPs that are currently be developed!
 \NP Note(for lab techs): All reusable labware that comes in contact with chlorophyll solutions should be cleaned with acetone and acid free. Diswashing should include soaking in laboratory grade detergent and water, rinsing with tap water then rinsing with deionized water. 
 
 \section{Reagents and Standards}
-\begin{description}
-\item[8.1] Acetone, HPLC grade
-\item[8.2] Hydrochloric Acid
-\item[8.3] Chlorophyll \textit{a} free of chlorophyll \textit{b}. May be obtained from a commercial supplier
-\item[8.4] Milli-Q/Super-Q water
-\item[8.5] \textbf{0.1 M HCl solution}-- Add 0.85 mL of concentrated HCl to approximately 50mL of water and dilute to 100 mL. 
-\item[8.6] \textbf{Aqueous Acetone Solution}-- 90\% Acetone/ 10\% Milli-Q water. Carefully measure 100mL of water into a 100mL volumetric flask. Then pour the water into a 1L volumetric flask. Fill the 1L flask up to the line with acetone. Mix and then transfer to a dark amber bottle. Label the bottle and store in the flammables cabinet (under the middle fumehood in the Los Huertos Lab). 
-\item[8.7] \textbf{Chlorophyll Standard Stock Solution (SSS)}- Chlorophyll \textit{a} from Sigma is shipped in an amber glass ampoule. This should be stored in the freezer until use. Tap the ampoule until all of the dried chlorophyll has settled on the bottom. Working in a darkened room, carefully break the tip off the ampoule and transfer the contents into a 50mL volumetric flask and dilute to volume with 90\% acetone (from section 8.6). Transfer to a darkened bottle or wrap the flask in foil to protect it from light. The concentration of the solution must be determined spectrophotometrically using a multiwavelength spectrophotometer. Label bottle including the chlorophyll lot number. When stored in an airtight container at room temperature, the SSS is stable for at least six months. 
-\item[8.8] \textbf{Chlorophyll \textit{a} Primary Dilution Standard (PDS)}- Add 1mL of the SSS (section 8.7) to a 100mL volumetric flask and dilute to volume with aqueous acetone solution (section 8.6). If exactly 1mg of pure chlorophyll was used to prepare the SSS, the concentration of the PDS is 200 \micro g/L. Prepare fresh prior to use and label flask and wrap in foil. 
-\item[8.9] \textbf{Quality Control Samples (QCs)}- Since there are no commercially available QCs, they must be prepared from the PDS at the following concentrations:
+\NP Acetone, HPLC grade
+\NP Hydrochloric Acid
+\NP Chlorophyll \textit{a} free of chlorophyll \textit{b}. May be obtained from a commercial supplier
+\NP Milli-Q/Super-Q water
+\NP \textbf{0.1 M HCl solution}-- Add 0.85 mL of concentrated HCl to approximately 50mL of water and dilute to 100 mL. 
+\NP \textbf{Aqueous Acetone Solution}-- 90\% Acetone/ 10\% Milli-Q water. Carefully measure 100mL of water into a 100mL volumetric flask. Then pour the water into a 1L volumetric flask. Fill the 1L flask up to the line with acetone. Mix and then transfer to a dark amber bottle. Label the bottle and store in the flammables cabinet (under the middle fumehood in the Los Huertos Lab). 
+\NP \textbf{Chlorophyll Standard Stock Solution (SSS)}- Chlorophyll \textit{a} from Sigma is shipped in an amber glass ampoule. This should be stored in the freezer until use. Tap the ampoule until all of the dried chlorophyll has settled on the bottom. Working in a darkened room, carefully break the tip off the ampoule and transfer the contents into a 50mL volumetric flask and dilute to volume with 90\% acetone (from section 8.6). Transfer to a darkened bottle or wrap the flask in foil to protect it from light. The concentration of the solution must be determined spectrophotometrically using a multiwavelength spectrophotometer. Label bottle including the chlorophyll lot number. When stored in an airtight container at room temperature, the SSS is stable for at least six months. 
+\NP \textbf{Chlorophyll \textit{a} Primary Dilution Standard (PDS)}- Add 1mL of the SSS (section 8.7) to a 100mL volumetric flask and dilute to volume with aqueous acetone solution (section 8.6). If exactly 1mg of pure chlorophyll was used to prepare the SSS, the concentration of the PDS is 200 \micro g/L. Prepare fresh prior to use and label flask and wrap in foil. 
+\NP \textbf{Quality Control Samples (QCs)}- Since there are no commercially available QCs, they must be prepared from the PDS at the following concentrations:
 \begin{itemize}
 \item QC1 = 5 \micro g/L
 \item QC1 = 20 \micro g/L
 \item QC1 = 50\micro g/L
 \item QC1 = 200 \micro g/L
 \end{itemize}
-\end{description}
-
-\section{Collecting and Storing Samples}
-
-\NP Water column chlorophyll samples should be collected in non-acid washed, 1000 mL darkened HDPE bottles. Rinse the bottle three times with sample water before collection. 
-
-\begin{description}
-  \item[Limnetic Samples] Healthy phytoplankton are generally obtained from the photic zone (the depth at which the illumination level is 1\% of surface illumination). 
-  \item[Lotic Samples] Collect a sample from near the thalwag, by slowly lowering the bottle from the surface to near the waterway bottom, be careful not to disturb the benthos. 
-\end{description}
-
-
-\NP Store on ice until delivery to the laboratory. Unfiltered samples can be stored in the refridgerator at 4\celsius for up to 24 hrs. \textbf{Samples must be filtered within 24 hrs and filters may be frozen (-20\celsius) for up to 28 days.}
-
-% I'm not sure about the way the previous person wrote this section. It doesn't seem very straightforward about how and where to collect... what's a thalwag? We'll need to improve this section after talking with Marc about what he's planning for student to do with this project.
 
 \section{Procedure}
 \subsection{Extraction}
