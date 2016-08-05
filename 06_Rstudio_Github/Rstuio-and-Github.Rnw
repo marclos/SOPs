@@ -47,4 +47,9 @@
   \item[Push]
 \end{description}
 
+\section{Troubleshooting}
+\subsection{Deleting a Project in R Studio}
+Delete all files in directory, clear workspace and console, don't save, then go to session tab: Terminate R, and hopefully that will do the trick. Then commence with starting a new project. 
+
+
 \end{document}
