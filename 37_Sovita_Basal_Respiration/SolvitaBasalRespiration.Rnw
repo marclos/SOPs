@@ -1,0 +1,80 @@
+\documentclass[12pt]{../SOP2}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+%\documentclass{article}
+
+%\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
+
+\title{Basal Respiration}
+\date{8/11/2016}
+\author{Reseacher Name}
+\approved{Los Huertos}
+\SOPno{X}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP \blindtext
+
+\NP \lipsum[1]
+
+\section{Health and Safety}
+
+\NP \lipsum[2]
+
+
+\section{Personnel \& Training Responsibilities}
+
+\NP \lipsum[1]
+
+Students using this SOP should be trained for the following SOPsa:
+
+\begin{itemize}
+  \item SOP1
+  \item SOP2
+\end{itemize}
+
+
+\section{Required Materials}
+
+\NP Test Soils
+
+\NP Solvita Jars
+
+\NP Individually wrapped CO2 Probes ( must remain refrigerated) 
+
+\NP AWS digital scale
+
+
+\section{Estimated Time}
+
+\NP This will take XX minutes...
+
+\section{Procedure}
+
+\NP Place a clean Solvita Jar on the scale and tare the weight of the jar 
+
+\NP add 100g ± 5 of soil using the fill line as a guide
+
+\NP Unwrap and place CO2 probe in jar NOTE: Handle the probe only by the handle avoid anything from touching the gel surface.
+
+\NP Screw on lid tightly-- and wait 24 hours
+record temperature and try to keep the jars at a constant temp for the duration of the test
+Remove lid after 24 hours
+
+\NP Turn on DCR Field test unit and insert probe to get CO2 color. The probe must go into the DCR with gel side up press the read button. Compare color to the visual color key.
+
+\NP See Table 1 below for interpretation
+
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\end{document}
