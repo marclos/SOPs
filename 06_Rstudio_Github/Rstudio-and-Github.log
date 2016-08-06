@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  5 AUG 2016 23:19
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  5 AUG 2016 23:28
 entering extended mode
  %&-line parsing enabled.
 **Rstudio-and-Github.tex
@@ -263,24 +263,34 @@ Overfull \hbox (7.75652pt too wide) in paragraph at lines 21--22
 
 [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-(./Rstudio-and-Github.aux) ) 
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Overfull \hbox (1.40512pt too wide) in paragraph at lines 80--81
+[]\T1/aer/m/n/10 If your files are suc-cess-fully up-dated from the repos-
+ []
+
+
+Overfull \hbox (36.96631pt too wide) in paragraph at lines 88--89
+[]\T1/aer/m/n/10 create mode 100644 06_Rstudio_Github/Rstudio-and-Github-concor
+dance.tex 
+ []
+
+[3] [4] (./Rstudio-and-Github.aux) ) 
 Here is how much of TeX's memory you used:
- 3641 strings out of 256214
- 50624 string characters out of 1917000
+ 3644 strings out of 256214
+ 50660 string characters out of 1917000
  101554 words of memory out of 1500000
- 6864 multiletter control sequences out of 10000+200000
+ 6865 multiletter control sequences out of 10000+200000
  25739 words of font info for 56 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,6n,36p,440b,418s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb
-></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/ty
-pe1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></
-usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/
-bluesky/cm/cmr17.pfb>
-Output written on Rstudio-and-Github.pdf (3 pages, 61215 bytes).
+ 35i,6n,36p,440b,366s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cm
+bx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/
+fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr1
+0.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/font
+s/type1/bluesky/cm/cmr17.pfb>
+Output written on Rstudio-and-Github.pdf (4 pages, 64313 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 131072)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 131072)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

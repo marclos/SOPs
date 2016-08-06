@@ -76,7 +76,25 @@ In particular, the collaboration allows for contributions to be tracked via vers
   
   \begin{description}
   \item[Already up-to-date.] This means that your files have not been updated on the Github site since you last pulled the files. If you suspect someone has worked on the files, but are not getting those changes, it means that your collaborator has failed to "Push" these changes onto the repsository. If this is the case, you might need to go to the troubleshooting question to address this problem.
-  \item[asdfadsf]
+  \item[Successful Updates] If your files are successfully updated from the repository, you will see:
+  
+summary of updates
+
+master 6038765 Started to explain set up procedures
+ 
+ 5 files changed, 434 insertions(+), 8 deletions(-)
+ 
+ create mode 100644 06\_Rstudio\_Github/Rstudio-and-Github-concordance.tex
+ 
+ create mode 100644 06\_Rstudio\_Github/Rstudio-and-Github.log
+ 
+ create mode 100644 06\_Rstudio\_Github/Rstudio-and-Github.pdf
+ 
+ create mode 100644 06\_Rstudio\_Github/Rstudio-and-Github.tex
+ 
+ \item[Unsuccesful "Pull"]
+ 
+ 
 \end{description}
 
   \item[Commit]
