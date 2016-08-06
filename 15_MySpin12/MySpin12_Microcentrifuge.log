@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  4 AUG 2016 19:57
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  6 AUG 2016 08:46
 entering extended mode
  %&-line parsing enabled.
 **MySpin12_Microcentrifuge.tex
@@ -408,33 +408,33 @@ Overfull \hbox (2.12527pt too wide) in paragraph at lines 21--21
 [][] 
  []
 
-[1
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 40.
+(/usr/share/R/texmf/tex/latex/ts1aer.fd
+File: ts1aer.fd 
+)
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <12> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 40.
+ [1
 
 {/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (ext4): des
 tination with the same identifier (name{paranum.1}) has been already used, dupl
 icate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.35 \NP \lipsum[1]
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{paranum.1}) has been already used, duplicate ignored
+l.54 \section{Procedure}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{paranum.2}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.35 \NP \lipsum[1]
-                    <../pomona.jpg>]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 40.
- (/usr/share/R/texmf/tex/latex/ts1aer.fd
-File: ts1aer.fd 
-)
-LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <12> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 40.
-pdfTeX warning (ext4): destination with the same identifier (name{paranum.1}) h
-as been already used, duplicate ignored
+l.54 \section{Procedure}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{paranum.1}) has been already used, duplicate ignored
 <to be read again> 
-                   \relax 
-l.52 \NP
-         This will take XX minutes...pdfTeX warning (ext4): destination with th
-e same identifier (name{paranum.1}) has been already used, duplicate ignored
+                   \endgroup \set@typeset@protect 
+l.54 \section{Procedure}
+                         <../pomona.jpg>]pdfTeX warning (ext4): destination wit
+h the same identifier (name{paranum.1}) has been already used, duplicate ignore
+d
 <to be read again> 
                    \relax 
 l.56 \NP
@@ -447,7 +447,7 @@ l.58 \NP
 um.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 \NP
+l.86 \NP
          APHA, AWWA. WEF. (2012) Standard Methods for examination of water a...
 AED: lastpage setting LastPage
 
@@ -456,23 +456,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] (./MySpin12_Microcentrifuge.aux) ) 
+[2pdfTeX warning (ext4): destination with the same identifier (name{paranum.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.88 \end{document}
+                   ] (./MySpin12_Microcentrifuge.aux) ) 
 Here is how much of TeX's memory you used:
- 5095 strings out of 256214
- 70118 string characters out of 1917000
- 224861 words of memory out of 1500000
+ 5096 strings out of 256214
+ 70128 string characters out of 1917000
+ 223861 words of memory out of 1500000
  8282 multiletter control sequences out of 10000+200000
  12773 words of font info for 34 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,16n,45p,267b,417s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/mwl04747/.texlive2007/texm
-f-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texmf/fonts/type1/
-bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi12.pfb></usr
-/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/blu
-esky/cm/cmsy10.pfb>
-Output written on MySpin12_Microcentrifuge.pdf (2 pages, 128642 bytes).
+ 35i,16n,49p,267b,417s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/mwl04747/
+.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/t
+exmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm
+/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texm
+f/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy
+10.pfb>
+Output written on MySpin12_Microcentrifuge.pdf (2 pages, 130523 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 131072)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 131072)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
