@@ -13,4 +13,3 @@ x1 = 0.2
 y2 = m*x1 + b
 
 # is the interpolated value.
-
