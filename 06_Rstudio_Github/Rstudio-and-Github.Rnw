@@ -1,0 +1,70 @@
+\documentclass{article}
+
+\author{Marc, Aparna, and Isaac}
+\title{Setting up Rstudio Projects and Github}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+
+\section{Introduction}
+
+R is a powerful, open source program but combined with RStudio and Github the program becomes an archetype of a program that enables 1) collaboration, 2) transparency, and 3) accessibility. 
+
+However, becoming facile in using these program is like learning how to walk. We need to approach this process in descrete steps. Some will require weeks of mistakes to learn, others will quickly learn to run with the programs. How quickly you can feel comfortable with these programs will depend on many factors, but will be greatly improved by the time you invest!
+
+\subsection{Rational}
+
+\begin{description}
+  \item[Almost Universal Compatibility] No downloading programs on personal computers.
+  \item[Accessibility] Accessible from any computer via webserver
+  \item[Collaboration]
+  \item[Version Control]
+\end{description}
+
+\section{Rstudio}
+
+Although R by itself is an amazing example of crowd sourcing, where a wide range of staticians and programmers have created a free programming environments with a robust range of statistical packages, the RStudio interface provides a user with the tools to track and publish their analysis process in an effecient and transparent way. 
+
+\subsection{Local Install versus Server}
+
+R and RStudio can be installed on a local machine from the CRAN download micro sites. However, you also have access to the RStudio Server that has been installed on the Pomona College mainframe, where you can access it via a web browser. Wow, this is conveient!
+
+\section{Create Version Control for Rstudio as a Collaborator}
+
+The final component of R and RStudio is its capacity to create projects (RStudio's terminology) and repositories (Github's terminalogy) that can be shared among collaborators. 
+
+In particular, the collaboration allows for contributions to be tracked via version control tools. There are a number of ways that we can access these tools, but we'll try to limit the methods so keep the process relatively "simple".
+
+\begin{description}
+  \item[Create Github Account]
+  \item[Accept Collaborator Invitation]
+
+  \item[Make SSH Key on Rstudio Sever] Using... Profile
+  \item[Add SSH Key to Github] Copy and Paste...
+  \item[Clone] shared project and paste into New Project on R Studio Server
+\end{description}
+
+\section{Creating a New Project}
+
+\section{Working on Projects}
+
+\subsection{Best Practices}
+
+\begin{description}
+  \item[Pull] When you open RStudio, the first thing you should do is "Pull" from the repository to ensure your files are up-to-date. When you "Pull", you will get one of three results:
+  
+  \begin{description}
+  \item[Already]
+\end{description}
+
+  \item[Commit]
+  \item[Push]
+\end{description}
+
+\section{Troubleshooting}
+\subsection{Deleting a Project in R Studio}
+Delete all files in directory, clear workspace and console, don't save, then go to session tab: Terminate R, and hopefully that will do the trick. Then commence with starting a new project. 
+
+
+\end{document}
