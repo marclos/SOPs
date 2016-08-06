@@ -23,11 +23,11 @@ At this point, we will have two files coming from the data entry forms created b
 
 ```{r importing}
 # This path is for marc's computer
-#file="C:\\Users\\mwl04747\\Box Sync\\500_Soil_Texture_Analysis\\HydrometerData--Corrected.csv"
+#file="/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/IsaacsWork/HydrometerData--Corrected.csv"
 
 # Path for marc when he is at home...
 
-file = "C:\\Users\\Marc\\Desktop\\Box Sync\\500_Soil_Texture_Analysis\\HydrometerData--Rearranged2.csv"
+file = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/IsaacsWork/HydrometerData--Rearranged2.csv"
 
 #This path is for Isaac's computer...
 #file="/Users/Chuck/Documents/SeniorYear/Thesis/Data/HydrometerData--Corrected.csv"
@@ -320,4 +320,26 @@ for(i in 1:length(farms)){
   print(i); print(farms[i])
 }
 
+```
+
+
+## Creating a loop that is capable to writing a csv file that summarizes the appropriate data\ldots
+
+Fastest method: not yet implemented:
+
+d = data.frame( x=rep(0, 10), y=rep(0,10), z=rep(0,10))
+
+And in the loop (index i):
+
+d[i, ] = c(x, y, z)
+
+```{r loopwrite}
+junk=NULL
+
+for(i in 1:length(farms)){
+  # create a dataframe...
+  junk = rbind(junk, data.frame(Obs=i, farm = import$FarmID[i]))
+}
+head(junk)
+write.csv(junk, "output_test.csv")
 ```
