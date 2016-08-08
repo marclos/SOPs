@@ -1,3 +1,9 @@
+%SOP Template 
+% Version 02 Added revision date
+% Version 03 Added TOC and acknowledgements
+%           New SOP3_alpha.cls
+
+
 \documentclass[12pt]{../SOP3_alpha}
 \usepackage[english]{babel}
 \usepackage{blindtext}
@@ -21,7 +27,7 @@
 
 \section{Scope and Application}
 
-\NP The scope of this SOP is...
+\NP The scope of this SOP is train researchers...
 
 \NP The applications of this SOP are for...
 
@@ -30,6 +36,8 @@
 \NP This SOP does this...
 
 \tableofcontents
+
+\newpage
 
 \section{Acknowledgements}
 
