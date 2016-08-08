@@ -23,6 +23,12 @@
 % Redefine the page margins
 \RequirePackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
 
+% Modify bullet format
+\RequirePackage{amssymb}
+%\def\labelitemi{\scriptsize$\blacksquare$}
+\RequirePackage{xcolor}
+
+\def\labelitemi{\textcolor{gray}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}}
 
 % Modifications to the section titles
 \RequirePackage{titlesec}
@@ -47,9 +53,6 @@
 % still attempting the hanging indent
 \newcommand{\NP}{\par\vspace{10pt}\indent\hangindent=1.4cm\refstepcounter{paranum}\textbf{\theparanum}\ }
 %\setlength\parindent{1cm}
-
-
-
 
 % Modification of title block
 \RequirePackage{titling}

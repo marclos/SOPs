@@ -1,5 +1,5 @@
 %\documentclass{article}
-\documentclass[12pt]{../SOP2}
+\documentclass[12pt]{../SOP3_alpha}
 \usepackage{gensymb}
 %This area before it says begin is like the header area (preamble)
 
@@ -9,11 +9,12 @@
 \date{8/5/2016}
 \approved{Los Huertos}
 \ReviseDate{\today}
-\SOPno{23}
+\SOPno{23 v.01}
 
 
+\usepackage{Sweave}
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+\input{ChlorophyllExtractionAnalysis_v01-concordance}
 
 \maketitle
 
@@ -50,8 +51,9 @@
 
 \NP All photosynthetic pigments are light and temperature sensitive. Work must be performed in subdued light and all standards, QC materials and filter samples must be stored in the dark at -20\degree C to prevent degradation.
 
+\section{Health and Safety}
 
-\section{Safety and Personnnel Protective Equipment}
+\subsection*{Safety and Personnnel Protective Equipment}
 
 \NP Lab safety-glasses and lab coats are required for all laboritory analysis. Use gloves to avoid skin irritation from contact with acetone; work under fume hood when possible. 
 
@@ -59,20 +61,22 @@
 
 \NP Chemical Hygiene -- Please refer to the Material Data Safety Sheets (MSDS) files for questions concerning a chemical's toxicity and the necessary safety precautions.
 
-\NP Waste Disposal-- Dispose of waste in the acetone collection bottle. See "SOP 02 Handling of Hazardous Materials." %Figure out who and how this bottle will be disposed of properly. Most likely the Environmental Health and Safety Officer (Wang??) Ask Marc about what bottles he is planning to use to store organic and inorganic wastes.
+\NP Waste Disposal-- Dispose of waste in the acetone collection bottle. See ''SOP 02 Handling of Hazardous Materials.'' %Figure out who and how this bottle will be disposed of properly. Most likely the Environmental Health and Safety Officer (Wang??) Ask Marc about what bottles he is planning to use to store organic and inorganic wastes.
 
-\section{Related Documents}
+\section{Personnel \& Training Responsibilities}
 
-Other SOPs that are currently be developed!
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
 
 \begin{itemize}
-
-\item "SOP 02 for Handling of Hazardous Materials"
-\item "SOP 10 for using Balances, Pipettes and Glassware"
-\item "SOP 11 for preparing Standards and QCs" %This is the one I think might be tricky because it's so generic. 
+  \item SOP01 Laboratory Safety
+  \item SOP03 Handing of Hazardous Materials
+\item ``SOP 11 for preparing Standards and QCs'' %This is the one I think might be tricky because it's so generic. 
 \end{itemize}
 
 \section{Materials and Apparatus}
+
 \NP Turner Designs P/N 998-7210 Fluoromter
 
 \NP 10mL borosillicate glass tubes with caps (\textbf{Cat \#?})
@@ -122,8 +126,15 @@ Other SOPs that are currently be developed!
 \item QC1 = 200 \micro g/L
 \end{itemize}
 
-%\section{Procedure} until we figure out how to fix the \NP command we're going to split the "PROCEDURE" section into two separate sections. 
-\section{Extraction}
+\section{Estimated Time}
+
+\NP This procedure requires XX minutes...
+
+\section{Procedure} 
+
+% Using \subsection to split extraction and analysis
+
+\subsection*{Extraction}
 \NP Invert the sample bottle gently several times before filtering to suspend particles. Mixing the sample well improves the replication greatly.
 
 \NP Conduct filtration in an area with subdued light. Gently filter sample, filter vacuum should not exceed 20 kPa). Sample volume to be filtered will vary depending on the algal concentration in the sample. The sample needs to be filtered until a green tint can be seen on the filter, filter sample in 20mL increments using a graduated cylinder or calibrated pipette. For benthic samples a much smaller volume will need to be filtered, roughly 5mL, freshwater sample needed to be filtered can range from 20mL to 300mL, and seawater sample volume can exceed 1 L. It is extremely important to record the filtered sample volume during this process. If the filter is too green the sample analysis will be over range and will need to be diluted, however it is best to avoid diluting the sample when possible. 
@@ -143,7 +154,7 @@ Other SOPs that are currently be developed!
 
 % the settings for the centrifuge will have to be configured based on the new equipment, need to calculate the correct g force but will need the centrifuges rotational radius for this. (the large one already calculates it). 
 
-\section{Sample Analysis}
+\subsection*{Sample Analysis}
 
 \NP 2.5 mL of each sample will be dispensed into a clean glass cuvette, again taking care not to resuspend filter particles.
 

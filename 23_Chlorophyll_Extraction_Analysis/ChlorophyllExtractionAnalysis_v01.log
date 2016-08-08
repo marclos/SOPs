@@ -1,8 +1,8 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  7 AUG 2016 21:20
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  7 AUG 2016 22:35
 entering extended mode
  %&-line parsing enabled.
-**Template_v02.tex
-(./Template_v02.tex
+**ChlorophyllExtractionAnalysis_v01.tex
+(./ChlorophyllExtractionAnalysis_v01.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
@@ -12,7 +12,7 @@ us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
 tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
 turkish, ukenglish, ukrainian, loaded.
 (../SOP3_alpha.cls
-Document Class: ../SOP3_alpha 2016/08/07 v2.4 Modified article class for standa
+Document Class: ../SOP3_alpha 2016/08/08 v3.1 Modified article class for standa
 rd operating procedures
 (/usr/share/texmf/tex/latex/base/article.cls
 Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
@@ -111,6 +111,39 @@ Package: geometry 2002/07/08 v3.2 Page Geometry
 \Gm@even@mp=\dimen110
 \Gm@dimlist=\toks17
 )
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
+\Gread@gobject=\count97
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 (/usr/share/texmf/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2005/01/22 v2.6 Sectioning titles
 \ttl@box=\box26
@@ -122,7 +155,7 @@ Package: titlesec 2005/01/22 v2.6 Sectioning titles
 \titlewidthlast=\dimen114
 \titlewidthfirst=\dimen115
 )
-\c@paranum=\count97
+\c@paranum=\count98
 
 (/usr/share/texmf/tex/latex/titling/titling.sty
 Package: titling 2004/09/26 v2.1c maketitle typesetting
@@ -148,45 +181,8 @@ Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
 \f@ncyO@olf=\skip64
 \f@ncyO@orf=\skip65
 ))
-(/usr/share/texmf/tex/generic/babel/babel.sty
-Package: babel 2005/11/23 v3.8h The Babel package
-
-(/usr/share/texmf/tex/generic/babel/english.ldf
-Language: english 2005/03/30 v3.3o English support from the babel system
-
-(/usr/share/texmf/tex/generic/babel/babel.def
-File: babel.def 2005/11/23 v3.8h Babel common definitions
-\babel@savecnt=\count98
-\U@D=\dimen117
-)
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-))
-(/usr/share/texmf/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2006/11/21 V1.7 blindtext-Package
-
-(/usr/share/texmf/tex/latex/tools/xspace.sty
-Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
-)
-\c@blindtext=\count99
-\c@Blindtext=\count100
-\blind@countxx=\count101
-\blindtext@numBlindtext=\count102
-\blind@countyy=\count103
-\c@blindlist=\count104
-\c@blindlistlevel=\count105
-\c@blindlist@level=\count106
-\blind@listitem=\count107
-\c@blind@listcount=\count108
-\c@blind@levelcount=\count109
-)
-(/usr/share/texmf/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
-File: lipsum.dtx 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count110
+(/usr/share/texmf/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
 )
 (/usr/share/R/texmf/tex/latex/Sweave.sty
 Package: Sweave 
@@ -207,23 +203,19 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 90.
-
-(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
-\Gread@gobject=\count111
-))
-\Gin@req@height=\dimen118
-\Gin@req@width=\dimen119
+)
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
 )
 (/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 1998/07/17
 
 Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
-\FV@CodeLineNo=\count112
+\FV@CodeLineNo=\count99
 \FV@InFile=\read1
 \FV@TabBox=\box27
-\c@FancyVerbLine=\count113
-\FV@StepNumber=\count114
+\c@FancyVerbLine=\count100
+\FV@StepNumber=\count101
 \FV@OutFile=\write3
 
 No file fancyvrb.cfg.
@@ -315,31 +307,32 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
 (/usr/share/texmf/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))) (./Template_v02.aux)
-\openout1 = `Template_v02.aux'.
+))))
+(./ChlorophyllExtractionAnalysis_v01.aux)
+\openout1 = `ChlorophyllExtractionAnalysis_v01.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 16.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-Package hyperref Info: Link coloring OFF on input line 18.
+LaTeX Font Info:    ... okay on input line 16.
+Package hyperref Info: Link coloring OFF on input line 16.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
@@ -347,14 +340,15 @@ Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 (/usr/share/texmf/tex/latex/oberdiek/refcount.sty
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count115
+\c@section@level=\count102
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
- (./Template_v02.out)
-(./Template_v02.out)
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+
+(./ChlorophyllExtractionAnalysis_v01.out)
+(./ChlorophyllExtractionAnalysis_v01.out)
 \@outlinefile=\write4
-\openout4 = `Template_v02.out'.
+\openout4 = `ChlorophyllExtractionAnalysis_v01.out'.
 
 -------------------- Geometry parameters
 paper: class default
@@ -395,61 +389,88 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
- (./Template_v02-concordance.tex)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 21.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 21.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 21.
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/aer/m/n --> TS1/aer/bx/n on input line 16.
+Package gensymb Info: Math companion symbols declared on input line 16.
+LaTeX Info: Redefining \degree on input line 16.
+LaTeX Info: Redefining \celsius on input line 16.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 16.
+LaTeX Info: Redefining \ohm on input line 16.
+Package gensymb Info: Using \textohm for \ohm on input line 16.
+Package gensymb Info: Using \textmu for \micro on input line 16.
 
-<../pomona.jpg, id=52, 460.557pt x 492.75pt>
-File: ../pomona.jpg Graphic file (type jpg)
- <use ../pomona.jpg>
-Overfull \vbox (21.72939pt too high) detected at line 21
- []
+(./ChlorophyllExtractionAnalysis_v01-concordance.tex)
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
 
-Overfull \hbox (2.12527pt too wide) in paragraph at lines 21--22
-[][] 
- []
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 19.
 
-(./Template_v02.toc)
-\tf@toc=\write5
-\openout5 = `Template_v02.toc'.
-
- [1
-
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 60.
- (/usr/share/R/texmf/tex/latex/ts1aer.fd
+(/usr/share/R/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <12> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 60.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <8> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <6> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 19.
 
+<../pomona.jpg, id=56, 460.557pt x 492.75pt>
+File: ../pomona.jpg Graphic file (type jpg)
+ <use ../pomona.jpg>
+Overfull \vbox (21.72939pt too high) detected at line 19
+ []
+
+
+Overfull \hbox (2.12527pt too wide) in paragraph at lines 19--20
+[][] 
+ []
+
+
+Overfull \hbox (1.41663pt too wide) in paragraph at lines 36--37
+[][]\T1/aer/bx/n/12 3.2 Lab-o-ra-tory Reagent Blank (LRB) \T1/aer/m/n/12 -- an 
+aliquot of reagent wa-ter (Milli-Q/SuperQ)
+ []
+
+[1
+
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.29997pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] AED: lastpage setting LastPage (./Template_v02.aux) ) 
+[2] [3] [4] [5] [6] [7] AED: lastpage setting LastPage
+(./ChlorophyllExtractionAnalysis_v01.aux) ) 
 Here is how much of TeX's memory you used:
- 5188 strings out of 256214
- 71071 string characters out of 1917000
- 224326 words of memory out of 1500000
- 8355 multiletter control sequences out of 10000+200000
- 12773 words of font info for 34 fonts, out of 1200000 for 2000
+ 5480 strings out of 256214
+ 73607 string characters out of 1917000
+ 133768 words of memory out of 1500000
+ 8570 multiletter control sequences out of 10000+200000
+ 22508 words of font info for 54 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,16n,49p,255b,419s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/mwl0474
-7/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share
-/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/
-cm/cmr12.pfb>
-Output written on Template_v02.pdf (2 pages, 125058 bytes).
+ 35i,17n,45p,859b,409s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/mwl04747/.texlive2007
+/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbxti10.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></
+usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/b
+luesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb>
+Output written on ChlorophyllExtractionAnalysis_v01.pdf (7 pages, 171150 bytes)
+.
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 131072)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 131072)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
