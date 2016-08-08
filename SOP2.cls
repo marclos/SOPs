@@ -1,6 +1,6 @@
 % SOP Template Document Class
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{SOP2}[2016/07/31 v0.3 Modified article class for standard operating procedures]
+\ProvidesClass{SOP2}[2016/08/07 v2.4 Modified article class for standard operating procedures]
 % http://stackoverflow.com/questions/581916/how-do-you-extend-article-document-class-in-latex
 
 % Passes and class options to the underlying article class

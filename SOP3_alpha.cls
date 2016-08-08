@@ -1,6 +1,6 @@
 % SOP Template Document Class
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{SOP2}[2016/07/31 v0.3 Modified article class for standard operating procedures]
+\ProvidesClass{../SOP3_alpha}[2016/08/07 v2.4 Modified article class for standard operating procedures]
 % http://stackoverflow.com/questions/581916/how-do-you-extend-article-document-class-in-latex
 
 % Passes and class options to the underlying article class
@@ -8,8 +8,21 @@
 \ProcessOptions
 \LoadClass{article}
 
+% Some valuable packages
+\RequirePackage{enumitem} % Customization of itemized, enumerated, etc.
+\RequirePackage{hyperref} % For hyperlinked cross-references
+\RequirePackage{hanging}
+
+%\newenvironment{hangparas}[2]{\setlength{\parindent}{\z@}
+%\everypar={\hangpara{#1}{#2}}}{\par}
+
+%\usepackage{indentfirst} or these lines:
+\let\@afterindentfalse\@afterindenttrue
+\@afterindenttrue
+
 % Redefine the page margins
 \RequirePackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+
 
 % Modifications to the section titles
 \RequirePackage{titlesec}
@@ -22,22 +35,28 @@
 \titleformat{\subsection}{\normalfont\bfseries}{\makebox[2em][l]{\thesubsection{}.}}{0pt}{}
 
 % Create Numbered Paragraphs for Each Section
+%\setlength{\parindent}{4em}
 
-%\setlegth{\hangindent=0.7cm} % Paragraphs w/hanging indent
-\newenvironment{poemcontent}{\everypar{\hangafter=1 \setlength{\hangindent}{2em}}}{\par}
-
-% Create Numbered Paragraphs for Each Section
 \newcounter{paranum}[section] 
 \renewcommand{\theparanum}{\thesection.\arabic{paranum}} 
-\newcommand{\NP}{\vspace{10pt}\noindent\refstepcounter{paranum}\textbf{\theparanum}\[2em] }
+%\newcommand{\NP}{\vspace{10pt}\indent\refstepcounter{paranum}\textbf{\theparanum}\ }
 
-\def\D{\par\noindent\makebox[0em][l]{\refstepcounter{paranum}}\textbf{\theparanum}\hangindent2em}
+% adding \par at the start to make sure each line is started as a separate line
+%\newcommand{\NP}{\par\vspace{10pt}\indent\refstepcounter{paranum}\textbf{\theparanum}\ }
+
+% still attempting the hanging indent
+\newcommand{\NP}{\par\vspace{10pt}\indent\hangindent=1.4cm\refstepcounter{paranum}\textbf{\theparanum}\ }
+%\setlength\parindent{1cm}
+
+
+
 
 % Modification of title block
 \RequirePackage{titling}
 \RequirePackage{multirow}
 \newcommand{\approved}[1]{\newcommand{\theapproved}{#1}}
 \newcommand{\SOPno}[1]{\newcommand{\theSOPno}{#1}}
+\newcommand{\ReviseDate}[1]{\newcommand{\theReviseDate}{#1}}
 % Ref: http://tex.stackexchange.com/questions/3988/titlesec-versus-titling-mangling-thetitle
 \let\oldtitle\title
 \renewcommand{\title}[1]{\oldtitle{#1}\newcommand{\mythetitle}{#1}}
@@ -45,7 +64,7 @@
 \begin{tabular}{|c|p{2in}|l|l|} \hline
 \multirow{3}{*}{\includegraphics[width=2cm]{../pomona.jpg}} & \multicolumn{1}{p{2.5in}|}{\centering Environmental Analysis Teaching and Research Laboratory} & Date: \thedate & Number: \theSOPno \\ \cline{2-4}
 & \multicolumn{1}{p{2.5in}|}{\centering Standard Operating Procedure } & \multicolumn{2}{p{2.5in}|}{Title: \mythetitle} \\ \cline{2-4}
-& Approved By: \theapproved & \multicolumn{2}{l|}{Revision Date: \quad / \quad / \quad} \\ \hline
+& Approved By: \theapproved & \multicolumn{2}{l|}{Revision Date: \theReviseDate} \\ \hline
 \end{tabular}
 }
 
@@ -55,7 +74,7 @@
 \RequirePackage{fancyhdr}
 \fancypagestyle{plain}{ % for first page
 \fancyhf{}
-\fancyfoot[L]{\framebox{Author: \theauthor}\\ \jobname{}.tex} 
+\fancyfoot[L]{\framebox{Author: \theauthor}\\ File: \jobname{}.tex} 
 \fancyfoot[R]{\framebox{Page: \thepage{} of \pageref*{LastPage}}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -64,9 +83,8 @@
 \pagestyle{fancy} % for other pages
 \fancyhf{}
 \fancyhead[R]{%
-\begin{tabular}{|c|c|} \hline %
-Revision Date: & Number: \\
-\quad / \quad / \quad & \\ \hline
+\begin{tabular}{|c|} \hline %
+SOP: \theSOPno ~ (Revised: \theReviseDate) \\ \hline
 \end{tabular}%
 }
 \fancyfoot[L]{\framebox{Author: \theauthor}}
@@ -74,10 +92,6 @@ Revision Date: & Number: \\
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% For easier customization of itemized, enumerated, and other lists
-\RequirePackage{enumitem}
-% For hyperlinked cross-references
-\RequirePackage{hyperref}
 % Ensure first page is correct style
 \thispagestyle{plain}
 % That's all, folks!
