@@ -8,8 +8,12 @@
 \ProcessOptions
 \LoadClass{article}
 
+% Some valuable packages
+\RequirePackage{hyperref}
+
 % Redefine the page margins
 \RequirePackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+
 
 % Modifications to the section titles
 \RequirePackage{titlesec}
@@ -31,6 +35,7 @@
 \RequirePackage{multirow}
 \newcommand{\approved}[1]{\newcommand{\theapproved}{#1}}
 \newcommand{\SOPno}[1]{\newcommand{\theSOPno}{#1}}
+\newcommand{\ReviseDate}[1]{\newcommand{\theReviseDate}{#1}}
 % Ref: http://tex.stackexchange.com/questions/3988/titlesec-versus-titling-mangling-thetitle
 \let\oldtitle\title
 \renewcommand{\title}[1]{\oldtitle{#1}\newcommand{\mythetitle}{#1}}
@@ -38,7 +43,7 @@
 \begin{tabular}{|c|p{2in}|l|l|} \hline
 \multirow{3}{*}{\includegraphics[width=2cm]{../pomona.jpg}} & \multicolumn{1}{p{2.5in}|}{\centering Environmental Analysis Teaching and Research Laboratory} & Date: \thedate & Number: \theSOPno \\ \cline{2-4}
 & \multicolumn{1}{p{2.5in}|}{\centering Standard Operating Procedure } & \multicolumn{2}{p{2.5in}|}{Title: \mythetitle} \\ \cline{2-4}
-& Approved By: \theapproved & \multicolumn{2}{l|}{Revision Date: \quad / \quad / \quad} \\ \hline
+& Approved By: \theapproved & \multicolumn{2}{l|}{Revision Date: \theReviseDate} \\ \hline
 \end{tabular}
 }
 
@@ -48,7 +53,7 @@
 \RequirePackage{fancyhdr}
 \fancypagestyle{plain}{ % for first page
 \fancyhf{}
-\fancyfoot[L]{\framebox{Author: \theauthor}\\ \jobname{}.tex} 
+\fancyfoot[L]{\framebox{Author: \theauthor}\\ File: \jobname{}.tex} 
 \fancyfoot[R]{\framebox{Page: \thepage{} of \pageref*{LastPage}}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -57,9 +62,8 @@
 \pagestyle{fancy} % for other pages
 \fancyhf{}
 \fancyhead[R]{%
-\begin{tabular}{|c|c|} \hline %
-Revision Date: & Number: \\
-\quad / \quad / \quad & \\ \hline
+\begin{tabular}{|c|} \hline %
+SOP: \theSOPno ~ (Revised: \theReviseDate) \\ \hline
 \end{tabular}%
 }
 \fancyfoot[L]{\framebox{Author: \theauthor}}

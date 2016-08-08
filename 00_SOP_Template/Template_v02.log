@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  5 AUG 2016 09:55
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  7 AUG 2016 17:47
 entering extended mode
  %&-line parsing enabled.
 **Template_v02.tex
@@ -35,69 +35,16 @@ File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf/tex/latex/geometry/geometry.sty
-Package: geometry 2002/07/08 v3.2 Page Geometry
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
 
 (/usr/share/texmf/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-\Gm@cnth=\count87
-\Gm@cntv=\count88
-\c@Gm@tempcnt=\count89
-\Gm@bindingoffset=\dimen103
-\Gm@wd@mp=\dimen104
-\Gm@odd@mp=\dimen105
-\Gm@even@mp=\dimen106
-\Gm@dimlist=\toks15
-)
-(/usr/share/texmf/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2005/01/22 v2.6 Sectioning titles
-\ttl@box=\box26
-\beforetitleunit=\skip43
-\aftertitleunit=\skip44
-\ttl@plus=\dimen107
-\ttl@minus=\dimen108
-\titlewidth=\dimen109
-\titlewidthlast=\dimen110
-\titlewidthfirst=\dimen111
-)
-\c@paranum=\count90
-
-(/usr/share/texmf/tex/latex/titling/titling.sty
-Package: titling 2004/09/26 v2.1c maketitle typesetting
-\thanksmarkwidth=\skip45
-\thanksmargin=\skip46
-\droptitle=\skip47
-)
-(/usr/share/texmf/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen112
-)
-(/usr/share/texmf/tex/latex/lastpage/lastpage.sty
-Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
- (JPG)
-)
-(/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip48
-\f@ncyO@elh=\skip49
-\f@ncyO@erh=\skip50
-\f@ncyO@olh=\skip51
-\f@ncyO@orh=\skip52
-\f@ncyO@elf=\skip53
-\f@ncyO@erf=\skip54
-\f@ncyO@olf=\skip55
-\f@ncyO@orf=\skip56
-)
-(/usr/share/texmf/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2005/05/12 v1.1 Customized lists
-\labelindent=\skip57
-\enit@outerparindent=\dimen113
-)
-(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
-\@linkdim=\dimen114
-\Hy@linkcounter=\count91
-\Hy@pagecounter=\count92
+\@linkdim=\dimen103
+\Hy@linkcounter=\count87
+\Hy@pagecounter=\count88
 
 (/usr/share/texmf/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
@@ -122,24 +69,77 @@ Package hyperref Info: Bookmarks ON on input line 2444.
 Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 2599.
-\Fld@menulength=\count93
-\Field@Width=\dimen115
-\Fld@charsize=\dimen116
-\Choice@toks=\toks16
-\Field@toks=\toks17
+\Fld@menulength=\count89
+\Field@Width=\dimen104
+\Fld@charsize=\dimen105
+\Choice@toks=\toks15
+\Field@toks=\toks16
 Package hyperref Info: Hyper figures OFF on input line 3102.
 Package hyperref Info: Link nesting OFF on input line 3107.
 Package hyperref Info: Hyper index ON on input line 3110.
 Package hyperref Info: backreferencing OFF on input line 3117.
 Package hyperref Info: Link coloring OFF on input line 3122.
-\Hy@abspage=\count94
-\c@Item=\count95
-\c@Hfootnote=\count96
+\Hy@abspage=\count90
+\c@Item=\count91
+\c@Hfootnote=\count92
 )
 *hyperref using default driver hpdftex*
 (/usr/share/texmf/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
-\Fld@listcount=\count97
+\Fld@listcount=\count93
+)
+(/usr/share/texmf/tex/latex/geometry/geometry.sty
+Package: geometry 2002/07/08 v3.2 Page Geometry
+\Gm@cnth=\count94
+\Gm@cntv=\count95
+\c@Gm@tempcnt=\count96
+\Gm@bindingoffset=\dimen106
+\Gm@wd@mp=\dimen107
+\Gm@odd@mp=\dimen108
+\Gm@even@mp=\dimen109
+\Gm@dimlist=\toks17
+)
+(/usr/share/texmf/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2005/01/22 v2.6 Sectioning titles
+\ttl@box=\box26
+\beforetitleunit=\skip43
+\aftertitleunit=\skip44
+\ttl@plus=\dimen110
+\ttl@minus=\dimen111
+\titlewidth=\dimen112
+\titlewidthlast=\dimen113
+\titlewidthfirst=\dimen114
+)
+\c@paranum=\count97
+
+(/usr/share/texmf/tex/latex/titling/titling.sty
+Package: titling 2004/09/26 v2.1c maketitle typesetting
+\thanksmarkwidth=\skip45
+\thanksmargin=\skip46
+\droptitle=\skip47
+)
+(/usr/share/texmf/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen115
+)
+(/usr/share/texmf/tex/latex/lastpage/lastpage.sty
+Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
+ (JPG)
+)
+(/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip48
+\f@ncyO@elh=\skip49
+\f@ncyO@erh=\skip50
+\f@ncyO@olh=\skip51
+\f@ncyO@orh=\skip52
+\f@ncyO@elf=\skip53
+\f@ncyO@erf=\skip54
+\f@ncyO@olf=\skip55
+\f@ncyO@orf=\skip56
+)
+(/usr/share/texmf/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2005/05/12 v1.1 Customized lists
+\labelindent=\skip57
+\enit@outerparindent=\dimen116
 ))
 (/usr/share/texmf/tex/generic/babel/babel.sty
 Package: babel 2005/11/23 v3.8h The Babel package
@@ -311,27 +311,44 @@ File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))) (./Template_v02.aux)
 \openout1 = `Template_v02.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 18.
+Package hyperref Info: Link coloring OFF on input line 18.
+
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
+
+(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count115
+)
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+ (./Template_v02.out)
+(./Template_v02.out)
+\@outlinefile=\write4
+\openout4 = `Template_v02.out'.
+
 -------------------- Geometry parameters
 paper: class default
 landscape: --
@@ -371,23 +388,6 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring OFF on input line 17.
-
-(/usr/share/texmf/tex/latex/hyperref/nameref.sty
-Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
-
-(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
-Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
-)
-\c@section@level=\count115
-)
-LaTeX Info: Redefining \ref on input line 17.
-LaTeX Info: Redefining \pageref on input line 17.
- (./Template_v02.out)
-(./Template_v02.out)
-\@outlinefile=\write4
-\openout4 = `Template_v02.out'.
-
  (./Template_v02-concordance.tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 21.
@@ -403,70 +403,43 @@ Overfull \vbox (21.72939pt too high) detected at line 21
  []
 
 
-Overfull \hbox (2.12527pt too wide) in paragraph at lines 21--21
+Overfull \hbox (2.12527pt too wide) in paragraph at lines 21--22
 [][] 
  []
 
 [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (ext4): des
-tination with the same identifier (name{paranum.1}) has been already used, dupl
-icate ignored
-<to be read again> 
-                   \endgroup \set@typeset@protect 
-l.47 R
-      esearchers using this SOP should be trained for the following SOPs:pdfTeX
- warning (ext4): destination with the same identifier (name{paranum.1}) has bee
-n already used, duplicate ignored
-<to be read again> 
-                   \endgroup \set@typeset@protect 
-l.47 R
-      esearchers using this SOP should be trained for the following SOPs: <../p
-omona.jpg>]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 50.
- (/usr/share/R/texmf/tex/latex/ts1aer.fd
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>]
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 51.
+
+(/usr/share/R/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <12> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 50.
-pdfTeX warning (ext4): destination with the same identifier (name{paranum.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.61 \NP
-         This will take XX minutes...pdfTeX warning (ext4): destination with th
-e same identifier (name{paranum.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.65 \NP
-         Prepare \dotspdfTeX warning (ext4): destination with the same identifi
-er (name{paranum.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.71 \NP
-         APHA, AWWA. WEF. (2012) Standard Methods for examination of water a...
-AED: lastpage setting LastPage
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 51.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 29.79996pt.
+ Make it at least 15.29997pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] (./Template_v02.aux) ) 
+[2] AED: lastpage setting LastPage (./Template_v02.aux) ) 
 Here is how much of TeX's memory you used:
- 5102 strings out of 256214
- 70017 string characters out of 1917000
- 223816 words of memory out of 1500000
- 8286 multiletter control sequences out of 10000+200000
+ 5113 strings out of 256214
+ 70146 string characters out of 1917000
+ 223893 words of memory out of 1500000
+ 8292 multiletter control sequences out of 10000+200000
  12773 words of font info for 34 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,16n,45p,255b,417s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/im022012/.texlive2007/texmf-var/fonts/
-pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texmf/fonts/type1/bluesky/cm/c
-mbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb>
-Output written on Template_v02.pdf (2 pages, 125565 bytes).
+ </home/CAMPUS/mwl0474
+7/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share
+/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/
+cm/cmr12.pfb>
+Output written on Template_v02.pdf (2 pages, 126258 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 131072)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 131072)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
