@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  8 AUG 2016 14:40
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  9 AUG 2016 11:53
 entering extended mode
  %&-line parsing enabled.
 **DataSheetv1.tex
@@ -11,27 +11,59 @@ erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
 us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
 tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
 turkish, ukenglish, ukrainian, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-! LaTeX Error: File `tufte-handout.cls' not found.
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2006/02/20 v1.4 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2007/01/10 v1.2 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+
+! LaTeX Error: File `ifxetex.sty' not found.
 
 Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: cls)
+or enter new name. (Default extension: sty)
 
 Enter file name: 
 ! Emergency stop.
 <read *> 
          
-l.3 \usepackage
-               {geometry}^^M
+l.33 \newif
+           \ifGm@verbose^^M
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 10 strings out of 256214
- 236 string characters out of 1917000
- 48804 words of memory out of 1500000
- 3393 multiletter control sequences out of 10000+200000
+ 270 strings out of 256214
+ 3201 string characters out of 1917000
+ 48897 words of memory out of 1500000
+ 3630 multiletter control sequences out of 10000+200000
  3640 words of font info for 14 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 10i,0n,7p,62b,8s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 23i,0n,19p,198b,36s stack positions out of 5000i,500n,6000p,200000b,15000s
 !  ==> Fatal error occurred, no output PDF file produced!
