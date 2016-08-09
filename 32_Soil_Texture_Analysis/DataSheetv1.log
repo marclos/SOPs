@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  9 AUG 2016 12:41
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  9 AUG 2016 16:27
 entering extended mode
  %&-line parsing enabled.
 **DataSheetv1.tex
@@ -43,26 +43,82 @@ Package ifpdf Info: pdfTeX in pdf mode detected.
 Package: ifvtex 2007/01/10 v1.2 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
+(/usr/share/texmf/tex/latex/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
 
-! LaTeX Error: File `ifxetex.sty' not found.
+(/usr/share/texmf/tex/latex/geometry/geometry.cfg))
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: 
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
+* v-part:(T,H,B)=(5.69046pt, 789.27953pt, 0.0pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=557.38951pt
+* \textheight=789.27953pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-103.57953pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(/usr/share/texmf/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2016/08/07 v4.05 for typesetting chemical formulae
+
+(/usr/share/texmf/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/05/18 v6512 L3 programming layer (loader) 
+
+
+! LaTeX Error: File `expl3-code.tex' not found.
 
 Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+or enter new name. (Default extension: tex)
 
 Enter file name: 
 ! Emergency stop.
 <read *> 
          
-l.33 \newif
-           \ifGm@verbose^^M
+l.97 \input{expl3-code.tex}
+                           ^^M
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 270 strings out of 256214
- 3201 string characters out of 1917000
- 48897 words of memory out of 1500000
- 3630 multiletter control sequences out of 10000+200000
+ 744 strings out of 256214
+ 10299 string characters out of 1917000
+ 60976 words of memory out of 1500000
+ 4090 multiletter control sequences out of 10000+200000
  3640 words of font info for 14 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  23i,0n,19p,198b,36s stack positions out of 5000i,500n,6000p,200000b,15000s
