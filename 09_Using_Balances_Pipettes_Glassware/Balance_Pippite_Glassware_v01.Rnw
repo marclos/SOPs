@@ -10,27 +10,28 @@
 \usepackage{blindtext}
 \usepackage{lipsum}
 
-\title{SOP Title}
-\date{X/XX/XXXX}
+\title{Using Everyday Lab Equipment }
+\date{8/10/2016}
 \author{Reseacher Name}
 \approved{TBD}
-\ReviseDate{\today}
+\ReviseDate{8/10/16}
 \SOPno{09 v.01}
 
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 
-\maketitle
+\maketitle 
+Using Everyday Lab Equipment 
 
 \section{Scope and Application}
 
-\NP The scope of this SOP is train researchers...
+\NP The scope of this SOP is  to train researchers to learn and follow the basic protocol of using, cleaning, and operating everyday lab equipment, which includes, the micropipette, glassware equipment, measuring balances, the Vortex, and other marginal lab tools that will be further specified. 
 
-\NP The applications of this SOP are for...
+\NP The applications of this SOP are for any basic lab setting for students conducting experiments and/or learning new lab procedures.
 
 \section{Summary of Method}
 
-\NP This SOP does this...
+\NP 
 
 \tableofcontents
 
@@ -40,11 +41,8 @@
 
 \section{Definitions}
 
-\NP Term1: is...
+\NP Term1:
 
-\section{Interferences}
-
-\NP Biases and interferences can come from...
 
 \section{Health and Safety}
 
@@ -63,29 +61,28 @@
 \begin{itemize}
   \item SOP01 Laboratory Safety
   \item SOP02 Field Safety
-\end{itemize}
+\end{itemize} 
 
-\section{Required Materials and Apparati}
+\section{Apparati}
 
-\NP Item 1 w/catalog number!
+\NP Pipetman (ranging from 2-1000microliters)
+\section What is a Micropipette?
+Micropipettes are used to transfer small amounts (< 1 ml) of liquids. The scales on micropipettes are in microliters (1000 µl = 1 ml). These are very expensive, delicate instruments so be very careful during use. The sizes of the micropipettes can be identified via the number on the round button on the plunger; this value is the maximum volume in microliters that can be transferred with that size pipette. The following is an illustration of a micropipette:
+\section How to Use a Micropipette
+\begin{enumerate}
+  \item NEVER exceed the upper or lower limits of these pipettes.
+The limits are:  P10: 1.0 - 10.0 µl; P20: 2.0 - 20.0 µl; P200: 20 - 200 µl; P1000: 200 - 1000 µl  
+Look at the front face of the pipet and you will see a window with three digits inside. The diagram below shows the MAXIMUM value that can or should be dialed in on each size pipet. To exceed these values will put the pipet out of calibration. Beside each "window" below is the numbers place it represents. 
 
-\NP Item 2
 
-\section{Reagents and Standards}
+\end{enumerate}
 
-\section{Estimated Time}
 
-\NP This procedure requires XX minutes...
+\NP Vortex Mixer
+\NP Glassware
+\NP Balances 
 
-\section{Sample Collection, Preservation, and Storage}
 
-\section{Procedure}
-
-\NP Prepare \dots
-
-\NP
-
-\section{Data Analysis and Calculations}
 
 \section{QC/QA Criteria}
 
