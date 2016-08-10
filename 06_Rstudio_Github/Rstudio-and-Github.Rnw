@@ -115,13 +115,14 @@ master 6038765 Started to explain set up procedures
 \end{description}
 
 \section{Troubleshooting}
+At first when you're a newcomer to working on projects within Rstudio connected to a GitHub repository, you may forget the "best practices" of pulling, committing and pushing described above. You might have already gone through all the steps involved in setting up your GitHub account, linking your workspace in Rstudio with the correct project, and begun work on a specific file, but if you forget to update your workspace each time you come back to modify a file (especially in the case of coming back the next day to a file in Rstudio and forgetting to pull changes other collaborators may have made), you will run into problems committing, and pushing your changes. In this most common case, it's not likely that you'll notice any problems until you try to commit your changes. Thus, we'll begin this section on trouble shooting problems with Github and Rstudio at the committ level.
+
+\subsection{"Commit" problems}
+In the scenario described above, you will get an error code when trying to committ your new changes to a file. 
 
 \subsection{"Pull" is rejected}
 
 Merging changes... how??
-
-\subsection{"Commit" problems}
-
 \subsection{"Push" fails}
 
 Below are several potential remedies:
