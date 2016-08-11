@@ -1,4 +1,3 @@
-%\documentclass{article}
 \documentclass{tufte-handout}
 
 %\geometry{showframe}% for debugging purposes -- displays the margins
@@ -37,10 +36,8 @@
 
 \setsidenotefont{\color{blue}}
 
-\usepackage{Sweave}
 \begin{document}
-\input{Particle_Size_Analysis-concordance}
-%\SweaveOpts{concordance=TRUE}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle% this prints the handout title, author, and date
 \begin{abstract}
@@ -50,6 +47,10 @@
 %\printclassoptions
 
 % Setting up the margins, etc for R
+<<echo = F, results = hide>>=
+options(width=60)
+rm(list = ls())
+@
 
 \section{Outline and Outcomes}
 This handout describes how soil samples can be quantitatively analyzed using hydrometer to promote the following skills:
@@ -90,7 +91,10 @@ There are a number of references that explain various methods to conduct a parti
 This handout describes how we can use a hydrometer to measure density of a soil suspension and how this density changes with time. As the density changes, we can use several equations to estimate the proportion of particle sizes. 
 
 \begin{figure}
-\includegraphics{Particle_Size_Analysis-USDATT}
+<<echo=F, fig=T, label=USDATT>>=
+library(soiltexture)
+TT.plot(class.sys = "USDA.TT")
+@
 \end{figure}
 
 \subsection{Physics of Particles in Suspension}
@@ -322,6 +326,12 @@ The mixture of dispersed soil particles in water is called a suspension. Once a 
 
 It's generally tough to sort out scientific methods if you can't figure out what the end goal is. For this section, I am giving you an example of some calculations that might be done after the data have been collected.
 
+<<echo = false, results = hide >>=
+# Set up R
+options(width=100)
+par(mfrow=c(1,1))
+library(xtable)
+@ 
 
 \subsection{Determining Soil Amount}
 
@@ -333,31 +343,29 @@ Again, since we use air-dried soil, we have to correct for the moisture in the s
 
 \subsection{Observed Results}
 
+<<echo = F, results=hide, label=simplified>>=
+time = c(.5, 2, 5, 15, 30, 60, 120, 480, 1440); length(time)
+hydrometer = c(1.018, 1.016, 1.012, 1.008, 1.007, 1.006, 1.005, 1.004, 1.003)
+temp = c(23, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0)
+simplified = matrix(c(time, hydrometer, temp), byrow=F, ncol=3)
+#rm(time, hydrometer, temp)
+@
 
 We then weighed out 53.3 grams of air-dried soil and let it soak in sodium hexametaphosphate over night. Then we put the soil in 1000 l cylinders and vigorously mix the sample. We started the timer as we stopped mixing and took hydrometer and temperature readings at pre-selected times. 
 
 Using a simple approach where the suspension density is measured several times after mixing, we might observe the following values:
 
-% latex table generated in R 3.3.1 by xtable 1.8-2 package
-% Thu Aug 11 15:51:00 2016
-\begin{table}[ht]
-\centering
-\begin{tabular}{rrr}
-  \hline
-Elapsed Time & Hydrometer Reading & Temperature \\ 
-  \hline
-0.5 & 1.018 & 23 \\ 
-  2.0 & 1.016 & 23 \\ 
-  5.0 & 1.012 & 23 \\ 
-  15.0 & 1.008 & 23 \\ 
-  30.0 & 1.007 & 23 \\ 
-  60.0 & 1.006 & 23 \\ 
-  120.0 & 1.005 & 23 \\ 
-  480.0 & 1.004 & 23 \\ 
-  1440.0 & 1.003 & 23 \\ 
-   \hline
-\end{tabular}
-\end{table}
+<<echo=F, results=t, label=simplifiedtable>>=
+#rownames(mat) <- "$y_{t-1}$"
+colnames(simplified) <- c("Elapsed Time", "Hydrometer Reading", "Temperature")
+mat <- xtable(simplified)
+align(mat) <- xalign(mat)
+digits(mat) <- xdigits(mat)
+display(mat) <- xdisplay(mat)
+
+print(mat, sanitize.text.function = function(x) {x}, include.rownames = FALSE)
+@
+
 \subsection{Calculating Particle Sizes}
 
 \subsection{Simplest Calculation Method}
@@ -378,16 +386,17 @@ $Rb_{40s}$ and $Rb_{8h}$ are the hydrometer reading of the blank cylinder withou
 	\item For temperature correction, add or subtract 0.36 g/L for each degree above or below 20$^\circ$C, respectively.
 \end{enumerate}
 
+<<echo=F, label=simplifliedcalc>>=
+K = 0.01317
+L = 16.296 - 0.2645 * hydrometer
+de = K* sqrt(L/time); de
 
-\begin{Schunk}
-\begin{Soutput}
-[1] 0.074562997 0.037282114 0.023580057 0.013614402 0.009626915 0.006807313 0.004813537 0.002406788
-[9] 0.001389571
-\end{Soutput}
-\begin{Soutput}
-[1] 57.818182 51.393939 38.545455 25.696970 22.484848 19.272727 16.060606 12.848485  9.636364
-\end{Soutput}
-\end{Schunk}
+GSw = 1
+GSp = 2.65
+WS = 50
+
+PF = 100000/WS * (GSp/(GSp-GSw))*(hydrometer - GSw); PF
+@
 
 
 \subsection{Classifying Soil Texture}
@@ -395,7 +404,17 @@ $Rb_{40s}$ and $Rb_{8h}$ are the hydrometer reading of the blank cylinder withou
 After determining the particle sizes, we can ``bin'' or categorize the particle sizes as percentages of sand, silt, and clay. 
 
 \begin{figure}
-\includegraphics{Particle_Size_Analysis-simplifiedgraph}
+<<echo=F, fig=T, label=simplifiedgraph >>=
+plot(de, PF, ty='b', las=1, log='x', xaxt='n', xlim=c(2, 0.0002), ylab = "Percent Finer", xlab="Particle Size (mm)", main='Particle Size Distribution', panel.first=abline(v=seq(2, 0, -0.2),h=c(20,40,60,80), lty=3,col="gray"))
+ticks <- seq(-5, 0, by=1)
+labels <- sapply(ticks, function(i) as.expression(bquote(10^ .(i))))
+axis(1, at=c(0.00001, 0.0001, .001, 0.01, 0.1, 1.0), labels=labels)
+#grid(nx = NULL, ny = 1, col = "lightgray", lty = "dotted", lwd = par("lwd"), equilogs = F)	
+			
+abline(v=0.002, col='red'); text(x = .001, y = PF[6], 'Clay', col='red', cex=1.25, pos=3)
+abline(v=0.05, col='blue'); text(x = .01, y = PF[2], 'Silt', col='blue', cex=1.25, pos=1)
+abline(v=2.0, col='seagreen'); text(x = 0.50, y = PF[1], 'Sand', col='seagreen', cex=1.25, pos=1)
+@
 \caption{Particle Size versus Percent Finer remaining in suspension.}
 \label{fig.De_vs_PF}
 \end{figure}
@@ -416,9 +435,25 @@ Clay				& 	12\% \\ \hline
 
 Finally, we can determine what type of soil we have based on the size-class distribution, which is a sandy loam. 
 
+<<echo=F, results=hide>>=
+simplifiedtexture = data.frame(
+CLAY = c(12),
+SILT = c(33),
+SAND = c(55),
+OC = c(20))
+
+TT.points.in.classes(tri.data = simplifiedtexture, class.sys = "USDA.TT") 
+@
 
 \begin{figure*}
-\includegraphics{Particle_Size_Analysis-TTPlot}
+<<fig = TRUE, echo=FALSE, label=TTPlot>>=
+TT.plot(
+class.sys = "USDA.TT",
+tri.data = simplifiedtexture,
+#z.name = "OC",
+main = "Soil Texture Triangle",
+pch=16, cex=2, col='red')
+@
 \caption{Results of our texture analysis. Note the small dot in the SaLo (sandy-loam) texture class.}
 \label{fig.simplifiedfig}
 \end{figure*}
@@ -575,7 +610,7 @@ Soils should be pre-treatmented for soil high in organic matter \ldots
 	
 	\item After the minute of inverting, begin timing.  While slowing spinning the hydrometer remove air bubbles, carefully lower the hydrometer into suspension after 20s; record the hydrometer reading at 40 seconds. Remove the hydrometer and rinse the hydrometer between each reading. 
 	
-	\item The inversion process and 40-second reading should be \textbf{repeated to obtain 3  accurate readings} after repeating.\sidenote{Because the suspension is opaque, read the hydrometer at the top of the meniscus rather than at the bottom. There is a correction for this!}
+	\item This 40-second reading should be \textbf{repeated to obtain 3 accurate} after repeating the inversion process.\sidenote{Because the suspension is opaque, read the hydrometer at the top of the meniscus rather than at the bottom. There is a correction for this!}
 
 	\item After final 40-second reading, remove hydrometer, carefully lower a thermometer into the suspension and record the temperature (degrees C).  Mixing raises temperature by 3-5$^\circ$C, so it is important to record the temperature for both hydrometer readings (See Table \ref{tab:ReadingTimes}).
 	
@@ -584,7 +619,7 @@ Soils should be pre-treatmented for soil high in organic matter \ldots
 	\item Take a hydrometer reading at the following times:
 	
 		\begin{table}
-		\begin{tabular}{lrcc}\hline
+		\begin{tabular}{lrr}\hline
 Obs. & Soil Reading Times & Temperature Reading		& Blank Hydrometer \& Temperature \\ \hline\hline	
 0		& Before Inverting (0 seconds)		&	 X	&		X		\\
 1		& 40 seconds (Repeat twice) 			&	 		&			  \\
@@ -595,11 +630,11 @@ Obs. & Soil Reading Times & Temperature Reading		& Blank Hydrometer \& Temperatu
 6		& 60 minutes 											&		X	& 	X		\\
 %X		& 90 minutes 										&			&				\\
 7		& 2	hours													& 	X	& 	X		\\
-8		& 3 hours (recommended)							&		X	& 	X		\\
-9   & 6 or 8 hours (recommended)					&		X	& 	X		\\
+8		& 3 hours (optional)							&		X	& 	X		\\
+9   & 6 or 8 hours (optional)					&		X	& 	X		\\
 10		& 24 hours											&		X	&  	X 	\\\hline		
 		\end{tabular}
-		\caption[][6cm]{Reading times modified from \citet{standard2007d422}. These times can be adjusted, be sure to record the actual times in Boxes 19 and 20.}
+		\caption{Reading times modified from \citet{standard2007d422}. These times can be adjusted, be sure to record the actual times in Boxes 19 and 20.}
 		\label{tab:ReadingTimes}
 	\end{table}
 	
@@ -619,19 +654,49 @@ Once the data has been entered in the online form, you can extract the data as a
 
 Import and check data integrity
 
-\texttt{import()}
+<<label=importdata>>=
+#hydrometer = import()
+#head(hydrometer)
+#str(hydrometer)
+@
 
 What should you be looking for?  We want to make sure the data shown are the same as expected. There are several ways to look at the data to determine this. I have shown two ways. 1) Looking at the header (first six observations), then we evaluate the structure of the dataframe.
  
-\subsection{Calculating effective diameter, $D_e$, and Percent Finer, PF}
+\subsection{Calculating effective diameter, $D_e$}
 
-Using the \texttt{ParticleAnalysis()} function.
 
-\subsection{Determine Particle Size Proportions}
+\subsection{Calculating the Percent Finer, PF}
 
+\subsection{Graphing and Interpreting the Results}
+
+
+plot(PF ~ De, data=tmp2)
+
+plot(tmp2$De, tmp2$PF, ty='b', las=1, log='x', xaxt='n', xlim=c(2, 0.0002), ylab = "Percent Finer", xlab="Particle Size (mm)", main='Particle Size Distribution', panel.first=abline(v=seq(2, 0, -0.2),h=c(20,40,60,80), lty=3,col="gray"))
+ticks <- seq(-5, 0, by=1)
+labels <- sapply(ticks, function(i) as.expression(bquote(10^ .(i))))
+axis(1, at=c(0.00001, 0.0001, .001, 0.01, 0.1, 1.0), labels=labels)
+grid(nx = NULL, ny = 1, col = "lightgray", lty = "dotted",
+     lwd = par("lwd"), equilogs = F)
+
+# Minor Grids
+n <- n+2 <4
+minors <- log10(pretty(10^major.ticks[1:2],n))-major.ticks[1]
+minors <- minors[-c(1,n)]
+minor.ticks = c(outer(minors,major.ticks,`+`))
+minor.ticks <- minor.ticks[minor.ticks > mn & minor.ticks < mx]
+axis(ax,at=minor.ticks,tcl=par("tcl")*t.ratio,labels=FALSE)
+
+abline(v=0.002, col='Red'); text(x = .001, y = PF[6], 'Clay', col='red', cex=1.25, pos=3)
+abline(v=0.05, col='Blue'); text(x = .01, y = PF[4], 'Silt', col='blue', cex=1.25, pos=1)
+abline(v=2.0, col='Green'); text(x = 0.50, y = PF[1], 'Sand', col='green', cex=1.25, pos=1)
+
+
+%#sand = approx(x, y = NULL, xout, method = "linear", n = 50, yleft, yright, rule = 1, f = 0, ties = mean)
+
+TT.points.in.classes(tri.data = texturetest, class.sys = "USDA.TT") 
 
 \section{Conclusion}
-
 
 
 
@@ -656,7 +721,7 @@ Anderson, J.M., and J.S. Ingram, eds.  1993.  Tropical Soil Biology and Fertilit
 \thispagestyle{empty}
 \section{Appendix A. Data Sheet}
 \begin{fullwidth}
-\includepdf[pages=-]{DataSheetv1}
+\includepdf[pages=-]{DataSheetv2}
 \end{fullwidth}
 
 
@@ -664,52 +729,46 @@ Anderson, J.M., and J.S. Ingram, eds.  1993.  Tropical Soil Biology and Fertilit
 \section{Appendix B: R code to calculate parameters for the SOP}
 
 \subsection{Percent Passing Through No. 10 Sieve}
+<<echo=F>>=
+options(prompt=" ",continue=" ")
+@
 
 Using the function below, we can calculate the amount of soil that passed through Sieve No. 10. Once the function is call, record the results into Box 16. 
 
-\begin{Schunk}
-\begin{Sinput}
- PassNo10 = function(MassPassed,Total){
-   PercentPassed = MassPassed/Total * 100
-   cat("Enter", round(PercentPassed, 1), "into Box 16")
- }
-\end{Sinput}
-\end{Schunk}
+<<echo=T, label=passNo10>>=
+PassNo10 = function(MassPassed,Total){
+  PercentPassed = MassPassed/Total * 100
+  cat("Enter", round(PercentPassed, 1), "into Box 16")
+}
+@
 
 The syntax of the function requires two parameters, mass of soil passed (Box 11) and total soil used (Box 10), PassNo10(Mass of Soil Passed, Total Soil Used). 
 
 For example, if we have the mass of the soil that passed through the sieve 122 grams and we had a total to start with of 133 grams.
 
-\begin{Schunk}
-\begin{Sinput}
- PassNo10(122, 133)
-\end{Sinput}
-\begin{Soutput}
-Enter 91.7 into Box 16
-\end{Soutput}
-\end{Schunk}
+<<>>=
+PassNo10(122, 133)
+@
 
 \subsection{Calculating Soil Mass for Analysis}
 
 The following function can be used to calculate the ...
 
-\begin{Schunk}
-\begin{Sinput}
- # Function to Calculate Ws 
- SoilEquiv = function(tin, airdry, ovendry, tinmass, desiredmass = 50){
- hygro = round(ovendry/airdry, 2)
- wd = (airdry - ovendry)/(ovendry-tinmass)
- WS_e = round(desiredmass * (1 + wd), 2)
- output = data.frame(
-   Parameter = c("Tin ID", "Tin Tare Weight", "Mass of air-dried soil", 
-       "Mass of oven-dried soil", "Hygroscopic Correction Factor", 
-       "Desired Oven-dried Soil", "Effective Soil Weight (WSe)"),
-   Value = c(tin, tinmass, airdry, ovendry, hygro, desiredmass, WS_e),
-   Box = c(12, 13, 14, 15, 17, 9, 18))
- print(output)
- }
-\end{Sinput}
-\end{Schunk}
+<<echo=T, label=soilequiv>>=
+# Function to Calculate Ws 
+SoilEquiv = function(tin, airdry, ovendry, tinmass, desiredmass = 50){
+hygro = round(ovendry/airdry, 2)
+wd = (airdry - ovendry)/(ovendry-tinmass)
+WS_e = round(desiredmass * (1 + wd), 2)
+output = data.frame(
+  Parameter = c("Tin ID", "Tin Tare Weight", "Mass of air-dried soil", 
+      "Mass of oven-dried soil", "Hygroscopic Correction Factor", 
+      "Desired Oven-dried Soil", "Effective Soil Weight (WSe)"),
+  Value = c(tin, tinmass, airdry, ovendry, hygro, desiredmass, WS_e),
+  Box = c(12, 13, 14, 15, 17, 9, 18))
+print(output)
+}
+@
 
 The function (SoilEquiv) requires four parameters to run provide the output, the mass of soil to be used for the hydrometer test. This mass is the air-dried soil to be used but is equivalent to the desired oven-dried soil, is based on the hygroscopic water methods. 
 
@@ -717,21 +776,9 @@ The function's syntax is as follows: SoilEquiv(Tin \#, Air-Dried Mass, Oven-Drie
 
 Below is an example, where the $tin number = 4$, $airdry = 27.4$, $ovendry = 25.6$, $tinmass = 12.3$, $desiredmass = 50$ and as used in R: 
 
-\begin{Schunk}
-\begin{Sinput}
- SoilEquiv(4, 27.4, 25.6, 12.3, 50)
-\end{Sinput}
-\begin{Soutput}
-                      Parameter Value Box
-1                        Tin ID  4.00  12
-2               Tin Tare Weight 12.30  13
-3        Mass of air-dried soil 27.40  14
-4       Mass of oven-dried soil 25.60  15
-5 Hygroscopic Correction Factor  0.93  17
-6       Desired Oven-dried Soil 50.00   9
-7   Effective Soil Weight (WSe) 56.77  18
-\end{Soutput}
-\end{Schunk}
+<<echo= T, label=SoilEquiv>>=
+SoilEquiv(4, 27.4, 25.6, 12.3, 50)
+@
 
 
 \subsection{Hydrometer Correction Factor}
@@ -778,13 +825,11 @@ Thus, we have created a spreadsheet or access database? for data entry or shiny 
 
 importing data into R is not difficult, but there are tricks. The following function, allows the data to be imported into R from a csv file. This function is used to start the analysis. 
 
-\begin{Schunk}
-\begin{Sinput}
- import = function(){
- read.csv(file.choose())
- }
-\end{Sinput}
-\end{Schunk}
+<<label = import>>=
+import = function(){
+read.csv(file.choose())
+}
+@
 
 \subsection{Calculating the $D_e$ and PF w/K}
 
@@ -800,7 +845,7 @@ d_e = \sqrt{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
 
 Once the data have been inspected for integrity, we can use the following function to calculate the two values of interest: $D_e$ and PF. 
 
-%<<label = Defunction, Echo=T>>=
+<<label = Defunction, Echo=T>>=
 
 SampleParams = data.frame(Ws_actual = 50, Hygro = .95, GSp = 2.65); SampleParams
 
@@ -872,55 +917,46 @@ tmp2$De = tmp2$K*sqrt(tmp2$l/tmp2$time); tmp2
 
 GSw = 1
 tmp2$PF = 100000/SampleParams$Ws_actual * (SampleParams$GSp/(SampleParams$GSp-GSw))*(tmp2$Rc - GSw);tmp2 
-%@
+@
 
-\begin{Schunk}
-\begin{Sinput}
- GSp = 2.65
- GSf = 1
- t = c(0.5, 1, 3, 10, 30, 60, 90, 120, 1440)
- #c(2, 5, 15, 30, 60, 250, 1440)
- L1 = c(1.01, 1.01, 1.008, 1.007, 1.007, 1.0065, 1.0065, 1.0064, 1.0055)
- # Heavy Density Hydrometer
- Vb = 40
- A = 27.8
- L2 = 14.5
- effective_depth = L1 + 0.5*(L2 - Vb/A) # result in centimeters
- C1 = 0.01732483379693
- C2 = -5.04157465609E-4
- C3 = 8.387438669317E-6
- C4 = -7.401129271698E-8
- C5 = 2.625994080072E-12
- eta = C1 + T * (C2 + T * (C3 + T *  (C4 + T * C5)))
- d_e = sqrt((30 * eta * effective_depth)/((980*GSp - GSf) *t)); d_e
-\end{Sinput}
-\begin{Soutput}
-[1] 0.054156994 0.038294778 0.022106568 0.012107463 0.006990247 0.004942687 0.004035687 0.003494984
-[9] 0.001008855
-\end{Soutput}
-\begin{Sinput}
- 
- #{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
- 
-\end{Sinput}
-\end{Schunk}
+<<>>=
+GSp = 2.65
+GSf = 1
+t = c(0.5, 1, 3, 10, 30, 60, 90, 120, 1440)
+#c(2, 5, 15, 30, 60, 250, 1440)
+L1 = c(1.01, 1.01, 1.008, 1.007, 1.007, 1.0065, 1.0065, 1.0064, 1.0055)
+
+# Heavy Density Hydrometer
+Vb = 40
+A = 27.8
+L2 = 14.5
+
+effective_depth = L1 + 0.5*(L2 - Vb/A) # result in centimeters
+
+C1 = 0.01732483379693
+C2 = -5.04157465609E-4
+C3 = 8.387438669317E-6
+C4 = -7.401129271698E-8
+C5 = 2.625994080072E-12
+
+eta = C1 + T * (C2 + T * (C3 + T *  (C4 + T * C5)))
+
+d_e = sqrt((30 * eta * effective_depth)/((980*GSp - GSf) *t)); d_e
+
+#{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
+
+@
 
 \begin{equation}
 PF = [(100,000/M_s)[m|5]P5 \frac{GS_p}{GS_p - GS_w}](R_c - GS_w)
 \end{equation}
 
-\begin{Schunk}
-\begin{Sinput}
- M_s = 60
- PF = 100000/M_s * (GSp)/(GSp-GSf)*(L1 - GSf); PF
-\end{Sinput}
-\begin{Soutput}
-[1] 26.76768 26.76768 21.41414 18.73737 18.73737 17.39899 17.39899 17.13131 14.72222
-\end{Soutput}
-\begin{Sinput}
- plot(d_e, PF)
-\end{Sinput}
-\end{Schunk}
+<<>>=
+M_s = 60
+
+PF = 100000/M_s * (GSp)/(GSp-GSf)*(L1 - GSf); PF
+plot(d_e, PF)
+@
 
 \subsection{Determine the Texture Classification}
 
@@ -990,27 +1026,21 @@ D_e = K \sqrt{L/T}
 
 Calculating K
 
-\begin{Schunk}
-\begin{Sinput}
- 
-\end{Sinput}
-\end{Schunk}
+<<echo = T, label=K>>=
+
+@
 
 One can easily use the function with the temperature and have K returned: 
 
-\begin{Schunk}
-\begin{Sinput}
- 
-\end{Sinput}
-\end{Schunk}
+<<>>=
+
+@
 
 Calculating L
 
-\begin{Schunk}
-\begin{Sinput}
- 
-\end{Sinput}
-\end{Schunk}
+<<>>=
+
+@
 
 Calculating $D_e$
 
@@ -1018,48 +1048,38 @@ Calculating $D_e$
 D_e = K * sqrt{L/T}
 \end{equation}
 
-\begin{Schunk}
-\begin{Sinput}
- 
-\end{Sinput}
-\end{Schunk}
+<<echo=T, label=De_viaK>>=
+
+@
 
 \subsection{Alternative Calculation w/o K}
 
-\begin{Schunk}
-\begin{Sinput}
- # Fluid Viscosity
- C1 = 0.01732483379693
- C2 = -5.04157465609E-4
- C3 = 8.387438669317E-6
- C4 = -7.401129271698E-8
- C5 = 2.625994080072E-12
- eta <- function(T){
- C1 + T * (C2 + T * (C3 + T * (C4 + T * C5)))
- } 
-\end{Sinput}
-\end{Schunk}
+<<echo=T, label=eta_fun>>=
+# Fluid Viscosity
+C1 = 0.01732483379693
+C2 = -5.04157465609E-4
+C3 = 8.387438669317E-6
+C4 = -7.401129271698E-8
+C5 = 2.625994080072E-12
+
+eta <- function(T){
+C1 + T * (C2 + T * (C3 + T * (C4 + T * C5)))
+} 
+@
 
 Now, we calculate the fluid viscosity, $\eta$, 
 
-\begin{Schunk}
-\begin{Sinput}
- eta(23)
-\end{Sinput}
-\begin{Soutput}
-[1] 0.009266407
-\end{Soutput}
-\end{Schunk}
+<<echo=T, label=eta_test>>=
+eta(23)
+@
 
 
 And the specific gravity of water, $Gs_w$, 
 
-\begin{Schunk}
-\begin{Sinput}
- Gs_w <- function(T){
- C1 + T * (C2 + T * (C3 + T * C4))}
-\end{Sinput}
-\end{Schunk}
+<<echo=T, label=GS_w_function>>=
+Gs_w <- function(T){
+C1 + T * (C2 + T * (C3 + T * C4))}
+@
 
 %id = 18
 

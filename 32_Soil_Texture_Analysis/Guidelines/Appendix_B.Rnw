@@ -1,0 +1,383 @@
+% Appendix B 
+
+\subsection{Percent Passing Through No. 10 Sieve}
+<<echo=F>>=
+options(prompt=" ",continue=" ")
+@
+
+Using the function below, we can calculate the amount of soil that passed through Sieve No. 10. Once the function is call, record the results into Box 16. 
+
+<<echo=T, label=passNo10>>=
+PassNo10 = function(MassPassed,Total){
+  PercentPassed = MassPassed/Total * 100
+  cat("Enter", round(PercentPassed, 1), "into Box 16")
+}
+@
+
+The syntax of the function requires two parameters, mass of soil passed (Box 11) and total soil used (Box 10), PassNo10(Mass of Soil Passed, Total Soil Used). 
+
+For example, if we have the mass of the soil that passed through the sieve 122 grams and we had a total to start with of 133 grams.
+
+<<>>=
+PassNo10(122, 133)
+@
+
+\subsection{Calculating Soil Mass for Analysis}
+
+The following function can be used to calculate the ...
+
+<<echo=T, label=soilequiv>>=
+# Function to Calculate Ws 
+SoilEquiv = function(tin, airdry, ovendry, tinmass, desiredmass = 50){
+hygro = round(ovendry/airdry, 2)
+wd = (airdry - ovendry)/(ovendry-tinmass)
+WS_e = round(desiredmass * (1 + wd), 2)
+output = data.frame(
+  Parameter = c("Tin ID", "Tin Tare Weight", "Mass of air-dried soil", 
+      "Mass of oven-dried soil", "Hygroscopic Correction Factor", 
+      "Desired Oven-dried Soil", "Effective Soil Weight (WSe)"),
+  Value = c(tin, tinmass, airdry, ovendry, hygro, desiredmass, WS_e),
+  Box = c(12, 13, 14, 15, 17, 9, 18))
+print(output)
+}
+@
+
+The function (SoilEquiv) requires four parameters to run provide the output, the mass of soil to be used for the hydrometer test. This mass is the air-dried soil to be used but is equivalent to the desired oven-dried soil, is based on the hygroscopic water methods. 
+
+The function's syntax is as follows: SoilEquiv(Tin \#, Air-Dried Mass, Oven-Dried Mass, Tin Tare, Desired Oven-Dried Soil)
+
+Below is an example, where the $tin number = 4$, $airdry = 27.4$, $ovendry = 25.6$, $tinmass = 12.3$, $desiredmass = 50$ and as used in R: 
+
+<<echo= T, label=SoilEquiv>>=
+SoilEquiv(4, 27.4, 25.6, 12.3, 50)
+@
+
+
+\subsection{Hydrometer Correction Factor}
+
+Correcting for the meniscus, we use our ``blank'' hydrometer readings to calculate the composite correction factor, CCF. 
+
+\begin{equation}
+R_c = R_a - (R_b - 1)
+\end{equation}
+
+The equation is implemented in the De function below...
+
+
+
+\subsection{Effective Depth}
+
+We have two hydrometer types in the lab -- and the formula to calcutate the effective depth varies based on which hydrometer we use. 
+
+\begin{equation}
+\texttt{Effective Depth} = XXX
+\end{equation}
+
+\begin{table}
+		\begin{tabular}{lcl}\hline
+Hydrometer Model	& Code for R function  	&	$R = f(R_a)$	\\ \hline\hline
+Heavy Liquid			&		``HL''							&	$16.295 - 0.1645 * R_c$\\
+151H Hydrometer		& 	``151H''						& $234.9 + -228.X * R_c$\\ \hline
+		\end{tabular}
+	\caption{Hydrometer Types and Effective Depth Formula}
+	\label{tab:HydrometerTypesAndEffectiveDepthFormula}
+\end{table}
+
+Thus, the function syntax is
+
+Hydrometer = ``HL'' or Hydrometer = ``151H''
+
+\subsection{Formatting the Data}
+
+There are two ways to process the data. One, you can analyze the data using a calculator or use excel as a fancy calculator. Either way, we are not using the efficacy of using available software. For our analysis, we will analyze the data using R that is capable of analyzing many samples simultaneously. In order to accomplish this, we need to have the data entered in a consistent format. 
+
+Thus, we have created a spreadsheet or access database? for data entry or shiny apps?
+
+\subsection{Importing data}
+
+importing data into R is not difficult, but there are tricks. The following function, allows the data to be imported into R from a csv file. This function is used to start the analysis. 
+
+<<label = import>>=
+import = function(){
+read.csv(file.choose())
+}
+@
+
+
+\subsection{Pre-Processing Data}
+
+Sample processing...
+
+imputing missing values...
+
+\subsection{Calculating the $D_e$ and PF w/K}
+
+Below is the function to calculate the D and PF, where K as a constant is calculated. 
+
+\subsection{Effective Particle Diameter Size, $D_e$}
+
+The formula is 
+
+\begin{equation}
+d_e = \sqrt{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
+\end{equation}
+
+Once the data have been inspected for integrity, we can use the following function to calculate the two values of interest: $D_e$ and PF. 
+
+<<label = Defunction, Echo=T>>=
+
+SampleParams = data.frame(Ws_actual = 50, Hygro = .95, GSp = 2.65); SampleParams
+
+# Fill In Missing Values and Convert Times
+tmp1 = import
+tmp1$time[tmp1$Time_Units == "s"]=tmp1$Time[tmp1$Time_Units == "s"]/60; tmp1
+tmp1$time[tmp1$Time_Units == "m"]=tmp1$Time[tmp1$Time_Units == "m"]; tmp1
+
+
+TempNew = approx(tmp1$time, y = tmp1$Temp, xout = tmp1$time, method = "linear",
+          yleft=NA, yright=NA, rule = 1, f = 0, ties = mean); TempNew$y
+tmp1$temp = TempNew$y
+
+RblankNew = approx(tmp1$time, y = tmp1$Rblank, xout = tmp1$time, method = "linear",
+                 yleft=NA, yright=NA, rule = 1, f = 0, ties = mean); RblankNew$y
+tmp1$Rblank2 = RblankNew$y
+
+# Remove 0 second readings
+tmp2 <- subset(tmp1, time > 0, select=-c(Temp, Rblank, Time, Time_Units)); tmp2
+
+# Meniscus Correction Factor
+tmp2$Rc <- tmp2$Ractual - (tmp2$Rblank2 - 1); tmp2
+
+# K Value
+# Calculating K
+Kfun <- function(T=22, GSp = 2.65){
+  ifelse(T < 0, NA, 
+  ifelse(T  == 20, 0.01365, 
+  ifelse(T  == 21, 0.01348, 
+  ifelse(T  == 22, 0.01332,
+  ifelse(T  == 23, 0.01317,
+  ifelse(T  == 24, 0.01301,
+  ifelse(T  == 25, 0.01289,
+  ifelse(T > 25, NA, NA))))))))
+}
+
+tmp2$K <- Kfun(round(tmp2$temp,0)); tmp2
+
+# Hydrometer Type Option -- Effective Depth Calculation
+
+# Effective Depth Calcs for ``Heavy Liquid'' hydrometer
+x = c(1.00, 1.07); y = c(15.5, 0.6)
+L2coef = coef(lm(y~x))
+
+# Parameter for equation
+L2 = 14.5; Vb = 40; A = 27.8
+
+L1 = tmp2$Rc * L2coef[2] + L2coef[1]
+tmp2$l = L1 + 0.5*(L2-(Vb/A)); tmp2$l
+
+tmp2$EffectiveDepth[tmp2Hydrometer = ``HL''] =
+tmp2$l = 16.295 - 0.1645 * tmp2$Rc; tmp2
+
+x = c(1.00, 1.07)
+y = c(15.5, 0.6)
+
+L2coef = coef(lm(y~x))
+
+
+tmp2$Rc
+L1 = tmp2$Rc * L2coef[2] + L2coef[1]
+L2 = 14.5
+Vb = 40
+A = 27.8
+tmp2$l = L1 + 0.5*(L2-(Vb/A)); tmp2$l
+
+
+tmp2$De = tmp2$K*sqrt(tmp2$l/tmp2$time); tmp2
+
+GSw = 1
+tmp2$PF = 100000/SampleParams$Ws_actual * (SampleParams$GSp/(SampleParams$GSp-GSw))*(tmp2$Rc - GSw);tmp2 
+@
+
+<<>>=
+GSp = 2.65
+GSf = 1
+t = c(0.5, 1, 3, 10, 30, 60, 90, 120, 1440)
+#c(2, 5, 15, 30, 60, 250, 1440)
+L1 = c(1.01, 1.01, 1.008, 1.007, 1.007, 1.0065, 1.0065, 1.0064, 1.0055)
+
+# Heavy Density Hydrometer
+Vb = 40
+A = 27.8
+L2 = 14.5
+
+effective_depth = L1 + 0.5*(L2 - Vb/A) # result in centimeters
+
+C1 = 0.01732483379693
+C2 = -5.04157465609E-4
+C3 = 8.387438669317E-6
+C4 = -7.401129271698E-8
+C5 = 2.625994080072E-12
+
+eta = C1 + T * (C2 + T * (C3 + T *  (C4 + T * C5)))
+
+d_e = sqrt((30 * eta * effective_depth)/((980*GSp - GSf) *t)); d_e
+
+#{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
+
+@
+
+\begin{equation}
+PF = [(100,000/M_s)[m|5]P5 \frac{GS_p}{GS_p - GS_w}](R_c - GS_w)
+\end{equation}
+
+<<label = pf >>=
+M_s = 60
+
+PF = 100000/M_s * (GSp)/(GSp-GSf)*(L1 - GSf); PF
+plot(d_e, PF)
+@
+
+\subsection{Determine the Texture Classification}
+
+\subsection{Program to Process Multiple Samples}
+
+To process the analysis, we need to create a standardized electronic data entry template that can later be read by R, which will conduct the analysis above. R can be used to automate the analysis and process multiple samples at the same time. Below is the program that I have developed for this purpose. 
+
+First, use the data entry template...
+
+ 
+
+where $M_s$ = a biased soil sample value, that includes the amount of hydroscopic water and the percentage of soil that passed through a 2 mm sieve. 
+
+
+\section{Calculations with $\eta$ and $GS_w$}
+
+\subsection{Calculating fluid viscosity, $\eta$}
+
+The fluid viscosity, $\eta$, various with temperature. We will use a deterministic equation to estimate the viscosity:
+
+\begin{equation}
+\eta = C_1 + T * (C_2 + T * (C_3 + T *  (C_4 + T * C_5)))
+\end{equation}
+
+where T is the fluid temperature ($^\circ$ C),
+$C_1$ = 0.01732483379693,
+$C_2$ = -5.04157465609E-4
+$C_3$ = 8.387438669317E-6
+$C_4$ = -7.401129271698E-8
+$C_5$ = 2.625994080072E-12.
+
+This equation is automatically implemented in the De function as described below. 
+
+\subsection{Calculating Fluid Density, $\rho_f$)}
+
+Similar to fluid viscosity, fluid density, $\rho_f$ also changes with temperature,
+
+\begin{equation}
+G_w = C1 + T * (C2 + T * (C3 + T * C4))
+\end{equation}
+
+where T is temperature, 
+$C_1$ = 0.99991003252,
+$C_2$ = 0.00005201921, 
+$C_3$ = -0.00000751229, 
+$C_4$ = -0.00000003605183,
+
+
+
+
+Some random example...
+
+
+\subsection{Effective Particle Diameter Size, $D_e$}
+
+\begin{equation}
+P_s = \sqrt{\frac{30*\eta*l}{980*(G_s - G_w)*E_t}}
+\end{equation}
+
+\newpage
+\subsection{$D_e$ using K}
+
+\begin{equation}
+D_e = K \sqrt{L/T}
+\end{equation}
+
+
+Calculating K
+
+<<echo = T, label=K>>=
+
+@
+
+One can easily use the function with the temperature and have K returned: 
+
+<<>>=
+
+@
+
+Calculating L
+
+<<>>=
+
+@
+
+Calculating $D_e$
+
+\begin{equation}
+D_e = K * sqrt{L/T}
+\end{equation}
+
+<<echo=T, label=De_viaK>>=
+
+@
+
+\subsection{Alternative Calculation w/o K}
+
+<<echo=T, label=eta_fun>>=
+# Fluid Viscosity
+C1 = 0.01732483379693
+C2 = -5.04157465609E-4
+C3 = 8.387438669317E-6
+C4 = -7.401129271698E-8
+C5 = 2.625994080072E-12
+
+eta <- function(T){
+C1 + T * (C2 + T * (C3 + T * (C4 + T * C5)))
+} 
+@
+
+Now, we calculate the fluid viscosity, $\eta$, 
+
+<<echo=T, label=eta_test>>=
+eta(23)
+@
+
+
+And the specific gravity of water, $Gs_w$, 
+
+<<echo=T, label=GS_w_function>>=
+Gs_w <- function(T){
+C1 + T * (C2 + T * (C3 + T * C4))}
+@
+
+%id = 18
+
+%plot(de[id,], Pf[id,], ty='b', las=1, log='x', xaxt='n', xlim=c(1, 0.00001), ylab = "Percent Finer", xlab="Particle Size (mm)", main='Particle Size Distribution', panel.first=grid())
+%ticks <- seq(-5, 0, by=1)
+%labels <- sapply(ticks, function(i) as.expression(bquote(10^ .(i))))
+%axis(1, at=c(0.00001, 0.0001, .001, 0.01, 0.1, 1.0), labels=labels)
+
+%# Minor Grids
+%# n <- n+2
+%#  minors <- log10(pretty(10^major.ticks[1:2],n))-major.ticks[1]
+%# minors <- minors[-c(1,n)]
+%# minor.ticks = c(outer(minors,major.ticks,`+`))
+%# minor.ticks <- minor.ticks[minor.ticks > mn & minor.ticks < mx]
+%# axis(ax,at=minor.ticks,tcl=par("tcl")*t.ratio,labels=FALSE)
+
+%abline(v=0.002, col='Red'); text(x = .0001, y = Pf[id,7], 'Clay', col='red', cex=1.25, pos=3)
+%abline(v=0.05, col='Blue'); text(x = .01, y = Pf[id,4], 'Silt', col='blue', cex=1.25, pos=1)
+%abline(v=2.0, col='Green'); text(x = 0.50, y = Pf[id,1], 'Sand', col='green', cex=1.25, pos=1)
+
+
+%#sand = approx(x, y = NULL, xout, method = "linear", n = 50, yleft, yright, rule = 1, f = 0, ties = mean)

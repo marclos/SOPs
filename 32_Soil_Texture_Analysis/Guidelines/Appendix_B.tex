@@ -1,0 +1,146 @@
+% Appendix B 
+
+\subsection{Percent Passing Through No. 10 Sieve}
+
+Using the function below, we can calculate the amount of soil that passed through Sieve No. 10. Once the function is call, record the results into Box 16. 
+
+\begin{Schunk}
+\begin{Sinput}
+ PassNo10 = function(MassPassed,Total){
+   PercentPassed = MassPassed/Total * 100
+   cat("Enter", round(PercentPassed, 1), "into Box 16")
+ }
+\end{Sinput}
+\end{Schunk}
+
+The syntax of the function requires two parameters, mass of soil passed (Box 11) and total soil used (Box 10), PassNo10(Mass of Soil Passed, Total Soil Used). 
+
+For example, if we have the mass of the soil that passed through the sieve 122 grams and we had a total to start with of 133 grams.
+
+\begin{Schunk}
+\begin{Sinput}
+ PassNo10(122, 133)
+\end{Sinput}
+\begin{Soutput}
+Enter 91.7 into Box 16
+\end{Soutput}
+\end{Schunk}
+
+\subsection{Calculating Soil Mass for Analysis}
+
+The following function can be used to calculate the ...
+
+\begin{Schunk}
+\begin{Sinput}
+ # Function to Calculate Ws 
+ SoilEquiv = function(tin, airdry, ovendry, tinmass, desiredmass = 50){
+ hygro = round(ovendry/airdry, 2)
+ wd = (airdry - ovendry)/(ovendry-tinmass)
+ WS_e = round(desiredmass * (1 + wd), 2)
+ output = data.frame(
+   Parameter = c("Tin ID", "Tin Tare Weight", "Mass of air-dried soil", 
+       "Mass of oven-dried soil", "Hygroscopic Correction Factor", 
+       "Desired Oven-dried Soil", "Effective Soil Weight (WSe)"),
+   Value = c(tin, tinmass, airdry, ovendry, hygro, desiredmass, WS_e),
+   Box = c(12, 13, 14, 15, 17, 9, 18))
+ print(output)
+ }
+\end{Sinput}
+\end{Schunk}
+
+The function (SoilEquiv) requires four parameters to run provide the output, the mass of soil to be used for the hydrometer test. This mass is the air-dried soil to be used but is equivalent to the desired oven-dried soil, is based on the hygroscopic water methods. 
+
+The function's syntax is as follows: SoilEquiv(Tin \#, Air-Dried Mass, Oven-Dried Mass, Tin Tare, Desired Oven-Dried Soil)
+
+Below is an example, where the $tin number = 4$, $airdry = 27.4$, $ovendry = 25.6$, $tinmass = 12.3$, $desiredmass = 50$ and as used in R: 
+
+\begin{Schunk}
+\begin{Sinput}
+ SoilEquiv(4, 27.4, 25.6, 12.3, 50)
+\end{Sinput}
+\begin{Soutput}
+                      Parameter Value Box
+1                        Tin ID  4.00  12
+2               Tin Tare Weight 12.30  13
+3        Mass of air-dried soil 27.40  14
+4       Mass of oven-dried soil 25.60  15
+5 Hygroscopic Correction Factor  0.93  17
+6       Desired Oven-dried Soil 50.00   9
+7   Effective Soil Weight (WSe) 56.77  18
+\end{Soutput}
+\end{Schunk}
+
+
+\subsection{Hydrometer Correction Factor}
+
+Correcting for the meniscus, we use our ``blank'' hydrometer readings to calculate the composite correction factor, CCF. 
+
+\begin{equation}
+R_c = R_a - (R_b - 1)
+\end{equation}
+
+The equation is implemented in the De function below...
+
+
+
+\subsection{Effective Depth}
+
+We have two hydrometer types in the lab -- and the formula to calcutate the effective depth varies based on which hydrometer we use. 
+
+\begin{equation}
+\texttt{Effective Depth} = XXX
+\end{equation}
+
+\begin{table}
+		\begin{tabular}{lcl}\hline
+Hydrometer Model	& Code for R function  	&	$R = f(R_a)$	\\ \hline\hline
+Heavy Liquid			&		``HL''							&	$16.295 - 0.1645 * R_c$\\
+151H Hydrometer		& 	``151H''						& $234.9 + -228.X * R_c$\\ \hline
+		\end{tabular}
+	\caption{Hydrometer Types and Effective Depth Formula}
+	\label{tab:HydrometerTypesAndEffectiveDepthFormula}
+\end{table}
+
+Thus, the function syntax is
+
+Hydrometer = ``HL'' or Hydrometer = ``151H''
+
+\subsection{Formatting the Data}
+
+There are two ways to process the data. One, you can analyze the data using a calculator or use excel as a fancy calculator. Either way, we are not using the efficacy of using available software. For our analysis, we will analyze the data using R that is capable of analyzing many samples simultaneously. In order to accomplish this, we need to have the data entered in a consistent format. 
+
+Thus, we have created a spreadsheet or access database? for data entry or shiny apps?
+
+\subsection{Importing data}
+
+importing data into R is not difficult, but there are tricks. The following function, allows the data to be imported into R from a csv file. This function is used to start the analysis. 
+
+\begin{Schunk}
+\begin{Sinput}
+ import = function(){
+ read.csv(file.choose())
+ }
+\end{Sinput}
+\end{Schunk}
+
+
+\subsection{Pre-Processing Data}
+
+Sample processing...
+
+imputing missing values...
+
+\subsection{Calculating the $D_e$ and PF w/K}
+
+Below is the function to calculate the D and PF, where K as a constant is calculated. 
+
+\subsection{Effective Particle Diameter Size, $D_e$}
+
+The formula is 
+
+\begin{equation}
+d_e = \sqrt{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
+\end{equation}
+
+Once the data have been inspected for integrity, we can use the following function to calculate the two values of interest: $D_e$ and PF. 
+
