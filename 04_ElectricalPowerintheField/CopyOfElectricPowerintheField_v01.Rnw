@@ -1,0 +1,98 @@
+% \documentclass[12pt]{../SOP2}
+\documentclass[12pt]{../SOP3_alpha}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+%\documentclass{article}
+
+%\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
+
+\title{Electrical Power in the Field}
+\date{8/11/2016}
+\author{Reseacher Name}
+\approved{Los Huertos}
+\ReviseDate{\today}
+\SOPno{04}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP Electrical power can come from infastructure sources, such as outdoor or indoor outlets, portable generators, or solar power.
+\NP This documents outlines some of the risks associated with electricity in the field
+
+\NP We develop strategies to mitigate these risks.
+
+\section{Health and Safety}
+
+\NP Getting electricity in the field has risks, thus it's important to develop mitigation plans
+
+\NP Always read and follow the manufacturer's operating instructions before running
+generator
+
+\NP Engines emit carbon monoxide. Never use a generator inside your home, garage, crawl space, or other enclosed areas. Fatal fumes can build up, that neither a fan nor open doors and windows can provide enough fresh air.
+
+\NP Only use the generator outdoors, away from open windows, vents, or doors.
+
+\NP Use a battery-powered carbon monoxide detector in the area you're running a generator.
+
+\NP Gasoline and its vapors are extremely flammable. Allow the generator engine to cool at least 2 minutes before refueling and always use fresh gasoline. 
+
+\NP Maintain your generator according to the manufacturer’s maintenance schedule for peak performance and safety.
+
+\NP Never operate the generator near combustible materials.
+
+\NP If you have to use extension cords, be sure they are of the grounded type and are rated for the application. Coiled cords can get extremely hot; always uncoil cords and lay them in flat open locations.
+
+\NP Never plug your generator directly into your home outlet. If you are connecting a generator into your home electrical system, have a qualified electrician install a Power Transfer Switch.
+
+\NP Generators produce powerful voltage, ensure that the cables plugged into the generator are rated with the capacity to carry the current without generating excessive heat. Never leave the cables coiled, because they can generate more heat when touching.
+
+\NP Never operate under wet conditions. Take precautions to protect the generator from exposure to rain and snow. 
+
+\section{Personnel \& Training Responsibilities}
+
+\NP Before using the generator, researchers must be read and understand how to operate the Honda EU2000i or Ryobi RYi2200A generators. 
+
+\NP In addition, researchers using generators shall be trained for the following SOP(s):
+
+\begin{itemize}
+  \item SOP 03 Field Safety
+\end{itemize}
+
+\section{Required Materials}
+
+\NP Honda EU2000i or RYi2200A generators
+\NP High capcity extension cords (rated for XX $\geq$ Amps)
+\NP Spare gas container with ethanol-free gas
+\NP Oil
+
+\section{Estimated Time}
+
+\NP Starting the generator in the field will take only about 5 minutes. Replenishing oil levels takes around 20 minutes. 
+
+\section{Procedure}
+
+\NP Check oil level. If low use a funnel to add more. Recommended oil type is synthetic 10W-30. This does not need to be done every time the generator is used. Check the oil level every few weeks. If the generator is shutting off after running for about 30 minutes, this is likely because the oil has run low.
+
+\NP Check gas level. If low add ethanol-free gas from the spare gas container. The gas should come up to an inch below the top of the tank on the Ryobi. Both can be refilled while running. The Ryobi should be refilled after running for about 4 hours, while the Honda should be refilled after about 6 hours. 
+
+\NP For the Honda, start by making sure the fuel tank cap vent is in the on position. If this isn't done, the generator will shut off after a few minutes of running. Also make sure the eco-throttle switch is off. For a cold start, put the choke in the closed position, then turn the engine switch to the on position. 
+  Quickly pull the starter grip several times until the engine starts running. After giving the engine a few minutes to warm up, slowly move the choke to the open position.
+  To turn off the generator, turn the engine switch to the off position. After the engine has cooled, turn the fuel tank cap vent to the off position. 
+
+\NP For the Ryobi, start by making sure the auto idle switch is in the off position. Put the choke halfway across. The cold-start position is marked as a little less than halfway across, but it needs to be further than indicated. There should be a slight resistance at the halfway point which will indicate the choke is in the correct position.
+  Prime the system by slowly pulling the starter grip several times. Then pull the grip quickly until the engine runs. Allow the engine to run for 15-30 seconds, then move the choke all the way across to the run position.
+  To turn off the generator, switch the choke back to the off position.
+
+\NP If you do not plan to use the generator in 30 days, use fuel stabilizer with gas and drain carborator. 
+
+\section{References}
+
+\NP This SOP is based on the manuals for the Honda EU2000i and the Ryobi RYi2200A, as well as field experience. Both manuals can be easily found online through a quick google search.  
+
+\end{document}
