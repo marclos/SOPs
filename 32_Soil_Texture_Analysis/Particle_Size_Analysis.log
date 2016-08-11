@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  10 AUG 2016 06:27
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  11 AUG 2016 15:51
 entering extended mode
  %&-line parsing enabled.
 **Particle_Size_Analysis.tex
@@ -53,35 +53,57 @@ Package: ifmtarg 2000/03/24 v1.2 check for an empty argument
 )) (./hardwrap.sty
 Package: hardwrap 2011/02/12 v0.2 Hard wrap messages
 
-(/usr/share/texmf/tex/latex/ifxetex/ifxetex.sty
+(/usr/share/texmf/tex/latex_2015/ifplatform/ifplatform.sty
+Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
+
+(/usr/share/texmf/tex/latex_2015/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf/tex/latex_2015/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf/tex/latex/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf/tex/latex/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf/tex/latex/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive disabled, because
+(pdftexcmds)             \pdfprimitive is broken until pdfTeX 1.40.4.
+Package pdftexcmds Info: \pdf@primitive is not available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf/tex/latex/oberdiek/catchfile.sty
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+
+(/usr/share/texmf/tex/latex/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))
+
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
+
+) (/usr/share/texmf/tex/latex/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \hw@charcount=\count84
 \hw@wordcount=\count85
 \hw@maxprintline=\count86
-
-! Undefined control sequence.
-l.53 \ifluatex
-              \else
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Extra \else.
-l.53 \ifluatex\else
-                   
-I'm ignoring this; it doesn't match any \if.
-
-! Extra \fi.
-l.61 \fi
-        
-I'm ignoring this; it doesn't match any \if.
-
 )
 Class tufte-handout Info: Loading the base class `article'
- (/usr/share/texmf/tex/latex/base/article.cls
+
+(/usr/share/texmf/tex/latex/base/article.cls
 Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/share/texmf/tex/latex/base/size10.clo
 File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
@@ -97,10 +119,6 @@ File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \abovecaptionskip=\skip44
 \belowcaptionskip=\skip45
 \bibindent=\dimen104
-)
-(/usr/share/texmf/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2006/02/20 v1.4 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
 )
 (/usr/share/texmf/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2005/01/22 v2.6 Sectioning titles
@@ -211,10 +229,10 @@ Package ifvtex Info: VTeX not detected.
 \Gm@dimlist=\toks17
 
 (/usr/share/texmf/tex/latex/geometry/geometry.cfg))
-(/usr/share/texmf/tex/latex/ltxmisc/chngpage.sty
-Package: chngpage 2003/08/10 v1.2 change page layout
-\c@cp@cnt=\count104
-\c@cp@tempcnt=\count105
+(/usr/share/texmf/tex/latex_2015/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count104
+\cp@tempcnt=\count105
 )
 \@tufte@overhang=\skip62
 \@tufte@fullwidth=\skip63
@@ -303,6 +321,9 @@ Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS)
 )
 (/usr/share/texmf/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texmf/tex/latex_2015/bera/beramono.sty
+Package: beramono 2004/01/31 (WaS)
 )
 (/usr/share/texmf/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -666,27 +687,291 @@ File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count156
 \l__driver_tmp_box=\box74
 ))
+(/usr/share/texmf/tex/latex_2015/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texmf/tex/latex_2015/l3experimental/l3str/l3regex.sty
+Package: l3regex 2016/01/19 v6377 L3 Experimental regular expressions
 
-! LaTeX Error: File `l3keys2e.sty' not found.
+(/usr/share/texmf/tex/latex_2015/l3experimental/l3str/l3tl-build.sty
+Package: l3tl-build 2016/01/19 v6377 L3 Experimental token list construction
+\l__tl_build_start_index_int=\count157
+\l__tl_build_index_int=\count158
+)
+(/usr/share/texmf/tex/latex_2015/l3experimental/l3str/l3tl-analysis.sty
+Package: l3tl-analysis 2015/11/09 v6244 L3 Experimental token lists analysis
+\l__tl_analysis_normal_int=\count159
+\l__tl_analysis_index_int=\count160
+\l__tl_analysis_nesting_int=\count161
+\l__tl_analysis_type_int=\count162
+)
+(/usr/share/texmf/tex/latex_2015/l3experimental/l3str/l3flag.sty
+Package: l3flag 2016/01/19 v6377 L3 Experimental flags
+)
+(/usr/share/texmf/tex/latex_2015/l3experimental/l3str/l3str-convert.sty
+Package: l3str-convert 2015/09/26 v6106 L3 Experimental string encoding convers
+ions
+\l__str_internal_int=\count163
+\c__str_replacement_char_int=\count164
+)
+\l__regex_internal_a_int=\count165
+\l__regex_internal_b_int=\count166
+\l__regex_internal_c_int=\count167
+\l__regex_balance_int=\count168
+\l__regex_group_level_int=\count169
+\l__regex_mode_int=\count170
+\l__regex_catcodes_int=\count171
+\l__regex_default_catcodes_int=\count172
+\c__regex_catcode_D_int=\count173
+\c__regex_catcode_S_int=\count174
+\c__regex_catcode_L_int=\count175
+\c__regex_catcode_O_int=\count176
+\c__regex_catcode_A_int=\count177
+\c__regex_all_catcodes_int=\count178
+\l__regex_show_lines_int=\count179
+\l__regex_min_state_int=\count180
+\l__regex_max_state_int=\count181
+\l__regex_left_state_int=\count182
+\l__regex_right_state_int=\count183
+\l__regex_capturing_group_int=\count184
+\l__regex_min_pos_int=\count185
+\l__regex_max_pos_int=\count186
+\l__regex_current_pos_int=\count187
+\l__regex_start_pos_int=\count188
+\l__regex_success_pos_int=\count189
+\l__regex_current_char_int=\count190
+\l__regex_current_catcode_int=\count191
+\l__regex_last_char_int=\count192
+\l__regex_case_changed_char_int=\count193
+\l__regex_current_state_int=\count194
+\l__regex_step_int=\count195
+\l__regex_min_active_int=\count196
+\l__regex_max_active_int=\count197
+\l__regex_replacement_csnames_int=\count198
+\l__regex_match_count_int=\count199
+\l__regex_submatch_int=\count200
+\l__regex_zeroth_submatch_int=\count201
+)
+(/usr/share/texmf/tex/latex_2015/chemgreek/chemgreek.sty
+(/usr/share/texmf/tex/latex_2015/l3packages/xparse/xparse.sty
+Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
+Normal \count register pool exhausted, switching to extended pool.
+\l__xparse_current_arg_int=\count277
+\l__xparse_m_args_int=\count278
+\l__xparse_mandatory_args_int=\count279
+\l__xparse_processor_int=\count280
+\l__xparse_v_nesting_int=\count281
+)
+Package: chemgreek 2016/01/07 v1.0d interfaceforuprightgreeklettersforuseinchem
+istry (CN)
+\l__chemgreek_tmpa_int=\count282
+\g__chemgreek_tmpa_int=\count283
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newchemgreekmapping with sig. 'O{}mm' on line 336.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \renewchemgreekmapping with sig. 'O{}mm' on line 339.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \declarechemgreekmapping with sig. 'O{}mm' on line 342.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newchemgreekmappingalias with sig. 'mm' on line 347.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \renewchemgreekmappingalias with sig. 'mm' on line 350.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \declarechemgreekmappingalias with sig. 'mm' on line 353.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \changechemgreeksymbol with sig. 'mmmm' on line 383.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \chemgreekmappingsymbol with sig. 'mm' on line 477.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \activatechemgreekmapping with sig. 'sm' on line 486.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \selectchemgreekmapping with sig. 'm' on line 491.
+.................................................
+)
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+LaTeX Warning: You have requested, on input line 36, version
+               `2016/02/10' of package chemgreek,
+               but only version
+               `2016/01/07 v1.0d interfaceforuprightgreeklettersforuseinchemist
+ry (CN)'
+               is available.
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.33 \RequirePackage
-                    {l3regex}^^M
-*** (cannot \read from terminal in nonstop modes)
+\l__mhchem_ce_distanceFromLastComma_int=\count284
+\__mhchem_arrow_extPgfLength_skip=\skip95
+\mhchem@minispace@tmp=\skip96
+\mhchem@minibackspace@tmp=\skip97
+\mhchem@bondwidth=\skip98
+\mhchem@bondheight=\skip99
+\mhchem@smallbondwidth@tmpA=\skip100
+\mhchem@smallbondwidth@tmpB=\skip101
+\mhchem@smallbondwidth=\skip102
+\mhchem@bondtmp@minussidebearingleft=\skip103
+\mhchem@bondtmp@minussidebearingright=\skip104
+\l__mhchem_option_version_int=\count285
+\mhchem@option@minusmathsidebearingleft=\dimen185
+\mhchem@option@minusmathsidebearingright=\dimen186
+\mhchem@option@minustextsidebearingleft=\dimen187
+\mhchem@option@minustextsidebearingright=\dimen188
+) (/usr/share/R/texmf/tex/latex/Sweave.sty
+Package: Sweave 
 
- 
-Here is how much of TeX's memory you used:
- 14699 strings out of 256214
- 240157 string characters out of 1917000
- 297206 words of memory out of 1500000
- 17829 multiletter control sequences out of 10000+200000
- 4403 words of font info for 15 fonts, out of 1200000 for 2000
- 645 hyphenation exceptions out of 8191
- 39i,0n,45p,10364b,275s stack positions out of 5000i,500n,6000p,200000b,15000s
-!  ==> Fatal error occurred, no output PDF file produced!
+(/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 1998/07/17
+
+Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
+\FV@CodeLineNo=\count286
+\FV@InFile=\read1
+\FV@TabBox=\box75
+\c@FancyVerbLine=\count287
+\FV@StepNumber=\count288
+\FV@OutFile=\write3
+
+No file fancyvrb.cfg.
+) (/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf/tex/latex/ae/ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+
+(/usr/share/texmf/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))) (./Particle_Size_Analysis.aux)
+\openout1 = `Particle_Size_Analysis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 41.
+
+(/usr/share/texmf/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 41.
+Package hyperref Info: Link coloring OFF on input line 41.
+
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
+
+(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count289
+)
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+
+(./Particle_Size_Analysis.out) (./Particle_Size_Analysis.out)
+\@outlinefile=\write4
+\openout4 = `Particle_Size_Analysis.out'.
+
+LaTeX Info: Redefining \selectfont on input line 41.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside asymmetric 
+* h-part:(L,W,R)=(72.26999pt, 312.0pt, 230.02501pt)
+* v-part:(T,H,B)=(72.26999pt, 616.0pt, 106.7pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=312.0pt
+* \textheight=616.0pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-42.0pt
+* \headheight=14.0pt
+* \headsep=28.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=24.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\langwohyphens=\language48
+ABD: EveryShipout initializing macros
+.................................................
+. chemgreek info: "mapping-activated"
+. 
+. Activating mapping `default' on line 41.
+.................................................
+ (./Particle_Size_Analysis-concordance.tex)
+
+LaTeX Warning: Reference `fig:8stainless_sieve' on page 1 undefined on input li
+ne 65.
+
+
+LaTeX Warning: File `8stainless_sieve.jpg' not found on input line 68.
+
+
+!pdfTeX error: /usr/bin/pdflatex (file 8stainless_sieve.jpg): cannot find image
+ file
+ ==> Fatal error occurred, no output PDF file produced!
