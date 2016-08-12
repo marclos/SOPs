@@ -28,6 +28,9 @@
 
 \NP This SOP does this...
 
+
+\NP The use of Github is not intuitive. So, you will find many on-line resources to help.
+
 \tableofcontents
 
 \newpage
@@ -46,6 +49,8 @@
 
 \NP Version Control is a method to track changes in software, and often in the context of collaborative projects. The final component of R and RStudio is its capacity to create projects (RStudio's terminology) and repositories (Github's terminalogy) that can be shared among collaborators. In particular, the collaboration allows for contributions to be tracked via version control tools. There are a number of ways that we can access these tools, but we'll try to limit the methods so keep the process relatively ``simple''.
 
+
+
 However, becoming facile in using these program is like learning how to walk. We need to approach this process in descrete steps. Some will require weeks of mistakes to learn, others will quickly learn to run with the programs. How quickly you can feel comfortable with these programs will depend on many factors, but will be greatly improved by the time you invest!
 
 \subsection{Rational}
@@ -56,6 +61,17 @@ However, becoming facile in using these program is like learning how to walk. We
   \item[Collaboration]
   \item[Version Control]
 \end{description}
+
+\NP I recommend reading the following sites to better understand Git and Github
+
+\begin{itemize}
+  \item \href{http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners}{Github for Beginners}
+  \item \href{http://scottchacon.com/2011/08/31/github-flow.html}{Github Fw}
+  \item \href{https://guides.github.com/introduction/flow/}{Understanding the GitHub Flow}
+  \item \href{http://blog.osteele.com/posts/2008/05/my-git-workflow/}{http://blog.osteele.com/posts/2008/05/my-git-workflow/}
+  
+\end{itemize}
+
 
 \section{Interferences}
 
@@ -180,8 +196,13 @@ master 6038765 Started to explain set up procedures
 \end{description}
   
   
-  
+Basically git commit ``records changes to the repository'"'' while git push ``updates remote refs along with associated objects''. So the first one is used in connection with your local repository, while the latter one is used to interact with a remote repository.
 
+Here is a nice picture from Oliver Steele, that explains the git model and the commands:  
+
+\begin{figure}
+\includegraphics{MgaV9}
+\end{figure}
    
 \end{description}
 
