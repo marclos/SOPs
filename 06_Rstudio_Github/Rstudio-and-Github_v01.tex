@@ -43,7 +43,7 @@
 
 \NP Local Install versus Server --- R and RStudio can be installed on a local computer/laptop from the CRAN download mirror sites. However, we also have access to the R and RStudio Server installed on the Pomona College mainframe, where you can access it via a web browser. Wow, this is conveient!
 
-\NP Github is... 
+\NP GitHub is a web-based Git repository hosting service. 
 
 \NP Version Control is a method to track changes in software, and often in the context of collaborative projects. The final component of R and RStudio is its capacity to create projects (RStudio's terminology) and repositories (Github's terminalogy) that can be shared among collaborators. In particular, the collaboration allows for contributions to be tracked via version control tools. There are a number of ways that we can access these tools, but we'll try to limit the methods so keep the process relatively ``simple''.
 
@@ -196,6 +196,21 @@ master 6038765 Started to explain set up procedures
 \subsection{"Pull" is rejected}
 
 \NP Merging changes... how??
+
+\subsection{Dealing with non-fast-forward errors}
+
+\NP Sometimes, Git can't make your change to a remote repository without losing commits. When this happens, your push is refused. If another person has pushed to the same branch as you, Git won't be able to push your changes.
+
+\NP You can fix this by fetching and merging the changes made on the remote branch with the changes that you have made locally:
+\begin{itemize}
+  \item \$ git fetch origin
+  \item \# Fetches updates made to an online repository
+  \item \$ git merge origin YOUR\_BRANCH\_NAME
+  \item \# Merges updates made online with your local work
+\end{itemize}
+
+\NP Or, you can simply use git pull to perform both commands at once:
+
 
 \subsection{"Push" fails}
 
