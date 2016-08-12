@@ -1,0 +1,232 @@
+%SOP Template 
+% Version 02 Added revision date
+% Version 03 Added TOC and acknowledgements
+%           New SOP3_alpha.cls
+
+
+\documentclass[12pt]{../SOP3_alpha}
+
+\author{Marc, Aparna, and Isaac}
+\title{Rstudio Projects and Github}
+\date{X/XX/XXXX}
+\approved{TBD}
+\ReviseDate{\today}
+\SOPno{06 v.01}
+
+
+\usepackage{Sweave}
+\begin{document}
+\input{Rstudio-and-Github_v01-concordance}
+\maketitle
+
+\section{Scope and Application}
+
+\NP The scope of this SOP is train researchers...
+
+\NP The applications of this SOP are for...
+
+\section{Summary of Method}
+
+\NP This SOP does this...
+
+\tableofcontents
+
+\newpage
+
+\section{Acknowledgements}
+
+\section{Definitions}
+
+\NP R is a powerful, open source program but combined with RStudio and Github the program becomes an archetype of a program that enables 1) collaboration, 2) transparency, and 3) accessibility. 
+
+\NP RStudio is use interface for R. Although R by itself is an amazing example of crowd sourcing, where a wide range of staticians and programmers have created a free programming environments with a robust range of statistical packages, the RStudio interface provides a user with the tools to track and publish their analysis process in an effecient and transparent way. 
+
+\NP Local Install versus Server --- R and RStudio can be installed on a local computer/laptop from the CRAN download mirror sites. However, we also have access to the R and RStudio Server installed on the Pomona College mainframe, where you can access it via a web browser. Wow, this is conveient!
+
+\NP Github is... 
+
+\NP Version Control is a method to track changes in software, and often in the context of collaborative projects. The final component of R and RStudio is its capacity to create projects (RStudio's terminology) and repositories (Github's terminalogy) that can be shared among collaborators. In particular, the collaboration allows for contributions to be tracked via version control tools. There are a number of ways that we can access these tools, but we'll try to limit the methods so keep the process relatively ``simple''.
+
+However, becoming facile in using these program is like learning how to walk. We need to approach this process in descrete steps. Some will require weeks of mistakes to learn, others will quickly learn to run with the programs. How quickly you can feel comfortable with these programs will depend on many factors, but will be greatly improved by the time you invest!
+
+\subsection{Rational}
+
+\begin{description}
+  \item[Almost Universal Compatibility] No downloading programs on personal computers.
+  \item[Accessibility] Accessible from any computer via webserver
+  \item[Collaboration]
+  \item[Version Control]
+\end{description}
+
+\section{Interferences}
+
+\NP R has an updated version about every six months. When performing advanced analyses, there are times that new versions will no longer run a code. Thus, older versions of R must be maintained. This is a unheard of issue for new users.
+
+\NP RStudio Server needs a functional network connection. If the network is down, then Rstudio Server is inaccessible. This can be a source of frustration. 
+
+\section{Health and Safety}
+
+\NP Describe the risk...
+
+
+\subsection*{Safety and Personnnel Protective Equipment}
+
+
+\section{Personnel \& Training Responsibilities}
+
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+  \item SOP02 Field Safety
+\end{itemize}
+
+\section{Required Materials and Apparati}
+
+\NP Laptop or destop computer
+
+\NP Access to Pomona College's SSO and server
+
+\NP Github account
+
+\NP Patience
+
+%\section{Reagents and Standards}
+
+\section{Estimated Time}
+
+\NP This set up procedure requires 30 minutes.
+
+\section{Maintaing XX Data}
+
+\section{Procedure}
+
+  \NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! Your email address can be used to prove your student status.
+  
+\NP Read the Readme file -- THIS DOCUMENT WILL REPLACE THAT README FILE.
+
+\subsection{Creating a Connection between Github and RStudio}
+
+\NP To use Rstudio's version control, you need to create a SSH Key that is used to create secure connections between RStudio and Github.
+
+\NP To create an SSH Key, go to RStudio/Tools/Global Options and select ``Create an SSH key'' NEED MORE INFO HERE, SCREEN SHOT? Copy this SSH key.
+
+\NP Add SSH Key to Github
+  \begin{enumerate}
+  \item Go to Profile?/Settings
+  \item Select the left menu on the button ``SSH and GPG key''
+  \item Click on new SSH key, type in name of key (e.g. 'myRstudio SSH key')
+  \item Paste in the RSA key into the window below.
+  \item Hit green ``add SSH key'' button.
+  \end{enumerate}
+\NP Now Github and R can communicate. 
+
+\NP To obtain access to respository in Rstudio, you will need to ``clone'' the site as a new project in Rstudio. To accomplish this...
+
+\subsection{Creating a New Repository}
+
+\subsection{Creating a New Project}
+
+
+\section{Working on Projects}
+
+\subsection{Rstudio Panels}
+
+\begin{description}
+  \item[File Structure and Rnw/Tex files]
+  \item[Console and Compile PDF windows]
+  \item[Git Panel]
+\end{description}
+
+
+\subsection{Best Practices}
+
+\begin{description}
+  \item[Pull] When you open RStudio, the first thing you should do is "Pull" from the repository to ensure your files are up-to-date. When you "Pull", you will get one of three results:
+  
+  \begin{description}
+  \item[Already up-to-date.] This means that your files have not been updated on the Github site since you last pulled the files. If you suspect someone has worked on the files, but are not getting those changes, it means that your collaborator has failed to "Push" these changes onto the repsository. If this is the case, you might need to go to the troubleshooting question to address this problem.
+  \item[Successful Updates] If your files are successfully updated from the repository, you will see:
+  
+summary of updates
+
+master 6038765 Started to explain set up procedures
+ 
+ 5 files changed, 434 insertions(+), 8 deletions(-)
+ 
+ create mode 100644 06\_Rstudio\_Github/Rstudio-and-Github-concordance.tex
+ 
+ create mode 100644 06\_Rstudio\_Github/Rstudio-and-Github.log
+ 
+ create mode 100644 06\_Rstudio\_Github/Rstudio-and-Github.pdf
+ 
+ create mode 100644 06\_Rstudio\_Github/Rstudio-and-Github.tex
+ 
+ \item[Unsuccesful "Pull"]
+ 
+ 
+\end{description}
+
+  \item[Commit]
+  \item[Push] As you might guess, when you "Push" you can also have several outcomes:
+\begin{description}
+  \item[Everything up-to-date] is certainly simple.   \item[Successful "Push"]
+  
+    "To git@github.com:marclos/SOPs.git
+  
+   e2efe6f..0b18250  master -> master"
+   \item[Unsuccessful "Push"]
+\end{description}
+  
+  
+  
+
+   
+\end{description}
+
+\section{Troubleshooting}
+
+\NP At first when you're a newcomer to working on projects within Rstudio connected to a GitHub repository, you may forget the "best practices" of pulling, committing and pushing described above. You might have already gone through all the steps involved in setting up your GitHub account, linking your workspace in Rstudio with the correct project, and begun work on a specific file, but if you forget to update your workspace each time you come back to modify a file (especially in the case of coming back the next day to a file in Rstudio and forgetting to pull changes other collaborators may have made), you will run into problems committing, and pushing your changes. In this most common case, it's not likely that you'll notice any problems until you try to commit your changes. Thus, we'll begin this section on trouble shooting problems with Github and Rstudio at the committ level.
+
+\subsection{"Commit" problems}
+\NP In the scenario described above, you will get an error code when trying to committ your new changes to a file. 
+
+\subsection{"Pull" is rejected}
+
+\NP Merging changes... how??
+
+\subsection{"Push" fails}
+
+\NP Below are several potential remedies:
+
+\begin{description}
+  \item[merge] asdfasdf
+  
+  \item[Deleting a Project in R Studio]If you are willing to sacrifice the changes you made or have mailed them to a collaborator to deal with you can delete the entire project in Rstudio. To accomplish this delete all files in directory, clear workspace and console, don't save, then go to session tab: Terminate R, and hopefully that will do the trick. Then commence with starting a new project. 
+
+\end{description}
+
+%\section{Data Analysis and Calculations}
+
+%\section{QC/QA Criteria}
+
+\section{Collaboration and Version Control}
+
+\subsection{Workflow tracking}
+
+\NP Collaborators can create ways that each one is responsible for certain activities..
+
+\NP Branching...
+
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+
+
+
+
+\end{document}
