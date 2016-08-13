@@ -1,6 +1,6 @@
 ---
 title: "Soil Texture Processing File"
-author: "Bailey Lai"
+author: "Marc Los Huertos"
 date: "7/26/2016"
 output:
   html_document: default
@@ -11,38 +11,199 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Uploading and Downloading the Data
+
+[Database Access](http://thinkertools.org/grainsize/) 
+
+"18Pomona87"
+
 ## Reading .csv Data into R
 ```{r}
-reading <- "/home/CAMPUS/mwl04747/github/SOPs/Soil_Texture_Analysis/Data/reading.csv"
-sample <- "/home/CAMPUS/mwl04747/github/SOPs/Soil_Texture_Analysis/Data/sample.csv"
-reading.df <- read.csv(reading)
-sample.df <- read.csv(sample)
+reading.source <- "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/reading.csv"
+sample.source <- "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/sample.csv"
+reading <- read.csv(reading.source)
+sample <- read.csv(sample.source)
 ```
 
 ## Check Data Importing
 ```{r}
-#View(reading.df)
-head(reading.df)
-head(sample.df)
+
+head(reading)
+head(sample)
 ```
 
-## Preprocess Data
+## Preprocess Sample File
 ```{r preprocess}
 library(mosaic)
+library(dplyr)
+
+source("Soil_functions/PassNo10_fun.R")
+
+sample$passNo10Percent =PassNo10(sample$pass10, sample$totalSoil)
+
+sample %>% select(passNo10Percent, passPercent)
+
+source("Soil_functions/SoilEquiv_fun.R")
+
+sample$hygroPercent2 = hygro(sample$tinAir, sample$tinOven, sample$tinTare); head(sample)
+sample$WS_actual = WS_e(sample$tinAir, sample$tinOven, sample$tinTare, sample$actualSoil);
+
+sample$GSp = 2.65
+head(sample)
+
+SampleParams <- sample %>% select(sampleKEY, WS_actual, hygroPercent2, GSp); head(SampleParams)
+  
 
 
 ```
-## Join Data with Key.
+
+## Preprocess Reading File
+
+```{r preprocess_reading}
+
+# Convert Times to Minutes
+reading$Et <- round(reading$timeElapsed * ElapsedTimeConversion(reading$timeUnit), 2); reading$Et
+
+```
+## Join SampleParams and Reading
 
 First, I created two files that have only a few columns each so we can test the join function.
 
 ```{r joinkeyID}
-reading.tmp <- select(reading.df, sampleKEY, timeElapsed)
-sample.tmp <- select(sample.df, sampleKEY, researcher)
+reading.select <- select(reading, sampleKEY, Et, actual, blank, temp); head(reading.select)
 
-left_join(sample.tmp, reading.tmp, by = "sampleKEY")
+joined <- left_join(SampleParams, reading.select, by = "sampleKEY")
+```
+
+## Loop sampleKEY to Impute Missing Temp and Blanks
+
+### Table for Alignment for Missing Hydrometer and Temperature readings
+
+We will align missing values to closest readings: 
+
+| Reading | Missing Range |
+| --------| ------------- | 
+| 0       | 0-30          |
+| 60      | 31-90         |
+| 120     | 91-240        |
+| 1440    | >240          |
+
+I would like to create a more autmotic function for this, but I couldn't figure this out in an elegant way!
+
+## Using Non-Missing to Impute Missing Temp and RBlank
+
+I still believe there is a more elegant to do this, but this is better than my initial idea!
+
+### Ways to Improve the Function:
+
+First, we could make the function that address both missing values simultaneously. For example, impute(sampleID, parameter)...  I tried this, but ran into the problem that we use different columns that are identified in differeing ways. Perhaps, next version!
+
+```{r impute_loop}
+KEY <- unique(joined$sampleKEY)
+
+#for(i in 1:length(KEY)){
+for(i in 1:1){
+tmp = joined[joined$sampleKEY==i]
+
+tmp$temp[is.na(tmp$temp)] <- imputeT(tmp)
+tmp$blank[is.na(tmp$blank)] <- imputeR(tmp)
+
+
+}
+
+
+
+
+## RcTest
+
+Not sure what we are doing here... Isaac, can you comment?
+
+```{r RcTest}
+Test$RcTest<- Test$Ractual - (Test$Rblank - 1)
+
+#We still have one NA because of the temp at 0
+```
+
+## Calculating K
+
+```{r calculatingK}
+Kfun <- function(T=22, GSp = 2.65){
+  ifelse(T < 20, NA, 
+  ifelse(T  == 20, 0.01365, 
+  ifelse(T  == 21, 0.01348, 
+  ifelse(T  == 22, 0.01332,
+  ifelse(T  == 23, 0.01317,
+  ifelse(T  == 24, 0.01301,
+  ifelse(T  == 25, 0.01289,
+  ifelse(T > 25, NA, NA))))))))
+}
+
+Test$K <- Kfun(round(Test$Temp,0)); head(Test)
+
 ```
 
 
-## Merge function used to combine two tables with common variable(s)
-test <- merge(reading, sample)
+## Calculate Effective Depth
+
+We need some explanation of this! I can't remember what we are doing here...
+
+```{r}
+x = c(1.00, 1.07)
+y = c(15.5, 0.6)
+
+L2coef = coef(lm(y~x))
+
+
+L1 = Test$RcTest * L2coef[2] + L2coef[1]
+L2 = 14.5
+Vb = 40
+A = 27.8
+Test$Leff = L1 + 0.5*(L2-(Vb/A)); Test$Leff
+Test
+
+```
+## Calculate D
+According to ASTM D422-63 the equation to calculate D (diameter in mm) can be  simplified as D = K*sqrt(L/T) where: L=effective depth (Leff), T = measurment time in min and K is the constant given in the tables that varies with temperature (already calculated).
+
+```{r}
+#To perform the calculation the way described below we need time in minutes, which what is Et now! :-)
+
+#Tmin<- c(NA, 0.5, 1, 3, 10, 30, 60, 90, 120, 1440)
+#Test$Tmin<- Tmin
+
+#
+Test$D<-Test$K * sqrt(Test$Leff/Test$Et)
+Test$D
+```
+
+## Calculate PF
+
+P=[(100,000/w)*G/(G-G1)]*(R-G1) (pretty sure G1=1, pretty sure R = Rc (ask marc about this one)) and G=2.65 g/cm^3 (ask marc about this one too)
+
+The bracketed portion will be the same for all variables thus we can calculate it separately and call it p1 (1st part of equation for )
+```{r}
+Test$PF= ((100000/Test$Wsair)*(2.65/(2.65-1)))*(Test$Rc - 1)
+```
+
+## Creating Figures
+
+You can also embed plots, for example:
+
+```{r figure, echo=T}
+plot(x=log(Test$D), y=Test$PF, xlab="Log of Diameter (mm)", ylab="Percent Finer", las=1)
+```
+
+
+
+KEY <- unique(joined$sampleKEY)
+
+for(i in 1:length(KEY)){
+  # All the business goes here! 
+  # But it would be nice to create functions...
+  # more soon...
+  
+  print(i); print(KEY[i])
+}
+
+```
+
