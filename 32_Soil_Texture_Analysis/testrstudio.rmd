@@ -72,7 +72,7 @@ First, I created two files that have only a few columns each so we can test the 
 ```{r joinkeyID}
 reading.select <- select(reading, sampleKEY, Et, actual, blank, temp); head(reading.select)
 
-joined <- left_join(SampleParams, reading.select, by = "sampleKEY")
+joined2 <- left_join(SampleParams, reading.select, by = "sampleKEY")
 ```
 
 ## Loop sampleKEY to Impute Missing Temp and Blanks
@@ -99,68 +99,71 @@ I still believe there is a more elegant to do this, but this is better than my i
 First, we could make the function that address both missing values simultaneously. For example, impute(sampleID, parameter)...  I tried this, but ran into the problem that we use different columns that are identified in differeing ways. Perhaps, next version!
 
 ```{r impute_loop}
-KEY <- unique(joined$sampleKEY)
+
+joined <- joined2[!is.na(joined2$Et),]; joined
+KEY <- unique(joined$sampleKEY); KEY
+
+KEY <- KEY[-c(1, 2, 3)]; KEY
+joined$temp2 = NA
+joined$blank2 = NA
 
 #for(i in 1:length(KEY)){
-for(i in 1:1){
-tmp = joined[joined$sampleKEY==i]
+for(i in 1:length(KEY)){
+  # for tesing purposes... no 22
+  #i = 77
+tmp = joined[joined$sampleKEY==KEY[i],]; tmp
 
+# Temperature Imputing
 tmp$temp[is.na(tmp$temp)] <- imputeT(tmp)
+joined[joined$sampleKEY==KEY[i],]$temp2 <- tmp$temp
+
+# Reading Blank Imputing
 tmp$blank[is.na(tmp$blank)] <- imputeR(tmp)
-
-
+joined[joined$sampleKEY==KEY[i],]$blank2 <- tmp$blank
+print(i)
 }
 
-
-
+joined[1:30,]
+joined[31:70,]
+```
 
 ## RcTest
 
 Not sure what we are doing here... Isaac, can you comment?
 
-```{r RcTest}
-Test$RcTest<- Test$Ractual - (Test$Rblank - 1)
+Corrected Rc is based on the formula...
 
-#We still have one NA because of the temp at 0
+
+
+```{r RcTest}
+joined$Rc <- joined$actual - (joined$blank2 - 1)
 ```
 
 ## Calculating K
 
 ```{r calculatingK}
-Kfun <- function(T=22, GSp = 2.65){
-  ifelse(T < 20, NA, 
-  ifelse(T  == 20, 0.01365, 
-  ifelse(T  == 21, 0.01348, 
-  ifelse(T  == 22, 0.01332,
-  ifelse(T  == 23, 0.01317,
-  ifelse(T  == 24, 0.01301,
-  ifelse(T  == 25, 0.01289,
-  ifelse(T > 25, NA, NA))))))))
-}
-
-Test$K <- Kfun(round(Test$Temp,0)); head(Test)
-
+joined$K <- Kfun(round(joined$temp2,0)); head(joined)
 ```
 
 
 ## Calculate Effective Depth
 
-We need some explanation of this! I can't remember what we are doing here...
+Effective Depth...
+
+```{r effectivedepth}
+
+```
 
 ```{r}
-x = c(1.00, 1.07)
-y = c(15.5, 0.6)
-
-L2coef = coef(lm(y~x))
-
-
-L1 = Test$RcTest * L2coef[2] + L2coef[1]
-L2 = 14.5
-Vb = 40
-A = 27.8
-Test$Leff = L1 + 0.5*(L2-(Vb/A)); Test$Leff
-Test
-
+# x = c(1.00, 1.07)
+# y = c(15.5, 0.6)
+# L2coef = coef(lm(y~x))
+# L1 = Test$RcTest * L2coef[2] + L2coef[1]
+# L2 = 14.5
+# Vb = 40
+# A = 27.8
+# Test$Leff = L1 + 0.5*(L2-(Vb/A)); Test$Leff
+# Test
 ```
 ## Calculate D
 According to ASTM D422-63 the equation to calculate D (diameter in mm) can be  simplified as D = K*sqrt(L/T) where: L=effective depth (Leff), T = measurment time in min and K is the constant given in the tables that varies with temperature (already calculated).
