@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  11 AUG 2016 15:51
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  14 AUG 2016 12:12
 entering extended mode
  %&-line parsing enabled.
 **Particle_Size_Analysis.tex
@@ -13,10 +13,11 @@ tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish,
 turkish, ukenglish, ukrainian, loaded.
 (/usr/share/texmf/tex/latex/tufte-latex/tufte-handout.cls
 Document Class: tufte-handout 2015/06/21 v3.5.2 Tufte-handout class
-(./tufte-common.def
+(/usr/share/texmf/tex/latex/tufte-latex/tufte-common.def
 File: tufte-common.def 2015/06/21 v3.5.2 Common code for the Tufte-LaTeX styles
 
- (/usr/share/texmf/tex/latex/xkeyval/xkeyval.sty
+
+(/usr/share/texmf/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2006/11/18 v2.5f package option processing (HA)
 
 (/usr/share/texmf/tex/latex/xkeyval/xkeyval.tex
@@ -50,7 +51,8 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texmf/tex/latex/ltxmisc/ifmtarg.sty
 Package: ifmtarg 2000/03/24 v1.2 check for an empty argument
-)) (./hardwrap.sty
+))
+(/usr/share/texmf/tex/latex/hardwrap/hardwrap.sty
 Package: hardwrap 2011/02/12 v0.2 Hard wrap messages
 
 (/usr/share/texmf/tex/latex_2015/ifplatform/ifplatform.sty
@@ -682,10 +684,10 @@ L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
 \l__coffin_scaled_total_height_dim=\dimen183
 \l__coffin_scaled_width_dim=\dimen184
 L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
-) (./l3pdfmode.def
+)
+(/usr/share/texmf/tex/latex_2015/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count156
-\l__driver_tmp_box=\box74
 ))
 (/usr/share/texmf/tex/latex_2015/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
@@ -850,7 +852,7 @@ Package: fancyvrb 1998/07/17
 Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
 \FV@CodeLineNo=\count286
 \FV@InFile=\read1
-\FV@TabBox=\box75
+\FV@TabBox=\box74
 \c@FancyVerbLine=\count287
 \FV@StepNumber=\count288
 \FV@OutFile=\write3

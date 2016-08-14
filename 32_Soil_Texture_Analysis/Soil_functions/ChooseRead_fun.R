@@ -3,8 +3,8 @@
 # Second select the reading.csv
 
 ChooseRead <- function(){
-  reading <- read.csv(file.choose())
   sample <- read.csv(file.choose())
+  reading <- read.csv(file.choose())
   return(reading)
   return(sample)
 }

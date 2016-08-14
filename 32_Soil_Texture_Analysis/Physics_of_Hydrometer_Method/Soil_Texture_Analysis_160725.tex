@@ -1,4 +1,3 @@
-%\documentclass{article}
 \documentclass{tufte-handout}
 
 %\geometry{showframe}% for debugging purposes -- displays the margins
@@ -13,7 +12,8 @@
 \usepackage{graphicx}
 
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
-% \graphicspath{{graphics/}}
+
+\graphicspath{{graphics/}}
 
 \newenvironment{itemize*}%
   {\begin{itemize}%
@@ -39,12 +39,11 @@
 
 \usepackage{Sweave}
 \begin{document}
-\input{Particle_Size_Analysis-concordance}
-%\SweaveOpts{concordance=TRUE}
+\input{Soil_Texture_Analysis_160725-concordance}
 
 \maketitle% this prints the handout title, author, and date
 \begin{abstract}
-\noindent Soil is usually composed of particles with a mix of sizes where the relative proportion of size classes define the soil texture. As a property of a soil, the texture can determine water relations, bio-availability of nutrients and toxics, and soil biogeochemistry. Soil texture can be determined using qualitative or quantitative methods that might be employed in the field or in the laboratory, respectively. While classes are distinguished in the field and the class is then used to determine crop suitability and to approximate the soils responses to environmental and management conditions such as drought, fertility, or calcium (lime) requirements.
+\noindent Soil is usually composed of particles with a mix of sizes where the relative proportion of size classes define the soil texture. As a property of a soil, the texture can determine water relations, bio-availability of nutrients and toxics, and soil biogeochemistry. Soil texture can be determined using qualitative or quantitative methods that might be employed in the field or in the laboratory, respectively. Classes are distinguished in the field and the class is then used to determine crop suitability and to approximate the soils responses to environmental and management conditions such as drought, fertility, or calcium (lime) requirements.
 \end{abstract}
 
 %\printclassoptions
@@ -55,7 +54,7 @@
 This handout describes how soil samples can be quantitatively analyzed using hydrometer to promote the following skills:
 
 \begin{enumerate}
-	\item Understand the equations that describe how particle size and the terminal velocity in a suspension;
+	\item Understand equations that describe particle size and terminal velocity in a suspension;
 	\item Use sedimentation methods to measure density changes in soil suspensions; and
 	\item Apply equations to calculate the density and percent of a sample in suspension to calculate the particle sizes of a soil sample. 
 \end{enumerate}
@@ -90,7 +89,7 @@ There are a number of references that explain various methods to conduct a parti
 This handout describes how we can use a hydrometer to measure density of a soil suspension and how this density changes with time. As the density changes, we can use several equations to estimate the proportion of particle sizes. 
 
 \begin{figure}
-\includegraphics{Particle_Size_Analysis-USDATT}
+\includegraphics{Soil_Texture_Analysis_160725-USDATT}
 \end{figure}
 
 \subsection{Physics of Particles in Suspension}
@@ -167,7 +166,7 @@ Violations of these assumptions reduces the accuracy of the method. However, for
 
 \subsection{Buoyancy: Applying Stokes Law Using a Hydrometer}
 
-As progressively smaller particles drop out of the suspension, the density of the suspension itself declines. So, there are two components to the density of the suspension -- the relative concentration of the particles suspended and the time in which they remain in suspension. Since smaller particles remain in suspension longer, we can combine these parameters, the density of a solution or suspension and proportion of the particle sizes that remain in suspension, to estimate the particle size distribution. 
+As progressively smaller particles drop out of the suspension, the density of the suspension itself declines. So, there are two components to the density of the suspension -- the relative concentration of the particles suspended and the time in which they remain in suspension. Since smaller particles remain in suspension longer, we can combine these parameters, of the density of a solution or suspension and proportion of the particle sizes that remain in suspension, to estimate the particle size distribution. 
 
 We apply the concept of buoyancy to evaluate the density of suspension. Just like the forces of gravity ($F_g$) and resistance ($F_r$), objects in fluids can also be influenced by the force of buoyancy, where Archimedes' principle that a solid suspended in a fluid is buoyed by a force equal to the weight of the fluid displaced by the submerged part of the suspended solid. 
 
@@ -221,7 +220,7 @@ RD_{new/ref} = \rho_{new}/\rho{ref}
 $\rho_{new}$ is the unknown density of the new (green) liquid;
 $RD_{new/ref}$ is the relative density of the new liquid with respect to the reference;
 
-As the hydrometer is then floated in a liquid of unknown density, $\rho_{new}$, as shown in green in Figure \ref{fig:Hydro}. The change in displacement, $\Delta$x, is noted. In the example depicted, the hydrometer has dropped slightly in the green liquid; hence its density is lower than that of the reference liquid. It is, of course, necessary that the hydrometer floats in both liquids. In accordance with the way in which hydrometers are usually graduated, $\Delta$x is here taken to be negative if the displacement line rises on the stalk of the hydrometer, and positive if it falls. In the example depicted, $\Delta$x is negative.
+As the hydrometer is then suspended in a liquid of unknown density, $\rho_{new}$, as shown in green in Figure \ref{fig:Hydro}, where the change in displacement, $\Delta$x, is noted. In the example depicted, the hydrometer has dropped slightly in the green liquid; hence its density is lower than that of the reference liquid. It is, of course, necessary that the hydrometer floats in both liquids. In accordance with the way in which hydrometers are usually graduated, $\Delta$x is here taken to be negative if the displacement line rises on the stalk of the hydrometer, and positive if it falls. In the example depicted, $\Delta$x is negative.
 
 \begin{marginfigure}
 		\includegraphics{Hydro.pdf}
@@ -303,8 +302,8 @@ PF = [(100,000/M_s)[m|5]P5 \frac{GS_p}{GS_p - GS_w}](R_c - GS_w)
 The following are parameters that might influence the results of the hydrometer test and thus, we use various methods to pre-treat soils or measure to correct for these sources of bias. When correction factors are required, the calculations can become confusing.	 But we'll try to lead ourselves through this thicket without too many wrong-turns. 
 
 \begin{description}
-	\item[Temperature and Viscosity] Water temperate influences the viscosity of water, such that colder temperatures increase viscosity which increases the resistance force and reduced the terminal velocity of particles. The viscosity can be corrected for temperature.
-	\item[Temperature and Density] The density of water is highest at 4.94 degrees C. As temperatures warm, the density of water decreases. As water density decreases, the suspension density $\rho_s$ decreases, thus the particle size distribution is not accurate without a correction. 
+	\item[Temperature and Viscosity] Water temperate influences the viscosity of water, such that colder temperatures increase viscosity which increases the resistance force and reduces the terminal velocity of particles. The viscosity can be corrected for temperature.
+	\item[Temperature and Density] The density of water is highest at 4.94 degrees C. As temperatures increases, the density of water decreases. As water density decreases, the suspension density $\rho_s$ decreases, thus the particle size distribution is not accurate without a correction. 
 	\item[Soil Weight and Hygroscopic Water] Soil is composed of many components, including minerals, water, organic matter, air, etc. But to calculate the soil particle analysis, we need to account for the water in soil. We can do this by measuring the soil moisture content and correct the mass contributed by water from the soil tested.
 	\item[Aggregated Soil Particles] Soil particles need to be dispersed, but there is no perfect way to accomplish this. Complete dispersion requires both mechanical and chemical assistance. Mechanical stirring overcomes weaker binding forces in large aggregates, but chemical agents are also necessary, especially to deflocculate clays. Polyvalent cations (normally \ce{Ca+2} and \ce{Al+3}) flocculate clays by forming interparticle, electrostatic links. Chemical dispersing agents (such as sodium hexametaphosphate) are effective in dispersing these clay bundles because:
 	
@@ -339,7 +338,7 @@ We then weighed out 53.3 grams of air-dried soil and let it soak in sodium hexam
 Using a simple approach where the suspension density is measured several times after mixing, we might observe the following values:
 
 % latex table generated in R 3.3.1 by xtable 1.8-2 package
-% Thu Aug 11 15:51:00 2016
+% Sun Aug 14 12:23:00 2016
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -378,7 +377,6 @@ $Rb_{40s}$ and $Rb_{8h}$ are the hydrometer reading of the blank cylinder withou
 	\item For temperature correction, add or subtract 0.36 g/L for each degree above or below 20$^\circ$C, respectively.
 \end{enumerate}
 
-
 \begin{Schunk}
 \begin{Soutput}
 [1] 0.074562997 0.037282114 0.023580057 0.013614402 0.009626915 0.006807313 0.004813537 0.002406788
@@ -395,7 +393,7 @@ $Rb_{40s}$ and $Rb_{8h}$ are the hydrometer reading of the blank cylinder withou
 After determining the particle sizes, we can ``bin'' or categorize the particle sizes as percentages of sand, silt, and clay. 
 
 \begin{figure}
-\includegraphics{Particle_Size_Analysis-simplifiedgraph}
+\includegraphics{Soil_Texture_Analysis_160725-simplifiedgraph}
 \caption{Particle Size versus Percent Finer remaining in suspension.}
 \label{fig.De_vs_PF}
 \end{figure}
@@ -418,12 +416,10 @@ Finally, we can determine what type of soil we have based on the size-class dist
 
 
 \begin{figure*}
-\includegraphics{Particle_Size_Analysis-TTPlot}
+\includegraphics{Soil_Texture_Analysis_160725-TTPlot}
 \caption{Results of our texture analysis. Note the small dot in the SaLo (sandy-loam) texture class.}
 \label{fig.simplifiedfig}
 \end{figure*}
-
-
 
 \clearpage
 \section{Materials and Procedures}
@@ -449,6 +445,8 @@ Finally, we can determine what type of soil we have based on the size-class dist
 	\item Sodium hexametaphosphate
 \end{enumerate*}
 
+Sodium hexametaphosphate is a non-hazardous material but may be irritating to skin and eyes. Dust may be irritating to lungs if inhaled. Care should be taken to avoid inhalation. Handle powdered HMP in a well-ventilated area or fume hood. Chemical-safety goggles should be worn while pouring HMP solution and during blending to avoid contact with eyes. In case of contact, flush eyes with cold water for 15 minutes. Latex gloves should be worn to avoid contact with skin. Hands and contaminated skin should be washed thoroughly with soap and water after handling. Sweep, vacuum, scoop or remove spilled sodium hexametaphosphate. Flush residual area with water. In case of spills on clothes, wash thoroughly before wearing again. See the MSDS for more information on contamination and spills.
+
 \section{Procedure}
 
 Before beginning, we need to organize the procedures by day, since we can't complete the analysis during a single lab period.
@@ -458,7 +456,7 @@ Before beginning, we need to organize the procedures by day, since we can't comp
 	\item[Session 2:] Pass air-dry soils through No. 10 sieve; dry sub-sample for moisture content; 
 	\item[Session 3:] Calculate and weigh $SW_e$ for pretreatment and/or dispersion; 
 	\item[Session 4:] Conduct hydrometer measurements; and
-	\item[Session 5:] Complete hydrometer readings and data entry.
+	\item[Session 5:] Analyze particles retained on No. 200 sieve and complete data entry.
 \end{description}
 
 \subsection{Air-Dried Soil}
@@ -467,7 +465,7 @@ After collecting a soil, we allow them to air dry by putting them in a tin or be
 
 \subsection{Determining Proportion of Soil Passing No. 10 Sieve}
 
-Soils are defined as particles that are less than 2 mm. Thus, we begin by removing the gravel, particles that exceed the sand-sized particles, >2.0 mm. But these particles influence the soil texture, so we will quantify the contribution of particles that exceed 2 mm. 
+Soils are defined as particles that are less than 2 mm. Thus, we begin by removing the gravel, particles that exceed the sand-sized particles, >2.0 mm. These particles, however, influence the soil texture, so we will quantify the contribution of particles that exceed 2 mm. 
 
 We can do this by analyzing the soil that can pass through the No. 10 sieve, which has a mesh size of 2 mm.  
 
@@ -571,11 +569,11 @@ Soils should be pre-treatmented for soil high in organic matter \ldots
 
 	\item Fill cylinder to 1000-mL mark with distilled water.
 
-	\item Cover the cylinder with a stopper (No. 13) and invert the cylinder 180 degrees for a full minute, where the cylinder should be turned upside-down and back should take 2 seconds. You may need to vigorously mix the cylinder for the first two turns to loose the soil at the bottom.
+	\item Cover the cylinder with a stopper (No. 13) and invert the cylinder 180 degrees for a full minute, where the cylinder should be turned upside-down and back should take 2 seconds. You may need to vigorously mix the cylinder for the first two turns to loosen the soil at the bottom.
 	
 	\item After the minute of inverting, begin timing.  While slowing spinning the hydrometer remove air bubbles, carefully lower the hydrometer into suspension after 20s; record the hydrometer reading at 40 seconds. Remove the hydrometer and rinse the hydrometer between each reading. 
 	
-	\item The inversion process and 40-second reading should be \textbf{repeated to obtain 3  accurate readings} after repeating.\sidenote{Because the suspension is opaque, read the hydrometer at the top of the meniscus rather than at the bottom. There is a correction for this!}
+	\item This 40-second reading should be \textbf{repeated to obtain 3 accurate} after repeating the inversion process.\sidenote{Because the suspension is opaque, read the hydrometer at the top of the meniscus rather than at the bottom. There is a correction for this!}
 
 	\item After final 40-second reading, remove hydrometer, carefully lower a thermometer into the suspension and record the temperature (degrees C).  Mixing raises temperature by 3-5$^\circ$C, so it is important to record the temperature for both hydrometer readings (See Table \ref{tab:ReadingTimes}).
 	
@@ -584,8 +582,8 @@ Soils should be pre-treatmented for soil high in organic matter \ldots
 	\item Take a hydrometer reading at the following times:
 	
 		\begin{table}
-		\begin{tabular}{lrcc}\hline
-Obs. & Soil Reading Times & Temperature Reading		& Blank Hydrometer \& Temperature \\ \hline\hline	
+		\begin{tabular}{lrrr}\hline
+Obs. & Soil Reading Times 		& Temperture		& Blank Hydrometer \\ \hline\hline	
 0		& Before Inverting (0 seconds)		&	 X	&		X		\\
 1		& 40 seconds (Repeat twice) 			&	 		&			  \\
 2		&	2.0 minutes 										&			&       \\
@@ -595,11 +593,11 @@ Obs. & Soil Reading Times & Temperature Reading		& Blank Hydrometer \& Temperatu
 6		& 60 minutes 											&		X	& 	X		\\
 %X		& 90 minutes 										&			&				\\
 7		& 2	hours													& 	X	& 	X		\\
-8		& 3 hours (recommended)							&		X	& 	X		\\
-9   & 6 or 8 hours (recommended)					&		X	& 	X		\\
+8		& 3 hours (optional)							&		X	& 	X		\\
+9   & 6 or 8 hours (optional)					&		X	& 	X		\\
 10		& 24 hours											&		X	&  	X 	\\\hline		
 		\end{tabular}
-		\caption[][6cm]{Reading times modified from \citet{standard2007d422}. These times can be adjusted, be sure to record the actual times in Boxes 19 and 20.}
+		\caption{Reading times modified from \citet{standard2007d422}. These times can be adjusted, be sure to record the actual times in Boxes 19 and 20.}
 		\label{tab:ReadingTimes}
 	\end{table}
 	
@@ -607,9 +605,25 @@ Obs. & Soil Reading Times & Temperature Reading		& Blank Hydrometer \& Temperatu
 	
 \end{enumerate}
 
+\subsection{Determining Proportion of Soil Retained No. 200 Sieve}
+
+Particles retained on the No. 200 sieve are larger than XX in diameter. But collecting the particles on the No. 200 sieve, we \ldots...
+
+we will quantify the contribution of particles that exceed xx . 
+
+We can do this by analyzing the mass of the soils retained on the No. 200 sieve, which has a mesh size of XX mm.  
+
+\begin{enumerate}
+	\item Poor the contents of the cylinder through a No. 200 sieve;
+	\item Using the sink with a sediment trap, wash the soil in the sieve until the water leaving the sieve is clear. 
+	\item Select a soil tin, and record the tin No. (Box XX) and tin mass (Box XX). 
+	\item Carefully wash the soil from the tin into the soil, without damaging the sieve screen. The screens are quite delicate, so using a squeeze bottle is probably best. Using a brush or metal device will force particles into the screen, which can get stuck, distort and stretch the mesh openings or otherwise damage them. 
+	\item Weigh the dry soil with the soil tin and record the results in Box Xx.
+\end{enumerate}
+
 \section{Recording the Results}
 
-Record the results in Appendix A, into the following columns: 19, 20, 21, 23. Other columns calculations will be produced with the R code from Appendix B.  
+Record the results in Appendix A, Then enter the data into the data entry form (\href{http:\\test}{test}. Other columns calculations will be produced with the R code from Appendix B.  
 
 \section{Particle Size Distribution Calculations}
 
@@ -619,28 +633,61 @@ Once the data has been entered in the online form, you can extract the data as a
 
 Import and check data integrity
 
-\texttt{import()}
+\begin{Schunk}
+\begin{Sinput}
+> #hydrometer = import()
+> #head(hydrometer)
+> #str(hydrometer)
+\end{Sinput}
+\end{Schunk}
 
 What should you be looking for?  We want to make sure the data shown are the same as expected. There are several ways to look at the data to determine this. I have shown two ways. 1) Looking at the header (first six observations), then we evaluate the structure of the dataframe.
  
-\subsection{Calculating effective diameter, $D_e$, and Percent Finer, PF}
+\subsection{Calculating effective diameter, $D_e$}
 
-Using the \texttt{ParticleAnalysis()} function.
 
-\subsection{Determine Particle Size Proportions}
+\subsection{Calculating the Percent Finer, PF}
 
+\subsection{Graphing and Interpreting the Results}
+
+\begin{Schunk}
+\begin{Sinput}
+> #plot(PF ~ De, data=tmp2)
+> 
+> #plot(tmp2$De, tmp2$PF, ty='b', las=1, log='x', xaxt='n', xlim=c(2, 0.0002), ylab = "Percent Finer", xlab="Particle Size (mm)", main='Particle Size Distribution', panel.first=abline(v=seq(2, 0, -0.2),h=c(20,40,60,80), lty=3,col="gray"))
+> #ticks <- seq(-5, 0, by=1)
+> #labels <- sapply(ticks, function(i) as.expression(bquote(10^ .(i))))
+> #axis(1, at=c(0.00001, 0.0001, .001, 0.01, 0.1, 1.0), labels=labels)
+> #grid(nx = NULL, ny = 1, col = "lightgray", lty = "dotted", lwd = par("lwd"), equilogs = F)
+> 
+> # Minor Grids
+> #n <- n+2 <4
+> #minors <- log10(pretty(10^major.ticks[1:2],n))-major.ticks[1]
+> #minors <- minors[-c(1,n)]
+> #minor.ticks = c(outer(minors,major.ticks,`+`))
+> #minor.ticks <- minor.ticks[minor.ticks > mn & minor.ticks < mx]
+> #axis(ax,at=minor.ticks,tcl=par("tcl")*t.ratio,labels=FALSE)
+> 
+> # abline(v=0.002, col='Red'); text(x = .001, y = PF[6], 'Clay', col='red', cex=1.25, pos=3)
+> # abline(v=0.05, col='Blue'); text(x = .01, y = PF[4], 'Silt', col='blue', cex=1.25, pos=1)
+> # abline(v=2.0, col='Green'); text(x = 0.50, y = PF[1], 'Sand', col='green', cex=1.25, pos=1)
+> 
+> 
+> #sand = approx(x, y = NULL, xout, method = "linear", n = 50, yleft, yright, rule = 1, f = 0, ties = mean)
+> 
+> #TT.points.in.classes(tri.data = texturetest, class.sys = "USDA.TT") 
+\end{Sinput}
+\end{Schunk}
 
 \section{Conclusion}
-
-
 
 
 \FloatBarrier 
 \begin{fullwidth}
 % \renewcommand{\bibfont}{\small}
-\bibliography{../../../CA_Limnology/CA_limnology}
+%\bibliography{../../../CA_Limnology/CA_limnology}
 
-\bibliographystyle{cbe}
+%\bibliographystyle{cbe}
 
 \medskip
 \noindent \textbf{Other Citations of Interest:} 
@@ -656,433 +703,14 @@ Anderson, J.M., and J.S. Ingram, eds.  1993.  Tropical Soil Biology and Fertilit
 \thispagestyle{empty}
 \section{Appendix A. Data Sheet}
 \begin{fullwidth}
-\includepdf[pages=-]{DataSheetv1}
+\includepdf[pages=-]{DataSheetv3}
 \end{fullwidth}
 
 
 \newpage
 \section{Appendix B: R code to calculate parameters for the SOP}
 
-\subsection{Percent Passing Through No. 10 Sieve}
-
-Using the function below, we can calculate the amount of soil that passed through Sieve No. 10. Once the function is call, record the results into Box 16. 
-
-\begin{Schunk}
-\begin{Sinput}
- PassNo10 = function(MassPassed,Total){
-   PercentPassed = MassPassed/Total * 100
-   cat("Enter", round(PercentPassed, 1), "into Box 16")
- }
-\end{Sinput}
-\end{Schunk}
-
-The syntax of the function requires two parameters, mass of soil passed (Box 11) and total soil used (Box 10), PassNo10(Mass of Soil Passed, Total Soil Used). 
-
-For example, if we have the mass of the soil that passed through the sieve 122 grams and we had a total to start with of 133 grams.
-
-\begin{Schunk}
-\begin{Sinput}
- PassNo10(122, 133)
-\end{Sinput}
-\begin{Soutput}
-Enter 91.7 into Box 16
-\end{Soutput}
-\end{Schunk}
-
-\subsection{Calculating Soil Mass for Analysis}
-
-The following function can be used to calculate the ...
-
-\begin{Schunk}
-\begin{Sinput}
- # Function to Calculate Ws 
- SoilEquiv = function(tin, airdry, ovendry, tinmass, desiredmass = 50){
- hygro = round(ovendry/airdry, 2)
- wd = (airdry - ovendry)/(ovendry-tinmass)
- WS_e = round(desiredmass * (1 + wd), 2)
- output = data.frame(
-   Parameter = c("Tin ID", "Tin Tare Weight", "Mass of air-dried soil", 
-       "Mass of oven-dried soil", "Hygroscopic Correction Factor", 
-       "Desired Oven-dried Soil", "Effective Soil Weight (WSe)"),
-   Value = c(tin, tinmass, airdry, ovendry, hygro, desiredmass, WS_e),
-   Box = c(12, 13, 14, 15, 17, 9, 18))
- print(output)
- }
-\end{Sinput}
-\end{Schunk}
-
-The function (SoilEquiv) requires four parameters to run provide the output, the mass of soil to be used for the hydrometer test. This mass is the air-dried soil to be used but is equivalent to the desired oven-dried soil, is based on the hygroscopic water methods. 
-
-The function's syntax is as follows: SoilEquiv(Tin \#, Air-Dried Mass, Oven-Dried Mass, Tin Tare, Desired Oven-Dried Soil)
-
-Below is an example, where the $tin number = 4$, $airdry = 27.4$, $ovendry = 25.6$, $tinmass = 12.3$, $desiredmass = 50$ and as used in R: 
-
-\begin{Schunk}
-\begin{Sinput}
- SoilEquiv(4, 27.4, 25.6, 12.3, 50)
-\end{Sinput}
-\begin{Soutput}
-                      Parameter Value Box
-1                        Tin ID  4.00  12
-2               Tin Tare Weight 12.30  13
-3        Mass of air-dried soil 27.40  14
-4       Mass of oven-dried soil 25.60  15
-5 Hygroscopic Correction Factor  0.93  17
-6       Desired Oven-dried Soil 50.00   9
-7   Effective Soil Weight (WSe) 56.77  18
-\end{Soutput}
-\end{Schunk}
-
-
-\subsection{Hydrometer Correction Factor}
-
-Correcting for the meniscus, we use our ``blank'' hydrometer readings to calculate the composite correction factor, CCF. 
-
-\begin{equation}
-R_c = R_a - (R_b - 1)
-\end{equation}
-
-The equation is implemented in the De function below...
-
-
-
-\subsection{Effective Depth}
-
-We have two hydrometer types in the lab -- and the formula to calcutate the effective depth varies based on which hydrometer we use. 
-
-\begin{equation}
-\texttt{Effective Depth} = XXX
-\end{equation}
-
-\begin{table}
-		\begin{tabular}{lcl}\hline
-Hydrometer Model	& Code for R function  	&	$R = f(R_a)$	\\ \hline\hline
-Heavy Liquid			&		``HL''							&	$16.295 - 0.1645 * R_c$\\
-151H Hydrometer		& 	``151H''						& $234.9 + -228.X * R_c$\\ \hline
-		\end{tabular}
-	\caption{Hydrometer Types and Effective Depth Formula}
-	\label{tab:HydrometerTypesAndEffectiveDepthFormula}
-\end{table}
-
-Thus, the function syntax is
-
-Hydrometer = ``HL'' or Hydrometer = ``151H''
-
-\subsection{Formatting the Data}
-
-There are two ways to process the data. One, you can analyze the data using a calculator or use excel as a fancy calculator. Either way, we are not using the efficacy of using available software. For our analysis, we will analyze the data using R that is capable of analyzing many samples simultaneously. In order to accomplish this, we need to have the data entered in a consistent format. 
-
-Thus, we have created a spreadsheet or access database? for data entry or shiny apps?
-
-\subsection{Importing data}
-
-importing data into R is not difficult, but there are tricks. The following function, allows the data to be imported into R from a csv file. This function is used to start the analysis. 
-
-\begin{Schunk}
-\begin{Sinput}
- import = function(){
- read.csv(file.choose())
- }
-\end{Sinput}
-\end{Schunk}
-
-\subsection{Calculating the $D_e$ and PF w/K}
-
-Below is the function to calculate the D and PF, where K as a constant is calculated. 
-
-\subsection{Effective Particle Diameter Size, $D_e$}
-
-The formula is 
-
-\begin{equation}
-d_e = \sqrt{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
-\end{equation}
-
-Once the data have been inspected for integrity, we can use the following function to calculate the two values of interest: $D_e$ and PF. 
-
-%<<label = Defunction, Echo=T>>=
-
-SampleParams = data.frame(Ws_actual = 50, Hygro = .95, GSp = 2.65); SampleParams
-
-# Fill In Missing Values and Convert Times
-tmp1 = import
-tmp1$time[tmp1$Time_Units == "s"]=tmp1$Time[tmp1$Time_Units == "s"]/60; tmp1
-tmp1$time[tmp1$Time_Units == "m"]=tmp1$Time[tmp1$Time_Units == "m"]; tmp1
-
-
-TempNew = approx(tmp1$time, y = tmp1$Temp, xout = tmp1$time, method = "linear",
-          yleft=NA, yright=NA, rule = 1, f = 0, ties = mean); TempNew$y
-tmp1$temp = TempNew$y
-
-RblankNew = approx(tmp1$time, y = tmp1$Rblank, xout = tmp1$time, method = "linear",
-                 yleft=NA, yright=NA, rule = 1, f = 0, ties = mean); RblankNew$y
-tmp1$Rblank2 = RblankNew$y
-
-# Remove 0 second readings
-tmp2 <- subset(tmp1, time > 0, select=-c(Temp, Rblank, Time, Time_Units)); tmp2
-
-# Meniscus Correction Factor
-tmp2$Rc <- tmp2$Ractual - (tmp2$Rblank2 - 1); tmp2
-
-# K Value
-# Calculating K
-Kfun <- function(T=22, GSp = 2.65){
-  ifelse(T < 0, NA, 
-  ifelse(T  == 20, 0.01365, 
-  ifelse(T  == 21, 0.01348, 
-  ifelse(T  == 22, 0.01332,
-  ifelse(T  == 23, 0.01317,
-  ifelse(T  == 24, 0.01301,
-  ifelse(T  == 25, 0.01289,
-  ifelse(T > 25, NA, NA))))))))
-}
-
-tmp2$K <- Kfun(round(tmp2$temp,0)); tmp2
-
-# Hydrometer Type Option -- Effective Depth Calculation
-
-# Effective Depth Calcs for ``Heavy Liquid'' hydrometer
-x = c(1.00, 1.07); y = c(15.5, 0.6)
-L2coef = coef(lm(y~x))
-
-# Parameter for equation
-L2 = 14.5; Vb = 40; A = 27.8
-
-L1 = tmp2$Rc * L2coef[2] + L2coef[1]
-tmp2$l = L1 + 0.5*(L2-(Vb/A)); tmp2$l
-
-tmp2$EffectiveDepth[tmp2Hydrometer = ``HL''] =
-tmp2$l = 16.295 - 0.1645 * tmp2$Rc; tmp2
-
-x = c(1.00, 1.07)
-y = c(15.5, 0.6)
-
-L2coef = coef(lm(y~x))
-
-
-tmp2$Rc
-L1 = tmp2$Rc * L2coef[2] + L2coef[1]
-L2 = 14.5
-Vb = 40
-A = 27.8
-tmp2$l = L1 + 0.5*(L2-(Vb/A)); tmp2$l
-
-
-tmp2$De = tmp2$K*sqrt(tmp2$l/tmp2$time); tmp2
-
-GSw = 1
-tmp2$PF = 100000/SampleParams$Ws_actual * (SampleParams$GSp/(SampleParams$GSp-GSw))*(tmp2$Rc - GSw);tmp2 
-%@
-
-\begin{Schunk}
-\begin{Sinput}
- GSp = 2.65
- GSf = 1
- t = c(0.5, 1, 3, 10, 30, 60, 90, 120, 1440)
- #c(2, 5, 15, 30, 60, 250, 1440)
- L1 = c(1.01, 1.01, 1.008, 1.007, 1.007, 1.0065, 1.0065, 1.0064, 1.0055)
- # Heavy Density Hydrometer
- Vb = 40
- A = 27.8
- L2 = 14.5
- effective_depth = L1 + 0.5*(L2 - Vb/A) # result in centimeters
- C1 = 0.01732483379693
- C2 = -5.04157465609E-4
- C3 = 8.387438669317E-6
- C4 = -7.401129271698E-8
- C5 = 2.625994080072E-12
- eta = C1 + T * (C2 + T * (C3 + T *  (C4 + T * C5)))
- d_e = sqrt((30 * eta * effective_depth)/((980*GSp - GSf) *t)); d_e
-\end{Sinput}
-\begin{Soutput}
-[1] 0.054156994 0.038294778 0.022106568 0.012107463 0.006990247 0.004942687 0.004035687 0.003494984
-[9] 0.001008855
-\end{Soutput}
-\begin{Sinput}
- 
- #{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
- 
-\end{Sinput}
-\end{Schunk}
-
-\begin{equation}
-PF = [(100,000/M_s)[m|5]P5 \frac{GS_p}{GS_p - GS_w}](R_c - GS_w)
-\end{equation}
-
-\begin{Schunk}
-\begin{Sinput}
- M_s = 60
- PF = 100000/M_s * (GSp)/(GSp-GSf)*(L1 - GSf); PF
-\end{Sinput}
-\begin{Soutput}
-[1] 26.76768 26.76768 21.41414 18.73737 18.73737 17.39899 17.39899 17.13131 14.72222
-\end{Soutput}
-\begin{Sinput}
- plot(d_e, PF)
-\end{Sinput}
-\end{Schunk}
-
-\subsection{Determine the Texture Classification}
-
-\subsection{Program to Process Multiple Samples}
-
-To process the analysis, we need to create a standardized electronic data entry template that can later be read by R, which will conduct the analysis above. R can be used to automate the analysis and process multiple samples at the same time. Below is the program that I have developed for this purpose. 
-
-First, use the data entry template...
-
- 
-
-where $M_s$ = a biased soil sample value, that includes the amount of hydroscopic water and the percentage of soil that passed through a 2 mm sieve. 
-
-
-\section{Calculations with $\eta$ and $GS_w$}
-
-\subsection{Calculating fluid viscosity, $\eta$}
-
-The fluid viscosity, $\eta$, various with temperature. We will use a deterministic equation to estimate the viscosity:
-
-\begin{equation}
-\eta = C_1 + T * (C_2 + T * (C_3 + T *  (C_4 + T * C_5)))
-\end{equation}
-
-where T is the fluid temperature ($^\circ$ C),
-$C_1$ = 0.01732483379693,
-$C_2$ = -5.04157465609E-4
-$C_3$ = 8.387438669317E-6
-$C_4$ = -7.401129271698E-8
-$C_5$ = 2.625994080072E-12.
-
-This equation is automatically implemented in the De function as described below. 
-
-\subsection{Calculating Fluid Density, $\rho_f$)}
-
-Similar to fluid viscosity, fluid density, $\rho_f$ also changes with temperature,
-
-\begin{equation}
-G_w = C1 + T * (C2 + T * (C3 + T * C4))
-\end{equation}
-
-where T is temperature, 
-$C_1$ = 0.99991003252,
-$C_2$ = 0.00005201921, 
-$C_3$ = -0.00000751229, 
-$C_4$ = -0.00000003605183,
-
-
-
-
-Some random example...
-
-
-\subsection{Effective Particle Diameter Size, $D_e$}
-
-\begin{equation}
-P_s = \sqrt{\frac{30*\eta*l}{980*(G_s - G_w)*E_t}}
-\end{equation}
-
-\newpage
-\subsection{$D_e$ using K}
-
-\begin{equation}
-D_e = K \sqrt{L/T}
-\end{equation}
-
-
-Calculating K
-
-\begin{Schunk}
-\begin{Sinput}
- 
-\end{Sinput}
-\end{Schunk}
-
-One can easily use the function with the temperature and have K returned: 
-
-\begin{Schunk}
-\begin{Sinput}
- 
-\end{Sinput}
-\end{Schunk}
-
-Calculating L
-
-\begin{Schunk}
-\begin{Sinput}
- 
-\end{Sinput}
-\end{Schunk}
-
-Calculating $D_e$
-
-\begin{equation}
-D_e = K * sqrt{L/T}
-\end{equation}
-
-\begin{Schunk}
-\begin{Sinput}
- 
-\end{Sinput}
-\end{Schunk}
-
-\subsection{Alternative Calculation w/o K}
-
-\begin{Schunk}
-\begin{Sinput}
- # Fluid Viscosity
- C1 = 0.01732483379693
- C2 = -5.04157465609E-4
- C3 = 8.387438669317E-6
- C4 = -7.401129271698E-8
- C5 = 2.625994080072E-12
- eta <- function(T){
- C1 + T * (C2 + T * (C3 + T * (C4 + T * C5)))
- } 
-\end{Sinput}
-\end{Schunk}
-
-Now, we calculate the fluid viscosity, $\eta$, 
-
-\begin{Schunk}
-\begin{Sinput}
- eta(23)
-\end{Sinput}
-\begin{Soutput}
-[1] 0.009266407
-\end{Soutput}
-\end{Schunk}
-
-
-And the specific gravity of water, $Gs_w$, 
-
-\begin{Schunk}
-\begin{Sinput}
- Gs_w <- function(T){
- C1 + T * (C2 + T * (C3 + T * C4))}
-\end{Sinput}
-\end{Schunk}
-
-%id = 18
-
-%plot(de[id,], Pf[id,], ty='b', las=1, log='x', xaxt='n', xlim=c(1, 0.00001), ylab = "Percent Finer", xlab="Particle Size (mm)", main='Particle Size Distribution', panel.first=grid())
-%ticks <- seq(-5, 0, by=1)
-%labels <- sapply(ticks, function(i) as.expression(bquote(10^ .(i))))
-%axis(1, at=c(0.00001, 0.0001, .001, 0.01, 0.1, 1.0), labels=labels)
-
-%# Minor Grids
-%# n <- n+2
-%#  minors <- log10(pretty(10^major.ticks[1:2],n))-major.ticks[1]
-%# minors <- minors[-c(1,n)]
-%# minor.ticks = c(outer(minors,major.ticks,`+`))
-%# minor.ticks <- minor.ticks[minor.ticks > mn & minor.ticks < mx]
-%# axis(ax,at=minor.ticks,tcl=par("tcl")*t.ratio,labels=FALSE)
-
-%abline(v=0.002, col='Red'); text(x = .0001, y = Pf[id,7], 'Clay', col='red', cex=1.25, pos=3)
-%abline(v=0.05, col='Blue'); text(x = .01, y = Pf[id,4], 'Silt', col='blue', cex=1.25, pos=1)
-%abline(v=2.0, col='Green'); text(x = 0.50, y = Pf[id,1], 'Sand', col='green', cex=1.25, pos=1)
-
-
-%#sand = approx(x, y = NULL, xout, method = "linear", n = 50, yleft, yright, rule = 1, f = 0, ties = mean)
-					
+\input{Appendix_B}			
 
 \end{document}
 
