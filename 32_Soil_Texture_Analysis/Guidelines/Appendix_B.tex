@@ -1,15 +1,53 @@
 % Appendix B 
 
+\subsection{Reading Data into R}
+
+\href{http://thinkertools.org/grainsize/} 
+
+The password is ``18Pomona87''
+
+FileRead function...
+
+
+
+
+## Reading .csv Data into R
+\begin{Schunk}
+\begin{Soutput}
+function () 
+{
+    reading <- read.csv(file.choose())
+    sample <- read.csv(file.choose())
+    return(reading)
+    return(sample)
+}
+\end{Soutput}
+\end{Schunk}
+
+
 \subsection{Percent Passing Through No. 10 Sieve}
 
 Using the function below, we can calculate the amount of soil that passed through Sieve No. 10. Once the function is call, record the results into Box 16. 
 
 \begin{Schunk}
 \begin{Sinput}
- PassNo10 = function(MassPassed,Total){
-   PercentPassed = MassPassed/Total * 100
-   cat("Enter", round(PercentPassed, 1), "into Box 16")
- }
+> source("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Soil_functions/PassNo10_fun.R")
+> PassNo10
+\end{Sinput}
+\begin{Soutput}
+function (MassPassed, Total) 
+{
+    round(MassPassed/Total * 100, 1)
+}
+\end{Soutput}
+\end{Schunk}
+
+\begin{Schunk}
+\begin{Sinput}
+> PassNo10 = function(MassPassed,Total){
++   PercentPassed = MassPassed/Total * 100
++   cat("Enter", round(PercentPassed, 1), "into Box 16")
++ }
 \end{Sinput}
 \end{Schunk}
 
@@ -19,7 +57,7 @@ For example, if we have the mass of the soil that passed through the sieve 122 g
 
 \begin{Schunk}
 \begin{Sinput}
- PassNo10(122, 133)
+> PassNo10(122, 133)
 \end{Sinput}
 \begin{Soutput}
 Enter 91.7 into Box 16
@@ -32,19 +70,19 @@ The following function can be used to calculate the ...
 
 \begin{Schunk}
 \begin{Sinput}
- # Function to Calculate Ws 
- SoilEquiv = function(tin, airdry, ovendry, tinmass, desiredmass = 50){
- hygro = round(ovendry/airdry, 2)
- wd = (airdry - ovendry)/(ovendry-tinmass)
- WS_e = round(desiredmass * (1 + wd), 2)
- output = data.frame(
-   Parameter = c("Tin ID", "Tin Tare Weight", "Mass of air-dried soil", 
-       "Mass of oven-dried soil", "Hygroscopic Correction Factor", 
-       "Desired Oven-dried Soil", "Effective Soil Weight (WSe)"),
-   Value = c(tin, tinmass, airdry, ovendry, hygro, desiredmass, WS_e),
-   Box = c(12, 13, 14, 15, 17, 9, 18))
- print(output)
- }
+> # Function to Calculate Ws 
+> SoilEquiv = function(tin, airdry, ovendry, tinmass, desiredmass = 50){
++ hygro = round(ovendry/airdry, 2)
++ wd = (airdry - ovendry)/(ovendry-tinmass)
++ WS_e = round(desiredmass * (1 + wd), 2)
++ output = data.frame(
++   Parameter = c("Tin ID", "Tin Tare Weight", "Mass of air-dried soil", 
++       "Mass of oven-dried soil", "Hygroscopic Correction Factor", 
++       "Desired Oven-dried Soil", "Effective Soil Weight (WSe)"),
++   Value = c(tin, tinmass, airdry, ovendry, hygro, desiredmass, WS_e),
++   Box = c(12, 13, 14, 15, 17, 9, 18))
++ print(output)
++ }
 \end{Sinput}
 \end{Schunk}
 
@@ -56,7 +94,7 @@ Below is an example, where the $tin number = 4$, $airdry = 27.4$, $ovendry = 25.
 
 \begin{Schunk}
 \begin{Sinput}
- SoilEquiv(4, 27.4, 25.6, 12.3, 50)
+> SoilEquiv(4, 27.4, 25.6, 12.3, 50)
 \end{Sinput}
 \begin{Soutput}
                       Parameter Value Box
@@ -117,9 +155,9 @@ importing data into R is not difficult, but there are tricks. The following func
 
 \begin{Schunk}
 \begin{Sinput}
- import = function(){
- read.csv(file.choose())
- }
+> import = function(){
++ read.csv(file.choose())
++ }
 \end{Sinput}
 \end{Schunk}
 
@@ -144,3 +182,208 @@ d_e = \sqrt{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
 
 Once the data have been inspected for integrity, we can use the following function to calculate the two values of interest: $D_e$ and PF. 
 
+\begin{Schunk}
+\begin{Sinput}
+> SampleParams = data.frame(Ws_actual = 50, Hygro = .95, GSp = 2.65); SampleParams
+> 
+> 
+\end{Sinput}
+\end{Schunk}
+
+\begin{Schunk}
+\begin{Sinput}
+> GSp = 2.65
+> GSf = 1
+> t = c(0.5, 1, 3, 10, 30, 60, 90, 120, 1440)
+> #c(2, 5, 15, 30, 60, 250, 1440)
+> L1 = c(1.01, 1.01, 1.008, 1.007, 1.007, 1.0065, 1.0065, 1.0064, 1.0055)
+> # Heavy Density Hydrometer
+> Vb = 40
+> A = 27.8
+> L2 = 14.5
+> effective_depth = L1 + 0.5*(L2 - Vb/A) # result in centimeters
+> C1 = 0.01732483379693
+> C2 = -5.04157465609E-4
+> C3 = 8.387438669317E-6
+> C4 = -7.401129271698E-8
+> C5 = 2.625994080072E-12
+> eta = C1 + T * (C2 + T * (C3 + T *  (C4 + T * C5)))
+> d_e = sqrt((30 * eta * effective_depth)/((980*GSp - GSf) *t)); d_e
+> 
+> #{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
+> 
+\end{Sinput}
+\end{Schunk}
+
+\begin{equation}
+PF = [(100,000/M_s)[m|5]P5 \frac{GS_p}{GS_p - GS_w}](R_c - GS_w)
+\end{equation}
+
+\begin{Schunk}
+\begin{Sinput}
+> M_s = 60
+> PF = 100000/M_s * (GSp)/(GSp-GSf)*(L1 - GSf); PF
+> plot(d_e, PF)
+\end{Sinput}
+\end{Schunk}
+
+\subsection{Determine the Texture Classification}
+
+\subsection{Program to Process Multiple Samples}
+
+To process the analysis, we need to create a standardized electronic data entry template that can later be read by R, which will conduct the analysis above. R can be used to automate the analysis and process multiple samples at the same time. Below is the program that I have developed for this purpose. 
+
+First, use the data entry template...
+
+ 
+
+where $M_s$ = a biased soil sample value, that includes the amount of hydroscopic water and the percentage of soil that passed through a 2 mm sieve. 
+
+
+\section{Calculations with $\eta$ and $GS_w$}
+
+\subsection{Calculating fluid viscosity, $\eta$}
+
+The fluid viscosity, $\eta$, various with temperature. We will use a deterministic equation to estimate the viscosity:
+
+\begin{equation}
+\eta = C_1 + T * (C_2 + T * (C_3 + T *  (C_4 + T * C_5)))
+\end{equation}
+
+where T is the fluid temperature ($^\circ$ C),
+$C_1$ = 0.01732483379693,
+$C_2$ = -5.04157465609E-4
+$C_3$ = 8.387438669317E-6
+$C_4$ = -7.401129271698E-8
+$C_5$ = 2.625994080072E-12.
+
+This equation is automatically implemented in the De function as described below. 
+
+\subsection{Calculating Fluid Density, $\rho_f$)}
+
+Similar to fluid viscosity, fluid density, $\rho_f$ also changes with temperature,
+
+\begin{equation}
+G_w = C1 + T * (C2 + T * (C3 + T * C4))
+\end{equation}
+
+where T is temperature, 
+$C_1$ = 0.99991003252,
+$C_2$ = 0.00005201921, 
+$C_3$ = -0.00000751229, 
+$C_4$ = -0.00000003605183,
+
+
+
+
+Some random example...
+
+
+\subsection{Effective Particle Diameter Size, $D_e$}
+
+\begin{equation}
+P_s = \sqrt{\frac{30*\eta*l}{980*(G_s - G_w)*E_t}}
+\end{equation}
+
+\newpage
+\subsection{$D_e$ using K}
+
+\begin{equation}
+D_e = K \sqrt{L/T}
+\end{equation}
+
+
+Calculating K
+
+\begin{Schunk}
+\begin{Sinput}
+> 
+\end{Sinput}
+\end{Schunk}
+
+One can easily use the function with the temperature and have K returned: 
+
+\begin{Schunk}
+\begin{Sinput}
+> 
+\end{Sinput}
+\end{Schunk}
+
+Calculating L
+
+\begin{Schunk}
+\begin{Sinput}
+> 
+\end{Sinput}
+\end{Schunk}
+
+Calculating $D_e$
+
+\begin{equation}
+D_e = K * sqrt{L/T}
+\end{equation}
+
+\begin{Schunk}
+\begin{Sinput}
+> 
+\end{Sinput}
+\end{Schunk}
+
+\subsection{Alternative Calculation w/o K}
+
+\begin{Schunk}
+\begin{Sinput}
+> # Fluid Viscosity
+> C1 = 0.01732483379693
+> C2 = -5.04157465609E-4
+> C3 = 8.387438669317E-6
+> C4 = -7.401129271698E-8
+> C5 = 2.625994080072E-12
+> eta <- function(T){
++ C1 + T * (C2 + T * (C3 + T * (C4 + T * C5)))
++ } 
+\end{Sinput}
+\end{Schunk}
+
+Now, we calculate the fluid viscosity, $\eta$, 
+
+\begin{Schunk}
+\begin{Sinput}
+> eta(23)
+\end{Sinput}
+\begin{Soutput}
+[1] 0.009266407
+\end{Soutput}
+\end{Schunk}
+
+
+And the specific gravity of water, $Gs_w$, 
+
+\begin{Schunk}
+\begin{Sinput}
+> Gs_w <- function(T){
++ C1 + T * (C2 + T * (C3 + T * C4))}
+\end{Sinput}
+\end{Schunk}
+
+%id = 18
+
+%plot(de[id,], Pf[id,], ty='b', las=1, log='x', xaxt='n', xlim=c(1, 0.00001), ylab = "Percent Finer", xlab="Particle Size (mm)", main='Particle Size Distribution', panel.first=grid())
+%ticks <- seq(-5, 0, by=1)
+%labels <- sapply(ticks, function(i) as.expression(bquote(10^ .(i))))
+%axis(1, at=c(0.00001, 0.0001, .001, 0.01, 0.1, 1.0), labels=labels)
+
+%# Minor Grids
+%# n <- n+2
+%#  minors <- log10(pretty(10^major.ticks[1:2],n))-major.ticks[1]
+%# minors <- minors[-c(1,n)]
+%# minor.ticks = c(outer(minors,major.ticks,`+`))
+%# minor.ticks <- minor.ticks[minor.ticks > mn & minor.ticks < mx]
+%# axis(ax,at=minor.ticks,tcl=par("tcl")*t.ratio,labels=FALSE)
+
+%abline(v=0.002, col='Red'); text(x = .0001, y = Pf[id,7], 'Clay', col='red', cex=1.25, pos=3)
+%abline(v=0.05, col='Blue'); text(x = .01, y = Pf[id,4], 'Silt', col='blue', cex=1.25, pos=1)
+%abline(v=2.0, col='Green'); text(x = 0.50, y = Pf[id,1], 'Sand', col='green', cex=1.25, pos=1)
+
+
+%#sand = approx(x, y = NULL, xout, method = "linear", n = 50, yleft, yright, rule = 1, f = 0, ties = mean)

@@ -1,11 +1,36 @@
 % Appendix B 
 
+\subsection{Reading Data into R}
+
+\href{http://thinkertools.org/grainsize/} 
+
+The password is ``18Pomona87''
+
+FileRead function...
+
+
+
+
+## Reading .csv Data into R
+<<ChooseRead, echo=F>>=
+source("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Soil_functions/ChooseRead_fun.R")
+
+ChooseRead
+@
+
+
 \subsection{Percent Passing Through No. 10 Sieve}
 <<echo=F>>=
-options(prompt=" ",continue=" ")
+# options(prompt=" ",continue=" ")
 @
 
 Using the function below, we can calculate the amount of soil that passed through Sieve No. 10. Once the function is call, record the results into Box 16. 
+
+<<echo=T>>=
+source("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Soil_functions/PassNo10_fun.R")
+
+PassNo10
+@
 
 <<echo=T, label=passNo10>>=
 PassNo10 = function(MassPassed,Total){
@@ -97,7 +122,7 @@ Thus, we have created a spreadsheet or access database? for data entry or shiny 
 
 importing data into R is not difficult, but there are tricks. The following function, allows the data to be imported into R from a csv file. This function is used to start the analysis. 
 
-<<label = import>>=
+<<label = import, eval=FALSE, echo=TRUE>>=
 import = function(){
 read.csv(file.choose())
 }
@@ -124,81 +149,14 @@ d_e = \sqrt{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
 
 Once the data have been inspected for integrity, we can use the following function to calculate the two values of interest: $D_e$ and PF. 
 
-<<label = Defunction, Echo=T>>=
+<<label = Defunction, eval=FALSE, echo=TRUE>>=
 
 SampleParams = data.frame(Ws_actual = 50, Hygro = .95, GSp = 2.65); SampleParams
 
-# Fill In Missing Values and Convert Times
-tmp1 = import
-tmp1$time[tmp1$Time_Units == "s"]=tmp1$Time[tmp1$Time_Units == "s"]/60; tmp1
-tmp1$time[tmp1$Time_Units == "m"]=tmp1$Time[tmp1$Time_Units == "m"]; tmp1
 
-
-TempNew = approx(tmp1$time, y = tmp1$Temp, xout = tmp1$time, method = "linear",
-          yleft=NA, yright=NA, rule = 1, f = 0, ties = mean); TempNew$y
-tmp1$temp = TempNew$y
-
-RblankNew = approx(tmp1$time, y = tmp1$Rblank, xout = tmp1$time, method = "linear",
-                 yleft=NA, yright=NA, rule = 1, f = 0, ties = mean); RblankNew$y
-tmp1$Rblank2 = RblankNew$y
-
-# Remove 0 second readings
-tmp2 <- subset(tmp1, time > 0, select=-c(Temp, Rblank, Time, Time_Units)); tmp2
-
-# Meniscus Correction Factor
-tmp2$Rc <- tmp2$Ractual - (tmp2$Rblank2 - 1); tmp2
-
-# K Value
-# Calculating K
-Kfun <- function(T=22, GSp = 2.65){
-  ifelse(T < 0, NA, 
-  ifelse(T  == 20, 0.01365, 
-  ifelse(T  == 21, 0.01348, 
-  ifelse(T  == 22, 0.01332,
-  ifelse(T  == 23, 0.01317,
-  ifelse(T  == 24, 0.01301,
-  ifelse(T  == 25, 0.01289,
-  ifelse(T > 25, NA, NA))))))))
-}
-
-tmp2$K <- Kfun(round(tmp2$temp,0)); tmp2
-
-# Hydrometer Type Option -- Effective Depth Calculation
-
-# Effective Depth Calcs for ``Heavy Liquid'' hydrometer
-x = c(1.00, 1.07); y = c(15.5, 0.6)
-L2coef = coef(lm(y~x))
-
-# Parameter for equation
-L2 = 14.5; Vb = 40; A = 27.8
-
-L1 = tmp2$Rc * L2coef[2] + L2coef[1]
-tmp2$l = L1 + 0.5*(L2-(Vb/A)); tmp2$l
-
-tmp2$EffectiveDepth[tmp2Hydrometer = ``HL''] =
-tmp2$l = 16.295 - 0.1645 * tmp2$Rc; tmp2
-
-x = c(1.00, 1.07)
-y = c(15.5, 0.6)
-
-L2coef = coef(lm(y~x))
-
-
-tmp2$Rc
-L1 = tmp2$Rc * L2coef[2] + L2coef[1]
-L2 = 14.5
-Vb = 40
-A = 27.8
-tmp2$l = L1 + 0.5*(L2-(Vb/A)); tmp2$l
-
-
-tmp2$De = tmp2$K*sqrt(tmp2$l/tmp2$time); tmp2
-
-GSw = 1
-tmp2$PF = 100000/SampleParams$Ws_actual * (SampleParams$GSp/(SampleParams$GSp-GSw))*(tmp2$Rc - GSw);tmp2 
 @
 
-<<>>=
+<<next, eval=FALSE, echo=TRUE>>=
 GSp = 2.65
 GSf = 1
 t = c(0.5, 1, 3, 10, 30, 60, 90, 120, 1440)
@@ -230,7 +188,7 @@ d_e = sqrt((30 * eta * effective_depth)/((980*GSp - GSf) *t)); d_e
 PF = [(100,000/M_s)[m|5]P5 \frac{GS_p}{GS_p - GS_w}](R_c - GS_w)
 \end{equation}
 
-<<label = pf >>=
+<<label = pf, eval=FALSE >>=
 M_s = 60
 
 PF = 100000/M_s * (GSp)/(GSp-GSf)*(L1 - GSf); PF
