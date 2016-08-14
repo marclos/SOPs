@@ -26,7 +26,7 @@
 
 \section{Summary of Method}
 
-\NP Chlorophyll-containing phytoplankton in a measured volume of sample water are concentrated by filtering at low vacuum (13 cm Hg) through a glass fiber filter (Whatman GF/F). The pigments are extracted from the phytoplankton in 90\% acetone and to ensure thorough extraction of chlorophyll \textit{a}, are allowed to steep for at least 2hrs. The fluorescence of the sample is measured at the excitation wavelength of 485 nm and emission wavelenghts 685 / 50 nm. Sample fluorescence is measured before and after acidification with 0.1M HCl to obtain a corrected chlorophyll \textit{a} concentration. 
+\NP Chlorophyll-containing phytoplankton in a measured volume of sample water are concentrated by filtering at low vacuum through a glass fiber filter (Whatman GF/F). The pigments are extracted from the phytoplankton in 90\% acetone and to ensure thorough extraction of chlorophyll \textit{a}, are allowed to steep for at least 2hrs. The fluorescence of the sample is measured at the excitation wavelength of 485 nm and emission wavelenghts 685 / 50 nm. Sample fluorescence is measured before and after acidification with 0.1 N HCl to obtain a corrected chlorophyll \textit{a} concentration. 
 
 
 \section{Definitions}
@@ -36,7 +36,9 @@
 
 \NP \textbf{Field duplicates}-- Two separate samples collected at the same time and placed under identical circumstances and treated exactly the same throughout the field and laboratory procedures. Provide a measure of the precision associated with sample collection, preservation, storage and laboratory processing. 
 
-\NP \textbf{Quality Control Sample (QCs)}-- A solution of known concentration obtained from a source external to the laboratory to check laboratory performance.  
+\NP \textbf{Quality Control Sample (QCs)}-- A solution of known concentration obtained from a source external to the laboratory to check laboratory performance.
+
+\NP \textbf{Linear Dynamic Range} -- The absolute quantity or concentration range over which the instrument response to the analyte is clear (basically, its the range of concentrations for which your fluorometer is suited to take accurate measurements). For the Turner Trilogy Fluorometer in Marc's lab the LDR is 0-1000 ppb RWT. 
 
 
 \section{Interferences}
