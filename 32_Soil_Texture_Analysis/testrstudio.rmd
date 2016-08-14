@@ -41,17 +41,20 @@ source("Soil_functions/PassNo10_fun.R")
 
 sample$passNo10Percent =PassNo10(sample$pass10, sample$totalSoil)
 
-sample %>% select(passNo10Percent, passPercent)
+#sample %>% select(passNo10Percent, passPercent)
 
 source("Soil_functions/SoilEquiv_fun.R")
 
 sample$hygroPercent2 = hygro(sample$tinAir, sample$tinOven, sample$tinTare); head(sample)
-sample$WS_actual = WS_e(sample$tinAir, sample$tinOven, sample$tinTare, sample$actualSoil);
+sample$WS_e = WS_e(sample$tinAir, sample$tinOven, sample$tinTare, sample$actualSoil);
 
 sample$GSp = 2.65
-head(sample)
 
-SampleParams <- sample %>% select(sampleKEY, WSe, passNo10Percent, hygroPercent2, GSp); head(SampleParams)
+#head(sample)
+
+SampleParams <- sample %>% select(sampleKEY, WS_e, passNo10Percent, hygroPercent2, GSp); 
+
+#head(SampleParams)
   
 ```
 
@@ -60,7 +63,8 @@ SampleParams <- sample %>% select(sampleKEY, WSe, passNo10Percent, hygroPercent2
 ```{r preprocess_reading}
 
 # Convert Times to Minutes
-reading$Et <- round(reading$timeElapsed * ElapsedTimeConversion(reading$timeUnit), 2); reading$Et
+reading$Et <- round(reading$timeElapsed * ElapsedTimeConversion(reading$timeUnit), 2)
+# reading$Et
 
 ```
 ## Join SampleParams and Reading
@@ -120,8 +124,6 @@ tmp$blank[is.na(tmp$blank)] <- imputeR(tmp)
 joined[joined$sampleKEY==KEY[i],]$blank2 <- tmp$blank
 }
 
-joined[1:30,]
-joined[31:70,]
 ```
 
 ## RcTest
@@ -168,9 +170,9 @@ rm(x, y, L2coef, L1, L2, Vb, A)
 ## Calculate D
 According to ASTM D422-63 the equation to calculate D (diameter in mm) can be  simplified as D = K*sqrt(L/T) where: L=effective depth (Leff), T = measurment time in min and K is the constant given in the tables that varies with temperature (already calculated).
 
-```{r}
+```{r De}
 joined$De<-joined$K * sqrt(joined$EffectiveDepth/joined$Et)
-joined$D
+joined$De
 ```
 
 ## Calculate PF
@@ -180,7 +182,7 @@ P=[(100,000/w)*G/(G-G1)]*(R-G1) (pretty sure G1=1, pretty sure R = Rc (ask marc 
 The bracketed portion will be the same for all variables thus we can calculate it separately and call it p1 (1st part of equation for )
 
 ```{r perfecentfiner}
-joined$W = joined$WSe/joined$passNo10Percent * 100
+joined$W = joined$WS_e/joined$passNo10Percent * 100
 joined$PF= ((100000/joined$W)*(joined$GSp/(joined$GSp-1)))*(joined$Rc - 1)
 ```
 
@@ -193,17 +195,53 @@ KEY <- unique(joined$sampleKEY)
 KEY <- KEY[-c(1:25)]
            
 for(i in 1:length(KEY)){
-i = 25
-with(joined[joined$sampleKEY==KEY[i],], plot(x=log(De), y=PF, xlab="Log of Diameter (mm)", ylab="Percent Finer", las=1))
+#with(joined[joined$sampleKEY==KEY[i],], plot(x=log(De), y=PF, xlab="Log of Diameter (mm)", ylab="Percent Finer", las=1))
 }
 
 ```
 
+## Estimating the Texture Size Classes
 
+```{r interpolation}
+clay <- 0.002; silt <- 0.05; sand <- 2.0
 
+#joined$sampleKEY[is.nan(joined$De)]
+joined$status="good"
+badKEYs <- data.frame(sampleKEY =unique(joined$sampleKEY[is.na(joined$De)]), status = "bad"); badKEYs
+badKEYs2 <- data.frame(sampleKEY =unique(joined$sampleKEY[is.na(joined$PF)]), status = "bad"); badKEYs2 
+badKEYs <- full_join(badKEYs, badKEYs2)
+joined3 <- joined %>% anti_join(badKEYs, by="sampleKEY"); 
+#joined3 <- goodKEYs %>% filter(
 
+goodKEYs <- unique(joined3$sampleKEY); goodKEYs
+#KEY <- KEY[-c(1:25, 47)]; KEY
 
+variables = 4 
+iterations = length(goodKEYs)
+textureclasses <- matrix(ncol=variables, nrow=iterations)
+ 
+for(i in 1:iterations){
+tmp3 = joined[joined3$sampleKEY==goodKEYs[i],]; head(tmp3)
+tmp3 = select(joined3, sampleKEY, De, PF) %>% filter(joined3$sampleKEY==goodKEYs[i]); tmp3 
 
+Perclay = round(Interpolation(tmp3, clay),1)
+Persilt = round(Interpolation(tmp3, silt), 1)
+Persand = round(100-(Persilt + Perclay), 1)
+textureclasses[i,] <- c(goodKEYs[i], Persand, Persilt, Perclay)
+}
+
+textureclasses
+ 
+textureclasses <- data.frame(textureclasses)
+names(textureclasses) <- c("sampleKEY", "Sand", "Silt", "Clay")
+
+class(textureclasses)
+
+sample2 <- sample %>% select(sampleKEY, sampleID, sampleDate, researcher)
+
+sample3 <- sample2 %>% left_join(textureclasses, by="sampleKEY")
+
+write.csv(sample3, file = paste("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/results_",Sys.Date(),".csv", sep=""))
 
 ```
 
