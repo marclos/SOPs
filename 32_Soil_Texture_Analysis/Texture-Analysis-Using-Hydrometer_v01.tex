@@ -28,9 +28,9 @@
 
 \section{Scope and Application}
 
-\NP The scope of this SOP is train researchers...
+\NP The size of soil particles plays a central role in soil process including soil-water-plant relations, pollution fate and transport, and nutrient cycling. In addition, soil texture classes have important land use implications, where, for example farmers, prefer loam soils to soils that are dominated by clays or sand.
 
-\NP The applications of this SOP are for...
+\NP The applications implements D422 ASTM Method D422 to analyze soil sample with a hydrometer.
 
 \section{Summary of Method}
 
@@ -44,11 +44,31 @@
 
 \section{Definitions}
 
-\NP Term1: is...
+\NP Effective Diameter
 
-\section{Interferences}
+\NP Texture Class...
 
-\NP Biases and interferences can come from...
+
+\section{Biases and Interferences}
+
+\NP The following are parameters that might influence the results of the hydrometer test and thus, we use various methods to pre-treat soils or measure to correct for these sources of bias. When correction factors are required, the calculations can become confusing.	 But we'll try to lead ourselves through this thicket without too many wrong-turns. 
+
+\begin{description}
+	\item[Temperature and Viscosity] Water temperate influences the viscosity of water, such that colder temperatures increase viscosity which increases the resistance force and reduces the terminal velocity of particles. The viscosity can be corrected for temperature.
+	\item[Temperature and Density] The density of water is highest at 4.94 degrees C. As temperatures increases, the density of water decreases. As water density decreases, the suspension density $\rho_s$ decreases, thus the particle size distribution is not accurate without a correction. 
+	\item[Soil Weight and Hygroscopic Water] Soil is composed of many components, including minerals, water, organic matter, air, etc. But to calculate the soil particle analysis, we need to account for the water in soil. We can do this by measuring the soil moisture content and correct the mass contributed by water from the soil tested.
+	\item[Aggregated Soil Particles] Soil particles need to be dispersed, but there is no perfect way to accomplish this. Complete dispersion requires both mechanical and chemical assistance. Mechanical stirring overcomes weaker binding forces in large aggregates, but chemical agents are also necessary, especially to deflocculate clays. Polyvalent cations (normally \ce{Ca+2} and \ce{Al+3}) flocculate clays by forming interparticle, electrostatic links. Chemical dispersing agents (such as sodium hexametaphosphate) are effective in dispersing these clay bundles because:
+	
+	\begin{itemize}
+		\item The sodium monovalent cation (\ce{Na+}) replaces polyvalent cations adsorbed on clays, breaking the interparticle linkage. The displaced polyvalent cations form insoluble complexes with phosphorus that prevents re-establishment of floccules.
+		\item The adsorption of sodium, a highly hydrated cation, inducing the hydration of clays. This condition diminishes the binding strength between clay and cation which raises a clay particle's electronegativity and, hence, their repulsion from other clays.
+	\end{itemize}
+	
+\noindent The mixture of dispersed soil particles in water is called a suspension. Once a true suspension state has been achieved, differential settling rates can be used to distinguish particle size distribution.
+	
+	\item Hydrometers are designed to be read from the bottom of the meniscus. However, in a soil suspension, the water is cloudy and we it's impossible to see through the meniscus. Therefore, we read the scale at the top of the meniscus and apply a correction factor. Without this correction factor, the analysis will be incorrect. 
+\end{description}
+
 
 \section{Health and Safety}
 
@@ -87,7 +107,6 @@
 
 \section{Reagents and Standards}
 
-\section{Reagents}
 \begin{enumerate*}
 	\item Hydrogen peroxide, 30\%.
 	\item Hydrochloric acid, 1N.
@@ -286,11 +305,12 @@ Obs. & Soil Reading Times 		& Temperture		& Blank Hydrometer \\ \hline\hline
 
 Record the results in Appendix A, Then enter the data into the data entry form (\href{test}{http\\:test}. Other columns calculations will be produced with the R code from Appendix B.  
 
-\section{Particle Size Distribution Calculations}
+
+\section{Data Analysis and Calculations}
 
 Once the data has been entered in the online form, you can extract the data as a csv file. This csv file can then be called by R to calculate the data automatically, using the following functions. 
 
-\subsection{Importing Data}
+\subsection*{Importing Data}
 
 Import and check data integrity
 
@@ -312,23 +332,15 @@ What should you be looking for?  We want to make sure the data shown are the sam
 
 \subsection{Graphing and Interpreting the Results}
 
-\section{Conclusion}
+\section{QC/QA Criteria}
 
-%\FloatBarrier 
-% \renewcommand{\bibfont}{\small}
-% \bibliography{../../../CA_Limnology/CA_limnology}
+\section{References}
 
-% \bibliographystyle{cbe}
+\NP D422...
 
-\medskip
-\noindent \textbf{Other Citations of Interest:} 
+\NP Wilde, S.A., R.B. Corey, J.G. Iyer, and G.K. Voigt.  1979.  Soil and Plant Analysis for Tree Culture.  Oxford and IBH Publishing Co., New Delhi.  Pp. 12-13.
 
-Wilde, S.A., R.B. Corey, J.G. Iyer, and G.K. Voigt.  1979.  Soil and Plant Analysis for Tree Culture.  Oxford and IBH Publishing Co., New Delhi.  Pp. 12-13.
-
-Anderson, J.M., and J.S. Ingram, eds.  1993.  Tropical Soil Biology and Fertility:  A Handbook of Methods. 2nd ed.  CAB International, Wallingford, UK.  P. 93-94.
-
-\newpage
-\thispagestyle{empty}
+\NP Anderson, J.M., and J.S. Ingram, eds.  1993.  Tropical Soil Biology and Fertility:  A Handbook of Methods. 2nd ed.  CAB International, Wallingford, UK.  P. 93-94.
 
 \section{Appendix A. Data Sheet}
 
@@ -338,14 +350,6 @@ Anderson, J.M., and J.S. Ingram, eds.  1993.  Tropical Soil Biology and Fertilit
 \newpage
 \section{Appendix B: R code to calculate parameters for the SOP}
 
-% \input{Appendix B}		
-
-\section{Data Analysis and Calculations}
-
-\section{QC/QA Criteria}
-
-\section{References}
-
-\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+% \input{Appendix B}	
 
 \end{document}
