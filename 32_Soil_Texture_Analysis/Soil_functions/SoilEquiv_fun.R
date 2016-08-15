@@ -75,48 +75,8 @@ imputeT <- function(sampleID){
 return(as.vector(nonmissingT[result[,2],3]))
 }
 
-# Function to impute Reading Blanks
-imputeR <- function(sampleID){
-  library(dplyr)
-  tmp2 <- sampleID %>% select(Et, blank, temp)
-  
-  missingR = tmp2[is.na(tmp2$blank),]; missingR
-  nonmissingR = tmp2[!is.na(tmp2$blank),]; nonmissingR
-  
-  missing.mat <- matrix(missingR$Et, nrow=length(missingR$Et), ncol=length(nonmissingR$Et), byrow=F); missing.mat
-  nonmissing.mat <- matrix(nonmissingR$Et, nrow=length(missingR$Et), ncol=length(nonmissingR$Et), byrow=T); nonmissing.mat
-  
-  W <- abs(missing.mat - nonmissing.mat)
-  rownames(W) <- paste0("Missing", seq(nrow(W)))
-  colnames(W) <- paste0("NonMissing", seq(ncol(W)))
-  
-  result <- t(sapply(seq(nrow(W)), function(i) {
-    j <- which.min(W[i,])
-    c(i, j)
-  }))
-  
-  alignments <- data.frame(missingR = result[,1], nonmissingR=result[,2])
-  #print(result)
-  
-  return(as.vector(nonmissingR[result[,2],2]))
-}
 
-# Old version!
-#imputeR <- function(sampleID){
-#  library(dplyr)
-#  tmp <- sampleID %>% select(Et, Rblank, Temp)
-#  tmp$Et_Align <- Et_aligning(Test$Et) 
-  
-  # non missing, keeping Rblank and Et_Align
-#  nonmissingR = tmp[!is.na(tmp$Rblank),c(2,4)]; nonmissingR 
-#  missingR = tmp[is.na(tmp$Rblank),c(2,4)]; missingR
-#  nonmissingT = tmp[!is.na(tmp$Temp),c(3,4)]; nonmissingT
-#  missingT = tmp[is.na(tmp$Temp),c(3,4)]; missingT
-  
-#  tmpR = left_join(missingR, nonmissingR, by="Et_Align")
-#  tmpT = left_join(missingT, nonmissingT, by="Et_Align")
-#  tmpR$Rblank.y
-#}
+
 
 # Function to Select K
 Kfun <- function(T=22, GSp = 2.65){

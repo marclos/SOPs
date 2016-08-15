@@ -7,8 +7,14 @@ output:
   word_document: default
 ---
 
+# Prepare and and Start Functions for Processing
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+source("Soil_functions/PassNo10_fun.R")
+source("Soil_functions/RemoveMissingKEYs_fun.R")
+source("Soil_functions/SoilEquiv_fun.R")
+
 ```
 
 ## Uploading and Downloading the Data
@@ -36,82 +42,72 @@ head(sample.import)
 library(mosaic)
 library(dplyr)
 
-# Check sample file
-BadsampleKEYs <- filter(sample.import, is.na(actualSoil) == T | is.na(totalSoil)==T) %>% select(sampleKEY); BadsampleKEYs
-BadreadingKEYs <- filter(reading.import, is.na(timeUnit)==T) %>% select(sampleKEY) 
- 
-# filter(sample, is.na(totalSoil)==T)
-badKEYs <- full_join(BadsampleKEYs, BadreadingKEYs); badKEYs
-reading <- reading.import %>% anti_join(badKEYs, by="sampleKEY"); 
-sample <- sample.import %>% anti_join(badKEYs, by="sampleKEY");
 
-# Write out Unprocessed samples
-unprocessed <- sample.import %>% inner_join(badKEYs) %>% select(sampleKEY, sampleID, researcher); 
+sample <- RemoveMissingKEYs(sample.import, reading.import)
 
-write.csv(unprocessed, file = paste("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/unprocessed_",Sys.Date(),".csv", sep=""))
 ```
 
-## Preprocess Sample File
+# Preprocess Sample File
+
+## Calculate Percent Soil Passing Seive No. 10
 ```{r preprocess}
 library(mosaic)
 library(dplyr)
+sample$passNo10Percent <- PassNo10(sample$pass10, sample$totalSoil)
+```
 
-source("Soil_functions/PassNo10_fun.R")
+## Calculate Percent Hygroscopic Water
 
-sample$passNo10Percent =PassNo10(sample$pass10, sample$totalSoil)
-
-#sample %>% select(passNo10Percent, passPercent)
-
-source("Soil_functions/SoilEquiv_fun.R")
-
+```{r hygroscopic}
 sample$hygroPercent2 = hygro(sample$tinAir, sample$tinOven, sample$tinTare); #head(sample)
 sample$WS_e = WS_e(sample$tinAir, sample$tinOven, sample$tinTare, sample$actualSoil);
+```
 
+## Assign Soil Particle Density if Missing
+```{r soildensity}
 sample$GSp = 2.65
+```
 
-#head(sample)
-
+## Select Soil Parameters for Processing Reading File
+```{r soilparams}
 SampleParams <- sample %>% select(sampleKEY, WS_e, passNo10Percent, hygroPercent2, GSp); 
-
 #head(SampleParams)
   
 ```
 
+# Process Hydrometer Readings
+
 ## Preprocess Reading File
 
+
+### Remove badKEYs from reading
 ```{r preprocess_reading}
-
-# Convert Times to Minutes
-reading$Et <- round(reading$timeElapsed * ElapsedTimeConversion(reading$timeUnit), 2)
-# reading$Et
-
+joined <- inner_join(reading.import, SampleParams, by="sampleKEY")
 ```
-## Join SampleParams and Reading
+
+### Convert Et to Minutes
+```{r elapsedtime}
+joined$Et <- round(joined$timeElapsed * ElapsedTimeConversion(joined$timeUnit), 2)
+```
+
+### Subset joined file
+```{r subsetjoin}
+joined2 <- joined %>% select(sampleKEY, passNo10Percent, GSp, Et, WS_e, actual, blank, temp) 
+```
+
+## Join SampleParams and Reading SECTION IS MOOT
 
 First, I created two files that have only a few columns each so we can test the join function.
 
 ```{r joinkeyID}
-reading.select <- select(reading, sampleKEY, Et, actual, blank, temp); #head(reading.select)
+#reading.select <- select(reading, sampleKEY, Et, actual, blank, temp); #head(reading.select)
 
-joined2 <- left_join(SampleParams, reading.select, by = "sampleKEY")
+#joined2 <- left_join(SampleParams, reading.select, by = "sampleKEY")
 ```
 
 ## Loop sampleKEY to Impute Missing Temp and Blanks
 
-### Table for Alignment for Missing Hydrometer and Temperature readings
-
-We will align missing values to closest readings: 
-
-| Reading | Missing Range |
-| --------| ------------- | 
-| 0       | 0-30          |
-| 60      | 31-90         |
-| 120     | 91-240        |
-| 1440    | >240          |
-
-I would like to create a more autmotic function for this, but I couldn't figure this out in an elegant way!
-
-## Using Non-Missing to Impute Missing Temp and RBlank
+##* Using Non-Missing to Impute Missing Temp and RBlank
 
 I still believe there is a more elegant to do this, but this is better than my initial idea!
 
@@ -120,7 +116,6 @@ I still believe there is a more elegant to do this, but this is better than my i
 First, we could make the function that address both missing values simultaneously. For example, impute(sampleID, parameter)...  I tried this, but ran into the problem that we use different columns that are identified in differeing ways. Perhaps, next version!
 
 ```{r impute_loop}
-
 joined <- joined2[!is.na(joined2$Et),]; joined
 KEY <- unique(joined$sampleKEY); KEY
 
@@ -145,6 +140,34 @@ joined[joined$sampleKEY==KEY[i],]$blank2 <- tmp$blank
 
 ```
 
+
+```{r imputefunction}
+impute <- function(imputeneed){
+joined <- imputeneed[!is.na(imputeneed$Et),]
+KEY <- unique(joined$sampleKEY); KEY
+
+#KEY <- KEY[-c(1, 2, 3)]; KEY
+joined$temp2 = NA
+joined$blank2 = NA
+
+#for(i in 1:length(KEY)){
+for(i in 1:length(KEY)){
+  # for tesing purposes... no 22
+  #i = 77
+tmp = joined[joined$sampleKEY==KEY[i],]; tmp
+
+# Temperature Imputing
+tmp$temp[is.na(tmp$temp)] <- imputeT(tmp)
+joined[joined$sampleKEY==KEY[i],]$temp2 <- tmp$temp
+
+# Reading Blank Imputing
+tmp$blank[is.na(tmp$blank)] <- imputeR(tmp)
+joined[joined$sampleKEY==KEY[i],]$blank2 <- tmp$blank
+}
+return(joined)
+}
+
+joined <- impute(joined2)
 ## RcTest
 
 Not sure what we are doing here... Isaac, can you comment?
