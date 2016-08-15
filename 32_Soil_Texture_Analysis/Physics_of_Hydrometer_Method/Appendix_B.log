@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  14 AUG 2016 11:50
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  14 AUG 2016 12:22
 entering extended mode
  %&-line parsing enabled.
 **Appendix_B.tex
@@ -55,7 +55,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
 
 ! Undefined control sequence.
 l.5 \href
-         {http://thinkertools.org/grainsize/}
+         {http://thinkertools.org/grainsize/}{Database}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -70,7 +70,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.5 \href{h
-           ttp://thinkertools.org/grainsize/}
+           ttp://thinkertools.org/grainsize/}{Database}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -108,6 +108,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no z in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no / in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 5--6
 [] 
@@ -193,22 +201,6 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 9--10
 []
  []
 
-! You can't use `macro parameter character #' in vertical mode.
-l.14 #
-      # Reading .csv Data into R
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in vertical mode.
-l.14 ##
-        Reading .csv Data into R
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -216,8 +208,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 ## R
-         eading .csv Data into R
+l.13 R
+      eading .csv Data into R
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -248,7 +240,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.15 \begin{Schunk}
+l.14 \begin{Schunk}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -261,7 +253,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 \begin{Soutput}
+l.15 \begin{Soutput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -277,13 +269,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no ( in font nullfont!
 Missing character: There is no ) in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no < in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -309,12 +300,13 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no ( in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ) in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no l in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
 Missing character: There is no < in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -376,7 +368,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 \end{Soutput}
+l.23 \end{Soutput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -389,19 +381,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 \end{Schunk}
+l.24 \end{Schunk}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 14--26
+Overfull \hbox (20.0pt too wide) in paragraph at lines 13--25
 []
  []
 
 ! Undefined control sequence.
-l.28 \subsection
+l.27 \subsection
                 {Percent Passing Through No. 10 Sieve}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -416,7 +408,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \subsection{P
+l.27 \subsection{P
                   ercent Passing Through No. 10 Sieve}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -453,7 +445,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 28--29
+Overfull \hbox (20.0pt too wide) in paragraph at lines 27--28
 []
  []
 
@@ -464,7 +456,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 U
+l.29 U
       sing the function below, we can calculate the amount of soil that pass...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -598,7 +590,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 30--31
+Overfull \hbox (20.0pt too wide) in paragraph at lines 29--30
 []
  []
 
@@ -609,7 +601,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \begin{Schunk}
+l.31 \begin{Schunk}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -622,7 +614,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 \begin{Sinput}
+l.32 \begin{Sinput}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -635,7 +627,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 >
+l.33 >
        source("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/So...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -689,15 +681,15 @@ Missing character: There is no 2 in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.34 ...rce("/home/CAMPUS/mwl04747/github/SOPs/32_
+l.33 ...rce("/home/CAMPUS/mwl04747/github/SOPs/32_
                                                   Soil_Texture_Analysis/Soil...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 34.
+(Font)              <7> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 34.
+(Font)              <5> on input line 33.
 
 ! LaTeX Error: \begin{document} ended by \end{Sinput}.
 
@@ -705,7 +697,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 \end{Sinput}
+l.35 \end{Sinput}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -714,7 +706,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.36 \end{Sinput}
+l.35 \end{Sinput}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -729,7 +721,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 \begin{Soutput}
+l.36 \begin{Soutput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -797,7 +789,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 \end{Soutput}
+l.41 \end{Soutput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -810,25 +802,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.43 \end{Schunk}
+l.42 \end{Schunk}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 34--44
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--43
 []
  []
 
 
-Overfull \hbox (256.64812pt too wide) in paragraph at lines 34--44
+Overfull \hbox (256.64812pt too wide) in paragraph at lines 33--43
 []\OML/cmm/m/it/10 oil[]exture[]nalysis=Soil[]unctions=PassNo\OT1/cmr/m/n/10 10
 []\OML/cmm/m/it/10 un:R\OT1/cmr/m/n/10 ") \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (46.44215pt too wide) in paragraph at lines 34--44
+Overfull \hbox (46.44215pt too wide) in paragraph at lines 33--43
 \OML/cmm/m/it/10 PassNo\OT1/cmr/m/n/10 10$
  []
 
@@ -839,7 +831,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 \begin{Schunk}
+l.44 \begin{Schunk}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -852,7 +844,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 \begin{Sinput}
+l.45 \begin{Sinput}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -865,7 +857,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 >
+l.46 >
        PassNo10 = function(MassPassed,Total){
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -997,7 +989,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51 \end{Sinput}
+l.50 \end{Sinput}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1010,14 +1002,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \end{Schunk}
+l.51 \end{Schunk}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 47--53
+Overfull \hbox (20.0pt too wide) in paragraph at lines 46--52
 []
  []
 
@@ -1028,7 +1020,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 T
+l.53 T
       he syntax of the function requires two parameters, mass of soil passed...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1167,7 +1159,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 54--55
+Overfull \hbox (20.0pt too wide) in paragraph at lines 53--54
 []
  []
 
@@ -1178,7 +1170,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 F
+l.55 F
       or example, if we have the mass of the soil that passed through the si...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1289,7 +1281,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 56--57
+Overfull \hbox (20.0pt too wide) in paragraph at lines 55--56
 []
  []
 
@@ -1300,7 +1292,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58 \begin{Schunk}
+l.57 \begin{Schunk}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1313,7 +1305,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \begin{Sinput}
+l.58 \begin{Sinput}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1326,7 +1318,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 >
+l.59 >
        PassNo10(122, 133)
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1356,7 +1348,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 \end{Sinput}
+l.60 \end{Sinput}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1369,7 +1361,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.62 \begin{Soutput}
+l.61 \begin{Soutput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1400,7 +1392,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 \end{Soutput}
+l.63 \end{Soutput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1413,19 +1405,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65 \end{Schunk}
+l.64 \end{Schunk}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 60--66
+Overfull \hbox (20.0pt too wide) in paragraph at lines 59--65
 []
  []
 
 ! Undefined control sequence.
-l.67 \subsection
+l.66 \subsection
                 {Calculating Soil Mass for Analysis}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1440,7 +1432,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67 \subsection{C
+l.66 \subsection{C
                   alculating Soil Mass for Analysis}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1476,7 +1468,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 67--68
+Overfull \hbox (20.0pt too wide) in paragraph at lines 66--67
 []
  []
 
@@ -1487,7 +1479,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.69 T
+l.68 T
       he following function can be used to calculate the ...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1539,7 +1531,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 69--70
+Overfull \hbox (20.0pt too wide) in paragraph at lines 68--69
 []
  []
 
@@ -1550,7 +1542,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71 \begin{Schunk}
+l.70 \begin{Schunk}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1563,7 +1555,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{Sinput}
+l.71 \begin{Sinput}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1576,14 +1568,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 >
+l.72 >
        # Function to Calculate Ws
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no > in font nullfont!
 ! You can't use `macro parameter character #' in horizontal mode.
-l.73 > #
+l.72 > #
          Function to Calculate Ws
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1747,13 +1739,13 @@ Missing character: There is no S in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.77 + WS_
+l.76 + WS_
           e = round(desiredmass * (1 + wd), 2)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.85 + }
+l.84 + }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1768,7 +1760,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 \end{Sinput}
+l.85 \end{Sinput}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1777,7 +1769,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.86 \end{Sinput}
+l.85 \end{Sinput}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1788,7 +1780,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.86 \end{Sinput}
+l.85 \end{Sinput}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1803,51 +1795,51 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87 \end{Schunk}
+l.86 \end{Schunk}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 73--88
+Overfull \hbox (20.0pt too wide) in paragraph at lines 72--87
 []
  []
 
 
-Overfull \hbox (14.84962pt too wide) in paragraph at lines 73--88
+Overfull \hbox (14.84962pt too wide) in paragraph at lines 72--87
 [] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (91.54259pt too wide) in paragraph at lines 73--88
+Overfull \hbox (91.54259pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 round\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 desiredmass \OMS/cmsy/m
 /n/10 ^^C
  []
 
 
-Overfull \hbox (16.66672pt too wide) in paragraph at lines 73--88
+Overfull \hbox (16.66672pt too wide) in paragraph at lines 72--87
 \OT1/cmr/m/n/10 (1 +
  []
 
 
-Overfull \hbox (37.63315pt too wide) in paragraph at lines 73--88
+Overfull \hbox (37.63315pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 wd\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2) +
  []
 
 
-Overfull \hbox (39.10538pt too wide) in paragraph at lines 73--88
+Overfull \hbox (39.10538pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 output \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (123.535pt too wide) in paragraph at lines 73--88
+Overfull \hbox (123.535pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 data:frame\OT1/cmr/m/n/10 (+\OML/cmm/m/it/10 Parameter \OT1/cm
 r/m/n/10 =
  []
 
 
-Overfull \hbox (202.1734pt too wide) in paragraph at lines 73--88
+Overfull \hbox (202.1734pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 TinID\OT1/cmr/m/n/10 "\OML
 /cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 TinTareWeight\OT1/cmr/m/n/10 "
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Massofair \OMS/cmsy/m/n/10
@@ -1855,20 +1847,20 @@ Overfull \hbox (202.1734pt too wide) in paragraph at lines 73--88
  []
 
 
-Overfull \hbox (126.44485pt too wide) in paragraph at lines 73--88
+Overfull \hbox (126.44485pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 driedsoil\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 +
 "\OML/cmm/m/it/10 Massofoven \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (279.3485pt too wide) in paragraph at lines 73--88
+Overfull \hbox (279.3485pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 driedsoil\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "
 \OML/cmm/m/it/10 HygroscopicCorrectionFactor\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ;
  \OT1/cmr/m/n/10 +"\OML/cmm/m/it/10 DesiredOven \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (241.89372pt too wide) in paragraph at lines 73--88
+Overfull \hbox (241.89372pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 driedSoil\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "
 \OML/cmm/m/it/10 EffectiveSoilWeight\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 WSe\OT1/c
 mr/m/n/10 )")\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 +\OML/cmm/m/it/10 Value \OT1/cm
@@ -1876,14 +1868,14 @@ r/m/n/10 =
  []
 
 
-Overfull \hbox (297.6339pt too wide) in paragraph at lines 73--88
+Overfull \hbox (297.6339pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 tin; tinmass; airdry; ovend
 ry; hygro; desiredmass; WS[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
  +\OML/cmm/m/it/10 Box \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (115.43874pt too wide) in paragraph at lines 73--88
+Overfull \hbox (115.43874pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 (12\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 13\OML/
 cmm/m/it/10 ; \OT1/cmr/m/n/10 14\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 15\OML/cmm/m
 /it/10 ; \OT1/cmr/m/n/10 17\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 9\OML/cmm/m/it/10
@@ -1891,7 +1883,7 @@ cmm/m/it/10 ; \OT1/cmr/m/n/10 14\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 15\OML/cmm/m
  []
 
 
-Overfull \hbox (66.98468pt too wide) in paragraph at lines 73--88
+Overfull \hbox (66.98468pt too wide) in paragraph at lines 72--87
 \OML/cmm/m/it/10 print\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 output\OT1/cmr/m/n/10 )
 +$
  []
@@ -1903,7 +1895,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 T
+l.88 T
       he function (SoilEquiv) requires four parameters to run provide the ou...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -2130,7 +2122,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 89--90
+Overfull \hbox (20.0pt too wide) in paragraph at lines 88--89
 []
  []
 
@@ -2141,7 +2133,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 T
+l.90 T
       he function's syntax is as follows: SoilEquiv(Tin \#, Air-Dried Mass, ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -2253,7 +2245,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no ) in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 91--92
+Overfull \hbox (20.0pt too wide) in paragraph at lines 90--91
 []
  []
 
@@ -2264,7 +2256,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93 B
+l.92 B
       elow is an example, where the $tin number = 4$, $airdry = 27.4$, $oven...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -2313,57 +2305,57 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no R in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 93--94
+Overfull \hbox (20.0pt too wide) in paragraph at lines 92--93
 []
  []
 
 
-Overfull \hbox (57.85846pt too wide) in paragraph at lines 93--94
+Overfull \hbox (57.85846pt too wide) in paragraph at lines 92--93
 \OML/cmm/m/it/10 tinnumber \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 93--94
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 92--93
 \OT1/cmr/m/n/10 4$
  []
 
 
-Overfull \hbox (39.33173pt too wide) in paragraph at lines 93--94
+Overfull \hbox (39.33173pt too wide) in paragraph at lines 92--93
 \OML/cmm/m/it/10 airdry \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (17.77783pt too wide) in paragraph at lines 93--94
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 92--93
 \OT1/cmr/m/n/10 27\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4$
  []
 
 
-Overfull \hbox (46.5232pt too wide) in paragraph at lines 93--94
+Overfull \hbox (46.5232pt too wide) in paragraph at lines 92--93
 \OML/cmm/m/it/10 ovendry \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (17.77783pt too wide) in paragraph at lines 93--94
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 92--93
 \OT1/cmr/m/n/10 25\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6$
  []
 
 
-Overfull \hbox (47.05513pt too wide) in paragraph at lines 93--94
+Overfull \hbox (47.05513pt too wide) in paragraph at lines 92--93
 \OML/cmm/m/it/10 tinmass \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (17.77783pt too wide) in paragraph at lines 93--94
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 92--93
 \OT1/cmr/m/n/10 12\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 3$
  []
 
 
-Overfull \hbox (66.6408pt too wide) in paragraph at lines 93--94
+Overfull \hbox (66.6408pt too wide) in paragraph at lines 92--93
 \OML/cmm/m/it/10 desiredmass \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (10.00003pt too wide) in paragraph at lines 93--94
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 92--93
 \OT1/cmr/m/n/10 50$
  []
 
@@ -2374,7 +2366,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \begin{Schunk}
+l.94 \begin{Schunk}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2387,7 +2379,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \begin{Sinput}
+l.95 \begin{Sinput}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2400,7 +2392,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 >
+l.96 >
        SoilEquiv(4, 27.4, 25.6, 12.3, 50)
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2443,7 +2435,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 \end{Sinput}
+l.97 \end{Sinput}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2456,7 +2448,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.99 \begin{Soutput}
+l.98 \begin{Soutput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2668,7 +2660,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.108 \end{Soutput}
+l.107 \end{Soutput}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2681,19 +2673,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 \end{Schunk}
+l.108 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 97--110
+Overfull \hbox (20.0pt too wide) in paragraph at lines 96--109
 []
  []
 
 ! Undefined control sequence.
-l.112 \subsection
+l.111 \subsection
                  {Hydrometer Correction Factor}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2708,7 +2700,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112 \subsection{H
+l.111 \subsection{H
                    ydrometer Correction Factor}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2740,7 +2732,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 112--113
+Overfull \hbox (20.0pt too wide) in paragraph at lines 111--112
 []
  []
 
@@ -2751,7 +2743,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 C
+l.113 C
        orrecting for the meniscus, we use our ``blank'' hydrometer readings ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -2862,7 +2854,7 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no F in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 114--115
+Overfull \hbox (20.0pt too wide) in paragraph at lines 113--114
 []
  []
 
@@ -2873,18 +2865,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 \begin{equation}
+l.115 \begin{equation}
                       
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 116--116
+Overfull \hbox (20.0pt too wide) in paragraph at lines 115--115
 [] 
  []
 
 
-Overfull \hbox (77.37338pt too wide) detected at line 118
+Overfull \hbox (77.37338pt too wide) detected at line 117
 \OML/cmm/m/it/10 R[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 R[] \OMS/cmsy/m/n/10 ^^
 @ \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)
 
@@ -2897,7 +2889,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.120 T
+l.119 T
        he equation is implemented in the De function below...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2950,12 +2942,12 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 120--121
+Overfull \hbox (20.0pt too wide) in paragraph at lines 119--120
 []
  []
 
 ! Undefined control sequence.
-l.124 \subsection
+l.123 \subsection
                  {Effective Depth}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2970,7 +2962,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.124 \subsection{E
+l.123 \subsection{E
                    ffective Depth}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2990,7 +2982,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 124--125
+Overfull \hbox (20.0pt too wide) in paragraph at lines 123--124
 []
  []
 
@@ -3001,7 +2993,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 W
+l.125 W
        e have two hydrometer types in the lab -- and the formula to calcutat...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -3117,7 +3109,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 126--127
+Overfull \hbox (20.0pt too wide) in paragraph at lines 125--126
 []
  []
 
@@ -3128,18 +3120,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 \begin{equation}
+l.127 \begin{equation}
                       
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 128--128
+Overfull \hbox (20.0pt too wide) in paragraph at lines 127--127
 [] 
  []
 
 
-Overfull \hbox (119.29082pt too wide) detected at line 130
+Overfull \hbox (119.29082pt too wide) detected at line 129
 [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 XXX
  []
 
@@ -3150,7 +3142,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 \begin{table}
+l.131 \begin{table}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3163,7 +3155,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 		\begin{tabular}
+l.132 		\begin{tabular}
                        {lcl}\hline
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3245,7 +3237,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 	\caption
+l.137 	\caption
                {Hydrometer Types and Effective Depth Formula}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3296,14 +3288,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \end{table}
+l.139 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (110.73607pt too wide) in paragraph at lines 133--141
+Overfull \hbox (110.73607pt too wide) in paragraph at lines 132--140
 [][]
  []
 
@@ -3314,7 +3306,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 T
+l.141 T
        hus, the function syntax is
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3344,7 +3336,7 @@ Missing character: There is no x in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 142--143
+Overfull \hbox (20.0pt too wide) in paragraph at lines 141--142
 []
  []
 
@@ -3355,7 +3347,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.144 H
+l.143 H
        ydrometer = ``HL'' or Hydrometer = ``151H''
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3399,12 +3391,12 @@ Missing character: There is no H in font nullfont!
 Missing character: There is no ' in font nullfont!
 Missing character: There is no ' in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 144--145
+Overfull \hbox (20.0pt too wide) in paragraph at lines 143--144
 []
  []
 
 ! Undefined control sequence.
-l.146 \subsection
+l.145 \subsection
                  {Formatting the Data}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3419,7 +3411,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.146 \subsection{F
+l.145 \subsection{F
                    ormatting the Data}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3442,7 +3434,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 146--147
+Overfull \hbox (20.0pt too wide) in paragraph at lines 145--146
 []
  []
 
@@ -3453,7 +3445,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 T
+l.147 T
        here are two ways to process the data. One, you can analyze the data ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -3781,7 +3773,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 148--149
+Overfull \hbox (20.0pt too wide) in paragraph at lines 147--148
 []
  []
 
@@ -3792,7 +3784,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.150 T
+l.149 T
        hus, we have created a spreadsheet or access database? for data entry...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -3870,12 +3862,12 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ? in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 150--151
+Overfull \hbox (20.0pt too wide) in paragraph at lines 149--150
 []
  []
 
 ! Undefined control sequence.
-l.152 \subsection
+l.151 \subsection
                  {Importing data}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3890,7 +3882,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.152 \subsection{I
+l.151 \subsection{I
                    mporting data}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3909,7 +3901,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 152--153
+Overfull \hbox (20.0pt too wide) in paragraph at lines 151--152
 []
  []
 
@@ -3920,7 +3912,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 i
+l.153 i
        mporting data into R is not difficult, but there are tricks. The foll...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -4079,7 +4071,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 154--155
+Overfull \hbox (20.0pt too wide) in paragraph at lines 153--154
 []
  []
 
@@ -4090,7 +4082,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 \begin{Schunk}
+l.155 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4103,7 +4095,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 \begin{Sinput}
+l.156 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4116,7 +4108,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 >
+l.157 >
         import = function(){
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4171,7 +4163,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.161 \end{Sinput}
+l.160 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4184,19 +4176,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.162 \end{Schunk}
+l.161 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 158--163
+Overfull \hbox (20.0pt too wide) in paragraph at lines 157--162
 []
  []
 
 ! Undefined control sequence.
-l.165 \subsection
+l.164 \subsection
                  {Pre-Processing Data}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4211,7 +4203,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 \subsection{P
+l.164 \subsection{P
                    re-Processing Data}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4235,7 +4227,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 165--166
+Overfull \hbox (20.0pt too wide) in paragraph at lines 164--165
 []
  []
 
@@ -4246,7 +4238,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 S
+l.166 S
        ample processing...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4271,7 +4263,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 167--168
+Overfull \hbox (20.0pt too wide) in paragraph at lines 166--167
 []
  []
 
@@ -4282,7 +4274,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 i
+l.168 i
        mputing missing values...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4312,12 +4304,12 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 169--170
+Overfull \hbox (20.0pt too wide) in paragraph at lines 168--169
 []
  []
 
 ! Undefined control sequence.
-l.171 \subsection
+l.170 \subsection
                  {Calculating the $D_e$ and PF w/K}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4332,7 +4324,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.171 \subsection{C
+l.170 \subsection{C
                    alculating the $D_e$ and PF w/K}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4360,12 +4352,12 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no / in font nullfont!
 Missing character: There is no K in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 171--172
+Overfull \hbox (20.0pt too wide) in paragraph at lines 170--171
 []
  []
 
 
-Overfull \hbox (12.57327pt too wide) in paragraph at lines 171--172
+Overfull \hbox (12.57327pt too wide) in paragraph at lines 170--171
 \OML/cmm/m/it/10 D[]$
  []
 
@@ -4376,7 +4368,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 B
+l.172 B
        elow is the function to calculate the D and PF, where K as a constant...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -4452,12 +4444,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 173--174
+Overfull \hbox (20.0pt too wide) in paragraph at lines 172--173
 []
  []
 
 ! Undefined control sequence.
-l.175 \subsection
+l.174 \subsection
                  {Effective Particle Diameter Size, $D_e$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4472,7 +4464,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175 \subsection{E
+l.174 \subsection{E
                    ffective Particle Diameter Size, $D_e$}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4508,12 +4500,12 @@ Missing character: There is no z in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 175--176
+Overfull \hbox (20.0pt too wide) in paragraph at lines 174--175
 []
  []
 
 
-Overfull \hbox (12.57327pt too wide) in paragraph at lines 175--176
+Overfull \hbox (12.57327pt too wide) in paragraph at lines 174--175
 \OML/cmm/m/it/10 D[]$ 
  []
 
@@ -4524,7 +4516,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.177 T
+l.176 T
        he formula is
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4542,7 +4534,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 177--178
+Overfull \hbox (20.0pt too wide) in paragraph at lines 176--177
 []
  []
 
@@ -4553,18 +4545,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.179 \begin{equation}
+l.178 \begin{equation}
                       
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 179--179
+Overfull \hbox (20.0pt too wide) in paragraph at lines 178--178
 [] 
  []
 
 
-Overfull \hbox (121.08295pt too wide) detected at line 181
+Overfull \hbox (121.08295pt too wide) detected at line 180
 \OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 = []
  []
 
@@ -4575,7 +4567,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.183 O
+l.182 O
        nce the data have been inspected for integrity, we can use the follow...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -4691,12 +4683,12 @@ Missing character: There is no P in font nullfont!
 Missing character: There is no F in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 183--184
+Overfull \hbox (20.0pt too wide) in paragraph at lines 182--183
 []
  []
 
 
-Overfull \hbox (12.57327pt too wide) in paragraph at lines 183--184
+Overfull \hbox (12.57327pt too wide) in paragraph at lines 182--183
 \OML/cmm/m/it/10 D[]$
  []
 
@@ -4707,7 +4699,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 \begin{Schunk}
+l.184 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4720,7 +4712,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186 \begin{Sinput}
+l.185 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4733,7 +4725,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.187 >
+l.186 >
         SampleParams = data.frame(Ws_actual = 50, Hygro = .95, GSp = 2.65); ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -4769,7 +4761,7 @@ Missing character: There is no s in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.187 > SampleParams = data.frame(Ws_
+l.186 > SampleParams = data.frame(Ws_
                                      actual = 50, Hygro = .95, GSp = 2.65); ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4781,7 +4773,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.190 \end{Sinput}
+l.189 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4790,7 +4782,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.190 \end{Sinput}
+l.189 \end{Sinput}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4805,34 +4797,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 \end{Schunk}
+l.190 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 187--192
+Overfull \hbox (20.0pt too wide) in paragraph at lines 186--191
 []
  []
 
 
-Overfull \hbox (37.52287pt too wide) in paragraph at lines 187--192
+Overfull \hbox (37.52287pt too wide) in paragraph at lines 186--191
 []\OML/cmm/m/it/10 ctual \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (54.15158pt too wide) in paragraph at lines 187--192
+Overfull \hbox (54.15158pt too wide) in paragraph at lines 186--191
 \OT1/cmr/m/n/10 50\OML/cmm/m/it/10 ; Hygro \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (47.37979pt too wide) in paragraph at lines 187--192
+Overfull \hbox (47.37979pt too wide) in paragraph at lines 186--191
 \OML/cmm/m/it/10 :\OT1/cmr/m/n/10 95\OML/cmm/m/it/10 ; GSp \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (114.7247pt too wide) in paragraph at lines 187--192
+Overfull \hbox (114.7247pt too wide) in paragraph at lines 186--191
 \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 65); \OML/cmm/m/it/10 Sample
 Params >>$
  []
@@ -4844,7 +4836,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.193 \begin{Schunk}
+l.192 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4857,7 +4849,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.194 \begin{Sinput}
+l.193 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4870,7 +4862,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.195 >
+l.194 >
         GSp = 2.65
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4926,7 +4918,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no > in font nullfont!
 ! You can't use `macro parameter character #' in horizontal mode.
-l.198 > #
+l.197 > #
          c(2, 5, 15, 30, 60, 250, 1440)
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -5021,7 +5013,7 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no > in font nullfont!
 ! You can't use `macro parameter character #' in horizontal mode.
-l.200 > #
+l.199 > #
           Heavy Density Hydrometer
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -5084,13 +5076,13 @@ Missing character: There is no e in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.204 > effective_
+l.203 > effective_
                   depth = L1 + 0.5*(L2 - Vb/A) # result in centimeters
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! You can't use `macro parameter character #' in math mode.
-l.204 > effective_depth = L1 + 0.5*(L2 - Vb/A) #
+l.203 > effective_depth = L1 + 0.5*(L2 - Vb/A) #
                                                  result in centimeters
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -5098,7 +5090,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in math mode.
-l.213 > #
+l.212 > #
          {\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -5112,7 +5104,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.215 \end{Sinput}
+l.214 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5121,7 +5113,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.215 \end{Sinput}
+l.214 \end{Sinput}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5136,205 +5128,205 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 \end{Schunk}
+l.215 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 195--217
+Overfull \hbox (20.0pt too wide) in paragraph at lines 194--216
 []
  []
 
 
-Overfull \hbox (34.2786pt too wide) in paragraph at lines 195--217
+Overfull \hbox (34.2786pt too wide) in paragraph at lines 194--216
 []\OML/cmm/m/it/10 epth \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (19.58339pt too wide) in paragraph at lines 195--217
+Overfull \hbox (19.58339pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 L\OT1/cmr/m/n/10 1 +
  []
 
 
-Overfull \hbox (17.77783pt too wide) in paragraph at lines 195--217
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5 \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (23.47229pt too wide) in paragraph at lines 195--217
+Overfull \hbox (23.47229pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (128.05605pt too wide) in paragraph at lines 195--217
+Overfull \hbox (128.05605pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 Vb=A\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 resultincentimeters >
  []
 
 
-Overfull \hbox (23.41801pt too wide) in paragraph at lines 195--217
+Overfull \hbox (23.41801pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 1 =
  []
 
 
-Overfull \hbox (88.33353pt too wide) in paragraph at lines 195--217
+Overfull \hbox (88.33353pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 01732483379693 \OML/cmm/m/it
 /10 >
  []
 
 
-Overfull \hbox (23.41801pt too wide) in paragraph at lines 195--217
+Overfull \hbox (23.41801pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 2 =
  []
 
 
-Overfull \hbox (86.29189pt too wide) in paragraph at lines 195--217
+Overfull \hbox (86.29189pt too wide) in paragraph at lines 194--216
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 04157465
 609\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (15.55553pt too wide) in paragraph at lines 195--217
+Overfull \hbox (15.55553pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 4 \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (23.41801pt too wide) in paragraph at lines 195--217
+Overfull \hbox (23.41801pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 3 =
  []
 
 
-Overfull \hbox (83.5141pt too wide) in paragraph at lines 195--217
+Overfull \hbox (83.5141pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 8\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 387438669317\OML/cmm/m/it/10
  E \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (15.55553pt too wide) in paragraph at lines 195--217
+Overfull \hbox (15.55553pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 6 \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (23.41801pt too wide) in paragraph at lines 195--217
+Overfull \hbox (23.41801pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 4 =
  []
 
 
-Overfull \hbox (91.2919pt too wide) in paragraph at lines 195--217
+Overfull \hbox (91.2919pt too wide) in paragraph at lines 194--216
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 7\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 40112927
 1698\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (15.55553pt too wide) in paragraph at lines 195--217
+Overfull \hbox (15.55553pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 8 \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (23.41801pt too wide) in paragraph at lines 195--217
+Overfull \hbox (23.41801pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 5 =
  []
 
 
-Overfull \hbox (83.5141pt too wide) in paragraph at lines 195--217
+Overfull \hbox (83.5141pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 625994080072\OML/cmm/m/it/10
  E \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (20.55554pt too wide) in paragraph at lines 195--217
+Overfull \hbox (20.55554pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 12 \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (24.10878pt too wide) in paragraph at lines 195--217
+Overfull \hbox (24.10878pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 eta \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (20.6403pt too wide) in paragraph at lines 195--217
+Overfull \hbox (20.6403pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 1 +
  []
 
 
-Overfull \hbox (12.23267pt too wide) in paragraph at lines 195--217
+Overfull \hbox (12.23267pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (24.5292pt too wide) in paragraph at lines 195--217
+Overfull \hbox (24.5292pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (12.23267pt too wide) in paragraph at lines 195--217
+Overfull \hbox (12.23267pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (24.5292pt too wide) in paragraph at lines 195--217
+Overfull \hbox (24.5292pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 3 +
  []
 
 
-Overfull \hbox (12.23267pt too wide) in paragraph at lines 195--217
+Overfull \hbox (12.23267pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (24.5292pt too wide) in paragraph at lines 195--217
+Overfull \hbox (24.5292pt too wide) in paragraph at lines 194--216
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 4 +
  []
 
 
-Overfull \hbox (12.23267pt too wide) in paragraph at lines 195--217
+Overfull \hbox (12.23267pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (35.08472pt too wide) in paragraph at lines 195--217
+Overfull \hbox (35.08472pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 5))) \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (20.05449pt too wide) in paragraph at lines 195--217
+Overfull \hbox (20.05449pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (40.68874pt too wide) in paragraph at lines 195--217
+Overfull \hbox (40.68874pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 sqrt\OT1/cmr/m/n/10 ((30 \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (18.55328pt too wide) in paragraph at lines 195--217
+Overfull \hbox (18.55328pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 eta \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (102.89299pt too wide) in paragraph at lines 195--217
+Overfull \hbox (102.89299pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 effective[]epth\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =\OT1/cmr/m/n
 /10 ((980 \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (27.37985pt too wide) in paragraph at lines 195--217
+Overfull \hbox (27.37985pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 GSp \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (29.43198pt too wide) in paragraph at lines 195--217
+Overfull \hbox (29.43198pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 GSf\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (43.66562pt too wide) in paragraph at lines 195--217
+Overfull \hbox (43.66562pt too wide) in paragraph at lines 194--216
 \OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )); \OML/cmm/m/it/10 d[] >>
  []
 
 
-Overfull \hbox (75.51387pt too wide) in paragraph at lines 195--217
+Overfull \hbox (75.51387pt too wide) in paragraph at lines 194--216
 [] \OML/cmm/m/it/10 >$
  []
 
@@ -5345,18 +5337,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.218 \begin{equation}
+l.217 \begin{equation}
                       
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 218--218
+Overfull \hbox (20.0pt too wide) in paragraph at lines 217--217
 [] 
  []
 
 
-Overfull \hbox (231.47916pt too wide) detected at line 220
+Overfull \hbox (231.47916pt too wide) detected at line 219
 \OML/cmm/m/it/10 PF \OT1/cmr/m/n/10 = [(100\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0
 00\OML/cmm/m/it/10 =M[]\OT1/cmr/m/n/10 )[\OML/cmm/m/it/10 m\OMS/cmsy/m/n/10 j\O
 T1/cmr/m/n/10 5]\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 5[]](\OML/cmm/m/it/10 R[] \OM
@@ -5370,7 +5362,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.222 \begin{Schunk}
+l.221 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5383,7 +5375,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 \begin{Sinput}
+l.222 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5396,7 +5388,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.224 >
+l.223 >
         M_s = 60
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5406,7 +5398,7 @@ Missing character: There is no M in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.224 > M_
+l.223 > M_
           s = 60
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -5418,7 +5410,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 \end{Sinput}
+l.226 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5427,7 +5419,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.227 \end{Sinput}
+l.226 \end{Sinput}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5442,66 +5434,66 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 \end{Schunk}
+l.227 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 224--229
+Overfull \hbox (20.0pt too wide) in paragraph at lines 223--228
 []
  []
 
 
-Overfull \hbox (14.82983pt too wide) in paragraph at lines 224--229
+Overfull \hbox (14.82983pt too wide) in paragraph at lines 223--228
 [] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (20.55554pt too wide) in paragraph at lines 224--229
+Overfull \hbox (20.55554pt too wide) in paragraph at lines 223--228
 \OT1/cmr/m/n/10 60 \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (26.184pt too wide) in paragraph at lines 224--229
+Overfull \hbox (26.184pt too wide) in paragraph at lines 223--228
 \OML/cmm/m/it/10 PF \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (53.42029pt too wide) in paragraph at lines 224--229
+Overfull \hbox (53.42029pt too wide) in paragraph at lines 223--228
 \OT1/cmr/m/n/10 100000\OML/cmm/m/it/10 =M[] \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (63.64862pt too wide) in paragraph at lines 224--229
+Overfull \hbox (63.64862pt too wide) in paragraph at lines 223--228
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 GSp\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =\OT1/cm
 r/m/n/10 (\OML/cmm/m/it/10 GSp \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (29.43198pt too wide) in paragraph at lines 224--229
+Overfull \hbox (29.43198pt too wide) in paragraph at lines 223--228
 \OML/cmm/m/it/10 GSf\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^C
  []
 
 
-Overfull \hbox (23.47229pt too wide) in paragraph at lines 224--229
+Overfull \hbox (23.47229pt too wide) in paragraph at lines 223--228
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (55.06038pt too wide) in paragraph at lines 224--229
+Overfull \hbox (55.06038pt too wide) in paragraph at lines 223--228
 \OML/cmm/m/it/10 GSf\OT1/cmr/m/n/10 ); \OML/cmm/m/it/10 PF >
  []
 
 
-Overfull \hbox (54.01985pt too wide) in paragraph at lines 224--229
+Overfull \hbox (54.01985pt too wide) in paragraph at lines 223--228
 \OML/cmm/m/it/10 plot\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 d[]; PF\OT1/cmr/m/n/10 )
 $
  []
 
 ! Undefined control sequence.
-l.230 \subsection
+l.229 \subsection
                  {Determine the Texture Classification}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5516,7 +5508,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.230 \subsection{D
+l.229 \subsection{D
                    etermine the Texture Classification}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5555,12 +5547,12 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 230--231
+Overfull \hbox (20.0pt too wide) in paragraph at lines 229--230
 []
  []
 
 ! Undefined control sequence.
-l.232 \subsection
+l.231 \subsection
                  {Program to Process Multiple Samples}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5575,7 +5567,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.232 \subsection{P
+l.231 \subsection{P
                    rogram to Process Multiple Samples}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5612,7 +5604,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 232--233
+Overfull \hbox (20.0pt too wide) in paragraph at lines 231--232
 []
  []
 
@@ -5623,7 +5615,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.234 T
+l.233 T
        o process the analysis, we need to create a standardized electronic d...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -5880,7 +5872,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 234--235
+Overfull \hbox (20.0pt too wide) in paragraph at lines 233--234
 []
  []
 
@@ -5891,7 +5883,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.236 F
+l.235 F
        irst, use the data entry template...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5929,7 +5921,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 236--237
+Overfull \hbox (20.0pt too wide) in paragraph at lines 235--236
 []
  []
 
@@ -5940,7 +5932,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.240 w
+l.239 w
        here $M_s$ = a biased soil sample value, that includes the amount of ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -6064,17 +6056,17 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 240--241
+Overfull \hbox (20.0pt too wide) in paragraph at lines 239--240
 []
  []
 
 
-Overfull \hbox (13.97572pt too wide) in paragraph at lines 240--241
+Overfull \hbox (13.97572pt too wide) in paragraph at lines 239--240
 \OML/cmm/m/it/10 M[]$
  []
 
 ! Undefined control sequence.
-l.243 \section
+l.242 \section
               {Calculations with $\eta$ and $GS_w$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6089,7 +6081,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \section{C
+l.242 \section{C
                 alculations with $\eta$ and $GS_w$}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6114,22 +6106,22 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 243--244
+Overfull \hbox (20.0pt too wide) in paragraph at lines 242--243
 []
  []
 
 
-Overfull \hbox (5.32408pt too wide) in paragraph at lines 243--244
+Overfull \hbox (5.32408pt too wide) in paragraph at lines 242--243
 \OML/cmm/m/it/10 ^^Q$
  []
 
 
-Overfull \hbox (20.46783pt too wide) in paragraph at lines 243--244
+Overfull \hbox (20.46783pt too wide) in paragraph at lines 242--243
 \OML/cmm/m/it/10 GS[]$ 
  []
 
 ! Undefined control sequence.
-l.245 \subsection
+l.244 \subsection
                  {Calculating fluid viscosity, $\eta$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6144,7 +6136,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.245 \subsection{C
+l.244 \subsection{C
                    alculating fluid viscosity, $\eta$}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6176,12 +6168,12 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 245--246
+Overfull \hbox (20.0pt too wide) in paragraph at lines 244--245
 []
  []
 
 
-Overfull \hbox (5.32408pt too wide) in paragraph at lines 245--246
+Overfull \hbox (5.32408pt too wide) in paragraph at lines 244--245
 \OML/cmm/m/it/10 ^^Q$ 
  []
 
@@ -6192,7 +6184,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.247 T
+l.246 T
        he fluid viscosity, $\eta$, various with temperature. We will use a d...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -6295,12 +6287,12 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 247--248
+Overfull \hbox (20.0pt too wide) in paragraph at lines 246--247
 []
  []
 
 
-Overfull \hbox (5.32408pt too wide) in paragraph at lines 247--248
+Overfull \hbox (5.32408pt too wide) in paragraph at lines 246--247
 \OML/cmm/m/it/10 ^^Q$
  []
 
@@ -6311,18 +6303,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.249 \begin{equation}
+l.248 \begin{equation}
                       
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 249--249
+Overfull \hbox (20.0pt too wide) in paragraph at lines 248--248
 [] 
  []
 
 
-Overfull \hbox (180.19931pt too wide) detected at line 251
+Overfull \hbox (180.19931pt too wide) detected at line 250
 \OML/cmm/m/it/10 ^^Q \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 C[] \OT1/cmr/m/n/10 + \
 OML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C[] \O
 T1/cmr/m/n/10 + \OML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10 (\OML/c
@@ -6338,7 +6330,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.253 w
+l.252 w
        here T is the fluid temperature ($^\circ$ C),
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6468,37 +6460,37 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 253--259
+Overfull \hbox (20.0pt too wide) in paragraph at lines 252--258
 []
  []
 
 
-Overfull \hbox (4.59723pt too wide) in paragraph at lines 253--259
+Overfull \hbox (4.59723pt too wide) in paragraph at lines 252--258
 []$
  []
 
 
-Overfull \hbox (11.63335pt too wide) in paragraph at lines 253--259
+Overfull \hbox (11.63335pt too wide) in paragraph at lines 252--258
 \OML/cmm/m/it/10 C[]$
  []
 
 
-Overfull \hbox (11.63335pt too wide) in paragraph at lines 253--259
+Overfull \hbox (11.63335pt too wide) in paragraph at lines 252--258
 \OML/cmm/m/it/10 C[]$
  []
 
 
-Overfull \hbox (11.63335pt too wide) in paragraph at lines 253--259
+Overfull \hbox (11.63335pt too wide) in paragraph at lines 252--258
 \OML/cmm/m/it/10 C[]$
  []
 
 
-Overfull \hbox (11.63335pt too wide) in paragraph at lines 253--259
+Overfull \hbox (11.63335pt too wide) in paragraph at lines 252--258
 \OML/cmm/m/it/10 C[]$
  []
 
 
-Overfull \hbox (11.63335pt too wide) in paragraph at lines 253--259
+Overfull \hbox (11.63335pt too wide) in paragraph at lines 252--258
 \OML/cmm/m/it/10 C[]$
  []
 
@@ -6509,7 +6501,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.260 T
+l.259 T
        his equation is automatically implemented in the De function as descr...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -6586,12 +6578,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no w in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 260--261
+Overfull \hbox (20.0pt too wide) in paragraph at lines 259--260
 []
  []
 
 ! Undefined control sequence.
-l.262 \subsection
+l.261 \subsection
                  {Calculating Fluid Density, $\rho_f$)}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6606,7 +6598,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.262 \subsection{C
+l.261 \subsection{C
                    alculating Fluid Density, $\rho_f$)}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6637,12 +6629,12 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no ) in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 262--263
+Overfull \hbox (20.0pt too wide) in paragraph at lines 261--262
 []
  []
 
 
-Overfull \hbox (10.35423pt too wide) in paragraph at lines 262--263
+Overfull \hbox (10.35423pt too wide) in paragraph at lines 261--262
 \OML/cmm/m/it/10 ^^Z[]$ 
  []
 
@@ -6653,7 +6645,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.264 S
+l.263 S
        imilar to fluid viscosity, fluid density, $\rho_f$ also changes with ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -6724,12 +6716,12 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 264--265
+Overfull \hbox (20.0pt too wide) in paragraph at lines 263--264
 []
  []
 
 
-Overfull \hbox (10.35423pt too wide) in paragraph at lines 264--265
+Overfull \hbox (10.35423pt too wide) in paragraph at lines 263--264
 \OML/cmm/m/it/10 ^^Z[]$
  []
 
@@ -6740,18 +6732,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.266 \begin{equation}
+l.265 \begin{equation}
                       
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 266--266
+Overfull \hbox (20.0pt too wide) in paragraph at lines 265--265
 [] 
  []
 
 
-Overfull \hbox (154.70613pt too wide) detected at line 268
+Overfull \hbox (154.70613pt too wide) detected at line 267
 \OML/cmm/m/it/10 G[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 1 + \O
 ML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C\OT1/c
 mr/m/n/10 2 + \OML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10 (\OML/cmm
@@ -6766,7 +6758,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.270 w
+l.269 w
        here T is temperature,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6857,27 +6849,27 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 270--275
+Overfull \hbox (20.0pt too wide) in paragraph at lines 269--274
 []
  []
 
 
-Overfull \hbox (11.63335pt too wide) in paragraph at lines 270--275
+Overfull \hbox (11.63335pt too wide) in paragraph at lines 269--274
 \OML/cmm/m/it/10 C[]$
  []
 
 
-Overfull \hbox (11.63335pt too wide) in paragraph at lines 270--275
+Overfull \hbox (11.63335pt too wide) in paragraph at lines 269--274
 \OML/cmm/m/it/10 C[]$
  []
 
 
-Overfull \hbox (11.63335pt too wide) in paragraph at lines 270--275
+Overfull \hbox (11.63335pt too wide) in paragraph at lines 269--274
 \OML/cmm/m/it/10 C[]$
  []
 
 
-Overfull \hbox (11.63335pt too wide) in paragraph at lines 270--275
+Overfull \hbox (11.63335pt too wide) in paragraph at lines 269--274
 \OML/cmm/m/it/10 C[]$
  []
 
@@ -6888,7 +6880,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.279 S
+l.278 S
        ome random example...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6914,12 +6906,12 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 279--280
+Overfull \hbox (20.0pt too wide) in paragraph at lines 278--279
 []
  []
 
 ! Undefined control sequence.
-l.282 \subsection
+l.281 \subsection
                  {Effective Particle Diameter Size, $D_e$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6934,7 +6926,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 \subsection{E
+l.281 \subsection{E
                    ffective Particle Diameter Size, $D_e$}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6970,12 +6962,12 @@ Missing character: There is no z in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 282--283
+Overfull \hbox (20.0pt too wide) in paragraph at lines 281--282
 []
  []
 
 
-Overfull \hbox (12.57327pt too wide) in paragraph at lines 282--283
+Overfull \hbox (12.57327pt too wide) in paragraph at lines 281--282
 \OML/cmm/m/it/10 D[]$ 
  []
 
@@ -6986,18 +6978,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.284 \begin{equation}
+l.283 \begin{equation}
                       
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 284--284
+Overfull \hbox (20.0pt too wide) in paragraph at lines 283--283
 [] 
  []
 
 
-Overfull \hbox (127.69186pt too wide) detected at line 286
+Overfull \hbox (127.69186pt too wide) detected at line 285
 \OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = []
  []
 
@@ -7009,7 +7001,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.286 \end{equation}
+l.285 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7019,7 +7011,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <write> ...sAndEffectiveDepthFormula}{{}{\thepage 
                                                   }}
-l.286 \end{equation}
+l.285 \end{equation}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7037,7 +7029,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.288 \newpage
+l.287 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7045,7 +7037,7 @@ or  <return>  to continue without it.
 
 [2]
 ! Undefined control sequence.
-l.289 \subsection
+l.288 \subsection
                  {$D_e$ using K}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7060,7 +7052,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.289 \subsection{$
+l.288 \subsection{$
                    D_e$ using K}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7072,7 +7064,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no K in font nullfont!
 
-Overfull \hbox (32.57327pt too wide) in paragraph at lines 289--290
+Overfull \hbox (32.57327pt too wide) in paragraph at lines 288--289
 []$\OML/cmm/m/it/10 D[]$
  []
 
@@ -7083,18 +7075,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.291 \begin{equation}
+l.290 \begin{equation}
                       
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 291--291
+Overfull \hbox (20.0pt too wide) in paragraph at lines 290--290
 [] 
  []
 
 
-Overfull \hbox (64.15308pt too wide) detected at line 293
+Overfull \hbox (64.15308pt too wide) detected at line 292
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 K[]
  []
 
@@ -7105,7 +7097,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.296 C
+l.295 C
        alculating K
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7123,7 +7115,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no K in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 296--297
+Overfull \hbox (20.0pt too wide) in paragraph at lines 295--296
 []
  []
 
@@ -7134,7 +7126,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.298 \begin{Schunk}
+l.297 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7147,7 +7139,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.299 \begin{Sinput}
+l.298 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7160,7 +7152,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.300 >
+l.299 >
        
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7173,7 +7165,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.301 \end{Sinput}
+l.300 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7186,14 +7178,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.302 \end{Schunk}
+l.301 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 300--303
+Overfull \hbox (20.0pt too wide) in paragraph at lines 299--302
 []
  []
 
@@ -7204,7 +7196,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.304 O
+l.303 O
        ne can easily use the function with the temperature and have K returned:
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -7272,7 +7264,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 304--305
+Overfull \hbox (20.0pt too wide) in paragraph at lines 303--304
 []
  []
 
@@ -7283,7 +7275,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.306 \begin{Schunk}
+l.305 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7296,7 +7288,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 \begin{Sinput}
+l.306 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7309,7 +7301,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.308 >
+l.307 >
        
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7322,7 +7314,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.309 \end{Sinput}
+l.308 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7335,14 +7327,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.310 \end{Schunk}
+l.309 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 308--311
+Overfull \hbox (20.0pt too wide) in paragraph at lines 307--310
 []
  []
 
@@ -7353,7 +7345,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.312 C
+l.311 C
        alculating L
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7371,7 +7363,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no L in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 312--313
+Overfull \hbox (20.0pt too wide) in paragraph at lines 311--312
 []
  []
 
@@ -7382,7 +7374,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314 \begin{Schunk}
+l.313 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7395,7 +7387,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.315 \begin{Sinput}
+l.314 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7408,7 +7400,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.316 >
+l.315 >
        
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7421,7 +7413,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.317 \end{Sinput}
+l.316 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7434,14 +7426,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 \end{Schunk}
+l.317 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 316--319
+Overfull \hbox (20.0pt too wide) in paragraph at lines 315--318
 []
  []
 
@@ -7452,7 +7444,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.320 C
+l.319 C
        alculating $D_e$
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7469,12 +7461,12 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 320--321
+Overfull \hbox (20.0pt too wide) in paragraph at lines 319--320
 []
  []
 
 
-Overfull \hbox (12.57327pt too wide) in paragraph at lines 320--321
+Overfull \hbox (12.57327pt too wide) in paragraph at lines 319--320
 \OML/cmm/m/it/10 D[]$ 
  []
 
@@ -7485,18 +7477,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.322 \begin{equation}
+l.321 \begin{equation}
                       
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 322--322
+Overfull \hbox (20.0pt too wide) in paragraph at lines 321--321
 [] 
  []
 
 
-Overfull \hbox (77.06396pt too wide) detected at line 324
+Overfull \hbox (77.06396pt too wide) detected at line 323
 \OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 K \OMS/cmsy/m/n/10 ^^C 
 \OML/cmm/m/it/10 sqrt[]
  []
@@ -7508,7 +7500,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.326 \begin{Schunk}
+l.325 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7521,7 +7513,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.327 \begin{Sinput}
+l.326 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7534,7 +7526,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.328 >
+l.327 >
        
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7547,7 +7539,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.329 \end{Sinput}
+l.328 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7560,19 +7552,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.330 \end{Schunk}
+l.329 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 328--331
+Overfull \hbox (20.0pt too wide) in paragraph at lines 327--330
 []
  []
 
 ! Undefined control sequence.
-l.332 \subsection
+l.331 \subsection
                  {Alternative Calculation w/o K}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7587,7 +7579,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.332 \subsection{A
+l.331 \subsection{A
                    lternative Calculation w/o K}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7619,7 +7611,7 @@ Missing character: There is no / in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no K in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 332--333
+Overfull \hbox (20.0pt too wide) in paragraph at lines 331--332
 []
  []
 
@@ -7630,7 +7622,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.334 \begin{Schunk}
+l.333 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7643,7 +7635,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335 \begin{Sinput}
+l.334 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7656,14 +7648,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.336 >
+l.335 >
         # Fluid Viscosity
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no > in font nullfont!
 ! You can't use `macro parameter character #' in horizontal mode.
-l.336 > #
+l.335 > #
           Fluid Viscosity
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -7844,7 +7836,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.345 \end{Sinput}
+l.344 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7857,14 +7849,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.346 \end{Schunk}
+l.345 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 336--347
+Overfull \hbox (20.0pt too wide) in paragraph at lines 335--346
 []
  []
 
@@ -7875,7 +7867,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.348 N
+l.347 N
        ow, we calculate the fluid viscosity, $\eta$,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7915,12 +7907,12 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 348--349
+Overfull \hbox (20.0pt too wide) in paragraph at lines 347--348
 []
  []
 
 
-Overfull \hbox (5.32408pt too wide) in paragraph at lines 348--349
+Overfull \hbox (5.32408pt too wide) in paragraph at lines 347--348
 \OML/cmm/m/it/10 ^^Q$ 
  []
 
@@ -7931,7 +7923,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \begin{Schunk}
+l.349 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7944,7 +7936,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.351 \begin{Sinput}
+l.350 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7957,7 +7949,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.352 >
+l.351 >
         eta(23)
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7977,7 +7969,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.353 \end{Sinput}
+l.352 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7990,7 +7982,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.354 \begin{Soutput}
+l.353 \begin{Soutput}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8017,7 +8009,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.356 \end{Soutput}
+l.355 \end{Soutput}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8030,14 +8022,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.357 \end{Schunk}
+l.356 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 352--358
+Overfull \hbox (20.0pt too wide) in paragraph at lines 351--357
 []
  []
 
@@ -8048,7 +8040,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.360 A
+l.359 A
        nd the specific gravity of water, $Gs_w$,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8084,12 +8076,12 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 360--361
+Overfull \hbox (20.0pt too wide) in paragraph at lines 359--360
 []
  []
 
 
-Overfull \hbox (19.02339pt too wide) in paragraph at lines 360--361
+Overfull \hbox (19.02339pt too wide) in paragraph at lines 359--360
 \OML/cmm/m/it/10 Gs[]$ 
  []
 
@@ -8100,7 +8092,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.362 \begin{Schunk}
+l.361 \begin{Schunk}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8113,7 +8105,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.363 \begin{Sinput}
+l.362 \begin{Sinput}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8126,7 +8118,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.364 >
+l.363 >
         Gs_w <- function(T){
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8137,7 +8129,7 @@ Missing character: There is no s in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.364 > Gs_
+l.363 > Gs_
            w <- function(T){
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -8149,7 +8141,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.366 \end{Sinput}
+l.365 \end{Sinput}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8158,7 +8150,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.366 \end{Sinput}
+l.365 \end{Sinput}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -8173,24 +8165,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.367 \end{Schunk}
+l.366 \end{Schunk}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 364--368
+Overfull \hbox (20.0pt too wide) in paragraph at lines 363--367
 []
  []
 
 
-Overfull \hbox (17.02892pt too wide) in paragraph at lines 364--368
+Overfull \hbox (17.02892pt too wide) in paragraph at lines 363--367
 [] \OML/cmm/m/it/10 <
  []
 
 
-Overfull \hbox (224.20166pt too wide) in paragraph at lines 364--368
+Overfull \hbox (224.20166pt too wide) in paragraph at lines 363--367
 \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 function\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
 T\OT1/cmr/m/n/10 )[]$
  []

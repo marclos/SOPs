@@ -2,7 +2,7 @@
 
 \subsection{Reading Data into R}
 
-\href{http://thinkertools.org/grainsize/} 
+\href{http://thinkertools.org/grainsize/}{Database}
 
 The password is ``18Pomona87''
 
@@ -10,81 +10,64 @@ FileRead function...
 
 
 
+Reading .csv Data into R
+<<ChooseRead, echo=F>>=
+path_fun="/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Soil_functions"
+path_data="/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data"
 
-## Reading .csv Data into R
-\begin{Schunk}
-\begin{Soutput}
-function () 
-{
-    reading <- read.csv(file.choose())
-    sample <- read.csv(file.choose())
-    return(reading)
-    return(sample)
-}
-\end{Soutput}
-\end{Schunk}
+source("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Soil_functions/ChooseRead_fun.R")
+
+ChooseRead
+@
 
 
 \subsection{Percent Passing Through No. 10 Sieve}
+<<echo=F>>=
+# options(prompt=" ",continue=" ")
+@
 
 Using the function below, we can calculate the amount of soil that passed through Sieve No. 10. Once the function is call, record the results into Box 16. 
 
-\begin{Schunk}
-\begin{Sinput}
-> source("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Soil_functions/PassNo10_fun.R")
-> PassNo10
-\end{Sinput}
-\begin{Soutput}
-function (MassPassed, Total) 
-{
-    round(MassPassed/Total * 100, 1)
-}
-\end{Soutput}
-\end{Schunk}
+<<echo=T>>=
+source("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Soil_functions/PassNo10_fun.R")
 
-\begin{Schunk}
-\begin{Sinput}
-> PassNo10 = function(MassPassed,Total){
-+   PercentPassed = MassPassed/Total * 100
-+   cat("Enter", round(PercentPassed, 1), "into Box 16")
-+ }
-\end{Sinput}
-\end{Schunk}
+PassNo10
+@
+
+<<echo=T, label=passNo10>>=
+PassNo10 = function(MassPassed,Total){
+  PercentPassed = MassPassed/Total * 100
+  cat("Enter", round(PercentPassed, 1), "into Box 16")
+}
+@
 
 The syntax of the function requires two parameters, mass of soil passed (Box 11) and total soil used (Box 10), PassNo10(Mass of Soil Passed, Total Soil Used). 
 
 For example, if we have the mass of the soil that passed through the sieve 122 grams and we had a total to start with of 133 grams.
 
-\begin{Schunk}
-\begin{Sinput}
-> PassNo10(122, 133)
-\end{Sinput}
-\begin{Soutput}
-Enter 91.7 into Box 16
-\end{Soutput}
-\end{Schunk}
+<<>>=
+PassNo10(122, 133)
+@
 
 \subsection{Calculating Soil Mass for Analysis}
 
 The following function can be used to calculate the ...
 
-\begin{Schunk}
-\begin{Sinput}
-> # Function to Calculate Ws 
-> SoilEquiv = function(tin, airdry, ovendry, tinmass, desiredmass = 50){
-+ hygro = round(ovendry/airdry, 2)
-+ wd = (airdry - ovendry)/(ovendry-tinmass)
-+ WS_e = round(desiredmass * (1 + wd), 2)
-+ output = data.frame(
-+   Parameter = c("Tin ID", "Tin Tare Weight", "Mass of air-dried soil", 
-+       "Mass of oven-dried soil", "Hygroscopic Correction Factor", 
-+       "Desired Oven-dried Soil", "Effective Soil Weight (WSe)"),
-+   Value = c(tin, tinmass, airdry, ovendry, hygro, desiredmass, WS_e),
-+   Box = c(12, 13, 14, 15, 17, 9, 18))
-+ print(output)
-+ }
-\end{Sinput}
-\end{Schunk}
+<<echo=T, label=soilequiv>>=
+# Function to Calculate Ws 
+SoilEquiv = function(tin, airdry, ovendry, tinmass, desiredmass = 50){
+hygro = round(ovendry/airdry, 2)
+wd = (airdry - ovendry)/(ovendry-tinmass)
+WS_e = round(desiredmass * (1 + wd), 2)
+output = data.frame(
+  Parameter = c("Tin ID", "Tin Tare Weight", "Mass of air-dried soil", 
+      "Mass of oven-dried soil", "Hygroscopic Correction Factor", 
+      "Desired Oven-dried Soil", "Effective Soil Weight (WSe)"),
+  Value = c(tin, tinmass, airdry, ovendry, hygro, desiredmass, WS_e),
+  Box = c(12, 13, 14, 15, 17, 9, 18))
+print(output)
+}
+@
 
 The function (SoilEquiv) requires four parameters to run provide the output, the mass of soil to be used for the hydrometer test. This mass is the air-dried soil to be used but is equivalent to the desired oven-dried soil, is based on the hygroscopic water methods. 
 
@@ -92,21 +75,9 @@ The function's syntax is as follows: SoilEquiv(Tin \#, Air-Dried Mass, Oven-Drie
 
 Below is an example, where the $tin number = 4$, $airdry = 27.4$, $ovendry = 25.6$, $tinmass = 12.3$, $desiredmass = 50$ and as used in R: 
 
-\begin{Schunk}
-\begin{Sinput}
-> SoilEquiv(4, 27.4, 25.6, 12.3, 50)
-\end{Sinput}
-\begin{Soutput}
-                      Parameter Value Box
-1                        Tin ID  4.00  12
-2               Tin Tare Weight 12.30  13
-3        Mass of air-dried soil 27.40  14
-4       Mass of oven-dried soil 25.60  15
-5 Hygroscopic Correction Factor  0.93  17
-6       Desired Oven-dried Soil 50.00   9
-7   Effective Soil Weight (WSe) 56.77  18
-\end{Soutput}
-\end{Schunk}
+<<echo= T, label=SoilEquiv>>=
+SoilEquiv(4, 27.4, 25.6, 12.3, 50)
+@
 
 
 \subsection{Hydrometer Correction Factor}
@@ -153,13 +124,11 @@ Thus, we have created a spreadsheet or access database? for data entry or shiny 
 
 importing data into R is not difficult, but there are tricks. The following function, allows the data to be imported into R from a csv file. This function is used to start the analysis. 
 
-\begin{Schunk}
-\begin{Sinput}
-> import = function(){
-+ read.csv(file.choose())
-+ }
-\end{Sinput}
-\end{Schunk}
+<<label = import, eval=FALSE, echo=TRUE>>=
+import = function(){
+read.csv(file.choose())
+}
+@
 
 
 \subsection{Pre-Processing Data}
@@ -182,50 +151,51 @@ d_e = \sqrt{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
 
 Once the data have been inspected for integrity, we can use the following function to calculate the two values of interest: $D_e$ and PF. 
 
-\begin{Schunk}
-\begin{Sinput}
-> SampleParams = data.frame(Ws_actual = 50, Hygro = .95, GSp = 2.65); SampleParams
-> 
-> 
-\end{Sinput}
-\end{Schunk}
+<<label = Defunction, eval=FALSE, echo=TRUE>>=
 
-\begin{Schunk}
-\begin{Sinput}
-> GSp = 2.65
-> GSf = 1
-> t = c(0.5, 1, 3, 10, 30, 60, 90, 120, 1440)
-> #c(2, 5, 15, 30, 60, 250, 1440)
-> L1 = c(1.01, 1.01, 1.008, 1.007, 1.007, 1.0065, 1.0065, 1.0064, 1.0055)
-> # Heavy Density Hydrometer
-> Vb = 40
-> A = 27.8
-> L2 = 14.5
-> effective_depth = L1 + 0.5*(L2 - Vb/A) # result in centimeters
-> C1 = 0.01732483379693
-> C2 = -5.04157465609E-4
-> C3 = 8.387438669317E-6
-> C4 = -7.401129271698E-8
-> C5 = 2.625994080072E-12
-> eta = C1 + T * (C2 + T * (C3 + T *  (C4 + T * C5)))
-> d_e = sqrt((30 * eta * effective_depth)/((980*GSp - GSf) *t)); d_e
-> 
-> #{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
-> 
-\end{Sinput}
-\end{Schunk}
+SampleParams = data.frame(Ws_actual = 50, Hygro = .95, GSp = 2.65); SampleParams
+
+
+@
+
+<<next, eval=FALSE, echo=TRUE>>=
+GSp = 2.65
+GSf = 1
+t = c(0.5, 1, 3, 10, 30, 60, 90, 120, 1440)
+#c(2, 5, 15, 30, 60, 250, 1440)
+L1 = c(1.01, 1.01, 1.008, 1.007, 1.007, 1.0065, 1.0065, 1.0064, 1.0055)
+
+# Heavy Density Hydrometer
+Vb = 40
+A = 27.8
+L2 = 14.5
+
+effective_depth = L1 + 0.5*(L2 - Vb/A) # result in centimeters
+
+C1 = 0.01732483379693
+C2 = -5.04157465609E-4
+C3 = 8.387438669317E-6
+C4 = -7.401129271698E-8
+C5 = 2.625994080072E-12
+
+eta = C1 + T * (C2 + T * (C3 + T *  (C4 + T * C5)))
+
+d_e = sqrt((30 * eta * effective_depth)/((980*GSp - GSf) *t)); d_e
+
+#{\frac{30 \eta l}{980 (GS_p - GS_f)* t}}
+
+@
 
 \begin{equation}
 PF = [(100,000/M_s)[m|5]P5 \frac{GS_p}{GS_p - GS_w}](R_c - GS_w)
 \end{equation}
 
-\begin{Schunk}
-\begin{Sinput}
-> M_s = 60
-> PF = 100000/M_s * (GSp)/(GSp-GSf)*(L1 - GSf); PF
-> plot(d_e, PF)
-\end{Sinput}
-\end{Schunk}
+<<label = pf, eval=FALSE >>=
+M_s = 60
+
+PF = 100000/M_s * (GSp)/(GSp-GSf)*(L1 - GSf); PF
+plot(d_e, PF)
+@
 
 \subsection{Determine the Texture Classification}
 
@@ -295,27 +265,21 @@ D_e = K \sqrt{L/T}
 
 Calculating K
 
-\begin{Schunk}
-\begin{Sinput}
-> 
-\end{Sinput}
-\end{Schunk}
+<<echo = T, label=K>>=
+
+@
 
 One can easily use the function with the temperature and have K returned: 
 
-\begin{Schunk}
-\begin{Sinput}
-> 
-\end{Sinput}
-\end{Schunk}
+<<>>=
+
+@
 
 Calculating L
 
-\begin{Schunk}
-\begin{Sinput}
-> 
-\end{Sinput}
-\end{Schunk}
+<<>>=
+
+@
 
 Calculating $D_e$
 
@@ -323,48 +287,38 @@ Calculating $D_e$
 D_e = K * sqrt{L/T}
 \end{equation}
 
-\begin{Schunk}
-\begin{Sinput}
-> 
-\end{Sinput}
-\end{Schunk}
+<<echo=T, label=De_viaK>>=
+
+@
 
 \subsection{Alternative Calculation w/o K}
 
-\begin{Schunk}
-\begin{Sinput}
-> # Fluid Viscosity
-> C1 = 0.01732483379693
-> C2 = -5.04157465609E-4
-> C3 = 8.387438669317E-6
-> C4 = -7.401129271698E-8
-> C5 = 2.625994080072E-12
-> eta <- function(T){
-+ C1 + T * (C2 + T * (C3 + T * (C4 + T * C5)))
-+ } 
-\end{Sinput}
-\end{Schunk}
+<<echo=T, label=eta_fun>>=
+# Fluid Viscosity
+C1 = 0.01732483379693
+C2 = -5.04157465609E-4
+C3 = 8.387438669317E-6
+C4 = -7.401129271698E-8
+C5 = 2.625994080072E-12
+
+eta <- function(T){
+C1 + T * (C2 + T * (C3 + T * (C4 + T * C5)))
+} 
+@
 
 Now, we calculate the fluid viscosity, $\eta$, 
 
-\begin{Schunk}
-\begin{Sinput}
-> eta(23)
-\end{Sinput}
-\begin{Soutput}
-[1] 0.009266407
-\end{Soutput}
-\end{Schunk}
+<<echo=T, label=eta_test>>=
+eta(23)
+@
 
 
 And the specific gravity of water, $Gs_w$, 
 
-\begin{Schunk}
-\begin{Sinput}
-> Gs_w <- function(T){
-+ C1 + T * (C2 + T * (C3 + T * C4))}
-\end{Sinput}
-\end{Schunk}
+<<echo=T, label=GS_w_function>>=
+Gs_w <- function(T){
+C1 + T * (C2 + T * (C3 + T * C4))}
+@
 
 %id = 18
 

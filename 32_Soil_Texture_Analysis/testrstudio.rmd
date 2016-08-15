@@ -19,17 +19,36 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Reading .csv Data into R
 ```{r}
+# ChooseRead()
+
 reading.source <- "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/reading.csv"
 sample.source <- "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/sample.csv"
-reading <- read.csv(reading.source)
-sample <- read.csv(sample.source)
+reading.import <- read.csv(reading.source)
+sample.import <- read.csv(sample.source)
 ```
 
 ## Check Data Importing
 ```{r}
 
-head(reading)
-head(sample)
+head(reading.import)
+head(sample.import)
+
+library(mosaic)
+library(dplyr)
+
+# Check sample file
+BadsampleKEYs <- filter(sample.import, is.na(actualSoil) == T | is.na(totalSoil)==T) %>% select(sampleKEY); BadsampleKEYs
+BadreadingKEYs <- filter(reading.import, is.na(timeUnit)==T) %>% select(sampleKEY) 
+ 
+# filter(sample, is.na(totalSoil)==T)
+badKEYs <- full_join(BadsampleKEYs, BadreadingKEYs); badKEYs
+reading <- reading.import %>% anti_join(badKEYs, by="sampleKEY"); 
+sample <- sample.import %>% anti_join(badKEYs, by="sampleKEY");
+
+# Write out Unprocessed samples
+unprocessed <- sample.import %>% inner_join(badKEYs) %>% select(sampleKEY, sampleID, researcher); 
+
+write.csv(unprocessed, file = paste("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/unprocessed_",Sys.Date(),".csv", sep=""))
 ```
 
 ## Preprocess Sample File
@@ -45,7 +64,7 @@ sample$passNo10Percent =PassNo10(sample$pass10, sample$totalSoil)
 
 source("Soil_functions/SoilEquiv_fun.R")
 
-sample$hygroPercent2 = hygro(sample$tinAir, sample$tinOven, sample$tinTare); head(sample)
+sample$hygroPercent2 = hygro(sample$tinAir, sample$tinOven, sample$tinTare); #head(sample)
 sample$WS_e = WS_e(sample$tinAir, sample$tinOven, sample$tinTare, sample$actualSoil);
 
 sample$GSp = 2.65
@@ -72,7 +91,7 @@ reading$Et <- round(reading$timeElapsed * ElapsedTimeConversion(reading$timeUnit
 First, I created two files that have only a few columns each so we can test the join function.
 
 ```{r joinkeyID}
-reading.select <- select(reading, sampleKEY, Et, actual, blank, temp); head(reading.select)
+reading.select <- select(reading, sampleKEY, Et, actual, blank, temp); #head(reading.select)
 
 joined2 <- left_join(SampleParams, reading.select, by = "sampleKEY")
 ```
@@ -105,7 +124,7 @@ First, we could make the function that address both missing values simultaneousl
 joined <- joined2[!is.na(joined2$Et),]; joined
 KEY <- unique(joined$sampleKEY); KEY
 
-KEY <- KEY[-c(1, 2, 3)]; KEY
+#KEY <- KEY[-c(1, 2, 3)]; KEY
 joined$temp2 = NA
 joined$blank2 = NA
 
@@ -206,28 +225,29 @@ for(i in 1:length(KEY)){
 clay <- 0.002; silt <- 0.05; sand <- 2.0
 
 #joined$sampleKEY[is.nan(joined$De)]
-joined$status="good"
-badKEYs <- data.frame(sampleKEY =unique(joined$sampleKEY[is.na(joined$De)]), status = "bad"); badKEYs
-badKEYs2 <- data.frame(sampleKEY =unique(joined$sampleKEY[is.na(joined$PF)]), status = "bad"); badKEYs2 
-badKEYs <- full_join(badKEYs, badKEYs2)
-joined3 <- joined %>% anti_join(badKEYs, by="sampleKEY"); 
+#joined$status="good"
+#badKEYs <- data.frame(sampleKEY =unique(joined$sampleKEY[is.na(joined$De)]), status = "bad"); badKEYs
+#badKEYs2 <- data.frame(sampleKEY =unique(joined$sampleKEY[is.na(joined$PF)]), status = "bad"); badKEYs2 
+#badKEYs <- full_join(badKEYs, badKEYs2)
+#joined3 <- joined %>% anti_join(badKEYs, by="sampleKEY"); 
 #joined3 <- goodKEYs %>% filter(
 
-goodKEYs <- unique(joined3$sampleKEY); goodKEYs
+
+KEYs <- unique(joined$sampleKEY); KEYs
 #KEY <- KEY[-c(1:25, 47)]; KEY
 
 variables = 4 
-iterations = length(goodKEYs)
+iterations = length(KEYs)
 textureclasses <- matrix(ncol=variables, nrow=iterations)
  
 for(i in 1:iterations){
-tmp3 = joined[joined3$sampleKEY==goodKEYs[i],]; head(tmp3)
-tmp3 = select(joined3, sampleKEY, De, PF) %>% filter(joined3$sampleKEY==goodKEYs[i]); tmp3 
+tmp3 = joined[joined$sampleKEY==KEYs[i],]; head(tmp3)
+tmp3 = select(joined, sampleKEY, De, PF) %>% filter(joined$sampleKEY==KEYs[i]); tmp3 
 
 Perclay = round(Interpolation(tmp3, clay),1)
 Persilt = round(Interpolation(tmp3, silt), 1)
 Persand = round(100-(Persilt + Perclay), 1)
-textureclasses[i,] <- c(goodKEYs[i], Persand, Persilt, Perclay)
+textureclasses[i,] <- c(KEYs[i], Persand, Persilt, Perclay)
 }
 
 textureclasses
