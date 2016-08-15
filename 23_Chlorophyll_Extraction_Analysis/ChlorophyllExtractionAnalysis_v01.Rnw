@@ -17,12 +17,11 @@
 
 \maketitle
 
-\section{Scope and Application}
+ \section{Scope and Application}
 
 \NP This method provides a procedure for the fluorometric determination of chlorophyll \textit{a} and its magnesium-free derivative, pheophytin \textit{a} in marine and freshwater phytoplankton.
 
 \NP This method is modified from the US EPA Method 445.0 and APHA Standard Methods for the Examination of Water and Wastewater, 22\textsuperscript{nd} Edition. 
-
 
 \section{Summary of Method}
 
@@ -36,7 +35,7 @@
 
 \NP \textbf{Field duplicates}-- Two separate samples collected at the same time and placed under identical circumstances and treated exactly the same throughout the field and laboratory procedures. Provide a measure of the precision associated with sample collection, preservation, storage and laboratory processing. 
 
-\NP \textbf{Quality Control Sample (QCs)}-- A solution of known concentration obtained from a source external to the laboratory to check laboratory performance.
+\NP \textbf{Quality Control Samples (QCs)}-- A solution of known concentration obtained from a source external to the laboratory to check laboratory performance.
 
 \NP \textbf{Linear Dynamic Range} -- The absolute quantity or concentration range over which the instrument response to the analyte is clear (basically, its the range of concentrations for which your fluorometer is suited to take accurate measurements). For the Turner Trilogy Fluorometer in Marc's lab the LDR is 0-1000 ppb RWT. 
 
@@ -78,34 +77,44 @@
 
 \section{Materials and Apparatus}
 
-\NP Turner Designs P/N 998-7210 Fluoromter
+\NP Turner Designs Trilogy Fluoromter (P/N 998-7210)
 
-\NP 10mL borosillicate glass tubes with caps (\textbf{Cat \#?})
+\NP Whatmann glass micro fiber filter GF/F 0.7 \micro m retention 47mm 
 
-\NP Whatmann glass micro fiber filter GF/F 0.7 \micro m retention 47mm (\textbf{Cat \#?})
+\NP Millipore glass filtration unit with vacuum and 47mm fritted glass disk base 
 
-\NP Millipore glass filtration unit with vacuum and 47mm fritted glass disk base (\textbf{Cat \#?})
+\NP Tweezers or flat tipped forceps
 
-\NP Tweezers or flat tipped forceps (\textbf{Cat \#?})
+\NP Plastic petri dishes or some other solid container for storing sampled filters in the freezer
 
-\NP Assorted class A calibrated pipettes (\textbf{Cat \#?})
+\NP Laboratory tissues (Kim wipes)
 
-\NP 50mL, 100mL, and 1-L class A volumetric flask
+\NP Assorted class A calibrated pipettes 
 
-\NP Sonicator % or mascerating tubes with "plunges"
+\NP 50mL, 100mL, and 1-L class A volumetric flasks
 
-\NP Centrifuge, 15mL sized tubes, capable of \textbf{XX rcf}
+\NP Sonicator or tissue grinders that have a teflon tipped pestle with grooves, a stainless steel rod (1/4" diameter) long enough to attach onto a suitable drive motor and a 30-mL capacity glass grinding tube
 
-\NP 15 mL centrifuge tubes? (\textbf{Cat \#?})%?? or can we just use the 50 mL tubes with the right amount of g force applied??
-% the last two entries could use some more description, try finding other sources to know what kind of these we should use
+\NP Glass cuvettes for the fluorometer
 
+\NP Desktop Clinical Centrifuge, capable of rotating 15mL tubes at 675 x g or 1,000 x g 
+
+\NP 15 mL glass or polypropylene Falcon centrifuge tubes
+
+\NP Aluminum foil
+
+\NP Pastuer type pipettes or medicine droppers
+
+\NP Polyethylene squirt bottles
+
+\NP Room thermometer
 
 \NP Note(for lab techs): All reusable labware that comes in contact with chlorophyll solutions should be cleaned with acetone and acid free. Diswashing should include soaking in laboratory grade detergent and water, rinsing with tap water then rinsing with deionized water. 
 
 \section{Reagents and Standards}
-\NP Acetone, HPLC grade
+\NP Acetone, HPLC grade (CASRN 67-64-1)
 
-\NP Hydrochloric Acid
+\NP Concentrated Hydrochloric Acid (sp. gr. 1.19), (CASRN 7647-01-0)
 
 \NP Chlorophyll \textit{a} free of chlorophyll \textit{b}. May be obtained from a commercial supplier.
 
@@ -135,42 +144,76 @@
 
 % Using \subsection to split extraction and analysis
 
-\subsection*{Extraction}
+\subsection*{Filtration}
 \NP Invert the sample bottle gently several times before filtering to suspend particles. Mixing the sample well improves the replication greatly.
 
-\NP Conduct filtration in an area with subdued light. Gently filter sample, filter vacuum should not exceed 20 kPa). Sample volume to be filtered will vary depending on the algal concentration in the sample. The sample needs to be filtered until a green tint can be seen on the filter, filter sample in 20mL increments using a graduated cylinder or calibrated pipette. For benthic samples a much smaller volume will need to be filtered, roughly 5mL, freshwater sample needed to be filtered can range from 20mL to 300mL, and seawater sample volume can exceed 1 L. It is extremely important to record the filtered sample volume during this process. If the filter is too green the sample analysis will be over range and will need to be diluted, however it is best to avoid diluting the sample when possible. 
+\NP \textbf{Conduct filtration in an area with subdued light.} Gently filter the sample in 20 mL increments using a graduated cylinder or calibrated pipette. The volume to be filtered will vary depending on the algal concentration in the sample. The sample needs to be filtered just until a brown or green tint is visible on the filter. ({\small \textit{Note: For benthic samples a much smaller volume will need to be filtered, roughly 5mL. For freshwater samples the volume can range from 20mL to 300mL, and seawater sample volume can exceed 1 L.}})
 
-\NP After filtration, fold each filter in half, using tweezers and a spatula and a place inside a clean 50mL falcon tube. Perform a laboratory duplicate and blank (100mL Milli-Q) every 10-15 samples.
+\NP Record the filtered sample volume during this process. If the filter is too green the sample analysis will be over range and will need to be diluted later.  It is best to avoid diluting the sample when possible. 
 
-\NP Freeze filter samples for up to 28 days before extraction
+\NP After filtration, use forceps and a micro spatula to fold each filter in half with the analyte portion inside. Gently blot excess water with on the outside of the filter with a kim wipe. Place the filter inside a clean 15mL falcon tube or plastic petri dish.  
+\NP Remember to perform a laboratory duplicate and blank (100mL Milli-Q) every 10-15 samples.
 
-\NP To extract chlorophyll \textit{a}, add 25 mL of 90\% aqueous acetone solution to the falcon tubes ensuring each filter is fully submerged in the solvent. Cap the tubes and invert several times to mix. Turn on and set sonicator dial to 7. Sonicate by sumberging the tip of the sonicator about halfway into the acetone solution and pressing the trigger. To help break up the filter completely, be sure to move tip around the entire sample. After sonication, vigorously shake sample several times, cover with foil and then steep in freezer for at least 2 hrs.
-% this section will need a lot of revising based on if we sonicate and with what sonicator we use. could have different settings.
+\NP You can freeze the filter samples for up to 28 days before extraction. Be sure to wrap the petri dishes or falcon tubes with aluminum foil before storing to protect the chlorophyll from light. 
 
-\NP Remove samples from the freezer and allow both the sample and QCs to come to room temperature. 
+\subsection*{Extraction}
 
-\NP Mash sample filters to release any chlorophyll that has accumulated on the filter. Remove and dispose of the filter using forceps.
+\NP Remove samples from the freezer and allow both the sample and QCs to come to room temperature
 
-\NP Pour the filter extracts into 15mL falcon tubes and label. Then centrifuge them at (insert the right settings for centrifuge here) for 3 minutes. Or until all filter material is separated from the extration liquid. When removing the tubes from the centrifuge, be careful not to re-suspend filter particles from the bottom of the tubes.
+\NP There are two different methods used to extract chlorophyll from the glass fiber filters. If using a sonicator proceed onto the next section, if using a tissue grinder skip to section 10.10
+
+\NP To extract chlorophyll \textit{a} via sonication method:
+\begin{itemize}
+\item Add 25 mL of 90\% aqueous acetone solution to the falcon tubes ensuring each filter is fully submerged in the solvent. (The sonication procedure is usually done in 50 mL Falcon tubes)
+\item Cap the tubes and invert several times to mix. 
+\item Turn on and set sonicator dial to 7. Sonicate by sumberging the tip of the sonicator about halfway into the acetone solution and pressing the trigger. To help break up the filter completely, be sure to move tip around the entire sample. (Note: Sonication settings described here are from Kristy's original SOP, any sonication device purchased by the Los Huertos Lab at Pomona will require an update to the settings).
+\item After sonication, vigorously shake sample several times, cover with foil and then steep in a fridge (4\celsius) for at least 2 hrs.
+\end{itemize}
+
+\NP To extract a chlorophyll sample via tissue grinder method: 
+\begin{itemize}
+\item Using forceps remove the filter from its container and place it into the 30 mL glass grinding tube.
+\item Push the filter to the bottom of tube using the pestle or a glass rod.
+\item Using a volumetric pipette (with a tip suitable for dispensing acetone) add 4 mL of 90\% aqueous acetone solution to the tube.
+\item Grind the sample using the pestle (and if applicable a tissue homogenizer motor) until it has been converted to a slurry. (Note: care must be taken not to overheat the sample in the process of grinding. Use common sense in deciding when the sample has been mascerated sufficiently)
+\item Pour the slurry into a 15 mL screw-cap centrifuge tube. 
+\item Rinse the pestle and grinding tube with 6 mL 90\% aqueous acetone solution and add the slurry to the 15 mL centrifuge tube
+\item Cap the 15 ml centrifuge tube and shake it vigorously. After labeling and wrapping the tube in foil allow the sample to steep in the fridge (4/celsius) for 2 hours.
+\item Before grinding a subsequent filter, clean out the grinding tube and pestle by rinsing with the water and acetone squirt bottles. The last rinse should be with acetone. Wipe the pestle from any leftover residue using a kim wipe.
+\end{itemize}
+
+\NP After the steeping period take the samples out from the fridge and allow them to come to room temperature. (This should take about 30 mins). A constant temperature water bath can be used.
+
+\NP Shake the samples vigorously again and then using the clinical benchtop centrifuge centrifuge the samples at 1,000 x g for 5 minutes or until all filter material is separated from the extration liquid. Be sure to use the fixed angle buckets (45\degree) and the appropriate settings on the centrifuge to set the correct RCF. 
+
+\NP When removing the tubes from the centrifuge, be careful not to re-suspend filter particles from the bottom of the tubes.
 
 % the settings for the centrifuge will have to be configured based on the new equipment, need to calculate the correct g force but will need the centrifuges rotational radius for this. (the large one already calculates it). 
 
 \subsection*{Sample Analysis}
 
-\NP 2.5 mL of each sample will be dispensed into a clean glass cuvette, again taking care not to resuspend filter particles.
+\NP 2.5 mL of supernatant from each sample will be dispensed into a clean glass cuvette, again taking care not to resuspend filter particles.
 
-\NP Turn on the fluorometer (back left side) and allow 10 minutes to for warmup countdown to complete. Turn on lab computer and open SIS for Turner software to record data. 
+\NP Turn on the fluorometer (back left side) and allow 10 minutes for warmup countdown to complete. 
 
-\NP Use "Measure Raw Fluorescence" to take sample measurements.
+\NP Turn on the lab computer and open SIS for Turner software to record data. 
+\begin{itemize}
+\item After launching the SIS for Turner program, you should get a pop up window. In that pop up window click the boxes next to COM 1 and MS Excel.
+\item After pressing start the program should launch Microsoft Excel Automatically.
+\item This program will make it easy to keep track of and save data for all your samples
+\end{itemize}
 
-\NP Use the 90\% acetone solution for a blank measurement on the sensitivity setting that will be used for sample analysis. % Not sure what is the sensitivity setting this part is referring too. clarify this!
+\NP Next you will use the touchscreen on the Turner Fluorometer to select the correct module for analyzing your chlorophyll \textit{a} samples. Select the "Chlor-A" module from the choices on the screen. {\small \textit{Note: The ``Chlor-A" module stands for ``Chlorophyll Acidified". This is the correct setting for analyzing chlorophyll samples that will be acidified in order to obtain a corrected chlorophyll a concentration and a pheophytin a concentration. The module ``Chlor-NA" can be used to analyze chlorophyll samples that are NOT ACIDIFIED, however this will require that you repalce the snap in module inside the fluorometer to the appropriate one for analyzing non-acidified chlorophyll samples. The Chlor-NA module uses special band pass filters to automatically correct for interference from pheophytin a. The only drawback to using this alternative method is that you cannot get a pheophytin a concentration, only the concentration of chlorophyll a.}}
 
-\NP Read and record the values for the QCs prior to sample analysis, the Turner Fluorometer will send and accumulate data to the connected computer using the "SIS for Trilogy" program.
+\NP Prior to measuring the fluorescence of your samples, you may need calibrate the fluorometer. A calibration will be performed using the the QCs made from the PDS (see definitions in Section 3). Read and record the values for the QCs prior to sample analysis, according to the directions for a Direct Multipoint Calibration found in the Turner Trilogy Fluorometer User's Manual pg. 20-22). If you're not performing your own calibration select a saved calibration from the menu in the "tools" setting.
 
-\NP Wipe the outside of the cuvette with a kimwipe before taking a measurement then measure the raw fluorescence of the sample. If the chlorophyll \textit{a} concentration of the sample is 90\% of the upper limit of the LDR (LDR=500 \micro g/L) it will be necessary to perform a dilution. However, samples should not be over diluted so be sure to use an appropriate dilution factor. 
+\NP Use the 90\% acetone solution for a blank measurement.
+
+
+\NP Wipe the outside of the cuvette with a kimwipe before taking a measurement then press measure the raw fluorescence of the sample. If the chlorophyll \textit{a} concentration of a sample is within 90\% of the upper limit of the LDR (which is 1,000 \micro g/L for the Turner Trilogy fluorometer) it will be necessary to perform a dilution. However, samples should not be over diluted so be sure to use an appropriate dilution factor. 
 
 \begin{description} 
-\item[For a 1:2 Dilution] This dilution will be the one most likely needed in the case above. Simply add a 1 mL aliquot of the sample into 1 mL aqueous acetone solution.
+\item[For a 1:2 Dilution] Simply add a 1 mL aliquot of the sample into 1 mL aqueous acetone solution.
 \item[For a 1:100 Dilution] If the concentration of chlorophyll \textit{a} in the sample is very high you can try this dilution factor. Add 50 \micro L of sample to 4.95 mL of aqueous acetone solution. 
 \end{description}
 
