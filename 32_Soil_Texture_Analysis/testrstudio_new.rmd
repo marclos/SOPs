@@ -11,8 +11,14 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
+library(mosaic)
+library(dplyr)
+
+# source("Soil_functions/ChooseRead_fun.R")
 source("Soil_functions/PassNo10_fun.R")
 source("Soil_functions/RemoveMissingKEYs_fun.R")
+source("Soil_functions/Impute_fun.R")
+source("Soil_functions/Interpolation_fun.R")
 source("Soil_functions/SoilEquiv_fun.R")
 source("Soil_functions/TimeConversion_fun.R")
 source("Soil_functions/Kfun.R")
@@ -26,36 +32,49 @@ source("Soil_functions/EffectiveSoilWeight_fun.R")
 
 "18Pomona87"
 
-## Reading .csv Data into R
-```{r}
-# ChooseRead()
 
-reading.source <- "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/reading.csv"
-sample.source <- "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/sample.csv"
-reading.import <- read.csv(reading.source)
+## Copy the File into correct
+
+## Read reading.csv Data into R
+
+In spite of myself, there is no clear way to automate the file selection process. So, here are the steps to get our csv files into R.
+
+Here's what I do:
+
+use file.choose() to get the file and path for both the sample.csv and reading.csv. Then create an object, "file" with the path/file, see my example below:
+
+file.choose()
+
+Then we can import the data, using this file!
+
+```{r readcsv}
+sample.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/sample.csv"
+reading.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/reading.csv"
+
 sample.import <- read.csv(sample.source)
+reading.import <- read.csv(reading.source)
+# Clean up Environment
+rm(reading.source, sample.source)
+
 ```
 
 ## Check Data Importing
-```{r}
 
-head(reading.import)
-head(sample.import)
+### What are the two data sets?
 
-library(mosaic)
-library(dplyr)
+### Removing Missing Data
 
+The function RemoveMissingKEYs look at the two files and removes samples that have missing key measurments that will make the program crash.
 
+```{r, echo=F}
 sample <- RemoveMissingKEYs(sample.import, reading.import)
-
 ```
 
 # Preprocess Sample File
 
 ## Calculate Percent Soil Passing Seive No. 10
 ```{r preprocess}
-library(mosaic)
-library(dplyr)
+
 sample$passNo10Percent <- PassNo10(sample$pass10, sample$totalSoil)
 ```
 
@@ -160,8 +179,11 @@ L2 = 14.0
 Vb = 67
 A = 27.8
 
-joined$EffectiveDepth = L1 + 0.5*(L2-(Vb/A)); joined$EffectiveDepth
-rm(x, y, L2coef, L1, L2, Vb, A)
+joined$EffectiveDepth = L1 + 0.5*(L2-(Vb/A))
+
+head(joined)
+
+rm(x, y, L2coef, L1, L2, Vb, A, b, m, x1)
 
 ```
 ## Calculate D
@@ -169,7 +191,7 @@ According to ASTM D422-63 the equation to calculate D (diameter in mm) can be  s
 
 ```{r De}
 joined$De<-joined$K * sqrt(joined$EffectiveDepth/joined$Et)
-joined$De
+head(joined)
 ```
 
 ## Calculate PF
@@ -200,25 +222,13 @@ for(i in 1:length(KEY)){
 ## Estimating the Texture Size Classes
 
 ```{r interpolation}
-clay <- 0.002; silt <- 0.05; sand <- 2.0
-
-#joined$sampleKEY[is.nan(joined$De)]
-#joined$status="good"
-#badKEYs <- data.frame(sampleKEY =unique(joined$sampleKEY[is.na(joined$De)]), status = "bad"); badKEYs
-#badKEYs2 <- data.frame(sampleKEY =unique(joined$sampleKEY[is.na(joined$PF)]), status = "bad"); badKEYs2 
-#badKEYs <- full_join(badKEYs, badKEYs2)
-#joined3 <- joined %>% anti_join(badKEYs, by="sampleKEY"); 
-#joined3 <- goodKEYs %>% filter(
-
 
 KEYs <- unique(joined$sampleKEY); KEYs
-#KEY <- KEY[-c(1:25, 47)]; KEY
 
-variables = 4 
-iterations = length(KEYs)
-textureclasses <- matrix(ncol=variables, nrow=iterations)
- 
-for(i in 1:iterations){
+textureclasses <- matrix(ncol=4, nrow=length(KEYs))
+clay <- 0.002; silt <- 0.05; sand <- 2.0
+
+for(i in 1:length(KEYs)){
 tmp3 = joined[joined$sampleKEY==KEYs[i],]; head(tmp3)
 tmp3 = select(joined, sampleKEY, De, PF) %>% filter(joined$sampleKEY==KEYs[i]); tmp3 
 
@@ -228,18 +238,17 @@ Persand = round(100-(Persilt + Perclay), 1)
 textureclasses[i,] <- c(KEYs[i], Persand, Persilt, Perclay)
 }
 
-textureclasses
- 
+rm(KEYs, KEY, Perclay, Persand, Persilt, m, b, i)
 textureclasses <- data.frame(textureclasses)
 names(textureclasses) <- c("sampleKEY", "Sand", "Silt", "Clay")
 
 class(textureclasses)
 
-sample2 <- sample %>% select(sampleKEY, sampleID, sampleDate, researcher)
+results <- sample %>% select(sampleKEY, sampleID, sampleDate, researcher) %>% left_join(textureclasses, by="sampleKEY")
 
-sample3 <- sample2 %>% left_join(textureclasses, by="sampleKEY")
+write.csv(results, file = paste("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/results_",Sys.Date(),".csv", sep=""))
 
-write.csv(sample3, file = paste("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/results_",Sys.Date(),".csv", sep=""))
+#rm(sand,silt, clay, results, x1, y, L2coef, x)
 
 ```
 

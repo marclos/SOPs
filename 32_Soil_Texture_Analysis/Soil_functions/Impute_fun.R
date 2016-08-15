@@ -25,6 +25,33 @@ imputeR <- function(sampleID){
   return(as.vector(nonmissingR[result[,2],2]))
 }
 
+imputeT <- function(sampleID){
+  library(dplyr)
+  tmp2 <- sampleID %>% select(Et, blank, temp)
+  
+  missingT = tmp2[is.na(tmp2$temp),]; missingT
+  nonmissingT = tmp2[!is.na(tmp2$temp),]; nonmissingT
+  
+  missing.mat <- matrix(missingT$Et, nrow=length(missingT$Et), ncol=length(nonmissingT$Et), byrow=F); missing.mat
+  nonmissing.mat <- matrix(nonmissingT$Et, nrow=length(missingT$Et), ncol=length(nonmissingT$Et), byrow=T); nonmissing.mat
+  
+  W <- abs(missing.mat - nonmissing.mat)
+  rownames(W) <- paste0("Missing", seq(nrow(W)))
+  colnames(W) <- paste0("NonMissing", seq(ncol(W)))
+  
+  result <- t(sapply(seq(nrow(W)), function(i) {
+    j <- which.min(W[i,])
+    c(i, j)
+  }))
+  
+  alignments <- data.frame(missingT = result[,1], nonmissingT=result[,2])
+  #print(result)
+  
+  return(as.vector(nonmissingT[result[,2],3]))
+}
+
+
+
 impute <- function(imputeneed){
   joined <- imputeneed[!is.na(imputeneed$Et),]
   KEY <- unique(joined$sampleKEY); KEY
