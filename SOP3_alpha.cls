@@ -12,6 +12,7 @@
 \RequirePackage{enumitem} % Customization of itemized, enumerated, etc.
 \RequirePackage{hyperref} % For hyperlinked cross-references
 \RequirePackage{hanging}
+\RequirePackage{gensymb} % For specific symbols, such as the degree symbol
 
 %\newenvironment{hangparas}[2]{\setlength{\parindent}{\z@}
 %\everypar={\hangpara{#1}{#2}}}{\par}

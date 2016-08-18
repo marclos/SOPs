@@ -27,7 +27,7 @@
   {\end{enumerate}}
 	
 
-\title{Particle Size Analysis of Soils by Sedimentation %\thanks{Isaac Medina}
+\title{The Physics of Soil Particle Size Analysis by Hydrometer %\thanks{Isaac Medina}
 }
 \author[Marc Los Huertos]{Marc Los Huertos}
 %\date{}  % if the \date{} command is left out, the current date will be used
@@ -36,8 +36,9 @@
 
 \setsidenotefont{\color{blue}}
 
+\usepackage{Sweave}
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+\input{Physics_Soil_Particle_Size_Analysis-concordance}
 
 \maketitle% this prints the handout title, author, and date
 \begin{abstract}
@@ -47,10 +48,6 @@
 %\printclassoptions
 
 % Setting up the margins, etc for R
-<<echo = F, results = hide>>=
-options(width=60)
-rm(list = ls())
-@
 
 \section{Outline and Outcomes}
 This handout describes how soil samples can be quantitatively analyzed using hydrometer to promote the following skills:
@@ -72,7 +69,7 @@ Soils are composed of mineral particles, organic matter, water and air. In gener
 \end{marginfigure}
 
 \begin{table}
-		\begin{tabular}{lll}\hline
+		\begin{tabular}{lrr}\hline
 Classification 					&  USDA System (Retained by Sieve No.) 		& World Reference Base (Retained by Sieve No.)\\ \hline\hline
 			Clay 							& <0.002 mm 							& <0.002 mm \\
 			Silt 							& 0.002-0.05 mm 					& 0.002-0.063 mm\\
@@ -91,10 +88,7 @@ There are a number of references that explain various methods to conduct a parti
 This handout describes how we can use a hydrometer to measure density of a soil suspension and how this density changes with time. As the density changes, we can use several equations to estimate the proportion of particle sizes. 
 
 \begin{figure}
-<<echo=F, fig=T, label=USDATT>>=
-library(soiltexture)
-TT.plot(class.sys = "USDA.TT")
-@
+\includegraphics{Physics_Soil_Particle_Size_Analysis-USDATT}
 \end{figure}
 
 \subsection{Physics of Particles in Suspension}
@@ -326,12 +320,6 @@ The mixture of dispersed soil particles in water is called a suspension. Once a 
 
 It's generally tough to sort out scientific methods if you can't figure out what the end goal is. For this section, I am giving you an example of some calculations that might be done after the data have been collected.
 
-<<echo = false, results = hide >>=
-# Set up R
-options(width=100)
-par(mfrow=c(1,1))
-library(xtable)
-@ 
 
 \subsection{Determining Soil Amount}
 
@@ -343,29 +331,31 @@ Again, since we use air-dried soil, we have to correct for the moisture in the s
 
 \subsection{Observed Results}
 
-<<echo = F, results=hide, label=simplified>>=
-time = c(.5, 2, 5, 15, 30, 60, 120, 480, 1440); length(time)
-hydrometer = c(1.018, 1.016, 1.012, 1.008, 1.007, 1.006, 1.005, 1.004, 1.003)
-temp = c(23, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0)
-simplified = matrix(c(time, hydrometer, temp), byrow=F, ncol=3)
-#rm(time, hydrometer, temp)
-@
 
 We then weighed out 53.3 grams of air-dried soil and let it soak in sodium hexametaphosphate over night. Then we put the soil in 1000 l cylinders and vigorously mix the sample. We started the timer as we stopped mixing and took hydrometer and temperature readings at pre-selected times. 
 
 Using a simple approach where the suspension density is measured several times after mixing, we might observe the following values:
 
-<<echo=F, results=t, label=simplifiedtable>>=
-#rownames(mat) <- "$y_{t-1}$"
-colnames(simplified) <- c("Elapsed Time", "Hydrometer Reading", "Temperature")
-mat <- xtable(simplified)
-align(mat) <- xalign(mat)
-digits(mat) <- xdigits(mat)
-display(mat) <- xdisplay(mat)
-
-print(mat, sanitize.text.function = function(x) {x}, include.rownames = FALSE)
-@
-
+% latex table generated in R 3.3.1 by xtable 1.8-2 package
+% Thu Aug 18 07:56:06 2016
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrr}
+  \hline
+Elapsed Time & Hydrometer Reading & Temperature \\ 
+  \hline
+0.5 & 1.018 & 23 \\ 
+  2.0 & 1.016 & 23 \\ 
+  5.0 & 1.012 & 23 \\ 
+  15.0 & 1.008 & 23 \\ 
+  30.0 & 1.007 & 23 \\ 
+  60.0 & 1.006 & 23 \\ 
+  120.0 & 1.005 & 23 \\ 
+  480.0 & 1.004 & 23 \\ 
+  1440.0 & 1.003 & 23 \\ 
+   \hline
+\end{tabular}
+\end{table}
 \subsection{Calculating Particle Sizes}
 
 \subsection{Simplest Calculation Method}
@@ -386,17 +376,15 @@ $Rb_{40s}$ and $Rb_{8h}$ are the hydrometer reading of the blank cylinder withou
 	\item For temperature correction, add or subtract 0.36 g/L for each degree above or below 20$^\circ$C, respectively.
 \end{enumerate}
 
-<<echo=F, label=simplifliedcalc>>=
-K = 0.01317
-L = 16.296 - 0.2645 * hydrometer
-de = K* sqrt(L/time); de
-
-GSw = 1
-GSp = 2.65
-WS = 50
-
-PF = 100000/WS * (GSp/(GSp-GSw))*(hydrometer - GSw); PF
-@
+\begin{Schunk}
+\begin{Soutput}
+[1] 0.074562997 0.037282114 0.023580057 0.013614402 0.009626915 0.006807313 0.004813537 0.002406788
+[9] 0.001389571
+\end{Soutput}
+\begin{Soutput}
+[1] 57.818182 51.393939 38.545455 25.696970 22.484848 19.272727 16.060606 12.848485  9.636364
+\end{Soutput}
+\end{Schunk}
 
 
 \subsection{Classifying Soil Texture}
@@ -404,17 +392,7 @@ PF = 100000/WS * (GSp/(GSp-GSw))*(hydrometer - GSw); PF
 After determining the particle sizes, we can ``bin'' or categorize the particle sizes as percentages of sand, silt, and clay. 
 
 \begin{figure}
-<<echo=F, fig=T, label=simplifiedgraph >>=
-plot(de, PF, ty='b', las=1, log='x', xaxt='n', xlim=c(2, 0.0002), ylab = "Percent Finer", xlab="Particle Size (mm)", main='Particle Size Distribution', panel.first=abline(v=seq(2, 0, -0.2),h=c(20,40,60,80), lty=3,col="gray"))
-ticks <- seq(-5, 0, by=1)
-labels <- sapply(ticks, function(i) as.expression(bquote(10^ .(i))))
-axis(1, at=c(0.00001, 0.0001, .001, 0.01, 0.1, 1.0), labels=labels)
-#grid(nx = NULL, ny = 1, col = "lightgray", lty = "dotted", lwd = par("lwd"), equilogs = F)	
-			
-abline(v=0.002, col='red'); text(x = .001, y = PF[6], 'Clay', col='red', cex=1.25, pos=3)
-abline(v=0.05, col='blue'); text(x = .01, y = PF[2], 'Silt', col='blue', cex=1.25, pos=1)
-abline(v=2.0, col='seagreen'); text(x = 0.50, y = PF[1], 'Sand', col='seagreen', cex=1.25, pos=1)
-@
+\includegraphics{Physics_Soil_Particle_Size_Analysis-simplifiedgraph}
 \caption{Particle Size versus Percent Finer remaining in suspension.}
 \label{fig.De_vs_PF}
 \end{figure}
@@ -435,31 +413,13 @@ Clay				& 	12\% \\ \hline
 
 Finally, we can determine what type of soil we have based on the size-class distribution, which is a sandy loam. 
 
-<<echo=F, results=hide>>=
-simplifiedtexture = data.frame(
-CLAY = c(12),
-SILT = c(33),
-SAND = c(55),
-OC = c(20))
-
-TT.points.in.classes(tri.data = simplifiedtexture, class.sys = "USDA.TT") 
-@
 
 \begin{figure*}
-<<fig = TRUE, echo=FALSE, label=TTPlot>>=
-TT.plot(
-class.sys = "USDA.TT",
-tri.data = simplifiedtexture,
-#z.name = "OC",
-main = "Soil Texture Triangle",
-pch=16, cex=2, col='red')
-@
+\includegraphics{Physics_Soil_Particle_Size_Analysis-TTPlot}
 \caption{Results of our texture analysis. Note the small dot in the SaLo (sandy-loam) texture class.}
 \label{fig.simplifiedfig}
 \end{figure*}
 
-
-\section{References}
 
 \end{document}
 

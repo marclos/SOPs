@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  15 AUG 2016 13:31
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  18 AUG 2016 07:52
 entering extended mode
  %&-line parsing enabled.
 **Soil_Texture_Analysis_160815.tex
@@ -880,7 +880,8 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
 (/usr/share/texmf/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))) (./Soil_Texture_Analysis_160815.aux)
+))))
+No file Soil_Texture_Analysis_160815.aux.
 \openout1 = `Soil_Texture_Analysis_160815.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -901,7 +902,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 40.
- (/usr/share/texmf/tex/latex/base/ts1cmr.fd
+(/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 40.
@@ -965,7 +966,11 @@ ABD: EveryShipout initializing macros
 .................................................
 
 (./Soil_Texture_Analysis_160815-concordance.tex)
-<graphics/8stainless_sieve.jpg, id=9, 361.35pt x 327.2225pt>
+
+LaTeX Warning: Reference `fig:8stainless_sieve' on page 1 undefined on input li
+ne 63.
+
+<graphics/8stainless_sieve.jpg, id=8, 361.35pt x 327.2225pt>
 File: graphics/8stainless_sieve.jpg Graphic file (type jpg)
 
 <use graphics/8stainless_sieve.jpg>
@@ -1019,7 +1024,7 @@ Package natbib Warning: Citation `beretta2014soil' on page 1 undefined on input
 Package natbib Warning: Citation `standard2007d422' on page 1 undefined on inpu
 t line 86.
 
-<Soil_Texture_Analysis_160815-USDATT.pdf, id=10, 433.62pt x 433.62pt>
+<Soil_Texture_Analysis_160815-USDATT.pdf, id=9, 433.62pt x 433.62pt>
 File: Soil_Texture_Analysis_160815-USDATT.pdf Graphic file (type pdf)
 
 <use Soil_Texture_Analysis_160815-USDATT.pdf> [1
@@ -1037,26 +1042,75 @@ LaTeX Warning: Marginpar on page 2 moved.
 
 LaTeX Warning: Marginpar on page 3 moved.
 
-[3] [4] <graphics/Hydrometer151H.jpg, id=77, 602.25pt x 602.25pt>
+
+LaTeX Warning: Reference `eq:Fr' on page 3 undefined on input line 113.
+
+
+LaTeX Warning: Reference `eq:Fg' on page 3 undefined on input line 113.
+
+
+LaTeX Warning: Reference `eq:mu_t' on page 3 undefined on input line 137.
+
+[3]
+
+LaTeX Warning: Reference `fig:Hydrometer151H' on page 4 undefined on input line
+ 192.
+
+[4] <graphics/Hydrometer151H.jpg, id=72, 602.25pt x 602.25pt>
 File: graphics/Hydrometer151H.jpg Graphic file (type jpg)
 
 <use graphics/Hydrometer151H.jpg>
 
 LaTeX Warning: Marginpar on page 5 moved.
 
+
+LaTeX Warning: Reference `fig:Hydro' on page 5 undefined on input line 212.
+
+
+LaTeX Warning: Reference `fig:Hydro' on page 5 undefined on input line 222.
+
 [5 <./graphics/Hydrometer151H.jpg>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./graphics/Hydro.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.4> allowed
-<graphics/Hydro.pdf, id=88, 354.32375pt x 385.44pt>
+<graphics/Hydro.pdf, id=81, 354.32375pt x 385.44pt>
 File: graphics/Hydro.pdf Graphic file (type pdf)
  <use graphics/Hydro.pdf>
 
 LaTeX Warning: Marginpar on page 6 moved.
 
 
+LaTeX Warning: Reference `eq:archmidies' on page 6 undefined on input line 230.
+
+
+
+LaTeX Warning: Reference `eq:massdisplaced' on page 6 undefined on input line 2
+36.
+
+
+LaTeX Warning: Reference `eq:hydrometer' on page 6 undefined on input line 236.
+
+
+
+LaTeX Warning: Reference `eq:massdisplaced' on page 6 undefined on input line 2
+42.
+
+
+LaTeX Warning: Reference `eq:RD1' on page 6 undefined on input line 242.
+
+
+LaTeX Warning: Reference `eq:RD2' on page 6 undefined on input line 248.
+
+
+LaTeX Warning: Reference `eq:RD3' on page 6 undefined on input line 254.
+
+
 Package natbib Warning: Citation `standard2007d422' on page 6 undefined on inpu
 t line 262.
+
+
+LaTeX Warning: Reference `eq:effectivedepth' on page 6 undefined on input line 
+270.
 
 [6 <./graphics/Hydro.pdf>]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 273.
@@ -1082,11 +1136,15 @@ File: ts1aer.fd
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
 (Font)              Font shape `TS1/cmr/m/n' tried instead on input line 310.
  [8] [9]
-<Soil_Texture_Analysis_160815-simplifiedgraph.pdf, id=135, 433.62pt x 433.62pt>
+<Soil_Texture_Analysis_160815-simplifiedgraph.pdf, id=120, 433.62pt x 433.62pt>
 File: Soil_Texture_Analysis_160815-simplifiedgraph.pdf Graphic file (type pdf)
-<use Soil_Texture_Analysis_160815-simplifiedgraph.pdf> [10 <./Soil_Texture_Anal
-ysis_160815-simplifiedgraph.pdf>]
-<Soil_Texture_Analysis_160815-TTPlot.pdf, id=154, 433.62pt x 433.62pt>
+<use Soil_Texture_Analysis_160815-simplifiedgraph.pdf>
+
+LaTeX Warning: Reference `fig.De_vs_PF' on page 10 undefined on input line 412.
+
+
+[10 <./Soil_Texture_Analysis_160815-simplifiedgraph.pdf>]
+<Soil_Texture_Analysis_160815-TTPlot.pdf, id=138, 433.62pt x 433.62pt>
 File: Soil_Texture_Analysis_160815-TTPlot.pdf Graphic file (type pdf)
 
 <use Soil_Texture_Analysis_160815-TTPlot.pdf> [11 <./Soil_Texture_Analysis_1608
@@ -1099,33 +1157,39 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-(./Soil_Texture_Analysis_160815.aux) ) 
+(./Soil_Texture_Analysis_160815.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 17986 strings out of 256214
- 309743 string characters out of 1917000
- 389367 words of memory out of 1500000
- 20833 multiletter control sequences out of 10000+200000
+ 17982 strings out of 256214
+ 309653 string characters out of 1917000
+ 387657 words of memory out of 1500000
+ 20830 multiletter control sequences out of 10000+200000
  69013 words of font info for 134 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  46i,11n,47p,10370b,552s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/mwl04747/.texlive2007/texm
-f-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>{/usr/share/texmf/fonts/enc/dv
-ips/base/8r.enc}</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share
-/texmf/fonts/type1/bluesky/cm/cmbx8.pfb></usr/share/texmf/fonts/type1/bluesky/c
-m/cmcsc10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb></usr/share/t
-exmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm
-/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr5.pfb></usr/share/texmf/
-fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.p
-fb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/ty
-pe1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti10.pfb><
-/usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type
-1/bluesky/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/mathpazo/fplmr.pfb
-></usr/share/texmf/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf/fon
-ts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/upl
-ri8a.pfb>
-Output written on Soil_Texture_Analysis_160815.pdf (11 pages, 262900 bytes).
+ </home/CAMPUS/mwl04747/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tc
+rm1000.600pk>{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fo
+nts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx8.
+pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmcsc10.pfb></usr/share/texmf/font
+s/type1/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.p
+fb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmr5.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></us
+r/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/blu
+esky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/shar
+e/texmf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/type1/bluesky
+/cm/cmti12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/
+texmf/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf/fonts/type1/publi
+c/mathpazo/fplmri.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplr8a.pfb></u
+sr/share/texmf/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Soil_Texture_Analysis_160815.pdf (11 pages, 260595 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 131072)
+ 226 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 131072)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

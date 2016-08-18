@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  17 AUG 2016 13:21
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  18 AUG 2016 07:26
 entering extended mode
  %&-line parsing enabled.
 **Picarro_GHG_v01.tex
@@ -99,6 +99,9 @@ Package: hanging 2001/03/15 v1.2 hanging paragraphs and punctuation
 \h@ngexclwd=\skip49
 \h@ngcolonwd=\skip50
 \h@ngscolonwd=\skip51
+)
+(/usr/share/texmf/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
 )
 (/usr/share/texmf/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -401,6 +404,17 @@ LaTeX Info: Redefining \pageref on input line 21.
 \@outlinefile=\write4
 \openout4 = `Picarro_GHG_v01.out'.
 
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/aer/m/n --> TS1/aer/bx/n on input line 21.
+Package gensymb Info: Math companion symbols declared on input line 21.
+LaTeX Info: Redefining \degree on input line 21.
+LaTeX Info: Redefining \celsius on input line 21.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 21.
+LaTeX Info: Redefining \ohm on input line 21.
+Package gensymb Info: Using \textohm for \ohm on input line 21.
+Package gensymb Info: Using \textmu for \micro on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -447,7 +461,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
-<../pomona.jpg, id=92, 460.557pt x 492.75pt>
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 24.
+
+(/usr/share/R/texmf/tex/latex/ts1aer.fd
+File: ts1aer.fd 
+)
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <12> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <8> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <6> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 24.
+
+<../pomona.jpg, id=72, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
 Overfull \vbox (21.72939pt too high) detected at line 24
@@ -474,19 +500,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2] [3] [4] [5] [6] [7] [8] AED: lastpage setting LastPage
 (./Picarro_GHG_v01.aux) ) 
 Here is how much of TeX's memory you used:
- 6159 strings out of 256214
- 82468 string characters out of 1917000
- 239786 words of memory out of 1500000
- 9228 multiletter control sequences out of 10000+200000
- 14354 words of font info for 42 fonts, out of 1200000 for 2000
+ 6225 strings out of 256214
+ 83279 string characters out of 1917000
+ 240725 words of memory out of 1500000
+ 9287 multiletter control sequences out of 10000+200000
+ 15368 words of font info for 45 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,18n,51p,803b,506s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></
-usr/share/texmf/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf/fonts/type1
-/bluesky/cm/cmr12.pfb>
-Output written on Picarro_GHG_v01.pdf (8 pages, 159006 bytes).
+ 35i,18n,49p,803b,490s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/mwl04747/.texlive2007/texmf-var/fonts/p
+k/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cm
+bx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf/
+fonts/type1/bluesky/cm/cmr12.pfb>
+Output written on Picarro_GHG_v01.pdf (8 pages, 157852 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 90 named destinations out of 1000 (max. 131072)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 131072)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
