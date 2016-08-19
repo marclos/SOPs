@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  18 AUG 2016 07:46
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  18 AUG 2016 22:55
 entering extended mode
  %&-line parsing enabled.
 **bibtest.tex
@@ -80,14 +80,35 @@ Package hyperref Info: Link coloring OFF on input line 3122.
 (/usr/share/texmf/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
 \Fld@listcount=\count93
+) (./biblatex.sty
+Package: biblatex 2016/05/14 v3.4 programmable bibliographies (PK/JW/AB)
+ (./iftex.sty
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+and LuaTeX
+) (/usr/share/texmf/tex/latex_2015/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
-(/usr/share/texmf/tex/latex_2015/biblatex/biblatex.sty
-Package: biblatex 2015/12/22 v3.2 programmable bibliographies (PK/JW/AB)
 
-(/usr/share/texmf/tex/latex_2015/biblatex/biblatex1.sty
-Package: biblatex1 2015/12/22 v3.2 programmable bibliographies (bibtex) (PK/JW/
-AB)
-
+(/usr/share/texmf/tex/latex_2015/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf/tex/latex/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf/tex/latex/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf/tex/latex/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive disabled, because
+(pdftexcmds)             \pdfprimitive is broken until pdfTeX 1.40.4.
+Package pdftexcmds Info: \pdf@primitive is not available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 (/usr/share/texmf/tex/latex_2015/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 
@@ -106,415 +127,2437 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
 (/usr/share/texmf/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) (./xstring.sty (./xstring.tex
+\@xs@message=\write3
+\integerpart=\count97
+\decimalpart=\count98
 )
-\c@tabx@nest=\count97
-\c@listtotal=\count98
-\c@listcount=\count99
-\c@liststart=\count100
-\c@liststop=\count101
-\c@citecount=\count102
-\c@citetotal=\count103
-\c@multicitecount=\count104
-\c@multicitetotal=\count105
-\c@instcount=\count106
-\c@maxnames=\count107
-\c@minnames=\count108
-\c@maxitems=\count109
-\c@minitems=\count110
-\c@citecounter=\count111
-\c@savedcitecounter=\count112
-\c@uniquelist=\count113
-\c@uniquename=\count114
-\c@refsection=\count115
-\c@refsegment=\count116
-\c@maxextrayear=\count117
-\c@maxextraalpha=\count118
-\c@abbrvpenalty=\count119
-\c@highnamepenalty=\count120
-\c@lownamepenalty=\count121
-\c@maxparens=\count122
-\c@parenlevel=\count123
-\blx@tempcnta=\count124
-\blx@tempcntb=\count125
-\blx@tempcntc=\count126
-\blx@maxsection=\count127
-\blx@maxsegment=\count128
-\blx@notetype=\count129
-\blx@parenlevel@text=\count130
-\blx@parenlevel@foot=\count131
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count99
+\c@listtotal=\count100
+\c@listcount=\count101
+\c@liststart=\count102
+\c@liststop=\count103
+\c@citecount=\count104
+\c@citetotal=\count105
+\c@multicitecount=\count106
+\c@multicitetotal=\count107
+\c@instcount=\count108
+\c@maxnames=\count109
+\c@minnames=\count110
+\c@maxitems=\count111
+\c@minitems=\count112
+\c@citecounter=\count113
+\c@savedcitecounter=\count114
+\c@uniquelist=\count115
+\c@uniquename=\count116
+\c@refsection=\count117
+\c@refsegment=\count118
+\c@maxextratitle=\count119
+\c@maxextratitleyear=\count120
+\c@maxextrayear=\count121
+\c@maxextraalpha=\count122
+\c@abbrvpenalty=\count123
+\c@highnamepenalty=\count124
+\c@lownamepenalty=\count125
+\c@maxparens=\count126
+\c@parenlevel=\count127
+\blx@tempcnta=\count128
+\blx@tempcntb=\count129
+\blx@tempcntc=\count130
+\blx@maxsection=\count131
+\blx@maxsegment@0=\count132
+\blx@notetype=\count133
+\blx@parenlevel@text=\count134
+\blx@parenlevel@foot=\count135
+\blx@sectionciteorder@0=\count136
 \labelnumberwidth=\skip43
 \labelalphawidth=\skip44
-\shorthandwidth=\skip45
-\biblabelsep=\skip46
-\bibitemsep=\skip47
-\bibnamesep=\skip48
-\bibinitsep=\skip49
-\bibparsep=\skip50
-\bibhang=\skip51
-\blx@auxin=\read1
-\blx@auxout=\write3
-\c@mincomprange=\count132
-\c@maxcomprange=\count133
-\c@mincompwidth=\count134
-\c@labelname=\count135
-\c@savedlabelname=\count136
-\c@author=\count137
-\c@savedauthor=\count138
-\c@shortauthor=\count139
-\c@savedshortauthor=\count140
-\c@editor=\count141
-\c@savededitor=\count142
-\c@editora=\count143
-\c@savededitora=\count144
-\c@editorb=\count145
-\c@savededitorb=\count146
-\c@editorc=\count147
-\c@savededitorc=\count148
-\c@shorteditor=\count149
-\c@savedshorteditor=\count150
-\c@bookauthor=\count151
-\c@savedbookauthor=\count152
-\c@translator=\count153
-\c@savedtranslator=\count154
-\c@annotator=\count155
-\c@savedannotator=\count156
-\c@commentator=\count157
-\c@savedcommentator=\count158
-\c@introduction=\count159
-\c@savedintroduction=\count160
-\c@foreword=\count161
-\c@savedforeword=\count162
-\c@afterword=\count163
-\c@savedafterword=\count164
-\c@holder=\count165
-\c@savedholder=\count166
-\c@namea=\count167
-\c@savednamea=\count168
-\c@nameb=\count169
-\c@savednameb=\count170
-\c@namec=\count171
-\c@savednamec=\count172
-\c@institution=\count173
-\c@savedinstitution=\count174
-\c@language=\count175
-\c@savedlanguage=\count176
-\c@location=\count177
-\c@savedlocation=\count178
-\c@organization=\count179
-\c@savedorganization=\count180
-\c@origlocation=\count181
-\c@savedoriglocation=\count182
-\c@origpublisher=\count183
-\c@savedorigpublisher=\count184
-\c@pageref=\count185
-\c@savedpageref=\count186
-\c@publisher=\count187
-\c@savedpublisher=\count188
-\c@lista=\count189
-\c@savedlista=\count190
-\c@listb=\count191
-\c@savedlistb=\count192
-\c@listc=\count193
-\c@savedlistc=\count194
-\c@listd=\count195
-\c@savedlistd=\count196
-\c@liste=\count197
-\c@savedliste=\count198
-\c@listf=\count199
-\c@savedlistf=\count200
+\biblabelsep=\skip45
+\bibitemsep=\skip46
+\bibnamesep=\skip47
+\bibinitsep=\skip48
+\bibparsep=\skip49
+\bibhang=\skip50
+\blx@bcfin=\read1
+\blx@bcfout=\write4
+\c@mincomprange=\count137
+\c@maxcomprange=\count138
+\c@mincompwidth=\count139
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texmf/tex/latex_2015/biblatex/blx-dm.def)
+! Undefined control sequence.
+l.5191 \ProcessLocalKeyvalOptions
+                                 {blx@opt@eldt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5191 \ProcessLocalKeyvalOptions{b
+                                   lx@opt@eldt}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@constant@optiondatatypes 
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\cslet ...>\expandafter \let \csname #1\endcsname 
+                                                  #2
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@constant@optiondatatypes 
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\cslet ...>\expandafter \let \csname #1\endcsname 
+                                                  #2
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@constant@optiondatatypes 
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\cslet ...>\expandafter \let \csname #1\endcsname 
+                                                  #2
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@constant@optiondatatypes 
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\cslet ...>\expandafter \let \csname #1\endcsname 
+                                                  #2
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@constant@optiondatatypes 
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\cslet ...>\expandafter \let \csname #1\endcsname 
+                                                  #2
+l.5230 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@dates 
+l.5365 \abx@dodates
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@dates 
+l.5365 \abx@dodates
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5380 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5380 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\cslet ...>\expandafter \let \csname #1\endcsname 
+                                                  #2
+l.5380 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5380 \abx@donames
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ifcsdef #1->\ifcsname #1\endcsname 
+                                    \expandafter \@firstoftwo \else \expanda...
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! You can't use `\relax' after \the.
+<recently read> \blx@datamodel@names 
+                                     
+l.5412 \abx@donames
+                   
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5412 \abx@donames
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \endcsname.
+<argument> ... the\blx@datamodel@names \endcsname 
+                                                  
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\newcounter ...ifdefinable \csname c@#1\endcsname 
+                                                  {\@definecounter {#1}}\@if...
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+\c@=\count140
+! Extra \endcsname.
+\H@definecounter ...wcount \csname c@#1\endcsname 
+                                                  \setcounter {#1}\z@ \globa...
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Extra \endcsname.
+<argument> ...e c@\blx@datamodel@names \endcsname 
+                                                  \z@ \relax 
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.5412 \abx@donames
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.5412 \abx@donames
+                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\H@definecounter ... \let \csname cl@#1\endcsname 
+                                                  \@empty \@addtoreset {#1}{...
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\H@definecounter ...r \let \csname p@#1\endcsname 
+                                                  \@empty \expandafter \gdef...
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\newcounter ...ifdefinable \csname c@#1\endcsname 
+                                                  {\@definecounter {#1}}\@if...
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.5412 \abx@donames
+                   
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\c@saved=\count
+! Extra \endcsname.
+\H@definecounter ...wcount \csname c@#1\endcsname 
+                                                  \setcounter {#1}\z@ \globa...
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Extra \endcsname.
+<argument> ...aved\blx@datamodel@names \endcsname 
+                                                  \z@ \relax 
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.5412 \abx@donames
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.5412 \abx@donames
+                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\H@definecounter ... \let \csname cl@#1\endcsname 
+                                                  \@empty \@addtoreset {#1}{...
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\H@definecounter ...r \let \csname p@#1\endcsname 
+                                                  \@empty \expandafter \gdef...
+l.5412 \abx@donames
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5412 \abx@donames
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.5413 \abx@dornames
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\c@labelname=\count
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.5413 \abx@dornames
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\c@savedlabelname=\count
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ifcsdef #1->\ifcsname #1\endcsname 
+                                    \expandafter \@firstoftwo \else \expanda...
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of \the doesn't match its definition.
+<recently read> \blx@datamodel@lists 
+                                     
+l.5414 \abx@dolists
+                   
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra \endcsname.
+<argument> ... the\blx@datamodel@lists \endcsname 
+                                                  
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Command \c@ already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5414 \abx@dolists
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endcsname.
+\newcounter ...ifdefinable \csname c@#1\endcsname 
+                                                  {\@definecounter {#1}}\@if...
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.5414 \abx@dolists
+                   
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\c@=\count
+! Extra \endcsname.
+\H@definecounter ...wcount \csname c@#1\endcsname 
+                                                  \setcounter {#1}\z@ \globa...
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Extra \endcsname.
+<argument> ...e c@\blx@datamodel@lists \endcsname 
+                                                  \z@ \relax 
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.5414 \abx@dolists
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.5414 \abx@dolists
+                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\H@definecounter ... \let \csname cl@#1\endcsname 
+                                                  \@empty \@addtoreset {#1}{...
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\H@definecounter ...r \let \csname p@#1\endcsname 
+                                                  \@empty \expandafter \gdef...
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Command \c@saved already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5414 \abx@dolists
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endcsname.
+\newcounter ...ifdefinable \csname c@#1\endcsname 
+                                                  {\@definecounter {#1}}\@if...
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.5414 \abx@dolists
+                   
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\c@saved=\count
+! Extra \endcsname.
+\H@definecounter ...wcount \csname c@#1\endcsname 
+                                                  \setcounter {#1}\z@ \globa...
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Extra \endcsname.
+<argument> ...aved\blx@datamodel@lists \endcsname 
+                                                  \z@ \relax 
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.5414 \abx@dolists
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.5414 \abx@dolists
+                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\H@definecounter ... \let \csname cl@#1\endcsname 
+                                                  \@empty \@addtoreset {#1}{...
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\H@definecounter ...r \let \csname p@#1\endcsname 
+                                                  \@empty \expandafter \gdef...
+l.5414 \abx@dolists
+                   
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5414 \abx@dolists
+                   
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.5414 \abx@dolists
+                   
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\c@pageref=\count
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.5414 \abx@dolists
+                   
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\c@savedpageref=\count
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.5421   \abx@dolists}
+                      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5424 \abx@dobooleans
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.5424 \abx@dobooleans
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\cslet ...>\expandafter \let \csname #1\endcsname 
+                                                  #2
+l.5424 \abx@dobooleans
+                      
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5424 \abx@dobooleans
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@lists 
+l.5424 \abx@dobooleans
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ifcsdef #1->\ifcsname #1\endcsname 
+                                    \expandafter \@firstoftwo \else \expanda...
+l.5424 \abx@dobooleans
+                      
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package etoolbox Error: Toggle 'abx@bool@more\blx@datamodel@lists ' already d
+efined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5424 \abx@dobooleans
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@labelfields 
+l.5427 \abx@dolabelfields
+                         
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5427 \abx@dolabelfields
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \endcsname.
+<argument> ...tamodel@labelfields width\endcsname 
+                                                  
+l.5427 \abx@dolabelfields
+                         
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of \the doesn't match its definition.
+<write> ...e=\string \skip \the \allocationnumber 
+                                                  
+l.5427 \abx@dolabelfields
+                         
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\csname\endcsname=\skip
+! Extra \endcsname.
+<argument> ...tamodel@labelfields width\endcsname 
+                                                  
+l.5427 \abx@dolabelfields
+                         
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.6190          {}}}}
+                     
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.6245   \endgroup}
+                   
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@labelfields 
+l.6380 \abx@dolabelfields
+                         
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@labelfields 
+l.6380 \abx@dolabelfields
+                         
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@labelfields 
+l.6380 \abx@dolabelfields
+                         
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.7080     {}}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.7153 ...aux@fnpage#1#2{\blx@addpagesum{#1}{#2}}}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.7545 ...efsection#1#2{\blx@addchecksum{#1}{#2}}}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.7684 ...cument{\let\abx@aux@category\@gobbletwo}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.8173   \let\abx@aux@fncount\@gobbletwo}
+                                         
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.8574 ...kref#1#2#3#4#5{\blx@addpagesum{#1}{#5}}}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.9422   \fi}
+             
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.10590 \abx@dolabelfields
+                          
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.10590 \abx@dolabelfields
+                          
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@labelfields 
+l.10590 \abx@dolabelfields
+                          
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\cslet ...>\expandafter \let \csname #1\endcsname 
+                                                  #2
+l.10590 \abx@dolabelfields
+                          
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10590 \abx@dolabelfields
+                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+
+Package biblatex Warning: Invalid option datatype 'integer'.
+(biblatex)                Defaulting to 'boolean'.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@dates 
+l.11616 \abx@dodates
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@dates 
+l.11616 \abx@dodates
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@dates 
+l.11616 \abx@dodates
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11621 \abx@dodates
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@names 
+l.11845 \abx@donames
+                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Use of \the doesn't match its definition.
+\@defdefault@ds ...\edef \default@ds {\the \toks@ 
+                                                  }
+l.11899      \blx@tempa}}
+                         
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11913 \setkeys{blx@opt@ldt}{style=numeric}
+                                            
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.11925 ...r,maxparens=3,bibencoding=auto,bibwarn}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
-
 (/usr/share/texmf/tex/latex_2015/biblatex/blx-compat.def
-File: blx-compat.def 2015/12/22 v3.2 biblatex compatibility (PK/JW/AB)
+File: blx-compat.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
+
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.11        I'm ignoring this command}}}
+                                        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \the doesn't match its definition.
+\@declareoption ...e ds@#1\endcsname {\the \toks@ 
+                                                  }
+l.21 ...b}{\ExecuteBibliographyOptions{block=par}}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
 )
+! Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.11938 \ProcessOptions*
+                        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
+(./biblatex.def
+File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
 
-(/usr/share/texmf/tex/latex_2015/biblatex/biblatex.def
-File: biblatex.def 
-\c@textcitecount=\count201
-\c@textcitetotal=\count202
-\c@textcitemaxnames=\count203
-\c@biburlnumpenalty=\count204
-\c@biburlucpenalty=\count205
-\c@biburllcpenalty=\count206
-\c@smartand=\count207
-)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
+! Undefined control sequence.
+l.23 ...andafter{\blx@datamodel@constant@nameparts
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-(/usr/share/texmf/tex/latex_2015/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2015/12/22 v3.2 biblatex bibliography style (PK/JW/AB)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.139 \newcounter{textcitecount}
+                                
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex_2015/biblatex/bbx/standard.bbx
-File: standard.bbx 2015/12/22 v3.2 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count208
-\c@bbx:relatedtotal=\count209
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
+\c@textcitecount=\count
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.140 \newcounter{textcitetotal}
+                                
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex_2015/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2015/12/22 v3.2 biblatex citation style (PK/JW/AB)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
+\c@textcitetotal=\count
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.147 \newcounter{textcitemaxnames}
+                                   
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex_2015/biblatex/biblatex.cfg
-File: biblatex.cfg 
-)))
+\c@textcitemaxnames=\count
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.231 \newcounter{biburlnumpenalty}
+                                   
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: File `references.bib' already exists on the system.
-               Not generating it from this source.
+\c@biburlnumpenalty=\count
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.232 \newcounter{biburlucpenalty}
+                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/R/texmf/tex/latex/Sweave.sty
-Package: Sweave 
+\c@biburlucpenalty=\count
+! Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.233 \newcounter{biburllcpenalty}
+                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+\c@biburllcpenalty=\count
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1133 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
-Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1133 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/usr/share/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
-)
-Package graphics Info: Driver file: pdftex.def on input line 90.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1143 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
-\Gread@gobject=\count210
-))
-\Gin@req@height=\dimen106
-\Gin@req@width=\dimen107
-)
-(/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 1998/07/17
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1143 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
-\FV@CodeLineNo=\count211
-\FV@InFile=\read2
-\FV@TabBox=\box26
-\c@FancyVerbLine=\count212
-\FV@StepNumber=\count213
-\FV@OutFile=\write4
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1143 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-No file fancyvrb.cfg.
-) (/usr/share/texmf/tex/latex/base/textcomp.sty
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
-Package textcomp Info: Sub-encoding information:
-(textcomp)               5 = only ISO-Adobe without \textcurrency
-(textcomp)               4 = 5 + \texteuro
-(textcomp)               3 = 4 + \textohm
-(textcomp)               2 = 3 + \textestimated + \textcurrency
-(textcomp)               1 = TS1 - \textcircled - \t
-(textcomp)               0 = TS1 (full)
-(textcomp)             Font families with sub-encoding setting implement
-(textcomp)             only a restricted character set as indicated.
-(textcomp)             Family '?' is the default used for unknown fonts.
-(textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1143 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
-LaTeX Info: Redefining \oldstylenums on input line 266.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1143 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
-)
-(/usr/share/texmf/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1143 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-))
-(/usr/share/texmf/tex/latex/ae/ae.sty
-Package: ae 2001/02/12 1.3 Almost European Computer Modern
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1143 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)
-LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/ae/t1aer.fd
-File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-))))
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex_2015/biblatex/lbx/english.lbx
-File: english.lbx 2015/12/22 v3.2 biblatex localization (PK/JW/AB)
-)
-\@quotelevel=\count214
-\@quotereset=\count215
- (./bibtest.aux)
-\openout1 = `bibtest.aux'.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 17.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 17.
-Package hyperref Info: Link coloring OFF on input line 17.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/hyperref/nameref.sty
-Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
-Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
-)
-\c@section@level=\count216
-)
-LaTeX Info: Redefining \ref on input line 17.
-LaTeX Info: Redefining \pageref on input line 17.
-\@outlinefile=\write5
-\openout5 = `bibtest.out'.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-Package biblatex Info: No input encoding detected.
-(biblatex)             Assuming 'ascii'.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'ascii'.
-\openout3 = `bibtest-blx.bib'.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'bibtest.bbl' found.
- (./bibtest.bbl)
-Package biblatex Info: Reference section=0 on input line 17.
-Package biblatex Info: Reference segment=0 on input line 17.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(./bibtest-concordance.tex)
-Overfull \hbox (22.72876pt too wide) in paragraph at lines 20--20
-[]\T1/aer/bx/n/14.4 Automatic bibla-tex bib-li-og-ra-phy gen-er-a-tion in RStu-
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
- []
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 24.
-(/usr/share/texmf/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation 'knitr2013' on page 1 undefined on input line 31.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 31.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 31.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Empty bibliography on input line 33.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-[1
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./bibtest.aux)
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: There were undefined references.
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                bibtest
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'bibtest.run.xml'.
-\openout1 = `bibtest.run.xml'.
-
- ) 
+! Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.1181 }
+        
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 8533 strings out of 256214
- 134554 string characters out of 1917000
- 294222 words of memory out of 1500000
- 11737 multiletter control sequences out of 10000+200000
- 15319 words of font info for 35 fonts, out of 1200000 for 2000
+ 6416 strings out of 256214
+ 103994 string characters out of 1917000
+ 260546 words of memory out of 1500000
+ 9714 multiletter control sequences out of 10000+200000
+ 3640 words of font info for 14 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 37i,4n,30p,818b,684s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/t
-ype1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb><
-/usr/share/texmf/fonts/type1/bluesky/cm/cmsltt10.pfb></usr/share/texmf/fonts/ty
-pe1/bluesky/cm/cmtt10.pfb>
-Output written on bibtest.pdf (1 page, 31743 bytes).
-PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 131072)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31i,0n,30p,817b,196s stack positions out of 5000i,500n,6000p,200000b,15000s
 
+!  ==> Fatal error occurred, no output PDF file produced!
