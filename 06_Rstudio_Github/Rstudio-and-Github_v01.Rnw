@@ -83,11 +83,12 @@
 
 \section{Health and Safety}
 
-\NP Describe the risk...
+\NP Some risks include carpel tunnel syndrome. 
 
 
 \subsection*{Safety and Personnnel Protective Equipment}
 
+\NP Good posture and work station
 
 \section{Personnel \& Training Responsibilities}
 
@@ -118,13 +119,17 @@
 
 \section{Maintaing XX Data}
 
+
+
 \section{Procedure}
 
-  \NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! Your email address can be used to prove your student status.
+\NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! Your email address can be used to prove your student status.
   
 \NP Read the Readme file -- THIS DOCUMENT WILL REPLACE THAT README FILE.
 
 \subsection{Creating a Connection between Github and RStudio}
+
+\NP Open Rstuidio -- which can be either as a local installation or using an Rstudio Server via webbrowser.
 
 \NP To use Rstudio's version control, you need to create a SSH Key that is used to create secure connections between RStudio and Github.
 
