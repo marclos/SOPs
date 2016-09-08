@@ -6,12 +6,12 @@
 
 \documentclass[12pt]{../SOP3_beta}
 
-\author{Marc, Aparna, and Isaac}
+\author{Marc Los Huertos \& Isaac Medina}
 \title{Rstudio Projects and Github}
 \date{8/12/2016}
 \approved{TBD}
 \ReviseDate{\today}
-\SOPno{06 v.01}
+\SOPno{06 v.02}
 
 \begin{document}
 \SweaveOpts{concordance=TRUE}
@@ -27,8 +27,9 @@
 
 \section{Summary of Method}
 
-\NP This SOP does this...
+\NP This SOP does provides instructions to create Rstudio projects and obtain github repositories into Rstudio. 
 
+\NP The SOP also provides some guidance on how to trouble should push/pull problems as the arise.
 
 \NP The use of Github is not intuitive. So, you will find many on-line resources to help.
 
@@ -37,6 +38,8 @@
 \newpage
 
 \section{Acknowledgements}
+
+As usual we acknowledge the students who have tried to follow and made suggestions in how to improve this guide. In particular, Aparna C, etc.
 
 \section{Definitions}
 
@@ -58,8 +61,8 @@
 \begin{description}
   \item[Almost Universal Compatibility] No downloading programs on personal computers.
   \item[Accessibility] Accessible from any computer via webserver
-  \item[Collaboration]
-  \item[Version Control]
+  \item[Collaboration] You can easily collaboration with others and track who contributed to which section
+  \item[Version Control] When you are working in a team, and updating various codes, it's nice to have a way to ensure there is version control. 
 \end{description}
 
 \NP I recommend reading the following sites to better understand Git and Github
@@ -88,11 +91,11 @@
 
 \subsection*{Safety and Personnnel Protective Equipment}
 
-\NP Good posture and work station
+\NP Good posture and well designed work station
 
 \section{Personnel \& Training Responsibilities}
 
-\NP Researchers training is required before this the procedures in this method can be used... 
+\NP Researchers training before this the procedures in this method should include how to use their webbrowser and file storage practices. 
 
 %\NP Researchers using this SOP should be trained for the following SOPs:
 
@@ -110,7 +113,7 @@
 
 \section{Estimated Time}
 
-\NP This set up procedure requires 30 minutes.
+\NP This set up procedure requires 45 minutes.
 
 %\section{Maintaing XX Data}
 
@@ -119,78 +122,121 @@
 
 \NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! Your email address can be used to prove your student status.
   
-\NP Read the Readme file -- THIS DOCUMENT WILL REPLACE THAT README FILE.
+\NP We have two choices in how we work with R. We can use the server version on Pomona's IT server. This is preferable. However, there are times when this is not possible --- and there are work-arounds!  Namely, we can download and install the following programs in this order: 
+
+\begin{enumerate}
+  \item R 
+  \item RStudio
+  \item Github desktop
+\end{enumerate}
+
+\NP Using Rstudio Server, open a browser and search for ``Pomona R studio server'' and you should find a link to login. Login using your Pomona College username and password.
+
+\NP Using Rstudio desktop, start R Studio from the program files and this will automatically start an R console window.
 
 \subsection{Creating a Connection between Github and RStudio}
 
-\NP Open Rstuidio -- which can be either as a local installation or using an Rstudio Server via webbrowser.
+\NP Open Rstudio -- which can be either as a local installation or using an Rstudio Server via webbrowser.
 
 \NP To use Rstudio's version control, you must create a SSH Key that is used to open a secure connections between RStudio and Github.
 
-\NP To create a Key, follow the Rstudio menus Tools/Global Options/`Git/SVN' and select ``Create RSA key''. 
+\NP To create a Key, follow the Rstudio menus Tools/Global Option and navigate to the `Git/SVN' in the left menu.
+
+\NP ``Create RSA key''. 
 
 \begin{figure}
 \includegraphics{graphics/CreatingSSH.jpg}
-\caption{After natigating throught the Rstudio menu, select `Create an RSA Key'.}
+\caption{After natigating through the Rstudio Git/SNV menu, select `Create an RSA Key'.}
 \end{figure}
 
-\NP You will have the option to create a passcode. I suggest you don't to make it easier for now. But when you have projects that you be worried about secturity, then it is a good idea.
-\NP The a crude image will be generated in a pop-up windows -- that we don't care about as far as I can tell. So, close this window. 
+\NP You have the option to create a passphrase. I suggest you don't to make it easier for now. But should your have projects that need security, this this is a good idea.
 
-\NP Next, select the `View the public key' and copy the contents of the pop-up window using cntrl-c. Now we need to paste that key into Github.
+\NP After you hit the ``Okay'' botton a image will be generated in a pop-up window -- As far as I can tell, this image is some sort of encryption thing -- but I don't see any reason why we should care. So, close this pop-up window. 
 
-\begin{figure}
-\includegraphics{graphics/Github_SavedSSH.jpg}
-\caption{Creating the connection between Rstudio and Gitub requires a `key'. From this spot, you can create a new key and then name it based on the topic that you are working in. }
-\end{figure}
+\NP Next, select the `View the public key' and copy the contents of the pop-up window using cntrl-c. Now we need to paste that key into Github. NOTE: If you closed all the windows, you have to nagivate back to the Git/SVN menu via Global Options. 
 
-\NP Add SSH Key to Github
+\NP Add RSA/SSH Key to Github
   \begin{enumerate}
-  \item Go to Profile, in the upper right top of the Github page.
+  \item Go to Profile, in the upper right top of the Github page. Unless you have uploaded a picture of yourself, profile image is a tetris looking icon.
   \item Select the menu item ``Settings.''
   \item Using the left menu, select the ``SSH and GPG keys'' button.
   \item Click on new SSH key, type in name of key (e.g. 'myRstudio SSH key')
+  
+\begin{figure}
+\includegraphics{graphics/Github_SavedSSH.jpg}
+\caption{Creating the connection between Rstudio and Gitub requires a `key'. We generate the key in Rstudio and then we tell Github what the key is.}
+\end{figure}
+
   \item Paste in the RSA key, from your clipboard, into the window below.
   \item Hit green ``add SSH key'' button.
+  \item Github and R can now communicate.
   \end{enumerate}
-  
-\NP Now Github and R can communicate. 
 
-\NP To obtain access to respository in Rstudio, you will need to ``clone'' the site as a new project in Rstudio. To accomplish this...
+
+\subsection{Linking an RStudio Project to a Github Repository}
+
+\NP To link a Github respository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio.
+
+\NP I have created a simple repository to begin learning how to use R Studio.
+
+\NP Search Github for the following repository name, 'beginnersluck'. There are several, so you'll have to find the one I created, under the username, 'marclos'. 
+
+\NP Select this repository. Note the 'README.md', click on it to view it. The suffix, md, referrs to markdown, which is a simple languague for things to display on the web.
+
+\NP We need to get the url and SSH key for Rstudio and to accomplish this we ``Clone'' the Github repository. Click on the ''clone or download'' button (Figure \ref{fig:step1}).
+
+\begin{figure}
+\includegraphics{graphics/CloningGithub.jpg}
+\caption{Step 1: Select the green button, "Clone or Download"}
+\label{fig:step1}
+\end{figure}
+
+\NP Next we will 'Clone with SSH'. If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box. Hou can copy the clone information by clicking on the little clipboard on the right of the address (Figure \ref{fig:step2}).
+
+\begin{figure}
+\includegraphics{graphics/CloningGithub2.jpg}
+\caption{Step 2: Be sure you clone with SSH!}
+\label{fig:step2}
+\end{figure}
+
+\NP Now we return to Rstudio and create a new project. Navigate to the file toolbar and select ``New Project''. Where you will be greeted with three choices (Figure \ref{fig:step3}). Select 'Version Control'. 
+\begin{figure}
+\includegraphics{graphics/RstudioNewProject.jpg}
+\caption{Step 3: When you create a new project, you have three choices. Select 'Version Control' to clone your repository.}
+\label{fig:step3}
+\end{figure}
+
+\NP Once you have selected the Version Control, you have one more choice to make, luckily this is pretty easy, select ``Git'' (Figure \ref{fig:step4}).
+
+\begin{figure}
+\includegraphics{graphics/RstudioNewProject2.jpg}
+\caption{Step 4: Select ``Git'' to clone the repository.}
+\end{figure}
+
+When you arrive in the ``Clone Git Repostory'' window, you can simply paste your clipboard into the Repository URL. This usually fills in the project directory name too. But if not, you can type in the name, in this case, "beginnersluck" (Figure \ref{fig:step5}).
+
+\begin{figure}
+\includegraphics{graphics/RstudioNewProject3.jpg}
+\caption{Step 1 should look like this...}
+\label{fig:step5}
+\end{figure}
+
+
+\begin{figure}
+\includegraphics{graphics/RstudioNewProject4.jpg}
+\caption{Step 1 should look like this...}
+\end{figure}
+
 
 \subsection{Pulling a Repository}
 
 \NP The easiest place to begin, is to `Pull' a repository. But first you need to create a project in Rstudio. I suggest you the following steps as you begin:
 
-Use the following Beginners\_Repository,
-
-\url{https://github.com/marclos/beginnersluck}
-
-\begin{figure}
-\includegraphics{graphics/CloningGithub.jpg}
-\caption{Step 1 should look like this...}
-\end{figure}
-
-\begin{figure}
-\includegraphics{graphics/CloningGithub2.jpg}
-\caption{Step 1 should look like this...}
-\end{figure}
-
-\begin{figure}
-\includegraphics{graphics/RstudioNewProject.jpg}
-\caption{Step 1 should look like this...}
-\end{figure}
 
 
-\begin{figure}
-\includegraphics{graphics/RstudioNewProject2.jpg}
-\caption{Step 1 should look like this...}
-\end{figure}
 
-\begin{figure}
-\includegraphics{graphics/RstudioNewProject3.jpg}
-\caption{Step 1 should look like this...}
-\end{figure}
+
+
 
 \subsection{Creating a New Repository}
 
