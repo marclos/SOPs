@@ -185,7 +185,7 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \NP We need to get the url and SSH key for Rstudio and to accomplish this we ``Clone'' the Github repository. Click on the ''clone or download'' button (Figure \ref{fig:step1}).
 
-\begin{figure}[h]
+\begin{figure}
 \includegraphics{graphics/CloningGithub.jpg}
 \caption{Step 1: Select the green button, "Clone or Download"}
 \label{fig:step1}
@@ -233,8 +233,9 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 
 \NP Now you should see a few files from the repository on your Rstudio window. Open them up and see what they are to get familiar with them.
 
+\subsection{Pulling a Repository}
 
-
+\NP The easiest place to begin, is to `Pull' a repository. But first you need to create a project in Rstudio. I suggest you the following steps as you begin:
 
 \subsection{Pulling a Repository}
 
@@ -296,7 +297,7 @@ master 6038765 Started to explain set up procedures
 \end{description}
   
   
-Basically git commit ``records changes to the repository'"'' while git push ``updates remote refs along with associated objects''. So the first one is used in connection with your local repository, while the latter one is used to interact with a remote repository.
+Basically git commit ``records changes to the repository'' while git push ``updates remote refs along with associated objects''. So the first one is used in connection with your local repository, while the latter one is used to interact with a remote repository.
 
 Here is a nice picture from Oliver Steele, that explains the git model and the commands:  
 
@@ -332,7 +333,6 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 \NP Select the files that have blue squares with your initials. The important part is to find the places where there is a multiple squares (ie. Blue squares, orange squares and red squares). Multiple squares signify that those sections there were changes made to the file that over lap and there should be a U next to the checkbox on those lines. Click those checkboxes. 
 
 \NP Then commit and push changes. 
-
 
 \begin{figure}
 \includegraphics{graphics/MergeError.jpg}
