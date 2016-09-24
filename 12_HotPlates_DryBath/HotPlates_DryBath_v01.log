@@ -1,8 +1,8 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 SEP 2016 17:44
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 SEP 2016 17:47
 entering extended mode
  %&-line parsing enabled.
-**Revolve_Microscope_v01.tex
-(./Revolve_Microscope_v01.tex
+**HotPlates_DryBath_v01.tex
+(./HotPlates_DryBath_v01.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
@@ -11,9 +11,9 @@ erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
 us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
 tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
 turkish, ukenglish, ukrainian, loaded.
-(../SOP3_beta.cls
-Document Class: ../SOP3_beta 2016/08/08 v3.2 Modified article class for standar
-d operating procedures
+(../SOP3_alpha.cls
+Document Class: ../SOP3_alpha 2016/08/08 v3.1 Modified article class for standa
+rd operating procedures
 (/usr/share/texmf/tex/latex/base/article.cls
 Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/share/texmf/tex/latex/base/size12.clo
@@ -200,6 +200,46 @@ Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
 \f@ncyO@olf=\skip64
 \f@ncyO@orf=\skip65
 ))
+(/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 2005/11/23 v3.8h The Babel package
+
+(/usr/share/texmf/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 2005/11/23 v3.8h Babel common definitions
+\babel@savecnt=\count99
+\U@D=\dimen121
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/share/texmf/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2006/11/21 V1.7 blindtext-Package
+
+(/usr/share/texmf/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+)
+\c@blindtext=\count100
+\c@Blindtext=\count101
+\blind@countxx=\count102
+\blindtext@numBlindtext=\count103
+\blind@countyy=\count104
+\c@blindlist=\count105
+\c@blindlistlevel=\count106
+\c@blindlist@level=\count107
+\blind@listitem=\count108
+\c@blind@listcount=\count109
+\c@blind@levelcount=\count110
+)
+(/usr/share/texmf/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
+File: lipsum.dtx 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count111
+)
 (/usr/share/R/texmf/tex/latex/Sweave.sty
 Package: Sweave 
 
@@ -220,18 +260,18 @@ File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 90.
 )
-\Gin@req@height=\dimen121
-\Gin@req@width=\dimen122
+\Gin@req@height=\dimen122
+\Gin@req@width=\dimen123
 )
 (/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 1998/07/17
 
 Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
-\FV@CodeLineNo=\count99
+\FV@CodeLineNo=\count112
 \FV@InFile=\read1
 \FV@TabBox=\box27
-\c@FancyVerbLine=\count100
-\FV@StepNumber=\count101
+\c@FancyVerbLine=\count113
+\FV@StepNumber=\count114
 \FV@OutFile=\write3
 
 No file fancyvrb.cfg.
@@ -323,31 +363,31 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
 (/usr/share/texmf/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))) (./Revolve_Microscope_v01.aux)
-\openout1 = `Revolve_Microscope_v01.aux'.
+)))) (./HotPlates_DryBath_v01.aux)
+\openout1 = `HotPlates_DryBath_v01.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
-Package hyperref Info: Link coloring OFF on input line 12.
+LaTeX Font Info:    ... okay on input line 21.
+Package hyperref Info: Link coloring OFF on input line 21.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
@@ -355,26 +395,26 @@ Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 (/usr/share/texmf/tex/latex/oberdiek/refcount.sty
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count102
+\c@section@level=\count115
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
 
-(./Revolve_Microscope_v01.out) (./Revolve_Microscope_v01.out)
+(./HotPlates_DryBath_v01.out) (./HotPlates_DryBath_v01.out)
 \@outlinefile=\write4
-\openout4 = `Revolve_Microscope_v01.out'.
+\openout4 = `HotPlates_DryBath_v01.out'.
 
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/aer/m/n --> TS1/aer/bx/n on input line 12.
-Package gensymb Info: Math companion symbols declared on input line 12.
-LaTeX Info: Redefining \degree on input line 12.
-LaTeX Info: Redefining \celsius on input line 12.
+(Font)                  TS1/aer/m/n --> TS1/aer/bx/n on input line 21.
+Package gensymb Info: Math companion symbols declared on input line 21.
+LaTeX Info: Redefining \degree on input line 21.
+LaTeX Info: Redefining \celsius on input line 21.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 12.
-LaTeX Info: Redefining \ohm on input line 12.
-Package gensymb Info: Using \textohm for \ohm on input line 12.
-Package gensymb Info: Using \textmu for \micro on input line 12.
+erthousand on input line 21.
+LaTeX Info: Redefining \ohm on input line 21.
+Package gensymb Info: Using \textohm for \ohm on input line 21.
+Package gensymb Info: Using \textmu for \micro on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -410,41 +450,45 @@ Package gensymb Info: Using \textmu for \micro on input line 12.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./Revolve_Microscope_v01-concordance.tex)
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+(./HotPlates_DryBath_v01-concordance.tex)
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 15.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 24.
 
 (/usr/share/R/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <12> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 15.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <8> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 15.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <6> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 15.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 24.
 
-<../pomona.jpg, id=48, 460.557pt x 492.75pt>
+<../pomona.jpg, id=68, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
-Overfull \vbox (21.72939pt too high) detected at line 15
+Overfull \vbox (21.72939pt too high) detected at line 24
  []
 
 
-Overfull \hbox (2.12527pt too wide) in paragraph at lines 15--16
+Overfull \hbox (6.02032pt too wide) in paragraph at lines 24--25
 [][] 
  []
 
-[1
+(./HotPlates_DryBath_v01.toc)
+\tf@toc=\write5
+\openout5 = `HotPlates_DryBath_v01.toc'.
+
+ [1
 
 {/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>]
 
@@ -453,22 +497,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] [4] [5] [6] [7] [8] AED: lastpage setting LastPage
-(./Revolve_Microscope_v01.aux) ) 
+[2] [3] [4] AED: lastpage setting LastPage (./HotPlates_DryBath_v01.aux) ) 
 Here is how much of TeX's memory you used:
- 5630 strings out of 256214
- 75746 string characters out of 1917000
- 136961 words of memory out of 1500000
- 8719 multiletter control sequences out of 10000+200000
+ 6168 strings out of 256214
+ 82745 string characters out of 1917000
+ 240670 words of memory out of 1500000
+ 9283 multiletter control sequences out of 10000+200000
  15368 words of font info for 45 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,18n,45p,733b,409s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12
-.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf/font
-s/type1/bluesky/cm/cmr12.pfb>
-Output written on Revolve_Microscope_v01.pdf (8 pages, 155261 bytes).
+ 35i,18n,45p,237b,420s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr
+/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bl
+uesky/cm/cmr12.pfb>
+Output written on HotPlates_DryBath_v01.pdf (4 pages, 129828 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 131072)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 131072)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
