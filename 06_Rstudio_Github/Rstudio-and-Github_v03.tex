@@ -356,6 +356,10 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 
 \NP Merging changes... how??
 
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+
 \subsection{Dealing with non-fast-forward errors}
 
 \NP Sometimes, Git can't make your change to a remote repository without losing commits. When this happens, your push is refused. If another person has pushed to the same branch as you, Git won't be able to push your changes.
