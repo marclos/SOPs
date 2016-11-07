@@ -129,13 +129,13 @@ As usual we acknowledge the students who have tried to follow and made suggestio
   \item Github desktop
 \end{enumerate}
 
-\NP Using Rstudio Server, open a browser and search for ``Pomona R studio server'' and you should find a link to login. Login using your Pomona College username and password.
+\NP Rather than downloading these things, use the Rstudio Server located at rstudi.campus.pomona.edu. Login using your Pomona College username and password.
 
-\NP Using Rstudio desktop, start R Studio from the program files and this will automatically start an R console window.
+\NP If using the downloaded Rstudio, start R Studio from the program files and this will automatically start an R console window.
 
 \subsection{Creating a Connection between Github and RStudio}
 
-\NP Open Rstudio -- which can be either as a local installation or using an Rstudio Server via webbrowser.
+\NP Open Rstudio -- which can be either as a local installation or using an Rstudio Server via your webbrowser.
 
 \NP To use Rstudio's version control, you must create a SSH Key that is used to open a secure connections between RStudio and Github.
 
@@ -176,6 +176,12 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \NP To link a Github respository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio.
 
+\begin{figure}
+\includegraphics{graphics/CloningGithub.jpg}
+\caption{Step 1: Select the green button, "Clone or Download"}
+\label{fig:step1}
+\end{figure}
+
 \NP I have created a simple repository to begin learning how to use R Studio.
 
 \NP Search Github for the following repository name, 'beginnersluck'. There are several, so you'll have to find the one I created, under the username, 'marclos'. 
@@ -184,11 +190,6 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \NP We need to get the url and SSH key for Rstudio and to accomplish this we ``Clone'' the Github repository. Click on the ''clone or download'' button (Figure \ref{fig:step1}).
 
-\begin{figure}
-\includegraphics{graphics/CloningGithub.jpg}
-\caption{Step 1: Select the green button, "Clone or Download"}
-\label{fig:step1}
-\end{figure}
 
 \NP Next we will 'Clone with SSH'. If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box. You can copy the clone information by clicking on the little clipboard on the right of the address (Figure \ref{fig:step2}).
 
