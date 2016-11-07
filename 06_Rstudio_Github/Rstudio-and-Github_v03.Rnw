@@ -356,6 +356,16 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 
 \NP Merging changes... how??
 
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+
+Ideally, if one gets a merge conflict, he should resolve them manually, and commit the changes using git add file.name \&\& git commit -m '''removed merge conflicts''. Now, another user has updated the files in question on his repository, and has pushed his changes to the common upstream repo.
+
+It so happens, that your merge conflicts from (probably) the last commit were not not resolved, so your files are not merged all right, and hence the U(unmerged) flag for the files. So now, when you do a git pull, git is throwing up the error, because you have some version of the file, which is not correctly resolved.
+
+To resolve this, you will have to resolve the merge conflicts in question, and add and commit the changes, before you can do a git pull.
+
 \subsection{Dealing with non-fast-forward errors}
 
 \NP Sometimes, Git can't make your change to a remote repository without losing commits. When this happens, your push is refused. If another person has pushed to the same branch as you, Git won't be able to push your changes.
