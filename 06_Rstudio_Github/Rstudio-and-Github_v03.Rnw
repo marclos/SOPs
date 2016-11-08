@@ -381,8 +381,15 @@ To resolve this, you will have to resolve the merge conflicts in question, and a
   \item \# Merges updates made online with your local work
 \end{itemize}
 
-\NP Or, you can simply use git pull to perform both commands at once:
+\NP Or, you can simply use git pull to perform both commands at once.
 
+\subsection {Identity Error}
+\begin{figure}[H]
+\includegraphics{graphics/IdentityError.png}
+\caption{Enter email and name}
+\end{figure}
+
+\NP If you recieve an error as shown in the figure above, simply replicate the string 'git config...' and enter your email in quotations on one line. On the following line relicate the git config string again and enter your first name in quotation marks. 
 
 \subsection{`Push` fails}
 
