@@ -233,13 +233,11 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 
 \NP Now you should see a few files from the repository on your Rstudio window. Open them up and see what they are to get familiar with them.
 
+\NP If nothing comes up, your pop-up blocker is activated. Turn off the pop-up blocker and try again. 
+
 \subsection{Pulling a Repository}
 
 \NP The easiest place to begin, is to `Pull' a repository. But first you need to create a project in Rstudio. I suggest you the following steps as you begin:
-
-\subsection{Pulling a Repository}
-
-\NP Pulling a Repository is downloading all the changed files into your local (or server) directory. Using the downward facing blue arrow that labeled ``Pull'' in the Git tab in Rstudio.
 
 \subsection{Creating a New Repository}
 
@@ -256,6 +254,10 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 \NP Some files are not worth push and pulling all the time, but these files depend on the program you are using. In this case, we can have github ignore all files that are associated with R that don't really contribute to the project itself. So, I suggest you add these files to the .ignore file. 
 
 \NP Finally, Github allows you to create a licence to protect your work. I need to do some research about the differences, but I usually pick 'GNU General Public Licence' for no good reason, besides it sounds good.
+
+\subsection{Pulling a Repository}
+
+\NP Pulling a Repository is downloading all the changed files into your local (or server) directory. Using the downward facing blue arrow that labeled ``Pull'' in the Git tab in Rstudio.
 
 \subsection{Creating a New Project}
 
