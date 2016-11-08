@@ -4,7 +4,7 @@
 %           New SOP3_alpha.cls
 
 \documentclass[12pt]{../SOP3_beta}
-
+\usepackage{float}
 \author{Marc Los Huertos \& Isaac Medina}
 \title{Rstudio Projects and Github}
 \date{8/12/2016}
@@ -176,7 +176,8 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \NP To link a Github respository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio.
 
-\begin{figure}
+
+\begin{figure}[H]
 \includegraphics{graphics/CloningGithub.jpg}
 \caption{Step 1: Select the green button, "Clone or Download"}
 \label{fig:step1}
