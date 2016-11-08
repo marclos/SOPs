@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  7 NOV 2016 16:21
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  7 NOV 2016 16:26
 entering extended mode
  %&-line parsing enabled.
 **Rstudio-and-Github_v03.tex
@@ -491,106 +491,103 @@ File: graphics/CloningGithub.jpg Graphic file (type jpg)
 <graphics/CloningGithub2.jpg, id=244, 428.60126pt x 277.035pt>
 File: graphics/CloningGithub2.jpg Graphic file (type jpg)
 
-<use graphics/CloningGithub2.jpg>
-<graphics/RstudioNewProject.jpg, id=246, 612.2875pt x 448.67625pt>
+<use graphics/CloningGithub2.jpg> [8pdfTeX warning (ext4): destination with the
+ same identifier (name{figure.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.203 
+       <./graphics/CloningGithub.jpg>]
+<graphics/RstudioNewProject.jpg, id=257, 612.2875pt x 448.67625pt>
 File: graphics/RstudioNewProject.jpg Graphic file (type jpg)
 
-<use graphics/RstudioNewProject.jpg>
-<graphics/RstudioNewProject2.jpg, id=248, 537.00626pt x 382.42876pt>
+<use graphics/RstudioNewProject.jpg> [9pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.210 
+       <./graphics/CloningGithub2.jpg>]
+<graphics/RstudioNewProject2.jpg, id=265, 537.00626pt x 382.42876pt>
 File: graphics/RstudioNewProject2.jpg Graphic file (type jpg)
 
-<use graphics/RstudioNewProject2.jpg>
-<graphics/RstudioNewProject3.jpg, id=250, 533.995pt x 382.42876pt>
+<use graphics/RstudioNewProject2.jpg> [10pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.5}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.218 
+       <./graphics/RstudioNewProject.jpg>]
+<graphics/RstudioNewProject3.jpg, id=273, 533.995pt x 382.42876pt>
 File: graphics/RstudioNewProject3.jpg Graphic file (type jpg)
 
-<use graphics/RstudioNewProject3.jpg> [8pdfTeX warning (ext4): destination with
- the same identifier (name{figure.3}) has been already used, duplicate ignored
+<use graphics/RstudioNewProject3.jpg> [11pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.6}) has been already used, duplicate ignored
+
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.225 \end{figure}
-                   <./graphics/CloningGithub.jpg>] [9pdfTeX warning (ext4): des
-tination with the same identifier (name{figure.4}) has been already used, dupli
-cate ignored
-<to be read again> 
-                   \endgroup \set@typeset@protect 
-l.225 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \endgroup \set@typeset@protect 
-l.225 \end{figure}
-                   <./graphics/CloningGithub2.jpg> <./graphics/RstudioNewProjec
-t.jpg>] <graphics/Authenticity.jpg, id=271, 1852.9225pt x 632.3625pt>
+l.226 
+       <./graphics/RstudioNewProject2.jpg>]
+<graphics/Authenticity.jpg, id=280, 1852.9225pt x 632.3625pt>
 File: graphics/Authenticity.jpg Graphic file (type jpg)
 
-<use graphics/Authenticity.jpg> [10pdfTeX warning (ext4): destination with the 
-same identifier (name{figure.6}) has been already used, duplicate ignored
+<use graphics/Authenticity.jpg> [12pdfTeX warning (ext4): destination with the 
+same identifier (name{figure.7}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.252 \NP
-          Decide if you want the site to be public or private. NOTE: Usually...
- <./graphics/RstudioNewProject2.jpg>] [11pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.7}) has been already used, duplicate ignored
-
+l.244 \subsection{Creating a New Repository}
+                                            pdfTeX warning (ext4): destination 
+with the same identifier (name{figure.8}) has been already used, duplicate igno
+red
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.252 \NP
-          Decide if you want the site to be public or private. NOTE: Usually...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \endgroup \set@typeset@protect 
-l.252 \NP
-          Decide if you want the site to be public or private. NOTE: Usually...
- <./graphics/RstudioNewProject3.jpg> <./graphics/Authenticity.jpg>]
+l.244 \subsection{Creating a New Repository}
+                                             <./graphics/RstudioNewProject3.jpg
+> <./graphics/Authenticity.jpg>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 269.
 
-
+[13]
 Overfull \hbox (0.40833pt too wide) in paragraph at lines 284--285
 []\T1/aer/m/n/12 This means that your files have not been up-dated on the Githu
 b
  []
 
-[12] <graphics/MgaV9.png, id=294, 482.80376pt x 456.70625pt>
+<graphics/MgaV9.png, id=299, 482.80376pt x 456.70625pt>
 File: graphics/MgaV9.png Graphic file (type png)
 
-<use graphics/MgaV9.png>
+<use graphics/MgaV9.png> [14] [15 <./graphics/MgaV9.png>]
 Overfull \hbox (13.30579pt too wide) in paragraph at lines 334--335
 [][]\T1/aer/bx/n/12 13.3 \T1/aer/m/n/12 (un)Fortunately, stu-dents are very goo
 d at dis-cov-er-ing ways that the pull/commit/push
  []
 
-[13] [14 <./graphics/MgaV9.png>]
-<graphics/UnmergedError.jpg, id=308, 643.40375pt x 308.15125pt>
+<graphics/UnmergedError.jpg, id=311, 643.40375pt x 308.15125pt>
 File: graphics/UnmergedError.jpg Graphic file (type jpg)
 
-<use graphics/UnmergedError.jpg>
-<graphics/MergeError.jpg, id=309, 829.0975pt x 161.60374pt>
+<use graphics/UnmergedError.jpg> [16 <./graphics/UnmergedError.jpg>]
+<graphics/MergeError.jpg, id=320, 829.0975pt x 161.60374pt>
 File: graphics/MergeError.jpg Graphic file (type jpg)
 
-<use graphics/MergeError.jpg> [15 <./graphics/UnmergedError.jpg>] [16 <./graphi
-cs/MergeError.jpg>]
+<use graphics/MergeError.jpg> [17 <./graphics/MergeError.jpg>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 408.
 
-[17] AED: lastpage setting LastPage (./Rstudio-and-Github_v03.aux) ) 
+[18] AED: lastpage setting LastPage (./Rstudio-and-Github_v03.aux) ) 
 Here is how much of TeX's memory you used:
- 5817 strings out of 256214
- 78871 string characters out of 1917000
+ 5818 strings out of 256214
+ 78878 string characters out of 1917000
  138325 words of memory out of 1500000
  8844 multiletter control sequences out of 10000+200000
  15368 words of font info for 45 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,18n,49p,937b,446s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 35i,18n,49p,937b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
 </usr/share
 /texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/
 cm/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb>
-Output written on Rstudio-and-Github_v03.pdf (17 pages, 1550333 bytes).
+Output written on Rstudio-and-Github_v03.pdf (18 pages, 1551632 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 131072)
+ 376 PDF objects out of 1000 (max. 8388607)
+ 127 named destinations out of 1000 (max. 131072)
  313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
