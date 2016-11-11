@@ -44,6 +44,7 @@
 
 \section{Definitions}
 
+
 \NP Term1: is...
 
 \section{Biases and Interferences}
@@ -90,6 +91,48 @@
 \NP
 
 \section{Data Analysis and Calculations}
+
+\section{Error Status}
+
+\subsection*{Motor Overload}
+
+\NP If you recieve a Motor Overload error, this means something is interfering with the rotor. To fix this, clear the rotor and reset. 
+
+\subsection*{User Stop}
+
+\NP If you recieve a User Stop error, this means you have held dow the START/STOP and implemented a quick stop.
+
+\subsection*{Balance}
+
+\NP If you recieve a Balance error, inspect the tubes for equal tube filling or improper placement. Once you have determined everything is correct, rerun the microcentrifuge. 
+
+\NP If the balance error continues to hapen, remove the tubes and determine if the balance error still persists with an empty rotor.
+
+\NP If the error continues to persists, inspect the rotor for improper installation. 
+
+\subsection*{Temperature}
+
+\NP If you recieve a Temperature error the unit has exceeded the normal operating temperature. 
+
+\NP To rectify this, turn off the unit and allow it to cool. 
+
+\subsection*{Excessive Tilt}
+
+\NP If you recieve a Excessive Tilt error the unit has experienced a non-normal tilt event. In this case, make sure the unit is placed on a level surface. Once corrected, rerun. 
+
+\subsection*{Lid Fail}
+
+\NP If you receive a Lid Fail error this means the lid has opened during the cycle. 
+
+\NP To rectify this check for proper operation of the lid lock mechanism. The lid should stay locked during the entire cycle. 
+
+\subsection*{Rotor Lock}
+
+\NP If you receive a Rotor Lock error this means the unit has experienced a problem with the rotor. 
+
+\NP To rectify this, correct the rotor interference. Once corrected, rerun. 
+
+\NP 
 
 \section{QC/QA Criteria}
 
