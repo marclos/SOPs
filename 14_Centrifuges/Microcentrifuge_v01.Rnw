@@ -45,7 +45,19 @@
 \section{Definitions}
 
 
-\NP Term1: is...
+\NP When looking at the display of the microcentrifuge there are several terms that will be displayed on the front panel. They are as follows.
+
+\begin{itemize}
+  \item Lid Open: Indicates the lid is open
+  \item Ready: Unit is ready to centrifuge 
+  \item Spin Up: The centrifuge cycle is starting and is increasing in speed
+  \item Spinning: The centrifuge is running in Standard mode 
+  \item Spin Down: The centrifuge cycle is slowing down
+  \item Stopped: The centrifuge cycle has stopped
+  \item Completed: The centrifuge cycle has finished
+  \item Quick Spin: When the quick spin sign flashes on the panel the centrifuge is running in quick spin mode
+  \item Error: The centrifuge has encountered an error
+\end{itemize}
 
 \section{Biases and Interferences}
 
@@ -93,6 +105,8 @@
 \section{Data Analysis and Calculations}
 
 \section{Error Status}
+
+\NP If an error happens, the unit will beep and the display will indicate the error. The following delineates the possible error statuses. 
 
 \subsection*{Motor Overload}
 
