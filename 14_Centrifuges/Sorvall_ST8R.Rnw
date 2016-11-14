@@ -32,9 +32,21 @@
 
 \NP This SOP also provides guidance on how to troubleshoot an issue should trouble arise. 
 
-\section{Definitions}
+\section{Definitions and Control Panel}
 
-\NP \lipsum[1]
+\NP The control panel of the Sorvall Centrifugation systems has various keys and displays. TThey are as follows:
+\begin{itemize}
+  \item 1. Display- The main visual display has three main functions; display the status of the centrifuge; display the speed, in RPM, or display the RCF value; display the running time.
+  \item 2. Acceleration/Deceleartion Profiles Key- Press this key multiple times to cycle through the available profiles. 
+  \item 3. PULSE key- Press the PULSE key to immediately start the centrifugation run and accelerate up to maximal permissible end speed, depending on the used rotor. Releasing the key initiates a stopping process at the highest braking curves. 
+  \item 4. OPEN key- Press the OPEN key to activate the automatic door release, possibly only when the device is switched on and when the rotor is fully stopped.
+  \item 5. STOP key- Press the STOP key to manually end the centrifugation run.
+  \item 6. START key- Press the START key to manually end the centrifugation run.
+  \item 7. Arrow keys- Use these keys in order to modify the displayed value. 
+  \item 8. TOGGLE key for Speed/RCF Value- Use the TOGGLE key to change the display mode from SPEED to RCF or vice versa.
+  \item 9. Program keys- Located on the left of the device, use the program keys to save and load programs. More on this later.
+\end{itemize}
+ 
 
 \section{Interferences}
 
