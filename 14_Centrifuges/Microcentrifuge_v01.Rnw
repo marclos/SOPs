@@ -10,7 +10,7 @@
 \usepackage{blindtext}
 \usepackage{lipsum}
 
-\title{mySPIN 12 Microcentrifuge}
+\title{Title}
 \date{09/XX/2014}
 \author{Marc Los Huertos}
 \approved{TBD}
@@ -26,13 +26,10 @@
 
 \NP The scope of this SOP is to train researchers in how to effectively use the Microcentrifuge system.
 
-\NP As a researcher, the microcentrifuge is an essential part of the lab. This device will allow for the spinning of relatively small amounts of liquid samples at speeds reaching tens of thousands of g-force. 
-
 \section{Summary of Method}
 
-\NP This SOP provides instructions on how to use the Thermo Scientific mySPIN 12 Microcentrifuge. 
+\NP This SOP provides instructions on how to use the Microcentrifuge. 
 
-\NP This SOP also provides some guidance on how to troubleshoot an issue should any problems arise. 
 
 \tableofcontents
 
@@ -43,21 +40,6 @@
 \NP As usual we acknoweldge the students who have trie to follow and made suggestions on how to improve this guide. In particular, Edinam E, etc.
 
 \section{Definitions}
-
-
-\NP When looking at the display of the microcentrifuge there are several terms that will be displayed on the front panel. They are as follows.
-
-\begin{itemize}
-  \item Lid Open: Indicates the lid is open
-  \item Ready: Unit is ready to centrifuge 
-  \item Spin Up: The centrifuge cycle is starting and is increasing in speed
-  \item Spinning: The centrifuge is running in Standard mode 
-  \item Spin Down: The centrifuge cycle is slowing down
-  \item Stopped: The centrifuge cycle has stopped
-  \item Completed: The centrifuge cycle has finished
-  \item Quick Spin: When the quick spin sign flashes on the panel the centrifuge is running in quick spin mode
-  \item Error: The centrifuge has encountered an error
-\end{itemize}
 
 \section{Biases and Interferences}
 
@@ -98,149 +80,7 @@
 
 \section{Procedure}
 
-\subsection*{Prior to Using} 
-
-\NP Turn the power switch on the rear to the ON position. The unit will initialize.
-
-\NP Press the OPEN button. The lid should pop up slightly. Lift the front of the lid and gently up and backward until approximately 90 degrees vertical. 
-
-\NP Remove any remianing packaging materials. 
-
-\NP Verify that the rotor is installed correctly. Do not run without the rotor being installed. Close the lid.
-
-\NP Press the START/STOP button, the rotor should should spin up to the present speed. If there is a smooth whirring sound and the unit accelerates with little or no vibration, the minicentrifuge is ready to use. If there are loud or unusal sounds, or excessive vibration, DO NOT OPERATE. Contact Thermo Fisher Scientific service.
-
-\NP At the set time, the rotor will spin down, stop and the unit will emit a beep when the cycle is complete. 
-
-\subsection*{General Operation}
-
-\NP The following steps are for general usage of the microcentrifuge
-
-\begin{itemize}
-  \item 1. Turn the power switch on the back of the unit ON. The unit intialize.
-  \item 2. To open the lid, press the OPEN button. The lid should pop up slightly. Lift the front of the lid gently up and backward until approximately 90 degrees vertical.
-  \item 3. On benchtop, prepare samples tubes in a rack so that tubes are filled to equal levels. Close tube lids.
-  \item 4. Install tubes in the rotor in a balnced manner. Instructions on proper balancing are to follow.
-  \item 5. Set the appropriate time by pressing the TIME UP/DOWN button.
-  \item 6. Set the appropriate rpm by pressing the SPEED UP/DOWN button.
-  \item 7. Place the standard rotor cover on the rotor to limit noise and aspiration of liquids that may escape from tubes.
-  \item 8. Close Lid and press down untill locked. The Display should read "READY".
-  \item 9. Press START/STOP. The rotor should spin up to the user set speed.
-  \item 10. At a determined time the rotor will spin down and stop at the present time.
-  \item 11. The unit will then emit a beep when the cycle is complete.
-  \item 12. To open the lid, press the OPEN button.
-\end{itemize}
-
-\subsection*{Quick Spin Operation}
-
-\NP The following are instructions on how to use the Quick Spin operation
-
-\begin{itemize}
-  \item 1. Prepare the unit for centrifugation as in the General Operation section
-  \item 2. Press QUICK SPIN button with the rotors speed set previously
-  \item 3. The timer will begin counting
-  \item 4. Once enough time has elapsed for your needs, release the QUICK SPIN button. The rotor will spin down, stop and the unit will emit a beep when the cycle is complete.
-  \item 5. To oen the lid, press the OPEN button.
-\end{itemize}
-
-\subsection*{Other Functions}
-
-\NP To change between RPM and RCF, prior to a spin cycle, press both the SPEED UP and DOWN buttons simultaneously. This will convert the speed setting to the other.
-
-\NP If for any reason you need to stop the cycle quickly, press and hold the START/STOP button. The cycle will stio more rapidly than normal. CAUTION this may disturb the contents of the tube during the quick stop process.  
-
 \section{Data Analysis and Calculations}
-
-\section{Error Status}
-
-\NP If an error happens, the unit will beep and the display will indicate the error. The following delineates the possible error statuses. 
-
-\subsection*{Motor Overload}
-
-\NP If you recieve a Motor Overload error, this means something is interfering with the rotor. To fix this, clear the rotor and reset. 
-
-\subsection*{User Stop}
-
-\NP If you recieve a User Stop error, this means you have held dow the START/STOP and implemented a quick stop.
-
-\subsection*{Balance}
-
-\NP If you recieve a Balance error, inspect the tubes for equal tube filling or improper placement. Once you have determined everything is correct, rerun the microcentrifuge. 
-
-\NP If the balance error continues to hapen, remove the tubes and determine if the balance error still persists with an empty rotor.
-
-\NP If the error continues to persists, inspect the rotor for improper installation. 
-
-\subsection*{Temperature}
-
-\NP If you recieve a Temperature error the unit has exceeded the normal operating temperature. 
-
-\NP To rectify this, turn off the unit and allow it to cool. 
-
-\subsection*{Excessive Tilt}
-
-\NP If you recieve a Excessive Tilt error the unit has experienced a non-normal tilt event. In this case, make sure the unit is placed on a level surface. Once corrected, rerun. 
-
-\subsection*{Lid Fail}
-
-\NP If you receive a Lid Fail error this means the lid has opened during the cycle. 
-
-\NP To rectify this check for proper operation of the lid lock mechanism. The lid should stay locked during the entire cycle. 
-
-\subsection*{Rotor Lock}
-
-\NP If you receive a Rotor Lock error this means the unit has experienced a problem with the rotor. 
-
-\NP To rectify this, correct the rotor interference. Once corrected, rerun. 
-
-\section{Trouble Shooting}
-
-\subsection*{No Power Present} 
-
-\NP If there is no power present verify that the AC adapter is fully plugged into the wall and rear of the unit. Additionally, verify that the power switch is turned on. 
-
-\subsection*{Unit not operating normally}
-
-\NP In the case where the unit or display is not functioning normally, turn off the unit, wait for 2 minutes, and turn the power back on. 
-
-\subsection*{Excessive vibration/ noise}
-
-\NP If your unit is making excessive vibrations or noise, inspect the tubes for equal fil or improper placement. Inspect the rotor for improper installation. Finally, remove the tubes and determine if the noise persists with an empty rotor. 
-
-\subsection*{Lid will not close}
-
-\NP If the lid of the unit will not close, verify that nothing is blocking the lid from fully closing. After which, verify that nothing has fallen into the lock mechanism opening. 
-
-\subsection*{Lid will not open}
-
-\NP If you for any reason you need to manually open the lid to access tubes due to an error or power loss, please perform the following:
-
-\NP 1. Turn off the unit and remove the power cord.
-\NP 2. Make sure the rotor has stopped completely.
-\NP 3. Use a thin rod and insert it into the opening on the button.
-\NP 4. Press gently but firmly. You will feel a mechanical movement within the unit and the lid will release.
-\NP 5. Remove the rod, set the unit on the feet.
-\NP 6. Remove your tubes and reclose the lid. 
-
-\section{Balancing the Rotor}
-
-\NP Tubes of equal weight and size should be placed opposite each other. Use additional sample or water in other tubes to provide a balanced rotor. Examples of proper sample balancing are shown in the figures below. 
-\section{Rotor Installation and removal}
-
-\NP To remove the rotor do as follows.
-\begin{itemize}
-  \item 1. With one hand, grasp the rotor. With the other hand, unscrew the center knob counter clockwise until it disengages from the motor shaft.
-  \item 2. Pull up on the center knob firmly. The rotor should easily lift off of the motor drive.
-\end{itemize}
-
-\NP To install the rotor do as follows.
-\begin{itemize}
-  \item 1. Check to make sure the bands on the rotor are in the slots.
-  \item 2. Set rotor onto the motor drive and push down until seated.
-  \item 3. With one hand, grasp the rotor. With the other hand, screw the center knob clockwise until it engages the motor shaft. Keep turning the knob until it tightens.
-  \item 4.Do not overtighten the knob.
-\end{itemize}
-
 
 \section{QC/QA Criteria}
 
