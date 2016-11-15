@@ -7,9 +7,9 @@
 
 %\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
 
-\title{SOP Title}
-\date{X/XX/2016}
-\author{Reseacher Name}
+\title{Sorvall ST 8/ 8R Centrifuge}
+\date{11/11/2016}
+\author{Marc Los Huertos}
 \approved{Los Huertos}
 \ReviseDate{\today}
 \SOPno{14}
@@ -21,14 +21,57 @@
 
 \section{Scope and Application}
 
-\NP \blindtext
+\NP The scope of this SOP is to train researchers on how to effectively use the Sorvall ST 8/ST 8R Microcentrifuge.
+
+\NP As a researcher, the centrifuge is pertinent in the lab to be able to seperate substance mixtures of different densities. This centirfuge in particular can also become an in-vitro-diagnostics device, if used in tandem with the hematocrit rotor acessories. 
+
 
 \section{Summary of Method}
 
-\section{Definitions}
+\NP This SOP provides instructions on how to use the Sorvall ST 8/ 8R Centrifuge.
 
-\NP \lipsum[1]
+\NP This SOP also provides guidance on how to troubleshoot an issue should trouble arise. 
 
+\section{Definitions and Control Panel}
+
+\NP The control panel of the Sorvall Centrifugation systems has various keys and displays. TThey are as follows:
+\begin{itemize}
+  \item 1. Display- The main visual display has three main functions; display the status of the centrifuge; display the speed, in RPM, or display the RCF value; display the running time.
+  \item 2. Acceleration/Deceleartion Profiles Key- Press this key multiple times to cycle through the available profiles. 
+  \item 3. PULSE key- Press the PULSE key to immediately start the centrifugation run and accelerate up to maximal permissible end speed, depending on the used rotor. Releasing the key initiates a stopping process at the highest braking curves. 
+  \item 4. OPEN key- Press the OPEN key to activate the automatic door release, possibly only when the device is switched on and when the rotor is fully stopped.
+  \item 5. STOP key- Press the STOP key to manually end the centrifugation run.
+  \item 6. START key- Press the START key to manually end the centrifugation run.
+  \item 7. Arrow keys- Use these keys in order to modify the displayed value. 
+  \item 8. TOGGLE key for Speed/RCF Value- Use the TOGGLE key to change the display mode from SPEED to RCF or vice versa.
+  \item 9. Program keys- Located on the left of the device, use the program keys to save and load programs. More on this later.
+\end{itemize}
+ 
+
+\section{Speed and RCF Selection}
+
+\NP RPM stands for Revolutions Per Minute while RCF stands for Relative Centrifugal Force and also allows for better transfer of protocols between centrifuges and rotors of differeing size. 
+
+\NP To ensure that the rpm or RCF is correctly set follow the following instructions:
+
+\begin{itemize}
+  \item 1. Press teh TOGGLE key below the SPEED display to cycle through the rpm/RCF selection.
+  \item 2. The LED light wil indicate if "RPM" or "RCF" is selected. RPM/RCF can be viewed during a run by pressing the toggle button. 
+  \item 3. Enter the desied value by holding the arrow keys below SPEED in the corresponding direction, until the desired value shows. First RPM/ RCF will change in steps of 10. Holding a key pressed will change the runtime then in steps of 100 and then in steps of 1000. 
+  \item 4. Press the START key to accept or wait 4 seconds until the centrifuge automatically saves the chosen values. Moving to setting time or temperature also automatically stores the set value. 
+\end{itemize}
+
+\section{Running Time Selection}
+
+\NP In order to select the time of centrifugation you must do the following.
+
+\NP Press the TIME arrow keys. This allows you to change the set time using the arrow keys until the desired time is displayed. First run time will change in steps of 10 seconds. Holding a key pressed will change the runtime by steps of single minutes, followed by steps of 10 minutes, followed by steps of single hours and at last by steps of 10 hours. This will continue until the limit of 99 hours and 59 minutes is reached.
+
+\NP Press the START key to accept or wait 4 seconds until the centrifuge automatically saves the chosen values. Moving to setting speed/RCF or temperature will also automatically store the set values. 
+
+\section{Continuous Operation}
+
+\NP
 \section{Interferences}
 
 \section{Health and Safety}

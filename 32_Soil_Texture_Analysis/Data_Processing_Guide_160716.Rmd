@@ -212,7 +212,7 @@ joined$PF= ((100000/joined$W)*(joined$GSp/(joined$GSp-1)))*(joined$Rc - 1)
 
 You can also embed plots, for example:
 
-```{r figure, echo=T}
+```{r figure, echo=T, message=FALSE, warning=FALSE}
 KEY <- unique(joined$sampleKEY)
 KEY <- KEY[-c(1:25)]
            

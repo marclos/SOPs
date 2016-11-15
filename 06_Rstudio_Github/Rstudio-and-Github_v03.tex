@@ -4,7 +4,7 @@
 %           New SOP3_alpha.cls
 
 \documentclass[12pt]{../SOP3_beta}
-
+\usepackage{float}
 \author{Marc Los Huertos \& Isaac Medina}
 \title{Rstudio Projects and Github}
 \date{8/12/2016}
@@ -27,9 +27,9 @@
 
 \section{Summary of Method}
 
-\NP This SOP does provides instructions to create Rstudio projects and obtain github repositories into Rstudio. 
+\NP This SOP provides instructions to create Rstudio projects and obtain github repositories into Rstudio. 
 
-\NP The SOP also provides some guidance on how to trouble should push/pull problems as the arise.
+\NP The SOP also provides some guidance on how to troubleshoot should push/pull problems arise.
 
 \NP The use of Github is not intuitive. So, you will find many on-line resources to help.
 
@@ -39,17 +39,17 @@
 
 \section{Acknowledgements}
 
-As usual we acknowledge the students who have tried to follow and made suggestions in how to improve this guide. In particular, Aparna C, etc.
+As usual we acknowledge the students who have tried to follow and made suggestions on how to improve this guide. In particular, Aparna C, etc. ABC
 
 \section{Definitions}
 
-\NP RStudio is use interface for R. Although R by itself is an amazing example of crowd sourcing, where a wide range of staticians and programmers have created a free programming environments with a robust range of statistical packages, the RStudio interface provides a user with the tools to track and publish their analysis process in an effecient and transparent way. 
+\NP RStudio is the user interface for R. Although R by itself is an amazing example of crowd sourcing, where a wide range of staticians and programmers have created a free programming environments with a robust range of statistical packages, the RStudio interface provides a user with the tools to track and publish their analysis process in an effecient and transparent way. 
 
 \NP Local Install versus Server --- R and RStudio can be installed on a local computer/laptop from the CRAN download mirror sites. However, we also have access to the R and RStudio Server installed on the Pomona College mainframe, where you can access it via a web browser. Wow, this is conveient!
 
 \NP GitHub is a web-based Git repository hosting service. 
 
-\NP Version Control is a method to track changes in software, and often in the context of collaborative projects. The final component of R and RStudio is its capacity to create projects (RStudio's terminology) and repositories (Github's terminalogy) that can be shared among collaborators. In particular, the collaboration allows for contributions to be tracked via version control tools. There are a number of ways that we can access these tools, but we'll try to limit the methods so keep the process relatively ``simple''.
+\NP Version Control is a method to track changes in software, and often in the context of collaborative projects. The final component of R and RStudio is its capacity to create projects (RStudio's terminology) and repositories (Github's terminalogy) that can be shared among collaborators. In particular, the collaboration allows for contributions to be tracked via version control tools. There are a number of ways that we can access these tools, but we'll try to limit the methods to keep the process relatively ``simple''.
 
 
 \section{Background}
@@ -61,7 +61,7 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 \begin{description}
   \item[Almost Universal Compatibility] No downloading programs on personal computers.
   \item[Accessibility] Accessible from any computer via webserver
-  \item[Collaboration] You can easily collaboration with others and track who contributed to which section
+  \item[Collaboration] You can easily collaborate with others and track who contributed to which section
   \item[Version Control] When you are working in a team, and updating various codes, it's nice to have a way to ensure there is version control. 
 \end{description}
 
@@ -95,7 +95,7 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \section{Personnel \& Training Responsibilities}
 
-\NP Researchers training before this the procedures in this method should include how to use their webbrowser and file storage practices. 
+\NP Researcher training before this SOP should include how to use their webbrowser and file storage practices. 
 
 %\NP Researchers using this SOP should be trained for the following SOPs:
 
@@ -130,13 +130,13 @@ As usual we acknowledge the students who have tried to follow and made suggestio
   \item Github desktop
 \end{enumerate}
 
-\NP Using Rstudio Server, open a browser and search for ``Pomona R studio server'' and you should find a link to login. Login using your Pomona College username and password.
+\NP Rather than downloading these things, use the Rstudio Server located at rstudi.campus.pomona.edu. Login using your Pomona College username and password.
 
-\NP Using Rstudio desktop, start R Studio from the program files and this will automatically start an R console window.
+\NP If using the downloaded Rstudio, start R Studio from the program files and this will automatically start an R console window.
 
 \subsection{Creating a Connection between Github and RStudio}
 
-\NP Open Rstudio -- which can be either as a local installation or using an Rstudio Server via webbrowser.
+\NP Open Rstudio -- which can be either as a local installation or using an Rstudio Server via your webbrowser.
 
 \NP To use Rstudio's version control, you must create a SSH Key that is used to open a secure connections between RStudio and Github.
 
@@ -149,9 +149,9 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 \caption{After natigating through the Rstudio Git/SNV menu, select `Create an RSA Key'.}
 \end{figure}
 
-\NP You have the option to create a passphrase. I suggest you don't to make it easier for now. But should your have projects that need security, this this is a good idea.
+\NP You have the option to create a passphrase. I suggest you don't to make it easier for now. But should your have projects that need security, this is a good idea.
 
-\NP After you hit the ``Okay'' botton a image will be generated in a pop-up window -- As far as I can tell, this image is some sort of encryption thing -- but I don't see any reason why we should care. So, close this pop-up window. 
+\NP After you hit the ``Create'' button an image will be generated in a pop-up window -- As far as I can tell, this image is some sort of encryption thing -- but I don't see any reason why we should care. So, close this pop-up window. 
 
 \NP Next, select the `View the public key' and copy the contents of the pop-up window using cntrl-c. Now we need to paste that key into Github. NOTE: If you closed all the windows, you have to nagivate back to the Git/SVN menu via Global Options. 
 
@@ -177,6 +177,13 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \NP To link a Github respository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio.
 
+
+\begin{figure}[H]
+\includegraphics{graphics/CloningGithub.jpg}
+\caption{Step 1: Select the green button, "Clone or Download"}
+\label{fig:step1}
+\end{figure}
+
 \NP I have created a simple repository to begin learning how to use R Studio.
 
 \NP Search Github for the following repository name, 'beginnersluck'. There are several, so you'll have to find the one I created, under the username, 'marclos'. 
@@ -185,22 +192,17 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \NP We need to get the url and SSH key for Rstudio and to accomplish this we ``Clone'' the Github repository. Click on the ''clone or download'' button (Figure \ref{fig:step1}).
 
-\begin{figure}
-\includegraphics{graphics/CloningGithub.jpg}
-\caption{Step 1: Select the green button, "Clone or Download"}
-\label{fig:step1}
-\end{figure}
 
-\NP Next we will 'Clone with SSH'. If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box. Hou can copy the clone information by clicking on the little clipboard on the right of the address (Figure \ref{fig:step2}).
+\NP Next we will 'Clone with SSH'. If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box. You can copy the clone information by clicking on the little clipboard on the right of the address (Figure \ref{fig:step2}).
 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics{graphics/CloningGithub2.jpg}
 \caption{Step 2: Be sure you clone with SSH!}
 \label{fig:step2}
 \end{figure}
 
 \NP Now we return to Rstudio and create a new project. Navigate to the file toolbar and select ``New Project''. Where you will be greeted with three choices (Figure \ref{fig:step3}). Select 'Version Control'. 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics{graphics/RstudioNewProject.jpg}
 \caption{Step 3: When you create a new project, you have three choices. Select 'Version Control' to clone your repository.}
 \label{fig:step3}
@@ -208,7 +210,7 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \NP Once you have selected the Version Control, you have one more choice to make, luckily this is pretty easy, select ``Git'' (Figure \ref{fig:step4}).
 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics{graphics/RstudioNewProject2.jpg}
 \caption{Step 4: Select ``Git'' to clone the repository.}
 \label{fig:step4}
@@ -216,7 +218,7 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 When you arrive in the ``Clone Git Repostory'' window, you can simply paste your clipboard into the Repository URL. This usually fills in the project directory name too. But if not, you can type in the name, in this case, "beginnersluck" (Figure \ref{fig:step5}).
 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics{graphics/RstudioNewProject3.jpg}
 \caption{Step 5: You should have something useful in each of the boxes.}
 \label{fig:step5}
@@ -224,7 +226,7 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 
 \NP For many new users, Rstudio may claim some problem establishing authenticity (Figure \ref{fig:step6}). Type 'yes'. Then hit okay. I am not exactly sure why this step exists. 
 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics{graphics/Authenticity.jpg}
 \caption{Step 6: You should have something useful in each of the boxes.}
 \label{fig:step6}
@@ -233,13 +235,11 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 
 \NP Now you should see a few files from the repository on your Rstudio window. Open them up and see what they are to get familiar with them.
 
+\NP If nothing comes up, your pop-up blocker is activated. Turn off the pop-up blocker and try again. 
+
 \subsection{Pulling a Repository}
 
 \NP The easiest place to begin, is to `Pull' a repository. But first you need to create a project in Rstudio. I suggest you the following steps as you begin:
-
-\subsection{Pulling a Repository}
-
-\NP Pulling a Repository is downloading all the changed files into your local (or server) directory. Using the downward facing blue arrow that labeled ``Pull'' in the Git tab in Rstudio.
 
 \subsection{Creating a New Repository}
 
@@ -256,6 +256,10 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 \NP Some files are not worth push and pulling all the time, but these files depend on the program you are using. In this case, we can have github ignore all files that are associated with R that don't really contribute to the project itself. So, I suggest you add these files to the .ignore file. 
 
 \NP Finally, Github allows you to create a licence to protect your work. I need to do some research about the differences, but I usually pick 'GNU General Public Licence' for no good reason, besides it sounds good.
+
+\subsection{Pulling a Repository}
+
+\NP Pulling a Repository is downloading all the changed files into your local (or server) directory. Using the downward facing blue arrow that labeled ``Pull'' in the Git tab in Rstudio.
 
 \subsection{Creating a New Project}
 
@@ -356,6 +360,16 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 
 \NP Merging changes... how??
 
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+
+Ideally, if one gets a merge conflict, he should resolve them manually, and commit the changes using git add file.name \&\& git commit -m '''removed merge conflicts''. Now, another user has updated the files in question on his repository, and has pushed his changes to the common upstream repo.
+
+It so happens, that your merge conflicts from (probably) the last commit were not not resolved, so your files are not merged all right, and hence the U(unmerged) flag for the files. So now, when you do a git pull, git is throwing up the error, because you have some version of the file, which is not correctly resolved.
+
+To resolve this, you will have to resolve the merge conflicts in question, and add and commit the changes, before you can do a git pull.
+
 \subsection{Dealing with non-fast-forward errors}
 
 \NP Sometimes, Git can't make your change to a remote repository without losing commits. When this happens, your push is refused. If another person has pushed to the same branch as you, Git won't be able to push your changes.
@@ -368,8 +382,15 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
   \item \# Merges updates made online with your local work
 \end{itemize}
 
-\NP Or, you can simply use git pull to perform both commands at once:
+\NP Or, you can simply use git pull to perform both commands at once.
 
+\subsection {Identity Error}
+\begin{figure}[H]
+\includegraphics{graphics/IdentityError.png}
+\caption{Enter email and name}
+\end{figure}
+
+\NP If you recieve an error as shown in the figure above, simply replicate the string 'git config...' and enter your email in quotations on one line. On the following line relicate the git config string again and enter your first name in quotation marks. 
 
 \subsection{`Push` fails}
 
@@ -390,12 +411,16 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 
 tst
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8157623bc065c4cb3cde2cd587435997e1280f21
 \subsection{Workflow tracking}
 
 \NP Collaborators can create ways that each one is responsible for certain activities..
 
 \NP Branching...
-
+ 
 
 \section{References}
 
