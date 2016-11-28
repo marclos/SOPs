@@ -55,7 +55,7 @@
 \NP To ensure that the rpm or RCF is correctly set follow the following instructions:
 
 \begin{itemize}
-  \item 1. Press teh TOGGLE key below the SPEED display to cycle through the rpm/RCF selection.
+  \item 1. Press the TOGGLE key below the SPEED display to cycle through the rpm/RCF selection.
   \item 2. The LED light wil indicate if "RPM" or "RCF" is selected. RPM/RCF can be viewed during a run by pressing the toggle button. 
   \item 3. Enter the desied value by holding the arrow keys below SPEED in the corresponding direction, until the desired value shows. First RPM/ RCF will change in steps of 10. Holding a key pressed will change the runtime then in steps of 100 and then in steps of 1000. 
   \item 4. Press the START key to accept or wait 4 seconds until the centrifuge automatically saves the chosen values. Moving to setting time or temperature also automatically stores the set value. 
@@ -71,12 +71,81 @@
 
 \section{Continuous Operation}
 
-\NP
+\NP Press either arrow keys until HOLD is displayed.
+\NP Then press the START key to accept or wait 4 seconds until the centrifuge automatically saves the chosen values. During continuous operation, the centrifuge will continue running until you stop it manually. 
+
+\section{Preselecting the Temperature}
+
+\NP You can preselect temperatures between -10 centigrade and +40 centigrade. To set the temperature, proceed as follows:
+
+\NP Press the TEMPERATURE arrow keys. This allows to change the set temperature using the arrow keys 
+
+\section{Prewarming or Precooling the Centrifuge}
+
+\NP Ensure the rotor, buckets and acessories are correctly in place and securely attached in the chamber. For setting the pretemp value for the centrifuge proceed as follows: 
+
+\begin{itemize}
+  \item 1. Press the SNOWFLAKE key in order to open the temperature section menu. The display shows the message "Pre-Temp".
+  \item 2. Enter the desired value by pressing the TEMP arrow keys, until the desired value shows.
+  \item 3. Press the START key.
+  \item 4. The centrifuge motor will start and a specific speed defined by the rotor. This improves air circulation within the chamber, resulting in improved temperature control throughout the chamber and rotor. The rotor chamber is cooled down or heated up the preset temperature. 
+  \item 5. When the set temperature is reached, the centrifuge will beep and continue to hold the temperature.  
+  \item 6. Press the STOP key to end the prewarming or precooling. The display shows the current temperature inside the rotor chamber. 
+\end{itemize}
+
+\section{Programs}
+
+\NP The Thermo Scientfic Sorvall ST 8 Centrifuge is able to save up to 4 programs; the Thermo Scientific Sorvall ST 8R is able to save up to 99 programs. It is only possible to save a program if the centrifuge is in standstill. Loading or saving of programs is not possible if the centrifuge is spining. 
+
+\subsection*{Saving a Problem}
+
+\NP Modify the speed, time, and temperature to the desired settings. 
+
+\NP FOR DIRECT ACESS PROGRAMS 1, 2, 3: Press and hold the desired program key 1, 2 or 3 for four seconds. 
+
+\NP FOR PROGRAMS 4-99
+
+\begin{itemize}
+  \item 1. Press the folder key for 4 seconds. Use the SPEED arrow keys to scroll through until the desired number is selected.
+  \item 2. Press the START key to confirm.
+  \item 3. The program can now be named using up to 12 alphanumeric characters. Use the SPEED arrow keys to scroll through the characters. Use the TIME arrow keys to move left or right.
+  \item 4. Press the START key to confim and save the program. 
+  \item 5. To abort at any point press the STOP key.
+\end{itemize}
+
+\subsection*{Selecting a Program}
+
+\NP FOR DIRECT ACESS PROGRAMS 1,2,3: Press one of the direct acess program keys 1, 2, 3.
+
+\NP FOR PROGRAMS 4-99: Press the folder key. Use the SPEED arrow keys to scroll through until the deisred program is selected. 
+
+\section{Centrifugation}
+
+\subsection*{Maximum Loading}
+
+\NP Rotors can run at high speeds. Each rotor is specifcially designed to run at its maximum speed with a defined load. For further details refer to the rotor manual supplied with the rotor. 
+
+\NP The rotors are designed to work with substance mixtures with a density of up to 1.2 g/ml. Above this density or if total load is above the maximum weight the following steps should be taken:
+
+\begin{itemize}
+  \item Reduce the fill level.
+  \item Reduce the speed. 
+\end{itemize}
+
+\subsection*{Use of Tubes and Consumables}
+
+\NP Care should be taken to ensure that the tubes and bottles used in the centrifuge are: 
+
+\begin{itemize}
+  \item Rated to or above the selected rcf to be spun at
+  \item They are being used at or above there minimum fill volume
+  \item They are not being used above their design life, or number of runs
+  \item They are inspected for damage 
+\end{itemize}
+
 \section{Interferences}
 
 \section{Health and Safety}
-
-\NP \lipsum[2]
 
 \subsection{Safety and Personnnel Protective Equipment}
 
