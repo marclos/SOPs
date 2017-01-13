@@ -36,7 +36,11 @@ shiny app
 
 (https://marclos.shinyapps.io/ParticleSizeAnalysis/)
 
-## Copy the File into correct
+## Correct Data format
+
+For reasons that I can't remember, the reading file has everything in quotes, ie text, while the sample data does not. So, I think we need to search and replace blanks into NAs.
+
+## Copy the File into correct directory
 
 ## Read reading.csv Data into R
 
@@ -104,7 +108,6 @@ SampleParams <- sample %>% select(sampleKEY, WS_e, passNo10Percent, hygroPercent
 
 ## Preprocess Reading File
 
-
 ### Remove badKEYs from reading
 ```{r preprocess_reading}
 joined <- inner_join(reading.import, SampleParams, by="sampleKEY")
@@ -131,6 +134,10 @@ First, I created two files that have only a few columns each so we can test the 
 ```
 
 ## Loop sampleKEY to Impute Missing Temp and Blanks
+
+## sampleKEY with NO blank readings
+
+I am getting an error because some sampleKEY don't see to have blank readings. 
 
 ## Using Non-Missing to Impute Missing Temp and RBlank
 
