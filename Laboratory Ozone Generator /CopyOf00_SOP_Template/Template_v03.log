@@ -1,8 +1,8 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  30 DEC 2016 09:57
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  19 AUG 2016 22:46
 entering extended mode
  %&-line parsing enabled.
-**Sorvall_ST8R.tex
-(./Sorvall_ST8R.tex
+**Template_v03.tex
+(./Template_v03.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
@@ -363,31 +363,31 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
 (/usr/share/texmf/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))) (./Sorvall_ST8R.aux)
-\openout1 = `Sorvall_ST8R.aux'.
+)))) (./Template_v03.aux)
+\openout1 = `Template_v03.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-Package hyperref Info: Link coloring OFF on input line 18.
+LaTeX Font Info:    ... okay on input line 21.
+Package hyperref Info: Link coloring OFF on input line 21.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
@@ -397,24 +397,24 @@ Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
 \c@section@level=\count115
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
- (./Sorvall_ST8R.out)
-(./Sorvall_ST8R.out)
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+ (./Template_v03.out)
+(./Template_v03.out)
 \@outlinefile=\write4
-\openout4 = `Sorvall_ST8R.out'.
+\openout4 = `Template_v03.out'.
 
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/aer/m/n --> TS1/aer/bx/n on input line 18.
-Package gensymb Info: Math companion symbols declared on input line 18.
-LaTeX Info: Redefining \degree on input line 18.
-LaTeX Info: Redefining \celsius on input line 18.
+(Font)                  TS1/aer/m/n --> TS1/aer/bx/n on input line 21.
+Package gensymb Info: Math companion symbols declared on input line 21.
+LaTeX Info: Redefining \degree on input line 21.
+LaTeX Info: Redefining \celsius on input line 21.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 18.
-LaTeX Info: Redefining \ohm on input line 18.
-Package gensymb Info: Using \textohm for \ohm on input line 18.
-Package gensymb Info: Using \textmu for \micro on input line 18.
+erthousand on input line 21.
+LaTeX Info: Redefining \ohm on input line 21.
+Package gensymb Info: Using \textohm for \ohm on input line 21.
+Package gensymb Info: Using \textmu for \micro on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -450,72 +450,67 @@ Package gensymb Info: Using \textmu for \micro on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./Sorvall_ST8R-concordance.tex)
-LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+(./Template_v03-concordance.tex)
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
  (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 24.
 
 (/usr/share/R/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <12> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 21.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <8> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 21.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <6> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 21.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 24.
 
-<../pomona.jpg, id=91, 460.557pt x 492.75pt>
+<../pomona.jpg, id=76, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
-Overfull \vbox (21.72939pt too high) detected at line 21
+Overfull \vbox (21.72939pt too high) detected at line 24
  []
 
 
-Overfull \hbox (2.12527pt too wide) in paragraph at lines 21--22
+Overfull \hbox (2.12527pt too wide) in paragraph at lines 24--25
 [][] 
  []
 
-[1
+(./Template_v03.toc [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>]
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>])
+\tf@toc=\write5
+\openout5 = `Template_v03.toc'.
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.29997pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] [4]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 154.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 172.
-
-[5] [6] AED: lastpage setting LastPage (./Sorvall_ST8R.aux) ) 
+[2] [3] [4] AED: lastpage setting LastPage (./Template_v03.aux) ) 
 Here is how much of TeX's memory you used:
- 6194 strings out of 256214
- 82871 string characters out of 1917000
- 241694 words of memory out of 1500000
- 9290 multiletter control sequences out of 10000+200000
+ 6173 strings out of 256214
+ 82648 string characters out of 1917000
+ 240625 words of memory out of 1500000
+ 9287 multiletter control sequences out of 10000+200000
  15368 words of font info for 45 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,18n,45p,461b,503s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/
-fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr1
-2.pfb>
-Output written on Sorvall_ST8R.pdf (6 pages, 142598 bytes).
+ 35i,18n,49p,228b,490s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/te
+xmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
+cmr12.pfb>
+Output written on Template_v03.pdf (4 pages, 130589 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 131072)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 131072)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
