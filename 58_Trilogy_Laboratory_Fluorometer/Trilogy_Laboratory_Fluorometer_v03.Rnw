@@ -98,6 +98,39 @@
   \item 3. Connect the Trilogy to a printer or a PC to collect the data. Touching the screen repeatedly causes an early-abort of Continuous Sampling measurments. 
 \end{itemize}
 
+\section{Turbidity Operation}
+\subsection{Measuring Samples}
+\NP There are two measurment modes available on the Trilogy when using the Turbidity Module:
+\begin{itemize}
+  \item 1. Raw Mode: No calibration required
+  \item 2. Direct Concentration Mode: Calibration required
+\end{itemize}
+
+\NP Touch "Mode" on the House Screen to select the measurement mode.
+\begin{itemize}
+  \item 1.Raw Mode: The Raw Mode should be used for qualitative measurement, for example where measuring changes is required, rather than absolute concentration values. Readings are displayed in Nephelometric Turbidity Units (NTU).
+  \item 2. Direct Concentration Mode: The Direct Concentration mode makes absolute measurements based on a calibration.
+\end{itemize}
+
+\NP Use Polystyrene curvettes for measuring turbidity.
+\begin{itemize}
+  \item 1. Open the lid of the Trilogy and insert the curvette. Close the lid.
+  \item 2. Touch "Sample ID" to name your sample (optional).
+  \item 3. Using the keypad, enter the sample name into the name field. Touch "Save" to save the sample ID.
+  \item 4. Touch "Measure Turbidity" to commence measurement. The Trilogy will measure the sample for 6 seconds and report the average reading for the sample. 
+\end{itemize}
+
+\NP The Trilogy reports data on the "Home" screen and displays the results for the most recent 20 measurements. Use the arrow keys to scroll through the most recent measurements. The data automatically exports to a printer or PC when properly connected. Please note the Trilogy does NOT store more than 20 measurements at one time. If more than 20 readings are taken, the oldest reading will be overwritten. Measurements are not stored between power cycles.
+
+\subsection{Continuous Sampling}
+\NP The Continuous Sampling feature enables repeat measurements at user-defined intervals.
+\begin{itemize}
+  \item 1. Touch "Continuous Sampling" and turn the feature ON. Highlight the frequency of measurement and the numnber of total measurements. The maximum number of total measurements is 9999.
+  \item 2. Touch "OK" to return to the "Home" screen.
+  \item 3. Connect the Trilogy to a printer or a PC to collect the data. Touching the screen repeatedly causes an early-abort of Continuous Sampling measurments. 
+\end{itemize}
+
+\section{Calibration Overview}
 
 
 \section{Health and Safety}
