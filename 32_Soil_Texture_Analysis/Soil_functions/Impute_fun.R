@@ -61,13 +61,11 @@ impute <- function(imputeneed){
   joined <- imputeneed[!is.na(imputeneed$Et),]
   KEY <- unique(joined$sampleKEY); KEY
   
-  #KEY <- KEY[-c(1, 2, 3)]; KEY
+  KEY <- KEY[11:93]; KEY
   joined$temp2 = NA
   joined$blank2 = NA
   
-  #for(i in 1:length(KEY)){
   for(i in 1:length(KEY)){
-    # for tesing purposes... no 22
     #i = 77
     tmp = joined[joined$sampleKEY==KEY[i],]; tmp
     

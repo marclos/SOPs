@@ -160,8 +160,6 @@ Not sure what we are doing here... Isaac, can you comment?
 
 Corrected Rc is based on the formula...
 
-
-
 ```{r CorrectedReading}
 joined$Rc <- joined$actual - (joined$blank2 - 1)
 ```

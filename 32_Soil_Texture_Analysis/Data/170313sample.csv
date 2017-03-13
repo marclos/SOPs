@@ -1,17 +1,16 @@
 sampleKEY, project, sampleID, sampleDate, researcher, computed, checked, hydrometer, pretreat, beaker, disperse, gsp, desired, totalSoil, pass10, tinNum, tinTare, tinAir, tinOven, passPercent, hygroPercent, effectiveSoil, actualSoil, tinNum200, tinMass200, tinDry200
-19,USDA,TOSA 4-7F,5/27/2016,Bailey Lai,,,151H #258890,,,,,,,127.65,24,30.67,45.67,44.43,99.8,,,,,,
-20,USDA,JACS 15-30,5/27/2016,Bailey Lai,,,151H #258878,,,,,,,133.69,26,30.71,45.71,43.95,98.5,,,,,,
-21,USDA,TOSA 15-30,5/27/2016,Bailey Lai,,,151H #258890,,,,,100,,,21,30.72,45.72,44.62,100,0.98,107.91,,,,
-22,USDA,TOMR 0-15,5/27/2016,Bailey Lai,,,151H #258878,,,,,,,137.1,32,,45.66,44.96,99.5,,,,,,
-23,USDA,TOSA 0-15,5/27/2016,Bailey Lai,,,151H #258890,,,,,,,140.4,25,30.57,45.57,44.9,99.9,,,,,,
-24,USDA,TOMR 15-30,5/31/2016,Bailey Lai,,,151H #258890,,,,,,,130.07,33,30.59,45.59,45.02,99.5,,,,,,
-25,USDA,JACS 0-15,5/27/2016,Dmaia Curry,,,151H,,,,,,,132.49,31,30.69,45.01,44.4,,0.99,,,,,
-26,USDA,FOGL 15-30,5/27/2016,Dmaia Curry,,,151H,,,,,,,140.97,20,30.64,45.64,44.81,,0.98,,,,,
-27,USDA,FOGL 0-15,5/27/2016,Dmaia Curry,,,151H,,,,,,,,22,30.62,45.03,44.37,,0.99,,,,,
-28,USDA,ARDI 0-15,5/31/2016,Dmaia Curry,,,151H,,,Sodium hexametaphosphate,,,,115.05,34,30.64,45,44.19,,0.98,,,,,
-29,USDA,TOMR 4-7F,5/27/2016,Dmaia Curry,,,151H,,,Sodium hexametaphosphate 40g/L,,,,137.15,27,30.73,45.06,43.41,,0.97,,,,,
-30,USDA,ARDI 15-30,5/27/2016,Dmaia Curry,,,151H #2619 (?),,,Sodium hexametaphosphate,,100,,129.05,35,30.7,45.1,44.31,,0.98,105.8,,,,
-37,USDA,TEST,29-Jul-16,Test,,,,,,,,50,225.69,195.47,1,45.53,61.43,60.59,,0.99,52.79,,,,
+19,USDA,TOSA 4-7F,5/27/2016,Bailey Lai,,Isaac,151H #258890,none,24,HMP,2.65,50,127.94,127.65,24,30.67,45.67,44.43,99.8,0.97,54.51,50,24,30.67,45.67
+20,USDA,JACS 15-30,5/27/2016,Bailey Lai,,Isaac ,151H #258878,,,HMP,2.65,50,135.77,133.69,26,30.71,45.71,43.95,98.5,0.96,56.65,50,,,
+21,USDA,TOSA 15-30,5/27/2016,Bailey Lai,,Isaac ,151H #258890,,,HMP,2.65,50,129.97,129.97,21,30.72,45.72,44.62,100,0.98,53.96,50,,,
+22,USDA,TOMR 0-15,5/27/2016,Bailey Lai,,Isaac,151H #258878,,32,HMP,,50,137.77,137.1,32,30.66,45.66,44.96,99.5,0.98,52.45,50,,,
+23,USDA,TOSA 0-15,5/27/2016,Bailey Lai,,Isaac,151H #258890,none,25,HMP,2.65,50,140.48,140.4,25,30.57,45.57,44.9,99.9,0.99,52.34,50,,,
+24,USDA,TOMR 15-30,5/31/2016,Bailey Lai,,Isaac,151H #258890,none,,HMP,2.65,50,150,149.37,33,30.59,45.59,45.02,99.5,0.99,51.98,50,,,
+25,USDA,JACS 0-15,5/27/2016,Dmaia Curry,,Isaac,151H,none,,HMP,2.65,50,136.81,132.49,31,30.69,45.01,44.4,96.8,0.99,52.22,50,,,
+26,USDA,FOGL 15-30,5/27/2016,Dmaia Curry,,,151H,,,,,100,,140.97,20,30.64,45.64,44.81,,0.98,105.86,50,,,
+27,USDA,FOGL 0-15,5/27/2016,Dmaia Curry,,Isaac,151H,none,,HMP,2.65,50,141.29,141.13,22,30.62,45.03,44.37,99.9,0.99,52.4,50,,,
+28,USDA,ARDI 0-15,5/31/2016,Dmaia Curry,,,151H,none,,HMP,2.65,50,115.18,115.05,34,30.64,45,44.19,99.88,0.98,52.99,50,,,
+29,USDA,TOMR 4-7F,5/27/2016,Dmaia Curry,,Isaac,151H,none,,HMP,,50,138.27,137.15,27,30.73,45.06,43.41,99.2,0.96,56.51,50,,,
+30,USDA,ARDI 15-30,5/27/2016,Dmaia Curry,,Isaac,151H #2619 (?),,,Sodium hexametaphosphate,,100,,129.05,35,30.7,45.1,44.31,,0.98,105.8,,,,
 38,USDA,JACS 0-15 1F,7/26/2016,Alejandro,,,151H 258894,none,24,Sodium Hexametaphosphate,,50,147.02,113.62,4,45.43,56,54.22,,0.97,60.13,60.13,24,45.44,70.81
 39,USDA,JUDY 4-7F,7/26/2016,Alejandro,,,151H 258894,none,21,Sodium Hexametaphosphate,,50,153.04,149.89,36,45.49,58.78,58.29,,0.99,51.91,51.91,1,45.33,72.41
 40,USDA,DEAN2 0-15 1F,7/26/2016,Alejandro,,,151H 269195,none,13,Sodium Hexametaphosphate,,50,150.16,149.3,33,45.23,55.37,55.27,,1,50.5,50.52,9,45.25,82.83
@@ -21,7 +20,7 @@ sampleKEY, project, sampleID, sampleDate, researcher, computed, checked, hydrome
 44,USDA,JACS 4-7F,7/25/2016,Bailey,,,151H 574230,,48,Sodium Hexametaphosphate,,50,161.87,149.42,28,45.57,58.06,56.5,,0.97,57.14,57.16,33,45.23,68.44
 45,USDA,DEAN2 4-7F,7/25/2016,Bailey,,,151H 574538,none,7,Sodium Hexametaphosphate,,50,143.24,142.32,24,45.39,56.7,56.19,,0.99,52.36,52.38,42,45.39,89.2
 46,USDA,HIGH 0-15 1F,7/25/2016,Alejandro,,,151H 258894,none,10,Sodium Hexametaphosphate,,50,151.5,150.47,5,45.44,66.06,64.61,,0.98,53.78,53.78,21,45.48,73.96
-47,USDA,JACS 15-30 1F,7/25/2016,Alejandro,,,151H 258894,none,23,Sodium Hexametaphosphate,,50,137.68,96.5,7,45.35,58.83,56.08,,0.95,62.81,62.82,34,45.3,74.07
+47,USDA,JACS 15-30 1F,7/25/2016,Alejandro,,Isaac,151H 258894,none,23,Sodium Hexametaphosphate,2.65,50,137.68,96.5,7,45.35,58.83,56.08,98.5,0.95,62.81,62.82,34,45.3,74.07
 48,USDA,DEAN2 15-30 1F,7/25/2016,Alejandro,,,151H 269195,none,4,Sodium Hexametaphosphate,,50,145.36,144.46,22,45.46,57.98,57.51,,0.99,51.95,51.93,39,45.37,89.4
 49,USDA,SWAN 0-15 1F,7/25/2016,Alejandro,,,151H 258887,,20,Sodium Hexametaphosphate,,50,134.35,126.61,19,45.59,56.26,55.46,,0.99,54.05,54.06,16,45.31,74.1
 50,USDA,WATR 4-7F,7/22/2016,Bailey,,,151H 574538,none,22,Sodium Hexametaphosphate,,50,143.26,142.37,6,45.56,55.73,55.39,,0.99,51.73,51.76,5,45.46,80.02
@@ -59,7 +58,6 @@ sampleKEY, project, sampleID, sampleDate, researcher, computed, checked, hydrome
 82,USDA,ARD13 4-7,7/1/2016,Alejandro,,,151H 258894,none,24,Sodium Hexametaphosphate,,50,199.98,197.25,14,30.7,42.17,42.05,,1,50.53,42.05,25,45.22,36.12
 83,USDA,USDA 15-30,6/30/2016,Aparna,,,151H 574210,none,20,Sodium Hexametaphosphate,,50,158.85,127.11,4,45.66,56.32,55.57,,0.99,53.78,53.8,7,45.41,81.78
 84,USDA,USDA 4-7,6/30/2016,Aparna,,,151H 574230,none,18,Sodium Hexametaphosphate,,50,160.45,140.77,1,45.4,57.8,57.66,,1,50.57,50.59,26,45.34,78.72
-85,USDA,MOND 0-15,6/30/2016,Alejandro,,,151H 274230,none,19,Sodium Hexametaphosphate,,50,161.82,145.03,7,45.43,57.29,57,,0.99,51.25,51.27,19,45.74,80.69
 86,USDA,MOND 0-15,6/30/2016,Alejandro,,,151H 274230,none,19,Sodium Hexametaphosphate,,50,161.82,145.03,7,45.43,57.29,57,,0.99,51.25,51.27,19,45.74,80.69
 87,USDA,RASM 4-7,7/1/2016,Alejandro,,,151H 574210,none,23,Sodium Hexametaphosphate,,50,209.8,197.44,7,45.39,56.05,55.9,,1,50.71,50.77,1,42.36,79.2
 88,USDA,RACO2 15-30,6/28/2016,Kay,,,151H 258890,none,24,Sodium Hexametaphosphate,,50,212.95,209.64,22,45.47,58.18,58.06,,1,50.48,50.49,4,46.94,87.05
@@ -82,7 +80,7 @@ sampleKEY, project, sampleID, sampleDate, researcher, computed, checked, hydrome
 105,USDA,LULE 4-7,6/22/2016,Alejandro,,,151H 258878,,8,Sodium Hexametaphosphate,,50,147.36,145.72,27,45.49,60.38,59.63,,0.99,52.65,55.49,34,45.33,88.36
 106,USDA,LULE 15-30,6/22/2016,Alejandro,,,151H 258894,none,9,Sodium Hexametaphosphate,,50,150.69,145.84,26,45.37,57.7,56.94,,0.99,53.28,55.68,32,45.63,87.19
 107,USDA,LEID 0-15,6/20/2016,Alejandro,,,151H 269195,none,1,Sodium Hexametaphosphate,,50,91.3,86.85,27,45.44,57.43,56.73,,0.99,53.1,55.02,,,
-108,USDA,ARDI 4-7,5/31/2016,Alejandro,,,151H 258887,none,2,Sodium Hexametaphosphate,,50,125,121.95,36,30.83,44.24,43.02,,0.97,55,,,,
+108,USDA,ARDI 4-7,5/31/2016,Alejandro,,Isaac,151H 258887,none,2,Sodium Hexametaphosphate,2.65,50,125,121.95,36,30.83,44.24,43.02,97.6,0.97,55,50,,,
 109,USDA,NELS 0-15,7/29/2016,Alejandro,,,151H 269195,none,10,Sodium Hexametaphosphate,,50,118.01,115.72,35,45.38,54.83,54.12,,0.99,54.06,54.12,8,45.33,74.3
 110,USDA,NELS 15-30,7/29/2016,Alejandro,,,151H 258894,none,48,Sodium Hexametaphosphate,,50,132.01,127.69,30,45.09,56.32,55.92,,0.99,51.85,51.86,25,45.11,73.51
 111,USDA,NELS 4-7,7/29/2016,Alejandro,,,151H 269195,none,3,Sodium Hexametaphosphate,,50,115.57,113.65,25,45.11,63.77,62.91,,0.99,52.42,52.42,32,45.29,75.35
