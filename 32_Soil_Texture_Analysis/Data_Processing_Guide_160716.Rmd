@@ -55,13 +55,29 @@ file.choose()
 Then we can import the data, using this file!
 
 ```{r readcsv}
+<<<<<<< HEAD
 sample.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313sample.csv"
 reading.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313reading.csv"
+=======
+sample.source = "/home/CAMPUS/im022012/SOPs/32_Soil_Texture_Analysis/Data/170207sample.csv"
+reading.source = "/home/CAMPUS/im022012/SOPs/32_Soil_Texture_Analysis/Data/170207reading.csv"
+>>>>>>> 10315cd4220e003b42bdac4215168516e40516d8
 
 sample.import <- read.csv(sample.source)
 reading.import <- read.csv(reading.source)
+
+#Deleting observations with missing blank observations
+reading.import$missing_blank<- is.na(reading.import$blank)
+reading.import<- subset(reading.import, subset = (missing_blank=="FALSE"))
+
 # Clean up Environment
 rm(reading.source, sample.source)
+
+```
+
+##Isaac's Test Data
+```{r}
+
 
 ```
 
@@ -76,7 +92,11 @@ The function RemoveMissingKEYs looks at the two files and removes samples that h
 We often get errors here, which seem to be associated with an database import problem, where sample.csv has an extra column that screws the read.csv function up. After manually deleted the empty column, everything seems to work.
 
 ```{r, echo=F}
-sample <- RemoveMissingKEYs(sample.import, reading.import)
+
+#Function Below bugging out so I merged on my own instead 
+#sample <- RemoveMissingKEYs(sample.import, reading.import)
+
+ sample<- merge(sample.import, reading.import, by.x= "sampleKEY")
 ```
 
 
