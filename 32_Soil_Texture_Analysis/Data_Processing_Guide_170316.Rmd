@@ -73,7 +73,7 @@ rm(reading.source, sample.source)
 
 The function RemoveMissingKEYs looks at the two files and removes samples that have missing key measurments that will make the program crash. First, we evaluated sample.import and filter samples that actual.Soil and total.Soil entries. If missing, we create a list of missing "SampleKEYs". Second, we remove records that are missing time.unit records in the reading.import file. 
 
-We often get errors here, which seem to be associated with an database import problem, where sample.csv has an extra column that screws the read.csv function up. After manually deleted the empty column, everything seems to work.
+We often get errors here, which seem to be associated with an database import problem, where sample.csv has an extra column that screws the read.csv function up. After manually deleted the empty column, everything seems to work at this stage.
 
 ```{r, echo=F}
 sample <- RemoveMissingKEYs(sample.import, reading.import)
@@ -197,6 +197,16 @@ head(joined)
 rm(x, y, L2coef, L1, L2, Vb, A, b, m, x1)
 
 ```
+
+## Remove Obs with missing EffectiveDepth
+
+```{r}
+MissingEffectiveDepthKEYs <- filter(joined, is.na(EffectiveDepth) == T ) %>% select(sampleKEY); MissingEffectiveDepthKEYs
+#  BadreadingKEYs <- filter(readingin, is.na(timeUnit)==T) %>% select(sampleKEY) 
+  
+ # badKEYs <- full_join(BadsampleKEYs, BadreadingKEYs); badKEYs
+  joined <- joined %>% anti_join(MissingEffectiveDepthKEYs, by="sampleKEY");
+```
 ## Calculate D
 According to ASTM D422-63 the equation to calculate D (diameter in mm) can be  simplified as D = K*sqrt(L/T) where: L=effective depth (Leff), T = measurment time in min and K is the constant given in the tables that varies with temperature (already calculated).
 
@@ -235,13 +245,15 @@ for(i in 1:length(KEY)){
 ```{r interpolation}
 
 KEYs <- unique(joined$sampleKEY); KEYs
-KEY <- KEY[11:93]; KEY
+
+# Remove KEYs with missing De and PF
+
+#KEY <- KEY[11:93]; KEY
   
 textureclasses <- matrix(ncol=4, nrow=length(KEYs))
 clay <- 0.002; silt <- 0.05; sand <- 2.0
 
 for(i in 1:length(KEYs)){
-  i=1
 tmp3 = joined[joined$sampleKEY==KEYs[i],]; head(tmp3)
 tmp3 = select(joined, sampleKEY, De, PF) %>% filter(joined$sampleKEY==KEYs[i]); tmp3 
 
