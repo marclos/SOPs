@@ -255,10 +255,10 @@ clay <- 0.002; silt <- 0.05; sand <- 2.0
 
 for(i in 1:length(KEYs)){
 tmp3 = joined[joined$sampleKEY==KEYs[i],]; head(tmp3)
-tmp3 = select(joined, sampleKEY, De, PF) %>% filter(joined$sampleKEY==KEYs[i]); tmp3 
+tmp4 = select(joined, sampleKEY, De, PF) %>% filter(joined$sampleKEY==KEYs[i]); tmp4 
 
-Perclay = round(Interpolation(tmp3, clay),1)
-Persilt = round(Interpolation(tmp3, silt), 1)
+Perclay = round(Interpolation(tmp4, clay),1)
+Persilt = round(Interpolation(tmp4, silt), 1)
 Persand = round(100-(Persilt + Perclay), 1)
 textureclasses[i,] <- c(KEYs[i], Persand, Persilt, Perclay)
 }
@@ -273,7 +273,10 @@ results <- sample %>% select(sampleKEY, sampleID, sampleDate, researcher) %>% le
 
 write.csv(results, file = paste("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/results_",Sys.Date(),".csv", sep=""))
 
-#rm(sand,silt, clay, results, x1, y, L2coef, x)
+rm(tmp3, tmp4, sample, sample.import, joined, joined2)
+rm(sand,silt, clay, results, MissingEffectiveDepthKEYs)
+rm(reading.import, textureclasses)
+rm(SampleParams)
 
 ```
 

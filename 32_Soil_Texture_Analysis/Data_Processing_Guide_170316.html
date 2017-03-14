@@ -484,10 +484,10 @@ clay &lt;- 0.002; silt &lt;- 0.05; sand &lt;- 2.0
 
 for(i in 1:length(KEYs)){
 tmp3 = joined[joined$sampleKEY==KEYs[i],]; head(tmp3)
-tmp3 = select(joined, sampleKEY, De, PF) %&gt;% filter(joined$sampleKEY==KEYs[i]); tmp3 
+tmp4 = select(joined, sampleKEY, De, PF) %&gt;% filter(joined$sampleKEY==KEYs[i]); tmp4 
 
-Perclay = round(Interpolation(tmp3, clay),1)
-Persilt = round(Interpolation(tmp3, silt), 1)
+Perclay = round(Interpolation(tmp4, clay),1)
+Persilt = round(Interpolation(tmp4, silt), 1)
 Persand = round(100-(Persilt + Perclay), 1)
 textureclasses[i,] &lt;- c(KEYs[i], Persand, Persilt, Perclay)
 }
@@ -506,7 +506,35 @@ class(textureclasses)</code></pre>
 
 write.csv(results, file = paste(&quot;/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/results_&quot;,Sys.Date(),&quot;.csv&quot;, sep=&quot;&quot;))
 
-#rm(sand,silt, clay, results, x1, y, L2coef, x)</code></pre>
+rm(tmp, tmp3, tmp4, sample, sample.import, De_min2, joined, joined2)</code></pre>
+<pre><code>## Warning in rm(tmp, tmp3, tmp4, sample, sample.import, De_min2, joined,
+## joined2): object 'tmp' not found</code></pre>
+<pre><code>## Warning in rm(tmp, tmp3, tmp4, sample, sample.import, De_min2, joined,
+## joined2): object 'De_min2' not found</code></pre>
+<pre class="r"><code>rm(sand,silt, clay, results, x1, y, L2coef, x, MissingEffectiveDepthKEYs)</code></pre>
+<pre><code>## Warning in rm(sand, silt, clay, results, x1, y, L2coef, x,
+## MissingEffectiveDepthKEYs): object 'x1' not found</code></pre>
+<pre><code>## Warning in rm(sand, silt, clay, results, x1, y, L2coef, x,
+## MissingEffectiveDepthKEYs): object 'y' not found</code></pre>
+<pre><code>## Warning in rm(sand, silt, clay, results, x1, y, L2coef, x,
+## MissingEffectiveDepthKEYs): object 'L2coef' not found</code></pre>
+<pre><code>## Warning in rm(sand, silt, clay, results, x1, y, L2coef, x,
+## MissingEffectiveDepthKEYs): object 'x' not found</code></pre>
+<pre class="r"><code>rm(BadreadingKEYs, BadsampleKEYs, De_max1, De_max2, De_min1, reading.source, reading.import, textureclasses, imputeneed, SampleParams)</code></pre>
+<pre><code>## Warning in rm(BadreadingKEYs, BadsampleKEYs, De_max1, De_max2, De_min1, :
+## object 'BadreadingKEYs' not found</code></pre>
+<pre><code>## Warning in rm(BadreadingKEYs, BadsampleKEYs, De_max1, De_max2, De_min1, :
+## object 'BadsampleKEYs' not found</code></pre>
+<pre><code>## Warning in rm(BadreadingKEYs, BadsampleKEYs, De_max1, De_max2, De_min1, :
+## object 'De_max1' not found</code></pre>
+<pre><code>## Warning in rm(BadreadingKEYs, BadsampleKEYs, De_max1, De_max2, De_min1, :
+## object 'De_max2' not found</code></pre>
+<pre><code>## Warning in rm(BadreadingKEYs, BadsampleKEYs, De_max1, De_max2, De_min1, :
+## object 'De_min1' not found</code></pre>
+<pre><code>## Warning in rm(BadreadingKEYs, BadsampleKEYs, De_max1, De_max2, De_min1, :
+## object 'reading.source' not found</code></pre>
+<pre><code>## Warning in rm(BadreadingKEYs, BadsampleKEYs, De_max1, De_max2, De_min1, :
+## object 'imputeneed' not found</code></pre>
 </div>
 </div>
 
