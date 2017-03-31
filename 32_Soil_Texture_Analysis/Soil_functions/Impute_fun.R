@@ -2,11 +2,15 @@
 # Function to impute Reading Blanks
 imputeR <- function(sampleID){
   library(dplyr)
+  # select variables of interest
   tmp2 <- sampleID %>% select(Et, blank, temp)
   
+  # select readings with missing blanks
   missingR = tmp2[is.na(tmp2$blank),]; missingR
+  # select readings with nonmissing blanks
   nonmissingR = tmp2[!is.na(tmp2$blank),]; nonmissingR
   
+  # create a matrix
   missing.mat <- matrix(missingR$Et, nrow=length(missingR$Et), ncol=length(nonmissingR$Et), byrow=F); missing.mat
   nonmissing.mat <- matrix(nonmissingR$Et, nrow=length(missingR$Et), ncol=length(nonmissingR$Et), byrow=T); nonmissing.mat
   
@@ -25,6 +29,7 @@ imputeR <- function(sampleID){
   return(as.vector(nonmissingR[result[,2],2]))
 }
 
+# Impute function for Reading Temperatures
 imputeT <- function(sampleID){
   library(dplyr)
   tmp2 <- sampleID %>% select(Et, blank, temp)
@@ -51,18 +56,16 @@ imputeT <- function(sampleID){
 }
 
 
-
+# No idea...for Elapsed Time?
 impute <- function(imputeneed){
   joined <- imputeneed[!is.na(imputeneed$Et),]
   KEY <- unique(joined$sampleKEY); KEY
   
-  #KEY <- KEY[-c(1, 2, 3)]; KEY
+  KEY <- KEY[11:93]; KEY
   joined$temp2 = NA
   joined$blank2 = NA
   
-  #for(i in 1:length(KEY)){
   for(i in 1:length(KEY)){
-    # for tesing purposes... no 22
     #i = 77
     tmp = joined[joined$sampleKEY==KEY[i],]; tmp
     

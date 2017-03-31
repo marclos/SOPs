@@ -36,7 +36,11 @@ shiny app
 
 (https://marclos.shinyapps.io/ParticleSizeAnalysis/)
 
-## Copy the File into correct
+## Correct Data format
+
+For reasons that I can't remember, the reading file has everything in quotes, ie text, while the sample data does not. So, I think we need to search and replace blanks into NAs.
+
+## Copy the File into correct directory
 
 ## Read reading.csv Data into R
 
@@ -51,13 +55,29 @@ file.choose()
 Then we can import the data, using this file!
 
 ```{r readcsv}
-sample.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/sample.csv"
-reading.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/reading.csv"
+<<<<<<< HEAD
+sample.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313sample.csv"
+reading.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313reading.csv"
+=======
+sample.source = "/home/CAMPUS/im022012/SOPs/32_Soil_Texture_Analysis/Data/170207sample.csv"
+reading.source = "/home/CAMPUS/im022012/SOPs/32_Soil_Texture_Analysis/Data/170207reading.csv"
+>>>>>>> 10315cd4220e003b42bdac4215168516e40516d8
 
 sample.import <- read.csv(sample.source)
 reading.import <- read.csv(reading.source)
+
+#Deleting observations with missing blank observations
+reading.import$missing_blank<- is.na(reading.import$blank)
+reading.import<- subset(reading.import, subset = (missing_blank=="FALSE"))
+
 # Clean up Environment
 rm(reading.source, sample.source)
+
+```
+
+##Isaac's Test Data
+```{r}
+
 
 ```
 
@@ -67,11 +87,18 @@ rm(reading.source, sample.source)
 
 ### Removing Missing Data
 
-The function RemoveMissingKEYs look at the two files and removes samples that have missing key measurments that will make the program crash.
+The function RemoveMissingKEYs looks at the two files and removes samples that have missing key measurments that will make the program crash. First, we evaluated sample.import and filter samples that actual.Soil and total.Soil entries. If missing, we create a list of missing "SampleKEYs". Second, we remove records that are missing time.unit records in the reading.import file. 
+
+We often get errors here, which seem to be associated with an database import problem, where sample.csv has an extra column that screws the read.csv function up. After manually deleted the empty column, everything seems to work.
 
 ```{r, echo=F}
-sample <- RemoveMissingKEYs(sample.import, reading.import)
+
+#Function Below bugging out so I merged on my own instead 
+#sample <- RemoveMissingKEYs(sample.import, reading.import)
+
+ sample<- merge(sample.import, reading.import, by.x= "sampleKEY")
 ```
+
 
 # Preprocess Sample File
 
@@ -104,7 +131,6 @@ SampleParams <- sample %>% select(sampleKEY, WS_e, passNo10Percent, hygroPercent
 
 ## Preprocess Reading File
 
-
 ### Remove badKEYs from reading
 ```{r preprocess_reading}
 joined <- inner_join(reading.import, SampleParams, by="sampleKEY")
@@ -131,6 +157,10 @@ First, I created two files that have only a few columns each so we can test the 
 ```
 
 ## Loop sampleKEY to Impute Missing Temp and Blanks
+
+## sampleKEY with NO blank readings
+
+I am getting an error because some sampleKEY don't see to have blank readings. 
 
 ## Using Non-Missing to Impute Missing Temp and RBlank
 
@@ -227,11 +257,13 @@ for(i in 1:length(KEY)){
 ```{r interpolation}
 
 KEYs <- unique(joined$sampleKEY); KEYs
-
+KEY <- KEY[11:93]; KEY
+  
 textureclasses <- matrix(ncol=4, nrow=length(KEYs))
 clay <- 0.002; silt <- 0.05; sand <- 2.0
 
 for(i in 1:length(KEYs)){
+  i=1
 tmp3 = joined[joined$sampleKEY==KEYs[i],]; head(tmp3)
 tmp3 = select(joined, sampleKEY, De, PF) %>% filter(joined$sampleKEY==KEYs[i]); tmp3 
 

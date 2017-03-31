@@ -1,0 +1,282 @@
+---
+title: "Soil Texture Processing File"
+author: "Marc Los Huertos"
+date: "7/26/2016"
+output:
+  html_document: default
+  word_document: default
+---
+
+# Prepare and and Start Functions for Processing
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(mosaic)
+library(dplyr)
+
+# source("Soil_functions/ChooseRead_fun.R")
+source("Soil_functions/PassNo10_fun.R")
+source("Soil_functions/RemoveMissingKEYs_fun.R")
+source("Soil_functions/Impute_fun.R")
+source("Soil_functions/Interpolation_fun.R")
+source("Soil_functions/SoilEquiv_fun.R")
+source("Soil_functions/TimeConversion_fun.R")
+source("Soil_functions/Kfun.R")
+source("Soil_functions/Hygro_fun.R")
+source("Soil_functions/EffectiveSoilWeight_fun.R")
+```
+
+## Uploading and Downloading the Data
+
+[Database Access](http://thinkertools.org/grainsize/) 
+
+"18Pomona87"
+
+shiny app
+
+(https://marclos.shinyapps.io/ParticleSizeAnalysis/)
+
+## Correct Data format
+
+For reasons that I can't remember, the reading file has everything in quotes, ie text, while the sample data does not. So, I think we need to search and replace blanks into NAs.
+
+## Copy the File into correct directory
+
+## Read reading.csv Data into R
+
+In spite of myself, there is no clear way to automate the file selection process. So, here are the steps to get our csv files into R.
+
+Here's what I do:
+
+use file.choose() to get the file and path for both the sample.csv and reading.csv. Then create an object, "file" with the path/file, see my example below:
+
+file.choose()
+
+Then we can import the data, using this file!
+
+```{r readcsv}
+sample.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313sample.csv"
+reading.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313reading.csv"
+
+sample.import <- read.csv(sample.source)
+reading.import <- read.csv(reading.source)
+# Clean up Environment
+rm(reading.source, sample.source)
+
+```
+
+## Check Data Importing
+
+### What are the two data sets?
+
+### Removing Missing Data
+
+The function RemoveMissingKEYs looks at the two files and removes samples that have missing key measurments that will make the program crash. First, we evaluated sample.import and filter samples that actual.Soil and total.Soil entries. If missing, we create a list of missing "SampleKEYs". Second, we remove records that are missing time.unit records in the reading.import file. 
+
+We often get errors here, which seem to be associated with an database import problem, where sample.csv has an extra column that screws the read.csv function up. After manually deleted the empty column, everything seems to work at this stage.
+
+```{r, echo=F}
+sample <- RemoveMissingKEYs(sample.import, reading.import)
+```
+
+
+# Preprocess Sample File
+
+## Calculate Percent Soil Passing Seive No. 10
+```{r preprocess}
+
+sample$passNo10Percent <- PassNo10(sample$pass10, sample$totalSoil)
+```
+
+## Calculate Percent Hygroscopic Water
+
+```{r hygroscopic}
+sample$hygroPercent2 = hygro(sample$tinAir, sample$tinOven, sample$tinTare); #head(sample)
+sample$WS_e = WS_e(sample$tinAir, sample$tinOven, sample$tinTare, sample$actualSoil);
+```
+
+## Assign Soil Particle Density if Missing
+```{r soildensity}
+sample$GSp = 2.65
+```
+
+## Select Soil Parameters for Processing Reading File
+```{r soilparams}
+SampleParams <- sample %>% select(sampleKEY, WS_e, passNo10Percent, hygroPercent2, GSp); 
+#head(SampleParams)
+  
+```
+
+# Process Hydrometer Readings
+
+## Preprocess Reading File
+
+### Remove badKEYs from reading
+```{r preprocess_reading}
+joined <- inner_join(reading.import, SampleParams, by="sampleKEY")
+```
+
+### Convert Et to Minutes
+```{r elapsedtime}
+joined$Et <- round(joined$timeElapsed * ElapsedTimeConversion(joined$timeUnit), 2)
+```
+
+### Subset joined file
+```{r subsetjoin}
+joined2 <- joined %>% select(sampleKEY, passNo10Percent, GSp, Et, WS_e, actual, blank, temp) 
+```
+
+## Join SampleParams and Reading SECTION IS MOOT
+
+First, I created two files that have only a few columns each so we can test the join function.
+
+```{r joinkeyID}
+#reading.select <- select(reading, sampleKEY, Et, actual, blank, temp); #head(reading.select)
+
+#joined2 <- left_join(SampleParams, reading.select, by = "sampleKEY")
+```
+
+## Loop sampleKEY to Impute Missing Temp and Blanks
+
+## sampleKEY with NO blank readings
+
+I am getting an error because some sampleKEY don't see to have blank readings. 
+
+## Using Non-Missing to Impute Missing Temp and RBlank
+
+I still believe there is a more elegant to do this, but this is better than my initial idea!
+
+### Ways to Improve the Function:
+
+First, we could make the function that address both missing values simultaneously. For example, impute(sampleID, parameter)...  I tried this, but ran into the problem that we use different columns that are identified in differeing ways. Perhaps, next version!
+
+```{r imputefunction}
+joined <- impute(joined2)
+```
+
+## Calculate the Corrected Hydrometer Reading
+
+Not sure what we are doing here... Isaac, can you comment?
+
+Corrected Rc is based on the formula...
+
+```{r CorrectedReading}
+joined$Rc <- joined$actual - (joined$blank2 - 1)
+```
+
+## Calculating K
+
+```{r calculatingK}
+
+joined$K <- Kfun(round(joined$temp2,0)); head(joined)
+```
+
+
+## Calculate Effective Depth
+
+Effective Depth...
+
+```{r effectivedepth}
+# For High Density Hydrometers
+# x = c(1.00, 1.07)
+# y = c(15.5, 0.6)
+
+# For H151
+x = c(1.00, 1.031)
+y = c(10.5, 2.3)
+L2coef = coef(lm(y~x))
+L1 = joined$Rc * L2coef[2] + L2coef[1]
+L2 = 14.0
+Vb = 67
+A = 27.8
+
+joined$EffectiveDepth = L1 + 0.5*(L2-(Vb/A))
+
+head(joined)
+
+rm(x, y, L2coef, L1, L2, Vb, A, b, m, x1)
+
+```
+
+## Remove Obs with missing EffectiveDepth
+
+```{r}
+MissingEffectiveDepthKEYs <- filter(joined, is.na(EffectiveDepth) == T ) %>% select(sampleKEY); MissingEffectiveDepthKEYs
+#  BadreadingKEYs <- filter(readingin, is.na(timeUnit)==T) %>% select(sampleKEY) 
+  
+ # badKEYs <- full_join(BadsampleKEYs, BadreadingKEYs); badKEYs
+  joined <- joined %>% anti_join(MissingEffectiveDepthKEYs, by="sampleKEY");
+```
+## Calculate D
+According to ASTM D422-63 the equation to calculate D (diameter in mm) can be  simplified as D = K*sqrt(L/T) where: L=effective depth (Leff), T = measurment time in min and K is the constant given in the tables that varies with temperature (already calculated).
+
+```{r De}
+joined$De<-joined$K * sqrt(joined$EffectiveDepth/joined$Et)
+head(joined)
+```
+
+## Calculate PF
+
+P=[(100,000/w)*G/(G-G1)]*(R-G1) (pretty sure G1=1, pretty sure R = Rc (ask marc about this one)) and G=2.65 g/cm^3 (ask marc about this one too)
+
+The bracketed portion will be the same for all variables thus we can calculate it separately and call it p1 (1st part of equation for )
+
+```{r perfecentfiner}
+joined$W = joined$WS_e/joined$passNo10Percent * 100
+joined$PF= ((100000/joined$W)*(joined$GSp/(joined$GSp-1)))*(joined$Rc - 1)
+```
+
+## Creating Figures
+
+You can also embed plots, for example:
+
+```{r figure, echo=T, message=FALSE, warning=FALSE}
+KEY <- unique(joined$sampleKEY)
+KEY <- KEY[-c(1:25)]
+           
+for(i in 1:length(KEY)){
+#with(joined[joined$sampleKEY==KEY[i],], plot(x=log(De), y=PF, xlab="Log of Diameter (mm)", ylab="Percent Finer", las=1))
+}
+
+```
+
+## Estimating the Texture Size Classes
+
+```{r interpolation}
+
+KEYs <- unique(joined$sampleKEY); KEYs
+
+# Remove KEYs with missing De and PF
+
+#KEY <- KEY[11:93]; KEY
+  
+textureclasses <- matrix(ncol=4, nrow=length(KEYs))
+clay <- 0.002; silt <- 0.05; sand <- 2.0
+
+for(i in 1:length(KEYs)){
+tmp3 = joined[joined$sampleKEY==KEYs[i],]; head(tmp3)
+tmp4 = select(joined, sampleKEY, De, PF) %>% filter(joined$sampleKEY==KEYs[i]); tmp4 
+
+Perclay = round(Interpolation(tmp4, clay),1)
+Persilt = round(Interpolation(tmp4, silt), 1)
+Persand = round(100-(Persilt + Perclay), 1)
+textureclasses[i,] <- c(KEYs[i], Persand, Persilt, Perclay)
+}
+
+rm(KEYs, KEY, Perclay, Persand, Persilt, m, b, i)
+textureclasses <- data.frame(textureclasses)
+names(textureclasses) <- c("sampleKEY", "Sand", "Silt", "Clay")
+
+class(textureclasses)
+
+results <- sample %>% select(sampleKEY, sampleID, sampleDate, researcher) %>% left_join(textureclasses, by="sampleKEY")
+
+write.csv(results, file = paste("/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/results_",Sys.Date(),".csv", sep=""))
+
+rm(tmp3, tmp4, sample, sample.import, joined, joined2)
+rm(sand,silt, clay, results, MissingEffectiveDepthKEYs)
+rm(reading.import, textureclasses)
+rm(SampleParams)
+
+```
+

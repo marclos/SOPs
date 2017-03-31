@@ -7,10 +7,10 @@
 
 %\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
 
-\title{SOP Title}
-\date{8/11/2016}
-\author{Reseacher Name}
-\approved{Los Huertos}
+\title{Ozone Generator}
+\date{02/02/2017}
+\author{Marc Los Huertos}
+\approved{Marc Los Huertos}
 \ReviseDate{\today}
 \SOPno{20}
 
@@ -21,19 +21,30 @@
 
 \section{Scope and Application}
 
-\NP \blindtext
+\NP The scope of this SOP is train researchers in how to effecively use the Laboratory Ozonoe Generator 
+
+\NP As a researcher, occassions will arrise in which fabricated ozone gas must be used in order to test a hypothesis. Through using this generator, researchers can create ozone gas in small quantities, from dry air or oxygen and with negative or positive pressures. 
 
 \section{Summary of Method}
 
 \section{Definitions}
 
-\NP \lipsum[1]
+\section{Operation}
 
+
+\NP In order to operate the ozone generator there are several procedures that must be followed.
+
+\begin{itemize}
+  \item 1. Electrically connect the unit to the mains supply utilising the cable supply lead supplied with the unit.
+  \item 2. Start feeding gas through the generator and set the generator to the required flowrate.
+  \item 3. Depress the main ON-OFF switch on the generator front panel which will illuminate indicating that ozone gas is being produced.
+  \item 4. Set the variable control knob to the output required by utilising the output graphs included in this manual.
+  \item 5. The unit takes ten minutes initially to reach its normal operating temperature and output. 
+  \item NOTE: The red FAULT indicator will illuminate brifely after pressing the main ON-OFF switch due to the fractional delay in the power board relays latching.
+\end{itemize}
 \section{Interferences}
 
 \section{Health and Safety}
-
-\NP \lipsum[2]
 
 \subsection{Safety and Personnnel Protective Equipment}
 
