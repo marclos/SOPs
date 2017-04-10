@@ -44,6 +44,12 @@
 
 \def\labelitemi{\textcolor{gray}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}}
 
+% Modifications for References
+\RequirePackage{natbib}
+\bibliographystyle{plainnat}
+\setcitestyle{open={(},close={)}}
+
+
 % Modifications to the section titles
 \RequirePackage{titlesec}
 %\renewcommand{\thesection}{\Roman{section}}
