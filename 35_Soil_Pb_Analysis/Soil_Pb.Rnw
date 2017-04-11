@@ -50,23 +50,27 @@ The technician must be approved for the following SOPs:
 
 \subsection{Supplies and Equipment}
 
-\begin{itemize}
+\begin{itemize*}
   %\item Mason jar with screw lids -( Not using this…too messy?) OR
   \item Mesh sieves -(Sizes: No.10; Locations: entry room of the lab; Cabinet: Ziploc Bags \& Notebooks) total amount: 4 (order 2 more) 
   \item balance -(Mettler Toledo Precision Balance, Model MS1602TS)
   \item Filter paper Whatman No. 41 or equivalent. 
   \item Disposable Aluminum Crinkle Dishes with Tabs 332.60 25433-008 VWR 60 mL \href{https://us.vwr.com/store/catalog/product.jsp?product_id=4622693}{VWR Disposable Aluminum Crinkle Dishes with Tabs}
   \item Fisherbrand 25mm syringe filter 0.45 um, Cat no 09-719D \href{https://www.emdmillipore.com/US/en/product/MF-Millipore%E2%84%A2-Membrane-Filters,MM_NF-C152}{MF-Millipore Membrane Filters}
-  \item Centrifuge tubes (whatever used at Keck)
+
   \item Tongs -(Cabinet 9: Mattle Tins, Plastic Bottle)
   \item Hot plate -(Thermo Scientific Cimarec S88857104 Stirrer, 7x7" Aluminum; 120 VAC, Assembled in China, inside the Fumehoods)
   \item Funnel -( 64mm, 10500, 12PK, Made in Mexico, The White table with water sinks; the top drawer by the wall)
-  \item Glass wool -(ran out); CAS Number 65997-17-3 \href{http://www.sigmaaldrich.com/catalog/product/sial/18421?lang=en&region=US}{Sigma Aldrich Catalog}
-  \item 100ml volumetric flask- (Back cabinet: volumetric flasks \& graduated cylinders; there are 17)
+  \item Glass wool CAS Number 65997-17-3 \href{http://www.sigmaaldrich.com/catalog/product/sial/18421?lang=en&region=US}{Sigma Aldrich Catalog}
+  \item 250ml Erlenmeyer flasks
+  \item 100ml volumetric flasks
+  \item 100mL beaker
+  \item 50mL Centrifuge tubes
+  \item 15mL Centrifuge tubes
   \item Stop watches 
   \item Gloves
-  \item 250ml Erlenmeyer Flask- (Back cabinet: erlenmeyer flasks \& beakers; there are 21)
-\end{itemize}
+
+\end{itemize*}
 
 \subsection{Reagents}
 
@@ -89,18 +93,17 @@ impurities. If method blank is < MDL, the acid can be used.
 \NP Digesting soil, extracting Pb, and filtering supernatant  generally requires 120 minutes to complete the digestion and filter samples.
 
 \section{Procedure}
-\NP Part II: Determination of Lead levels using Atomic absorption spectroscopy
 
-***You must wear safety goggles or eyeglasses***
+***You must wear safety goggles or eyeglasses, gloves, and lab coats***
 Plastic Gloves are available to protect your hands from acid. Wash off any acid, even on the gloves.
 
-\subsection{Preparation of the soil samples}
+\subsection{Preparing of Soil Samples}
 
 \NP From the Mason jar with mesh on top, sieve approximately 10.0 g soil on to the plastic weighing dish.
 
 \NP Transfer all the weighed soil to a 250-mL ehrlemeyer (conicle-y shaped flask). Label the flask with your initials on label tape. 
 
-\subsection{Extracting the Lead:}
+\subsection{Extracting Pb}
 
 \NP In the fume hood - Add 20 mL of 1M nitric acid CAREFULLY (slowly) to the soil.
 
@@ -109,8 +112,6 @@ Plastic Gloves are available to protect your hands from acid. Wash off any acid,
 \NP CAREFULLY add 30 mL of deionized water to the flask and swirl GENTLY. Let stand 3-5 min so heavier particles can  settle out.
 
 \NP Take a funnel with filter paper and put a small wad of glass wool in the funnel and place the funnel in a pre-labelled 50-mL centrifuge tube. 
-
-
 
 \NP After the solution passes through the filter paper, swirl 10 mL of water in the flask and pour the water through the filter paper. 
 
@@ -126,7 +127,19 @@ Plastic Gloves are available to protect your hands from acid. Wash off any acid,
 
 \NP Using a syringe, remove 15 mL of solution and put a dispossable filter on the syringe and push the plunger down filling a labelled 15 mL centrifuge tube. 
 
-\subsection{Calibrating Solutions:}
+\subsection{Quality Control and Quality Assurance}
+
+\subsection{Determining Pb Content}
+
+\NP Centrifuge a 15-mL sample until solution is clear. Usually 3 to 4 min. Use a syringe and Millipore filter to push (gently) about 10 mL of solution through the filter into the small labeled sample vial.
+
+\NP Measure the concentration of the solution on the Atomic Adsorption Spectrometer.  Multiply the reading for your sample by 10 to calculate the lead concentration in your soil sample.  The final result is in “ppm”, which means milligrams (0.0010 g) of lead per kilogram of soil.
+
+\subsection{Dispose of sample and solutions}
+
+\NP Clean up your bench space.
+
+\section{Quality Contrl and Quality Assurance}
 
 \NP Blank Solutions: \href{https://en.wikipedia.org/wiki/Blank_(solution)}{Blank Solutions Explanation}
 
@@ -134,17 +147,7 @@ Plastic Gloves are available to protect your hands from acid. Wash off any acid,
 
 \NP Spiked Solutions: \href{}{Spiked Solutions Explanation}
 
-  
-\subsection{D. Determining the lead content:}
 
-\NP Centrifuge a 15-mL sample until solution is clear. Usually 3 to 4 min. Use a syringe and Millipore filter to push (gently) about 10 mL of solution through the filter into the small labeled sample vial.
-
-\NP Measure the concentration of the solution on the Atomic Adsorption Spectrometer.  Multiply the reading for your sample by 10 to calculate the lead concentration in your soil sample.  The final result is in “ppm”, which means milligrams (0.0010 g) of lead per kilogram of soil.
-
-
-\subsection{Dispose of sample and solutions}
-
-\NP Clean up your bench space.
 
 \section{References}
 
