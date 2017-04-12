@@ -2,7 +2,7 @@
 \usepackage[english]{babel}
 \usepackage{blindtext}
 \usepackage{lipsum}
-
+\usepackage{soul}
 %\documentclass{article}
 
 %\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
@@ -21,7 +21,7 @@
 
 \section{Scope and Application}
 
-\NP This method provides digestion procedures for the preparation of sediments, sludges, and soil samples for analysis by flame atomic absorption spectrometry or inductively coupled plasma optical emission spectrometry (ICP-OES).
+\NP This method provides digestion procedures for the preparation of sediments, sludges, and soil samples for analysis by flame atomic absorption spectrometry or inductively coupled plasma optical emission spectrometry (ICP-OES) and is a modified version of \cite{EPA3050B} and informed by \cite{pena2011comparative, guven2011comparison} 
 
 \NP The SOP can be applied to sediments, sludges, and soil samples.
 
@@ -94,8 +94,7 @@ impurities. If method blank is < MDL, the acid can be used.
 
 \section{Procedure}
 
-***You must wear safety goggles or eyeglasses, gloves, and lab coats***
-Plastic Gloves are available to protect your hands from acid. Wash off any acid, even on the gloves.
+\hl{You must wear safety goggles or eyeglasses, gloves, and lab coats!} Plastic Gloves are available to protect your hands from acid. Wash off any acid, even on the gloves.
 
 \subsection{Preparing of Soil Samples}
 
@@ -117,7 +116,7 @@ Plastic Gloves are available to protect your hands from acid. Wash off any acid,
 
 \NP Add dionized water to the 50-mL mark.
 
-\NP Centrifuge the tube at X,XXX g for X minutes.
+\NP Centrifuge the tube at X,XXX g for 5 minutes and until solution is clear. 
 
 \NP Carefully pour the supernantant into a 100-mL volumetric flask while avoiding getting soils into the suspension. 
 
@@ -127,11 +126,11 @@ Plastic Gloves are available to protect your hands from acid. Wash off any acid,
 
 \NP Using a syringe, remove 15 mL of solution and put a dispossable filter on the syringe and push the plunger down filling a labelled 15 mL centrifuge tube. 
 
+\NP Use a syringe and Millipore filter to push (gently) about 10 mL of solution through the filter into the small labeled sample vial
+
 \subsection{Quality Control and Quality Assurance}
 
 \subsection{Determining Pb Content}
-
-\NP Centrifuge a 15-mL sample until solution is clear. Usually 3 to 4 min. Use a syringe and Millipore filter to push (gently) about 10 mL of solution through the filter into the small labeled sample vial.
 
 \NP Measure the concentration of the solution on the Atomic Adsorption Spectrometer.  Multiply the reading for your sample by 10 to calculate the lead concentration in your soil sample.  The final result is in “ppm”, which means milligrams (0.0010 g) of lead per kilogram of soil.
 
@@ -139,7 +138,7 @@ Plastic Gloves are available to protect your hands from acid. Wash off any acid,
 
 \NP Clean up your bench space.
 
-\section{Quality Contrl and Quality Assurance}
+\section{Quality Control and Quality Assurance}
 
 \NP Blank Solutions: \href{https://en.wikipedia.org/wiki/Blank_(solution)}{Blank Solutions Explanation}
 
