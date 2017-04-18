@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  18 AUG 2016 07:26
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  8 APR 2017 16:17
 entering extended mode
  %&-line parsing enabled.
 **Picarro_GHG_v01.tex
@@ -163,24 +163,31 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
+(/usr/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 2007/02/05 8.0 (PWD)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 602.
+\c@NAT@ctr=\count98
+)
 (/usr/share/texmf/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2005/01/22 v2.6 Sectioning titles
 \ttl@box=\box26
-\beforetitleunit=\skip52
-\aftertitleunit=\skip53
+\beforetitleunit=\skip54
+\aftertitleunit=\skip55
 \ttl@plus=\dimen115
 \ttl@minus=\dimen116
 \titlewidth=\dimen117
 \titlewidthlast=\dimen118
 \titlewidthfirst=\dimen119
 )
-\c@paranum=\count98
+\c@paranum=\count99
 
 (/usr/share/texmf/tex/latex/titling/titling.sty
 Package: titling 2004/09/26 v2.1c maketitle typesetting
-\thanksmarkwidth=\skip54
-\thanksmargin=\skip55
-\droptitle=\skip56
+\thanksmarkwidth=\skip56
+\thanksmargin=\skip57
+\droptitle=\skip58
 )
 (/usr/share/texmf/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen120
@@ -190,15 +197,15 @@ Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
  (JPG)
 )
 (/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip57
-\f@ncyO@elh=\skip58
-\f@ncyO@erh=\skip59
-\f@ncyO@olh=\skip60
-\f@ncyO@orh=\skip61
-\f@ncyO@elf=\skip62
-\f@ncyO@erf=\skip63
-\f@ncyO@olf=\skip64
-\f@ncyO@orf=\skip65
+\fancy@headwidth=\skip59
+\f@ncyO@elh=\skip60
+\f@ncyO@erh=\skip61
+\f@ncyO@olh=\skip62
+\f@ncyO@orh=\skip63
+\f@ncyO@elf=\skip64
+\f@ncyO@erf=\skip65
+\f@ncyO@olf=\skip66
+\f@ncyO@orf=\skip67
 ))
 (/usr/share/texmf/tex/generic/babel/babel.sty
 Package: babel 2005/11/23 v3.8h The Babel package
@@ -208,7 +215,7 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 
 (/usr/share/texmf/tex/generic/babel/babel.def
 File: babel.def 2005/11/23 v3.8h Babel common definitions
-\babel@savecnt=\count99
+\babel@savecnt=\count100
 \U@D=\dimen121
 )
 \l@british = a dialect from \language\l@english 
@@ -223,22 +230,22 @@ Package: blindtext 2006/11/21 V1.7 blindtext-Package
 (/usr/share/texmf/tex/latex/tools/xspace.sty
 Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
 )
-\c@blindtext=\count100
-\c@Blindtext=\count101
-\blind@countxx=\count102
-\blindtext@numBlindtext=\count103
-\blind@countyy=\count104
-\c@blindlist=\count105
-\c@blindlistlevel=\count106
-\c@blindlist@level=\count107
-\blind@listitem=\count108
-\c@blind@listcount=\count109
-\c@blind@levelcount=\count110
+\c@blindtext=\count101
+\c@Blindtext=\count102
+\blind@countxx=\count103
+\blindtext@numBlindtext=\count104
+\blind@countyy=\count105
+\c@blindlist=\count106
+\c@blindlistlevel=\count107
+\c@blindlist@level=\count108
+\blind@listitem=\count109
+\c@blind@listcount=\count110
+\c@blind@levelcount=\count111
 )
 (/usr/share/texmf/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
 File: lipsum.dtx 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count111
+\c@lips@count=\count112
 )
 (/usr/share/R/texmf/tex/latex/Sweave.sty
 Package: Sweave 
@@ -267,11 +274,11 @@ Package graphics Info: Driver file: pdftex.def on input line 90.
 Package: fancyvrb 1998/07/17
 
 Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
-\FV@CodeLineNo=\count112
+\FV@CodeLineNo=\count113
 \FV@InFile=\read1
 \FV@TabBox=\box27
-\c@FancyVerbLine=\count113
-\FV@StepNumber=\count114
+\c@FancyVerbLine=\count114
+\FV@StepNumber=\count115
 \FV@OutFile=\write3
 
 No file fancyvrb.cfg.
@@ -395,7 +402,7 @@ Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 (/usr/share/texmf/tex/latex/oberdiek/refcount.sty
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count115
+\c@section@level=\count116
 )
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
@@ -497,23 +504,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] [4] [5] [6] [7] [8] AED: lastpage setting LastPage
-(./Picarro_GHG_v01.aux) ) 
+[2] [3] [4] [5] [6] [7] (./Picarro_GHG_v01.bbl) [8]
+AED: lastpage setting LastPage (./Picarro_GHG_v01.aux) ) 
 Here is how much of TeX's memory you used:
- 6225 strings out of 256214
- 83279 string characters out of 1917000
- 240725 words of memory out of 1500000
- 9287 multiletter control sequences out of 10000+200000
+ 6463 strings out of 256214
+ 85985 string characters out of 1917000
+ 245462 words of memory out of 1500000
+ 9517 multiletter control sequences out of 10000+200000
  15368 words of font info for 45 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,18n,49p,803b,490s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/mwl04747/.texlive2007/texmf-var/fonts/p
-k/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cm
-bx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf/
-fonts/type1/bluesky/cm/cmr12.pfb>
-Output written on Picarro_GHG_v01.pdf (8 pages, 157852 bytes).
+ 35i,18n,49p,803b,488s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/mwl04747
+/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/
+texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/c
+m/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb>
+Output written on Picarro_GHG_v01.pdf (8 pages, 158498 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 131072)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 131072)
  154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
