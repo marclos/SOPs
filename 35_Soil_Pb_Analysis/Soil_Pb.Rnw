@@ -31,18 +31,21 @@
 
 \section{Health and Safety}
 
-\NP \lipsum[2]
+\NP Observe the safety instructions. Not following these instructions can cause damage
+
+\NP The spectrophotometer is to be used for its intended use only. Improper use can cause damages, contamination, and injuries with fatal consequences.
 
 
 \section{Personnel \& Training Responsibilities}
 
-\NP \lipsum[1]
 
-Students using this SOP should be trained for the following SOPsa:
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
 
 \begin{itemize}
-  \item SOP1
-  \item SOP2
+  \item SOP01 Laboratory Safety
+  \item SOP02 Field Safety
 \end{itemize}
 
 
@@ -75,7 +78,7 @@ Students using this SOP should be trained for the following SOPsa:
 
 \section{Estimated Time}
 
-\NP This will take XX minutes...
+\NP This will take 120 minutes?
 
 \section{Procedure}
 \NP Part II: Determination of Lead levels using Atomic absorption spectroscopy
@@ -106,7 +109,7 @@ Plastic Gloves are available to protect your hands from acid. Wash off any acid,
   \item C. Calibrating Solutions:
   \begin{itemize}
     \item 9. Blank Solutions: \href{https://en.wikipedia.org/wiki/Blank_(solution)}{Blank Solutions Explanation}
-    \item 10. Standard Solutions: \href{https://en.wikipedia.org/wiki/Standard_solution}{Standard Solutions Explanation}
+    \item 10. Standard Solutions: \href{http://www1.lasalle.edu/~prushan/Intrumental%20Analysis_files/AA-Perkin%20Elmer%20guide%20to%20all!.pdf}{Standard Solutions Explanation}
     \item 11. Spiked Solutions: \href{}{Spiked Solutions Explanation}
   \end{itemize}  
   \item D. Determining the lead content:
@@ -121,5 +124,15 @@ Plastic Gloves are available to protect your hands from acid. Wash off any acid,
 \section{References}
 
 \NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\NP Glass Wool 18421. 2017. Sigma-Aldrich. Accessed April 4. \href{http://www.sigmaaldrich.com/catalog/product/sial/18421}{Sigma Aldrich}.
+
+\NP VWR Disposable Aluminum Crinkle Dishes with Tabs | VWR. 2017. Accessed April 4. \href{https://us.vwr.com/store/catalog/product.jsp?product_id=4622693}{VWR}.
+
+\NP MF-Millipore Membrane Filters - Filter Discs and Membranes. 2017. Accessed April 4. \href{https://www.emdmillipore.com/US/en/product/MF-Millipore%E2%84%A2-Membrane-Filters,MM_NF-C152}{Filters}.
+
+\NP Analytical Methods for Atomic Absorption Spectroscopy \href{http://www1.lasalle.edu/~prushan/Intrumental%20Analysis_files/AA-Perkin%20Elmer%20guide%20to%20all!.pdf}{Methods for AA Spectroscopy}
+
+\NP Concepts; Instrumentation and Techniques in Atomic Absorption Spectrophotometry \href{http://www.ufjf.br/baccan/files/2011/05/AAS-Perkin1.pdf}{Techniques in AA Spectrophotmeter}
 
 \end{document}
