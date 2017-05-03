@@ -158,6 +158,43 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \section{Procedure}
 
+\NP Connect multiplexer to Picarro through USB ports on Picarro (does not matter which port used)
+\begin{itemize}
+\item See Picarro Figure 1 for USB port identification
+\end{itemize}
+
+\NP Connect monitor, mouse, and keyboard to Picarro via the remaining USB ports (note: there are two extra USB ports on the front of the Picarro)
+
+\NP Connect blue monitor plug to Picarro and power plug to outlet
+
+\NP Ensure all machines are in the off position
+
+\NP Connect power plugs for CRDS, multiplexer, and pump
+
+\NP Connect pump to multiplexer
+\begin{itemize}
+\item Connect control and data ports on the back of the pump to the Picarro ensuring white triangles are facing up on the back of the pump
+\item Insert other cable end of these connections into any USB port on the Picarro
+\end{itemize}
+
+\NP Connect clear tubes to an inlet port on the pump, connect other end to the inlet on the front of the multiplexer
+\begin{itemize}
+\item Inlet on multiplexer on right (labeled)
+\item Inlet on vacuum (on left -- clear tube)
+\end{itemize}
+
+\NP Repeat process for the outlet tubes
+\begin{itemize}
+\item Outlet on Picarro
+\item Outlet on vacuum (on right -- silver tube)
+\end{itemize}
+
+\NP Attach clear tube inlet of Picarro to labeled outlet on multiplexer
+
+\NP Attach one end of power/data cable to the COMM port in the pump and the other end to the matching COMM port on the multiplexer
+
+\NP Power on pump and Picarro **Never turn off pump when Picarro is on**
+
 \subsection*{Selection the Proper Location for Instruments}
 
 \NP asfasd saddfasdf sd asfd sdf
