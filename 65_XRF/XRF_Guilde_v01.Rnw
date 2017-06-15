@@ -10,16 +10,15 @@
 \usepackage{blindtext}
 \usepackage{lipsum}
 
-\title{ICP-MS Guide}
+\title{XRF Guide}
 \date{6/12/2017}
 \author{Marc and Haley}
 \approved{TBD}
 \ReviseDate{\today}
-\SOPno{70 v0.1}
+\SOPno{65 v0.1}
 
-\usepackage{Sweave}
 \begin{document}
-\input{ICP-MS_Guilde_v01-concordance}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
