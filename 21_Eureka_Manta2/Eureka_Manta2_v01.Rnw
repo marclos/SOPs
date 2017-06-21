@@ -7,9 +7,9 @@
 
 %\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
 
-\title{SOP Title}
-\date{8/11/2016}
-\author{Reseacher Name}
+\title{Eureka Manta2 Multiprobe for water testing}
+\date{6/20/2017}
+\author{Haley Land-Miller}
 \approved{Los Huertos}
 \ReviseDate{\today}
 \SOPno{21}
@@ -21,30 +21,41 @@
 
 \section{Scope and Application}
 
-\NP \blindtext
+\NP This SOP describes the procedures for calibrating and using the Eureka Manta2 Sub2 Multiprobe.
 
-\NP test
+\NP This probe tests temperature, pH, depth, conductivity, and dissolved oxygen (in both g/L and \%). pH, conductivity, and dissolved oxygen all require calibration.
+
+\NP The probe can be used to take the above measurments in bodies of water, including lakes, streams, and rivers. 
 
 \section{Summary of Method}
 
+\NP Calibration of any of the sensors is performed by selecting ``Standardize" from the Manta2 menu on the Amphibian portable PC and pouring standards into the calibration cup.
+
+\NP Measurments are taken by connecting the probe to the Amphibian portable PC, placing the weighted protective cap over the sensors, and dropping the probe into the water being tested. 
+
 \section{Definitions}
 
-\NP \lipsum[1]
+\NP Probe = the entire Manta2 apparatus that includes the five sensors.
+
+\NP Sensor = one of the detectors on the probe, including those for temperature, pH, conductivity, dissolved oxygen, and the reference electrode.
 
 \section{Interferences}
 
-\section{Health and Safety}
+\NP Calibration is important for getting any meaningful data. 
 
-\NP \lipsum[2]
+\NP The reference electrode needs to be maintained by refilling the reference electrolytes once every few months. Not doing this can cause pH readings to be unreliable. 
+
+\NP When using the probe in streams or rivers, take downstream measurments first to avoid your movements and presence affecting the measurments. For the same reason, stand on the bank or downstream of where you're taking the measurements while the probe is in the water.  
+
+\section{Health and Safety}
 
 \subsection{Safety and Personnnel Protective Equipment}
 
+\NP Gloves should be worn when using the probe in bodies of water, because water may be contaminated. 
+
+\NP Water shoes are useful for protecting your feet if you're planning to walk in the body of water while using the probe, which likely will do. 
 
 \section{Personnel \& Training Responsibilities}
-
-Researchers training to use the Eosense chambers and Picarro analyzer include the following components: 
-
-
 
 Researchers using this SOP should be trained for the following SOPs:
 
@@ -55,14 +66,21 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \section{Required Materials}
 
-\subsection{Item 1 w/catalog number!}
-\subsection{Item 2}
+\NP {Eureka Manta2 Sub2 probe}
+
+\NP {Amphibian 2 portable PC}
+
+\NP {Amphibian 2 charging cable}
+
+\NP {Cable to connect Eureka probe and Amphibian}
+
+\NP {Standards for calibration (pH 4.00, 7.00, 10.00, conductivity, and a small bottle that can be used to make the DO standard)}
 
 \section{Estimated Time}
 
-\NP Charging Manta 2...
+\NP Charging the Amphibian 2 portable PC takes a fair amoutn of time - allow at least several hours, or leave it charging over night. 
 
-\NP Calibration requires XX minutes and must be completed before going to the field.
+\NP Calibration requires 20 minutes, if you're calibrating all sensors, and must be completed before going to the field.
 
 \NP Site visits and data collection is relatively rapid, but the probe should be in the water for 2 minutes before a reading is taken. In addition, to get GPS readings, the GPS should be enabled 5 minutes before the reading.
 
@@ -72,9 +90,13 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \subsection{Charging}
 
-\NP Charge
+\NP Charge the Amphibian 2 portable PC before going into the field. The charger plugs into the round hole on the bottom edge of the Amphibian. 
 
-\NP Calibration...
+\NP Calibration of each sensor requires similar procedures. First, turn on the Amphibian and press the Windows icon in the lower left corner. Then, scroll down to the bottom of the main page and select ----. Once the interface loads, press ``Manta2" on the lower left bar, and select ``Standardize" from the menu that appears. Select the sensor you would like to standardize. 
+
+\NP Ex: Standardizing pH. To standardize the pH meter, follow the steps above and select ``pH units" from the Manta2 menu. The screen will instruct you to input the value of your first standard. Then, unscrew just the blue cap from the larger cap of the probe, leaving the clear plastic cup surrounding the sensors in place. Pour a small amount of your first standard into the cup (with the probe facing upward), place the lid on, and shake, to rinse in the standard. Do this twice in total, and then pour the standard into the cup, enough to cover all sensors. Once the red line on chart of the Amphibian has stabalized (is coming out flat), press ``Ok". The screen will now prompt you to put in your second standard. Rinse and shake twice with DI water, and then twice with your second standard, before filling it above the sensors and repeating your process from above. When prompted, select the option to do a three-point calibration, and repeat these steps (including two rinses with DI and then with the standard) with your third standard.
+
+\NP Calibrating the other sensors is very similar. Conductivity is a one-point calibration with one standard. For dissolved oxygen, pour tap water into a small bottle, about half full. Shake the bottle vigorously for several minutes, incorporating as much air as possible into the water. Go through the steps to start calibration of HDO, and pour the water into the cup. For dissolved oxygen, the sensor needs to be stable for 3 minutes before you press ``Ok". 
 
 \NP Starting the Manta...
 
