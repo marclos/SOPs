@@ -80,13 +80,15 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \section{Interferences}
 
-\NP R has an updated version about every six months. When performing advanced analyses, there are times that new versions will no longer run a code. Thus, older versions of R must be maintained. This is a unheard of issue for new users.
+\NP R has an updated version about every six months. When performing advanced analyses, there are times that new versions will no longer run a code. Thus, older versions of R must be maintained. This is a unheard of issue for new users -- thankfully, almost never occurs because new users rarely are running advance codes!
 
 \NP RStudio Server needs a functional network connection. If the network is down, then Rstudio Server is inaccessible. This can be a source of frustration. 
 
 \section{Health and Safety}
 
-\NP Some risks include carpel tunnel syndrome. 
+\NP Some risks include carpel tunnel syndrome.
+
+\NP Frustation!  After running into errors that seem to baffle you, go for a run, get dinner, or take a nap. Often you'll find a work around after you take a break. 
 
 
 \subsection*{Safety and Personnnel Protective Equipment}
@@ -103,7 +105,7 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \NP Laptop or destop computer
 
-\NP Access to Pomona College's SSO and server
+\NP Access to Pomona College's SSO (single sign on) and server
 
 \NP Github account
 
@@ -120,14 +122,16 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 
 \section{Setting Up Accounts and Communications Keys}
 
-\NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! Your email address can be used to prove your student status.
+\NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! Your email address can be used to prove your student status. But you need to make a special request for this (\url{https://education.github.com/discount_requests/new}.
   
-\NP We have two choices in how we work with R. We can use the server version on Pomona's IT server. This is preferable. However, there are times when this is not possible --- and there are work-arounds!  Namely, we can download and install the following programs in this order: 
+\NP We have two choices in how we work with R. We can use the server version on Pomona's IT server. This is preferable. 
+
+\NP R, Rstudio, and Github can easily be intalled on a desktop computer. Note new users: Please use the server mode to begin using this software. Later you can use the desktop versions. To accomplish this, download and install the programs in the following order: 
 
 \begin{enumerate}
-  \item R 
-  \item RStudio
-  \item Github desktop
+  \item R \url{https://cran.r-project.org/}
+  \item RStudio \url{https://www.rstudio.com/}
+  \item Github desktop \url{https://desktop.github.com/}
 \end{enumerate}
 
 \NP Rather than downloading these things, use the Rstudio Server located at \href{http://rstudio.campus.pomona.edu}{\textbf{rstudio.campus.pomona.edu}}. Login using your Pomona College username and password.
@@ -151,7 +155,7 @@ As usual we acknowledge the students who have tried to follow and made suggestio
 \caption{After natigating through the Rstudio Git/SNV menu, select `Create an RSA Key'.}
 \end{figure}
 
-\NP You have the option to create a passphrase. I suggest you don't to make it easier for now. But should your have projects that need security, this is a good idea.
+\NP You have the option to create a passphrase. I suggest you don't to make it easier for now. But should your have projects that need extra security, this is a good idea.
 
 \NP After you hit the ``Create'' button an image will be generated in a pop-up window -- As far as I can tell, this image is some sort of encryption thing -- but I don't see any reason why we should care. So, close this pop-up window. 
 
@@ -237,11 +241,36 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 
 \NP Now you should see a few files from the repository on your Rstudio window. Open them up and see what they are to get familiar with them.
 
-\NP If nothing comes up, your pop-up blocker is activated. Turn off the pop-up blocker and try again. 
+\NP If nothing comes up, your pop-up blocker is activated. Turn off the pop-up blocker for this site and try again. 
+
+
+
+\NP The easiest place to begin, is to `Pull' a repositoryonce you have cloned it. 
+
+\NP Any user can pull public repsitories. 
+
+\NP Everytime you want to use something from a respository you want to pull to get the most up-to-date versions. 
+
+\NP Now that you have created connectivity you can create your own repository. But first you need to create a project in Rstudio. I suggest you the following steps as you begin:
+
+
 
 \subsection{Pulling a Repository}
 
-\NP The easiest place to begin, is to `Pull' a repository. But first you need to create a project in Rstudio. I suggest you the following steps as you begin:
+\NP Pulling a Repository is downloading all the changed files into your local (or server) directory. Using the downward facing blue arrow that labeled ``Pull'' in the Git tab in Rstudio.
+
+\section{Creating a shared R Project}
+
+\NP Learning to create a shared R project will help you create an understanding of the work flow, where we 
+
+\begin{enumerate}
+\item Create a New Repository
+\item Clone the respository
+\item Pull 
+\item create a test file
+\item Push
+\end{enumerate}
+
 
 \subsection{Creating a New Repository}
 
@@ -255,27 +284,35 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 
 \NP Check the box if you want a README.md file created. I always create one -- you can do it later, but it's nice to document what you are doing, so I suggest you create one.
 
-\NP Some files are not worth push and pulling all the time, but these files depend on the program you are using. In this case, we can have github ignore all files that are associated with R that don't really contribute to the project itself. So, I suggest you add these files to the .ignore file. 
+\NP Some files are not worth push and pulling all the time, but these files depend on the program you are using. In this case, we can have github ignore all files that are associated with R that don't really contribute to the project itself. So, I suggest you add these files to the .ignore file. You can add these later too, but it's a bit tricker.
 
 \NP Finally, Github allows you to create a licence to protect your work. I need to do some research about the differences, but I usually pick 'GNU General Public Licence' for no good reason, besides it sounds good.
 
-\subsection{Pulling a Repository}
+\NP The respository is now created, but Rstudio doesn't have access to it yet. You'll need to pull the respistory.
 
-\NP Pulling a Repository is downloading all the changed files into your local (or server) directory. Using the downward facing blue arrow that labeled ``Pull'' in the Git tab in Rstudio.
+\subsection{Clone New Project}
 
-\subsection{Creating a New Project}
+\subsection{Create and knitr new Rmd file}
 
+\subsection{Commit changes}
 
-\section{Working on Projects}
+\subsection{Push}
 
-\subsection{Rstudio Panels}
+\section{Working on Projects in Rstudio}
+
+\subsection{4 Rstudio Panels}
+
+Working with Rstudio is a bit confusing at first -- there is lots going on! First, let's unpack the four default pannels that come up when you start Rstudio. 
+
+\NP Each of panel have tabs, but they can vary depending on what is active in Rstudio. 
 
 \begin{description}
-  \item[File Structure and Rnw/Tex files]
-  \item[Console and Compile PDF windows]
-  \item[Git Panel]
-\end{description}
+  \item[Lower Right -- Console and Compile PDF windows] Without a Rmd/Rnw file open this panel might take the entire left side of the program's interface. This is the R GUI, i.e. graphical user interface. This is where you can type or submit R commands and were results are displayed. Also, any errors are reported in red here. If you have compiled a LaTeX file, the log file of the process will also be displayed.
+  \item[Files/Plots/Packages/Help/Viewer] TBD
+  \item[Text and Code -- Rnw and Rmd files] TBD
 
+  \item[Environment/History/Git Panel] TBD
+\end{description}
 
 \subsection{Best Practices}
 
@@ -326,6 +363,10 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 \end{figure}
    
 \end{description}
+
+\section{Becoming a Collaborator}
+
+TBD -- In this section, we'll create a work flow to become a collaborator on the SOP
 
 \section{Troubleshooting}
 
