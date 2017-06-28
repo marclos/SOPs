@@ -7,7 +7,13 @@ output:
   word_document: default
 ---
 
-# Prepare and and Start Functions for Processing
+# Prepare R Environment and and Start Functions for Processing
+
+To process the file, we begin with defining options, such as "knitr::opts_chunk" to generate consistent default results. 
+
+Next, we load packages/libraries that will be used in the program. By doing this first, we ensure that there will be no hiccups later if the packages haven't been installed. 
+
+Finally, we load all of the custom functions created to process the data.
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -26,21 +32,32 @@ source("Soil_functions/Hygro_fun.R")
 source("Soil_functions/EffectiveSoilWeight_fun.R")
 ```
 
+NOTE: Next step: Need to create error trapping for each of the functions. It's a nightmare when errors show up and I can't figure them out without diving into the code each time -- which takes hours!
+
 ## Uploading and Downloading the Data
+
+The Database allows us to enter and retrieve data with consistent results. Databases force data into formats that can prevent errors later on and allow mulitple users to enter data at the same time. 
 
 [Database Access](http://thinkertools.org/grainsize/) 
 
-"18Pomona87"
+To retrieve the data, we need a password, which in this case is "18Pomona87".
 
+## Shiny App
+
+In previous versions, I relied on a ShinyApp to pre-process the data. I haven't kept up with the app to see if we still need it, but this should be assessed before using this program again.
 shiny app
 
 (https://marclos.shinyapps.io/ParticleSizeAnalysis/)
 
 ## Correct Data format
 
-For reasons that I can't remember, the reading file has everything in quotes, ie text, while the sample data does not. So, I think we need to search and replace blanks into NAs.
+For reasons that I can't remember, the reading file has everything in quotes, ie text, while the sample data does not. I think we need to change the export function to prevent this.
+
+In addition, I think we need to search and replace blanks into NAs.
 
 ## Copy the File into correct directory
+
+Once the two files have been exported (onto a local directory, they can be uploaded into the SOP subdirectory "Data/". 
 
 ## Read reading.csv Data into R
 
@@ -69,16 +86,21 @@ rm(reading.source, sample.source)
 
 ### What are the two data sets?
 
+* Readings: 
+
+* Results: 
+
 ### Removing Missing Data
 
-The function RemoveMissingKEYs looks at the two files and removes samples that have missing key measurments that will make the program crash. First, we evaluated sample.import and filter samples that actual.Soil and total.Soil entries. If missing, we create a list of missing "SampleKEYs". Second, we remove records that are missing time.unit records in the reading.import file. 
+The function RemoveMissingKEYs looks at the two files and removes samples that have missing key measurments that will make the program crash. First, we verify that "actual.Soil" and "total.Soil" entries are found in sample.import. If the entries are missing the function creates a list of missing "SampleKEYs". Second, we remove records that are missing "time.unit" records in the reading.import file. 
 
-We often get errors here, which seem to be associated with an database import problem, where sample.csv has an extra column that screws the read.csv function up. After manually deleted the empty column, everything seems to work at this stage.
+NOTE: We often get errors here, which seem to be associated with an database import problem, where sample.csv has an extra column that screws the read.csv function up. After manually deleted the empty column, everything seems to work at this stage.
 
 ```{r, echo=F}
 sample <- RemoveMissingKEYs(sample.import, reading.import)
 ```
 
+The function creates a file, "unprocessed_YYMMDD.csv" in the data directory so we can trouble shoot the records that are problematic.
 
 # Preprocess Sample File
 
