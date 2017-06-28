@@ -1,4 +1,5 @@
 # Impute Missing Blank and Temperature Readings
+
 # Function to impute Reading Blanks
 imputeR <- function(sampleID){
   library(dplyr)
@@ -11,8 +12,10 @@ imputeR <- function(sampleID){
   nonmissingR = tmp2[!is.na(tmp2$blank),]; nonmissingR
   
   # create a matrix
-  missing.mat <- matrix(missingR$Et, nrow=length(missingR$Et), ncol=length(nonmissingR$Et), byrow=F); missing.mat
-  nonmissing.mat <- matrix(nonmissingR$Et, nrow=length(missingR$Et), ncol=length(nonmissingR$Et), byrow=T); nonmissing.mat
+  missing.mat <- matrix(missingR$Et, nrow=length(missingR$Et), 
+                      ncol=length(nonmissingR$Et), byrow=F); missing.mat
+  nonmissing.mat <- matrix(nonmissingR$Et, nrow=length(missingR$Et), 
+                      ncol=length(nonmissingR$Et), byrow=T); nonmissing.mat
   
   W <- abs(missing.mat - nonmissing.mat)
   rownames(W) <- paste0("Missing", seq(nrow(W)))
@@ -37,8 +40,10 @@ imputeT <- function(sampleID){
   missingT = tmp2[is.na(tmp2$temp),]; missingT
   nonmissingT = tmp2[!is.na(tmp2$temp),]; nonmissingT
   
-  missing.mat <- matrix(missingT$Et, nrow=length(missingT$Et), ncol=length(nonmissingT$Et), byrow=F); missing.mat
-  nonmissing.mat <- matrix(nonmissingT$Et, nrow=length(missingT$Et), ncol=length(nonmissingT$Et), byrow=T); nonmissing.mat
+  missing.mat <-    matrix(missingT$Et, nrow=length(missingT$Et), 
+                      ncol=length(nonmissingT$Et), byrow=F); missing.mat
+  nonmissing.mat <- matrix(nonmissingT$Et, nrow=length(missingT$Et), 
+                      ncol=length(nonmissingT$Et), byrow=T); nonmissing.mat
   
   W <- abs(missing.mat - nonmissing.mat)
   rownames(W) <- paste0("Missing", seq(nrow(W)))
@@ -61,12 +66,12 @@ impute <- function(imputeneed){
   joined <- imputeneed[!is.na(imputeneed$Et),]
   KEY <- unique(joined$sampleKEY); KEY
   
-  KEY <- KEY[11:93]; KEY
+  #KEY <- KEY[11:93]; KEY
   joined$temp2 = NA
   joined$blank2 = NA
   
   for(i in 1:length(KEY)){
-    #i = 77
+    #i = 5
     tmp = joined[joined$sampleKEY==KEY[i],]; tmp
     
     # Temperature Imputing

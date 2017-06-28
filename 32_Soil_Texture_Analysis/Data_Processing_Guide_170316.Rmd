@@ -55,8 +55,8 @@ file.choose()
 Then we can import the data, using this file!
 
 ```{r readcsv}
-sample.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313sample.csv"
-reading.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313reading.csv"
+sample.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313sample_Altered.csv"
+reading.source = "/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313reading_Altered.csv"
 
 sample.import <- read.csv(sample.source)
 reading.import <- read.csv(reading.source)
@@ -194,7 +194,7 @@ joined$EffectiveDepth = L1 + 0.5*(L2-(Vb/A))
 
 head(joined)
 
-rm(x, y, L2coef, L1, L2, Vb, A, b, m, x1)
+rm(x, y, L2coef, L1, L2, Vb, A)
 
 ```
 
@@ -258,7 +258,7 @@ tmp3 = joined[joined$sampleKEY==KEYs[i],]; head(tmp3)
 tmp4 = select(joined, sampleKEY, De, PF) %>% filter(joined$sampleKEY==KEYs[i]); tmp4 
 
 Perclay = round(Interpolation(tmp4, clay),1)
-Persilt = round(Interpolation(tmp4, silt), 1)
+Persilt = round(Interpolation(tmp4, silt)- Perclay, 1) 
 Persand = round(100-(Persilt + Perclay), 1)
 textureclasses[i,] <- c(KEYs[i], Persand, Persilt, Perclay)
 }
