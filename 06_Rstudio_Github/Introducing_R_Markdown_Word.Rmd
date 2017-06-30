@@ -19,12 +19,15 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
+The R chunk above has a reference name of "cars", which helps you keep track of the R chunks. Keeping track of R chunks might sound trival now, but later on, it's going to be quite helpful when you increasingly complicated files, i.e. text and R chunks. 
+
 ## Including Plots
 
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
-plot(pressure)
+pressure2 <- pressure
+plot(x = pressure2$temperature, y= pressure2$pressure, xlab="Temperature (C)", ylab="Pressure (psi)", las=1)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
