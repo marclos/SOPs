@@ -10,16 +10,15 @@
 \usepackage{blindtext}
 \usepackage{lipsum}
 
-\title{ICP-MS Guide}
+\title{LA-ICP-MS Guide}
 \date{6/12/2017}
-\author{Marc and Haley}
+\author{Marc and ??}
 \approved{TBD}
 \ReviseDate{\today}
-\SOPno{70 v0.1}
+\SOPno{71 v0.1}
 
-\usepackage{Sweave}
 \begin{document}
-\input{ICP-MS_Guilde_v01-concordance}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -105,7 +104,7 @@
 \begin{tabular}{lll} \hline
 Gas   &     Pressure    & Reorder \# \\ \hline\hline
 Argon &       100 psi   & ??          \\
-Oxygen&                 & \\ \hline
+Oxygen&                 & \\ 
 
 \end{tabular}
 \end{table}
@@ -118,59 +117,7 @@ Oxygen&                 & \\ \hline
 
 \NP Connect internal standard, should be diluted to 1 ppm or 1$\micro$/mL. 
 
-\NP Check Settings, nebulizer, post rotate yes!
-
-\NP Turn on circulate water
-
-\NP Startup Configuration
-
-\NP Instrument set up -- various tests done that should be checked.
-
-\NP Tuning solutions... Peripump, .5 uL solution.. internal standard concdetration will be...  speed to 0.3 because the tube stretches out. Stabilizes to 30s, acquisition speed... probe rinse... 
-
-\NP Check Default Standard Setting
-
-\NP P/A solutions
-
-\NP Turn on Plasma Mode 
-
-\NP Enable Configure Ignition Sequence is checked for liquid samples
-
-\NP Check meters 
-
-IF/Backing Pressure
-Analyzer Pressure
-Water
-Redirected Power
-Forced Power
-
-
-
 \NP 
-
-
-\subsection{Creating a Method}
-
-\subsection{Using Batch Templates}
-
-\NP Batch Template
-
-\subsection{Queue Window}
-
-\NP Skip Warm-up
-
-\NP check for bubble moving into pump in tube
-
-\NP Autotuning solutions -- DI water?
-
-\NP Check autoscale on 'Real Time Display'
-
-\NP
-
-
-\subsection{Running a Batch}
-
-
 
 \NP Prepare \dots
 
@@ -248,19 +195,6 @@ Forced Power
 \section{Data Analysis and Calculations}
 
 \section{QC/QA Criteria}
-
-\subsection{Tuning}
-
-
-\subsection{Pulse versus Analog Mode}
-
-\NP With low concentrations, versus high concetration.
-
-\NP Using P/A solution
-
-
-
-
 
 \section{Trouble Shooting}
 
