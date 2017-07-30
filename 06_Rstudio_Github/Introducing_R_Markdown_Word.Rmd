@@ -15,11 +15,21 @@ This is an R Markdown document to help students use R Markdown to write Microsof
 
 There are, of course, dozens of ways we can intregrate data analysis and text but for our purposes, we will use this method because it is 1) pretty simple to learn, 2) freely avaiable, and 3) generates consistent results (and errors!). 
 
-For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
 ### Implementing R Markdown in R Studio
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+When opening a new document, select File/New/Markdown and you will be given a template that looks much like this. After you have saved the file in your Rstudio directory, you can **Knit** the document to create the word document. 
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. This will create a word document and you will (usually?) be prompted to save the file on your local computer. Once on your computer you can make additional edits. 
+
+**NOTE:** When you make edits on your desktop's word document, these changes will be losts if you **Knit** the document again with the same name. I recommend that you give the file a new name or try to limit your edits to the .Rmd file. 
+
+## Some Simple Syntax / Format Codes
+
+For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+## Examples of Embedding R code chunks
+
+You can embed an R code chunk like this:
 
 ```{r cars}
 summary(cars)
