@@ -13,9 +13,38 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Programming Environment
 
+R is an environment that provides a robust environnment to accomplish many things:
+
+- Data processing and analysis
+- Development of customized functions
+- Access to libraries to accomplish specialized analyses.
+
+
+
+#### The R Console
+
+Provides a straightforward programming environment -- but is a command line-based. Thus, requires 'coding' to get anything done. The 'prompt' signifies that the R program is ready for to have a function or argument submitted. 
+
+#### Simple Mathematical Functions
+
+
+
 ### Statistical 
 
+Most importantly, many statistical routines have been defined with R functions that make it a great resource for environmental students.
+
+Examples include: 
+
+-Analysis of Variance: aov() and anova()
+-Linear Model: lm()
+-Generalized Linear Model: gls()
+-Non-Linear Mixed Effect: lme(), lmer()
+
+
+
 ## Rstudio
+
+R studio combines the R console with a range of other windows and menus to improve productivity. 
 
 ### Rstudio -- Desktop and Server
 
