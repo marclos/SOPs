@@ -9,11 +9,18 @@ output: word_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Using this Document
+
+This document provides both an explanation and example of the Markdown language and it's use in R Studio. The .Rmd file is the file that I have created that demonstrates Markdown and explains how it works. 
+
+At some point in the learning process, I suggest you save this document with a new name in your own directory and then **Knit** it to make sure it all works okay. If these instructions are already over your head, no worries. Just read along and you will start to understand this goal as you move through the document.
+
 ## R Markdown
 
 This is an R Markdown document to help students use R Markdown to write Microsoft Word Documents. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. The R Markdown language has been implemented in R studio so we can use R functions and arguments to create word documents that include data analysis in a seemless way. 
 
 There are, of course, dozens of ways we can intregrate data analysis and text but for our purposes, we will use this method because it is 1) pretty simple to learn, 2) freely avaiable, and 3) generates consistent results (and errors!). 
+
 
 ### Implementing R Markdown in R Studio
 
@@ -73,3 +80,7 @@ plot(x = pressure2$temperature, y= pressure2$pressure, xlab="Temperature (C)", y
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### Lots of options
+
+There numerous options available to improve the output files, but these are quite advanced topics. However, during the semester, I may add the most common to this document so this resource will continue to improve. 
