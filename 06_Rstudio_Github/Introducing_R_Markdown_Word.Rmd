@@ -25,9 +25,35 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ## Some Simple Syntax / Format Codes
 
-For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### Setting up the Document
+
+At the beginning of the document is a section that defines the title, author, date and type of output (which can include more than one, e.g. html, pdf and/or word). Following this is a short R code chunk to set up some options. For now we don't need to know what these mean, although you are welcome to look it up if you are interested.
+
+### Creating Formated Text to Structure the DocumentFinally, you can start the actual text. 
+
+### Creating Titles and Headers
+
+Using double hatch tags or pound symbols, Markdown will generate headers -- #, ##, ###, and #### all legitimate headers, where they can be nested:
+
+# First Header
+
+## Second level
+
+FYI: I use this more often because the top header generates a header that is often too big. 
+
+### Third Level
+
+#### Fourth Level
+
+
+### Other kinds of formating
+
+You can create italics, bold, and other types of font formats. We can create lists and tables as well. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 ## Examples of Embedding R code chunks
+
+### R Code Chunks -- Bounded by Accent Marks
+R Code Chunks begin with three accent marks (these are not the same as a single quote mark, notice they are slated in the opposite direction as a quotation mark. After the accent marks, we use a curly brack followed by the letter r. If you want to identify the code chunk you can put a reference name of the chunk afterwards, but it's not required. Finally, you end the openning R Code Chunk with a closing curly bracket. Then, you can add the R code. After the R code is complete, you can end the r code and return to the text with three accent marks. 
 
 You can embed an R code chunk like this:
 
@@ -37,7 +63,7 @@ summary(cars)
 
 The R chunk above has a reference name of "cars", which helps you keep track of the R chunks. Keeping track of R chunks might sound trival now, but later on, it's going to be quite helpful when you increasingly complicated files, i.e. text and R chunks. 
 
-## Including Plots
+### Including Plots
 
 You can also embed plots, for example:
 
