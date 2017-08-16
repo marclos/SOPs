@@ -15,7 +15,6 @@
 \SOPno{35}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -73,7 +72,7 @@ The technician must be approved for the following SOPs:
 
 \subsection{Reagents}
 
-\NP Reagent grade chemicals shall be used in all tests. Unless otherwise indicated, it is
+\NP Reagent grade\footnote{metal grade!} chemicals shall be used in all tests. Unless otherwise indicated, it is
 intended that all reagents shall conform to the specifications of the Committee on Analytical Reagents of the American Chemical Society, where such specifications are available. Other grades may be used, provided it is first ascertained that the reagent is of sufficiently high purity to permit its use without lessening the accuracy of the determination. If the purity of a reagent is questionable, analyze the reagent to determine the level of impurities. The reagent blank must be less than the MDL in order to be used. 
 
 \NP Reagent Water. Reagent water will be interference free. All references to water in
