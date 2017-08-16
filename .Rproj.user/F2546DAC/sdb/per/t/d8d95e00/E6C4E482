@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"R, Rstudio, and Github\"\nauthor: \"Marc Los Huertos\"\ndate: \"6/19/2017\"\noutput: ioslides_presentation\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = FALSE)\n```\n\n## R\n\n### Programming Environment\n\n### Statistical \n\n## Rstudio\n\n### Rstudio -- Desktop and Server\n\n### Reproducibility w/ R Script\n\n\n## Reproducibility w/ R Markdown\n\nThis is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.\n\nWhen you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.\n\n## Slide with Bullets\n\n- Bullet 1\n- Bullet 2\n- Bullet 3\n\n## Slide with R Output\n\n```{r cars, echo = TRUE}\nsummary(cars)\n```\n\n## Slide with Plot\n\n```{r pressure}\nplot(pressure)\n```\n\n\n## LaTeX and Manuscript Preparation\n\n### What is LaTeX?\n\nLaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX [some like to think] is  the de facto standard for the communication and publication of scientific documents. \n\nNOTE: LaTeX is a typesetting system, not a word processor. LaTeX uses source code to generate a document: you edit one file and typeset it to a generate the output (usually PDF nowadays). This is in contrast to a word processor, where you edit the text as it appears\n\n### Why use LaTeX to create documents?\n\n## How to integrete R and LaTeX?\n\n\n\n## Github and Developing Repositories\n\n### The Daily Process:\n\nPull, edit files, save files, Commit, and Push\n\n\n",
+    "created" : 1498842011560.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2691869894",
+    "id" : "E6C4E482",
+    "lastKnownWriteTime" : 1497897304,
+    "last_content_update" : 1497897304,
+    "path" : "~/github/SOPs/06_Rstudio_Github/Introduction.Rmd",
+    "project_path" : "06_Rstudio_Github/Introduction.Rmd",
+    "properties" : {
+        "chunk_rendered_width" : "650",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

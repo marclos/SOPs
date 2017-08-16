@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Soil Texture Processing File\"\nauthor: \"Bailey Lai\"\ndate: \"7/26/2016\"\noutput:\n  html_document: default\n  word_document: default\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n## Reading .csv Data into R\n```{r}\nreading <- \"/home/CAMPUS/mwl04747/github/SOPs/Soil_Texture_Analysis/Data/reading.csv\"\nsample <- \"/home/CAMPUS/mwl04747/github/SOPs/Soil_Texture_Analysis/Data/sample.csv\"\nreading.df <- read.csv(reading)\nsample.df <- read.csv(sample)\n```\n\n## Check Data Importing\n```{r}\n#View(reading.df)\nhead(reading.df)\nhead(sample.df)\n```\n\n## Preprocess Data\n```{r preprocess}\nlibrary(mosaic)\n\n\n```\n## Join Data with Key.\n\nFirst, I created two files that have only a few columns each so we can test the join function.\n\n```{r joinkeyID}\nreading.tmp <- select(reading.df, sampleKEY, timeElapsed)\nsample.tmp <- select(sample.df, sampleKEY, researcher)\n\nleft_join(sample.tmp, reading.tmp, by = \"sampleKEY\")\n```\n\n\n## Merge function used to combine two tables with common variable(s)\ntest <- merge(reading, sample)\n",
+    "created" : 1469478116643.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3953932296",
+    "id" : "FF09BC06",
+    "lastKnownWriteTime" : 1469593585,
+    "last_content_update" : 1469593585154,
+    "path" : "~/github/SOPs/Soil_Texture_Analysis/testrstudio.rmd",
+    "project_path" : "Soil_Texture_Analysis/testrstudio.rmd",
+    "properties" : {
+        "chunk_rendered_width" : "650"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,2 @@
+"0","#reading.select <- select(reading, sampleKEY, Et, actual, blank, temp); #head(reading.select)"
+"0","#joined2 <- left_join(SampleParams, reading.select, by = ""sampleKEY"")"

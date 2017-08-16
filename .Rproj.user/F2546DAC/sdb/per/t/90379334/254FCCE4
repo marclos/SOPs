@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "%SOP Template \n% Version 02 Added revision date\n% Version 03 Added TOC and acknowledgements\n%           New SOP3_alpha.cls\n\n\n\\documentclass[12pt]{../SOP3_beta}\n\n\\usepackage[english]{babel}\n\\usepackage{blindtext}\n\\usepackage{lipsum}\n\n\\title{BOD5}\n\\date{X/XX/XXXX}\n\\author{Reseacher Name}\n\\approved{TBD}\n\\ReviseDate{\\today}\n\\SOPno{24 v.03}\n\n\\begin{document}\n\\SweaveOpts{concordance=TRUE}\n\n\\maketitle\n\n\\section{Scope and Application}\n\n\\NP The scope of this SOP is train researchers...\n\n\\NP The applications of this SOP are for...\n\n\\section{Summary of Method}\n\n\\NP This SOP does this...\n\n\\tableofcontents\n\n\\newpage\n\n\\section{Acknowledgements}\n\n\\section{Definitions}\n\n\\NP Term1: is...\n\n\\section{Biases and Interferences}\n\n\\NP Biases and interferences can come from...\n\n\\section{Health and Safety}\n\n\\NP Describe the risk...\n\n\n\\subsection{Safety and Personnnel Protective Equipment}\n\n\n\\section{Personnel \\& Training Responsibilities}\n\n\\NP Researchers training is required before this the procedures in this method can be used... \n\n\\NP Researchers using this SOP should be trained for the following SOPs:\n\n\\begin{itemize}\n  \\item SOP01 Laboratory Safety\n  \\item SOP02 Field Safety\n\\end{itemize}\n\n\\section{Required Materials and Apparati}\n\n\\NP Needed for the preparation of blank\n\n\\begin{itemize}\n  \\item 1000 mL recipient\n  \\item pH meter and pH buffer solutions for calibration\n  \\item air pump\n  \\item Micropipette of 100-1000 $\\mu$L and tips of 1000 $\\mu$L  \n  \\item Magnetic stirrer and magnetic agitator\n\\end{itemize}\n\n\\NP Needed for the preparation of dilution water\n- 1000 mL recipient\n- pH meter and pH buffer solutions for calibration\n- air pump\n- micropipette of 100-1000 µL and tips of 1000 µL\n- magnetic stirrer and magnetic agitator\n\n\\NP Needed for the preparation of the incubation bottle for two water samples and one blank\n- 3 WTW OxiTop manometers(Fig. 1)\n- 3 BOD5 incubation bottles (Fig. 1)\n- 3 quivers made of rubber (Fig. 1)\n- 500 mL cylinder\n- 3 magnetic agitator\n\n\n\n\\section{Reagents and Standards}\n\n3.2.1. Needed for the dilution water (here for a measuring range of 0-200)\nThe needed volume of dilution water depends on the BOD5 concentration of the samples according\nto Table 1.\n\n\\begin{table}\n\\begin{tabular}{lllll}\nBOD5concentration (mg BOD5 L-1) & \nSample volume Vtotal (mL) & Volume of each sample (mL) &\nVolume of dilution water for the blank (mL) & Volume of dilution water for each sample (mL) \\\\\n0-40 & 432.0 & 216.0 & 436.0 & 216.0\\\\\n0-80 & 365.0 & 182.5 & 365.0 & 182.5 \\\\\n0-200 & 250.0 & 125.0 & 250.0 & 125.0 \\\\\n0-400 & 164.0 & 82.0 & 48.5 & 82.0 \\\\\n0-800 & 97.0 & 48.5 & 97.0 & 48.5 \\\\\n0-2000 & 43.5 &  21.75 & 43.5 & 21.75\\\\\n\n\\end{tabular}\n\\caption{Needed volume of dilution water in function of the BOD5 concentration in the sample}\n\\end{table}\n\nAs an example, the volume needed for a measuring range of 0-200 mg BOD5 L\n-1\nis explained in\ndetail. In total, 500 mL of dilution water is needed for the analysis of 1 blank and 2 samples. Therefore,\n800 mL dilution water is made. \n\n\\section{Estimated Time}\n\n\\NP This procedure requires XX minutes...\n\n\\section{Sample Collection, Preservation, and Storage}\n\n\\section{Procedure}\n\n\\NP Prepare \\dots\n\n\\NP\n\n\\section{Data Analysis and Calculations}\n\n\\section{QC/QA Criteria}\n\n\\section{Trouble Shooting}\n\n\\section{References}\n\n\\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).\n\n\\end{document}",
+    "created" : 1473898310306.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2118783799",
+    "id" : "254FCCE4",
+    "lastKnownWriteTime" : 1473899470,
+    "last_content_update" : 1473899470218,
+    "path" : "~/github/SOPs/24_BOD5/BOD5_v03.Rnw",
+    "project_path" : "24_BOD5/BOD5_v03.Rnw",
+    "properties" : {
+        "chunk_rendered_width" : "650"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "sweave"
+}
