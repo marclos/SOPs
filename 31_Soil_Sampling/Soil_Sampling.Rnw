@@ -1,7 +1,7 @@
 \documentclass[12pt]{../SOP2}
 \usepackage[english]{babel}
-\usepackage{blindtext}
-\usepackage{lipsum}
+%\usepackage{blindtext}
+%\usepackage{lipsum}
 
 %\documentclass{article}
 
@@ -9,57 +9,100 @@
 
 \title{Soil Sampling}
 \date{8/11/2016}
-\author{Reseacher Name}
+\author{Marc Los Huertos}
 \approved{Los Huertos}
 \ReviseDate{\today}
 \SOPno{31}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
 \section{Scope and Application}
 
-\NP \blindtext
+\NP This SOP covers soil sampling in natural systems, agroecosystems, and the built environment. 
 
-\NP \lipsum[1]
+\NP Soil sampling is a form of destructive sampling, although perhaps without much consequence. Soil samples are collected and analyze where they are permanently altered. The analysis might happen in the field (usually rare) or in the laboratory (most common). 
+
+\NP The sampling design, volume of soil collected, and preservation methods depend on the research question and analysis goals.  
 
 \section{Health and Safety}
 
-\NP \lipsum[2]
+\NP The collection of soil samples requires good field methods and care in getting to and from the field, as well as, the entire time in the field. 
+
+\NP Be sure to bring the proper personal protective gear and resources to protect you from field hazards.
+
+\NP Improper use of the equipment can result in injury. Please ask knowledgeable people how to use field tools to prevent accidents or injuries.
 
 
 \section{Personnel \& Training Responsibilities}
 
-\NP \lipsum[1]
-
-Students using this SOP should be trained for the following SOPsa:
+\NP Researchers using this SOP should be trained for the following SOPs:
 
 \begin{itemize}
-  \item SOP1
-  \item SOP2
+%  \item SOP01 Laboratory Safety
+  \item SOP02 Field Safety
 \end{itemize}
 
 
 \section{Required Materials}
 
-\subsection{Item 1 w/catalog number!}
-\subsection{Item 2}
+\NP Depending on the volume and nature of soil sample desired, sampling can be accomplishe with soil probe or a soil auger. 
+
+\begin{table}[h]
+\begin{tabular}{lll} \hline
+Type      &     Cat. No.    &  Application \\ \hline\hline
+Soil Probe  & XXX         & Shallow, intact cores, 1 cm in diameter \\
+Soil Auger  & XXX.xxx     & Deep, disturbed cores, 5 cm in diameter \\ \hline
+
+\end{tabular}
+\end{table}
+
+\NP 1 gallon or 5 gallon paint plastic bucket. However, if metals, e.g. Pb is to be analyze, stainless steel is preferred.
+
+\NP Zip-lock baggies, pint or gallon size.
 
 \section{Estimated Time}
 
-\NP This will take XX minutes...
+\NP Depending on the soil type and soil sampling procedures, the sampling time will vary. Shallow intact cores from lose soil might take a few minutes, while deep soil sample using an auger to a depth of a meter or more can take over an hour.
+
+\section{Preparation}
+
+\NP Before sampling soils, a sampling design must be decided upon. In general, this relies on some form of randomization and pooling of soil cores to create a single sample. 
+
+\NP Sampling design should be specified to answer research question.
+
+\NP As part of the sampling design, soil depths must be specified, since soil characteristics vary with depth. Labeling tape placed on the probe at the maximum depth is a good way to improve consistent sampling depths.
+
+\NP Soil cores are usually pooled together to get enough volume for laboratory analysis and to reduce the source of small scale variability.
+
+\NP Flagging sampling locations might improve the accuracy and precision of sampling.
+
+\NP Recording GPS coordinates may be an important component of the sampling and analysis of the results. 
 
 \section{Procedure}
 
-\NP Prepare \dots
+\subsection*{Intact Cores}
 
-\NP 
+\NP Once the proper location in the field has been identified, place the probe vertically over the sampling location.
 
-\NP Taking sampling from the appropriate depths requires ...
+\NP The soil probe should be insert in a quick, forceful way, using the foot petal to assist to reach the appropriate depth (often 10 cm) is a good rule of thumb. Do not wiggle or twist the probe to get it deeper, these motions are more likely to bend the probe, which will make it harder to use. In general, the initial action is the most effecient in reaching the final depth, futher pushing rarely adds much depth. 
 
-For this procedure we sample the entire soil column including the top 2", in contrast to the recommended methods.
+\NP If the soil probe has not reached enough depth, remove the probe, clean out the slot and try the above procedure again in a new hole.
+
+\NP Rapid motion to insert the probe will reduce the amount of soil campaction. 
+
+\NP Remove soil probe by pulling straight out. Do not twist or rock the probe, as these motions will likely bend the probe, making it unuseable. 
+
+\NP Put the soils in the plastic bucket.
+
+\NP When all the cores have been collected in the bucket, homogenize the cores together, breaking them up and remove as many large rocks and roots as possible. 
+
+\NP Put the soil sampling in a labeled baggie.
+
+\NP Record the GPS location. 
+
+\subsection*{Augered Soil Samples}
 
 \section{References}
 

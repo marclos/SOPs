@@ -2,12 +2,28 @@
 Repository of SOPs
 
 ## Repository Goals
-
+To provide the resources for EA students to complete their projects.
 
 # List of SOPs
 
-1. Soil Texture Analysis SOP
-2. Microscopy 
+01
+02
+03
+04
+05
+06
+06a
+06b
+
+14 Microcentrifuge
+14 Clinical Centrifuge
+14 XX Centrifuge
+
+21 Eureka Manta 2
+
+31 Soil Sampling
+
+
 
 #Making a New Project
 1. Make SSH Key on Profile 
