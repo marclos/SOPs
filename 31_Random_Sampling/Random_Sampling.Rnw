@@ -82,15 +82,21 @@
 
 \NP Define the area to be sampled and if it will be stratified. 
 
-\NP To obtain a random sample from a known x and y distance, using the following Rmd file: XY\_Random.R
+\NP To obtain a random sample from a known x and y distance, using the following Rmd file: XY\_Random.R, where I defined a grid area of 100 x 100 with 15 random samples. Then I ordered the sampled by the x-ordinate. This is useful so you don't have to run accross the field in every direction randomly -- it would be nice to optimize this on nearest neighbor but that's another project.
 
-<<echo=FALSE>>=
+<<echo=FALSE, results='hide'>>=
 library(xtable)
-source(YX_Random.R)
-print(xtable(LocationOrdered)
+read_chunk('XY_Random.R')
+source('XY_Random.R')
 @
 
-\NP
+<<echo=FALSE, results='asis'>>=
+print(xtable(LocationOrdered), include.rownames=FALSE)
+@
+
+\NP Next, I'd like to develop a stratified sampling regime.
+
+\NP Finally, it would be good to do this via a map, where areas are off limits, then we could really have a powerful tool!
 
 \section{Data Analysis and Calculations}
 
