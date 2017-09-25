@@ -16,7 +16,7 @@
 % Some valuable packages
 \RequirePackage{enumitem} % Customization of itemized, enumerated, etc.
 \RequirePackage{hyperref} % For hyperlinked cross-references
-\RequirePackage{hanging}
+\RequirePackage{../hanging}
 \RequirePackage{gensymb} % For specific symbols, such as the degree symbol
 
 %\newenvironment{hangparas}[2]{\setlength{\parindent}{\z@}

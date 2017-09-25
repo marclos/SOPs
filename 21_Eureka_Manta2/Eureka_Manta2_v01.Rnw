@@ -1,7 +1,7 @@
-\documentclass[12pt]{../SOP2}
+\documentclass[12pt]{../SOP3_beta}
 \usepackage[english]{babel}
-\usepackage{blindtext}
-\usepackage{lipsum}
+%\usepackage{blindtext}
+%\usepackage{lipsum}
 
 %\documentclass{article}
 
@@ -15,7 +15,6 @@
 \SOPno{21}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -25,7 +24,7 @@
 
 \NP This probe tests temperature, pH, depth, conductivity, and dissolved oxygen (in both g/L and \%). pH, conductivity, and dissolved oxygen all require calibration.
 
-\NP The probe can be used to take the above measurments in bodies of water, including lakes, streams, and rivers. 
+\NP The probe can be used to take the above measurements in bodies of water, including lakes, streams, and rivers. 
 
 \section{Summary of Method}
 
@@ -61,7 +60,7 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \begin{itemize}
   \item SOP03 Field Work
-  \item SOP04 Electrical Power in the Field
+  %\item SOP04 Electrical Power in the Field
 \end{itemize}
 
 \section{Required Materials}
@@ -112,6 +111,6 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \section{References}
 
-\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360. pp. (2014).
 
 \end{document}
