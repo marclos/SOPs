@@ -53,13 +53,14 @@
 \usepackage{blindtext}
 \usepackage{lipsum}
 \usepackage{soul}
+\usepackage{textcomp}
 %\documentclass{article}
 
 %\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
 
-\title{Analysis of Soil Pb}
+\title{Microwave Assisted Acid Digestion of Soils for Trace Metal Analysis}
 \date{3/11/2017}
-\author{Marc Los Huertos \& Katheryn Kornegay}
+\author{Marc Los Huertos \& Isaac Medina}
 \approved{Los Huertos}
 \ReviseDate{\today}
 \SOPno{35}
@@ -70,14 +71,20 @@
 
 \section{Scope and Application}
 
-\NP This method provides digestion procedures for the preparation of sediments, sludges, and soil samples for analysis by flame atomic absorption spectrometry or inductively coupled plasma optical emission spectrometry (ICP-OES) and is a modified version of \cite{EPA3050B} and informed by \cite{pena2011comparative, guven2011comparison} 
+\NP This method provides a quick and effective digestion procedure for the extraction of trace metals from soil samples using a Microwave. Prepared samples can be analyzed for their trace metal content by flame atomic absorption spectrometry (FAA), inductively coupled plasma mass spectrometry (ICP-MS) or other suitable analysis methods. 
 
-\NP The SOP can be applied to sediments, sludges, and soil samples.
+\NP This procedure was modified from the \href{https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjNmefY3tfWAhVP92MKHatgCaQQFggqMAA&url=https%3A%2F%2Fwww.epa.gov%2Fsites%2Fproduction%2Ffiles%2F2015-12%2Fdocuments%2F3051a.pdf&usg=AOvVaw1LPlngQyM_L4Zu4SC-sATE}{EPA test method 3051A} and provides students with guidance on preparing samples, running a microwave acid digestion, filtering and extracting the sample for analysis. 
+\NP The SOP can be applied to the preparation of sediments, sludges, and soil samples.
+
+\section{Summary of Method}
+Digestion of soil samples begins by oven (or air) drying the sample (approximately 3-5 grams) at 60 \textcelsius{} overnight. The oven dried samples are grinded with a mortar and pestle and passed through a sieve. Next, 0.5 g  of the dried samples are transferred into microwave vessels, sealed and placed into a MARS 5 laboratory microwave. The microwave runs a 10 minute program which meets the heat and pressure qualifications outlined in the EPA method. After the microwave program the vessels are allowed to cool for at least 5 minutes inside the microwave and then for into a fume hood to cool down for another
 
 \tableofcontents
 
 \newpage
 
+\section{Definitions}
+\section{Interferences}
 \section{Health and Safety}
 
 \NP The method relies on extracting soils in hot, i.e. boiling concentrated acid. Thus, maintaining a safe laboratory environment and diligience to properly use PPE is key to the success of this SOP. 
@@ -95,9 +102,7 @@ The technician must be approved for the following SOPs:
 \end{itemize}
 
 
-\section{Preparation}
-
-\subsection{Supplies and Equipment}
+\subsection{Equipment and Supplies}
 
 
   %\item Mason jar with screw lids -( Not using this…too messy?) OR
@@ -120,7 +125,7 @@ The technician must be approved for the following SOPs:
   \item Gloves
 \end{enumerate}
 
-\subsection{Reagents}
+\subsection{Reagents and Standards}
 
 \NP Reagent grade\footnote{metal grade!} chemicals shall be used in all tests. Unless otherwise indicated, it is
 intended that all reagents shall conform to the specifications of the Committee on Analytical Reagents of the American Chemical Society, where such specifications are available. Other grades may be used, provided it is first ascertained that the reagent is of sufficiently high purity to permit its use without lessening the accuracy of the determination. If the purity of a reagent is questionable, analyze the reagent to determine the level of impurities. The reagent blank must be less than the MDL in order to be used. 
@@ -144,41 +149,49 @@ impurities. If method blank is < MDL, the acid can be used.
 ***You must wear safety goggles or eyeglasses***
 Plastic Gloves are available to protect your hands from acid. Wash off any acid, even on the gloves.
 
-\subsection {Preparation of the soil samples:}
+\subsection{Start with Clean Glassware}
+  \begin{itemize}
+  \item All vessels and volumetricware must be acid washed and rinsed with reagent water
+  \item SOP XX describes a procedure for cleaning microwave vessels using hot HCl and HNO3 (Chuck has special soap that he uses to wash the microwave vessels instead of acid washing)
+  \item Polymeric or glass volumetric ware and storage containers should be cleaned by leaching with more dilute acids (10\% V/V) appropriate for the specific material used then rinsed with reagent water and dried in a clean environment
+  \end{itemize}
+\subsection{Homogenize the Samples}
   \begin{enumerate}
-    \item From the Mason jar with mesh on top, sieve approximately 10.0 g soil on to the plastic weighing dish.
-    \item Transfer all the weighed soil to a 250-mL ehrlemeyer (conicle-y shaped flask). Label the flask with your initials on label tape. 
+  \item Weigh out approximately 5 grams of your soil sample into a clean beaker. Try to avoid things that are obsviously not soil such as larger rocks, plant material (such as twigs, leafs, large pieces of grass, etc.)
+  \item oven dry the samples at 60 \celsius overnight
+  \item Using a clean mortar and pestle, grind the samples and pass them through a XX mm sieve %Ask Marc about sieve size and if the weight of what did not pass through the sieve should be recorded.... it might need to be factored into calculations later
   \end{enumerate}
-\subsection {Extracting Pb:}
+\subsection{Sample Digestion}
   \begin{enumerate}
-    \item In the fume hood - Add 20 mL of 1M nitric acid CAREFULLY (slowly) to the soil.
-    \item Heat the mixture near boiling on the hot plate (medium setting) until the fumes are almost colorless. Heat for 5 -10 additional min. Do not let the mixture go dry - add a few mLs of water if needed. At end, with tongs, remove flask from plate, and cool 5-10 min. Then take back to bench.
-    \item CAREFULLY add 30 mL of deionized water to the flask and swirl GENTLY. Let stand 3-5 min so heavier particles can  settle out.
-    \item Take a funnel with filter paper and put a small wad of glass wool in the funnel and place the funnel in a pre-labelled 50-mL centrifuge tube. 
-    \item Carefully transfer the acid/soil solution from the conical flask to the volumetric flask. You will not remove all the soil particles, but most of the larger ones will be filtered out.
-    \item After the solution passes through the filter paper, swirl 10 mL of water in the flask and pour the water through the filter paper. 
+  \item	Weigh 0.500 g (to the nearest 0.001 g) of the sieved soil into a clean and appropriate microwave vessel. For oil contaminated samples use no more than 0.250 g. Be sure to record the weight of each sample in a laboratory notebook
+  \item	Add 10 mL ( $\pm$ 0.1 mL) concentrated nitric acid (trace metal grade) in a fume hood. Be sure to wear protective gloves and face mask. \\ Note: The addition of acid to samples containing volatile or easily oxidized organic species may cause a vigorous reaction. If you notice an immediate reaction it is okay to allow the sample some time for pre-digestion in the fume hood. Leave the vessel in the fume hood for a couple of hours with the cap loosely fitted on top. You want to ensure that any gases escape into the hood. Also, using an acid mixture here instead (9 mL nitric acid to 3 mL of hydrochloric acid) has been shown to improve the recoveries of some metals including: Aluminum, Antimony, Barium, Beryllium, Chromium, Iron, Magnesium, Silver, and Vanadium but can increase interference with some analysis methods (see EPA method 3051A). 
+  \item Seal the vessels with the proper caps and according to the manufacturer’s directions
+  \item Place the sealed vessel into a slot on the vessel rack containing a carbon fiber sleeve. DO NOT PLACE THE VESSEL INTO A SLOT WITHOUT A SLEEVE as this can result in the vessel exploding due to buildup of pressure. 
+  \item Secure the rack with the vessels into the MARS 5 microwave
+  \item \emph{If applicable, connect the appropriate temperature and pressure sensors to the vessels (ask Prof. Taylor about this step)}
+  \item Select the correct program for the microwave to perform. The MARS 5 in the Advanced Laboratory in Seaver North has already been pre-programmed with a method that will follow the specifications for a 10 minute acid digestion described in the EPA method 3051A for up to 24 vessels. With guidance from an instructor double check that all vessels are sealed and the rack is correctly placed in the closed microwave. Then run the program. \vspace{4mm} \\
+  
+Note: You can create a new program if you need to digest more vessels. The microwave should follow the basic heating guidelines below. For full information turn to the EPA method 3051A. 
+\begin{itemize}
+\item Each sample should reach 175 ±5 C in 5.5 ± 0.25 mins
+\item Should remain at 175 C for 4.5 min (or the remainder of the 10 min digestion)
+\item The pressure to peak between 5 and 10 minutes for most samples. 
+\item If pressure exceeds the limits of the vessels it should be safely and controllably reduced by the built in pressure relief mechanism of the vessel. 
+\end{itemize}
 
-    \item Add dionized water to the 50-mL mark.
-
-    \item Centrifuge the tube at X,XXX g for 5 minutes and until solution is clear. 
-
-    \item Carefully pour the supernantant into a 100-mL volumetric flask while avoiding getting soils into the suspension. 
-
-    \item Fill the volumetric flask to the circular mark on the neck with deionized water. Mix well by putting your thumb over the stopper and inverting the flask several times. 
-
-    \item Transfer 30-40 mL of the solution into a small (50-mL) beaker.
-
-    \item Using a syringe, remove 15 mL of solution and put a dispossable filter on the syringe and push the plunger down filling a labelled 15 mL centrifuge tube. 
-
-    \item Use a syringe and Millipore filter to push (gently) about 10 mL of solution through the filter into the small labeled sample vial.
-   \end{enumerate}
-   
-\subsection {Determining Pb content:}
-  \begin{enumerate}
-    \item Centrifuge a 15-mL sample until solution is clear. Usually 3 to 4 min. Use a syringe and Millipore filter to push (gently) about 10 mL of solution through the filter into the small labeled sample vial.
-    \item Measure the concentration of the solution on the Atomic Adsorption Spectrometer. Multiply the reading for your sample by 10 to calculate the lead concentration in your soil sample.  The final result is in “ppm”, which means milligrams (0.0010 g) of lead per kilogram of soil.
+  \item After the microwave process has finished, allow the vessels to cool for at least 5 minutes or until they are cool enough to be moved into a fume hood or some other well-ventilated area to cool down further %(AFTER TEST RUNNING  PROCEDURE INSERT TIME TO COOL DOWN IN FUME HOOD HERE EPA method isn’t very clear on this)
   \end{enumerate}
   
+\subsection{Filtering and Extraction Process}
+  \begin{enumerate}
+  \item Once the microwave vessels are sufficiently cool enough to handle, and working under a fume hood uncap and vent the samples for 2-3 minutes. This is to avoid a rush of acid vapor that may still be in the headspace. 
+  \item Quantitatively (i.e. with minimal loss of sample) transfer the sample(s) into clean 50 mL graduated centrifuge tubes 
+  \item Carefully dilute the samples up to the 25 mL mark with reagent water. Be careful not to go past the 25 mL mark and keep all samples as close to the same volume as possible for accuracy. %(EPA method says HNO3 concentration of 2% v/v is  commonly “desirable” )
+  \item Secure the caps back onto the centrifuge tubes
+  \item Centrifuge the sample tubes at 2,000 - 3,000 rpm for 10 min or until clear. \vspace{4mm} \\
+  Note: sometimes when undissolved materials such as SiO2, TiO2, or other refractory oxides, remain this may cause the supernatant not to look clear even after centrifugation. Allowing the sample to stand overnight will give time for things to settle further and can improve clarity. 
+  \item Now, using a clean syringe and XX filter withdraw 10 mL of the supernatant and filter into a 15 mL centrifuge tube. Be careful not withdraw any of the centrifuge debris at the bottom of the centrifuge tube and use a new filter and clean syringe for each sample.  Ask your instructor to demonstrate how to use the syringes and filters as this step can be difficult to accomplish without prior experience.%(ASK MARK ABOUT MAKING SURE PLASTIC FOR SYRINGE AND FILTER IS RESISTANT TO ACID… WHAT IS THE CONC. OF THE ACID AT THIS POINT? DO THE CALCULATION) (Note: if we can’t acid wash the syringes this might require up to 24 of them and definitely will require 24 filters) 
+  \end{enumerate}
 \subsection { Dispose of sample and solutions as directed by instructors. Clean up your bench space.}
 
 
