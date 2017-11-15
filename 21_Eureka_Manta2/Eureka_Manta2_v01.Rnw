@@ -8,7 +8,7 @@
 %\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
 
 \title{Eureka Manta2 Multiprobe for water testing}
-\date{6/20/2017}
+\date{10/30/2017}
 \author{Haley Land-Miller}
 \approved{Los Huertos}
 \ReviseDate{\today}
@@ -71,7 +71,7 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \NP {Amphibian 2 charging cable}
 
-\NP {Cable to connect Eureka probe and Amphibian}
+\NP {Cable to connect Manta2 probe and Amphibian}
 
 \NP {Standards for calibration (pH 4.00, 7.00, 10.00, conductivity, and a small bottle that can be used to make the DO standard)}
 
@@ -85,19 +85,27 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \NP Cleaning the probe takes less than 5 minutes.
 
-\section{Procedure}
+\section{Pre-field Preparation}
 
 \subsection{Charging}
 
 \NP Charge the Amphibian 2 portable PC before going into the field. The charger plugs into the round hole on the bottom edge of the Amphibian. 
 
-\NP Calibration of each sensor requires similar procedures. First, turn on the Amphibian and press the Windows icon in the lower left corner. Then, scroll down to the bottom of the main page and select ----. Once the interface loads, press ``Manta2" on the lower left bar, and select ``Standardize" from the menu that appears. Select the sensor you would like to standardize. 
+\subsection{Calibration}
 
-\NP Ex: Standardizing pH. To standardize the pH meter, follow the steps above and select ``pH units" from the Manta2 menu. The screen will instruct you to input the value of your first standard. Then, unscrew just the blue cap from the larger cap of the probe, leaving the clear plastic cup surrounding the sensors in place. Pour a small amount of your first standard into the cup (with the probe facing upward), place the lid on, and shake, to rinse in the standard. Do this twice in total, and then pour the standard into the cup, enough to cover all sensors. Once the red line on chart of the Amphibian has stabalized (is coming out flat), press ``Ok". The screen will now prompt you to put in your second standard. Rinse and shake twice with DI water, and then twice with your second standard, before filling it above the sensors and repeating your process from above. When prompted, select the option to do a three-point calibration, and repeat these steps (including two rinses with DI and then with the standard) with your third standard.
+\NP Calibration of each sensor requires similar procedures. First, connect the Amphibian and the Manta using the underwater cable. Then, turn on the Amphibian by pressing the power button on the bottom right corner. The green light below should flash every few seconds. Press the Windows icon in the lower left corner. Scroll down to the bottom of the main page and select Amp_2_2_6. Once the interface loads, press ``Manta2" on the lower left bar, and select ``calibrate" from the menu that appears. Select the sensor you would like to calibrate. 
+
+\NP Standardizing pH. To standardize the pH meter, follow the steps above and select ``pH units" from the Manta2 menu. The screen will instruct you to input the value of your first standard (pH) in the unshaded box. Then, unscrew just the blue cap from the larger cap of the probe, leaving the clear plastic cup surrounding the sensors in place. Pour a small amount of the first standard into the cup (with the probe facing upward), place the lid on, and shake, to rinse sensors in the standard. Do this twice in total and then fill the cup with 1 inch of the first standard. Once the red line on the chart of the Amphibian has stabalized (is coming out flat), press ``Ok". The screen will now prompt you to put in your second standard. Rinse and shake twice with DI water, and then twice with your second standard, before filling it above the sensors and repeating your process from above. When prompted, select the option to do a three-point calibration, and repeat these steps (including two rinses with DI and then with the standard) with your third standard. You have just set a "calibration curve."
 
 \NP Calibrating the other sensors is very similar. Conductivity is a one-point calibration with one standard. For dissolved oxygen, pour tap water into a small bottle, about half full. Shake the bottle vigorously for several minutes, incorporating as much air as possible into the water. Go through the steps to start calibration of HDO, and pour the water into the cup. For dissolved oxygen, the sensor needs to be stable for 3 minutes before you press ``Ok". 
 
-\NP Starting the Manta...
+\section{Field Procedure}
+
+\NP Connecting the Manta. Connect and power on the Manta to the Amphibian Portable PC as before.
+
+\NP fdfasdfasdf
+
+\includegraphic{AmphibianMain.png}
 
 \NP Shortcut buttons...
 
@@ -105,7 +113,11 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \NP Snap-shot and Annotation
 
-\NP Cleaning...
+\NP Disconnecting the Manta
+
+\section{Post-Field Procedures}
+
+\NP Cleaning the Manta2. Clean the probe with warm soapy water. Liquid dishwashing soap or mild household cleaners work well. Clean sensor stems with a soft brush. Rinse well with tap water and \textbf{store sensors with tap water inside cup}.
 
 \NP Downloading Data...
 
