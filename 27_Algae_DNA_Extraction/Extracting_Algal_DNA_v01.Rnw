@@ -21,7 +21,7 @@
 \SOPno{24 v.01}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+%\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -51,15 +51,13 @@ This SOP was originally written by Aparna Chintapalli after a summer SURP where 
 
 \NP The extraction process is supposed to isolate DNA from other celluular or other organic materials. However, proteins and phenols...  
 
-\NP When meausuring the DNA yield, these compounds may interfere with the measurements and thus, suggest you have more DNA that was extracted in reality. 
-
-See \section{QA/QC} to measure these contaminants.
+\NP When meausuring the DNA yield, these compounds may interfere with the measurements and thus, suggest you have more DNA that was extracted in reality. See section QA/QC to measure these contaminants.
 
 \NP Mesuring the absorbance ratios of several wavelength gives a reasonble estimate of DNA purity. 
 
 \begin{description}
   \item[A260/A280 Ratio] Nucleic acids, DNA and RNA, absorb at 260nm. For a pure sample, a well defined peak (no shoulders or wiggles) at 260nm is expected.Several factors, however, can influence the accuracy of the 260/280 and 260/230 ratios. Readings from very dilute samples will have very little difference between the absorbance at 260 and 280nm leading to inaccurate ratios.  The type(s) of protein present will also have an effect.  Absorbance in the UV range by proteins is primarily the result of aromatic ring structures. Phenol and other contaminants can also absorb at 280 nm and can affect the ratio calculation. Phenol absorbs with a peak at 270nm. \textbf{Nucleic acid preparations uncontaminated by phenol should have an 260/280 ratio of around 1.8. } The pH of the solution can also affect the 260/280 ratio, with acidic solutions having a lower ratio of up to 0.2–0.3 and alkaline solutions having an increased ratio by a similar amount.
-  \item[A260/A230 Ratio] Pure RNA has an A260/A280 ratio of 2.0, therefore if a DNA sample has an 260/280 ratio of greater than 1.8 this could suggest RNA contamination. The 260/280 ratio is a secondary measure of nucleic acid purity. This ratio for pure samples are often higher than the respective 260/280 ratio values. Strong absorbance around 230nm can indicate that organic compounds or chaotropic salts are present in the purified DNA.  A ratio of 260nm to 230nm can help evaluate the level of salt carryover in the purified DNA. The lower the ratio, the greater the amount of salt present. A\textbf{s a guideline, the 260/230 ratio should be greater than 1.5, ideally close to 1.8. } Urea, EDTA, carbohydrates and phenolate ions all have absorbance near 230nm. A reading at 320nm will indicate if there is turbidity in the solution, another indication of possible contamination.  
+  \item[A260/A230 Ratio] Pure RNA has an A260/A280 ratio of 2.0, therefore if a DNA sample has an 260/280 ratio of greater than 1.8 this could suggest RNA contamination. The 260/280 ratio is a secondary measure of nucleic acid purity. This ratio for pure samples are often higher than the respective 260/280 ratio values. Strong absorbance around 230nm can indicate that organic compounds or chaotropic salts are present in the purified DNA.  A ratio of 260nm to 230nm can help evaluate the level of salt carryover in the purified DNA. The lower the ratio, the greater the amount of salt present. \textbf{As a guideline, the 260/230 ratio should be greater than 1.5, ideally close to 1.8.} Urea, EDTA, carbohydrates and phenolate ions all have absorbance near 230nm. A reading at 320nm will indicate if there is turbidity in the solution, another indication of possible contamination.  
 
 \end{description}
 
@@ -69,7 +67,7 @@ See \section{QA/QC} to measure these contaminants.
 
 \NP CAUTION: PC and PW1 contain guanidine hydrochloride, ethanol, and isopropanol, beware of these chemicals coming into contact with the skin and especially the eyes. Also keep away from heat (highly flammable liquid and vapours).
 
-\subsection {Safety and Personnnel Protective Equipment}
+\subsection{Safety and Personnnel Protective Equipment}
 
 \NP Always wear appropriate lab safety equipment, including safety goggles, lab coat, close-toed shoes, long pants, and gloves. 
 
@@ -92,7 +90,7 @@ See \section{QA/QC} to measure these contaminants.
 
 \section{Required Materials}
 
-\subsection*{Equipment}
+\subsection{Equipment}
 
 \NP Bead homogenizer
 
@@ -153,11 +151,11 @@ See \section{QA/QC} to measure these contaminants.
 
 \subsection*{Cell Lysis}
 
-\NP Into the prepared Eppendorf tubes, add 400µL Buffer PL1 and vortex the mixture thoroughly.NOTE: if the sample cannot be resuspended easily because it is soaking up too much buffer, add more PL1 (but increase RNase A proportionally).
+\NP Into the prepared Eppendorf tubes, add 400mL Buffer PL1 and vortex the mixture thoroughly.NOTE: if the sample cannot be resuspended easily because it is soaking up too much buffer, add more PL1 (but increase RNase A proportionally).
 
-\NP After vortexing, add 10µL RNase A solution (thawed) into each tube and mix thoroughly.
+\NP After vortexing, add 10mL RNase A solution (thawed) into each tube and mix thoroughly.
 
-\NP Incubate the suspension for 10 min. at 65$^\circ$C. *For some plant material it might be advantageous to increase incubation time to 30-60 min. 
+\NP Incubate the suspension for 10 min. at 65$^\circ$C. *For some plant material it might be advantageous to increase incubation time to 30 to 60 min. 
 
 \subsection*{Filtration/Clarification of Crude Lysate}
 

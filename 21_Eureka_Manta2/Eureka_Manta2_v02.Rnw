@@ -101,15 +101,24 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \section{Field Procedure}
 
-\NP Connecting the Manta. Connect and power on the Manta to the Amphibian Portable PC as before.
+\NP Connecting the Manta. Connect and power on the Manta to the Amphibian Portable PC as before. When you open the Amp\_2\_2\_6, the Main screen (Shown Below) will appear. This is where you will see data readings. To log, or store, one line of data take a "snapshot" with the top left button. 
+To see data presented graphically, open the PDA menu and select "graphing."
 
-\NP fdfasdfasdf
+\NP Amphibian Working Screens
 
 \includegraphics{AmphibianMain.png}
 
 \NP Shortcut buttons...
 
-\NP Enable GPS
+\NP Enable GPS. To turn on GPS, tap on the GPS/GNSS status gadget shown below. A satellite ison will appear on the bar across the top. Once satellites are found, information similar to that in the image below will appear.
+
+\includegraphics{GPS.png} 
+
+\textbf{5 SV} Number of satellites used for the current position
+
+\textbf{3Diff} 3 Satellites will create a 2D fix, 4 Satellites are required for a 3D fix.
+
+\textbf{PDOP 2.2} A measure of Accuracy- the lower the number, the more accurate the fix is.
 
 \NP Snap-shot and Annotation
 
@@ -120,6 +129,10 @@ Researchers using this SOP should be trained for the following SOPs:
 \NP Cleaning the Manta2. Clean the probe with warm soapy water. Liquid dishwashing soap or mild household cleaners work well. Clean sensor stems with a soft brush. Rinse well with tap water and \textbf{store sensors with tap water inside cup}.
 
 \NP Downloading Data...
+
+\section{Advanced Use Options}
+
+ \NP Autonomous data logging. In addition to using "snapshots" to capture data, you can activate an automatic "Logging" feature which records data at customized time intervals. See page 48 in the Manta2 Manual.
 
 \section{References}
 
