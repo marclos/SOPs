@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  16 NOV 2017 14:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  16 NOV 2017 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Eureka_Manta2_v04.tex
-(./Eureka_Manta2_v04.tex
+**Extracting_Algal_DNA_v03.tex
+(./Extracting_Algal_DNA_v03.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
 rainian, russian, bulgarian, loaded.
-(../SOP3_beta.cls
-Document Class: ../SOP3_beta 2016/08/08 v3.2 Modified article class for standar
-d operating procedures
+(../SOP3_alpha.cls
+Document Class: ../SOP3_alpha 2016/08/08 v3.1 Modified article class for standa
+rd operating procedures
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -155,9 +155,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip44
 )
-(../hanging.sty
+(./hanging.sty
 
-LaTeX Warning: You have requested package `../hanging',
+LaTeX Warning: You have requested package `hanging',
                but the package provides `hang'.
 
 Package: hang 2017/02/18 v2.1 Hanging paragraphs and list items
@@ -215,11 +215,18 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip48
+\bibsep=\skip49
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count102
+)
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box27
-\beforetitleunit=\skip48
-\aftertitleunit=\skip49
+\beforetitleunit=\skip50
+\aftertitleunit=\skip51
 \ttl@plus=\dimen116
 \ttl@minus=\dimen117
 \ttl@toksa=\toks19
@@ -227,13 +234,13 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen119
 \titlewidthfirst=\dimen120
 )
-\c@paranum=\count102
+\c@paranum=\count103
 
 (/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip50
-\thanksmargin=\skip51
-\droptitle=\skip52
+\thanksmarkwidth=\skip52
+\thanksmargin=\skip53
+\droptitle=\skip54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen121
@@ -242,15 +249,15 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip53
-\f@ncyO@elh=\skip54
-\f@ncyO@erh=\skip55
-\f@ncyO@olh=\skip56
-\f@ncyO@orh=\skip57
-\f@ncyO@elf=\skip58
-\f@ncyO@erf=\skip59
-\f@ncyO@olf=\skip60
-\f@ncyO@orf=\skip61
+\fancy@headwidth=\skip55
+\f@ncyO@elh=\skip56
+\f@ncyO@erh=\skip57
+\f@ncyO@olh=\skip58
+\f@ncyO@orh=\skip59
+\f@ncyO@elf=\skip60
+\f@ncyO@erf=\skip61
+\f@ncyO@olf=\skip62
+\f@ncyO@orf=\skip63
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -271,7 +278,7 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip62
+\OuterFrameSep=\skip64
 \fb@frw=\dimen124
 \fb@frh=\dimen125
 \FrameRule=\dimen126
@@ -288,7 +295,7 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count103
+\babel@savecnt=\count104
 \U@D=\dimen128
 )
 \l@british = a dialect from \language\l@english 
@@ -296,30 +303,57 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-))
+)) (./blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count105
+\c@Blindtext=\count106
+\c@blind@countparstart=\count107
+\blind@countxx=\count108
+\blindtext@numBlindtext=\count109
+\blind@countyy=\count110
+\c@blindlist=\count111
+\c@blindlistlevel=\count112
+\c@blindlist@level=\count113
+\blind@listitem=\count114
+\c@blind@listcount=\count115
+\c@blind@levelcount=\count116
+\blind@mathformula=\count117
+\blind@Mathformula=\count118
+\c@blind@randomcount=\count119
+\c@blind@randommax=\count120
+\c@blind@pangramcount=\count121
+\c@blind@pangrammax=\count122
+) (./lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count123
+)
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(./Eureka_Manta2_v04.aux)
-\openout1 = `Eureka_Manta2_v04.aux'.
+(./Extracting_Algal_DNA_v03.aux)
+\openout1 = `Extracting_Algal_DNA_v03.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -327,25 +361,25 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count104
+\c@section@level=\count124
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
 
-(./Eureka_Manta2_v04.out) (./Eureka_Manta2_v04.out)
+(./Extracting_Algal_DNA_v03.out) (./Extracting_Algal_DNA_v03.out)
 \@outlinefile=\write3
-\openout3 = `Eureka_Manta2_v04.out'.
+\openout3 = `Extracting_Algal_DNA_v03.out'.
 
-LaTeX Info: Redefining \celsius on input line 67.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 67.
+LaTeX Info: Redefining \celsius on input line 73.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 73.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 67.
-Package gensymb Info: Using \Omega for \ohm on input line 67.
+LaTeX Info: Redefining \ohm on input line 73.
+Package gensymb Info: Using \Omega for \ohm on input line 73.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -385,16 +419,16 @@ Package gensymb Warning: Not defining \micro.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
+\scratchcounter=\count125
 \scratchdimen=\dimen129
 \scratchbox=\box29
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count108
+\MPscratchCnt=\count128
 \MPscratchDim=\dimen130
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks21
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -403,7 +437,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 67.
+(lastpage)             ! on input line 73.
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -419,40 +453,36 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../pomona.jpg, id=72, 460.557pt x 492.75pt>
+<../pomona.jpg, id=68, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
-Package pdftex.def Info: ../pomona.jpg used on input line 69.
+Package pdftex.def Info: ../pomona.jpg used on input line 76.
 (pdftex.def)             Requested size: 56.9055pt x 60.8793pt.
 
-Overfull \vbox (21.72939pt too high) detected at line 69
+Overfull \vbox (21.72939pt too high) detected at line 76
  []
 
 
-Overfull \hbox (2.12527pt too wide) in paragraph at lines 69--70
+Overfull \hbox (6.2652pt too wide) in paragraph at lines 76--77
 [][] 
  []
 
-[1
+(./Extracting_Algal_DNA_v03.toc [1
 
-{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>]
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>])
+\tf@toc=\write4
+\openout4 = `Extracting_Algal_DNA_v03.toc'.
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 102.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 141.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -460,46 +490,54 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] <AmphibianMain.png, id=114, 713.66624pt x 737.75626pt>
-File: AmphibianMain.png Graphic file (type png)
+[2]
+Overfull \hbox (16.07623pt too wide) in paragraph at lines 106--107
+[][]\OT1/cmr/bx/n/12 5.3 \OT1/cmr/m/n/12 Us-ing the Nan-oDrop Spec-tropho-tome-
+ter you can mea-sur-ing the ab-sorbance/transmission
+ []
 
-<use AmphibianMain.png>
-Package pdftex.def Info: AmphibianMain.png used on input line 159.
-(pdftex.def)             Requested size: 356.83224pt x 368.87723pt.
- <GPS.png, id=116, 127.97812pt x 171.64125pt>
-File: GPS.png Graphic file (type png)
+[3] <NanoDropPure.png, id=107, 383.93437pt x 264.99pt>
+File: NanoDropPure.png Graphic file (type png)
+ <use NanoDropPure.png>
+Package pdftex.def Info: NanoDropPure.png used on input line 114.
+(pdftex.def)             Requested size: 383.93343pt x 264.98935pt.
 
-<use GPS.png>
-Package pdftex.def Info: GPS.png used on input line 163.
-(pdftex.def)             Requested size: 127.9778pt x 171.64081pt.
- [4 <./AmphibianMain.png>] [5 <./GPS.png>]
+<NanoDropContaminated.png, id=109, 371.13657pt x 258.9675pt>
+File: NanoDropContaminated.png Graphic file (type png)
 
+<use NanoDropContaminated.png>
+Package pdftex.def Info: NanoDropContaminated.png used on input line 116.
+(pdftex.def)             Requested size: 371.13565pt x 258.96684pt.
+ [4 <./NanoDropPure.png> <./NanoDropContaminated.png>] [5] [6] [7] [8] [9] 
 AED: lastpage setting LastPage
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
- (./Eureka_Manta2_v04.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
-Package rerunfilecheck Info: File `Eureka_Manta2_v04.out' has not changed.
-(rerunfilecheck)             Checksum: 74B46D32BCA447F75521906392416B54;954.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+ (./Extracting_Algal_DNA_v03.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
+Package rerunfilecheck Info: File `Extracting_Algal_DNA_v03.out' has not change
+d.
+(rerunfilecheck)             Checksum: 7B52987875B414B050D6F73568F4290A;901.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
  ) 
 Here is how much of TeX's memory you used:
- 7530 strings out of 494820
- 107430 string characters out of 3178050
- 204809 words of memory out of 3000000
- 10565 multiletter control sequences out of 15000+200000
- 8939 words of font info for 34 fonts, out of 3000000 for 9000
+ 8249 strings out of 494820
+ 116821 string characters out of 3178050
+ 323249 words of memory out of 3000000
+ 11239 multiletter control sequences out of 15000+200000
+ 8592 words of font info for 33 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,18n,49p,1146b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,49p,1141b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Eureka_Manta2_v04.pdf (6 pages, 478750 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Extracting_Algal_DNA_v03.pdf (10 pages, 373294 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 59 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 240 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
