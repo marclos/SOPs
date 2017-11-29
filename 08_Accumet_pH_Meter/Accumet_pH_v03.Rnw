@@ -5,50 +5,47 @@
 
 
 \documentclass[12pt]{../SOP3_beta}
-
 \usepackage[english]{babel}
 \usepackage{blindtext}
 \usepackage{lipsum}
 
-\title{SOP Title}
+\title{Accumet XL600 Meter}
 \date{X/XX/XXXX}
-\author{Reseacher Name}
+\author{Kate McWilliams}
 \approved{TBD}
 \ReviseDate{\today}
 \SOPno{X}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+
 
 \maketitle
 
 \section{Scope and Application}
 
-\NP The scope of this SOP is train researchers...
-
-\NP The applications of this SOP are for...
+\NP This SOP describes how to use the Accumet meter system to measure and monitor a variety of water-based electrochemical parameters including pH, conductivity, temperature, salinity, dissolved oxygen, and ion-selective mV.
 
 \section{Summary of Method}
 
-\NP This SOP does this...
+\NP This SOP does this \dots
 
 \tableofcontents
 
 \newpage
 
-\section{Acknowledgements}
-
 \section{Definitions}
 
-\NP Term1: is...
+\NP Term 1: Electrode- 
+\NP Term 2: Reference Cavity-
+\NP Term 3: Buffer-
 
 \section{Biases and Interferences}
 
-\NP Biases and interferences can come from...
+\NP Biases and interferences can come from \dots
 
 \section{Health and Safety}
 
-\NP Describe the risk...
+\NP Describe the risk \dots
 
 
 \subsection{Safety and Personnnel Protective Equipment}
@@ -56,9 +53,9 @@
 
 \section{Personnel \& Training Responsibilities}
 
-\NP Researchers training is required before this the procedures in this method can be used... 
+\NP Researchers training is required before this the procedures in this method can be used\dots 
 
-\NP Researchers using this SOP should be trained for the following SOPs:
+\NP Researchers using this SOP should be trained for the following SOPs
 
 \begin{itemize}
   \item SOP01 Laboratory Safety
@@ -67,32 +64,73 @@
 
 \section{Required Materials and Apparati}
 
-\NP Item 1 w/catalog number!
+\NP{Accumet XL600 Benchtop Meter w/catalog number!}
 
-\NP Item 2
+\NP{BOD Probe}
+
+\NP{Standards for calibration (pH 4.00, 7.00, 10.00, conductivity, and a small bottle that can be used to make the DO standard)}
 
 \section{Reagents and Standards}
 
 \section{Estimated Time}
 
-\NP This procedure requires XX minutes...
+\NP This procedure requires XX minutes \dots
 
 \section{Sample Collection, Preservation, and Storage}
 
 \section{Procedure}
 
-\NP Prepare \dots
+\subsection{Operating the Accumet Meter}
 
-\NP
+\NP Press the Power button for three seconds to turn on the meter.
+\NP Functions Graphic
+
+\subsection{Getting Started}
+
+The accumet electrodes utilize a simple twist open and close design. The purple electrodes are Tris compatible and are less prone to cloggin by sulfides, heavy metals or proeints. A Blue band indicates a single junction electrode designed for general use in camples without sulfides, heavy metals, or proteins.
+\NP Electrode Diagram
+
+\NP The level of electrolyte in the outer cavity should be kept above the level of the solution being measured to prevent reverse electrolyte flow. The electrolyte need only be immersed far enough to cover both the glass pH sensing buld and reference junction to obtain accurate readings.
 
 \section{Data Analysis and Calculations}
+
+\subsection{Graphing}
+\NP Real-time data can be viewed on a graph to view changes over brief or  extended  periods. Time  is  plotted  in  seconds. The  graph  refreshes  every  hour  from  the  start of graphing.
+\NP Select Show Graph. A graph will be displayed on the lower half of the screen where various measurement details were previously displayed.  
+\NP To track live measurement data on the graph, select 
+Start Plotting. The measurement data will continue until 
+Stop Plotting is selected. When stopped, the graph can be dragged left/right and up/down.
+\NP Select the Zoom In or Zoom Out options to examine the data more closely or broadly.
+\NP To remove the graph display and revert to display measurement data on the lower half of the screen, select Hide Graph. Note:Measurement  data  will  continue  to  be  tracked  on  the  graph  until  Stop  Plotting is  selected.  
 
 \section{QC/QA Criteria}
 
 \section{Trouble Shooting}
 
+\subsection{No response or all buffers read the same pH}
+
+\NP Verify that the correct meter input and channels are connected. Try removing the electrode storage bottle or rubber buld guard to ensure contact with sample. If the meter has automatically frozen reading, be sure the meter's hold or auto read feature are off. Lastly, try replacing the electrode.  
+
+\subsection{Slow electrode response with excessive crystallization inside the electrode}
+
+\NP Verify that the fill hole is open durign measurements and closed during storage. Otherwise, the electroclyte flow could be clogged with supersaturated electrolyte. Flush and refill electrode. Remove the filling solution through the fill hole with a syringe or by shakign it upside down. Repeatedly flush and rinse the reference cavity with clean water at a temp of 60-80 degrees celsius to dissolve crystals. Replace the filling solution and apply gentle pressure to filling hole. Hydrate the electrode with in storage solution of pH 4 buffer.
+
+\subsection{Slow electrode response with due to clogged junction}
+
+\NP For protein deposits, prepare a 1\% pepsinsolution in 0.1M HCI and soak the reference junction for one hour. Rinse the electrode with distilled water. For general cleaning, heat a diluted KCI solution to 60 to 80 degrees celsius and soak the sensing bulb for about 10 minutes. All the electrode to coll in unheated KCI solution.
+
+\subsection{Dried Salt Deposits}
+
+\NP Dissolve the salt deposits in warm tap water and then soak the electrode briefly in pH 4 buffer.
+
+\subsection{Slow electrode response, noisy, unstable or eratic readings}
+
+\NP Clean the electrode with mild detergent and warm water and then hydrate. Allow the electrode to reach sample temp. Take 30 minute readings and soak the electrode in pH buffer for 1 minute between measurements.
+
 \section{References}
 
 \NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\NP Online Instruction Manual can be found here: link
 
 \end{document}
