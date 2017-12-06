@@ -89,19 +89,15 @@
 \NP To turn on the Accumet, hold the power button for three seconds.
 \NP If \emph{Standardization Due Warning} appears, follow the steps in Section 12 to calibrate standard parameters for each measurement type.
 
-\subsection{pH Measurements}
+\subsection{pH Measurement}
 \NP If the pH electrode has been stored dry, soak in storage solution for 10 minutes before standardization to saturate the pH electrode surface and minimize drift. If storage solution is not available, use a neutral pH buffer. While okay for rinsing, do not store pH electrodes in deionized or distilled water as this will dehydrate the electrode and decrease performance.
 \NP In the single channel measurement display of pH, select the Measurement icon on the right-side menu. A graph will appear and begin tracking pH.
-\NP Fill the outer cavity with the liquid you wish to measure and stir gently.
-\NP See section   to learn how to standardize the pH parameters.
-
-\subsection{pH}
-
-\NP 
-\NP Stir the standards and samples to speed up the response and permit a more representative measurement. 
+\NP Fill the outer cavity with the liquid you wish to measure and stir gently to speed up the response and permit a more representative measurement.
 \NP After measurement, remove the electrode from the sample rinse with clean water. Do not wipe the electrode. This may impart a static charge, and result in an unstable reading. A hydrated electrode is important– rinse and shake dry without wiping, and place the electrode into your storage solution.
+\NP When you are finished, fill outer cavity with pH Electrode Storage Solution.
+\NP See section 12 to learn how to standardize the pH parameters.
 
-\subsection{Temperature}
+\subsection{Temperature Measurement}
 \NP The ATC probe eliminates errors calculating pH. This is necessary because accuracy of the pH probe decreases as samples deviate from 25 degrees C and pH 7. If you are not using an ATC probe, the default temperature (25 degrees C) will be used instead. The default temperature range is -10 degrees C to 110 degrees C. 
 \NP If  you  are measuring the  pH  of  a  solution  that  is  not  25 degrees C  and  you  are  not  using  an (ATC)  probe, enter  the  temperature  value  of  the  solution  for  best  results.
 The manual temperature compensation (MTC) value will be visible on the screen. The default temperature can be set from -5 degrees C to 105 degrees C.
@@ -110,10 +106,9 @@ Press \textbf{Enter} in the keypad to return to pH (pH FET) Setup screen
 
 
 
-\subsection{BOD (Biological Oxygen Demand)}
-\NP{Calibration}
+\subsection{BOD (Biological Oxygen Demand) Measurement}
 
-\subsection{Conductivity}
+\subsection{Conductivity Measurement}
 
 
 \section{Data Analysis and Calculations}
@@ -173,7 +168,8 @@ Stop Plotting is selected. When stopped, the graph can be dragged left/right and
 \NP Fill outer cavity with the first standard, pH 4. The level of electrolyte in the outer cavity should be kept above the level of the solution being measured to prevent reverse electrolyte flow. The electrolyte need only be immersed far enough to cover both the glass pH sensing bulb and reference junction to obtain accurate readings.
 \NP Enter pH value in the keypad on the screen.
 \NP When dispay reads \textbf(Stable), select \textbf{Confirm} to accept the value and return to measurement screen. A warning message will appear if the standardization is accepted by the instrument but is not within range. An error message will appear if the standardization is not accepted.
-\NP Now dispose of the buffer in the outer cavity and rinse the cavity and electrode. Repeat from step  to input standards pH 7 and pH 10.
+\NP Now dispose of the buffer in the outer cavity and rinse the cavity and electrode. Repeat from step... to input standards pH 7 and pH 10.
+\NP When you are finished, fill outer cavity with pH Electrode Storage Solution.
 
 \NP\includegraphics[scale=.25]{Electrode.png}
 
