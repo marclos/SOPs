@@ -118,12 +118,15 @@
 
 \NP{Accumet XL600 Benchtop Meter (XL94105590)}
 \NP{BOD Probe (2446146 445)} 
-\NP{Temperature Probe (93X306506 505)}
+\NP{Automatic Temperature Compensation (ATC) Probe (93X306506 505)}
 \NP{pH Electrode (13 620 183A)}
 \NP{Conductivity Electrode (13 620 100)}
 \NP{Standards for calibration (pH 4.00, 7.00, 10.00, conductivity, and a small bottle that can be used to make the DO standard)}
 
 \section{Reagents and Standards}
+
+\NP Buffer Solution pH 4, 7, 10. 
+\NP Conductivity Standard 1000$\mu$mho/cm @ 25 degrees celsius 
 
 \section{Estimated Time}
 
@@ -133,25 +136,41 @@
 
 \section{Procedure}
 
+\NP To turn on the Accumet, hold the power button for three seconds.
+\NP If \emph{Standardization Due Warning} appears, follow the steps in Section 12 to calibrate standard parameters for each measurement type.
+
+\subsection{pH Measurements}
+\NP If the pH electrode has been stored dry, soak in storage solution for 10 minutes before standardization to saturate the pH electrode surface and minimize drift. If storage solution is not available, use a neutral pH buffer. While okay for rinsing, do not store pH electrodes in deionized or distilled water as this will dehydrate the electrode and decrease performance.
+\NP In the single channel measurement display of pH, select the Measurement icon on the right-side menu. A graph will appear and begin tracking pH.
+\NP Fill the outer cavity with the liquid you wish to measure and stir gently.
+\NP See section   to learn how to standardize the pH parameters.
+
 \subsection{pH}
-\NP{Calibration}
-\NP The level of electrolyte in the outer cavity should be kept above the level of the solution being measured to prevent reverse electrolyte flow. The electrolyte need only be immersed far enough to cover both the glass pH sensing buld and reference junction to obtain accurate readings.
-\NP Electrode Diagram
+
+\NP 
+\NP Stir the standards and samples to speed up the response and permit a more representative measurement. 
+\NP After measurement, remove the electrode from the sample rinse with clean water. Do not wipe the electrode. This may impart a static charge, and result in an unstable reading. A hydrated electrode is important– rinse and shake dry without wiping, and place the electrode into your storage solution.
 
 \subsection{Temperature}
-\NP{Calibration}
+\NP The ATC probe eliminates errors calculating pH. This is necessary because accuracy of the pH probe decreases as samples deviate from 25 degrees C and pH 7. If you are not using an ATC probe, the default temperature (25 degrees C) will be used instead. The default temperature range is -10 degrees C to 110 degrees C. 
+\NP If  you  are measuring the  pH  of  a  solution  that  is  not  25 degrees C  and  you  are  not  using  an (ATC)  probe, enter  the  temperature  value  of  the  solution  for  best  results.
+The manual temperature compensation (MTC) value will be visible on the screen. The default temperature can be set from -5 degrees C to 105 degrees C.
+\NP\textbf{Set Default Temperature}. First, select temperature units \textbf{C} Celsius, \textbf{F} Farenheit, or \textbf{K} Kelvin. Then Touch the \textbf{Default Temperature} box and use the numeric keypad to enter the desired default temperature.
+Press \textbf{Enter} in the keypad to return to pH (pH FET) Setup screen
+
+
 
 \subsection{BOD (Biological Oxygen Demand)}
 \NP{Calibration}
 
 \subsection{Conductivity}
-\NP{Calibration}
 
-The accumet electrodes utilize a simple twist open and close design. The purple electrodes are Tris compatible and are less prone to cloggin by sulfides, heavy metals or proeints. A Blue band indicates a single junction electrode designed for general use in camples without sulfides, heavy metals, or proteins.
 
 \section{Data Analysis and Calculations}
 
 \subsection{Graphing}
+\NP The efficiency of the electrode is reported as the slope. Slope can be described as percentage where 100\% is ideal, or as a mV/decade unit. When performing  standardization with 3 or more standards, multiple slopes will be calculated by the  instrument. The slope that appears on the screen during measurement, is the slope which is applicable to the zone in which the measurement is currently being made. For example, if pH 4, 7, and 10 are standardized, and a sample of pH 5 is being measured, the slope displayed would be the slope calculated between 4 and 7. The slopes are independent of each other. 
+
 \NP Real-time data can be viewed on a graph to view changes over brief or  extended  periods. Time  is  plotted  in  seconds. The  graph  refreshes  every  hour  from  the  start of graphing.
 \NP Select Show Graph. A graph will be displayed on the lower half of the screen where various measurement details were previously displayed.  
 \NP To track live measurement data on the graph, select 
@@ -183,6 +202,38 @@ Stop Plotting is selected. When stopped, the graph can be dragged left/right and
 \subsection{Slow electrode response, noisy, unstable or eratic readings}
 
 \NP Clean the electrode with mild detergent and warm water and then hydrate. Allow the electrode to reach sample temp. Take 30 minute readings and soak the electrode in pH buffer for 1 minute between measurements.
+
+\section{Calibration}
+
+\subsection{Temperature Probe}
+
+\NP Connect the ATC probe and place it into a solution with a known accurate temperature such as a constant temperature bath.
+
+\NP When the temperature reading is stable, select Standardize from any measure screen, and then select the Temp Std. icon. The upper display shows the current factory default temperature without standardization (A), while the lower display will be the new standardization temperature(B).
+
+\NP To enter a new Standardization Temperature, select the box and enter value using the keypad that will appear. Select OK to accept the new temperature.
+
+\NP\includegraphics{Tempstandard.jpg}
+
+\subsection{pH Probe}
+
+\NP In PH Setup, select the buffer group custom, as this allows manual buffer recognition. There is an option for autodetection for setting parameters, but in this course we will only use manual.
+\NP Back at the pH measurement display, select \textbf(Standardize) at the top right.
+\NP If the pH electrode has been stored dry, soak in storage solution for 10 minutes before standardization to saturate the pH electrode surface and minimize drift. If storage solution is not available, use a neutral pH buffer. While OK for rinsing, do not store pH electrodes in deionized or distilled water as this will dehydrate the electrode and decrease performance. 
+\NP Fill outer cavity with the first standard, pH 4. The level of electrolyte in the outer cavity should be kept above the level of the solution being measured to prevent reverse electrolyte flow. The electrolyte need only be immersed far enough to cover both the glass pH sensing bulb and reference junction to obtain accurate readings.
+\NP Enter pH value in the keypad on the screen.
+\NP When dispay reads \textbf(Stable), select \textbf{Confirm} to accept the value and return to measurement screen. A warning message will appear if the standardization is accepted by the instrument but is not within range. An error message will appear if the standardization is not accepted.
+\NP Now dispose of the buffer in the outer cavity and rinse the cavity and electrode. Repeat from step  to input standards pH 7 and pH 10.
+
+\NP\includegraphics[scale=.25]{Electrode.png}
+
+\subsection{Conductivity}
+
+\NP In Conductivity Setup, select MANUAL to enter the conductivity value of your standard. You may set \textbf{Single Point Standardization} in which the single standard applies to all ranges, or \textbf{Multi Point Standardization} in which a single stard is applied to an specific range. When using a Multi Point standardization, perform standardization in each range that you expect to use for best results.
+\NP\includegraphics{Conducivityranges.jpg}
+
+\NP{Cell Constant.} Select the nominal cell constant of the conductivity electrode you are using. There are three cell constants to choose from. Each is used for a different range. The following indicates the optimal conductivity range for the accumet conductivity cells. For resistivity measurements, an electrode having a nominal 0.1 cell constant (13-620-101 or equivalent) is recommended.
+\NP\includegraphics{CellConstant.jpg}
 
 \section{References}
 
