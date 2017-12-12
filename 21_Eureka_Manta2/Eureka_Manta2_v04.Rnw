@@ -12,7 +12,7 @@
 \author{Haley Land-Miller}
 \approved{Los Huertos}
 \ReviseDate{\today}
-\SOPno{21 v0.5}
+\SOPno{21}
 
 \begin{document}
 
@@ -26,13 +26,12 @@
 
 \NP The probe can be used to take the above measurements in bodies of water, including lakes, streams, and rivers. 
 
+
 \section{Summary of Method}
 
 \NP Calibration of any of the sensors is performed by selecting ``Standardize" from the Manta2 menu on the Amphibian portable PC and pouring standards into the calibration cup.
 
 \NP Measurments are taken by connecting the probe to the Amphibian portable PC, placing the weighted protective cap over the sensors, and dropping the probe into the water being tested. 
-
-\tableofcontents
 
 \section{Definitions}
 
@@ -103,23 +102,16 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \section{Field Procedure}
 
-\NP Connecting the Manta. Connect and power on the Manta to the Amphibian Portable PC as before. Adjust screen brightness using short-cut buttons \textbf{arrow up + P3} and \textbf{arrow up + P4}. When you open the Amp\_2\_2\_6, the Main screen will appear(A) (Figure~\ref{fig:AmphibianMain.png}). This is where you will see data readings. To log, or store, one line of data take a "snapshot" with the top left button (A). To locate snapshots, open the PDA menu in the bottom left corner and select "snapshot locations"(B). In the SS locations screen (C) you can edit your files or a create new one. When creatign a new file (D), annotate using the guidelines in 10.5.To see data presented graphically, open the PDA menu and select "graphing" (B). To exit the program, again open the PDA menu and select "Exit."
+\NP Connecting the Manta. Connect and power on the Manta to the Amphibian Portable PC as before. Adjust screen brightness using short-cut buttons \textbf{arrow up + P3} and \textbf{arrow up + P4}. When you open the Amp\_2\_2\_6, the Main screen will appear(A). This is where you will see data readings. To log, or store, one line of data take a "snapshot" with the top left button (A). To locate snapshots, open the PDA menu in the bottom left corner and select "snapshot locations"(B). In the SS locations screen (C) you can edit your files or a create new one. When creatign a new file (D), annotate using the guidelines in 10.5.To see data presented graphically, open the PDA menu and select "graphing" (B). To exit the program, again open the PDA menu and select "Exit."
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.6]{AmphibianMain.png}
-\caption{Amphibian Working Screens}
-\label{fig:AmphibianMain.png}
-\end{figure}
+\NP Amphibian Working Screens
 
-\NP Enable GPS. To turn on GPS, tap on the GPS/GNSS status gadget (Figure~\ref{}). A satellite icon will appear on the bar across the top. While the amphibian is searching for satellites, it is important not to cover the top "cap" which holds the antenna as this will interfere with accuracy. Once satellites are found, information similar to that in the image below will appear.
+\includegraphics[scale=0.5]{AmphibianMain.png}
 
-\begin{figure}[h]
-\centering
+\NP Enable GPS. To turn on GPS, tap on the GPS/GNSS status gadget shown below. A satellite icon will appear on the bar across the top. While the amphibian is searching for satellites, it is important not to cover the top "cap" which holds the antenna as this will interfere with accuracy. Once satellites are found, information similar to that in the image below will appear.
+
 \includegraphics{GPS.png}
-\caption{GPS Icon}
-\label{GPS.png}
-\end{figure}
+
 
 \textbf{5 SV} Number of satellites used for the current position
 
