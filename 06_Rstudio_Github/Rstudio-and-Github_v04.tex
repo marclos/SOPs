@@ -462,13 +462,34 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 
 \section{Troubleshooting}
 
+\subsection {Identity Error}
+
+\NP An identity error is... 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{graphics/IdentityError.png}
+\caption{Enter email and name}
+\end{figure}
+
+\NP If you recieve an error as shown in the figure above, we can fix this using the Git shell. IN the ``Git'' tab, click on the gear icon and select ``Shell...'' 
+
+\NP A new window will be shown and then type after the prompt:
+
+'git config ...
+'git config... '
+
+\NP These commands should sync rstudio to Github based on your email and name.
+
+
+\subsection{Push, Pull, and Merge Errors}
+
 \NP At first when you're a newcomer to working on projects within Rstudio connected to a GitHub repository, you may forget the ``best practices`` of pulling, committing and pushing described above. You might have already gone through all the steps involved in setting up your GitHub account, linking your workspace in Rstudio with the correct project, and begun work on a specific file, but if you forget to update your workspace each time you come back to modify a file (especially in the case of coming back the next day to a file in Rstudio and forgetting to pull changes other collaborators may have made), you will run into problems committing, and pushing your changes. In this most common case, it's not likely that you'll notice any problems until you try to commit your changes. Thus, we'll begin this section on trouble shooting problems with Github and Rstudio at the committ level.
 
 \NP Alternatively, if you and others edit the same section, Github is going to need some ``human'' decision making to negotiate these changes. In Github jargon, this requires one to 'merge' changes. 
-
 \NP (un)Fortunately, students are very good at discovering ways that the pull/commit/push process can be disrupted. As each case comes to my attention, I ask for a screen shot and a description, so we can trouble shoot each problem when they present themselves.
 
-\subsection{`Commit'problems}
+\subsection{`Commit' Problems}
 \NP In the scenario described above, you will get an error code when trying to committ your new changes to a file. 
 
 \subsection{`Merge' Errors}
@@ -521,14 +542,7 @@ To resolve this, you will have to resolve the merge conflicts in question, and a
 
 \NP Or, you can simply use git pull to perform both commands at once.
 
-\subsection {Identity Error}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.5\textwidth]{graphics/IdentityError.png}
-\caption{Enter email and name}
-\end{figure}
 
-\NP If you recieve an error as shown in the figure above, simply replicate the string 'git config...' and enter your email in quotations on one line. On the following line relicate the git config string again and enter your first name in quotation marks. 
 
 \subsection{`Push` fails}
 
