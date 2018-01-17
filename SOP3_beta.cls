@@ -71,6 +71,11 @@
 \newcommand{\NP}{\par\vspace{10pt}\indent\hangindent=1.4cm\refstepcounter{paranum}\textbf{\theparanum}\ }
 %\setlength\parindent{1cm}
 
+% Specialized Text
+\newcommand{\latex}{\LaTeX\xspace}
+\newcommand{\tex}{\TeX\xspace}
+
+
 % Modification of title block
 \RequirePackage{titling}
 \RequirePackage{multirow}

@@ -7,7 +7,7 @@
 \usepackage{float}
 \author{Marc Los Huertos \& Isaac Medina}
 \title{Rstudio Projects and Github}
-\date{8/12/2016}
+\date{1/16/2018}
 \approved{Marc Los Huertos}
 \ReviseDate{\today}
 \SOPno{06 v.04}
@@ -32,7 +32,7 @@
 
 \NP The SOP also provides some guidance on how to troubleshoot should push/pull problems arise.
 
-\NP The use of Github is not intuitive. So, you will find many on-line resources to help.
+\NP The use of Github is not always intuitive and we can not cover all of the topics in this SOP. So, you should plan to rely on a wide range on-line resources to help.
 
 \tableofcontents
 
@@ -61,16 +61,22 @@ The following have made substantial contributions:
 
 \section{Background}
 
-\NP R is a powerful, open source program but combined with RStudio and Github the program becomes an archetype of a program that enables 1) collaboration, 2) transparency, and 3) accessibility.
+\NP R is a powerful, open source program but combined with RStudio and Github the program becomes an archetype of a program that enables 1) collaboration, 2) transparency, 3 reproducible, and 3) accessibility: 
+
+\begin{description}
+    \item[Collaboration] You can easily collaborate with others and track who contributed to various parts of the repository. When you are working in a team and updating various text and code, it's important to have version control to ensure that you can trace how the text and code was change. 
+    
+    \item[Transparency] The program allows others to see how you analyzed the data and thus, allows clear access to what you have done.
+    
+  \item[Reproducible]  that when you conduct an analysis you can reproduce the results that can be used to validate your results. 
+  
+  \item[Accessibility] Accessible from any computer via webserver. Becuase we can rely on consistant behavoir and even web-based servers, the operating systems and computer hardware rarely limit what you can do in R.
+
+\end{description}
 
 \NP However, becoming facile in using these program is like learning how to walk. We need to approach this process in descrete steps. Some will require weeks of mistakes to learn, others will quickly learn to run with the programs. How quickly you can feel comfortable with these programs will depend on many factors, but will be greatly improved by the time you invest!
 
-\begin{description}
-  \item[Almost Universal Compatibility] No downloading programs on personal computers.
-  \item[Accessibility] Accessible from any computer via webserver
-  \item[Collaboration] You can easily collaborate with others and track who contributed to which section
-  \item[Version Control] When you are working in a team, and updating various codes, it's nice to have a way to ensure there is version control. 
-\end{description}
+
 
 \NP I recommend reading the following sites to better understand Git and Github
 
@@ -126,6 +132,26 @@ The following have made substantial contributions:
 
 %\section{Maintaining XX Data}
 
+\section{Introducing Rstudio}
+
+\subsection{4 Rstudio Panels}
+
+Working with Rstudio is a bit confusing at first -- there is lots going on! First, let's unpack the four default pannels that come up when you start Rstudio. 
+
+\NP Each of panel have tabs, but they can vary depending on what is active in Rstudio. 
+
+\NP To see all of the panels, create the fourth window, we'll need to add create a new text file. Go to File/New File/R Sweave which opens a \LaTeX\ file template. Save the file as "Test.Rnw" and now you have four windows.
+
+\begin{description}
+  \item[Upper Left --- Text and Code -- Rnw, \TeX, Txt, and Rmd files] TBD  
+  
+  \item[Lower Left -- Console and Compile PDF windows] This is the R console, where you can enter (type directly or submit from the panal above) commands in to R from above. Without a Rmd/Rnw file open this panel might take the entire left side of the program's interface. This is where you can type or submit R commands and were results are displayed. Also, any errors are reported in red here. If you have compiled a LaTeX file, the log file of the process will also be displayed.
+  
+  \item[Lower Right -- Files/Plots/Packages/Help/Viewer] TBD
+
+  \item[Upper Right -- Environment/History/Git Panel] You can use the ``Environment'' tab to see the files that R as access to. The ``History'' tab displays a history of the commands you have submitted and finally the ''Git'' tab can be used to manage files between the Github server and the local pomona server. 
+  
+\end{description}
 
 \section{Setting Up Accounts and Communications Keys}
 
@@ -133,17 +159,11 @@ The following have made substantial contributions:
   
 \NP We have two choices in how we work with R. We can use the server version on Pomona's IT server. This is preferable. 
 
-\NP R, Rstudio, and Github can easily be intalled on a desktop computer. Note new users: Please use the server mode to begin using this software. Later you can use the desktop versions. To accomplish this, download and install the programs in the following order: 
+\NP R, Rstudio, and Github can easily be intalled on a desktop computer, however, please start by using the server versions via Rstudio. 
 
-\begin{enumerate}
-  \item R \url{https://cran.r-project.org/}
-  \item RStudio \url{https://www.rstudio.com/}
-  \item Github desktop \url{https://desktop.github.com/}
-\end{enumerate}
+\NP Rstudio Server located at \href{http://rstudio.campus.pomona.edu}{\textbf{rstudio.campus.pomona.edu}}. Login using your Pomona College username and password.
 
-\NP Rather than downloading these things, use the Rstudio Server located at \href{http://rstudio.campus.pomona.edu}{\textbf{rstudio.campus.pomona.edu}}. Login using your Pomona College username and password.
-
-\NP Be sure to set up Rstudio's weave option to 'knitr'. Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' from Sweave to knitr. This will have minor, but real changes in how files are compiled, where knitr has is a relatively new and more robust option.
+\NP To set up change Rstudio's weave option to 'knitr'. Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' from Sweave to knitr. This will have minor, but real changes in how files are compiled, where knitr has is a relatively new and more robust option.
 
 \NP If using the downloaded Rstudio, start R Studio from the program files and this will automatically start an R console window.
 
@@ -158,6 +178,7 @@ The following have made substantial contributions:
 \NP ``Create RSA key''. 
 
 \begin{figure}
+\centering
 \includegraphics[width=0.5\textwidth]{graphics/CreatingSSH.jpg}
 \caption{After natigating through the Rstudio Git/SNV menu, select `Create an RSA Key'.}
 \end{figure}
@@ -176,7 +197,8 @@ The following have made substantial contributions:
   \item Click on new SSH key, type in name of key (e.g. 'myRstudio SSH key')
   
 \begin{figure}
-\includegraphics{graphics/Github_SavedSSH.jpg}
+\centering
+\includegraphics[width=0.8\textwidth]{graphics/Github_SavedSSH.jpg}
 \caption{Creating the connection between Rstudio and Gitub requires a `key'. We generate the key in Rstudio and then we tell Github what the key is.}
 \end{figure}
 
@@ -192,7 +214,8 @@ The following have made substantial contributions:
 
 
 \begin{figure}[H]
-\includegraphics[width=0.5\textwidth]{graphics/CloningGithub.jpg}
+\centering
+\includegraphics[width=0.8\textwidth]{graphics/CloningGithub.jpg}
 \caption{Step 1: Select the green button, "Clone or Download"}
 \label{fig:step1}
 \end{figure}
@@ -209,6 +232,7 @@ The following have made substantial contributions:
 \NP Next we will 'Clone with SSH'. If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box. If you skip switching to SSH, it's really hard to fix the project afterwards. You can copy the clone information by clicking on the little clipboard on the right of the address (Figure \ref{fig:step2}).
 
 \begin{figure}[H]
+\centering
 \includegraphics[width=0.5\textwidth]{graphics/CloningGithub2.jpg}
 \caption{Step 2: Be sure you clone with SSH!}
 \label{fig:step2}
@@ -216,6 +240,7 @@ The following have made substantial contributions:
 
 \NP Now we return to Rstudio and create a new project. Navigate to the file toolbar and select ``New Project''. Where you will be greeted with three choices (Figure \ref{fig:step3}). Select 'Version Control'. 
 \begin{figure}[H]
+\centering
 \includegraphics[width=0.5\textwidth]{graphics/RstudioNewProject.jpg}
 \caption{Step 3: When you create a new project, you have three choices. Select 'Version Control' to clone your repository.}
 \label{fig:step3}
@@ -224,6 +249,7 @@ The following have made substantial contributions:
 \NP Once you have selected the Version Control, you have one more choice to make, luckily this is pretty easy, select ``Git'' (Figure \ref{fig:step4}).
 
 \begin{figure}[H]
+\centering
 \includegraphics[width=0.5\textwidth]{graphics/RstudioNewProject2.jpg}
 \caption{Step 4: Select ``Git'' to clone the repository.}
 \label{fig:step4}
@@ -232,6 +258,7 @@ The following have made substantial contributions:
 When you arrive in the ``Clone Git Repostory'' window, you can simply paste your clipboard into the Repository URL. This usually fills in the project directory name too. But if not, you can type in the name, in this case, "beginnersluck" (Figure \ref{fig:step5}).
 
 \begin{figure}[H]
+\centering
 \includegraphics[width=0.5\textwidth]{graphics/RstudioNewProject3.jpg}
 \caption{Step 5: You should have something useful in each of the boxes.}
 \label{fig:step5}
@@ -240,7 +267,8 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 \NP For many new users, Rstudio may claim some problem establishing authenticity (Figure \ref{fig:step6}). Type 'yes'. Then hit okay. I am not exactly sure why this step exists. 
 
 \begin{figure}[H]
-\includegraphics[width=0.5\textwidth]{graphics/Authenticity.jpg}
+\centering
+\includegraphics[width=0.99\textwidth]{graphics/Authenticity.jpg}
 \caption{Step 6: You should have something useful in each of the boxes.}
 \label{fig:step6}
 \end{figure}
@@ -276,19 +304,19 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 
 \section{Working on Projects in Rstudio}
 
-\subsection{4 Rstudio Panels}
 
-Working with Rstudio is a bit confusing at first -- there is lots going on! First, let's unpack the four default pannels that come up when you start Rstudio. 
+\section{Downloading R, Rstudio, and Github as desktop programs}
 
-\NP Each of panel have tabs, but they can vary depending on what is active in Rstudio. 
+\NP Note new users: Please use the server mode to begin using this software. Later you can use the desktop versions. 
 
-\begin{description}
-  \item[Lower Right -- Console and Compile PDF windows] Without a Rmd/Rnw file open this panel might take the entire left side of the program's interface. This is the R GUI, i.e. graphical user interface. This is where you can type or submit R commands and were results are displayed. Also, any errors are reported in red here. If you have compiled a LaTeX file, the log file of the process will also be displayed.
-  \item[Files/Plots/Packages/Help/Viewer] TBD
-  \item[Text and Code -- Rnw and Rmd files] TBD
+\NP To accomplish install the programs on the local harddrive, download and install the programs in the following order: 
 
-  \item[Environment/History/Git Panel] TBD
-\end{description}
+\begin{enumerate}
+  \item R \url{https://cran.r-project.org/}
+  \item RStudio \url{https://www.rstudio.com/}
+  \item Github desktop \url{https://desktop.github.com/}
+\end{enumerate}
+
 
 \subsection{Best Practices}
 
@@ -297,6 +325,7 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
   
   \begin{description}
   \item[Already up-to-date.] This means that your files have not been updated on the Github site since you last pulled the files. If you suspect someone has worked on the files, but are not getting those changes, it means that your collaborator has failed to ``Push'' these changes onto the repsository. If this is the case, you might need to go to the troubleshooting question to address this problem.
+  
   \item[Successful Updates] If your files are successfully updated from the repository, you will see:
   
 summary of updates
@@ -335,6 +364,7 @@ Basically git commit ``records changes to the repository'' while git push ``upda
 Here is a nice picture from Oliver Steele, that explains the git model and the commands:  
 
 \begin{figure}
+\centering
 \includegraphics[width=0.5\textwidth]{graphics/MgaV9}
 \end{figure}
    
@@ -396,6 +426,7 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 \NP If you find merge errors it often means that you and someone else has modified a file and they need to be reconciled.
 
 \begin{figure}
+\centering
 \includegraphics[width=0.5\textwidth]{graphics/UnmergedError.jpg}
 \end{figure}
 
@@ -408,6 +439,7 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 \NP Then commit and push changes. 
 
 \begin{figure}
+\centering
 \includegraphics[width=0.5\textwidth]{graphics/MergeError.jpg}
 \end{figure}
 
@@ -441,6 +473,7 @@ To resolve this, you will have to resolve the merge conflicts in question, and a
 
 \subsection {Identity Error}
 \begin{figure}[H]
+\centering
 \includegraphics[width=0.5\textwidth]{graphics/IdentityError.png}
 \caption{Enter email and name}
 \end{figure}
