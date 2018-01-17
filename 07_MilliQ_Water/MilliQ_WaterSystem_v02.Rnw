@@ -1,14 +1,10 @@
 %SOP Template 
 % Version 02 Added revision date
 % Version 03 Added TOC and acknowledgements
-%           New SOP3_alpha.cls
+%           New SOP3_beta.cls
 
 
 \documentclass[12pt]{../SOP3_beta}
-
-\usepackage[english]{babel}
-\usepackage{blindtext}
-\usepackage{lipsum}
 
 \title{MilliQ Water System}
 \date{6/23/2017}
@@ -18,7 +14,6 @@
 \SOPno{7 v.02}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -52,11 +47,24 @@
   \item SOP01 Laboratory Safety
 \end{itemize}
 
-\section{Required Materials and Apparati}
+\section{Equipment and Consumables}
 
-\NP MilliQ Water System
+\NP MilliQ Water System (Serial Number xxx)
 
 \NP Milli-Q Integral 3/5/10/15 Systems User Manual
+
+\subsection{Consumables}
+
+\begin{itemize}
+  \item Quauntum TEX Cartridge (Cat. No. QTUM0TEX1)
+  \item Prograde S2 Pre-Treatment Pack (Cat. No. PR0G0T0S2US) 
+  \item Reservior Vent Filter (Cat No. XXX)
+  \item 
+\end{itemize}
+
+
+
+
 
 \section{Estimated Time}
 
