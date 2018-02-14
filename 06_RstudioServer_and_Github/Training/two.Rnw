@@ -1,0 +1,165 @@
+\documentclass[12pt]{article}
+
+\title{Quiz}
+\author{EA31}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+\item The default prompt symbol is 
+
+A. $>$\\
+B. $->$ \\
+C. $\&$ \\
+D. $>>$ 
+
+\item R relies on functions with specific syntax. What symbols are required for a function to work?
+
+A. Semicolon \\
+B. Periods \\ 
+C. Opening and closing parentheses \\
+D. Specific numeric combinations \\
+
+\item R is case-sensitive
+
+True \\
+False \\
+
+\item The expression 2\^{}4 returns:
+
+A. 2 \\
+B. 8 \\
+C. 16 \\
+D. 24 \\
+
+\item To create a vector one would use the following function:
+
+A. vector.new() \\
+B. c() \\
+C. new.vector() \\
+D. C() \\
+E. None of the above 
+
+\item To assign the results of a function to an object, you can use which \textbf{two} methods:
+
+A. $->$ \\
+B. $=$ \\
+C. $==$ \\
+D. $<<>>$ \\
+
+\item To determine how many values are in a numeric vector, one would use the following function: 
+
+A. count() \\
+B. values() \\
+C. length() \\
+D. sum() \\
+
+\item To create a data frame we use the following function:
+
+A. data.frame() \\
+B. dataframe() \\
+C. data.framenew()\\
+D. newdataframe() \\
+
+\item To extract the variable ``Temp'' from ``Claremont'' dataframe, you would type
+
+A. Temp\$Claremont \\
+B. Temp\$Claremont() \\
+C. var(Temp\$Claremont)\\
+D. Claremont\$Temp \\
+
+\item We want to select the second column from a data frame called Mangroves, which expression is correct:
+
+A. Mangroves[1,2] \\
+B. Mangroves[2] \\
+C. Mangroves[,2] \\
+D. Mangroves[2,1] 
+
+\item What is the symbol for missing values in R?
+
+A. na \\
+B. Na \\
+C. NaN \\
+D. NA 
+
+\item What will these lines produce?
+
+\begin{quote}
+mm $<-$ function(Vmax, Ks, S) \{\\
+V $<-$ Vmax* (S/(Ks + S)) \\
+return(V)\\
+\}
+
+\end{quote}
+ 
+A. I have no idea. \\
+B. A function named ``mm''. \\
+C. An error message that is nearly impossible to interpret. \\
+D. The value of V 
+
+\item To get the path and file name using a popup window, you can use the following function:
+
+A. get.file() \\
+B. file.choose() \\
+C. find.file() \\
+D. file() 
+
+\item To view the first six observations of a dataframe you can use the following function:
+
+A. topsix() \\
+B. head() \\
+C. show() \\
+D. run6() 
+
+\item What functions would you use to get the mean and standard deviation of a vector?
+
+A. average(); stdev() \\
+B. average(); sd() \\
+C. mean(); stdev() \\
+D. mean(); sd() 
+
+\item If you want make a scatter plot you would use the following function:
+
+A. plot.scatter() \\
+B. chart() \\
+C. barplot() \\
+D. plot() 
+
+\item If you wanted to determine if two variables have a linear relationship, you can create a model in R using the following function:
+
+A. model() \\
+B. lm() \\
+C. correlation() \\
+D. linear()
+
+\item What are some characteristics of good graphics?
+
+A. Lack unnecessary ink \\
+B. Effective labeling \\
+C. Can be easily read at a distance \\
+D. Axes are clearly labeled that include units\\
+E. The legend is large enough to see and read\\
+F. The lines can be interpreted in a color and black and white scheme. \\
+G. All of the above. 
+
+
+\item What is the function to extract the slope and intercept from a linear model?
+
+A. abline()\\
+B. coef()\\
+C. Coef()\\
+D. slopeinter()\\
+E. SlopeInter()\\
+
+\item Which function can be used to overlay a line onto a plot?
+
+A. abline()\\
+B. bestline()\\
+C. fitline()\\
+D. drawline()\\
+\end{enumerate}
+
+\end{document}
