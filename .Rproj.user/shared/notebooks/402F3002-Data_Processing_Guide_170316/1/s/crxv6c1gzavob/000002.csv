@@ -1,6 +1,0 @@
-"0","KEY <- unique(joined$sampleKEY)"
-"0","KEY <- KEY[-c(1:25)]"
-"0","           "
-"0","for(i in 1:length(KEY)){"
-"0","#with(joined[joined$sampleKEY==KEY[i],], plot(x=log(De), y=PF, xlab=""Log of Diameter (mm)"", ylab=""Percent Finer"", las=1))"
-"0","}"
