@@ -12,7 +12,7 @@
 \author{Marc Los Huertos and Kyle McCarty}
 \approved{TBD}
 \ReviseDate{\today}
-\SOPno{75 v0.1}
+\SOPno{75A v0.1}
 
 \begin{document}
 
@@ -78,7 +78,7 @@
 
 \NP Reaction Column packing
 
-\begin{table}
+\begin{table}[h]
 \begin{tabular}{lccc} \hline
 Analysis      & XX    & Copper  & \\ \hline\hline
 CN            & Yes   & No      & Yes \\ \hline
@@ -100,6 +100,10 @@ CN            & Yes   & No      & Yes \\ \hline
 \NP Observe other user(s) operate ...
 
 \NP Read hardware SOPs and software SOPs?
+
+\section{Background}
+
+These instruments can range from tens to hundreds of thousands of dollars, and repairs on these instruments can not only be expensive, but they can also cause a backup in jobs. Since it is a fee for service laboratory, clients that submit their samples expect high quality data returned to them in a timely manner so that they may finish their projects. However, if instruments go down, those samples must be placed on hold until the laboratory receives any required parts or they are able to troubleshoot and fix the instruments. It is essential that the laboratory technician using the machines knows how to properly use it, and can troubleshoot when problems arise. When the instrument is new, the instrument users must not only attend extensive training specifically for use of the instrument, but they must also become familiar with the operations manual.
 
 \section{Sequence Preparation Analysis}
 
