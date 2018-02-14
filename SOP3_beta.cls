@@ -16,6 +16,15 @@
 % Some valuable packages
 \RequirePackage{enumitem} % Customization of itemized, enumerated, etc.
 \RequirePackage{hyperref} % For hyperlinked cross-references
+
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
 \RequirePackage{../hanging}
 \RequirePackage{gensymb} % For specific symbols, such as the degree symbol
 

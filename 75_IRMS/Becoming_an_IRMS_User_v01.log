@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  14 FEB 2018 12:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  14 FEB 2018 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**IRMS_Guilde_v01.tex
-(./IRMS_Guilde_v01.tex
+**Becoming_an_IRMS_User_v01.tex
+(./Becoming_an_IRMS_User_v01.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
 rainian, russian, bulgarian, loaded.
@@ -155,6 +155,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip44
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+
 (../hanging.sty
 
 LaTeX Warning: You have requested package `../hanging',
@@ -301,25 +303,25 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(./IRMS_Guilde_v01.aux)
-\openout1 = `IRMS_Guilde_v01.aux'.
+(./Becoming_an_IRMS_User_v01.aux)
+\openout1 = `Becoming_an_IRMS_User_v01.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring ON on input line 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -329,23 +331,23 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count104
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
 
-(./IRMS_Guilde_v01.out) (./IRMS_Guilde_v01.out)
+(./Becoming_an_IRMS_User_v01.out) (./Becoming_an_IRMS_User_v01.out)
 \@outlinefile=\write3
-\openout3 = `IRMS_Guilde_v01.out'.
+\openout3 = `Becoming_an_IRMS_User_v01.out'.
 
-LaTeX Info: Redefining \celsius on input line 69.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 69.
+LaTeX Info: Redefining \celsius on input line 67.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 67.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 69.
-Package gensymb Info: Using \Omega for \ohm on input line 69.
+LaTeX Info: Redefining \ohm on input line 67.
+Package gensymb Info: Using \Omega for \ohm on input line 67.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -403,7 +405,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 69.
+(lastpage)             ! on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -419,43 +421,35 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-! Undefined control sequence.
-l.70 \SweaveOpts
-                {concordance=TRUE}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../pomona.jpg, id=72, 460.557pt x 492.75pt>
+<../pomona.jpg, id=68, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
-Package pdftex.def Info: ../pomona.jpg used on input line 72.
+Package pdftex.def Info: ../pomona.jpg used on input line 70.
 (pdftex.def)             Requested size: 56.9055pt x 60.8793pt.
 
-Overfull \vbox (21.72939pt too high) detected at line 72
+Overfull \vbox (21.72939pt too high) detected at line 70
  []
 
 
-Overfull \hbox (6.2652pt too wide) in paragraph at lines 72--73
+Overfull \hbox (6.2652pt too wide) in paragraph at lines 70--71
 [][] 
  []
 
-(./IRMS_Guilde_v01.toc [1
+(./Becoming_an_IRMS_User_v01.toc [1
 
 {/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>])
 \tf@toc=\write4
-\openout4 = `IRMS_Guilde_v01.toc'.
+\openout4 = `Becoming_an_IRMS_User_v01.toc'.
 
 
 
@@ -467,29 +461,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2] [3] 
 AED: lastpage setting LastPage
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
- (./IRMS_Guilde_v01.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
-Package rerunfilecheck Info: File `IRMS_Guilde_v01.out' has not changed.
-(rerunfilecheck)             Checksum: B99F5F5474D846FB7C8B6BEFA1AE08B8;999.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
+ (./Becoming_an_IRMS_User_v01.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package rerunfilecheck Info: File `Becoming_an_IRMS_User_v01.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: 9D8330934C223FBE43D67E008A3A7982;917.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 7498 strings out of 494820
- 107010 string characters out of 3178050
- 204699 words of memory out of 3000000
- 10558 multiletter control sequences out of 15000+200000
+ 7502 strings out of 494820
+ 107202 string characters out of 3178050
+ 204810 words of memory out of 3000000
+ 10556 multiletter control sequences out of 15000+200000
  8592 words of font info for 33 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,18n,49p,308b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,17n,49p,459b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on IRMS_Guilde_v01.pdf (4 pages, 132981 bytes).
+Output written on Becoming_an_IRMS_User_v01.pdf (4 pages, 135753 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 
