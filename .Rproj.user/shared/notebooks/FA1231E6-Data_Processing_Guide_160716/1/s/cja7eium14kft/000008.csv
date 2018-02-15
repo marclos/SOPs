@@ -1,6 +1,0 @@
-"0","sample.source = ""/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313sample.csv"""
-"0","reading.source = ""/home/CAMPUS/mwl04747/github/SOPs/32_Soil_Texture_Analysis/Data/170313reading.csv"""
-"0","sample.import <- read.csv(sample.source)"
-"0","reading.import <- read.csv(reading.source)"
-"0","# Clean up Environment"
-"0","rm(reading.source, sample.source)"
