@@ -1,7 +1,6 @@
 \documentclass[12pt]{../SOP3_beta}
 \usepackage[english]{babel}
-\usepackage{blindtext}
-\usepackage{lipsum}
+
 
 %\documentclass{article}
 
@@ -15,7 +14,6 @@
 \SOPno{15}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
