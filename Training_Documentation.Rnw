@@ -1,5 +1,12 @@
 \documentclass{article}
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
 \usepackage[margin=0.7in]{geometry}
 
 \title{SOP Training Documentation}
@@ -11,9 +18,9 @@
 
 \begin{table}[h]
 		\begin{tabular}{p{5cm}p{6cm}}
-Researcher                  &  \framebox(200,15)[L]{}\\
+Researcher                  &  \framebox(200,15)[L]{}\\ 
 Email Address               &  \framebox(200,15)[]{}\\
-Expected Graduation Year    & \framebox(50,15)[]{}\\
+Expected Graduation Year    & \framebox(50,15)[]{} (NA for non-students)\\
 		\end{tabular}
 \end{table}
 
@@ -35,10 +42,10 @@ After reading the researcher is responsible to communicate to the laboratory man
 
 \subsection{Using Table \ref{tab:Documentation}}
 
-After reading and disucssiong the SOP with the laboratory manager, sign and date that you have read the SOP. By signing the form, you have agreed to the following: 
+After reading and disucssiong the SOP with the laboratory manager, sign and date that you have read the SOP. By signing this form, you have agreed to the following: 
 
 \begin{quote} 
-I agree that I have been adequately trained to use (designated equipment). I understand all safety hazards and operating procedures, and if anything goes wrong, I know what to do. Any injuries or broken equipment that happen while I am in use of the machine will be my fault alone.
+I agree that I have been adequately trained to use (designated equipment). I understand all safety hazards and operating procedures, and if anything goes wrong, I know what to do. Any injuries or broken equipment that happen while I use of the machine will be my fault alone.
 \end{quote}
 
 Initials: \framebox(50,15)[]{}
