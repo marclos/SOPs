@@ -27,7 +27,9 @@
 
 \section{Summary of Training}
 
-\NP This SOP is used to train potential users how to prepare and run sample on the IRMS. Since the Oxtoby lab is managed by a 1/2 manager, it's important the users are able to run the instruments independently -- but they are expensive, so we need to ensure that users are qualified.
+\NP This SOP is used to train potential users how to prepare and run sample on the IRMS. Since the Oxtoby lab is managed by a 1/2 manager, it's important the users are able to run the instruments independently -- but they are expensive and very involved, so we need to ensure that users are qualified.
+
+\NP Training will typically include background reading of relevant topics, observation of an already trained user, supervised experience running the instrumentation, and finally a start-to-finish experience that either the technician or specfic Super-Users will, with their discretion, determine a trainee a user.
 
 \tableofcontents
 
@@ -37,19 +39,29 @@
 
 \section{Definitions}
 
-\NP Super-user is staff, student, or faculty memember who is qualified to run and perform minor maintanence on the IRMS, including, but not necessarily limted to, gas replacement, reactor exchange, needle exchange, etc.  
+\NP Super-User -- is student, staff, or faculty memember who is qualified to run and perform minor maintanence on the IRMS, including, but not necessarily limted to, gas replacement, reactor exchange, needle exchange, etc.  
 
-\NP User -- is a staff, student, or faculty member who has qualified to prepare and run the IRMS without supervsion.
+\NP User -- is a student, staff, or faculty member who has qualified to prepare and run the IRMS without supervsion.
 
 \NP Student Researcher -- is generally going to be a student who either does not feel confident in becoming a user or simply doesn't have the time to invest in it. Although, a student researcher can conduct sample weighing, data reduction, and sequence creation.
 
+\NP Delta V IRMS -- The Oxtoby Lab's Isotope Ratio Mass Spectrometer, model Delta V manufactured by ThermoFisher Scientific. 
+
+\NP Flash IRMS EA -- Also know as the ``Flash'' or ``Flash EA." It is an elemental analyzer and one of the three peripherals for the Delta V IRMS. It combusts a multitude of sample types to produce varying gases for the IRMS to analyze. 
+
+\NP Gasbench II -- Is another periphepheral for the IRMS that samples (usually in conjunction with an autosampler), treats, and transports sample gases from sealed vials.
+
+\NP TC/EA -- Thermal Conversion/Elemental Analyzer; similar to the Flash EA but instead uses pyrolysis and much higher temperatures (approximately 1450*C) to convert sample material into gases analyzed by the IRMS.
+
+\NP ConfloIV -- A unique peripheral to the IRMS as it is the hub for all plumbed gas lines from each of the other peripherals, reference gases, and the IRMS itself. The Conflo also conducts the proper dilutions of sample and reference gases that is needed for them to fall within the working range of the IRMS.
+
 \section{Laboratory Policies}
 
-\NP In order to be able to run the IRMS and its associated peripherals, the person must be a Certified User.
+\NP In order to be able to run the IRMS and its associated peripherals, the person must have done the prerequisite training to become a User or Super-user. 
 
-\NP Users are required to run their own samples and should not rely on anybody to run their samples for them. If a user cannot find the time to run their samples, or cannot find another user to run them, sequences should not be ran.
+\NP Users are required to run their own samples and should not rely on anybody to run their samples for them. If a user cannot find the time to run their samples, or cannot find another user to run them, samples and sequences should not be ran.
 
-\NP In terms of instrument use,Payment in kind
+\NP The Oxtoby Isotope Laboratory implements a ``payment in kind" approach in order to continue its operation. We do not require payment per sample, but, depending on how much the instrumentation is used, we will expect consumables and gases to be replenished by the users/super users themselves. If you happen to have certain consumables that you would like to use (instead of the lab's) feel free to do so. These items may include tin/silver capsules, cell wells, weighing paper, gloves, standards, reagents, etc.
 
 \NP Lab Access
 
@@ -57,9 +69,7 @@
 
 \NP Estimated time to become a user requires approximately 6 hours of observation, training, and minimally supervised runs. This does not include the time required to read relevant reading material such as manuals and standard operating procedures.
 
-\section{Health and Safety}
-
-\subsection{Risk}
+\section{Health and Safety Risks}
 
 \NP Pressurized, Reactive, and Poisenous Gases -Hydrogen (H$_2$), Oxygen (O$_2$),Carbon Monoxide (CO$_2$), Sulfur Dioxide (SO$_2$)
 
@@ -68,14 +78,6 @@
 \NP Risk of Burns - Hot reactors
 
 \NP Puncture and Cut Related Wounds - Needles
-
-\subsection{Safety and Personnnel Protective Equipment (PPE)}
-
-\NP Lab Coat
-
-\NP Safety Glasses
-
-\NP Gloves
 
 \section{Personnel \& Training Responsibilities}
 
@@ -92,13 +94,25 @@
 
 \section{Required Materials and Apparati}
 
+\subsection{Safety and Personnnel Protective Equipment (PPE)}
+
+\NP Lab Coat
+
+\NP Safety Glasses
+
+\NP Gloves
+
+\subsection{Other}
+
 \NP Item 1 w/catalog number!
 
 \NP Item 2
 
 \section{Reagents and Standards}
 
-\subsection{Tank Farm 1 (West wall most northern)}
+\subsection{Reference/Standard Gases}
+
+\subsubsection{Tank Farm 1 (West wall most northern)}
 
 \NP Helium (He) - Tank pressure should be above 500psi and regulated at 50psi.
 
@@ -108,7 +122,7 @@
 
 \NP Oxygen (O$_2$)
 
-\subsection{Tank Farm 2 (West wall most southern)}
+\subsubsection{Tank Farm 2 (West wall most southern)}
 
 \NP Hydrogen (H)
 
@@ -120,9 +134,14 @@
 
 \NP Sulfur Dioxide (SO$_2$)
 
-\NP Reaction Column packing (add partnumbers for reagents and reactor parts)
+\subsection{Reagents for Flash EA}
+
+\NP Reaction Column packing ((Table~\ref{column})add partnumbers for reagents and reactor parts)
 
 \begin{table}[h]
+\label{column}
+\caption{column}
+\centering
 \begin{tabular}{lccc} \hline
 Analysis      & XX    & Copper  & \\ \hline\hline
 CN            & Yes   & No      & Yes \\ \hline
