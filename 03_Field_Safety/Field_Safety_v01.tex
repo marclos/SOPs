@@ -1,32 +1,77 @@
-\documentclass[12pt]{../SOP3_beta}
+\documentclass[12pt]{../SOP3_beta}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 \usepackage[english]{babel}
-\usepackage{blindtext}
-\usepackage{lipsum}
-
-%\documentclass{article}
-
-%\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
 
 \title{Field Safety}
-\date{8/11/2016}
-\author{Marc Los Huertos}
-\approved{Los Huertos}
+\date{2/18/2018}
+\author{TBD}
+\approved{Instructor}
 \ReviseDate{\today}
-\SOPno{03}
-
-\usepackage{Sweave}
+\SOPno{03 v0.1}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\input{Field_Safety_v01-concordance}
 
 \maketitle
 
 \section{Scope and Application}
 
-\NP This SOP covers field-based research and class field trips. 
+\NP This SOP covers field-based research activities and class field trips. 
 
 \NP The risks covered include transportation, weather-based, and biotic hazards.
 
-\NP Although we can not predit all risks and hazards, it is everyone's responsbility to learn to identify and mitigate potential risks associated with field work.
+\NP Although we can not predit all risks and hazards, it is everyone's responsbility to identify and mitigate potential risks associated with field work.
+
+\tableofcontents
+\newpage
 
 \section{Health and Safety}
 
@@ -48,9 +93,9 @@
 
 \NP Anyone conducting research in the field are required to have documented training before commencing field work. 
 
-\NP Reading and taking the precautions in this document in the first step to reduce the risks associated with field work. 
+\NP Learning about risks and taking the precautions in this document in the first step to reduce the risks associated with field work. 
 
-\NP Anyone working in the field should be be willing to identify potential risks and attempt to mitigitate these risks. 
+\NP Anyone working in the field should identify potential risks and attempt to mitigitate these risks. 
 
 \section{Required Materials}
 
@@ -58,7 +103,7 @@
   \item First Aid Kit
   \item Cell phone(s)
   \item Walk-talkies
-  \item 
+  \item PPE
 \end{itemize}
 
 \section{Estimated Time}
@@ -86,38 +131,43 @@
 
 \NP In the case of a severe allergic reaction - defined as swelling of the face/throat and respiratory distress - 0.3mg of Epinephrine must be administered. Such dosage can be re-administered after 5 minutes. Dosage should be followed by 25-50mg of Diphenhydramine and 20-40 mg of Prednisone. Then EVAC from field station. 
 
+\NP In the field, we are likely to encounter abiotic hazards such as extreme temperature, pollution, sharp objects, possibly dangerous equipment, etc.
+
 \subsection{Weather Related Risks}
 
-\NP In the field, we are likely to encounter abiotic hazards such as extreme temperature, pollution, sharp objects, possibly dangerous equipment, etc. 
-
-\NP We will be working outside in Southern California in the fall, and therefore are at risk of overheating, heat stroke, dehydration, and sunburn. 
+\NP We will be working outside, where risk of excess heat or extreme cold can be life threatening. 
 
 \NP There's also the potential risk during days with especially poor air quality. 
 
-\NP In such a dry climate, it is easy to underestimate the strength of the sun and thus the rate at which we may become dehydrated or burnt.  
+\NP In dry climates, it is easy to underestimate the strength of the sun and thus the rate at which we may become dehydrated or burnt.  
 
 \NP On the other end of the spectrum, less frequent environmental events such as thunderstorms bring risk of lightning strikes, which cause harm to people directly or indirectly through forest fires (e.g. the fire last year at Bernard Field Station, across the street from Pitzer's campus, has made this risk particularly relevant.)
 
 \NP Hot days and forest fires can both lead to another abiotic risk that is easier to overlook - pollution. Working outside when the ozone levels or levels of other pollutants are too high has a detrimental effect on the health of anyone, but the impact of air pollution on health is most acute in people that already suffer from asthma. A string of hot, dry days worsen the pollution levels, while forest fires nearby degrade the air quality. Thus, students with any respiratory disease that may subject them to higher risks due to pollution should be cautious and report said condition to their instructor or laboratory supervisor. 
 
-\NP Heat exhaustion/stroke
+\NP Heat Exhaustion/Stroke Risks
 
-\NP Outside of shade coverage in desert/arid climates especially during hot times in the day
+\begin{itemize}
+  \item Outside of shade coverage in desert/arid climates especially during hot times in the day
+  \item Lack of shade coverage/ proper sun protection
+  \item Hydrate, place ice packs on neck, armpits etc. If conditions worsen, leave the field and find air conditioned conditions.
+  \end{itemize}  
+  
+\NP Use (and reapply) sunscreen), drink plenty of water, wear hats and/or other protective gear
 
-\NP Lack of shade coverage/ proper sun protection
+\NP Risks assocciated with cold conditions
 
-\NP Hydrate, place ice packs on neck, armpits etc. If worsens, remove from field.
-Use (and reapply) sunscreen), drink plenty of water, wear hats and/or other protective gear
-
-Cold
-Cold places
 Lack of sun
 Time of year
 Bundle up, hydrate! Eat, and evac to warmth
 Proper layering/clothing- check weather.
-Lightening
+
+\NP Risks of Lightening
+
 Anywhere
+
 Heat/ low, dark ansal shaped clouds
+
 Assume lightning position- seek shelter.
 Check weather forecast. Understand how to identify cumulonimbus clouds.
 Forest Fire
@@ -132,7 +182,7 @@ Seek altitude if flash food
 Check radar. Know risks of area you are in.
 Altitude Illness (HAPE/HACE)
 
-\section{Elevation}
+\subsection{Elevation}
 
 \NP Altitude sickness... Mountains, specifically high altitudes to which students have not had time to adjust properly. Less Oxygen in atmosphere
 
@@ -178,13 +228,13 @@ Excessive rainfall
 
 
 
-\section{Exposure to toxic waste}
+\subsection{Exposure to toxic waste}
 
 
 Unpredictable: We are exposed to it via ingestion, inhalation, or dermal exposure.
 
 
-\section{Biotic Hazards}
+\subsection{Biotic Hazards}
 
 \NP The field is home to a vast diversity of organisms. Being respectful of their environment is crucial to their safety and our own.
 
@@ -192,37 +242,50 @@ Unpredictable: We are exposed to it via ingestion, inhalation, or dermal exposur
 
 \subsection{Mosquitos}
 
-Near stagnant water
-Malaria
-See diseases: malaria
-Bug spray
-Don’t make standing pools of water
-Rodents
-Debris, dense underbrush and burrow holes
-Disease, infection
-If bitten, clean and disinfect.
-Don’t touch rodents
-Mountain lions
-Native to North/South America
-Severe injury
-Make yourself look larger, don’t run away, throw rocks or sticks
-Avoid being alone 
+\NP Near stagnant water
+
+\NP Many species are vectors for Malaria
+
+\NP Mosquito repellant, such as Deet products can be extremely effective. 
+
+  
+
+\subsection{Rodents}
+
+\NP Debris, dense underbrush and burrow holes
+
+\NP Disease, infection
+
+\NP If bitten, clean and disinfect.
+\NP Don’t touch rodents
+
+
+\subsection{Large Mammals}
+
+\NP Mountain lions, native to North/South America and can cause severe injury; in general, make yourself look larger, don’t run away, throw rocks or sticks; and avoid being alone.
 
 
 \subsection{Snakes}
 
-Rattlesnakes, cottonmouth, 
-Snakebite
-Back away slowly, no sudden movements
-If bitten, seek immediate medical attention for antivenom
-Walk in open areas, wear heavy boots, listen for rattle.
+\NP Rattlesnakes, cottonmouth, 
+
+\NP Risk: Snakebite
+
+\NP Back away slowly, no sudden movements
+
+\NP If bitten, seek immediate medical attention for antivenom
+
+\NP Walk in open areas, wear heavy boots, listen for rattle.
 
 \subsection{Spiders}
 
-Black widow, brown recluse
-Spider bite, nausea, 
-Go to hospital if bitten
-Wear gloves while working in field, shake out clothing and bedding, avoid places of residence
+\NP Black widow, brown recluse
+
+\NP Spider bite, nausea, 
+
+\NP Go to hospital if bitten
+
+\NP Wear gloves while working in field, shake out clothing and bedding, avoid places of residence
 
 \subsection{Bees \& Wasps}
 
@@ -262,7 +325,7 @@ Injury from handling equipment(e.g cuts, burns).
 
 \NP Refer to table for abiotic hazards for information on causes/location, prevention, and quick instructions on how to react. Most importantly, handle all equipment with caution. Carefully read operating procedures. Seek help from fellow students or your instructor, should you have questions or doubts. Do not use any equipment if you are unsure of how to handle it. 
 
-\section{Epilepsy/Diabetes/Heart Failure}
+\subsection{Epilepsy/Diabetes/Heart Failure}
 
 Refer to emergency procedure(SOP, procedure 2).
 Report any chronic conditions to your supervisor.
@@ -284,10 +347,9 @@ Create a checklist of materials
 Book accommodations in advance
 Prepare transportation
 
-\section{SOP}
+\section{Identify potential risks}
 
-Procedure 1: Preparation
-Identify potential risks
+
 Check weather report
 Read through and understand the Emergency SOP (see below)
 Be aware of sites/locations of emergency equipment
@@ -296,7 +358,7 @@ Report to supervisor beforehand
 Identify hospital closest to the field site
 
 
-\section{The Transportation Plan}
+\section{Develop a Transportation Plan}
 
 \begin{itemize}
   \item Identify meet up/departure times and locations
@@ -304,19 +366,21 @@ Identify hospital closest to the field site
   \item All state and local laws must be obeyed
 \end{itemize}
 
-\subsection{Supplies}
+\subsection{Supply Checklist}
 
-\begin{itemize}
-  \item Gather necessary materials (*required)
+\NP Field Supplies Checklist. Gather necessary materials (*required):
+
+  \begin{itemize}
   \item Personal protective equipment*
-  \item (Full) water bottle*
-  \item Rite in the rain lab notebook + writing utensil
-  \item Sunscreen, sun hat (if necessary)
+  \item Rain gear (if necessary)
+  \item No excessively loose clothing  
   \item Additional clothing/gear
   \item No sandals or open-toed shoes
   \item May need to cover additional exposed skin depending on environmental conditions (e.g. locations with large growths of poison oak)
-  \item Rain gear (if necessary)
-  \item No excessively loose clothing
+  \item Sunscreen, sun hat (if necessary)
+  
+  \item (Full) water bottle*
+  \item Rite in the rain lab notebook + writing utensil
   \item Watch
   \item First aid kit*
   \item Cell phone; program the following numbers*
@@ -329,33 +393,54 @@ Identify hospital closest to the field site
 
 \subsection{On site}
 
-Identify a time to meet up to depart (if splitting up)
-Leave no trace
-Ensure that environment remains undisturbed
-Supervisor ensures that safety procedures are followed
-Report any potential field hazards to supervisor
+\NP Identify a time to meet up to depart (if splitting up)
+\NP Leave no trace--Ensure that environment remains undisturbed
+
+\NP Supervisor ensures that safety procedures are followed
+
+\NP Report any potential field hazards to supervisor
 If supervisor is not able to be on site at this time, the supervisor should designate/educate a replacement
 
-Procedure 2: Medical emergency (Injury and/or illness)
-Survey the scene
-Identify any potential risks/harms that could affect other members of the lab team
-Do not move injured person unless necessary
+\subsection{Responding to a Medical Emergency (Injury and/or illness)}
 
-Summon medical help; share the following information:
-Suspected type of injury or illness
-Location
-Type of assistance required
-Identify a location for entry (if an emergency vehicle is being summoned)
+\NP Survey the scene
 
-Document the injury/illness
-Identify what happened/how the injury/illness occurred
-This information will be used to eliminate hazards and prevent future injuries/illnesses
+\NP Identify any potential risks/harms that could affect other members of the lab team
 
-Report injury/illness to lab supervisor
+\NP Do not move injured person unless necessary
 
+\NP Summon medical help; share the following information:
+
+\NP Suspected type of injury or illness
+
+\NP Location
+\NP Type of assistance required
+
+\NP Identify a location for entry (if an emergency vehicle is being summoned)
+
+\subsection{Document the injury/illness}
+
+\NP Identify what happened/how the injury/illness occurred
+
+\NP This information will be used to eliminate hazards and prevent future injuries/illnesses
+
+\NP Report injury/illness to lab supervisor
 
 \section{References}
 
 \NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\newpage
+\section{Field Work Planning Form}
+
+\NP Phone Numbers
+
+\NP Location
+
+\NP Risk Assessment
+
+\NP Risk Mitigation Plan
+
+\NP Emergency Services 
 
 \end{document}
