@@ -21,13 +21,13 @@
 
 \section{Scope and Application}
 
-\NP The scope of this SOP defines who can use the IRMS and the training required to be a user and super-user.
+\NP The scope of this standard operating procedure (SOP) defines who can use the isotope-ratio mass spectrometer (IRMS) and its peripherals, the training required to become a user and super-user, and to be used as an informational guide on the various topics related to the IRMS.
 
 \NP The applications of this SOP are for researchers to learn how to use the Oxtoby Isotope Lab IRMS. Using the IRMS requires skills and attention to detail and users must be qualified to use the instruments. The lab manager does not have the time or capacity to run samples for researchers, but can train users to run their samples. Completing this SOP is the first step toward becoming a user or super-user.
 
 \section{Summary of Training}
 
-\NP This SOP is used to train potential users how to prepare and run sample on the IRMS. Since the Oxtoby lab is managed by a 1/2 manager, it's important the users are able to run the instruments independently -- but they are expensive and very involved, so we need to ensure that users are qualified.
+\NP This SOP is used to train potential users how to prepare and run sample on the IRMS. Since the Oxtoby lab is managed by a 1/2 manager, it's important the users are able to run the instruments independently -- but they are expensive and very involved, so we need to ensure that users are not only qualified but also confident in operating the instruments.
 
 \NP Training will typically include background reading of relevant topics, observation of an already trained user, supervised experience running the instrumentation, and finally a start-to-finish experience that either the technician or specfic Super-Users will, with their discretion, determine a trainee a user.
 
@@ -69,27 +69,29 @@ The laboratory was funded by the Moore Foundation and was dedicated by the colle
 
 \NP The Oxtoby Isotope Laboratory relies on an ``in-kind payment'' approach to fund its operations. Although there is no per sample cost, per se, the laboratory expect consumable and gases to be replenished by users/super users relative to their use. If you happen to have certain consumables that you would like to use (instead of the lab's) feel free to do so. These items may include tin/silver capsules, cell wells, weighing paper, gloves, standards, reagents, etc.
 
-\NP Lab Access
+\NP Lab Access will generally be between the regular hours of 8am to 5pm unless the lab technician or Dr. Marc Los Huertos is within the department. Schedule may vary so it is best to contact the technician (kyle.mccarty@pomona.edu) to either schedule time or create some sort of arrangement so you can gain access to the laboratory.
 
-\section{Estimated Time}
+\section{Estimated Time for Certification}
 
 \NP Estimated time to become a user requires approximately 6 hours of observation, training, and minimally supervised runs. This does not include the time required to read relevant reading material such as manuals and standard operating procedures.
 
 \section{Health and Safety Risks}
 
-\NP Pressurized, Reactive, and Poisenous Gases -Hydrogen (H$_2$), Oxygen (O$_2$),Carbon Monoxide (CO$_2$), Sulfur Dioxide (SO$_2$)
+\NP Pressurized, reactive, and poisenous gases -Hydrogen (H$_2$), Oxygen (O$_2$),Carbon Monoxide (CO$_2$), Sulfur Dioxide (SO$_2$)
 
-\NP Acid Handling - 100\% Phosphoric Acid
+\NP Reagent and Acid Handling - 100\% Phosphoric acid for carbonate analysis, quartz wool for column packing, etc. 
 
-\NP Risk of Burns - Hot reactors
+\NP Risk of Burns (hot reactor and/or ash finger handling)
 
-\NP Puncture and Cut Related Wounds - Needles
+\NP Puncture/Cut related wounds from syringes, sharp objects, etc.
 
 \section{Personnel \& Training Responsibilities}
 
 \NP Users will be held to high professional standards and violation will forfeit your privilege to use the lab.
 
-\NP Researcher training is required before time can be scheduled to use the IRMS and its peripherals.
+\NP Training is required before time can be scheduled to use the IRMS and its peripherals.
+
+\NP Personal protective equipment (PPE) should always be worn. 
 
 \NP Researchers using this SOP should be trained for the following SOPs:
 
@@ -108,13 +110,16 @@ The laboratory was funded by the Moore Foundation and was dedicated by the colle
 
 \NP Gloves
 
-\subsection{Other}
+\subsection{Reagents, Standards, other Miscellaneous Items}
+
+\NP Supplying your own standards is ideal, but the lab does have some standards that can be used assuming you will replace them (See section~\ref{Standard Reference Materials} for what we generally have on hand.)
+
 
 \NP Item 1 w/catalog number!
 
 \NP Item 2
 
-\section{Reagents and Standards}
+\section{Gases, Reagents, and Standards}
 
 \subsection{Reference/Standard Gases}
 
@@ -156,7 +161,9 @@ CN            & Yes   & No      & Yes \\ \hline
 \end{tabular}
 \end{table}
 
+\subsection{Standard Reference Materials} \label{Standard Reference Materials}
 
+\NP
 
 %\section{Sample Collection, Preservation, and Storage}
 
@@ -176,13 +183,15 @@ Go into a brief IRMS theory.
 
 Explain the interaction of the peripherals and IRMS.
 
-\section{Time Management - Sequence Preparation}
-
-\NP Determine the number of samples will be analyzed, how many accompanying standards will be needed (depending on your data correction scheme), and blanks. Keep in mind the autosampler carousel has only 32 spots.
+\section{Time Management}
 
 \NP Analysis Time - Varies depending on method and analysis type. 
 
+\NP Keep in mind zero-enrichment tests (on/offs) tests need to be preformed to verify instrument is functioning properly. This process is usually underestimated in terms of the time it takes. Not only is this process variable, but the instrument can fall out of specification if it sits idle too long (even after initially meeting its specifications).
+
 \subsection{FLASH EA}
+
+\NP Determine the number of samples will be analyzed, how many accompanying standards will be needed (depending on your data correction scheme), and blanks. Keep in mind the autosampler carousel has only 32 spots.
 
 \begin{description}
 
@@ -197,31 +206,29 @@ takes approximately 10 minutes and 45 seconds plus an additional minute or so fo
 
 \end{description}
 
-\subsection{GASBENCH}
+\subsection{GASBENCH II}
 
-\begin{description}
+\NP The GasBench is a low flow peripheral so it generally doesn't have much in terms of background signatures. Being a low-flow peripheral, it can generally pass zero-enrichment tests a lot quicker than a high-flow peripheral.
 
-\item[Carbonates]
+\NP There is the added complexity of using the autosampler (PAL system) with the GasBench. It is a good idea to decide whether you will be using the autosampler and IRMS to flush vials online or to do the flushing stage offline. There is considerable time discrepency here as you cannot be analyzing samples on the IRMS while automating the flushing stage. You can, however, flush vials offline while analyzing another batch of samples. 
 
-\item[Dissolved Inorganic Carbon (DIC)]
+\subsubsection{Carbonates}
 
-\item[Breath Gas Analysis]
+\subsubsection{Dissolved Inorganic Carbon (DIC)}
 
-\item[CO$_2$ in Atmospheric Concentrtions]
+\subsubsection{Breath Gas Analysis}
 
-\item[Water Equilibration ($^{18}$O/$^{16}$O)]
+\subsubsection{CO$_2$ in Atmospheric Concentrations}
 
-\item[Water Equilibration ($^2$H/$^1$H)]
+\subsubsection{Water Equilibration ($^{18}$O/$^{16}$O)}
 
-\end{description}
-
-\NP Perform instrument tests to verify instrument is functioning properly.
+\subsubsection{Water Equilibration ($^2$H/$^1$H)}
 
 \section{QC/QA Criteria}
 
-\NP Evaluate data reduction requirements, linearity, zero enrichment test
+\NP Evaluate data reduction requirements, linearity, zero enrichment test, etc.
 
-\section{Trouble Shooting}
+\section{Troubleshooting}
 
 \section{References}
 
