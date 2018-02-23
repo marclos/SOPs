@@ -1,5 +1,5 @@
 %SOP Template 
-% Version 01 Created SOP
+% Version 02 Created SOP
 
 
 
@@ -7,7 +7,7 @@
 
 \usepackage[english]{babel}
 
-\title{Becoming a IRMS User}
+\title{Becoming a IRMS User/User Handbook}
 \date{2/12/2018}
 \author{Marc Los Huertos and Kyle McCarty}
 \approved{TBD}
@@ -21,15 +21,17 @@
 
 \section{Scope and Application}
 
-\NP The scope of this SOP defines who can use the IRMS and the training required to be a user and super-user.
+\NP The scope of this standard operating procedure (SOP) defines who can use the isotope-ratio mass spectrometer (IRMS) and its peripherals, the training required to become a user and/or super-user, and to be used as an informational guide on the various topics related to the IRMS.
 
 \NP The applications of this SOP are for researchers to learn how to use the Oxtoby Isotope Lab IRMS. Using the IRMS requires skills and attention to detail and users must be qualified to use the instruments. The lab manager does not have the time or capacity to run samples for researchers, but can train users to run their samples. Completing this SOP is the first step toward becoming a user or super-user.
 
 \section{Summary of Training}
 
-\NP This SOP is used to train potential users how to prepare and run sample on the IRMS. Since the Oxtoby lab is managed by a 1/2 manager, it's important the users are able to run the instruments independently -- but they are expensive and very involved, so we need to ensure that users are qualified.
+\NP This SOP is used to train potential users how to prepare and run the IRMS. Since the Oxtoby lab is managed by a 1/2 manager, it's important the users are able to run the instruments independently -- but they are expensive and very involved, so we need to ensure that users are not only qualified but also confident in operating the instruments.
 
-\NP Training will typically include background reading of relevant topics, observation of an already trained user, supervised experience running the instrumentation, and finally a start-to-finish experience that either the technician or specfic Super-Users will, with their discretion, determine a trainee a user.
+\NP Training will include background reading of relevant topics, observation of an already trained user, supervised experience running the instrumentation, and finally a start-to-finish experience that either the technician or specfic Super-Users will, with their discretion, determine a trainee a user.
+
+\NP We do understand that each user will have their own particular need from the IRMS and it may not be relevant to know every kind of analysis, peripheral, part, etc. The lab technician and other super-users will do their best to create a compromise between the required relevant training and its associated time commitment for the trainees.
 
 \newpage
 
@@ -41,11 +43,66 @@
 
 The laboratory was funded by the Moore Foundation and was dedicated by the college on Feb. 26, 2018. Martina Ebert spearheaded the proposal based on David Oxtoby's relationship with the Moore Foundation's Board of Directors/Trustees?. The laboratory construction was approved by the Dean of the College, Audrey Bilger, President Oxtoby, and the Treasurer Karen Sission. The consturction was developed and managed by Brian Faber and overseen by Bob Robertson.
 
+\section{Estimated Time for Certification}
+
+\NP Estimated time to become a user requires approximately 6 hours (give or take) of observation, training, and minimally supervised runs. This does not include the time required to read relevant reading material such as manuals and standard operating procedures.
+
+\NP This time also depends on the extent of training a user will need. If a user is interested in only one application it will take less time to cover than if a user is interested in all of the possilbe applications.
+
+\section{Laboratory Policies}
+
+\NP In order to be able to run the IRMS and its associated peripherals, the person must a certified user, i.e. completed the prerequisite training to become a User or Super-user. 
+
+\NP The Oxtoby Laboratory is not a ``lab service'' and the manager or others associated with the lab cannot be used to run samples. The Manager will prepare the IRMS to ensure the the proper methods are working properly. However, the Manager will not prepare samples, create run sequences, oversee sequence runs, or conduct data reduction processes. 
+
+\NP Research is a time commitment. Thus, users must be prepared to dedicate time to prepare and run their own samples in a timely fashion and respect other users of the lab.
+
+\NP Instrument time is first-come first-serve.
+
+\NP Always \textbf{expect} delay if you are signed up after someone else. Unforseen events can arise and cause delays. Things happen. Be understanding and cautious here. Plan your time accordingly.
+
+\NP Lab Access will generally be between the regular hours of 8am to 5pm unless the lab technician or Dr. Marc Los Huertos is within the department. Schedule may vary so it is best to contact the technician (kyle.mccarty@pomona.edu) to either schedule time or create some sort of arrangement so you can gain access to the laboratory.
+
+\NP The Oxtoby Isotope Laboratory relies on an ``in-kind payment'' approach to fund its operations. Although there is no per sample cost, per se, the laboratory expect consumable and gases to be replenished by users/super users relative to their use. If you happen to have certain consumables that you would like to use (instead of the lab's) feel free to do so. These items may include tin/silver capsules, cell wells, weighing paper, gloves, standards, reagents, etc.
+
+
+\section{Health and Safety Risks}
+
+\NP Pressurized, reactive, and poisenous gases - Hydrogen (H$_2$), Oxygen (O$_2$),Carbon Monoxide (CO$_2$), Sulfur Dioxide (SO$_2$)
+
+\NP Reagent and Acid Handling - 100\% Phosphoric acid for carbonate analysis, quartz wool for column packing, etc. 
+
+\NP Risk of Burns (hot reactor and/or ash finger handling)
+
+\NP Puncture/Cut related wounds from syringes, sharp objects, etc.
+
+\section{Personnel \& Training Responsibilities/Requirements}
+
+\NP Users will be held to high professional standards and violation will forfeit your privilege to use the lab.
+
+\NP Personal protective equipment (PPE) should be worn at all times. Safety is of the utmost priority.
+
+\NP Training is required before time can be scheduled to use the IRMS and its peripherals.
+
+\subsubsection{Required Reading and Training}
+
+\NP Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+  \item SOP?? Applications of the IRMS and it Peripherals
+%  \item SOP02 Field Safety
+\end{itemize}
+
+\NP \textbf{CLEAN UP AFTER YOURSELF!} Clean up your Kimwipes, weighing papers, paper towels, note papers, etc. Organize your samples and personal items regardless if you are in or out of the lab!
+
+\NP \textbf{PUSH IN YOUR CHAIRS!} Keep the laboratory as tidy as possible. We don't want to have any needless obstructions.
+
 \section{Definitions}
 
-\NP Super-User -- is student, staff, or faculty memember who is qualified to run and perform minor maintanence on the IRMS, including, but not necessarily limted to, gas replacement, reactor exchange, needle exchange, etc.  
+\NP Super-User -- is a staff or faculty memember who is qualified to run and perform minor maintanence on the IRMS, including, but not necessarily limted to, gas replacement, reactor exchange, needle exchange, PAL system programming, etc.  
 
-\NP User -- is a student, staff, or faculty member who has qualified to prepare and run the IRMS without supervsion.
+\NP User -- is a student, staff, or faculty member who has qualified to prepare samples and run the IRMS without supervsion.
 
 \NP Student Researcher -- is generally going to be a student who either does not feel confident in becoming a user or simply doesn't have the time to invest in it. Although, a student researcher can conduct sample weighing, data reduction, and sequence creation.
 
@@ -59,62 +116,36 @@ The laboratory was funded by the Moore Foundation and was dedicated by the colle
 
 \NP ConfloIV -- A unique peripheral to the IRMS as it is the hub for all plumbed gas lines from each of the other peripherals, reference gases, and the IRMS itself. The Conflo also conducts the proper dilutions of sample and reference gases that is needed for them to fall within the working range of the IRMS.
 
-\section{Laboratory Policies}
-
-\NP In order to be able to run the IRMS and its associated peripherals, the person must a certified user, i.e. completed the prerequisite training to become a User or Super-user. 
-
-\NP The Oxtoby Lab is not a ``lab service'' and the manager or others associated with the lab cannot be used to run samples. The Manager will prepare the IRMS to ensure the the proper methods are working properly. However, the Manager will not prepare samples, create run sequences, oversee sequence runs, or conduct data reduction processes. 
-
-\NP Research is a time commitment. Thus, users must be prepared to dedicate time to prepare and run their own samples in a timely fashion and respect other users of the lab. 
-
-\NP The Oxtoby Isotope Laboratory relies on an ``in-kind payment'' approach to fund its operations. Although there is no per sample cost, per se, the laboratory expect consumable and gases to be replenished by users/super users relative to their use. If you happen to have certain consumables that you would like to use (instead of the lab's) feel free to do so. These items may include tin/silver capsules, cell wells, weighing paper, gloves, standards, reagents, etc.
-
-\NP Lab Access
-
-\section{Estimated Time}
-
-\NP Estimated time to become a user requires approximately 6 hours of observation, training, and minimally supervised runs. This does not include the time required to read relevant reading material such as manuals and standard operating procedures.
-
-\section{Health and Safety Risks}
-
-\NP Pressurized, Reactive, and Poisenous Gases -Hydrogen (H$_2$), Oxygen (O$_2$),Carbon Monoxide (CO$_2$), Sulfur Dioxide (SO$_2$)
-
-\NP Acid Handling - 100\% Phosphoric Acid
-
-\NP Risk of Burns - Hot reactors
-
-\NP Puncture and Cut Related Wounds - Needles
-
-\section{Personnel \& Training Responsibilities}
-
-\NP Users will be held to high professional standards and violation will forfeit your privilege to use the lab.
-
-\NP Researcher training is required before time can be scheduled to use the IRMS and its peripherals.
-
-\NP Researchers using this SOP should be trained for the following SOPs:
-
-\begin{itemize}
-  \item SOP01 Laboratory Safety
-%  \item SOP02 Field Safety
-\end{itemize}
 
 \section{Required Materials and Apparati}
 
-\subsection{Safety and Personnnel Protective Equipment (PPE)}
+\subsection{Safety and Personal Protective Equipment (PPE)}
 
-\NP Lab Coat
+\NP \textbf{Lab Coat} - Please bring your own lab coat to wear. We only have a few coats (if you do not have one) that can be lended out.
 
-\NP Safety Glasses
+\NP \textbf{Safety Glasses} - Please bring your own safety glasses as well. We only have a few glasses to lend out.
 
-\NP Gloves
+\NP \textbf{Gloves} - Various types and sizes of gloves can be found in the lab. Feel free to take these as needed, and also feel free to donate gloves!
 
-\subsection{Other}
+\subsection{Consumables}
 
-\NP Item 1 w/catalog number!
+\NP Supplying your own reagents, standards, and other items is encouraged. See the following section for a list of reagents (\ref{subsec:Reagents for Flash EA}) and standards (\ref{subsec:Standard Reference Materials}) that the laboratory will generally have on hand. These reagents and standards can be used if needed, but you are expected to replace what you use.
 
-\NP Item 2
+\NP Other items such as gloves, Kimwipes, weighing paper, and things of that nature are supplied by the laboratory. Feel free to donate any items like this, though!
 
-\section{Reagents and Standards}
+\NP It is also encouraged to bring your own consumeables appropriate for what peripheral you will be using. For example, if you are doing carbonate analysis try to bring your own supply of vials, caps, septa, needles, and syringes. If you are going to be using the EA or TC/EA, supplying your own reagents, reactor tubes, tin or silver capsules, cell wells, etc. will be encouraged.
+
+\subsection{Non-consumables}
+
+\NP Generally, you will not need to bring non-consumable items like tweezers, spatulas, scissors, etc. but it is a good idea to supply your own cell well and sample holders.
+
+\NP Please bring your own test tubes and \textbf{bring your own test tube racks!}
+
+\NP If you are really worried about sample contamination, just bring your own items.
+
+\NP PPE.
+
+\section{Gases, Reagents, and Standards}
 
 \subsection{Reference/Standard Gases}
 
@@ -140,7 +171,7 @@ The laboratory was funded by the Moore Foundation and was dedicated by the colle
 
 \NP Sulfur Dioxide (SO$_2$)
 
-\subsection{Reagents for Flash EA}
+\subsection{Reagents for Flash EA} \label{subsec:Reagents for Flash EA}
 
 \NP Reaction Column packing ((Table~\ref{column})add partnumbers for reagents and reactor parts)
 
@@ -156,17 +187,13 @@ CN            & Yes   & No      & Yes \\ \hline
 \end{tabular}
 \end{table}
 
+\subsection{Standard Reference Materials} \label{subsec:Standard Reference Materials}
 
+\NP
 
 %\section{Sample Collection, Preservation, and Storage}
 
-\section{Procedure}
-
-\NP Read general background of how isotope ratio ms works...30 min
-
-\NP Observe other user(s) operate ...
-
-\NP Read hardware SOPs and software SOPs?
+\newpage
 
 \section{Background}
 
@@ -176,52 +203,65 @@ Go into a brief IRMS theory.
 
 Explain the interaction of the peripherals and IRMS.
 
-\section{Time Management - Sequence Preparation}
+\section{Time Management}
+
+\subsection{Overview}
+
+\NP Using the IRMS system \textbf{TAKES A LOT OF TIME} so make sure you plan your time accordingly. Remember to be attentive, patient, and persistent. Things do happen and things do go wrong, but make sure you do not end up ruining the instrument because you are running a tight schedule. Set aside multiple, relatively uninterrupted, days when you can sit down and take the time to think through the process.
+
+\NP Plan ahead to make sure the system, as a whole, gets baked out properly. You want to make sure you don't have any residual compounds or gases lingering or being produced before you proceed.
+
+\NP In addition, you'll spend a decent amount of time verifying that background levels are within reason. 
+
+\NP Keep in mind zero-enrichment tests (on/offs) need to be preformed to verify instrument is functioning properly. This process is usually underestimated in terms of the time it takes. Not only is this process variable, but the instrument can fall out of specification if it sits idle too long (even after initially meeting its specifications). Generally, one single on-off sequence takes approximately 10 minutes, and you almost always need to do multiple on-off sequences.
+
+\NP Analysis time varies depending on method, analysis, and peripheral.
+
+\subsection{Flash EA}
 
 \NP Determine the number of samples will be analyzed, how many accompanying standards will be needed (depending on your data correction scheme), and blanks. Keep in mind the autosampler carousel has only 32 spots.
 
-\NP Analysis Time - Varies depending on method and analysis type. 
-
-\subsection{FLASH EA}
-
-\begin{description}
-
-\item[Carbon ($^{13}$C)] 
+\begin{itemize}
+  \item \textbf{Carbon ($^{13}$C)}
 takes approximately 5 minutes plus an additional minute or so for peak centering and magnet switching.
-
-\item[NC dual method] 
+  \item \textbf{NC dual method}
 takes approximately 7 mintues plus and additional minute or so for peak centering and magnet switching.
-
-\item[NCS triple analysis] 
+  \item \textbf{NCS triple analysis} 
 takes approximately 10 minutes and 45 seconds plus an additional minute or so for peak centering and magnet switching.
+\end{itemize}
 
-\end{description}
+\subsection{GasBench II}
 
-\subsection{GASBENCH}
+\NP The GasBench is a low flow peripheral so it generally doesn't have much in terms of background signatures. Being a low-flow peripheral, it can generally pass zero-enrichment tests a lot quicker than a high-flow peripheral.
 
-\begin{description}
+\NP There is the added complexity of using the autosampler (PAL system) with the GasBench. It is a good idea to decide whether you will be using the autosampler and IRMS to flush vials online or to do the flushing stage offline. There is considerable time discrepency here as you cannot be analyzing samples on the IRMS while automating the flushing stage. You can, however, flush vials offline while analyzing another batch of samples. 
 
-\item[Carbonates]
+\subsubsection{Carbonates}
 
-\item[Dissolved Inorganic Carbon (DIC)]
+\subsubsection{Dissolved Inorganic Carbon (DIC)}
 
-\item[Breath Gas Analysis]
+\subsubsection{Breath Gas Analysis}
 
-\item[CO$_2$ in Atmospheric Concentrtions]
+\subsubsection{CO$_2$ in Atmospheric Concentrations}
 
-\item[Water Equilibration ($^{18}$O/$^{16}$O)]
+\subsubsection{Water Equilibration ($^{18}$O/$^{16}$O)}
 
-\item[Water Equilibration ($^2$H/$^1$H)]
+\subsubsection{Water Equilibration ($^2$H/$^1$H)}
 
-\end{description}
+\newpage
 
-\NP Perform instrument tests to verify instrument is functioning properly.
+\section{Procedure}
 
+\NP Read general background of how isotope ratio ms works...30 min
+
+\NP Observe other user(s) operate ...
+
+\NP Read hardware SOPs and software SOPs?
 \section{QC/QA Criteria}
 
-\NP Evaluate data reduction requirements, linearity, zero enrichment test
+\NP Evaluate data reduction requirements, linearity, zero enrichment test, etc.
 
-\section{Trouble Shooting}
+\section{Troubleshooting}
 
 \section{References}
 
