@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  23 FEB 2018 12:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  24 FEB 2018 00:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -462,13 +462,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-Overfull \hbox (2.13313pt too wide) in paragraph at lines 124--125
+[2] <Hazard_sign.jpg, id=84, 611.28375pt x 617.30624pt>
+File: Hazard_sign.jpg Graphic file (type jpg)
+ <use Hazard_sign.jpg>
+Package pdftex.def Info: Hazard_sign.jpg used on input line 112.
+(pdftex.def)             Requested size: 469.75502pt x 474.37592pt.
+
+Overfull \hbox (2.13313pt too wide) in paragraph at lines 128--129
 []\OT1/cmr/m/n/12 ensures all stu-dents, tech-ni-cians, and re-searchers are tr
 ained re-informed and re-assessed
  []
 
-[3] [4] [5] [6] [7] [8]
+[3] [4 <./Hazard_sign.jpg>] [5] [6] [7] [8] [9]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
@@ -476,38 +481,38 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 
-Overfull \hbox (108.6221pt too wide) in paragraph at lines 299--300
+Overfull \hbox (108.6221pt too wide) in paragraph at lines 303--304
 [][]\OT1/cmr/bx/n/12 7.53 \OT1/cmr/m/n/12 Mer-cury Poi-son-ing: ... as well as 
 Mer-cury Spills: http://www.pomona.edu/sites/default/files/emergency-
  []
 
-[9] 
+[10] 
 AED: lastpage setting LastPage
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
+[11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
  (./Hazardous_Materials_v02.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `Hazardous_Materials_v02.out' has not changed
 .
 (rerunfilecheck)             Checksum: 38FA4497547F955210F21846D6BAE899;738.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
- 7563 strings out of 494820
- 107847 string characters out of 3178050
+ 7570 strings out of 494820
+ 107952 string characters out of 3178050
  205825 words of memory out of 3000000
- 10560 multiletter control sequences out of 15000+200000
+ 10564 multiletter control sequences out of 15000+200000
  8592 words of font info for 33 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  36i,18n,45p,1146b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Hazardous_Materials_v02.pdf (10 pages, 156955 bytes).
+Output written on Hazardous_Materials_v02.pdf (11 pages, 273115 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 98 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
