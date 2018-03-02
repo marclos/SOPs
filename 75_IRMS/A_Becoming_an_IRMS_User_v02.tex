@@ -56,6 +56,8 @@
 \usepackage{alltt}
 
 \usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{relsize}
 
 \title{Becoming a IRMS User/User Handbook}
 \date{2/12/2018}
@@ -71,13 +73,13 @@
 
 \section{Scope and Application}
 
-\NP The scope of this standard operating procedure (SOP) defines who can use the isotope-ratio mass spectrometer (IRMS) and its peripherals, the training required to become a user and/or super-user, and to be used as an informational guide on the various topics related to the IRMS.
+\NP The scope of this standard operating procedure (SOP) defines who can use the isotope-ratio mass spectrometer (IRMS) and its peripherals, the training required to become a user and/or super-user, and to be used as an informational guide on the various topics related to the \hyperref[IRMS]{IRMS}.
 
-\NP The applications of this SOP are for researchers to learn how to use the Oxtoby Isotope Lab IRMS. Using the IRMS requires skills and attention to detail and users must be qualified to use the instruments. The lab manager does not have the time or capacity to run samples for researchers, but can train users to run their samples. Completing this SOP is the first step toward becoming a user or super-user.
+\NP The applications of this SOP are for researchers to learn how to use the Oxtoby Isotope Lab IRMS. Using the IRMS requires attention to detail and the users must be qualified to use the instruments. The lab manager does not have the time or capacity to run samples for researchers, but can train users to run their samples. Completing this SOP is the first step toward becoming a user or super-user.
 
 \section{Summary of Training}
 
-\NP This SOP is used to train potential users how to prepare and run the IRMS. Since the Oxtoby lab is managed by a 1/2 manager, it's important the users are able to run the instruments independently -- but they are expensive and very involved, so we need to ensure that users are not only qualified but also confident in operating the instruments.
+\NP Since the Oxtoby lab is managed by a 1/2 manager, it's important the users are able to run the instruments independently -- but they are expensive and very involved, so we need to ensure that users are not only qualified but also \emph{confident} in operating the instruments.
 
 \NP Training will include background reading of relevant topics, observation of an already trained user, supervised experience running the instrumentation, and finally a start-to-finish experience that either the technician or specfic Super-Users will, with their discretion, determine a trainee a user.
 
@@ -134,7 +136,7 @@ The laboratory was funded by the Moore Foundation and was dedicated by the colle
 
 \NP Training is required before time can be scheduled to use the IRMS and its peripherals.
 
-\subsubsection{Required Reading and Training}
+\subsection{Required Reading and Training}
 
 \NP Researchers using this SOP should be trained for the following SOPs:
 
@@ -147,24 +149,6 @@ The laboratory was funded by the Moore Foundation and was dedicated by the colle
 \NP \textbf{CLEAN UP AFTER YOURSELF!} Clean up your Kimwipes, weighing papers, paper towels, note papers, etc. Organize your samples and personal items regardless if you are in or out of the lab!
 
 \NP \textbf{PUSH IN YOUR CHAIRS!} Keep the laboratory as tidy as possible. We don't want to have any needless obstructions.
-
-\section{Definitions}
-
-\NP Super-User -- is a staff or faculty memember who is qualified to run and perform minor maintanence on the IRMS, including, but not necessarily limted to, gas replacement, reactor exchange, needle exchange, PAL system programming, etc.  
-
-\NP User -- is a student, staff, or faculty member who has qualified to prepare samples and run the IRMS without supervsion.
-
-\NP Student Researcher -- is generally going to be a student who either does not feel confident in becoming a user or simply doesn't have the time to invest in it. Although, a student researcher can conduct sample weighing, data reduction, and sequence creation.
-
-\NP Delta V IRMS -- The Oxtoby Lab's Isotope Ratio Mass Spectrometer, model Delta V manufactured by ThermoFisher Scientific. 
-
-\NP Flash IRMS EA -- Also know as the ``Flash'' or ``Flash EA." It is an elemental analyzer and one of the three peripherals for the Delta V IRMS. It combusts a multitude of sample types to produce varying gases for the IRMS to analyze. 
-
-\NP Gasbench II -- Is another periphepheral for the IRMS that samples (usually in conjunction with an autosampler), treats, and transports sample gases from sealed vials.
-
-\NP TC/EA -- Thermal Conversion/Elemental Analyzer; similar to the Flash EA but instead uses pyrolysis and much higher temperatures (approximately 1450*C) to convert sample material into gases analyzed by the IRMS.
-
-\NP ConfloIV -- A unique peripheral to the IRMS as it is the hub for all plumbed gas lines from each of the other peripherals, reference gases, and the IRMS itself. The Conflo also conducts the proper dilutions of sample and reference gases that is needed for them to fall within the working range of the IRMS.
 
 
 \section{Required Materials and Apparati}
@@ -223,7 +207,7 @@ The laboratory was funded by the Moore Foundation and was dedicated by the colle
 
 \subsection{Reagents for Flash EA} \label{subsec:Reagents for Flash EA}
 
-\NP Reaction Column packing ((Table~\ref{column})add partnumbers for reagents and reactor parts)
+\NP Reaction Column packing (Table~\ref{column}) (add partnumbers for reagents and reactor parts)
 
 \begin{table}[h]
 \label{column}
@@ -239,11 +223,59 @@ CN            & Yes   & No      & Yes \\ \hline
 
 \subsection{Standard Reference Materials} \label{subsec:Standard Reference Materials}
 
-\NP
+\NP As stated before, the laboratory has some standards but they aren't to be used willy nilly without the blessing of a super-user, technician, or P.I. If you want to know what standards are generally used for any given type of analysis, first and foremost, do your own research. The list below is just for reference of what exists in the lab and their certified values.
 
-%\section{Sample Collection, Preservation, and Storage}
+\begin{table}[h]
+\label{Isotopic Standard Reference Materials}
+\caption{Isotopic Standard Reference Materials}
+\centering
+\begin{tabular}{lccc} \hline
+Reference Standard  &$\delta$2H \tiny(VSMOW-SLAP) &$\delta$13C (VPDB-LSVEC)  &$\delta$15N (Air-N2) \\ \hline\hline
+LOCSS &-  &-26.66  &7.30 \\
+HOCSS &-  &-26.27  &4.42 \\
+Urea &- &-43.26  &-0.56\\
+USGS24 &- &-16.05  &- \\
+USGS40 &- &-26.39  &-4.52 \\
+USGS41a &-  &36.55 &47.6\\
+USGS57 &-91.5 &-  &-\\
+USGS58 &-28.4  &-  &-\\
+USGS61 &96.9  &-35.05 &-2.87\\
+USGS62 &-156.1  &-14.79 &20.2\\
+
+\end{tabular}
+\end{table}
 
 \newpage
+
+\section{Definitions}
+
+\begin{description}
+
+\item[Super-User] \label{Super-User} A staff or faculty memember who is qualified to run and perform minor maintanence on the IRMS, including, but not necessarily limted to, gas replacement, reactor exchange, needle exchange, PAL system programming, etc.  
+
+\item[User] A student, staff, or faculty member who has qualified to prepare samples and run the IRMS without supervsion.
+
+\item[Student Researcher] Is generally going to be a student who either does not feel confident in becoming a user or simply doesn't have the time to invest in it. Although, a student researcher can conduct sample weighing, data reduction, and sequence creation.
+
+\item[Delta V IRMS] \label{IRMS} The Oxtoby Lab's Isotope Ratio Mass Spectrometer, model Delta V manufactured by ThermoFisher Scientific. 
+
+\item[Flash IRMS EA] Also know as the ``Flash'' or ``Flash EA." It is an elemental analyzer and one of the three peripherals for the Delta V IRMS. It combusts a multitude of sample types to produce varying gases for the IRMS to analyze. 
+
+\item[Gasbench II] Is another periphepheral for the IRMS that samples (usually in conjunction with an autosampler), treats, and transports sample gases from sealed vials.
+
+\item[TC/EA] Thermal Conversion/Elemental Analyzer; similar to the Flash EA but instead uses pyrolysis and much higher temperatures (approximately 1450*C) to convert sample material into gases analyzed by the IRMS.
+
+\item[ConfloIV] A unique peripheral to the IRMS as it is the hub for all plumbed gas lines from each of the other peripherals, reference gases, and the IRMS itself. The Conflo also conducts the proper dilutions of sample and reference gases that is needed for them to fall within the working range of the IRMS.
+
+\item[Linearity]
+
+\item[H3 Factor]
+
+\item[Zero-Enrichment Test]
+
+\end{description}
+
+%\section{Sample Collection, Preservation, and Storage}
 
 \section{Background}
 
@@ -263,30 +295,41 @@ Explain the interaction of the peripherals and IRMS.
 
 \NP In addition, you'll spend a decent amount of time verifying that background levels are within reason. 
 
-\NP Keep in mind zero-enrichment tests (on/offs) need to be preformed to verify instrument is functioning properly. This process is usually underestimated in terms of the time it takes. Not only is this process variable, but the instrument can fall out of specification if it sits idle too long (even after initially meeting its specifications). Generally, one single on-off sequence takes approximately 10 minutes, and you almost always need to do multiple on-off sequences.
+\NP Keep in mind zero-enrichment tests (on/offs) need to be preformed to verify instrument is functioning properly. This process is usually underestimated in terms of the time it takes. Not only is this process variable, but the instrument can fall out of specification if it sits idle too long (even after initially meeting its specifications). Generally, one single on-off sequence takes approximately 10 minutes, and you almost always need to do multiple on-off sequences before running an analysis.
 
-\NP Analysis time varies depending on method, analysis, and peripheral.
+\NP Analysis time varies depending on method, analysis, and peripheral. See each following section on different types of methods that already exist and their approximate time per analysis.
 
 \subsection{Flash EA}
 
-\NP Determine the number of samples will be analyzed, how many accompanying standards will be needed (depending on your data correction scheme), and blanks. Keep in mind the autosampler carousel has only 32 spots.
+\NP Determine the number of samples will be analyzed, how many accompanying standards will be needed (depending on your data correction scheme), and blanks. Keep in mind the autosampler carousels have 32 wells each. You can stack all three carousels for a total of 94 samples.
 
-\begin{itemize}
-  \item \textbf{Carbon ($^{13}$C)}
-takes approximately 5 minutes plus an additional minute or so for peak centering and magnet switching.
-  \item \textbf{NC dual method}
-takes approximately 7 mintues plus and additional minute or so for peak centering and magnet switching.
-  \item \textbf{NCS triple analysis} 
-takes approximately 10 minutes and 45 seconds plus an additional minute or so for peak centering and magnet switching.
-\end{itemize}
+\subsubsection{Nitrogen ($\delta$$^{15}$N)}
+
+\NP Takes approximately 3 mintues and 45 seconds plus an additional minute or so for peak centering and magnet switching.
+
+\subsubsection{Carbon ($\delta$$^{13}$C)}
+
+\NP Takes approximately 5 minutes plus an additional minute or so for peak centering and magnet switching.
+
+\subsubsection{NC dual method}
+
+\NP Takes approximately 7 mintues plus and additional minute or so for peak centering and magnet switching.
+
+\subsubsection{NCS triple analysis} 
+
+\NP Takes approximately 10 minutes and 45 seconds plus an additional minute or so for peak centering and magnet switching.
 
 \subsection{GasBench II}
 
 \NP The GasBench is a low flow peripheral so it generally doesn't have much in terms of background signatures. Being a low-flow peripheral, it can generally pass zero-enrichment tests a lot quicker than a high-flow peripheral.
 
-\NP There is the added complexity of using the autosampler (PAL system) with the GasBench. It is a good idea to decide whether you will be using the autosampler and IRMS to flush vials online or to do the flushing stage offline. There is considerable time discrepency here as you cannot be analyzing samples on the IRMS while automating the flushing stage. You can, however, flush vials offline while analyzing another batch of samples. 
+\NP There is the added complexity of using the autosampler (PAL system) with the GasBench. It is a good idea to decide whether you will be using the autosampler and IRMS to flush vials online or to do the flushing stage offline. There is considerable time discrepency here as you cannot be analyzing samples on the IRMS while automating the flushing stage. You can, however, flush vials offline while analyzing another batch of samples.
+
+\NP For most methods, the GasBench samples slightly differently than say the Flash EA does. The GasBench samples a single vial multiple times, 11 to be exact. This makes the analysis time a little longer than you would initially anticipate.
 
 \subsubsection{Carbonates}
+
+\NP The analysis of a carbonate uses the CO2\textunderscore 630 method; this takes approximately 10 mintues and 30 seconds plus an additional minute or so for peak centering and magnet switching.
 
 \subsubsection{Dissolved Inorganic Carbon (DIC)}
 
@@ -297,6 +340,24 @@ takes approximately 10 minutes and 45 seconds plus an additional minute or so fo
 \subsubsection{Water Equilibration ($^{18}$O/$^{16}$O)}
 
 \subsubsection{Water Equilibration ($^2$H/$^1$H)}
+
+\subsection{TC/EA}
+
+\NP The TC/EA will function similar to the Flash EA in terms of the time it takes for backgrounds to get to reasonable levels. The TC/EA also needs to do an H3 Factor test before analysis. This test takes about 8 or so minutes to complete.
+
+\NP The TC/EA consumes a lot more helium than the Flash EA does, as it does not have a helium-saving feature. Please budget your time carefully and work as efficiently as possible!
+
+\subsubsection{Hydrogen Measurement ($\delta$$^{2}$H)}
+
+\NP Takes approximately 3 mintues and 35 seconds plus an additional minute or so for peak centering and magnet switching.
+
+\subsubsection{Oxygen Measurement ($\delta$$^{18}$O)}
+
+\NP Takes approximately \textbf{X} mintues plus an additional minute or so for peak centering and magnet switching.
+
+\subsubsection{Dual Measurement}
+
+\NP Takes approximately 6 mintues plus an additional minute or so for peak centering and magnet switching.
 
 \newpage
 
