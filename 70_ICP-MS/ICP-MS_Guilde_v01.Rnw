@@ -37,13 +37,15 @@
 
 \section{Acknowledgements}
 
+\section{Estimated Time}
+
+\NP This procedure requires XX minutes...
+
 \section{Definitions}
 
 \NP Term1: is...
 
-\section{Biases and Interferences}
-
-\NP Biases and interferences can come from...
+\section{Notable Biases and Interferences}
 
 \section{Health and Safety}
 
@@ -74,6 +76,8 @@
 
 \section{Consumables}
 
+\NP Biases and interferences can come from...
+
 \begin{itemize}
   \item Sample Cone
   \item Skimmer Cone
@@ -83,9 +87,7 @@
 \end{itemize}
 
 
-\section{Estimated Time}
 
-\NP This procedure requires XX minutes...
 
 \section{Sample Collection, Preservation, and Storage}
 
@@ -270,3 +272,418 @@ Forced Power
 \url{https://crustal.usgs.gov/laboratories/icpms/intro.html}
 
 \end{document}
+
+\begin{comment} ICP-MS Standard Operating Procedure
+Oxtoby Environmental Isotope lab
+
+
+Contents
+
+Users
+
+Sample/Standard Prep
+    Equipment to use
+    Creating standards
+
+Connections and ICP Pre-Procedures: Checklist
+
+Tuning ICP (Aqueous) 
+
+Creating a Batch and Running
+    Selecting Analytes/masses
+    Adding internal standards
+    Sample list
+    Monitor masses
+
+Running ICP for Aqueous Samples: Checklist
+
+Post Run
+    Exporting Data
+    Reprocessing Data
+
+Shutting down the ICP Checklist
+
+Switching Sample Introduction to LA
+
+Turning on laser
+
+Setting down Spots and Transects
+
+Tuning the Laser on NIST 612
+
+Setting up the trigger for the laser
+
+Starting a Laser Run: Checklist 
+
+Method Development for Reaction/Collision Cell
+
+Ar-F as Exchange in Laser
+
+PeriPump Tuning
+
+    
+
+
+Users
+This SOP is to be used as a reference and guide to do basic runs.  Users should be trained by those authorized to use the ICP and should not run by themselves unless given permission to do so by the lab technician or PI.  
+
+Sample/Standard Prep
+
+Equipment to use
+
+-Use plastic pipettes, with no metal parts
+-Metal can rust/corrode contaminate solutions.
+
+-Stay away from using glassware
+-Dilute and make standards directly in plastic containers/vials  (HDPE or PTFE)
+
+-Use non powdered gloves.
+
+Creating Standards
+
+-Acid solutions are diluted by volume. Use full strength nitric and/or hydrochloric    
+acid (~70% and 37%, respectively) and dilute directly into centrifuge tube or plastic test tube.
+E.g.: To make matrix of 1% nitric and 0.5% hydrochloric matrix stock in a 50 ml centrifuge tube: Use 0.5 ml of HNO3(~70% HNO3) and 0.25 ml HCl(~37% HCl). Then use 18 Ω deionized water to fill the rest of the tube (49.25mL). 
+
+-Always add concentrated acid to a comparatively large volume of deionized water first. Remember, never add water to concentrated acid.
+
+-Internal tuning solution is diluted to 0.5 ppm.
+
+-Tuning solution is diluted to 1 ppb.
+
+-P/A factor tuning solution is diluted to 1 ppb.
+
+-Never mix organic solvents like ethanol or acetone with nitric acid and do not store concentrated acid bottles around organic solvents. The two react violently with each other and creates dangerous fumes.    
+
+-DO NOT pipet out of the bottle of standards or acid, instead use an intermediate container to pipet out of to prevent contamination of the stock solution. 
+
+-Be mindful of putting clothing or hands/arms over containers, particulates and dust will fall into them and could affect low level readings.
+
+Turning on the ICP and Pre-Procedures Checklist
+
+☐Make sure the ICP chiller is on and functioning properly.
+
+☐Verify the Argon dewar has sufficient levels for analysis and turn on.
+
+☐Inspect the PeriPump tubing and fittings and replace if needed.(See PeriPump Tuning)
+
+☐Attach the PeriPump tubing and clamp them properly.
+
+☐Clamp the PeriPump tubing located in the back of the autosampler. 
+
+☐Ensure there is enough internal tune solution, rinse, and autosampler rinse and the solutions and standards being used in the autosampler are uncapped.
+
+☐Turn on the Plasma by clicking the pulldown next to the [Plasma] gadget and click [Plasma on] When confirming to turn the plasma on make sure [Execute Configured Ignition Sequence] is unchecked (tuning should be done after the plasma warms up for a few minutes). IMMEDIATELY record the plasma on-time in 24:00 hour time. E.g., 2:20 = 14:20. 
+
+Tuning ICP    
+
+-Tuning should be done every time the ICP is turned on, whether it is used for analysis of aqueous samples or with laser ablation introduction. See laser tuning on how to tune for the laser.
+
+-When turning on the plasma, an option will be presented as a check-box that allows you to automatically do this step but it is best to do after an initial warm up (~15 minutes).  Tuning can also be from the [Plasma] gadget at the top;  a checklist of different tune parameters will pop up. To run checkmarked tunes from this option click [Add to Queue] to start tuning.
+Figure. 1. Plasma startup tune window.  Vial #s correlate to the tune solution which has the monitored masses. 
+
+When tuning in aqueous mode, it is necessary to: 
+
+-Have both the P/A tuning solution and regular tuning solution in the autosampler.  The vial location should already be set but double check under the [Vial #] column that the tuning solution is in the right location. These vial number codes are listed in the “Vial#” column (Fig. 1).
+
+-Insert the tubing for the internal standard coming from the sample line connector block in deionized water.
+
+-When ready to tune click [Add to Queue] located at the top left of the startup window. Progress can be monitored in the [Queue] section.
+
+
+Creating a Batch and Running
+    Creating a batch can be done from scratch or from an existing batch.  Once a batch is run it can not run again—chain of custody operations create permanent records of analyses.   Parameters can also be modified in the Data Analysis Method section post-run and the data can be reprocessed.  E.g., Standard values, blanks.
+
+Selecting Analytes/masses
+
+-Under the [Batch] Gadget go to [Acq Method] tab and the sub tab [Acq Parameters]. Fee figure 
+
+    -Click [Set Q1/Q2 Masses] which appears above tabs.
+
+-From here choose which elements that will analysed by left clicking. Deselect by right clicking.  
+
+-At the bottom of this window there are several isotopes to choose from for the element selected.
+
+-[Element Information…] located at the bottom of this window will give possible interferences from oxides, argides, etc.
+
+-Go to [Data Analysis Method] tab, then sub tab [Analyte] and right click [Analyte] header on the chart and click [Load List from Acquisition Method].
+
+-Go to the sub tab [Full Quant] to find the analytes that were chosen earlier.  Here the concentrations need to set for the standards. Each level is a different standard.
+
+-It is necessary to set a concentration under level for each element to get a concentration. Otherwise the results will only show counts per second.
+
+Adding Internal Standards
+
+-Along with adding analytes to monitor internal standards will be run as well.
+
+-These are introduced via the peripump and spike each sample.
+
+-Add these just the same as a sample but, under [Data Analysis Method] tab, sub tab [Analyte], check these off as [ISTD] in the far left column instead of [Analyte].
+
+-Under the [Data Analysis Method], sub tab [Full Quant], there is a column ISTD.  The pulldown from this column will show the internal standards added.  
+
+-Choose the internal standard that is the closest in mass to the analyte. E.g., for Be 9 choose Li 6 as an internal standard.
+
+
+
+Sample List
+-Assign the first sample in the sample list as a [CalBlk] sample type while telling it to sample a blank solution.  For the second sample list it as [CalStd],set the level to 1 and assign a blank solution again.  This is a work-around for a glitch in MassHunter 4.3, and this tricks MassHunter to calculate the P/A factors for the internal standards properly.
+
+-Set [CalStd] for standards, name them, and select the level that is set for that standard in the previous [Full Quant] sub tab.
+
+-Set [Sample] for for samples and name them.
+
+-To select vial location hover the cursor over the [Vial#] columns in the row of the solution and a down arrow will appear.  Click this and a map of the vial locations will appear.
+
+Monitor Masses
+-Select which elements to monitor in the [Acq Method] tab and the sub tab [Acq Parameters] and checking the boxes under the monitor row.
+
+-Minimise the amount of elements being monitored to one or two.  Having too many can strain the detector. 
+
+-Monitored masses can be changed during the run by right clicking the real time graph WHen running. Still keep to the rule of not having more than three monitored masses at once.
+
+-To look at ratios add the first mass in the first Q1 column.  In the Q2 numerator add this first mass again and the second mass in the Q2 denominator.  As a case in point, such a ratio is typically done in laser ablation mode for Th/ThO+ according to the image in Figure 2. 
+
+Figure 2. How to set ratios in tune mode.
+
+Before Running ICP for Aqueous Samples Checklist 
+        
+☐Ensure there are not too many monitored masses (1-3 max).
+
+☐Check there is rinse cycle under and [Acq Method] and the sub tab [PeriPump/ISIS].  Look under the post run boxes that there is a [Probe Rinse] time and speed set.
+
+☐Make sure that the settings are for aqueous not laser application(see switching sample introduction to laser).
+
+☐Check that the internal tune standard is being introduced into the peripump.
+
+☐At the top of the batch method window click [Validate Method] to check possible errors.  This won’t guarantee everything will be right in the method!
+
+☐When ready to run click [Add to Queue].
+
+Post Run
+
+    During the run a Data Analysis window will appear and as data comes in it will be added here.  From here the calibration curve, counts, concentration and other information are found. From it is possible to modify settings, reprocess data and extract data into an excel file.
+
+Exporting Data
+
+-After a run the results should already be shown in Data Analysis, this is separate from the ICP Masshunter software which runs the instrument.  If data analysis has not appeared it is possible the data handling options were set up for the laser and not for an aqueous application.
+    
+-To pull up an older batch go to the pulldown in [Batch] and then [Open Batch Results].
+    
+- To export the data in an excel file right click where the counts or concentration is shown and choose [Export] then [Export Table].
+    
+-The [Report] button at the top will create printable pdf reports like calibrations, batch report, tune report, p/a factor, instrument configuration and more.
+
+
+Reprocessing Data
+
+-All the parameters that were set up in [Data Analysis Method] can be modified after running a batch in the Data Analysis window.
+    E.g.: The concentrations of standards or deleting standards(levels).  Although it is not possible to add analytes.
+    
+-To edit the Method click on [Method],  It is possible to change mostly anything set up in [Data Analysis Method] in the Masshunter software. 
+
+-Click [Return to Batch-at-a-Glance] at the bottom of this window after changing the parameters to return to the batch and click [yes] to updating Data Analysis Method.
+
+-Click on [Process] at the top of the window to apply the new changes to the data.
+
+
+Shutting down the ICP Checklist
+
+☐ To turn off the plasma click the down arrow to the right of the [Plasma] and click [Plasma Off]. RECORD the plasma off time now, before any other steps. 
+
+☐ If you’ve been operating in solution mode, unclip the tensioners and detach the tubing from the PeriPump.  This will prolong the tubing life.
+
+☐ Next, unclip the tensioners from the PeriPump on the back of the autosampler.
+
+☐ Then, turn off the argon supply at the dewar with the wheel valve, not at the regulator which is carefully set to optimize gas flux from the dewar 
+
+☐ Lastly,  off the chiller ~5 minutes after turning off the plasma. The ICP needs time to cool off after plasma shutdown.
+
+☐ There is no need to turn off the ICP computer.
+
+    
+Starting Up and Shutting Down in Laser Ablation Mode
+
+If you plan to start the laser in aqueous mode and tune with a wet plasma, go up to Section XX and begin with step QQ. If you intend to start the plasma and tune directly on the laser, see that the following connections are made first in this order: 
+
+-Ensure the tubing is removed and cleared from the PeriPump.
+
+-Detach the carrier gas outlet from the ICP and detach the ball joint clip. 
+
+-Remove the MicroMist™ spray chamber from the ICP by removing the plastic screw located at the bottom of the spray chamber.  Place the spray chamber gently on the platform underneath being careful not to get caught on tubing.
+
+-Take the sample introduction tube from the laser and attach one end to the carrier gas and the other to the connector tube on the ICP with the ball joint clip.
+
+INSERT PICTURE
+Figure FF. The properly connected join of the laser ablation inlet to the 8900 torch assembly. Note XX. Note signal smoother. 
+
+-Turn on the plasma, do NOT run the ignition sequence and ensure the box is unchecked when confirming turning on the laser.    
+
+
+Switching Sample Introduction to LA
+After tuning the ICP on solution it is possible to then change the sample introduction to the laser. 
+
+After the plasma has fully turned on(ensure the green light is solid green)  go under the [Hardware] Gadget right click Mainframe then Communication. Check offline and click OK.
+
+Figure 3. How to set r
+-Right click Sample Introduction go to properties and uncheck [Use ASL], change Sample Introduction from [PeriPump] to [LA], uncheck [PeriPump Rotation] and [SC Cooling].  
+
+Figure 4. Settings for aqueous method. For a laser method sample introduction will be switched to LA and all checkboxes will be unchecked.
+
+-Go back to Communication and check online and click OK.
+
+-Go to Settings at the top, then Options, then the arrow next to Selected Options, choose data handling and check the boxes “Data Acquisition without DA” and “Tabulate Chart after Sample Acquisition”.  This will provide raw data to put through a data reduction software after.
+
+Figure 6. Data handling settings for a laser method.  For aqueous methods all of these boxes will be unchecked. 
+
+-When creating a batch ensure TRA(time resolved analysis) is selected in Acq Mode under Acq Method in the Batch.
+
+-When TRA for the laser is selected only counts and time will be recorded.  It is not possible to add standards in the program like the aqueous mode. 
+
+Turning on laser Computer Checklist
+☐Turn on the gases at the tank for the laser(He, N) and ensure there is enough gas for a run.
+
+☐Under the laser turn the red switch to on, the key at the top left, then the green button. See figure 7.
+
+Figure 7. This shows what an off position for the switches looks like. (0 indicates off 1 indicates on)
+
+☐Turn on the laser computer with the switch found behind the laser above the power cord.  See figure 8.
+
+Figure 8. This power button for the laser computer is located behind the laser. Do not forget to switch this off after shutting down the computer as well.
+
+☐The program to control the laser is located on the desktop labeled ‘’MEOlaser’’.
+
+Setting down Spots and Transects
+
+-There are multiple ways to move around the sample chamber.  To navigate use the sliding bars that frame the larger image which is the main camera image.  The wide angle camera is located at the bottom right and gives you a larger area of view.  If the navigate tool is selected clicking anywhere on these images will center the crosshairs/image there.  The screen located above the sample chamber can also be used to move the crosshairs by touching the screen.
+
+-Lighting can be found at the top right labeled viewing.  There are several types of lighting on sliding scales.  Navigating between the main camera and wide angle camera will require adjusting the lighting for proper exposure. 
+
+-Focus is found at the top left of the viewing screen of the main camera.  Up arrows move the camera closer and down arrows move the camera further.  Arrows closer to the center are for fine tuning and outer arrows will move faster.
+
+-Sometimes the sample cup will get in the way of creating sample maps or viewing the sample. To move it out of the way go to [Position] at the top then [Offset Tv2 Cup].  It will automatically go back into position if you forget to move it back when the laser is run.
+
+-To create a sample map go to [View] at the top and [Sample Map…].  Choose the wide angle or main camera and the size of the sample map then [Build].  Clicking anywhere on this sample map will navigate the crosshairs there.  
+
+-Tools are found on the bottom right side.  The choices are: spot patterns, line patterns, raster patterns, center crosshairs to cursor, select pattern, curve line, and other tools.  Right click these to adjust their properties. E.g., Spot size, Rep rate, Energy, Scan speed, ect..
+
+-After setting down a pattern it appears on the [Scan Patterns] list on the bottom left.  Right click the pattern on the list to adjust properties, move to scan, duplicate scans, rename scan, ect.
+
+- If duplicating and moving a scan to another location it is necessary to readjust the focus to the new location.  After moving the scan adjust the focus at that new location then left click the scan in the list and then [Move Scan focus].
+ 
+    
+
+Tuning oxide production on NIST 612
+-Use NIST 612 glass for tuning.  See auto tuning section below for further tuning.
+
+-Set up a transect that will allow enough time to tune the ICP in laser ablation (LA) mode.  Make it longer than necessary since it is easy to stop a laser scan.
+
+-Tuning with the laser optimizes intensities and sensitivities which is important since using the laser vs a solution will reduce intensities dramatically.
+
+-Monitor Th/U and ThO/Th ratios.
+-These are adjusted by changing the He gas flow, from the laser mass flow controller (channel 1), and the Ar carrier gas flow on the ICP, respectively.
+-ThO/Th ratio should be minimised to ~0.5%
+-Th/U ratio should be ~1:1
+
+-Si 29 should be stable and be optimized to get the most amount of intensity.
+
+-Fe 56 - ArO should be monitored for stability.
+
+-Mass 220 background should be minimized.
+
+    Auto Tune
+
+Auto tune takes about 7 minutes to run so ensure the laser scan is long enough before starting.  This can be done on aqueous samples or using the laser and optimizes the stability and sensitivity on whatever the ICP is uptaking.  
+
+-Three masses are selected to be optimized.  These should be the lowest mass you are analysing a middle mass and the highest mass being analysed.
+
+-In the [Tune] tab under batch right click the tune graph and choose select….
+
+-Add the three masses to the correlated tune mode that is in the tune Eg: No gas, He mode.
+
+-Select..
+
+Setting up the trigger for the laser
+These settings will allow the laser to trigger the ICP to start collecting data.  
+
+-On the ICP computer click on [Hardware] Gadget then right click [Sample Introduction] then [Properties] then under [remote signal settings] click  [edit].
+
+-Check the [Start Acquisition set to remote trigger] box.
+
+-On the laser computer after clicking [Run] and [Trig In/Sync Out Options] ensure that [Active during pattern scan] and [Enable Sync Out during Pre-Ablation] are checked.
+
+-Add the batch to the Queue. It will be on standby and not start acquiring data yet.  Be sure the laser is ready to run.
+
+-When starting the laser on the patterns the ICP will start collecting.
+
+Starting the Laser run Checklist
+☐Have TRA is selected in Masshunter.
+
+☐Turn off DA in Data handling under settings in Masshunter.
+
+☐The estimated time does not take into consideration traveling between patterns so set the run time on the ICP runs a bit longer than the time on the estimated time on the laser. E.g., If the estimated time on the laser is 15 minutes set the Acq Time in Masshunter to 18 minutes.
+
+☐Ensure that the trigger settings are correct.
+
+☐Make sure the He flow in the laser has been ramped up.
+
+☐Click [Emission] to get the laser ready to shoot.
+
+☐Check [Enable laser during scan] in the Run menu of the laser.
+
+☐Check [Log Sacan Event Timestamp] in the Run menu.
+
+Turning Off the laser computer Checklist
+
+Method Development for Reaction/Collision Cell
+
+-The reaction cell gases that are set up for the ICP is He, O(gas 4), and NH4(gas 3). 
+
+-A good approach for laser method development is to do quadruple and reaction cell tuning with solution(s) first. The solutions should contain analytes of interest while separate solution(s) are prepared with interfering analytes. The solutions should contain analytes of interest and separate solution(s) containing interfering masses. These solutions can be used to test/verify quadruple and reaction cell parameters.
+
+-He mode is great for getting rid of the backgrounds within the transition metal masses (40-80).  Using He mode also increases the intensity in most cases.
+
+-Mass Shift
+The idea of mass shifting is to take an analyte, reacting it with oxygen to increase its mass within the reaction cell, and then analyze for the analyte-oxide.  The reaction cell is located between the two quads, the first quad is set to the selected mass and the second quad is set to the increased mass. This is done to move elements away from other interfering masses.
+            
+E.g.: La(139) has an interference from SbO(139) which has the same mass. It is possible to can set the first quad to allow La(139) through but this also lets in SbO(139). The sample then moves through the reaction cell which reacts with oxygen increasing the mass of La by 16 to 155.  Then the second quad is set to only allow the mass 155 through filtering out the SbO(139). The detector is set to read mass 155 as La.
+
+-A good place to check for interferences when adding elements to analyse is [Element Information] located in [Set Q1 and Q2 masses].
+
+
+
+Gas Exchange
+The laser’s efficiency will degrade over time and every couple weeks a “Gas exchange” of the argon hexafluorine is needed.   An error will usually appear that the laser can’t reach the energy needed.
+
+-Open the [PC controller] on the desktop.
+
+-Go to [Gas Menu].
+
+-Under the laser open the cabinet to find the hexafluoride tanks. Open the far right tank.
+
+-Click [Gas Exchange].
+
+-After it is done close the far right knob(the same one that was opened earlier).
+
+
+PeriPump Tuning
+The PeriPump should be be periodically checked to ensure that the sample is being introduced in a timely manner to be read by the ICP.  For all of these steps ensure that the internal standard tubing is not in a solution.  These steps are probably unnecessary unless there are erroneous results or there is wear on tubing or tubing has been changed.
+
+-The fIrst thing to check is if the tension is appropriate for the tubing. Remove the inlet to the nebulizer and place in a beaker.  If this is left connected the negative pressure in the ICP could still pull in sample without the PeriPump being on. 
+
+-Move the autosampler to the rinse solution and start the PeriPump.  It is a good idea to start with no tension and increase it until  the rinse  starts moving through the line.  After this is done replace the tubing back on the inlet.
+
+-To check the timing go to the real time display in the queue.  Move the autosampler in tune solution and monitor a mass known to be in the solution and click “Start Signal Monitor”. 
+
+-Turn on the nebulizer pump speed to normal(0.1rps) and start a timer.  Watch to see when it reaches the ICP when the signal monitor shows counts. Wait for it to stabilize and stop the timer.  
+
+-Go to Batch from the top then the PeriPump/ISIS tab under the Acq Method.  Set  the nebulizer speed 0.1-0.5rps and multiply it by using the time recorded in seconds to get the amount of time it will take at that speed then put that time in the sample uptake and the stabilize prerun sections.  
+
+Eg: It takes 145 seconds for the sample to enter the ICP and stabilize at 0.1 rps.  If the pump speed is set at 0.3 rps the sample uptake time should be 43.5 seconds.(145*0.3=43.5)
+
+
+Tips, and questions to answer, to sort out later
+
+Does stopping a laser run on ICP save the data?
+YEs
+\end{comment}
