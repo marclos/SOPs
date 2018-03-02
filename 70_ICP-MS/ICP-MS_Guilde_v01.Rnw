@@ -3,11 +3,11 @@
 % Version 03 Added TOC and acknowledgements
 %           New SOP3_alpha.cls
 
-\documentclass[12pt]{../SOP3_beta}
+\documentclass[12pt]{../SOP3}
 
-\usepackage[english]{babel}
-\usepackage{blindtext}
-\usepackage{lipsum}
+%\usepackage[english]{babel}
+%\usepackage{blindtext}
+%\usepackage{lipsum}
 
 \title{ICP-MS Guide}
 \date{6/12/2017}
@@ -17,7 +17,7 @@
 \SOPno{70 v0.1}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+
 
 \maketitle
 
@@ -114,7 +114,7 @@ Oxygen&                 & \\ \hline
 
 \NP Connect drain and sample tubes to peristaltic pump and clamp.
 
-\NP Connect internal standard, should be diluted to 1 ppm or 1$\micro$/mL. 
+\NP Connect internal standard, should be diluted to 1 ppm or 1$\mu$/mL. 
 
 \NP Check Settings, nebulizer, post rotate yes!
 
