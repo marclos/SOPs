@@ -4,7 +4,7 @@
 %           New SOP3_alpha.cls
 
 
-\documentclass[12pt]{../SOP3_beta}
+\documentclass[12pt]{../SOP3}
 %\usepackage[english]{babel}
 %\usepackage{blindtext}
 %\usepackage{lipsum}
@@ -178,11 +178,13 @@ Stop Plotting is selected. When stopped, the graph can be dragged left/right and
 \subsection{Conductivity}
 
 \NP In Conductivity Setup, select MANUAL to enter the conductivity value of your standard. You may set \textbf{Single Point Standardization} in which the single standard applies to all ranges, or \textbf{Multi Point Standardization} in which a single stard is applied to an specific range. When using a Multi Point standardization, perform standardization in each range that you expect to use for best results.
-\NP\includegraphics{Conducivityranges.jpg}
-
+\begin{figure}
+\includegraphics{Conducivityranges.jpg}
+\end{figure}
 \NP{Cell Constant.} Select the nominal cell constant of the conductivity electrode you are using. There are three cell constants to choose from. Each is used for a different range. The following indicates the optimal conductivity range for the accumet conductivity cells. For resistivity measurements, an electrode having a nominal 0.1 cell constant (13-620-101 or equivalent) is recommended.
+\begin{figure}
 \includegraphics{CellConstant.jpg}
-
+\end{figure}
 \section{References}
 
 \NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
