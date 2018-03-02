@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  16 FEB 2018 20:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  2 MAR 2018 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,9 +7,9 @@ entering extended mode
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
 rainian, russian, bulgarian, loaded.
-(../SOP3_beta.cls
-Document Class: ../SOP3_beta 2016/08/08 v3.2 Modified article class for standar
-d operating procedures
+(../SOP3.cls
+Document Class: ../SOP3 2018/02/08 v3.3 Modified article class for standard ope
+rating procedures
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -155,7 +155,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip44
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+Package hyperref Info: Option `colorlinks' set `true' on input line 27.
 
 (../hanging.sty
 
@@ -282,23 +282,6 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/english.ldf
-Language: english 2005/03/30 v3.3o English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count103
-\U@D=\dimen128
-)
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-))
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
@@ -329,7 +312,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count104
+\c@section@level=\count103
 )
 LaTeX Info: Redefining \ref on input line 68.
 LaTeX Info: Redefining \pageref on input line 68.
@@ -387,16 +370,16 @@ Package gensymb Warning: Not defining \micro.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen129
+\scratchcounter=\count104
+\scratchdimen=\dimen128
 \scratchbox=\box29
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count105
+\nofMParguments=\count106
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen130
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen129
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks21
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -459,12 +442,7 @@ File: pipetman.jpg Graphic file (type jpg)
 
 <use pipetman.jpg>
 Package pdftex.def Info: pipetman.jpg used on input line 120.
-(pdftex.def)             Requested size: 630.10252pt x 226.596pt.
-
-Overfull \hbox (160.3475pt too wide) in paragraph at lines 120--121
-[][] 
- []
-
+(pdftex.def)             Requested size: 315.05125pt x 113.29799pt.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no µ in font cmr12!
 Missing character: There is no Â in font cmr12!
@@ -473,15 +451,12 @@ Missing character: There is no Â in font cmr12!
 Missing character: There is no µ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no µ in font cmr12!
-<pipetman2.jpg, id=77, 559.33969pt x 240.14719pt>
+ <pipetman2.jpg, id=77, 559.33969pt x 240.14719pt>
 File: pipetman2.jpg Graphic file (type jpg)
- <use pipetman2.jpg>
-Package pdftex.def Info: pipetman2.jpg used on input line 131.
-(pdftex.def)             Requested size: 559.33832pt x 240.14658pt.
 
-Overfull \hbox (89.5833pt too wide) in paragraph at lines 131--132
-[][] 
- []
+<use pipetman2.jpg>
+Package pdftex.def Info: pipetman2.jpg used on input line 131.
+(pdftex.def)             Requested size: 279.66916pt x 120.07329pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -489,19 +464,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] <pipetman3.jpg, id=89, 301.125pt x 303.38344pt>
+[2 <./pipetman.jpg>] <pipetman3.jpg, id=88, 301.125pt x 303.38344pt>
 File: pipetman3.jpg Graphic file (type jpg)
- <use pipetman3.jpg>
-Package pdftex.def Info: pipetman3.jpg used on input line 148.
-(pdftex.def)             Requested size: 301.12425pt x 303.38269pt.
 
-[3] 
+<use pipetman3.jpg>
+Package pdftex.def Info: pipetman3.jpg used on input line 148.
+(pdftex.def)             Requested size: 150.56212pt x 151.69135pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./pipetman2.jpg>] 
 AED: lastpage setting LastPage
-[4] [5 <./pipetman.jpg> <./pipetman2.jpg>] [6 <./pipetman3.jpg>]
+[4 <./pipetman3.jpg>] [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
-
-(./B_Micro_Pippite_v02.aux)
+ (./B_Micro_Pippite_v02.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `B_Micro_Pippite_v02.out' has not changed.
@@ -509,19 +487,19 @@ Package rerunfilecheck Info: File `B_Micro_Pippite_v02.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 7513 strings out of 494820
- 107270 string characters out of 3178050
- 205788 words of memory out of 3000000
- 10569 multiletter control sequences out of 15000+200000
+ 7227 strings out of 494820
+ 103792 string characters out of 3178050
+ 199590 words of memory out of 3000000
+ 10294 multiletter control sequences out of 15000+200000
  8592 words of font info for 33 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,17n,45p,487b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,17n,45p,487b,522s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on B_Micro_Pippite_v02.pdf (6 pages, 216368 bytes).
+Output written on B_Micro_Pippite_v02.pdf (5 pages, 216089 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
