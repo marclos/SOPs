@@ -17,6 +17,7 @@
 % Some valuable packages
 \RequirePackage{enumitem} % Customization of itemized, enumerated, etc.
 \RequirePackage{hyperref} % For hyperlinked cross-references
+\RequirePackage{../relsize}
 
 \hypersetup{
     colorlinks,
@@ -56,7 +57,6 @@
 \RequirePackage{amssymb}
 %\def\labelitemi{\scriptsize$\blacksquare$}
 \RequirePackage{xcolor}
-\RequirePackage{relsize}
 
 \def\labelitemi{\textcolor{gray}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}}
 
