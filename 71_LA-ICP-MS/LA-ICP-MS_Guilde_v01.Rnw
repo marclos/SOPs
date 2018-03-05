@@ -7,8 +7,8 @@
 \documentclass[12pt]{../SOP3_beta}
 
 \usepackage[english]{babel}
-\usepackage{blindtext}
-\usepackage{lipsum}
+%\usepackage{blindtext}
+%\usepackage{lipsum} 
 
 \title{LA-ICP-MS Guide}
 \date{6/12/2017}
@@ -18,7 +18,7 @@
 \SOPno{71 v0.1}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+%\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -115,7 +115,7 @@ Oxygen&                 & \\
 
 \NP Connect drain and sample tubes to peristaltic pump and clamp.
 
-\NP Connect internal standard, should be diluted to 1 ppm or 1$\micro$/mL. 
+\NP Connect internal standard, should be diluted to 1 ppm or 1$\mu$/mL. 
 
 \NP 
 
@@ -161,8 +161,6 @@ Oxygen&                 & \\
 
 \NP Use skimmer cone tool and unscrew it.
 
-
-
 \NP Be careful of the graphite o-ring
 
 \NP To replace, finger tighten skimmer cone.
@@ -177,7 +175,7 @@ Oxygen&                 & \\
 
 \subsection{Lenses}
 
-\NP Using 3mm allen wrench...
+\NP Using 3mm allen wrench
 
 \NP Do not touch lens with hands w/o gloves
 

@@ -16,7 +16,7 @@
 % Some valuable packages
 \RequirePackage{enumitem} % Customization of itemized, enumerated, etc.
 \RequirePackage{hyperref} % For hyperlinked cross-references
-
+\RequirePackage{../relsize}
 
 \hypersetup{
     colorlinks,
