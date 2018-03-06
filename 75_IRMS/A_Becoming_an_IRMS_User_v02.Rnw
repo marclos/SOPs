@@ -6,7 +6,6 @@
 \documentclass[12pt]{../SOP3}
 
 \usepackage[english]{babel}
-\usepackage{hyperref}
 
 \title{Becoming a IRMS User/User Handbook}
 \date{2/12/2018}
@@ -179,7 +178,7 @@ CN            & Yes   & No      & Yes \\ \hline
 \caption{Isotopic Standard Reference Materials}
 \centering
 \begin{tabular}{lccc} \hline
-Reference Standard  &$\delta$2H \tiny(VSMOW-SLAP) &$\delta$13C (VPDB-LSVEC)  &$\delta$15N (Air-N2) \\ \hline\hline
+Reference Standard  &$\delta$2H \relsize{-2}(VSMOW-SLAP) &$\delta$13C \relsize{-2}(VPDB-LSVEC)  &$\delta$15N \relsize{-2}(Air-N2) \\ \hline\hline
 LOCSS &-  &-26.66  &7.30 \\
 HOCSS &-  &-26.27  &4.42 \\
 Urea &- &-43.26  &-0.56\\
