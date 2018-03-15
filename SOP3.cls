@@ -18,6 +18,7 @@
 \RequirePackage{enumitem} % Customization of itemized, enumerated, etc.
 \RequirePackage{hyperref} % For hyperlinked cross-references
 \RequirePackage{../relsize}
+\RequirePackage{gensymb} % to create some symbols
 
 \hypersetup{
     colorlinks,
