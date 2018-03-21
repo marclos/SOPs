@@ -49,6 +49,35 @@ The laboratory was funded by the Moore Foundation and was dedicated by the colle
 
 \NP This time also depends on the extent of training a user will need. If a user is interested in only one application it will take less time to cover than if a user is interested in all of the possilbe applications.
 
+\section{Procedure}
+
+\NP Generally the procedure to become a certifed user will look like the following:
+
+\begin{itemize}
+  \item Complete the required reading.
+  \item Read general background of how the IRMS works (\hyperref[sec:Background]{Section \ref*{sec:Background}}).
+  \item Observe other user(s) operate the IRMS and its peripherals
+  \item Read application SOP?? (SOP??: Applications of the IRMS and its Peripherals)
+\end{itemize}
+
+\subsection{Required Reading} \label{subsec:Required Reading}
+
+\NP Researchers using this SOP to become an IRMS user should also be trained with the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+  \item SOP?? Applications of the IRMS and its Peripherals
+%  \item SOP02 Field Safety
+\end{itemize}
+
+\NP \textbf{Super-users} should be trained with this SOP as well as the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+  \item SOP?? Application of the IRMS and its Peripherals
+  \item SOP?? For Super-Users: How to perform periodic maintenance on the IRMS and its peripherals. 
+\end{itemize}
+
 \section{Laboratory Policies}
 
 \NP In order to be able to run the IRMS and its associated peripherals, the person must be a certified user, i.e. completed the prerequisite training to become a User or Super-user. 
@@ -87,22 +116,6 @@ The laboratory was funded by the Moore Foundation and was dedicated by the colle
 
 \NP Training is required before time can be scheduled to use the IRMS and its peripherals. It is your responsibility to schedule time to use instrumentation. If you do not schedule time accordingly you will lose lab privellages.
 
-\subsection{Required Reading and Training}
-
-\NP Researchers using this SOP to become an IRMS user should also be trained for the following SOPs:
-
-\begin{itemize}
-  \item SOP01 Laboratory Safety
-  \item SOP?? Applications of the IRMS and it Peripherals
-%  \item SOP02 Field Safety
-\end{itemize}
-
-\NP Any other user should be acquainted with the following SOPs"
-
-\begin{itemize}
-  \item SOP01 Laboratory Safety
-  \item SOP
-\end{itemize}
 
 \section{Required Materials and Apparati}
 
@@ -201,16 +214,20 @@ USGS62 &-156.1  &-14.79 &20.2\\
 
 %\section{Sample Collection, Preservation, and Storage}
 
-\section{Background}
+\section{Background} \label{sec:Background}
 
-\NP Isotope ratio mass spectrometer instruments are designed to measure differences in the abundances of, generally light, isotopes. Our particular instrument can measure $^{2}$H/$^{1}$H, $^{13}$C/$^{12}$C, $^{15}$N/$^{14}$N, $^{18}$O/$^{16}$O, and ?S/?S.
+\subsection{Gas Source Isotope Ratio Mass Spectrometry}
+
+\NP Isotope ratio mass spectrometer instruments are designed to measure differences in the abundances of isotopes, usually of the lighter elements. Our particular instrument, the ThermoFisher Delta V Isotope Ratio Mass Spectrometer, can measure $^{2}$H/$^{1}$H, $^{13}$C/$^{12}$C, $^{15}$N/$^{14}$N, $^{18}$O/$^{16}$O, and $^{34}$S/$^{32}$S in a variety of types of analyses.
 \\
 \\
-Prior to the determination of isotope ratios, the samples of interest are converted into simple gases such as H$_2$, CO, N$_2$, CO$_2$ and SO$_2$. The IRMS then measures these gases with their corresponding isotope ratios. The IRMS doesn't deliniate between actual isotope species and can only tell the difference between ions by their mass to charge (m/z) ratios. For example, when the instrument is analyzing for $\delta$$^{15}$N it measures ions at mass to charge ratios of 28, 29, and 30. Now, technically nitrogen has isotopes at all of  those m/z ratios, but CO (carbon monoxide) exists at m/z 28 as well. This is one example why it is imperative to set the instruments up properly to mitigate these effects. The measured ratios from analysis are then compared to standards to determine their delta values.\\
+Prior to the determination of isotope ratios, the samples of interest are converted into simple gases such as H$_2$, CO, N$_2$, CO$_2$ and SO$_2$. The IRMS then measures these gases with their corresponding isotope ratios. The IRMS doesn't actually delineate between isotope species and can only tell the difference between ions by their mass to charge (m/z) ratios. For example, when the instrument is analyzing for $\delta$$^{15}$N it measures ions at mass to charge ratios of 28, 29, and 30. Technically, nitrogen has isotopes at all of  those m/z ratios, but CO exists at m/z 28 as well. The measured ratios from each analysis is then compared to the appropriate reference gases, and in turn, to verified standards in order to determine their delta values.\\
 \\
-Go into a brief IRMS theory.\\
-\\
-Explain the interaction of the peripherals and IRMS.
+The two most common gas source IRMS configurations are continuous flow (CF-IRMS) and dual-inlet IRMS (DI-IRMS). Our lab has a continuous flow system and these systems usually utilize an elemental analyser of some kind. DI-IRMS is generally 10-fold more precise than CF-IRMS but requires more sample preparation, larger sample sizes, and less sample throughput.
+
+\subsection{Continuous Flow IRMS Peripheral Interaction}
+
+\NP Explain the interaction of the peripherals and IRMS here.
 
 \section{Time Management}
 
@@ -288,16 +305,23 @@ Explain the interaction of the peripherals and IRMS.
 
 \newpage
 
-\section{Procedure}
+\section{Pre-Analysis Sequence and QC/QA Criteria}
 
-\NP Read general background of how isotope ratio ms works...30 min
+\subsection{Mass Spectrometer Checks}
 
-\NP Observe other user(s) operate ...
+\subsection{Tuning}
 
-\NP Read hardware SOPs and software SOPs?
-\section{QC/QA Criteria}
+\subsection{Preconditioning}
 
-\NP Evaluate data reduction requirements, linearity, zero enrichment test, etc.
+\subsection{Pre-Analysis Tests (analysis dependant)}
+\begin{itemize}
+  \item{Background}
+  \item{Zero-Enrichment Test}
+  \item{H3$^+$ Factor}
+  \item{Blank Determination}
+\end{itemize}
+
+\subsection{Quality Assurance/Quality Control}
 
 \section{Troubleshooting}
 
