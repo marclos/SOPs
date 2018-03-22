@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  22 MAR 2018 10:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  22 MAR 2018 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,7 +7,11 @@ entering extended mode
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
 rainian, russian, bulgarian, loaded.
-(../SOP3.cls
+(../SOP4_alpha.cls
+
+LaTeX Warning: You have requested document class `../SOP4_alpha',
+               but the document class provides `../SOP3'.
+
 Document Class: ../SOP3 2018/02/08 v3.3 Modified article class for standard ope
 rating procedures
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -687,8 +691,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 465.
  ) 
 Here is how much of TeX's memory you used:
  7679 strings out of 494820
- 109392 string characters out of 3178050
- 208270 words of memory out of 3000000
+ 109428 string characters out of 3178050
+ 208284 words of memory out of 3000000
  10658 multiletter control sequences out of 15000+200000
  8939 words of font info for 34 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191

@@ -71,6 +71,10 @@
 \titleformat{\subsection}{\normalfont\bfseries}{}{0pt}{}
 \titleformat{\subsection}{\normalfont\bfseries}{\makebox[2em][l]{\thesubsection{}.}}{0pt}{}
 
+% Subsubsection Option
+\titleformat{\subsubsection}{\normalfont\bfseries}{}{3pt}{}
+\titleformat{\subsubsection}{\normalfont\bfseries}{\makebox[2em][l]{\thesubsubsection{}.}}{3pt}{}
+
 % Create Numbered Paragraphs for Each Section
 %\setlength{\parindent}{4em}
 
