@@ -1,12 +1,12 @@
 % SOP Template Document Class
-% version 3
+% version 4 Alpha
 %   - removed numbers for subsections
 %   - change color of TOC links
 % Next work: retain numbered subsection and include them in the \NP
 % Spacing in sections with two decimals is kerning funny
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{../SOP3}[2018/02/08 v3.3 Modified article class for standard operating procedures]
+\ProvidesClass{../SOP4_alpha}[2018/03/22 v1.0 Modified article class for standard operating procedures]
 % http://stackoverflow.com/questions/581916/how-do-you-extend-article-document-class-in-latex
 
 % Passes and class options to the underlying article class
@@ -17,7 +17,7 @@
 % Some valuable packages
 \RequirePackage{enumitem} % Customization of itemized, enumerated, etc.
 \RequirePackage{hyperref} % For hyperlinked cross-references
-\RequirePackage{../relsize}
+\RequirePackage{../relsize} % For relative font size changes
 \RequirePackage{gensymb} % to create some symbols
 
 \hypersetup{
@@ -53,7 +53,7 @@
     \setlength{\itemsep}{0pt}%
     \setlength{\parskip}{0pt}}%
   {\end{enumerate}}
-  
+
 % Modify bullet format
 \RequirePackage{amssymb}
 %\def\labelitemi{\scriptsize$\blacksquare$}
@@ -72,8 +72,8 @@
 \titleformat{\subsection}{\normalfont\bfseries}{\makebox[2em][l]{\thesubsection{}.}}{0pt}{}
 
 % Subsubsection Option
-\titleformat{\subsubsection}{\normalfont\bfseries}{}{3pt}{}
-\titleformat{\subsubsection}{\normalfont\bfseries}{\makebox[2em][l]{\thesubsubsection{}.}}{3pt}{}
+\titleformat{\subsubsection}{\mdseries\bf\small}{}{0pt}{}
+\titlespacing{\subsubsection}{20pt}{*4}{*1.5}
 
 % Create Numbered Paragraphs for Each Section
 %\setlength{\parindent}{4em}
