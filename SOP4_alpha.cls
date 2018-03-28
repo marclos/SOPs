@@ -67,7 +67,7 @@
 \def\labelitemi{\textcolor{gray}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}}
 
 % Modifications to the section titles
-\RequirePackage{titlesec}
+\RequirePackage{titlesec} %http://ftp.math.purdue.edu/mirrors/ctan.org/macros/latex/contrib/titlesec/titlesec.pdf
 %\renewcommand{\thesection}{\Roman{section}}
 
 \titleformat{\section}{\normalfont\bfseries}{\makebox[2em][l]{\thesection{}.}}{0pt}{}
@@ -77,7 +77,7 @@
 \titleformat{\subsection}{\normalfont\bfseries}{\makebox[2em][l]{\thesubsection{}.}}{0pt}{}
 
 % Subsubsection Option
-\titleformat{\subsubsection}{\mdseries\bf\small}{}{0pt}{}
+\titleformat{\subsubsection}{\normalfont\bfseries\small}{}{0pt}{}
 \titlespacing{\subsubsection}{20pt}{*4}{*1.5}
 
 % Create Numbered Paragraphs for Each Section
