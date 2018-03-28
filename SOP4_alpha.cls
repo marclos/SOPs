@@ -19,6 +19,11 @@
 \RequirePackage{hyperref} % For hyperlinked cross-references
 \RequirePackage{../relsize} % For relative font size changes
 \RequirePackage{gensymb} % to create some symbols
+\RequirePackage{amssymb}
+
+\usepackage{textcomp}
+\newcommand{\tilda}{\raisebox{0.5ex}{\texttildelow}}
+
 
 \hypersetup{
     colorlinks,

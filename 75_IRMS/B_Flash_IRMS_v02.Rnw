@@ -4,7 +4,7 @@
 %           New SOP3_alpha.cls
 
 
-\documentclass[12pt]{../SOP3}
+\documentclass[12pt]{../SOP4_alpha}
 
 \usepackage[english]{babel}
 
@@ -12,7 +12,7 @@
 \title{Flash EA and IRMS}
 
 \date{3/12/2018}
-\author{Kyle McCarty and Marc Los Huertos}
+\author{Kyle McCarty, Minah Choi, and Marc Los Huertos}
 \approved{TBD}
 \ReviseDate{\today}
 \SOPno{75B v0.2}
@@ -26,7 +26,7 @@
 
 \NP The scope of this SOP covers how to operate the IRMS for certified users.
 
-\NP The applications of this SOP are for the Thermo Scientific Delta V Serice IRMS. 
+\NP The applications of this SOP are for the Thermo Scientific Delta V Serice IRMS in CN (NC) and CNS (NSC) modes. 
 
 \section{Summary of Method}
 
@@ -40,7 +40,10 @@
 
 \section{Definitions}
 
-\NP Term1: is...
+\begin{description}
+	\item[CN] Nitrogen and Carbon mode.
+  \item[CNS] Nitrogen and Carbon and Sulfur mode.
+\end{description}
 
 \section{Biases and Interferences}
 
@@ -91,7 +94,7 @@
 
 \NP Amounts needed for the isotopic analyses are based on the results of the elemental analysis, an example calculator is found here: \url{http://stableisotopefacility.ucdavis.edu/sample-weight-calculator.html}
 
-\NP Samples are weighed accordingly into tin capsules (~0.5 – 20 mg) with 2 parts tungsten oxide (WO3).
+\NP Samples are weighed accordingly into tin capsules (\tilda 0.5 -- 20 mg) with 2 parts tungsten oxide (WO3).
 
 \NP Calibrated internal standards are prepared as a reference for every batch of samples.
 
@@ -137,9 +140,14 @@ N2?
 
 \NP Introduce Gas to the Continuous Flow System
 
-\NP Focus Settings
+\subsection{Purge Atmsopheric Gases and Column Bake-out}
 
 
+
+\subsection{Initialize Temperature Ramp Ups}
+
+
+\subsection{Check Backgrounds}
 
 %\NP Introduce Gas to the Continuous Flow System
 
@@ -166,7 +174,7 @@ N2?
 
 \medskip
 
-YYYYMMDD\_Project\_SamplesIDs\_Username.seq
+YYYYMMDD\_Project\_SequenceID\_Username.seq
 
 \section{End-of-Run Shut Down and Clean Up}
 
