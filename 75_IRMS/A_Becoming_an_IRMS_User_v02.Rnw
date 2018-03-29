@@ -156,7 +156,13 @@ The two most common gas source IRMS configurations are continuous flow (CF-IRMS)
 
 \subsection{Continuous Flow IRMS Peripheral Interaction}
 
+\NP Explain the interaction of the peripherals and IRMS here.
+
+\NP Add system diagram here.
+
 \begin{description}
+
+\item[ConFlo IV]
 
 \item[Flash EA]
 
@@ -165,8 +171,6 @@ The two most common gas source IRMS configurations are continuous flow (CF-IRMS)
 \item[GasBench II]
 
 \end{description}
-
-\NP Explain the interaction of the peripherals and IRMS here.
 
 \section{Gases, Reagents, and Standards}
 
@@ -463,11 +467,25 @@ USGS62 &-156.1  &-14.79 &20.2\\
 
 \subsection{Mass Spectrometer Checks}
 
-\subsection{Tuning}
+\NP The easiest place to begin is to make sure the IRMS is reading back and operating normally.
 
-\subsection{Preconditioning}
+\NP Visually verify that there are no red or yellow lights on the front panel of the IRMS and that the vacuum is within acceptable range.
+
+\NP Double check to make sure you have enough helium and reference gases for your analysis and that the gas flows are within specification.
+
+\NP If the source is already on, verify the high voltage (HV), box, and trap values are reading back.
+
+\subsubsection{Tuning}
+
+\NP An IRMS can be generally tuned in two different ways. It is usually said that the IRMS is tuned for ``linearity,'' where there are consistent ion ratios over a wide range of signal intensities, or ``sensitivity,'' which is intended for obtaining the maximum signal intensity.
+
+\NP Since our instrument is not set up with a dual inlet system, the approach of tuning for "linearity" should be used.
 
 \subsection{Pre-Analysis Tests (analysis dependant)}
+
+\NP The following tests should be done based on what kind of analysis you are doing and what peripheral you are using.
+
+\subsection{Preconditioning}
 
 \subsubsection{Backgrounds}
 
