@@ -475,7 +475,7 @@ USGS62 &-156.1  &-14.79 &20.2\\
 
 \NP If the source is already on, verify the high voltage (HV), box, and trap values are reading back.
 
-\subsubsection{Tuning}
+\subsection{Tuning}
 
 \NP An IRMS can be generally tuned in two different ways. It is usually said that the IRMS is tuned for ``linearity,'' where there are consistent ion ratios over a wide range of signal intensities, or ``sensitivity,'' which is intended for obtaining the maximum signal intensity.
 
@@ -485,9 +485,32 @@ USGS62 &-156.1  &-14.79 &20.2\\
 
 \NP The following tests should be done based on what kind of analysis you are doing and what peripheral you are using.
 
-\subsection{Preconditioning}
+\NP If you analyze for $\delta$$^2$H, you must determing a H$_3$$^+$ factor.
+
+\NP Only solid samples need blank determinations.
+
+\NP All other kinds of analyses will need background, zero-enrichment, and QC/QA tests.
 
 \subsubsection{Backgrounds}
+
+\NP Backgrounds are tested to make sure the residual gases in the source do not contribute to a significant amount of signal during analysis.
+
+\NP Backgrounds also give insight into the condition of the residual gases in the ion source. They help to determine leaks and the degree of which a residual gas may contribute to a signal.
+
+\begin{table}[h]
+\label{Backgrounds}
+\caption{Backgrounds and Associated Causes}
+\centering
+\begin{tabular}{lccc} \hline
+m/z & Mol Species & Problem or possible cause \\ \hline\hline
+2 & He$^2$$^+$ & \\
+18 & H$_2$O$^+$ & \\
+28 & N$_2$$^+$ & \\
+40 & Ar$^+$ & \\
+44 & CO$_2$$^+$ & \\
+\end{tabular}
+\end{table}
+
 
 \subsubsection{Zero-Enrichment Test}
 
