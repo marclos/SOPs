@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{hyperref}
+
 \hypersetup{
     colorlinks,
     citecolor=blue,
@@ -57,7 +58,7 @@ Once you have completed this, contact the laboratory manager to verify the train
 
 Once the form has been signed, place the form in the SOP Traning Binder in the Lab. 
 
-\begin{table}[h]
+\begin{table}[h!]
 	\caption{SOP Traning Documentation}
 	\label{tab:Documentation}
 		\begin{tabular}{|c|c|p{4cm}|p{2cm}|p{4cm}|p{2cm}|}\hline
@@ -67,7 +68,7 @@ SOP No. & Version No. & Signature & Date  & Manager & Date \\
 2  & & & & & \\ [1.2ex]\hline
 3  & & & & & \\ [1.2ex]\hline
 4  & & & & & \\ [1.2ex]\hline
-5  & & & & & \\ [1.2ex]\hline
+5\footnotemark  & & & & & \\ [1.2ex]\hline
 6  & & & & & \\ [1.2ex]\hline
   & & & & & \\ [1.2ex]\hline
   & & & & & \\ [1.2ex]\hline
@@ -90,6 +91,6 @@ SOP No. & Version No. & Signature & Date  & Manager & Date \\
 		\end{tabular}
 
 \end{table}
-
+\footnotetext{Required}
 
 \end{document}
