@@ -87,23 +87,9 @@
 
 \section{Acknowledgements}
 
-\section{Estimated Time}
+%\section{Estimated Time}
 
 \NP This procedure requires XX minutes...
-
-\section{Definitions}
-
-\NP Term1: is...
-
-\section{Notable Biases and Interferences}
-
-\section{Health and Safety}
-
-\NP Describe the risk...
-
-
-\subsection{Safety and Personnnel Protective Equipment}
-
 
 \section{Personnel \& Training Responsibilities}
 
@@ -116,40 +102,119 @@
   \item SOP02 Field Safety
 \end{itemize}
 
-\section{Required Materials and Apparati}
+\section{Health and Safety}
 
-\NP Item 1 w/catalog number!
+\subsection{Risks}
 
-\NP Item 2
+\NP Describe the risk...
 
-\section{Reagents and Standards}
+\subsection{Safety and Personnnel Protective Equipment}
 
-\section{Consumables}
 
-\NP Biases and interferences can come from...
+%\section{Required Materials and Apparati}
+
+%\section{Reagents and Standards}
+
+%\section{Consumables}
+
+%\begin{itemize}
+%  \item Sample Cone
+%  \item Skimmer Cone
+%  \item peristaltic pumps
+%  \item bonnet and quartz stuff
+%  \item Pump Oil
+%\end{itemize}
+
+%\section{Sample Collection, Preservation, and Storage}
+
+\section{Time Management}
+
+\NP This section is to make users aware of the time commitment before running anlayses.
+
+\subsection{Solutions Preparation}
+
+\subsection{Methods Development}
+
+\subsection{Instrument Start-up}
+
+\subsubsection{Ignition Sequence and Warm Up}
+
+\subsubsection{Performance Checks}
+
+\subsection{Analysis and Data Retrieval}
+
+\subsection{Instrument Shut-down}
+
+\section{Sample and Standard Preparation}
+
+\subsection{Acid Handling Guidelines}
 
 \begin{itemize}
-  \item Sample Cone
-  \item Skimmer Cone
-  \item peristaltic pumps
-  \item bonnet and quartz stuff
-  \item Pump Oil
+  \item \textbf{Never} mix organic solvents like ethanol or acetone with nitric acid (HNO$_3$) and do not store concentrated acid bottles around organic solvents. The two react violently with each other and create toxic fumes.
+  \item Always add concentrated acid to a comparatively larger volume of deionized water first. \textbf{Do not} add water to concentrated acid.
+  \item Be mindful of putting clothing or hands/arms over containers, particulates and dust will fall into them and could affect low level readings.
+  \item Use non powdered gloves
+  \item Acid solutions are diluted by volume. Use full strength nitric and/or hydrochloric
+acid (\tilda 70\% and \tilda 37\%, respectively) and dilute directly into centrifuge tube or plastic test tube.
 \end{itemize}
 
+\NP Example: to make a matrix solution of 1\% nitric and 0.5\% hydrochloric in a 50 ml centrifuge tube, use 0.5ml of \tilda 70\% HNO$_3$ and 0.25ml \tilda 37\% HCl. Then use 18 \ohm \ deionized water to fill the rest of the tube (49.25mL). 
+
+\subsection{Creating Standards}
+
+\begin{itemize}
+  \item Do not use glassware for ultra-trace applications
+  \item Dilute and make standards directly in plastic containers/vials (HDPE or PTFE) whenever possible.
+  \item Use plastic pipettes with no metal parts (metal can rust/corrode and contaminate solutions).
+  \item \textbf{DO NOT} pipet out of the standard or acid containers, instead use an intermediate container to pipet out of to prevent contamination of the stock solution.
+\end{itemize}
+
+\subsubsection{Tuning Solutions}
+
+\begin{itemize}
+  \item For most purposes, the internal standard tuning solution is diluted to 0.5 ppm and 1\% HNO$_3$.
+  \item Tuning solution is diluted to 1 ppb at HNO$_3$.
+  \item P/A factor tuning solution is diluted to 1 ppb at HNO$_3$.
+\end{itemize}
+
+\section{Procedures}
+
+\subsection{Creating a Batch}
+
+\NP Think of a batch file as an all-inclusive file. It includes your method, tune profile, sample list, and other parameters all in one.
+
+\NP There are a few rules and limitations with the Masshunter software and batch files:
+
+\begin{enumerate}
+\item The MassHunter software requires you to make batch files in order to do about basically anything.
+\item Once you have run an analysis, or sent your batch file to the queue, you must create a new one in order to run again.
+\end{enumerate}
+
+\subsubsection{Creating a Method}
+
+\paragraph{Notable Biases and Interferences}
+
+\subsection{Instrument Start Up}
+
+\NP Ensure there is enough internal tune solution, rinse, and autosampler rinse and the solutions and standards being used in the autosampler are uncapped.
+
+\NP Verify the Argon dewar has sufficient levels for analysis and make sure its valve is open.
+
+\NP Check gas supply regulator pressure, it should be at 100psi.
+
+\NP Inspect the PeriPump tubing and fittings and replace if needed.
+
+\NP Attach the PeriPump tubing and clamp them properly.
+
+\NP Clamp the PeriPump tubing located in the back of the autosampler.
+
+\NP Turn on the ICP chiller and verify it is functioning properly.
+
+\NP Turn on the Plasma by clicking the pulldown next to the [Plasma] gadget and click [Plasma on] When confirming to turn the plasma on make sure [Execute Configured Ignition Sequence] is \textbf{unchecked}. IMMEDIATELY record the plasma on-time in 24:00 hour time. E.g., 2:20 = 14:20. 
+
+\NP Let the instrument ``warm up'' sufficiently by verifying the ``SC Temp'' is fluctuating between 1.9 and 2.0\celsius.
 
 
-
-\section{Sample Collection, Preservation, and Storage}
-
-\section{Procedure}
-
-\subsection{Set up}
-
-\NP Option versus Dilution gas
-
-\NP Check tubing, replace drain tubing Monthly.
-
-\NP Check gas supply regulators pressures
 
 \begin{table}[h]
 \begin{tabular}{lll} \hline
@@ -195,18 +260,6 @@ Redirected Power
 Forced Power
 
 
-
-\NP 
-
-
-\subsection{Creating a Method}
-
-\subsection{Using Batch Templates}
-
-\NP Batch Template
-
-\subsection{Queue Window}
-
 \NP Skip Warm-up
 
 \NP check for bubble moving into pump in tube
@@ -218,10 +271,7 @@ Forced Power
 \NP Check Mainframe -- performance report, record rsd <6 \%... check counts... oxides...cerium (mass 140/156) < 2 double charges (mass 70 mass 40...) < 3, high matrix.  check resolution axis around 7. peak width about 10\%, .65 - .8, 6.9 ....
 
 
-
 \subsection{Running a Batch}
-
-
 
 \NP Prepare \dots
 
@@ -265,8 +315,6 @@ Forced Power
 
 \NP Use skimmer cone tool and unscrew it.
 
-
-
 \NP Be careful of the graphite o-ring
 
 \NP To replace, finger tighten skimmer cone.
@@ -293,27 +341,9 @@ Forced Power
 
 \NP Can check lens test via software.
 
-
-
-
-\section{Data Analysis and Calculations}
-
-\section{QC/QA Criteria}
-
-\subsection{Tuning}
-
-
-\subsection{Pulse versus Analog Mode}
-
-\NP With low concentrations, versus high concetration.
-
-\NP Using P/A solution
-
-
-
-
-
 \section{Trouble Shooting}
+
+\section{Definitions} \label{Definitions}
 
 \section{References}
 
@@ -325,105 +355,17 @@ Forced Power
 
 \begin{comment} ICP-MS Standard Operating Procedure
 Oxtoby Environmental Isotope lab
-
-
-Contents
-
-Users
-
-Sample/Standard Prep
-    Equipment to use
-    Creating standards
-
-Connections and ICP Pre-Procedures: Checklist
-
-Tuning ICP (Aqueous) 
-
-Creating a Batch and Running
-    Selecting Analytes/masses
-    Adding internal standards
-    Sample list
-    Monitor masses
-
-Running ICP for Aqueous Samples: Checklist
-
-Post Run
-    Exporting Data
-    Reprocessing Data
-
-Shutting down the ICP Checklist
-
-Switching Sample Introduction to LA
-
-Turning on laser
-
-Setting down Spots and Transects
-
-Tuning the Laser on NIST 612
-
-Setting up the trigger for the laser
-
-Starting a Laser Run: Checklist 
-
-Method Development for Reaction/Collision Cell
-
-Ar-F as Exchange in Laser
-
-PeriPump Tuning
-
-    
-
 
 Users
 This SOP is to be used as a reference and guide to do basic runs.  Users should be trained by those authorized to use the ICP and should not run by themselves unless given permission to do so by the lab technician or PI.  
 
-Sample/Standard Prep
 
-Equipment to use
 
--Use plastic pipettes, with no metal parts
--Metal can rust/corrode contaminate solutions.
 
--Stay away from using glassware
--Dilute and make standards directly in plastic containers/vials  (HDPE or PTFE)
-
--Use non powdered gloves.
-
-Creating Standards
-
--Acid solutions are diluted by volume. Use full strength nitric and/or hydrochloric    
-acid (~70% and 37%, respectively) and dilute directly into centrifuge tube or plastic test tube.
-E.g.: To make matrix of 1% nitric and 0.5% hydrochloric matrix stock in a 50 ml centrifuge tube: Use 0.5 ml of HNO3(~70% HNO3) and 0.25 ml HCl(~37% HCl). Then use 18 Ω deionized water to fill the rest of the tube (49.25mL). 
-
--Always add concentrated acid to a comparatively large volume of deionized water first. Remember, never add water to concentrated acid.
-
--Internal tuning solution is diluted to 0.5 ppm.
-
--Tuning solution is diluted to 1 ppb.
-
--P/A factor tuning solution is diluted to 1 ppb.
-
--Never mix organic solvents like ethanol or acetone with nitric acid and do not store concentrated acid bottles around organic solvents. The two react violently with each other and creates dangerous fumes.    
-
--DO NOT pipet out of the bottle of standards or acid, instead use an intermediate container to pipet out of to prevent contamination of the stock solution. 
-
--Be mindful of putting clothing or hands/arms over containers, particulates and dust will fall into them and could affect low level readings.
 
 Turning on the ICP and Pre-Procedures Checklist
 
-☐Make sure the ICP chiller is on and functioning properly.
 
-☐Verify the Argon dewar has sufficient levels for analysis and turn on.
-
-☐Inspect the PeriPump tubing and fittings and replace if needed.(See PeriPump Tuning)
-
-☐Attach the PeriPump tubing and clamp them properly.
-
-☐Clamp the PeriPump tubing located in the back of the autosampler. 
-
-☐Ensure there is enough internal tune solution, rinse, and autosampler rinse and the solutions and standards being used in the autosampler are uncapped.
-
-☐Turn on the Plasma by clicking the pulldown next to the [Plasma] gadget and click [Plasma on] When confirming to turn the plasma on make sure [Execute Configured Ignition Sequence] is unchecked (tuning should be done after the plasma warms up for a few minutes). IMMEDIATELY record the plasma on-time in 24:00 hour time. E.g., 2:20 = 14:20. 
 
 Tuning ICP    
 
