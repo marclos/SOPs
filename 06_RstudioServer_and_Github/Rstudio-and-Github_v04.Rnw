@@ -3,7 +3,7 @@
 % Version 03 Added TOC and acknowledgements
 %           New SOP3_alpha.cls
 
-\documentclass[12pt]{../SOP3_beta}
+\documentclass[12pt]{../SOP4_alpha}
 \usepackage{float}
 \author{Marc Los Huertos \& Isaac Medina}
 \title{Rstudio Projects and Github}
@@ -171,7 +171,7 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \section{Setting Up Accounts and Communications Keys}
 
-\NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! Your email address can be used to prove your student status. But you need to make a special request for this (\url{https://education.github.com/discount_requests/new}.
+\NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! But you need to make a special request for this (\url{https://education.github.com/discount_requests/new}. For our purposes, you will not need a private repository and you can always request on later. Your email address can be used to prove your student status. 
   
 \NP We have two choices in how we work with R. We can use the server version on Pomona's IT server. This is preferable. 
 
