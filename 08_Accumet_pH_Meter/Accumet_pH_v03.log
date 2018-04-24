@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  2 MAR 2018 12:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  13 APR 2018 09:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -155,9 +155,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip44
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 27.
+(../relsize.sty
 
-(../hanging.sty
+LaTeX Warning: You have requested package `../relsize',
+               but the package provides `relsize'.
+
+Package: relsize 2013/03/29 ver 4.1
+) (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
+ (../hanging.sty
 
 LaTeX Warning: You have requested package `../hanging',
                but the package provides `hang'.
@@ -166,10 +174,7 @@ Package: hang 2017/02/18 v2.1 Hanging paragraphs and list items
 \hangingindent=\skip45
 \hangingleftmargin=\skip46
 \labeledleftmargin=\skip47
-) (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
-Package: gensymb 2003/07/02 v1.0 (WaS)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count98
 \Gm@cntv=\count99
@@ -509,10 +514,10 @@ Package rerunfilecheck Info: File `Accumet_pH_v03.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 7301 strings out of 494820
- 104730 string characters out of 3178050
- 198558 words of memory out of 3000000
- 10312 multiletter control sequences out of 15000+200000
+ 7358 strings out of 494820
+ 105353 string characters out of 3178050
+ 199439 words of memory out of 3000000
+ 10366 multiletter control sequences out of 15000+200000
  8939 words of font info for 34 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  36i,18n,51p,648b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -520,7 +525,7 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Accumet_pH_v03.pdf (10 pages, 599431 bytes).
+Output written on Accumet_pH_v03.pdf (10 pages, 599433 bytes).
 PDF statistics:
  291 PDF objects out of 1000 (max. 8388607)
  267 compressed objects within 3 object streams

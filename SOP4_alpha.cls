@@ -54,7 +54,7 @@
   {\end{itemize}}
 	
 \newenvironment{enumerate*}%
-  {\begin{enumerate}%
+  {\begin{enumerate}
     \setlength{\itemsep}{0pt}%
     \setlength{\parskip}{0pt}}%
   {\end{enumerate}}
