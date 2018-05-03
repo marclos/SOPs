@@ -163,7 +163,7 @@ acid (\tilda 70\% and \tilda 37\%, respectively) and dilute directly into centri
 \subsection{Creating Standards}
 
 \begin{itemize}
-  \item Do not use glassware for ultra-trace applications
+  \item \textbf{Do not} use glassware for ultra-trace applications
   \item Dilute and make standards directly in plastic containers/vials (HDPE or PTFE) whenever possible.
   \item Use plastic pipettes with no metal parts (metal can rust/corrode and contaminate solutions).
   \item \textbf{DO NOT} pipet out of the standard or acid containers, instead use an intermediate container to pipet out of to prevent contamination of the stock solution.
@@ -172,9 +172,9 @@ acid (\tilda 70\% and \tilda 37\%, respectively) and dilute directly into centri
 \subsubsection{Tuning Solutions}
 
 \begin{itemize}
-  \item For most purposes, the internal standard tuning solution is diluted to 0.5 ppm and 1\% HNO$_3$.
-  \item Tuning solution is diluted to 1 ppb at HNO$_3$.
-  \item P/A factor tuning solution is diluted to 1 ppb at HNO$_3$.
+  \item For most purposes, the internal standard tuning solution is diluted to 0.5 ppm at 1\% HNO$_3$.
+  \item Tuning solution is diluted to 1 ppb at 1\% HNO$_3$.
+  \item P/A factor tuning solution is diluted to 1 ppb at 1\% HNO$_3$.
 \end{itemize}
 
 \section{Procedures}
@@ -196,23 +196,29 @@ acid (\tilda 70\% and \tilda 37\%, respectively) and dilute directly into centri
 
 \subsection{Instrument Start Up}
 
-\NP Ensure there is enough internal tune solution, rinse, and autosampler rinse and the solutions and standards being used in the autosampler are uncapped.
+\NP Make sure to have your method created before turning on the plasma. We want to make sure we are not needlessly using up argon.
 
-\NP Verify the Argon dewar has sufficient levels for analysis and make sure its valve is open.
+\NP Ensure there is enough internal tune solution, rinse, and autosampler rinse and the solutions and standards being used in the autosampler are uncapped and in the proper tray positions. The positions can be verified by looking at the positions within the plasma section ([Plasma] icon]).
 
-\NP Check gas supply regulator pressure, it should be at 100psi.
+\NP Verify the argon Dewar has sufficient levels for analysis and make sure the gas use valve is open.
+
+\NP Check gas supply regulator pressure, it should be at approximately 100psi.
 
 \NP Inspect the PeriPump tubing and fittings and replace if needed.
 
 \NP Attach the PeriPump tubing and clamp them properly.
 
+
+
 \NP Clamp the PeriPump tubing located in the back of the autosampler.
+
+\NP Put the interal standard tubing (smaller I.D. tubing) into some 18 \ohm water.
 
 \NP Turn on the ICP chiller and verify it is functioning properly.
 
-\NP Turn on the Plasma by clicking the pulldown next to the [Plasma] gadget and click [Plasma on] When confirming to turn the plasma on make sure [Execute Configured Ignition Sequence] is \textbf{unchecked}. IMMEDIATELY record the plasma on-time in 24:00 hour time. E.g., 2:20 = 14:20. 
+\NP Turn on the Plasma by clicking the pulldown next to the [Plasma] icon and click [Plasma on]. When confirming to turn the plasma on make sure [Execute Configured Ignition Sequence] is \textbf{unchecked}. IMMEDIATELY record the time when the plasma ignites in the log book.
 
-\NP Let the instrument ``warm up'' sufficiently by verifying the ``SC Temp'' is fluctuating between 1.9 and 2.0\celsius.
+\NP Let the instrument ``warm up'' sufficiently by verifying the ``SC Temp'' is fluctuating between 1.9\celsius and 2.0\celsius.
 
 
 
@@ -231,7 +237,7 @@ Oxygen&                 & \\ \hline
 
 \NP Connect drain and sample tubes to peristaltic pump and clamp.
 
-\NP Connect internal standard, should be diluted to 1 ppm or 1$\mu$/mL. 
+\NP Connect internal standard, should be diluted to 1 ppm or 1$\mu$/mL.
 
 \NP Check Settings, nebulizer, post rotate yes!
 
@@ -277,69 +283,7 @@ Forced Power
 
 \NP
 
-\section{Maintenance}
 
-\subsection{Cleaning Nebulizer}
-
-\NP Soak components in 5\% nitric acid. Do not sonicate the nebularizer.
-
-\NP Neebulizer should be tight.
-
-\NP Replace jacket
-
-\subsection{Pump Oil}
-
-\NP Replace pump oil every 3-4 months. Pump oil will break down and be the final resting place for all ions.
-
-\NP
-
-\subsection{Checking Torch}
-
-\NP Open cover
-
-\NP Shield can get ugly and needs to be replaced.
-
-\NP Don't seem to worry about finger prints on the outside.
-
-\NP Replace tab and torch bonnet stuff yearly
-
-\subsection{Sample and Skimmer Cone}
-
-\NP Use software to ``maintenance'' and torch is moved.
-
-\NP Check and potentially Replace cones... depends on sample matrix, often a recently replaced cone are not stable. 
-
-\NP Unscrew ring (use tool if needed)
-
-\NP Clean with sonicator, <?1\% citronox dilute.
-
-\NP Use skimmer cone tool and unscrew it.
-
-\NP Be careful of the graphite o-ring
-
-\NP To replace, finger tighten skimmer cone.
-
-\NP Do not use skimmer cone tool until it's been finger threaded.
-
-\NP Replace sample cone
-
-\NP Initialize to put torch back in.
-
-\NP Close cover
-
-\subsection{Lenses}
-
-\NP Using 3mm allen wrench...
-
-\NP Do not touch lens with hands w/o gloves
-
-\NP Loosen and pull them out.
-
-\NP Omega lens...
-
-\NP Cleaned as part of the PM (preventative maintance).
-
-\NP Can check lens test via software.
 
 \section{Trouble Shooting}
 
@@ -678,4 +622,70 @@ Tips, and questions to answer, to sort out later
 
 Does stopping a laser run on ICP save the data?
 YEs
+\end{comment}
+
+\begin{comment}
+\section{Maintenance}
+
+\subsection{Cleaning Nebulizer}
+
+\NP Soak components in 5\% nitric acid. Do not sonicate the nebularizer.
+
+\NP Neebulizer should be tight.
+
+\NP Replace jacket
+
+\subsection{Pump Oil}
+
+\NP Replace pump oil every 3-4 months. Pump oil will break down and be the final resting place for all ions.
+
+\NP
+
+\subsection{Checking Torch}
+
+\NP Open cover
+
+\NP Shield can get ugly and needs to be replaced.
+
+\NP Don't seem to worry about finger prints on the outside.
+
+\NP Replace tab and torch bonnet stuff yearly
+
+\subsection{Sample and Skimmer Cone}
+
+\NP Use software to ``maintenance'' and torch is moved.
+
+\NP Check and potentially Replace cones... depends on sample matrix, often a recently replaced cone are not stable. 
+
+\NP Unscrew ring (use tool if needed)
+
+\NP Clean with sonicator, <?1\% citronox dilute.
+
+\NP Use skimmer cone tool and unscrew it.
+
+\NP Be careful of the graphite o-ring
+
+\NP To replace, finger tighten skimmer cone.
+
+\NP Do not use skimmer cone tool until it's been finger threaded.
+
+\NP Replace sample cone
+
+\NP Initialize to put torch back in.
+
+\NP Close cover
+
+\subsection{Lenses}
+
+\NP Using 3mm allen wrench...
+
+\NP Do not touch lens with hands w/o gloves
+
+\NP Loosen and pull them out.
+
+\NP Omega lens...
+
+\NP Cleaned as part of the PM (preventative maintance).
+
+\NP Can check lens test via software. 
 \end{comment}
