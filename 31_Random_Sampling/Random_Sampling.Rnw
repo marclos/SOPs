@@ -119,6 +119,55 @@ print(xtable(LocationOrdered), table.placement="H", include.rownames=FALSE)
 
 \NP Finally, it would be good to do this via a map, where areas are off limits, then we could really have a powerful tool!
 
+
+\subsection{Plots and Subplots}
+
+Define number of plots
+
+<<>>=
+n=75
+@
+
+Define number of radials
+<<>>=
+j=8
+@
+
+distance along radials
+<<>>=
+d=7
+
+
+(random = data.frame(Plot=c(rep(1, 5), rep(2, 5), rep(3, 5), rep(4, 5), rep(5, 5), 
+                            rep(6, 5), rep(7, 5), rep(8, 5), rep(9, 5), rep(10, 5),
+                            rep(11, 5), rep(12, 5), rep(13, 5), rep(14, 5), rep(15, 5)),
+                      Radials=c(sample(1:8, 5, replace=F), sample(1:8, 5, replace=F), 
+                                sample(1:8, 5, replace=F), sample(1:8, 5, replace=F), 
+                                sample(1:8, 5, replace=F), sample(1:8, 5, replace=F),
+                                sample(1:8, 5, replace=F), sample(1:8, 5, replace=F),
+                                sample(1:8, 5, replace=F), sample(1:8, 5, replace=F),
+                                sample(1:8, 5, replace=F), sample(1:8, 5, replace=F),
+                                sample(1:8, 5, replace=F), sample(1:8, 5, replace=F),
+                                sample(1:8, 5, replace=F)), 
+                      D1= c(sample(1:14, n, replace=T))/2, 
+                      D2= c(sample(1:14, n, replace=T))/2,
+                      D3= c(sample(1:14, n, replace=T))/2,
+                      D4= c(sample(1:14, n, replace=T))/2,
+                      D5 = c(sample(1:14, n, replace=T))/2))
+
+write.csv(random, file="/home/CAMPUS/mwl04747/github/SOPs/31_Random_Sampling/EnvirLab.csv")                     
+                     
+                     )
+  ,
+                       )))
+
+
+@
+
+RollDie = function(n) sample(1:6,n,replace=T)
+
+
+
 %\section{Data Analysis and Calculations}
 
 %\section{QC/QA Criteria}
