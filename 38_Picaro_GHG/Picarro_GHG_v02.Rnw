@@ -3,11 +3,11 @@
 % Version 03 Added TOC and acknowledgements
 %           New SOP3_alpha.cls
 
-\documentclass[12pt]{../SOP3_alpha}
+\documentclass[12pt]{../SOP3}
 
 \usepackage[english]{babel}
 \usepackage{blindtext}
-\usepackage{lipsum}
+%\usepackage{lipsum}
 
 
 \title{Greenhouse Gas Measurements w/Picarro}
@@ -18,19 +18,18 @@
 \SOPno{38 v.02}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
 \section{Scope and Application}
 
-\NP Covers how to install Eosense soil gas flux chambers and connect them to multiplexer and a Picarro XXXX gas analyzer.
+\NP Covers how to install Eosense soil gas flux chambers (XXX) and connect them to multiplexer (part number) and a Picarro G2508 (Santa Clara, USA) gas analyzer.
 
-\NP Orginally, this SOP was developed for greenhouse gas emissions from strawberry fields in NorCal, but will be modified as new projects rely on these instruments. 
+\NP Orginally, this SOP was developed for greenhouse gas emissions from strawberry fields in NorCal, has been been modified as new projects come on line that rely on these instruments. 
 
 \section{Summary of Method}
 
-\NP This SOP does this...
+\NP This SOP describes how to 1) set up the Picarro, Multiplexer, Dynamic Soil Chambers, and Vacuum Pump. 
 
 \tableofcontents
 
@@ -38,13 +37,22 @@
 
 \section{Acknowledgements}
 
+We thank the work of Isaac Medina, Neha Vaingankar, and Baily Lai who worked with the instrutment early on and developed early versions of the SOP. 
+
 \section{Definitions}
 
-\NP Term1: is...
+\NP Picarro 2508...
+
+\NP EosAC soil flux chambers (Eosense Inc, Dartmouth, Canada) coupled an 
+\NP eosMX-P multiplexer (Eosense Inc, Dartmouth, Canada)
+
+\NP Vacuum pump.
 
 \section{Biases and Interferences}
 
 \NP Biases and interferences can come from...
+
+\NP Calibration gases
 
 \section{Health and Safety}
 
@@ -66,8 +74,6 @@ Researchers using this SOP should be trained for the following SOPs:
   \item SOP03 Field Work
   \item SOP04 Electrical Power in the Field
 \end{itemize}
-
-
 
 Unanswered Picarro Questions
 
@@ -109,9 +115,10 @@ Forunner Multiplexer Questions
 
 \NP Eosense (Forerunner) Multiplexer S/N ??
 
-\NP Chambers with Cables and Teflon Tubing
+\NP Chambers with Cables and Teflon Tubing (X meters in length)
 
 \begin{table}
+\caption{EosAC soil flux chambers (Eosense Inc, Dartmouth, Canada)}
 \begin{tabular}{cc} \hline
 Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 1001501       &         \\
@@ -128,8 +135,6 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 1001512       &         \\ \hline
 \end{tabular}
 \end{table}
-
-
 
 
 \NP In addition, we have identified the following customer support contacts:
@@ -154,7 +159,11 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP Setting up the Picarro can take between 1-1 1/2 hours depending on your experience. Depending on the ambient temperature, the Picarro can take ~30 minutes to reach operating temperatures. To be effecient, start the Picarro as soon as possible.
 
-\section{Sample Collection, Preservation, and Storage}
+\section{Sampling Design}
+
+\NP The cable and gas tubing is XX meter.
+
+\NP If the generator is used, place the it downwind at a minium of 100 feet.
 
 \section{Procedure}
 
