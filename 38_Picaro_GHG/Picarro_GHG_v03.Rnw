@@ -170,6 +170,11 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP Connect pump to Analyzer VACUUM port using the convoluted metal hose. Hand tighten and use wrench to seal connection.
 
+\begin{figure}
+\includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/pump to multiplexer"}
+\end{figure}
+
+
 \NP Connect multiplexer to Picarro through USB ports on Picarro (does not matter which port used)
 \begin{itemize}
 \item See Picarro Figure 1 for USB port identification
@@ -190,7 +195,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \end{itemize}
 
 \begin{figure}
-\includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whitetriangleusb.jpg"}
+\includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whitetriangleusb"}
 \end{figure}
 
 \NP Connect clear tubes to an inlet port on the pump, connect other end to the inlet on the front of the multiplexer
@@ -198,6 +203,8 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \item Inlet on multiplexer on right (labeled)
 \item Inlet on vacuum (on left -- clear tube)
 \end{itemize}
+
+
 
 \NP Repeat process for the outlet tubes
 \begin{itemize}
@@ -208,6 +215,10 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \NP Attach clear tube inlet of Picarro to labeled outlet on multiplexer
 
 \NP Attach one end of power/data cable to the COMM port in the pump and the other end to the matching COMM port on the multiplexer
+
+\begin{figure}
+\includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/COMM"}
+\end{figure}
 
 \NP Power on pump and Picarro **Never turn off pump when Picarro is on**
 
