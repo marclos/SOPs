@@ -1,0 +1,35 @@
+---
+title: "XY_RandomNumbers"
+author: "Marc Los Huertos"
+date: "8/20/2017"
+output: html_document
+params:
+  region:
+    value: east
+---
+
+
+
+## Define X and Y Boundaries
+
+```{r}
+rmarkdown::render("XY_RandomNumbers.Rmd", params = list(
+  region = "west"
+))
+```
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

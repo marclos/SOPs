@@ -1,0 +1,73 @@
+%SOP Template 
+% Version 02 Added revision date
+% Version 03 Added TOC and acknowledgements
+%           New SOP3_alpha.cls
+
+\documentclass[12pt]{../SOP3_beta}
+
+\usepackage[english]{babel}
+
+\title{Using Balances}
+\date{8/10/2016}
+\author{Reseacher Name}
+\approved{TBD}
+\ReviseDate{8/10/16}
+\SOPno{09 v.01}
+
+\begin{document}
+
+\maketitle 
+Using Everyday Lab Equipment 
+
+\section{Scope and Application}
+
+\NP The scope of this SOP is  to train researchers to learn and follow the basic protocol of using, cleaning, and operating everyday lab equipment, which includes, the micropipette, glassware equipment, measuring balances, the Vortex, and other marginal lab tools that will be further specified. 
+
+\NP The applications of this SOP are for any basic lab setting for students conducting experiments and/or learning new lab procedures.
+
+\section{Summary of Method}
+
+\NP 
+
+\tableofcontents
+
+\newpage
+
+\section{Acknowledgements}
+
+\section{Definitions}
+
+\NP Term1:
+
+
+\section{Health and Safety}
+
+\NP Describe the risk...
+
+
+\subsection*{Safety and Personnnel Protective Equipment}
+
+
+\section{Personnel \& Training Responsibilities}
+
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+\end{itemize} 
+
+\section{Apparati}
+
+\NP Balances 
+
+
+
+\section{QC/QA Criteria}
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\end{document}
