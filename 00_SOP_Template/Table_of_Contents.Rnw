@@ -1,0 +1,18 @@
+\documentclass[18pt]{memoir}
+
+\title{Table of Contents}
+\begin{document}
+
+<<echo=F, results='hide'>>=
+library(xtable)
+dirs = list.dirs(path = "../.", full.names = F, recursive = F); dirs
+temp = data.frame(SOP = gsub("_", " ", substr(dirs, 4, nchar(dirs))), Tab = substr(dirs, 1, 2))
+temp
+@
+
+<<echo=F, results='asis'>>=
+contents = temp[c(4:43),]
+print(xtable(contents), include.rownames=FALSE)
+@
+
+\end{document}
