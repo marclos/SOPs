@@ -1,0 +1,135 @@
+% \documentclass[12pt]{../SOP2}
+\documentclass[12pt]{../SOP3_beta}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+%\documentclass{article}
+
+%\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
+
+\title{Electrical Power in the Field}
+\date{12/1/2016}
+\author{Kay Sterner \& Katheryn Kornegay}
+\approved{Los Huertos}
+\ReviseDate{\today}
+\SOPno{04 v.02}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP Electrical power can come from infastructure sources, such as outdoor or indoor outlets, portable generators, or solar power.
+\NP This documents outlines some of the risks associated with electricity in the field
+
+\NP We develop strategies to mitigate these risks.
+
+\section{Health and Safety}
+
+\NP Getting electricity in the field has risks, thus it's important to develop mitigation plans
+
+\NP Always read and follow the manufacturer's operating instructions before running
+generator
+
+\NP Engines emit carbon monoxide. Never use a generator inside your home, garage, crawl space, or other enclosed areas. Fatal fumes can build up, that neither a fan nor open doors and windows can provide enough fresh air.
+
+\NP Only use the generator outdoors, away from open windows, vents, or doors.
+
+\NP Use a battery-powered carbon monoxide detector in the area you're running a generator.
+
+\NP Gasoline and its vapors are extremely flammable. Allow the generator engine to cool at least 2 minutes before refueling and always use fresh gasoline. 
+
+\NP Maintain your generator according to the manufacturer’s maintenance schedule for peak performance and safety.
+
+\NP Never operate the generator near combustible materials.
+
+\NP If you have to use extension cords, be sure they are of the grounded type and are rated for the application. Coiled cords can get extremely hot; always uncoil cords and lay them in flat open locations.
+
+\NP Never plug your generator directly into your home outlet. If you are connecting a generator into your home electrical system, have a qualified electrician install a Power Transfer Switch.
+
+\NP Generators produce powerful voltage, ensure that the cables plugged into the generator are rated with the capacity to carry the current without generating excessive heat. Never leave the cables coiled, because they can generate more heat when touching.
+
+\NP Never operate under wet conditions. Take precautions to protect the generator from exposure to rain and snow. 
+
+\section{Personnel \& Training Responsibilities}
+
+\NP Before using the generator, researchers must be read and understand how to operate the Honda EU2000i or Ryobi RYi2200A generators. 
+
+\NP In addition, researchers using generators shall be trained for the following SOP(s):
+
+\begin{itemize}
+  \item SOP 03 Field Safety
+\end{itemize}
+
+\section{Required Materials}
+
+\NP Honda EU2000i or RYi2200A generators
+\NP High capcity extension cords (rated for XX $\geq$ Amps)
+\NP Spare gas container with ethanol-free gas
+\NP Oil
+
+\section{Estimated Time}
+
+\NP Starting the generator in the field will take only about 5 minutes. Replenishing oil levels takes around 20 minutes. 
+
+\section{Procedure}
+
+\NP Check oil level. If low use a funnel to add more. Recommended oil type is synthetic 10W-30. This does not need to be done every time the generator is used. Check the oil level every few weeks. If the generator is shutting off after running for about 30 minutes, this is likely because the oil has run low.
+
+\NP Check gas level. If low add ethanol-free gas from the spare gas container. The gas should come up to an inch below the top of the tank on the Ryobi. Both can be refilled while running. The Ryobi should be refilled after running for about 4 hours, while the Honda should be refilled after about 6 hours. 
+
+\NP For the Honda, start by making sure the fuel tank cap vent is in the on position. This is the black cap located on the top of the generator. If this isn't done, the generator will shut off after a few minutes of running. Also make sure the eco-throttle switch is off. This is located below the fuel tank cap vent on the side panel. For a cold start, put the choke (located on the upper left front where the engine switch is) in the closed position (move the switch to the right), then turn the engine switch to the on position. 
+  Quickly pull the starter grip several times until the engine starts running. After giving the engine a few minutes to warm up, slowly move the choke to the open position.
+  To turn off the generator, turn the engine switch to the off position. After the engine has cooled, turn the fuel tank cap vent to the off position. 
+
+\NP For the Ryobi, start by making sure the auto idle switch is in the off position. Put the choke halfway across. The cold-start position is marked as a little less than halfway across, but it needs to be further than indicated. There should be a slight resistance at the halfway point which will indicate the choke is in the correct position.
+  Prime the system by slowly pulling the starter grip several times. Then pull the grip quickly until the engine runs. Allow the engine to run for 15-30 seconds, then move the choke all the way across to the run position.
+  To turn off the generator, switch the choke back to the off position.
+
+\NP If you do not plan to use the generator in 30 days, use fuel stabilizer with gas and drain carborator. 
+
+\subsection{Maintenance}
+
+\NP For both units, keep the generators in a clean and dry envrionment, and not exposed to dust, dirt, moisture, or corrosive vapors. To clean the units, use a soft brittle brush and/or vacuum cleaner to loosen and remove dirt and debris. Clean air vents with air pressure no more than 25 psi. Wipe the exterior surfaces of the generators with a damp cloth. Maintenance should be performed more frequently when a generator is used in dusty areas. If you notice a power loss, this means the exhaust port and muffler may be blocked with carbon deposits. Please allow only qualified service technicians to clean this.
+
+\subsubsection{Ryobi}
+\NP For Ryobi, here are some things to check, clean, or replace:
+
+\NP Air Filter- Check the air filter before each use. Clean the air filter every 3 months or every 50 hours of operation and replace them every year or after 300 hours of operation. To clean, remove the engine cover and air filter cover. Then remove both the large and small air filters and wash them with soapy water. Rinse and squeeze them to dry, place them back into the unit and recover them with the air filter cover and engine cover. 
+
+\NP Engine Lubricant- Check the engine lubricant before each use. After the 1st month or 20 hours of operation, change the lubricant. Then change the lubricant every 6 months or 100 hours of operation. To change the engine lubricant, remove the engine cover and teh oil fill cap/ dipstick. Tilt the generator and drain the lubricant into an approved container (Drain the lubricant while warm, to make the process go faster!) Finally add new lubricant, and replace the cap and the cover. 
+
+\NP Spark Plug- Check the spark plug every 6 months or 100 hours of operation and adjust if neccessary. Replace the spark plug every year or after 300 hours of operation. To adjust the spark plug, first remove the spark plug cover and cap, and clean any dirt from around the base of plug. Remove plug and clean with a wire brush (If the insulator or washer is cracked or chipped replace spark plug). Reinstall plug and leave a gap between 0.024-0.028 in. or 0.60-0.70 mm. (To widen, carefully bend ground, top, electrode. To lessen gap, gently tap ground electrode on a hard surface.) 
+
+\NP Spark Arrestor- The spark arrestor must be cleaned. To clean, remove the rear panel and arrestor. Clean the arrestor using a wire brush and then place the arrestor and the panel back. Inspect the screen for breaks or tears and replace it if necessary.
+
+\NP Fuel Tank/ Carburetor- Check the fuel hose and all hose connections before each use and every year or after 300 hours of operation. Inspect the fuel filter before each use and replace every year or after 300 hours of operation. Have the fuel tank and filter cleaned by a qualified service center every 6 months or 100 hours of operation. To drain the fuel tank simply fuel cap, tilt generator and allow fuel to drain from the fuel tank into an approved container. To drain the carburetor, remove the engine and carburetor cover. Put the enging choke lever in the run position. Put an approved container under the carburetor drain screw, loosen the screw, and allow fuel to drain completely. Tighten screw and replace both covers. Draining both the fuel tank and carburetor before storing will help prevent gum deposits in the fuel system.
+
+
+\NP Valve Clearance- Check or adjust the valve clearance every year or after 300 hours of operation. This item should be serviced by a qualified service center.
+
+\NP For the Honda, here are some things to check, clean, or replace:
+
+\NP Air Filter- Check the air filter before each use. Clean the air filter every 3 months or every 50 hours of operation. To clean, remove the engine cover and air filter cover (located on the right side as shown in the picture above). Remove the main and outer filter, wash them in a solution of household detergent and warm water, and rinse thoroughly, or wash in nonflammable or high flash point solvent. Allow the air filters to dry thoroughly. Soak the main and outer filter in clean engine oil and squeeze out the excess oil (The engine will smoke during initial startup if too much oil is left in the air filters). Place them back into the unit and recover them with the air filter cover and engine cover.
+
+\NP Engine Lubricant- Check the engine lubricant before each use. After the 1st month or 20 hours of operation, change the lubricant. Then change the lubricant every 6 months or 100 hours of operation. To change the engine lubricant, remove the engine cover and the oil fill cap/ dipstick found on the top of the generator. Tilt the generator and drain the lubricant into an approved container (Drain the lubricant while warm, to make the process go faster!) Finally fill the oil filler neck to the upper limit of the oil filler neck with the recommended oil, and replace the cap and the cover.
+
+\NP Spark Plug- Check the spark plug every 6 months or 100 hours of operation and adjust if neccessary. Replace the spark plug every year or after 200 hours of operation.The spark plug is located underneath the side panel opposite to the fuel cap vent. To adjust the spark plug, first remove the panel and spark plug cover and cap, and clean any dirt from around the base of plug. A picture above shows where these are located. Remove plug and clean with a wire brush (Replace if the electrodes are worn or if the insulator or washer is cracked, chipped, or fouled.). Reinstall plug and leave a gap between 0.024-0.028 in. or 0.60-0.70 mm. (To widen, carefully bend ground, top, electrode. To lessen gap, gently tap ground electrode on a hard surface.) If installing a new spark plug, tighten 1/2 turn after the spark plug seats to compress the washer. If reinstalling a used spark plug, tighten 1/8 1/4 turn after the spark plug seats to compress the washer.
+
+\NP Spark Arrestor- The spark arrestor must be cleaned every 6 months or 100 hours of operation. To clean, remove the rear panel and arrestor. Clean the arrestor using a wire brush and then place the arrestor and the panel back. Inspect the screen for breaks or tears and replace it if necessary.
+
+\NP Fuel Tank/ Combustion Chamber- Clean the fuel tank and filter every 6 months or 100 hours of operation. Clean the combustion chamber every 300 hours of operation. Check the fuel line every 2 years and replace if necessary. These items should be serviced by an authorized Honda generator dealer.
+
+\NP Valve Clearance- Check or adjust the valve clearance every year or after 200 hours of operation. This item should be serviced by a qualified service center.
+
+
+
+
+\section{References}
+
+\NP This SOP is based on the manuals for the Honda EU2000i and the Ryobi RYi2200A, as well as field experience. Both manuals can be easily found online through a quick google search.  
+
+\end{document}

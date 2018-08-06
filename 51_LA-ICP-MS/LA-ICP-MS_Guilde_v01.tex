@@ -1,0 +1,255 @@
+%SOP Template 
+% Version 02 Added revision date
+% Version 03 Added TOC and acknowledgements
+%           New SOP3_alpha.cls
+
+
+\documentclass[12pt]{../SOP3_beta}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\usepackage[english]{babel}
+%\usepackage{blindtext}
+%\usepackage{lipsum} 
+
+\title{LA-ICP-MS Guide}
+\date{6/12/2017}
+\author{Marc and ??}
+\approved{TBD}
+\ReviseDate{\today}
+\SOPno{71 v0.1}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+%\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP The scope of this SOP is train researchers...
+
+\NP The applications of this SOP are for...
+
+\section{Summary of Method}
+
+\NP This SOP does this...
+
+\tableofcontents
+
+\newpage
+
+\section{Acknowledgements}
+
+\section{Definitions}
+
+\NP Term1: is...
+
+\section{Biases and Interferences}
+
+\NP Biases and interferences can come from...
+
+\section{Health and Safety}
+
+\NP Describe the risk...
+
+
+\subsection{Safety and Personnnel Protective Equipment}
+
+
+\section{Personnel \& Training Responsibilities}
+
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+  \item SOP02 Field Safety
+\end{itemize}
+
+\section{Required Materials and Apparati}
+
+\NP Item 1 w/catalog number!
+
+\NP Item 2
+
+\section{Reagents and Standards}
+
+\section{Consumables}
+
+\begin{itemize}
+  \item Sample Cone
+  \item Skimmer Cone
+  \item peristaltic pumps
+  \item bonnet and quartz stuff
+  \item Pump Oil
+\end{itemize}
+
+
+\section{Estimated Time}
+
+\NP This procedure requires XX minutes...
+
+\section{Sample Collection, Preservation, and Storage}
+
+\section{Procedure}
+
+\subsection{Set up}
+
+\NP Option versus Dilution gas
+
+\NP Check tubing, replace drain tubing Monthly.
+
+\NP Check gas supply regulators pressures
+
+\begin{table}[h]
+\begin{tabular}{lll} \hline
+Gas   &     Pressure    & Reorder \# \\ \hline\hline
+Argon &       100 psi   & ??          \\
+Oxygen&                 & \\ 
+
+\end{tabular}
+\end{table}
+
+\NP Turn on chiller
+
+\NP Open argon valve
+
+\NP Connect drain and sample tubes to peristaltic pump and clamp.
+
+\NP Connect internal standard, should be diluted to 1 ppm or 1$\mu$/mL. 
+
+\NP 
+
+\NP Prepare \dots
+
+\NP
+
+\section{Maintenance}
+
+\subsection{Cleaning Nebulizer}
+
+\NP Soak components in 5\% nitric acid. Do not sonicate the nebularizer.
+
+\NP Neebulizer should be tight.
+
+\NP Replace jacket
+
+\subsection{Pump Oil}
+
+\NP Replace pump oil every 3-4 months. Pump oil will break down and be the final resting place for all ions.
+
+\NP
+
+\subsection{Checking Torch}
+
+\NP Open cover
+
+\NP Shield can get ugly and needs to be replaced.
+
+\NP Don't seem to worry about finger prints on the outside.
+
+\NP Replace tab and torch bonnet stuff yearly
+
+\subsection{Sample and Skimmer Cone}
+
+\NP Use software to ``maintenance'' and torch is moved.
+
+\NP Check and potentially Replace cones... depends on sample matrix, often a recently replaced cone are not stable. 
+
+\NP Unscrew ring (use tool if needed)
+
+\NP Clean with sonicator, <?1\% citronox dilute.
+
+\NP Use skimmer cone tool and unscrew it.
+
+\NP Be careful of the graphite o-ring
+
+\NP To replace, finger tighten skimmer cone.
+
+\NP Do not use skimmer cone tool until it's been finger threaded.
+
+\NP Replace sample cone
+
+\NP Initialize to put torch back in.
+
+\NP Close cover
+
+\subsection{Lenses}
+
+\NP Using 3mm allen wrench
+
+\NP Do not touch lens with hands w/o gloves
+
+\NP Loosen and pull them out.
+
+\NP Omega lens...
+
+\NP Cleaned as part of the PM (preventative maintance).
+
+\NP Can check lens test via software.
+
+
+
+
+\section{Data Analysis and Calculations}
+
+\section{QC/QA Criteria}
+
+\section{Trouble Shooting}
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\url{https://crustal.usgs.gov/laboratories/icpms/intro.html}
+
+\end{document}

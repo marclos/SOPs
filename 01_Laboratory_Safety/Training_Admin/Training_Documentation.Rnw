@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\usepackage[margin=0.7in]{geometry}
+
+\title{SOP Training Documentation}
+
+\begin{document}
+
+
+\maketitle
+
+\begin{table}[h]
+		\begin{tabular}{p{5cm}p{6cm}}
+Researcher                  &  \framebox(200,15)[L]{}\\ 
+Email Address               &  \framebox(200,15)[]{}\\
+Expected Graduation Year    & \framebox(50,15)[]{} (NA for non-students)\\
+		\end{tabular}
+\end{table}
+
+\section{Documentation Procedure}
+
+\subsection{Background}
+
+There are a numerous risks while doing laboratory and field based research. One challenge to reduce risks is the development of training records that can track training efforts. 
+
+This form is used to track training in the Los Huertos lab. It is not a guareenttee that risks are no longer present, but that our lab has made a good effort to train all researchers and develop a laboratory where risks are better understood and strategies are in place to reduce these risks.
+
+\section{Using this Document}
+
+\subsection{Understanding SOPs}
+
+For each procedure in the lab needed, researchers shall read and undersand the appropriate SOPs. 
+
+After reading the researcher is responsible to communicate to the laboratory manager that they understand the intent, goals, and strategies of the SOP to reduce risks.
+
+\subsection{Using Table \ref{tab:Documentation}}
+
+After reading and disucssiong the SOP with the laboratory manager, sign and date that you have read the SOP. By signing this form, you have agreed to the following: 
+
+\begin{quote} 
+I agree that I have been adequately trained to use (designated equipment). I understand all safety hazards and operating procedures, and if anything goes wrong, I know what to do. Any injuries or broken equipment that happen while I use of the machine will be my fault alone.
+\end{quote}
+
+Initials: \framebox(50,15)[]{}
+
+\subsection{Obtaining the Laboratory Manager's Signature}
+Once you have completed this, contact the laboratory manager to verify the training and discussion of the SOP. This stage may require further training and is complete only when she/he signs and dates this form at the appropriate boxes. 
+
+\subsection{Making the Form Available}
+
+Once the form has been signed, place the form in the SOP Traning Binder in the Lab. 
+
+\begin{table}[h!]
+	\caption{SOP Traning Documentation}
+	\label{tab:Documentation}
+		\begin{tabular}{|c|c|p{4cm}|p{2cm}|p{4cm}|p{2cm}|}\hline
+SOP No. & Version No. & Signature & Date  & Manager & Date \\
+\hline
+1  & & & & & \\ [1.2ex]\hline
+2  & & & & & \\ [1.2ex]\hline
+3  & & & & & \\ [1.2ex]\hline
+4  & & & & & \\ [1.2ex]\hline
+5\footnotemark  & & & & & \\ [1.2ex]\hline
+6  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+  & & & & & \\ [1.2ex]\hline
+		\end{tabular}
+
+\end{table}
+\footnotetext{Required}
+
+\end{document}
