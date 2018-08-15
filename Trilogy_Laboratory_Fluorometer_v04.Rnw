@@ -4,29 +4,27 @@
 %           New SOP3_alpha.cls
 
 
-\documentclass[12pt]{../SOP3_beta}
+\documentclass[12pt]{../SOP3}
 
 \usepackage[english]{babel}
-\usepackage{blindtext}
-\usepackage{lipsum}
+
+
 
 \title{Trilogy Laboratory Fluorometer}
 \date{02/07/2017}
 \author{Marc Los Huertos}
 \approved{TBD}
 \ReviseDate{\today}
-\SOPno{X}
+\SOPno{18v4}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+
 
 \maketitle
 
 \section{Scope and Application}
 
-\NP The scope of this SOP is train researchers in the use of the Trilogy Laboratory Fluorometer, a compact, multifunctional laboratory instrument that can be used for making fluoresence, absorbance, or turbidity measurements using the appropriate snap-in Optical Module. 
-
-\NP The applications of this SOP are for...
+\NP The purpose of this SOP is to train researchers in the use of the Trilogy Laboratory Fluorometer, a compact, multifunctional laboratory instrument that can be used for making fluoresence, absorbance, or turbidity measurements using the appropriate snap-in Optical Module. 
 
 \section{Summary of Method}
 

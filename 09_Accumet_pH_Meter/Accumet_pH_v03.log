@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  13 AUG 2018 13:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  13 APR 2018 09:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Eureka_Manta2_v0.5.tex
-(./Eureka_Manta2_v0.5.tex
+**Accumet_pH_v03.tex
+(./Accumet_pH_v03.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
 rainian, russian, bulgarian, loaded.
-(../SOP3_beta.cls
-Document Class: ../SOP3_beta 2016/08/08 v3.2 Modified article class for standar
-d operating procedures
+(../SOP3.cls
+Document Class: ../SOP3 2018/02/08 v3.3 Modified article class for standard ope
+rating procedures
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -161,8 +161,10 @@ LaTeX Warning: You have requested package `../relsize',
                but the package provides `relsize'.
 
 Package: relsize 2013/03/29 ver 4.1
+) (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 27.
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
  (../hanging.sty
 
 LaTeX Warning: You have requested package `../hanging',
@@ -172,10 +174,7 @@ Package: hang 2017/02/18 v2.1 Hanging paragraphs and list items
 \hangingindent=\skip45
 \hangingleftmargin=\skip46
 \labeledleftmargin=\skip47
-) (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
-Package: gensymb 2003/07/02 v1.0 (WaS)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count98
 \Gm@cntv=\count99
@@ -288,46 +287,29 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/english.ldf
-Language: english 2005/03/30 v3.3o English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count103
-\U@D=\dimen128
-)
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-))
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(./Eureka_Manta2_v0.5.aux)
-\openout1 = `Eureka_Manta2_v0.5.aux'.
+(./Accumet_pH_v03.aux)
+\openout1 = `Accumet_pH_v03.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring ON on input line 67.
+Package hyperref Info: Link coloring ON on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -335,25 +317,25 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count104
+\c@section@level=\count103
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
 
-(./Eureka_Manta2_v0.5.out) (./Eureka_Manta2_v0.5.out)
+(./Accumet_pH_v03.out) (./Accumet_pH_v03.out)
 \@outlinefile=\write3
-\openout3 = `Eureka_Manta2_v0.5.out'.
+\openout3 = `Accumet_pH_v03.out'.
 
-LaTeX Info: Redefining \celsius on input line 67.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 67.
+LaTeX Info: Redefining \celsius on input line 69.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 69.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 67.
-Package gensymb Info: Using \Omega for \ohm on input line 67.
+LaTeX Info: Redefining \ohm on input line 69.
+Package gensymb Info: Using \Omega for \ohm on input line 69.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -393,16 +375,16 @@ Package gensymb Warning: Not defining \micro.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen129
+\scratchcounter=\count104
+\scratchdimen=\dimen128
 \scratchbox=\box29
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count105
+\nofMParguments=\count106
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen130
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen129
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks21
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -411,7 +393,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 67.
+(lastpage)             ! on input line 69.
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -427,40 +409,41 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../pomona.jpg, id=72, 460.557pt x 492.75pt>
+<../pomona.jpg, id=124, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
-Package pdftex.def Info: ../pomona.jpg used on input line 69.
+Package pdftex.def Info: ../pomona.jpg used on input line 72.
 (pdftex.def)             Requested size: 56.9055pt x 60.8793pt.
 
-Overfull \vbox (21.72939pt too high) detected at line 69
+Overfull \vbox (21.72939pt too high) detected at line 72
  []
 
 
-Overfull \hbox (12.14014pt too wide) in paragraph at lines 69--70
+Underfull \hbox (badness 1616) in paragraph at lines 72--72
+[]\OT1/cmr/m/n/12 Approved By: Marc Los
+ []
+
+
+Overfull \hbox (2.12527pt too wide) in paragraph at lines 72--73
 [][] 
  []
 
-(./Eureka_Manta2_v0.5.toc [1
+(./Accumet_pH_v03.toc [1
 
 {/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>])
 \tf@toc=\write4
-\openout4 = `Eureka_Manta2_v0.5.toc'.
+\openout4 = `Accumet_pH_v03.toc'.
 
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 103.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -468,64 +451,84 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 142.
-
-[3] <AmphibianMain.png, id=128, 713.66624pt x 737.75626pt>
-File: AmphibianMain.png Graphic file (type png)
-
-<use AmphibianMain.png>
-Package pdftex.def Info: AmphibianMain.png used on input line 160.
-(pdftex.def)             Requested size: 428.20305pt x 442.65717pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `2' on page 4 undefined on input line 165.
-
-<GPS.png, id=130, 127.97812pt x 171.64125pt>
-File: GPS.png Graphic file (type png)
- <use GPS.png>
-Package pdftex.def Info: GPS.png used on input line 169.
-(pdftex.def)             Requested size: 127.9778pt x 171.64081pt.
+[2] [3]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
  [4]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 168.
 
-[5] 
+[5]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 183.
+
+[6]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 205.
+
+<Tempstandard.jpg, id=218, 469.755pt x 299.61937pt>
+File: Tempstandard.jpg Graphic file (type jpg)
+ <use Tempstandard.jpg>
+Package pdftex.def Info: Tempstandard.jpg used on input line 213.
+(pdftex.def)             Requested size: 469.75386pt x 299.61864pt.
+
+Overfull \hbox (17.62366pt too wide) in paragraph at lines 213--214
+[][] 
+ []
+
+[7 <./Tempstandard.jpg>] <Electrode.jpg, id=227, 1562.83875pt x 1041.8925pt>
+File: Electrode.jpg Graphic file (type jpg)
+
+<use Electrode.jpg>
+Package pdftex.def Info: Electrode.jpg used on input line 226.
+(pdftex.def)             Requested size: 390.70872pt x 260.47249pt.
+ [8]
+<Conducivityranges.jpg, id=240, 421.575pt x 142.28156pt>
+File: Conducivityranges.jpg Graphic file (type jpg)
+
+<use Conducivityranges.jpg>
+Package pdftex.def Info: Conducivityranges.jpg used on input line 232.
+(pdftex.def)             Requested size: 421.57396pt x 142.2812pt.
+
+<CellConstant.jpg, id=241, 450.18187pt x 164.11313pt>
+File: CellConstant.jpg Graphic file (type jpg)
+ <use CellConstant.jpg>
+Package pdftex.def Info: CellConstant.jpg used on input line 236.
+(pdftex.def)             Requested size: 450.18077pt x 164.11272pt.
+
+[9 <./Conducivityranges.jpg> <./Electrode.jpg>]
+
 AED: lastpage setting LastPage
-[6] [7 <./AmphibianMain.png>] [8 <./GPS.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
- (./Eureka_Manta2_v0.5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
-Package rerunfilecheck Info: File `Eureka_Manta2_v0.5.out' has not changed.
-(rerunfilecheck)             Checksum: 74B46D32BCA447F75521906392416B54;954.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
+[10 <./CellConstant.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
+ (./Accumet_pH_v03.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
+Package rerunfilecheck Info: File `Accumet_pH_v03.out' has not changed.
+(rerunfilecheck)             Checksum: E57B1ADB21B1B7E21BA79D52423A4FBF;2024.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 7599 strings out of 494820
- 108186 string characters out of 3178050
- 205787 words of memory out of 3000000
- 10625 multiletter control sequences out of 15000+200000
+ 7358 strings out of 494820
+ 105353 string characters out of 3178050
+ 199439 words of memory out of 3000000
+ 10366 multiletter control sequences out of 15000+200000
  8939 words of font info for 34 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,17n,51p,1147b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,51p,648b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Eureka_Manta2_v0.5.pdf (8 pages, 481291 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Accumet_pH_v03.pdf (10 pages, 599433 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 62 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
