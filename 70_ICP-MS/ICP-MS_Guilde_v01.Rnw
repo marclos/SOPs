@@ -119,7 +119,9 @@ acid (\tilda 70\% and \tilda 37\%, respectively) and dilute directly into centri
   \item \textbf{DO NOT} pipet out of the standard or acid containers, instead use an intermediate container to pipet out of to prevent contamination of the stock solution.
 \end{itemize}
 
-\subsubsection{Tuning Solutions}
+\subsection{Tuning Solutions}
+
+\subsection{Samples and Blanks}
 
 \begin{itemize}
   \item For most purposes, the internal standard tuning solution is diluted to 0.5 ppm at 1\% HNO$_3$.
@@ -128,6 +130,8 @@ acid (\tilda 70\% and \tilda 37\%, respectively) and dilute directly into centri
 \end{itemize}
 
 \section{Procedures}
+
+\subsection{Starting Masshunter}
 
 \subsection{Creating a Batch}
 
@@ -140,11 +144,11 @@ acid (\tilda 70\% and \tilda 37\%, respectively) and dilute directly into centri
 \item Once you have run an analysis, or sent your batch file to the queue, you must create a new one in order to run again.
 \end{enumerate}
 
-\subsubsection{Creating a Method}
+\subsection{Creating a Method}
 
 \paragraph{Notable Biases and Interferences}
 
-\subsection{Instrument Start Up}
+\subsection{Plasma Ignition}
 
 \NP Make sure to have your method created before turning on the plasma. We want to make sure we are not needlessly using up argon.
 
@@ -156,9 +160,7 @@ acid (\tilda 70\% and \tilda 37\%, respectively) and dilute directly into centri
 
 \NP Inspect the PeriPump tubing and fittings and replace if needed.
 
-\NP Attach the PeriPump tubing and clamp them properly.
-
-
+\NP Attach the PeriPump tubing and clamp them properly. The waste line goes in the back runner of the PeriPump and is also put on in the opposite direction of the others. Attached the waste line to where the PeriPump directional arrows go in the direction of the waste container. The internal standard line goes on the middle runner of the PeriPump. 
 
 \NP Clamp the PeriPump tubing located in the back of the autosampler.
 
@@ -229,13 +231,18 @@ Forced Power
 
 \subsection{Running a Batch}
 
+\subsection{Shutdown}
+
+\subsection{Data Retrieval}
+
+
 \NP Prepare \dots
 
 \NP
 
 
 
-\section{Trouble Shooting}
+\section{Troubleshooting}
 
 \section{Definitions} \label{Definitions}
 
