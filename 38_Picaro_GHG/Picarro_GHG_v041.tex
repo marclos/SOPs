@@ -93,33 +93,43 @@ We thank the work of Isaac Medina, Neha Vaingankar, and Baily Lai who worked wit
 
 \section{Definitions}
 
-\NP Picarro G2508
-
-The G2508 is the latest Picarro analyzer that measures N2O concentration along with CH4, CO2, NH3 and H2O. The greenhouse gas concentrations are corrected for water vapor using methods validated by the atmospheric science community. 
+\NP Picarro G2508 is the latest Picarro analyzer that measures N2O concentration along with CH4, CO2, NH3 and H2O. 
 
   
-\NP EosAC soil flux chambers (Eosense Inc, Dartmouth, Canada) coupled with
-\NP eosMX-P multiplexer (Eosense Inc, Dartmouth, Canada)
- 
- The eosMX multiplexer connects up to 12 eosAC chambers to the gas analyzer. 
+\NP EosAC soil flux chambers (Eosense Inc, Dartmouth, Canada) is coupled with
+the eosMX-P multiplexer (Eosense Inc, Dartmouth, Canada). The eosMX multiplexer connects up to 12 eosAC chambers to the gas analyzer. 
 
-\NP Recirculation pump (PN: A0702) 
-
-Provides the vacuum required for sample gas sequencing into and out of the Analyzer. 
+\NP Recirculation pump (PN: A0702) provides the vacuum required for sample gas sequencing into and out of the Analyzer. 
 
 \section{Biases and Interferences}
 
 \NP Biases and interferences
 
-Ambient temperature can prevent the analyzer from stabilizing.
+\begin{itemize} 
+\item Ambient temperature can prevent the analyzer from stabilizing properly.
 
-A flow of clean, relatively dry gas should always be directed through the instrument for several minutes prior to shutdown. Trapping a high-moisture content gas sample in the cavity can cause condensation damage to the mirrors as the instrument cools from its operating temperature
+\item Tapping high moisture gas samples can cause condensation damage to the instrument. To prevent such damage, a flow of clean, relatively dry gas should always be directed through the instrument for several minutes prior to shutdown. 
 
-\NP Calibration gases
+\end{itemize}
 
-Changing the analyzer’s calibration is intended to be done infrequently. Instead of recalibrating frequently to increase the accuracy of the data, users often just verify the calibration by measuring three or more gas standards.
+\NP Calibation Changes
+\begin{itemize}
+
+\item The analyzer’s calibration is intended to be done infrequently. It is only necessary to use three calibration standards to calibrate each gas or isotopic species (two points define the calibration line and a third intermediate point is used for verification).
+
+\item When calibrating, the exact value of each calibration standards is not of particular importance as long as they span a representative range of values over which the analyzer will typically be operated. It is reasonable to use a concentration of zero for the low calibration value, for example. 
+\item To perform a calibration or verification of calibration, the user simply introduces the first calibration standard into the analyzer for an interval long enough for the analyzer to yield a stable measurement of that sample. 
+\item The stated concentration of the calibration sample (a permeation tube or calibrated gas bottle, for example) and the value the analyzer reads for that sample are recorded for each calibration standard used. 
+\item These values can then be plotted, as shown below, in a spreadsheet, for example, to determine the linear relationship between the known calibration values and the analyzer’s reported values.
+
+\begin{figure}
+\includegraphics[width=400]{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/calibration.jpg"}
+\end{figure}
 
 
+\item A linear best-fit equation can be calculated from the data. It is important to plot the analyzer’s reported concentration on the horizontal axis and the gas standards’ stated concentrations on the vertical axis.
+\item The slope and intercept of the best-fit line through these points are the two values that are used to calibrate the analyzer. By determining what the linear relationship is between the known calibration values and the analyzer’s reported concentration values in this way, a calibration offset (slope and intercept) can be calculated so as to add a correction term to the analyzer’s factory or previous calibration. 
+ 
 \section{Health and Safety}
 
 \NP Describe the risk...
@@ -393,8 +403,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \end{enumerate}
                                
 \section{Data Analysis and Calculations}
-
-
+\NP 
 \section{QC/QA Criteria}
 
 
