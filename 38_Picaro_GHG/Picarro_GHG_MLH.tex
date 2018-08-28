@@ -71,7 +71,7 @@
 
 \section{Summary of Method}
 
-\NP This SOP describes how to 1) set up the Picarro, Multiplexer, Dynamic Soil Chambers, and Vacuum Pump. 
+\NP This SOP describes how to 1) set up the Picarro, Multiplexer, Dynamic Soil Chambers, and Vacuum Pump and 2) obtain and download data from the Picarro spectrometer computer.
 
 \tableofcontents
 
@@ -102,14 +102,14 @@ the eosMX-P multiplexer (Eosense Inc, Dartmouth, Canada). The eosMX multiplexer 
 
 \end{itemize}
 
-\NP Calibation Changes
+\NP Calibration Changes
 \begin{itemize}
   \item The analyzer’s calibration is intended to be done infrequently. It is only necessary to use three calibration standards to calibrate each gas or isotopic species (two points define the calibration line and a third intermediate point is used for verification).
 
-  \item When calibrating, the exact value of each calibration standards is not of particular importance as long as they span a representative range of values over which the analyzer will typically be operated. It is reasonable to use a concentration of zero for the low calibration value, for example. 
+  \item When calibrating, the exact value of each calibration standard is not of particular importance as long as they span a representative range of values over which the analyzer will typically be operated. It is reasonable to use a concentration of zero for the low calibration value, for example. 
   \item To perform a calibration or verification of calibration, the user simply introduces the first calibration standard into the analyzer for an interval long enough for the analyzer to yield a stable measurement of that sample. 
   \item The stated concentration of the calibration sample (a permeation tube or calibrated gas bottle, for example) and the value the analyzer reads for that sample are recorded for each calibration standard used. 
-  \item These values can then be plotted, as shown below, in a spreadsheet, for example, to determine the linear relationship between the known calibration values and the analyzer’s reported values.
+  \item These values can then be plotted (in a spreadsheet, for example, as shown above) to determine the linear relationship between the known calibration values and the analyzer’s reported values.
 \end{itemize}
 
 \begin{figure}
@@ -139,7 +139,7 @@ Researchers training to use the Eosense chambers and Picarro analyzer include th
 Researchers using this SOP should be trained for the following SOPs:
 
 \begin{itemize}
-  \item SOP03 Field Work
+  \item SOP03 Field Safety
   \item SOP04 Electrical Power in the Field
 \end{itemize}
 
@@ -229,13 +229,13 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \section{Estimated Time}
 
-\NP Setting up the Picarro can take between 1-1 1/2 hours depending on your experience. Depending on the ambient temperature, the Picarro can take ~30 minutes to reach operating temperatures. To be effecient, start the Picarro as soon as possible.
+\NP Setting up the Picarro can take between 1-1 1/2 hours depending on your experience. Depending on the ambient temperature, the Picarro can take ~30 minutes to reach operating temperatures. To be efficient, start the Picarro as soon as possible.
 
 \section{Sampling Design}
 
 \NP The cable and gas tubing is XX meter.
 
-\NP If the generator is used, place the it downwind at a minium of 100 feet.
+\NP If the generator is used, place it downwind at a minium of 100 feet.
 
 \section{Set Up}
 
@@ -400,7 +400,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 
 \section{Trouble Shooting}
-How to read data from Picarro (must be emailed)
+\NP Reading data from Picarro "(must be emailed)":
 The Chamber Data Processor program is expecting to find all of the relevant 
 
 %"FRMonitor_0000.log, FRMonitor_0001.log..." 
@@ -410,12 +410,15 @@ The path for raw analyzer data should always be the same, and should look like:
 
 You can set this from the Data menu in the Chamber Data Processor (Data-> Analyzer Data Path).
 
-Days with unexpected data:  These days (159 and 175 or June 8th and June 24th) appear to contain valid chamber measurements. The Julian Day metric is pulled directly from the raw analyzer data and there don't appear to be any cases where a measurement got moved from the proper day. I would check to see if the system and/or local time on the analyzer have been changed, as this could potentially cause problems. You could also compare the processed measurements against your field notes to see if there is an obvious time period with missing data that seems to match with these days.
+\NP Days with unexpected data:  
+These days (159 and 175 or June 8th and June 24th) appear to contain valid chamber measurements. The Julian Day metric is pulled directly from the raw analyzer data and there don't appear to be any cases where a measurement got moved from the proper day. I would check to see if the system and/or local time on the analyzer have been changed, as this could potentially cause problems. You could also compare the processed measurements against your field notes to see if there is an obvious time period with missing data that seems to match with these days.
 
-Days that should have more data: I noticed several errors in the FRMonitor logs that you uploaded. I've fixed these files and attached them to this email. Back up the older versions and try using these instead: I noticed several additional measurements appear once I had updated them. As for where these errors came from, the log files suggest that, at some points at least, chambers were disconnected from the Multiplexer while it was actively running a measurement cycle? If so, I would strongly advise against this, as it can cause the Chamber Data Processor to overlook measurements (especially if the chamber was closed when it was removed). Also, are you using the 1.6.0 or 1.6.2 version of the FRMonitor software? Make sure to use the newer version to schedule measurements.
+\NP Days that should have more data: 
+I noticed several errors in the FRMonitor logs that you uploaded. I've fixed these files and attached them to this email. Back up the older versions and try using these instead: I noticed several additional measurements appear once I had updated them. As for where these errors came from, the log files suggest that, at some points at least, chambers were disconnected from the Multiplexer while it was actively running a measurement cycle? If so, I would strongly advise against this, as it can cause the Chamber Data Processor to overlook measurements (especially if the chamber was closed when it was removed). Also, are you using the 1.6.0 or 1.6.2 version of the FRMonitor software? Make sure to use the newer version to schedule measurements.
 
 
-Days where some chambers are missing: I saw several days where Chambers 1 and/or 2 do not appear to be sending any data. This indicates either a communication issue between the Multiplexer and Analyzer, or that the chambers were not connected during this time period. Has the FRMonitor software been recognizing all of the connected chambers on start-up?  If not, then they will not record data (even if they open and close). The System Info button will show you a break down of chamber-specific events, including successfully logged measurements and communication problems. Disconnecting and reconnecting chambers during a measurement cycle can also cause these errors.
+\NP Days where some chambers are missing: 
+ I saw several days where Chambers 1 and/or 2 do not appear to be sending any data. This indicates either a communication issue between the Multiplexer and Analyzer, or that the chambers were not connected during this time period. Has the FRMonitor software been recognizing all of the connected chambers on start-up?  If not, then they will not record data (even if they open and close). The System Info button will show you a break down of chamber-specific events, including successfully logged measurements and communication problems. Disconnecting and reconnecting chambers during a measurement cycle can also cause these errors.
 
 
 
