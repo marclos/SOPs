@@ -1,6 +1,56 @@
 %\documentclass{article}
-\documentclass[12pt]{../SOP3_alpha}
-\usepackage{gensymb}
+\documentclass[12pt]{../SOP3}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
 %This area before it says begin is like the header area (preamble)
 
 
@@ -10,11 +60,9 @@
 \approved{Los Huertos}
 \ReviseDate{\today}
 \SOPno{23 v.01}
-
-
-\usepackage{Sweave}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\input{ChlorophyllExtractionAnalysis_v01-concordance}
+
 
 \maketitle
 
@@ -80,7 +128,7 @@
 
 \NP Turner Designs Trilogy Fluoromter (P/N 998-7210)
 
-\NP Whatmann glass micro fiber filter GF/F 0.7 \micro m retention 47mm 
+\NP Whatmann glass micro fiber filter GF/F 0.7 $\mu$  m retention 47mm 
 
 \NP Millipore glass filtration unit with vacuum and 47mm fritted glass disk base 
 
@@ -127,14 +175,14 @@
 
 \NP \textbf{Chlorophyll Standard Stock Solution (SSS)}- Chlorophyll \textit{a} from Sigma is shipped in an amber glass ampoule. This should be stored in the freezer until use. Tap the ampoule until all of the dried chlorophyll has settled on the bottom. Working in a darkened room, carefully break the tip off the ampoule and transfer the contents into a 50mL volumetric flask and dilute to volume with 90\% acetone (from section 8.6). Transfer to a darkened bottle or wrap the flask in foil to protect it from light. The concentration of the solution must be determined spectrophotometrically using a multiwavelength spectrophotometer. Label bottle including the chlorophyll lot number. When stored in an airtight container at room temperature, the SSS is stable for at least six months.
 
-\NP \textbf{Chlorophyll \textit{a} Primary Dilution Standard (PDS)}- Add 1mL of the SSS (section 8.7) to a 100mL volumetric flask and dilute to volume with aqueous acetone solution (section 8.6). If exactly 1mg of pure chlorophyll was used to prepare the SSS, the concentration of the PDS is 200 \micro g/L. Prepare fresh prior to use and label flask and wrap in foil.
+\NP \textbf{Chlorophyll \textit{a} Primary Dilution Standard (PDS)}- Add 1mL of the SSS (section 8.7) to a 100mL volumetric flask and dilute to volume with aqueous acetone solution (section 8.6). If exactly 1mg of pure chlorophyll was used to prepare the SSS, the concentration of the PDS is 200 $\mu$ g/L. Prepare fresh prior to use and label flask and wrap in foil.
 
 \NP \textbf{Quality Control Samples (QCs)}- Since there are no commercially available QCs, they must be prepared from the PDS at the following concentrations:
 \begin{itemize}
-\item QC1 = 5 \micro g/L
-\item QC1 = 20 \micro g/L
-\item QC1 = 50\micro g/L
-\item QC1 = 200 \micro g/L
+\item QC1 = 5 $\mu$ g/L
+\item QC1 = 20 $\mu$ g/L
+\item QC1 = 50$\mu$ g/L
+\item QC1 = 200 $\mu$ g/L
 \end{itemize}
 
 \section{Estimated Time}
@@ -167,7 +215,10 @@
 \begin{itemize}
 \item Add 25 mL of 90\% aqueous acetone solution to the falcon tubes ensuring each filter is fully submerged in the solvent. (The sonication procedure is usually done in 50 mL Falcon tubes)
 \item Cap the tubes and invert several times to mix. 
-\item Turn on and set sonicator dial to 7. Sonicate by sumberging the tip of the sonicator about halfway into the acetone solution and pressing the trigger. To help break up the filter completely, be sure to move tip around the entire sample. (Note: Sonication settings described here are from Kristy's original SOP, any sonication device purchased by the Los Huertos Lab at Pomona will require an update to the settings).
+\item Secure sonicator into clamp and stand. 
+\item Turn on by pressing the | symbol. Turn off by pressing the O symbol.
+\item Set sonicator to 70\% amplitude. 
+\item  Sonicate by sumberging the tip of the sonicator about halfway into the acetone solution. To help break up the filter completely, be sure to move tip around the entire sample.
 \item After sonication, vigorously shake sample several times, cover with foil and then steep in a fridge (4\celsius) for at least 2 hrs.
 \end{itemize}
 
@@ -211,16 +262,16 @@
 \NP Use the 90\% acetone solution for a blank measurement.
 
 
-\NP Wipe the outside of the cuvette with a kimwipe before taking a measurement then press measure the raw fluorescence of the sample. If the chlorophyll \textit{a} concentration of a sample is within 90\% of the upper limit of the LDR (which is 1,000 \micro g/L for the Turner Trilogy fluorometer) it will be necessary to perform a dilution. However, samples should not be over diluted so be sure to use an appropriate dilution factor. 
+\NP Wipe the outside of the cuvette with a kimwipe before taking a measurement then press measure the raw fluorescence of the sample. If the chlorophyll \textit{a} concentration of a sample is within 90\% of the upper limit of the LDR (which is 1,000 $\mu$ g/L for the Turner Trilogy fluorometer) it will be necessary to perform a dilution. However, samples should not be over diluted so be sure to use an appropriate dilution factor. 
 
 \begin{description} 
 \item[For a 1:2 Dilution] Simply add a 1 mL aliquot of the sample into 1 mL aqueous acetone solution.
-\item[For a 1:100 Dilution] If the concentration of chlorophyll \textit{a} in the sample is very high you can try this dilution factor. Add 50 \micro L of sample to 4.95 mL of aqueous acetone solution. 
+\item[For a 1:100 Dilution] If the concentration of chlorophyll \textit{a} in the sample is very high you can try this dilution factor. Add 50 $\mu$ L of sample to 4.95 mL of aqueous acetone solution. 
 \end{description}
 
 \NP It will be necessary to calculate corrected chlorophyll \textit{a} values to determine wether dilutions need to be made. This is because pheophytin \textit{a} concentrations will not be the same across all samples. An excel spreadsheet template with equations can be found on %....somplace in sakai or github that we haven't created yet
 
-\NP After reading the fluoresence of all samples, add 75 \micro L of  0.1M HCl to eah tube. Thoroughly mix the sample by sealing cuvette with a rubber stopper and inverting several times.Allow 90 seconds before measuring the fluorescence of all the samples again. 
+\NP After reading the fluoresence of all samples, add 75 $\mu$ L of  0.1M HCl to eah tube. Thoroughly mix the sample by sealing cuvette with a rubber stopper and inverting several times.Allow 90 seconds before measuring the fluorescence of all the samples again. 
 % Don't thing we have a rubber stoper for the cuvettes can we use parafilm instead? 
 
 \section{Data Analysis and Calculations}
