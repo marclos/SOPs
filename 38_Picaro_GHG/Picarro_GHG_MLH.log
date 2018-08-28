@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  21 AUG 2018 11:20
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  23 AUG 2018 11:17
->>>>>>> b05657f3508f0781ccc901225cfb74697755a15f
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  28 AUG 2018 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Picarro_GHG_v03.tex
-(./Picarro_GHG_v03.tex
+**Picarro_GHG_MLH.tex
+(./Picarro_GHG_MLH.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
 rainian, russian, bulgarian, loaded.
@@ -280,76 +276,168 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/english.ldf
-Language: english 2005/03/30 v3.3o English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count103
-\U@D=\dimen124
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip62
+\fb@frw=\dimen124
+\fb@frh=\dimen125
+\FrameRule=\dimen126
+\FrameSep=\dimen127
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-)) (./blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-\c@blindtext=\count104
-\c@Blindtext=\count105
-\c@blind@countparstart=\count106
-\blind@countxx=\count107
-\blindtext@numBlindtext=\count108
-\blind@countyy=\count109
-\c@blindlist=\count110
-\c@blindlistlevel=\count111
-\c@blindlist@level=\count112
-\blind@listitem=\count113
-\c@blind@listcount=\count114
-\c@blind@levelcount=\count115
-\blind@mathformula=\count116
-\blind@Mathformula=\count117
-\c@blind@randomcount=\count118
-\c@blind@randommax=\count119
-\c@blind@pangramcount=\count120
-\c@blind@pangrammax=\count121
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
 )
+(./Picarro_GHG_MLH.aux)
+\openout1 = `Picarro_GHG_MLH.aux'.
 
-! LaTeX Error: File `knitr.sty' not found.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+\AtBeginShipoutBox=\box28
+Package hyperref Info: Link coloring ON on input line 62.
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.15 \usepackage
-                {graphicx}^^M
-*** (cannot \read from terminal in nonstop modes)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count103
+)
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
 
-<<<<<<< HEAD
- 
-Here is how much of TeX's memory you used:
- 6934 strings out of 494820
- 98928 string characters out of 3178050
- 204671 words of memory out of 3000000
- 10086 multiletter control sequences out of 15000+200000
- 3938 words of font info for 15 fonts, out of 3000000 for 9000
- 198 hyphenation exceptions out of 8191
- 36i,0n,45p,303b,36s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
-=======
+(./Picarro_GHG_MLH.out) (./Picarro_GHG_MLH.out)
+\@outlinefile=\write3
+\openout3 = `Picarro_GHG_MLH.out'.
+
+LaTeX Info: Redefining \celsius on input line 62.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 62.
+
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 62.
+Package gensymb Info: Using \Omega for \ohm on input line 62.
+
+Package gensymb Warning: Not defining \micro.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count104
+\scratchdimen=\dimen128
+\scratchbox=\box29
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen129
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks21
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 62.
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<../pomona.jpg, id=68, 460.557pt x 492.75pt>
+File: ../pomona.jpg Graphic file (type jpg)
+ <use ../pomona.jpg>
+Package pdftex.def Info: ../pomona.jpg used on input line 64.
+(pdftex.def)             Requested size: 56.9055pt x 60.8793pt.
+
+Overfull \vbox (21.72939pt too high) detected at line 64
+ []
+
+
+Overfull \hbox (33.1816pt too wide) in paragraph at lines 64--65
+[][] 
+ []
+
+(./Picarro_GHG_MLH.toc [1
+
 {/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>])
 \tf@toc=\write4
-\openout4 = `Picarro_GHG_v03.toc'.
+\openout4 = `Picarro_GHG_MLH.toc'.
 
 
 
@@ -358,134 +446,84 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] [4]
+[2]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [3] <"graphics/calibration".jpg, id=108, 575.14874pt x 213.04594pt>
+File: "graphics/calibration".jpg Graphic file (type jpg)
 
-LaTeX Warning: Citation `StandardMethods2012' on page 5 undefined on input line
- 204.
+<use "graphics/calibration".jpg>
+Package pdftex.def Info: "graphics/calibration".jpg used on input line 117.
+(pdftex.def)             Requested size: 469.75502pt x 174.00961pt.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [4 <./graphics/calibration.jpg>] [5]
+<"graphics/pump_multiplexer".jpg, id=133, 686.565pt x 917.4275pt>
+File: "graphics/pump_multiplexer".jpg Graphic file (type jpg)
 
-
-<"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/pump to multiplexer".jpg, i
-d=81, 686.565pt x 917.4275pt>
-File: "/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/pump to multiplexer".j
-pg Graphic file (type jpg)
-
-<use "/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/pump to multiplexer".jp
-g>
-Package pdftex.def Info: "/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/pum
-p to multiplexer".jpg used on input line 225.
+<use "graphics/pump_multiplexer".jpg>
+Package pdftex.def Info: "graphics/pump_multiplexer".jpg used on input line 246
+.
 (pdftex.def)             Requested size: 234.8775pt x 313.85306pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5]
-<"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whitetriangleusb".jpg, id=9
-9, 700.6175pt x 363.3575pt>
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.246 ...38_Picaro_GHG/graphics/whitetriangleusb"}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+[6] <"graphics/whitetriangleusb".jpg, id=146, 700.6175pt x 363.3575pt>
+File: "graphics/whitetriangleusb".jpg Graphic file (type jpg)
 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.246 ...38_Picaro_GHG/graphics/whitetriangleusb"}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+<use "graphics/whitetriangleusb".jpg>
+Package pdftex.def Info: "graphics/whitetriangleusb".jpg used on input line 268
+.
+(pdftex.def)             Requested size: 234.8775pt x 121.81006pt.
+ [7 <./graphics/pump_multiplexer.jpg>]
+<"graphics/COMM".jpg, id=159, 595.22375pt x 548.0475pt>
+File: "graphics/COMM".jpg Graphic file (type jpg)
 
-File: "/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whitetriangleusb".jpg 
-Graphic file (type jpg)
-
-<use "/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whitetriangleusb".jpg>
-Package pdftex.def Info: "/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whi
-tetriangleusb".jpg used on input line 246.
-(pdftex.def)             Requested size: 400.0pt x 207.45412pt.
-
-<"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/COMM".jpg, id=100, 595.2237
-5pt x 548.0475pt>
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.268 ...ja2017/SOPs/38_Picaro_GHG/graphics/COMM"}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.268 ...ja2017/SOPs/38_Picaro_GHG/graphics/COMM"}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-File: "/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/COMM".jpg Graphic file
- (type jpg)
-<use "/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/COMM".jpg>
-Package pdftex.def Info: "/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/COM
-M".jpg used on input line 268.
-(pdftex.def)             Requested size: 300.0pt x 276.22241pt.
- [6 </home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/pump to multiplexer.jpg>
-] [7 </home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whitetriangleusb.jpg> <
-/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/COMM.jpg>] [8] [9] [10]
-(./Picarro_GHG_v03.bbl) 
+<use "graphics/COMM".jpg>
+Package pdftex.def Info: "graphics/COMM".jpg used on input line 291.
+(pdftex.def)             Requested size: 234.8775pt x 216.25478pt.
+ [8 <./graphics/whitetriangleusb.jpg> <./graphics/COMM.jpg>] [9] [10] [11] 
 AED: lastpage setting LastPage
-[11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
- (./Picarro_GHG_v03.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
-
-
-Package rerunfilecheck Warning: File `Picarro_GHG_v03.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Picarro_GHG_v03.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  4D1ACF6ADF450E4EA6E01ADC57CE1DA7;878.
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 408.
+[12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
+ (./Picarro_GHG_MLH.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 429.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 429.
+Package rerunfilecheck Info: File `Picarro_GHG_MLH.out' has not changed.
+(rerunfilecheck)             Checksum: 4D1ACF6ADF450E4EA6E01ADC57CE1DA7;878.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 429.
  ) 
 Here is how much of TeX's memory you used:
- 7818 strings out of 494820
- 112285 string characters out of 3178050
- 217524 words of memory out of 3000000
- 10790 multiletter control sequences out of 15000+200000
+ 7373 strings out of 494820
+ 105682 string characters out of 3178050
+ 200542 words of memory out of 3000000
+ 10359 multiletter control sequences out of 15000+200000
  8592 words of font info for 33 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,18n,49p,803b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,49p,803b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Picarro_GHG_v03.pdf (11 pages, 365443 bytes).
+Output written on Picarro_GHG_MLH.pdf (12 pages, 404023 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
+ 263 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
  110 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
->>>>>>> b05657f3508f0781ccc901225cfb74697755a15f
