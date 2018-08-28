@@ -198,11 +198,11 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 \caption{After natigating through the Rstudio Git/SNV menu, select `Create an RSA Key'.}
 \end{figure}
 
-\NP You have the option to create a passphrase. I suggest you don't to make it easier for now. But should your have projects that need extra security, this is a good idea.
+\NP You have the option to create a passphrase. I suggest you ignore this for now, but should you have projects that need extra security, this is a good idea.
 
 \NP After you hit the ``Create'' button an image will be generated in a pop-up window -- As far as I can tell, this image is some sort of encryption thing -- but I don't see any reason why we should care. So, close this pop-up window. 
 
-\NP Next, select the `View the public key' and copy the contents of the pop-up window using cntrl-c. Now we need to paste that key into Github. NOTE: If you closed all the windows, you have to nagivate back to the Git/SVN menu via Global Options. 
+\NP Next, select the `View the public key' and copy the contents of the pop-up window using ctrl-c. Now we need to paste that key into Github. NOTE: If you closed all the windows, you have to nagivate back to the Git/SVN menu via Global Options. 
 
 \NP Add RSA/SSH Key to Github
   \begin{enumerate}
@@ -225,7 +225,7 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \subsection{Linking an RStudio Project to a Github Repository}
 
-\NP To link a Github respository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio.
+\NP To link a Github repository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio.
 
 
 \begin{figure}[H]
