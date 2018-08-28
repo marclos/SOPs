@@ -6,59 +6,12 @@
 \documentclass[12pt]{../SOP3}\usepackage[]{graphicx}\usepackage[]{color}
 %% maxwidth is the original width if it is less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
 
-\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
-\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
-\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
-\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
-\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
-\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
-\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
-\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-\let\hlipl\hlkwb
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
-
-\usepackage{alltt}
 
 \usepackage[english]{babel}
 \usepackage{blindtext}
 %\usepackage{lipsum}
-
+\usepackage{knitr}
 \usepackage{graphicx}
 
 \title{Greenhouse Gas Measurements w/Picarro}
@@ -76,7 +29,7 @@
 
 \NP Covers how to install Eosense soil gas flux chambers (XXX) and connect them to multiplexer (part number) and a Picarro G2508 (Santa Clara, USA) gas analyzer.
 
-\NP Orginally, this SOP was developed for greenhouse gas emissions from strawberry fields in NorCal, has been been modified as new projects come on line that rely on these instruments. 
+\NP Orginally, this SOP was developed for greenhouse gas emissions from strawberry fields in NorCal. It has been been modified as new projects come on line that rely on these instruments. 
 
 \section{Summary of Method}
 
@@ -220,15 +173,13 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP Connect recirculation pump to Analyzer VACUUM port using the convoluted metal hose. Hand tighten and use wrench to seal connection.
 
-\begin{figure}
-\includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/pump to multiplexer"}
+\NP 
+\begin{figure}[h]
+\includegraphics[width=.5\textwidth]{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/pump to multiplexer"}
 \end{figure}
 
 
 \NP Connect multiplexer to Picarro through USB ports on Picarro (does not matter which port used)
-\begin{itemize}
-\item See Picarro Figure 1 for USB port identification
-\end{itemize}
 
 \NP Connect monitor, mouse, and keyboard to Picarro via the remaining USB ports (note: there are two extra USB ports on the front of the Picarro)
 
@@ -245,7 +196,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \end{itemize}
 
 \begin{figure}
-\includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whitetriangleusb"}
+\includegraphics[width=400]{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whitetriangleusb"}
 \end{figure}
 
 \NP Connect clear tubes to an inlet port on the recirculation pump, connect other end to the inlet on the front of the multiplexer
@@ -267,13 +218,14 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \NP Attach one end of power/data cable to the COMM port in the pump and the other end to the matching COMM port on the multiplexer
 
 \begin{figure}
-\includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/COMM"}
+\includegraphics[width=300]{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/COMM"}
 \end{figure}
 
 \subsection {Picarro Start Up Procedure}
 
 \NP Keep ambient/outside temperature below 35\degree C
 
+<<<<<<< HEAD
 \NP Power on recirculation pump and Picarro **Never turn off recirculation pump when Picarro is on**
 
 \NP Boot up sequence initializes CRDS software and analyzer
@@ -307,6 +259,50 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \NP Make sure no plant material can get caught below ring, between ring and chamber and between chamber top and seal. Remove all leaves and fruit that might get caught. Tuck cut plastic in plant so that it can be used to replace hole when finished.
 
 
+=======
+<<<<<<< HEAD
+\NP Power on recirculation pump and Picarro **Never turn off recirculation pump when Picarro is on**
+=======
+\NP Machine serves as base location.
+\NP Use random number generator to determine location for each of the chambers.
+>>>>>>> b05657f3508f0781ccc901225cfb74697755a15f
+
+\NP Boot up sequence initializes CRDS software and analyzer
+
+<<<<<<< HEAD
+\NP Next turn on multiplexer. Ensure that multiplexer is on before connecting tubing between it and the analyzer. 
+
+\NP On the monitor start the Multiplexer System (a quick link is located on the Desktop) 
+=======
+\NP This will vary based on the design of your experiment. 
+>>>>>>> b05657f3508f0781ccc901225cfb74697755a15f
+
+\NP Warming up for 30 minutes -- System Alarm will be red until the Piccarro the system is heated.
+
+\NP Picarro is ready when the system alarm is no longer red.
+
+
+
+\subsection {Typical Begining Temperatures}
+
+\NP Cavity Pressure (Torr) ppm - 565.135
+\NP Cavity Temperature (\degrees C) ppm - 30.570
+\NP Warm Box Temp (\degrees C) ppm - 30.286
+
+
+
+\subsection*{Selection the Proper Location for Instruments}
+
+\NP asfasd saddfasdf sd asfd sdf
+
+\subsection*{Installing Chamber Rings}
+
+\NP Install rings in soil at sampling locations. 
+
+\NP Make sure no plant material can get caught below ring, between ring and chamber and between chamber top and seal. Remove all leaves and fruit that might get caught. Tuck cut plastic in plant so that it can be used to replace hole when finished.
+
+
+>>>>>>> ad2cca29d4b008a0569d8df07b7ae92b0acdb750
 
 \subsection*{Place Chambers on Rings}
 

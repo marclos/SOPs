@@ -7,30 +7,31 @@
 \documentclass[12pt]{../SOP3_beta}
 
 \usepackage[english]{babel}
-
-
+\usepackage{blindtext}
+\usepackage{lipsum}
 
 \title{Trilogy Laboratory Fluorometer}
 \date{02/07/2017}
 \author{Marc Los Huertos}
 \approved{TBD}
 \ReviseDate{\today}
-\SOPno{18v4}
+\SOPno{X}
 
+\usepackage{Sweave}
 \begin{document}
-
+\input{Trilogy_Laboratory_Fluorometer_v03-concordance}
 
 \maketitle
 
 \section{Scope and Application}
 
-\NP The purpose of this SOP is to train researchers in the use of the Trilogy Laboratory Fluorometer, a compact, multifunctional laboratory instrument that can be used for making fluoresence, absorbance, or turbidity measurements using the appropriate snap-in Optical Module. 
+\NP The scope of this SOP is train researchers in the use of the Trilogy Laboratory Fluorometer, a compact, multifunctional laboratory instrument that can be used for making fluoresence, absorbance, or turbidity measurements using the appropriate snap-in Optical Module. 
 
-
+\NP The applications of this SOP are for...
 
 \section{Summary of Method}
 
-\NP The Trilogy Laboratory Fluorometer is a compact, multifunctional laboratory instrument that can be used for making fluorescence, absorbance, and turbidity measurements using the appropriate snap-in Optical Module. A color touch screen with simple menus makes for an intuitive user interface. 
+\NP The Trilogy Laboratory Fluorometer is a compact, multifunctional laboratory insturment that can be used for making fluoresence, absorbance, and turbidity measurements using the appropriate snap-in Optical Module. A color touch screen with simple menus makes for an intuitive user interface. 
 
 \tableofcontents
 
@@ -38,49 +39,61 @@
 
 \section{Acknowledgements}
 
+\section{SetUp}
+
+\NP Place the Trilogy Fluorometer on a flat, level surface.  Allow at least 6 inches (16 cm) of clearance above the instrument to open and close the lid. 
+
+\NP Position the instrument so that the touch screen faces you.  
+
+\NP Plug the power supply into the power connection port of the instrument, and plug it into a wall outlet. See figure 1.
+
+
+\NP \begin{figure}
+\includegraphics[width=300]{"Capture.JPG"}
+\end{figure}
+
+\subsection{Getting to the Home Screen}
+
+\NP  With the unit turned off, lift the lid and insert an optical module into position - see Figure 2.  Press down on the module until you hear it snap into place.  The module should be flush with the top of the Trilogy when it is properly seated.   Be sure to close the fluorometer lid so that the Trilogy power ON step will complete successfully. 
+
+\begin{figure}
+\includegraphics[width=300]{"Capture2.JPG"}
+\end{figure}
+
+\NP Turn ON the On/Off switch located on the back of the Trilogy, see Figure 1.  Verify the display becomes active, and shows the module selection screen - see Figure 3. 
+ \begin{figure}
+\includegraphics[width=300]{"Capture3.JPG"}
+\end{figure}
+
+\NP Select the module inserted and touch “OK” on the confirming screen. 
+ 
+\NP When the Home Screen is displayed – see Figure 4, you are now ready to use the Trilogy in its Raw Mode (measurements are relative) or calibrate the Trilogy and the snapped-in Optical Application Module to make quantitative measurements.
+
+  \begin{figure}
+\includegraphics[width=300]{"Capture4.JPG"}
+\end{figure}
+ 
+ 
 \section{Modules}
 \NP There are several different modules available to the Trilogy Laboratory Fluorometer:
 
 \begin{itemize}
-  \item Fluorescence Modules are available for discrete sample measurements of various
-fluorescent materials including chlorophyll (in vivo and extracted), rhodamine,
-fluorescein, PTSA, cyanobacteria pigments, ammonium, CDOM/FDOM, optical
-brighteners, histamines, crude oil, hydrocarbons and other fluorescent compounds
-including markers used for DNA/RNA bioassays. 
-  \item The Absorbance Module accepts interchangeable filter paddles so measurements can be made at different wavelenghts in order to identify or place a sample in a particular class of compounds. The standard filter paddle wavelengths/bandwidths are: 560/10; 600/10 and 750/10 nm.
+  \item 1. The Absorbance Module accepts interchangeable filter paddles so measurements can be made at different wavelenghts in order to identify or place a samplein a particular class of compounds. The standard filter paddle wavelengths/bandwidths are: 560/10; 600/10 and 750/10 nm.
   \item The Turbidity Module uses an Infrared (IR) LED with a wavelength of 850 nm as required for reference method: ISO 7027/DIN EN 27027, "Water Quality- Determination of Turbidity". Using Infrared allows Turbidity to be measured at wavelengths that are not normally absorbed by organic matter thereby reducing susceptibility to interference by sample color. 
 \end{itemize}
 
 \NP When properly calibrated, the Trilogy Fluorometer will read out the actual concentration of the solution. Optical Modules contain the necessary light source and filters for the relevant application. 
 
-\section{Fluoroscence Operation}
-\subsection{Installing and Removing the Fluorescence Optical Module}
-\NP Installation
-\begin{itemize}
-\item 1. Power the Trilogy OFF
-\item 2. Grasp the handle of the Optical Application Module and align the kit with the
-sample compartment. 
-\item 3.Press down firmly to lock the Optical Application Module in place. You
-should hear or feel a click indicating the module has snapped into place.
-\item 4.Close the lid and power ON the Trilogy. Use the touch screen to identify the
-type of Optical Application Module installed. 
-\end{itemize}
-\NP Removal
-\begin{itemize}
-\item 1. Power OFF the Trilogy before removing the Optical Application Module.
-\item 2. Grasp the handle and gently pull up to release it from the sample
-compartment. 
-\item 3. Close the lid of the Trilogy.
-\end{itemize}
+\section{Fluorometer Operation}
 \subsection{Measuring Samples}
-\NP There are two measurement modes avaliable on the Trilogy when using the Fluorescence Module:
+\NP There are two measurement modes avaliable on the Trilogy when using the Fluoresence Module:
 \begin{itemize}
-  \item 1. Raw Fluorescence Mode: No calibration required.
+  \item 1. Raw Fluorescecne Mode: No calibration required.
   \item 2. Direct Concentration Mode: No calibration required (see calibration overview).
 \end{itemize}
 \NP Touch "Mode" on the Home Screen to select the measurement mode.
 \begin{itemize}
-  \item 1. Raw Fluorescence Mode: The Raw Fluorescence Mode should be used for qualitative measurement, for example where measuring changes is required, rather than absolute concentration values. Readings are displayed in Relative Fluorescence Units (RFU).
+  \item 1. Raw Fluoresence Mode: The Raw Fluoresence Mode should be used for qualitative measurement, for example where measuring changes is required, rather than absolute concentration values. Readings are displayed in Relative Fluoresence Units (RFU).
   \item 2. Direct Concentration Mode: The Direct Concentration mode makes absolute measurements based on a calibration (see Calibration Overview).
 \end{itemize}
 
@@ -89,7 +102,7 @@ compartment.
   \item 1. Open the lid of the trilogy and insert the cuvette. Close the lid.
   \item 2. Touch "Sample ID" to name your sample (optional).
   \item 3. Using the keypad, enter the sample name into the name field. Touch "Save" to save the sample ID.
-  \item 4. Touch "Measure Fluorescence" to commence measurement. The Trilogy will measure the sample for 6 seconds and report the average reading for the sample. 
+  \item 4. Touch "Measure Fluoresence" to commence measurement. The Trilogy will measure the sample for 6 seconds and report the average reading for the sample. 
 \end{itemize}
 
 \NP The Trilogy reports data on the "Home" screen and displays the results for the most recent 20 measurements. Use the arrow keys to scroll through the most recent measurements. The data automatically exports to a printer or PC when properly connected. Please note the Trilogy does NOT store more than 20 measurements at one time. If more than 20 readings are taken, the oldest reading will be overwritten. Measurements are not stored between power cycles. 
@@ -103,28 +116,6 @@ compartment.
 \end{itemize}
 
 \section{Absorbance Operation}
-\subsection {Installing and Removing the Absorbance Optical Module}
-\NP Installation
-\begin{itemize}
-\item 1. Power OFF the Trilogy. 
-\item 2. Align the Absorbance Module with the sample compartment. 
-\item 3. Press down to lock the Absorbance Module in place. You should hear or feel
-a click indicating the module has snapped into place
-\item 4. Close the lid and power ON the Trilogy. Select "Absorbance" from the list of
-options on the touch screen, touch “OK” to confirm that the module is correct.
-\item 5. Install the filter paddle that corresponds to the wavelength of absorbance for
-the assay.
-\end{itemize}
-
-figure5.JPG
-
-\NP Removal
-\begin{itemize}
-\item 1. Power OFF the Trilogy before removing the Absorbance Module. 
-\item 2. Open the lid, grasp the handle and gently pull up to release it from the
-sample compartment. 
-\item 3. Close the lid
-\end{itemize}
 \subsection{Measuring Samples}
 \NP The Absorbance Module accommodates 10 x 10 mm methacrylate and polystyrene cuvettes as well as glass cuvettes (minimum 1.5 mL volume).
 \begin{itemize}
@@ -144,28 +135,6 @@ sample compartment.
 \end{itemize}
 
 \section{Turbidity Operation}
-\subsection{Installation and Removal of Turbidity Optical Module}
-\NP {Installation}
-\begin{itemize}
-\item 1. Power the Trilogy OFF
-\item 2. Open the lid, grasp the handle of the Optical Application Module and align the
-kit with the sample compartment. 
-\item 3. Press down firmly to lock the Optical Application Module in place. You will
-hear or feel a click indicating the module has snapped into place.
-\item 4. Close the lid and power ON the Trilogy. Use the touch screen to identify the
-type of Optical Application Module installed.
-\end{itemize}
-
-figure6turbidity.JPG
-
-\NP{Removal}
-\begin{itemize}
-\item 1. Power OFF the Trilogy before removing the Optical Application Module.
-\item 2. Open the lid, grasp the handle and gently pull up to release it from the
-sample compartment. 
-\item 3. Close the lid.
-\end{itemize}
-
 \subsection{Measuring Samples}
 \NP There are two measurment modes available on the Trilogy when using the Turbidity Module:
 \begin{itemize}
@@ -206,30 +175,30 @@ sample compartment.
   \item 1. For greatest accuracy, calibrate before running a new batch of samples.
   \item 2. Recalibrate if the ambient temperature changes by +/- 5 degrees Celsisus.
   \item 3. Recalibrate after changing to a different optical module, or if you make measurements on a new analyte. 
-  \item 4. Verify the need to calibrate by reading a stable, known concentration standard immediately after calibration and again every few hours to see if readings have changed significantly. Recalibrate when the accuracy becomes unacceptable for your study.
+  \item 4. Verify the need to calibrate by reading a stable, known concentration standard immediately after calibration and again every few hours to see if readings have changed significantly. Recalibrate when the accuracy beomes unacceptable for your study.
 \end{itemize}
 
-\subsection{Trilogy Calibration Options (Fluorescence and Turbidity)}
+\subsection{Trilogy Calibration Options (Fluoresence and Turbidity)}
 \NP There are two measurement modes available on the Trilogy when using either the Fluoresence or Turbidity Modules:
 \begin{itemize}
-  \item 1. Raw Fluorescence Mode- No calibration required
+  \item 1. Raw Fluoresence Mode- No calibration required
   \item 2. Direct Concentration Mode- Calibration required 
 \end{itemize}
 
 \subsection{1. Raw Fluorescence Mode}
-\NP The Raw Fluorescence Mode should be used for qualitative measurement, for example where measuring changes is required, rather than absolute concentration values. Readings are displayed in Relative Fluorescence Units RFU.
+\NP The Raw Fluorescence Mode should be used for qualitative measurement, for exmaple where measuring changes is required, rather than absolute concentration values. Readings are displayed in Relative Fluorescence Units RFU.
 
 \subsection{2. Direct Concentration Calibration}
 \NP Direct Concentrations can be calibrated by using single or multi-point calibrations. In multi-point calibrations, up to five standards and a blank can be read generating a calibration curve for superior accuracy. The software uses these points to calculate direct concentrations. The Trilogy will display the actual concentration of your samples in units that were choosen during calibration. 
 
-\section{Trilogy Calibration Procedures}
+\section{Trilogy Calibration Proceudres}
 \subsection{Raw Fluorescence Mode}
 \NP A calibration is not necessary to measure fluorescence with the Trilogy. Simply use the Raw Fluorescence Mode to obtain the fluorescent value of a sample in Relative Fluorescence Units (RFU). Use the standard curve to determine the concentration of the analyte in the samples. The Trilogy does not manipulate the data while operating in the Raw Fluorescence Mode. It is not necessary to zero the Trilogy for use in the Raw Fluorescence Mode, however a blank sample should be run to determine background fluorescence. A solid secondary standard may be used to verify instrument stability and function. 
 
 \subsection{Direct Calibration Mode}
 \NP The Direct Concentration Mode requires a calibration with one blank solution and at least one standard solution. The following procedure applies to all the fluorescence modules with the exception of the Chl Acidification and Non-Acidification modules. (There are separate procedures for these two exceptions). The procedure requires the use of at least one calibration standard, (Chlorophyll a, Rhodamine WT, etc.). Up to 5 standard solutions can be used for a Multi Point Calibration. Calibrations can be given a name and stored for future use. 
 
-\section{"Direct Calibration" Procedure (Fluorescence and Turbidity Modules, Single Point and Multi Point Cal)}
+\section{"Direct Calibration" Procedure (Fluoresence and Turbidity Modules, Single Point and Multi Point Cal)}
 \NP The following procedure applies to Trilogy and the Fluoresence or Turbidity Modules.
 \subsection{Instructions}
 \begin{itemize}
@@ -260,7 +229,7 @@ sample compartment.
 
 \section{Personnel \& Training Responsibilities}
 
-\NP Researcher training is required before the procedures in this method can be used... 
+\NP Researchers training is required before this the procedures in this method can be used... 
 
 \NP Researchers using this SOP should be trained for the following SOPs:
 
