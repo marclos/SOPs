@@ -218,7 +218,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \section{Set Up}
 
-\NP Connect pump to Analyzer VACUUM port using the convoluted metal hose. Hand tighten and use wrench to seal connection.
+\NP Connect recirculation pump to Analyzer VACUUM port using the convoluted metal hose. Hand tighten and use wrench to seal connection.
 
 \begin{figure}
 \includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/pump to multiplexer"}
@@ -236,11 +236,11 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP Ensure all machines are in the off position (the circle signifies off position)
 
-\NP Connect power plugs for CRDS, multiplexer, and pump
+\NP Connect power plugs for CRDS, multiplexer, and recirculation pump
 
-\NP Connect pump to multiplexer
+\NP Connect recirculation pump to multiplexer
 \begin{itemize}
-\item Connect control and data ports on the back of the pump to the Picarro ensuring white triangles are facing up on the back of the pump
+\item Connect control and data ports on the back of the recirculation pump to the Picarro ensuring white triangles are facing up on the back of the pump
 \item Insert other cable end of these connections into any USB port on the Picarro
 \end{itemize}
 
@@ -248,7 +248,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/whitetriangleusb"}
 \end{figure}
 
-\NP Connect clear tubes to an inlet port on the pump, connect other end to the inlet on the front of the multiplexer
+\NP Connect clear tubes to an inlet port on the recirculation pump, connect other end to the inlet on the front of the multiplexer
 \begin{itemize}
 \item Inlet on multiplexer on right (labeled)
 \item Inlet on vacuum (on left -- clear tube)
@@ -270,7 +270,31 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \includegraphics{"/home/CAMPUS/aeja2017/SOPs/38_Picaro_GHG/graphics/COMM"}
 \end{figure}
 
-\NP Power on pump and Picarro **Never turn off pump when Picarro is on**
+\subsection {Picarro Start Up Procedure}
+
+\NP Keep ambient/outside temperature below 35\degree C
+
+\NP Power on recirculation pump and Picarro **Never turn off recirculation pump when Picarro is on**
+
+\NP Boot up sequence initializes CRDS software and analyzer
+
+\NP Next turn on multiplexer. Ensure that multiplexer is on before connecting tubing between it and the analyzer. 
+
+\NP On the monitor start the Multiplexer System (a quick link is located on the Desktop) 
+
+\NP Warming up for 30 minutes -- System Alarm will be red until the Piccarro the system is heated.
+
+\NP Picarro is ready when the system alarm is no longer red.
+
+
+
+\subsection {Typical Begining Temperatures}
+
+\NP Cavity Pressure (Torr) ppm - 565.135
+\NP Cavity Temperature (\degrees C) ppm - 30.570
+\NP Warm Box Temp (\degrees C) ppm - 30.286
+
+
 
 \subsection*{Selection the Proper Location for Instruments}
 
@@ -282,21 +306,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP Make sure no plant material can get caught below ring, between ring and chamber and between chamber top and seal. Remove all leaves and fruit that might get caught. Tuck cut plastic in plant so that it can be used to replace hole when finished.
 
-\subsection*{Picarro Start up Procedure}
 
-\NP Connect to power supply
-
-\NP Make sure all instruments are in the off position and turn on power strip
-
-\NP Turn-on recirculation pump (apparently there is no wait time)
-
-\NP Pump must be turned on before starting G2508 analzyer. Never disconnect vacuum will analyzer is running.
-
-\NP Keep ambient temperature below 35\degree C
-
-\NP Switch on Picarro  -- Boot up sequence initializes CRDS software and analyzer
-
-\NP Switch on Multiplexer. Warming up for 30 minutes -- warning error until everything needs to be heated.
 
 \subsection*{Place Chambers on Rings}
 
@@ -322,13 +332,6 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \item H2O ~ 1-5\%
 \end{itemize}
                                
-\subsection*{Start Multiplexer Software}
-
-\NP FP-Monitor??
-                               
-\NP Uncheck default cycle
-                               
-\NP Load cycle in user folder. The following cycles are avaialble 
 
 \begin{description}
   \item[straw 5 chamber ??? names?]
@@ -336,8 +339,13 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
   \item[Full 12 minus \#4]
 \end{description}
 ()
-                               
-\NP When Picarro G2508 is warm, initiate cycle -- "start cycle"??
+  
+\subsection {Running the Multiplexer Software}
+\NP Uncheck default cycle on monitor
+\NP Load Cycle in User Data Folder.
+\NP Multiplexer will initialize - Cycling through Stage (1 to 12)
+                              
+
                                
 \NP Check chambers to ensure good seals
                                
@@ -364,15 +372,14 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
                                
 \NP shut down.
                                
-\NP Shut down Picarro --- Select option for moving instrument.
-                               
-\NP After Picarro shuts down, manually switch off:
+\NP CRDS Date Viewer - Shut down Picarro --- Select option "turn off analyzer and prepare for shipping] 
+\NP After Picarro shuts down, manually switch off the instruments in the following order:
 
 \begin{enumerate}
-  \item Multiplexer
-  \item Picarro
-  \item Vacuum Pump
-  \item Power Strip
+  \item 1. Multiplexer
+  \item 2. Picarro
+  \item 3. Recirculation Pump
+  \item 4. Power Strip
 \end{enumerate}
                                
 \section{Data Analysis and Calculations}
