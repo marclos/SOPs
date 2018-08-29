@@ -11,7 +11,7 @@
 \ReviseDate{\today}
 \SOPno{26 v.01}
 
-
+\usepackage{graphicx}
 
 
 \begin{document}
@@ -149,6 +149,27 @@
 \subsection*{Filtration}
 \NP Invert the sample bottle gently several times before filtering to suspend particles. Mixing the sample well improves the replication greatly.
 
+
+\NP\textbf{The below image demonstrates the correct setup of the filtration system.}
+
+\begin{figure}[h!]
+\includegraphics[width=.5\linewidth]{Filtersetup.jpg}
+\end{figure}
+
+The filtration system is comprised of four parts: the Erlenmeyer flask, the glass funnnel, the bottomless beaker, and the aluminum spring clamp. 
+\begin{itemize}
+\item Slide the glass funnel on top of the Erlenmeyer flask.
+\item Use tweezers to set a filter paper over the glass funnel.
+\item Carefully set the bottomless beaker over the glass funnel making sure the filter remains centered in place. 
+\item Use the aluminum spring clamp to secure the beaker to the funnel while still making sure the filter paper does not move. \item Attach the hose of the vacuum to the vacuum outlet of the glass filter.
+\item Turn the vacuum on. 
+\end{itemize}
+
+
+
+
+
+
 \NP \textbf{Conduct filtration in an area with subdued light.} Gently filter the sample in 20 mL increments using a graduated cylinder or calibrated pipette. The volume to be filtered will vary depending on the algal concentration in the sample. The sample needs to be filtered just until a brown or green tint is visible on the filter. ({\small \textit{Note: For benthic samples a much smaller volume will need to be filtered, roughly 5mL. For freshwater samples the volume can range from 20mL to 300mL, and seawater sample volume can exceed 1 L.}})
 
 \NP Record the filtered sample volume during this process. If the filter is too green the sample analysis will be over range and will need to be diluted later.  It is best to avoid diluting the sample when possible. 
@@ -162,7 +183,7 @@
 
 \NP Remove samples from the freezer and allow both the sample and QCs to come to room temperature
 
-\NP There are two different methods used to extract chlorophyll from the glass fiber filters. If using a sonicator proceed onto the next section, if using a tissue grinder skip to section 10.10
+\NP There are two different methods used to extract chlorophyll from the glass fiber filters: the sonicator method and the tissue grinder method. If using a sonicator proceed on to the next section, if using a tissue grinder skip to section 10.10
 
 \NP To extract chlorophyll \textit{a} via sonication method:
 \begin{itemize}
