@@ -50,7 +50,8 @@ the eosMX-P multiplexer (Eosense Inc, Dartmouth, Canada). The eosMX multiplexer 
 \begin{itemize} 
   \item Ambient temperature can prevent the analyzer from stabilizing properly.
 
-  \item Tapping high moisture gas samples can cause condensation damage to the instrument. To prevent such damage, a flow of clean, relatively dry gas should always be directed through the instrument for several minutes prior to shutdown. 
+  \item Trapping high moisture gas samples can cause condensation damage to the instrument. To prevent such damage, a flow of clean, relatively dry gas should always be directed through the instrument for several minutes prior to shutdown. 
+
 
 \end{itemize}
 
@@ -76,8 +77,7 @@ the eosMX-P multiplexer (Eosense Inc, Dartmouth, Canada). The eosMX multiplexer 
  
 \section{Health and Safety}
 
-\NP Describe the risk...
-
+Special care should be taken when using gas cylinders. 
 
 \subsection*{Safety and Personnnel Protective Equipment}
 
@@ -216,8 +216,9 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 \item Insert other cable end of these connections into any USB port on the Picarro
 \end{itemize}
 
-\begin{figure}
+\begin{figure} 
 \includegraphics[width=.5\textwidth]{"graphics/whitetriangleusb"}
+\caption{White Triangles}
 \end{figure}
 
 \NP Connect clear tubes to an inlet port on the pump, connect other end to the inlet on the front of the multiplexer
@@ -352,7 +353,8 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \begin{enumerate}[label=(\alph*)]
   \item If you are only downloading data and not using the Picarro for experimental cycles, you do not neccesarily need to        wait for the Picarro system that pops up on the screen to warm up. 
-    %\item If the program is not on the desktop, open the Start Menu and search "eosAnalyze-AC." Open the "eosAnalyze-AC_v3.4     .2" folder. In the folder, open the .exe application with the same name. (Some bit of this won't let the pdf compile and        idk what)
+    \item If the program is not on the desktop, open the Start Menu and search "eosAnalyze-AC." Open the "eosAnalyze-AC-v3.4     .2" folder. In the folder, open the .exe application with the same name. 
+    
 \end{enumerate}
 
 \NP In the eosAnalyze-AC software, click on "Collect Data." Put in the range of start and end times for the ~~ you want to download. You must repeat this for each cycle you are analyzing. Trying to put multiple tests in at once, ex. putting in 3 different tests over 3 days, will combine all tests together and will result in a single data table with huge time increments in between each cycle. It is also important to ensure the time zone is correct, Pacific Time Zone is UTC-8:00.
@@ -365,7 +367,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP The exported data tables should be .CSV files which can be loaded onto a USB or hard drive for analyses on another computer. The .CSV files should be loadable in Excel as a spreadsheet or in R as a data table. 
 
-%\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data> Analyzer Data Path}. The data path folder should be %C:\UserData\DataLog_Forerunner\. (how to fix this so it's formatted correctly ??)
+\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data--Analyzer Data Path}. The data path folder should be %C:\UserData\DataLog_Forerunner\. (how to fix this so it's formatted correctly ??)
 You should see subfolders named by year. Click OK, then retry collecting data. 
 %\begin{itemize}
       %\item If you still cannot get data, use Windows Explorer on the taskbar to search for the data logs. Double-check %C          :\UserData\DataLog_Forerunner\YEAR\MONTH\DATE
@@ -392,14 +394,14 @@ The path for raw analyzer data should always be the same, and should look like:
 
 You can set this from the Data menu in the Chamber Data Processor (Data-> Analyzer Data Path).
 
-\NP Days with unexpected data:  
+\NP \textbf{Days with unexpected data}:  
 These days (159 and 175 or June 8th and June 24th) appear to contain valid chamber measurements. The Julian Day metric is pulled directly from the raw analyzer data and there don't appear to be any cases where a measurement got moved from the proper day. I would check to see if the system and/or local time on the analyzer have been changed, as this could potentially cause problems. You could also compare the processed measurements against your field notes to see if there is an obvious time period with missing data that seems to match with these days.
 
-\NP Days that should have more data: 
+\NP \textbf{Days that should have more data}: 
 I noticed several errors in the FRMonitor logs that you uploaded. I've fixed these files and attached them to this email. Back up the older versions and try using these instead: I noticed several additional measurements appear once I had updated them. As for where these errors came from, the log files suggest that, at some points at least, chambers were disconnected from the Multiplexer while it was actively running a measurement cycle? If so, I would strongly advise against this, as it can cause the Chamber Data Processor to overlook measurements (especially if the chamber was closed when it was removed). Also, are you using the 1.6.0 or 1.6.2 version of the FRMonitor software? Make sure to use the newer version to schedule measurements.
 
 
-\NP Days where some chambers are missing: 
+\NP \textbf{Days where some chambers are missing}: 
  I saw several days where Chambers 1 and/or 2 do not appear to be sending any data. This indicates either a communication issue between the Multiplexer and Analyzer, or that the chambers were not connected during this time period. Has the FRMonitor software been recognizing all of the connected chambers on start-up?  If not, then they will not record data (even if they open and close). The System Info button will show you a break down of chamber-specific events, including successfully logged measurements and communication problems. Disconnecting and reconnecting chambers during a measurement cycle can also cause these errors.
 
 
