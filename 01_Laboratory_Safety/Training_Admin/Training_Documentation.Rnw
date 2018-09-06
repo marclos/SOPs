@@ -83,8 +83,8 @@ SOP No. & Version No. & Signature & Date  & Manager & Date \\
   & & & & & \\ [1.2ex]\hline
   & & & & & \\ [1.2ex]\hline
   & & & & & \\ [1.2ex]\hline
-  & & & & & \\ [1.2ex]\hline
-  & & & & & \\ [1.2ex]\hline
+  %& & & & & \\ [1.2ex]\hline
+  %& & & & & \\ [1.2ex]\hline
   & & & & & \\ [1.2ex]\hline
   & & & & & \\ [1.2ex]\hline
   & & & & & \\ [1.2ex]\hline
@@ -92,5 +92,19 @@ SOP No. & Version No. & Signature & Date  & Manager & Date \\
 
 \end{table}
 \footnotetext{Required}
+
+\subsection{Campus Lab Safety Course}
+
+In addition, all students working on the lab, must attend the Pomona College Lab Safety Course each year they are working on the lab. The lab manager will document the date that has been completed below: 
+
+\begin{table}[h]
+		\begin{tabular}{p{3cm}p{6cm}}
+Course Date           &  Manager Signature \\
+\framebox(70,10)[L]{} & \framebox(150,10)[]{}\\
+\framebox(70,10)[L]{} & \framebox(150,10)[]{}\\
+\framebox(70,10)[L]{} & \framebox(150,10)[]{}\\
+\framebox(70,10)[L]{} & \framebox(150,10)[]{}\\
+		\end{tabular}
+\end{table}
 
 \end{document}
