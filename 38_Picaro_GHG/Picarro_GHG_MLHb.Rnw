@@ -367,10 +367,10 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP The exported data tables should be .CSV files which can be loaded onto a USB or hard drive for analyses on another computer. The .CSV files should be loadable in Excel as a spreadsheet or in R as a data table. 
 
-\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data/Analyzer Data Path}. The data path folder should be \url{\backslash UserData \backslah DataLog_Forerunner\}. 
+\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data/Analyzer Data Path}. The data path folder should be \url{\UserData\DataLog_Forerunner\}. 
 You should see subfolders named by year. Click OK, then retry collecting data. 
 \begin{itemize}
-      \item If you still cannot get data, use Windows Explorer on the taskbar to search for the data logs. Double-check \url{\backslash UserData \backslash DataLog_Forerunner\backslash YEAR \backslash MONTH \backslash DATE} 
+      \item If you still cannot get data, use Windows Explorer on the taskbar to search for the data logs. Double-check \url{\UserData\DataLog_Forerunner\YEAR\MONTH\DATE} 
      folder for .DAT files. The naming convention should be something like this: JFAADS2048-20180803-131415-DataLog\_Forerunne       r.dat
       \begin{enumerate}
       \item JFAADS20048: Instrument Serial Number -written behind the Picarro.
