@@ -267,7 +267,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \begin{figure} 
 \includegraphics[width=.5\textwidth]{"graphics/whitetriangleusb"}
-\caption{White Triangles}
+%this should be in 12.7 but shows up in 12.8
 \end{figure}
 
 \NP Connect clear tubes to an inlet port on the pump, connect other end to the inlet on the front of the multiplexer
@@ -416,17 +416,17 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP The exported data tables should be .CSV files which can be loaded onto a USB or hard drive for analyses on another computer. The .CSV files should be loadable in Excel as a spreadsheet or in R as a data table. 
 
-\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data--Analyzer Data Path}. The data path folder should be %C:\UserData\DataLog_Forerunner\. (how to fix this so it's formatted correctly ??)
+\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data/Analyzer Data Path}. The data path folder should be \url{C:\UserData\DataLog_Forerunner\}. 
 You should see subfolders named by year. Click OK, then retry collecting data. 
-%\begin{itemize}
-      %\item If you still cannot get data, use Windows Explorer on the taskbar to search for the data logs. Double-check %C          :\UserData\DataLog_Forerunner\YEAR\MONTH\DATE
-     % folder for .DAT files. The naming convention should be something like this: JFAADS2048-20180803-131415-DataLog_Forerunne       r.dat
-      %\begin{enumerate}
-      %\item JFAADS20048: Instrument Serial Number -written behind the Picarro.
-      %\item 20180803: YYYY MM DD ex. 2018 August 03. 
-      %\item 131415: HH MM SS when file started in 24-hour format ex. 1:14PM, 15 sec.
-      %\end{enumerate}
-%\end{itemize}
+\begin{itemize}
+      \item If you still cannot get data, use Windows Explorer on the taskbar to search for the data logs. Double-check \url{C          :\UserData\DataLog_Forerunner\YEAR\MONTH\DATE} 
+     folder for .DAT files. The naming convention should be something like this: JFAADS2048-20180803-131415-DataLog\_Forerunne       r.dat
+      \begin{enumerate}
+      \item JFAADS20048: Instrument Serial Number -written behind the Picarro.
+      \item 20180803: YYYY MM DD ex. 2018 August 03. 
+      \item 131415: HH MM SS when file started in 24-hour format ex. 1:14PM, 15 sec.
+      \end{enumerate}
+\end{itemize}
 
 
 \section{QC/QA Criteria}

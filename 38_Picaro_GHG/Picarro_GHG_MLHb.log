@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  30 AUG 2018 12:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  30 AUG 2018 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Picarro_GHG_MLH.tex
-(./Picarro_GHG_MLH.tex
+**Picarro_GHG_MLHb.tex
+(./Picarro_GHG_MLHb.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
 rainian, russian, bulgarian, loaded.
@@ -291,8 +291,8 @@ Package: alltt 1997/06/16 v2.0g defines alltt environment
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(./Picarro_GHG_MLH.aux)
-\openout1 = `Picarro_GHG_MLH.aux'.
+(./Picarro_GHG_MLHb.aux)
+\openout1 = `Picarro_GHG_MLHb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
@@ -323,9 +323,9 @@ LaTeX Info: Redefining \ref on input line 63.
 LaTeX Info: Redefining \pageref on input line 63.
 LaTeX Info: Redefining \nameref on input line 63.
 
-(./Picarro_GHG_MLH.out) (./Picarro_GHG_MLH.out)
+(./Picarro_GHG_MLHb.out) (./Picarro_GHG_MLHb.out)
 \@outlinefile=\write3
-\openout3 = `Picarro_GHG_MLH.out'.
+\openout3 = `Picarro_GHG_MLHb.out'.
 
 LaTeX Info: Redefining \celsius on input line 63.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 63.
@@ -433,9 +433,9 @@ Overfull \hbox (33.1816pt too wide) in paragraph at lines 65--66
 [][] 
  []
 
-(./Picarro_GHG_MLH.toc)
+(./Picarro_GHG_MLHb.toc)
 \tf@toc=\write4
-\openout4 = `Picarro_GHG_MLH.toc'.
+\openout4 = `Picarro_GHG_MLHb.toc'.
 
 
 
@@ -532,29 +532,29 @@ LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 394.
 
 [9])
 Runaway argument?
-{C:\UserData \DataLog _Forerunner\}.^^MYou should see subfolders name\ETC.
+{\backslash UserData \backslah DataLog_Forerunner\}.^^MYou should see\ETC.
 ! File ended while scanning use of \hyper@n@rmalise.
 <inserted text> 
                 \par 
-<*> Picarro_GHG_MLH.tex
-                       
+<*> Picarro_GHG_MLHb.tex
+                        
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
 ! Emergency stop.
-<*> Picarro_GHG_MLH.tex
-                       
+<*> Picarro_GHG_MLHb.tex
+                        
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 7360 strings out of 494820
- 105567 string characters out of 3178050
- 200513 words of memory out of 3000000
- 10361 multiletter control sequences out of 15000+200000
+ 7356 strings out of 494820
+ 105560 string characters out of 3178050
+ 200517 words of memory out of 3000000
+ 10357 multiletter control sequences out of 15000+200000
  8939 words of font info for 34 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,18n,45p,770b,448s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,45p,771b,448s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
