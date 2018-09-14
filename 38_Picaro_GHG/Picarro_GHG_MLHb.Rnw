@@ -367,10 +367,10 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP The exported data tables should be .CSV files which can be loaded onto a USB or hard drive for analyses on another computer. The .CSV files should be loadable in Excel as a spreadsheet or in R as a data table. 
 
-\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data/Analyzer Data Path}. The data path folder should be \url{C:\UserData\DataLog_Forerunner\}. 
+\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data/Analyzer Data Path}. The data path folder should be \url{\UserData\DataLog_Forerunner\}. 
 You should see subfolders named by year. Click OK, then retry collecting data. 
 \begin{itemize}
-      \item If you still cannot get data, use Windows Explorer on the taskbar to search for the data logs. Double-check \url{C          :\UserData\DataLog_Forerunner\YEAR\MONTH\DATE} 
+      \item If you still cannot get data, use Windows Explorer on the taskbar to search for the data logs. Double-check \url{\UserData\DataLog_Forerunner\YEAR\MONTH\DATE} 
      folder for .DAT files. The naming convention should be something like this: JFAADS2048-20180803-131415-DataLog\_Forerunne       r.dat
       \begin{enumerate}
       \item JFAADS20048: Instrument Serial Number -written behind the Picarro.
@@ -390,9 +390,9 @@ The Chamber Data Processor program is expecting to find all of the relevant
 %"FRMonitor_0000.log, FRMonitor_0001.log..." 
 files in its own folder. You can freely move these out between sites, but as they contain information about the chamber sequencing, when you are processing a certain date range, you will need to have to correct FRMonitor logs present (the program will start its search with log 0000 and go until it cannot find the next in the sequence). 
 The path for raw analyzer data should always be the same, and should look like:  
-%C:/UserData/DataLog_Forerunner. 
+\url{C:/UserData/DataLog_Forerunner}. 
 
-You can set this from the Data menu in the Chamber Data Processor (Data-> Analyzer Data Path).
+%You can set this from the Data menu in the Chamber Data Processor (Data-> Analyzer Data Path).
 
 \NP \textbf{Days with unexpected data}:  
 These days (159 and 175 or June 8th and June 24th) appear to contain valid chamber measurements. The Julian Day metric is pulled directly from the raw analyzer data and there don't appear to be any cases where a measurement got moved from the proper day. I would check to see if the system and/or local time on the analyzer have been changed, as this could potentially cause problems. You could also compare the processed measurements against your field notes to see if there is an obvious time period with missing data that seems to match with these days.
@@ -402,7 +402,7 @@ I noticed several errors in the FRMonitor logs that you uploaded. I've fixed the
 
 
 \NP \textbf{Days where some chambers are missing}: 
- I saw several days where Chambers 1 and/or 2 do not appear to be sending any data. This indicates either a communication issue between the Multiplexer and Analyzer, or that the chambers were not connected during this time period. Has the FRMonitor software been recognizing all of the connected chambers on start-up?  If not, then they will not record data (even if they open and close). The System Info button will show you a break down of chamber-specific events, including successfully logged measurements and communication problems. Disconnecting and reconnecting chambers during a measurement cycle can also cause these errors.
+I saw several days where Chambers 1 and/or 2 do not appear to be sending any data. This indicates either a communication issue between the Multiplexer and Analyzer, or that the chambers were not connected during this time period. Has the FRMonitor software been recognizing all of the connected chambers on start-up?  If not, then they will not record data (even if they open and close). The System Info button will show you a break down of chamber-specific events, including successfully logged measurements and communication problems. Disconnecting and reconnecting chambers during a measurement cycle can also cause these errors.
 
 
 
