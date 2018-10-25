@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  6 APR 2018 00:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  14 SEP 2018 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -368,23 +368,6 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/english.ldf
-Language: english 2005/03/30 v3.3o English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count103
-\U@D=\dimen128
-)
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-))
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
@@ -422,7 +405,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count104
+\c@section@level=\count103
 )
 LaTeX Info: Redefining \ref on input line 62.
 LaTeX Info: Redefining \pageref on input line 62.
@@ -480,16 +463,16 @@ Package gensymb Info: Using \textmu for \micro on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen129
+\scratchcounter=\count104
+\scratchdimen=\dimen128
 \scratchbox=\box29
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count105
+\nofMParguments=\count106
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen130
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen129
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks21
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -534,7 +517,7 @@ Overfull \vbox (21.72939pt too high) detected at line 65
  []
 
 
-Overfull \hbox (2.12527pt too wide) in paragraph at lines 65--66
+Overfull \hbox (2.65538pt too wide) in paragraph at lines 65--66
 [][] 
  []
 
@@ -556,48 +539,53 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [4] <evacuation-map.pdf, id=118, 903.375pt x 614.295pt>
-File: evacuation-map.pdf Graphic file (type pdf)
+ [4]
+<"/home/CAMPUS/mwl04747/github/SOPs/01_Laboratory_Safety/figures/evacuation-map
+".pdf, id=119, 903.375pt x 614.295pt>
+File: "/home/CAMPUS/mwl04747/github/SOPs/01_Laboratory_Safety/figures/evacuatio
+n-map".pdf Graphic file (type pdf)
 
-<use evacuation-map.pdf>
-Package pdftex.def Info: evacuation-map.pdf used on input line 202.
+<use "/home/CAMPUS/mwl04747/github/SOPs/01_Laboratory_Safety/figures/evacuation
+-map".pdf>
+Package pdftex.def Info: "/home/CAMPUS/mwl04747/github/SOPs/01_Laboratory_Safet
+y/figures/evacuation-map".pdf used on input line 204.
 (pdftex.def)             Requested size: 469.75502pt x 319.43523pt.
- [5 <./evacuation-map.pdf>]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-
-Overfull \hbox (19.98434pt too wide) in paragraph at lines 228--229
+ [5]
+Overfull \hbox (19.98434pt too wide) in paragraph at lines 230--231
 []\OT1/cmr/m/n/12 See Fig-ure [][]9.12[][] and ([][]http://www.pomona.edu/sites
 /default/files/emergency-instructions.pdf[][] 
  []
 
-[6] 
+[6 </home/CAMPUS/mwl04747/github/SOPs/01_Laboratory_Safety/figures/evacuation-m
+ap.pdf>] [7] 
 AED: lastpage setting LastPage
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
+[8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
  (./Laboratory_Safety_v03.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
 Package rerunfilecheck Info: File `Laboratory_Safety_v03.out' has not changed.
 (rerunfilecheck)             Checksum: 0BB013428E5406E448AA4C0384B44AD1;746.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 281.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
  ) 
 Here is how much of TeX's memory you used:
- 8035 strings out of 494820
- 115055 string characters out of 3178050
- 207846 words of memory out of 3000000
- 11047 multiletter control sequences out of 15000+200000
+ 7753 strings out of 494820
+ 111951 string characters out of 3178050
+ 201642 words of memory out of 3000000
+ 10771 multiletter control sequences out of 15000+200000
  9606 words of font info for 36 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,17n,45p,596b,546s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,45p,596b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Laboratory_Safety_v03.pdf (7 pages, 334173 bytes).
+Output written on Laboratory_Safety_v03.pdf (8 pages, 526124 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 67 named destinations out of 1000 (max. 500000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
+ 69 named destinations out of 1000 (max. 500000)
  115 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,19 +1,21 @@
 %\documentclass{article}
-\documentclass[12pt]{../SOP3_alpha}
+\documentclass[12pt]{../SOP3}
 
 %This area before it says begin is like the header area (preamble)
 
 
-\author{Kristy Morris -- Revised: Isaac Medina}
+\author{Kristy Morris -- Revised: Virginia Paschal}
 \title{SOP for In Vitro Determination of Chlorophyll \textit{a} Concentrations by Fluorescence}
 \date{8/5/2016}
 \approved{Los Huertos}
 \ReviseDate{\today}
-\SOPno{23 v.01}
+\SOPno{26 v.01}
+
+\usepackage{graphicx}
 
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+
 
 \maketitle
 
@@ -43,7 +45,7 @@
 \section{Interferences}
 \NP Any substance extracted from the filter or acquired from laboratory contamination that fluoresces in the red region of the spectrum may interfere in the accurate measurement of both chlorophyll \textit{a} and pheophytin \textit{a}.
 
-\NP item Spectral interferences resulting from the fluorescence of the accessory pigment chlorophyll \textit{b}, and the chlorophyll \textit{a} degradation product pheophytin \textit{a}, can result in the overestimation of chlorophyll \textit{a} concentrations. However, highly selective optical filters used in this method minimize these interferences.
+\NP Spectral interferences resulting from the fluorescence of the accessory pigment chlorophyll \textit{b}, and the chlorophyll \textit{a} degradation product pheophytin \textit{a}, can result in the overestimation of chlorophyll \textit{a} concentrations. However, highly selective optical filters used in this method minimize these interferences.
 
 \NP Quenching effects are observed in highly concentrated solutions or in the presence of high concentrations of other chlorophylls and carotenoids. Samples should be diluted.
 
@@ -55,31 +57,31 @@
 
 \subsection*{Safety and Personnnel Protective Equipment}
 
-\NP Lab safety-glasses and lab coats are required for all laboritory analysis. Use gloves to avoid skin irritation from contact with acetone; work under fume hood when possible. 
+\NP Lab safety-glasses and lab coats are required for all laboratory analysis. Use gloves to avoid skin irritation from contact with acetone; work under fume hood when possible. 
 
 \NP Sonication Procedure -- When using the sonicator always wear ear protection. \textbf {Sonicator should never be used outside of solution.}
 
-\NP Chemical Hygiene -- Please refer to the Material Data Safety Sheets (MSDS) files for questions concerning a chemical's toxicity and the necessary safety precautions.
+\NP Chemical Hygiene -- Please refer to the Safety Data Sheet files for questions concerning a chemical's toxicity and the necessary safety precautions.
 
 \NP Waste Disposal-- Dispose of waste in the acetone collection bottle. See ''SOP 02 Handling of Hazardous Materials.'' %Figure out who and how this bottle will be disposed of properly. Most likely the Environmental Health and Safety Officer (Wang??) Ask Marc about what bottles he is planning to use to store organic and inorganic wastes.
 
 \section{Personnel \& Training Responsibilities}
 
-\NP Researchers training is required before this the procedures in this method can be used... 
+\NP Researcher training is required before the procedures in this method can be used... 
 
 \NP Researchers using this SOP should be trained for the following SOPs:
 
 \begin{itemize}
   \item SOP01 Laboratory Safety
-  \item SOP03 Handing of Hazardous Materials
-\item ``SOP 11 for preparing Standards and QCs'' %This is the one I think might be tricky because it's so generic. 
+  \item SOP02 Handing of Hazardous Materials
+\item SOP 11 Preparing Standards and QCs %This is the one I think might be tricky because it's so generic. 
 \end{itemize}
 
 \section{Materials and Apparatus}
 
-\NP Turner Designs Trilogy Fluoromter (P/N 998-7210)
+\NP Turner Designs Trilogy Fluorometer (P/N 998-7210)
 
-\NP Whatmann glass micro fiber filter GF/F 0.7 \micro m retention 47mm 
+\NP Whatmann glass micro fiber filter GF/F 0.7 $\mu$  m retention 47mm 
 
 \NP Millipore glass filtration unit with vacuum and 47mm fritted glass disk base 
 
@@ -109,7 +111,7 @@
 
 \NP Room thermometer
 
-\NP Note(for lab techs): All reusable labware that comes in contact with chlorophyll solutions should be cleaned with acetone and acid free. Diswashing should include soaking in laboratory grade detergent and water, rinsing with tap water then rinsing with deionized water. 
+\NP Note(for lab techs): All reusable labware that comes in contact with chlorophyll solutions should be cleaned with acetone and acid free. Dishwashing should include soaking in laboratory grade detergent and water, rinsing with tap water then rinsing with deionized water. 
 
 \section{Reagents and Standards}
 \NP Acetone, HPLC grade (CASRN 67-64-1)
@@ -126,14 +128,14 @@
 
 \NP \textbf{Chlorophyll Standard Stock Solution (SSS)}- Chlorophyll \textit{a} from Sigma is shipped in an amber glass ampoule. This should be stored in the freezer until use. Tap the ampoule until all of the dried chlorophyll has settled on the bottom. Working in a darkened room, carefully break the tip off the ampoule and transfer the contents into a 50mL volumetric flask and dilute to volume with 90\% acetone (from section 8.6). Transfer to a darkened bottle or wrap the flask in foil to protect it from light. The concentration of the solution must be determined spectrophotometrically using a multiwavelength spectrophotometer. Label bottle including the chlorophyll lot number. When stored in an airtight container at room temperature, the SSS is stable for at least six months.
 
-\NP \textbf{Chlorophyll \textit{a} Primary Dilution Standard (PDS)}- Add 1mL of the SSS (section 8.7) to a 100mL volumetric flask and dilute to volume with aqueous acetone solution (section 8.6). If exactly 1mg of pure chlorophyll was used to prepare the SSS, the concentration of the PDS is 200 \micro g/L. Prepare fresh prior to use and label flask and wrap in foil.
+\NP \textbf{Chlorophyll \textit{a} Primary Dilution Standard (PDS)}- Add 1mL of the SSS (section 8.7) to a 100mL volumetric flask and dilute to volume with aqueous acetone solution (section 8.6). If exactly 1mg of pure chlorophyll was used to prepare the SSS, the concentration of the PDS is 200 $\mu$ g/L. Prepare fresh prior to use and label flask and wrap in foil.
 
 \NP \textbf{Quality Control Samples (QCs)}- Since there are no commercially available QCs, they must be prepared from the PDS at the following concentrations:
 \begin{itemize}
-\item QC1 = 5 \micro g/L
-\item QC1 = 20 \micro g/L
-\item QC1 = 50\micro g/L
-\item QC1 = 200 \micro g/L
+\item QC1 = 5 $\mu$ g/L
+\item QC1 = 20 $\mu$ g/L
+\item QC1 = 50$\mu$ g/L
+\item QC1 = 200 $\mu$ g/L
 \end{itemize}
 
 \section{Estimated Time}
@@ -146,6 +148,27 @@
 
 \subsection*{Filtration}
 \NP Invert the sample bottle gently several times before filtering to suspend particles. Mixing the sample well improves the replication greatly.
+
+
+\NP\textbf{The below image demonstrates the correct setup of the filtration system.}
+
+\begin{figure}[h!]
+\includegraphics[width=.5\linewidth]{Filtersetup.jpg}
+\end{figure}
+
+The filtration system is comprised of four parts: the Erlenmeyer flask, the glass funnel, the bottomless beaker, and the aluminum spring clamp. 
+\begin{itemize}
+\item Slide the glass funnel on top of the Erlenmeyer flask.
+\item Use tweezers to set a filter paper over the glass funnel.
+\item Carefully set the bottomless beaker over the glass funnel making sure the filter remains centered in place. 
+\item Use the aluminum spring clamp to secure the beaker to the funnel while still making sure the filter paper does not move. \item Attach the hose of the vacuum to the vacuum outlet of the glass filter.
+\item Turn the vacuum on. 
+\end{itemize}
+
+
+
+
+
 
 \NP \textbf{Conduct filtration in an area with subdued light.} Gently filter the sample in 20 mL increments using a graduated cylinder or calibrated pipette. The volume to be filtered will vary depending on the algal concentration in the sample. The sample needs to be filtered just until a brown or green tint is visible on the filter. ({\small \textit{Note: For benthic samples a much smaller volume will need to be filtered, roughly 5mL. For freshwater samples the volume can range from 20mL to 300mL, and seawater sample volume can exceed 1 L.}})
 
@@ -160,13 +183,17 @@
 
 \NP Remove samples from the freezer and allow both the sample and QCs to come to room temperature
 
-\NP There are two different methods used to extract chlorophyll from the glass fiber filters. If using a sonicator proceed onto the next section, if using a tissue grinder skip to section 10.10
+\NP There are two different methods used to extract chlorophyll from the glass fiber filters: the sonicator method and the tissue grinder method. If using a sonicator proceed on to the next section, if using a tissue grinder skip to section 10.10
 
 \NP To extract chlorophyll \textit{a} via sonication method:
+\\ \textbf{Ear plugs or ear muffs should be worn at all times when the sonicator is in use.}
 \begin{itemize}
 \item Add 25 mL of 90\% aqueous acetone solution to the falcon tubes ensuring each filter is fully submerged in the solvent. (The sonication procedure is usually done in 50 mL Falcon tubes)
 \item Cap the tubes and invert several times to mix. 
-\item Turn on and set sonicator dial to 7. Sonicate by sumberging the tip of the sonicator about halfway into the acetone solution and pressing the trigger. To help break up the filter completely, be sure to move tip around the entire sample. (Note: Sonication settings described here are from Kristy's original SOP, any sonication device purchased by the Los Huertos Lab at Pomona will require an update to the settings).
+\item Secure sonicator into clamp and stand. 
+\item Turn on by pressing the | symbol. Turn off by pressing the O symbol.
+\item Set sonicator to 70\% amplitude. 
+\item  Sonicate by sumberging the tip of the sonicator halfway into the acetone solution. To help break up the filter completely, be sure to move tip around the entire sample.
 \item After sonication, vigorously shake sample several times, cover with foil and then steep in a fridge (4\celsius) for at least 2 hrs.
 \end{itemize}
 
@@ -175,9 +202,9 @@
 \item Using forceps remove the filter from its container and place it into the 30 mL glass grinding tube.
 \item Push the filter to the bottom of tube using the pestle or a glass rod.
 \item Using a volumetric pipette (with a tip suitable for dispensing acetone) add 4 mL of 90\% aqueous acetone solution to the tube.
-\item Grind the sample using the pestle (and if applicable a tissue homogenizer motor) until it has been converted to a slurry. (Note: care must be taken not to overheat the sample in the process of grinding. Use common sense in deciding when the sample has been mascerated sufficiently)
+\item Grind the sample using the pestle (and if applicable a tissue homogenizer motor) until it has been converted to a slurry. (Note: care must be taken not to overheat the sample in the process of grinding. Use common sense in deciding when the sample has been mascerated sufficiently.)
 \item Pour the slurry into a 15 mL screw-cap centrifuge tube. 
-\item Rinse the pestle and grinding tube with 6 mL 90\% aqueous acetone solution and add the slurry to the 15 mL centrifuge tube
+\item Rinse the pestle and grinding tube with 6 mL 90\% aqueous acetone solution and add the slurry to the 15 mL centrifuge tube.
 \item Cap the 15 ml centrifuge tube and shake it vigorously. After labeling and wrapping the tube in foil allow the sample to steep in the fridge (4/celsius) for 2 hours.
 \item Before grinding a subsequent filter, clean out the grinding tube and pestle by rinsing with the water and acetone squirt bottles. The last rinse should be with acetone. Wipe the pestle from any leftover residue using a kim wipe.
 \end{itemize}
@@ -210,16 +237,16 @@
 \NP Use the 90\% acetone solution for a blank measurement.
 
 
-\NP Wipe the outside of the cuvette with a kimwipe before taking a measurement then press measure the raw fluorescence of the sample. If the chlorophyll \textit{a} concentration of a sample is within 90\% of the upper limit of the LDR (which is 1,000 \micro g/L for the Turner Trilogy fluorometer) it will be necessary to perform a dilution. However, samples should not be over diluted so be sure to use an appropriate dilution factor. 
+\NP Wipe the outside of the cuvette with a kimwipe before taking a measurement then press measure the raw fluorescence of the sample. If the chlorophyll \textit{a} concentration of a sample is within 90\% of the upper limit of the LDR (which is 1,000 $\mu$ g/L for the Turner Trilogy fluorometer) it will be necessary to perform a dilution. However, samples should not be over diluted so be sure to use an appropriate dilution factor. 
 
 \begin{description} 
 \item[For a 1:2 Dilution] Simply add a 1 mL aliquot of the sample into 1 mL aqueous acetone solution.
-\item[For a 1:100 Dilution] If the concentration of chlorophyll \textit{a} in the sample is very high you can try this dilution factor. Add 50 \micro L of sample to 4.95 mL of aqueous acetone solution. 
+\item[For a 1:100 Dilution] If the concentration of chlorophyll \textit{a} in the sample is very high you can try this dilution factor. Add 50 $\mu$ L of sample to 4.95 mL of aqueous acetone solution. 
 \end{description}
 
-\NP It will be necessary to calculate corrected chlorophyll \textit{a} values to determine wether dilutions need to be made. This is because pheophytin \textit{a} concentrations will not be the same across all samples. An excel spreadsheet template with equations can be found on %....somplace in sakai or github that we haven't created yet
+\NP It will be necessary to calculate corrected chlorophyll \textit{a} values to determine whether dilutions need to be made. This is because pheophytin \textit{a} concentrations will not be the same across all samples. An excel spreadsheet template with equations can be found on %....some place in sakai or github that we haven't created yet
 
-\NP After reading the fluoresence of all samples, add 75 \micro L of  0.1M HCl to eah tube. Thoroughly mix the sample by sealing cuvette with a rubber stopper and inverting several times.Allow 90 seconds before measuring the fluorescence of all the samples again. 
+\NP After reading the fluoresence of all samples, add 75 $\mu$ L of  0.1M HCl to eah tube. Thoroughly mix the sample by sealing cuvette with a rubber stopper and inverting several times.Allow 90 seconds before measuring the fluorescence of all the samples again. 
 % Don't thing we have a rubber stoper for the cuvettes can we use parafilm instead? 
 
 \section{Data Analysis and Calculations}
