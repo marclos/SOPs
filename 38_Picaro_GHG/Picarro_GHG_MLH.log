@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  30 AUG 2018 12:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  24 JAN 2019 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -419,7 +419,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 65.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../pomona.jpg, id=52, 460.557pt x 492.75pt>
+<../pomona.jpg, id=68, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
 Package pdftex.def Info: ../pomona.jpg used on input line 65.
@@ -433,23 +433,12 @@ Overfull \hbox (33.1816pt too wide) in paragraph at lines 65--66
 [][] 
  []
 
-(./Picarro_GHG_MLH.toc)
+(./Picarro_GHG_MLH.toc [1
+
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>])
 \tf@toc=\write4
 \openout4 = `Picarro_GHG_MLH.toc'.
 
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 79.
-
-[1
-
-{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -457,10 +446,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 115.
-
-[2] <"graphics/calibration".jpg, id=72, 575.14874pt x 213.04594pt>
+[2]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [3] <"graphics/calibration".jpg, id=108, 575.14874pt x 213.04594pt>
 File: "graphics/calibration".jpg Graphic file (type jpg)
 
 <use "graphics/calibration".jpg>
@@ -478,15 +471,8 @@ Missing character: There is no ™ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 153.
-
-[3 <./graphics/calibration.jpg>]
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 231.
-
-[4] <"graphics/pump_multiplexer".jpg, id=96, 686.565pt x 917.4275pt>
+ [4 <./graphics/calibration.jpg>] [5]
+<"graphics/pump_multiplexer".jpg, id=132, 686.565pt x 917.4275pt>
 File: "graphics/pump_multiplexer".jpg Graphic file (type jpg)
 
 <use "graphics/pump_multiplexer".jpg>
@@ -497,64 +483,48 @@ Package pdftex.def Info: "graphics/pump_multiplexer".jpg used on input line 247
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 258.
-
-[5] <"graphics/whitetriangleusb".jpg, id=109, 700.6175pt x 363.3575pt>
+[6] <"graphics/whitetriangleusb".jpg, id=146, 700.6175pt x 363.3575pt>
 File: "graphics/whitetriangleusb".jpg Graphic file (type jpg)
 
 <use "graphics/whitetriangleusb".jpg>
 Package pdftex.def Info: "graphics/whitetriangleusb".jpg used on input line 269
 .
 (pdftex.def)             Requested size: 234.8775pt x 121.81006pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 286.
-
-[6 <./graphics/pump_multiplexer.jpg>]
-<"graphics/COMM".jpg, id=121, 595.22375pt x 548.0475pt>
+ [7 <./graphics/pump_multiplexer.jpg>]
+<"graphics/COMM".jpg, id=159, 595.22375pt x 548.0475pt>
 File: "graphics/COMM".jpg Graphic file (type jpg)
 
 <use "graphics/COMM".jpg>
 Package pdftex.def Info: "graphics/COMM".jpg used on input line 293.
 (pdftex.def)             Requested size: 234.8775pt x 216.25478pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 311.
-
-[7 <./graphics/whitetriangleusb.jpg> <./graphics/COMM.jpg>]
-
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 351.
-
-[8]
-
-LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 394.
-
-[9])
-Runaway argument?
-{C:\UserData \DataLog _Forerunner\}.^^MYou should see subfolders name\ETC.
-! File ended while scanning use of \hyper@n@rmalise.
-<inserted text> 
-                \par 
-<*> Picarro_GHG_MLH.tex
-                       
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-! Emergency stop.
-<*> Picarro_GHG_MLH.tex
-                       
-*** (job aborted, no legal \end found)
-
+ [8 <./graphics/whitetriangleusb.jpg> <./graphics/COMM.jpg>] [9] [10] [11] [12]
  
+AED: lastpage setting LastPage
+[13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
+ (./Picarro_GHG_MLH.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
+Package rerunfilecheck Info: File `Picarro_GHG_MLH.out' has not changed.
+(rerunfilecheck)             Checksum: 4D1ACF6ADF450E4EA6E01ADC57CE1DA7;878.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
+ ) 
 Here is how much of TeX's memory you used:
- 7360 strings out of 494820
- 105567 string characters out of 3178050
- 200513 words of memory out of 3000000
- 10361 multiletter control sequences out of 15000+200000
- 8939 words of font info for 34 fonts, out of 3000000 for 9000
+ 7391 strings out of 494820
+ 105902 string characters out of 3178050
+ 200542 words of memory out of 3000000
+ 10363 multiletter control sequences out of 15000+200000
+ 8592 words of font info for 33 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,18n,45p,770b,448s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 36i,18n,49p,770b,537s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Picarro_GHG_MLH.pdf (13 pages, 407614 bytes).
+PDF statistics:
+ 283 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+

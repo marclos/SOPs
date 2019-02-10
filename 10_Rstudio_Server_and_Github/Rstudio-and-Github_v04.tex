@@ -3,7 +3,7 @@
 % Version 03 Added TOC and acknowledgements
 %           New SOP3_alpha.cls
 
-\documentclass[12pt]{../SOP3_beta}\usepackage[]{graphicx}\usepackage[]{color}
+\documentclass[12pt]{../SOP4_alpha}\usepackage[]{graphicx}\usepackage[]{color}
 %% maxwidth is the original width if it is less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -60,7 +60,7 @@
 \date{1/16/2018}
 \approved{Marc Los Huertos}
 \ReviseDate{\today}
-\SOPno{06 v.04}
+\SOPno{10 v.04}
 
 \usepackage{graphicx}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -78,7 +78,7 @@
 
 \section{Summary of Method}
 
-\NP This SOP provides instructions to create Rstudio projects and obtain github repositories into Rstudio. 
+\NP This SOP provides instructions to create Rstudio projects and obtain Github repositories into Rstudio. 
 
 \NP The SOP also provides some guidance on how to troubleshoot should push/pull problems arise.
 
@@ -111,20 +111,20 @@ The following have made substantial contributions:
 
 \section{Background}
 
-\NP R is a powerful, open source program but combined with RStudio and Github the program becomes an archetype of a program that enables 1) collaboration, 2) transparency, 3 reproducible, and 3) accessibility: 
+\NP R is a powerful, open source program but combined with RStudio and Github the program becomes an archetype of a program that enables 1) collaboration, 2) transparency, 3 reproducibility, and 3) accessibility: 
 
 \begin{description}
     \item[Collaboration] You can easily collaborate with others and track who contributed to various parts of the repository. When you are working in a team and updating various text and code, it's important to have version control to ensure that you can trace how the text and code was change. 
     
     \item[Transparency] The program allows others to see how you analyzed the data and thus, allows clear access to what you have done.
     
-  \item[Reproducible]  that when you conduct an analysis you can reproduce the results that can be used to validate your results. 
+  \item[Reproducibility]  that when you conduct an analysis you can reproduce the results that can be used to validate your results. 
   
   \item[Accessibility] Accessible from any computer via webserver. Becuase we can rely on consistant behavoir and even web-based servers, the operating systems and computer hardware rarely limit what you can do in R.
 
 \end{description}
 
-\NP However, becoming facile in using these program is like learning how to walk. We need to approach this process in descrete steps. Some will require weeks of mistakes to learn, others will quickly learn to run with the programs. How quickly you can feel comfortable with these programs will depend on many factors, but will be greatly improved by the time you invest!
+\NP However, becoming experienced in using these programs is like learning how to walk. We need to approach this process in discrete steps. Some people will experience weeks of mistakes before they are confident in their abilities to use these programs, others will quickly learn to run with the programs. How quickly you can feel comfortable with these programs will depend on many factors, but will be greatly improved by the time you invest!
 
 \NP I recommend reading the following sites to better understand Git and Github
 
@@ -141,13 +141,13 @@ The following have made substantial contributions:
 
 \section{Interferences}
 
-\NP R has an updated version about every six months. When performing advanced analyses, there are times that new versions will no longer run a code. Thus, older versions of R must be maintained. This is a unheard of issue for new users -- thankfully, almost never occurs because new users rarely are running advance codes!
+\NP R has an updated version about every six months. When performing advanced analyses, there are times that new versions will no longer run a code. Thus, older versions of R must be maintained. This is a unheard of issue for new users -- thankfully. It almost never occurs because new users rarely are running advanced codes!
 
 \NP RStudio Server needs a functional network connection. If the network is down, then Rstudio Server is inaccessible. This can be a source of frustration. 
 
 \section{Health and Safety}
 
-\NP Some risks include carpel tunnel syndrome.
+\NP Some risks include carpal tunnel syndrome.
 
 \NP Frustation!  After running into errors that seem to baffle you, go for a run, get dinner, or take a nap. Often you'll find a work around after you take a break. 
 
@@ -158,7 +158,7 @@ The following have made substantial contributions:
 
 \section{Personnel \& Training Responsibilities}
 
-\NP Researcher training before this SOP should include how to use their webbrowser and file storage practices. 
+\NP Researchers using this SOP should be well versed in webbrowser and file storage practices. 
 
 %\NP Researchers using this SOP should be trained for the following SOPs:
 
@@ -204,7 +204,7 @@ If you get this error, go to Advanced and accept the privacy settings to continu
 
 Working with Rstudio is a bit confusing at first -- there is lots going on! First, let's unpack the four default pannels that come up when you start Rstudio. 
 
-\NP Each of panel have tabs, but they can vary depending on what is active in Rstudio. 
+\NP Each of the panels have tabs, but they can vary depending on what is active in Rstudio. 
 
 \NP To see all of the panels, create the fourth window, we'll need to add create a new text file. Go to File/New File/R Sweave which opens a \LaTeX\ file template. Save the file as "Test.Rnw" and now you have four windows.
 
@@ -221,15 +221,14 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \section{Setting Up Accounts and Communications Keys}
 
-\NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! Your email address can be used to prove your student status. But you need to make a special request for this (\url{https://education.github.com/discount_requests/new}.
+\NP Create Github Account: Go to \href{http:\\github.com}{Github.com} and create an account. I suggest you use your Claremont e-mail adddress because this can come in handy later, should you want to create private repositories, which are free for college students! But you need to make a special request for this (\url{https://education.github.com/discount_requests/new}. For our purposes, you will not need a private repository and you can always request on later. Your email address can be used to prove your student status. 
   
-\NP We have two choices in how we work with R. We can use the server version on Pomona's IT server. This is preferable. 
 
-\NP R, Rstudio, and Github can easily be intalled on a desktop computer, however, please start by using the server versions via Rstudio. 
+\NP R, Rstudio, and Github can easily be installed on a desktop computer, however, please start by using the server versions via Rstudio. 
 
 \NP Rstudio Server located at \href{http://rstudio.campus.pomona.edu}{\textbf{rstudio.campus.pomona.edu}}. Login using your Pomona College username and password.
 
-\NP To set up change Rstudio's weave option to 'knitr'. Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' from Sweave to knitr. This will have minor, but real changes in how files are compiled, where knitr has is a relatively new and more robust option.
+\NP To set up, change Rstudio's weave option to 'knitr'. Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' from Sweave to knitr. This will have minor, but real changes in how files are compiled. Knitr has relatively new and more robust option.
 
 \NP If using the downloaded Rstudio, start R Studio from the program files and this will automatically start an R console window.
 
@@ -249,11 +248,11 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 \caption{After natigating through the Rstudio Git/SNV menu, select `Create an RSA Key'.}
 \end{figure}
 
-\NP You have the option to create a passphrase. I suggest you don't to make it easier for now. But should your have projects that need extra security, this is a good idea.
+\NP You have the option to create a passphrase. I suggest you ignore this for now, but should you have projects that need extra security, this is a good idea.
 
 \NP After you hit the ``Create'' button an image will be generated in a pop-up window -- As far as I can tell, this image is some sort of encryption thing -- but I don't see any reason why we should care. So, close this pop-up window. 
 
-\NP Next, select the `View the public key' and copy the contents of the pop-up window using cntrl-c. Now we need to paste that key into Github. NOTE: If you closed all the windows, you have to nagivate back to the Git/SVN menu via Global Options. 
+\NP Next, select the `View the public key' and copy the contents of the pop-up window using ctrl-c. Now we need to paste that key into Github. NOTE: If you closed all the windows, you have to nagivate back to the Git/SVN menu via Global Options. 
 
 \NP Add RSA/SSH Key to Github
   \begin{enumerate}
@@ -276,7 +275,7 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \subsection{Linking an RStudio Project to a Github Repository}
 
-\NP To link a Github respository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio.
+\NP To link a Github repository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio.
 
 
 \begin{figure}[H]
