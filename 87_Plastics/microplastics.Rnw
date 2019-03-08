@@ -1,0 +1,118 @@
+%SOP Template 
+% Version 02 Added revision date
+% Version 03 Added TOC and acknowledgements
+%           New SOP3_alpha.cls
+
+
+\documentclass[12pt]{../SOP4_alpha}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+\title{SOP Title}
+\date{X/XX/XXXX}
+\author{Reseacher Name}
+\approved{TBD}
+\ReviseDate{\today}
+\SOPno{X}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP The scope of this SOP is train researchers...
+
+\NP The applications of this SOP are for...
+
+\section{Summary of Method}
+
+\NP This SOP does this...
+
+\tableofcontents
+
+\newpage
+
+\section{Acknowledgements}
+
+\section{Definitions}
+
+\NP Term1: is...
+
+\section{Biases and Interferences}
+
+\NP Biases and interferences can come from...
+
+\section{Health and Safety}
+
+\NP Describe the risk...
+
+
+\subsection{Safety and Personnnel Protective Equipment}
+
+
+\section{Personnel \& Training Responsibilities}
+
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+  \item SOP02 Field Safety
+\end{itemize}
+
+\section{Required Materials and Apparati}
+
+\NP Item 1 w/catalog number!
+
+\NP Item 2
+
+\section{Reagents and Standards}
+
+\section{Estimated Time}
+
+\NP This procedure requires XX minutes...
+
+\section{Sample Collection, Preservation, and Storage}
+
+\begin{itemize}
+  \item Separate water into 500 mL samples
+  \item Vacum filter each sample through a glass-fiber filter (Whatman grade 934-AH, diameter 42.5mm, 1.5 $\mu$m pore)
+  \item Pour 20 mL acetone through the filter to resuspend remaining plastics
+  \item Remove filter paper, and add 600 $\mu$L of 1mg/mL Nile Red solution to cover the paper uniformly
+  \item Incubate the filter paper on a watch glass in the oven at 60C for 10 minutes
+  \item Repeat the last two steps on a clean filter paper as a control
+  
+  \item Randomly choose 5 points on the filter papers
+  \item Use the Echo Revolve RVL-100-B hybrid microscope. Use the blue LED light to excite the Nile Red at 460 nm, then monitor the emmissions at 525 nm using the GFP setting
+  \item Quantify the MPPs (use intensity 89% and exposure time 990 ms) adjacent to each point by using the iPad monitor to save the images then edit the photos using the "counting" feature in the "annotate" section of the Echo Revolve iOS software
+  \item Calculate the average number of particles per point for each sample filter paper. Then calculate the average for the control, and subtract that from your sample number.
+  \item Using the "measure" tool in the "annotate" section of the Revolve iOS software, determine the field of view of the microscope.
+  \item Multiply the sample number of particles by the field of view to obtain the total concentration for each filter paper
+
+\end{itemize}
+
+
+
+
+\section{Procedure}
+
+\NP Prepare \dots
+
+\NP
+
+\section{Data Analysis and Calculations}
+
+\section{QC/QA Criteria}
+
+\section{Trouble Shooting}
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\end{document}
