@@ -1,0 +1,148 @@
+%SOP Template 
+% Version 02 Added revision date
+% Version 03 Added TOC and acknowledgements
+%           New SOP3_alpha.cls
+
+
+\documentclass[12pt]{../SOP4_alpha}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+\title{SOP Title}
+\date{X/XX/XXXX}
+\author{Reseacher Name}
+\approved{TBD}
+\ReviseDate{\today}
+\SOPno{X}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP The scope of this SOP is train researchers...
+
+\NP The applications of this SOP are for...
+
+\section{Summary of Method}
+
+\NP This SOP does this...
+
+\tableofcontents
+
+\newpage
+
+\section{Acknowledgements}
+
+\section{Definitions}
+
+\NP Term1: is...
+
+\section{Biases and Interferences}
+
+\NP Biases and interferences can come from...
+
+\section{Health and Safety}
+
+\NP Describe the risk...
+
+
+\subsection{Safety and Personnnel Protective Equipment}
+
+
+\section{Personnel \& Training Responsibilities}
+
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+  \item SOP02 Field Safety
+\end{itemize}
+
+\section{Required Materials and Apparati}
+
+\NP Item 1 w/catalog number!
+
+\NP Item 2
+
+\section{Reagents and Standards}
+
+\section{Estimated Time}
+
+\NP This procedure requires XX minutes...
+
+\section{Sample Collection, Preservation, and Storage}
+
+Preparing the Sample
+Prepare your microscope slides in accordance with the methods from Maes 2017, ensuring the proper strength and amount of NileRed™ solution is applied to the sample and put into the oven for the determined length of time.
+
+
+\section{Procedure}
+
+\subsection{Extractin Water Samples}
+
+  \NP Separate water into 500 mL samples
+
+
+  \NP Vacuum filter each sample through a glass-fiber filter (Whatman grade 934-AH, diameter 42.5mm, 1.5 $\mu$m pore)
+
+
+  \NP Pour 20 mL acetone through the filter to resuspend remaining plastics
+
+  \NP Remove filter paper, and add 600 $\mu$L of 1mg/mL Nile Red solution to cover the paper uniformly
+
+  \NP Incubate the filter paper on a watch glass in the oven at 60C for 10 minutes
+
+  \NP Repeat the last two steps on a clean filter paper as a control
+  
+  \NP Randomly choose 5 points on the filter papers
+
+  \NP Use the Echo Revolve RVL-100-B hybrid microscope. Use the blue LED light to excite the Nile Red at 460 nm, then monitor the emmissions at 525 nm using the GFP setting
+
+
+  \NP Quantify the MPPs (use intensity 89\% and exposure time 990 ms) adjacent to each point by using the iPad monitor to save the images then edit the photos using the "counting" feature in the "annotate" section of the Echo Revolve iOS software
+
+  \NP Calculate the average number of particles per point for each sample filter paper. Then calculate the average for the control, and subtract that from your sample number.
+
+  \NP Using the "measure" tool in the "annotate" section of the Revolve iOS software, determine the field of view of the microscope.
+
+  \NP Multiply the sample number of particles by the field of view to obtain the total concentration for each filter paper
+
+
+\subsection{Using the Revolve™ microscope}
+
+\NP After opening the Revolve app on the iPad, check that the app is using the bright field mode. Near the top right of the screen are two buttons, one with BF and the other with FL. Make sure BF (Bright Field) is selected, then focus the microscope so that the objects of study can be easily seen. After the image on the screen is crisp, select the FL option, which will switch the microscope over to Fluorescent mode. 
+
+\NP Once FL is selected, click on the button in the bottom left corner ``EDIT OVERLAY.'' This will bring up a secondary screen with four options on the left. Highlight ``TXRED'' and “TRANS” but leave the other options faded, then tap elsewhere on the screen to return to the previous interface.
+
+Now in the bottom middle select the circular button that says “TRANS”. If the screen says ``LIGHT OFF'' then push the circular button with a lightbulb inside it. Adjust the light percentage level as you like, by sliding a bar around the circular button. You can refocus and move the gantry around if needed at this stage, but do not move between capturing the ``TRANS'' image and the ``TXRED'' image. Capture the image by selecting the ``CAPTURE'' button directly underneath the lightbulb circle button. Then select the ``TXRED'' circular bottom at the bottom middle of the screen.
+
+Once ``TXRED'' is highlighted, cover the light that shines beneath the slide with the black cover. This cover will prevent reflecting light and reduce false positives. Turn on the light fluorescent light in the same manner as the ``TRANS'' light and capture your image. After capturing these two images select the button that says ``OVERLAY'' on the left side of the screen. It should be the bottommost option of three. This image will highlight the plastics in your sample with a bright red, while leaving the rest of the sample visible as well. Click ``SAVE'' underneath ``OVERLAY'' to save the image.
+
+To access your images, select the button with your image on it in the top left of the screen. In the bottom right of the screen is the option to “Create annotation”, select that to edit your image. The leftmost option of the tool bar at the bottom of the screen will provide more options such as creating a count (Possibly to count the plastics fluorescing in the image), length or area options. After selecting the desired effect, the edits work  simply by pressing on your image. There are undo buttons at the top left if mistakes are made. After editing simply save your image using the save button in the top right.
+
+
+1.Maes, Thomas, et al. "A rapid-screening approach to detect and quantify microplastics based on fluorescent tagging with Nile Red." Scientific Reports 7 (2017): 44501.
+
+
+\NP Prepare \dots
+
+\NP
+
+\section{Data Analysis and Calculations}
+
+\section{QC/QA Criteria}
+
+\section{Trouble Shooting}
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\end{document}

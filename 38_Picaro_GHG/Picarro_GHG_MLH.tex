@@ -332,7 +332,7 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP Check Picarro Conditions
 
-\NP Ambient should be below 35\degree C. (DAS -- if DAS goes up to 45\degree, should be turned off or cooled -- Use fan to cool air around the Picarro.
+\NP Ambient should be below 35\degree C (95\degree F). (DAS -- if DAS goes up to 45\degree C (113\degree F), should be turned off or cooled -- Use fan to cool air around the Picarro.
                                
 \NP Check for typical atmospheric concentrations:
                                  
@@ -416,10 +416,13 @@ Chamber S?N   & Filed ID \# (2015-16)  \\ \hline\hline
 
 \NP The exported data tables should be .CSV files which can be loaded onto a USB or hard drive for analyses on another computer. The .CSV files should be loadable in Excel as a spreadsheet or in R as a data table. 
 
-\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data/Analyzer Data Path}. The data path folder should be \url{C:\UserData\DataLog_Forerunner\}. 
+%\NP If the data is not loading into the program or you get a "No measurements detected" message, try resetting the data path. Go to \textit{Data/Analyzer Data Path}. 
+
+%The data path folder should be \url{C:\UserData\DataLog_Forerunner\}. 
+
 You should see subfolders named by year. Click OK, then retry collecting data. 
 \begin{itemize}
-      \item If you still cannot get data, use Windows Explorer on the taskbar to search for the data logs. Double-check \url{C          :\UserData\DataLog_Forerunner\YEAR\MONTH\DATE} 
+      \item If you still cannot get data, use Windows Explorer on the taskbar to search for the data logs. Double-check %\url{C          :\UserData\DataLog_Forerunner\YEAR\MONTH\DATE} 
      folder for .DAT files. The naming convention should be something like this: JFAADS2048-20180803-131415-DataLog\_Forerunne       r.dat
       \begin{enumerate}
       \item JFAADS20048: Instrument Serial Number -written behind the Picarro.
@@ -452,6 +455,22 @@ I noticed several errors in the FRMonitor logs that you uploaded. I've fixed the
 
 \NP \textbf{Days where some chambers are missing}: 
  I saw several days where Chambers 1 and/or 2 do not appear to be sending any data. This indicates either a communication issue between the Multiplexer and Analyzer, or that the chambers were not connected during this time period. Has the FRMonitor software been recognizing all of the connected chambers on start-up?  If not, then they will not record data (even if they open and close). The System Info button will show you a break down of chamber-specific events, including successfully logged measurements and communication problems. Disconnecting and reconnecting chambers during a measurement cycle can also cause these errors.
+
+
+
+
+
+Find the folder named....
+
+Diagnostics Folder
+
+start the program called ....
+
+Stop Instrument
+
+select shut down...with drivers...
+
+Middle... 
 
 
 
