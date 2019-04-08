@@ -1,0 +1,189 @@
+%SOP Template 
+% Version 02 Added revision date
+% Version 03 Added TOC and acknowledgements
+%           New SOP3_alpha.cls
+
+
+\documentclass[12pt]{../SOP4_alpha}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+\title{Analyzing Mircoplastics}
+\date{3/11/2019}
+\author{Clare Flynn}
+\approved{TBD}
+\ReviseDate{\today}
+\SOPno{48 v2}
+
+\begin{document}
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP This SOP provides a generic methods to extact and enumerate micro-plastics (DEFINE SIZE). Individual researchers should modify these methods for their application. 
+
+\NP The applications of this SOP include extracting microplastics from various matricies. The exact extraction methods should be tested and optimized for each analysis type.
+
+\section{Summary of Method}
+
+\NP Micro-plastics are ubiquitous in the environment. However, understanding the source, fate, trasnport, and degradation requires sophisticated sampling design, extraction processes, enumeration procedures, and quality control/assurance activities. This method describes how micro-plastics can extracted from water samples, stained, and vacuum-filtered. The enumeration of plastics can be done with a dissecting or miscroscope. 
+
+\tableofcontents
+
+\newpage
+
+\section{Acknowledgements}
+
+\section{Definitions}
+
+\NP Term1: is...
+
+\section{Biases and Interferences}
+
+\NP Biases and interferences can come from a wide range of sources. Unfortunately, micro- and nano-plastics are ubiquitious in the environment, including laboratories.
+
+\NP Sample contamination is a well known-problem, where ``blanks'' often have high levels of plastics that make the interpretation of the results quite problematic. 
+
+\NP Explicit methods to measure sources of contamination is a must for any lab measuring plastics. 
+
+\NP In theory, organic matter does not react with Nile Red, however, there is some evidence that it can. Thus, the methods need to ensure that we don't have false positives with organic matter. 
+
+\section{Health and Safety}
+
+\NP Acetone is hazard --- potentially toxic and flammable. 
+
+\NP Before using any chemicals, please refer to the MDS for all chemicals used in the lab. 
+
+\NP Lasers can damage the eyes. Do not look directly or shine the laser into your own or anyone else's eyes. Objects illuminated with the crime light should never be observed directly but using a filter-mask or filter on a dissecting or microsope. 
+
+\subsection{Safety and Personnnel Protective Equipment}
+
+\section{Personnel \& Training Responsibilities}
+
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+%  \item SOP02 Field Safety
+\end{itemize}
+
+\section{Required Materials and Apparati}
+
+\NP Item 1 w/catalog number!
+
+\NP Item 2
+
+\section{Reagents and Standards}
+
+\NP Nile Red adsorbs to the surface of plastics, but not most naturally occurring materials, and fluoresces under specific wavelengths of light (Erni-Cassola et al., 2017). 
+
+\NP Acetone
+
+\section{Estimated Time}
+
+\NP This procedure requires XX minutes...
+
+\section{Sample Collection, Preservation, and Storage}
+
+\NP Sample collection should be representative of the matrix you are investigating. 
+
+\NP Sample collection methods should be reproducible, i.e. others could collec a similar sample using the written methods. 
+
+\NP Plastics stained with Nile Red need to be stored in a dust free environment and in the dark (to avoid the degradation from light).
+
+\section{Procedure}
+
+\subsection{Extracting Water Samples}
+
+\NP Prepare samples into XXX mL volumes. 
+
+\NP Filter a known volume sub-sample to obtain a blank.
+
+\NP Vacuum filter samples through a glass-fiber filter by placing filter paper (Whatman 934-AH, diameter 42.5mm, 1.5 $\mu$m pore) on the filtration aparatus, vacuum filter each sample through a glass-fiber filter.
+
+\NP While under the fume hood, each bottle was opened and injected with a specific volume of Nile Red solution (prepared in acetone to 1 mg mL−1) to yield a working concentration of 10 ug mL−1 (Maes et al., 2017) and re-capped. 
+
+\NP Incubate bottles with the injected dye for at least 30 min. 
+
+\NP Vacuum filter a known volume of sample as above. 
+%\NP Pour 20 mL acetone through the filter to resuspend remaining plastics
+
+%\NP Remove filter paper, and add 600 $\mu$L of 1mg/mL Nile Red solution to cover the paper uniformly.
+
+%\NP Incubate the filter paper on a watch glass in the oven at 60C for 10 minutes.
+
+%\NP Repeat the last step on a clean filter paper as a control.
+
+\subsection{Using the Crime-Lite2}
+
+\NP The Crime-Lite2 2BG2735 is a 450-510nm laser and requires batteries or a power supply. Be sure the power supply and Crime lite are always stored together -- the power supply costs \$300 for unknown reasons.
+
+\NP DO NOT SHINE Crime-Lite INTO ANYONE'S EYES.
+
+\NP NO NOT LOOK DIRECTLY AT THE SAMPLES WITH THE CRIME-LITE WITHOUT THE FILTER-MASK.
+
+\NP With the proper protection, illuminated samples can be evaluated through the filter-mask or via the diessciting scope with the proper filter installed. 
+  
+\subsection{Using the Echo Revolve Microscope}
+
+\NP The Echo Revolve RVL-100-B hybrid microscope should be used in the ``upright'' (in contrast to the ``inverted'') orientation. NEED PICTURE
+
+\NP After opening the Revolve app on the iPad, check that the app is using the bright field mode. Near the top right of the screen are two buttons, one with BF and the other with FL. Make sure BF (Bright Field) is selected, then focus the microscope so that the objects of study can be easily seen. 
+
+\NP After the image on the screen is crisp, select the FL option, which will switch the microscope over to Fluorescent mode. 
+
+\NP Blue LED light is used to excite the Nile Red at 460 nm, then light sensor monitors the emmissions at 525 nm using the GFP setting.
+
+\NP You may need to adjust the brightness and sensitivity... NEED MORE HERE.
+
+\NP Each sample is likely to have a variable distribution of plastics, thus several subsamples should be taken to generate an average. Recommended subsamples range from 3-10 depending on the variability. Sub-samples should be randomly located on the sample using random number tables. 
+
+\NP Once FL is selected, click on the button in the bottom left corner ``EDIT OVERLAY.'' This will bring up a secondary screen with four options on the left. Highlight ``TXRED'' and “TRANS” but leave the other options faded, then tap elsewhere on the screen to return to the previous interface.
+
+\NP Now in the bottom middle select the circular button that says ``TRANS.'' If the screen says ``LIGHT OFF'' then push the circular button with a lightbulb inside it. 
+
+\NP Adjust the light percentage level as you like, by sliding a bar around the circular button. You can refocus and move the gantry around if needed at this stage, but do not move between capturing the ``TRANS'' image and the ``TXRED'' image. 
+
+\NP Capture the image by selecting the ``CAPTURE'' button directly underneath the lightbulb circle button. Then select the ``TXRED'' circular bottom at the bottom middle of the screen.
+
+\NP Once ``TXRED'' is highlighted, cover the light that shines beneath the slide with the black cover. This cover will prevent reflecting light and reduce false positives. 
+
+\NP Turn on the light fluorescent light in the same manner as the ``TRANS'' light and capture your image. 
+
+\NP After capturing these two images select the button that says ``OVERLAY'' on the left side of the screen. It should be the bottommost option of three. This image will highlight the plastics in your sample with a bright red, while leaving the rest of the sample visible as well. Click ``SAVE'' underneath ``OVERLAY'' to save the image.
+
+\NP Quantify the MPPs (use intensity 89\% and exposure time 990 ms) adjacent to each point by using the iPad monitor to save the images then edit the photos using the "counting" feature in the "annotate" section of the Echo Revolve iOS software.
+
+\NP To access your images, select the button with your image on it in the top left of the screen. In the bottom right of the screen is the option to ``Create annotation,'' select that to edit your image. 
+
+\NP The leftmost option of the tool bar at the bottom of the screen will provide more options such as creating a count (Possibly to count the plastics fluorescing in the image), length or area options. 
+
+\NP After selecting the desired effect, the edits work  simply by pressing on your image. There are undo buttons at the top left if mistakes are made. After editing simply save your image using the save button in the top right.
+
+\section{Data Analysis and Calculations}
+
+  \NP Calculate the average number of particles per point for each sample filter paper. Then calculate the average for the control, and subtract that from your sample number.
+
+  \NP Using the "measure" tool in the "annotate" section of the Revolve iOS software, determine the field of view of the microscope.
+
+  \NP Multiply the sample number of particles by the field of view to obtain the total concentration for each filter paper.
+  
+
+
+\section{QC/QA Criteria}
+
+\section{Trouble Shooting}
+
+\section{References}
+
+\NP APHA, AWWA. WEF. 2012. Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp.
+
+\NP Maes, Thomas, et al. 2017. A rapid-screening approach to detect and quantify microplastics based on fluorescent tagging with Nile Red. Scientific Reports 7 (2017): 44501.
+
+
+\end{document}
