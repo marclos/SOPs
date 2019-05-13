@@ -14,11 +14,13 @@
 
 \subsection{Why use \LaTeX?}
 
-
+%\LaTeX is an open source word processor that produces high quality documents. In addition, R commands can be integrated into text to  `weave' data analysis, graphics, and text into a professional finished product.
 
 \section{Creating \LaTeX~Documents}
 
 \subsection{Document Structure: Preamble}
+
+%We usually declare the type of document on the first line of the text file, using the command %\verb!{\documentclass{}}!. 
 
 \subsection{Begin and End}
 
