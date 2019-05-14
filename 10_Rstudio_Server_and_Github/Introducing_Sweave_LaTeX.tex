@@ -142,6 +142,8 @@ Character   & Type Setting Function & Associated Error \\ \hline\hline
 
 If you are trying to use the characters in the text, then put a backslash in front of them. If you are using them in a type-setting capacity, you should look up how to use them online.
 
+The symbol issues listed above are relatively easy to address. The more difficult problem is if you use 
+
 \section{Integrating R Commands with Sweave}
 
 \subsection{Compile PDF workflow}
@@ -176,7 +178,9 @@ We intiate figures with \verb!\begin{figure}! and ends with \verb!\end{figure}!.
 
 \subsection{Creating Bibliography}
 
-TBD
+To create a bibliography, we need to add some packages, for example, \verb!\usepackage{natbib}! into the preamble. We also make sure the bibliographic style is defined for the Council of Scientific Editors by making sure the cbe.bst file is in the home directory. 
+
+To cite in text you can use one of two commands \verb!\citep{}! and \verb!\citet{}!. Inside you curly brackets you use the citation 'key' to reference each citation. Finally you'll add \verb!\bibliographystyle{cbe.bst}! and \verb!\bibliography{bibtexfile}! just before the \verb!\end{document}! line.
 
 \section{Minium Working Document}
 
@@ -190,6 +194,9 @@ Here are the URLs:
 \medskip
 \noindent \url{https://github.com/marclos/Climate_Change_Narratives/blob/master/Communication_Resources/bibexample.bib}
 
-Be sure to upload both files. 
+\medskip
+\noindent \url{https://github.com/marclos/Climate_Change_Narratives/blob/master/Communication_Resources/cbe.bst}
+
+Be sure to upload all three files or you won't be able to compile the document.
 
 \end{document}
