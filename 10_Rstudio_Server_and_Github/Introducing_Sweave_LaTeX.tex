@@ -115,7 +115,7 @@ Each section and subsection (and subsubsection) heading are hierarchically defin
 
 \noindent\verb!\subsection{This is a subsection heading}!
 
-\noindent\verb!\subsection{This is a subsubsection heading}!
+\noindent\verb!\subsubsection{This is a subsubsection heading}!
 
 \bigskip
 Please note, if you define a section, there must be more than one. Similary, if you create a subsection, be sure that it's not alone in the section -- otherwise, why have the break at all!
@@ -142,7 +142,7 @@ Character   & Type Setting Function & Associated Error \\ \hline\hline
 
 If you are trying to use the characters in the text, then put a backslash in front of them. If you are using them in a type-setting capacity, you should look up how to use them online.
 
-The symbol issues listed above are relatively easy to address. The more difficult problem is if you use 
+The symbol issues listed above are relatively easy to address. The more difficult problem is if you non-ascii characters creap into the document. The issues usually arises when we past in text form word or google docs, where quotes (`` and '') or dashes (-, \textemdash) or funky letters or symbols ($\alpha$, $\chi^2$, \~{n}) are used. We can specify these in \LaTeX, but not pasting in these characters directly into the Rnw file. 
 
 \section{Integrating R Commands with Sweave}
 
