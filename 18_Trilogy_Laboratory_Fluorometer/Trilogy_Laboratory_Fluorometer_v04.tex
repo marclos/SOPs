@@ -1,33 +1,80 @@
 %SOP Template 
 % Version 02 Added revision date
 % Version 03 Added TOC and acknowledgements
-%           New SOP3_alpha.cls
+%           New SOP4_alpha.cls
+% Version 04 Revised Order and Simplifed SOP
 
 
-\documentclass[12pt]{../SOP3_beta}
+\documentclass[12pt]{../SOP4_alpha}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 
 \usepackage[english]{babel}
-\usepackage{blindtext}
-\usepackage{lipsum}
+
 
 \title{Trilogy Laboratory Fluorometer}
-\date{02/07/2017}
+\date{06/10/2019}
 \author{Marc Los Huertos}
 \approved{TBD}
 \ReviseDate{\today}
-\SOPno{X}
-
-\usepackage{Sweave}
+\SOPno{18v4}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\input{Trilogy_Laboratory_Fluorometer_v03-concordance}
+
 
 \maketitle
 
 \section{Scope and Application}
 
-\NP The scope of this SOP is train researchers in the use of the Trilogy Laboratory Fluorometer, a compact, multifunctional laboratory instrument that can be used for making fluoresence, absorbance, or turbidity measurements using the appropriate snap-in Optical Module. 
-
-\NP The applications of this SOP are for...
+\NP The purpose of this SOP is to train researchers in the use of the Trilogy Laboratory Fluorometer, a compact, multifunctional laboratory instrument that can be used for making fluoresence, absorbance, or turbidity measurements using the appropriate snap-in Optical Module. 
 
 \section{Summary of Method}
 
@@ -37,43 +84,56 @@
 
 \newpage
 
+\section{Scope and Application}
+
+\section{Summary of Instrument Use}
+
+
 \section{Acknowledgements}
 
-\section{SetUp}
+This SOP was orginally written by Isaac Medina and then substantially updated and improved by Virginia Pascal. 
 
-\NP Place the Trilogy Fluorometer on a flat, level surface.  Allow at least 6 inches (16 cm) of clearance above the instrument to open and close the lid. 
+\section{Defintions}
 
-\NP Position the instrument so that the touch screen faces you.  
-
-\NP Plug the power supply into the power connection port of the instrument, and plug it into a wall outlet. See figure 1.
+\section{Biases and Interferences}
 
 
-\NP \begin{figure}
-\includegraphics[width=300]{"Capture.JPG"}
-\end{figure}
 
-\subsection{Getting to the Home Screen}
+\section{Health and Safety}
 
-\NP  With the unit turned off, lift the lid and insert an optical module into position - see Figure 2.  Press down on the module until you hear it snap into place.  The module should be flush with the top of the Trilogy when it is properly seated.   Be sure to close the fluorometer lid so that the Trilogy power ON step will complete successfully. 
+\NP Describe the risk...
 
-\begin{figure}
-\includegraphics[width=300]{"Capture2.JPG"}
-\end{figure}
 
-\NP Turn ON the On/Off switch located on the back of the Trilogy, see Figure 1.  Verify the display becomes active, and shows the module selection screen - see Figure 3. 
- \begin{figure}
-\includegraphics[width=300]{"Capture3.JPG"}
-\end{figure}
+\subsection{Safety and Personnnel Protective Equipment}
 
-\NP Select the module inserted and touch “OK” on the confirming screen. 
- 
-\NP When the Home Screen is displayed – see Figure 4, you are now ready to use the Trilogy in its Raw Mode (measurements are relative) or calibrate the Trilogy and the snapped-in Optical Application Module to make quantitative measurements.
+\section{Personnel \& Training Responsibilities}
 
-  \begin{figure}
-\includegraphics[width=300]{"Capture4.JPG"}
-\end{figure}
- 
- 
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+\end{itemize}
+
+\section{Required Materials and Apparti}
+
+\section{Reagents and Standards}
+
+\section{Estimated Time}
+
+\section{Sample Collection, Preservation, and Storage}
+
+\section{Procedures}
+
+\subsection{Extracted Chlorophyll Measurements with the Chl $\alpha$-Acidification Fluorescent Module}
+
+\NP EPA Method 445.0 is a standard method for measuring extracted chlorophyll a and pheophythin a in marine and fresh water algae by fluroescence. It requires extraction with 90 percent acetone, measurements before and after acidification and some fairly simple calculations to arrive at the chlorophyll a and pheophytin concentrations.
+
+\NP A known concentration of pure chlorophyll $\alpha$ (as a standard) is required at least the first time you calibrate Trilogy. For greatest accuracy however, we recommend that you periodically (once every few months) use a known concentration of pure chlorophyll $\alpha$ in 90 percent acetone to recalibrate your instrument. 
+
+
+
 \section{Modules}
 \NP There are several different modules available to the Trilogy Laboratory Fluorometer:
 
@@ -85,7 +145,9 @@
 \NP When properly calibrated, the Trilogy Fluorometer will read out the actual concentration of the solution. Optical Modules contain the necessary light source and filters for the relevant application. 
 
 \section{Fluorometer Operation}
+
 \subsection{Measuring Samples}
+
 \NP There are two measurement modes avaliable on the Trilogy when using the Fluoresence Module:
 \begin{itemize}
   \item 1. Raw Fluorescecne Mode: No calibration required.
@@ -166,77 +228,83 @@
   \item 3. Connect the Trilogy to a printer or a PC to collect the data. Touching the screen repeatedly causes an early-abort of Continuous Sampling measurments. 
 \end{itemize}
 
-\section{Calibration Overview}
-\subsection{Why Calibrate}
-\NP The Trilogy calibration procedure calculates the fluorescent singal to your units of measure. Once calibrated, the Trilogy can give you concentration readings directly, saving you from having to perform any calculations. 
+\section{Data Analysis and Calculations}
 
-\subsection{When to Calibrate}
-\begin{itemize}
-  \item 1. For greatest accuracy, calibrate before running a new batch of samples.
-  \item 2. Recalibrate if the ambient temperature changes by +/- 5 degrees Celsisus.
-  \item 3. Recalibrate after changing to a different optical module, or if you make measurements on a new analyte. 
-  \item 4. Verify the need to calibrate by reading a stable, known concentration standard immediately after calibration and again every few hours to see if readings have changed significantly. Recalibrate when the accuracy beomes unacceptable for your study.
-\end{itemize}
+\section{QA/QC Criteria}
 
-\subsection{Trilogy Calibration Options (Fluoresence and Turbidity)}
+\subsection{Calibration Overview}
+
+\NP The Trilogy calibration procedure calculates the fluorescent signal to your units of measure. Once calibrated, the Trilogy can give you concentration readings directly, saving you from having to perform any calculations. 
+
+\subsection{When to Calibrate?}
+
+\begin{enumerate}
+  \item For greatest accuracy, calibrate before running a new batch of samples.
+  \item Recalibrate if the ambient temperature changes by +/- 5 degrees Celsisus.
+  \item Recalibrate after changing to a different optical module, or if you make measurements on a new analyte. 
+  \item Verify the need to calibrate by reading a stable, known concentration standard immediately after calibration and again every few hours to see if readings have changed significantly. Recalibrate when the accuracy beomes unacceptable for your study.
+\end{enumerate}
+
+\subsection{Trilogy Calibration Options and Procedures}
+
 \NP There are two measurement modes available on the Trilogy when using either the Fluoresence or Turbidity Modules:
-\begin{itemize}
-  \item 1. Raw Fluoresence Mode- No calibration required
-  \item 2. Direct Concentration Mode- Calibration required 
-\end{itemize}
 
-\subsection{1. Raw Fluorescence Mode}
+\begin{enumerate}
+  \item Raw Fluoresence Mode - No calibration required
+  \item Direct Concentration Mode - Calibration required 
+\end{enumerate}
+
+\subsection{Raw Fluorescence Mode}
+
 \NP The Raw Fluorescence Mode should be used for qualitative measurement, for exmaple where measuring changes is required, rather than absolute concentration values. Readings are displayed in Relative Fluorescence Units RFU.
 
-\subsection{2. Direct Concentration Calibration}
+\NP A calibration is not necessary to measure fluorescence with the Trilogy. Simply use the Raw Fluorescence Mode to obtain the fluorescent value of a sample in Relative Fluorescence Units (RFU). 
+
+\NP Use the standard curve to determine the concentration of the analyte in the samples. The Trilogy does not manipulate the data while operating in the Raw Fluorescence Mode. 
+
+\NP It is not necessary to zero the Trilogy for use in the Raw Fluorescence Mode, however a blank sample should be run to determine background fluorescence. A solid secondary standard may be used to verify instrument stability and function.
+
+\subsection{Direct Concentration Calibration}
+
 \NP Direct Concentrations can be calibrated by using single or multi-point calibrations. In multi-point calibrations, up to five standards and a blank can be read generating a calibration curve for superior accuracy. The software uses these points to calculate direct concentrations. The Trilogy will display the actual concentration of your samples in units that were choosen during calibration. 
 
-\section{Trilogy Calibration Proceudres}
-\subsection{Raw Fluorescence Mode}
-\NP A calibration is not necessary to measure fluorescence with the Trilogy. Simply use the Raw Fluorescence Mode to obtain the fluorescent value of a sample in Relative Fluorescence Units (RFU). Use the standard curve to determine the concentration of the analyte in the samples. The Trilogy does not manipulate the data while operating in the Raw Fluorescence Mode. It is not necessary to zero the Trilogy for use in the Raw Fluorescence Mode, however a blank sample should be run to determine background fluorescence. A solid secondary standard may be used to verify instrument stability and function. 
+\NP The Direct Concentration Mode requires a calibration with one blank solution and at least one standard solution. 
 
-\subsection{Direct Calibration Mode}
-\NP The Direct Concentration Mode requires a calibration with one blank solution and at least one standard solution. The following procedure applies to all the fluorescence modules with the exception of the Chl Acidification and Non-Acidification modules. (There are separate procedures for these two exceptions). The procedure requires the use of at least one calibration standard, (Chlorophyll a, Rhodamine WT, etc.). Up to 5 standard solutions can be used for a Multi Point Calibration. Calibrations can be given a name and stored for future use. 
+\NP The following procedure applies to all the fluorescence modules with the exception of the Chl Acidification and Non-Acidification modules. (There are separate procedures for these two exceptions). 
 
-\section{"Direct Calibration" Procedure (Fluoresence and Turbidity Modules, Single Point and Multi Point Cal)}
+\NP The procedure requires the use of at least one calibration standard, (Chlorophyll a, Rhodamine WT, etc.). Up to 5 standard solutions can be used for a Multi Point Calibration. Calibrations can be given a name and stored for future use. 
+
+\subsection{"Direct Calibration" Procedure}
+
+\NP "Direct Calibraiton" can be used for the fluoresence and turbidity modules, single point and multi point calibrations.
+
 \NP The following procedure applies to Trilogy and the Fluoresence or Turbidity Modules.
-\subsection{Instructions}
-\begin{itemize}
-  \item 1. Turn on the Trilogy
-  \item 2. Select the module/application to be calibrated and confirm by touching "OK".
-  \item 3. On the home screen, touch "Calibrate" to begin a calibration sequence.
-  \item 4. Select "Run New Calibration"
-  \item 5. Select the unit of measurement 
-  \item 6. Insert the calibration "blank" and touch "OK"
-  \item 7. Enter the concentration for the first Standard. If using the Turner Designs Chlorophyll a Standard, this will be the concentration data supplied with the Standard. If doing multi point calibrations, be sure to use Standards in order of increasing concentration.
-  \item 8. Follow the screen prompt indicating that the standard should be inserted, touch OK.
-  \item 9. After the calibration is complete, either select "Proceed with Current Calibration" or select "Enter More Standards", in whcih case, return to the previous step.
-  \item 10. Save the calibration for future use (optional).
-  \item 11. Subsequent readings in the Direct Concentration mode reflect the actual concentration of the analyte. 
-  \item 12. Confirm successful completion of the calibration by measuring the same Standard. The displayed concentration should equal the value used in step 7. Optionally, the Solid Secondary Standard could now be adjusted to give the same reading for future calibrations.
-\end{itemize}
 
-\section{Extracted Chlorophyll Measurements with the Chl a -Acidification Fluorescent Module}
-\NP EPA Method 445.0 is a standard method for measuring extracted chlorophyll a and pheophythin a in marine and fresh water algae by fluroescence. It requires extraction with 90 percent acetone, measurements before and after acidification and some fairly simple calculations to arrive at the chlorophyll a and pheophytin concentrations.
-\NP A known concentration of pure chlorophyll a (as a standard) is required at least the first time you calibrate Trilogy. For greatest accuracy however, we recommend that you periodically (once every few months) use a known concentration of pure chlorophyll a in 90 percent acetone to recalibrate your instrument. 
-\section{Health and Safety}
+\NP Turn on the Trilogy
 
-\NP Describe the risk...
+\NP Select the module/application to be calibrated and confirm by touching "OK".
+
+\NP On the home screen, touch "Calibrate" to begin a calibration sequence.
+
+\NP Select "Run New Calibration"
+
+\NP Select the unit of measurement 
+
+\NP Insert the calibration "blank" and touch "OK"
+
+\NP Enter the concentration for the first Standard. If using the Turner Designs Chlorophyll a Standard, this will be the concentration data supplied with the Standard. If doing multi point calibrations, be sure to use Standards in order of increasing concentration.
+
+\NP Follow the screen prompt indicating that the standard should be inserted, touch OK.
+
+\NP After the calibration is complete, either select "Proceed with Current Calibration" or select "Enter More Standards", in whcih case, return to the previous step.
+
+\NP Save the calibration for future use (optional).
+
+\NP Subsequent readings in the Direct Concentration mode reflect the actual concentration of the analyte. 
+
+\NP Confirm successful completion of the calibration by measuring the same Standard. The displayed concentration should equal the value used in step 7. Optionally, the Solid Secondary Standard could now be adjusted to give the same reading for future calibrations.
 
 
-\subsection{Safety and Personnnel Protective Equipment}
-
-
-\section{Personnel \& Training Responsibilities}
-
-\NP Researchers training is required before this the procedures in this method can be used... 
-
-\NP Researchers using this SOP should be trained for the following SOPs:
-
-\begin{itemize}
-  \item SOP01 Laboratory Safety
-  \item SOP02 Field Safety
-\end{itemize}
 
 \section{Trouble Shooting}
 \subsection{Fluorescence Troubleshooting}
