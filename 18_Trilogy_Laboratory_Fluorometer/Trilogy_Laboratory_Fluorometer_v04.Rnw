@@ -30,6 +30,10 @@
 
 \NP The Trilogy Laboratory Fluorometer is a compact, multifunctional laboratory insturment that can be used for making fluoresence, absorbance, and turbidity measurements using the appropriate snap-in Optical Module. A color touch screen with simple menus makes for an intuitive user interface. 
 
+\NP When properly calibrated, the Trilogy Fluorometer will read out the concentration of the solution. 
+
+\NP Optical Modules contain the necessary light source and filters for the relevant application. 
+
 \tableofcontents
 
 \newpage
@@ -41,7 +45,7 @@
 
 \section{Acknowledgements}
 
-This SOP was orginally written by Isaac Medina and then substantially updated and improved by Virginia Pascal. 
+This SOP was orginally written by Isaac Medina and then substantially updated and improved by Virginia Paschal. 
 
 \section{Defintions}
 
@@ -68,6 +72,14 @@ This SOP was orginally written by Isaac Medina and then substantially updated an
 
 \section{Required Materials and Apparti}
 
+\NP The Trilogy accommodates 10 x 10 mm methacrylate and polystyrene cuvettes (minimum 2mL volume). 
+
+\NP Use 12 mm x 35mm glass test tubes for extracted chlorophyll measurements, and use methacrylate for ammonium measurements.
+
+\NP The Absorbance Module accommodates 10 x 10 mm methacrylate and polystyrene cuvettes as well as glass cuvettes (minimum 1.5 mL volume).
+
+\NP Use Polystyrene curvettes for measuring turbidity.
+
 \section{Reagents and Standards}
 
 \section{Estimated Time}
@@ -76,109 +88,149 @@ This SOP was orginally written by Isaac Medina and then substantially updated an
 
 \section{Procedures}
 
-\subsection{Extracted Chlorophyll Measurements with the Chl $\alpha$-Acidification Fluorescent Module}
+\subsection{Preparing to Analyze Samples}
+
+\NP Turn on Instrument.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Capture}
+  \caption{The instrument is turned on at the back.}
+  \label{fig:capture}
+\end{figure}
+
+\subsection{Determine and Select Appropriate Modules and Modes}
+
+The following modules are available for the Fluorometer: Absorbance Module, Turbidity Module, and Fluorecence Module. 
+
+\NP Install the appropriate module as shown in Figure~\ref{fig:module}. 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Capture2}
+  \caption{Fluorometer with a module installed.}
+  \label{fig:module}
+\end{figure}
+
+\NP After installing the module, use the menu to define mode???
+
+\begin{description}
+  \item[Absorbance Module] accepts interchangeable filter paddles so measurements can be made at different wavelenghts in order to identify or place a sample in a particular class of compounds. 
+  The standard filter paddle (Figure~\ref{fig:filterpaddle}) wavelengths/bandwidths are: 560/10; 600/10 and 750/10 nm.
+  
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{figure5}
+  \caption{Filter paddle installation.}
+  \label{fig:filterpaddle}
+\end{figure}
+
+  \NP There are two measurment modes available on the Trilogy when using the Absorbance Module:
+\begin{itemize}
+  \item 1. Raw Mode: No calibration required
+  \item 2. Direct Concentration Mode: Calibration required
+\end{itemize}
+  
+  
+  \item[Turbidity Module] uses an Infrared (IR) LED with a wavelength of 850 nm as required for reference method: ISO 7027/DIN EN 27027, "Water Quality- Determination of Turbidity" (Figure~\ref{fig:trubiditymenu}). Using Infrared allows Turbidity to be measured at wavelengths that are not normally absorbed by organic matter thereby reducing susceptibility to interference by sample color. 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{figure6turbidity}
+  \caption{Fluorometer menu with turbidity module installed.}
+  \label{fig:trubiditymenu}
+\end{figure}  
+  
+  
+  \NP Two measurement modes are avaliable on the Trilogy when using the Turbidity Module:
+
+\begin{description}
+\item[Raw Mode] should be used for qualitative measurement, for example where measuring changes is required, rather than absolute concentration values. Readings are displayed in Nephelometric Turbidity Units (NTU).
+  \item[Direct Concentration Mode] The Direct Concentration mode makes absolute measurements based on a calibration.
+\end{description}
+
+  \item[Fluoresence Module]
+  
+(Figure~\ref{fig:modulemenu}).
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Capture3}
+  \caption{Fluorometer menu with a florescence module installed.}
+  \label{fig:modulemenu}
+\end{figure}
+
+\NP Two measurement modes are avaliable on the Trilogy when using the Fluoresence Module:
+
+\begin{itemize}
+  \item Raw Fluoresence Mode: No calibration required. The Raw Fluoresence Mode should be used for qualitative measurement, for example where measuring changes is required, rather than absolute concentration values. Readings are displayed in Relative Fluoresence Units (RFU).
+  \item Direct Concentration Mode: Direct Concentration Mode: The Direct Concentration mode makes absolute measurements based on a calibration (see Calibration Overview).
+\end{itemize}
+
+\NP Touch "Mode" on the Home Screen to select the measurement mode (Figure~\ref{fig:fluoresencemode}).
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Capture4}
+  \caption{Fluoresence Mode Selection Module.}
+  \label{fig:fluoresencemode}
+\end{figure}
 
 \NP EPA Method 445.0 is a standard method for measuring extracted chlorophyll a and pheophythin a in marine and fresh water algae by fluroescence. It requires extraction with 90 percent acetone, measurements before and after acidification and some fairly simple calculations to arrive at the chlorophyll a and pheophytin concentrations.
 
 \NP A known concentration of pure chlorophyll $\alpha$ (as a standard) is required at least the first time you calibrate Trilogy. For greatest accuracy however, we recommend that you periodically (once every few months) use a known concentration of pure chlorophyll $\alpha$ in 90 percent acetone to recalibrate your instrument. 
 
 
+\end{description}
 
-\section{Modules}
-\NP There are several different modules available to the Trilogy Laboratory Fluorometer:
 
-\begin{itemize}
-  \item 1. The Absorbance Module accepts interchangeable filter paddles so measurements can be made at different wavelenghts in order to identify or place a samplein a particular class of compounds. The standard filter paddle wavelengths/bandwidths are: 560/10; 600/10 and 750/10 nm.
-  \item The Turbidity Module uses an Infrared (IR) LED with a wavelength of 850 nm as required for reference method: ISO 7027/DIN EN 27027, "Water Quality- Determination of Turbidity". Using Infrared allows Turbidity to be measured at wavelengths that are not normally absorbed by organic matter thereby reducing susceptibility to interference by sample color. 
-\end{itemize}
 
-\NP When properly calibrated, the Trilogy Fluorometer will read out the actual concentration of the solution. Optical Modules contain the necessary light source and filters for the relevant application. 
+\subsection{Mode Selection -- Absorbance}
 
-\section{Fluorometer Operation}
 
-\subsection{Measuring Samples}
 
-\NP There are two measurement modes avaliable on the Trilogy when using the Fluoresence Module:
-\begin{itemize}
-  \item 1. Raw Fluorescecne Mode: No calibration required.
-  \item 2. Direct Concentration Mode: No calibration required (see calibration overview).
-\end{itemize}
-\NP Touch "Mode" on the Home Screen to select the measurement mode.
-\begin{itemize}
-  \item 1. Raw Fluoresence Mode: The Raw Fluoresence Mode should be used for qualitative measurement, for example where measuring changes is required, rather than absolute concentration values. Readings are displayed in Relative Fluoresence Units (RFU).
-  \item 2. Direct Concentration Mode: The Direct Concentration mode makes absolute measurements based on a calibration (see Calibration Overview).
-\end{itemize}
+\subsection{Mode Selection -- Turbidity}
 
-\NP The Trilogy accommodates 10 x 10 mm methacrylate and polystyrene cuvettes (minimum 2mL volume). Use 12 mm x 35mm glass test tubes for extracted chlorophyll measurements, and use methacrylate for ammonium measurements.
-\begin{itemize}
-  \item 1. Open the lid of the trilogy and insert the cuvette. Close the lid.
-  \item 2. Touch "Sample ID" to name your sample (optional).
-  \item 3. Using the keypad, enter the sample name into the name field. Touch "Save" to save the sample ID.
-  \item 4. Touch "Measure Fluoresence" to commence measurement. The Trilogy will measure the sample for 6 seconds and report the average reading for the sample. 
-\end{itemize}
 
-\NP The Trilogy reports data on the "Home" screen and displays the results for the most recent 20 measurements. Use the arrow keys to scroll through the most recent measurements. The data automatically exports to a printer or PC when properly connected. Please note the Trilogy does NOT store more than 20 measurements at one time. If more than 20 readings are taken, the oldest reading will be overwritten. Measurements are not stored between power cycles. 
 
-\subsection{Continuous Sampling}
+\subsection{Mode Selection -- Fluoresence}
+
+
+
+\subsection{Single Sample Measurements}
+
+\NP Open the lid of the trilogy and insert the cuvette. Close the lid.
+
+\NP Touch "Sample ID" to name your sample (optional).
+
+\NP Using the keypad, enter the sample name into the name field. Touch "Save" to save the sample ID.
+
+\NP Touch "Measure Fluoresence" / "Measure Absorbance" / "Measure Turbidity" depending on the installed module.
+
+\NP The Trilogy will measure the sample for 6 seconds and report the average reading for the sample. 
+
+\NP The Trilogy reports data on the "Home" screen and displays the results for the most recent 20 measurements. 
+
+\NP Use the arrow keys to scroll through the most recent measurements. The data automatically exports to a printer or PC when properly connected. 
+
+\NP Please note the Trilogy does NOT store more than 20 measurements at one time. If more than 20 readings are taken, the oldest reading will be overwritten. 
+
+\NP Measurements are not stored between power cycles. 
+
+\subsection{Continuous Measurments}
+
 \NP The Continuous Sampling feature enables repeat measurements at user-defined intervals.
-\begin{itemize}
-  \item 1. Touch "Continuous Sampling" and turn the feature ON. Highlight the frequency of measurement and the numnber of total measurements. The maximum number of total measurements is 9999.
-  \item 2. Touch "OK" to return to the "Home" screen.
-  \item 3. Connect the Trilogy to a printer or a PC to collect the data. Touching the screen repeatedly causes an early-abort of Continuous Sampling measurments. 
-\end{itemize}
 
-\section{Absorbance Operation}
-\subsection{Measuring Samples}
-\NP The Absorbance Module accommodates 10 x 10 mm methacrylate and polystyrene cuvettes as well as glass cuvettes (minimum 1.5 mL volume).
-\begin{itemize}
-  \item 1. Open the lid and insert the cuvette. Close the lid.
-  \item 2. Touch "Sample ID" to name your sample (Optional). Using the keypad, enter the sample name into the name field. Touch "Save" to save the sample ID. 
-  \item 3. Touch "Measure Absorbance" to commence measurement. The Trilogy will measure the sample for 6 seconds and report the average reading for the sample. 
-\end{itemize}
+\NP Touch "Continuous Sampling" and turn the feature ON. Highlight the frequency of measurement and the numnber of total measurements. The maximum number of total measurements is 9999.
 
-\NP The Trilogy reports data on the "Home" screen and displays the results for the most recent 20 measurements. Use the arrow keys to scroll through the most recent measurements. The data automatically exports to a printer or PC when properly connected. Please note the Trilogy does NOT store more than 20 measurements at one time. If more than 20 readings are taken, the oldest reading will be overwritten. Measurements are not stored between power cycles.
+\NP Touch "OK" to return to the "Home" screen.
 
-\subsection{Continuous Sampling}
-\NP The Continuous Sampling feature enables repeat measurements at user-defined intervals.
-\begin{itemize}
-  \item 1. Touch "Continuous Sampling" and turn the feature ON. Highlight the frequency of measurement and the numnber of total measurements. The maximum number of total measurements is 9999.
-  \item 2. Touch "OK" to return to the "Home" screen.
-  \item 3. Connect the Trilogy to a printer or a PC to collect the data. Touching the screen repeatedly causes an early-abort of Continuous Sampling measurments. 
-\end{itemize}
+\NP Connect the Trilogy to a printer or a PC to collect the data. Touching the screen repeatedly causes an early-abort of Continuous Sampling measurments. 
 
-\section{Turbidity Operation}
-\subsection{Measuring Samples}
-\NP There are two measurment modes available on the Trilogy when using the Turbidity Module:
-\begin{itemize}
-  \item 1. Raw Mode: No calibration required
-  \item 2. Direct Concentration Mode: Calibration required
-\end{itemize}
-
-\NP Touch "Mode" on the House Screen to select the measurement mode.
-\begin{itemize}
-  \item 1.Raw Mode: The Raw Mode should be used for qualitative measurement, for example where measuring changes is required, rather than absolute concentration values. Readings are displayed in Nephelometric Turbidity Units (NTU).
-  \item 2. Direct Concentration Mode: The Direct Concentration mode makes absolute measurements based on a calibration.
-\end{itemize}
-
-\NP Use Polystyrene curvettes for measuring turbidity.
-\begin{itemize}
-  \item 1. Open the lid of the Trilogy and insert the curvette. Close the lid.
-  \item 2. Touch "Sample ID" to name your sample (optional).
-  \item 3. Using the keypad, enter the sample name into the name field. Touch "Save" to save the sample ID.
-  \item 4. Touch "Measure Turbidity" to commence measurement. The Trilogy will measure the sample for 6 seconds and report the average reading for the sample. 
-\end{itemize}
-
-\NP The Trilogy reports data on the "Home" screen and displays the results for the most recent 20 measurements. Use the arrow keys to scroll through the most recent measurements. The data automatically exports to a printer or PC when properly connected. Please note the Trilogy does NOT store more than 20 measurements at one time. If more than 20 readings are taken, the oldest reading will be overwritten. Measurements are not stored between power cycles.
-
-\subsection{Continuous Sampling}
-\NP The Continuous Sampling feature enables repeat measurements at user-defined intervals.
-\begin{itemize}
-  \item 1. Touch "Continuous Sampling" and turn the feature ON. Highlight the frequency of measurement and the numnber of total measurements. The maximum number of total measurements is 9999.
-  \item 2. Touch "OK" to return to the "Home" screen.
-  \item 3. Connect the Trilogy to a printer or a PC to collect the data. Touching the screen repeatedly causes an early-abort of Continuous Sampling measurments. 
-\end{itemize}
 
 \section{Data Analysis and Calculations}
+
+\NP When properly calibrated, the Trilogy Fluorometer will read out the actual concentration of the solution.
 
 \section{QA/QC Criteria}
 

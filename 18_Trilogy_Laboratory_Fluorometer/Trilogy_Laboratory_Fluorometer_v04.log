@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2019.4.23)  15 JUN 2019 17:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2019.4.23)  15 JUN 2019 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -525,7 +525,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../pomona.jpg, id=158, 460.557pt x 492.75pt>
+<../pomona.jpg, id=139, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
 Package pdftex.def Info: ../pomona.jpg used on input line 73.
@@ -541,13 +541,7 @@ Overfull \hbox (2.12527pt too wide) in paragraph at lines 73--74
 
 (./Trilogy_Laboratory_Fluorometer_v04.toc [1
 
-{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>]
-Overfull \hbox (3.00818pt too wide) in paragraph at lines 17--17
- [][] [][]\OT1/cmr/m/n/12 Ex-tracted Chloro-phyll Mea-sure-ments with the Chl $
-\OML/cmm/m/it/12 $\OT1/cmr/m/n/12 -Acidification Flu-o-res-cent Mod- 
- []
-
-)
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pomona.jpg>])
 \tf@toc=\write4
 \openout4 = `Trilogy_Laboratory_Fluorometer_v04.toc'.
 
@@ -561,74 +555,83 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 129.
+(hyperref)                be the same. Added a new anchor on input line 141.
 
+<Capture.JPG, id=191, 387.69844pt x 114.4275pt>
+File: Capture.JPG Graphic file (type jpg)
+ <use Capture.JPG>
+Package pdftex.def Info: Capture.JPG used on input line 147.
+(pdftex.def)             Requested size: 328.82707pt x 97.0543pt.
+ [3]
+<Capture2.JPG, id=203, 347.79938pt x 165.61874pt>
+File: Capture2.JPG Graphic file (type jpg)
+ <use Capture2.JPG>
+Package pdftex.def Info: Capture2.JPG used on input line 160.
+(pdftex.def)             Requested size: 328.82707pt x 156.5914pt.
+ [4 <./Capture.JPG> <./Capture2.JPG>] <figure5.JPG, id=213, 237.88875pt x 207.7
+7625pt>
+File: figure5.JPG Graphic file (type jpg)
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 129.
+<use figure5.JPG>
+Package pdftex.def Info: figure5.JPG used on input line 173.
+(pdftex.def)             Requested size: 328.82707pt x 287.21658pt.
+ <figure6turbidity.JPG, id=215, 471.26062pt x 325.96782pt>
+File: figure6turbidity.JPG Graphic file (type jpg)
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 129.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 129.
-
-[3]
+<use figure6turbidity.JPG>
+Package pdftex.def Info: figure6turbidity.JPG used on input line 189.
+(pdftex.def)             Requested size: 328.82707pt x 227.44972pt.
+ [5 <./figure5.JPG>]
+<Capture3.JPG, id=225, 458.46281pt x 214.55156pt>
+File: Capture3.JPG Graphic file (type jpg)
+ <use Capture3.JPG>
+Package pdftex.def Info: Capture3.JPG used on input line 208.
+(pdftex.def)             Requested size: 328.82707pt x 153.89099pt.
+ [6 <./figure6turbidity.JPG> <./Capture3.JPG>]
+<Capture4.JPG, id=233, 478.78876pt x 357.58594pt>
+File: Capture4.JPG Graphic file (type jpg)
+ <use Capture4.JPG>
+Package pdftex.def Info: Capture4.JPG used on input line 224.
+(pdftex.def)             Requested size: 328.82707pt x 245.58873pt.
+ [7 <./Capture4.JPG>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 149.
+(hyperref)                be the same. Added a new anchor on input line 287.
 
-[4]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 181.
-
-[5]
+[8] [9] [10]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 200.
+(hyperref)                be the same. Added a new anchor on input line 362.
 
-[6]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 235.
-
-[7] [8]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 310.
-
-[9] [10] 
+[11] 
 AED: lastpage setting LastPage
-[11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
+[12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
  (./Trilogy_Laboratory_Fluorometer_v04.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 348.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
 Package rerunfilecheck Info: File `Trilogy_Laboratory_Fluorometer_v04.out' has 
 not changed.
-(rerunfilecheck)             Checksum: D6001E9E12CB80A26B3A85AD1B07CF6C;2521.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 348.
+(rerunfilecheck)             Checksum: 1E104B2CF5B67AC27798A4683516D722;2336.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 400.
  ) 
 Here is how much of TeX's memory you used:
- 8075 strings out of 494820
- 115628 string characters out of 3178049
- 208856 words of memory out of 3000000
- 11062 multiletter control sequences out of 15000+200000
+ 8130 strings out of 494820
+ 116423 string characters out of 3178049
+ 208212 words of memory out of 3000000
+ 11091 multiletter control sequences out of 15000+200000
  9606 words of font info for 36 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,18n,49p,516b,462s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,49p,455b,562s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Trilogy_Laboratory_Fluorometer_v04.pdf (11 pages, 165735 byte
+Output written on Trilogy_Laboratory_Fluorometer_v04.pdf (12 pages, 375470 byte
 s).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
- 318 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 340 PDF objects out of 1000 (max. 8388607)
+ 312 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
