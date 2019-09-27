@@ -36,9 +36,12 @@
 
 \section{Definitions}
 
-\NP Probe = the entire Manta2 apparatus that includes the five sensors.
+\begin{description}
+\item[Probe or Sonde] the entire Manta2 apparatus that includes the five sensors.
 
-\NP Sensor = one of the detectors on the probe, including those for temperature, pH, conductivity, dissolved oxygen, and the reference electrode.
+\item[Sensor] one of the detectors on the probe, including those for temperature, pH, conductivity, dissolved oxygen, and the reference electrode.
+
+\end{description}
 
 \section{Interferences}
 
@@ -95,11 +98,25 @@ Researchers using this SOP should be trained for the following SOPs:
 
 \subsection{Calibration}
 
-\NP Calibration of each sensor requires similar procedures. Set up your probe by removing the blue plug and covering it with a plastic protector. Insert the underwater cable in it's place to connect the Amphibian and the Manta. Turn on the Amphibian by pressing the power button on the bottom right corner. Press the Windows icon in the lower left corner. Scroll down to the bottom of the main page and select Amp\_2\_2\_6 \emph{or} use the short-cut button on the Amphibian numberpad \textbf{P1}. Once the interface loads, press ``Manta2" on the lower left bar, and select ``calibrate" from the menu that appears. Select the sensor you would like to calibrate. 
+\NP Calibration of each sensor requires similar procedures. First, set up your probe. Remove the blue plug and cover it with a plastic protector. Insert the underwater cable in its place to connect the Amphibian and the Manta. 
 
-\NP Standardizing pH. To standardize the pH meter, follow the steps above and select ``pH units" from the Manta2 menu. The screen will instruct you to input the value of your first standard (pH) in the unshaded box. Then, unscrew just the blue cap from the larger cap of the probe, leaving the clear plastic cup surrounding the sensors in place. Pour a small amount of the first standard into the cup (with the probe facing upward), place the lid on, and shake, to rinse sensors in the standard. Do this twice in total and then fill the cup with 1 inch of the first standard. Once the red line on the chart of the Amphibian has stabalized (is coming out flat), press ``Ok". The screen will now prompt you to put in your second standard. Rinse and shake twice with DI water, and then twice with your second standard, before filling it above the sensors and repeating your process from above. When prompted, select the option to do a three-point calibration, and repeat these steps (including two rinses with DI and then with the standard) with your third standard. You have just set a "calibration curve."
+\NP Turn on the Amphibian by pressing the power button on the bottom right corner. Press the Windows icon in the lower left corner. Select Amp\_2\_2\_6 \emph{or} use the short-cut button on the Amphibian numberpad \textbf{P1}. You may need to scroll down to find the icon. Once the interface loads, press ``Manta2" on the lower left bar, and select ``calibrate" from the menu that appears. Select the sensor you would like to calibrate. 
 
-\NP Calibrating the other sensors is very similar. Conductivity is a one-point calibration with one standard. For dissolved oxygen, pour tap water into a small bottle, about half full. Shake the bottle vigorously for several minutes, incorporating as much air as possible into the water. Go through the steps to start calibration of HDO, and pour the water into the cup. For dissolved oxygen, the sensor needs to be stable for 3 minutes before you press ``Ok". 
+\NP Standardizing pH. To standardize the pH meter, follow the steps above and select ``pH units" from the Manta2 menu. Input the value of your first standard (pH) in the unshaded box. 
+
+\NP Unscrew just the blue cap from the larger cap of the probe, leaving the clear plastic cup surrounding the sensors in place. Pour a small amount of the first standard into the cup (with the probe facing upward), place the lid on, and shake to rinse sensors in the standard. Do this twice, and pour out the standard into a waste beaker (pH standards eventually must go in a waste container) after each shake. Then, fill the cup with 1 inch of the standard. Once the red line on the chart of the Amphibian has stabilized (is coming out flat), press ``Ok". 
+
+\NP The screen will now prompt you to put in your second standard. Rinse and shake twice with DI water, and then twice with your second standard, before filling it above the sensors and repeating your process from above. When prompted, select the option to do a three-point calibration, and repeat these steps (including two rinses with DI and then with the standard) with your third standard. You have just set a "calibration curve." IS AN SRF OF 63 OK? ADD SOMETHING LIKE: "Accept a sensory response factor between (low limit) and (high limit)." The screen will tell you that the calibration is complete.
+
+\NP Calibrating the other sensors is very similar. Conductivity is the simplest; it is a one-point calibration with one standard. The conductivity standard from LabChem Inc has a resistivity of 2765 umho$/$cm, or 2.765 mS$/$cm.  Before measuring conductivity, wash twice with distilled water to wash any remaining pH standard off of the probe. 
+
+\NP Tap "Manta2", then "Calibrate", then "spCond mS$/$cm." Input the value of 2.765 in the unshaded box. Pour a small amount of the conductivity standard into the cup (with the probe facing upward), place the lid on, and shake to rinse sensors in the standard. Do this twice, and pour out the standard into a waste beaker (this standard can go down the drain) after each shake. Then, fill the cup with 1 inch of the standard. Once the red line on the chart of the Amphibian has stabilized (is coming out flat), press ``Ok" to accept the standard value. IS AN SRF OF 115 OK?
+
+\NP Before measuring dissolved oxygen, wash twice with distilled water to wash any remaining conductivity standard off of the probe. Both the HDO \%sat and HDO mg/L need to be calibrated. Next to "Mantra2" is the Circulator control. If the circulator is on, set it to "CircOff." Next, tap "Manta2", "Calibrate", then "HDO \%sat." Input the BP ("barometric/atmospheric pressure") for your location. This can be found on an online weather station, though the units of pressure may need to be converted to mm Hg. The BP will be rounded to 3 significant figures. Throughout calibration, whenever you are prompted to reset HDO to factory settings, select “NO." IS IT CORRECT TO SELECT "NO"? 
+
+\NP Here, I have adapted the Manta2 manual (https://www.rshydro.co.uk/PDFs/Eureka/Manta2-manual.pdf.) for preparing an air-saturated water sample. Put a half-liter of tap water in a liter jar (approximate volumes are OK) and shake the jar vigorously for one minute. Take the lid off the jar (assuming you put one on it in the first place) and let the water stand for about five minutes to let the air bubbles float out. Fill your calibration cup until your aerated water covers the DO membrane by a centimeter or so. Wait a few minutes for the temperature to equilibrate. The reading needs to be stable for 3 minutes before you hit “OK” to accept the \%sat reading. After you hit "OK", \%sat calibration is complete. IS AN SRF OF 100 OK? Quickly move on to HDO mg/L calibration, as we will use the same solution of aerated water. 
+
+\NP On the snapshot screen, note the temperature. Quickly, tap "Manta2", then "Calibrate", then "HDO mg/L." Input the temperature, the \%sat of the water determined by the earlier calibration, and the pressure into a calculator such as http://www.waterontheweb.org/under/waterquality/dosatcalc.html to convert \%sat to mg/L. Input the mg/L value as your standard value. Wait 20 seconds to see if the readout value is stable. If it is, press OK to finish the calibration. If it changes significantly, exit, read \%sat again, then use that new \%sat value to calibrate mg/L. The change is due to a change in \%sat HDO over time that happens when we let the water sit. 
 
 \section{Field Procedure}
 

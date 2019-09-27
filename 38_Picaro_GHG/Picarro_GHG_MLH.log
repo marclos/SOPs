@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  24 JAN 2019 15:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2019.4.23)  14 AUG 2019 09:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./Picarro_GHG_MLH.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
-rainian, russian, bulgarian, loaded.
+rainian, bulgarian, russian, loaded.
 (../SOP3.cls
 Document Class: ../SOP3 2018/02/08 v3.3 Modified article class for standard ope
 rating procedures
@@ -419,7 +419,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 65.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../pomona.jpg, id=68, 460.557pt x 492.75pt>
+<../pomona.jpg, id=72, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
 Package pdftex.def Info: ../pomona.jpg used on input line 65.
@@ -450,10 +450,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
- [3] <"graphics/calibration".jpg, id=108, 575.14874pt x 213.04594pt>
+ [3] <"graphics/calibration".jpg, id=113, 575.14874pt x 213.04594pt>
 File: "graphics/calibration".jpg Graphic file (type jpg)
 
 <use "graphics/calibration".jpg>
@@ -472,59 +469,59 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
  [4 <./graphics/calibration.jpg>] [5]
-<"graphics/pump_multiplexer".jpg, id=132, 686.565pt x 917.4275pt>
+<"graphics/pump_multiplexer".jpg, id=137, 686.565pt x 917.4275pt>
 File: "graphics/pump_multiplexer".jpg Graphic file (type jpg)
 
 <use "graphics/pump_multiplexer".jpg>
-Package pdftex.def Info: "graphics/pump_multiplexer".jpg used on input line 247
+Package pdftex.def Info: "graphics/pump_multiplexer".jpg used on input line 248
 .
 (pdftex.def)             Requested size: 234.8775pt x 313.85306pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] <"graphics/whitetriangleusb".jpg, id=146, 700.6175pt x 363.3575pt>
+[6] <"graphics/whitetriangleusb".jpg, id=150, 700.6175pt x 363.3575pt>
 File: "graphics/whitetriangleusb".jpg Graphic file (type jpg)
 
 <use "graphics/whitetriangleusb".jpg>
-Package pdftex.def Info: "graphics/whitetriangleusb".jpg used on input line 269
+Package pdftex.def Info: "graphics/whitetriangleusb".jpg used on input line 270
 .
 (pdftex.def)             Requested size: 234.8775pt x 121.81006pt.
  [7 <./graphics/pump_multiplexer.jpg>]
-<"graphics/COMM".jpg, id=159, 595.22375pt x 548.0475pt>
+<"graphics/COMM".jpg, id=163, 595.22375pt x 548.0475pt>
 File: "graphics/COMM".jpg Graphic file (type jpg)
 
 <use "graphics/COMM".jpg>
-Package pdftex.def Info: "graphics/COMM".jpg used on input line 293.
+Package pdftex.def Info: "graphics/COMM".jpg used on input line 294.
 (pdftex.def)             Requested size: 234.8775pt x 216.25478pt.
  [8 <./graphics/whitetriangleusb.jpg> <./graphics/COMM.jpg>] [9] [10] [11] [12]
  
 AED: lastpage setting LastPage
 [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 493.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 493.
  (./Picarro_GHG_MLH.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 493.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 493.
 Package rerunfilecheck Info: File `Picarro_GHG_MLH.out' has not changed.
-(rerunfilecheck)             Checksum: 4D1ACF6ADF450E4EA6E01ADC57CE1DA7;878.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
+(rerunfilecheck)             Checksum: B3A6DCE2A05B3C19AFA6DCDB15DA294D;945.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 493.
  ) 
 Here is how much of TeX's memory you used:
- 7391 strings out of 494820
- 105902 string characters out of 3178050
- 200542 words of memory out of 3000000
- 10363 multiletter control sequences out of 15000+200000
+ 7396 strings out of 494820
+ 105979 string characters out of 3178049
+ 200545 words of memory out of 3000000
+ 10366 multiletter control sequences out of 15000+200000
  8592 words of font info for 33 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,18n,49p,770b,537s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,51p,770b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Picarro_GHG_MLH.pdf (13 pages, 407614 bytes).
+Output written on Picarro_GHG_MLH.pdf (13 pages, 408090 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
- 124 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
