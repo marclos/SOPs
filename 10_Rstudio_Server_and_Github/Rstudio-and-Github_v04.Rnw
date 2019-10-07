@@ -138,17 +138,17 @@ The following have made substantial contributions:
 
 \NP For non-Pomona College students, you'll need a new login each semester, which can be obtained from the help desk at Cowart Information Technology Services building.
 
-\NP Depending on your location, you can login to the server with \url{rstudio.campus.pomona.edu}, if you are on the Pomona's network, or \url{rstudio.pomona.edu} from off campus including non-Pomona networks.
+\NP Depending on your location, you can login to the server with \url{rstudio.campus.pomona.edu} if you are on the Pomona's network (or can use the VPN while off campus). However, if you are off campus and can't use the Pomona network, use this address: \url{rstudio.pomona.edu} from off campus including non-Pomona networks.
 
-\NP From non-Pomona college networks you might get an error:
+\NP From non-Pomona college networks you might get an error (Figure~\ref{fig:privacyerror}). If you get this error, go to Advanced and accept the privacy settings to continue.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.99\textwidth]{graphics/Connect_Web_Privacy.JPG}
 \caption{Privacy error can be ignored by going to the Advanced settings.}
+\label{fig:privacyerror}
 \end{figure}
 
-If you get this error, go to Advanced and accept the privacy settings to continue.
 
 \subsection{4 Rstudio Panels}
 
@@ -159,11 +159,11 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 \NP To see all of the panels, create the fourth window, we'll need to add create a new text file. Go to File/New File/R Sweave which opens a \LaTeX\ file template. Save the file as "Test.Rnw" and now you have four windows.
 
 \begin{description}
-  \item[Upper Left --- Text and Code -- Rnw, \TeX, Txt, and Rmd files] TBD  
+  \item[Upper Left --- Text and Code -- Rnw, \TeX, Txt, and Rmd files] This window usually has the text files you are using to write and edit code and text. If there is not text open, this window will not be present and the console will take up the entire left side. A few things to note: You can have Rnw, Tex, dataframe previews, and text files open in this panel. I suggest you close ones you are not using to avoid working on stuff that you mean to.  
   
   \item[Lower Left -- Console and Compile PDF windows] This is the R console, where you can enter (type directly or submit from the panal above) commands in to R from above. Without a Rmd/Rnw file open this panel might take the entire left side of the program's interface. This is where you can type or submit R commands and were results are displayed. Also, any errors are reported in red here. If you have compiled a LaTeX file, the log file of the process will also be displayed.
   
-  \item[Lower Right -- Files/Plots/Packages/Help/Viewer] TBD
+  \item[Lower Right -- Files/Plots/Packages/Help/Viewer] This panel is handy to see what files are in your workspace, but also shows that packages that have been installed. When you make a plot, it will show up in this panel, but there are times that the plot is too big for the window. You might get a warning if that is the case, where you can usually resize the window to make the plat show up. Finally, it's a handy place to get the help manual to show up. 
 
   \item[Upper Right -- Environment/History/Git Panel] You can use the ``Environment'' tab to see the files that R as access to. The ``History'' tab displays a history of the commands you have submitted and finally the ''Git'' tab can be used to manage files between the Github server and the local pomona server. 
   
@@ -176,7 +176,9 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \NP R, Rstudio, and Github can easily be installed on a desktop computer, however, please start by using the server versions via Rstudio. 
 
-\NP Rstudio Server located at \href{http://rstudio.campus.pomona.edu}{\textbf{rstudio.campus.pomona.edu}}. Login using your Pomona College username and password.
+\NP Rstudio Server located at \href{http://rstudio.campus.pomona.edu}{\textbf{rstudio.campus.pomona.edu}}. Remember address only works if you are on Pomona's network. 
+
+\NP Login using your Pomona College username and password. This is the address for when you are on campus and using a pomona login name. 
 
 \NP To set up, change Rstudio's weave option to 'knitr'. Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' from Sweave to knitr. This will have minor, but real changes in how files are compiled. Knitr has relatively new and more robust option.
 
@@ -208,13 +210,14 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
   \begin{enumerate}
   \item Go to Profile, in the upper right top of the Github page. Unless you have uploaded a picture of yourself, profile image is a tetris looking icon.
   \item Select the menu item ``Settings.''
-  \item Using the left menu, select the ``SSH and GPG keys'' button.
-  \item Click on new SSH key, type in name of key (e.g. 'myRstudio SSH key')
+  \item Using the left menu, select the ``SSH and GPG keys'' button (Figure~\ref{fig:githubkey}).
+  \item Click on new SSH key, type in name of key (e.g. `myRstudio SSH key')
   
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{graphics/Github_SavedSSH.jpg}
+\includegraphics[width=0.7\textwidth]{graphics/Github_SavedSSH.jpg}
 \caption{Creating the connection between Rstudio and Gitub requires a `key'. We generate the key in Rstudio and then we tell Github what the key is.}
+\label{fig:githubkey}
 \end{figure}
 
   \item Paste in the RSA key, from your clipboard, into the window below.
@@ -244,7 +247,9 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 \NP We need to get the url and SSH key for Rstudio and to accomplish this we ``Clone'' the Github repository. Click on the ''clone or download'' button (Figure \ref{fig:step1}).
 
 
-\NP Next we will 'Clone with SSH'. If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box. If you skip switching to SSH, it's really hard to fix the project afterwards. You can copy the clone information by clicking on the little clipboard on the right of the address (Figure \ref{fig:step2}).
+\NP Next we will 'Clone with SSH'. \textbf{IMPORTANT:} If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box. If you skip switching to SSH, it's really hard to fix the project afterwards. 
+
+\NP Copy the clone information by clicking on the little clipboard on the right of the address (Figure \ref{fig:step2}).
 
 \begin{figure}[H]
 \centering
@@ -270,7 +275,7 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 \label{fig:step4}
 \end{figure}
 
-When you arrive in the ``Clone Git Repostory'' window, you can simply paste your clipboard into the Repository URL. This usually fills in the project directory name too. But if not, you can type in the name, in this case, "beginnersluck" (Figure \ref{fig:step5}).
+When you arrive in the ``Clone Git Repostory'' window, you can simply paste your clipboard into the Repository URL, use \texttt{Cntrl-V} to paste in the text. This usually fills in the project directory name too. But if not, you can type in the name, in this case, "beginnersluck" (Figure \ref{fig:step5}).
 
 \begin{figure}[H]
 \centering
@@ -306,7 +311,7 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 
 \NP Pulling a Repository is downloading all the changed files into your local (or server) directory. Using the downward facing blue arrow that labeled ``Pull'' in the Git tab in Rstudio.
 
-\section{Becoming a Collaborator}
+\section{Becoming a Collaborator -- Wait for Instructions Before Beginning This.}
 
 \NP To contribute to a project, you must be able ``Push'' and ``Pull'' to the respository. 
 
@@ -315,23 +320,7 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 \NP Once this has been done you can ``Push'' and ``Pull'' to the respository, but let's learn more about how to use R to create this project. 
 
 
-
-
 \section{Working on Projects in Rstudio}
-
-
-\section{Downloading R, Rstudio, and Github as desktop programs}
-
-\NP Note new users: Please use the server mode to begin using this software. Later you can use the desktop versions. 
-
-\NP To accomplish install the programs on the local harddrive, download and install the programs in the following order: 
-
-\begin{enumerate}
-  \item R \url{https://cran.r-project.org/}
-  \item RStudio \url{https://www.rstudio.com/}
-  \item Github desktop \url{https://desktop.github.com/}
-\end{enumerate}
-
 
 \subsection{Best Practices}
 
@@ -399,6 +388,25 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 
 \NP At this point, you can start using the Github respitories that have already been created.
 
+
+\section{Advanced Topics}
+
+\subsection{Create and knitr new Rmd file}
+
+TBD
+
+\subsection{Downloading R, Rstudio, and Github as desktop programs}
+
+\NP Note new users: Please use the server mode to begin using this software. Later you can use the desktop versions. 
+
+\NP To accomplish install the programs on the local harddrive, download and install the programs in the following order: 
+
+\begin{enumerate}
+  \item R \url{https://cran.r-project.org/}
+  \item RStudio \url{https://www.rstudio.com/}
+  \item Github desktop \url{https://desktop.github.com/}
+\end{enumerate}
+
 \subsection{Creating a New Repository}
 
 \NP Creating a respository in Github is pretty easy, but there are a couple of decision points worth pointing out.
@@ -419,11 +427,13 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 
 \subsection{Clone New Project}
 
-\subsection{Create and knitr new Rmd file}
+TBD
 
-\subsection{Commit changes}
+%\subsection{Create and knitr new Rmd file}
 
-\subsection{Push}
+%\subsection{Commit changes}
+
+%\subsection{Push}
 
 \section{Troubleshooting}
 
