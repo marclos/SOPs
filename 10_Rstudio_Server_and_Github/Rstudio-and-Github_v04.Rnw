@@ -180,13 +180,13 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \NP Login using your Pomona College username and password. This is the address for when you are on campus and using a pomona login name. 
 
-\NP To set up, change Rstudio's weave option to 'knitr'. Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' from Sweave to knitr. This will have minor, but real changes in how files are compiled. Knitr has relatively new and more robust option.
+\NP To set up, change Rstudio's weave option to 'knitr'. Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' box at the top from Sweave to knitr. This will have minor, but real changes in how files are compiled. Knitr has relatively new and more robust option. Apply and close window. 
 
 \NP If using the downloaded Rstudio, start R Studio from the program files and this will automatically start an R console window.
 
 \subsection{Creating a Connection between Github and RStudio}
 
-\NP Open Rstudio -- which can be either as a local installation or using an Rstudio Server via your webbrowser.
+\NP Open Rstudio -- which can be either as a local installation or using an Rstudio Server via your webbrowser. However for this class, I continue to recommend
 
 \NP To use Rstudio's version control, you must create a SSH Key that is used to open a secure connections between RStudio and Github.
 
@@ -249,7 +249,7 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \NP Next we will 'Clone with SSH'. \textbf{IMPORTANT:} If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box. If you skip switching to SSH, it's really hard to fix the project afterwards. 
 
-\NP Copy the clone information by clicking on the little clipboard on the right of the address (Figure \ref{fig:step2}).
+\NP Copy the clone information by clicking on \textbf{the little clipboard} on the right of the address (Figure \ref{fig:step2}).
 
 \begin{figure}[H]
 \centering
@@ -275,7 +275,7 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 \label{fig:step4}
 \end{figure}
 
-When you arrive in the ``Clone Git Repostory'' window, you can simply paste your clipboard into the Repository URL, use \texttt{Cntrl-V} to paste in the text. This usually fills in the project directory name too. But if not, you can type in the name, in this case, "beginnersluck" (Figure \ref{fig:step5}).
+When you arrive in the ``Clone Git Repostory'' window, you can simply paste your clipboard into the Repository URL, use \texttt{Ctrl-V} to paste in the text. This usually fills in the project directory name too. But if not, you can type in the name, in this case, "beginnersluck" (Figure \ref{fig:step5}). Then click on the ``Create Project.'' button. 
 
 \begin{figure}[H]
 \centering
@@ -284,7 +284,7 @@ When you arrive in the ``Clone Git Repostory'' window, you can simply paste your
 \label{fig:step5}
 \end{figure}
 
-\NP For many new users, Rstudio may claim some problem establishing authenticity (Figure \ref{fig:step6}). Type 'yes'. Then hit okay. I am not exactly sure why this step exists. 
+\NP For many new users, Rstudio may claim some problem establishing authenticity (Figure \ref{fig:step6}). Type `yes'. Then hit okay. I am not exactly sure why this step exists. 
 
 \begin{figure}[H]
 \centering
