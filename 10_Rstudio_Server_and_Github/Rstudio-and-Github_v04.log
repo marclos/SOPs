@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2019.11.11)  24 FEB 2020 09:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2019.11.11)  24 FEB 2020 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -686,77 +686,90 @@ Overfull \hbox (0.85103pt too wide) in paragraph at lines 382--383
 ub
  []
 
-<graphics/MgaV9.png, id=360, 482.80376pt x 456.70625pt>
+<graphics/stagedcheckboxes.png, id=360, 963.6pt x 542.025pt>
+File: graphics/stagedcheckboxes.png Graphic file (type png)
+
+<use graphics/stagedcheckboxes.png>
+Package pdftex.def Info: graphics/stagedcheckboxes.png used on input line 409.
+(pdftex.def)             Requested size: 465.06004pt x 261.59158pt.
+ [14]
+<graphics/MgaV9.png, id=366, 482.80376pt x 456.70625pt>
 File: graphics/MgaV9.png Graphic file (type png)
 
 <use graphics/MgaV9.png>
-Package pdftex.def Info: graphics/MgaV9.png used on input line 423.
+Package pdftex.def Info: graphics/MgaV9.png used on input line 431.
 (pdftex.def)             Requested size: 234.8775pt x 222.17822pt.
- [14]
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.10
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.445 \item P
+             ush <./graphics/stagedcheckboxes.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 445.
+(hyperref)                be the same. Added a new anchor on input line 453.
 
-[15 <./graphics/MgaV9.png>]
+[16 <./graphics/MgaV9.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 491.
+(hyperref)                be the same. Added a new anchor on input line 499.
 
-<graphics/IdentityError.png, id=383, 640.3925pt x 310.15875pt>
+<graphics/IdentityError.png, id=393, 640.3925pt x 310.15875pt>
 File: graphics/IdentityError.png Graphic file (type png)
 
 <use graphics/IdentityError.png>
-Package pdftex.def Info: graphics/IdentityError.png used on input line 497.
+Package pdftex.def Info: graphics/IdentityError.png used on input line 505.
 (pdftex.def)             Requested size: 234.8775pt x 113.75362pt.
- [16]
-Overfull \hbox (13.8916pt too wide) in paragraph at lines 516--517
+ [17]
+Overfull \hbox (13.8916pt too wide) in paragraph at lines 524--525
 [][]\OT1/cmr/bx/n/12 17.7 \OT1/cmr/m/n/12 (un)Fortunately, stu-dents are very g
 ood at dis-cov-er-ing ways that the pull/commit/push
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.521 \subsection{`Merge' Errors}
+l.529 \subsection{`Merge' Errors}
                                   <./graphics/IdentityError.png>]
-<graphics/UnmergedError.jpg, id=410, 643.40375pt x 308.15125pt>
+<graphics/UnmergedError.jpg, id=416, 643.40375pt x 308.15125pt>
 File: graphics/UnmergedError.jpg Graphic file (type jpg)
 
 <use graphics/UnmergedError.jpg>
-Package pdftex.def Info: graphics/UnmergedError.jpg used on input line 527.
+Package pdftex.def Info: graphics/UnmergedError.jpg used on input line 535.
 (pdftex.def)             Requested size: 234.8775pt x 112.49072pt.
 
-<graphics/MergeError.jpg, id=411, 829.0975pt x 161.60374pt>
+<graphics/MergeError.jpg, id=417, 829.0975pt x 161.60374pt>
 File: graphics/MergeError.jpg Graphic file (type jpg)
 
 <use graphics/MergeError.jpg>
-Package pdftex.def Info: graphics/MergeError.jpg used on input line 540.
+Package pdftex.def Info: graphics/MergeError.jpg used on input line 548.
 (pdftex.def)             Requested size: 234.8775pt x 45.7789pt.
- [18 <./graphics/UnmergedError.jpg> <./graphics/MergeError.jpg>]
+ [19 <./graphics/UnmergedError.jpg> <./graphics/MergeError.jpg>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 590.
+(hyperref)                be the same. Added a new anchor on input line 598.
 
-[19] 
+[20] 
 AED: lastpage setting LastPage
-[20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 608.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 608.
+[21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 616.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 616.
  (./Rstudio-and-Github_v04.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 608.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 608.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 616.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 616.
 Package rerunfilecheck Info: File `Rstudio-and-Github_v04.out' has not changed.
 
 (rerunfilecheck)             Checksum: 27995B5E1C901875425F0182662BB83B;2517.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 608.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 616.
  ) 
 Here is how much of TeX's memory you used:
- 8007 strings out of 494820
- 115659 string characters out of 3178048
- 204734 words of memory out of 3000000
- 10908 multiletter control sequences out of 15000+200000
+ 8015 strings out of 494820
+ 115852 string characters out of 3178048
+ 204782 words of memory out of 3000000
+ 10913 multiletter control sequences out of 15000+200000
  9775 words of font info for 37 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  36i,18n,49p,940b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -766,10 +779,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Rstudio-and-Github_v04.pdf (20 pages, 1676292 bytes).
+Output written on Rstudio-and-Github_v04.pdf (21 pages, 1826347 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 168 named destinations out of 1000 (max. 500000)
- 375 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 380 words of extra memory for PDF output out of 10000 (max. 10000000)
 
