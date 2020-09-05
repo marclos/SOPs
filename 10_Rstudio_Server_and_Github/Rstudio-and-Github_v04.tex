@@ -279,15 +279,16 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \subsection{Linking an RStudio Project to a Github Repository}
 
-\NP To link a Github repository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio.
-
+\NP To link a Github repository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio. Unfortunately, the a new interface in github, has a button that labeled ``code'', but that's an easy work around.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{graphics/CloningGithub.jpg}
-\caption{Step 1: Select the green button, "Clone or Download"}
+\includegraphics[width=0.8\textwidth]{graphics/Github_GreenCodeButton.png}
+\caption{Step 1: Select the green button, ``Code''.}
 \label{fig:step1}
 \end{figure}
+
+
 
 \NP I have created a simple repository to begin learning how to use R Studio.
 
@@ -295,17 +296,15 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \NP Select this repository. Note the 'README.md', click on it to view it. The suffix, md, referrs to markdown, which is a simple languague for things to display on the web.
 
-\NP We need to get the url and SSH key for Rstudio and to accomplish this we ``Clone'' the Github repository. Click on the ''clone or download'' button (Figure \ref{fig:step1}).
+\NP We need to get the url and SSH key for Rstudio and to accomplish this we clone the Github repository. Click on the ''Code'' button (Figure \ref{fig:step1}).
 
 
-\NP Next we will 'Clone with SSH'. \textbf{IMPORTANT:} If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box. If you skip switching to SSH, it's really hard to fix the project afterwards. 
-
-\NP Copy the clone information by clicking on \textbf{the little clipboard} on the right of the address (Figure \ref{fig:step2}).
+\NP Next we will ''Clone with SSH''. \textbf{IMPORTANT:} If the header says 'Clone with HTTPS', you can toggle the selection with the small 'Use SSH' link in the upper right of the box (Figure~\ref{fig:step2}). If you skip switching to SSH, it's really hard to fix the project afterwards. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{graphics/CloningGithub2.jpg}
-\caption{Step 2: Be sure you clone with SSH!}
+\includegraphics[width=0.8\textwidth]{graphics/CloningGithub2.jpg}
+\caption{Step 2: Be sure to ``Clone with SSH''.}
 \label{fig:step2}
 \end{figure}
 
