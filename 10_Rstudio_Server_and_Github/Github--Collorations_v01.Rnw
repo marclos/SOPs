@@ -6,7 +6,7 @@
 
 \documentclass[12pt]{../SOP4_alpha}
 \usepackage{float}
-\usepackage{assymb}
+\usepackage{amssymb}
 \author{Marc Los Huertos \& Isaac Medina}
 \title{Rstudio Projects and Github}
 \date{1/16/2018}
@@ -252,7 +252,7 @@ Now we have to connect your fork to your RStudio account so that all your work c
 \begin{itemize}
   \item Find the green button that says “code” and copy the SSH link 
   \item Then go to RStudio and create a new project
-  %  \item File new project \rightarrow version control \rightarrow Git
+  \item File new project $\rightarrow$ version control $\rightarrow$ Git
   \item Then paste the link you copied into “Repository URL” and give your project a title like “Environmental-Sciences-In-East-Asia-LastName” and save the project in your home directory
     \item You should see a little box pop-up and load a bunch of things onto your RStudio
   \item Scan the bar at the top of your screen until you find the “tools” button, click it and then click shell
