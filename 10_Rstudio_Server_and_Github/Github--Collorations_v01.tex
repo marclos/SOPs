@@ -56,6 +56,7 @@
 
 \usepackage{alltt}
 \usepackage{float}
+\usepackage{amssymb}
 \author{Marc Los Huertos \& Isaac Medina}
 \title{Rstudio Projects and Github}
 \date{1/16/2018}
@@ -295,15 +296,16 @@ Now we have to connect your fork to your RStudio account so that all your work c
 \begin{itemize}
   \item Find the green button that says “code” and copy the SSH link 
   \item Then go to RStudio and create a new project
-    \item File -> new project -> version control -> Git
+    \item File \rightarrow new project \rightarrow version control \rightarrow Git
   \item Then paste the link you copied into “Repository URL” and give your project a title like “Environmental-Sciences-In-East-Asia-LastName” and save the project in your home directory
     \item You should see a little box pop-up and load a bunch of things onto your RStudio
   \item Scan the bar at the top of your screen until you find the “tools” button, click it and then click shell
   \item In the shell type the following code
-    \begin{verbatim}
-    \item Git clone (your SSH link you coped from GitHub earlier)
-    \item Git remote -v
-    \end{verbatim}
+
+    \indent\verb"Git clone" (your SSH link you coped from GitHub earlier)
+    
+    \indent\verb"Git remote -v"
+    
       \item This checks to make sure you correctly cloned the project. You should see something like this: 
         \item Origin git@github.com:erta2020/Environmental-Sciences-in-East-Asia (fetch)
         \item Origin git@github.com:erta2020/Environmental-Sciences-in-East-Asia (push)
@@ -311,10 +313,11 @@ Now we have to connect your fork to your RStudio account so that all your work c
       \item Go back to GitHub and under your fork repository name on the top left of your screan, click where it says marclos/Environmental-Sciences-in-East-Asia and you should be taken back to Marc’s page
       \item Click the green code button and copy the SSH link before going back to RStudio
       \item Back in the shell, type the code below
-        \begin{verbatim}
-        \item Git remote add upstream (the SSH key you just copied)
-        \item Git remote -v
-        \end{verbatim}
+        
+        \indent\verb"Git remote add upstream" (the SSH key you just copied)
+        
+        \indent\verb"Git remote -v"
+       
       \item Now you should see four lines, two labeled origin which is your repository and two labeled upstream which is marc’s repository. 
       \item Now you have successfully connected your RStudio to your new GitHub repository 
 \end{itemize}
@@ -339,13 +342,13 @@ You want to make pull requests after you make changes to your work that you want
 
 \subsection{How to Pull Marc’s Repository Updates Into Your Repository}
 
-This is what you need to do after your classmate’s changes have been added to Marc’s main repository. Because you have a fork, the pull requests you make don’t automatically appear to other students in their forks, so you have to pull that information into your fork to make sure that you can also see it. For this class, you will update your RStudio every Monday after Marc has reviewed your Friday pull requests
+This is what you need to do after your classmate’s changes have been added to Marc's main repository. Because you have a fork, the pull requests you make don’t automatically appear to other students in their forks, so you have to pull that information into your fork to make sure that you can also see it. For this class, you will update your RStudio every Monday after Marc has reviewed your Friday pull requests
 
-You can check to see if your Fork is ahead or behind Marc’s repository by going to your GitHub fork and seeing if it says that your branch is “behind/head marclos by # of commits”. Once you finish this and if you do everything correctly, your GitHub page will say that your repository Is even with Marc’s. 
+You can check to see if your Fork is ahead or behind Marc’s repository by going to your GitHub fork and seeing if it says that your branch is ``behind/head marclos by \# of commits''. Once you finish this and if you do everything correctly, your GitHub page will say that your repository Is even with Marc's. 
 
 \subsubsection{Using The Shell in RStudio}
 \begin{itemize}
-\item In RStudio, open a “shell” by looking for the “tools” button along the top of your screen and then clicking “shell”
+\item In RStudio, open a ``shell'' by looking for the ``tools'' button along the top of your screen and then clicking “shell”
 \item Write the following code in the shell, pressing enter before each new bullet point 
   \begin{verbatim}
   \item Git fetch upstream
