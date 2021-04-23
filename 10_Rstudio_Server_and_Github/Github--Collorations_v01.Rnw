@@ -7,9 +7,9 @@
 \documentclass[12pt]{../SOP4_alpha}
 \usepackage{float}
 \usepackage{amssymb}
-\author{Marc Los Huertos \& Isaac Medina}
+\author{Marc Los Huertos \& Nora Tahbaz}
 \title{Rstudio Projects and Github}
-\date{1/16/2018}
+\date{\today}
 \approved{Marc Los Huertos}
 \ReviseDate{\today}
 \SOPno{10 v.04}
@@ -230,19 +230,19 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 \section{Creating and Updating Your Own Repository}
 
 \subsection {How To Create a Fork in Github and Connect It to RStudio}
-A fork in GitHub is when you copy someone else’s original repository into your own repository so that when you make edits, you are only making edits in your own pages. When you want to share your changes with the original repository, in this case the marclos/Environmental-Sciences-in-East-Asia repository, you can create a pull request which will be explained in the next set of directions. 
+A fork in GitHub is when you copy someone else's original repository into your own repository so that when you make edits, you are only making edits in your own pages. When you want to share your changes with the original repository, in this case the marclos/Environmental-Sciences-in-East-Asia repository, you can create a pull request which will be explained in the next set of directions. 
 
 \subsubsection{In Github}
 \begin{itemize}
-\item To start, you should ne logged into GitHub and have the marclos/Environmental-Sciences-in-East-Asia repository open and you should be logged into RStudio as well.
+\item To start, you should be logged into GitHub and have the marclos/Environmental-Sciences-in-East-Asia repository open and you should be logged into RStudio as well.
 
 \item To create a fork, navigate to the marclos/Environmental-Sciences-in-East-Asia repository home page and look for the ``master'' pull down on the left side of the screen
 
 \item click the ``master'' pull down and find the branch titled EA30e21 and click on it to change the branch
 
-\item To create a fork, navigate to the marclos/Environmental-Sciences-in-East-Asia repository home page and look to the top right of the window
+\item Not to create a fork of the new branch, look to the top right of the window
 
-  \item Click the button that says “fork” and you should be taken to a new page that has your account name followed by “/Environmental-Sciences-in-East-Asia”
+  \item Click the button that says ``fork'' and you should be taken to a new page that has your account name followed by ``/Environmental-Sciences-in-East-Asia''
   \item If you see a new page, you have successfully created a new fork where you will make edits from now on 
 \end{itemize}
 
@@ -250,27 +250,28 @@ A fork in GitHub is when you copy someone else’s original repository into your
 Now we have to connect your fork to your RStudio account so that all your work can be saved 
 
 \begin{itemize}
-  \item Find the green button that says “code” and copy the SSH link 
-  \item Then go to RStudio and create a new project
+  \item Find the green button that says “code” and copy the SSH link
+  \item To start, change Rstudio's weave option to 'knitr'. In RStudio, Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' box at the top from Sweave to knitr. This will have minor, but real changes in how files are compiled. Knitr has relatively new and more robust option. Apply and close window. 
+  \item Then go to create a new project
   \item File new project $\rightarrow$ version control $\rightarrow$ Git
-  \item Then paste the link you copied into “Repository URL” and give your project a title like “Environmental-Sciences-In-East-Asia-LastName” and save the project in your home directory
-    \item You should see a little box pop-up and load a bunch of things onto your RStudio
-  \item Scan the bar at the top of your screen until you find the “tools” button, click it and then click shell
+  \item Then paste the link you copied into ``Repository URL'' and give your project a title like ``Environmental-Sciences-In-East-Asia-LastName'' and save the project in your home directory
+    \item You should see a little box pop-up and load a bunch of things onto your RStudio. 
+  \item Once that finishes, look at the bar at the top of your screen until you find the ``tools'' button, click it and then click shell
   \item In the shell type the following code
 
-    \indent\verb"Git clone" (your SSH link you coped from GitHub earlier)
+    \indent\verb"Git clone"+ (your SSH link you coped from GitHub earlier)
     
     \indent\verb"Git remote -v"
     
       \item This checks to make sure you correctly cloned the project. You should see something like this: 
         \item Origin git@github.com:erta2020/Environmental-Sciences-in-East-Asia (fetch)
         \item Origin git@github.com:erta2020/Environmental-Sciences-in-East-Asia (push)
-    \item Next we need to add Marc’s repository to this project so that you can push and pull later on
+    \item Next we need to add Marc's repository to this project so that you can push and pull later on
       \item Go back to GitHub and under your fork repository name on the top left of your screan, click where it says marclos/Environmental-Sciences-in-East-Asia and you should be taken back to Marc’s page
       \item Click the green code button and copy the SSH link before going back to RStudio
       \item Back in the shell, type the code below
         
-        \indent\verb"Git remote add upstream" (the SSH key you just copied)
+        \indent\verb"Git remote add upstream" + (the SSH key you just copied)
         
         \indent\verb"Git remote -v"
        
@@ -279,42 +280,42 @@ Now we have to connect your fork to your RStudio account so that all your work c
 \end{itemize}
 
 \subsection {How to Create Pull Requests}
-You want to make pull requests after you make changes to your work that you want to be reflected in everyone else’s repository. You will need to create a full request to do this. For this class you will make one pull request each week, on Friday’s so that your work can be looked at by Marc over the weekend. 
+You want to make pull requests after you make changes to your work that you want to be reflected in everyone else’s repository. You will need to create a pull request to do this. For this class you will make one pull request each week, on Friday's so that your work can be looked at by Marc over the weekend. 
 
 \subsubsection{Committing The Changes}
 
 \begin{itemize}
-\item Click “git” in the top right box and then press commit
-  \item After a new window pops up, make sure you click the small square next to the changes you made on the left-hand side 
-\item Type a message in the “commit message” box that explains quickly what changes you made, then press commit
-  \item Close the pop-up box and press “push” and then once that finishes press “close again” and go back to the main RStudio page
+\item Click ``git'' in the top right box and then press commit
+  \item After a new window pops up, make sure you click all the small square next to the changes you made on the left-hand side 
+\item Type a message in the ``commit message'' box that explains quickly what changes you made, then press commit
+  \item Close the pop-up box and press ``push'' and then once that finishes press ``close'' again and go back to the main RStudio page
 \item Now open GitHub and navigate to your repository 
-  \item Click the button that says “pull requests” which will take you to a new page
-  \item Click the green “new pull requests” button and you should see the change you just committed in RStudio
-  \item Click “create pull request”
-  \item Write a similar message that you types in the commit box earlier and finish the request by pressing “create pull request” 
+  \item Click the button that says ``pull requests'' which will take you to a new page
+  \item Click the green ``new pull requests'' button and you should see the change you just committed in RStudio
+  \item Click ``create pull request''
+  \item Write a similar message that you types in the commit box earlier and finish the request by pressing ``create pull request'' 
   \item Marc then has the opportunity to review the changes you made and accept them into the main repository so that your classmates can see your new changes
 \end{itemize}
 
-\subsection{How to Pull Marc’s Repository Updates Into Your Repository}
+\subsection{How to Pull Marc's Repository Updates Into Your Repository}
 
-This is what you need to do after your classmate’s changes have been added to Marc's main repository. Because you have a fork, the pull requests you make don’t automatically appear to other students in their forks, so you have to pull that information into your fork to make sure that you can also see it. For this class, you will update your RStudio every Monday after Marc has reviewed your Friday pull requests
+This is what you need to do after your classmate's changes have been added to Marc's main repository. Because you have a fork, the pull requests you make, don't automatically appear to other students in their forks, so you have to pull that information into your fork to make sure that you can also see it. For this class, you will update your RStudio every Monday after Marc has reviewed your Friday pull requests
 
-You can check to see if your Fork is ahead or behind Marc’s repository by going to your GitHub fork and seeing if it says that your branch is ``behind/head marclos by \# of commits''. Once you finish this and if you do everything correctly, your GitHub page will say that your repository Is even with Marc's. 
+You can check to see if your Fork is ahead or behind Marc's repository by going to your GitHub fork and seeing if it says that your branch is ``behind/head marclos by \# of commits''. Once you finish this and if you do everything correctly, your GitHub page will say that your repository Is even with Marc's. 
 
 \subsubsection{Using The Shell in RStudio}
 \begin{itemize}
-\item In RStudio, open a ``shell'' by looking for the ``tools'' button along the top of your screen and then clicking “shell”
+\item In RStudio, open a ``shell'' by looking for the ``tools'' button along the top of your screen and then clicking ``shell''
 \item Write the following code in the shell, pressing enter before each new bullet point 
-  \begin{verbatim}
-  \item Git pull upstream master
-  \end{verbatim}
+  
+  \indent\verb"Git pull upstream master"
+ 
     \item This pulls all the updates made in Marc’s repository
-  \begin{verbatim}
-  \item Git push origin master 
-  \end{verbatim}
+ 
+  \indent\verb"Git push origin master" 
+  
     \item This finishes the updates and pushes them so they are saved in your repository
-\item Press the green “push” button in the top right box under git to make sure everything get’s pushed to GitHub
+\item Press the green ``push" button in the top right box under git to make sure everything get’s pushed to GitHub
 \end{itemize}
 
 \end{document}
