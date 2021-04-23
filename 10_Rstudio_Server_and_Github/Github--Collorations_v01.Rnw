@@ -279,8 +279,34 @@ Now we have to connect your fork to your RStudio account so that all your work c
       \item Now you have successfully connected your RStudio to your new GitHub repository 
 \end{itemize}
 
-\subsection {How to Create Pull Requests}
-You want to make pull requests after you make changes to your work that you want to be reflected in everyone else’s repository. You will need to create a pull request to do this. For this class you will make one pull request each week, on Friday's so that your work can be looked at by Marc over the weekend. 
+\subsection {Pushing to Your EA30e21 Branch}
+You will want to push to your EA30e21 branch after you make changes to your work that you want Marc to be able to see your work so far. 
+
+\begin{itemize}
+\item open a new terminal by looking for the ``tools'' button along the top of your screen and then clicking ``terminal'', and then ``new terminal''. Then type the following lines of code
+
+  \indent\verb git clone -b EA30e21 --single-branch <past marc's repository url>
+  
+  \item in the Git window on the right side of the screen, switch to the EA30e21 branch
+  
+  \indent\verb git remote show origin
+  
+\begin{figure}[htbp]
+\centerline{\includegraphics{terminaloutput.jpg}}
+\caption{it should yield this result in yout terminal}
+\label{figure 1}
+\end{figure}
+
+\item now you will push your work to the EA30e21 branch by:
+  \item pressing the blue pull button
+  \item then committing all the changtegs
+  \item then pressing the green push button
+\item to pull from the EA30e21 branch type the following line of code
+
+  \ident\verb git pull origin EA30e21
+
+
+\subsection {Creating Pull Requests}
 
 \subsubsection{Committing The Changes}
 
@@ -295,7 +321,9 @@ You want to make pull requests after you make changes to your work that you want
   \item Click ``create pull request''
   \item Write a similar message that you types in the commit box earlier and finish the request by pressing ``create pull request'' 
   \item Marc then has the opportunity to review the changes you made and accept them into the main repository so that your classmates can see your new changes
+
 \end{itemize}
+
 
 \subsection{How to Pull Marc's Repository Updates Into Your Repository}
 
