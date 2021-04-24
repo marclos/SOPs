@@ -4,69 +4,21 @@
 %           New SOP3_alpha.cls
 % Version 04 Fix ambiguities about committing
 
-\documentclass[12pt]{../SOP4_alpha}\usepackage[]{graphicx}\usepackage[]{color}
-% maxwidth is the original width if it is less than linewidth
-% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
-\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
-\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
-\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
-\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
-\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
-\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
-\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-\let\hlipl\hlkwb
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
-
-\usepackage{alltt}
+\documentclass[12pt]{../SOP4_alpha}
 \usepackage{float}
 \usepackage{amssymb}
-\author{Marc Los Huertos \& Isaac Medina}
+\author{Marc Los Huertos \& Nora Tahbaz}
 \title{Rstudio Projects and Github}
-\date{1/16/2018}
+\date{\today}
 \approved{Marc Los Huertos}
 \ReviseDate{\today}
 \SOPno{10 v.04}
 
 \usepackage{graphicx}
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\usepackage{Sweave}
 \begin{document}
+\input{Github--Collorations_v01-concordance}
 
 \maketitle
 
@@ -117,7 +69,8 @@ The following have made substantial contributions:
 
 \begin{description}
     \item[Collaboration] You can easily collaborate with others and track who contributed to various parts of the repository. When you are working in a team and updating various text and code, it's important to have version control to ensure that you can trace how the text and code was change. 
-    
+
+
   \item[Transparency] The program allows others to see how you analyzed the data and thus, allows clear access to what you have done.
     
   \item[Reproducibility]  that when you conduct an analysis you can reproduce the results that can be used to validate your results. 
@@ -280,85 +233,125 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 \section{Creating and Updating Your Own Repository}
 
 \subsection {How To Create a Fork in Github and Connect It to RStudio}
-A fork in GitHub is when you copy someone else’s original repository into your own repository so that when you make edits, you are only making edits in your own pages. When you want to share your changes with the original repository, in this case the marclos/Environmental-Sciences-in-East-Asia repository, you can create a pull request which will be explained in the next set of directions. 
+A fork in GitHub is when you copy someone else's original repository into your own repository so that when you make edits, you are only making edits in your own pages. When you want to share your changes with the original repository, in this case the marclos/Environmental-Sciences-in-East-Asia repository, you can create a pull request which will be explained in the next set of directions. 
+
 
 \subsubsection{In Github}
 \begin{itemize}
-\item To start, you should ne logged into GitHub and have the marclos/Environmental-Sciences-in-East-Asia repository open and you should be logged into RStudio as well. 
-\item To create a fork, navigate to the marclos/Environmental-Sciences-in-East-Asia repository home page and look to the top right of the window
-  \item Click the button that says “fork” and you should be taken to a new page that has your account name followed by “/Environmental-Sciences-in-East-Asia”
+\item To start, you should be logged into GitHub and have the marclos/Environmental-Sciences-in-East-Asia repository open and you should be logged into RStudio as well.
+
+\item To create a fork, navigate to the marclos/Environmental-Sciences-in-East-Asia repository home page and look for the ``master'' pull down on the left side of the screen
+
+\item click the ``master'' pull down and find the branch titled EA30e21 and click on it to change the branch
+
+\item Not to create a fork of the new branch, look to the top right of the window
+
+  \item Click the button that says ``fork'' and you should be taken to a new page that has your account name followed by ``/Environmental-Sciences-in-East-Asia''
   \item If you see a new page, you have successfully created a new fork where you will make edits from now on 
 \end{itemize}
+
 
 \subsubsection{RStudio}
 Now we have to connect your fork to your RStudio account so that all your work can be saved 
 
 \begin{itemize}
-  \item Find the green button that says “code” and copy the SSH link 
-  \item Then go to RStudio and create a new project
+  \item Find the green button that says “code” and copy the SSH link
+  \item To start, change Rstudio's weave option to 'knitr'. In RStudio, Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' box at the top from Sweave to knitr. This will have minor, but real changes in how files are compiled. Knitr has relatively new and more robust option. Apply and close window. 
+  \item Next, go tools/project options/Sweave and change the top pull down to 'knitr'. Then hit browse and click the Environmental_Science_in_East_Asia.Rnw file. Hit open, and then OK.
+  \item Then go to create a new project
   \item File new project $\rightarrow$ version control $\rightarrow$ Git
-  \item Then paste the link you copied into “Repository URL” and give your project a title like “Environmental-Sciences-In-East-Asia-LastName” and save the project in your home directory
-    \item You should see a little box pop-up and load a bunch of things onto your RStudio
-  \item Scan the bar at the top of your screen until you find the “tools” button, click it and then click shell
-  \item In the shell type the following code
+  \item Then paste the link you copied into ``Repository URL'' and give your project a title like ``Environmental-Sciences-In-East-Asia-LastName'' and save the project in your home directory
+    \item You should see a little box pop-up and load a bunch of things onto your RStudio. 
+  \item Once that finishes, look at the bar at the top of your screen until you find the ``tools'' button, click it and then find the ``Terminal'' button. Then click ``New Terminal''
+  \item In the shell that opens, type the following code
 
-    \indent\verb"Git clone" (your SSH link you coped from GitHub earlier)
+    \indent\verb"Git clone -b EA30e21 --single-branch (Marc's SSH link from GitHub)"
     
-    \indent\verb"Git remote -v"
-    
-      \item This checks to make sure you correctly cloned the project. You should see something like this: 
-        \item Origin git@github.com:erta2020/Environmental-Sciences-in-East-Asia (fetch)
-        \item Origin git@github.com:erta2020/Environmental-Sciences-in-East-Asia (push)
-    \item Next we need to add Marc’s repository to this project so that you can push and pull later on
-      \item Go back to GitHub and under your fork repository name on the top left of your screan, click where it says marclos/Environmental-Sciences-in-East-Asia and you should be taken back to Marc’s page
-      \item Click the green code button and copy the SSH link before going back to RStudio
+      \item to get Marc's SSH link:
+        \item Go back to GitHub and under your fork repository name on the top left of your screan, click where it says marclos/Environmental-Sciences-in-East-Asia and you should be taken back to Marc’s page
+        \item Click the green code button and copy the SSH link before going back to RStudio
+        
+    \indent\verb"Git remote show origin"
+  
+  INSERT SCREEENSHOT
+  
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{graphics/terminal_output.jpg}
+\caption{This is what you should see after typing the last line of code.}
+\end{figure}
+
+    \item Next we need to add Marc's repository to this project so that you can push and pull later on
+     
+
       \item Back in the shell, type the code below
         
-        \indent\verb"Git remote add upstream" (the SSH key you just copied)
-        
+        \indent\verb"Git remote add upstream" + Marc's SSH Key
         \indent\verb"Git remote -v"
        
-      \item Now you should see four lines, two labeled origin which is your repository and two labeled upstream which is marc’s repository. 
+      \item Now you should see four lines, two labeled origin which is your repository and two labeled upstream which is Marc’s repository. 
       \item Now you have successfully connected your RStudio to your new GitHub repository 
 \end{itemize}
 
-\subsection {How to Create Pull Requests}
-You want to make pull requests after you make changes to your work that you want to be reflected in everyone else’s repository. You will need to create a full request to do this. For this class you will make one pull request each week, on Friday’s so that your work can be looked at by Marc over the weekend. 
+
+\subsection {Pushing to Your EA30e21 Branch}
+You will want to push to your EA30e21 branch after you make changes to your work that you want Marc to be able to see your work so far. 
+
+\begin{itemize}
+  
+  \item in the Git window on the right side of the screen, switch to the EA30e21 branch
+
+\item now you will push your work to the EA30e21 branch by:
+  \item pressing the blue pull button
+  \item then committing all the changtegs
+  \item then pressing the green push button
+\item to pull from your EA30e21 branch type the following line of code:
+
+  \ident\verb"git pull origin EA30e21"
+\item Now you should be able to push to and pull from your own EA30e21 branch.
+
+\end{itemize}
+
+
+\subsection {Creating Pull Requests}
+
 
 \subsubsection{Committing The Changes}
 
 \begin{itemize}
-\item Click “git” in the top right box and then press commit
-  \item After a new window pops up, make sure you click the small square next to the changes you made on the left-hand side 
-\item Type a message in the “commit message” box that explains quickly what changes you made, then press commit
-  \item Close the pop-up box and press “push” and then once that finishes press “close again” and go back to the main RStudio page
+
+\item Click ``git'' in the top right box and then press commit
+  \item After a new window pops up, make sure you click all the small square next to the changes you made on the left-hand side 
+\item Type a message in the ``commit message'' box that explains quickly what changes you made, then press commit
+  \item Close the pop-up box and press ``push'' and then once that finishes press ``close'' again and go back to the main RStudio page
 \item Now open GitHub and navigate to your repository 
-  \item Click the button that says “pull requests” which will take you to a new page
-  \item Click the green “new pull requests” button and you should see the change you just committed in RStudio
-  \item Click “create pull request”
-  \item Write a similar message that you types in the commit box earlier and finish the request by pressing “create pull request” 
+  \item Click the button that says ``pull requests'' which will take you to a new page
+  \item Click the green ``new pull requests'' button and you should see the change you just committed in RStudio
+  \item Click ``create pull request''
+  \item Write a similar message that you types in the commit box earlier and make sure to change both pull down tabs in the top car to EA30e21. TO finish the request, press ``create pull request'' 
   \item Marc then has the opportunity to review the changes you made and accept them into the main repository so that your classmates can see your new changes
+
 \end{itemize}
 
-\subsection{How to Pull Marc’s Repository Updates Into Your Repository}
 
-This is what you need to do after your classmate’s changes have been added to Marc's main repository. Because you have a fork, the pull requests you make don’t automatically appear to other students in their forks, so you have to pull that information into your fork to make sure that you can also see it. For this class, you will update your RStudio every Monday after Marc has reviewed your Friday pull requests
+\subsection{How to Pull Marc's Repository Updates Into Your Repository}
 
-You can check to see if your Fork is ahead or behind Marc’s repository by going to your GitHub fork and seeing if it says that your branch is ``behind/head marclos by \# of commits''. Once you finish this and if you do everything correctly, your GitHub page will say that your repository Is even with Marc's. 
+This is what you need to do after your classmate's changes have been added to Marc's main repository. Because you have a fork, the pull requests you make, don't automatically appear to other students in their forks, so you have to pull that information into your fork to make sure that you can also see it. For this class, you will update your RStudio every Monday after Marc has reviewed your Friday pull requests
 
-\subsubsection{Using The Shell in RStudio}
+You can check to see if your Fork is ahead or behind Marc's repository by going to your GitHub fork and seeing if it says that your branch is ``behind/head marclos by \# of commits''. Once you finish this and if you do everything correctly, your GitHub page will say that your repository Is even with Marc's. 
+
+
+\subsubsection{Pulling From Marc's EA30e21 Branch}
+
 \begin{itemize}
-\item In RStudio, open a ``shell'' by looking for the ``tools'' button along the top of your screen and then clicking “shell”
+
+\item In RStudio, open a ``shell'' by looking for the ``tools'' button along the top of your screen and then clicking ``shell''
 \item Write the following code in the shell, pressing enter before each new bullet point 
-  \begin{verbatim}
-  \item Git pull upstream master
-  \end{verbatim}
+  \indent\verb"Git pull upstream EA30e21"
     \item This pulls all the updates made in Marc’s repository
-  \begin{verbatim}
-  \item Git push origin master 
-  \end{verbatim}
+  \indent\verb"Git push origin master" 
     \item This finishes the updates and pushes them so they are saved in your repository
-\item Press the green “push” button in the top right box under git to make sure everything get’s pushed to GitHub
+\item Press the green ``push" button in the top right box under git to make sure everything get’s pushed to GitHub
 \end{itemize}
 
 \end{document}
