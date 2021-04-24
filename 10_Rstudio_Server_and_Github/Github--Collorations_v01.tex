@@ -4,7 +4,57 @@
 %           New SOP3_alpha.cls
 % Version 04 Fix ambiguities about committing
 
-\documentclass[12pt]{../SOP4_alpha}
+\documentclass[12pt]{../SOP4_alpha}\usepackage[]{graphicx}\usepackage[]{color}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 \usepackage{float}
 \usepackage{amssymb}
 \author{Marc Los Huertos \& Nora Tahbaz}
@@ -15,10 +65,9 @@
 \SOPno{10 v.04}
 
 \usepackage{graphicx}
-
-\usepackage{Sweave}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\input{Github--Collorations_v01-concordance}
+
 
 \maketitle
 
@@ -255,11 +304,11 @@ A fork in GitHub is when you copy someone else's original repository into your o
 Now we have to connect your fork to your RStudio account so that all your work can be saved 
 
 \begin{itemize}
-  \item Find the green button that says “code” and copy the SSH link
+  \item Find the green button that says ``code'' and copy the SSH link
   \item To start, change Rstudio's weave option to 'knitr'. In RStudio, Navigate to Tools/Global Options/Sweave, then change the 'weave Rnw files' box at the top from Sweave to knitr. This will have minor, but real changes in how files are compiled. Knitr has relatively new and more robust option. Apply and close window. 
-  \item Next, go tools/project options/Sweave and change the top pull down to 'knitr'. Then hit browse and click the Environmental_Science_in_East_Asia.Rnw file. Hit open, and then OK.
+  \item Next, go tools/project options/Sweave and change the top pull down to 'knitr'. Then hit browse and click the Environmental\_Science\_in\_East\_Asia.Rnw file. Hit open, and then OK.
   \item Then go to create a new project
-  \item File new project $\rightarrow$ version control $\rightarrow$ Git
+  \item File new project $\rightarrow $ version control $\rightarrow $ Git
   \item Then paste the link you copied into ``Repository URL'' and give your project a title like ``Environmental-Sciences-In-East-Asia-LastName'' and save the project in your home directory
     \item You should see a little box pop-up and load a bunch of things onto your RStudio. 
   \item Once that finishes, look at the bar at the top of your screen until you find the ``tools'' button, click it and then find the ``Terminal'' button. Then click ``New Terminal''
@@ -273,11 +322,9 @@ Now we have to connect your fork to your RStudio account so that all your work c
         
     \indent\verb"Git remote show origin"
   
-  INSERT SCREEENSHOT
-  
 \begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{graphics/terminal_output.jpg}
+\includegraphics[width=0.6\textwidth]{graphics/terminal_output}
 \caption{This is what you should see after typing the last line of code.}
 \end{figure}
 
@@ -307,7 +354,7 @@ You will want to push to your EA30e21 branch after you make changes to your work
   \item then pressing the green push button
 \item to pull from your EA30e21 branch type the following line of code:
 
-  \ident\verb"git pull origin EA30e21"
+  \indent\verb"git pull origin EA30e21"
 \item Now you should be able to push to and pull from your own EA30e21 branch.
 
 \end{itemize}
@@ -348,10 +395,10 @@ You can check to see if your Fork is ahead or behind Marc's repository by going 
 \item In RStudio, open a ``shell'' by looking for the ``tools'' button along the top of your screen and then clicking ``shell''
 \item Write the following code in the shell, pressing enter before each new bullet point 
   \indent\verb"Git pull upstream EA30e21"
-    \item This pulls all the updates made in Marc’s repository
+    \item This pulls all the updates made in Marc's repository
   \indent\verb"Git push origin master" 
     \item This finishes the updates and pushes them so they are saved in your repository
-\item Press the green ``push" button in the top right box under git to make sure everything get’s pushed to GitHub
+\item Press the green ``push" button in the top right box under git to make sure everything get's pushed to GitHub
 \end{itemize}
 
 \end{document}
