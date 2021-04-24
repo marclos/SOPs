@@ -347,10 +347,10 @@ You can check to see if your Fork is ahead or behind Marc's repository by going 
 \item In RStudio, open a ``shell'' by looking for the ``tools'' button along the top of your screen and then clicking ``shell''
 \item Write the following code in the shell, pressing enter before each new bullet point 
   \indent\verb"Git pull upstream EA30e21"
-    \item This pulls all the updates made in Marc’s repository
+    \item This pulls all the updates made in Marc's repository
   \indent\verb"Git push origin master" 
     \item This finishes the updates and pushes them so they are saved in your repository
-\item Press the green ``push" button in the top right box under git to make sure everything get’s pushed to GitHub
+\item Press the green ``push" button in the top right box under git to make sure everything get's pushed to GitHub
 \end{itemize}
 
 \end{document}
