@@ -38,9 +38,9 @@
 
 Student employees that will be helping\ldots
 
-\section{Definitions}
+%\section{Definitions}
 
-\NP Term1: is...
+%\NP Term1: is...
 
 %\section{Biases and Interferences}
 
@@ -62,38 +62,62 @@ Student employees that will be helping\ldots
 
 \subsection{Field Equipment}
 
-\begin{enumerate}
-
-\item Ford Explorer \#1
-\item Ford Exploper \#2
-
-\end{enumerate}
-
+%\begin{enumerate}
+%\begin{table}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Item      & ID\#  & Quantity & Location \\ \hline
+Ford Explorer \#1 && 1 & Garage EA Slot \\
+Ford Exploper \#2  && 1 & Garage EA Slot \\
+Survey Scope w/Tripod and Stadia  && 3 & SGM 131 \\
+Meter Tape (10m)  && 2 & SGM 131 \\
+Meter Tape (25m)  && 1 & SGM 131 \\
+Meter Tape (100m) && 1 & SGM 131 \\
+Infiltratrometer  && 3 & SGM 131 \\
+Walkie Talkies && 3 & SGM 131 \\
+Honda Field Generator  && 1 & SGM 132 \\
+XXX(make?) Field Generator && 1 & SGM 132 \\
+\hline
+\end{tabular}
 
 \subsection{Laboratory Equipment}
 
-\begin{enumerate}
-\item Centrifuge
-\item Centrifuge
-\item Microcentrifuge
-\item -80 Freezer
-\item -30 Freezer
-\item 20\degree C Double Wide Refridgerator
-\item Dry ``bath''
-\item
-\end{enumerate}
+%\begin{enumerate}
+%\begin{table}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Item      & ID\#  & Quantity & Location \\ \hline
+Centrifuge   && 1 & SGM 133 \\
+Centrifuge   &&  1 & SGM 133 \\
+Microcentrifuge && 1 & SGM 133\\
+-80\degree Freezer&& 1 & SGM 133\\
+-30\degree Freezer&& 1 & SGM 134\\
+20\degree C Double Wide Refridgerator&& 1 & SGM 134\\
+Dry ``bath''&& 1 & SGM 134\\
+1L Soil Texture Cylinders&& 8 & SGM 133 \\
+various cylinders&& 5 & SGM 134\\
+8 Motars/Pestles&& 8 & SGM 133\\
+various beakers &&(dozens of assorted sizes) & SGM 134 \\
+1000$\mu$L Pipetteman &&1 & SGM 133\\
+250$\mu$L Pipetteman&& 1 & SGM 133\\
+100$\mu$L Pipetteman&& 1& SGM 133\\
+\hline
+
+\end{tabular}
+
+%\end{table}
+%\end{enumerate}
 
 \subsection{Analytical Instruments}
-
-
 \begin{enumerate}
-
-\item ICP-MS
-
-\item 
-
-\item Lab Computer \#1
-\item Lab Computer \#2
+  \item Turner Design Flourometer
+  \item 7 Dissecting Scopes w/lights
+  \item 1 Desseciting Scope w/lights and Camera
+  \item Revolve Microscope
+  \item ICP-MS
+  \item IRGA  -Isotope Ratio Gas Analyzer
+  \item Lab Computer \#1
+  \item Lab Computer \#2
 
 \item GIS Lab 16 computers
 \end{enumerate}
