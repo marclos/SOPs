@@ -69,11 +69,17 @@ Student employees that will be helping\ldots where all equipment needs to be giv
 Item      & ID\#  & Quantity & Location \\ \hline
 Ford Explorer \#1 && 1 & Garage EA Slot \\
 Ford Exploper \#2  && 1 & Garage EA Slot \\
+Cooler \#1        && 1 & SGM 132 \\
+Cooler \#2        && 1 & SGM 132 \\
 Survey Scope w/Tripod and Stadia  && 3 & SGM 131 \\
 Meter Tape (10m)  && 2 & SGM 131 \\
 Meter Tape (25m)  && 1 & SGM 131 \\
 Meter Tape (100m) && 1 & SGM 131 \\
-Infiltratrometer  && 3 & SGM 131 \\
+Infiltrometer     && 3 & SGM 131 \\
+VanDorn Bottle (Horizontal) && 1 & SGM 133 \\
+VanDorn Bottle (Vertical) && 1 & SGM 133 \\
+LiCor Underwater PAR Sensor  && 1 & SGM 133 \\
+
 Walkie Talkies && 3 & SGM 131 \\
 Honda Field Generator  && 1 & SGM 132 \\
 XXX(make?) Field Generator && 1 & SGM 132 \\
@@ -86,11 +92,11 @@ XXX(make?) Field Generator && 1 & SGM 132 \\
 %\begin{table}
 \begin{tabular}{|l|l|l|l|}
 \hline
-Item      & ID\#  & Quantity & Location \\ \hline
-RPI Zero+  && 16 & SGM XX \\
-RPI 3+  && 2 & SGM XX \\
-RPI 4+ && 2 & SGM XX \\
-PMS5004 PM Sensor && 16 & SGM XX \\
+Item        & ID\#  & Quantity  & Location \\ \hline
+RPI Zero+   & NA    & 16        & SGM \\
+RPI 3+      & NA    & 2         & SGM XX \\
+RPI 4+      & NA    & 2         & SGM XX \\
+PMS5004 PM Sensor & NA & 16     & SGM XX \\
 \hline
 \end{tabular}
 
@@ -115,21 +121,25 @@ DJI Matrice 100 Batteries  && 6 & SGM XX \\
 \begin{tabular}{|l|l|l|l|}
 \hline
 Item      & ID\#  & Quantity & Location \\ \hline
-XXX Water Purification System && 1 & SGM 134 \\
-Thermo Fisher Centrifuge   && 1 & SGM 133 \\
-Thermo Fisher Centrifuge   &&  1 & SGM 133 \\
+MilliQ Water Purification System &&  1 & SGM 134 \\
+Drying Oven                 &&  1 & SGM 134 \\
+Thermo Fisher Centrifuge    &&  1 & SGM 133 \\
+Thermo Fisher Centrifuge    &&  1 & SGM 133 \\
 Fisher Scientific Microcentrifuge && 1 & SGM 133\\
-Thermo Fisher -80\degree Freezer&& 1 & SGM 133\\
-Thermo Fisher -30\degree Freezer&& 1 & SGM 134\\
-Thermo Fisher 20\degree C Double Wide Refridgerator&& 1 & SGM 134\\
-Dry ``bath''&& 1 & SGM 134\\
-1L Soil Texture Cylinders&& 8 & SGM 133 \\
-various cylinders&& 5 & SGM 134\\
-8 Motars/Pestles&& 8 & SGM 133\\
-various beakers &&(dozens of assorted sizes) & SGM 134 \\
-1000$\mu$L Pipetteman &&1 & SGM 133\\
-250$\mu$L Pipetteman&& 1 & SGM 133\\
-100$\mu$L Pipetteman&& 1& SGM 133\\
+Thermo Fisher -80\degree C Freezer  && 1 & SGM 133\\
+Thermo Fisher -30\degree~CFreezer  && 1 & SGM 134\\
+Thermo Fisher 20\degree~C Double Wide Refridgerator&& 1 & SGM 134\\
+Dry ``bath''                && 1 & SGM 134\\
+1L Soil Texture Cylinders   && 8 & SGM 133 \\
+various cylinders           && 5 & SGM 134\\
+Mortars/Pestles             && 8 & SGM 133\\
+HACH Digital Reactor Block && 1 & SGM 133 \\
+Ehrlenmeyer Flasks (various)&& 40 & SGM 134 \\
+Beakers (various)           &&  30  & SGM 134 \\
+Soil Tins                   && 36 & SGM 134\\
+1000$\mu$L Pipetteman       && 1 & SGM 133\\
+250$\mu$L Pipetteman        && 1 & SGM 133\\
+100$\mu$L Pipetteman        && 1& SGM 133\\
 \hline
 \end{tabular}
 
@@ -149,6 +159,8 @@ Blackmagic HDR 12G Video && 1 & SGM 106\\
 \subsection{Analytical Instruments}
 \begin{enumerate}
   \item Turner Design Flourometer
+  \item Satorius Microbalance
+  \item Balance (3x)
   \item Digital Calipers (7x)
   \item 7 Dissecting Scopes w/lights
   \item 1 Desseciting Scope w/lights and Camera
@@ -158,10 +170,8 @@ Blackmagic HDR 12G Video && 1 & SGM 106\\
   \item IRGA  -Isotope Ratio Gas Analyzer
   \item Lab Computer \#1
   \item Lab Computer \#2
-
-\item GIS Lab 16 computers
+  \item Alkalinity Test Kit (3x)
+  \item GIS Lab 16 computers
 \end{enumerate}
-
-
 
 \end{document}
