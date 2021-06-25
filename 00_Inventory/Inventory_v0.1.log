@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.5.9)  10 MAY 2021 10:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.5.9)  25 JUN 2021 08:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -549,7 +549,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../pomona.jpg, id=39, 460.557pt x 492.75pt>
+<../pomona.jpg, id=42, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
  <use ../pomona.jpg>
 Package pdftex.def Info: ../pomona.jpg used on input line 73.
@@ -585,7 +585,7 @@ Overfull \hbox (11.50308pt too wide) in paragraph at lines 117--138
  []
 
 
-Overfull \hbox (40.93384pt too wide) in paragraph at lines 171--210
+Overfull \hbox (40.93384pt too wide) in paragraph at lines 171--195
 [][] 
  []
 
@@ -595,22 +595,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] 
+[2] [3] [4] 
 AED: lastpage setting LastPage
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
+[5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
  (./Inventory_v0.1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
 Package rerunfilecheck Info: File `Inventory_v0.1.out' has not changed.
-(rerunfilecheck)             Checksum: B70729ED592F5321F9E9119D6D2A9D8D;597.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
+(rerunfilecheck)             Checksum: 4FAB4111B93D7C43A6646AFAA3DF0485;676.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 280.
  ) 
 Here is how much of TeX's memory you used:
- 8357 strings out of 494820
- 119313 string characters out of 3178050
- 336545 words of memory out of 3000000
+ 8358 strings out of 494820
+ 119319 string characters out of 3178050
+ 333545 words of memory out of 3000000
  11394 multiletter control sequences out of 15000+200000
  9606 words of font info for 36 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
@@ -620,10 +620,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Inventory_v0.1.pdf (4 pages, 146124 bytes).
+Output written on Inventory_v0.1.pdf (5 pages, 148172 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 94 words of extra memory for PDF output out of 10000 (max. 10000000)
 
