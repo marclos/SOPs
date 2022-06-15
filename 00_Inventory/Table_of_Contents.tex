@@ -12,6 +12,9 @@
 \makeatother
 
 \definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\makeatletter
+\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}}}
+\makeatother
 \newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
 \newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
 \newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
@@ -46,6 +49,14 @@
 \definecolor{messagecolor}{rgb}{0, 0, 0}
 \definecolor{warningcolor}{rgb}{1, 0, 1}
 \definecolor{errorcolor}{rgb}{1, 0, 0}
+\makeatletter
+\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+}}
+\makeatother
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
@@ -57,12 +68,12 @@
 
 
 % latex table generated in R 3.6.0 by xtable 1.8-4 package
-% Fri May  7 22:44:16 2021
+% Wed Jun 15 09:39:13 2022
 \begin{table}[ht]
 \centering
 \begin{tabular}{ll}
   \toprule
-SOP & Tab \\ 
+SOP & SOP.1 \\ 
   \midrule
 SOP Template & . . . . . . . .  00 \\ 
   Laboratory Safety & . . . . . . . .  01 \\ 
@@ -104,6 +115,13 @@ SOP Template & . . . . . . . .  00 \\
   Nitrate Quick Test & . . . . . . . .  36 \\ 
   Sovita Basal Respiration & . . . . . . . .  37 \\ 
   Picaro GHG & . . . . . . . .  38 \\ 
+  Soil DNA Extraction & . . . . . . . .  39 \\ 
+  Mol Biol Tools-Community Profiling & . . . . . . . .  40 \\ 
+  Plastics & . . . . . . . .  48 \\ 
+  XRF & . . . . . . . .  49 \\ 
+  ICP-MS & . . . . . . . .  50 \\ 
+  LA-ICP-MS & . . . . . . . .  51 \\ 
+  IRMS & . . . . . . . .  52 \\ 
    \bottomrule
 \end{tabular}
 \end{table}

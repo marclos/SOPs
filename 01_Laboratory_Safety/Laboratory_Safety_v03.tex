@@ -1,6 +1,6 @@
 \documentclass[12pt]{../SOP4_alpha}\usepackage[]{graphicx}\usepackage[]{color}
-%% maxwidth is the original width if it is less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
 \def\maxwidth{ %
   \ifdim\Gin@nat@width>\linewidth
@@ -12,6 +12,9 @@
 \makeatother
 
 \definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\makeatletter
+\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}}}
+\makeatother
 \newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
 \newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
 \newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
@@ -46,6 +49,14 @@
 \definecolor{messagecolor}{rgb}{0, 0, 0}
 \definecolor{warningcolor}{rgb}{1, 0, 1}
 \definecolor{errorcolor}{rgb}{1, 0, 0}
+\makeatletter
+\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+}}
+\makeatother
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
@@ -92,6 +103,8 @@
 
 \section{Definitions}
 
+\NP The laboratory manager is a student, staff, or faculty member who has been trained and has been identified as the laboatory manager. The laboratory manager will oversee all training and monitor all activities in the laboratory. 
+
 %\section{Interferences}
 
 \section{Health and Safety}
@@ -103,6 +116,10 @@
 \NP No work is allowed in the laboratory without expressed permission from the laboratory director.
 
 \section{Personnel \& Training Responsibilities}
+
+\subsection*{Lap Manager}
+
+The current laboratory manager is Assoc. Professor, Marc Los Huertos.
 
 \subsection*{Lab Equipment Training}
 
@@ -164,7 +181,7 @@ Campus Safety     & (909)607-2000 (from a campus phone, dial x72000) & Open 24/7
   \item CUC Environmental Health \& Safety: 909-621-8538 
 \end{itemize}
 
-\NP Lab Contract list is posted in SGM 133. Please note it's location.
+\NP Lab Contract list is posted in SGM 133. Please note it's location. If the list seems out of date or missing information, please contact the laboratory manager.
 
 \subsection*{Earthquakes Procedure} 
 

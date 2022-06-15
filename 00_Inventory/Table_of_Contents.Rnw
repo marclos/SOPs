@@ -5,13 +5,14 @@
 
 <<echo=F, results='hide'>>=
 library(xtable)
+setwd("/home/CAMPUS/mwl04747/github/SOPs/00_Inventory")
 dirs = list.dirs(path = "../.", full.names = F, recursive = F); dirs
-temp = data.frame(SOP = gsub("_", " ", substr(dirs, 4, nchar(dirs))), Tab = paste(". . . . . . . . ", substr(dirs, 1, 2)))
+temp = data.frame(SOP = gsub("_", " ", substr(dirs, 4, nchar(dirs))), SOP = paste(". . . . . . . . ", substr(dirs, 1, 2)))
 temp
 @
 
 <<echo=F, results='asis'>>=
-contents = temp[c(4:43),]
+contents = temp[c(4:50),]
 print(xtable(contents), include.rownames=FALSE, booktabs = T)
 @
 

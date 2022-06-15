@@ -18,6 +18,9 @@
 \makeatother
 
 \definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\makeatletter
+\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}}}
+\makeatother
 \newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
 \newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
 \newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
@@ -52,6 +55,14 @@
 \definecolor{messagecolor}{rgb}{0, 0, 0}
 \definecolor{warningcolor}{rgb}{1, 0, 1}
 \definecolor{errorcolor}{rgb}{1, 0, 0}
+\makeatletter
+\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+}}
+\makeatother
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
@@ -59,12 +70,12 @@
 \usepackage[english]{babel}
 
 
-\title{SOP Title}
-\date{X/XX/XXXX}
-\author{Reseacher Name}
+\title{IDEXX Quanti-Tray}
+\date{3/31/2022}
+\author{Marc Los Huetos}
 \approved{TBD}
 \ReviseDate{\today}
-\SOPno{X}
+\SOPno{23.01}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
@@ -73,7 +84,8 @@
 
 \section{Scope and Application}
 
-\NP The scope of this SOP is train researchers...
+\NP This standard operating procedure describes the test method for the collection and analysis of water samples for the enumeration of Escherichia coli (E. coli) and
+Total coliform bacteria.
 
 \NP The applications of this SOP are for...
 
@@ -102,6 +114,7 @@
 
 \subsection{Safety and Personnnel Protective Equipment}
 
+Water quality can range from high quality and even potoble to very low with assorted pathogens or even toxicty. Thus, it's important to take every precuation possible to protect yourself. 
 
 \section{Personnel \& Training Responsibilities}
 
@@ -137,6 +150,8 @@
 \section{Data Analysis and Calculations}
 
 \section{QC/QA Criteria}
+
+\NP The detection limit for this analysis is 1 Most Probable Number (MPN) per 100mL of sample. 
 
 \section{Trouble Shooting}
 
