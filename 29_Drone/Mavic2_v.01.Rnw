@@ -1,7 +1,7 @@
 %SOP Template 
 % Version 02 Added revision date
 % Version 03 Added TOC and acknowledgements
-%           New SOP3_alpha.cls
+%           New SOP4_alpha.cls
 
 
 \documentclass[12pt]{../SOP4_alpha}
@@ -10,7 +10,7 @@
 \usepackage{blindtext}
 \usepackage{lipsum}
 
-\title{SOP Title}
+\title{Mafic 2}
 \date{X/XX/XXXX}
 \author{Reseacher Name}
 \approved{TBD}
@@ -53,6 +53,7 @@
 
 \subsection{Safety and Personnnel Protective Equipment}
 
+\NP Make sure you have been trained... 
 
 \section{Personnel \& Training Responsibilities}
 
@@ -77,7 +78,9 @@
 
 \NP This procedure requires XX minutes...
 
-\section{Sample Collection, Preservation, and Storage}
+\section{Image Collection}
+
+\NP Make sure there is an SD card with enough space (e.g. > 2 GB).
 
 \section{Procedure}
 
@@ -93,6 +96,6 @@
 
 \section{References}
 
-\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+\NP DJI Manual. version Number??
 
 \end{document}
