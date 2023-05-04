@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2023.1.4)  20 APR 2023 09:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2023.4.24)  4 MAY 2023 12:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,6 +369,9 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen126
 \FrameSep=\dimen127
 )
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
@@ -406,29 +409,29 @@ tim
 (./Coliert_Quanti-Tray_v02.aux)
 \openout1 = `Coliert_Quanti-Tray_v02.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    ... okay on input line 70.
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring ON on input line 80.
+Package hyperref Info: Link coloring ON on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -438,9 +441,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count105
 )
-LaTeX Info: Redefining \ref on input line 80.
-LaTeX Info: Redefining \pageref on input line 80.
-LaTeX Info: Redefining \nameref on input line 80.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
 
 (./Coliert_Quanti-Tray_v02.out) (./Coliert_Quanti-Tray_v02.out)
 \@outlinefile=\write3
@@ -448,15 +451,15 @@ LaTeX Info: Redefining \nameref on input line 80.
 
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 80.
-Package gensymb Info: Math companion symbols declared on input line 80.
-LaTeX Info: Redefining \degree on input line 80.
-LaTeX Info: Redefining \celsius on input line 80.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 70.
+Package gensymb Info: Math companion symbols declared on input line 70.
+LaTeX Info: Redefining \degree on input line 70.
+LaTeX Info: Redefining \celsius on input line 70.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 80.
-LaTeX Info: Redefining \ohm on input line 80.
-Package gensymb Info: Using \textohm for \ohm on input line 80.
-Package gensymb Info: Using \textmu for \micro on input line 80.
+erthousand on input line 70.
+LaTeX Info: Redefining \ohm on input line 70.
+Package gensymb Info: Using \textohm for \ohm on input line 70.
+Package gensymb Info: Using \textmu for \micro on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -524,35 +527,35 @@ e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 80.
-LaTeX Font Info:    Try loading font information for U+msa on input line 83.
+(lastpage)             ! on input line 70.
+LaTeX Font Info:    Try loading font information for U+msa on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 83.
+LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../pomona.jpg, id=88, 460.557pt x 492.75pt>
+<../pomona.jpg, id=80, 460.557pt x 492.75pt>
 File: ../pomona.jpg Graphic file (type jpg)
 <use ../pomona.jpg>
-Package pdftex.def Info: ../pomona.jpg  used on input line 83. on input line 83
+Package pdftex.def Info: ../pomona.jpg  used on input line 73. on input line 73
 .
-Package pdftex.def Info: Requested size: 56.9055pt x 60.8793pt on input line 83
+Package pdftex.def Info: Requested size: 56.9055pt x 60.8793pt on input line 73
 .
 
-Overfull \vbox (21.72939pt too high) detected at line 83
+Overfull \vbox (21.72939pt too high) detected at line 73
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
 []\OT1/cmr/m/n/12 Title: IDEXX Quanti-Tray
  []
 
 
-Overfull \hbox (2.12527pt too wide) in paragraph at lines 83--84
+Overfull \hbox (2.12527pt too wide) in paragraph at lines 73--74
 [][] 
  []
 
@@ -594,78 +597,83 @@ Missing character: There is no Æ in font cmr12!
  [4]
 Missing character: There is no ¬ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ∫ in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ∫ in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ∫ in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ∫ in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ∫ in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ± in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ∫ in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ± in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ∫ in font cmr12!
  [5]
-<Step1.jpg, id=154, 289.08pt x 192.72pt>
-File: Step1.jpg Graphic file (type jpg)
-<use Step1.jpg>
-Package pdftex.def Info: Step1.jpg  used on input line 275. on input line 275.
-Package pdftex.def Info: Requested size: 289.07928pt x 192.71951pt on input lin
-e 275.
-<Step2.jpg, id=155, 289.08pt x 192.72pt>
-File: Step2.jpg Graphic file (type jpg)
-<use Step2.jpg>
-Package pdftex.def Info: Step2.jpg  used on input line 286. on input line 286.
-Package pdftex.def Info: Requested size: 289.07928pt x 192.71951pt on input lin
+<AddingReagent.png, id=154, 869.74937pt x 480.29437pt>
+File: AddingReagent.png Graphic file (type png)
+<use AddingReagent.png>
+Package pdftex.def Info: AddingReagent.png  used on input line 263. on input li
+ne 263.
+Package pdftex.def Info: Requested size: 260.92682pt x 144.08942pt on input lin
+e 263.
+<OpeningQuanti-Tray.png, id=156, 998.22937pt x 499.8675pt>
+File: OpeningQuanti-Tray.png Graphic file (type png)
+<use OpeningQuanti-Tray.png>
+Package pdftex.def Info: OpeningQuanti-Tray.png  used on input line 272. on inp
+ut line 272.
+Package pdftex.def Info: Requested size: 299.47112pt x 149.9614pt on input line
+ 272.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<OpeningQuanti-Tray2.png, id=157, 992.20688pt x 504.88625pt>
+File: OpeningQuanti-Tray2.png Graphic file (type png)
+<use OpeningQuanti-Tray2.png>
+Package pdftex.def Info: OpeningQuanti-Tray2.png  used on input line 278. on in
+put line 278.
+Package pdftex.def Info: Requested size: 297.66437pt x 151.46703pt on input lin
+e 278.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<PouringInQuanti-Tray.png, id=158, 986.68625pt x 497.86pt>
+File: PouringInQuanti-Tray.png Graphic file (type png)
+<use PouringInQuanti-Tray.png>
+Package pdftex.def Info: PouringInQuanti-Tray.png  used on input line 286. on i
+nput line 286.
+Package pdftex.def Info: Requested size: 296.00815pt x 149.35915pt on input lin
 e 286.
-<Step3.jpg, id=156, 289.08pt x 192.72pt>
-File: Step3.jpg Graphic file (type jpg)
-<use Step3.jpg>
-Package pdftex.def Info: Step3.jpg  used on input line 300. on input line 300.
-Package pdftex.def Info: Requested size: 289.07928pt x 192.71951pt on input lin
-e 300.
- [6 <./Step1.jpg>] [7 <./Step2.jpg> <./Step3.jpg>]
-Missing character: There is no ¬ in font cmr12!
-Missing character: There is no ∫ in font cmr12!
- [8]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<RubberInsert.png, id=159, 998.22937pt x 490.83376pt>
+File: RubberInsert.png Graphic file (type png)
+<use RubberInsert.png>
+Package pdftex.def Info: RubberInsert.png  used on input line 294. on input lin
+e 294.
+Package pdftex.def Info: Requested size: 299.47112pt x 147.25125pt on input lin
+e 294.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./AddingReagent.png>] [7 <./OpeningQuanti-Tray.png> <./OpeningQuanti-Tray2.
+png> <./PouringInQuanti-Tray.png>]
+<ColiformCount.png, id=189, 983.17313pt x 488.82625pt>
+File: ColiformCount.png Graphic file (type png)
+<use ColiformCount.png>
+Package pdftex.def Info: ColiformCount.png  used on input line 305. on input li
+ne 305.
+Package pdftex.def Info: Requested size: 294.95421pt x 146.649pt on input line 
+305.
+<EcoliCount.png, id=190, 953.5625pt x 505.89pt>
+File: EcoliCount.png Graphic file (type png)
+<use EcoliCount.png>
+Package pdftex.def Info: EcoliCount.png  used on input line 312. on input line 
+312.
+Package pdftex.def Info: Requested size: 286.07095pt x 151.76816pt on input lin
+e 312.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./RubberInsert.png> <./ColiformCount.png>]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 402.
-
 Missing character: There is no ¬ in font cmr12!
 Missing character: There is no ± in font cmr12!
 Missing character: There is no ¬ in font cmr12!
 Missing character: There is no ± in font cmr12!
-[9]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
@@ -678,41 +686,43 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
+ [9 <./EcoliCount.png>]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- 
+
+
 AED: lastpage setting LastPage
 [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 399.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
  (./Coliert_Quanti-Tray_v02.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 399.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 399.
 Package rerunfilecheck Info: File `Coliert_Quanti-Tray_v02.out' has not changed
 .
-(rerunfilecheck)             Checksum: 5797ED622E1970C77C24E947958CBA7A;1305.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
+(rerunfilecheck)             Checksum: A5E90A041FEC508FC53DB6FDF96219C2;1176.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 399.
  ) 
 Here is how much of TeX's memory you used:
- 8266 strings out of 494917
- 118768 string characters out of 6180700
- 215986 words of memory out of 5000000
- 11378 multiletter control sequences out of 15000+600000
+ 8325 strings out of 494917
+ 120075 string characters out of 6180699
+ 216417 words of memory out of 5000000
+ 11410 multiletter control sequences out of 15000+600000
  9606 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,18n,49p,534b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,18n,49p,377b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Coliert_Quanti-Tray_v02.pdf (10 pages, 200406 bytes).
+Output written on Coliert_Quanti-Tray_v02.pdf (10 pages, 19223721 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 83 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 272 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
