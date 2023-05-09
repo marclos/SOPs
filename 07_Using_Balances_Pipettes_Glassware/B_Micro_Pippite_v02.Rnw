@@ -1,19 +1,16 @@
 %SOP Template 
 % Version 02 Added revision date
-% Version 03 Added TOC and acknowledgements
-%           New SOP3_alpha.cls
+% Version 03 Added renumbered
+%           New SOP4_alpha.cls
 
-\documentclass[12pt]{../SOP3}
-
-
-
+\documentclass[12pt]{../SOP4_alpha}
 
 \title{Using Micro-Pippettes}
 \date{8/10/2016}
 \author{Isaac Medina}
 \approved{TBD}
-\ReviseDate{8/10/16}
-\SOPno{09B v.02}
+\ReviseDate{5/10/23}
+\SOPno{07B v.03}
 
 \begin{document}
 
@@ -67,7 +64,7 @@
 Micropipettes are used to transfer small amounts (< 1 ml) of liquids. The scales on micropipettes are in microliters (1000 µl = 1 ml). These are very expensive, delicate instruments so be very careful during use. The sizes of the micropipettes can be identified via the number on the round button on the plunger; this value is the maximum volume in microliters that can be transferred with that size pipette. The following is an illustration of a micropipette:
 \begin{figure} [h!]
 \caption{The Pipetman}
-\includegraphics[scale=0.5]{pipetman.jpg}
+\includegraphics[width=\textwidth]{pipetman.jpg}
 \end{figure}
 
 \section {How to Use a Micropipette}
@@ -78,7 +75,7 @@ Look at the front face of the pipet and you will see a window with three digits 
 \begin{figure} [h!]
 \caption{Pipetman Window}
 \label{fig:pipetman}
-\includegraphics[scale=0.5]{pipetman2.jpg}
+\includegraphics[width=\textwidth]{pipetman2.jpg}
 \end{figure}
 \begin{itemize}
   \item RULE OF THUMB: Always select the SMALLEST size pipette that will handle the volume you wish to move to achieve the greatest accuracy. Accuracy decreases as you use unnecessarily large pipets for small volumes.   
@@ -95,7 +92,7 @@ Look at the front face of the pipet and you will see a window with three digits 
 
 \begin{figure} [h!]
 \caption{Loading Sample}
-\includegraphics[scale=0.5]{pipetman3.jpg}
+\includegraphics{pipetman3.jpg}
 \end{figure}
 
 \item Deliver the sample. The second stopping point can be found when the plunger is depressed beyond the initial resistance until it is in contact with the body of the pipette. This second stopping point is used for the complete discharging of solutions from the plastic tip. You should not reach this second stop when drawing liquid into the pipette, only when expelling the last drop.   
