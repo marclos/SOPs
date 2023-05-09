@@ -1,0 +1,357 @@
+\documentclass[12pt]{../SOP3_beta}
+\usepackage[english]{babel}
+%\usepackage{blindtext}
+%\usepackage{lipsum}
+
+
+\title{Surface Waters Sampling}
+\date{02/02/2017}
+\author{Marc Los Huertos}
+\approved{Marc Los Huertos}
+\ReviseDate{\today}
+\SOPno{20 v0.1}
+
+\begin{document}
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP The scope of this SOP is train researchers to measure stream velocity and calculate discharge.
+
+\NP This standard operating procedure (SOP) outlines the general protocols used by the
+Los Huertos' lab to measure discharge using flow meters. 
+
+\NP The
+procedures presented in this SOP have largely been adapted from the protocols
+established by the United States Geological Survey (Rantz et al., 1982).
+
+\NP All discharge measurements and estimates must use the described methodology to
+ensure accurate and uniform results. 
+
+\NP A working knowledge of flow meter operation, as
+well as the limitations of operation, must be attained prior to the use of this type of
+equipment. The operation of these meters must follow the instructions provided by the
+manufacturer in the user manual.
+
+\NP Water Quality Branch equipment manuals for
+FlowTracker and FlowTracker2 are located at: TBN %V:\DOWWQB\Equipment user Manuals
+and maintenance TBD %log\Stream_Current Meters\Flow Tracker.
+
+
+%\NP As a researcher, sampling surface waters that are consistent with state and federal regulators assures that data meet specified standards.
+
+\section{Summary of Method}
+
+In order to measure stream discharge a cross-section of the stream representing the
+most uniform laminar flow should be located. At this location, a tagline is placed
+perpendicular to the stream flow and the wetted-width of the stream is determined.
+This width is divided by the appropriate number of desired vertical measurement
+stations. At each vertical station along the tagline, the station location and water depth
+are determined and used to measure mean velocity with a Sontek handheld Acoustic
+Doppler Velocimeter unit. Upon completion of data collection, these units
+automatically calculate final discharge (cfs) and an estimate of calculation uncertainty.
+
+\section{Definitions}
+
+\begin{description}
+\item[cfs or ft/s3] Cubic feet per second
+%DEP – Kentucky Department of Environmental Protection
+\item[Discharge] volumetric flow rate of water that is transported through a given crosssectional area, measured in cfs.
+%DOW – Kentucky Division of Water
+%fps or ft/s – Feet per second
+
+\item[LEW] the left edge of water when facing downstream
+\item[PPE] Personal Protective Equipment
+\item[QA] Quality Assurance
+\item[QC] Quality Control
+\item[REW] the right edge of water when facing downstream
+\item[SNR] Signal to Noise Ratio – a measure of the strength of the reflected acoustic signal relative to the ambient noise level of the FlowTracker
+\item[Velocity] the speed at which the water is moving in feet per second
+%\item[σV] Standard Error of Velocity
+
+\end{description}
+
+\section{Procedures}
+
+\subsection{Preparation}
+
+\subsection{Field Collections}
+
+\NP 
+
+\section{Cautions and Interferences}
+
+Specific cautions exist for flow meter equipment. It is important to read the
+manufacturer’s user manual and to become familiar with the specific cautions of each
+piece of equipment prior to its use. The following are general cautions one should be
+aware of prior to making instream discharge measurements.
+
+\NP It is not always possible to find a cross section that meets all of the desirable
+characteristics for measuring discharge. In this case, a cross section should be
+chosen using best professional judgment.
+
+\NP An attempt should be made to measure discharge at the same cross-section
+during each sampling event. However, it may be necessary to change the crosssection location due to instream physical changes.
+
+\NP The vertical spacing width should never be less than 0.2 feet.
+
+\NP Velocity readings should be averaged over a time period of 25s – 45s, depending
+on in-stream conditions.
+
+\NP If multiple channels exist in the cross-section, all islands must be accounted for
+in the discharge calculation. Island edges should be treated like river edges; however, there should not be velocity data for any area between the edges of
+the same island.
+
+\NP Flow meters can be influenced by interference from underwater objects.
+Reflections can occur from the bottom, the water surface, or from submerged
+obstacles such as rocks or logs. If the sampling volume is downstream of an
+underwater object, velocity data will be altered. When working in very shallow
+water or when underwater obstacles are ≤15 cm (6 in) away from the sampling
+volume, reflections can potentially affect velocity data.
+
+\NP Pressure can build up inside the FlowTracker unit over time. Vent the unit
+frequently by loosening the dummy cap on the external communication
+connector a few turns. Wait a few seconds and then tighten the dummy cap.
+Leave the dummy cap loose when storing.
+
+\NP Remove batteries from flow meter units prior to long term storage.
+
+
+\section{Health and Safety}
+
+\NP All field staff should review Worksite Hazard Assessment Guidance Document (DOW,
+2017). In addition, each employee will be individually trained by his/her supervisor, or
+designee, to perform assigned job tasks safely, prior to his/her performing the task.
+
+
+\NP Field staff working in and around potentially contaminated surface waters should
+receive immunization shot for Hepatitis A in accordance with DEP Policy SSE-708. In
+addition, staff should receive immunization for Hepatitis B and tetanus, to aid in the
+prevention of contracting those pathogens. 
+
+\NP All field staff should also be trained in with the following SOPs...
+
+\NP The use of personal protective equipment (PPE) should be used when sampling
+including, but not limited to: site-appropriate wading boots, personal floatation device,
+latex or nitrile gloves, and cold weather clothing.
+Monitoring may include field activities during all stages of the hydrologic cycle, including
+high discharge/flood stage conditions. It is recommended that field staff use the buddy
+system and personal floatation devices when collecting samples during high flow
+conditions. If high discharge conditions are determined unsafe by any Field Activities
+Staff, do not sample during that time.
+
+\subsection{Safety and Personnnel Protective Equipment}
+
+
+\section{Personnel \& Training Responsibilities}
+
+\NP All Field Activities Staff will meet the minimum qualifications TBD... .
+In addition, field staff will be trained by experienced field personnel in the proper
+calibration and use of monitoring equipment. Training will continue on-the-job and as
+formal educational opportunities become available.
+
+Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP03 Field Work
+  \item SOP01 Lab Safety
+  \item SOP07
+  \item SOP08
+  \item SOP10
+\end{itemize}
+
+\section{Required Materials}
+
+\subsection{SonTek FlowTracker SonTek® FlowTracker Handheld ADV®}
+
+\NP Instrument \#1 (Serial Number 9000-00113)
+
+\NP Instrument \#1 (Serial Number 9000-00XXX) BROKEN
+
+\subsection{Item 2}
+
+\section{Estimated Time}
+
+\NP After some practice, and depending on the depth and width of the stream, it can take an hour or more to measure a stream's discharge. However, in many cases, small, relatively shallow streams can be completed in less than 30 minutes. 
+
+\section{Procedure}
+
+\subsection{Preparing}
+
+\NP Check batteries... \dots
+
+
+\subsection{Selecting a Cross-Section}
+
+\NP The following site characteristics for cross-section locations are critical for accurate
+discharge measurements (from Rantz et al., 1982 unless otherwise cited):
+
+\begin{itemize}
+\item The site lies within a straight reach of stream and flowlines are parallel to each
+other. Avoid sites directly below sharp bends.
+
+\item Flow is relatively uniform and free from eddies, slack water, and excessive
+turbulence.
+
+\item The streambed is free from large obstructions, such as boulders and aquatic
+vegetation.
+
+\item Water velocity is >0.5 ft/s.
+
+\item Water depths >0.5 ft are preferred but a minimum depth of >0.1 ft is required.
+
+\item The flow is perpendicular to the tagline at all points (SonTek/YSI, Inc., 2007).
+
+\end{itemize}
+
+\NP Finding a cross-section that achieves all of the above criteria in the natural environment
+is difficult. 
+
+\NP Therefore, it may be necessary to “engineer” the stream by moving rocks,
+logs, branches, algae mats, rooted aquatic vegetation, debris, and/or other obstructions
+in order to construct a desirable cross-section free of turbulence. 
+
+\NP Additionally, rocks or
+other obstructions can be placed in the slack water to create an artificial bank such that
+no or minimal stream flow goes over or through the obstructions (Rantz et al., 1982). 
+
+\NP If 
+this is necessary, make all adjustments and wait a few minutes for the system to
+stabilize prior to beginning the stream flow measurements.
+
+\subsection{Setting the Tagline and Vertical Spacing}
+
+\NP After selecting the best cross-section, set up a tagline by stretching a tape measure
+across the stream so that it is taut and perpendicular to the stream flow lines. 
+
+\NP The
+tagline should be directly above the cross-section to be measured and must not touch
+the water surface.
+
+\NP Discharge measurements are taken at several verticals, defined as a point along the
+cross-section where water velocity is measured at a defined depth (or depths). 
+
+\NP Twelve
+to twenty verticals should be targeted for streams <20 feet wide, whereas twenty to
+thirty verticals should be targeted when stream width is >20 feet. 
+
+\NP To calculate the
+approximate spacing of verticals, determine the width of the stream and divide the
+stream width by the number of desired verticals. 
+
+\NP Importantly, the average velocity in
+one vertical should not exceed 10% of the total stream discharge (Rantz et al., 1982).
+
+\NP Therefore, it may be necessary to space verticals more closely together in areas that are
+deeper or that have a greater velocity than the majority of the stream. Conversely, the 
+spacing of verticals may be farther apart in areas that are shallower or have lower
+velocity compared to the majority of the stream. Uniform spacing across the tagline
+should only be used if the stream is of relative uniform depth and velocity regimes.
+
+\NP Although vertical spacing can vary, verticals should never be spaced less than 0.2 feet
+apart. As a result of this minimum spacing, small streams with a flowing width of less
+than 2.2 feet will have less than 12 verticals and can have as few as one vertical during
+very low stream flow. If less than 12 verticals are measured, it should be noted in the
+comments section on the field observation sheet with an explanation.
+
+\subsection{Measuring Depth}
+
+A standard top-setting wading rod should be used to correct for depth when using flow
+meters. The flow meter probe must be mounted according to the user manual to
+achieve accurate measurements. The wading rod should be adjusted to the appropriate
+depth, which is marked in 0.10 foot increments along the rod using hash marks. 0.10
+foot increments are denoted by a single groove, whereas 0.5 foot increments are
+denoted by a double groove, and 1 foot increments are displayed by a triple groove. It
+is appropriate to further estimate depth to the 0.02’ or 0.05’ increment level, despite
+the wading rod not being marked to this level.
+
+\subsection{Measuring Velocity}
+
+A working knowledge of flow meter operation, as well as the limitations of operation,
+must be attained prior to the use of this type of equipment. The operation of these
+meters must follow the instructions provided by the manufacturer in the user manual.
+The number of measurements taken at each vertical depends upon the depth of the
+stream. Follow these guidelines when determining the number of measurements to
+make:
+
+\subsection{Depths of ≤ 1.5 feet}
+
+When water depth is ≤ 1.5 feet, discharge is measured at 0.6 of the depth below the
+water’s surface at each vertical, referred to as the 0.6-depth method (Turnipseed and
+Sauer, 2010). A standard top-setting wading rod will automatically adjust the probe to
+the 0.4-depth position up from the streambed.
+
+\subsection{Depths of ≥ 1.5 feet}
+
+When water depth is ≥ 1.5 feet, discharge is measured at 0.2 and 0.8 of the total depth
+below the water’s surface at each vertical, referred to as the two-point method
+(Turnipseed and Sauer, 2010). For example, if the stream depth is 3 feet at a particular
+station, one should take a velocity measurement at 0.6’ and another at 2.4’. An average
+of these two readings will be used as the average velocity for the vertical.
+
+A standard top-setting wading rod can be adapted to this method by following these
+instructions:
+ To set the rod at the 0.2-depth, position the setting rod at twice the water
+depth.
+ To set the rod at the 0.8-depth, position the setting rod at half the water depth.
+The wading rod should be set ~3” below the tagline with the probe perpendicular to the
+tag line and the operator facing upstream. The operator should stand at least an arm’s
+length distance away from the probe side of the rod so that the operator’s feet alter the
+stream flow as little as possible. (Rantz et al., 1982). Rocks, logs, or other obstructions
+should not be moved during the measurement process as this may cause the stream
+flow to change in an area of the stream where velocity has already been measured.
+Once the process of measuring velocity has begun, the stream should not be altered
+further.
+Identify the starting edge as either left edge of water (LEW) or right edge of water (REW)
+when facing downstream. No velocity measurements should be made at the starting or
+ending edges. Facing upstream, place the wading rod downstream of the tape measure
+at the first vertical and enter the location and stream depth. Velocity readings should
+be averaged over a time period of 25s – 45s, depending on in-stream conditions.
+Once the stream velocity has been measured and recorded at the first vertical, continue
+measuring water velocity at each vertical, making sure that the appropriate number of
+measurements are being taken based on water depth (0.6-depth method vs. 0.2/0.8
+two point method). Continue until you have reached the end of the cross-section.
+Record the location and depth of the ending edge.
+Instruments, such as the SonTek FlowTracker and FlowTracker 2, record depth and
+velocity information as you progress along the cross-section and then calculate
+discharge once the ending edge has been reached. If this is the type of instrument
+being used, be sure to record the final calculated discharge value on a field data sheet.
+
+\section{Troubleshooting}
+
+A list of warnings, their meaning, and suggested action are listed in Table 2. These
+warnings will automatically be displayed on the FlowTracker/ FlowTracker2 if a certain
+parameter exceeds its limits.
+
+\section{Data and Records Management}
+
+Electronic discharge records, including all related quality control documentation, must
+be maintained in permanent project files. All records relating to discharge
+measurements, including hardcopy and electronic files, that are collected by DOW staff
+or that are collected for the explicit use by DOW must be kept according to DEP record
+retention policy (KDLA, 2006).
+
+\section{Quality Control and Quality Assuarance}
+
+The quality control and quality assurance (QA/QC) requirements for various projects
+must be specified in quality assurance project plans (QAPP). The following sections will
+outline suggested QA/QC for flow meters and discharge measurements.
+11.1 Flow Meter Quality Control and Quality Assurance
+Types of QA/QC for flow meters may include:
+ Routine maintenance
+ Proper installation and mounting of flow meter probes
+ Field diagnostics
+ Routine in-house beam check
+Refer to the appropriate user manual for QA/QC requirements and suggestions for
+specific flow meters. The following table describes the manufacturers’ suggested
+QA/QC protocols for flow meters used by DOW. Factory calibration is not required for
+SonTek FlowTracker ADV units.
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+%\NP \url{http://www.waterboards.ca.gov/water_issues/programs/swamp/docs/collect_bed_sediment_update.pdf}
+
+\end{document}
