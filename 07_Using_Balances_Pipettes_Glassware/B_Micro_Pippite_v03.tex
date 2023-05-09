@@ -1,20 +1,67 @@
 %SOP Template 
 % Version 02 Added revision date
-% Version 03 Added corrected spelling
+% Version 03 Added renumbered
 %           New SOP4_alpha.cls
 
-\documentclass[12pt]{../SOP4_alpha}
+\documentclass[12pt]{../SOP4_alpha}\usepackage[]{graphicx}\usepackage[]{xcolor}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
 
-\usepackage[english]{babel}
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
 
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
 
-\title{Using Micro-Pippettes}
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\title{Using Micro-Pipettes}
 \date{8/10/2016}
 \author{Isaac Medina}
 \approved{TBD}
-\ReviseDate{8/10/23}
-\SOPno{07 v.03}
-
+\ReviseDate{5/10/23}
+\SOPno{07B v.03}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
 
@@ -65,24 +112,22 @@
 \NP Pipetman (ranging from 2-1000microliters)
 \section {What is a Micropipette?}
 Micropipettes are used to transfer small amounts (< 1 ml) of liquids. The scales on micropipettes are in microliters (1000 µl = 1 ml). These are very expensive, delicate instruments so be very careful during use. The sizes of the micropipettes can be identified via the number on the round button on the plunger; this value is the maximum volume in microliters that can be transferred with that size pipette. The following is an illustration of a micropipette:
-\begin{figure} [H!]
+\begin{figure} [h!]
 \caption{The Pipetman}
-\includegraphics{pipetman.jpg}
+\includegraphics[width=\textwidth]{pipetman.jpg}
 \end{figure}
 
 \section {How to Use a Micropipette}
 \begin{enumerate}
   \item NEVER exceed the upper or lower limits of these pipettes.
 The limits are:  P10: 1.0 - 10.0 µl; P20: 2.0 - 20.0 µl; P200: 20 - 200 µl; P1000: 200 - 1000 µl  
-Look at the front face of the pipet and you will see a window with three digits inside. The diagram below shows the MAXIMUM value that can or should be dialed in on each size pipet. To exceed these values will put the pipet out of calibration. Beside each "window" below is the numbers place it represents (Figure \ref{fig:pipetman}).
-
-\begin{figure}[h!]
+Look at the front face of the pipet and you will see a window with three digits inside. The diagram below shows the MAXIMUM value that can or should be dialed in on each size pipet. To exceed these values will put the pipet out of calibration. Beside each "window" below is the numbers place it represents. (figure \ref{fig:pipetman})
+\begin{figure} [h!]
 \caption{Pipetman Window}
 \label{fig:pipetman}
-\includegraphics{pipetman2.jpg}
+\includegraphics[width=\textwidth]{pipetman2.jpg}
 \end{figure}
 \begin{itemize}
-
   \item RULE OF THUMB: Always select the SMALLEST size pipette that will handle the volume you wish to move to achieve the greatest accuracy. Accuracy decreases as you use unnecessarily large pipets for small volumes.   
 \end{itemize}
 \item Set the desired volume by turning the centrally located rings clockwise to increase volume or counterclockwise to decrease volume.  
@@ -116,26 +161,12 @@ Look at the front face of the pipet and you will see a window with three digits 
 \end{itemize}
 
 
-\NP Vortex Mixer
-\section{What is a Vortex?}
-A vortex is a relatively simple lab device used primarily to mix small vials of liquid. It consists of an electric motor with a vertical drive shaft attached to a cupped rubber piece mounted slightly off-center. As the motor runs the rubber piece oscillates rapidly in a circular motion. When a test tube or other appropriate container is pressed into the rubber cup (or touched to its edge) the motion is transmitted to the liquid inside and a vortex is created.
-\section{How and When to Use a Vortex}
-\begin{enumerate}
-  \item Turn on Vortex and either put it in "On" or "Auto" Mode
-  \item If the Vortex is set to "On" mode, turn the dial to an appropriate speed from 1 to 10. The Vortex will begin spinning at that speed. Then, place the test tube or whatever appropriate container that is holding the sample, gently pressing it against the rubber piece to initiate movement.
-  \item  If it is set on "Auto" mode, the rubber piece will only move when it makes contact with the sample container. This mode is often used because there is more control in terms of spinning the material. 
-\end{enumerate}
-
-\NP Glassware
-
 
 
 
 \section{QC/QA Criteria}
 
 \section{References}
-
-\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
 
 
 
