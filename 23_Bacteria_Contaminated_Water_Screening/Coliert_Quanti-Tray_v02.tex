@@ -4,7 +4,7 @@
 %           New SOP3_alpha.cls
 
 
-\documentclass[12pt]{../SOP4_alpha}\usepackage[]{graphicx}\usepackage[]{color}
+\documentclass[12pt]{../SOP4_alpha}\usepackage[]{graphicx}\usepackage[]{xcolor}
 % maxwidth is the original width if it is less than linewidth
 % otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -18,9 +18,6 @@
 \makeatother
 
 \definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\makeatletter
-\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}}}
-\makeatother
 \newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
 \newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
 \newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
@@ -50,19 +47,12 @@
  {\par\unskip\endMakeFramed%
  \at@end@of@kframe}
 \makeatother
+\usepackage{placeins}
 
 \definecolor{shadecolor}{rgb}{.97, .97, .97}
 \definecolor{messagecolor}{rgb}{0, 0, 0}
 \definecolor{warningcolor}{rgb}{1, 0, 1}
 \definecolor{errorcolor}{rgb}{1, 0, 0}
-\makeatletter
-\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-}}
-\makeatother
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
@@ -81,13 +71,12 @@
 
 
 \maketitle
-
 \section{Scope and Application}
 
 \NP This standard operating procedure describes the test method for the collection and analysis of water samples for the enumeration of Escherichia coli (E. coli) and
 Total coliform bacteria.
 
-\NP The applications of this SOP are for...
+\NP The applications of this SOP are for use with surface water samples.  
 
 \section{Summary of Method}
 
@@ -130,7 +119,6 @@ procedures.
 
 
 \section{Biases and Interferences}
-
 \NP Water samples containing humic or other material may be colored. If there is
 background color, compare inoculated trays to a control tray containing only
 water (SM, 9223 A.) 
@@ -168,20 +156,20 @@ Water quality can range from high quality and even potoble to very low with asso
 
 \section{Required Materials and Apparati}
 
-\NP 10.1 Sterile, shrink-wrapped 100ml IDEXX bottles.
+\NP 10.1 Sterile, shrink-wrapped 100ml IDEXX bottles- Catalog NO: WV120SBT-200
 
-\NP Quanti-Tray Sealer®: catalog number XXXX? . IDEXX Laboratories, Inc., Westbrook, ME (NEED TO ADD SERIAL NUMBER).
 
-\NP Incubator (add model and serial number) 
+\NP Quanti-Tray Sealer®:IDEXX Laboratories, Inc., Westbrook, ME -Serial NO: QT1757, Model NO: B9-10894-04
+.
+
+\NP Incubator- Catalog NO: 150152632, Serial NO: IMC40490982
 
 
 \section{Reagents and Standards}
 
-\NP... need to add
+\NP Colilert® reagent- Catalog NO: WP100l-18
 
-?? Colilert® reagent: for 100 ml samples, catalog number WP200. IDEXX Laboratories, Inc., Westbrook, ME.
-
-\NP ?? Quanti-Tray®/2000: 100 trays containing 97 wells each, part number WQT2K. IDEXX Laboratories, Inc., Westbrook, ME
+\NP Quanti-Tray®/2000: 100 trays containing 97 wells each IDEXX Laboratories, Inc., Westbrook, ME -Catalog NO: WQT2K
 
 \section{Estimated Time}
 
@@ -189,92 +177,11 @@ Water quality can range from high quality and even potoble to very low with asso
 
 \section{Sample Collection, Preservation, and Storage}
 
-\section{Procedure}
-
-NEEDS TO BE UPDATED!!! copied from various methods online... needs to be harmonized.
-
-a) Good laboratory practices will be used for this procedure.
-
-b) Pre-heat incubator to bring temperature up to 35ºC.
-
-c) Pre-warm rehydration fluid vials to 35º-37ºC. Use blue autoclavable foam vial
-holder to hold vials.
-
-d) Discard blue cap from rehydration fluid vial.
-
-e) Remove organism vial from pouch (vial with colorless cap).
-
-f) Transfer colorless cap onto pre-warmed rehydration vial and discard vial
-containing the desiccant.
-
-g) Place rehydration vials into the foam vial holder. Invert and place in incubator for
-10 minutes at 35º-37ºC.
-
-h) Fill four sterile IDEXX 100 ml. bottles with distilled water to fill line. Label
-three bottles with each bacteria name and one bottle “control”. Place in incubator
-until a temperature of 35º ± 0.5ºC is reached.
-
-i) Remove vial from holder. Hold vial upside down and tap cap gently to mix.
-Remove cap and look at inside surface to ensure that no un-dissolved black
-particles are present. Inoculate an additional 10 minutes if present.
-
-j) Add entire contents of each appropriate bacteria vial to pre-warmed 100 ml.
-labeled bottles.
-
-k) Add Colilert reagent to sample bottles including control. Place in incubator and
-follow incubation instructions outlined in section 7. Do not place in QuantiTrays. 
-
-The 100ml duplicate water sample is shaken well just prior to
-preparation for analysis. Samples over the 100 ml mark must not be
-poured to volume. If there is at least 1” of headspace, the sample
-may be shaken and excess volume taken out with a sterile pipet. If
-there is insufficient headspace (<1”) for proper mixing, do not pour
-off and discard a portion of the sample. Rather, pour the entire
-sample into a larger sterile container, mix properly, and proceed with
-the analysis.
-
-Open a Colilert ampule and pour contents into either the diluted
-sample or undiluted sample. Repeat for the remaining sample.
-
-Mix thoroughly, making sure the Colilert reagent is completely
-dissolved.
-
-Follow manufacturer’s instructions for preparation of QuantiTray/2000 and use of the Quanti-Tray Sealer.
-
-Allow bubbles to settle or dissipate. Failure to do this may result in
-the wells filling or sealing improperly.
-
-Record the sample’s site code on the back of the well for
-identification purposes.
-
-Record the lot number of the reagents and the wells used on the
-bench sheet in the comments section.
-
-Incubate at 35.0 ± 0.5ºC for 24 hours.
-
-Count the number of small and large positive wells and refer to the
-MPN table to find the most probable number for Total coliform.
-
-
-E. coli results are obtained by placing the wells under a black light
-and counting the number of fluorescent wells. Refer to the MPN
-table to determine the E. coli concentration.
-
-Report results on the bench sheet.
-
-The completed bench sheet should be reviewed by the researcher, the
-laboratory director and the QA manager. 
-
-\NP Arrive at site and record site number, date and time.
+\NP  Arrive at site and record site number, date and time.
 
 \NP Immerse the thermometer or YSI handheld in the water and leave immersed
 five minutes before reading temperature. Avoid disturbing the bottom with
 the thermometer at the sample site.
-
-\begin{figure}
-\includegraphics{Step1.jpg}
-\caption{add caption -- pictures from our lab...}
-\end{figure}
 
 \NP Label bottle with location (geographic area name and stream or lake name),
 date, time, water temperature and sampler's initials. Label bottle before
@@ -282,24 +189,12 @@ immersion using a black permanent marker or pre-printed labels. QVIR
 Bacteria Lab, State Certified Lab, purchases only certified sterile, 100 ml,
 sealed containers from IDEXX.
 
-\begin{figure}
-\includegraphics{Step2.jpg}
-\caption{add caption -- pictures from our lab...}
-\end{figure}
-
-
 \NP Use latex gloves when handling bottles during sampling. Fingers contain
 contaminants such as nitrates. Bug repellents or sunscreen are particularly troublesome as contaminants. Once the gloves are on, be careful not to touch
 your face, the ground, or anything but the bottles.
 
 \NP The sample should be taken from flowing, not stagnant water, facing
-upstream positioned in the thalwag.
-
-
-\begin{figure}
-\includegraphics{Step3.jpg}
-\caption{add caption -- pictures from our lab...}
-\end{figure}
+upstream. Make sure to take at least 3 samples from each area in order to calculate precision.
 
 \NP Be sure to immerse the bottle completely, 10 cm (4 inches) deep, with
 mouth of bottle pointing upstream, so no water flows over your hand into the
@@ -333,35 +228,102 @@ collected will be recorded in the field sample log.
 \NP The samples will be kept in the possession of researcher personnel who both
 collect and analyze the samples.
 
-\subsection{QA/QC}
 
-\NP Accuracy: Initial analyst demonstration of capability and for each new lot of
-Quanti-Tray/2000, analyze the following:
+%\subsection{Material Accuracy Check}
 
-\begin{itemize}
+%\NP Accuracy: Initial analyst demonstration of capability and for each new lot of
+%Quanti-Tray/2000, analyze the following:
 
-\item Check each new lot of Colilert. Shine the ultraviolet lamp on the media snap packs. If the lot is
-fluorescent it will be discarded.
+%\begin{itemize}
 
-\item Dissolve one packet in 100 ml distilled water. Do not incubate.
-Check for fluorescents.
+%\item Check each new lot of Colilert. Shine the ultraviolet lamp on the media snap packs. If the lot is
+%fluorescent it will be discarded.
 
-\item Analyze sterile reagent water blank with each batch of samples to
-verify that there is a negative result from 24-28 hours
+%\item Dissolve one packet in 100 ml distilled water. Do not incubate.
+%Check for fluorescents.
 
-\item Gravimetrically check each new lot of sterile, transparent, nonfluorescing 100-ml vessels to ensure the 100-mL fill line is
-accurately represented on the vessel. 
+%\item Analyze sterile reagent water blank with each batch of samples to
+%verify that there is a negative result from 24-28 hours
 
-\end{itemize}
+%\item Gravimetrically check each new lot of sterile, transparent, nonfluorescing 100-ml vessels to ensure the 100-mL fill line is
+%accurately represented on the vessel. 
 
-\subsection{Disposal}
+%\end{itemize}
 
-needs updating...
+\section{Procedure}
 
-\NP All materials must be autoclaved prior to disposal and workspaces
-thoroughly disinfected.
+Good laboratory practices will be used for this procedure.
 
-\NP Dispose of media in accordance with Good Laboratory Practices. ??? need to figure out what this means!
+\NP Check each new lot of Colilert Reagent.Shine the ultraviolet lamp on the media snap packs.If the lot is fluorescent it will be discarded.If Reagent has expired discard it.
+\NP Turn on the Quanti-tray sealer. 
+\NP Set the incubator to 35 degrees C.
+\NP Add Colilert reagent to 100 ml water sample.
+
+\begin{figure}[h!]
+\includegraphics[scale=0.3]{AddingReagent.png}
+\caption{Adding Reagent}
+\label{fig:Adding Reagent}
+\end{figure}
+
+\NP Place the lid back on the sample and shake well till the reagent has dissolved.
+\NP Use a permanent felt tip marker to label your Quanti-tray with information identifying your sample. 
+\NP Open the Quanti-tray by holding it at the top, with the well side facing your palm. Push the top edge of the Quanti-tray in with your free hand while squeezing the tray into a circle. Open the tray by gently pulling the foil tab away from the plastic side. Be careful not to tear the tab. Do not touch the inside of the tray.
+\begin{figure}[h!]
+\includegraphics[scale=0.3]{OpeningQuanti-Tray.png}
+\caption{Opening Quanti-Tray}
+\label{fig:Opening Quanit-Tray}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.3]{OpeningQuanti-Tray2.png}
+\caption{Opening Quanti-Tray}
+\label{fig:Opening Quanti-Tray}
+\end{figure}
+
+\NP Pour the sample mixture into the Quanti-tray, avoiding contact with the foil tab.
+
+\begin{figure}[h!]
+\includegraphics[scale=0.3]{PouringInQuanti-Tray.png}
+\caption{Pouring Sample In Quanti-Tray}
+\label{fig:Pouring Sample In Quanti-Tray}
+\end{figure}
+
+\NP Place the filled Quanti-tray on the rubber insert, making sure each well fits its corresponding hole.
+
+\begin{figure}[h!]
+\includegraphics[scale=0.3]{RubberInsert.png}
+\caption{Place Quanti-Tray In Rubber Insert}
+\label{fig:Place Quanti-Tray In Rubber Insert}
+\end{figure}
+
+\NP Push the insert with the tray into the sealer, non foil tab end first, until the sealer grabs the tray and pulls it into the slot. If you need to reverse the motor, press and hold the reverse button. However, do not reverse the motor if the rubber insert is completely inside the sealer.
+The sealer distributes the sample mixture into the Quanti-tray wells, seals the wells, and then partially ejects the sealed tray.
+\NP Remove the rubber insert and tray from the sealer.
+\NP Incubate the sealed tray for 24 hours at 35 degrees C plus or minus 0.5 degrees C.
+\NP After incubation, mark each yellow well with a permanent marker, including the large overflow well at the top. To determine the number of total coliforms, count the wells that are equal to or greater than the comparator, and then refer to the MPN.
+\begin{figure}[h!]
+\includegraphics[scale=0.3]{ColiformCount.png}
+\caption{Counting Total Coliforms}
+\label{fig:Counting Total Coliforms}
+\end{figure}
+
+\NP To determine the number of E Coli, view the Quanta-tray under a UV lamp. Count the fluorescent wells that are equal to, or greater than the comparator, and then refer to the MPN table.
+\begin{figure}[h!]
+\includegraphics[scale=0.3]{EcoliCount.png}
+\caption{Counting Total E Coli}
+\label{fig:Counting Total E Coli}
+\end{figure}
+
+
+
+\NP A count of 1 to 10 MPN/100 ml is regarded as low risk; 11 to 100 MPN/100 ml is medium risk. Finally, an E. coli count greater than 100 MPN/100 ml is judged high risk.
+
+
+\NP Report results on the bench sheet.
+
+\NP The completed bench sheet should be reviewed by the researcher, the
+laboratory director and the QA manager. 
+
 
 \section{Data Analysis and Calculations}
 
@@ -379,27 +341,8 @@ Precision (as RPD) = \frac{(A – B)*100}{(A + B)/2}
 Where: A = MPN from aliquot A and
  B = MPN from aliquot B 
  
- 
 
-\NP The following results should be observed:
-
-
-\begin{table}
-\caption{need to add caption}
-		\begin{tabular}{ll}\hline
-
-Organism                &  Result \\ \hline \hline
-Escherichia coli        & Yellow wells, fluorescence \\
-Klebsiella pneumoniae   & Yellow wells, no fluorescence \\
-Pseudomonas aeruginosa  & Clear wells, no fluorescence \\
-Method Blank            & Clear wells, no fluorescence \\ \hline
-  \end{tabular}
-\end{table}
-
-
-\section{QC/QA Criteria}
-
-\subsection{Data assessment and acceptable criteria}
+\section{Data assessment and acceptable criteria}
 
 \NP The analyst should review all data for correctness (e.g., use of MPN table).
 
@@ -436,6 +379,13 @@ depleted after the initial analysis.
 
 \NP  If data are unacceptable for any reason, the analyst should review
 their analytical technique prior to conducting this analysis again. 
+
+\section{Disposal}
+
+\NP All materials must be autoclaved prior to disposal and workspaces
+thoroughly disinfected.
+
+\NP Dispose of media in accordance with Good Laboratory Practices.
 
 \section{Trouble Shooting}
 
