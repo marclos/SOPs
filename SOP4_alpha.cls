@@ -110,6 +110,8 @@
 \newcommand{\approved}[1]{\newcommand{\theapproved}{#1}}
 \newcommand{\SOPno}[1]{\newcommand{\theSOPno}{#1}}
 \newcommand{\ReviseDate}[1]{\newcommand{\theReviseDate}{#1}}
+
+
 % Ref: http://tex.stackexchange.com/questions/3988/titlesec-versus-titling-mangling-thetitle
 \let\oldtitle\title
 \renewcommand{\title}[1]{\oldtitle{#1}\newcommand{\mythetitle}{#1}}
