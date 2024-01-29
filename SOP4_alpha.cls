@@ -58,6 +58,12 @@
     \setlength{\itemsep}{0pt}%
     \setlength{\parskip}{0pt}}%
   {\end{enumerate}}
+	
+	\newenvironment{description*}%
+  {\begin{description}%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parskip}{0pt}}%
+  {\end{description}}
 
 % Modify bullet format
 \RequirePackage{amssymb}
@@ -100,6 +106,7 @@
 % Modification of title block
 \RequirePackage{titling}
 \RequirePackage{multirow}
+
 \newcommand{\approved}[1]{\newcommand{\theapproved}{#1}}
 \newcommand{\SOPno}[1]{\newcommand{\theSOPno}{#1}}
 \newcommand{\ReviseDate}[1]{\newcommand{\theReviseDate}{#1}}
@@ -108,9 +115,9 @@
 \renewcommand{\title}[1]{\oldtitle{#1}\newcommand{\mythetitle}{#1}}
 \renewcommand{\maketitle}{%
 \begin{tabular}{|c|p{2in}|l|l|} \hline
-\multirow{3}{*}{\includegraphics[width=2cm]{../pomona.jpg}} & \multicolumn{1}{p{2.5in}|}{\centering Environmental Analysis Teaching and Research Laboratory} & Date: \thedate & Number: \theSOPno \\ \cline{2-4}
+\multirow{3}{*}{\includegraphics[width=2cm]{../pomona.jpg}} & \multicolumn{1}{p{2.5in}|}{\centering Environmental Analysis Teaching and Research Laboratory} & Date: \thedate & SOP No. \theSOPno \\ \cline{2-4}
 & \multicolumn{1}{p{2.5in}|}{\centering Standard Operating Procedure } & \multicolumn{2}{p{2.5in}|}{Title: \mythetitle} \\ \cline{2-4}
-& Approved By: \theapproved & \multicolumn{2}{l|}{Revision Date: \theReviseDate} \\ \hline
+& Approved By: \theapproved & \multicolumn{2}{l|}{Revised: \theReviseDate} \\ \hline
 \end{tabular}
 }
 

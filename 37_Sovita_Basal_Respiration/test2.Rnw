@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{natbib}
+\usepackage{filecontents}
+\bibliographystyle{apalike}
+\begin{document}
+  I want to cite this \cite{majumder2017}.
+
+\begin{filecontents}{bibliography.bib} 
+@article{majumder2017,
+  title={Higher Rates Of Hate Crimes Are Tied To Income Inequality},
+  author={Majumder, Maimuna},
+  journal={FiveThirtyEight. Last modified January},
+  volume={23},
+  year={2017}
+}
+\end{filecontents}
+
+\bibliography{bibliography}
+\end{document}

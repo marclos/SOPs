@@ -1,0 +1,142 @@
+\documentclass[12pt]{../SOP4_alpha}
+%\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
+
+\usepackage[english]{babel}
+%\usepackage{blindtext}
+%\usepackage{lipsum}
+
+%\documentclass{article}
+
+\usepackage{natbib}
+
+\title{Compost Maturity}
+\date{1/27/2024}
+\author{Marc Los Huertos}
+\approved{Los Huertos}
+\ReviseDate{\today}
+\SOPno{37b~v0.92}
+
+\begin{document}
+%\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP The Solvita Compost Maturity Test is a unique procedure using two test probes to simultaneously measure CO2 and NH3, the two most prominent gases indicating activity and stability of compost.
+
+\NP This test is widely-recognized worldwide for validating compost maturity.
+
+\NP This easy-to-use application requires a small sample placed in the incubation jars and the results are read after 4-hrs of exposure.  The basic kit offers a Solvita color chart to determine the level of activity from which a Maturity Index is calculated using guidelines provided in the manual.
+
+\NP 
+
+\NP Numerous studies\ldots \citep{vargas2005assessing}.
+
+\section{Acknowledgements}
+
+\NP This SOP is based on the Solvita Field Test Kit Manual \citep{solvita2014}, version 8.
+
+\section{Definitions}
+
+\NP Compost
+
+\NP Compost Maturity
+
+\NP Maturity Index
+
+\section{Biases and Interferences}
+
+\NP Biases and interferences can come from...
+
+
+
+\section{Health and Safety}
+
+%NP \lipsum[2]
+
+
+\section{Personnel \& Training Responsibilities}
+
+%\NP \lipsum[1]
+
+Students using this SOP should be trained for the following SOPsa:
+
+\begin{itemize*}
+  \item SOP1
+  \item SOP2
+\end{itemize*}
+
+\section{Required Materials}
+
+\begin{itemize*}
+  \item Test Soils
+  \item \# XX Seives (3/8" or 10 mm)
+  \item Solvita Jars
+  \item Individually wrapped CO2 \& NH3 Probes (must remain refrigerated) 
+  \item AWS digital scale (field) or Ohaus digital scale (lab)
+\end{itemize*}
+
+\section{Estimated Time}
+
+\NP This will take 15 minutes in the lab and 24 hours for the Solvita Jars to incubate.
+
+\section{Sample Collection, Preservation, and Storage}
+
+\subsection{Obtain and Prepare Sample}
+
+\NP Take several grab samples to prepare a composti by smxigin all sub-samples respresenative of the enre compose. Remove larg weed chips and other objectes. A 3/8" (10 mm) sive is recommended before laoding jar.
+
+\NP Check moisture content of sample using squeeze test. Squeeze a handful of compost and release. Water should appear between fingers, but not drip out. Adjust water content if needed. Allow compost to equilibrate for 24 hours.
+
+\NP If compost is warm or frozen, let it equilibrate to room temperature for 24 hours before testing.
+
+
+\section{Procedure}
+
+\NP Place a clean Solvita Jar on the scale and tare the weight of the jar 
+
+\NP Add $100 \pm 5$ grams of soil using the fill line as a guide.
+
+\NP Unwrap and place CO2 probe in jar NOTE: Handle the probe only by the handle avoid anything from touching the gel surface.
+
+\NP Screw on lid tightly-- and wait 24 hours. Record temperature and try to keep the jars at a constant temp for the duration of the test
+
+\NP Remove lid after 24 hours
+
+\subsection{Reading the Results}
+
+\NP Turn on DCR Field test unit and insert probe to get CO2 color. The probe must go into the DCR with gel side up press the read button. Compare color to the visual color key. Record the CO2 reading.
+
+\NP Insert the NH3 probe into the DCR and press the read button. Compare color to the visual color key. Record the NH3 reading.
+
+
+\section{Data Analysis and Calculations}
+
+\NP Calculate the maturity index using the following formula:
+
+\begin{equation}
+MI = \frac{CO2 \times 0.5 + NH3 \times 0.5}{100}
+\end{equation}
+
+\NP See Table 1 below for interpretation:
+
+
+
+\section{QC/QA Criteria}
+
+\NP Solvita kits are pre-calibrated and packaged for the highest quality prior to shipping. The sealed probes should be the "Control Color" when the foil pack is opened (see color chart). If the foil packs are damaged or the jar is cracked then the test may not work properly. The probe show Lot No. and Expiration Dates on the package. The plastic jars may be reused 4 times, the discarded. Shelf-life is improved by refrigeration. Do not allow gels to freeze. 
+
+\section{Trouble Shooting}
+
+
+
+\section{References}
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+
+\end{document}

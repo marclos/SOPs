@@ -1,0 +1,17 @@
+\documentclass[12pt]{article}
+\usepackage{natbib}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+<<setup, include = FALSE,  echo = FALSE>>=
+Sys.setenv(TEXINPUTS = getwd(),
+           BIBINPUTS = getwd(),
+           BSTINPUTS = getwd())
+@
+
+Some text \citet{brockwelldavis}
+\newpage 
+\nocite{*}
+\bibliographystyle{jasa}
+\bibliography{test}
+\end{document}
