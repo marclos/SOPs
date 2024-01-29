@@ -39,11 +39,15 @@
 
 \section{Definitions}
 
-\NP Compost
+\begin{description*}
 
-\NP Compost Maturity
+\item[Compost]
 
-\NP Maturity Index
+\item[Compost Maturity]
+
+\item[Maturity Index]
+
+\end{description*}
 
 \section{Biases and Interferences}
 
@@ -74,18 +78,19 @@ Students using this SOP should be trained for the following SOPsa:
   \item \# XX Seives (3/8" or 10 mm)
   \item Solvita Jars
   \item Individually wrapped CO2 \& NH3 Probes (must remain refrigerated) 
+  \item DCR Field Test Unit (with 9 volt battery)
   \item AWS digital scale (field) or Ohaus digital scale (lab)
 \end{itemize*}
 
 \section{Estimated Time}
 
-\NP This will take 15 minutes in the lab and 24 hours for the Solvita Jars to incubate.
+\NP This will take 20 minutes to collect and prepare compost sample. An equalibrium stage ranges from 1 to 24 hours depending on conditions. The incubation requires 4 hours. Finally, an additional 10 minutes is needed to read the probes for a total of 5.5 to 28.5 hours.
 
 \section{Sample Collection, Preservation, and Storage}
 
 \subsection{Obtain and Prepare Sample}
 
-\NP Take several grab samples to prepare a composti by smxigin all sub-samples respresenative of the enre compose. Remove larg weed chips and other objectes. A 3/8" (10 mm) sive is recommended before laoding jar.
+\NP Take several grab samples to prepare a compost by mixing all sub-samples respresenative of the enre compose. Remove larg weed chips and other objects. A 3/8" (10 mm) seive is recommended before laoding jar.
 
 \NP Check moisture content of sample using squeeze test. Squeeze a handful of compost and release. Water should appear between fingers, but not drip out. Adjust water content if needed. Allow compost to equilibrate for 24 hours.
 
@@ -94,22 +99,54 @@ Students using this SOP should be trained for the following SOPsa:
 
 \section{Procedure}
 
-\NP Place a clean Solvita Jar on the scale and tare the weight of the jar 
+\NP Seive compost to remove large particles.
 
-\NP Add $100 \pm 5$ grams of soil using the fill line as a guide.
+\NP Carefully fill the Solvita jar to the fill lines. To get the proper density tap the jar gently while filling to fill line. Optionally, the proper weight in grams per jar corresponding to actual field density is found in the Table~\ref{tab:jarweight}.
 
-\NP Unwrap and place CO2 probe in jar NOTE: Handle the probe only by the handle avoid anything from touching the gel surface.
+\begin{table}[ht]
+\caption{Compost weight per jar adjusted for actual field density.}
+\label{tab:jarweight}
+\centering
+\begin{tabular}{rrr}
+  \hline
+ \textbf{lbs/yr3} & \textbf{kg/m3} & \textbf{g/jar} \\ 
+  \hline \hline
+  500   & 300   & 30 \\
+  800   & 475   & 50 \\
+  1,000 & 600   & 60 \\
+  1,200 & 700   & 70 \\ \hline
+\end{tabular}
+\end{table}
 
-\NP Screw on lid tightly-- and wait 24 hours. Record temperature and try to keep the jars at a constant temp for the duration of the test
 
-\NP Remove lid after 24 hours
+\NP Let the sample ``air-out" briefly in the jar for up to one-hour prior to starting the test. If the sampl was take directly from a very hot or frozen pile, it is advisable to allow it to stand for 24 hours before starting the test. 
+
+\NP The Solvita maturity method requires two tests carried out simultanious in the same 4-hour period. Terr open both the pouches marked ``High CO2" and ``Ammonia" and carefully remove each probe and avoid touching the gel surface. The gel in the proble is color-coded: the carbon dioxide probe is purple and the ammonia probe is yellow. Once the pouch is open, the test should be started immediately. 
+
+
+\NP Carefully insert both probes into the compost without allowing compost to touch the gel surface. Push the probes so the bottom of the probe hits the jar's bottom. Do not jostle the composite or allow dust to coat the surface of the probe. 
+
+\NP Screw on lid tightly and allow to incubate out of direct sunlight -- and wait 4 hours. Record temperature and try to keep the jars at a constant temp for the duration of the test, between 20-25\textdegree C (68-77\textdegree F).
+
+\NP Remove lid after 4 hours and remove the probes. 
+
+\NP Read the probes immediately after removing from the jar.
+
 
 \subsection{Reading the Results}
 
-\NP Turn on DCR Field test unit and insert probe to get CO2 color. The probe must go into the DCR with gel side up press the read button. Compare color to the visual color key. Record the CO2 reading.
+\NP Turn on DCR Field test unit and insert probe to get CO2 and NH3 color. The probe must go into the DCR with gel side up press the read button. 
 
 \NP Insert the NH3 probe into the DCR and press the read button. Compare color to the visual color key. Record the NH3 reading.
 
+\NP If the DCR does not work, Compare the color of the gel to the color chart, finding the closest match. Record the CO2 and NH3 readings.
+
+
+\subsection{Clean Up}
+
+\NP Discard compost sample and probe in an appropriate manner.
+
+\NP Wash the Solvita jar with water and dry for reuse. Label jar top with event to track the number of times the jar has been used. Disscard the jar after 4 uses.
 
 \section{Data Analysis and Calculations}
 
@@ -119,24 +156,53 @@ Students using this SOP should be trained for the following SOPsa:
 MI = \frac{CO2 \times 0.5 + NH3 \times 0.5}{100}
 \end{equation}
 
-\NP See Table 1 below for interpretation:
+
+\subsection{Compost Maturity Index}
+
+\NP See Figure! 1 below for interpretation:
+
+\section{Applications of Results}
+
+\subsection{Status and Conditions of Compost Processes}
+
+\subsection{Managing Aeration Sufficiency}
+
+\subsection{Selecting Best Use of Composed Based on Maturity}
 
 
+\subsection{Ammoiniua Emissions of Mantures \& Composts}
 
 \section{QC/QA Criteria}
 
-\NP Solvita kits are pre-calibrated and packaged for the highest quality prior to shipping. The sealed probes should be the "Control Color" when the foil pack is opened (see color chart). If the foil packs are damaged or the jar is cracked then the test may not work properly. The probe show Lot No. and Expiration Dates on the package. The plastic jars may be reused 4 times, the discarded. Shelf-life is improved by refrigeration. Do not allow gels to freeze. 
+\NP The probe show Lot No. and Expiration Dates on the package. Solvita kits are pre-calibrated and packaged for the highest quality prior to shipping. The sealed probes should be the "Control Color" when the foil pack is opened (see color chart).  Shelf-life is improved by refrigeration. Do not allow gels to freeze. 
+
+\NP The plastic jars may be reused 4 times, the discarded. 
+
+\NP If the foil packs are damaged or the jar is cracked then the test may not work properly.
+
+\NP A sample that is too dry may give a false postive maturiety test (although goty ammonia is still volatile).
 
 \section{Trouble Shooting}
 
+\begin{table}[ht]
+\centering
+\caption{Trouble Shooting Guide}
+\begin{tabular}{p{5cm}p{5cm}p{5cm}} \hline
+\textbf{Problem} & \textbf{Cause} & \textbf{Solution} \\ \hline \hline
+Compost is fresh but test results indcate "mature"& 
+Compost is too dry & 
+Add water to compost and retest \\
 
+
+\end{tabular}
+\end{table}
 
 \section{References}
 
 \bibliographystyle{apalike}
 \bibliography{references}
 
-\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+%\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
 
 
 \end{document}
