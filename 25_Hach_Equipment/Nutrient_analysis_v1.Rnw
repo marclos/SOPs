@@ -1,0 +1,108 @@
+%SOP Template 
+% Version 02 Added revision date
+% Version 03 Added TOC and acknowledgements
+%           New SOP3_alpha.cls
+
+
+\documentclass[12pt]{../SOP4_alpha}
+
+\usepackage[english]{babel}
+
+
+\title{SOP Title}
+\date{X/XX/XXXX}
+\author{Reseacher Name}
+\approved{TBD}
+\ReviseDate{\today}
+\SOPno{X}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP The scope of this SOP is to train researchers to test waste water, drinking water, surface water, and process water.
+
+\NP The applications of this SOP are for training researchers in the management and analysis of waste water, drinking water, surface water, and process water.
+
+\section{Summary of Method}
+\NP This SOP provides instructions on how to test selected nutrients from different water sources 
+\subsection {Nitrogen, Ammonia TNTplus 830 Method 10205}
+\NP Ammonium ions react at pH 12.6 with hypochlorite ions and salicylate ions in the
+presence of sodium nitroprusside as a catalyst to form indophenol. The amount of color
+formed is directly proportional to the ammonia nitrogen that is in the sample. The
+measurement wavelength is 694 nm.
+\subsection {Nitrate TNTplus 835 Method 10205}
+\NP Nitrate ions in solutions that contain sulfuric and phosphoric acids react with  2,6-dimethylphenol to form 4-nitro-2,6-dimethylphenol. The measurement wavelength is
+345 nm.
+\subsection{Phosphorus TNT 845 Method 10209}
+\NP Phosphates present in organic and condensed inorganic forms (meta-, pyro- or otherpolyphosphates) are first converted to reactive orthophosphate in the total phosphorusprocedure. Treatment of the sample with acid and heat provides the conditions for hydrolysis of the condensed inorganic forms. Organic phosphates are also converted toorthophosphates in the total phosphorus procedure by heating with acid and persulfate.The reactive phosphorus procedure measures only the reactive (ortho) phosphorus present in the sample. The reactive or orthophosphate ions react with molybdate and antimony ions in an acidic solution to form an antimonyl phosphomolybdate complex,which is reduced by ascorbic acid to phosphomolybdenum blue. The measurement wavelength is 880 nm (DR 1900: 714 nm).
+
+
+
+\tableofcontents
+
+\newpage
+
+\section{Acknowledgements}
+
+\section{Definitions}
+
+\NP Term1: is...
+
+\section{Biases and Interferences}
+
+\NP Biases and interferences can come from...
+
+\section{Health and Safety}
+
+\NP Describe the risk...
+
+
+\subsection{Safety and Personnnel Protective Equipment}
+
+
+\section{Personnel \& Training Responsibilities}
+
+\NP Researchers training is required before this the procedures in this method can be used... 
+
+\NP Researchers using this SOP should be trained for the following SOPs:
+
+\begin{itemize}
+  \item SOP01 Laboratory Safety
+  \item SOP02 Field Safety
+\end{itemize}
+
+\section{Required Materials and Apparati}
+
+\NP Item 1 w/catalog number!
+
+\NP Item 2
+
+\section{Reagents and Standards}
+
+\section{Estimated Time}
+
+\NP This procedure requires XX minutes...
+
+\section{Sample Collection, Preservation, and Storage}
+
+\section{Procedure}
+
+\NP Prepare \dots
+
+\NP
+
+\section{Data Analysis and Calculations}
+
+\section{QC/QA Criteria}
+
+\section{Trouble Shooting}
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\end{document}
