@@ -1,4 +1,4 @@
-\documentclass[12pt]{../SOP3_beta}
+\documentclass[12pt]{../SOP4_alpha}
 \usepackage[english]{babel}
 
 
@@ -7,7 +7,7 @@
 \author{Marc Los Huertos}
 \approved{Marc Los Huertos}
 \ReviseDate{\today}
-\SOPno{20 v0.2}
+\SOPno{20 v0.8}
 
 \begin{document}
 
@@ -15,15 +15,25 @@
 
 \section{Scope and Application}
 
-\NP The scope of this SOP is train researchers to sample surface waters using the approved SWAMP protocols. 
+\NP This Standard Operating Procedure (SOP) for manually obtaining surface water samples.  
 
-\NP As a researcher, sampling surface waters that are consistent with state and federal regulators assures that data meet specified standards.
+\NP This includes procedures for collecting samples from lotic and lentic waterbodies, wastewater treatment plant access points, and outfalls, pipes, and drains. It also describes procedures for sampling while wading on beaches and from boats and bridges.
 
-The procedures contained in this document are to be used by field personnel when collecting and handling surface water samples in the field.  On the occasion that SESD field personnel determine that any of the procedures described in this section are either inappropriate, inadequate or impractical and that another procedure must be used to obtain a surface water sample, the variant procedure will be documented in the field logbook, along with a description of the circumstances requiring its use.  Mention of trade names or commercial products in this operating procedure does not constitute endorsement or recommendation for use.
+\NP The scope of this SOP is train researchers to sample surface waters using the protocols similar to those approved by the EPA and California's State Water Ambient Water Monitoring Program (SWAMP). 
 
-This document is the Environmental Assessment Program (EAP) Standard Operating Procedure (SOP) for manually obtaining surface water samples.  1.2 This includes procedures for collecting samples from lotic and lentic waterbodies, wastewater treatment plant access points, and outfalls, pipes, and drains. It also describes procedures for sampling while wading on beaches and from boats and bridges. This SOP does not describe the operation of unattended automated sampling devices, nor does it cover pelagic marine or groundwater sampling. 
+\NP As a researcher, sampling surface waters that are consistent with state and federal regulators assures that data meet specified quality assurance and quality control standards.
+
+\NP The procedures contained in this document are to be used by field personnel when collecting and handling surface water samples in the field.  
+
+\NP On the occasion that field personnel determine that any of the procedures described in this section are either inappropriate, inadequate or impractical and that another procedure must be used to obtain a surface water sample, the variant procedure will be documented in the field logbook, along with a description of the circumstances requiring its use.  
+
+\NP  This SOP does not describe the operation of unattended automated sampling devices, nor does it cover pelagic marine or groundwater sampling. 
+
+\NP Mention of trade names or commercial products in this operating procedure does not constitute endorsement or recommendation for use.
 
 \section{Summary of Method}
+
+
 
 \section{Definitions}
 
@@ -31,55 +41,63 @@ This document is the Environmental Assessment Program (EAP) Standard Operating P
 
 \section{Interferences}
 
+\NP The sampling equipment should be clean and free of contaminants
+
 \section{Health and Safety}
 
 \subsection{Safety and Personnnel Protective Equipment}
 
+\NP Latex gloves for hygienic protection; leather gloves for handling ropes and cables.  
+
+
+\NP Anti-bacterial hand sanitizer or soap.
+
+\NP Safety equipment appropriate for the sampling sites: safety vests and lines, personal floatation devices (PFDs), bridge traffic control signs and cones, or boating safety equipment.  
 
 \section{Personnel \& Training Responsibilities}
 
 Researchers using this SOP should be trained for the following SOPs:
 
 \begin{itemize}
-  \item \href{}{SOP01 Lab Safety}
-  \item \href{}{SOP03 Field Work}
+  \item \href{https://github.com/marclos/SOPs/blob/master/01_Laboratory_Safety/Laboratory_Safety_v1.04.pdf}{SOP No. 01 Lab Safety}
+  \item \href{https://github.com/marclos/SOPs/blob/master/03_Field_Safety/Field_Safety_v1.1.pdf}{SOP No. 03 Field Work}
 \end{itemize}
 
 \section{Required Materials}
 
+\subsection{Field Documentation Resources}
+
+\NP Field notebook and pens.  
+
 \subsection{Intermediate sampling containers and devices}
-\subsection{Item 2}
 
 \begin{itemize}
 
 \item 500 or 1000 mL bottles, 
 \item syringe for field filtering, 
 \item stainless or Teflon dipper, 
-\item depth integrated sampler, 
-\item Van Dorn or Kemmerer sampler, 
-\item appropriate ropes/cables/rods, mobile bridge crane or davit)  (Figure 1).  
+\item Depth integrated sampler, 
+\item Van Dorn or Kemmerer sampler
+\item Sampling extension pole with sampling container attachment and appropriate ropes/cables/rods, mobile bridge crane or davit  (Figure 1).  
 \end{itemize}
-The sampling equipment should be clean and free of contaminants
-Sampling extension pole with sampling container attachment.  
+
 \begin{itemize}
 
 
 
 \item Glass or polypropylene bottle supplied by the laboratory with appropriate preservatives and filtering devices (Figure 2).  
 
-\item Safety equipment appropriate for the sampling sites: safety vests and lines, personal floatation devices (PFDs), bridge traffic control signs and cones, or boating safety equipment.  
 
-\item Latex gloves for hygienic protection; leather gloves for handling ropes and cables.  
 
-\item Anti-bacterial hand sanitizer or soap.  
+
+\item Disinfection solutions, brushes, or other equipment necessary to minimize the spread of invasive species from site to site. See EAP Policy 1-15 for more information.  
+
+\subsection{Transport and Sample Storage}
 
 \item Coolers.  Ice (Regular, blue, or dry – depending on shipping method).  
 
 \item Deionized water.  Sample tags with sample numbers assigned by MEL  LAR forms.  
 
-\item Field notebook and pens.  
-
-\item Disinfection solutions, brushes, or other equipment necessary to minimize the spread of invasive species from site to site. See EAP Policy 1-15 for more information.  
 
 \item Sampling containers  The most common containers for sampling surface waters in EAP are made of polypropylene or glass. The MEL manual (MEL, 2016) describes the type of bottle and volume of sample necessary to complete the laboratory analysis. The containers usually come directly from MEL and some may have chemicals to stabilize or neutralize the sample. 
 

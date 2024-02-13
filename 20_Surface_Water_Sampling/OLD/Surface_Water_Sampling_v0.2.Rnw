@@ -1,54 +1,4 @@
-\documentclass[12pt]{../SOP3_beta}\usepackage[]{graphicx}\usepackage[]{xcolor}
-% maxwidth is the original width if it is less than linewidth
-% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
-\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
-\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
-\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
-\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
-\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
-\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
-\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-\let\hlipl\hlkwb
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
-
-\usepackage{alltt}
+\documentclass[12pt]{../SOP4_alpha}
 \usepackage[english]{babel}
 
 
@@ -58,22 +8,32 @@
 \approved{Marc Los Huertos}
 \ReviseDate{\today}
 \SOPno{20 v0.2}
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
 \begin{document}
 
 \maketitle
 
 \section{Scope and Application}
 
-\NP The scope of this SOP is train researchers to sample surface waters using the approved SWAMP protocols. 
+\NP This Standard Operating Procedure (SOP) for manually obtaining surface water samples.  
 
-\NP As a researcher, sampling surface waters that are consistent with state and federal regulators assures that data meet specified standards.
+\NP This includes procedures for collecting samples from lotic and lentic waterbodies, wastewater treatment plant access points, and outfalls, pipes, and drains. It also describes procedures for sampling while wading on beaches and from boats and bridges.
 
-The procedures contained in this document are to be used by field personnel when collecting and handling surface water samples in the field.  On the occasion that SESD field personnel determine that any of the procedures described in this section are either inappropriate, inadequate or impractical and that another procedure must be used to obtain a surface water sample, the variant procedure will be documented in the field logbook, along with a description of the circumstances requiring its use.  Mention of trade names or commercial products in this operating procedure does not constitute endorsement or recommendation for use.
+\NP The scope of this SOP is train researchers to sample surface waters using the protocols similar to those approved by the EPA and California's State Water Ambient Water Monitoring Program (SWAMP). 
 
-This document is the Environmental Assessment Program (EAP) Standard Operating Procedure (SOP) for manually obtaining surface water samples.  1.2 This includes procedures for collecting samples from lotic and lentic waterbodies, wastewater treatment plant access points, and outfalls, pipes, and drains. It also describes procedures for sampling while wading on beaches and from boats and bridges. This SOP does not describe the operation of unattended automated sampling devices, nor does it cover pelagic marine or groundwater sampling. 
+\NP As a researcher, sampling surface waters that are consistent with state and federal regulators assures that data meet specified quality assurance and quality control standards.
+
+\NP The procedures contained in this document are to be used by field personnel when collecting and handling surface water samples in the field.  
+
+\NP On the occasion that field personnel determine that any of the procedures described in this section are either inappropriate, inadequate or impractical and that another procedure must be used to obtain a surface water sample, the variant procedure will be documented in the field logbook, along with a description of the circumstances requiring its use.  
+
+\NP  This SOP does not describe the operation of unattended automated sampling devices, nor does it cover pelagic marine or groundwater sampling. 
+
+\NP Mention of trade names or commercial products in this operating procedure does not constitute endorsement or recommendation for use.
 
 \section{Summary of Method}
+
+
 
 \section{Definitions}
 
@@ -91,14 +51,17 @@ This document is the Environmental Assessment Program (EAP) Standard Operating P
 Researchers using this SOP should be trained for the following SOPs:
 
 \begin{itemize}
-  \item \href{}{SOP01 Lab Safety}
-  \item \href{}{SOP03 Field Work}
+  \item \href{https://github.com/marclos/SOPs/blob/master/01_Laboratory_Safety/Laboratory_Safety_v1.04.pdf}{SOP01 Lab Safety}
+  \item \href{https://github.com/marclos/SOPs/blob/master/03_Field_Safety/Field_Safety_v1.1.pdf}{SOP03 Field Work}
 \end{itemize}
 
 \section{Required Materials}
 
+\subsection{Field Documentation Resources}
+
+\NP Field notebook and pens.  
+
 \subsection{Intermediate sampling containers and devices}
-\subsection{Item 2}
 
 \begin{itemize}
 
@@ -117,19 +80,23 @@ Sampling extension pole with sampling container attachment.
 
 \item Glass or polypropylene bottle supplied by the laboratory with appropriate preservatives and filtering devices (Figure 2).  
 
+\subsection{PPE}
+
 \item Safety equipment appropriate for the sampling sites: safety vests and lines, personal floatation devices (PFDs), bridge traffic control signs and cones, or boating safety equipment.  
 
 \item Latex gloves for hygienic protection; leather gloves for handling ropes and cables.  
 
-\item Anti-bacterial hand sanitizer or soap.  
+
+\item Anti-bacterial hand sanitizer or soap.
+
+\item Disinfection solutions, brushes, or other equipment necessary to minimize the spread of invasive species from site to site. See EAP Policy 1-15 for more information.  
+
+\subsection{Transport and Sample Storage}
 
 \item Coolers.  Ice (Regular, blue, or dry – depending on shipping method).  
 
 \item Deionized water.  Sample tags with sample numbers assigned by MEL  LAR forms.  
 
-\item Field notebook and pens.  
-
-\item Disinfection solutions, brushes, or other equipment necessary to minimize the spread of invasive species from site to site. See EAP Policy 1-15 for more information.  
 
 \item Sampling containers  The most common containers for sampling surface waters in EAP are made of polypropylene or glass. The MEL manual (MEL, 2016) describes the type of bottle and volume of sample necessary to complete the laboratory analysis. The containers usually come directly from MEL and some may have chemicals to stabilize or neutralize the sample. 
 
