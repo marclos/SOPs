@@ -475,6 +475,11 @@ TBD
 \subsection{`Commit' Problems}
 \NP In the scenario described above, you will get an error code when trying to committ your new changes to a file. 
 
+\subsectiion{'fatal: Not possible to fast-forward, aborting.'}
+
+git pull --rebase
+
+
 \subsection{`Merge' Errors}
 
 \NP If you find merge errors it often means that you and someone else has modified a file and they need to be reconciled.
