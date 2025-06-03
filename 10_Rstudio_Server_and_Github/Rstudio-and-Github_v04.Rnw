@@ -193,7 +193,9 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \NP To create a Key, follow the Rstudio menus Tools/Global Option and navigate to the `Git/SVN' in the left menu.
 
-\NP ``Create RSA key''. 
+\NP ``Create SSH key''. 
+
+\NP Select 'RSA" under 'SSH Key Type' drop down. 
 
 \begin{figure}
 \centering
@@ -229,7 +231,8 @@ Working with Rstudio is a bit confusing at first -- there is lots going on! Firs
 
 \subsection{Linking an RStudio Project to a Github Repository}
 
-\NP To link a Github repository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio. Unfortunately, the a new interface in github, has a button that labeled ``code'', but that's an easy work around.
+
+\NP To link a Github repository in Rstudio, you will need to ``clone'' the site, while we create a new project in R studio. Unfortunately, the a new interface in github, has a button that labeled ``code'', but that's an easy work around.\label{Linking}
 
 \begin{figure}[H]
 \centering
@@ -379,20 +382,20 @@ Here is a nice picture from Oliver Steele, that explains the git model and the c
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{graphics/MgaV9}
+\includegraphics[width=0.8\textwidth]{graphics/MgaV9}
 \end{figure}
    
 \end{description}
-
+\clearpage
 \section{Creating a shared R Project}
 
 \NP Learning to create a shared R project will help you create an understanding of the work flow, where we 
 
 \begin{enumerate}
-\item Create a New Repository (if necessary)
-\item Clone the respository
+\item Create a New Repository (if necessary) in Github
+\item Clone the respository using the steps starting from \ref{Linking}
 \item Pull 
-\item create a test file
+\item Create a test file
 \item Push
 \end{enumerate}
 
