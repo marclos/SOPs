@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{mhchem}
+\usepackage{amssymb}
+\newgeometry{left = 1.0cm, top = 0.00cm, bottom = 0.00cm, right = 1.0cm}
+
+\usepackage{xcolor,colortbl}
+\definecolor{gray}{gray}{0.90}
+\definecolor{aqua}{rgb}{0.8,1.0,1.0}
+
+\newcommand{\Record}{\cellcolor{gray}} 
+\newcommand{\TBD}{\cellcolor{aqua}} 
+
+\newcommand{\hcyan}[1]{{\color{teal} #1}}
+
+\begin{document}
+
+{\large\textbf{Grain Size Analysis--Hydrometer Datasheet}}
+\begin{table}[h]
+\begin{tabular}{|p{4cm}p{4cm}p{4cm}p{4cm}|}
+\hline
+
+%\multicolumn{4}{|c|}{}}\\ \hline
+\multicolumn{2}{|l|}{1. Project} 				& \multicolumn{1}{|p{3cm}|}{2. Researcher: } & {3. Date} \\[3ex] \hline
+\multicolumn{2}{|p{4cm}|}{4. Sample ID}  	& \multicolumn{2}{|l|}{5. Hydrometer Number/Type}   \\[3ex] \hline
+
+%& & \multicolumn{2}{|l|}{4. Hydrometer Number/Type} \\ [3ex]\hline
+		%% till here
+\multicolumn{4}{|c|}{Sample Preparation} \\ [.5ex]\hline\hline
+6. Pre-Treatment 
+	& \mbox{\ooalign{$\square$\hidewidth\cr}} ~~ \ce{HCl}
+	& \mbox{\ooalign{$\square$\hidewidth\cr}} ~~ \ce{H2O2} 
+	& \mbox{\ooalign{$\square$\hidewidth\cr}} ~~\ce{Fe-O}  \\[.5ex] \hline
+
+7. Beaker ID & \multicolumn{1}{|p{4cm}}{8. Dispersing Agent} & \multicolumn{1}{|p{4cm}|}{\begin{tabular}{@{}c@{}}9. Specific Gravity of Particles \\ $GS_p$ =  \end{tabular}}&  \multicolumn{1}{|p{4cm}|}{\begin{tabular}{@{}c@{}}10. Desired Sample \\
+\mbox{\ooalign{$\square$\hidewidth\cr}} ~~ \ce{50 g} \\ \mbox{\ooalign{$\square$\hidewidth\cr}} ~~\ce{100 g}\end{tabular}}\\[3ex] \hline
+
+\multicolumn{2}{|l|}{11. Total Soil for Split  (g)} & \multicolumn{2}{|l|}{12. Soil Passing Sieve No. 10 (g)} \\ [3ex] \hline
+
+13. Tin \#: & 
+14. Tin Tare Weight & 
+15. Tin w/Air-Dried Soil & 
+16. Tin w/Oven-Dried Soil \\ [3ex] \hline
+\multicolumn{4}{|c|}{Calculated Values} \\ [.5ex]\hline\hline
+\multicolumn{1}{|l|}{
+17. \% Passing No. 10} &	\multicolumn{1}{|l|}{
+18. \% Hygroscopic Correction Factor} & \multicolumn{1}{|l|}{
+19. Effective Soil Weight $WS_e$} &   \multicolumn{1}{|l|}{ \Record \begin{tabular}{@{}c@{}}
+20. Actual Air-Dried \\ Soil Weight $WS_a$  \end{tabular}} \\ [3ex] \hline
+\end{tabular}%
+\end{table}
+
+\noindent \textbf{Hydrometer Readings and Calculations}
+\begin{table}[h]
+\begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\begin{tabular}{@{}c@{}}
+21. \\ Time \end{tabular} & \begin{tabular}{@{}c@{}}
+22. Elapsed  \\ Time (t) \\ sec/min \end{tabular}	& \begin{tabular}{@{}c@{}}
+23. Actual \\Hydrometer \\ Reading ($R_a$) \end{tabular} & \begin{tabular}{@{}c@{}}
+24. Blank \\Hydrometer \\ Reading ($R_b$)\end{tabular} & 	\begin{tabular}{@{}c@{}} 
+25. Temp. \\ $^\circ$C \end{tabular} & \begin{tabular}{@{}c@{}}
+26. K \\ constant* \end{tabular} & \begin{tabular}{@{}c@{}}
+27. \\ Effective \\ Depth (L) \end{tabular} & \begin{tabular}{@{}c@{}}
+28. Particle \\ Diameter \\ ($D_e$)\end{tabular} & \begin{tabular}{@{}c@{}}
+29. PF \\ Partial\end{tabular} & \begin{tabular}{@{}c@{}}
+30. PF \\ Total\end{tabular} \\
+\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+&&&&&\TBD&\TBD&\TBD&\TBD&\TBD \\ [1.3ex]\hline
+\end{tabular}
+\end{table}
+{\scriptsize*K is a constant that is calculated by the temperature and density of the suspension.}
+
+\noindent \textbf{No. 200 Sieve Processing}
+\begin{table}[h]
+		\begin{tabular}{|l|l|l|}\hline
+31. Tin \#		& 32. Tin Mass (g)		&  33. Dry Soil w/Tin (g) \\
+							&							&															\\ [1ex]\hline		
+		\end{tabular}
+\end{table}
+
+\noindent \textbf{Quality Control/Quality Assurance}
+\begin{table}[h!]
+\begin{tabular}{|p{5.5cm}|p{5.5cm}|p{5.5cm}|}
+\hline
+34. Researcher (Signature) & 35. Data Entry By (Signature) & 36. Quality Check By (Signature) \\
+&& \\ [.7ex] \hline
+\end{tabular}
+\end{table}
+
+\end{document}
