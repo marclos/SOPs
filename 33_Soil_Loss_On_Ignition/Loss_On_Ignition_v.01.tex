@@ -107,7 +107,7 @@
 
 \section{Health and Safety}
 
-\NP The muffled furnace burns up to 3000$^\circ$C, posing a threat to significant 4th degree burns
+\NP The muffled furnace burns up to 3000$^\circ$C, posing a significant threat to 4th degree burns if precautions aren't taken.
 
 \subsection*{Safety and Personnnel Protective Equipment}
 
@@ -149,7 +149,7 @@
 
 \section{Estimated Time}
 
-\NP This procedure requires X hours to complete.
+\NP This procedure requires several days to complete.
 
 %\begin{table}
 %\begin{tabular}{llll}\hline
@@ -168,26 +168,37 @@
 
 \NP Prepare the soil samples in advance. Samples should be sieved with a 2mm sieve.
   Use a drying oven to remove moisture content from the soil and the crucibles (optional) that may affect the true dry weights.  
+  
   \begin{enumerate}
-	\item Weigh out more sample mass than desired on an metal tin, make sure to label (etch with pencil) and tare out weight of the tin. %Record the air-dry mass for reference if necessary.
-	\item Oven-dry tins at 105$^\circ$C for 24 hours.
-	\item Take samples out of the oven after oven-drying.% and place them in a desiccator.
+	  \item Weigh out more sample mass than desired on an metal tin, make sure to label (etch with pencil) and tare out weight of the tin. %Record the air-dry mass for reference if necessary.
+	  \item Oven-dry tins at 105$^\circ$C for 24 hours. The oven can fit X samples.
+	  \item Take samples out of the oven using tongs or gloves after oven-drying. Cool them in a desiccator.
+	  \item (Optional) Oven-dry crucibles in the same manner. Weigh them once finished while still warm.  
 	\end{enumerate}
 	
 \subsection{Ignition}
 
-\NP Once ready for ignition, we can begin heating the oven while preparing the crucibles.The Geology Dept. has multiple muffled furnaces. This SOP instructs how to use the Nabertherm furnace.
-    Use the dial knob to set the furnace to the correct program preset called "LOI" and assure it is aet to the correct temperature of 360^\circ$C.
+\NP Once ready for ignition, we can begin heating the oven while preparing the crucibles. The Geology Dept. has multiple muffled furnaces. This SOP instructs how to use the Nabertherm furnace and load it while hot.
+
+\NP Use the dial knob to set the furnace to the correct program preset called "LOI" and assure it is set to the correct temperature of 360^\circ$C. Press the start button. The LCD screen will tell you the current temperature inside the furnace.
+
 \NP Then, for each sample...
   \begin{enumerate}
-	\item Record the weight of the crucible on a scale capable of precision to 0.001
-	\item Weigh out 5.000g ±0.001g of the oven-dried sample into a crucible.
+	\item Record the weight of the crucible on a scale capable of precision to 0.0001
+	\item Weigh out 5.0000g ±0.0001g of the oven-dried sample into a crucible.
 	\item Record this as the pre-ignition weight. 
 		\end{enumerate}
+		
+\NP As you prepare the crucibles, use the Combustion Residue Mapping Sheet to map out assign them Sample IDs, and correspondingly where you'll put each sample in the furnace. This is important to prevent mixing up samples as any marker or pencil written on the crucibles will burn off. Use the hole on the plate to help you determine direction.
 
+\NP Once the furnace is ready, use the tongs and heat-proof gloves to place the samples according to your map. 
+
+\NP Set a timer for 2 hours
+
+\NP Find something to do in the meantime like prepping the next batch of crucibles.
   
   
-  
+  ---------
   
   
 
@@ -251,59 +262,11 @@ DW_{air} = 50/(1+DW_c)
 DW_{air} = 100/(1+DW_c)
 \end{equation}
 
-\subsection*{Pre-Treatment}
 
-\NP Soils should be pre-treatmented for soil high in organic matter \ldots
 
-\begin{enumerate}
-	\item Transfer 50 or 100 grams of dry weight equivalent ($DW_e$) grams of soil to a 400-ml glass beaker.
-	
-	\item Removal of carbonates: Add 50 mL DI water and sufficient 1 M \ce{HCl} to reduce the soil pH to between 3.0 and 4.0. Stir and allow to equilibrate 10 minutes until there is no effervescence.
+--------
 
-	\item Removal of organic matter:\footnote{may need the previous treatment to wet and acidify the soil before this is done. Not clear.} Carefully add 10 ml of 30\% hydrogen peroxide (\ce{H2O2}), a few milliliters at a time, allowing effervescence to subside before adding more, until no more frothing occurs. If necessary, make the suspension acidic to litmus paper with a few drops of 1N HCl.  Oxidation with \ce{H2O2} requires an acidic medium. When frothing subsides heat to 90 $^\circ$C and add \ce{H2O2} until frothing subsides. Rinse down walls of beaker and continue heating until no excess \ce{H2O2} is consumed.
 
-	\item Removal of iron oxides 
-	%\citep[pp. 574-576]{kunze1986pretreatment}: 
-	Add 150 mL of citrate-bicarbonate buffer to sample in beaker. Add 3 g of sodium hydrosulfite (\ce{Na2S2O3}) gradually as samples may froth.  Place in water bath at 80$^\circ$C for 20 minutes.  Place the blender cup on electrical mixer and stir for 10 minutes.
-
-	\item Removal of soluble salts: Place soil in centrifuge tube and add 100 mL water and centrifuge for 10 min at 1500 rpm until supernatant is clear.  If the centrifuge is not clear, repeat the process until it is clear.
-
-\end{enumerate}
- 
-\subsection*{Dispersing Soil Sample}
-
-\begin{enumerate}
-	\item Using the datasheet and the R function (\texttt{SoilEquiv()}) or web app (http://) to calculate $DW_e$;
-	\item Weigh approximately $DW_e$g of soil (From Box 18) into the dispersion cup and record to the nearest 0.1gram (Box 6). 
-	\item Record the dispersion cup number (Box 6).
-	\item Add 125 mL of sodium hexametaphoshate (40 g/L). Stir so the slurry is thoroughly wetted. Cover and allow to soak for at least 16 hours. 
-	\item Add distilled water up to the first ``indentation'' of the dispersion cup.
-	\item Attach the dispersion cup to the mixer; mix 5 minutes for sandy soils, 15 minutes for fine-textured soils.
-	
-\end{enumerate}
-
-\subsection{Conducting Hydrometer Tests}
-
-\begin{enumerate}
-
-	\item Make up a blank cylinder with 125 mL of sodium hexa-metaphosphate and add distilled water to the 1000 mL mark.  Record the blank hydrometer reading and temperature. If the reading is above 0 (zero) on the hydrometer scale (in other words, if the zero mark is below the surface), record the blank correction as a negative number.  Read at the top of the meniscus.
-	
-	\item Transfer soil suspension to sedimentation cylinder; use distilled water from squirt bottle to get all of sample from mixing cup.
-
-	\item Fill cylinder to 1000-mL mark with distilled water.
-
-	\item Cover the cylinder with a stopper (No. 13) and invert the cylinder 180 degrees for a full minute, where the cylinder should be turned upside-down and back should take 2 seconds. You may need to vigorously mix the cylinder for the first two turns to loosen the soil at the bottom.
-	
-	\item After the minute of inverting, begin timing.  While slowing spinning the hydrometer remove air bubbles, carefully lower the hydrometer into suspension after 20s; record the hydrometer reading at 40 seconds. Remove the hydrometer and rinse the hydrometer between each reading. 
-	
-	\item This 40-second reading should be \textbf{repeated to obtain 3 accurate} after repeating the inversion process. Because the suspension is opaque, read the hydrometer at the top of the meniscus rather than at the bottom. There is a correction for this!
-
-	\item After final 40-second reading, remove hydrometer, carefully lower a thermometer into the suspension and record the temperature (degrees C).  Mixing raises temperature by 3-5$^\circ$C, so it is important to record the temperature for both hydrometer readings (See Table \ref{tab:ReadingTimes}).
-	
-		\item The hydrometer must be removed and rinsed and dried after each reading. If this is not followed, the hydrometer will be accumulate particles on the glass walls and become increasingly inaccurate. 
-
-	\item Take a hydrometer reading at the following times:
-	
 		\begin{table}
 		\begin{tabular}{lrrr}\hline
 Obs. & Soil Reading Times 		& Temperture		& Blank Hydrometer \\ \hline\hline	
