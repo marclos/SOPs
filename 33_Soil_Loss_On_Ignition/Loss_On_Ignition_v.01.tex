@@ -1,7 +1,5 @@
 %SOP Template 
-% Version 02 Added revision date
-% Version 03 Added TOC and acknowledgements
-%           New SOP3_alpha.cls
+
 
 
 \documentclass[12pt]{../SOP4_alpha}\usepackage[]{graphicx}\usepackage[]{xcolor}
@@ -63,9 +61,9 @@
 %\usepackage[version=4]{mhchem} 
 \usepackage{pdfpages}
 
-\title{Texture Analysis using a Hydrometer}
+\title{Soil Loss on Ignition}
 \date{7/12/2015}
-\author{Marc Los Huertos \& Isaac Medina}
+\author{Ever Cook}
 \approved{Los Huertos}
 \ReviseDate{\today}
 \SOPno{32 v0.1}
@@ -77,101 +75,88 @@
 
 \section{Scope and Application}
 
-\NP The size of soil particles plays a central role in soil process including soil-water-plant relations, pollution fate and transport, and nutrient cycling. In addition, soil texture classes have important land use implications, where, for example farmers, prefer loam soils to soils that are dominated by clays or sand.
+\NP Loss on Ignition (LOI) is used to determine organic matter content (OM\%) in soil samples. This is important for indirectly estimating soil organic carbon (SOC) in agricultural topsoil. 
 
-\NP The applications implements D422 ASTM Method D422 to analyze soil sample with a hydrometer.
+\NP The applications implement SFU Soil Science Lab method (Robertson, 2011) *and add Aaron's method paper for temperature*.
 
 \section{Summary of Method}
 
-\NP This SOP does this...
+\NP This method will cover how to conduct a LOI procedure in the Pomona College Geology Department Lab. Ignition of the soil samples in a muffled furnace burns off any organic matter and water content, leaving only the mineral content. The weight difference of the samples before and after ignition represents the OM\%.
 
 \tableofcontents
 
 \newpage
 
-\section{Acknowledgements}
+%\section{Acknowledgements}
 
-\section{Definitions}
+%\section{Definitions}
 
-\NP Effective Diameter
-
-\NP Texture Class...
+%\NP Crucible
 
 
 \section{Biases and Interferences}
 
-\NP The following are parameters that might influence the results of the hydrometer test and thus, we use various methods to pre-treat soils or measure to correct for these sources of bias. When correction factors are required, the calculations can become confusing.	 But we'll try to lead ourselves through this thicket without too many wrong-turns. 
+\NP The following are parameters that might influence the results of the LOI test and thus, we review methods that would best fit the type of soils from our samples.
 
 \begin{description}
-	\item[Temperature and Viscosity] Water temperate influences the viscosity of water, such that colder temperatures increase viscosity which increases the resistance force and reduces the terminal velocity of particles. The viscosity can be corrected for temperature.
-	\item[Temperature and Density] The density of water is highest at 4.94 degrees C. As temperatures increases, the density of water decreases. As water density decreases, the suspension density $\rho_s$ decreases, thus the particle size distribution is not accurate without a correction. 
-	\item[Soil Weight and Hygroscopic Water] Soil is composed of many components, including minerals, water, organic matter, air, etc. But to calculate the soil particle analysis, we need to account for the water in soil. We can do this by measuring the soil moisture content and correct the mass contributed by water from the soil tested.
-	\item[Aggregated Soil Particles] Soil particles need to be dispersed, but there is no perfect way to accomplish this. Complete dispersion requires both mechanical and chemical assistance. Mechanical stirring overcomes weaker binding forces in large aggregates, but chemical agents are also necessary, especially to deflocculate clays. Polyvalent cations (normally \ce{Ca+2} and \ce{Al+3}) flocculate clays by forming interparticle, electrostatic links. Chemical dispersing agents (such as sodium hexametaphosphate) are effective in dispersing these clay bundles because:
-	
-	\begin{itemize}
-		\item The sodium monovalent cation (\ce{Na+}) replaces polyvalent cations adsorbed on clays, breaking the interparticle linkage. The displaced polyvalent cations form insoluble complexes with phosphorus that prevents re-establishment of floccules.
-		\item The adsorption of sodium, a highly hydrated cation, inducing the hydration of clays. This condition diminishes the binding strength between clay and cation which raises a clay particle's electronegativity and, hence, their repulsion from other clays.
-	\end{itemize}
-	
-\noindent The mixture of dispersed soil particles in water is called a suspension. Once a true suspension state has been achieved, differential settling rates can be used to distinguish particle size distribution.
-	
-	\item Hydrometers are designed to be read from the bottom of the meniscus. However, in a soil suspension, the water is cloudy and we it's impossible to see through the meniscus. Therefore, we read the scale at the top of the meniscus and apply a correction factor. Without this correction factor, the analysis will be incorrect. 
+  	\item[Clay content] Soil texture has many influences, two of which being climate and parent material 
+		\item [Ignition temperature] If the temperature is not hot enough, there may be OM remaining in the samples after ignition.
+		\item [Ignition duration] If the samples are not burned for long enough, there may be OM remaining in the samples after ignition.
 \end{description}
 
 
 \section{Health and Safety}
 
-\NP Sodium hexametaphosphate is a non-hazardous material but may be irritating to skin and eyes. Dust may be irritating to lungs if inhaled. 
+\NP The muffled furnace burns up to 3000$^\circ$C, posing a significant threat to 4th degree burns if precautions aren't taken.
 
 \subsection*{Safety and Personnnel Protective Equipment}
 
-\NP Care should be taken to avoid inhalation. Handle powdered HMP in a well-ventilated area or fume hood. Chemical-safety goggles should be worn while pouring HMP solution and during blending to avoid contact with eyes. In case of contact, flush eyes with cold water for 15 minutes. Latex gloves should be worn to avoid contact with skin. Hands and contaminated skin should be washed thoroughly with soap and water after handling. Sweep, vacuum, scoop or remove spilled sodium hexametaphosphate. Flush residual area with water. In case of spills on clothes, wash thoroughly before wearing again. See the SDS for more information on contamination and spills.
+\NP Care should be taken to prevent burns. Remove crucibles from the furnace with tongs and heat-proof gloves. Wait at least 1 hour for them to cool down before handling with bare hands. In case of contact, run skin under cold water for 15 minutes and follow lab procedures for emergency. 
 
 \section{Personnel \& Training Responsibilities}
 
-\NP Researchers training is required before this the procedures in this method can be used... 
+\NP Researchers training is required before the procedures in this method can be used.
 
 \NP Researchers using this SOP should be trained for the following SOPs:
 
 \begin{itemize}
   \item SOP01 Laboratory Safety
-  \item SOP02 Field Safety
-  \item SOP03 Handling Hardous Materials
+  \item SOP07 Using Balances
+  \item SOP15 Using Drying Ovens
 \end{itemize}
+
+\newpage 
 
 \section{Required Materials and Apparati}
 
 \begin{enumerate*}
-	\item Sieve No. 10 and No. 200.
-	\item 250-ml and 400-ml beakers
-	\item Hot plate
-	\item Soil tins
+	\item Porcelain crucibles
+	\item Soil samples
+	\item Muffled furnace
 	\item Drying oven
-	\item Milkshake Mixer and Dispersion Cup (metal milkshake cup)	
-	\item 151H Hydrometer
-	\item 1 L Sedimentation Cylinder and No. 13 stopper 
-	\item Stopwatch
-	\item Balance sensitive to 0.01 g for weighing the material passing sieves.
+	\item Tongs
+	\item Heat-proof gloves
+	\item Jack stand
+	\item Metal tin
+	\item Combustion residue mapping sheet
 \end{enumerate*}
 
 \section{Reagents and Standards}
 
-\begin{enumerate*}
-	\item Hydrogen peroxide, 30\%.
-	\item Hydrochloric acid, 1N.
-	\item Sodium hexametaphosphate
-\end{enumerate*}
+%\begin{enumerate*}
+%	\item 
+%\end{enumerate*}
 
 \section{Estimated Time}
 
 \NP This procedure requires several days to complete.
 
-\begin{table}
-\begin{tabular}{llll}\hline
-Task          & Time          & Elapsed Time  & Time until completion \\ \hline\hline
-Collect Soil  & 1-3 hours     & 1-3 hours     &         \\ \hline
-\end{tabular}
-\end{table}
+%\begin{table}
+%\begin{tabular}{llll}\hline
+%Task          & Time          & Elapsed Time  & Time until completion \\ \hline\hline
+%Collect Soil  & 1-3 hours     & 1-3 hours     &         \\ \hline
+%\end{tabular}
+%\end{table}
 
 \section{Sample Collection, Preservation, and Storage}
 
@@ -179,19 +164,43 @@ Collect Soil  & 1-3 hours     & 1-3 hours     &         \\ \hline
 
 \section{Procedure}
 
-\NP Before beginning, we need to organize the procedures by day, since we can't complete the analysis during a single lab period.
+\subsection{Preperation}
 
-\begin{description}
-	\item[Session 1:] Air dry 200 grams of soil (could require more than one day);
-	\item[Session 2:] Pass air-dry soils through No. 10 sieve; dry sub-sample for moisture content; 
-	\item[Session 3:] Calculate and weigh $SW_e$ for pretreatment and/or dispersion; 
-	\item[Session 4:] Conduct hydrometer measurements; and
-	\item[Session 5:] Analyze particles retained on No. 200 sieve and complete data entry.
-\end{description}
+\NP Prepare the soil samples in advance. Samples should be sieved with a 2mm sieve.
+  Use a drying oven to remove moisture content from the soil and the crucibles (optional) that may affect the true dry weights.  
+  
+  \begin{enumerate}
+	  \item Weigh out more sample mass than desired on an metal tin, make sure to label (etch with pencil) and tare out weight of the tin. %Record the air-dry mass for reference if necessary.
+	  \item Oven-dry tins at 105$^\circ$C for 24 hours. The oven can fit X samples.
+	  \item Take samples out of the oven using tongs or gloves after oven-drying. Cool them in a desiccator.
+	  \item (Optional) Oven-dry crucibles in the same manner. Weigh them once finished while still warm.  
+	\end{enumerate}
+	
+\subsection{Ignition}
 
-\subsection{Air-Dried Soil}
+\NP Once ready for ignition, we can begin heating the oven while preparing the crucibles. The Geology Dept. has multiple muffled furnaces. This SOP instructs how to use the Nabertherm furnace and load it while hot.
 
-\NP After collecting a soil, we allow them to air dry by putting them in a tin or beaker and let them equalibrate with the laboratory for 24 or more hours. If the soils are very wet, this may take several days. 
+\NP Use the dial knob to set the furnace to the correct program preset called "LOI" and assure it is set to the correct temperature of 360^\circ$C. Press the start button. The LCD screen will tell you the current temperature inside the furnace.
+
+\NP Then, for each sample...
+  \begin{enumerate}
+	\item Record the weight of the crucible on a scale capable of precision to 0.0001
+	\item Weigh out 5.0000g ±0.0001g of the oven-dried sample into a crucible.
+	\item Record this as the pre-ignition weight. 
+		\end{enumerate}
+		
+\NP As you prepare the crucibles, use the Combustion Residue Mapping Sheet to map out assign them Sample IDs, and correspondingly where you'll put each sample in the furnace. This is important to prevent mixing up samples as any marker or pencil written on the crucibles will burn off. Use the hole on the plate to help you determine direction.
+
+\NP Once the furnace is ready, use the tongs and heat-proof gloves to place the samples according to your map. 
+
+\NP Set a timer for 2 hours
+
+\NP Find something to do in the meantime like prepping the next batch of crucibles.
+  
+  
+  ---------
+  
+  
 
 \subsection{Determining Proportion of Soil Passing No. 10 Sieve}
 
@@ -199,12 +208,6 @@ Collect Soil  & 1-3 hours     & 1-3 hours     &         \\ \hline
 
 \NP We can do this by analyzing the soil that can pass through the No. 10 sieve, which has a mesh size of 2 mm.  
 
-\begin{enumerate}
-	\item Homogenize the soil by removing it from the bag and mix thoroughly;
-	\item Weigh out approximately 65 g of silt or clay soils or 120 g of a sandy soil, record the value in Box 10. 
-	\item Prepare soil with air-drying and pulverizing to pass a No. 10 mesh sieve (< 2 mm)-- pick out the rocks and use a mortar and pestle to break up the soil so that it all passes through the sieve. 
-	\item Weigh the soil that passed through the sieve and record the weight in Box 11.
-\end{enumerate}
   
 \subsection{Measuring and Correcting for Soil Water Content}
 
@@ -259,59 +262,11 @@ DW_{air} = 50/(1+DW_c)
 DW_{air} = 100/(1+DW_c)
 \end{equation}
 
-\subsection*{Pre-Treatment}
 
-\NP Soils should be pre-treatmented for soil high in organic matter \ldots
 
-\begin{enumerate}
-	\item Transfer 50 or 100 grams of dry weight equivalent ($DW_e$) grams of soil to a 400-ml glass beaker.
-	
-	\item Removal of carbonates: Add 50 mL DI water and sufficient 1 M \ce{HCl} to reduce the soil pH to between 3.0 and 4.0. Stir and allow to equilibrate 10 minutes until there is no effervescence.
+--------
 
-	\item Removal of organic matter:\footnote{may need the previous treatment to wet and acidify the soil before this is done. Not clear.} Carefully add 10 ml of 30\% hydrogen peroxide (\ce{H2O2}), a few milliliters at a time, allowing effervescence to subside before adding more, until no more frothing occurs. If necessary, make the suspension acidic to litmus paper with a few drops of 1N HCl.  Oxidation with \ce{H2O2} requires an acidic medium. When frothing subsides heat to 90 $^\circ$C and add \ce{H2O2} until frothing subsides. Rinse down walls of beaker and continue heating until no excess \ce{H2O2} is consumed.
 
-	\item Removal of iron oxides 
-	%\citep[pp. 574-576]{kunze1986pretreatment}: 
-	Add 150 mL of citrate-bicarbonate buffer to sample in beaker. Add 3 g of sodium hydrosulfite (\ce{Na2S2O3}) gradually as samples may froth.  Place in water bath at 80$^\circ$C for 20 minutes.  Place the blender cup on electrical mixer and stir for 10 minutes.
-
-	\item Removal of soluble salts: Place soil in centrifuge tube and add 100 mL water and centrifuge for 10 min at 1500 rpm until supernatant is clear.  If the centrifuge is not clear, repeat the process until it is clear.
-
-\end{enumerate}
- 
-\subsection*{Dispersing Soil Sample}
-
-\begin{enumerate}
-	\item Using the datasheet and the R function (\texttt{SoilEquiv()}) or web app (http://) to calculate $DW_e$;
-	\item Weigh approximately $DW_e$g of soil (From Box 18) into the dispersion cup and record to the nearest 0.1gram (Box 6). 
-	\item Record the dispersion cup number (Box 6).
-	\item Add 125 mL of sodium hexametaphoshate (40 g/L). Stir so the slurry is thoroughly wetted. Cover and allow to soak for at least 16 hours. 
-	\item Add distilled water up to the first ``indentation'' of the dispersion cup.
-	\item Attach the dispersion cup to the mixer; mix 5 minutes for sandy soils, 15 minutes for fine-textured soils.
-	
-\end{enumerate}
-
-\subsection{Conducting Hydrometer Tests}
-
-\begin{enumerate}
-
-	\item Make up a blank cylinder with 125 mL of sodium hexa-metaphosphate and add distilled water to the 1000 mL mark.  Record the blank hydrometer reading and temperature. If the reading is above 0 (zero) on the hydrometer scale (in other words, if the zero mark is below the surface), record the blank correction as a negative number.  Read at the top of the meniscus.
-	
-	\item Transfer soil suspension to sedimentation cylinder; use distilled water from squirt bottle to get all of sample from mixing cup.
-
-	\item Fill cylinder to 1000-mL mark with distilled water.
-
-	\item Cover the cylinder with a stopper (No. 13) and invert the cylinder 180 degrees for a full minute, where the cylinder should be turned upside-down and back should take 2 seconds. You may need to vigorously mix the cylinder for the first two turns to loosen the soil at the bottom.
-	
-	\item After the minute of inverting, begin timing.  While slowing spinning the hydrometer remove air bubbles, carefully lower the hydrometer into suspension after 20s; record the hydrometer reading at 40 seconds. Remove the hydrometer and rinse the hydrometer between each reading. 
-	
-	\item This 40-second reading should be \textbf{repeated to obtain 3 accurate} after repeating the inversion process. Because the suspension is opaque, read the hydrometer at the top of the meniscus rather than at the bottom. There is a correction for this!
-
-	\item After final 40-second reading, remove hydrometer, carefully lower a thermometer into the suspension and record the temperature (degrees C).  Mixing raises temperature by 3-5$^\circ$C, so it is important to record the temperature for both hydrometer readings (See Table \ref{tab:ReadingTimes}).
-	
-		\item The hydrometer must be removed and rinsed and dried after each reading. If this is not followed, the hydrometer will be accumulate particles on the glass walls and become increasingly inaccurate. 
-
-	\item Take a hydrometer reading at the following times:
-	
 		\begin{table}
 		\begin{tabular}{lrrr}\hline
 Obs. & Soil Reading Times 		& Temperture		& Blank Hydrometer \\ \hline\hline	
