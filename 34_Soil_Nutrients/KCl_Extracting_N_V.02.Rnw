@@ -1,0 +1,108 @@
+\documentclass[12pt]{../SOP4_alpha}
+\usepackage[english]{babel}
+%\usepackage{blindtext}
+%\usepackage{lipsum}
+
+%\documentclass{article}
+
+%\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
+
+\title{Nitrate and Ammonium}
+\date{6/16/2025}
+\author{Aaron Rogers}
+\approved{Los Huertos}
+\ReviseDate{\today}
+\SOPno{X}
+
+\begin{document}
+
+\maketitle
+
+\section{Scope and Application}
+
+
+
+\section{Health and Safety}
+
+
+
+\section{Personnel \& Training Responsibilities}
+
+
+Students using this SOP should be trained for the following SOPsa:
+
+\begin{itemize}
+  \item SOP1
+  \item SOP2
+\end{itemize}
+
+
+\section{Required Materials}
+
+\NP Reciprocating shaker
+
+\NP Graduated cylinder or repipet type dispenser
+
+\NP Filter funnels 
+
+\NP Whatman #42 filter paper
+
+\NP Paper bags or aluminum weigh boats 
+
+\NP Specimen containers, solo cups or Nalgene bottles 
+
+\NP Sample cups and caps 
+
+\NP Pipet
+
+\NP Top-loading balance 
+
+
+\section{Creating KCL solution}
+
+
+\NP Weigh out 298.2 g KCL to volumetric flask 2 liters distilled water
+
+\NP  
+
+
+\Section {Lab Procedure}
+
+
+\NP Fill volumetric container w/ 40 ml solution
+
+\NP Add 10g of soil into container until solution reaches 50 ml
+
+\NP Cap and shake using shaker for 2 hours
+
+\NP Allow sample to sit and soil particles to settle (around 10 mins, no more than 1hr)
+
+\NP Place filter paper inside funnels, and set up funnels to drain into labeled containers
+
+\NP Pour shaken solution into into funnels, don't fill funnels above filter paper line 
+
+\NP Allow solution to drain into new container until only soil (no liquid) remains in original container
+
+\NP Filtered solution is now ready to be analyzed. Cap containers and store in a cold location. If analysis will not be completed in the next few days, store the samples in the freezer until analysis.
+
+\begin{table}
+\caption{Soil Texture Correction Factor}
+\centering
+\begin{tabular}{lcc}
+Texture     & Moist Soil  & Dry Soil  \\
+Sand        &   2.3         &  2.6      \\
+Loam        &   2.0       &  2.5      \\
+Clay        &   1.7       & 2.2 \\
+\end{tabular}
+\end{table}
+
+\NP Corrected value = test strip value of N (ppm) / correction factor
+
+\NP record nitrate ppm and correction factor in field notebook
+
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\end{document}
