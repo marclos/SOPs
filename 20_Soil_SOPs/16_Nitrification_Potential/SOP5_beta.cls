@@ -6,7 +6,7 @@
 % Spacing in sections with two decimals is kerning funny
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{SOP5_beta}[2018/03/22 v5.0 Modified article class for standard operating procedures]
+\ProvidesClass{SOP5_beta}[2025/07/22 v5.0 Modified article class for standard operating procedures]
 % http://stackoverflow.com/questions/581916/how-do-you-extend-article-document-class-in-latex
 
 % Passes and class options to the underlying article class
