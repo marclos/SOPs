@@ -1,0 +1,126 @@
+\documentclass[12pt]{SOP5_beta}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+%\documentclass{article}
+
+%\documentclass[12pt]{~/github/SOPs/SOP_Template/SOP}
+
+\title{Nitrification Potential}
+\date{6/16/2025}
+\author{Marc Los Huertos}
+\approved{Los Huertos}
+\ReviseDate{\today}
+\SOPno{20-16 v0.1}
+
+\begin{document}
+
+\maketitle
+
+\section{Scope and Application}
+
+\NP This International Standard specifies a rapid method for the determination of the potential rate of ammonium oxidation and inhibition of nitrification in soils. This method is suitable for all soils containing a population of nitrifying microorganisms. It can be used as a rapid screening test for monitoring soil quality and quality of wastes, and is suitable for testing the effects of cultivation methods, chemical substances [except volatiles, i.e. H > 1 (Henry's constant)], extracts of biosolids and pollution in soils.
+
+\NP Ammonium oxidation, the first step in autotrophic nitrification in soil, is used to assess the potential activity of microbial nitrifying populations. Autotrophic ammonium-oxidizing bacteria are exposed to ammonium sulfate in a soil slurry buffered at pH 7,2. Oxidation of the nitrite performed by nitrite-oxidizing bacteria in the slurry is inhibited by the addition of sodium chlorate. The subsequent accumulation of nitrite is measured over a 6 h incubation period, and is taken as an estimate of the potential activity of ammonium-oxidizing bacteria. As the generation time of ammonia-oxidizing bacteria is long (> 10 h), the method provides a measure of the potential activity of the nitrifying population at the time of sampling. It does not measure growth of the nitrifying population. 
+
+\NP Chemical test substances and extracts of biosolids can be tested by adding them to the slurry at various concentrations. The test can be used for comparison of different soils (e.g. polluted and reference soils). Effects of polluted soils, waste samples and other solid materials on nitrification can be evaluated by measuring the method on mixtures of these samples with a reference soil. 
+
+\NP Substances known to be active at pH < 7,2 should be added in due time before starting the test to allow substances to exhibit their effects on nitrifying bacteria.
+
+\section{Health and Safety}
+
+\NP \lipsum[2]
+
+
+\section{Personnel \& Training Responsibilities}
+
+\NP \lipsum[1]
+
+Students using this SOP should be trained for the following SOPsa:
+
+\begin{itemize}
+  \item SOP1
+  \item SOP2
+\end{itemize}
+
+
+\section{Required Materials}
+
+\subsection{Reagents}
+
+\NP Distilled water. 
+
+\NP Potassium dihydrogenphosphate, c(KH2PO4 = 0,2 mol/l). 
+
+\NP Dipotassium hydrogenphosphate, c(K2HPO4 = 0,2 mol/l)
+
+\NP Sodium chlorate, c(NaClO3 = 0,5 mol/l). 
+
+\NP Diammonium sulfate, (NH4)2SO4. Sodium hydrogencarbonate, c(NaHCO3 = 5 mmol/l)
+
+\NP Potassium chloride, c(KCl = 4 mol/l). 
+
+Stock solution A. 
+
+\NP Prepare stock solution A as follows. 
+  \begin{itemize}
+    \item 28 mL Potassium dihydrogenphosphate, KH2PO4
+    \item 72 mL Dipotassium hydrogenphosphate, K2HPO4 
+    \item 100 mL Distilled water
+  \end{itemize}  
+
+\NP Test medium. The test medium contains 1 mmol/l of potassium phosphate buffer, 5 mmol/l to 15 mmol/l of sodium chlorate and 1,5 mmol/l of diammonium sulfate, and has a pH of approximately 7,2 
+
+\NP Prepare the test medium as follows. 
+
+\begin{itemize}
+  \item 10 mL of Stock solution A
+  \item 10-30 mL of Sodium chlorate, NaClO3 
+  \item 0.198 g Diammonium sulfate, (NH4)2SO4.
+  \item Dlution to 1000 mL with distilled water
+\end{itemize}
+
+\NP The sodium chlorate concentration selected within the range given should be sufficient for effective inhibition of biological nitrate formation, while not having negative effects on ammonium oxidation. If necessary, test the influence of the sodium chlorate concentration. 
+
+\NP Test chemicals to be added to the test medium shall be dissolved in the phosphate buffer described and added before diluting to 1 l. For test chemicals with low water solubility, prepare solutions by mechanical dispersion or by using vehicles such as organic solvents, emulsifiers or dispergents of low toxicity to ammonium-oxidizing bacteria. If any vehicle is used to add a test chemical to the slurry or a soil, additional control shall be performed to assess possible effects of this vehicle on ammonium oxidation. 
+
+\NP Add extracts of biosolids, when tested, separately to the test medium before dilution to 1 l. 
+
+\NP NOTE When a carbon source is needed, e.g. when testing biosolids with high nitrate levels, add 10 ml of  NaHCO3 (5.6) to the test medium before diluting to 1 l.
+
+\subsection{Equipment}
+
+\NP Orbital Shaking Incubator-- Thermostatically Controlled
+
+\section{Estimated Time}
+
+\NP This will take XX minutes...
+
+\section{Procedure}
+
+\NP The test design should include at least three replicates of approximately 25 g of moist soil. The water content of soil for the calculation of dry mass is determined gravimetrically according to ISO 11465.
+
+Initial Incubation
+
+\NP Mix soil samples or waste materials with test medium (5.9) to form slurries. The volume of test medium should be adjusted to give a precise total liquid volume, e.g. 100 ml. Calculate the volume of medium to be added by subtracting the volume of water in the initial soil or waste sample from the desired liquid volume, e.g. 100 ml. Incubate the slurries in 250 ml flasks, placed upright on the orbital shaking incubator (6.2), thermostatically controlled at (25 ± 2) °C. Rotation should be sufficient to keep solids suspended (175 r/min).
+
+\subsection{Sampling Soil Slurry}
+
+\NP Take samples (2 ml) of the soil slurry after 2 h and 6 h of incubation, provided that ammonium oxidation is known to be linear over this period. The soil slurry should be well shaken at sampling times to ensure that the ratio of solution to soil is constant during the test. Dispense samples into test tubes and add 2 ml of KCl (5.7) to stop the ammonium oxidation. Then centrifuge the samples at, for example, 3 000g for 2 min, or filter. Filter paper should be of high filtration speed, while its chemical purity may be less than the highest grade. Determine nitrite by a suitable method of chemical analysis (see ISO 14256-2). At this stage, the solutions can be stored in a refrigerator (4° C to 8 °C) but analysis should be carried out within 24 h. 
+
+
+subsection{Calculations}
+
+\NP Calculate the rate of ammonium oxidation (ng NO2-N/g of dry mass of soil/h) from the difference between NO2-N concentrations at different measuring times. Calculate the inhibition of ammonium oxidation activity by the test chemical or extract of biosolid as a change in the activity in reference soil, expressed as a percentage. iTeh STANDARD PREVIEW (standards.iteh.ai) In mixtures of polluted and unpolluted soils, the polluted soil is considered toxic if the mixture shows ammonium oxidation significantly lower than 90\% of the mean activity of the two soils kept separate. Using four replicates, this is calculated using Equation (1): + A A c p m A s + < × , ( ) 
+
+
+where Am is the mean ammonium oxidation activity in the soil mixture; sm is the standard deviation of ammonium oxidation activity in the soil mixture; Ac is the mean ammonium oxidation activity in the control soil; Ap is the mean ammonium oxidation activity in the polluted soil.
+
+
+
+\section{References}
+
+\NP APHA, AWWA. WEF. (2012) Standard Methods for examination of water and wastewater. 22nd American Public Health Association (Eds.). Washington. 1360 pp. (2014).
+
+\end{document}
