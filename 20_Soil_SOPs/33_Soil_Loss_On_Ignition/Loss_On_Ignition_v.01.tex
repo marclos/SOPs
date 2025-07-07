@@ -77,7 +77,7 @@
 
 \NP Loss on Ignition (LOI) is used to determine organic matter content (OM\%) in soil samples. This is important for indirectly estimating soil organic carbon (SOC) in agricultural topsoil. 
 
-\NP The applications implement SFU Soil Science Lab method (Robertson, 2011) *and add Aaron's method paper for temperature*.
+\NP The applications implement SFU Soil Science Lab method (Robertson 2011) and Salehi et. al (2011).
 
 \section{Summary of Method}
 
@@ -212,43 +212,11 @@
   
   ---------
   
-  
-
-\subsection{Determining Proportion of Soil Passing No. 10 Sieve}
-
-\NP Soils are defined as particles that are less than 2 mm. Thus, we begin by removing the gravel, particles that exceed the sand-sized particles, >2.0 mm. These particles, however, influence the soil texture, so we will quantify the contribution of particles that exceed 2 mm. 
-
-\NP We can do this by analyzing the soil that can pass through the No. 10 sieve, which has a mesh size of 2 mm.  
-
-  
-\subsection{Measuring and Correcting for Soil Water Content}
-
-\NP We will use air-dried soil for our test. However, even air-dried soil contains water. This moisture is associated with clay particles, salts, and organic matter and is often referred to as hygroscopic water. To calculate the soil moisture content, we weigh the soil before and after oven drying the soil at 110$^\circ$ C. Once we determine the moisture content, we can use the moisture content to correct for the water in the air-dried soil. Because this method relies on the change in soil mass, the water content is often referred to as gravimeter water content as opposed to a volumetric water content.
-
-\NP This temperature is somewhat arbitrary, and clay minerals in particular may contain 10-15\% water (dry basis) at 400$^\circ$ C (Gardner 1986).  As temperature increases, first water in soil pores evaporates, then water adsorbed to mineral surfaces, followed by water between lattice layers and that which forms part of the mineral lattice itself.  The exact quantities and patterns of release in a hetergeneous mixture like soil depends on the particular mix of minerals making up a sample.  Water adsorbed to organic components (as well as other volatile organic substances) will also evaporate over a range of temperatures.  The key point is to specify the temperature used when reporting moisture data.
-
-\NP To determine the hygroscopic water content,
-
-\begin{enumerate}
-	\item Weigh and record the weight of a soil tin (Appendix A, Box 13) and the tin \# (Appendix A, Box 12);
-	\item Remove a 10-15 gram sub-sample from the air-dried soil that passed through the No. 10 sieve, put the sub-sample into the pre-weighed soil tin and record the weight (Appendix, Box 14);
-	\item Dry the sample in a drying oven set at 110 $^\circ$ C for approximately 24 hours;
-	\item Allow the tins to cool and record the oven-dried weight (Appendix, Box 15). 
-\end{enumerate}
-
-\NP We calculate the  hygroscopic moisture content we subtract the mass of oven-dried sample and the air-dried mass before drying, usually less than one, unless there is no hygroscopic moisture, then is is one. Use the following equation to calculate the water content
-
-\begin{equation}
-\texttt{Moisture}_H = (\texttt{air-dry mass w/tin} - \texttt{oven-dried mass w/tin})/(\texttt{air-dried mass} - \texttt{tin mass})
-\end{equation}
-
-\noindent $Moisture_H$ can be calculated using R code developed for this SOP. See Appendix B for a user guide for the program. 
 
 \subsection{Calculating Soil Sample Mass}
 
 \NP We then calculate the ``Total Sample Represented'' in the hydrometer test as the mass of soil in hydrometer test as the oven dry mass used by the percent passed through 2 mm sieve and multiply by 100.
 
-\NP We will analyze air dried soil -- that has passed through a No. 10 sieve. 
 
 \begin{equation}
 W = oven dry mass * percent passing 2mm sieve * 100
@@ -258,11 +226,7 @@ W = oven dry mass * percent passing 2mm sieve * 100
 WB = \frac{M_{air}*10000}{Per_{No.10} * (100 + Moisture_H)}
 \end{equation}
 
-\NP But since the sample has hygroscopic water, we will use the correction factor above to weigh a ``oven-dried equivalent'', $DW_e$. 
 
-\NP If the soils are coarse textured (>70\% sand), will will use $DW_e$ of 100 g, otherwise 50 g is sufficient.
-
-\NP Since air dried soil contains water, the soil sample used will weigh slightly more than 50g or 100 g for sandy soils where $DW_e = DW_{air} * (1 + DW_c)$,\footnote{I need to check this!}, thus we can re-arrange the equation to determine the amount of air-dried soil to use for our test:
 
 \begin{equation}
 DW_{air} = 50/(1+DW_c)
@@ -278,30 +242,6 @@ DW_{air} = 100/(1+DW_c)
 
 --------
 
-
-		\begin{table}
-		\begin{tabular}{lrrr}\hline
-Obs. & Soil Reading Times 		& Temperture		& Blank Hydrometer \\ \hline\hline	
-0		& Before Inverting (0 seconds)		&	 X	&		X		\\
-1		& 40 seconds (Repeat twice) 			&	 		&			  \\
-2		&	2.0 minutes 										&			&       \\
-3		&	5.0 minutes 										&	 X 	&		X   \\
-4		&	15 minutes 											&	 		&   	  \\
-5	 	& 30 minutes 											&			&				\\
-6		& 60 minutes 											&		X	& 	X		\\
-%X		& 90 minutes 										&			&				\\
-7		& 2	hours													& 	X	& 	X		\\
-8		& 3 hours (optional)							&		X	& 	X		\\
-9   & 6 or 8 hours (optional)					&		X	& 	X		\\
-10		& 24 hours											&		X	&  	X 	\\\hline		
-		\end{tabular}
-		\caption{Reading times modified from \textbf{citet{standard2007d422}}. These times can be adjusted, be sure to record the actual times in Boxes 19 and 20.}
-		\label{tab:ReadingTimes}
-	\end{table}
-	
-	\item Be sure that the cylinder is back from the edge of the counter and in a location where it won't be disturbed.	
-	
-\end{enumerate}
 
 \subsection*{Determining Proportion of Soil Retained No. 200 Sieve}
 
