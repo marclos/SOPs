@@ -118,7 +118,7 @@ of accidental ingestion or contact.
 
 \NP Microcentrifuge with rotor capable of reaching 16,000 g
 
-\NP Pipettor 50 $\mu$L - 750 $\mu$L
+\NP Pipettor 50 $\mu$L - 750 $\mu$L and 20 $\mu$L - 200 $\mu$
 
 \NP Vortex-Genie 2
 
@@ -139,7 +139,7 @@ of accidental ingestion or contact.
 
 \NP RNAase free gloves (cat \# ???)
 
-\NP Disposable pippet tips (for 100 preps) 
+\NP Disposable pipette tips (for 100 preps) 
 
 \NP Vortex adapter for bead tubes
 
@@ -151,9 +151,7 @@ of accidental ingestion or contact.
 
 \end{itemize*}
 
-\NP Weighing Paper
-
-\NP Scupula, spatula, tweezers
+\NP Scupula
 
 \subsection*{Kit Contents}
 \NP PowerBead Pro Tubes (50)
@@ -169,8 +167,25 @@ of accidental ingestion or contact.
 \NP Collection Tubes - 2 ml (100)
 \NP Quick-Start Protocol (1)
 
+\section{Micropipetting}
+This procedure will utilize two pipettes: 50 $\mu$L - 750 $\mu$ and 20 $\mu$L - 200 $\mu$. The second pippette will only be used near the end of the procedure for a more precise sampling. Regardless, it is important to familarize yourself with how to use a pipette. Ensure that they are properly calibrated by consulting with Marc. Afterwards, you are ready to pippette.
+\NP You will notice that on the side of the pipette there are three numbers stacked vertically. This is where you read the volume of the micropipette. To adjust the volume, you turn the plunger and this will change the extraction volume. \begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{pipe.png}
+  \caption{Here is an example of how to read the pipette}
+  \label{fig:Pipette Standard Reading}
+\end{figure}
+\NP Once you have turned the wheel to the desired extraction volume, the micropipette will extract exactly this amount from whatever concentrate you pull from. 
+\NP Ensure you have the proper tip for the micropipette. Now, Insert the tip into your concentrate push down on the plunger until you reach a stopping point. Then, release back up. You have now extracted your concentrate. R
+\NP Now that the concentrate is pulled from the pipette, push down, all the way into a stopping point to release it into your intended sample. You can practice this extraction and release process with water before formally extracting.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{pos.jpg}
+  \caption{Second position is the extraction and third position is releasing the extract}
+  \label{fig:Pipette Position}
+\end{figure}
 
-\section{Estimated Time (batch of 12)}
+\section{Estimated Time (batch of 24)}
 
 \NP This procedure requires approximately 5-6 hours depending on the number of samples,and the time it takes to homogenize starting material and complete other preliminary steps.
 
@@ -180,7 +195,7 @@ of accidental ingestion or contact.
 
 \NP \textbf{Solution CD2 should be stored at 2-8\degree C upon arrival.} All other components and reagents of the DNeasy Powersoil Pro Kit can be stored at room temperature (15-25\degree C) until the expiration date printed on the label.
 
-\NP Before the extraction process, soils should be either freshly collected or frozen... MORE here...
+\NP Before the extraction process, soils should be freshly collected.
 
 \NP After extraction, the DNA shall stored in the  –30 to –15\degree C or –90 to –65\degree C.
 
@@ -195,6 +210,8 @@ of accidental ingestion or contact.
 \NP Spend a few minutes homogenizing each soil before sampling.
 
 \NP To the PowerBead Tubes, add 250 mg (0.25 grams) of soil sample.
+
+\NP Pull a beaker to use for waste during experiment
 
 \noindent What's happening: After your sample has been loaded into the PowerBead Tube, the next step is a homogenization and lysis procedure. The PowerBead
 Tube contains a buffer that will (a) help disperse the soil particles, (b) begin to dissolve humic acids and (c) protect nucleic acids from degradation.
@@ -221,8 +238,8 @@ Tube contains a buffer that will (a) help disperse the soil particles, (b) begin
 \noindent The vortexing step is critical for complete homogenization and cell lysis. Cells are lysed by a combination of chemical agents from steps 1-4 and mechanical shaking introduced at this step. By randomly shaking the beads in the presence of disruption agents, collision of the beads with microbial cells will cause the cells to break open.
 
 \subsection*{Inhibitor and Contaminant Removal}
-\NP Centrifuge the PowerBead Pro Tube at 15,000 x g for 1 min.
-\NP Transfer 500-600 $\mu$L of the supernatant to a clean 2 ml Microcentrifuge Tube (provided). Avoid disturbing the pellet. There may also still be soil particles.
+\NP Centrifuge the PowerBead Pro Tube at 15,000 x g for 1 min. \textbf{Make sure to place samples across from each other in the centrifuge, otherwise it will not work as it is imbalanced. Additionally the machine will say 15 for 15,000 x g, 14 for 14,0000 x g, and so on.}
+\NP Transfer 500-600 $\mu$L of the supernatant to a clean 2 ml Microcentrifuge Tube (provided). \textbf{Make sure to number the top of every tube as the side will later be covered up in following steps} Avoid disturbing the pellet. There may also still be soil particles.
 \NP Add 200 $\mu$L of Solution CD2 and vortex for 5 s.
 \NP Centrifuge at 15,000 x g for 1 minute
 \NP Avoiding the pellet, transfer up to 700 $\mu$L of supernatant to a clean 2 ml tube. 
@@ -230,11 +247,11 @@ Tube contains a buffer that will (a) help disperse the soil particles, (b) begin
 \noindent What's happening: CD2 and CD3 contain Inhibitor Removal Technology (IRT) reagents that precipitate proteins, humic acids, and other inhibitors that interfere with PCR and other downstream applications.
 \subsection*{DNA Binding and Washing}
 \NP Immediately after vortexing with CD3, load 650 $\mu$L of the lysate onto an MB Spin Column in a 2 mL Collection Tube.
-\NP Centrifuge at 15,000 × g for 1 minute. Discard the flow-through.
+\NP Centrifuge at 15,000 × g for 1 minute. Discard the flow-through in your waste beaker.
 Repeat until all of the lysate has been processed and passed through the MB Spin Column.
 \NP Carefully place the MB Spin Column into a clean 2 ml Collection Tube (provided). Avoid splashing any flow-through onto the MB Spin Column.
 \NP Add 500 $\mu$L of Solution EA to the MB Spin Column. Centrifuge at 15,000 x g for 1 min.
-\NP Discard the flow-through and place the MB Spin Column back into the same 2 ml Collection Tube.
+\NP Discard the flow-through in your waste beaker and place the MB Spin Column back into the same 2 ml Collection Tube.
 \NP Add 500 $\mu$L of Solution C5 to the MB Spin Column. Centrifuge at 15,000 x g for 1 min.
 \NP Discard the flow-through and place the MB Spin Column into a new 2 ml Collection Tube (provided).
 \NP Centrifuge at up to 16,000 x g for 2 min. Carefully place the MB Spin Column into a new 1.5 ml Elution Tube (provided). \textbf{Note:} This spin removes residual Solution C5. It is critical to remove all traces of
@@ -246,6 +263,16 @@ Solution C5 because the ethanol in it can interfere with downstream DNA applicat
 membrane, DNA that was bound in the presence of high salt is selectively released by Solution C6 (10 mM Tris), which lacks salt.
 \NP Centrifuge at 15,000 x g for 1 min. Discard the MB Spin Column. The DNA is now ready for downstream applications.
 \NP The DNA should be stored frozen  (–30 to –15 \degree C or –90 to –65 \degree C).
+
+\section{Waste Disposal}
+\textbf{All waste is hazardous waste disposal EXCEPT used spin columns}
+\begin{itemize*}
+  \item Buffer CD1: Guanidine thiocyanate (chaotropic salt)
+  \item Buffer CD2: Detergents
+  \item Buffer EA: Ethanol or isopropanal
+  \item Buffer C5/C6/EA: tris buffer + ethanol
+  \item Flowthrough from spin columns: Mix of all listed above
+  \item Used spin columns: Residual chaotropes & DNA. \textbf{Note: This will be solid hazardous lab waste}
 
 \section{QA/QC}
 
