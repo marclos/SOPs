@@ -1,0 +1,540 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{SOP-TOC-SSM-001}
+\fancyhead[R]{Revision 1.0}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Section formatting
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={SOP: Shimadzu TOC Analyzer with SSM},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Huge\bfseries Standard Operating Procedure\par}
+    \vspace{1cm}
+    {\Large Shimadzu TOC Analyzer with SSM for\\Soil Samples with Varying Carbonate Concentrations\par}
+    \vspace{2cm}
+    
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Document Number:} & SOP-TOC-SSM-001 \\
+        \textbf{Revision:} & 1.0 \\
+        \textbf{Effective Date:} & October 2025 \\
+        \textbf{Review Date:} & October 2026 \\
+        \bottomrule
+    \end{tabular}
+    
+    \vfill
+    
+    {\large \textbf{Document Control:} This is a controlled document. Printed copies are uncontrolled and may not be current.\par}
+    
+\end{titlepage}
+
+% Table of contents
+\tableofcontents
+\newpage
+
+\section{Purpose and Scope}
+
+This SOP describes the procedure for determining Total Carbon (TC), Total Inorganic Carbon (TIC), and Total Organic Carbon (TOC) in soil samples using the Shimadzu TOC Analyzer equipped with a Solid Sample Module (SSM). This procedure is applicable to soil samples with high ($>10\%$), medium (2--10\%), and low ($<2\%$) carbonate concentrations.
+
+\section{Principle}
+
+The Shimadzu TOC-SSM system uses high-temperature combustion (900°C) to convert all carbon in the sample to CO$_2$, which is then quantified by NDIR (Non-Dispersive Infrared) detection. For carbonate-bearing soils:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{TC (Total Carbon)} = measured by direct combustion
+    \item \textbf{TIC (Total Inorganic Carbon)} = measured by acid treatment (200°C)
+    \item \textbf{TOC (Total Organic Carbon)} = TC $-$ TIC
+\end{itemize}
+
+\section{Safety and Precautions}
+
+\subsection{Personal Protective Equipment (PPE)}
+\begin{itemize}[noitemsep]
+    \item Safety glasses or goggles
+    \item Laboratory coat
+    \item Heat-resistant gloves when handling hot ceramic boats
+    \item Nitrile gloves when handling acids
+\end{itemize}
+
+\subsection{Chemical Hazards}
+\begin{itemize}[noitemsep]
+    \item Phosphoric acid (25\% solution): corrosive, causes severe burns
+    \item High-purity oxygen: oxidizer, keep away from combustibles
+    \item Soil samples: may contain pathogens or heavy metals
+\end{itemize}
+
+\subsection{Equipment Hazards}
+\begin{itemize}[noitemsep]
+    \item Combustion furnace reaches 900°C
+    \item Acid furnace reaches 200°C
+    \item Allow adequate cooling time before handling boats
+\end{itemize}
+
+\section{Equipment and Materials}
+
+\subsection{Instrumentation}
+\begin{itemize}[noitemsep]
+    \item Shimadzu TOC Analyzer with Solid Sample Module (SSM)
+    \item High-purity oxygen supply (99.999\%)
+    \item Carrier gas supply (oxygen or nitrogen, 99.999\%)
+    \item Computer with TOC Control Software
+    \item Analytical balance (0.0001 g precision)
+\end{itemize}
+
+\subsection{Consumables}
+\begin{itemize}[noitemsep]
+    \item Ceramic sample boats (pre-combusted)
+    \item 25\% phosphoric acid solution (prepared fresh weekly)
+    \item Glucose or sucrose standard (certified reference material)
+    \item Calcium carbonate standard (reagent grade, dried at 105°C)
+\end{itemize}
+
+\subsection{Sample Preparation Equipment}
+\begin{itemize}[noitemsep]
+    \item Mortar and pestle or ball mill
+    \item 2 mm and 0.25 mm sieves
+    \item Drying oven (105°C)
+    \item Desiccator with desiccant
+\end{itemize}
+
+\section{Reagents and Standards}
+
+\subsection{Phosphoric Acid Solution (25\% v/v)}
+\begin{enumerate}[noitemsep]
+    \item Add 250 mL concentrated phosphoric acid (85\%) to 600 mL deionized water
+    \item Mix thoroughly and dilute to 1000 mL
+    \item Store in glass bottle, prepare fresh weekly
+\end{enumerate}
+
+\subsection{TOC Calibration Standards}
+Prepare from glucose or sucrose:
+\begin{itemize}[noitemsep]
+    \item Stock solution: 1000 mg C/L
+    \item Working standards: 10, 25, 50, 100, 250, 500 mg C/L
+    \item Prepare fresh daily
+\end{itemize}
+
+\subsection{TIC Calibration Standards}
+Prepare from dried calcium carbonate (CaCO$_3$):
+\begin{itemize}[noitemsep]
+    \item Calculate carbon content: 12.0\% C by weight
+    \item Prepare solid standards: 1, 5, 10, 25, 50 mg CaCO$_3$
+    \item Store in desiccator
+\end{itemize}
+
+\section{Sample Preparation}
+
+\subsection{Initial Processing}
+\begin{enumerate}[noitemsep]
+    \item Air-dry soil samples at room temperature or 40°C maximum
+    \item Remove large debris, roots, and stones
+    \item Grind samples using mortar and pestle or ball mill
+    \item Pass through 2 mm sieve for initial homogenization
+\end{enumerate}
+
+\subsection{Fine Grinding}
+\begin{enumerate}[noitemsep]
+    \item Take representative subsample (approximately 50 g)
+    \item Further grind to pass through 0.25 mm sieve (60 mesh)
+    \item Mix thoroughly to ensure homogeneity
+\end{enumerate}
+
+\subsection{Moisture Determination}
+\begin{enumerate}[noitemsep]
+    \item Weigh 2--5 g of ground sample in pre-weighed crucible
+    \item Dry at 105°C for 24 hours
+    \item Cool in desiccator and reweigh
+    \item Calculate moisture content for dry weight correction
+\end{enumerate}
+
+\subsection{Sample Weighing Guidelines}
+
+\begin{longtable}{p{4cm}p{3cm}p{3cm}p{3cm}}
+\toprule
+\textbf{Soil Type} & \textbf{TC Analysis} & \textbf{TIC Analysis} & \textbf{Expected TIC} \\
+\midrule
+\endfirsthead
+\multicolumn{4}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\toprule
+\textbf{Soil Type} & \textbf{TC Analysis} & \textbf{TIC Analysis} & \textbf{Expected TIC} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+High Carbonate ($>10\%$) & 10--20 mg & 5--10 mg & $>1.2\%$ C \\
+Medium Carbonate (2--10\%) & 20--40 mg & 10--30 mg & 0.24--1.2\% C \\
+Low Carbonate ($<2\%$) & 40--80 mg & 30--80 mg & $<0.24\%$ C \\
+\end{longtable}
+
+\section{Instrument Setup and Calibration}
+
+\subsection{Daily Startup}
+\begin{enumerate}[noitemsep]
+    \item Turn on carrier gas and oxygen supply
+    \item Check gas pressures (typically 0.4--0.5 MPa)
+    \item Power on TOC analyzer and allow 30-minute warm-up
+    \item Launch TOC Control Software
+    \item Set furnace temperatures:
+    \begin{itemize}
+        \item TC furnace: 900°C
+        \item TIC furnace: 200°C
+    \end{itemize}
+    \item Verify baseline stability ($<5$ ppm drift)
+\end{enumerate}
+
+\subsection{System Blank Check}
+\begin{enumerate}[noitemsep]
+    \item Analyze 3 blank ceramic boats
+    \item Average blank should be $<0.1$ mg C
+    \item If blank $>0.1$ mg C, clean boats or replace
+\end{enumerate}
+
+\subsection{TC Calibration}
+\begin{enumerate}[noitemsep]
+    \item Analyze glucose/sucrose standards in triplicate
+    \item Use minimum 5 concentration levels
+    \item Generate calibration curve ($r^2 > 0.999$ required)
+    \item Verify linearity across working range
+\end{enumerate}
+
+\subsection{TIC Calibration}
+\begin{enumerate}[noitemsep]
+    \item Weigh CaCO$_3$ standards directly into ceramic boats
+    \item Add 150 $\mu$L of 25\% phosphoric acid
+    \item Analyze in triplicate at each concentration
+    \item Generate calibration curve ($r^2 > 0.998$ required)
+\end{enumerate}
+
+\subsection{Quality Control Standards}
+\begin{enumerate}[noitemsep]
+    \item Analyze certified reference soil (if available)
+    \item Expected recovery: 90--110\%
+    \item If outside range, recalibrate system
+\end{enumerate}
+
+\section{Analysis Procedure}
+
+\subsection{Sample Loading}
+\begin{enumerate}[noitemsep]
+    \item Pre-clean ceramic boats by combusting at 900°C
+    \item Cool boats in desiccator for minimum 30 minutes
+    \item Tare balance with empty boat
+    \item Add appropriate sample amount according to carbonate level
+    \item Record exact sample weight (to 0.0001 g)
+    \item Place boat in SSM autosampler carousel
+\end{enumerate}
+
+\subsection{TC Analysis}
+\begin{enumerate}[noitemsep]
+    \item Create sample sequence in software
+    \item Enter sample IDs and weights
+    \item Select TC analysis method:
+    \begin{itemize}
+        \item Combustion temperature: 900°C
+        \item Combustion time: 3--5 minutes
+        \item Oxygen flow: per manufacturer specifications
+    \end{itemize}
+    \item Start analysis sequence
+    \item System automatically combusts each sample
+    \item Software calculates TC based on calibration curve
+\end{enumerate}
+
+\subsection{TIC Analysis}
+\begin{enumerate}[noitemsep]
+    \item Prepare new sample boats with same soil samples
+    \item Weigh samples (use same amounts as TC analysis)
+    \item Add 150 $\mu$L of 25\% phosphoric acid to each boat
+    \item Wait 30 seconds for initial reaction
+    \item Load boats into TIC furnace position
+    \item Select TIC analysis method:
+    \begin{itemize}
+        \item Temperature: 200°C
+        \item Analysis time: 5--7 minutes
+        \item Oxygen/carrier gas flow: per manufacturer specifications
+    \end{itemize}
+    \item Start analysis sequence
+    \item Acid converts carbonates to CO$_2$ at low temperature
+    \item Software calculates TIC based on calibration curve
+\end{enumerate}
+
+\subsection{TOC Calculation}
+\begin{equation}
+\text{TOC (\%)} = \text{TC (\%)} - \text{TIC (\%)}
+\end{equation}
+
+Software typically calculates automatically.
+
+\section{Quality Assurance/Quality Control}
+
+\subsection{Replicate Analysis}
+\begin{itemize}[noitemsep]
+    \item Analyze each sample in triplicate minimum
+    \item Calculate mean, standard deviation, and RSD
+    \item Acceptable RSD: $<10\%$ for samples $>0.5\%$ C
+    \item Acceptable RSD: $<15\%$ for samples $<0.5\%$ C
+\end{itemize}
+
+\subsection{Calibration Verification}
+\begin{itemize}[noitemsep]
+    \item Analyze calibration check standard every 10 samples
+    \item Recovery must be 90--110\%
+    \item If outside range, recalibrate and re-analyze affected samples
+\end{itemize}
+
+\subsection{Method Blanks}
+\begin{itemize}[noitemsep]
+    \item Analyze blank boat every 10 samples
+    \item Blank should be $<10\%$ of lowest sample concentration
+\end{itemize}
+
+\subsection{Duplicate Samples}
+\begin{itemize}[noitemsep]
+    \item Analyze 10\% of samples as duplicates
+    \item RPD (Relative Percent Difference) should be $<15\%$
+\end{itemize}
+
+\subsection{Certified Reference Materials}
+\begin{itemize}[noitemsep]
+    \item Analyze CRM at beginning and end of each run
+    \item Document recovery and control chart results
+\end{itemize}
+
+\section{Carbonate-Specific Considerations}
+
+\subsection{High Carbonate Soils ($>10\%$)}
+
+\subsubsection{Challenges:}
+\begin{itemize}[noitemsep]
+    \item Vigorous reaction with acid
+    \item Potential for sample loss or splashing
+    \item May exceed detector range
+\end{itemize}
+
+\subsubsection{Solutions:}
+\begin{itemize}[noitemsep]
+    \item Use smaller sample sizes (5--10 mg for TIC)
+    \item Add acid slowly in 50 $\mu$L increments
+    \item Wait 1--2 minutes between acid additions
+    \item Dilute samples if necessary
+    \item Consider pre-treatment to remove excess carbonates for TOC determination
+\end{itemize}
+
+\subsection{Medium Carbonate Soils (2--10\%)}
+
+\subsubsection{Considerations:}
+\begin{itemize}[noitemsep]
+    \item Standard protocol usually sufficient
+    \item Monitor for complete carbonate dissolution
+    \item Ensure adequate acid addition (150--200 $\mu$L)
+    \item Extend TIC analysis time if needed (7--10 minutes)
+\end{itemize}
+
+\subsection{Low Carbonate Soils ($<2\%$)}
+
+\subsubsection{Considerations:}
+\begin{itemize}[noitemsep]
+    \item Use larger sample sizes to improve detection
+    \item TIC may be near detection limit
+    \item Verify blank contamination is minimal
+    \item Multiple replicates recommended ($n=5$)
+    \item TOC may be determined by direct method after acid pre-treatment
+\end{itemize}
+
+\subsection{Acid Pre-treatment for Direct TOC (Optional)}
+
+For high carbonate soils, direct TOC determination:
+\begin{enumerate}[noitemsep]
+    \item Weigh 0.5--1 g soil into beaker
+    \item Add 10 mL of 1M HCl dropwise
+    \item Allow to react until effervescence stops
+    \item Repeat acid addition if necessary
+    \item Rinse with deionized water (3$\times$)
+    \item Dry at 60°C
+    \item Grind and analyze for TOC directly
+    \item \textbf{Note:} This method may result in loss of volatile organic compounds
+\end{enumerate}
+
+\section{Data Recording and Calculations}
+
+\subsection{Raw Data}
+Record in laboratory notebook:
+\begin{itemize}[noitemsep]
+    \item Sample ID and description
+    \item Sample weight (dry weight basis)
+    \item Analysis date and time
+    \item Instrument ID and calibration date
+    \item Peak area/height
+    \item Calculated concentrations
+\end{itemize}
+
+\subsection{Calculations}
+
+\subsubsection{Dry weight correction:}
+\begin{equation}
+\text{Dry weight} = \text{Wet weight} \times \left(1 - \frac{\text{Moisture \%}}{100}\right)
+\end{equation}
+
+\subsubsection{Carbon concentration (\%):}
+\begin{equation}
+\text{C (\%)} = \frac{\text{C measured (mg)}}{\text{Sample dry weight (mg)}} \times 100
+\end{equation}
+
+\subsubsection{TOC calculation:}
+\begin{equation}
+\text{TOC (\%)} = \text{TC (\%)} - \text{TIC (\%)}
+\end{equation}
+
+\subsubsection{Relative Percent Difference (RPD):}
+\begin{equation}
+\text{RPD} = \frac{|\text{Sample 1} - \text{Sample 2}|}{\left(\frac{\text{Sample 1} + \text{Sample 2}}{2}\right)} \times 100
+\end{equation}
+
+\subsection{Reporting}
+Report results to appropriate significant figures:
+\begin{itemize}[noitemsep]
+    \item TC, TIC, TOC: 2 decimal places
+    \item Include standard deviation or RSD
+    \item Report on dry weight basis
+    \item Note any dilutions or pre-treatments
+\end{itemize}
+
+\section{Maintenance and Troubleshooting}
+
+\subsection{Daily Maintenance}
+\begin{itemize}[noitemsep]
+    \item Check gas pressures and flows
+    \item Verify furnace temperatures
+    \item Clean sample inlet if needed
+    \item Check for leaks in gas lines
+\end{itemize}
+
+\subsection{Weekly Maintenance}
+\begin{itemize}[noitemsep]
+    \item Clean combustion tubes
+    \item Replace quartz wool if discolored
+    \item Check and clean NDIR detector cell
+    \item Verify calibration standards
+\end{itemize}
+
+\subsection{Monthly Maintenance}
+\begin{itemize}[noitemsep]
+    \item Replace oxygen scrubber cartridge
+    \item Check all O-rings and seals
+    \item Clean or replace furnace tubes if necessary
+    \item Perform full system calibration
+\end{itemize}
+
+\subsection{Common Issues and Solutions}
+
+\begin{longtable}{p{3.5cm}p{4cm}p{6cm}}
+\toprule
+\textbf{Problem} & \textbf{Possible Cause} & \textbf{Solution} \\
+\midrule
+\endfirsthead
+\multicolumn{3}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\toprule
+\textbf{Problem} & \textbf{Possible Cause} & \textbf{Solution} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\textit{Continued on next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+High blank values & Contaminated boats & Pre-combust boats at 900°C \\
+Poor peak shape & Incomplete combustion & Increase combustion time/temperature \\
+Low TIC recovery & Insufficient acid & Increase acid volume or add incrementally \\
+Carryover between samples & Incomplete purging & Extend purge time between samples \\
+Baseline drift & Detector contamination & Clean NDIR cell \\
+Inconsistent replicates & Sample heterogeneity & Improve grinding and mixing \\
+\end{longtable}
+
+\section{Waste Disposal}
+
+\begin{itemize}[noitemsep]
+    \item Acid waste: Neutralize with sodium bicarbonate, dispose per institutional guidelines
+    \item Ceramic boats: Reuse after cleaning or dispose as non-hazardous solid waste
+    \item Soil samples: Dispose per institutional chemical waste procedures
+\end{itemize}
+
+\section{References}
+
+\begin{enumerate}
+    \item Shimadzu TOC Analyzer SSM-5000A User Manual
+    \item ASTM D4129 - Standard Test Method for Total and Organic Carbon in Water
+    \item ISO 10694 - Soil Quality - Determination of Organic and Total Carbon after Dry Combustion
+    \item Nelson, D.W. and Sommers, L.E. (1996) Total Carbon, Organic Carbon, and Organic Matter. Methods of Soil Analysis Part 3
+\end{enumerate}
+
+\section{Revision History}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cccc}
+\toprule
+\textbf{Version} & \textbf{Date} & \textbf{Changes} & \textbf{Author} \\
+\midrule
+1.0 & October 2025 & Initial release & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Approval}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cccc}
+\toprule
+\textbf{Role} & \textbf{Name} & \textbf{Signature} & \textbf{Date} \\
+\midrule
+Author & & & \\[0.5cm]
+Reviewer & & & \\[0.5cm]
+Approver & & & \\[0.5cm]
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
