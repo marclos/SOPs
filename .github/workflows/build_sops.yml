@@ -13,7 +13,7 @@ name: Build and Deploy SOPs
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - 'sops/**'
       - '_quarto.yml'
