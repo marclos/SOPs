@@ -1,0 +1,129 @@
+# =============================================================================
+# Build and Deploy Lab SOPs
+# =============================================================================
+# Triggers on push to main (or manual dispatch). Renders all SOPs to HTML + PDF,
+# then deploys the HTML site to GitHub Pages.
+#
+# Setup (one-time):
+#   1. In your repo: Settings > Pages > Source > GitHub Actions
+#   2. That's it. No tokens or secrets needed.
+# =============================================================================
+
+name: Build and Deploy SOPs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sops/**'
+      - '_quarto.yml'
+      - '_templates/**'
+      - 'index.qmd'
+      - 'quick-reference.qmd'
+  workflow_dispatch:          # manual trigger button in GitHub UI
+
+# Only one build at a time; cancel in-progress runs on new pushes
+concurrency:
+  group: "sop-build"
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ----- Checkout -----
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ----- System dependencies for PDF (LaTeX) -----
+      - name: Install TinyTeX
+        uses: r-lib/actions/setup-tinytex@v2
+
+      - name: Install LaTeX packages
+        run: |
+          tlmgr install \
+            fancyhdr \
+            lastpage \
+            geometry \
+            xcolor \
+            hyperref \
+            booktabs \
+            longtable \
+            caption \
+            float \
+            lm \
+            etoolbox \
+            pdflscape \
+            multirow \
+            wrapfig \
+            colortbl \
+            tabu \
+            threeparttable \
+            threeparttablex \
+            makecell \
+            environ \
+            trimspaces
+
+      # ----- R (only needed if SOPs contain R code chunks) -----
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+
+      - name: Install R packages
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            knitr
+            rmarkdown
+          # Add any other R packages your SOPs use, e.g.:
+          # tidyverse
+          # ggplot2
+
+      # ----- Quarto -----
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.6"      # pin to a release for reproducibility
+
+      # ----- Build -----
+      - name: Render all SOPs
+        run: quarto render
+
+      # ----- Collect PDFs into a download folder -----
+      # Copies all generated PDFs into docs/pdfs/ so they are accessible
+      # from the website at /pdfs/SOP-001-autoclave.pdf etc.
+      - name: Collect PDFs
+        run: |
+          mkdir -p docs/pdfs
+          find docs/sops -name "*.pdf" -exec cp {} docs/pdfs/ \;
+          echo "## PDF Downloads" > docs/pdfs/index.md
+          echo "" >> docs/pdfs/index.md
+          for f in docs/pdfs/*.pdf; do
+            basename=$(basename "$f")
+            echo "- [$basename]($basename)" >> docs/pdfs/index.md
+          done
+
+      # ----- Deploy to GitHub Pages -----
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

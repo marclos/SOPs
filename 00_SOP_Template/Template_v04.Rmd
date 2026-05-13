@@ -1,0 +1,59 @@
+---
+output:
+  pdf_document:
+    latex_engine: xelatex
+    keep_tex: true
+    pandoc_args: ["--lua-filter=remove-pandocbounded.lua"]
+documentclass: lab-sop
+header-includes:
+  - \SOPTitle{SOP TITLE}
+  - \SOPCode{LAB-WATER-001}
+  - \SOPVersion{1.0}
+  - \SOPDate{\today}
+  - \SOPAuthor{Author Name}
+  - \SOPApprovedBy{Lab Director}
+---
+
+\maketitle
+
+## 1. Purpose
+Define the purpose of this SOP.
+
+## 2. Scope
+Activities, samples, matrices, and exclusions.
+
+## 3. Responsibilities
+Who is allowed to perform this procedure.
+
+## 4. Safety Considerations
+```{=latex}
+\begin{safetybox}
+PPE, hazards, waste handling, emergency procedures.
+\end{safetybox}
+```
+## 5. Equipment and Materials
+- Instruments
+- Reagents
+- Consumables
+
+## 6. Sample Collection and Handling
+Step-by-step guidance.
+
+## 7. Analytical Procedure
+Clearly numbered steps only.
+
+## 8. Quality Assurance / Quality Control
+Blanks, duplicates, standards, acceptance criteria.
+
+## 9. Data Management
+File naming, storage, backups, reporting.
+
+## 10. Waste Disposal
+Chemical, biological, and physical waste streams.
+
+## 11. References
+EPA, ISO, APHA, peer‑reviewed sources.
+
+\RevisionTable
+
+\SignatureTable

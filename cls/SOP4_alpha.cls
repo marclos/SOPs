@@ -6,7 +6,7 @@
 % Spacing in sections with two decimals is kerning funny
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{../SOP4_alpha}[2018/03/22 v1.0 Modified article class for standard operating procedures]
+\ProvidesClass{SOP4_alpha}[2018/03/22 v1.0 Modified article class for standard operating procedures]
 % http://stackoverflow.com/questions/581916/how-do-you-extend-article-document-class-in-latex
 
 % Passes and class options to the underlying article class
@@ -17,13 +17,13 @@
 % Some valuable packages
 \RequirePackage{enumitem} % Customization of itemized, enumerated, etc.
 \RequirePackage{hyperref} % For hyperlinked cross-references
-\RequirePackage{../relsize} % For relative font size changes
+%\RequirePackage{relsize} % For relative font size changes
 \RequirePackage{gensymb} % to create some symbols
 \RequirePackage{amssymb}
-
+%\RequirePackage{hanging}
+\RequirePackage{gensymb} % For specific symbols, such as the degree symbol
 \usepackage{textcomp}
 \newcommand{\tilda}{\raisebox{0.5ex}{\texttildelow}}
-
 
 \hypersetup{
     colorlinks,
@@ -33,8 +33,7 @@
     urlcolor=blue
 }
 
-\RequirePackage{../hanging}
-\RequirePackage{gensymb} % For specific symbols, such as the degree symbol
+
 
 %\newenvironment{hangparas}[2]{\setlength{\parindent}{\z@}
 %\everypar={\hangpara{#1}{#2}}}{\par}
@@ -117,7 +116,7 @@
 \renewcommand{\title}[1]{\oldtitle{#1}\newcommand{\mythetitle}{#1}}
 \renewcommand{\maketitle}{%
 \begin{tabular}{|c|p{2in}|l|l|} \hline
-\multirow{3}{*}{\includegraphics[width=2cm]{pomona.jpg}} & \multicolumn{1}{p{2.5in}|}{\centering Environmental Analysis Teaching and Research Laboratory} & Date: \thedate & SOP No. \theSOPno \\ \cline{2-4}
+\multirow{3}{*}{\includegraphics[width=2cm]{pomona.jpg}} & \multicolumn{1}{p{2.5in}|}{\centering Biogeochemistry Laboratory} & Date: \thedate & SOP No. \theSOPno \\ \cline{2-4}
 & \multicolumn{1}{p{2.5in}|}{\centering Standard Operating Procedure } & \multicolumn{2}{p{2.5in}|}{Title: \mythetitle} \\ \cline{2-4}
 & Approved By: \theapproved & \multicolumn{2}{l|}{Revised: \theReviseDate} \\ \hline
 \end{tabular}
