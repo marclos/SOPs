@@ -1,0 +1,170 @@
+# =============================================================================
+# Lab SOP System -- Quarto Project Configuration
+# =============================================================================
+# This file controls rendering for ALL SOPs in the project.
+# Individual .qmd files need minimal YAML -- just title, SOP number, and author.
+#
+# Usage:
+#   quarto render              # build entire site + all PDFs
+#   quarto render sops/SOP-001-autoclave.qmd   # build one SOP
+#   quarto preview             # live preview of HTML site
+# =============================================================================
+
+project:
+  type: website
+  output-dir: docs            # rendered output goes here (GitHub Pages source)
+  render:
+    - index.qmd               # landing page / SOP index
+    - sops/*.qmd              # all SOP documents
+
+# -----------------------------------------------------------------------------
+# Website (HTML) Configuration -- primary access for students
+# -----------------------------------------------------------------------------
+website:
+  title: "Lab Standard Operating Procedures"
+  # Update these for your lab:
+  site-url: https://YOUR-GITHUB-USERNAME.github.io/lab-sops/
+  repo-url: https://github.com/YOUR-GITHUB-USERNAME/lab-sops
+  repo-actions: [edit, issue]  # lets students suggest edits or flag problems
+
+  navbar:
+    title: "Lab SOPs"
+    left:
+      - text: "SOP Index"
+        href: index.qmd
+      - text: "Quick Reference"
+        href: quick-reference.qmd
+    right:
+      - icon: github
+        href: https://github.com/YOUR-GITHUB-USERNAME/lab-sops
+    tools:
+      - icon: search
+        # built-in site search -- no setup needed
+
+  sidebar:
+    style: floating
+    search: true
+    contents:
+      - section: "General Lab"
+        contents:
+          - sops/SOP-001-autoclave.qmd
+          - sops/SOP-002-chemical-waste.qmd
+          - sops/SOP-003-lab-access.qmd
+      - section: "Instrumentation"
+        contents:
+          - sops/SOP-010-hplc.qmd
+          - sops/SOP-011-gc-ms.qmd
+      - section: "Safety"
+        contents:
+          - sops/SOP-050-emergency-spill.qmd
+          - sops/SOP-051-ppe-requirements.qmd
+      # Add more sections as needed.
+      # Tip: once you have ~80 SOPs, you can use a glob pattern instead:
+      #   contents: auto
+      # and Quarto will auto-discover all .qmd files.
+
+  page-footer:
+    left: |
+      Confidential -- For internal lab use only.
+      Last site build: {{< meta date >}}
+    right: |
+      Managed under version control.
+      [View revision history](https://github.com/YOUR-GITHUB-USERNAME/lab-sops/commits/main)
+
+# -----------------------------------------------------------------------------
+# Shared Metadata -- inherited by every SOP
+# -----------------------------------------------------------------------------
+# Individual SOPs override title, sop-number, author, date as needed.
+author:
+  - name: "Your Name"
+    affiliation: "Department, University"
+
+date: today
+date-format: "YYYY-MM-DD"
+lang: en
+
+# Custom fields available to all SOPs via {{< meta field >}} shortcodes:
+lab-name: "Your Lab Name"
+lab-pi: "PI Name"
+revision: "1.0"
+
+# -----------------------------------------------------------------------------
+# HTML Format Options
+# -----------------------------------------------------------------------------
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    toc-title: "In this SOP"
+    number-sections: true
+    code-fold: true             # collapse code blocks (useful if SOPs have R)
+    anchor-sections: true       # clickable section anchors for linking
+    smooth-scroll: true
+    embed-resources: false      # keep assets separate for fast page loads
+
+  # ---------------------------------------------------------------------------
+  # PDF Format Options -- archival / print / audit copies
+  # ---------------------------------------------------------------------------
+  pdf:
+    documentclass: article
+    papersize: letter
+    geometry:
+      - top=1in
+      - bottom=1in
+      - left=1in
+      - right=1in
+    fontsize: 11pt
+    mainfont: "Latin Modern Roman"    # clean, readable serif
+    sansfont: "Latin Modern Sans"
+    monofont: "Latin Modern Mono"
+    colorlinks: true
+    linkcolor: NavyBlue
+    urlcolor: NavyBlue
+    toc: true
+    number-sections: true
+    # Header and footer via LaTeX fancyhdr:
+    include-in-header:
+      - text: |
+          \usepackage{fancyhdr}
+          \usepackage{lastpage}
+          \pagestyle{fancy}
+          \fancyhf{}
+          \fancyhead[L]{\small Lab Standard Operating Procedure}
+          \fancyhead[R]{\small\leftmark}
+          \fancyfoot[L]{\small Revision \therevision\ -- \thedate}
+          \fancyfoot[C]{\small CONFIDENTIAL}
+          \fancyfoot[R]{\small Page \thepage\ of \pageref{LastPage}}
+          \renewcommand{\headrulewidth}{0.4pt}
+          \renewcommand{\footrulewidth}{0.4pt}
+          % Make revision and date available as commands:
+          \newcommand{\therevision}{1.0}
+          \newcommand{\thedate}{\today}
+    # If you have a logo, uncomment and adjust:
+    # include-before-body:
+    #   - text: |
+    #       \begin{center}
+    #       \includegraphics[width=2cm]{_templates/logo.png}\\[0.5em]
+    #       \end{center}
+
+# -----------------------------------------------------------------------------
+# Execution (knitr) Options
+# -----------------------------------------------------------------------------
+execute:
+  echo: false                   # hide code by default in rendered output
+  warning: false
+  message: false
+  freeze: auto                  # cache results -- only re-run changed docs
+
+# -----------------------------------------------------------------------------
+# Cross-reference and Citation Options
+# -----------------------------------------------------------------------------
+crossref:
+  fig-prefix: "Figure"
+  tbl-prefix: "Table"
+  eq-prefix: "Equation"
+
+bibliography: references.bib    # shared bibliography (optional)
+csl: apa.csl                    # citation style (optional)
