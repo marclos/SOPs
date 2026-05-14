@@ -28,9 +28,12 @@ website:
 
   navbar:
     title: "SOPs"
+    logo: pomona.jpg
     left:
       - text: "SOP Index"
         href: index.qmd
+      - text: "New to the Lab?"
+        href: orientation.qmd
     right:
       - icon: github
         href: https://github.com/marclos/SOPs
@@ -63,6 +66,8 @@ website:
 format:
   html:
     format-links: [pdf]
+    title-block-banner: true
+    title-block-banner-color: "#0057B8"
     theme:
       light: flatly
       dark: darkly
