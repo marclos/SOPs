@@ -58,11 +58,16 @@ jobs:
         with:
           r-version: 'release'
 
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+
       - name: Install R packages
         run: |
-          Rscript -e 'dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE, showWarnings = FALSE)'
-          Rscript -e '.libPaths(Sys.getenv("R_LIBS_USER")); install.packages(c("knitr", "rmarkdown"), repos = "https://cloud.r-project.org")'
-          Rscript -e '.libPaths(Sys.getenv("R_LIBS_USER")); library(rmarkdown)'
+          Rscript -e 'install.packages("pak", repos = "https://cloud.r-project.org")'
+          Rscript -e 'pak::pkg_install(c("knitr", "rmarkdown"))'
+          Rscript -e 'library(rmarkdown); cat("rmarkdown version:", as.character(packageVersion("rmarkdown")), "\n")'
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
