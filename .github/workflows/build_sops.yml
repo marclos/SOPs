@@ -60,7 +60,7 @@ jobs:
 
       - name: Install R packages
         run: |
-          Rscript -e 'install.packages(c("knitr", "rmarkdown"), repos = "https://cloud.r-project.org")'
+          Rscript -e 'install.packages(c("knitr", "rmarkdown"), lib = Sys.getenv("R_LIBS_USER"), repos = "https://cloud.r-project.org")'
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
