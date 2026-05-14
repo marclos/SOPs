@@ -67,7 +67,8 @@ jobs:
             threeparttablex \
             makecell \
             environ \
-            trimspaces
+            trimspaces \
+            || true
 
       # ----- R -----
       - name: Setup R
