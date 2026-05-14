@@ -4,7 +4,6 @@
 
 \usepackage{fancyhdr}
 \usepackage{lastpage}
-\usepackage{graphicx}
 \usepackage{xcolor}
 
 % Define EA Program colors
@@ -36,13 +35,11 @@
 \renewcommand{\footrule}{\hbox to\headwidth{\color{eablue}\leaders\hrule height \footrulewidth\hfill}}
 
 % -----------------------------------------------------------------------------
-% First page style (title page gets the logo)
+% First page style (no logo -- avoids path issues across subdirectories)
 % -----------------------------------------------------------------------------
 \fancypagestyle{plain}{%
   \fancyhf{}
   \fancyhead[L]{%
-    \raisebox{-0.5\height}{\includegraphics[height=1cm]{pomona.jpg}}%
-    \hspace{0.5em}%
     \textcolor{eablue}{\textbf{EA Program -- Pomona College}}%
   }
   \fancyhead[R]{\small\textcolor{eablue}{Standard Operating Procedure}}
@@ -52,10 +49,3 @@
   \renewcommand{\headrulewidth}{0.4pt}
   \renewcommand{\footrulewidth}{0.4pt}
 }
-
-
-% -----------------------------------------------------------------------------
-% Table styling
-% -----------------------------------------------------------------------------
-\usepackage{booktabs}
-\usepackage{longtable}
