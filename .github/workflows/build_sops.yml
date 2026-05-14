@@ -76,11 +76,8 @@ jobs:
           r-version: 'release'
 
       - name: Install R packages
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            knitr
-            rmarkdown
+        run: |
+          Rscript -e 'install.packages(c("knitr", "rmarkdown"), repos = "https://cloud.r-project.org")'
 
       # ----- Quarto -----
       - name: Setup Quarto
