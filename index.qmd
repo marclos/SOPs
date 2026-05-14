@@ -18,16 +18,17 @@ date: last-modified
 
 | Range       | Category                        |
 |:------------|:--------------------------------|
-| F01--F19    | General field safety            |
+| F01--F19    | General field safety and admin  |
 | F20--F39    | Water / aquatic field methods   |
 | F40--F59    | Soil field methods              |
-| F60--F79    | Air field methods               |
-| F80--F99    | Plant field methods             |
-| F100--F119  | Animal field methods            |
-| L01--L19    | General lab safety              |
+| F60--F79    | Air / atmospheric field methods |
+| F80--F99    | Plant / vegetation field methods|
+| F100--F119  | Animal / wildlife field methods |
+| L01--L19    | General lab safety, equipment, and admin |
 | L20--L39    | Water / aquatic lab analysis    |
 | L40--L59    | Soil and carbon lab analysis    |
 | L60--L79    | Instrumentation                 |
+| L80--L99    | Molecular biology and DNA       |
 
 
 ## Field SOPs
@@ -39,6 +40,10 @@ date: last-modified
 | [F01](field_sops/SOP-F01-field-safety.qmd) | Field Safety | 1.1 |
 | F02   | *TBD -- Field Equipment Checklist* | -- |
 | F03   | *TBD -- Field Notebook Protocols* | -- |
+| F04   | *Electrical Power in the Field* | 0.2 | Needs conversion |
+| F05   | *Random Sampling Design* | 1.0 | Needs conversion |
+
+
 
 ### Water (F20--F39)
 
@@ -49,6 +54,9 @@ date: last-modified
 | F22   | *TBD -- Groundwater Sampling* | -- |
 | F23   | *TBD -- Stormwater Sampling* | -- |
 | F24   | *TBD -- Stream Discharge Measurement* | -- |
+| F22   | *Stream Discharge Measurement* | 0.1 | Needs conversion |
+| F23   | *Stream Physical Habitat Analysis* | 0.1 | Needs conversion |
+| F24   | *Stormwater Sampling* | -- | TBD |
 
 ### Soil (F40--F59)
 
@@ -58,6 +66,9 @@ date: last-modified
 | F41   | *TBD -- Soil Bulk Density (Core Method)* | -- |
 | F42   | *TBD -- Soil Infiltration Rate* | -- |
 | F43   | *TBD -- Soil Temperature Profiles* | -- |
+| F41   | *Foreign Soil Handling (Import Permits)* | 0.3 | Needs conversion |
+| F42   | *Soil Bulk Density (Core Method)* | -- | TBD |
+| F43   | *Soil Infiltration Rate* | -- | TBD |
 
 ### Air (F60--F79)
 
@@ -65,6 +76,9 @@ date: last-modified
 |:------|:-------------------------------|:-------------|
 | F60   | *TBD -- Air Quality Monitoring (Portable Sensors)* | -- |
 | F61   | *TBD -- Particulate Matter Sampling* | -- |
+| F60   | *Picarro GHG Analyzer (Field Deployment)* | 1.0 | Needs conversion |
+| F61   | *Ozone Generator Operation* | 0.1 | Needs conversion |
+| F62   | *Air Quality Monitoring (Portable Sensors)* | -- | TBD |
 
 ### Plants (F80--F99)
 
@@ -73,6 +87,10 @@ date: last-modified
 | F80   | *TBD -- Vegetation Transect Surveys* | -- |
 | F81   | *TBD -- Leaf Area Index Measurement* | -- |
 | F82   | *TBD -- Plant Tissue Sampling* | -- |
+| F80   | *Chlorophyll Extraction and Analysis* | 0.1 | Needs conversion |
+| F81   | *Vegetation Transect Surveys* | -- | TBD |
+| F82   | *Leaf Area Index Measurement* | -- | TBD |
+| F83   | *Plant Tissue Sampling* | -- | TBD |
 
 ### Animals (F100--F119)
 
@@ -80,6 +98,11 @@ date: last-modified
 |:------|:-------------------------------|:-------------|
 | F100  | *TBD -- Macroinvertebrate Sampling* | -- |
 | F101  | *TBD -- Bird Point Count Surveys* | -- |
+| F100  | *Camera Trap (CamPark T20)* | 0.1 | Needs conversion |
+| F101  | *Drone Operations (DJI Matrice/Mavic)* | 0.1 | Needs conversion |
+| F102  | *360 Camera* | 0.1 | Needs conversion |
+| F103  | *Macroinvertebrate Sampling* | -- | TBD |
+| F104  | *Bird Point Count Surveys* | -- | TBD |
 
 
 ## Lab SOPs
@@ -92,6 +115,8 @@ date: last-modified
 | [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
 | L03   | *TBD -- Glassware Cleaning and Preparation* | -- |
 | L04   | *TBD -- Chemical Inventory Management* | -- |
+| F07   | *Quality Control and Quality Assurance* | 1.0 | Needs conversion |
+| F05   | *RStudio Server and GitHub* | 0.4 | Needs conversion |
 
 ### Water Analysis (L20--L39)
 
@@ -117,7 +142,7 @@ date: last-modified
 | L46   | *TBD -- Soil pH and EC* | -- |
 | L47   | *TBD -- Extractable Phosphorus* | -- |
 
-### Instrumentation (L60--L79)
+### Equipment and Instrumentation (L60--L79)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
