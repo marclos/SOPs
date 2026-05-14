@@ -60,7 +60,9 @@ jobs:
 
       - name: Install R packages
         run: |
-          Rscript -e 'install.packages(c("knitr", "rmarkdown"), lib = Sys.getenv("R_LIBS_USER"), repos = "https://cloud.r-project.org")'
+          Rscript -e 'dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE, showWarnings = FALSE)'
+          Rscript -e '.libPaths(Sys.getenv("R_LIBS_USER")); install.packages(c("knitr", "rmarkdown"), repos = "https://cloud.r-project.org")'
+          Rscript -e '.libPaths(Sys.getenv("R_LIBS_USER")); library(rmarkdown)'
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
