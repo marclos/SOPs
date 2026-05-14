@@ -61,6 +61,18 @@ format:
     smooth-scroll: true
     embed-resources: false
 
+  pdf:
+    documentclass: article
+    papersize: letter
+    geometry:
+      - top=1in
+      - bottom=1in
+      - left=1in
+      - right=1in
+    fontsize: 11pt
+    toc: true
+    number-sections: true
+
 execute:
   echo: false
   warning: false
