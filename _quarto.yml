@@ -15,6 +15,7 @@ project:
   output-dir: docs
   render:
     - index.qmd
+    - orientation.qmd
     - lab_sops/*.qmd
     - field_sops/*.qmd
     - sops/*.qmd
@@ -38,15 +39,26 @@ website:
     style: floating
     search: true
     contents:
-      - section: "Lab SOPs"
-        contents:
-          - lab_sops/*.qmd
+      - text: "SOP Index"
+        href: index.qmd
+      - text: "**New to the Lab? Start Here**"
+        href: orientation.qmd
+      - text: "---"
       - section: "Field SOPs"
         contents:
-          - field_sops/*.qmd
-      - section: "General SOPs"
+          - field_sops/SOP-F01-field-safety.qmd
+          - field_sops/SOP-F20-eureka-manta2.qmd
+          - field_sops/SOP-F21-surface-water-sampling.qmd
+          - field_sops/SOP-F40-soil-sampling.qmd
+      - section: "Lab SOPs"
         contents:
-          - sops/*.qmd
+          - lab_sops/SOP-L02-hazardous-materials-handling.qmd
+          - lab_sops/SOP-L40-soil-moisture.qmd
+          - lab_sops/SOP-L41-nitrate-ammonium-kcl.qmd
+          - lab_sops/SOP-L42-solvita-co2-burst.qmd
+          - lab_sops/SOP-L43-microbial-biomass-carbon.qmd
+          - lab_sops/SOP-L44-loss-on-ignition.qmd
+          - lab_sops/SOP-L60-shimadzu-toc-l.qmd
 
 format:
   html:

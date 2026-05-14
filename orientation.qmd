@@ -1,0 +1,73 @@
+---
+title: "New to the Lab? Start Here"
+subtitle: "Orientation Guide for EA Program Researchers"
+date: last-modified
+---
+
+## Welcome
+
+Welcome to the EA Program lab and field research team at Pomona College. Before you begin any lab or field work, you need to complete the training steps below. This page walks you through everything in order.
+
+## Step 1: Required Safety Training
+
+Complete these SOPs first. You will not be cleared for independent work until you have read and been signed off on each one.
+
+| Order | SOP | What You'll Learn |
+|:------|:----|:------------------|
+| 1 | [L02: Hazardous Materials Handling](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Chemical safety, spill response, waste disposal, PPE requirements |
+| 2 | [F01: Field Safety](field_sops/SOP-F01-field-safety.qmd) | Transportation, weather hazards, biotic hazards, emergency response |
+
+::: {.callout-important}
+### Before You Touch Anything
+
+You must complete both safety SOPs and be signed off by the PI or Chemical Safety Officer before working independently in the lab or field.
+:::
+
+## Step 2: Lab Equipment Basics
+
+Once safety training is complete, familiarize yourself with the equipment you will use most often.
+
+| SOP | What You'll Learn |
+|:----|:------------------|
+| [L40: Soil Moisture](lab_sops/SOP-L40-soil-moisture.qmd) | Drying oven, analytical balance, desiccator use |
+| *L10: Using Balances* | Proper weighing technique (coming soon) |
+| *L11: Micropipettes* | Accurate liquid dispensing (coming soon) |
+| *L14: Milli-Q Water System* | Producing ultrapure water (coming soon) |
+
+## Step 3: Software and Data Management
+
+We use R, RStudio, and GitHub for data analysis and collaboration. You will need accounts and basic proficiency before starting a research project.
+
+- **RStudio Server:** Access at your institution's RStudio Server URL (ask the PI)
+- **GitHub:** Create an account at [github.com](https://github.com) and request access to the [marclos/SOPs](https://github.com/marclos/SOPs) repository
+- *SOP F05: RStudio Server and GitHub* (coming soon)
+
+## Step 4: Project-Specific Training
+
+Depending on your research project, you will need additional SOPs. Your PI or project lead will tell you which ones apply. Common starting points:
+
+**If you're doing soil work:**
+
+- [F40: Soil Sampling and Processing](field_sops/SOP-F40-soil-sampling.qmd)
+- [L41: Nitrate and Ammonium (KCl Extraction)](lab_sops/SOP-L41-nitrate-ammonium-kcl.qmd)
+- [L42: Solvita CO~2~ Burst](lab_sops/SOP-L42-solvita-co2-burst.qmd)
+- [L43: Microbial Biomass Carbon](lab_sops/SOP-L43-microbial-biomass-carbon.qmd)
+- [L44: Loss on Ignition](lab_sops/SOP-L44-loss-on-ignition.qmd)
+- [L60: Shimadzu TOC-L](lab_sops/SOP-L60-shimadzu-toc-l.qmd)
+
+**If you're doing water quality work:**
+
+- [F20: Eureka Manta2 Multiprobe](field_sops/SOP-F20-eureka-manta2.qmd)
+- [F21: Surface Water Sampling](field_sops/SOP-F21-surface-water-sampling.qmd)
+- *L20: Accumet pH Meter* (coming soon)
+- *L22: Colilert Quanti-Tray* (coming soon)
+
+## Step 5: Get Signed Off
+
+After completing the required reading and supervised practice for each SOP, get your training record signed by the PI or designated trainer. Training records are maintained in the EA Program files.
+
+## Questions?
+
+- **SOP questions:** [Open an issue](https://github.com/marclos/SOPs/issues/new) on GitHub
+- **Lab access:** Contact the PI or lab manager
+- **Safety concerns:** Contact the Chemical Safety Officer or Campus Safety
