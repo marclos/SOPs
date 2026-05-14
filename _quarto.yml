@@ -48,8 +48,8 @@ website:
         contents:
           - sops/*.qmd
 
-format:
-  html:
+html:
+    format-links: [pdf]
     theme:
       light: flatly
       dark: darkly

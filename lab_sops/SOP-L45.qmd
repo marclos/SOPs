@@ -1,0 +1,203 @@
+---
+title: "Soil Nitrate and Ammonium -- KCl Extraction"
+sop-number: "SOP-L45"
+author:
+  - name: "Aaron Rogers"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-06-16"
+    author: "Aaron Rogers"
+    changes: "Initial draft"
+  - version: "0.2"
+    date: "2025-06-16"
+    author: "Marc Los Huertos"
+    changes: "Converted to QMD format with full procedure"
+---
+
+## 1. Purpose
+
+This SOP describes the extraction of inorganic nitrogen (nitrate, NO~3~^-^, and ammonium, NH~4~^+^) from soil using 2 M potassium chloride (KCl). The filtered extracts are subsequently analyzed for NO~3~^-^ and NH~4~^+^ concentrations using colorimetric or other analytical methods.
+
+
+## 2. Scope
+
+- **Applies to:** Field-moist or air-dried soil samples collected per [SOP-F40 Soil Sampling and Processing](../field_sops/SOP-F40-soil-sampling.qmd)
+- **Does not apply to:** Total nitrogen analysis (requires digestion); dissolved nitrogen in water samples
+- **Location:** EA Program laboratory
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve protocol, ensure training compliance            |
+| Trained Personnel | Prepare extracts, record and report results             |
+| New Students      | Complete training before independent use                |
+
+### Required Training
+
+Students using this SOP should be trained on:
+
+- [SOP-F01 Field Safety](../field_sops/SOP-F01-field-safety.qmd)
+- [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+- [SOP-L40 Soil Moisture](SOP-L40-soil-moisture.qmd)
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** 2 M KCl is a mild irritant; avoid contact with eyes and skin
+- **Physical:** Reciprocating shaker can pinch fingers if containers are not secured properly
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Closed-toed shoes
+
+
+## 5. Required Materials
+
+### Equipment
+
+| Item                          | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Reciprocating shaker          | For 2-hour extraction                        |
+| Magnetic stirrer with stir bar | For preparing KCl solution                  |
+| Stir bar retriever            | Magnetic wand                                |
+| Top-loading balance           | 0.1 g resolution                             |
+| Graduated cylinder or volumetric flask | 2 L capacity for KCl preparation    |
+| Repipet-type dispenser        | For dispensing KCl solution (optional)       |
+| Drying oven                   | Set to 105 C (for moisture subsample)        |
+
+### Consumables
+
+| Item                          | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Whatman #42 filter paper      | Ashless, for filtering extracts              |
+| Filter funnels                | To fit filter paper                          |
+| Test tubes or extraction bottles | 50 mL capacity, with caps                |
+| Specimen containers or Nalgene bottles | For collecting filtered extracts    |
+| Paper bags or aluminum weigh boats | For moisture subsamples                 |
+| Pipette                       | For dispensing precise volumes               |
+
+### Reagents
+
+| Item                          | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Potassium chloride (KCl)      | ACS grade; 298.2 g per 2 L for 2 M solution |
+| Distilled or deionized water  | For preparing KCl solution                   |
+
+
+## 6. Estimated Time
+
+| Task                          | Time Required                                |
+|:------------------------------|:---------------------------------------------|
+| KCl solution preparation      | 15 minutes active + 4 hours stirring         |
+| Moisture subsamples           | 5 minutes active + 24 hours drying           |
+| KCl extraction (per batch)    | 15 minutes setup + 2 hours shaking + 10 minutes settling |
+| Filtering                     | 20--30 minutes per batch                     |
+
+
+## 7. Procedure
+
+### 7.1 Preparing 2 M KCl Solution
+
+1. Weigh out 298.2 g KCl into a 2 L volumetric flask
+2. Fill the flask approximately two-thirds full with distilled water
+3. Place the flask on a magnetic stirrer and add a magnetic stir bar
+4. Set the stirrer to low-medium speed and leave on for 4 hours until fully dissolved
+5. Use a stir bar retriever to remove the magnetic stir bar
+6. Fill the flask to the 2 L mark with distilled water and mix
+
+::: {.callout-tip}
+### Tip
+Prepare the KCl solution the day before extraction. It can be stored at room temperature in a capped container indefinitely.
+:::
+
+### 7.2 Moisture Subsample
+
+1. Set aside 10 g of soil from each sample for moisture determination
+2. Place each 10 g subsample into a labeled aluminum weigh boat
+3. Dry at 105 C for 24 hours and record the dry weight
+4. Calculate gravimetric moisture content per [SOP-L40 Soil Moisture](SOP-L40-soil-moisture.qmd)
+
+### 7.3 KCl Extraction
+
+1. Dispense 40 mL of 2 M KCl solution into labeled test tubes or extraction bottles
+2. Add 7 g of field-moist soil to each tube (the total volume should reach approximately 50 mL)
+3. Cap the tubes securely
+4. Place on the reciprocating shaker for 2 hours
+5. Remove from the shaker and allow soil particles to settle for approximately 10 minutes (do not exceed 1 hour)
+
+### 7.4 Filtering
+
+1. Set up filter funnels with Whatman #42 filter paper over labeled specimen containers or clean test tubes
+2. Pour the shaken solution into the funnels; do not fill above the filter paper line
+3. Allow the solution to drain completely until only soil remains on the filter
+4. Discard the used filter paper and soil
+
+### 7.5 Extract Storage
+
+1. Cap the filtered extract containers
+2. If analysis will be completed within a few days, store at 4 C
+3. If analysis will be delayed, freeze the extracts until analysis
+
+::: {.callout-important}
+Extracts should be analyzed as soon as possible. Prolonged storage, even frozen, can alter NH~4~^+^ and NO~3~^-^ concentrations due to microbial activity or chemical transformations.
+:::
+
+
+## 8. Soil Texture Correction Factor
+
+When converting extract concentrations to soil nutrient content, a soil texture correction factor may be applied:
+
+| Texture | Moist Soil Factor | Dry Soil Factor |
+|:--------|:-----------------:|:---------------:|
+| Sand    | 2.3               | 2.6             |
+| Loam    | 2.0               | 2.5             |
+| Clay    | 1.7               | 2.2             |
+
+
+## 9. Quality Control
+
+- Include a reagent blank (KCl solution only, no soil) in each extraction batch
+- Run extraction duplicates for at least 10% of samples
+- Use a laboratory reference soil with known inorganic N content when available
+- Record the KCl solution preparation date and batch number
+
+
+## 10. Waste Disposal
+
+| Waste Type              | Disposal Method                             |
+|:------------------------|:--------------------------------------------|
+| KCl extracts            | Aqueous waste; drain with copious water if approved, or collect for EH&S |
+| Used filter paper and soil | Standard trash                           |
+| Unused KCl solution     | Drain with water (non-hazardous)            |
+
+
+## 11. References
+
+- Keeney, D.R. & Nelson, D.W. (1982). Nitrogen -- inorganic forms. In: Page, A.L. (Ed.), *Methods of Soil Analysis, Part 2: Chemical and Microbiological Properties*. 2nd ed. SSSA Book Series No. 5, pp. 643--698.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water and Wastewater*. 22nd ed. American Public Health Association (Eds.). Washington. 1360 pp.
+
+
+## 12. Training Record
+
+Before performing this procedure independently, personnel must:
+
+1. Read this SOP in full
+2. Complete SOP-L40 (Soil Moisture) training
+3. Demonstrate competence preparing KCl solution
+4. Perform the extraction and filtering procedure under supervision
+5. Be signed off by the PI or lab manager

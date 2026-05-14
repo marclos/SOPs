@@ -1,52 +1,132 @@
 ---
-title: "Lab SOP Index"
-subtitle: "Standard Operating Procedures"
+title: "SOP Index"
+subtitle: "Standard Operating Procedures -- EA Program, Pomona College"
+author: "Marc Los Huertos"
 date: last-modified
 ---
 
 ## How to Use This Site
 
 - **Find an SOP:** Use the sidebar navigation or the search bar (top right).
-- **Download a PDF:** Visit the [PDF downloads](pdfs/index.md) page.
+- **Download a PDF:** Each SOP page has a "View as PDF" link at the top.
 - **Suggest a change:** Click the "Edit this page" link on any SOP, or
   [open an issue](https://github.com/marclos/SOPs/issues/new).
-- **Create a new SOP:** Copy `sops/SOP-TEMPLATE.qmd`, fill it in, and
+- **Create a new SOP:** Copy `lab_sops/SOP-TEMPLATE.qmd`, fill it in, and
   submit a Pull Request.
 
-## SOP Categories
+## SOP Numbering Scheme
 
-## Lab SOPs
+| Range       | Category                        |
+|:------------|:--------------------------------|
+| F01--F19    | General field safety            |
+| F20--F39    | Water / aquatic field methods   |
+| F40--F59    | Soil field methods              |
+| F60--F79    | Air field methods               |
+| F80--F99    | Plant field methods             |
+| F100--F119  | Animal field methods            |
+| L01--L19    | General lab safety              |
+| L20--L39    | Water / aquatic lab analysis    |
+| L40--L59    | Soil and carbon lab analysis    |
+| L60--L79    | Instrumentation                 |
 
-- [TEMPLATE](lab_sops/SOP-TEMPLATE.qmd)
 
 ## Field SOPs
 
-- [Water Sampling](field_sops/test.qmd)
+### General (F01--F19)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F01](field_sops/SOP-F01-field-safety.qmd) | Field Safety | 1.1 |
+| F02   | *TBD -- Field Equipment Checklist* | -- |
+| F03   | *TBD -- Field Notebook Protocols* | -- |
+
+### Water (F20--F39)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F20](field_sops/SOP-F20-eureka-manta2.qmd) | Eureka Manta2 Multiprobe | 0.7 |
+| [F21](field_sops/SOP-F21-surface-water-sampling.qmd) | Surface Water Sampling | 0.9 |
+| F22   | *TBD -- Groundwater Sampling* | -- |
+| F23   | *TBD -- Stormwater Sampling* | -- |
+| F24   | *TBD -- Stream Discharge Measurement* | -- |
+
+### Soil (F40--F59)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F40](field_sops/SOP-F40-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 |
+| F41   | *TBD -- Soil Bulk Density (Core Method)* | -- |
+| F42   | *TBD -- Soil Infiltration Rate* | -- |
+| F43   | *TBD -- Soil Temperature Profiles* | -- |
+
+### Air (F60--F79)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| F60   | *TBD -- Air Quality Monitoring (Portable Sensors)* | -- |
+| F61   | *TBD -- Particulate Matter Sampling* | -- |
+
+### Plants (F80--F99)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| F80   | *TBD -- Vegetation Transect Surveys* | -- |
+| F81   | *TBD -- Leaf Area Index Measurement* | -- |
+| F82   | *TBD -- Plant Tissue Sampling* | -- |
+
+### Animals (F100--F119)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| F100  | *TBD -- Macroinvertebrate Sampling* | -- |
+| F101  | *TBD -- Bird Point Count Surveys* | -- |
 
 
-### General Lab
+## Lab SOPs
 
-| SOP       | Title                     | Current Rev. |
-|:----------|:--------------------------|:-------------|
-| SOP-001   | Autoclave Operation       | 1.0          |
-| SOP-002   | Chemical Waste Disposal   | 1.0          |
-| SOP-003   | Lab Access and Key Policy | 1.0          |
+### General Lab Safety (L01--L19)
 
-### Instrumentation
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| L01   | *TBD -- Laboratory Safety* | -- |
+| [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
+| L03   | *TBD -- Glassware Cleaning and Preparation* | -- |
+| L04   | *TBD -- Chemical Inventory Management* | -- |
 
-| SOP       | Title                     | Current Rev. |
-|:----------|:--------------------------|:-------------|
-| SOP-010   | HPLC Operation            | 1.0          |
-| SOP-011   | GC-MS Operation           | 1.0          |
+### Water Analysis (L20--L39)
 
-### Safety
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| L20   | *TBD -- pH and Conductivity (Bench)* | -- |
+| L21   | *TBD -- Alkalinity Titration* | -- |
+| L22   | *TBD -- Turbidity Measurement* | -- |
+| L23   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
 
-| SOP       | Title                     | Current Rev. |
-|:----------|:--------------------------|:-------------|
-| SOP-050   | Emergency Spill Response  | 1.0          |
-| SOP-051   | PPE Requirements          | 1.0          |
+### Soil and Carbon Analysis (L40--L59)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L40](lab_sops/SOP-L40-soil-moisture.qmd) | Soil Moisture -- Gravimetric Method | 0.2 |
+| [L41](lab_sops/SOP-L41-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.2 |
+| [L42](lab_sops/SOP-L42-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | 1.0 |
+| [L43](lab_sops/SOP-L43-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 |
+| [L44](lab_sops/SOP-L44-loss-on-ignition.qmd) | Loss on Ignition (SOM) | 1.0 |
+| L45   | *TBD -- Soil Texture (Hydrometer Method)* | -- |
+| L46   | *TBD -- Soil pH and EC* | -- |
+| L47   | *TBD -- Extractable Phosphorus* | -- |
+
+### Instrumentation (L60--L79)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L60](lab_sops/SOP-L60-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
+| L61   | *TBD -- Spectrophotometer Operation* | -- |
+| L62   | *TBD -- Ion Chromatograph Operation* | -- |
+| L63   | *TBD -- Analytical Balance Calibration* | -- |
+
 
 ::: {.callout-note}
-This table is maintained manually. The authoritative list is always the
-sidebar navigation, which reflects every `.qmd` file in the repository.
+This table is maintained manually. Italicized entries marked *TBD* are
+planned SOPs that have not yet been written. The sidebar navigation
+reflects every `.qmd` file in the repository automatically.
 :::
