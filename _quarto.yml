@@ -15,7 +15,6 @@ project:
   output-dir: docs
   render:
     - index.qmd
-    - orientation.qmd
     - lab_sops/*.qmd
     - field_sops/*.qmd
     - sops/*.qmd
@@ -35,7 +34,7 @@ website:
       - text: "SOPs"
         href: index.qmd
       - text: "New to the Lab?"
-        href: orientation.qmd
+        href: sops/orientation.qmd
     right:
       - icon: github
         href: https://github.com/marclos/SOPs
@@ -47,7 +46,7 @@ website:
       - text: "SOP Index"
         href: index.qmd
       - text: "**New to the Lab? Start Here**"
-        href: orientation.qmd
+        href: sops/orientation.qmd
       - text: "---"
       - section: "Field SOPs"
         contents:
