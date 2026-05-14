@@ -23,8 +23,8 @@ project:
 website:
   title: "Lab Standard Operating Procedures"
   # Update these for your lab:
-  site-url: https://YOUR-GITHUB-USERNAME.github.io/lab-sops/
-  repo-url: https://github.com/YOUR-GITHUB-USERNAME/lab-sops
+  site-url: https://marclos/SOPs/
+  repo-url: https://github.com/marclos/SOPs
   repo-actions: [edit, issue]  # lets students suggest edits or flag problems
 
   navbar:
@@ -36,7 +36,7 @@ website:
         href: quick-reference.qmd
     right:
       - icon: github
-        href: https://github.com/YOUR-GITHUB-USERNAME/lab-sops
+        href: https://github.com/marclos/SOPs
     tools:
       - icon: search
         # built-in site search -- no setup needed
@@ -69,7 +69,7 @@ website:
       Last site build: {{< meta date >}}
     right: |
       Managed under version control.
-      [View revision history](https://github.com/YOUR-GITHUB-USERNAME/lab-sops/commits/main)
+      [View revision history](https://github.com/marclos/SOPs/commits/main)
 
 # -----------------------------------------------------------------------------
 # Shared Metadata -- inherited by every SOP
