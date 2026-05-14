@@ -21,16 +21,18 @@ project:
     - sops/*.qmd
 
 website:
-  title: "Standard Operating Procedures"
+  title: "Biogeochemistry Lab Resource Page"
   site-url: https://marclos.github.io/SOPs/
   repo-url: https://github.com/marclos/SOPs
   repo-actions: [edit, issue]
 
   navbar:
-    title: "SOPs"
+    title: "Biogeochemistry Lab"
     logo: pomona.jpg
+    background: "#0057B8"
+    foreground: white
     left:
-      - text: "SOP Index"
+      - text: "SOPs"
         href: index.qmd
       - text: "New to the Lab?"
         href: orientation.qmd
@@ -66,14 +68,12 @@ website:
 format:
   html:
     format-links: [pdf]
-    title-block-banner: true
-    title-block-banner-color: "#0057B8"
     theme:
       light: flatly
       dark: darkly
     toc: true
     toc-depth: 3
-    number-sections: true
+    number-sections: false
     code-fold: true
     anchor-sections: true
     smooth-scroll: true
