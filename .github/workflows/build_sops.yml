@@ -1,8 +1,8 @@
 # =============================================================================
 # Build and Deploy Lab SOPs
 # =============================================================================
-# Triggers on push to main (or manual dispatch). Renders all SOPs to HTML + PDF,
-# then deploys the HTML site to GitHub Pages.
+# Triggers on push to master (or manual dispatch). Renders all SOPs to HTML
+# and PDF, then deploys the HTML site to GitHub Pages.
 #
 # Setup (one-time):
 #   1. In your repo: Settings > Pages > Source > GitHub Actions
@@ -15,14 +15,14 @@ on:
   push:
     branches: [master]
     paths:
+      - 'lab_sops/**'
+      - 'field_sops/**'
       - 'sops/**'
       - '_quarto.yml'
       - '_templates/**'
       - 'index.qmd'
-      - 'quick-reference.qmd'
-  workflow_dispatch:          # manual trigger button in GitHub UI
+  workflow_dispatch:
 
-# Only one build at a time; cancel in-progress runs on new pushes
 concurrency:
   group: "sop-build"
   cancel-in-progress: true
@@ -37,7 +37,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # ----- Checkout -----
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -70,7 +69,7 @@ jobs:
             environ \
             trimspaces
 
-      # ----- R (only needed if SOPs contain R code chunks) -----
+      # ----- R -----
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
@@ -82,27 +81,22 @@ jobs:
           packages: |
             knitr
             rmarkdown
-          # Add any other R packages your SOPs use, e.g.:
-          # tidyverse
-          # ggplot2
 
       # ----- Quarto -----
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          version: "1.6"      # pin to a release for reproducibility
+          version: "1.6"
 
       # ----- Build -----
-      - name: Render all SOPs
+      - name: Render site
         run: quarto render
 
       # ----- Collect PDFs into a download folder -----
-      # Copies all generated PDFs into docs/pdfs/ so they are accessible
-      # from the website at /pdfs/SOP-001-autoclave.pdf etc.
       - name: Collect PDFs
         run: |
           mkdir -p docs/pdfs
-          find docs/sops -name "*.pdf" -exec cp {} docs/pdfs/ \;
+          find docs -name "*.pdf" -exec cp {} docs/pdfs/ \;
           echo "## PDF Downloads" > docs/pdfs/index.md
           echo "" >> docs/pdfs/index.md
           for f in docs/pdfs/*.pdf; do
@@ -110,7 +104,6 @@ jobs:
             echo "- [$basename]($basename)" >> docs/pdfs/index.md
           done
 
-      # ----- Deploy to GitHub Pages -----
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
