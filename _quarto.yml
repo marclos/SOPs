@@ -12,56 +12,37 @@
 
 project:
   type: website
-  output-dir: docs            # rendered output goes here (GitHub Pages source)
+  output-dir: docs
   render:
-    - index.qmd               # landing page / SOP index
-    - sops/*.qmd              # all SOP documents
+    - index.qmd
+    - lab_sops/*.qmd
+    - field_sops/*.qmd
+    # add other subdirectories as needed
 
-# -----------------------------------------------------------------------------
-# Website (HTML) Configuration -- primary access for students
-# -----------------------------------------------------------------------------
 website:
-  title: "Lab Standard Operating Procedures"
-  # Update these for your lab:
-  site-url: https://marclos/SOPs/
+  title: "Standard Operating Procedures"
+  site-url: https://marclos.github.io/SOPs/
   repo-url: https://github.com/marclos/SOPs
-  repo-actions: [edit, issue]  # lets students suggest edits or flag problems
 
   navbar:
-    title: "Lab SOPs"
+    title: "SOPs"
     left:
       - text: "SOP Index"
         href: index.qmd
-      - text: "Quick Reference"
-        href: quick-reference.qmd
     right:
       - icon: github
         href: https://github.com/marclos/SOPs
-    tools:
-      - icon: search
-        # built-in site search -- no setup needed
 
   sidebar:
     style: floating
     search: true
     contents:
-      - section: "General Lab"
+      - section: "Lab SOPs"
         contents:
-          - sops/SOP-001-autoclave.qmd
-          - sops/SOP-002-chemical-waste.qmd
-          - sops/SOP-003-lab-access.qmd
-      - section: "Instrumentation"
+          - lab_sops/*.qmd
+      - section: "Field SOPs"
         contents:
-          - sops/SOP-010-hplc.qmd
-          - sops/SOP-011-gc-ms.qmd
-      - section: "Safety"
-        contents:
-          - sops/SOP-050-emergency-spill.qmd
-          - sops/SOP-051-ppe-requirements.qmd
-      # Add more sections as needed.
-      # Tip: once you have ~80 SOPs, you can use a glob pattern instead:
-      #   contents: auto
-      # and Quarto will auto-discover all .qmd files.
+          - field_sops/*.qmd
 
   page-footer:
     left: |

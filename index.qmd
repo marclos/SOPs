@@ -1,0 +1,52 @@
+---
+title: "Lab SOP Index"
+subtitle: "Standard Operating Procedures"
+date: last-modified
+---
+
+## How to Use This Site
+
+- **Find an SOP:** Use the sidebar navigation or the search bar (top right).
+- **Download a PDF:** Visit the [PDF downloads](pdfs/index.md) page.
+- **Suggest a change:** Click the "Edit this page" link on any SOP, or
+  [open an issue](https://github.com/YOUR-GITHUB-USERNAME/lab-sops/issues/new).
+- **Create a new SOP:** Copy `sops/_SOP-TEMPLATE.qmd`, fill it in, and
+  submit a Pull Request.
+
+## SOP Categories
+
+## Lab SOPs
+
+- [TEMPLATE](lab_sops/_SOP-TEMPLATE.qmd)
+
+## Field SOPs
+
+- [Water Sampling](field_sops/test.qmd)
+
+
+### General Lab
+
+| SOP       | Title                     | Current Rev. |
+|:----------|:--------------------------|:-------------|
+| SOP-001   | Autoclave Operation       | 1.0          |
+| SOP-002   | Chemical Waste Disposal   | 1.0          |
+| SOP-003   | Lab Access and Key Policy | 1.0          |
+
+### Instrumentation
+
+| SOP       | Title                     | Current Rev. |
+|:----------|:--------------------------|:-------------|
+| SOP-010   | HPLC Operation            | 1.0          |
+| SOP-011   | GC-MS Operation           | 1.0          |
+
+### Safety
+
+| SOP       | Title                     | Current Rev. |
+|:----------|:--------------------------|:-------------|
+| SOP-050   | Emergency Spill Response  | 1.0          |
+| SOP-051   | PPE Requirements          | 1.0          |
+
+::: {.callout-note}
+This table is maintained manually. The authoritative list is always the
+sidebar navigation, which reflects every `.qmd` file in the repository.
+:::
