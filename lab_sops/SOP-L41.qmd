@@ -1,0 +1,226 @@
+---
+title: "Soil Moisture -- Gravimetric Method"
+sop-number: "SOP-L41"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.2"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-06-16"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+  - version: "0.2"
+    date: "2025-06-16"
+    author: "Marc Los Huertos"
+    changes: "Converted to QMD format; added datasheet appendix"
+---
+
+## 1. Purpose
+
+This SOP describes the gravimetric determination of soil moisture content. Gravimetric moisture is a fundamental soil property required for expressing analytical results on a dry-weight basis (e.g., microbial biomass carbon, nutrient concentrations) and for characterizing site conditions.
+
+
+## 2. Scope
+
+- **Applies to:** All soil samples collected per [SOP-F40 Soil Sampling and Processing](../field_sops/SOP-F40-soil-sampling.qmd) that require moisture correction or moisture characterization
+- **Does not apply to:** Volumetric soil moisture measured with in-situ probes (TDR, capacitance sensors); soil water potential measurements
+- **Location:** EA Program laboratory
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve protocol, ensure training compliance            |
+| Trained Personnel | Perform analysis, record and report results             |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Drying oven operates at 105 C; burn risk from hot containers and oven surfaces
+- **Biological:** Soil-borne pathogens; wash hands after handling soil
+:::
+
+### Required PPE
+
+- [ ] Heat-resistant gloves (when handling containers from the oven)
+- [ ] Nitrile gloves (when handling soil)
+- [ ] Safety glasses
+- [ ] Lab coat
+
+### Required Training
+
+Students using this SOP should be trained on:
+
+- [SOP-F01 Field Safety](../field_sops/SOP-F01-field-safety.qmd)
+- [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+
+
+## 5. Required Materials
+
+### Equipment
+
+| Item                          | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Drying oven                   | Set to 105 C, with reliable thermostat       |
+| Analytical balance            | 0.01 g resolution minimum                   |
+| Desiccator with desiccant     | For cooling samples before weighing          |
+| Metal tongs or oven mitts     | For handling hot containers                  |
+
+### Consumables
+
+| Item                          | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Aluminum weighing tins or ceramic crucibles | Pre-labeled or numbered            |
+| Spatula                       | For transferring soil                        |
+
+### Reagents
+
+None required.
+
+
+## 6. Estimated Time
+
+| Task                          | Time Required                                |
+|:------------------------------|:---------------------------------------------|
+| Sample preparation and weighing | 5--10 minutes per batch                    |
+| Oven drying                   | 24 hours at 105 C                            |
+| Cooling and re-weighing       | 30--45 minutes per batch (including cooling) |
+| Total per batch               | Approximately 25 hours (mostly unattended)   |
+
+
+## 7. Procedure
+
+### 7.1 Preparation
+
+1. Print copies of the Soil Moisture Datasheet (Appendix A) for recording measurements
+2. Label aluminum tins or ceramic crucibles with a permanent marker or engraving tool
+3. Pre-dry the empty containers at 105 C for at least 1 hour to remove any residual moisture
+4. Cool the containers in a desiccator to room temperature
+5. Weigh each empty container to the nearest 0.01 g and record as Tin Weight on the datasheet
+
+### 7.2 Sample Weighing
+
+1. Using a spatula, transfer approximately 10--20 g of field-moist soil into a pre-weighed container
+2. Record the mass of the container plus moist soil to the nearest 0.01 g as Wet Weight on the datasheet
+3. Avoid compacting the soil in the container; a loose arrangement promotes even drying
+
+::: {.callout-tip}
+### Tip
+Process moisture subsamples at the same time as other subsamples (e.g., for microbial biomass or respiration) to ensure the moisture value accurately reflects the condition of the soil used in those analyses.
+:::
+
+### 7.3 Drying
+
+1. Place the uncovered containers in the drying oven set to 105 C
+2. Dry for a minimum of 24 hours
+3. After 24 hours, remove one or two containers, cool in the desiccator, and re-weigh. If the mass has decreased by more than 0.01 g compared to a check 2 hours earlier, return all samples to the oven for an additional 4 hours and re-check
+4. Drying is complete when the mass is constant (change of less than 0.01 g between successive weighings)
+
+### 7.4 Cooling and Final Weighing
+
+1. Transfer all containers from the oven to a desiccator
+2. Allow to cool to room temperature (approximately 20--30 minutes)
+3. Weigh each container plus dry soil to the nearest 0.01 g and record as Dry Weight on the datasheet
+
+### 7.5 Calculations
+
+**Gravimetric soil moisture content (%):**
+
+$$
+\theta_g (\%) = \left( \frac{W_{\text{moist}} - W_{\text{dry}}}{W_{\text{dry}} - W_{\text{container}}} \right) \times 100
+$$
+
+where:
+
+- $W_{\text{moist}}$ = mass of container + moist soil (g)
+- $W_{\text{dry}}$ = mass of container + oven-dried soil (g)
+- $W_{\text{container}}$ = mass of empty container (g)
+
+**Dry-weight correction factor** (for converting field-moist analytical results to a dry-weight basis):
+
+$$
+f = \frac{W_{\text{moist}} - W_{\text{container}}}{W_{\text{dry}} - W_{\text{container}}}
+$$
+
+To convert a result expressed per gram of moist soil to per gram of dry soil, multiply by $f$.
+
+
+## 8. Quality Control
+
+- Run analytical duplicates for at least 10% of samples; the coefficient of variation between duplicates should be less than 5%
+- Verify oven temperature with a calibrated thermometer at the start of each drying cycle
+- Ensure the desiccator contains active (indicating) desiccant; replace or regenerate when the indicator changes color
+- Re-weigh a subset of samples after an additional 2 hours of drying to confirm mass constancy
+
+
+## 9. Waste Disposal
+
+| Waste Type              | Disposal Method                             |
+|:------------------------|:--------------------------------------------|
+| Oven-dried soil         | Standard trash or return to field site      |
+| Aluminum tins           | Clean and reuse, or recycle                 |
+
+
+## 10. References
+
+- Gardner, W.H. (1986). Water content. In: Klute, A. (Ed.), *Methods of Soil Analysis, Part 1: Physical and Mineralogical Methods*. 2nd ed. SSSA Book Series No. 5, pp. 493--544.
+- Robertson, G.P., Coleman, D.C., Bledsoe, C.S., & Sollins, P. (1999). *Standard Soil Methods for Long-Term Ecological Research*. Oxford University Press.
+
+
+## 11. Training Record
+
+Before performing this procedure independently, personnel must:
+
+1. Read this SOP in full
+2. Demonstrate safe operation of the drying oven
+3. Demonstrate proper use of the analytical balance and desiccator
+4. Perform the procedure under supervision with acceptable duplicate precision
+5. Be signed off by the PI or lab manager
+
+
+## Appendix A: Soil Moisture Datasheet {.appendix}
+
+Print this page and use it to record measurements in the lab.
+
+**Project / Soil Location:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Sampling Date (YYMMDD):** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Researcher Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Oven Temperature (C):** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Date of Entry (YYMMDD):** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+| Soil ID | Soil Tin # | Tin Weight (g) | Wet Weight (Tin + Wet Soil) (g) | Dry Weight (Tin + Dry Soil) (g) |
+|:--------|:-----------|:---------------|:-------------------------------|:-------------------------------|
+| 1       |            |                |                                |                                |
+| 2       |            |                |                                |                                |
+| 3       |            |                |                                |                                |
+| 4       |            |                |                                |                                |
+| 5       |            |                |                                |                                |
+| 6       |            |                |                                |                                |
+| 7       |            |                |                                |                                |
+| 8       |            |                |                                |                                |
+| 9       |            |                |                                |                                |
+| 10      |            |                |                                |                                |
+| 11      |            |                |                                |                                |
+| 12      |            |                |                                |                                |
+| 13      |            |                |                                |                                |
+| 14      |            |                |                                |                                |
+| 15      |            |                |                                |                                |
+| 16      |            |                |                                |                                |
+| 17      |            |                |                                |                                |
+| 18      |            |                |                                |                                |
+| 19      |            |                |                                |                                |
+| 20      |            |                |                                |                                |
