@@ -1,0 +1,138 @@
+---
+title: "Soil Respiration -- Solvita CO2 Burst Test"
+sop-number: "SOP-L03"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2025-01-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the measurement of soil microbial respiration using the Solvita CO~2~ burst test. The method quantifies CO~2~ evolution from rewetted soil as an index of microbial activity and labile carbon availability.
+
+
+## 2. Scope
+
+- **Applies to:** Soil samples collected per SOP-F02 for microbial activity assessment
+- **Does not apply to:** Compost maturity testing (see Solvita compost protocol); long-term (7--12 day) incubation-based respiration measurements
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve protocol, ensure training compliance            |
+| Trained Personnel | Perform assay, record and report results                |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Minor risk of glass breakage from incubation jars
+- **Biological:** Soil-borne pathogens; wash hands after handling soil
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Safety glasses
+- [ ] Lab coat
+
+
+## 5. Equipment and Materials
+
+| Item                          | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Solvita CO~2~ burst test kit  | Includes gel paddles and incubation jars     |
+| Solvita Digital Color Reader  | For quantifying gel color change             |
+| Incubation jars (475 mL)     | Provided with kit                            |
+| 30 cc soil scoop              | Provided with kit                            |
+| Analytical balance            | Capable of 0.1 g resolution                 |
+| Graduated cylinder or pipette | For adding water                             |
+| Incubator or controlled room  | Set to 25 C                                  |
+| Timer                         | 24-hour countdown                            |
+| Lab notebook or data sheet    | For recording results                        |
+
+
+## 6. Procedure
+
+### 6.1 Sample Preparation
+
+1. Use field-moist soil that has been sieved through a 2 mm sieve per SOP-F02
+2. Samples should be stored at 4 C and processed within 48 hours of collection
+
+### 6.2 Incubation Setup
+
+1. Weigh approximately 40 g of field-moist soil into a clean incubation jar
+2. Record the exact mass of soil added
+3. Add the specified volume of deionized water according to the Solvita protocol (the rewetting triggers the microbial CO~2~ burst)
+4. Insert a fresh CO~2~-sensitive gel paddle into the jar, ensuring the gel faces the soil surface
+5. Seal the jar immediately and securely
+6. Record the jar number, sample ID, and start time
+
+### 6.3 Incubation
+
+1. Place sealed jars in the incubator set to 25 C
+2. Incubate undisturbed for 24 hours
+3. Do not open or move jars during incubation
+
+### 6.4 Reading Results
+
+1. After exactly 24 hours, remove the gel paddle from the jar
+2. Immediately read the paddle using the Solvita Digital Color Reader
+3. Record the color number and corresponding CO~2~-C value
+4. Express results as mg CO~2~-C kg^-1^ soil
+
+::: {.callout-tip}
+### Tip
+Read paddles promptly after removing them from the jar. Prolonged exposure to ambient air will alter the gel color and compromise the reading.
+:::
+
+### 6.5 Cleanup
+
+1. Dispose of used soil in the designated waste container
+2. Wash incubation jars thoroughly with soap and water; rinse with deionized water
+3. Dispose of used gel paddles in standard trash
+
+
+## 7. Quality Control
+
+- Run duplicate samples at a rate of 1 per 10 to assess analytical precision
+- Include a blank jar (empty, sealed with gel paddle) in each batch to check for background CO~2~
+- Verify incubator temperature at the start and end of each 24-hour incubation period
+- Calibrate the Digital Color Reader according to manufacturer instructions before each batch
+
+
+## 8. Data Interpretation
+
+The CO~2~ burst is proportional to microbial biomass and is directly tied to potential carbon and nitrogen mineralization. Typical values for agricultural soils range from approximately 10 to 200+ mg CO~2~-C kg^-1^ soil, with higher values indicating greater microbial activity and labile carbon availability.
+
+
+## 9. References
+
+- Haney, R.L., Brinton, W.F., & Evans, E. (2008). Soil CO~2~ respiration: comparison of chemical titration, CO~2~ IRGA analysis and the Solvita gel system. *Renewable Agriculture and Food Systems*, 23(2), 171--176.
+- Solvita. (2019). CO~2~-Burst soil respiration updated protocol. Woods End Laboratories.
+
+
+## 10. Training Record
+
+Before performing this assay independently, personnel must:
+
+1. Read this SOP in full
+2. Complete SOP-F02 (Soil Sampling and Processing) training
+3. Observe a trained operator perform the full procedure
+4. Perform the assay under supervision
+5. Be signed off by the PI or lab manager

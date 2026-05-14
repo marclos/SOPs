@@ -1,0 +1,178 @@
+---
+title: "Microbial Biomass Carbon -- Chloroform Fumigation-Extraction"
+sop-number: "SOP-L23"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2025-01-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the determination of soil microbial biomass carbon (MBC) using the chloroform fumigation-extraction (CFE) method. Chloroform vapor lyses microbial cells, releasing intracellular carbon that is then extracted with 0.5 M K~2~SO~4~ and quantified as dissolved organic carbon (DOC).
+
+
+## 2. Scope
+
+- **Applies to:** Field-moist soil samples collected per SOP-F02 for microbial biomass assessment
+- **Does not apply to:** Air-dried or frozen soils (unless pre-validated for this method); microbial biomass nitrogen (requires additional analytical steps)
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve protocol, ensure safety compliance              |
+| Trained Personnel | Perform fumigation and extraction, report results       |
+| New Students      | Complete training and safety orientation before use     |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-danger}
+### Critical Safety Warning
+
+Chloroform (CHCl~3~) is a volatile, toxic solvent and a suspected carcinogen. All fumigation steps must be performed inside a fume hood. Do not inhale chloroform vapors. Use ethanol-free chloroform only.
+:::
+
+### Hazards
+
+- **Chemical:** Chloroform (toxic, volatile); 0.5 M K~2~SO~4~ (mild irritant)
+- **Physical:** Vacuum desiccator under reduced pressure; glassware breakage
+
+### Required PPE
+
+- [ ] Nitrile gloves (double-glove recommended when handling chloroform)
+- [ ] Safety glasses or goggles
+- [ ] Lab coat
+- [ ] Work in fume hood at all times during fumigation
+
+### Emergency Procedures
+
+In case of chloroform spill, refer to the SDS and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd). Evacuate the area if spill is large; ventilate the space and notify the supervisor.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Vacuum desiccator             | Glass, with stopcock and vacuum line         |
+| Vacuum pump                   | Oil-free preferred                           |
+| Fume hood                     | Required for all chloroform handling         |
+| Orbital or end-over-end shaker | For extraction step                         |
+| Centrifuge                    | Capable of 4000 x g (optional)              |
+| Filtration apparatus          | With 0.45 um glass fiber filters             |
+| Analytical balance            | 0.01 g resolution                           |
+| Incubator or dark cabinet     | For 24-hour fumigation at room temperature  |
+| TOC analyzer                  | Shimadzu TOC-L or equivalent (see SOP-L06)  |
+
+### Reagents and Consumables
+
+| Item                          | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Ethanol-free chloroform       | ACS grade; stored in fume hood              |
+| 0.5 M K~2~SO~4~ solution     | Prepare fresh or within 1 week              |
+| Glass fiber filters (0.45 um) | Pre-combusted at 450 C for 4 hours          |
+| Boiling chips or glass beads  | For chloroform evaporation under vacuum     |
+| Extraction bottles (100 mL)   | Screw-top, HDPE or glass                    |
+| Filter funnels and flasks     | Clean, acid-washed                          |
+| Sample vials                  | For filtered extracts, acid-washed          |
+
+
+## 6. Procedure
+
+### 6.1 Preparation
+
+1. Prepare 0.5 M K~2~SO~4~ by dissolving 87.1 g K~2~SO~4~ per liter of deionized water
+2. Pre-combust glass fiber filters at 450 C for 4 hours and store in a clean container
+3. Determine the gravimetric moisture content of a separate subsample (dry at 105 C for 24 hours) so results can be expressed on a dry-weight basis
+
+### 6.2 Fumigation
+
+1. Weigh two paired subsamples of 15 g field-moist soil into labeled extraction bottles
+2. Place one set (fumigated) into the vacuum desiccator inside the fume hood
+3. Place a beaker containing approximately 30 mL of ethanol-free chloroform and a few boiling chips in the center of the desiccator
+4. Evacuate the desiccator using the vacuum pump until the chloroform begins to boil vigorously (approximately 2 minutes)
+5. Close the stopcock and incubate in the dark at room temperature (approximately 25 C) for 24 hours
+6. The second set (unfumigated controls) is extracted immediately (proceed to 6.3)
+
+### 6.3 Extraction
+
+1. After 24 hours, release the vacuum in the fume hood and remove the chloroform beaker
+2. Evacuate the desiccator repeatedly (3--5 times) to remove residual chloroform vapor from the soil
+3. Add 60 mL of 0.5 M K~2~SO~4~ to each bottle (both fumigated and unfumigated), achieving a 1:4 soil-to-extractant ratio
+4. Cap bottles and shake on an orbital or end-over-end shaker for 1 hour
+5. Allow the suspension to settle briefly, or centrifuge at 4000 x g for 10 minutes
+6. Filter the supernatant through a pre-combusted 0.45 um glass fiber filter into a clean sample vial
+7. Store filtered extracts at 4 C if not analyzed immediately (analyze within 48 hours)
+
+### 6.4 DOC Analysis
+
+1. Analyze filtered extracts for dissolved organic carbon using the Shimadzu TOC-L (see SOP-L06) or equivalent TOC analyzer
+2. Run 0.5 M K~2~SO~4~ blanks alongside samples
+
+### 6.5 Calculation
+
+Microbial biomass carbon is calculated as:
+
+$$
+\text{MBC} = \frac{C_{\text{fumigated}} - C_{\text{unfumigated}}}{k_C}
+$$
+
+where:
+
+- $C_{\text{fumigated}}$ = DOC in the fumigated extract (mg C kg^-1^ dry soil)
+- $C_{\text{unfumigated}}$ = DOC in the unfumigated extract (mg C kg^-1^ dry soil)
+- $k_C$ = 0.45, the extraction efficiency coefficient (Vance et al., 1987)
+
+::: {.callout-note}
+The unfumigated extract DOC value represents the background dissolved organic carbon pool and is often reported separately as an indicator of labile soil carbon.
+:::
+
+
+## 7. Quality Control
+
+- Run analytical triplicates for at least 10% of samples
+- Include a reagent blank (0.5 M K~2~SO~4~ only, no soil) in each batch
+- Include a laboratory reference soil in each batch to monitor method consistency
+- Verify that the coefficient of variation among replicates is less than 15%
+
+
+## 8. Waste Disposal
+
+| Waste Type                   | Container              | Disposal Method               |
+|:-----------------------------|:-----------------------|:------------------------------|
+| Chloroform waste             | Halogenated waste jug  | EH&S hazardous waste pickup   |
+| K~2~SO~4~ extracts           | Aqueous waste container | Drain with copious water (if approved) or collect for EH&S |
+| Used soil                    | Solid waste bag        | Standard trash                |
+| Used glass fiber filters     | Standard trash         | Standard trash                |
+
+
+## 9. References
+
+- Vance, E.D., Brookes, P.C., & Jenkinson, D.S. (1987). An extraction method for measuring soil microbial biomass C. *Soil Biology and Biochemistry*, 19(6), 703--707.
+- Joergensen, R.G. (1996). The fumigation-extraction method to estimate soil microbial biomass: calibration of the k~C~ value. *Soil Biology and Biochemistry*, 28(1), 25--31.
+- FAO. (2024). *Standard operating procedure for soil microbial biomass (carbon): chloroform fumigation-extraction method*. Rome.
+
+
+## 10. Training Record
+
+Before performing this procedure independently, personnel must:
+
+1. Read this SOP and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd) in full
+2. Review the SDS for chloroform
+3. Observe a trained operator perform the full fumigation-extraction procedure
+4. Demonstrate competence with vacuum desiccator operation
+5. Perform the procedure under supervision
+6. Be signed off by the PI or lab manager

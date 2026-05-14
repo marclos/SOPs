@@ -1,0 +1,183 @@
+---
+title: "Soil Sampling and Processing"
+sop-number: "SOP-F02"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2025-01-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the procedures for collecting, processing, and storing soil samples for laboratory analysis. It covers field sampling using a soil auger, sample homogenization, sieving, and subdivision for biological assays, carbon analysis, and other soil properties.
+
+
+## 2. Scope
+
+- **Applies to:** All field-based soil sampling for EA Program research, including photovoltaic panel studies, agricultural plots, and restoration sites
+- **Does not apply to:** Deep soil coring (>30 cm) requiring mechanized equipment; contaminated site sampling requiring chain-of-custody protocols
+- **Location:** All EA Program field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve sampling plan, ensure training compliance       |
+| Field Lead        | Coordinate sampling logistics, ensure protocol adherence |
+| Trained Personnel | Collect and process samples according to this SOP       |
+| New Students      | Complete training before independent sampling            |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Repetitive strain from augering, sharp edges on sieving equipment, trip hazards at field sites
+- **Biological:** Soil-borne pathogens, tick and insect exposure at field sites
+- **Chemical:** Potential exposure to contaminated soils at some sites
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Nitrile or latex gloves
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Safety glasses (when sieving)
+
+### Related SOPs
+
+Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) for general field safety procedures, including transportation, weather hazards, and emergency response.
+
+
+## 5. Equipment and Materials
+
+### Field Equipment
+
+| Item                        | Notes                                      |
+|:----------------------------|:-------------------------------------------|
+| Soil auger (hand-operated)  | Bucket-type preferred for direct recovery  |
+| Depth marker or ruler       | For consistent 0--15 cm sampling depth     |
+| Sample bags (labeled)       | Ziplock or Whirl-Pak, pre-labeled          |
+| Cooler with ice packs       | For biological subsamples                  |
+| Field notebook              | Rite in the Rain preferred                 |
+| GPS unit or smartphone      | For recording sampling coordinates         |
+| Sampling flags              | For marking completed locations            |
+| Trowel or spatula           | Stainless steel, for extruding soil        |
+| Bucket or mixing container  | For compositing and homogenizing           |
+
+### Lab Processing Equipment
+
+| Item                        | Notes                                      |
+|:----------------------------|:-------------------------------------------|
+| 2 mm sieve                  | Stainless steel                            |
+| Mixing bowls or trays       | For homogenization                         |
+| Sub-sample containers       | Pre-labeled, appropriate size              |
+| Balance                     | For recording sample mass                  |
+| Drying oven (optional)      | For air-drying subsamples                  |
+| Refrigerator (4 C)          | For biological subsamples                  |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Sampling Preparation
+
+1. Develop a sampling plan that identifies the number of samples, locations, depths, and analyses to be performed
+2. Pre-label all sample bags with site name, plot ID, date, depth, and collector initials
+3. Calibrate the depth marker on the auger to 15 cm (or other target depth)
+4. Clean all sampling equipment with deionized water and dry before use
+5. Check that the cooler has sufficient ice packs for biological subsamples
+6. File a field work planning form per SOP-F01
+
+### 6.2 Field Sampling
+
+1. Navigate to the predetermined sampling location and record GPS coordinates
+2. Clear surface litter and debris from the sampling point without disturbing the mineral soil surface
+3. Insert the soil auger vertically into the soil and advance to the target depth (0--15 cm)
+4. Withdraw the auger carefully, keeping the soil core intact
+5. Extrude the soil from the auger into a labeled sample bag using a clean trowel
+6. For composite samples, combine cores from multiple locations within the same plot into a single bucket for homogenization
+7. Mark the completed sampling location with a flag
+8. Backfill the auger hole with surrounding soil to minimize site disturbance
+
+::: {.callout-tip}
+### Tip
+Do not sample saturated soils. If soils are waterlogged, note this in the field notebook and postpone sampling or adjust the protocol accordingly.
+:::
+
+### 6.3 Decontamination Between Samples
+
+1. Remove all visible soil from the auger and trowel
+2. Rinse equipment with deionized water between plots (not between subsamples within the same composite)
+3. Use a new pair of gloves when moving between experimental treatments to prevent cross-contamination
+
+### 6.4 Sample Transport
+
+1. Place samples for biological analysis (microbial biomass, soil respiration) into the cooler immediately after collection
+2. Transport all samples to the laboratory as soon as possible, ideally the same day
+3. Record transport time and conditions in the field notebook
+
+### 6.5 Laboratory Processing
+
+1. Transfer each sample to a clean mixing tray
+2. Homogenize the sample by hand, breaking up clods and mixing thoroughly
+3. Pass the entire sample through a 2 mm sieve to remove coarse fragments (roots, rocks, gravel)
+4. Record the mass of coarse fragments removed, if required by the analysis plan
+5. Subdivide the sieved soil into labeled containers for each planned analysis
+
+### 6.6 Storage Conditions
+
+| Analysis Type                    | Storage                                      | Holding Time       |
+|:---------------------------------|:---------------------------------------------|:-------------------|
+| Biological assays (MBC, respiration) | 4 C, field-moist                          | Process within 48 hours |
+| Soil organic matter (LOI)        | Air-dry at room temperature                  | Indefinite once dry |
+| Dissolved organic carbon         | 4 C, extract within 48 hours                 | Analyze extracts promptly |
+| Archival                         | Air-dry, store in sealed bags at room temp   | Indefinite          |
+
+::: {.callout-important}
+Subsamples for biological assays must be stored at 4 C and processed within 48 hours of collection. Do not freeze biological subsamples unless the analysis protocol explicitly permits it.
+:::
+
+
+## 7. Quality Control
+
+- Collect field duplicates at a rate of 1 per 10 samples to assess sampling variability
+- Record all deviations from the sampling plan in the field notebook
+- Verify auger depth calibration at the start of each sampling day
+- Ensure sieve integrity (no torn or damaged mesh) before processing
+
+
+## 8. Waste Disposal
+
+| Waste Type              | Disposal Method                             |
+|:------------------------|:--------------------------------------------|
+| Used gloves             | Standard trash                              |
+| Decontamination rinse water | Pour on ground away from sampling plots |
+| Coarse fragments        | Return to field site or dispose in trash     |
+
+
+## 9. References
+
+- Robertson, G.P., Coleman, D.C., Bledsoe, C.S., & Sollins, P. (1999). *Standard Soil Methods for Long-Term Ecological Research*. Oxford University Press.
+- Soil Health Institute. (2023). *SOP: Soil Sampling v1.2*.
+- FAO. (2024). Standard operating procedures for soil analysis. Rome.
+
+
+## 10. Training Record
+
+Training is documented in EA Program files. Before sampling independently, personnel must:
+
+1. Read this SOP in full
+2. Complete SOP-F01 (Field Safety) training
+3. Participate in a supervised sampling session
+4. Demonstrate proper auger technique, homogenization, and sieving
+5. Be signed off by the field lead or PI

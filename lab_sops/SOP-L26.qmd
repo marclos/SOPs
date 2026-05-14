@@ -1,0 +1,184 @@
+---
+title: "Dissolved and Total Organic Carbon -- Shimadzu TOC-L with SSM-5000A"
+sop-number: "SOP-L26"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2025-01-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the operation of the Shimadzu TOC-L total organic carbon analyzer and the SSM-5000A Solid Sample Module for quantifying dissolved organic carbon (DOC) in soil extracts and total carbon (TC) or total organic carbon (TOC) in solid soil samples.
+
+
+## 2. Scope
+
+- **Applies to:** K~2~SO~4~ extracts from the chloroform fumigation-extraction method (SOP-L04); water samples; and dried, ground solid soil samples
+- **Does not apply to:** Samples with extremely high salt concentrations that exceed the instrument's tolerance (consult the instrument manual); sea water or marine sediments with high salt content
+- **Location:** EA Program analytical laboratory
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve protocol, authorize instrument access           |
+| Instrument Manager | Maintain instrument, replace catalyst and consumables  |
+| Trained Personnel | Operate instrument, prepare standards and samples       |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Combustion furnace operates at 680 C (liquid mode) or up to 900 C (SSM mode); severe burn risk from ceramic boats and furnace components
+- **Chemical:** Carrier gas (high-purity air or oxygen); hydrochloric acid used for acidification and sparging of inorganic carbon
+- **Compressed gas:** High-pressure carrier gas cylinder
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Nitrile gloves (when handling samples and acid)
+- [ ] Lab coat
+- [ ] Heat-resistant gloves (when handling ceramic boats from SSM)
+
+
+## 5. Equipment and Materials
+
+### Instrument
+
+| Component                     | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Shimadzu TOC-L analyzer       | High-sensitivity or standard model          |
+| SSM-5000A Solid Sample Module | For direct combustion of solid samples       |
+| Autosampler (ASI-L)           | For liquid sample queuing (if available)     |
+| Computer with LabSolutions TOC | Instrument control and data acquisition     |
+| Carrier gas (high-purity air) | Regulated to instrument specifications       |
+
+### Consumables and Reagents
+
+| Item                          | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| TC catalyst (Pt on alumina)   | Replace per maintenance schedule             |
+| Combustion tubes              | Check for degradation regularly              |
+| Ceramic sample boats          | For SSM; pre-combust at 900 C before use     |
+| 2 M HCl                       | For IC removal (acidification and sparging)  |
+| Potassium hydrogen phthalate (KHP) | Primary standard for TC calibration     |
+| Sodium bicarbonate / sodium carbonate | Primary standard for IC calibration  |
+| Deionized water               | 18 M-ohm quality for blanks and dilutions   |
+| 0.45 um syringe filters       | For filtering liquid samples before analysis |
+| Autosampler vials              | Clean, acid-washed                          |
+
+
+## 6. Procedure
+
+### 6.1 Instrument Startup
+
+1. Verify carrier gas supply pressure (typically 200 kPa or per instrument manual)
+2. Turn on the TOC-L main unit and allow the furnace to reach operating temperature (680 C for liquid mode)
+3. Launch LabSolutions TOC software on the connected computer
+4. Run a system blank check using deionized water to verify baseline stability; the blank value should be below 0.1 mg/L C
+
+### 6.2 Calibration
+
+1. Prepare a multi-point calibration curve using potassium hydrogen phthalate (KHP) dissolved in deionized water
+2. Typical calibration range: 0, 1, 5, 10, 25, 50, 100 mg/L C (adjust to expected sample range)
+3. For IC calibration (if measuring TC - IC = TOC), prepare sodium bicarbonate/carbonate standards
+4. Run calibration standards and verify that the correlation coefficient (r^2^) is at least 0.999
+5. Save the calibration curve in the software
+
+### 6.3 Liquid Sample Analysis (DOC in Soil Extracts)
+
+1. Filter all liquid samples through 0.45 um syringe filters or pre-combusted glass fiber filters into clean autosampler vials
+2. For K~2~SO~4~ extracts, include 0.5 M K~2~SO~4~ blanks in the run
+3. Select the appropriate measurement mode in the software:
+   - **NPOC mode** (recommended for most soil extracts): The instrument acidifies the sample with HCl, sparges with carrier gas to remove inorganic carbon as CO~2~, then combusts the remaining sample at 680 C. The evolved CO~2~ is measured by a non-dispersive infrared (NDIR) detector.
+   - **TC-IC mode** (if both total and inorganic carbon are needed): TC is measured by direct combustion; IC is measured by acidification only. TOC = TC - IC.
+4. Load vials into the autosampler and start the run
+5. The instrument performs replicate injections (typically 3) and reports the mean and coefficient of variation
+
+::: {.callout-tip}
+### Tip
+If K~2~SO~4~ extracts have high salt content, use the instrument's automatic dilution function to extend catalyst and combustion tube life. Dilution factors are applied automatically to the reported concentrations.
+:::
+
+### 6.4 Solid Sample Analysis (SSM-5000A)
+
+1. Switch the instrument to SSM mode in the LabSolutions software
+2. Pre-combust ceramic boats at 900 C to remove any residual carbon
+3. Weigh 10--50 mg of dried, finely ground soil into a clean ceramic boat using an analytical balance (record mass to 0.01 mg)
+4. For TOC measurement (removing inorganic carbon): pre-treat the sample by adding a few drops of 2 M HCl to the boat, allow to react until effervescence stops, and dry at 105 C before analysis
+5. For TC measurement (no acid pretreatment): proceed directly
+6. Place the ceramic boat into the SSM sample port
+7. The SSM combusts the sample in an oxygen-rich environment at high temperature; the evolved CO~2~ is carried to the NDIR detector
+8. The software reports total carbon content in mg C or as a percentage of sample mass
+
+### 6.5 Instrument Shutdown
+
+1. After the final sample, run 3--5 deionized water blanks to flush the system
+2. Review all data in the software for outliers or failed injections
+3. Export data and save the run file
+4. If the instrument will not be used for several days, turn off the furnace and carrier gas per the instrument manual
+
+
+## 7. Quality Control
+
+- Run a calibration verification standard (mid-range) every 10--15 samples; acceptance criterion is within 10% of the known value
+- Include instrument blanks (deionized water) at the beginning, middle, and end of each run
+- Include method blanks (0.5 M K~2~SO~4~ for extract analyses) in each batch
+- Run sample duplicates at a rate of at least 1 per 10 samples
+- Monitor the coefficient of variation among replicate injections; re-run if CV exceeds 2% for liquid samples
+- Log catalyst replacement, combustion tube changes, and calibration dates in the instrument logbook
+
+
+## 8. Maintenance
+
+| Task                             | Frequency                                |
+|:---------------------------------|:-----------------------------------------|
+| System blank check               | Before each analytical run               |
+| Calibration verification         | Each run (mid-range check standard)      |
+| Combustion tube inspection       | Monthly or after approximately 500 injections |
+| Catalyst replacement             | As needed (when blank values increase or sensitivity decreases) |
+| Drain trap and humidifier check  | Weekly                                   |
+| Carrier gas cylinder replacement | As needed (monitor pressure gauge)       |
+
+
+## 9. Waste Disposal
+
+| Waste Type                   | Disposal Method                              |
+|:-----------------------------|:---------------------------------------------|
+| Acidified liquid waste       | Neutralize and dispose per EH&S guidelines   |
+| Spent catalyst               | Collect for EH&S hazardous waste pickup     |
+| Used ceramic boats           | Clean and reuse, or dispose in standard trash |
+| K~2~SO~4~ extract waste      | Aqueous waste; drain if approved, or collect |
+
+
+## 10. References
+
+- Shimadzu Corporation. *TOC-L Series Total Organic Carbon Analyzer: User Manual*.
+- Shimadzu Corporation. *SSM-5000A Solid Sample Combustion Unit: User Manual*.
+- Nelson, D.W. & Sommers, L.E. (1996). Total carbon, organic carbon, and organic matter. In: Sparks, D.L. (Ed.), *Methods of Soil Analysis, Part 3: Chemical Methods*. SSSA Book Series No. 5.
+
+
+## 11. Training Record
+
+Before operating this instrument independently, personnel must:
+
+1. Read this SOP and the relevant sections of the Shimadzu TOC-L and SSM-5000A user manuals
+2. Complete [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd) training
+3. Observe a trained operator perform startup, calibration, sample analysis, and shutdown
+4. Demonstrate competence with calibration standard preparation
+5. Perform a supervised analytical run with acceptable QC results
+6. Be signed off by the instrument manager or PI
