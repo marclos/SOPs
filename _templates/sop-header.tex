@@ -1,0 +1,76 @@
+% =============================================================================
+% SOP PDF Header/Footer Configuration
+% =============================================================================
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% Define EA Program colors
+\definecolor{eablue}{HTML}{0057B8}
+
+% -----------------------------------------------------------------------------
+% Header and Footer
+% -----------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+
+% Header
+\fancyhead[L]{%
+  \small\textcolor{eablue}{\textbf{EA Program -- Pomona College}}%
+}
+\fancyhead[R]{%
+  \small\textcolor{eablue}{Standard Operating Procedure}%
+}
+
+% Footer
+\fancyfoot[L]{\small\textit{Revision: \today}}
+\fancyfoot[C]{\small\textsc{For Internal Use Only}}
+\fancyfoot[R]{\small Page \thepage\ of \pageref{LastPage}}
+
+% Header/footer rules
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{eablue}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{eablue}\leaders\hrule height \footrulewidth\hfill}}
+
+% -----------------------------------------------------------------------------
+% First page style (title page gets the logo)
+% -----------------------------------------------------------------------------
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[L]{%
+    \raisebox{-0.5\height}{\includegraphics[height=1cm]{pomona.jpg}}%
+    \hspace{0.5em}%
+    \textcolor{eablue}{\textbf{EA Program -- Pomona College}}%
+  }
+  \fancyhead[R]{\small\textcolor{eablue}{Standard Operating Procedure}}
+  \fancyfoot[L]{\small\textit{Revision: \today}}
+  \fancyfoot[C]{\small\textsc{For Internal Use Only}}
+  \fancyfoot[R]{\small Page \thepage\ of \pageref{LastPage}}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+}
+
+% -----------------------------------------------------------------------------
+% Callout box styling (nicer warning/note boxes in PDF)
+% -----------------------------------------------------------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+
+% -----------------------------------------------------------------------------
+% Table styling
+% -----------------------------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{longtable}
+
+% -----------------------------------------------------------------------------
+% Hyperlink colors
+% -----------------------------------------------------------------------------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=eablue,
+  urlcolor=eablue,
+  citecolor=eablue
+}
