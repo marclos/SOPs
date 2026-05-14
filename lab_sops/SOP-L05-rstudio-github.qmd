@@ -1,0 +1,470 @@
+---
+title: "RStudio Projects and GitHub"
+sop-number: "SOP-L05"
+author:
+  - name: "Marc Los Huertos & Isaac Medina"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.05"
+
+revision-history:
+  - version: "1.0"
+    date: "2018-01-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+  - version: "1.04"
+    date: "2025-06-03"
+    author: "Marc Los Huertos & Isaac Medina"
+    changes: "Updated interface, added divergent branch troubleshooting"
+  - version: "1.05"
+    date: "2025-06-16"
+    author: "Marc Los Huertos"
+    changes: "Converted to QMD format; simplified server access"
+---
+
+## 1. Purpose
+
+This SOP provides instructions for setting up RStudio, connecting it to GitHub, and managing collaborative research projects using version control. R, RStudio, and GitHub together enable collaborative, transparent, reproducible, and accessible data analysis.
+
+
+## 2. Scope
+
+- **Applies to:** All EA Program researchers using R for data analysis and collaborative projects
+- **Does not apply to:** Local-only R scripts with no version control; Python or other language workflows
+- **Location:** RStudio Server at Pomona College; local installations
+
+
+## 3. Acknowledgements
+
+Substantial contributions: Aparna Chintapalli. We acknowledge all students who have followed these instructions and suggested improvements.
+
+
+## 4. Definitions
+
+**R:** A free, open-source programming environment for statistical computing, maintained by a global community of statisticians and programmers.
+
+**RStudio:** A user interface for R that provides tools to write code, view results, manage files, and integrate with version control. Available as a desktop application or via the Pomona College server.
+
+**GitHub:** A web-based hosting service for Git repositories that enables collaborative code and document management.
+
+**Repository (repo):** A GitHub project folder that contains all files, history, and collaboration settings.
+
+**Version Control:** A system that tracks changes to files over time, allowing multiple people to collaborate while maintaining a complete history of who changed what and when.
+
+**SSH Key:** A cryptographic key pair used to establish a secure connection between RStudio and GitHub without entering a password each time.
+
+**Clone:** Creating a local copy of a GitHub repository on your computer or server.
+
+**Pull:** Downloading the latest changes from GitHub to your local copy.
+
+**Commit:** Saving a snapshot of your changes with a descriptive message.
+
+**Push:** Uploading your committed changes to GitHub so collaborators can access them.
+
+**Merge Conflict:** Occurs when two people edit the same section of a file and Git cannot automatically reconcile the differences.
+
+
+## 5. Why R + RStudio + GitHub?
+
+| Principle | What It Means |
+|:----------|:--------------|
+| **Collaboration** | Track who contributed what; manage team edits with version control |
+| **Transparency** | Others can see exactly how you analyzed data |
+| **Reproducibility** | Re-run any analysis and get the same results |
+| **Accessibility** | Access your work from any computer via the web server |
+
+::: {.callout-note}
+### Learning Curve
+Becoming comfortable with these tools takes time. Some people experience weeks of mistakes before feeling confident; others pick it up quickly. The time you invest directly improves your experience. When you hit a wall, take a break -- you'll often find a solution after stepping away.
+:::
+
+
+## 6. Interferences
+
+- R updates approximately every six months. New versions occasionally break older code, but this almost never affects new users.
+- RStudio Server requires a network connection. If the network is down, the server is inaccessible.
+
+
+## 7. Health and Safety
+
+- Maintain good posture and a well-designed workstation to prevent repetitive strain injuries.
+- Take regular breaks to reduce eye strain and frustration.
+
+
+## 8. Required Materials
+
+| Item | Notes |
+|:-----|:------|
+| Computer | Laptop or desktop with a web browser |
+| Pomona College login | SSO credentials (non-Pomona students: obtain from Cowart ITS help desk each semester) |
+| GitHub account | Free at [github.com](https://github.com) |
+| Patience | Seriously |
+
+
+## 9. Estimated Time
+
+| Task | Time |
+|:-----|:-----|
+| Initial setup (account, SSH key, first clone) | 45 minutes |
+| Daily workflow (pull, edit, commit, push) | 2--5 minutes overhead |
+
+
+## 10. Part 1: Accessing RStudio Server
+
+### 10.1 Login
+
+Open a web browser and go to:
+
+**[rstudio.pomona.edu](https://rstudio.pomona.edu)**
+
+Log in with your Pomona College username and password.
+
+<!-- IMAGE: Screenshot of RStudio Server login page -->
+<!-- Take new screenshot; save as images/rstudio_server_login.png -->
+![RStudio Server login page](../images/rstudio_server_login.png){width=80% fig-align="center"}
+
+### 10.2 The Four RStudio Panels
+
+When RStudio opens, you see up to four panels. To see all four, create a file: File > New File > R Script, then save it.
+
+<!-- IMAGE: Annotated screenshot with all 4 panels labeled -->
+<!-- Take new screenshot; save as images/rstudio_four_panels.png -->
+
+| Panel | Location | What It Does |
+|:------|:---------|:-------------|
+| **Source Editor** | Upper left | Edit code and text files (`.R`, `.Rmd`, `.Rnw`, `.qmd`) |
+| **Console** | Lower left | Run R commands; view output and errors (in red) |
+| **Environment / History / Git** | Upper right | View loaded data objects, command history, and Git status |
+| **Files / Plots / Packages / Help** | Lower right | Browse files, view plots, manage packages, read help docs |
+
+### 10.3 Configure knitr
+
+Before your first project, change one setting:
+
+1. Tools > Global Options > Sweave
+2. Change "Weave Rnw files" from Sweave to **knitr**
+3. Click Apply, then OK
+
+
+## 11. Part 2: Setting Up GitHub
+
+### 11.1 Create a GitHub Account
+
+1. Go to [github.com](https://github.com) and create a free account
+2. Use your Claremont email address (this qualifies you for free private repositories via [education.github.com](https://education.github.com/discount_requests/new))
+
+### 11.2 Create an SSH Key in RStudio
+
+This creates a secure connection so RStudio and GitHub can communicate.
+
+1. In RStudio: Tools > Global Options > Git/SVN
+2. Click **Create SSH Key**
+3. Select **RSA** under SSH Key Type
+4. Leave the passphrase blank (add one later for sensitive projects)
+5. Click **Create** (close the pop-up image that appears)
+6. Click **View public key**
+7. Copy the entire key text (Ctrl-A, then Ctrl-C)
+
+<!-- IMAGE: Git/SVN menu showing Create SSH Key -->
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/Updated_creating_SSH.png -->
+<!-- Rename to: images/create_ssh_key.png -->
+
+### 11.3 Add the SSH Key to GitHub
+
+1. On GitHub, click your profile icon (upper right) > **Settings**
+2. In the left menu, click **SSH and GPG keys**
+3. Click **New SSH key**
+4. Title: type something like "RStudio Server"
+5. Key: paste the key you copied (Ctrl-V)
+6. Click **Add SSH key**
+
+RStudio and GitHub can now communicate securely.
+
+<!-- IMAGE: GitHub SSH key settings page -->
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/Github_SavedSSH.jpg -->
+<!-- Rename to: images/github_ssh_settings.png -->
+
+
+## 12. Part 3: Cloning Your First Repository
+
+### 12.1 Find the Repository on GitHub
+
+We'll practice with a repository called `beginnersluck`. Search GitHub for it under the username `marclos`. Click on the repository to open it.
+
+### 12.2 Copy the SSH Clone URL
+
+1. Click the green **Code** button
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/Github_GreenCodeButton.png -->
+<!-- Rename to: images/github_code_button.png -->
+
+2. Make sure the tab says **SSH** (not HTTPS). If it says HTTPS, click the **SSH** tab to switch.
+
+::: {.callout-warning}
+### Use SSH, Not HTTPS
+If you clone with HTTPS instead of SSH, pushing will fail and the project is difficult to fix afterward. Always verify you see `git@github.com:...` in the URL, not `https://github.com/...`.
+:::
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/CloningGithub2.jpg -->
+<!-- Rename to: images/clone_with_ssh.png -->
+
+3. Click the clipboard icon to copy the URL
+
+### 12.3 Create the RStudio Project
+
+1. In RStudio: File > **New Project**
+2. Select **Version Control**
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/RstudioNewProject.jpg -->
+<!-- Rename to: images/new_project_dialog.png -->
+
+3. Select **Git**
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/RstudioNewProject2.jpg -->
+<!-- Rename to: images/new_project_git.png -->
+
+4. Paste the SSH URL into **Repository URL** (Ctrl-V). The project directory name should auto-fill.
+5. Click **Create Project**
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/RstudioNewProject3.jpg -->
+<!-- Rename to: images/clone_git_repo.png -->
+
+6. If prompted about "establishing authenticity," type `yes` and click OK
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/Authenticity.jpg -->
+<!-- Rename to: images/authenticity_prompt.png -->
+
+You should now see the repository files in RStudio's Files panel (lower right).
+
+
+## 13. Part 4: The Daily Workflow
+
+This is the routine you follow every time you work on a project.
+
+### Step 1: Pull
+
+Before editing anything, pull the latest changes from GitHub. Click the blue **downward arrow** labeled "Pull" in the Git tab (upper right panel).
+
+**What you'll see:**
+
+| Result | Meaning |
+|:-------|:--------|
+| "Already up-to-date." | No new changes on GitHub since your last pull |
+| Summary of file changes | Successful update -- your files are now current |
+| Error message | Conflict exists -- see Troubleshooting (Section 15) |
+
+### Step 2: Edit
+
+Make your changes to files as needed. Save your work.
+
+### Step 3: Commit
+
+1. In the Git tab, check the boxes next to the files you changed (these are "staged" files)
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/stagedcheckboxes.png -->
+<!-- Rename to: images/staged_checkboxes.png -->
+
+2. Click **Commit**
+3. Write a short, meaningful commit message describing what you changed (e.g., "Added pH results for site 3")
+4. Click **Commit**
+
+### Step 4: Push
+
+Click the green **upward arrow** labeled "Push" in the Git tab.
+
+**What you'll see:**
+
+| Result | Meaning |
+|:-------|:--------|
+| "Everything up-to-date" | Nothing new to push |
+| `e2efe6f..0b18250 master -> master` | Successful push |
+| Error message | Conflict or authentication issue -- see Troubleshooting (Section 15) |
+
+<!-- IMAGE: Oliver Steele's git workflow diagram -->
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/MgaV9.png -->
+<!-- Rename to: images/git_workflow_diagram.png -->
+
+::: {.callout-tip}
+### Remember the Rhythm
+**Pull -- Edit -- Commit -- Push.** Every session. If you skip the Pull step, you will eventually create merge conflicts.
+:::
+
+
+## 14. Part 5: Collaboration
+
+### 14.1 Being Added as a Collaborator
+
+To push changes to someone else's repository, the owner must add you as a collaborator. Send them your GitHub username.
+
+### 14.2 Adding Collaborators to Your Repository
+
+1. Go to your repository on GitHub
+2. Click **Settings** > **Collaborators**
+3. Add collaborators by their GitHub username
+
+### 14.3 Creating a New Repository
+
+1. On GitHub, click the green **New** button (or the "+" icon, then "New repository")
+2. Enter a repository name
+3. Choose Public or Private
+4. Check **Add a README file** (always recommended)
+5. Under "Add .gitignore," select **R**
+6. Choose a license (GNU General Public License is a common choice)
+7. Click **Create repository**
+8. Clone the new repository into RStudio following Section 12
+
+
+## 15. Troubleshooting
+
+### 15.1 Identity Error
+
+**You see:** An error about missing user identity.
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/IdentityError.png -->
+<!-- Rename to: images/identity_error.png -->
+
+**Fix:** In the Git tab, click the gear icon > Shell, then type:
+
+```bash
+git config user.email "your.email@claremont.edu"
+git config user.name "Your Name"
+```
+
+### 15.2 Merge Conflicts
+
+**You see:** Files with a "U" (unmerged) status in the Git tab, and markers like `<<<<<<< HEAD` inside the file.
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/MergeError.jpg -->
+<!-- Rename to: images/merge_error.png -->
+
+**Fix:**
+
+1. Open the conflicted file
+2. Find the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`)
+3. Edit the file to keep the correct content and delete all conflict markers
+4. Save the file
+5. Stage it (check the box in the Git tab)
+6. Commit with a message like "Resolved merge conflict"
+7. Push
+
+### 15.3 "fatal: Not possible to fast-forward, aborting."
+
+**Fix:** In the Git shell:
+
+```bash
+git pull --rebase
+```
+
+### 15.4 Pull Rejected (Unmerged Files)
+
+**You see:** "Pull is not possible because you have unmerged files."
+
+<!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/UnmergedError.jpg -->
+<!-- Rename to: images/unmerged_error.png -->
+
+**Fix:** Resolve the merge conflicts first (Section 15.2), commit, then pull again.
+
+### 15.5 Divergent Branches
+
+**You see:** "You have divergent branches and need to specify how to reconcile them."
+
+**Fix:** In the Git shell:
+
+```bash
+git config pull.rebase false
+git pull
+```
+
+### 15.6 Non-Fast-Forward Errors
+
+**You see:** Push is rejected because someone else pushed to the same branch.
+
+**Fix:**
+
+```bash
+git pull
+```
+
+This fetches and merges the remote changes. Resolve any conflicts (Section 15.2), then push again.
+
+### 15.7 Last Resort: Delete and Re-Clone
+
+If nothing else works and you are willing to lose your uncommitted local changes (or have saved them elsewhere):
+
+1. In RStudio: Session > Terminate R
+2. Delete the project folder from the Files panel
+3. Re-clone the repository from scratch (Section 12)
+
+::: {.callout-warning}
+This discards all local changes that were not pushed to GitHub. Make sure you have saved any important work before doing this.
+:::
+
+
+## 16. Advanced Topics
+
+### 16.1 Installing R and RStudio Locally
+
+Start with the server. When ready for a local installation, install in this order:
+
+1. R: [cran.r-project.org](https://cran.r-project.org/)
+2. RStudio Desktop: [posit.co/download/rstudio-desktop](https://posit.co/download/rstudio-desktop/)
+3. Git: [git-scm.com](https://git-scm.com/) (needed for version control on local installs)
+
+### 16.2 Creating and Knitting Rmd/Qmd Files
+
+TBD
+
+### 16.3 Branching Workflows
+
+TBD
+
+
+## 17. Recommended Resources
+
+- [RStudio YouTube Introduction](https://www.youtube.com/watch?v=uHYcDQDbMY8)
+- [GitHub YouTube Introduction](https://www.youtube.com/watch?v=0fKg7e37bQE)
+- [GitHub for Beginners](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+- [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/)
+
+
+## 18. References
+
+- R Core Team. *R: A Language and Environment for Statistical Computing*. Available at: https://www.r-project.org/
+- Posit. *RStudio IDE*. Available at: https://posit.co/products/open-source/rstudio/
+- GitHub. *GitHub Docs*. Available at: https://docs.github.com/
+
+
+## 19. Training Record
+
+Before using R/RStudio/GitHub independently for EA Program research, personnel must:
+
+1. Read this SOP in full
+2. Create a GitHub account and configure SSH keys
+3. Successfully clone, pull, edit, commit, and push to the `beginnersluck` practice repository
+4. Demonstrate the pull-edit-commit-push workflow under supervision
+5. Be signed off by the PI or project lead
+
+
+## Appendix: Image File Reference {.appendix}
+
+Images from the original LaTeX version are in `10_Rstudio_Server_and_Github/graphics/`. Copy and rename them to `images/` as listed below.
+
+| Current Filename | Rename To | Used In |
+|:-----------------|:----------|:--------|
+| `Updated_creating_SSH.png` | `create_ssh_key.png` | Section 11.2 |
+| `Github_SavedSSH.jpg` | `github_ssh_settings.png` | Section 11.3 |
+| `Github_GreenCodeButton.png` | `github_code_button.png` | Section 12.2 |
+| `CloningGithub2.jpg` | `clone_with_ssh.png` | Section 12.2 |
+| `RstudioNewProject.jpg` | `new_project_dialog.png` | Section 12.3 |
+| `RstudioNewProject2.jpg` | `new_project_git.png` | Section 12.3 |
+| `RstudioNewProject3.jpg` | `clone_git_repo.png` | Section 12.3 |
+| `Authenticity.jpg` | `authenticity_prompt.png` | Section 12.3 |
+| `stagedcheckboxes.png` | `staged_checkboxes.png` | Section 13, Step 3 |
+| `MgaV9.png` | `git_workflow_diagram.png` | Section 13, Step 4 |
+| `IdentityError.png` | `identity_error.png` | Section 15.1 |
+| `MergeError.jpg` | `merge_error.png` | Section 15.2 |
+| `UnmergedError.jpg` | `unmerged_error.png` | Section 15.4 |
+| -- (take new) | `rstudio_server_login.png` | Section 10.1 |
+| -- (take new) | `rstudio_four_panels.png` | Section 10.2 |

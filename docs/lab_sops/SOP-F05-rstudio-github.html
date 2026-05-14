@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Marc Los Huertos &amp; Isaac Medina">
+<meta name="dcterms.date" content="2026-05-14">
+
+<title>RStudio Projects and GitHub – Biogeochemistry Lab Resource Page</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-21512baafe889fd8c070ee268d5fcc89.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6abb42119414aaf6c4cb60f83826b5de.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-21512baafe889fd8c070ee268d5fcc89.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/pomona.jpg" alt="" class="navbar-logo light-content">
+    <img src="../images/pomona.jpg" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Biogeochemistry Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">SOPs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../sops/orientation.html"> 
+<span class="menu-text">New to the Lab?</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/marclos/SOPs"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">RStudio Projects and GitHub</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SOP Index</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sops/orientation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>New to the Lab? Start Here</strong></span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Field SOPs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field_sops/SOP-F01-field-safety.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Field Safety</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field_sops/SOP-F21-surface-water-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Surface Water Sampling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field_sops/SOP-F22-eureka-manta2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eureka Manta2 Multiprobe for Water Quality Testing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field_sops/SOP-F40-soil-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Sampling and Processing</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lab SOPs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L02-hazardous-materials-handling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hazardous Materials Handling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L41-soil-moisture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Moisture – Gravimetric Method</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L42-nitrate-ammonium-kcl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Nitrate and Ammonium – KCl Extraction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L45-solvita-co2-burst.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Respiration – Solvita CO2 Burst Test</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L48-microbial-biomass-carbon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Microbial Biomass Carbon – Chloroform Fumigation-Extraction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L43-loss-on-ignition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Organic Matter – Loss on Ignition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">lab_sops/SOP-L60-shimadzu-toc-l.qmd</span>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">1. Purpose</a></li>
+  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">2. Scope</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">3. Acknowledgements</a></li>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">4. Definitions</a></li>
+  <li><a href="#why-r-rstudio-github" id="toc-why-r-rstudio-github" class="nav-link" data-scroll-target="#why-r-rstudio-github">5. Why R + RStudio + GitHub?</a></li>
+  <li><a href="#interferences" id="toc-interferences" class="nav-link" data-scroll-target="#interferences">6. Interferences</a></li>
+  <li><a href="#health-and-safety" id="toc-health-and-safety" class="nav-link" data-scroll-target="#health-and-safety">7. Health and Safety</a></li>
+  <li><a href="#required-materials" id="toc-required-materials" class="nav-link" data-scroll-target="#required-materials">8. Required Materials</a></li>
+  <li><a href="#estimated-time" id="toc-estimated-time" class="nav-link" data-scroll-target="#estimated-time">9. Estimated Time</a></li>
+  <li><a href="#introducing-rstudio" id="toc-introducing-rstudio" class="nav-link" data-scroll-target="#introducing-rstudio">10. Introducing RStudio</a>
+  <ul class="collapse">
+  <li><a href="#rstudio-server-login" id="toc-rstudio-server-login" class="nav-link" data-scroll-target="#rstudio-server-login">10.1 RStudio Server Login</a></li>
+  <li><a href="#the-four-rstudio-panels" id="toc-the-four-rstudio-panels" class="nav-link" data-scroll-target="#the-four-rstudio-panels">10.2 The Four RStudio Panels</a></li>
+  </ul></li>
+  <li><a href="#setting-up-accounts-and-ssh-keys" id="toc-setting-up-accounts-and-ssh-keys" class="nav-link" data-scroll-target="#setting-up-accounts-and-ssh-keys">11. Setting Up Accounts and SSH Keys</a>
+  <ul class="collapse">
+  <li><a href="#create-a-github-account" id="toc-create-a-github-account" class="nav-link" data-scroll-target="#create-a-github-account">11.1 Create a GitHub Account</a></li>
+  <li><a href="#configure-rstudio-for-knitr" id="toc-configure-rstudio-for-knitr" class="nav-link" data-scroll-target="#configure-rstudio-for-knitr">11.2 Configure RStudio for knitr</a></li>
+  <li><a href="#create-an-ssh-key-in-rstudio" id="toc-create-an-ssh-key-in-rstudio" class="nav-link" data-scroll-target="#create-an-ssh-key-in-rstudio">11.3 Create an SSH Key in RStudio</a></li>
+  <li><a href="#add-the-ssh-key-to-github" id="toc-add-the-ssh-key-to-github" class="nav-link" data-scroll-target="#add-the-ssh-key-to-github">11.4 Add the SSH Key to GitHub</a></li>
+  </ul></li>
+  <li><a href="#linking-an-rstudio-project-to-a-github-repository" id="toc-linking-an-rstudio-project-to-a-github-repository" class="nav-link" data-scroll-target="#linking-an-rstudio-project-to-a-github-repository">12. Linking an RStudio Project to a GitHub Repository</a>
+  <ul class="collapse">
+  <li><a href="#clone-a-repository" id="toc-clone-a-repository" class="nav-link" data-scroll-target="#clone-a-repository">12.1 Clone a Repository</a></li>
+  <li><a href="#create-an-rstudio-project-from-the-clone" id="toc-create-an-rstudio-project-from-the-clone" class="nav-link" data-scroll-target="#create-an-rstudio-project-from-the-clone">12.2 Create an RStudio Project from the Clone</a></li>
+  </ul></li>
+  <li><a href="#daily-workflow-pull-edit-commit-push" id="toc-daily-workflow-pull-edit-commit-push" class="nav-link" data-scroll-target="#daily-workflow-pull-edit-commit-push">13. Daily Workflow: Pull, Edit, Commit, Push</a>
+  <ul class="collapse">
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">13.1 Best Practices</a></li>
+  <li><a href="#pull-results" id="toc-pull-results" class="nav-link" data-scroll-target="#pull-results">13.2 Pull Results</a></li>
+  <li><a href="#committing-changes" id="toc-committing-changes" class="nav-link" data-scroll-target="#committing-changes">13.3 Committing Changes</a></li>
+  <li><a href="#push-results" id="toc-push-results" class="nav-link" data-scroll-target="#push-results">13.4 Push Results</a></li>
+  </ul></li>
+  <li><a href="#collaboration" id="toc-collaboration" class="nav-link" data-scroll-target="#collaboration">14. Collaboration</a>
+  <ul class="collapse">
+  <li><a href="#becoming-a-collaborator" id="toc-becoming-a-collaborator" class="nav-link" data-scroll-target="#becoming-a-collaborator">14.1 Becoming a Collaborator</a></li>
+  <li><a href="#adding-collaborators-to-your-repository" id="toc-adding-collaborators-to-your-repository" class="nav-link" data-scroll-target="#adding-collaborators-to-your-repository">14.2 Adding Collaborators to Your Repository</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">15. Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#identity-error" id="toc-identity-error" class="nav-link" data-scroll-target="#identity-error">15.1 Identity Error</a></li>
+  <li><a href="#merge-conflicts" id="toc-merge-conflicts" class="nav-link" data-scroll-target="#merge-conflicts">15.2 Merge Conflicts</a></li>
+  <li><a href="#fatal-not-possible-to-fast-forward-aborting." id="toc-fatal-not-possible-to-fast-forward-aborting." class="nav-link" data-scroll-target="#fatal-not-possible-to-fast-forward-aborting.">15.3 “fatal: Not possible to fast-forward, aborting.”</a></li>
+  <li><a href="#pull-is-rejected-unmerged-files" id="toc-pull-is-rejected-unmerged-files" class="nav-link" data-scroll-target="#pull-is-rejected-unmerged-files">15.4 Pull is Rejected (Unmerged Files)</a></li>
+  <li><a href="#divergent-branches" id="toc-divergent-branches" class="nav-link" data-scroll-target="#divergent-branches">15.5 Divergent Branches</a></li>
+  <li><a href="#non-fast-forward-errors" id="toc-non-fast-forward-errors" class="nav-link" data-scroll-target="#non-fast-forward-errors">15.6 Non-Fast-Forward Errors</a></li>
+  <li><a href="#nuclear-option-deleting-a-project" id="toc-nuclear-option-deleting-a-project" class="nav-link" data-scroll-target="#nuclear-option-deleting-a-project">15.7 Nuclear Option: Deleting a Project</a></li>
+  </ul></li>
+  <li><a href="#advanced-topics" id="toc-advanced-topics" class="nav-link" data-scroll-target="#advanced-topics">16. Advanced Topics</a>
+  <ul class="collapse">
+  <li><a href="#creating-a-new-repository-on-github" id="toc-creating-a-new-repository-on-github" class="nav-link" data-scroll-target="#creating-a-new-repository-on-github">16.1 Creating a New Repository on GitHub</a></li>
+  <li><a href="#installing-r-rstudio-and-github-desktop-locally" id="toc-installing-r-rstudio-and-github-desktop-locally" class="nav-link" data-scroll-target="#installing-r-rstudio-and-github-desktop-locally">16.2 Installing R, RStudio, and GitHub Desktop Locally</a></li>
+  <li><a href="#creating-and-knitting-rmd-files" id="toc-creating-and-knitting-rmd-files" class="nav-link" data-scroll-target="#creating-and-knitting-rmd-files">16.3 Creating and Knitting Rmd Files</a></li>
+  <li><a href="#branching-workflows" id="toc-branching-workflows" class="nav-link" data-scroll-target="#branching-workflows">16.4 Branching Workflows</a></li>
+  </ul></li>
+  <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources">17. Recommended Resources</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">18. References</a></li>
+  <li><a href="#training-record" id="toc-training-record" class="nav-link" data-scroll-target="#training-record">19. Training Record</a></li>
+  
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/marclos/SOPs/edit/main/lab_sops/SOP-F05-rstudio-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marclos/SOPs/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="SOP-F05-rstudio-github.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">RStudio Projects and GitHub</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Marc Los Huertos &amp; Isaac Medina </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            EA Program, Pomona College
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026-05-14</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">1. Purpose</h2>
+<p>R, RStudio, and GitHub combine as a resource for data analysis, display, and collaboration. This SOP provides instructions to create RStudio projects, connect them to GitHub repositories, and manage collaborative workflows using version control.</p>
+<p>We do not expect you to be an expert on R or RStudio. However, some experience with a computer language will be helpful.</p>
+</section>
+<section id="scope" class="level2">
+<h2 class="anchored" data-anchor-id="scope">2. Scope</h2>
+<ul>
+<li><strong>Applies to:</strong> All EA Program researchers using R for data analysis and collaborative projects</li>
+<li><strong>Does not apply to:</strong> Local-only R scripts with no version control requirements; Python or other language workflows</li>
+<li><strong>Location:</strong> RStudio Server (Pomona College) or local installations</li>
+</ul>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">3. Acknowledgements</h2>
+<p>The following have made substantial contributions to this SOP: Aparna Chintapalli. As always, we acknowledge the students who have tried to follow these instructions and made suggestions for improvement. If you have suggestions or edits, please let the authors know.</p>
+</section>
+<section id="definitions" class="level2">
+<h2 class="anchored" data-anchor-id="definitions">4. Definitions</h2>
+<p><strong>RStudio:</strong> The user interface for R. While R itself is a free programming environment with a robust range of statistical packages, RStudio provides tools to track and publish analysis in an efficient and transparent way.</p>
+<p><strong>Local Install vs.&nbsp;Server:</strong> R and RStudio can be installed on a local computer from the CRAN download mirror sites. We also have access to the RStudio Server installed on the Pomona College mainframe, accessible via a web browser.</p>
+<p><strong>GitHub:</strong> A web-based Git repository hosting service for collaborative code and document management.</p>
+<p><strong>Version Control:</strong> A method to track changes in software, especially in collaborative projects. RStudio projects and GitHub repositories can be shared among collaborators, with contributions tracked via version control tools.</p>
+</section>
+<section id="why-r-rstudio-github" class="level2">
+<h2 class="anchored" data-anchor-id="why-r-rstudio-github">5. Why R + RStudio + GitHub?</h2>
+<p>These tools together enable four key principles:</p>
+<p><strong>Collaboration:</strong> You can easily collaborate with others and track who contributed to various parts of the repository. When working in a team and updating text and code, version control ensures you can trace how things changed.</p>
+<p><strong>Transparency:</strong> Others can see how you analyzed data, providing clear access to your methods.</p>
+<p><strong>Reproducibility:</strong> When you conduct an analysis, you can reproduce the results, which validates your findings.</p>
+<p><strong>Accessibility:</strong> Accessible from any computer via the web server. Because we can rely on consistent behavior and web-based servers, operating systems and hardware rarely limit what you can do in R.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Becoming experienced with these programs is like learning to walk. We need to approach this in discrete steps. Some people will experience weeks of mistakes before feeling confident; others will learn quickly. How fast you get comfortable depends on many factors but will be greatly improved by the time you invest.</p>
+</div>
+</div>
+</section>
+<section id="interferences" class="level2">
+<h2 class="anchored" data-anchor-id="interferences">6. Interferences</h2>
+<ul>
+<li>R is updated approximately every six months. Occasionally, new versions will no longer run older code, requiring maintenance of older versions. This almost never affects new users.</li>
+<li>RStudio Server needs a functional network connection. If the network is down, the server is inaccessible.</li>
+</ul>
+</section>
+<section id="health-and-safety" class="level2">
+<h2 class="anchored" data-anchor-id="health-and-safety">7. Health and Safety</h2>
+<ul>
+<li>Risk of carpal tunnel syndrome from extended computer use. Maintain good posture and a well-designed workstation.</li>
+<li>Frustration is common! After running into baffling errors, go for a run, get dinner, or take a nap. You’ll often find a workaround after taking a break.</li>
+</ul>
+</section>
+<section id="required-materials" class="level2">
+<h2 class="anchored" data-anchor-id="required-materials">8. Required Materials</h2>
+<ul>
+<li>Laptop or desktop computer</li>
+<li>Access to Pomona College’s SSO (single sign-on) and server</li>
+<li>GitHub account (free at <a href="https://github.com">github.com</a>)</li>
+<li>Patience</li>
+</ul>
+</section>
+<section id="estimated-time" class="level2">
+<h2 class="anchored" data-anchor-id="estimated-time">9. Estimated Time</h2>
+<p>Initial setup requires approximately 45 minutes.</p>
+</section>
+<section id="introducing-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="introducing-rstudio">10. Introducing RStudio</h2>
+<section id="rstudio-server-login" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-server-login">10.1 RStudio Server Login</h3>
+<p>The RStudio Server is hosted by Pomona College, so you need a Pomona College login. Non-Pomona students need a new login each semester, obtainable from the help desk at Cowart Information Technology Services.</p>
+<p><strong>Server addresses:</strong></p>
+<ul>
+<li>On Pomona’s network (or VPN): <code>rstudio.campus.pomona.edu</code></li>
+<li>Off campus / non-Pomona networks: <code>rstudio.pomona.edu</code></li>
+</ul>
+<!-- IMAGE SUGGESTION: Screenshot of the RStudio Server login page -->
+<!-- Save as: images/rstudio_server_login.png -->
+<p>From non-Pomona networks you may get a privacy error. If so, go to Advanced and accept the privacy settings to continue.</p>
+<!-- IMAGE SUGGESTION: Screenshot of the browser privacy/security warning -->
+<!-- Save as: images/privacy_error.png -->
+<!-- EXISTING FILE: graphics/Connect_Web_Privacy.JPG -->
+</section>
+<section id="the-four-rstudio-panels" class="level3">
+<h3 class="anchored" data-anchor-id="the-four-rstudio-panels">10.2 The Four RStudio Panels</h3>
+<p>Working with RStudio can be confusing at first. Here are the four default panels:</p>
+<p><strong>Upper Left – Text and Code Editor:</strong> This panel displays your text files (<code>.Rnw</code>, <code>.Rmd</code>, <code>.R</code>, <code>.tex</code>, <code>.txt</code>). If no file is open, this panel won’t appear and the console takes the entire left side. Close files you’re not actively editing to avoid confusion.</p>
+<p><strong>Lower Left – Console:</strong> The R console where you enter commands directly or submit them from the editor above. Errors are displayed in red here. If you compile a LaTeX file, the log appears here too.</p>
+<p><strong>Lower Right – Files/Plots/Packages/Help:</strong> Shows your workspace files, installed packages, plots, and help documentation. If a plot is too large for the window, resize the panel.</p>
+<p><strong>Upper Right – Environment/History/Git:</strong> The Environment tab shows objects R has access to. The History tab displays your command history. The Git tab manages files between GitHub and your local/server directory.</p>
+<!-- IMAGE SUGGESTION: Annotated screenshot of RStudio with all four panels labeled -->
+<!-- Save as: images/rstudio_four_panels.png -->
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To see all four panels, create a new text file: File &gt; New File &gt; R Sweave. Save it as “Test.Rnw” and all four panels will appear.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="setting-up-accounts-and-ssh-keys" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-accounts-and-ssh-keys">11. Setting Up Accounts and SSH Keys</h2>
+<section id="create-a-github-account" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-github-account">11.1 Create a GitHub Account</h3>
+<ol type="1">
+<li>Go to <a href="https://github.com">github.com</a> and create an account</li>
+<li>Use your Claremont email address – this helps later if you want free private repositories for students at <a href="https://education.github.com/discount_requests/new">education.github.com</a></li>
+<li>For our purposes you will not need a private repository initially</li>
+</ol>
+</section>
+<section id="configure-rstudio-for-knitr" class="level3">
+<h3 class="anchored" data-anchor-id="configure-rstudio-for-knitr">11.2 Configure RStudio for knitr</h3>
+<ol type="1">
+<li>In RStudio, navigate to Tools &gt; Global Options &gt; Sweave</li>
+<li>Change the “Weave Rnw files” option from Sweave to <strong>knitr</strong></li>
+<li>Apply and close</li>
+</ol>
+</section>
+<section id="create-an-ssh-key-in-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="create-an-ssh-key-in-rstudio">11.3 Create an SSH Key in RStudio</h3>
+<ol type="1">
+<li>Open RStudio (server or local)</li>
+<li>Navigate to Tools &gt; Global Options &gt; Git/SVN</li>
+<li>Click “Create SSH Key”</li>
+<li>Select “RSA” under SSH Key Type</li>
+<li>Leave the passphrase blank for now (add one later for extra security on sensitive projects)</li>
+<li>Click “Create” – a pop-up image will appear (an encryption visualization; close it)</li>
+<li>Click “View public key” and copy the contents with Ctrl-C</li>
+</ol>
+<!-- IMAGE SUGGESTION: Screenshot of the Git/SVN menu showing "Create SSH Key" button -->
+<!-- Save as: images/create_ssh_key.png -->
+<!-- EXISTING FILE: graphics/Updated_creating_SSH.png -->
+</section>
+<section id="add-the-ssh-key-to-github" class="level3">
+<h3 class="anchored" data-anchor-id="add-the-ssh-key-to-github">11.4 Add the SSH Key to GitHub</h3>
+<ol type="1">
+<li>Go to your GitHub profile (upper right corner of any GitHub page)</li>
+<li>Select “Settings”</li>
+<li>In the left menu, select “SSH and GPG keys”</li>
+<li>Click “New SSH key”</li>
+<li>Type a name (e.g., “myRStudio SSH key”)</li>
+<li>Paste the RSA key from your clipboard into the key field</li>
+<li>Click the green “Add SSH key” button</li>
+</ol>
+<p>GitHub and RStudio can now communicate.</p>
+<!-- IMAGE SUGGESTION: Screenshot of GitHub SSH key settings page -->
+<!-- Save as: images/github_ssh_settings.png -->
+<!-- EXISTING FILE: graphics/Github_SavedSSH.jpg -->
+</section>
+</section>
+<section id="linking-an-rstudio-project-to-a-github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="linking-an-rstudio-project-to-a-github-repository">12. Linking an RStudio Project to a GitHub Repository</h2>
+<section id="clone-a-repository" class="level3">
+<h3 class="anchored" data-anchor-id="clone-a-repository">12.1 Clone a Repository</h3>
+<p>We will use a practice repository called <code>beginnersluck</code> (search GitHub for it under the username <code>marclos</code>).</p>
+<ol type="1">
+<li>On the GitHub repository page, click the green “Code” button</li>
+</ol>
+<!-- EXISTING FILE: graphics/Github_GreenCodeButton.png -->
+<ol start="2" type="1">
+<li>Select “Clone with SSH” – <strong>IMPORTANT:</strong> if the header says “Clone with HTTPS,” click the small “Use SSH” link to toggle. If you skip this step, the project is very hard to fix afterward.</li>
+</ol>
+<!-- EXISTING FILE: graphics/CloningGithub2.jpg -->
+<ol start="3" type="1">
+<li>Copy the SSH URL to your clipboard</li>
+</ol>
+</section>
+<section id="create-an-rstudio-project-from-the-clone" class="level3">
+<h3 class="anchored" data-anchor-id="create-an-rstudio-project-from-the-clone">12.2 Create an RStudio Project from the Clone</h3>
+<ol type="1">
+<li>In RStudio, go to File &gt; New Project</li>
+<li>Select “Version Control”</li>
+</ol>
+<!-- EXISTING FILE: graphics/RstudioNewProject.jpg -->
+<ol start="3" type="1">
+<li>Select “Git”</li>
+</ol>
+<!-- EXISTING FILE: graphics/RstudioNewProject2.jpg -->
+<ol start="4" type="1">
+<li>Paste the SSH URL into the “Repository URL” field (Ctrl-V). The project directory name should auto-fill.</li>
+<li>Click “Create Project”</li>
+</ol>
+<!-- EXISTING FILE: graphics/RstudioNewProject3.jpg -->
+<ol start="6" type="1">
+<li>If prompted about establishing authenticity, type <code>yes</code> and hit OK</li>
+</ol>
+<!-- EXISTING FILE: graphics/Authenticity.jpg -->
+<ol start="7" type="1">
+<li>You should now see the repository files in RStudio. If nothing appears, check if your pop-up blocker is active and disable it for this site.</li>
+</ol>
+</section>
+</section>
+<section id="daily-workflow-pull-edit-commit-push" class="level2">
+<h2 class="anchored" data-anchor-id="daily-workflow-pull-edit-commit-push">13. Daily Workflow: Pull, Edit, Commit, Push</h2>
+<section id="best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="best-practices">13.1 Best Practices</h3>
+<p>Every time you sit down to work:</p>
+<ol type="1">
+<li><strong>Pull</strong> first (blue downward arrow in the Git tab) to get the latest changes</li>
+<li><strong>Edit</strong> your files</li>
+<li><strong>Commit</strong> your changes (check the staged boxes, write a commit message)</li>
+<li><strong>Push</strong> your changes (green upward arrow) to share with collaborators</li>
+</ol>
+<!-- IMAGE SUGGESTION: Diagram showing the Pull > Edit > Commit > Push workflow -->
+<!-- Save as: images/git_workflow.png -->
+<!-- EXISTING FILE: graphics/MgaV9.png (Oliver Steele's git diagram) -->
+</section>
+<section id="pull-results" class="level3">
+<h3 class="anchored" data-anchor-id="pull-results">13.2 Pull Results</h3>
+<p>When you pull, you’ll get one of three results:</p>
+<p><strong>“Already up-to-date.”</strong> Your files have not been updated on GitHub since your last pull. If you expect changes from a collaborator, they may have forgotten to push.</p>
+<p><strong>Successful update.</strong> You’ll see a summary of files changed, insertions, and deletions.</p>
+<p><strong>Unsuccessful pull.</strong> You have local changes that conflict with remote changes. See Troubleshooting (Section 15).</p>
+</section>
+<section id="committing-changes" class="level3">
+<h3 class="anchored" data-anchor-id="committing-changes">13.3 Committing Changes</h3>
+<ol type="1">
+<li>In the Git tab (upper right), check the boxes next to the files you want to commit</li>
+</ol>
+<!-- EXISTING FILE: graphics/stagedcheckboxes.png -->
+<ol start="2" type="1">
+<li>Click “Commit”</li>
+<li>Write a meaningful commit message describing your changes</li>
+<li>Click “Commit”</li>
+</ol>
+</section>
+<section id="push-results" class="level3">
+<h3 class="anchored" data-anchor-id="push-results">13.4 Push Results</h3>
+<p><strong>“Everything up-to-date.”</strong> Nothing new to push.</p>
+<p><strong>Successful push.</strong> You’ll see a message like <code>e2efe6f..0b18250 master -&gt; master</code>.</p>
+<p><strong>Unsuccessful push.</strong> See Troubleshooting (Section 15).</p>
+</section>
+</section>
+<section id="collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration">14. Collaboration</h2>
+<section id="becoming-a-collaborator" class="level3">
+<h3 class="anchored" data-anchor-id="becoming-a-collaborator">14.1 Becoming a Collaborator</h3>
+<p>To contribute to someone else’s repository, they must add you as a collaborator. Send your GitHub username to the repository owner so they can add you via Settings &gt; Collaborators in the repository.</p>
+</section>
+<section id="adding-collaborators-to-your-repository" class="level3">
+<h3 class="anchored" data-anchor-id="adding-collaborators-to-your-repository">14.2 Adding Collaborators to Your Repository</h3>
+<ol type="1">
+<li>Go to your repository on GitHub</li>
+<li>Click Settings in the toolbar</li>
+<li>Click “Collaborators”</li>
+<li>Add your collaborators’ GitHub usernames</li>
+</ol>
+</section>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">15. Troubleshooting</h2>
+<section id="identity-error" class="level3">
+<h3 class="anchored" data-anchor-id="identity-error">15.1 Identity Error</h3>
+<p>If you receive an identity error, fix it using the Git shell. In the Git tab, click the gear icon and select “Shell…” Then type:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config user.email <span class="st">"your.email@claremont.edu"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config user.name <span class="st">"Your Name"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="merge-conflicts" class="level3">
+<h3 class="anchored" data-anchor-id="merge-conflicts">15.2 Merge Conflicts</h3>
+<p>Merge errors occur when you and a collaborator have both modified the same section of a file. To resolve:</p>
+<ol type="1">
+<li>In the Git tab, look for files with a “U” (unmerged) status</li>
+<li>Open the conflicted file – you’ll see markers like <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code> and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main</code> showing both versions</li>
+<li>Edit the file to keep the correct content and remove the conflict markers</li>
+<li>Save the file</li>
+<li>Check the file’s box in the Git tab</li>
+<li>Commit with a message like “Resolved merge conflict”</li>
+<li>Push</li>
+</ol>
+</section>
+<section id="fatal-not-possible-to-fast-forward-aborting." class="level3">
+<h3 class="anchored" data-anchor-id="fatal-not-possible-to-fast-forward-aborting.">15.3 “fatal: Not possible to fast-forward, aborting.”</h3>
+<p>Run this in the Git shell:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="at">--rebase</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pull-is-rejected-unmerged-files" class="level3">
+<h3 class="anchored" data-anchor-id="pull-is-rejected-unmerged-files">15.4 Pull is Rejected (Unmerged Files)</h3>
+<p>If you see “Pull is not possible because you have unmerged files,” you must resolve the merge conflicts first (see 15.2), then add and commit the changes before pulling again.</p>
+</section>
+<section id="divergent-branches" class="level3">
+<h3 class="anchored" data-anchor-id="divergent-branches">15.5 Divergent Branches</h3>
+<p>If you see “You have divergent branches and need to specify how to reconcile them,” run one of the following in the Git shell:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config pull.rebase false   <span class="co"># merge (recommended for beginners)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then try pulling again.</p>
+</section>
+<section id="non-fast-forward-errors" class="level3">
+<h3 class="anchored" data-anchor-id="non-fast-forward-errors">15.6 Non-Fast-Forward Errors</h3>
+<p>If another person has pushed to the same branch, Git won’t be able to push your changes. Fix by fetching and merging:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch origin</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Or simply use <code>git pull</code> to perform both commands at once.</p>
+</section>
+<section id="nuclear-option-deleting-a-project" class="level3">
+<h3 class="anchored" data-anchor-id="nuclear-option-deleting-a-project">15.7 Nuclear Option: Deleting a Project</h3>
+<p>If you are willing to sacrifice your local changes (or have emailed them to a collaborator):</p>
+<ol type="1">
+<li>Delete all files in the project directory</li>
+<li>Clear workspace and console (don’t save)</li>
+<li>Go to Session &gt; Terminate R</li>
+<li>Start a new project by cloning the repository again (Section 12)</li>
+</ol>
+</section>
+</section>
+<section id="advanced-topics" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-topics">16. Advanced Topics</h2>
+<section id="creating-a-new-repository-on-github" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-new-repository-on-github">16.1 Creating a New Repository on GitHub</h3>
+<ol type="1">
+<li>Click the green “New Repository” button on GitHub</li>
+<li>Enter a repository name (dashes will replace spaces automatically)</li>
+<li>Choose Public or Private (students can apply for free private repos at <a href="https://education.github.com">education.github.com</a>)</li>
+<li>Check “Add a README file” – always recommended</li>
+<li>Add a <code>.gitignore</code> file for R (this tells Git to ignore temporary R files)</li>
+<li>Choose a license (GNU General Public License is a common choice)</li>
+<li>Click “Create repository”</li>
+<li>Clone the new repository into RStudio using the steps in Section 12</li>
+</ol>
+</section>
+<section id="installing-r-rstudio-and-github-desktop-locally" class="level3">
+<h3 class="anchored" data-anchor-id="installing-r-rstudio-and-github-desktop-locally">16.2 Installing R, RStudio, and GitHub Desktop Locally</h3>
+<p>New users should start with the server. When ready for local installation, install in this order:</p>
+<ol type="1">
+<li>R: <a href="https://cran.r-project.org/">cran.r-project.org</a></li>
+<li>RStudio: <a href="https://posit.co/download/rstudio-desktop/">posit.co/download/rstudio-desktop</a></li>
+<li>GitHub Desktop (optional): <a href="https://desktop.github.com/">desktop.github.com</a></li>
+</ol>
+</section>
+<section id="creating-and-knitting-rmd-files" class="level3">
+<h3 class="anchored" data-anchor-id="creating-and-knitting-rmd-files">16.3 Creating and Knitting Rmd Files</h3>
+<p>TBD – instructions for creating R Markdown documents and rendering them to HTML or PDF.</p>
+</section>
+<section id="branching-workflows" class="level3">
+<h3 class="anchored" data-anchor-id="branching-workflows">16.4 Branching Workflows</h3>
+<p>TBD – instructions for using branches to manage parallel development.</p>
+</section>
+</section>
+<section id="recommended-resources" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-resources">17. Recommended Resources</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=uHYcDQDbMY8">RStudio YouTube Introduction</a></li>
+<li><a href="https://www.youtube.com/watch?v=0fKg7e37bQE">GitHub YouTube Introduction</a></li>
+<li><a href="http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners">GitHub for Beginners</a></li>
+<li><a href="https://guides.github.com/introduction/flow/">Understanding the GitHub Flow</a></li>
+</ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">18. References</h2>
+<ul>
+<li>R Core Team. <em>R: A Language and Environment for Statistical Computing</em>. Available at: https://www.r-project.org/</li>
+<li>Posit. <em>RStudio IDE</em>. Available at: https://posit.co/products/open-source/rstudio/</li>
+<li>GitHub. <em>GitHub Docs</em>. Available at: https://docs.github.com/</li>
+</ul>
+</section>
+<section id="training-record" class="level2">
+<h2 class="anchored" data-anchor-id="training-record">19. Training Record</h2>
+<p>Before using R/RStudio/GitHub independently for EA Program research, personnel must:</p>
+<ol type="1">
+<li>Read this SOP in full</li>
+<li>Create a GitHub account and configure SSH keys</li>
+<li>Successfully clone, pull, edit, commit, and push to the <code>beginnersluck</code> practice repository</li>
+<li>Demonstrate the pull-edit-commit-push workflow under supervision</li>
+<li>Be signed off by the PI or project lead</li>
+</ol>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="image-checklist" class="level2 appendix"><h2 class="anchored quarto-appendix-heading">Image Checklist</h2><div class="quarto-appendix-contents">
+
+<p>The following images would improve this SOP. Existing files from the original LaTeX version are noted. All should be placed in <code>images/</code> at the project root.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 37%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Image</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Existing File</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>rstudio_server_login.png</code></td>
+<td style="text-align: left;">RStudio Server login page screenshot</td>
+<td style="text-align: left;">– (take new)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>privacy_error.png</code></td>
+<td style="text-align: left;">Browser privacy warning when connecting off-campus</td>
+<td style="text-align: left;"><code>graphics/Connect_Web_Privacy.JPG</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>rstudio_four_panels.png</code></td>
+<td style="text-align: left;">Annotated screenshot showing all 4 RStudio panels</td>
+<td style="text-align: left;">– (take new)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>create_ssh_key.png</code></td>
+<td style="text-align: left;">Git/SVN menu with “Create SSH Key” button</td>
+<td style="text-align: left;"><code>graphics/Updated_creating_SSH.png</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>github_ssh_settings.png</code></td>
+<td style="text-align: left;">GitHub SSH key settings page</td>
+<td style="text-align: left;"><code>graphics/Github_SavedSSH.jpg</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>github_code_button.png</code></td>
+<td style="text-align: left;">Green “Code” button on a GitHub repo page</td>
+<td style="text-align: left;"><code>graphics/Github_GreenCodeButton.png</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>clone_with_ssh.png</code></td>
+<td style="text-align: left;">Clone dialog showing “Use SSH” toggle</td>
+<td style="text-align: left;"><code>graphics/CloningGithub2.jpg</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>new_project_version_control.png</code></td>
+<td style="text-align: left;">RStudio New Project dialog</td>
+<td style="text-align: left;"><code>graphics/RstudioNewProject.jpg</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>new_project_git.png</code></td>
+<td style="text-align: left;">Select “Git” for version control</td>
+<td style="text-align: left;"><code>graphics/RstudioNewProject2.jpg</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>clone_git_repo.png</code></td>
+<td style="text-align: left;">Clone Git Repository dialog with URL pasted</td>
+<td style="text-align: left;"><code>graphics/RstudioNewProject3.jpg</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>authenticity_prompt.png</code></td>
+<td style="text-align: left;">SSH authenticity confirmation prompt</td>
+<td style="text-align: left;"><code>graphics/Authenticity.jpg</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>staged_checkboxes.png</code></td>
+<td style="text-align: left;">Git tab showing staged files with checkboxes</td>
+<td style="text-align: left;"><code>graphics/stagedcheckboxes.png</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>git_workflow_diagram.png</code></td>
+<td style="text-align: left;">Oliver Steele’s git model diagram</td>
+<td style="text-align: left;"><code>graphics/MgaV9.png</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>identity_error.png</code></td>
+<td style="text-align: left;">Git identity error message</td>
+<td style="text-align: left;"><code>graphics/IdentityError.png</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>merge_error.png</code></td>
+<td style="text-align: left;">Merge conflict error in Git tab</td>
+<td style="text-align: left;"><code>graphics/MergeError.jpg</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>unmerged_error.png</code></td>
+<td style="text-align: left;">Unmerged files error message</td>
+<td style="text-align: left;"><code>graphics/UnmergedError.jpg</code></td>
+</tr>
+</tbody>
+</table>
+
+
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/marclos\.github\.io\/SOPs\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/marclos/SOPs/edit/main/lab_sops/SOP-F05-rstudio-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marclos/SOPs/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

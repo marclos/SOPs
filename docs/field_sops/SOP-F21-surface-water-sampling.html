@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Marc Los Huertos">
+<meta name="dcterms.date" content="2026-05-13">
+
+<title>Surface Water Sampling – Biogeochemistry Lab Resource Page</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-21512baafe889fd8c070ee268d5fcc89.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6abb42119414aaf6c4cb60f83826b5de.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-21512baafe889fd8c070ee268d5fcc89.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/pomona.jpg" alt="" class="navbar-logo light-content">
+    <img src="../images/pomona.jpg" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Biogeochemistry Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">SOPs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../sops/orientation.html"> 
+<span class="menu-text">New to the Lab?</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/marclos/SOPs"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../field_sops/SOP-F01-field-safety.html">Field SOPs</a></li><li class="breadcrumb-item"><a href="../field_sops/SOP-F21-surface-water-sampling.html">Surface Water Sampling</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SOP Index</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sops/orientation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>New to the Lab? Start Here</strong></span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Field SOPs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field_sops/SOP-F01-field-safety.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Field Safety</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field_sops/SOP-F21-surface-water-sampling.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Surface Water Sampling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field_sops/SOP-F22-eureka-manta2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eureka Manta2 Multiprobe for Water Quality Testing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../field_sops/SOP-F40-soil-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Sampling and Processing</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lab SOPs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L02-hazardous-materials-handling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hazardous Materials Handling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L41-soil-moisture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Moisture – Gravimetric Method</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L42-nitrate-ammonium-kcl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Nitrate and Ammonium – KCl Extraction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L45-solvita-co2-burst.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Respiration – Solvita CO2 Burst Test</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L48-microbial-biomass-carbon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Microbial Biomass Carbon – Chloroform Fumigation-Extraction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab_sops/SOP-L43-loss-on-ignition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soil Organic Matter – Loss on Ignition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">lab_sops/SOP-L60-shimadzu-toc-l.qmd</span>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">1. Purpose</a></li>
+  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">2. Scope</a></li>
+  <li><a href="#summary-of-method" id="toc-summary-of-method" class="nav-link" data-scroll-target="#summary-of-method">3. Summary of Method</a></li>
+  <li><a href="#responsibilities" id="toc-responsibilities" class="nav-link" data-scroll-target="#responsibilities">4. Responsibilities</a>
+  <ul class="collapse">
+  <li><a href="#required-training" id="toc-required-training" class="nav-link" data-scroll-target="#required-training">Required Training</a></li>
+  </ul></li>
+  <li><a href="#safety-and-hazards" id="toc-safety-and-hazards" class="nav-link" data-scroll-target="#safety-and-hazards">5. Safety and Hazards</a>
+  <ul class="collapse">
+  <li><a href="#required-ppe" id="toc-required-ppe" class="nav-link" data-scroll-target="#required-ppe">Required PPE</a></li>
+  <li><a href="#emergency-procedures" id="toc-emergency-procedures" class="nav-link" data-scroll-target="#emergency-procedures">Emergency Procedures</a></li>
+  </ul></li>
+  <li><a href="#required-materials" id="toc-required-materials" class="nav-link" data-scroll-target="#required-materials">6. Required Materials</a>
+  <ul class="collapse">
+  <li><a href="#field-documentation" id="toc-field-documentation" class="nav-link" data-scroll-target="#field-documentation">Field Documentation</a></li>
+  <li><a href="#sampling-equipment" id="toc-sampling-equipment" class="nav-link" data-scroll-target="#sampling-equipment">Sampling Equipment</a></li>
+  <li><a href="#transport-and-storage" id="toc-transport-and-storage" class="nav-link" data-scroll-target="#transport-and-storage">Transport and Storage</a></li>
+  </ul></li>
+  <li><a href="#interferences" id="toc-interferences" class="nav-link" data-scroll-target="#interferences">7. Interferences</a></li>
+  <li><a href="#procedures" id="toc-procedures" class="nav-link" data-scroll-target="#procedures">8. Procedures</a>
+  <ul class="collapse">
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">8.1 Preparation</a></li>
+  <li><a href="#field-collection-direct-method" id="toc-field-collection-direct-method" class="nav-link" data-scroll-target="#field-collection-direct-method">8.2 Field Collection – Direct Method</a></li>
+  <li><a href="#field-collection-extension-pole" id="toc-field-collection-extension-pole" class="nav-link" data-scroll-target="#field-collection-extension-pole">8.3 Field Collection – Extension Pole</a></li>
+  <li><a href="#field-collection-pre-preserved-containers" id="toc-field-collection-pre-preserved-containers" class="nav-link" data-scroll-target="#field-collection-pre-preserved-containers">8.4 Field Collection – Pre-Preserved Containers</a></li>
+  <li><a href="#field-collection-intermediate-devices" id="toc-field-collection-intermediate-devices" class="nav-link" data-scroll-target="#field-collection-intermediate-devices">8.5 Field Collection – Intermediate Devices</a></li>
+  </ul></li>
+  <li><a href="#sec-preservation" id="toc-sec-preservation" class="nav-link" data-scroll-target="#sec-preservation">9. Sample Preservation, Handling, and Storage</a></li>
+  <li><a href="#quality-control-and-quality-assurance" id="toc-quality-control-and-quality-assurance" class="nav-link" data-scroll-target="#quality-control-and-quality-assurance">10. Quality Control and Quality Assurance</a>
+  <ul class="collapse">
+  <li><a href="#bottle-blanks" id="toc-bottle-blanks" class="nav-link" data-scroll-target="#bottle-blanks">Bottle Blanks</a></li>
+  <li><a href="#field-measurement-sub-samples" id="toc-field-measurement-sub-samples" class="nav-link" data-scroll-target="#field-measurement-sub-samples">Field Measurement Sub-Samples</a></li>
+  <li><a href="#general-precautions" id="toc-general-precautions" class="nav-link" data-scroll-target="#general-precautions">General Precautions</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">11. References</a></li>
+  <li><a href="#training-record" id="toc-training-record" class="nav-link" data-scroll-target="#training-record">12. Training Record</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/marclos/SOPs/edit/main/field_sops/SOP-F21-surface-water-sampling.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marclos/SOPs/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="SOP-F21-surface-water-sampling.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../field_sops/SOP-F01-field-safety.html">Field SOPs</a></li><li class="breadcrumb-item"><a href="../field_sops/SOP-F21-surface-water-sampling.html">Surface Water Sampling</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Surface Water Sampling</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Marc Los Huertos </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            EA Program, Pomona College
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026-05-13</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">1. Purpose</h2>
+<p>This SOP describes procedures for manually collecting surface water samples from lotic and lentic water bodies, wastewater treatment plant access points, outfalls, pipes, and drains. It also covers sampling while wading on beaches and from boats and bridges.</p>
+<p>The scope of this SOP is to train researchers to sample surface waters using protocols consistent with those approved by the EPA and California’s State Water Ambient Water Monitoring Program (SWAMP), ensuring that data meet specified quality assurance and quality control standards.</p>
+<p>This SOP does not cover operation of unattended automated sampling devices, pelagic marine sampling, or groundwater sampling.</p>
+</section>
+<section id="scope" class="level2">
+<h2 class="anchored" data-anchor-id="scope">2. Scope</h2>
+<ul>
+<li><strong>Applies to:</strong> Manual collection of surface water samples from streams, rivers, lakes, ponds, lagoons, surface impoundments, wastewater access points, and outfalls</li>
+<li><strong>Does not apply to:</strong> Automated sampling devices, pelagic marine sampling, groundwater sampling</li>
+<li><strong>Location:</strong> All EA Program surface water field sites</li>
+</ul>
+</section>
+<section id="summary-of-method" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-method">3. Summary of Method</h2>
+<p>Sampling situations vary widely, and no universal procedure can be recommended. However, representative samples from most surface waters can be collected using one or more of the following techniques:</p>
+<ul>
+<li>Bailers</li>
+<li>Dip samplers</li>
+<li>Direct method (hand collection)</li>
+<li>Discrete depth samplers (e.g., Kemmerer or Van Dorn bottles)</li>
+<li>Peristaltic pumps</li>
+<li>Stormwater collection devices</li>
+</ul>
+</section>
+<section id="responsibilities" class="level2">
+<h2 class="anchored" data-anchor-id="responsibilities">4. Responsibilities</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Role</th>
+<th style="text-align: left;">Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Lab PI</td>
+<td style="text-align: left;">Approve sampling plan, ensure training compliance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Field Lead</td>
+<td style="text-align: left;">Coordinate logistics, verify equipment and supplies</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Trained Personnel</td>
+<td style="text-align: left;">Collect and handle samples per this SOP</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">New Students</td>
+<td style="text-align: left;">Complete training before independent sampling</td>
+</tr>
+</tbody>
+</table>
+<section id="required-training" class="level3">
+<h3 class="anchored" data-anchor-id="required-training">Required Training</h3>
+<p>Researchers using this SOP should be trained on:</p>
+<ul>
+<li><a href="../field_sops/SOP-F01-field-safety.html">SOP-F01 Field Safety</a></li>
+<li><a href="../lab_sops/SOP-L02-hazardous-materials-handling.html">SOP-L02 Hazardous Materials Handling</a> (for sample preservation chemicals)</li>
+</ul>
+</section>
+</section>
+<section id="safety-and-hazards" class="level2">
+<h2 class="anchored" data-anchor-id="safety-and-hazards">5. Safety and Hazards</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Hazards
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Biological/Chemical:</strong> Water bodies may be contaminated; avoid ingestion and direct skin contact</li>
+<li><strong>Physical:</strong> Drowning risk, slippery surfaces, swift currents, unstable banks, bridge traffic</li>
+<li><strong>Chemical:</strong> Sample preservatives (acids, bases) used in pre-preserved bottles</li>
+</ul>
+</div>
+</div>
+<section id="required-ppe" class="level3">
+<h3 class="anchored" data-anchor-id="required-ppe">Required PPE</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Latex or nitrile gloves (for hygienic protection)</label></li>
+<li><label><input type="checkbox">Leather gloves (for handling ropes and cables)</label></li>
+<li><label><input type="checkbox">Anti-bacterial hand sanitizer or soap</label></li>
+<li><label><input type="checkbox">Personal flotation device (PFD) when sampling from boats or in deep/swift water</label></li>
+<li><label><input type="checkbox">Safety vest and lines (as appropriate for the site)</label></li>
+<li><label><input type="checkbox">Traffic control signs and cones (for bridge sampling)</label></li>
+</ul>
+</section>
+<section id="emergency-procedures" class="level3">
+<h3 class="anchored" data-anchor-id="emergency-procedures">Emergency Procedures</h3>
+<p>Refer to <a href="../field_sops/SOP-F01-field-safety.html">SOP-F01 Field Safety</a> for emergency response procedures, including medical emergencies near water.</p>
+</section>
+</section>
+<section id="required-materials" class="level2">
+<h2 class="anchored" data-anchor-id="required-materials">6. Required Materials</h2>
+<section id="field-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="field-documentation">Field Documentation</h3>
+<ul>
+<li>Field notebook and pens</li>
+<li>Chain of custody forms</li>
+<li>Sample tags with assigned sample numbers</li>
+<li>Field data sheets</li>
+</ul>
+</section>
+<section id="sampling-equipment" class="level3">
+<h3 class="anchored" data-anchor-id="sampling-equipment">Sampling Equipment</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">500 or 1000 mL sampling bottles</td>
+<td style="text-align: left;">Polypropylene or glass, as required</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Syringe and filters for field filtering</td>
+<td style="text-align: left;">For dissolved analyte samples</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Stainless or Teflon dipper</td>
+<td style="text-align: left;">For surface grab samples</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Depth-integrated sampler</td>
+<td style="text-align: left;">For vertically integrated samples</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Van Dorn or Kemmerer sampler</td>
+<td style="text-align: left;">For discrete depth samples</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Extension pole with container attachment</td>
+<td style="text-align: left;">For sampling from piers, docks, or banks</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ropes, cables, rods</td>
+<td style="text-align: left;">As needed for deployment</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Deionized/ultrapure distilled water</td>
+<td style="text-align: left;">For blanks and rinsing</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Disinfection supplies</td>
+<td style="text-align: left;">Brushes, solutions to prevent invasive species transfer</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="transport-and-storage" class="level3">
+<h3 class="anchored" data-anchor-id="transport-and-storage">Transport and Storage</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Coolers with ice</td>
+<td style="text-align: left;">Regular, blue, or dry ice depending on shipping method</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pre-labeled sampling containers</td>
+<td style="text-align: left;">From the analytical lab, with preservatives if needed</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Custody seals</td>
+<td style="text-align: left;">For sealing coolers prior to shipment</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="interferences" class="level2">
+<h2 class="anchored" data-anchor-id="interferences">7. Interferences</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Critical Contamination Prevention
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The inner surfaces of sample bottles and caps must not be touched with bare hands, gloves, or any other material. Sample bottles must be kept in a clean environment away from dust, dirt, fumes, and grime.</p>
+</div>
+</div>
+<ul>
+<li>All sampling equipment must be clean and free of contaminants before use</li>
+<li>Use only the recommended type of sample bottle for each parameter</li>
+<li>Water sample bottles must be used for water samples only; never reuse bottles that have held concentrated reagents</li>
+<li>Before field use, all preservatives must be tested and glassware spot-tested for cleanliness</li>
+<li>The sample collector should keep hands clean and refrain from smoking while handling samples</li>
+<li>Petroleum products (gasoline, oil, exhaust fumes) are prime sources of contamination; remove spills immediately</li>
+<li>Exhaust fumes and cigarette smoke can contaminate samples with lead and other heavy metals</li>
+<li>Air conditioning units are also a source of trace metal contamination</li>
+<li>Solvent-rinsed Teflon or aluminum foil liners can prevent contamination from bottle caps for samples analyzed for organic compounds</li>
+<li>Filter units must be kept clean (acid-washed, soaked in special solutions) and wrapped in solvent-rinsed aluminum foil</li>
+<li>Sterilized bottles must remain sterile until sample collection; discard if the seal has been broken</li>
+<li>All foreign and especially metal objects must be kept away from acids and water samples</li>
+<li>Specific conductance should never be measured on water first used for pH measurements (KCl from the pH probe alters conductivity)</li>
+</ul>
+</section>
+<section id="procedures" class="level2">
+<h2 class="anchored" data-anchor-id="procedures">8. Procedures</h2>
+<section id="preparation" class="level3">
+<h3 class="anchored" data-anchor-id="preparation">8.1 Preparation</h3>
+<p>Before sampling, the field investigator must:</p>
+<ol type="1">
+<li>Ensure sampling station locations and frequency are defined in the project design</li>
+<li>Prepare accurate station location descriptions on the first visit to each site and follow them consistently on subsequent visits (temporal changes in water quality can only be interpreted with confidence if the same location is sampled each time)</li>
+<li>Determine the hydrology and morphometrics (volume, depth, etc.) of the water body prior to sampling to identify phases, layers, flow patterns, and appropriate sample locations and depths</li>
+<li>In impoundments, collect water quality profiles (dissolved oxygen, pH, temperature, conductivity, and ORP) at 1-meter intervals from substrate to surface to identify stratification</li>
+</ol>
+<p>The selection of a sampling device depends on:</p>
+<ul>
+<li>Whether the sample will be collected from shore or from a boat</li>
+<li>The desired sampling depth</li>
+<li>The overall depth and flow direction of the water body</li>
+<li>The chemical nature of the analytes (floating vs.&nbsp;dissolved)</li>
+</ul>
+</section>
+<section id="field-collection-direct-method" class="level3">
+<h3 class="anchored" data-anchor-id="field-collection-direct-method">8.2 Field Collection – Direct Method</h3>
+<ol type="1">
+<li>Remove the stopper or lid from the container just before sampling</li>
+<li>Avoid contaminating the cap, neck, or inside of the bottle with fingers, wind-blown particles, or dripping water</li>
+<li><strong>If no preservative is present in the container:</strong> face upstream in flowing water and upwind in still water, hold the container near its base, reach out in front of your body, and plunge it mouth-down below the surface to approximately mid-water column</li>
+<li>If the water is too shallow for this technique (risk of disturbing sediment), collect a surface water sample and note the change of method in the field notebook</li>
+<li>Fill the bottle to the appropriate level for the analyte being tested</li>
+<li>Pour out a small volume to create headspace for mixing in the lab, except for volatile organics and alkalinity samples (no headspace)</li>
+</ol>
+</section>
+<section id="field-collection-extension-pole" class="level3">
+<h3 class="anchored" data-anchor-id="field-collection-extension-pole">8.3 Field Collection – Extension Pole</h3>
+<ol type="1">
+<li>Securely attach the sample container (with lid in place) to the pole holder using clamps or bands</li>
+<li>Remove the container lid carefully to avoid contamination</li>
+<li>Follow the direct method procedure above</li>
+<li>Do not use this method for containers with preservative already present; use intermediate devices instead (Section 8.4)</li>
+</ol>
+</section>
+<section id="field-collection-pre-preserved-containers" class="level3">
+<h3 class="anchored" data-anchor-id="field-collection-pre-preserved-containers">8.4 Field Collection – Pre-Preserved Containers</h3>
+<ol type="1">
+<li>Hold the container upright</li>
+<li>Place the lid over the mouth so that only a small area forms an opening</li>
+<li>Submerge and fill carefully to avoid loss of preservative</li>
+</ol>
+</section>
+<section id="field-collection-intermediate-devices" class="level3">
+<h3 class="anchored" data-anchor-id="field-collection-intermediate-devices">8.5 Field Collection – Intermediate Devices</h3>
+<p>For samples collected using Van Dorn, Kemmerer, bailers, or peristaltic pumps, follow the specific device operating instructions. Transfer collected water to the appropriate labeled sample containers promptly.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Periodic “sampler blanks” consisting of ultrapure distilled water poured into or passed through the sampler should be prepared and submitted for laboratory analysis to verify sampler cleanliness.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-preservation" class="level2">
+<h2 class="anchored" data-anchor-id="sec-preservation">9. Sample Preservation, Handling, and Storage</h2>
+<p>Once samples have been collected:</p>
+<ol type="1">
+<li>Transfer the sample(s) into suitable labeled sample containers</li>
+<li>Preserve the sample if appropriate, or verify that pre-preserved bottles were used</li>
+<li>Record all pertinent data in the site logbook and on a field data sheet</li>
+<li>Complete the chain of custody form</li>
+<li>Attach custody seals to the cooler prior to shipment</li>
+<li>Decontaminate all sampling equipment before collecting additional samples</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Samples must never be permitted to stand in the sun. Store samples on ice in coolers immediately after collection and ship to the laboratory without delay.</p>
+</div>
+</div>
+</section>
+<section id="quality-control-and-quality-assurance" class="level2">
+<h2 class="anchored" data-anchor-id="quality-control-and-quality-assurance">10. Quality Control and Quality Assurance</h2>
+<section id="bottle-blanks" class="level3">
+<h3 class="anchored" data-anchor-id="bottle-blanks">Bottle Blanks</h3>
+<p>Prior to each field sampling trip, select one sample bottle per ten of each type being used, fill with ultrapure distilled water, preserve in the same manner as field samples, and submit with field samples for analysis as “bottle blanks.” This detects contamination from the bottle washing process.</p>
+</section>
+<section id="field-measurement-sub-samples" class="level3">
+<h3 class="anchored" data-anchor-id="field-measurement-sub-samples">Field Measurement Sub-Samples</h3>
+<p>Field measurements (pH, conductivity, temperature, DO) should always be made on a separate sub-sample, which is then discarded. Never make field measurements on the same water sample that will be returned to the laboratory for chemical analysis.</p>
+</section>
+<section id="general-precautions" class="level3">
+<h3 class="anchored" data-anchor-id="general-precautions">General Precautions</h3>
+<ul>
+<li>On the occasion that any procedure in this SOP is inappropriate, inadequate, or impractical and a variant procedure must be used, document the variant procedure and the circumstances requiring its use in the field logbook</li>
+<li>Vehicle cleanliness is important for eliminating contamination; inspect and clean vehicles before transporting samples</li>
+</ul>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">11. References</h2>
+<ul>
+<li>APHA, AWWA, WEF. (2012). <em>Standard Methods for Examination of Water and Wastewater</em>. 22nd ed.&nbsp;American Public Health Association (Eds.). Washington. 1360 pp.</li>
+<li>California State Water Resources Control Board. Surface Water Ambient Monitoring Program (SWAMP) protocols. Available at: https://www.waterboards.ca.gov/water_issues/programs/swamp/</li>
+</ul>
+</section>
+<section id="training-record" class="level2">
+<h2 class="anchored" data-anchor-id="training-record">12. Training Record</h2>
+<p>Before collecting surface water samples independently, personnel must:</p>
+<ol type="1">
+<li>Read this SOP in full</li>
+<li>Complete SOP-F01 (Field Safety) training</li>
+<li>Demonstrate familiarity with sampling equipment and bottle types</li>
+<li>Participate in a supervised field sampling event</li>
+<li>Demonstrate proper sample handling, preservation, and chain of custody procedures</li>
+<li>Be signed off by the field lead or PI</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/marclos\.github\.io\/SOPs\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/marclos/SOPs/edit/main/field_sops/SOP-F21-surface-water-sampling.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marclos/SOPs/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

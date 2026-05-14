@@ -51,17 +51,17 @@ website:
       - section: "Field SOPs"
         contents:
           - field_sops/SOP-F01-field-safety.qmd
-          - field_sops/SOP-F20-eureka-manta2.qmd
           - field_sops/SOP-F21-surface-water-sampling.qmd
+          - field_sops/SOP-F22-eureka-manta2.qmd
           - field_sops/SOP-F40-soil-sampling.qmd
       - section: "Lab SOPs"
         contents:
           - lab_sops/SOP-L02-hazardous-materials-handling.qmd
-          - lab_sops/SOP-L40-soil-moisture.qmd
-          - lab_sops/SOP-L41-nitrate-ammonium-kcl.qmd
-          - lab_sops/SOP-L42-solvita-co2-burst.qmd
-          - lab_sops/SOP-L43-microbial-biomass-carbon.qmd
-          - lab_sops/SOP-L44-loss-on-ignition.qmd
+          - lab_sops/SOP-L41-soil-moisture.qmd
+          - lab_sops/SOP-L42-nitrate-ammonium-kcl.qmd
+          - lab_sops/SOP-L45-solvita-co2-burst.qmd
+          - lab_sops/SOP-L48-microbial-biomass-carbon.qmd
+          - lab_sops/SOP-L43-loss-on-ignition.qmd
           - lab_sops/SOP-L60-shimadzu-toc-l.qmd
 
 format:
