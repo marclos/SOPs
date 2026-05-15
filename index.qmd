@@ -19,18 +19,14 @@ number-sections: false
 
 | Range       | Category                        |
 |:------------|:--------------------------------|
-| F01--F19    | General field safety and admin  |
-| F20--F39    | Water / aquatic field methods   |
-| F40--F59    | Soil field methods              |
-| F60--F79    | Air / atmospheric field methods |
-| F80--F99    | Plant / vegetation field methods|
-| F100--F119  | Animal / wildlife field methods |
-| L01--L19    | General lab safety, equipment, and admin |
-| L20--L39    | Water / aquatic lab analysis    |
-| L40--L59    | Soil and carbon lab analysis    |
-| L60--L79    | Instrumentation                 |
-| L80--L99    | Molecular biology and DNA       |
-
+| 01--09      | General safety and admin        |
+| 10--19      | Equipment                       |
+| 20--39      | Instrumentation                 |
+| 40--59      | Water / aquatic methods        |
+| 60--79      | Soil methods              |
+| 80--89      | Air / atmospheric methods       |
+| 80--99      | Microbes, Plants, and Animals methods|
+| L80--L89    | Molecular Biology and DNA       |
 
 ## Field SOPs
 
@@ -44,14 +40,19 @@ number-sections: false
 | F04   | *Electrical Power in the Field* | 0.2 | Needs conversion |
 | F05   | *Random Sampling Design* | 1.0 | Needs conversion |
 
+### Equipment (F10--F19)
 
-
-### Water (F20--F39)
+### Instrumentation (F20--F39)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| [F20](field_sops/SOP-F22-eureka-manta2.qmd) | Eureka Manta2 Multiprobe | 0.7 |
-| [F21](field_sops/SOP-F21-surface-water-sampling.qmd) | Surface Water Sampling | 0.9 |
+| [F22](field_sops/SOP-F22-eureka-manta2.qmd) | Eureka Manta2 Multiprobe | 0.7 |
+
+### Water / Aquatic Systems (F40--F59)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F41](field_sops/SOP-F41-surface-water-sampling.qmd) | Surface Water Sampling | 0.9 |
 | F22   | *TBD -- Groundwater Sampling* | -- |
 | F23   | *TBD -- Stormwater Sampling* | -- |
 | F24   | *TBD -- Stream Discharge Measurement* | -- |
@@ -59,7 +60,7 @@ number-sections: false
 | F23   | *Stream Physical Habitat Analysis* | 0.1 | Needs conversion |
 | F24   | *Stormwater Sampling* | -- | TBD |
 
-### Soil (F40--F59)
+### Soil Physical Characteristics and Processes (F60--F79)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
@@ -106,35 +107,56 @@ number-sections: false
 |:------|:-------------------------------|:-------------|
 | [L01](lab_sops/SOP-L01-laboratory-safety.qmd)   | Laboratory Safety | 1.04 |
 | [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
+| L03   | *TBD -- Chemical Inventory Management* | -- |
 | [L05](lab_sops/SOP-L05-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 |
 | L06   | *Quality Control and Quality Assurance* | 1.0 | Needs conversion |
-| L07   | *TBD -- Glassware Cleaning and Preparation* | -- |
-| L08   | *TBD -- Chemical Inventory Management* | -- |
 
 
 ### Laboratory Equipment (L10--L19)
 
 | SOP   | Title                          | Rev.  | Status |
 |:------|:-------------------------------|:------|:-------|
-| L10   | *Using Balances* | 0.2 | Needs conversion |
-| L11   | *Micropipettes* | 0.3 | Needs conversion |
-| L12   | *Using a Vortex Mixer* | 0.1 | Needs conversion |
-| L13   | *Laboratory Glassware* | 0.1 | Needs conversion |
-| L14   | *Milli-Q Water System* | 0.2 | Needs conversion |
-| L15   | *Hot Plates and Dry Bath* | 0.1 | Needs conversion |
+| L11   | *Milli-Q Water System* | 0.2 | Needs conversion |
+| L12   | *TBD -- Glassware Cleaning and Preparation* | 0.1 | Needs conversion |
+| L13   | *Using Balances* | 0.2 | Needs conversion |
+| L14   | *Micropipettes* | 0.3 | Needs conversion |
+| L15   | *Using a Vortex Mixer* | 0.1 | Needs conversion |
 | [L16](lab_sops/SOP-L16-drying-ovens.qmd)   | Drying Ovens | 0.1 | Needs conversion |
-| [L17](lab_sops/SOP-L17-refrigerators-freezers.qmd)   | Refrigerators and Freezers | 0.1 | Converted |
+| [L17](lab_sops/SOP-L17-refrigerators-freezers.qmd)   | Refrigerators and Freezers | 0.1 | Converted | 
+| L18   | *Hot Plates and Dry Bath* | 0.1 | Needs conversion |
 
-### Water Analysis (L20--L39)
+### Instrumentation (L20--L39)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| [L20](lab_sops/SOP-L20-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
-| L21   | *TBD -- Alkalinity Titration* | -- |
-| L22   | *TBD -- Turbidity Measurement* | -- |
-| [L25](lab_sops/SOP-L25-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
-| L26   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
-| [L29](lab_sops/SOP-L29-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
+
+| [L21](lab_sops/SOP-L21-analytical-balance-calibration.qmd)   | Analytical Balance Calibration | 1.0 | TBD |
+| L22   | *TBD -- Spectrophotometer Operation* | -- |
+| L23   | *Accumet pH Meter* | 0.4 | Needs conversion |
+| L25   | *Clinical Centrifuge* | 0.1 | Needs conversion |
+| L26   | *Microcentrifuge (MySpin 12)* | 0.1 | Needs conversion |
+| L27   | *Sorvall ST8R Centrifuge* | 0.1 | Needs conversion |
+| L28   | *TBD -- Ion Chromatograph Operation* | -- |
+| [L29](lab_sops/SOP-L89-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
+| L30   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
+| L31   | *ICP-MS* | 0.1 | Needs conversion |
+| L32   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
+| L33   | *IRMS -- Becoming a User* | 0.2 | Needs conversion |
+| L34   | *IRMS -- Flash EA Operation* | 0.2 | Needs conversion |
+| L35   | *IRMS -- Post-Analysis Correction* | 0.1 | Needs conversion |
+| L36   | *Picarro GHG Analyzer (Lab Configuration)* | 1.0 | Needs conversion |
+| L37   | *Radiometric Dating* | 0.1 | Needs conversion |
+
+### Water Analysis (L50--L59)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L40](lab_sops/SOP-L20-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
+| L41   | *TBD -- Alkalinity Titration* | -- |
+| L42   | *TBD -- Turbidity Measurement* | -- |
+| [L45](lab_sops/SOP-L25-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
+| L46   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
+| [L49](lab_sops/SOP-L29-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
 | L30   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
 | L31   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
 | L32   | *Microplastics in Water* | 0.2 | Needs conversion |
@@ -168,27 +190,7 @@ number-sections: false
 | [L61](lab_sops/SOP-L61-ddpcr-nitrogen-cycle-primers.qmd) | Primer Selection and Design for Nitrogen Cycle Genes | 0.1 |
 | [L62](lab_sops/SOP-L62-ddpcr-data-analysis.qmd) | ddPCR Data Export and Analysis | 0.1 |
 
-### Equipment and Instrumentation (L80--L99)
 
-| SOP   | Title                          | Current Rev. |
-|:------|:-------------------------------|:-------------|
-| L80   | *TBD -- RO Water* | -- | TBD |
-| [L81](lab_sops/SOP-L81-analytical-balance-calibration.qmd)   | Analytical Balance Calibration | 1.0 | TBD |
-| L82   | *TBD -- Spectrophotometer Operation* | -- |
-| L83   | *Accumet pH Meter* | 0.4 | Needs conversion |
-| L85   | *Clinical Centrifuge* | 0.1 | Needs conversion |
-| L86   | *Microcentrifuge (MySpin 12)* | 0.1 | Needs conversion |
-| L87   | *Sorvall ST8R Centrifuge* | 0.1 | Needs conversion |
-| L88   | *TBD -- Ion Chromatograph Operation* | -- |
-| [L89](lab_sops/SOP-L89-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
-| L90   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
-| L91   | *ICP-MS* | 0.1 | Needs conversion |
-| L92   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
-| L93   | *IRMS -- Becoming a User* | 0.2 | Needs conversion |
-| L94   | *IRMS -- Flash EA Operation* | 0.2 | Needs conversion |
-| L95   | *IRMS -- Post-Analysis Correction* | 0.1 | Needs conversion |
-| L96   | *Picarro GHG Analyzer (Lab Configuration)* | 1.0 | Needs conversion |
-| L97   | *Radiometric Dating* | 0.1 | Needs conversion |
 
 
 ::: {.callout-note}
