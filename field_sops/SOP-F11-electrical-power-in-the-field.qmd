@@ -1,0 +1,213 @@
+---
+title: "Electrical Power in the Field"
+sop-number: "SOP-F11"
+author:
+  - name: "Kay Sterner"
+    affiliation: "EA Program, Pomona College"
+  - name: "Katheryn Kornegay"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.2"
+
+revision-history:
+  - version: "0.2"
+    date: "2016-12-01"
+    author: "Kay Sterner & Katheryn Kornegay"
+    changes: "Initial LaTeX version"
+---
+
+## 1. Purpose
+
+Electrical power in the field can come from infrastructure sources (such
+as outdoor or indoor outlets), portable generators, or solar power. This
+SOP outlines the risks associated with using electricity in the field
+and develops strategies to mitigate those risks.
+
+
+## 2. Scope
+
+- **Applies to:** Use of portable generators (Honda EU2000i and Ryobi
+  RYi2200A) and extension cords for powering field equipment
+- **Does not apply to:** Permanent electrical installations or solar
+  panel systems (to be covered in a future SOP)
+- **Location:** All EA Program field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                         |
+|:------------------|:-------------------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance                |
+| Trained Personnel | Follow this SOP, perform generator maintenance         |
+| New Students      | Read and understand this SOP before operating generators; complete [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) training |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Carbon monoxide:** Engines emit carbon monoxide. Never use a
+  generator inside an enclosed area (home, garage, crawl space). Fatal
+  fumes can build up even with a fan or open doors and windows. Only
+  operate generators outdoors, away from open windows, vents, or doors.
+- **Fire and explosion:** Gasoline and its vapors are extremely
+  flammable. Allow the engine to cool at least 2 minutes before
+  refueling. Always use fresh gasoline. Never operate the generator near
+  combustible materials.
+- **Electrical shock:** Generators produce powerful voltage. Never
+  operate under wet conditions and take precautions to protect the
+  generator from rain and snow.
+- **Electrocution / home wiring:** Never plug a generator directly into
+  a home outlet. A qualified electrician must install a Power Transfer
+  Switch for any home connection.
+- **Heat from cables:** Ensure cables are rated for the current being
+  carried. Never leave cables coiled, as coiled cords can generate
+  excessive heat.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes
+- [ ] Work gloves (when handling hot engine components or refueling)
+- [ ] Hearing protection (if operating near the generator for extended
+      periods)
+
+### Emergency Procedures
+
+Use a battery-powered carbon monoxide detector in the area where you
+are running a generator. If the alarm sounds, move to fresh air
+immediately and shut down the generator. Refer to
+[SOP-F01 Field Safety](SOP-F01-field-safety.qmd) for general field
+emergency procedures.
+
+
+## 5. Equipment and Materials
+
+| Item                                | Notes                                    |
+|:------------------------------------|:-----------------------------------------|
+| Honda EU2000i generator             | Portable inverter generator              |
+| Ryobi RYi2200A generator           | Portable inverter generator              |
+| High-capacity extension cords      | Must be grounded type, rated for the application |
+| Spare gas container                | Filled with ethanol-free gasoline        |
+| Synthetic 10W-30 engine oil        | Recommended oil type for both generators |
+| Funnel                             | For adding oil                           |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Start Checks
+
+1. **Check oil level.** If low, use a funnel to add synthetic 10W-30
+   oil. This does not need to be done every time; check every few weeks.
+   If the generator shuts off after running for about 30 minutes, low
+   oil is the likely cause.
+
+2. **Check gas level.** If low, add ethanol-free gas from the spare
+   container. On the Ryobi, fill to about an inch below the top of the
+   tank. Both generators can be refilled while running. The Ryobi should
+   be refilled after about 4 hours of operation; the Honda after about
+   6 hours.
+
+### 6.2 Starting the Honda EU2000i
+
+1. Turn the fuel tank cap vent (black cap on top of the generator) to
+   the ON position. If this is not done, the generator will shut off
+   after a few minutes.
+2. Make sure the eco-throttle switch (on the side panel, below the fuel
+   cap vent) is OFF.
+3. For a cold start, move the choke (upper left front, near the engine
+   switch) to the CLOSED position (slide the switch to the right).
+4. Turn the engine switch to ON.
+5. Pull the starter grip quickly several times until the engine starts.
+6. Allow the engine a few minutes to warm up, then slowly move the choke
+   to the OPEN position.
+7. **To shut down:** Turn the engine switch to OFF. After the engine has
+   cooled, turn the fuel tank cap vent to OFF.
+
+### 6.3 Starting the Ryobi RYi2200A
+
+1. Make sure the auto idle switch is OFF.
+2. Move the choke to approximately halfway across. The marked cold-start
+   position is slightly less than halfway, but the choke needs to go a
+   bit further; you should feel a slight resistance at the correct
+   position.
+3. Prime the system by slowly pulling the starter grip several times.
+4. Pull the grip quickly until the engine runs.
+5. Allow the engine to run for 15--30 seconds, then move the choke all
+   the way across to the RUN position.
+6. **To shut down:** Switch the choke back to the OFF position.
+
+### 6.4 Storage
+
+If you do not plan to use the generator within 30 days, add fuel
+stabilizer to the gas and drain the carburetor.
+
+### 6.5 Extension Cord Safety
+
+- Use only grounded extension cords rated for the intended application.
+- Always uncoil cords completely and lay them flat in open locations;
+  coiled cords can generate excessive heat.
+
+
+## 7. Maintenance
+
+### General (Both Units)
+
+Keep generators in a clean, dry environment, not exposed to dust, dirt,
+moisture, or corrosive vapors. To clean, use a soft-bristle brush and/or
+vacuum cleaner to loosen and remove dirt and debris. Clean air vents
+with air pressure no more than 25 psi. Wipe exterior surfaces with a
+damp cloth. Perform maintenance more frequently when the generator is
+used in dusty areas. If you notice a power loss, the exhaust port and
+muffler may be blocked with carbon deposits; allow only qualified
+service technicians to clean these.
+
+### Ryobi RYi2200A Maintenance Schedule
+
+| Item              | Frequency                              | Notes |
+|:------------------|:---------------------------------------|:------|
+| Air filter        | Check before each use; clean every 3 months or 50 hours; replace every year or 300 hours | Wash with soapy water, rinse, squeeze dry |
+| Engine lubricant  | Check before each use; change after first 20 hours, then every 6 months or 100 hours | Drain while warm for faster flow |
+| Spark plug        | Check every 6 months or 100 hours; replace every year or 300 hours | Gap: 0.024--0.028 in (0.60--0.70 mm) |
+| Spark arrestor    | Clean periodically                     | Wire brush; inspect screen for damage |
+| Fuel tank / carburetor | Check fuel hose before each use; inspect fuel filter before each use; have tank and filter cleaned by qualified service center every 6 months or 100 hours | Drain both before storage to prevent gum deposits |
+| Valve clearance   | Check every year or 300 hours          | Service by qualified technician |
+
+### Honda EU2000i Maintenance Schedule
+
+| Item              | Frequency                              | Notes |
+|:------------------|:---------------------------------------|:------|
+| Air filter        | Check before each use; clean every 3 months or 50 hours | Wash in detergent and warm water or non-flammable solvent; soak in clean engine oil and squeeze excess before reinstalling |
+| Engine lubricant  | Check before each use; change after first 20 hours, then every 6 months or 100 hours | Fill to upper limit of oil filler neck |
+| Spark plug        | Check every 6 months or 100 hours; replace every year or 200 hours | Gap: 0.024--0.028 in (0.60--0.70 mm); new plug: tighten 1/2 turn after seating; used plug: tighten 1/8--1/4 turn |
+| Spark arrestor    | Clean every 6 months or 100 hours      | Wire brush; inspect screen for damage |
+| Fuel tank / combustion chamber | Clean fuel tank and filter every 6 months or 100 hours; clean combustion chamber every 300 hours; check fuel line every 2 years | Service by authorized Honda dealer |
+| Valve clearance   | Check every year or 200 hours          | Service by qualified technician |
+
+
+## 8. Quality Control
+
+*TBD -- establish routine checks to verify generator output voltage and
+frequency are within acceptable ranges for field instruments.*
+
+
+## 9. References
+
+Honda Motor Co. *Honda EU2000i Owner's Manual.* Available online.
+
+Ryobi. *Ryobi RYi2200A Operator's Manual.* Available online.
+
+
+## 10. Training Record
+
+Before operating generators independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) training
+3. Review the manufacturer's operating instructions for the generator
+   being used
+4. Observe a trained operator start, run, and shut down the generator
+5. Perform the startup and shutdown procedure under supervision
+6. Be signed off by the PI or designated trainer

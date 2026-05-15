@@ -1,0 +1,393 @@
+---
+title: "Pygmy and Type AA Velocity Meters"
+sop-number: "SOP-F23"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the specifications, assembly, maintenance, and
+ordering of replacement parts for the Price Pygmy and Price Type AA
+mechanical current meters used by the EA Program. These vertical-axis
+cup-type meters convert water velocity into rotational counts and are
+the standard instruments for measuring point velocities during stream
+discharge measurements (see
+[SOP-F42 Stream Discharge Measurement](SOP-F42-stream-discharge-measurement.qmd)).
+
+
+## 2. Scope
+
+- **Applies to:** Price Pygmy current meters and Price Type AA current
+  meters owned by the EA Program, including standard cat-whisker and
+  magnetic-head contact chamber variants
+- **Does not apply to:** Electronic velocity meters (e.g.,
+  Marsh-McBirney, FlowTracker ADV), propeller-type meters (e.g., Ott),
+  or acoustic Doppler instruments
+- **Location:** Instruments are stored in the EA field equipment room;
+  maintenance is performed in SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                         |
+|:------------------|:-------------------------------------------------------|
+| Lab PI            | Approve purchases, authorize meter retirement          |
+| Field Lead        | Perform pre-field spin tests, coordinate maintenance   |
+| Trained Personnel | Assemble, inspect, and clean meters per this SOP       |
+| New Students      | Complete training before handling meters                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Pivot points and shaft tips are sharp; handle with care.
+  The bucket wheel can pinch fingers if spun while adjusting the
+  assembly.
+- **Chemical:** Instrument oil is a mild skin irritant. Avoid eye
+  contact.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves (when oiling or cleaning with solvents)
+- [ ] Safety glasses (when using compressed air for cleaning)
+
+
+## 5. Instrument Specifications
+
+### 5.1 Price Type AA Current Meter
+
+The Type AA is the standard USGS Price-type current meter for general
+streamflow measurement. The bucket wheel has six conical cups, is
+5 inches (12.7 cm) in diameter, and rotates on a vertical axis inside
+a brass yoke. Tungsten carbide bearings are seated in deeply recessed
+inverted cups that trap air and exclude water and silt from the bearing
+surfaces. A tailpiece assembly keeps the meter aligned with the current
+when suspended by cable.
+
+| Parameter              | Value                                      |
+|:-----------------------|:-------------------------------------------|
+| Velocity range         | 0.1--25 ft/s (0.03--7.6 m/s)              |
+| Bucket wheel diameter  | 5 in (12.7 cm)                             |
+| Number of cups         | 6                                          |
+| Contact types          | Single revolution and penta (every 5 rev)  |
+| Suspension             | Wading rod or cable with sounding weight   |
+| Construction           | Brass and stainless steel, chrome plated   |
+| Rating                 | USGS standard rating table (two equations joined at 1 rev/s = 2.2 ft/s) |
+
+### 5.2 Price Pygmy Current Meter
+
+The Pygmy meter is scaled to two-fifths the size of the Type AA and is
+designed for shallow streams where a full-size meter would occupy too
+much of the flow depth. The contact chamber is integral to the yoke and
+provides a single-revolution contact only (no penta gear). The meter
+has no tailpiece and cannot be used with cable suspension.
+
+| Parameter              | Value                                      |
+|:-----------------------|:-------------------------------------------|
+| Velocity range         | 0.1--4.9 ft/s (0.03--1.5 m/s)             |
+| Bucket wheel diameter  | 2 in (5.1 cm)                              |
+| Number of cups         | 6                                          |
+| Contact type           | Single revolution only                     |
+| Suspension             | Wading rod only (no cable suspension)      |
+| Construction           | Brass and stainless steel, chrome plated   |
+| Rating                 | USGS standard rating table (single equation) |
+
+### 5.3 Choosing Between Meters
+
+| Condition                                  | Meter to Use |
+|:-------------------------------------------|:-------------|
+| Water depth > 1.0 ft (0.3 m)              | Type AA      |
+| Water depth $\leq$ 1.0 ft (0.3 m)         | Pygmy        |
+| Velocities expected > 4.9 ft/s            | Type AA      |
+| Shallow stream edges (supplemental data)   | Pygmy        |
+| Cable suspension required                  | Type AA      |
+
+
+## 6. Equipment and Accessories
+
+### 6.1 Meter Components and Accessories
+
+| Item                              | Used With      | Notes                          |
+|:----------------------------------|:---------------|:-------------------------------|
+| Top-setting wading rod            | Both           | Graduated in tenths of a foot; depth-setting mechanism on handle |
+| Round wading rod                  | Both           | Simpler design; depth read from rod markings |
+| Headset (earpiece)                | Both           | For counting clicks manually   |
+| AquaCalc or digital flow computer | Both           | Automatically counts revolutions and computes velocity |
+| Stopwatch                         | Both           | For timed revolution counts if no digital counter |
+| Sounding weight (Columbus type)   | Type AA only   | For cable-suspended measurements |
+| Tailpiece assembly                | Type AA only   | Remove when using wading rod   |
+| Electrical cable                  | Both           | Connects meter to counter or headset |
+
+### 6.2 Maintenance Supplies
+
+| Item                              | Notes                                    |
+|:----------------------------------|:-----------------------------------------|
+| Instrument oil (light machine oil)| Supplied with meter; for pivot bearings   |
+| Lint-free cloth                   | For cleaning and drying                  |
+| Cotton swabs (pointed)            | For cleaning pivot bearing recesses      |
+| Small flat-head screwdriver       | For contact chamber adjustments          |
+| Magnifying glass or loupe         | For inspecting pivot points for burrs    |
+| Paper clip                        | For checking pivot magnetization         |
+| Bulk magnetic tape eraser         | For demagnetizing pivots                 |
+| Soft-bristle brush                | For removing debris from cups            |
+| Compressed air (filtered)         | For drying internal components           |
+
+
+## 7. Procedure
+
+### 7.1 Assembly
+
+**Type AA on a wading rod:**
+
+1. Remove the tailpiece assembly (it is only used for cable suspension)
+2. Slide the meter yoke onto the wading rod and secure with the
+   thumbscrew
+3. Connect the electrical cable from the binding posts on the contact
+   chamber to the counter (AquaCalc) or headset
+4. If using the penta contact (every 5 revolutions), connect the cable
+   to the penta binding post; for single-revolution counting, use the
+   single-revolution binding post
+
+**Pygmy on a wading rod:**
+
+1. Slide the pygmy yoke directly onto the wading rod and secure with
+   the thumbscrew
+2. Connect the electrical cable from the binding post to the counter or
+   headset. The pygmy has only a single-revolution contact.
+
+### 7.2 Pre-Field Spin Test
+
+Perform a spin test before every field outing to verify the meter is
+functioning properly. Conduct the test with the meter level, the shaft
+vertical, and in a location with no air currents.
+
+::: {.callout-important}
+Always spin the bucket wheel counterclockwise as viewed from above.
+Never spin in the opposite direction -- this can damage the contact
+wires and produce inaccurate readings.
+:::
+
+1. Hold the meter with the shaft vertical and level (do not set the
+   Type AA on its tail fins, as this does not produce a level position)
+2. Spin the bucket wheel briskly counterclockwise
+3. Time how long the wheel continues to spin freely
+
+| Meter   | Minimum Spin Time | Optimum Spin Time |
+|:--------|:------------------|:------------------|
+| Type AA | 2 minutes 00 seconds | 3 minutes 30 seconds or more |
+| Pygmy   | 1 minute 00 seconds  | 1 minute 30 seconds or more  |
+
+4. If the spin time falls below the minimum, clean and oil the meter
+   (see Section 8) and retest
+5. Record spin test results on the field data sheet
+
+### 7.3 Post-Field Cleaning
+
+1. Rinse the entire meter thoroughly with clean fresh water immediately
+   after use
+2. Gently shake excess water from the bucket wheel and yoke
+3. Dry all surfaces with a lint-free cloth
+4. Apply a small drop of instrument oil to the pivot bearing and the
+   upper shaft bearing
+5. Store the meter in its carrying case with the raising nut loosened so
+   the bucket wheel rests on the pivot without spring tension
+
+
+## 8. Maintenance
+
+### 8.1 Routine Maintenance (After Every 5--10 Uses)
+
+1. **Clean the pivot bearing.** Remove the bucket wheel assembly by
+   loosening the raising nut and lifting the assembly off the pivot.
+   Clean the inside of the pivot bearing with a pointed cotton swab.
+   A clean bearing will have a visible shine.
+
+2. **Inspect the pivot point.** Examine the pivot under a magnifying
+   glass for burrs, rounding, or damage. A pivot with burrs will
+   produce inaccurate readings. Replace the pivot if the tip is rounded
+   or burred.
+
+3. **Check for magnetization.** Touch the pivot to a paper clip. If the
+   pivot lifts the paper clip, it has become magnetized. Demagnetize
+   using a bulk magnetic tape eraser.
+
+4. **Oil the bearings.** Apply one small drop of instrument oil to the
+   upper shaft bearing and one drop to the pivot. Do not over-oil --
+   excess oil attracts grit.
+
+5. **Inspect the bucket wheel.** Spin the wheel slowly and watch for
+   wobble in the frame or hub. If the upper portion of the hub wobbles
+   more than the lower portion, the shaft is bent and must be replaced.
+
+6. **Inspect the contact chamber.** For cat-whisker contacts, check
+   that the wire makes clean contact with the solder bead on each
+   revolution. For magnetic-head contacts, verify the counter registers
+   properly during the spin test.
+
+::: {.callout-warning}
+### Raising Nut Caution
+Never loosen the raising nut by holding the nut and spinning the bucket
+wheel. This will bend the shaft. Always hold the bucket wheel still and
+unscrew the nut.
+:::
+
+### 8.2 Annual Maintenance
+
+1. Disassemble the meter completely: remove bucket wheel, shaft, and
+   pivot
+2. Clean all parts with a lint-free cloth dampened with instrument oil
+3. Inspect the shaft for straightness by rolling on a flat surface
+4. Replace worn or damaged parts (see Section 9)
+5. Reassemble the meter and adjust the pivot per the manufacturer's
+   instructions
+6. Perform a spin test to verify performance
+7. Record maintenance date, parts replaced, and spin test results in
+   the instrument log
+
+### 8.3 Pivot Adjustment
+
+Correct pivot adjustment is critical for accurate readings:
+
+1. Hold the meter in an inverted position with the pivot pointing up
+2. Release the keeper screw for the pivot-adjusting nut and unscrew a
+   few turns
+3. Temporarily tighten the set screw and advance the pivot-adjusting
+   nut until it touches the yoke
+4. Set the pivot end play to approximately 0.001 in -- the shaft should
+   have just barely perceptible vertical play, detectable by feel with
+   a fingernail or against sensitive skin
+5. Tighten the keeper screw to lock the adjustment
+
+### 8.4 Storage
+
+- Store meters in their waterproof carrying cases
+- Loosen the raising nut to relieve pressure on the pivot
+- Ensure meters are clean and lightly oiled
+- Store in a dry location away from dust and vibration
+- If a meter will not be used for more than 3 months, remove the bucket
+  wheel assembly and store separately
+
+
+## 9. Ordering Parts and Supplies
+
+### 9.1 Supplier
+
+The primary supplier for USGS-type Price AA and Pygmy current meters
+and replacement parts in the United States is:
+
+**Performance Results Plus, Inc.**\
+Website: [prph2o.com](https://prph2o.com)\
+
+*TBD -- confirm current contact information and whether Geo Scientific
+(geoscientific.ca) is a preferred alternative supplier. Verify current
+pricing and lead times.*
+
+### 9.2 Replacement Parts to Stock
+
+Maintain the following spare parts inventory to avoid delays when a
+meter fails a spin test:
+
+| Part                              | Quantity to Stock | Fits          |
+|:----------------------------------|:------------------|:--------------|
+| Pivot (tungsten carbide tip)      | 2                 | Both          |
+| Shaft                             | 1 per meter type  | AA or Pygmy   |
+| Bucket wheel assembly             | 1 per meter type  | AA or Pygmy   |
+| Bucket wheel hub nut              | 2                 | Both          |
+| Raising nut                       | 1 per meter type  | AA or Pygmy   |
+| Cat-whisker wire and solder bead  | 2 sets            | AA            |
+| Instrument oil                    | 1 bottle          | Both          |
+| Pivot bearing                     | 2                 | Both          |
+
+::: {.callout-note}
+Parts for the Type AA and the BTA (bottom-tracking acoustic) meter are
+interchangeable except for the yoke and contact chamber. This means
+the lab does not need separate inventories of pivots, shafts, and hub
+assemblies for both meter types.
+:::
+
+### 9.3 Rating Tables
+
+Each meter ships with a USGS-approved standard rating table that
+converts bucket wheel revolutions per second to velocity in ft/s or
+m/s. Rating tables are also available for download from the supplier's
+website:
+
+- Type AA rating table:
+  [English](https://prph2o.com/usgs-type-aa-current-meter/) |
+  [Metric](https://prph2o.com/usgs-type-aa-current-meter/)
+- Pygmy rating table:
+  [English](https://prph2o.com/usgs-pygmy-current-meter/) |
+  [Metric](https://prph2o.com/usgs-pygmy-current-meter/)
+
+Keep a laminated copy of the appropriate rating table in each meter's
+carrying case and a digital copy on the lab shared drive.
+
+### 9.4 Meter Calibration Verification
+
+USGS studies have found that approximately 35% of Type AA meters and
+20% of Pygmy meters in routine field use fail to meet standard rating
+criteria, typically because of worn pivots, bent shafts, or damaged
+contacts. The spin test (Section 7.2) is the primary field check. If
+a meter consistently falls below the optimum spin time even after
+cleaning and oiling, it should be repaired or retired.
+
+*TBD -- determine whether the EA Program should establish a periodic
+recalibration schedule (e.g., sending meters to a USGS hydrologic
+instrumentation facility) or whether spin-test-based screening is
+sufficient.*
+
+
+## 10. Troubleshooting
+
+| Problem                            | Probable Cause                | Corrective Action |
+|:-----------------------------------|:------------------------------|:------------------|
+| Spin time below minimum            | Dirty or worn pivot; bent shaft; dry bearings | Clean pivot bearing; inspect pivot for burrs; oil bearings; replace pivot or shaft if damaged |
+| Counter not registering clicks     | Loose cable connection; worn cat-whisker wire; dead battery in digital counter | Check cable connections; inspect and replace contact wire; replace counter battery |
+| Bucket wheel wobbles during spin   | Bent shaft or bent bucket wheel frame | Replace shaft; if hub wobbles, replace bucket wheel assembly |
+| Meter reads high compared to known velocity | Magnetized pivot; pivot bearing worn oversize | Demagnetize pivot; replace pivot bearing |
+| Meter reads low compared to known velocity | Excessive friction; pivot burr; over-oiled bearings attracting grit | Clean and re-oil; replace pivot if burred |
+
+
+## 11. References
+
+- Rantz, S. E. et al. (1982). *Measurement and Computation of
+  Streamflow: Volume 1. Measurement of Stage and Discharge.* USGS
+  Water-Supply Paper 2175.
+  <https://pubs.usgs.gov/wsp/wsp2175/>
+- Smoot, G. F., and Novak, C. E. (1969). *Measurement of Discharge
+  by the Moving-Boat Method.* USGS Techniques of Water-Resources
+  Investigations, Book 3, Chapter A8.
+- U.S. Bureau of Reclamation. *Water Measurement Manual,* Chapter 10.
+  <https://www.usbr.gov/tsc/techreferences/mands/wmm/chap10_07.html>
+- USGS Office of Surface Water. *Maintenance of Price Type AA Current
+  Meters.*
+  <https://water.usgs.gov/osw/pubs/9906attachments.pdf>
+
+
+## 12. Training Record
+
+Before handling or using current meters independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) training
+3. Observe a trained operator assemble, spin-test, and clean both meter
+   types
+4. Successfully perform assembly and spin test under supervision
+5. Read the stream discharge measurement procedure in
+   [SOP-F42](SOP-F42-stream-discharge-measurement.qmd) before using
+   meters in the field
+6. Be signed off by the PI or designated trainer

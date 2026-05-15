@@ -1,0 +1,423 @@
+---
+title: "Stream Discharge Measurement -- Wadable Streams"
+sop-number: "SOP-F42"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the procedure for measuring stream discharge
+(volumetric flow rate) in wadable streams using the USGS midsection
+velocity-area method with Price Pygmy or Price Type AA mechanical
+current meters. Discharge data are fundamental to characterizing
+watershed hydrology, calculating pollutant loads, and supporting water
+quality assessments.
+
+
+## 2. Scope
+
+- **Applies to:** Wadable streams and channels where personnel can
+  safely stand in the flow to make measurements (generally depths
+  less than 3--4 ft and velocities less than approximately 4 ft/s)
+- **Does not apply to:** Non-wadable rivers requiring bridge, cableway,
+  or boat measurements; streams measured with acoustic Doppler
+  instruments; or flume and weir installations
+- **Location:** All EA Program stream monitoring sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                         |
+|:------------------|:-------------------------------------------------------|
+| Lab PI            | Approve measurement sites and protocols                |
+| Field Lead        | Select cross-section locations, verify equipment       |
+| Trained Personnel | Perform measurements and record data per this SOP      |
+| New Students      | Complete training before making independent measurements |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Drowning and swift water:** Do not wade in flows deeper than
+  approximately waist height or where you feel unstable. Use a wading
+  rod as a support. Always face upstream while wading.
+- **Slippery substrates:** Cobble, gravel, and algae-covered rocks are
+  extremely slippery. Wear felt-soled or studded wading boots.
+- **Hypothermia:** Prolonged immersion in cold water can cause
+  hypothermia. Wear insulated waders in cold conditions.
+- **Biological:** Waterborne pathogens may be present. Avoid swallowing
+  water. Wash hands and equipment after each site visit.
+:::
+
+### Required PPE
+
+- [ ] Chest or hip waders (neoprene or breathable)
+- [ ] Wading boots with felt or studded soles
+- [ ] Personal flotation device (PFD) if flow conditions are marginal
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Nitrile gloves (optional, for water quality sampling concurrent
+      with discharge)
+
+### Emergency Procedures
+
+If a team member loses footing, release the wading rod and equipment
+and focus on self-rescue by floating feet-first downstream. Never
+attempt a discharge measurement alone. A minimum of two people must be
+present at the stream. Refer to
+[SOP-F01 Field Safety](SOP-F01-field-safety.qmd) for general emergency
+procedures.
+
+
+## 5. Equipment and Materials
+
+| Item                              | Notes                                    |
+|:----------------------------------|:-----------------------------------------|
+| Price Pygmy or Type AA current meter | See [SOP-F23](SOP-F23-pygmy-type-aa-velocity-meters.qmd) for selection criteria |
+| Top-setting wading rod            | Graduated in tenths of a foot            |
+| AquaCalc digital flow computer or headset and stopwatch | For counting revolutions |
+| Measuring tape (50 m / 150 ft)    | Fiberglass; for establishing the tag line |
+| Tape stakes or rebar pins         | Two, for anchoring the tag line across the stream |
+| Mallet or hammer                  | For driving stakes                       |
+| Field data sheet (Appendix A)     | Printed on waterproof paper (e.g., Rite in the Rain) |
+| Clipboard and pencils             | Mechanical pencils recommended           |
+| Calculator                        | For checking discharge in the field      |
+| GPS unit or smartphone            | For recording cross-section coordinates  |
+| Thermometer                       | For recording water temperature          |
+| Camera                            | For photo-documenting the cross-section  |
+
+
+## 6. Estimated Time
+
+| Task                                 | Time Required              |
+|:-------------------------------------|:---------------------------|
+| Site selection and tag line setup     | 10--20 minutes             |
+| Spin test                            | 5 minutes                  |
+| Discharge measurement (20--30 verticals) | 30--60 minutes          |
+| Data recording and site breakdown    | 10--15 minutes             |
+
+
+## 7. Procedure
+
+### 7.1 Site Selection
+
+Select a measurement cross-section with as many of the following
+characteristics as possible:
+
+1. Straight channel reach for at least 3--5 channel widths upstream and
+   downstream
+2. Uniform flow -- no eddies, backwater, or dead zones
+3. Stable streambed (no excessive soft sediment or mobile cobbles)
+4. Flow is perpendicular to the tag line
+5. Avoid locations immediately downstream of bridges, confluences,
+   debris jams, or sharp bends
+6. Depth is sufficient to submerge the current meter cups but shallow
+   enough to wade safely
+
+::: {.callout-tip}
+### Tip
+Ideal cross-sections often have a trapezoidal shape with gradually
+varying depth. Avoid sections with abrupt depth changes, undercut
+banks, or large boulders that create turbulence.
+:::
+
+### 7.2 Establishing the Tag Line
+
+1. Stretch the measuring tape across the stream perpendicular to the
+   flow direction
+2. Anchor each end with a tape stake driven into the bank
+3. Pull the tape taut so it does not sag into the water
+4. Record the distance at the left water's edge (LEW) and the right
+   water's edge (REW), looking downstream. All subsequent station
+   distances are measured from the same reference bank (typically the
+   left bank, looking downstream).
+
+### 7.3 Determining Station Spacing
+
+Divide the wetted width into subsections (verticals). The goal is
+20--30 subsections for a natural channel. No single subsection should
+carry more than 5--10% of the total estimated discharge.
+
+| Wetted Width        | Recommended Station Spacing |
+|:--------------------|:----------------------------|
+| < 5 ft (1.5 m)     | 0.5 ft (0.15 m)            |
+| 5--15 ft (1.5--4.5 m) | 1.0 ft (0.3 m)          |
+| > 15 ft (4.5 m)    | Divide into 20--30 equal intervals |
+
+Space stations more closely where depth or velocity change rapidly
+(e.g., near the thalweg) and more widely in uniform, shallow areas
+near the banks.
+
+### 7.4 Assembling and Testing the Meter
+
+1. Mount the appropriate meter on the wading rod (see
+   [SOP-F23](SOP-F23-pygmy-type-aa-velocity-meters.qmd), Section 7.1)
+2. Connect the electrical cable to the AquaCalc or headset
+3. Perform a spin test (see
+   [SOP-F23](SOP-F23-pygmy-type-aa-velocity-meters.qmd), Section 7.2)
+   and record the result on the data sheet
+4. If using the AquaCalc, select the correct meter type (AA or Pygmy)
+   on the instrument
+
+### 7.5 Making the Measurement
+
+Work from one bank to the other. Starting at the first station inside
+the water's edge:
+
+1. **Position yourself downstream** of the wading rod and meter so your
+   body does not disturb the flow at the measurement point
+2. **Record the station distance** from the tag line
+3. **Measure and record the water depth** at the station to the nearest
+   0.01 ft using the wading rod depth scale
+
+#### Setting the Meter Depth
+
+The six-tenths-depth method is standard for most conditions. The
+two-point method is preferred when conditions allow.
+
+| Method          | Meter Position(s)            | When to Use                |
+|:----------------|:-----------------------------|:---------------------------|
+| Six-tenths      | 0.6 $\times$ depth from the surface | Depth $\leq$ 2.5 ft (0.75 m) or when using Pygmy meter |
+| Two-point       | 0.2 and 0.8 $\times$ depth from the surface | Depth > 2.5 ft (0.75 m); average the two velocities |
+| Surface (0.2 depth) | 0.2 $\times$ depth from the surface | Very shallow or weedy conditions; apply a coefficient of 0.85--0.90 |
+
+For the **six-tenths-depth method** with a top-setting wading rod:
+
+1. Read the depth on the graduated rod
+2. Set the meter to 0.6 of the total depth below the water surface
+   using the setting mechanism on the rod handle
+3. Allow the meter to stabilize in the current for a few seconds
+
+4. **Count revolutions.** Time the revolutions for a minimum of
+   40 seconds. For stable flows, 40--70 seconds is typical. Use longer
+   counting intervals (up to 70 seconds) when velocity is low or
+   unsteady.
+5. **Record the number of revolutions and elapsed time** (or the
+   velocity if using the AquaCalc, which computes it automatically)
+6. **Move to the next station** and repeat
+
+::: {.callout-important}
+If you are counting revolutions manually (headset and stopwatch), look
+up the velocity in the appropriate rating table (see
+[SOP-F23](SOP-F23-pygmy-type-aa-velocity-meters.qmd), Section 9.3).
+Revolutions per second = (number of revolutions) / (elapsed seconds).
+:::
+
+### 7.6 Edge Measurements
+
+At the left and right water's edges, the depth is zero and the velocity
+is zero. Record both as zero. These are included in the midsection
+calculation to close the cross-section.
+
+### 7.7 Post-Measurement Spin Test
+
+Repeat the spin test after completing the measurement. If the spin time
+has dropped below the minimum, the measurement quality is suspect.
+Record the result on the data sheet.
+
+
+## 8. Discharge Calculation -- Midsection Method
+
+The midsection method computes total discharge as the sum of discharge
+through each subsection. For each station $i$:
+
+$$
+q_i = v_i \times d_i \times w_i
+$$
+
+where:
+
+- $v_i$ = mean velocity at station $i$ (ft/s or m/s)
+- $d_i$ = water depth at station $i$ (ft or m)
+- $w_i$ = width assigned to station $i$ (ft or m)
+
+The width $w_i$ extends halfway to the preceding station and halfway to
+the following station:
+
+$$
+w_i = \frac{(\text{distance}_{i+1} - \text{distance}_{i-1})}{2}
+$$
+
+For the first and last stations (at the water's edges), the width
+extends from the edge to the midpoint between the edge and the
+adjacent station.
+
+Total discharge:
+
+$$
+Q = \sum_{i=1}^{n} q_i
+$$
+
+::: {.callout-tip}
+### Tip
+The AquaCalc digital flow computer performs all midsection calculations
+automatically in the field. However, all personnel should understand
+the manual calculation and be able to compute discharge from a field
+data sheet using a calculator or spreadsheet.
+:::
+
+
+## 9. Data Recording and Management
+
+### 9.1 Field Data Sheet
+
+Record the following for every measurement (see Appendix A for a blank
+form):
+
+- Date, time, and site name/ID
+- GPS coordinates of the cross-section
+- Water temperature
+- Pre-measurement and post-measurement spin test results
+- Meter type (AA or Pygmy) and serial number
+- For each station: distance from reference bank, depth, revolutions,
+  time interval, computed velocity, and subsection discharge
+- Total discharge
+- Notes on flow conditions (e.g., debris, algae, wind, ice)
+- Photographer and photo numbers
+
+### 9.2 Data Entry
+
+1. Enter field data into the lab's standard discharge spreadsheet
+   template on the same day as the measurement
+2. Verify the total discharge calculation matches the field computation
+3. Flag any stations where more than 10% of total discharge occurred in
+   a single subsection -- this indicates the station spacing was too
+   wide in a high-flow area
+4. Archive the original field data sheet (scan if paper)
+
+### 9.3 Reporting
+
+Report discharge in cubic feet per second (cfs) or liters per second
+(L/s), rounded to three significant figures following USGS conventions:
+
+| Discharge Range        | Rounding                     |
+|:-----------------------|:-----------------------------|
+| < 1 cfs                | Nearest 0.01 cfs             |
+| 1--10 cfs              | Nearest 0.1 cfs              |
+| 10--100 cfs            | Nearest 1 cfs                |
+
+
+## 10. Quality Control
+
+### 10.1 Measurement Quality Checks
+
+- No single subsection should carry more than 5--10% of total discharge
+- Pre- and post-measurement spin tests must meet minimum thresholds
+  (see [SOP-F23](SOP-F23-pygmy-type-aa-velocity-meters.qmd))
+- If two measurements are made at the same cross-section, they should
+  agree within 5%. If they differ by more than 5%, make a third
+  measurement and use the mean of the two closest values.
+
+### 10.2 Biases and Interferences
+
+- **Oblique flow:** If the current is not perpendicular to the tag
+  line, velocity readings will underestimate the true velocity.
+  Reposition the tag line or apply a cosine correction.
+- **Wading disturbance:** Stand downstream of the meter. Avoid
+  shuffling feet or disturbing the bed near the measurement point.
+- **Wind:** Strong wind on shallow water can alter surface velocities.
+  Note wind conditions on the data sheet.
+- **Vegetation and debris:** Submerged vegetation or floating debris
+  can obstruct the bucket wheel. Clear obstructions before measuring
+  or note affected stations.
+- **Unsteady flow:** In flashy urban streams, stage may change during
+  the measurement. Record the time at each station and note any
+  rising or falling trend.
+
+
+## 11. References
+
+- Rantz, S. E. et al. (1982). *Measurement and Computation of
+  Streamflow: Volume 1. Measurement of Stage and Discharge.* USGS
+  Water-Supply Paper 2175.
+  <https://pubs.usgs.gov/wsp/wsp2175/>
+- Turnipseed, D. P., and Sauer, V. B. (2010). *Discharge Measurements
+  at Gaging Stations.* USGS Techniques and Methods, Book 3, Chapter
+  A8. <https://pubs.usgs.gov/tm/tm3-a8/>
+- Pleus, A. E. (1999). *TFW Monitoring Program Method Manual for the
+  Wadable Stream Discharge Method.* Washington State Department of
+  Natural Resources, TFW-AM9-99-009.
+- U.S. Bureau of Reclamation. *Water Measurement Manual,* Chapter 10.
+  <https://www.usbr.gov/tsc/techreferences/mands/wmm/chap10_07.html>
+
+
+## 12. Training Record
+
+Before making discharge measurements independently, personnel must:
+
+1. Read this SOP and
+   [SOP-F23 Pygmy and Type AA Velocity Meters](SOP-F23-pygmy-type-aa-velocity-meters.qmd)
+   in full
+2. Complete [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) training
+3. Observe a trained operator perform a complete discharge measurement
+   from site selection through data entry
+4. Perform a supervised discharge measurement with results that agree
+   within 5% of the trainer's independent measurement
+5. Demonstrate the ability to compute discharge manually from a field
+   data sheet
+6. Be signed off by the PI or designated trainer
+
+
+## Appendix A: Discharge Measurement Field Data Sheet {.appendix}
+
+*TBD -- create a printable field data sheet formatted for Rite in the
+Rain paper. The sheet should include fields for: site ID, date, time
+start/end, GPS coordinates, water temperature, meter type and serial
+number, pre/post spin test results, and a table with columns for
+station distance, depth, revolutions, time, velocity, width, and
+subsection discharge.*
+
+<!-- TODO: Create a fillable field form as a PDF or R Markdown template
+     and link it here. Consider adapting the USGS Form 9-275 format. -->
+
+
+## Appendix B: Example Calculation {.appendix}
+
+```{r}
+#| label: discharge-example
+#| echo: true
+#| eval: false
+
+# Example midsection discharge calculation in R
+# Data from a hypothetical 10-station measurement
+
+stations <- data.frame(
+  distance_ft = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+  depth_ft    = c(0, 0.3, 0.5, 0.8, 1.1, 1.2, 1.0, 0.7, 0.4, 0.2, 0),
+  velocity_fps = c(0, 0.4, 0.8, 1.2, 1.5, 1.6, 1.4, 1.0, 0.6, 0.3, 0)
+)
+
+n <- nrow(stations)
+
+# Calculate width for each station (midsection method)
+stations$width_ft <- NA
+stations$width_ft[1] <- (stations$distance_ft[2] - stations$distance_ft[1]) / 2
+stations$width_ft[n] <- (stations$distance_ft[n] - stations$distance_ft[n - 1]) / 2
+for (i in 2:(n - 1)) {
+  stations$width_ft[i] <- (stations$distance_ft[i + 1] -
+                            stations$distance_ft[i - 1]) / 2
+}
+
+# Calculate subsection discharge
+stations$q_cfs <- stations$depth_ft * stations$velocity_fps * stations$width_ft
+
+# Total discharge
+total_Q <- sum(stations$q_cfs)
+cat(sprintf("Total discharge: %.2f cfs\n", total_Q))
+
+# Check: percentage of total in each subsection
+stations$pct_total <- round(100 * stations$q_cfs / total_Q, 1)
+print(stations)
+```

@@ -45,7 +45,7 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F10](field_sops/ .qmd) | Vehicles | -- |
-| F11   | *Electrical Power in the Field* | 0.2 | Needs conversion |
+| [F11](field_sops/SOP-F11-electrical-power-in-the-field.qmd)   | Electrical Power in the Field* | 0.2 |
 
 
 ### Instrumentation (F20--F39)
@@ -53,17 +53,17 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F22](field_sops/SOP-F22-eureka-manta2.qmd) | Eureka Manta2 Multiprobe | 0.7 |
-| [F23](field_sops/ .qmd) | Pygmy and Type A Velocity Meters | -- |
+| [F23](field_sops/SOP-F23-pygmy-type-aa-velocity-meters.qmd) | Pygmy and Type A Velocity Meters | -- |
 
 ### Water / Aquatic Systems (F40--F54)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F41](field_sops/SOP-F41-surface-water-sampling.qmd) | Surface Water Sampling | 0.9 |
-| F42   | *TBD -- Groundwater Sampling* | -- |
+| [F42](field_sops/SOP-F42-stream-discharge-measurement.qmd)   | *Stream Discharge Measurement* | 0.1 | Needs conversion |
+| F43   | *TBD -- Groundwater Sampling* | -- |
 | F43   | *TBD -- Stormwater Sampling* | -- |
 | F44   | *TBD -- Stream Discharge Measurement* | -- |
-| F42   | *Stream Discharge Measurement* | 0.1 | Needs conversion |
 | F43   | *Stream Physical Habitat Analysis* | 0.1 | Needs conversion |
 | F44   | *Stormwater Sampling* | -- | TBD |
 
