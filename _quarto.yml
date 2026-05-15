@@ -33,8 +33,6 @@ website:
     left:
       - text: "SOPs"
         href: index.qmd
-      - text: "New to the Lab?"
-        href: sops/orientation.qmd
     right:
       - icon: github
         href: https://github.com/marclos/SOPs
@@ -47,23 +45,24 @@ website:
         href: index.qmd
       - text: "**New to the Lab? Start Here**"
         href: sops/orientation.qmd
+      - text: "**Statistics and R**"
+        href: https://marclos.github.io/RTricks/
       - text: "---"
-      - section: "Field SOPs"
+      - section: "Recently Updated Field SOPs"
         contents:
           - field_sops/SOP-F01-field-safety.qmd
           - field_sops/SOP-F21-surface-water-sampling.qmd
-          - field_sops/SOP-F22-eureka-manta2.qmd
           - field_sops/SOP-F40-soil-sampling.qmd
-      - section: "Lab SOPs"
+      - section: "Recently Updated Lab SOPs"
         contents:
           - lab_sops/SOP-L01-laboratory-safety.qmd
           - lab_sops/SOP-L02-hazardous-materials-handling.qmd
           - lab_sops/SOP-L41-soil-moisture.qmd
           - lab_sops/SOP-L46-nitrate-ammonium-kcl.qmd
+          - lab_sops/SOP-L50-loss-on-ignition.qmd
           - lab_sops/SOP-L52-solvita-co2-burst.qmd
           - lab_sops/SOP-L53-microbial-biomass-carbon.qmd
-          - lab_sops/SOP-L50-loss-on-ignition.qmd
-          - lab_sops/SOP-L60-shimadzu-toc-l.qmd
+
 
 format:
   html:

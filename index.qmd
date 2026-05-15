@@ -129,13 +129,11 @@ number-sections: false
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| L20   | *TBD -- pH and Conductivity (Bench)* | -- |
+| [L20](lab_sops/SOP-L20-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
 | L21   | *TBD -- Alkalinity Titration* | -- |
 | L22   | *TBD -- Turbidity Measurement* | -- |
-| L25   | *Nutrient Analysis (Hach Methods)* | 1.0 | Needs conversion |
+| [L25](lab_sops/SOP-L25-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
 | L26   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
-| L27   | *Hach DR3900 Spectrophotometer* | 0.1 | Needs conversion |
-| L28   | *Hach DR900 Colorimeter* | 0.1 | Needs conversion |
 | [L29](lab_sops/SOP-L29-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
 | L30   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
 | L31   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
@@ -182,7 +180,7 @@ number-sections: false
 | L86   | *Microcentrifuge (MySpin 12)* | 0.1 | Needs conversion |
 | L87   | *Sorvall ST8R Centrifuge* | 0.1 | Needs conversion |
 | L88   | *TBD -- Ion Chromatograph Operation* | -- |
-| [L89](lab_sops/SOP-L69-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
+| [L89](lab_sops/SOP-L89-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
 | L90   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
 | L91   | *ICP-MS* | 0.1 | Needs conversion |
 | L92   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
