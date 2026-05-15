@@ -1,0 +1,326 @@
+---
+# =============================================================================
+# SOP-L80: DNA Extraction, Quantification, and Purity Assessment
+# =============================================================================
+title: "DNA Extraction, Quantification, and Purity Assessment"
+sop-number: "SOP-L60"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2025-05-14"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the extraction of genomic DNA from environmental
+samples (soil, sediment, water filters, and plant tissue), followed by
+quantification of DNA concentration and assessment of DNA purity using
+spectrophotometric and fluorometric methods. The protocol is based on
+commercial bead-beating extraction kits and is suitable for downstream
+applications including PCR amplification, qPCR, and amplicon sequencing
+[@dneasy2024; @qiagen_powersoil2024].
+
+
+## 2. Scope
+
+- **Applies to:** Genomic DNA extraction from soil, sediment, water filter
+  membranes, and plant tissue using the DNeasy PowerSoil Pro Kit (Qiagen)
+  or equivalent bead-beating kit; DNA quantification using a NanoDrop
+  spectrophotometer and Qubit fluorometer
+- **Does not apply to:** RNA extraction, plasmid isolation, ancient DNA,
+  or clinical/diagnostic samples
+- **Location:** Molecular biology bench, Pomona College Biogeochemistry Lab
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Follow this SOP, report deviations          |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Lysis buffer contains guanidine salts, which are harmful
+  if swallowed or inhaled and can cause skin and eye irritation. Solution
+  C4 contains ethanol. Review the Safety Data Sheets (SDS) for all kit
+  reagents before use.
+- **Physical:** Bead-beating generates aerosols; keep tubes sealed during
+  vortexing. Centrifuge rotor imbalance can cause equipment damage.
+- **Biological:** Environmental samples may contain unknown pathogens.
+  Treat all samples as potentially infectious [@cdc_bmbl2020].
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or goggles
+- [ ] Lab coat
+- [ ] Nitrile gloves (change frequently to avoid cross-contamination)
+- [ ] Face shield (if working with large volumes of lysis buffer)
+
+### Emergency Procedures
+
+In case of chemical splash or skin/eye contact, flush affected area with
+water for at least 15 minutes and consult the SDS. For spills of lysis
+buffer, absorb with paper towels, clean with water, and dispose as
+chemical waste. Refer to
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+for general chemical spill response.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                            | Location         | Notes                          |
+|:--------------------------------|:-----------------|:-------------------------------|
+| Vortex adapter for bead tubes   | Mol bio bench    | Holds 24 tubes horizontally    |
+| Vortex-Genie 2                  | Mol bio bench    | Set to maximum speed           |
+| Microcentrifuge                 | Mol bio bench    | Must reach 10,000 x g minimum  |
+| NanoDrop One spectrophotometer  | Instrument bench | UV-Vis micro-volume            |
+| Qubit 4 fluorometer             | Instrument bench | For dsDNA quantification       |
+| Micropipettes (10, 100, 1000 uL)| Mol bio bench   | Calibrated annually            |
+| --80 C freezer                  | Cold room        | For long-term DNA storage      |
+| --20 C freezer                  | Lab              | For short-term DNA storage     |
+
+### Reagents and Consumables
+
+| Item                                  | Catalog No.       | Storage          |
+|:--------------------------------------|:------------------|:-----------------|
+| DNeasy PowerSoil Pro Kit (Qiagen)     | 47014 (50 prep)   | Room temperature |
+| Qubit dsDNA BR Assay Kit              | Q32850            | Room temperature |
+| Qubit dsDNA HS Assay Kit              | Q32851            | Room temperature |
+| Qubit assay tubes (0.5 mL)            | Q32856            | Room temperature |
+| Nuclease-free water                   | Various           | Room temperature |
+| Molecular-grade ethanol (100%)        | Various           | Flammables cabinet |
+| 1.5 mL microcentrifuge tubes (DNase-free) | Various       | Room temperature |
+| Filter pipette tips (10, 100, 1000 uL)| Various          | Room temperature |
+
+
+## 6. Procedure
+
+### 6.1 Sample Preparation
+
+1. Record sample identity, collection date, and mass/volume in the lab
+   notebook and in the
+   [Freezer Inventory Google Sheet](<!-- LINK_PLACEHOLDER: replace with Google Sheet URL -->)
+2. For soil/sediment: weigh 0.20--0.25 g of sample into the PowerBead Pro
+   tube. Record exact mass.
+3. For water filters: use sterile forceps to transfer the membrane filter
+   into the PowerBead Pro tube. Cut the filter into strips if needed to
+   fit inside the tube.
+4. For plant tissue: weigh 0.02--0.10 g of tissue (fresh or flash-frozen)
+   into the PowerBead Pro tube. Use less tissue for highly mucilaginous
+   samples [@doyle1987].
+
+::: {.callout-important}
+Keep samples on ice during preparation to minimize DNA degradation by
+endogenous nucleases. Process all samples within a single batch if
+possible to reduce extraction variability [@frostegard1999].
+:::
+
+### 6.2 Cell Lysis and DNA Extraction
+
+Follow the DNeasy PowerSoil Pro Kit protocol [@qiagen_powersoil2024]:
+
+1. Add 800 uL of Solution CD1 to the PowerBead Pro tube
+2. Secure tubes horizontally on the vortex adapter and vortex at maximum
+   speed for 10 minutes
+3. Centrifuge at 15,000 x g for 1 minute
+4. Transfer the supernatant to a clean 2 mL collection tube
+5. Add 200 uL of Solution CD2, vortex briefly (5 seconds), and centrifuge
+   at 15,000 x g for 1 minute
+6. Avoiding the pellet, transfer the supernatant to a clean 2 mL
+   collection tube
+7. Add 600 uL of Solution CD3, vortex briefly (5 seconds)
+8. Load 650 uL onto an MB Spin Column seated in a 2 mL collection tube.
+   Centrifuge at 15,000 x g for 1 minute. Discard flow-through. Repeat
+   to load remaining lysate.
+9. Add 500 uL of Solution EA. Centrifuge at 15,000 x g for 1 minute.
+   Discard flow-through.
+10. Add 500 uL of Solution C5 (wash buffer). Centrifuge at 15,000 x g for
+    1 minute. Discard flow-through.
+11. Centrifuge again at 16,000 x g for 2 minutes to remove residual wash
+    buffer
+12. Transfer the MB Spin Column to a clean 1.5 mL microcentrifuge tube
+13. Add 50--100 uL of Solution C6 (elution buffer) or nuclease-free water
+    to the center of the membrane. Allow to stand for 1 minute at room
+    temperature, then centrifuge at 15,000 x g for 1 minute.
+
+::: {.callout-tip}
+### Tip
+Use a smaller elution volume (50 uL) when higher DNA concentration is
+needed for downstream applications. A second elution with an additional
+50 uL can recover 10--20% more DNA but at lower concentration
+[@qiagen_powersoil2024].
+:::
+
+### 6.3 DNA Quantification -- NanoDrop Spectrophotometry
+
+The NanoDrop measures DNA concentration and provides absorbance ratios
+used to assess purity [@desjardins2010]:
+
+1. Clean the pedestal with 2 uL of nuclease-free water; wipe with a
+   lint-free tissue
+2. Blank the instrument with 2 uL of the elution buffer (Solution C6 or
+   nuclease-free water, matching your elution)
+3. Load 2 uL of DNA extract onto the pedestal
+4. Record the concentration (ng/uL), A~260~/A~280~ ratio, and
+   A~260~/A~230~ ratio for each sample
+
+### 6.4 DNA Quantification -- Qubit Fluorometry
+
+The Qubit fluorometer uses fluorescent dyes that bind selectively to
+dsDNA, providing more accurate quantification than spectrophotometry,
+especially at low concentrations or in the presence of contaminants
+[@invitrogen_qubit2024]:
+
+1. Prepare the Qubit working solution: dilute the Qubit dsDNA BR (or HS)
+   reagent 1:200 in Qubit buffer. Prepare enough for all samples plus two
+   standards (e.g., 200 uL per assay tube).
+2. Prepare standards: add 190 uL of working solution to each of two Qubit
+   assay tubes. Add 10 uL of Standard 1 to one tube and 10 uL of
+   Standard 2 to the other. Vortex briefly.
+3. Prepare samples: add 198 uL of working solution to a Qubit assay tube.
+   Add 2 uL of DNA extract. Vortex briefly.
+4. Incubate all tubes at room temperature for 2 minutes (but not longer
+   than 30 minutes)
+5. Calibrate the Qubit with the two standards, then read each sample
+6. Record the concentration (ng/uL, corrected for dilution by the
+   instrument)
+
+### 6.5 DNA Purity Assessment
+
+Evaluate DNA purity using the NanoDrop absorbance ratios
+[@wilfinger1997; @desjardins2010]:
+
+| Ratio           | Ideal Range   | Interpretation                              |
+|:----------------|:--------------|:--------------------------------------------|
+| A~260~/A~280~   | 1.8--2.0      | Values below 1.8 suggest protein or phenol contamination |
+| A~260~/A~230~   | 2.0--2.2      | Values below 2.0 suggest contamination with humic acids, carbohydrates, salts, or residual guanidine from extraction buffers |
+
+::: {.callout-note}
+For environmental DNA extracts, especially from humic-rich soils,
+A~260~/A~230~ ratios are frequently below 2.0. If downstream applications
+(e.g., PCR) fail or show inhibition, consider additional cleanup using a
+OneStep PCR Inhibitor Removal Kit or gel purification [@young2014].
+:::
+
+### 6.6 Storage and Freezer Inventory
+
+1. Label each tube with: sample ID, extraction date, elution volume, and
+   concentration (in ng/uL)
+2. For short-term storage (less than 1 month): store DNA extracts at
+   --20 C
+3. For long-term storage: store DNA extracts at --80 C in the designated
+   molecular biology section of the freezer
+4. Record the storage location (freezer, rack, box, and position) in the
+   [Freezer Inventory Google Sheet](<!-- LINK_PLACEHOLDER: replace with Google Sheet URL -->)
+5. Update the Google Sheet immediately upon placing samples in the freezer
+   or removing them
+
+::: {.callout-important}
+### --80 C Freezer Protocol
+
+- Minimize the time the freezer door is open. Retrieve the correct box
+  before opening the freezer.
+- Place DNA extracts in designated cryoboxes labeled "DNA Extracts" with
+  the project name and date range.
+- Do not store DNA extracts in the same box as tissue samples or reagents.
+- Avoid repeated freeze-thaw cycles. If multiple downstream analyses are
+  planned, prepare aliquots at the time of extraction [@shao2012].
+:::
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Include one extraction blank (empty PowerBead Pro tube processed through
+  the full protocol) per extraction batch to detect contamination
+  [@salter2014]
+- Run Qubit standards with each new batch of working solution
+- Acceptable DNA yield from 0.25 g of soil: typically 1--20 ng/uL in a
+  100 uL elution, depending on soil type [@dineen2010]
+- Acceptable A~260~/A~280~: 1.7--2.0. Samples outside this range should
+  be noted and may require re-extraction.
+- Acceptable A~260~/A~230~: greater than 1.5 for most downstream
+  applications. Values below 1.0 indicate significant contamination and
+  the extract should be purified or re-extracted.
+- If NanoDrop and Qubit concentrations disagree by more than a factor of
+  two, the NanoDrop reading is likely inflated by contaminants; use the
+  Qubit value for planning downstream reactions [@nakayama2016].
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Container                 | Disposal Method                     |
+|:------------------------------|:--------------------------|:------------------------------------|
+| Used PowerBead Pro tubes      | Biohazard bag             | Autoclave, then standard trash      |
+| Flow-through from spin columns| Chemical waste carboy      | EH&S hazardous waste pickup (contains guanidine salts) |
+| Used spin columns             | Chemical waste bag         | EH&S hazardous waste pickup         |
+| Pipette tips and tubes        | Biohazard sharps/trash     | Standard biohazard disposal         |
+| Empty reagent bottles         | Rinse and recycle          | Check SDS for specific instructions |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing this procedure independently, personnel must:
+
+1. Read this SOP and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd) in full
+2. Review the SDS for all kit components (especially Solutions CD1, CD2,
+   and CD3)
+3. Complete the Qiagen DNeasy PowerSoil Pro Kit quick-start guide
+4. Demonstrate competence with micropipetting, the NanoDrop, and the
+   Qubit fluorometer
+5. Perform a full extraction under supervision, including quantification
+   and freezer logging
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Troubleshooting {.appendix}
+
+| Symptom                          | Probable Cause                     | Corrective Action                          |
+|:---------------------------------|:-----------------------------------|:-------------------------------------------|
+| Very low DNA yield               | Insufficient lysis; too little starting material | Increase vortexing time to 15 min; verify sample mass |
+| Low A~260~/A~280~ (below 1.6)    | Protein carryover                  | Re-extract with fresh kit reagents; ensure full removal of CD2 pellet |
+| Low A~260~/A~230~ (below 1.0)    | Humic acid or guanidine carryover  | Add a second C5 wash step; use inhibitor removal kit |
+| NanoDrop reads much higher than Qubit | Co-extracted contaminants inflating UV absorbance | Trust Qubit value; consider cleanup before downstream use |
+| PCR inhibition despite good yield | Co-extracted humic acids or polysaccharides | Dilute template 1:10; use inhibitor-tolerant polymerase; clean up with OneStep kit [@young2014] |
+| Extraction blank shows amplification | Reagent or cross-contamination  | Discard batch; use fresh reagents; clean workspace with 10% bleach then ethanol |
+
+
+## Appendix B: DNA Concentration Calculation Worksheet {.appendix}
+
+```{r}
+#| label: dna-yield-calc
+#| echo: true
+
+# Calculate total DNA yield from extraction
+elution_vol_uL <- 100        # Volume of elution buffer used (uL)
+qubit_conc_ng_uL <- 8.5      # Qubit reading (ng/uL)
+sample_mass_g <- 0.25         # Starting sample mass (g)
+
+total_dna_ng <- qubit_conc_ng_uL * elution_vol_uL
+dna_per_g <- total_dna_ng / sample_mass_g
+
+cat(sprintf("Total DNA yield: %.1f ng\n", total_dna_ng))
+cat(sprintf("DNA yield per gram of sample: %.1f ng/g\n", dna_per_g))
+```

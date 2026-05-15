@@ -74,49 +74,42 @@ number-sections: false
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| F60   | *TBD -- Air Quality Monitoring (Portable Sensors)* | -- |
-| F61   | *TBD -- Particulate Matter Sampling* | -- |
-| F60   | *Picarro GHG Analyzer (Field Deployment)* | 1.0 | Needs conversion |
-| F61   | *Ozone Generator Operation* | 0.1 | Needs conversion |
-| F62   | *Air Quality Monitoring (Portable Sensors)* | -- | TBD |
+| F60   | *TBD --* | -- |
+| F61   | *TBD -- Air Temperature Monitoring (Sensors)* | -- |
+| F62   | *TBD -- Air Quality Monitoring (Portable Sensors)* | -- |
+| F63   | *TBD -- Particulate Matter Sampling* | -- |
+| F64   | *Picarro GHG Analyzer (Field Deployment)* | 1.0 | Needs conversion |
+| F65   | *Ozone Generator Operation* | 0.1 | Needs conversion |
+| F66   | *Air Quality Monitoring (Portable Sensors)* | -- | TBD |
 
-### Plants (F80--F99)
+### Microbes, Plants, and Animals (F80--F99)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | F80   | *TBD * | -- |
-| F84   | *TBD -- Leaf Area Index Measurement* | -- |
-| F85   | *TBD -- Plant Tissue Sampling* | -- |
-
 | [F81](SOP-F81-vegetation-transect-surveys.qmd)   | Vegetation Transect Surveys | -- | 0.1 |
 | F82   | *Leaf Area Index Measurement* | -- | TBD |
 | F83   | *Plant Tissue Sampling* | -- | TBD |
-
-### Animals (F100--F119)
-
-| SOP   | Title                          | Current Rev. |
-|:------|:-------------------------------|:-------------|
-| F100  | *TBD -- Macroinvertebrate Sampling* | -- |
-| F101  | *TBD -- Bird Point Count Surveys* | -- |
-| F100  | *Camera Trap (CamPark T20)* | 0.1 | Needs conversion |
-| F101  | *Drone Operations (DJI Matrice/Mavic)* | 0.1 | Needs conversion |
-| F102  | *360 Camera* | 0.1 | Needs conversion |
-| F103  | *Macroinvertebrate Sampling* | -- | TBD |
-| F104  | *Bird Point Count Surveys* | -- | TBD |
-
+| F85  | *TBD -- Macroinvertebrate Sampling* | -- |
+| F86  | *TBD -- Bird Point Count Surveys* | -- |
+| F87  | *Camera Trap (CamPark T20)* | 0.1 | Needs conversion |
+| F88  | *Drone Operations (DJI Matrice/Mavic)* | 0.1 | Needs conversion |
+| F89  | *360 Camera* | 0.1 | Needs conversion |
+| F90  | *Macroinvertebrate Sampling* | -- | TBD |
+| F91  | *Bird Point Count Surveys* | -- | TBD |
 
 ## Lab SOPs
 
-### General Lab Safety (L01--L19)
+### General Lab Safety, Administration, and Maintanence (L01--L09)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [L01](lab_sops/SOP-L01-laboratory-safety.qmd)   | Laboratory Safety | 1.04 |
 | [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
-| L03   | *TBD -- Glassware Cleaning and Preparation* | -- |
-| L04   | *TBD -- Chemical Inventory Management* | -- |
-| L07   | *Quality Control and Quality Assurance* | 1.0 | Needs conversion |
 | [L05](lab_sops/SOP-L05-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 | Needs conversion |
+| L06   | *Quality Control and Quality Assurance* | 1.0 | Needs conversion |
+| L07   | *TBD -- Glassware Cleaning and Preparation* | -- |
+| L08   | *TBD -- Chemical Inventory Management* | -- |
 
 
 ### Laboratory Equipment (L10--L19)
@@ -170,30 +163,33 @@ number-sections: false
 | L56   | *Nitrification Potential* | 0.1 | Needs conversion |
 | L57   | *Solvita Compost Maturity* | 0.1 | Needs conversion |
 
-
-### Equipment and Instrumentation (L60--L79)
+### Microbes, Plants, and Animals (L60--L79)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| L60   | *TBD -- RO Water* | -- | TBD |
-| L61   | *TBD -- Analytical Balance Calibration* | -- | TBD |
-| L62   | *TBD -- Spectrophotometer Operation* | -- |
-| L63   | *Accumet pH Meter* | 0.4 | Needs conversion |
-| L65   | *Clinical Centrifuge* | 0.1 | Needs conversion |
-| L66   | *Microcentrifuge (MySpin 12)* | 0.1 | Needs conversion |
-| L67   | *Sorvall ST8R Centrifuge* | 0.1 | Needs conversion |
-| L68   | *TBD -- Ion Chromatograph Operation* | -- |
+| [L60](lab_sops/SOP-L60-dna-extraction.qmd) | DNA Extraction | 0.2 |
 
-| [L69](lab_sops/SOP-L69-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
-| L70   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
-| L71   | *ICP-MS* | 0.1 | Needs conversion |
-| L72   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
-| L73   | *IRMS -- Becoming a User* | 0.2 | Needs conversion |
-| L74   | *IRMS -- Flash EA Operation* | 0.2 | Needs conversion |
-| L75   | *IRMS -- Post-Analysis Correction* | 0.1 | Needs conversion |
-| L76   | *Picarro GHG Analyzer (Lab Configuration)* | 1.0 | Needs conversion |
-| L77   | *Radiometric Dating* | 0.1 | Needs conversion |
+### Equipment and Instrumentation (L80--L99)
 
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| L80   | *TBD -- RO Water* | -- | TBD |
+| L81   | *TBD -- Analytical Balance Calibration* | -- | TBD |
+| L82   | *TBD -- Spectrophotometer Operation* | -- |
+| L83   | *Accumet pH Meter* | 0.4 | Needs conversion |
+| L85   | *Clinical Centrifuge* | 0.1 | Needs conversion |
+| L86   | *Microcentrifuge (MySpin 12)* | 0.1 | Needs conversion |
+| L87   | *Sorvall ST8R Centrifuge* | 0.1 | Needs conversion |
+| L88   | *TBD -- Ion Chromatograph Operation* | -- |
+| [L89](lab_sops/SOP-L69-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
+| L90   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
+| L91   | *ICP-MS* | 0.1 | Needs conversion |
+| L92   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
+| L93   | *IRMS -- Becoming a User* | 0.2 | Needs conversion |
+| L94   | *IRMS -- Flash EA Operation* | 0.2 | Needs conversion |
+| L95   | *IRMS -- Post-Analysis Correction* | 0.1 | Needs conversion |
+| L96   | *Picarro GHG Analyzer (Lab Configuration)* | 1.0 | Needs conversion |
+| L97   | *Radiometric Dating* | 0.1 | Needs conversion |
 
 
 ::: {.callout-note}
