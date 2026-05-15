@@ -112,12 +112,12 @@ number-sections: false
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| L01   | *TBD -- Laboratory Safety* | -- |
+| [L01](lab_sops/SOP-L01-laboratory-safety.qmd))   | Laboratory Safety | 1.04 |
 | [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
 | L03   | *TBD -- Glassware Cleaning and Preparation* | -- |
 | L04   | *TBD -- Chemical Inventory Management* | -- |
-| F07   | *Quality Control and Quality Assurance* | 1.0 | Needs conversion |
-| F05   | *RStudio Server and GitHub* | 0.4 | Needs conversion |
+| L07   | *Quality Control and Quality Assurance* | 1.0 | Needs conversion |
+| [L05](lab_sops/SOP-L05-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 | Needs conversion |
 
 
 ### Laboratory Equipment (L10--L19)
