@@ -64,6 +64,7 @@ number-sections: false
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F40](field_sops/SOP-F40-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 |
+| F40   | Texture by Feel | -- |
 | F41   | *TBD -- Soil Bulk Density (Core Method)* | -- |
 | F42   | *TBD -- Soil Infiltration Rate* | -- |
 | F43   | *TBD -- Soil Temperature Profiles* | -- |
@@ -85,11 +86,11 @@ number-sections: false
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| F80   | *TBD -- Vegetation Transect Surveys* | -- |
-| F81   | *TBD -- Leaf Area Index Measurement* | -- |
-| F82   | *TBD -- Plant Tissue Sampling* | -- |
-| F80   | *Chlorophyll Extraction and Analysis* | 0.1 | Needs conversion |
-| F81   | *Vegetation Transect Surveys* | -- | TBD |
+| F80   | *TBD * | -- |
+| F84   | *TBD -- Leaf Area Index Measurement* | -- |
+| F85   | *TBD -- Plant Tissue Sampling* | -- |
+
+| [F81](SOP-F81-vegetation-transect-surveys.qmd)   | Vegetation Transect Surveys | -- | 0.1 |
 | F82   | *Leaf Area Index Measurement* | -- | TBD |
 | F83   | *Plant Tissue Sampling* | -- | TBD |
 
@@ -151,29 +152,30 @@ number-sections: false
 | L27   | *Microplastics in Water* | 0.2 | Needs conversion |
 | L28   | *Pesticide Analysis* | 0.1 | Needs conversion |
 | L29   | *Alkalinity Titration* | -- | TBD |
+| L30   | *Chlorophyll Extraction and Analysis* | 0.1 | Needs conversion |
 
 ### Soil and Carbon Analysis (L40--L59)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [L41](lab_sops/SOP-L41-soil-moisture.qmd) | Soil Moisture -- Gravimetric Method | 0.2 |
-| [L42](lab_sops/SOP-L42-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.2 |
-| [L45](lab_sops/SOP-L45-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | 1.0 |
-| [L43](lab_sops/SOP-L43-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 |
-| [L43](lab_sops/SOP-L43-loss-on-ignition.qmd) | Loss on Ignition (SOM) | 1.0 |
-| [L44](lab_sops/SOP-L44-total-carbon.qmd) |  Total Carbon -- Soil | 1.0 |
-| [L48](lab_sops/SOP-L48-microbial-biomass.qmd) | Chloroform Microbial Biomass | 1.0 |
-| L45   | *TBD -- Soil Texture (Hydrometer Method)* | -- |
-| L46   | *TBD -- Soil pH and EC* | -- |
-| L47   | *TBD -- Extractable Phosphorus* | -- |
-| L45   | *Soil Texture (Hydrometer Method)* | 0.1 | Needs conversion |
-| L46   | *Soil pH and Salinity* | 0.1 | Needs conversion |
-| L47   | *Soil Lead Analysis (Acid Digestion)* | 0.2 | Needs conversion |
-| L48   | *Soil Lead Analysis (MARS Microwave)* | 0.2 | Needs conversion |
-| L49   | *Nitrification Potential* | 0.1 | Needs conversion |
-| L50   | *Nitrate Quick Test* | 0.1 | Needs conversion |
-| L51   | *Solvita Compost Maturity* | 0.1 | Needs conversion |
-| L52   | *Extractable Phosphorus* | -- | TBD |
+| L42   | *Soil Texture (Hydrometer Method)* | 0.1 | Needs conversion |
+| L45   | *Soil pH and Salinity* | 0.1 | Needs conversion |
+[L46](lab_sops/SOP-L46-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.2 |
+| L47   | *Nitrate Quick Test* | 0.1 | Needs conversion |
+| L48   | *TBD -- Extractable Phosphorus* | -- |
+
+| [L50](lab_sops/SOP-L50-loss-on-ignition.qmd) | Loss on Ignition (SOM) | 1.0 |
+| [L51](lab_sops/SOP-L51-total-carbon.qmd) |  Total Carbon -- Soil | 1.0 |
+| [L52](lab_sops/SOP-L52-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | 1.0 |
+
+| [L53](lab_sops/SOP-L53-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 |
+
+| L54   | *Soil Lead Analysis (Acid Digestion)* | 0.2 | Needs conversion |
+| L55   | *Soil Lead Analysis (MARS Microwave)* | 0.2 | Needs conversion |
+| L56  | *Nitrification Potential* | 0.1 | Needs conversion |
+
+| L57   | *Solvita Compost Maturity* | 0.1 | Needs conversion |
 
 
 ### Equipment and Instrumentation (L60--L79)

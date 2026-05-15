@@ -463,26 +463,3 @@ Before using R/RStudio/GitHub independently for EA Program research, personnel m
 3. Successfully clone, pull, edit, commit, and push to the `beginnersluck` practice repository
 4. Demonstrate the pull-edit-commit-push workflow under supervision
 5. Be signed off by the PI or project lead
-
-
-## Appendix: Image File Reference {.appendix}
-
-Images from the original LaTeX version are in `10_Rstudio_Server_and_Github/graphics/`. Copy and rename them to `images/` as listed below.
-
-| Current Filename | Rename To | Used In |
-|:-----------------|:----------|:--------|
-| `Updated_creating_SSH.png` | `create_ssh_key.png` | Section 11.2 |
-| `Github_SavedSSH.jpg` | `github_ssh_settings.png` | Section 11.3 |
-| `Github_GreenCodeButton.png` | `github_code_button.png` | Section 12.2 |
-| `CloningGithub2.jpg` | `clone_with_ssh.png` | Section 12.2 |
-| `RstudioNewProject.jpg` | `new_project_dialog.png` | Section 12.3 |
-| `RstudioNewProject2.jpg` | `new_project_git.png` | Section 12.3 |
-| `RstudioNewProject3.jpg` | `clone_git_repo.png` | Section 12.3 |
-| `Authenticity.jpg` | `authenticity_prompt.png` | Section 12.3 |
-| `stagedcheckboxes.png` | `staged_checkboxes.png` | Section 13, Step 3 |
-| `MgaV9.png` | `git_workflow_diagram.png` | Section 13, Step 4 |
-| `IdentityError.png` | `identity_error.png` | Section 15.1 |
-| `MergeError.jpg` | `merge_error.png` | Section 15.2 |
-| `UnmergedError.jpg` | `unmerged_error.png` | Section 15.4 |
-| -- (take new) | `rstudio_server_login.png` | Section 10.1 |
-| -- (take new) | `rstudio_four_panels.png` | Section 10.2 |
