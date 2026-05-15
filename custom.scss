@@ -3,3 +3,13 @@
   max-height: 112px !important;
   height: 112px !important;
 }
+
+// -----------------------------------------------------------------------------
+// Compact SOP index tables
+// -----------------------------------------------------------------------------
+.table-sm th,
+.table-sm td {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
