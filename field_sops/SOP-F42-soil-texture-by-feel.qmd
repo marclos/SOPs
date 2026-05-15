@@ -1,0 +1,297 @@
+---
+title: "Soil Texture Determination by Feel (Ribbon Method)"
+sop-number: "SOP-F42"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-06-16"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the field determination of soil texture using the texture-by-feel (ribbon) method. This rapid, equipment-free technique classifies soil into one of 12 USDA textural classes based on how a moistened soil sample behaves when formed into a ball, extruded into a ribbon, and rubbed between the fingers. Field texturing provides an immediate estimate of sand, silt, and clay content without laboratory analysis.
+
+
+## 2. Scope
+
+- **Applies to:** Field characterization of mineral soils at all EA Program sites; preliminary texture assessment for soil sampling campaigns
+- **Does not apply to:** Soils with very high organic matter content (>20%, e.g., peat); quantitative particle size analysis (use the hydrometer method, SOP-L45); soils with large gravel or rock fragment content (assess the fine fraction only)
+- **Location:** All EA Program field sites; can also be performed on samples brought back to the lab
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve protocol, ensure training compliance            |
+| Field Lead        | Coordinate sampling, verify observer calibration        |
+| Trained Personnel | Perform texture assessments, record results             |
+| New Students      | Complete training and calibration exercise before independent use |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Biological:** Soil-borne pathogens; wash hands thoroughly after handling soil
+- **Chemical:** At contaminated sites, soil may contain heavy metals or other hazardous materials; wear gloves
+- **Physical:** Standard field hazards (ticks, snakes, heat exposure)
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Nitrile gloves (recommended, especially at unknown or contaminated sites)
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Hand sanitizer or soap and water for post-handling cleanup
+
+### Required Training
+
+- [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+
+
+## 5. Background
+
+### 5.1 Soil Particle Size Fractions
+
+Soil texture is defined by the relative proportions of three mineral particle size fractions:
+
+| Fraction | Diameter | Feel |
+|:---------|:---------|:-----|
+| **Sand** | 2.0--0.05 mm | Gritty; individual grains visible and felt between fingers |
+| **Silt** | 0.05--0.002 mm | Smooth, floury, or silky; like rubbing flour or talc |
+| **Clay** | < 0.002 mm | Sticky when wet; plastic and moldable; stains fingers |
+
+### 5.2 The USDA Textural Triangle
+
+The 12 USDA textural classes are defined by the percentages of sand, silt, and clay. The texture-by-feel method estimates which class a soil belongs to without measuring exact percentages.
+
+<!-- IMAGE SUGGESTION: USDA soil textural triangle diagram -->
+<!-- Save as: images/usda_textural_triangle.png -->
+<!-- Many public domain versions available from USDA-NRCS -->
+
+### 5.3 Why Field Texture Matters
+
+- Determines water-holding capacity, drainage, and aeration
+- Guides sampling strategy (e.g., different sample weights for carbon analysis; see SOP-L60)
+- Informs the soil texture correction factor for nutrient extractions (see [SOP-L41](../lab_sops/SOP-L41-nitrate-ammonium-kcl.qmd))
+- Rapid enough to characterize many points across a landscape in a single field day
+
+
+## 6. Required Materials
+
+| Item                          | Notes                                          |
+|:------------------------------|:-----------------------------------------------|
+| Water bottle with squeeze top | For wetting soil incrementally                 |
+| Small ruler (cm)              | For measuring ribbon length                    |
+| Field data sheet              | Printed from Appendix A                        |
+| Clipboard and pencil          | Mechanical pencil preferred                    |
+| GPS unit or smartphone        | For recording sample locations                 |
+| Trowel or soil knife          | For collecting subsurface samples              |
+| Sealable plastic bags         | If bringing samples back for confirmation      |
+| Paper towels or rag           | For cleaning hands between samples             |
+
+No specialized laboratory equipment is required.
+
+
+## 7. Estimated Time
+
+| Task                          | Time                                           |
+|:------------------------------|:-----------------------------------------------|
+| Per sample (experienced observer) | 2--5 minutes                               |
+| Per sample (new observer)     | 5--10 minutes                                  |
+| Calibration exercise (training) | 30--45 minutes with known-texture standards  |
+
+
+## 8. Procedure
+
+### 8.1 Collect the Sample
+
+1. Select a representative location and record GPS coordinates
+2. Clear surface litter and organic debris
+3. Collect approximately a golf-ball-sized amount of mineral soil from the target depth (typically 0--15 cm)
+4. Remove visible roots, gravel, and organic fragments
+
+### 8.2 Moisten the Sample
+
+1. Place the soil in your palm
+2. Add water drop by drop from the squeeze bottle while kneading the soil
+3. Continue adding water and kneading until the soil reaches the consistency of modeling clay or putty
+4. The soil should be uniformly moist but not dripping wet
+5. Crush all aggregates between your fingers during kneading
+
+::: {.callout-important}
+### Getting the Moisture Right
+This is the most critical step. If the soil is too dry, it will crumble and you'll underestimate clay content. If too wet, it will be slippery and you'll overestimate clay. The target is a smooth, pliable consistency similar to play dough. This may take 2--3 minutes of kneading.
+:::
+
+<!-- IMAGE SUGGESTION: Series of 3 photos: dry soil in palm, adding water, properly kneaded bolus -->
+<!-- Save as: images/soil_texture_moistening.jpg -->
+
+### 8.3 Test 1: Form a Ball
+
+1. Try to form the moistened soil into a ball (bolus) by squeezing and rolling in your palm
+2. **If the soil will not form a ball**, it is **Sand**. Record and move to the next sample.
+3. If a ball forms, proceed to Test 2
+
+<!-- IMAGE SUGGESTION: Photo of a properly formed soil ball in the palm -->
+<!-- Save as: images/soil_texture_ball.jpg -->
+
+### 8.4 Test 2: Ribbon Test
+
+1. Place the ball between your thumb and forefinger
+2. Gently push the soil forward with your thumb, squeezing it into a flat ribbon about 2 mm thick and 1 cm wide
+3. Let the ribbon extend over your forefinger, unsupported, until it breaks from its own weight
+4. Measure the ribbon length with a ruler before it breaks
+5. Repeat 3--5 times and use the longest consistent ribbon
+
+**Ribbon length determines clay content:**
+
+| Ribbon Length | Clay Content | Category |
+|:-------------|:-------------|:---------|
+| No ribbon forms | < 10% | Low clay |
+| < 2.5 cm (< 1 inch) | 10--20% | Low-moderate clay |
+| 2.5--5 cm (1--2 inches) | 20--35% | Moderate clay |
+| > 5 cm (> 2 inches) | > 35% | High clay |
+
+<!-- IMAGE SUGGESTION: Photo sequence of thumb extruding a ribbon over the forefinger, with a ruler alongside -->
+<!-- Save as: images/soil_texture_ribbon.jpg -->
+
+### 8.5 Test 3: Feel Test (Grittiness and Smoothness)
+
+1. Take a pea-sized piece of the moistened soil
+2. Place it in your palm and add excess water to make a muddy slurry
+3. Rub the slurry between your thumb and forefinger using a circular motion
+4. Classify the dominant feel:
+
+| Feel | Sensation | Dominant Fraction |
+|:-----|:----------|:------------------|
+| **Gritty** | Like rubbing sugar or fine sand between fingers; individual grains felt and possibly heard | Sand-dominated |
+| **Smooth** | Like rubbing flour or talc; silky, no grains felt | Silt-dominated |
+| **Neither** | Neither gritty nor silky dominates; sticky | Sand and silt balanced |
+
+### 8.6 Determine Textural Class
+
+Combine the ribbon length and feel test results using the following decision matrix:
+
+| | Gritty Feel | Smooth Feel | Neither Gritty nor Smooth |
+|:-------------|:------------|:------------|:--------------------------|
+| **No ribbon** | Sand | Silt | Loam |
+| **< 2.5 cm** | Sandy loam | Silt loam | Loam |
+| **2.5--5 cm** | Sandy clay loam | Silty clay loam | Clay loam |
+| **> 5 cm** | Sandy clay | Silty clay | Clay |
+
+::: {.callout-tip}
+### Additional Clues
+- **Loamy sand** falls between sand and sandy loam: barely forms a ball, very gritty, ribbon <1 cm
+- **Silt** (pure): very smooth, almost soapy when wet, forms a weak ball but no ribbon
+- When in doubt between two classes, record both (e.g., "sandy loam / loam") and note the uncertainty
+:::
+
+### 8.7 Record Results
+
+Record the textural class, ribbon length, feel, and any notes on the field data sheet (Appendix A). Photograph the ribbon if possible for documentation.
+
+
+## 9. Supplementary Test: Jar Sedimentation
+
+For a semi-quantitative confirmation of field texture, you can perform a jar test on the same soil:
+
+1. Fill a clear, straight-sided jar (mason jar or pasta sauce jar) one-third full with soil
+2. Fill the jar with water, leaving 2 cm of headspace
+3. Add a pinch of non-foaming dish soap (dispersing agent)
+4. Cap tightly and shake vigorously for 2 minutes
+5. Set the jar on a level surface and do not disturb
+6. After 1 minute, mark the settled layer on the jar (this is **sand**)
+7. After 2 hours, mark the next layer (this is **silt**)
+8. After 24--48 hours, the remaining suspended material has settled (this is **clay**); the water above may still be slightly turbid
+9. Measure the thickness of each layer and calculate approximate percentages
+
+<!-- IMAGE SUGGESTION: Photo of a jar test at 48 hours showing distinct sand, silt, and clay layers marked on the glass -->
+<!-- Save as: images/soil_texture_jar_test.jpg -->
+
+::: {.callout-note}
+The jar test provides a rough visual estimate only. For precise particle size distribution, use the hydrometer method (SOP-L45).
+:::
+
+
+## 10. Quality Control
+
+- **Calibration:** Before independent fieldwork, each observer must practice on at least 5 soils of known texture (confirmed by hydrometer analysis). Results should match the confirmed texture class for at least 4 of 5 samples.
+- **Inter-observer agreement:** When multiple observers are surveying, have each observer independently classify at least 10% of the same samples. Agreement should be within one textural class.
+- **Documentation:** Record ribbon length to the nearest 0.5 cm, not just the textural class, so results can be reviewed later.
+- **Confirmation:** For critical projects, bring duplicate samples back to the lab for hydrometer analysis on at least 10% of field-textured samples.
+
+
+## 11. Data Management
+
+Enter results from field sheets into the project spreadsheet within 48 hours. Required fields:
+
+- Date, site, plot ID, observer
+- GPS coordinates
+- Sample depth (cm)
+- Ribbon length (cm)
+- Feel (gritty, smooth, or neither)
+- Textural class
+- Notes (e.g., high gravel content, high organic matter, very dry)
+
+
+## 12. References
+
+- Thien, S.J. (1979). A flow diagram for teaching texture-by-feel analysis. *Journal of Agronomic Education*, 8, 54--55.
+- USDA-NRCS. *Guide to Texture by Feel*. Available at: https://www.nrcs.usda.gov/resources/education-and-teaching-materials/guide-to-texture-by-feel
+- FAO. (2024). *Physical soil properties -- Texture: Ribbon Method*. Field exercise P01b.
+- McDonald, R.C., Isbell, R.F., Speight, J.G., Walker, J., & Hopkins, M.S. (1998). *Australian Soil and Land Survey Field Handbook*. 2nd ed. CSIRO Publishing.
+- Soil Science Division Staff. (2017). *Soil Survey Manual*. USDA Handbook No. 18. USDA-NRCS.
+
+
+## 13. Training Record
+
+Before performing field texture assessments independently, personnel must:
+
+1. Read this SOP in full
+2. Complete a calibration exercise on at least 5 soils of known texture
+3. Demonstrate the moistening, ball, ribbon, and feel tests under supervision
+4. Achieve agreement within one textural class on 4 of 5 known samples
+5. Be signed off by the field lead or PI
+
+
+## Appendix A: Soil Texture Field Data Sheet {.appendix}
+
+Print this sheet and use it in the field.
+
+**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_\_\_\_
+
+**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Project:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+| Sample # | GPS / Location | Depth (cm) | Ball? (Y/N) | Ribbon (cm) | Feel (G/S/N) | Texture Class | Notes |
+|:---------|:---------------|:-----------|:------------|:------------|:-------------|:--------------|:------|
+| 1 | | | | | | | |
+| 2 | | | | | | | |
+| 3 | | | | | | | |
+| 4 | | | | | | | |
+| 5 | | | | | | | |
+| 6 | | | | | | | |
+| 7 | | | | | | | |
+| 8 | | | | | | | |
+| 9 | | | | | | | |
+| 10 | | | | | | | |
+| 11 | | | | | | | |
+| 12 | | | | | | | |
+| 13 | | | | | | | |
+| 14 | | | | | | | |
+| 15 | | | | | | | |
+
+**Feel key:** G = Gritty, S = Smooth, N = Neither
+
+**Texture class options:** Sand, Loamy sand, Sandy loam, Loam, Silt loam, Silt, Sandy clay loam, Clay loam, Silty clay loam, Sandy clay, Silty clay, Clay

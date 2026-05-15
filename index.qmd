@@ -64,13 +64,11 @@ number-sections: false
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F40](field_sops/SOP-F40-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 |
-| F40   | Texture by Feel | -- |
-| F41   | *TBD -- Soil Bulk Density (Core Method)* | -- |
-| F42   | *TBD -- Soil Infiltration Rate* | -- |
-| F43   | *TBD -- Soil Temperature Profiles* | -- |
 | F41   | *Foreign Soil Handling (Import Permits)* | 0.3 | Needs conversion |
-| F42   | *Soil Bulk Density (Core Method)* | -- | TBD |
-| F43   | *Soil Infiltration Rate* | -- | TBD |
+| [F42](SOP-F42-soil-texture-by-feel.qmd)   | Texture by Feel | 0.1 |
+| F43   | *TBD -- Soil Bulk Density (Core Method)* | -- |
+| F44   | *TBD -- Soil Infiltration Rate* | -- |
+| [F45](SOP-F45-soil-temperature-profiles.qmd)   | Soil Temperature Profiles | 0.1 |
 
 ### Air (F60--F79)
 
@@ -141,18 +139,16 @@ number-sections: false
 | L20   | *TBD -- pH and Conductivity (Bench)* | -- |
 | L21   | *TBD -- Alkalinity Titration* | -- |
 | L22   | *TBD -- Turbidity Measurement* | -- |
-| L23   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
-| L20   | *Accumet pH Meter* | 0.4 | Needs conversion |
-| L21   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
-| L22   | *Bacteria Screening (Colilert Quanti-Tray)* | 4.3 | Needs conversion |
-| L23   | *Hach DR3900 Spectrophotometer* | 0.1 | Needs conversion |
-| L24   | *Hach DR900 Colorimeter* | 0.1 | Needs conversion |
 | L25   | *Nutrient Analysis (Hach Methods)* | 1.0 | Needs conversion |
-| L26   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
-| L27   | *Microplastics in Water* | 0.2 | Needs conversion |
-| L28   | *Pesticide Analysis* | 0.1 | Needs conversion |
-| L29   | *Alkalinity Titration* | -- | TBD |
-| L30   | *Chlorophyll Extraction and Analysis* | 0.1 | Needs conversion |
+| L26   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
+| L27   | *Hach DR3900 Spectrophotometer* | 0.1 | Needs conversion |
+| L28   | *Hach DR900 Colorimeter* | 0.1 | Needs conversion |
+| L29   | *Bacteria Screening (Colilert Quanti-Tray)* | 4.3 | Needs conversion |
+| L30   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
+| L31   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
+| L32   | *Microplastics in Water* | 0.2 | Needs conversion |
+| L33   | *Pesticide Analysis* | 0.1 | Needs conversion |
+| L34   | *Chlorophyll Extraction and Analysis* | 0.1 | Needs conversion |
 
 ### Soil and Carbon Analysis (L40--L59)
 
@@ -161,20 +157,17 @@ number-sections: false
 | [L41](lab_sops/SOP-L41-soil-moisture.qmd) | Soil Moisture -- Gravimetric Method | 0.2 |
 | L42   | *Soil Texture (Hydrometer Method)* | 0.1 | Needs conversion |
 | L45   | *Soil pH and Salinity* | 0.1 | Needs conversion |
-[L46](lab_sops/SOP-L46-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.2 |
+|[L46](lab_sops/SOP-L46-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.2 |
 | L47   | *Nitrate Quick Test* | 0.1 | Needs conversion |
 | L48   | *TBD -- Extractable Phosphorus* | -- |
-
 | [L50](lab_sops/SOP-L50-loss-on-ignition.qmd) | Loss on Ignition (SOM) | 1.0 |
 | [L51](lab_sops/SOP-L51-total-carbon.qmd) |  Total Carbon -- Soil | 1.0 |
 | [L52](lab_sops/SOP-L52-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | 1.0 |
-
 | [L53](lab_sops/SOP-L53-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 |
 
 | L54   | *Soil Lead Analysis (Acid Digestion)* | 0.2 | Needs conversion |
 | L55   | *Soil Lead Analysis (MARS Microwave)* | 0.2 | Needs conversion |
-| L56  | *Nitrification Potential* | 0.1 | Needs conversion |
-
+| L56   | *Nitrification Potential* | 0.1 | Needs conversion |
 | L57   | *Solvita Compost Maturity* | 0.1 | Needs conversion |
 
 
@@ -182,22 +175,25 @@ number-sections: false
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| [L60](lab_sops/SOP-L60-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
-| L61   | *TBD -- Spectrophotometer Operation* | -- |
-| L62   | *TBD -- Ion Chromatograph Operation* | -- |
-| L63   | *TBD -- Analytical Balance Calibration* | -- |
-| L61   | *Clinical Centrifuge* | 0.1 | Needs conversion |
-| L62   | *Microcentrifuge (MySpin 12)* | 0.1 | Needs conversion |
-| L63   | *Sorvall ST8R Centrifuge* | 0.1 | Needs conversion |
-| L64   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
-| L65   | *ICP-MS* | 0.1 | Needs conversion |
-| L66   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
-| L67   | *IRMS -- Becoming a User* | 0.2 | Needs conversion |
-| L68   | *IRMS -- Flash EA Operation* | 0.2 | Needs conversion |
-| L69   | *IRMS -- Post-Analysis Correction* | 0.1 | Needs conversion |
-| L70   | *Picarro GHG Analyzer (Lab Configuration)* | 1.0 | Needs conversion |
-| L71   | *Radiometric Dating* | 0.1 | Needs conversion |
-| L72   | *Analytical Balance Calibration* | -- | TBD |
+| L60   | *TBD -- RO Water* | -- | TBD |
+| L61   | *TBD -- Analytical Balance Calibration* | -- | TBD |
+| L62   | *TBD -- Spectrophotometer Operation* | -- |
+| L63   | *Accumet pH Meter* | 0.4 | Needs conversion |
+| L65   | *Clinical Centrifuge* | 0.1 | Needs conversion |
+| L66   | *Microcentrifuge (MySpin 12)* | 0.1 | Needs conversion |
+| L67   | *Sorvall ST8R Centrifuge* | 0.1 | Needs conversion |
+| L68   | *TBD -- Ion Chromatograph Operation* | -- |
+
+| [L69](lab_sops/SOP-L69-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
+| L70   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
+| L71   | *ICP-MS* | 0.1 | Needs conversion |
+| L72   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
+| L73   | *IRMS -- Becoming a User* | 0.2 | Needs conversion |
+| L74   | *IRMS -- Flash EA Operation* | 0.2 | Needs conversion |
+| L75   | *IRMS -- Post-Analysis Correction* | 0.1 | Needs conversion |
+| L76   | *Picarro GHG Analyzer (Lab Configuration)* | 1.0 | Needs conversion |
+| L77   | *Radiometric Dating* | 0.1 | Needs conversion |
+
 
 
 ::: {.callout-note}
