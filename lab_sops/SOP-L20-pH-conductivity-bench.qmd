@@ -1,0 +1,293 @@
+---
+# =============================================================================
+# SOP-L20: Bench-Top pH and Conductivity Measurements
+# =============================================================================
+title: "pH and Conductivity -- Bench-Top Measurements"
+sop-number: "SOP-L20"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2025-05-14"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes bench-top measurement of pH and specific
+conductance (conductivity) in water samples, soil extracts, and other
+aqueous solutions using a laboratory pH/conductivity meter. Accurate
+pH and conductivity measurements are fundamental to water quality
+assessment and are referenced by multiple analytical SOPs throughout the
+EA Program [@apha2012; @eaton2005].
+
+
+## 2. Scope
+
+- **Applies to:** Bench-top pH and specific conductance measurements
+  on surface water, groundwater, wastewater, soil-water extracts
+  (e.g., 1:1 or 1:5 soil slurries), KCl extracts (see
+  [SOP-L46](SOP-L46-nitrate-ammonium-kcl.qmd)), and reagent solutions
+- **Does not apply to:** Field measurements using portable multiprobes
+  (see [SOP-F22 Eureka Manta2](../field_sops/SOP-F22-eureka-manta2.qmd));
+  continuous monitoring or in-situ deployments
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Lab Manager       | Maintain meter and electrodes, stock buffer solutions |
+| Trained Personnel | Calibrate meter before each session, measure and record results |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** pH buffer solutions (pH 4, 7, 10) are mild irritants.
+  Conductivity standards contain dissolved salts. KCl electrode fill
+  solution is a mild irritant. Acidic or alkaline samples may cause
+  skin or eye irritation.
+- **Electrical:** Keep the meter and power supply away from water spills
+  on the bench.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Safety glasses
+- [ ] Lab coat
+
+### Emergency Procedures
+
+For buffer or sample splashes to eyes, flush with water at the eyewash
+station for at least 15 minutes. For skin contact, wash with soap and
+water. Refer to
+[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                              | Location         | Notes                          |
+|:----------------------------------|:-----------------|:-------------------------------|
+| pH/conductivity meter             | Lab bench, SGM 133 | *TBD -- confirm model (e.g., Accumet AB150, Orion Star, or equivalent)* |
+| pH electrode (combination glass)  | Stored in pH 4 or KCl storage solution | Replace annually or when response time degrades |
+| Conductivity cell (2- or 4-electrode) | Stored dry or in DI water | Cell constant typically 1.0 cm^-1^ |
+| Magnetic stir plate and stir bars | Lab bench        | Optional, for large-volume samples |
+| Temperature probe (ATC)           | Built into meter or separate | For automatic temperature compensation |
+
+### Standards and Consumables
+
+| Item                                  | Notes                              |
+|:--------------------------------------|:-----------------------------------|
+| pH buffer 4.01 (red)                  | NIST-traceable; store at room temperature |
+| pH buffer 7.00 (yellow)              | NIST-traceable; store at room temperature |
+| pH buffer 10.01 (blue)               | NIST-traceable; store at room temperature |
+| Conductivity standard (1413 uS/cm)   | KCl-based; store at room temperature |
+| Conductivity standard (84 uS/cm or 12,880 uS/cm) | For low- or high-range verification |
+| KCl electrode fill solution (3 M or saturated) | For refilling the reference junction |
+| DI water (Type I or II)              | For rinsing electrodes between samples |
+| Lint-free wipes (Kimwipes)           | For blotting electrodes             |
+| Small beakers or sample cups (50--100 mL) | Clean, for holding aliquots    |
+
+
+## 6. Procedure
+
+### 6.1 Electrode Preparation
+
+1. Remove the pH electrode from its storage solution. Inspect the glass
+   bulb for cracks, chips, or deposits. If the bulb is damaged, replace
+   the electrode.
+2. If the electrode has a refillable reference junction, check the KCl
+   fill level. Refill to the indicated line with 3 M KCl or saturated
+   KCl solution if low. Open the fill hole during measurements to allow
+   proper electrolyte flow [@rundle2011].
+3. Rinse the pH electrode thoroughly with DI water and blot gently with
+   a Kimwipe. Do not rub the glass bulb.
+4. Rinse the conductivity cell with DI water and blot dry.
+
+### 6.2 pH Calibration (Three-Point)
+
+Calibrate before each measurement session and whenever the meter has
+been turned off [@apha2012].
+
+1. Pour approximately 30--50 mL of each buffer solution into clean,
+   labeled beakers. Do not pour used buffer back into the stock bottle.
+2. Rinse the pH electrode with DI water and blot gently.
+3. Place the electrode into pH 7.00 buffer first. Allow the reading to
+   stabilize (stability indicator on the meter display).
+4. Accept or set the first calibration point to 7.00.
+5. Rinse with DI water, blot, and place into pH 4.01 buffer. Allow to
+   stabilize and accept.
+6. Rinse with DI water, blot, and place into pH 10.01 buffer. Allow to
+   stabilize and accept.
+7. The meter should display the slope (ideally 95--102% of theoretical
+   Nernstian slope, i.e., approximately 56--60 mV/pH unit at 25 C).
+   If the slope falls below 90%, the electrode may need cleaning or
+   replacement [@illingworth1981].
+8. Record the calibration date, buffer lot numbers, slope, and any
+   offset in the meter calibration log.
+
+::: {.callout-tip}
+### Tip
+Always calibrate starting with pH 7.00, then move to pH 4.01, and
+finish with pH 10.01. The 7.00 buffer sets the zero point (offset),
+while the acidic and basic buffers define the slope. If you only have
+two buffers, bracket the expected sample range (e.g., pH 4 and 7 for
+acidic samples, pH 7 and 10 for alkaline samples).
+:::
+
+### 6.3 Conductivity Calibration (One-Point)
+
+1. Rinse the conductivity cell with DI water and blot dry
+2. Pour approximately 30--50 mL of the 1413 uS/cm standard into a
+   clean beaker
+3. Immerse the conductivity cell fully in the standard. Tap gently to
+   release air bubbles from the cell opening.
+4. Allow the reading to stabilize with temperature compensation active
+5. Calibrate (adjust the cell constant) so that the display reads
+   1413 uS/cm (at 25 C)
+6. Record the calibration date and standard lot number in the log
+7. *TBD -- if your lab uses a different primary conductivity standard
+   (e.g., 84 uS/cm for low-conductivity water or 12,880 uS/cm for
+   brackish water), adjust accordingly*
+
+::: {.callout-important}
+Never measure conductivity on a water sample that has already been used
+for pH measurement. The KCl from the pH electrode reference junction
+leaks into the sample and alters conductivity. Always measure
+conductivity first, or use a separate aliquot [@apha2012].
+:::
+
+### 6.4 Measuring pH
+
+1. Rinse the pH electrode with DI water and blot gently
+2. Pour approximately 30--50 mL of the sample into a clean beaker. Use
+   a separate aliquot from the one used for conductivity.
+3. Immerse the electrode so that the glass bulb and reference junction
+   are fully submerged
+4. Allow the reading to stabilize (typically 30--60 seconds for
+   well-buffered samples; may take 2--3 minutes for low-ionic-strength
+   water)
+5. Record the pH value, sample temperature, and sample ID in the lab
+   notebook
+6. Rinse the electrode with DI water between samples
+
+### 6.5 Measuring Conductivity
+
+1. Rinse the conductivity cell with DI water and blot dry
+2. Pour approximately 30--50 mL of the sample into a clean beaker
+3. Immerse the cell fully. Tap gently to dislodge air bubbles.
+4. Allow the reading to stabilize
+5. Record the specific conductance (uS/cm at 25 C), sample temperature,
+   and sample ID in the lab notebook
+6. Rinse the cell with DI water between samples
+
+### 6.6 Measuring Soil pH and Conductivity (Soil Slurry Method)
+
+For soil pH and electrical conductivity, prepare a soil-water slurry
+[@thomas1996; @rhoades1996]:
+
+1. Weigh 10 g of air-dried, sieved (2 mm) soil into a clean beaker
+2. Add 10 mL of DI water for a 1:1 soil-water ratio (or 50 mL for a
+   1:5 ratio, depending on the protocol). Record the ratio used.
+3. Stir the slurry vigorously for 30 seconds, then allow to stand for
+   10 minutes
+4. Stir again briefly, then insert the pH electrode into the slurry
+   while it is still suspended. Allow to stabilize and record.
+5. For conductivity, use a separate slurry aliquot or prepare a fresh
+   slurry. Insert the conductivity cell into the supernatant after the
+   soil has settled. Record.
+6. See also *SOP-L45 Soil pH and Salinity* for additional detail.
+
+### 6.7 Electrode Storage and Maintenance
+
+1. After use, rinse the pH electrode with DI water and return it to its
+   storage solution (pH 4 buffer or KCl storage solution as recommended
+   by the manufacturer). Never store the pH electrode dry or in DI
+   water, as this damages the glass membrane [@illingworth1981].
+2. Store the conductivity cell dry or in DI water (per manufacturer
+   recommendation).
+3. If the pH electrode response becomes sluggish (stabilization takes
+   more than 3 minutes) or the calibration slope drops below 90%,
+   soak the electrode in electrode cleaning solution or dilute HCl
+   (0.1 M) for 15--30 minutes, rinse with DI water, and recalibrate.
+4. Replace the pH electrode if the slope remains below 90% after
+   cleaning or if the glass bulb is cracked.
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Calibrate the pH meter before each measurement session using a
+  three-point calibration
+- Calibrate the conductivity meter before each session using a
+  traceable standard
+- Acceptable pH calibration slope: 90--102% of theoretical Nernstian
+  slope (approximately 54--60 mV/pH at 25 C)
+- Check calibration by re-reading pH 7.00 buffer after every 10
+  samples. If the reading has drifted by more than +/- 0.05 pH units,
+  recalibrate.
+- Check conductivity by re-reading the 1413 uS/cm standard after every
+  10 samples. If the reading has drifted by more than +/- 5%,
+  recalibrate.
+- Run duplicate measurements on at least 10% of samples. Acceptable
+  precision: +/- 0.1 pH units and +/- 5% for conductivity.
+- Record all calibration data, standard lot numbers, electrode
+  condition, and QC check results in the meter log.
+
+
+## 8. Waste Disposal
+
+| Waste Type                 | Disposal Method                          |
+|:---------------------------|:-----------------------------------------|
+| Used pH buffer solutions   | Collect in waste container; do not pour down the drain |
+| Used conductivity standard | Drain with copious water (KCl solutions are non-hazardous) |
+| Soil slurry waste          | Standard trash (if non-hazardous soil)   |
+| Spent KCl fill solution    | Drain with copious water                 |
+| DI water rinses            | Drain                                    |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before measuring pH and conductivity independently, personnel must:
+
+1. Read this SOP and [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   in full
+2. Demonstrate a three-point pH calibration with acceptable slope
+3. Demonstrate a one-point conductivity calibration
+4. Perform measurements on at least 5 practice samples under
+   supervision with acceptable duplicate precision
+5. Demonstrate proper electrode storage
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Troubleshooting {.appendix}
+
+| Symptom                          | Probable Cause                     | Corrective Action                          |
+|:---------------------------------|:-----------------------------------|:-------------------------------------------|
+| pH reading drifts and does not stabilize | Fouled or aging electrode; depleted KCl fill | Clean electrode; refill KCl; replace if slope is below 90% |
+| Calibration slope below 90%      | Electrode aging or contamination   | Soak in cleaning solution; replace if unresponsive |
+| pH buffer reads correctly but samples do not stabilize | Low ionic strength sample | Allow extra stabilization time (up to 5 min); consider adding ionic strength adjuster |
+| Conductivity reads zero          | Air bubble in cell; broken cell    | Tap cell to dislodge bubbles; inspect for cracks |
+| Conductivity reading too high on all samples | Contaminated cell or residual standard | Rinse cell thoroughly with DI water; recalibrate |
+| Conductivity standard reads correctly but samples seem wrong | Temperature compensation off or incorrect cell constant | Verify ATC is enabled; recalibrate cell constant |

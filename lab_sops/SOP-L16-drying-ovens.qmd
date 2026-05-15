@@ -1,0 +1,263 @@
+---
+# =============================================================================
+# SOP-L16: Drying Ovens
+# =============================================================================
+title: "Using Drying Ovens"
+sop-number: "SOP-L16"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.2"
+
+revision-history:
+  - version: "0.1"
+    date: "2018-04-05"
+    author: "Marc Los Huertos"
+    changes: "Initial release (LaTeX, placeholder)"
+  - version: "0.2"
+    date: "2025-05-14"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to QMD; added full procedural content"
+---
+
+## 1. Purpose
+
+This procedure describes the safe operation of gravity convection and
+forced-air drying ovens used in the EA Program laboratory. Drying ovens
+are used to determine gravimetric moisture content of soil, sediment,
+and plant tissue samples (see
+[SOP-L41 Soil Moisture](SOP-L41-soil-moisture.qmd)), to pre-dry
+samples before loss on ignition (see
+[SOP-L50 Loss on Ignition](SOP-L50-loss-on-ignition.qmd)), to dry
+glassware, and to regenerate desiccants. Consistent oven operation
+ensures accurate and reproducible mass-loss measurements across the
+laboratory [@gardner1986; @robertson1999].
+
+
+## 2. Scope
+
+- **Applies to:** All gravity convection and forced-air drying ovens in
+  the EA Program laboratory, operated at temperatures up to 250 C
+- **Does not apply to:** Muffle furnaces (550+ C; see SOP-L50), vacuum
+  ovens, microwave drying, or autoclaves
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Lab Manager       | Maintain ovens, schedule annual calibration checks |
+| Trained Personnel | Operate ovens following this SOP, report malfunctions |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Oven surfaces and contents reach temperatures up to
+  250 C. Severe burns can result from touching hot surfaces, shelves,
+  or sample containers without proper PPE. Steam may escape when
+  opening the door if drying wet samples.
+- **Chemical:** Do not dry samples containing volatile organic solvents,
+  flammable materials, or corrosive chemicals in these ovens. Drying
+  ovens are not explosion-proof. Volatile fumes can accumulate inside
+  the oven chamber and pose fire or explosion risks.
+- **Electrical:** Do not operate ovens with damaged power cords or
+  plugs. Ensure the oven is properly grounded.
+:::
+
+### Required PPE
+
+- [ ] Heat-resistant gloves or oven mitts (required when loading/unloading)
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Closed-toed shoes
+
+### Emergency Procedures
+
+For burns, cool the affected area under cool running water for at least
+10 minutes. Seek medical attention for burns with blistering. If smoke
+or unusual odors are detected, turn off the oven, unplug it, and
+ventilate the area. Refer to
+[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Location         | Notes                          |
+|:------------------------------|:-----------------|:-------------------------------|
+| Drying oven                   | Lab bench, SGM 133 | *TBD -- confirm manufacturer and model number* |
+| Calibrated thermometer or thermocouple | Inside oven | For independent temperature verification |
+| Desiccator with indicating desiccant | Lab bench  | For cooling samples after removal from oven |
+| Metal tongs or oven mitts     | Near oven        | For handling hot containers    |
+
+### Consumables
+
+| Item                          | Notes                              |
+|:------------------------------|:-----------------------------------|
+| Aluminum weighing tins        | Pre-labeled or numbered            |
+| Ceramic crucibles             | For higher-temperature applications |
+| Indicating desiccant (silica gel or Drierite) | Replace or regenerate when color changes |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Use Checks
+
+1. Verify the oven is clean and free of residue from previous use
+2. Check that the oven vent is unobstructed (gravity convection ovens
+   rely on passive airflow; blocked vents cause uneven heating)
+3. Confirm the temperature setpoint using the oven's built-in display
+   or controller
+4. Verify the temperature against an independent thermometer or
+   thermocouple placed inside the oven. The reading should agree within
+   +/- 2 C of the setpoint. If it does not, contact the lab manager.
+
+### 6.2 Setting the Temperature
+
+Common drying temperatures used in the EA Program laboratory:
+
+| Application                     | Temperature | Duration         | Reference SOP |
+|:--------------------------------|:------------|:-----------------|:--------------|
+| Gravimetric soil moisture       | 105 C       | 24+ hours        | SOP-L41       |
+| Pre-drying soil for LOI         | 105 C       | 24+ hours        | SOP-L50       |
+| Drying glassware                | 105 C       | 2--4 hours       | --            |
+| Drying plant tissue             | 65--70 C    | 48--72 hours     | --            |
+| Regenerating Drierite desiccant | 210 C       | 1--2 hours       | --            |
+| Acid-treated soil (IC removal)  | 105 C       | Until dry        | SOP-L51       |
+
+1. Set the temperature using the oven controller dial or digital
+   display
+2. Allow the oven to reach the target temperature and stabilize before
+   loading samples (typically 30--60 minutes)
+3. Record the setpoint and actual temperature in your lab notebook
+
+### 6.3 Loading Samples
+
+1. Arrange samples on oven shelves with adequate spacing to allow air
+   circulation. Do not stack containers or block vents.
+2. Place containers with the lids removed or loosely resting to allow
+   moisture to escape
+3. For large batches, distribute samples evenly across shelves to
+   minimize temperature gradients
+4. Close the oven door promptly after loading
+
+::: {.callout-tip}
+### Tip
+Place a small label or sign on the oven door indicating: your name,
+the setpoint temperature, the date and time samples were loaded, and
+the expected removal time. This prevents others from accidentally
+changing the temperature or disturbing your samples.
+:::
+
+### 6.4 Monitoring
+
+1. Check the oven temperature at the start and end of each drying cycle
+   using the independent thermometer
+2. Do not open the oven door unnecessarily during drying, as this
+   introduces cool air and extends drying time
+3. For multi-day drying, check the oven temperature at least once daily
+
+### 6.5 Removing Samples
+
+1. Wear heat-resistant gloves or oven mitts
+2. Use metal tongs for small containers (aluminum tins, crucibles)
+3. Transfer hot containers directly into a desiccator to cool to room
+   temperature. Do not weigh hot samples; thermal convection currents
+   around hot objects cause unstable balance readings [@harris2020].
+4. Allow samples to cool in the desiccator for 20--30 minutes before
+   weighing
+5. Close the oven door after removing samples
+
+### 6.6 Verifying Dryness (Constant Mass)
+
+For analytical applications (soil moisture, LOI), drying is complete
+only when the sample reaches constant mass:
+
+1. After the initial drying period, remove the sample, cool in the
+   desiccator, and weigh
+2. Return the sample to the oven for an additional 2--4 hours
+3. Cool and re-weigh
+4. If the mass has changed by less than 0.01 g between successive
+   weighings, constant mass has been achieved
+5. If the mass has decreased by more than 0.01 g, return to the oven
+   and repeat until constant mass is reached
+
+### 6.7 Shutdown
+
+1. If the oven will not be used for several days, turn it off using the
+   power switch or controller
+2. Leave the door slightly ajar to prevent moisture buildup and odors
+   inside the chamber
+3. Ensure no samples remain in the oven before shutting down
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Verify oven temperature against an independent thermometer at least
+  monthly; record in the oven calibration log
+- Acceptable temperature accuracy: +/- 2 C of setpoint at 105 C
+- If the oven temperature drifts beyond +/- 5 C, remove the oven from
+  service and contact the lab manager
+- Ensure the desiccator contains active (indicating) desiccant;
+  regenerate or replace when the indicator changes color
+- For analytical drying, always confirm constant mass (Section 6.6)
+  rather than relying on a fixed drying time alone
+
+### Interferences
+
+- Overcrowding the oven can create temperature gradients and uneven
+  drying, leading to inconsistent results
+- Opening the oven door frequently extends drying time and introduces
+  moisture
+- Drying samples containing volatile compounds at 105 C will cause mass
+  loss beyond water content, biasing moisture determinations
+
+
+## 8. Waste Disposal
+
+| Waste Type              | Disposal Method                          |
+|:------------------------|:-----------------------------------------|
+| Dried soil samples      | Standard trash or return to field site   |
+| Aluminum tins           | Clean and reuse, or recycle              |
+| Spent desiccant         | Regenerate at 210 C or dispose as non-hazardous solid waste |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using the drying oven independently, personnel must:
+
+1. Read this SOP and [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   in full
+2. Demonstrate proper use of heat-resistant gloves and tongs
+3. Demonstrate setting the oven temperature and verifying it with an
+   independent thermometer
+4. Demonstrate loading and unloading samples, including transfer to the
+   desiccator
+5. Be signed off by the PI or lab manager
+
+
+## Appendix A: Troubleshooting {.appendix}
+
+| Symptom                          | Probable Cause                     | Corrective Action                          |
+|:---------------------------------|:-----------------------------------|:-------------------------------------------|
+| Oven does not heat               | Power switch off, unplugged, or blown fuse | Check power connections; replace fuse if needed |
+| Temperature overshoots setpoint  | Faulty thermostat or controller    | Remove from service; contact lab manager   |
+| Uneven drying across samples     | Overcrowded shelves or blocked vent | Redistribute samples; check vent is clear  |
+| Samples not reaching constant mass after 48 hours | Very wet or clay-rich samples; temperature too low | Verify setpoint is 105 C; extend drying time; check oven seal |
+| Unusual odor during drying       | Contaminated samples or residue from previous use | Turn off oven; ventilate; clean interior   |

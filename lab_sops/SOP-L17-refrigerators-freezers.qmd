@@ -1,0 +1,269 @@
+---
+# =============================================================================
+# SOP-L17: Refrigerators and Freezers
+# =============================================================================
+title: "Refrigerators and Freezers"
+sop-number: "SOP-L17"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.2"
+
+revision-history:
+  - version: "0.1"
+    date: "2016-08-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release (LaTeX)"
+  - version: "0.2"
+    date: "2025-05-14"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to QMD format"
+---
+
+## 1. Purpose
+
+This procedure describes the proper use, sample storage protocols, and
+inventory management for the laboratory refrigerator (4 C), freezer
+(approximately --30 C), and ultra-low freezer (approximately --80 C).
+Proper cold storage is essential for preserving sample integrity for
+chemical, biological, and molecular analyses [@apha2012].
+
+
+## 2. Scope
+
+- **Applies to:** All use of the laboratory refrigerator (4 C), freezer
+  (--30 C), and ultra-low freezer (--80 C) for sample preservation and
+  reagent storage
+- **Does not apply to:** Food storage (prohibited), field coolers, or
+  cryogenic storage (liquid nitrogen)
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve storage assignments, ensure training compliance |
+| Lab Manager       | Monitor temperatures, coordinate power outage response |
+| Trained Personnel | Store and retrieve samples following this SOP, maintain inventory records |
+| New Students      | Complete training before independent use    |
+
+### Acknowledgements
+
+We thank Aparna Chintapalli for setting up the --80 C ultra-freezer map
+and inventory system.
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** The --80 C freezer poses a risk of cold burns
+  (frostbite) upon contact with surfaces or samples. Heavy drawers and
+  racks can cause crush injuries if dropped.
+- **Chemical:** No flammable materials may be stored in the laboratory
+  refrigerator or freezers. These units are not explosion-proof and can
+  generate significant static electricity, which can cause an explosion
+  in the presence of flammable fumes.
+- **Electrical:** Power outages can compromise stored samples (see
+  Section 7).
+:::
+
+::: {.callout-important}
+No food or beverages shall be stored in the laboratory refrigerator or
+freezers under any circumstances.
+:::
+
+### Required PPE
+
+- [ ] Insulated cryogenic mittens or gloves (required for --80 C freezer)
+- [ ] Lab coat
+- [ ] Safety glasses (when handling chemical reagents from cold storage)
+- [ ] Closed-toed shoes
+
+### Emergency Procedures
+
+For cold burns, warm the affected area gradually with lukewarm water; do
+not rub. Seek medical attention if blistering occurs. Refer to
+[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Location         | Notes                          |
+|:------------------------------|:-----------------|:-------------------------------|
+| Laboratory refrigerator       | Lab, SGM 133     | Set to 4 C                     |
+| Laboratory freezer            | Lab, SGM 133     | Set to approximately --30 C    |
+| Ultra-low freezer (--80 C)    | Lab, SGM 133     | *TBD -- confirm manufacturer and model number* |
+| Thermometer / temperature logger | Inside each unit | For monitoring; check daily   |
+
+### Consumables
+
+| Item                          | Notes                              |
+|:------------------------------|:-----------------------------------|
+| Cryoboxes (cardboard or plastic) | For organizing samples in the --80 C freezer |
+| Cryogenic labels / markers    | Must withstand --80 C without peeling |
+| Sample tubes (cryovials, microcentrifuge tubes) | Must be rated for the target storage temperature |
+
+
+## 6. Procedure
+
+### 6.1 Refrigerator (4 C)
+
+1. Store samples that require short-term cold storage (soil extracts,
+   water samples awaiting analysis, reagents with refrigeration
+   requirements)
+2. Label all containers with: sample ID, date, researcher name, and
+   project
+3. Do not overcrowd the refrigerator; allow air circulation around
+   samples
+4. Remove expired samples and reagents during monthly cleanouts
+5. *TBD -- define shelf assignment system for the refrigerator*
+
+### 6.2 Freezer (--30 C)
+
+1. Store samples requiring medium-term frozen storage (archived soil
+   samples, tissue samples, reagents requiring --20 C or colder)
+2. Label all containers with: sample ID, date, researcher name, and
+   project
+3. Organize samples by project; do not mix projects within the same
+   shelf area
+4. *TBD -- define shelf assignment and inventory system for the --30 C
+   freezer*
+
+### 6.3 Ultra-Low Freezer (--80 C)
+
+The --80 C freezer is organized using a hierarchical location system.
+Every sample must be documented in the
+[Freezer Inventory Google Sheet](https://docs.google.com/spreadsheets/d/1ohQFRFMBHCu2Wm8H58UH67SJ_uvwSsbRFGZVjZr9Bjc/edit?usp=sharing)
+and in your laboratory notebook.
+
+#### Loading Protocol
+
+1. When loading the freezer for the first time or after defrosting,
+   install a few drawers at a time from top to bottom, allowing the
+   freezer to stabilize between additions
+2. Only open the freezer when you are ready to place or remove samples.
+   Minimize the time the door is open.
+3. Wear insulated cryogenic mittens and a lab coat when accessing the
+   freezer
+
+#### Location Hierarchy
+
+The freezer inventory uses the following hierarchy:
+
+- **Shelf:** Each shelf is contained behind an inner door, numbered from
+  top to bottom. (Note: Shelf 1 is currently empty.)
+- **Divider:** Each divider is a column of drawers within the shelf,
+  labeled A through E from left to right
+- **Drawer:** Drawers are numbered sequentially from top to bottom
+  within each divider
+- **Box:** Each drawer contains five boxes, labeled 1 through 5 from
+  front to back
+- **Box position:** Each box is divided into 100 positions. Numbering
+  runs from front-left (position 1) to back-right (position 100),
+  counting along rows from left to right
+
+#### Required Inventory Fields
+
+Record the following in the
+[Google Sheet](https://docs.google.com/spreadsheets/d/1ohQFRFMBHCu2Wm8H58UH67SJ_uvwSsbRFGZVjZr9Bjc/edit?usp=sharing)
+and in your lab notebook each time you store or remove a sample:
+
+| Field              | Description                              |
+|:-------------------|:-----------------------------------------|
+| Shelf              | Shelf number (top to bottom)             |
+| Divider            | Column letter (A--E, left to right)      |
+| Drawer             | Drawer number (top to bottom)            |
+| Box                | Box number (1--5, front to back)         |
+| Box position       | Position number (1--100)                 |
+| Project            | Project name or code                     |
+| Date collected     | Date sample was collected in the field   |
+| Sample ID          | Unique sample identifier                 |
+| Sample description | Description including any relevant analytical results (e.g., NanoDrop concentration) |
+
+::: {.callout-tip}
+### Tip
+Before opening the freezer, identify the exact shelf, divider, drawer,
+box, and position you need. Have all your samples labeled and ready to
+go. This minimizes the time the door is open and protects the integrity
+of all stored samples.
+:::
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### Temperature Monitoring
+
+- Check and record the temperature of each unit daily (or use a
+  continuous temperature logger)
+- Acceptable ranges: refrigerator 2--6 C; freezer --25 to --35 C;
+  ultra-low freezer --75 to --85 C
+- If temperature is outside the acceptable range, investigate
+  immediately (door left ajar, power outage, compressor failure)
+- *TBD -- establish an alarm system or temperature logging protocol
+  with automatic notifications*
+
+### Power Outage Protocol
+
+::: {.callout-important}
+### Power Outage Response
+
+If the power goes out, it is imperative that valuable samples in either
+freezer be moved to a location where power is currently available to
+maintain freezing conditions. The laboratory generators do not provide
+sufficient power to keep any of the refrigerators or freezers at their
+appropriate temperatures.
+
+1. Contact the lab manager and PI immediately
+2. Do not open freezer doors unless moving samples to a backup location
+3. A closed --80 C freezer can maintain temperature for approximately
+   24 hours if the door remains shut
+4. If power is not expected to be restored within 4 hours, arrange to
+   transfer critical samples to a backup freezer on campus
+5. *TBD -- identify backup freezer locations on campus and establish
+   agreements for emergency sample transfer*
+:::
+
+### Inventory Maintenance
+
+- Conduct a full inventory audit of the --80 C freezer at least once
+  per semester
+- Remove samples from completed or abandoned projects promptly
+- Ensure the Google Sheet is current; discrepancies between the sheet
+  and actual contents must be resolved immediately
+
+
+## 8. Waste Disposal
+
+| Waste Type                  | Disposal Method                          |
+|:----------------------------|:-----------------------------------------|
+| Expired or abandoned samples | Dispose per the relevant SOP for the sample type (e.g., biohazard, chemical waste, standard trash) |
+| Broken cryovials            | Sweep up carefully; treat as sharps if broken glass |
+| Used cryoboxes              | Standard trash (if uncontaminated)       |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using the laboratory cold storage independently, personnel must:
+
+1. Read this SOP and [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   in full
+2. Demonstrate proper use of cryogenic PPE
+3. Demonstrate the ability to locate a sample using the freezer
+   hierarchy and Google Sheet
+4. Successfully store and retrieve a sample under supervision, updating
+   the inventory in both the Google Sheet and lab notebook
+5. Be signed off by the PI or lab manager
