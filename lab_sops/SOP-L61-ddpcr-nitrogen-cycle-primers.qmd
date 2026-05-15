@@ -1,0 +1,359 @@
+---
+# =============================================================================
+# SOP-L81: Primer Selection and Design for Nitrogen Cycle Genes (ddPCR)
+# =============================================================================
+title: "Primer Selection and Design for Nitrogen Cycle Genes -- ddPCR"
+sop-number: "SOP-L61"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-14"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This procedure describes the selection, design, and validation of
+primers and probes targeting functional genes of the nitrogen cycle for
+use with droplet digital PCR (ddPCR). The nitrogen cycle genes covered
+include those encoding nitrification (*amoA* for both ammonia-oxidizing
+bacteria and archaea), denitrification (*nirK*, *nirS*, *nosZ*),
+nitrogen fixation (*nifH*), and dissimilatory nitrate reduction to
+ammonium (*nrfA*). The SOP covers literature-based primer selection,
+in silico evaluation, and bench validation on the Bio-Rad QX200 ddPCR
+system [@hindson2011; @biorad_qx200_2024].
+
+
+## 2. Scope
+
+- **Applies to:** Design and selection of primers and hydrolysis probes
+  (TaqMan) or EvaGreen-based assays for quantifying nitrogen cycle
+  functional genes from environmental DNA extracts (soil, sediment,
+  water)
+- **Does not apply to:** Amplicon sequencing library preparation,
+  metagenomics, or RNA-based transcript quantification (RT-ddPCR)
+- **Location:** Molecular biology bench, Pomona College Biogeochemistry
+  Lab
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve primer selections and assay designs |
+| Trained Personnel | Conduct in silico analysis, order primers, perform validation runs |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** ddPCR droplet generation oil contains proprietary
+  surfactants; avoid skin and eye contact. EvaGreen and other
+  intercalating dyes are potential mutagens at high concentrations;
+  handle with gloves.
+- **Physical:** The QX200 Droplet Generator uses pressurized cartridges.
+  Follow manufacturer instructions for cartridge handling.
+- **Biological:** Environmental DNA extracts may originate from samples
+  containing pathogens. Handle with standard precautions.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves (changed frequently)
+
+### Emergency Procedures
+
+For chemical splash, flush with water for 15 minutes. Refer to
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                | Location         | Notes                          |
+|:------------------------------------|:-----------------|:-------------------------------|
+| Bio-Rad QX200 Droplet Digital PCR System | Instrument room | Includes droplet generator, thermal cycler, and droplet reader |
+| Bio-Rad C1000 Touch Thermal Cycler  | Instrument room  | With 96-well deep-well block   |
+| Plate sealer (PX1 PCR Plate Sealer) | Instrument room  | Pierceable foil heat seal      |
+| Computer with QuantaSoft software   | Instrument room  | For data acquisition and analysis |
+| Micropipettes (2, 10, 20 uL)       | Mol bio bench    | Calibrated, dedicated to PCR setup |
+
+### Reagents and Consumables
+
+| Item                                      | Catalog No.       | Storage          |
+|:------------------------------------------|:------------------|:-----------------|
+| ddPCR Supermix for Probes (No dUTP)       | 1863024           | --20 C           |
+| ddPCR EvaGreen Supermix                   | 1864034           | --20 C           |
+| QX200 Droplet Generation Oil for Probes   | 1863005           | Room temperature |
+| QX200 Droplet Generation Oil for EvaGreen | 1864006           | Room temperature |
+| DG8 Cartridges and gaskets                | 1864008           | Room temperature |
+| ddPCR 96-well plates                      | 12001925          | Room temperature |
+| Pierceable foil heat seals                | 1814040           | Room temperature |
+| Nuclease-free water                       | Various           | Room temperature |
+| Custom primers (desalted, 25 nmol)        | IDT or equivalent | --20 C           |
+| Custom hydrolysis probes (HPLC-purified)  | IDT or equivalent | --20 C, protected from light |
+| Positive control DNA (gBlock or plasmid)  | IDT or equivalent | --20 C           |
+
+
+## 6. Procedure
+
+### 6.1 Target Gene Selection
+
+The nitrogen cycle encompasses multiple functional transformations. The
+table below lists the primary target genes, the enzymatic step they
+represent, and key references for established primer sets
+[@braker2000; @rotthauwe1997; @rosch2002; @henry2006; @poly2001;
+@welsh2014]:
+
+| Gene    | Enzyme                        | Process                                | Organism Group      |
+|:--------|:------------------------------|:---------------------------------------|:--------------------|
+| *amoA*  | Ammonia monooxygenase         | Ammonia oxidation (nitrification)      | AOB, AOA            |
+| *nirK*  | Copper-containing nitrite reductase | Denitrification (NO~2~^-^ to NO) | Denitrifiers        |
+| *nirS*  | Cytochrome cd~1~ nitrite reductase | Denitrification (NO~2~^-^ to NO)  | Denitrifiers        |
+| *nosZ*  | Nitrous oxide reductase       | Denitrification (N~2~O to N~2~)        | Denitrifiers (Clade I and II) |
+| *nifH*  | Nitrogenase reductase         | Nitrogen fixation (N~2~ to NH~3~)      | Diazotrophs         |
+| *nrfA*  | Cytochrome c nitrite reductase| DNRA (NO~2~^-^ to NH~4~^+^)           | DNRA organisms      |
+
+### 6.2 Literature-Based Primer Selection
+
+1. Search the published literature for validated primer sets targeting
+   each gene of interest. Prioritized references include
+   @rotthauwe1997, @francis2005, @braker2000, @henry2006, @poly2001,
+   @jones2013, and @welsh2014.
+2. For each candidate primer pair, record: primer names, sequences
+   (5' to 3'), amplicon length, annealing temperature, and the original
+   publication.
+3. Evaluate published primer sets against the following criteria:
+
+   a. Amplicon length between 60 and 200 bp (optimal for ddPCR; shorter
+      amplicons partition more efficiently into droplets) [@hindson2011]
+   b. Demonstrated use in environmental samples similar to your matrix
+      (e.g., soil, sediment)
+   c. Broad coverage of the target gene clade verified by in silico
+      analysis (see 6.3)
+   d. Minimal off-target amplification in non-target organisms
+
+::: {.callout-note}
+Many classic nitrogen cycle primers (e.g., *nosZ* primers nosZ-F/nosZ-R
+from @henry2006) were designed for conventional qPCR with amplicons of
+250--400 bp. These may need to be redesigned or replaced with shorter
+alternatives optimized for ddPCR. Consult @biorad_qx200_2024 for
+amplicon length recommendations.
+:::
+
+### 6.3 In Silico Primer Evaluation
+
+1. Check primer specificity using NCBI Primer-BLAST
+   (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) against the nr/nt
+   database, restricting the search to bacteria and/or archaea as
+   appropriate [@ye2012]
+2. Verify primer coverage against curated functional gene databases:
+   a. FunGene (http://fungene.cme.msu.edu/) for *amoA*, *nirK*, *nirS*,
+      *nosZ*, *nifH* [@fish2013]
+   b. *TBD -- identify additional databases for nrfA coverage analysis*
+3. Check for primer dimers and secondary structures using IDT OligoAnalyzer
+   (https://www.idtdna.com/calc/analyzer) or Primer3
+   (https://primer3.ut.ee/)
+4. Confirm that the melting temperature (T~m~) of each primer falls
+   between 55 and 65 C, with no more than 2 C difference between
+   forward and reverse primers
+5. For hydrolysis probe (TaqMan) assays, design the probe to have a
+   T~m~ 5--10 C higher than the primers, with no G at the 5' end
+   (quenches FAM fluorescence), and a length of 15--30 bases
+   [@biorad_qx200_2024]
+
+### 6.4 Recommended Primer Sets
+
+The following table summarizes commonly used primer sets for nitrogen
+cycle genes. Confirm suitability for your specific sample type and ddPCR
+platform before use.
+
+::: {.callout-important}
+This table provides a starting point. Primer sequences, annealing
+temperatures, and amplicon sizes should be verified against current
+literature and databases before ordering. Some primer sets listed below
+produce amplicons longer than ideal for ddPCR and may require
+redesign.
+:::
+
+| Gene    | Primer Name     | Sequence (5' to 3')            | Amplicon (bp) | Reference             | ddPCR Suitability |
+|:--------|:----------------|:-------------------------------|:--------------|:----------------------|:------------------|
+| *amoA* (AOB) | amoA-1F / amoA-2R | GGGGTTTCTACTGGTGGT / CCCCTCKGSAAAGCCTTCTTC | 491 | @rotthauwe1997 | Redesign needed (too long) |
+| *amoA* (AOA) | Arch-amoAF / Arch-amoAR | STAATGGTCTGGCTTAGACG / GCGGCCATCCATCTGTATGT | 635 | @francis2005 | Redesign needed (too long) |
+| *nirK*  | nirK876 / nirK1040 | ATYGGCGGVCAYGGCGA / GCCTCGATCAGRTTRTGGTT | 165 | @henry2006 | Suitable |
+| *nirS*  | cd3aF / R3cd   | GTSAACGTSAAGGARACSGG / GASTTCGGRTGSGTCTTGA | 410 | @braker2000 | Redesign needed |
+| *nosZ* (Clade I) | nosZ2F / nosZ2R | CGCRACGGCAASAAGGTSMSSGT / CAKRTGCAKSGCRTGGCAGAA | 267 | @henry2006 | Marginal; consider shorter alternative |
+| *nosZ* (Clade II) | nosZ-II-F / nosZ-II-R | CTIGGICCIYTKCAYAC / GCIGARCARAAITCBGTRC | 698 | @jones2013 | Redesign needed |
+| *nifH*  | PolF / PolR     | TGCGAYCCSAARGCBGACTC / ATSGCCATCATYTCRCCGGA | 360 | @poly2001 | Redesign needed |
+| *nrfA*  | nrfAF2aw / nrfAR1 | CARTGYCAYGTBGARTA / TWNGGCATRTGRCARTC | 251 | @welsh2014 | Marginal |
+
+*TBD -- update this table with ddPCR-optimized primer sets as they are
+validated in the lab. Short-amplicon redesigns for amoA, nirS, nosZ
+Clade II, and nifH are in progress.*
+
+### 6.5 Primer and Probe Ordering
+
+1. Order desalted primers at 25 nmol scale from IDT (Integrated DNA
+   Technologies) or equivalent supplier
+2. Order hydrolysis probes HPLC-purified with 5'-FAM (or HEX for
+   multiplexing) and 3'-Iowa Black FQ quencher
+3. For positive controls, order synthetic double-stranded DNA fragments
+   (gBlocks) matching the target amplicon sequence. Include at least
+   50 bp of flanking sequence on each side of the primer binding sites.
+4. Resuspend lyophilized primers in nuclease-free water to a stock
+   concentration of 100 uM. Store at --20 C.
+5. Prepare 10 uM working stocks by diluting 1:10 in nuclease-free water.
+   Store at --20 C.
+
+### 6.6 ddPCR Thermal Cycling Optimization
+
+1. Set up a temperature gradient experiment on the Bio-Rad C1000 Touch
+   to determine the optimal annealing temperature for each primer set
+2. Use a thermal gradient spanning the predicted T~m~ minus 5 C to T~m~
+   plus 5 C (typically 55--65 C)
+3. Use positive control gBlock DNA diluted to approximately 1,000 copies
+   per uL as template
+4. Recommended cycling protocol (adjust annealing temperature per
+   gradient results) [@biorad_qx200_2024]:
+
+   a. Enzyme activation: 95 C for 10 min
+   b. 40 cycles of:
+      - Denaturation: 94 C for 30 s
+      - Annealing/extension: *gradient temperature* for 60 s
+   c. Signal stabilization: 98 C for 10 min
+   d. Hold at 4 C (indefinite)
+   e. Ramp rate: 2 C/s for all steps
+
+5. Read droplets on the QX200 Droplet Reader
+6. Select the annealing temperature that produces the clearest separation
+   between positive and negative droplet clusters in the QuantaSoft
+   amplitude plot
+
+::: {.callout-tip}
+### Tip
+If positive and negative droplet populations overlap ("rain"), try
+increasing the annealing temperature by 1--2 C or reducing the primer
+concentration from 900 nM to 450 nM. Excessive rain suggests non-specific
+amplification or suboptimal primer binding [@lievens2016].
+:::
+
+### 6.7 Assay Validation
+
+1. **Specificity:** Run no-template controls (NTC) and extraction blanks
+   from [SOP-L80](SOP-L80-dna-extraction.qmd) to confirm the absence of
+   false positives
+2. **Dynamic range:** Prepare a serial dilution of gBlock positive
+   control (10 to 100,000 copies per reaction) and verify linearity of
+   the ddPCR response across the range [@huggett2013]
+3. **Limit of detection (LOD):** Determine the lowest copy number that
+   produces a statistically significant positive call above the NTC
+   background. For ddPCR, this is typically 1--10 copies per 20 uL
+   reaction [@hindson2011]
+4. **Matrix effects:** Run environmental DNA extracts at multiple
+   dilutions (undiluted, 1:5, 1:10) to check for PCR inhibition. If
+   inhibition is detected, the 1:10 dilution value (back-calculated)
+   should agree within 20% of the 1:5 value [@racki2014]
+5. *TBD -- establish acceptance criteria for each gene target based on
+   validation results*
+
+### 6.8 Primer and Probe Storage
+
+1. Store primer and probe stocks at --20 C in the designated "Primers"
+   cryobox
+2. Record all primer information (gene target, primer name, sequence,
+   lot number, date received, stock concentration, box/position) in the
+   [Freezer Inventory Google Sheet](<!-- LINK_PLACEHOLDER: replace with Google Sheet URL -->)
+3. Avoid repeated freeze-thaw of hydrolysis probes; prepare single-use
+   aliquots if running assays infrequently
+4. Label all tubes with: gene target, primer name (F or R), concentration,
+   and date resuspended
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Every ddPCR run must include: NTC (minimum 2 wells), extraction blank
+  (from SOP-L80), and positive control gBlock at a known concentration
+- Droplet count per well must exceed 10,000 accepted droplets (out of
+  approximately 20,000 generated); wells below this threshold should be
+  excluded [@biorad_qx200_2024]
+- Positive/negative droplet cluster separation must be unambiguous; set
+  the fluorescence amplitude threshold manually using the NTC and
+  positive control wells as guides
+- *TBD -- define acceptable coefficients of variation for technical
+  replicates (typically less than 15% for ddPCR)*
+- *TBD -- establish lab-specific LOD and LOQ values for each primer set
+  after validation*
+
+
+## 8. Waste Disposal
+
+| Waste Type                          | Container                 | Disposal Method                     |
+|:------------------------------------|:--------------------------|:------------------------------------|
+| Used DG8 cartridges and gaskets     | Standard trash            | Non-hazardous                       |
+| Droplet generation oil waste        | Chemical waste container  | EH&S hazardous waste pickup         |
+| Used PCR plates and foil seals      | Standard trash            | Non-hazardous after thermal cycling |
+| Pipette tips (pre- and post-PCR)    | Standard trash            | Non-hazardous                       |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing this procedure independently, personnel must:
+
+1. Read this SOP, [SOP-L80 DNA Extraction](SOP-L80-dna-extraction.qmd),
+   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+2. Complete the Bio-Rad QX200 online training modules or equivalent
+   manufacturer training
+3. Demonstrate competence with the droplet generator, thermal cycler,
+   and droplet reader
+4. Successfully set up and read a practice plate using positive control
+   DNA under supervision
+5. Be signed off by the PI or lab manager
+
+
+## Appendix A: Primer Design Decision Flowchart {.appendix}
+
+*TBD -- add a visual flowchart showing the decision process from gene
+selection through in silico validation, ordering, bench validation, and
+final approval for routine use.*
+
+
+## Appendix B: QuantaSoft Threshold Setting Guide {.appendix}
+
+*TBD -- add annotated screenshots from QuantaSoft showing examples of
+good cluster separation, marginal rain, and failed assays, with guidance
+on how to set the threshold manually.*
+
+
+## Appendix C: Multiplexing Considerations {.appendix}
+
+When quantifying two gene targets simultaneously (e.g., *amoA* AOB and
+*amoA* AOA), use a duplex probe assay with FAM and HEX fluorophores.
+Design considerations for multiplexing include:
+
+- Ensure that the two amplicons do not share primer binding sites or
+  produce chimeric products
+- Optimize annealing temperatures independently before combining; both
+  targets must amplify efficiently at the same annealing temperature
+- Verify that multiplex results agree with singleplex results within 10%
+  using positive control DNA at known concentrations [@dobnik2016]
+- *TBD -- document validated multiplex combinations as they are
+  developed in the lab*

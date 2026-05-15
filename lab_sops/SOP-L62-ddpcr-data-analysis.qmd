@@ -1,0 +1,415 @@
+---
+# =============================================================================
+# SOP-L82: ddPCR Data Export and Analysis -- Nitrogen Cycle Gene Abundance
+# =============================================================================
+title: "ddPCR Data Export and Analysis -- Nitrogen Cycle Gene Abundance"
+sop-number: "SOP-L62"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-14"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This procedure describes the workflow for exporting raw data from the
+Bio-Rad QX200 ddPCR system, performing quality control checks,
+calculating gene copy numbers normalized to soil mass or DNA
+concentration, and conducting statistical analyses of nitrogen cycle gene
+abundance data. The SOP links the instrument output from
+[SOP-L81](SOP-L81-ddpcr-nitrogen-cycle-primers.qmd) to reproducible
+analysis scripts written in R [@rcoreteam2024].
+
+
+## 2. Scope
+
+- **Applies to:** Processing and analysis of ddPCR data (QuantaSoft or
+  QuantaSoft Analysis Pro output) for nitrogen cycle functional genes
+  (*amoA*, *nirK*, *nirS*, *nosZ*, *nifH*, *nrfA*) from environmental
+  samples
+- **Does not apply to:** Amplicon sequencing data, metagenomics, or
+  qPCR data processed with different software
+- **Location:** Instrument computer (QuantaSoft) and RStudio Server
+  (see [SOP-L05 RStudio and GitHub](SOP-L05-rstudio-github.qmd))
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve analysis pipeline and interpretation|
+| Trained Personnel | Export data, run QC, perform analysis        |
+| New Students      | Complete training before independent analysis|
+
+
+## 4. Safety and Hazards
+
+No physical or chemical hazards are associated with this procedure. Data
+integrity and reproducibility are the primary concerns.
+
+::: {.callout-warning}
+### Data Integrity
+
+- Never overwrite raw exported data files. Work only with copies.
+- All analysis scripts must be version-controlled in the lab GitHub
+  repository.
+- Back up raw `.qlp` files from QuantaSoft to the lab shared drive
+  immediately after each run.
+:::
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                              | Location           | Notes                          |
+|:----------------------------------|:-------------------|:-------------------------------|
+| QX200 instrument computer         | Instrument room    | Runs QuantaSoft or QuantaSoft Analysis Pro |
+| RStudio Server                    | Remote (see SOP-L05) | For R-based analysis          |
+| USB drive or network share        | Lab                | For transferring `.qlp` and `.csv` files |
+
+### Software
+
+| Software                          | Version         | Purpose                        |
+|:----------------------------------|:----------------|:-------------------------------|
+| QuantaSoft or QuantaSoft Analysis Pro | 1.7+ or 1.0+ | Threshold setting, data export |
+| R                                 | 4.3+            | Statistical analysis           |
+| RStudio                           | Current         | IDE for R scripts              |
+| `tidyverse` R package             | Current         | Data wrangling and visualization |
+| `ggplot2` R package               | Current         | Plotting                       |
+| *TBD -- identify additional R packages for ddPCR analysis (e.g., `ddpcr`, `twoddpcr`)* | | |
+
+
+## 6. Procedure
+
+### 6.1 Data Export from QuantaSoft
+
+1. Open the completed experiment file (`.qlp`) in QuantaSoft
+2. Review the droplet plots for each well. Confirm that the
+   positive/negative threshold was set appropriately during the run
+   (see SOP-L81, Section 6.6)
+3. If threshold adjustment is needed, use QuantaSoft Analysis Pro to
+   re-apply thresholds manually. Document any threshold changes in the
+   lab notebook.
+4. Export data using **Options > Export CSV** to generate a
+   comma-separated file containing well-level results
+5. The exported CSV includes the following key columns:
+
+   - `Well`: plate position (e.g., A01)
+   - `Sample`: sample name as entered during plate setup
+   - `Target`: gene target name
+   - `Concentration`: copies per uL of the final ddPCR reaction
+     (Poisson-corrected) [@hindson2011]
+   - `Positives`: number of positive droplets
+   - `Negatives`: number of negative droplets
+   - `AcceptedDroplets`: total accepted droplets
+   - `MeanAmplitudeOfPositives`: mean fluorescence of positive cluster
+   - `MeanAmplitudeOfNegatives`: mean fluorescence of negative cluster
+
+6. Save the CSV with the naming convention:
+   `YYYY-MM-DD_gene_project_plate.csv`
+   (e.g., `2025-05-14_amoA_wetland_plate1.csv`)
+7. Copy the `.qlp` file and the exported `.csv` to the lab shared drive
+   under `ddPCR_raw_data/`
+
+### 6.2 Quality Control Checks
+
+Perform the following checks on the exported data before proceeding to
+analysis. These can be scripted in R for reproducibility.
+
+1. **Droplet count filter:** Exclude any well with fewer than 10,000
+   accepted droplets. Wells below this threshold have unreliable Poisson
+   statistics [@biorad_qx200_2024].
+
+2. **No-template controls (NTC):** NTC wells must show 0 or fewer than
+   3 positive droplets. If NTC wells show more than 3 positives, the
+   entire plate or the affected target should be considered contaminated
+   and rerun.
+
+3. **Extraction blanks:** Extraction blanks (from SOP-L80) must show
+   fewer positive droplets than the NTC acceptance threshold. Elevated
+   counts in extraction blanks indicate contamination in the DNA
+   extraction workflow.
+
+4. **Positive controls:** Positive control gBlock wells should fall
+   within 20% of the expected concentration based on the dilution
+   prepared.
+
+5. **Technical replicate agreement:** If technical replicates were run,
+   calculate the coefficient of variation (CV) across replicates. A CV
+   greater than 25% suggests pipetting error or sample heterogeneity.
+
+::: {.callout-tip}
+### Tip
+Create a QC report template in R Markdown or Quarto that automatically
+flags wells failing any of the criteria above. This makes batch QC
+efficient and ensures nothing is missed.
+:::
+
+### 6.3 Calculating Gene Copy Numbers
+
+The QuantaSoft `Concentration` output is in copies per uL of the ddPCR
+reaction mixture. To express results per gram of dry soil (or per unit
+of extracted DNA), apply the following conversions:
+
+$$
+\text{Copies per g dry soil} =
+\frac{C_{\text{ddPCR}} \times V_{\text{reaction}} \times DF \times V_{\text{elution}}}{V_{\text{template}} \times m_{\text{soil}} \times (1 - \theta_g)}
+$$
+
+where:
+
+- $C_{\text{ddPCR}}$ = concentration from QuantaSoft (copies/uL)
+- $V_{\text{reaction}}$ = total ddPCR reaction volume (typically 20 uL)
+- $DF$ = dilution factor of the DNA template (e.g., 10 if diluted 1:10)
+- $V_{\text{elution}}$ = total DNA elution volume from extraction (uL;
+  see SOP-L80)
+- $V_{\text{template}}$ = volume of DNA template added to the ddPCR
+  reaction (uL)
+- $m_{\text{soil}}$ = mass of soil extracted (g)
+- $\theta_g$ = gravimetric soil moisture (as a decimal; see
+  [SOP-L41](SOP-L41-soil-moisture.qmd))
+
+To express results per ng of extracted DNA instead:
+
+$$
+\text{Copies per ng DNA} =
+\frac{C_{\text{ddPCR}} \times V_{\text{reaction}}}{V_{\text{template}} \times C_{\text{DNA}}}
+$$
+
+where $C_{\text{DNA}}$ is the Qubit DNA concentration (ng/uL) from
+SOP-L80.
+
+```{r}
+#| label: copy-number-calc
+#| echo: true
+
+# Example calculation: copies per g dry soil
+c_ddpcr <- 52.3         # copies/uL (from QuantaSoft)
+v_reaction <- 20         # uL
+dilution_factor <- 10    # 1:10 dilution of template
+v_elution <- 100         # uL (from SOP-L80)
+v_template <- 2          # uL added to ddPCR reaction
+soil_mass_g <- 0.25      # g soil extracted
+moisture_decimal <- 0.35 # gravimetric moisture as decimal
+
+copies_per_g <- (c_ddpcr * v_reaction * dilution_factor * v_elution) /
+                (v_template * soil_mass_g * (1 - moisture_decimal))
+
+cat(sprintf("Gene copies per g dry soil: %.0f\n", copies_per_g))
+cat(sprintf("Gene copies per g dry soil (log10): %.2f\n", log10(copies_per_g)))
+```
+
+### 6.4 Data Organization and Merging
+
+1. Merge the QC-filtered ddPCR results with the sample metadata (site,
+   treatment, depth, date, soil moisture, DNA concentration) using a
+   shared sample ID column
+2. Organize the merged data in a tidy (long) format with one row per
+   sample-by-gene combination [@wickham2014]
+3. Save the merged analysis-ready dataset as a `.csv` in the project
+   GitHub repository under `data/processed/`
+4. *TBD -- define the standard column naming convention for the lab's
+   ddPCR datasets (e.g., `sample_id`, `gene`, `copies_per_g_dry`,
+   `copies_per_ng_dna`, `site`, `treatment`, `depth_cm`, `date`)*
+
+### 6.5 Statistical Analysis
+
+::: {.callout-note}
+The choice of statistical approach depends on the experimental design
+(e.g., paired vs. independent sites, factorial treatments, time series).
+The guidance below covers common analyses for nitrogen cycle gene
+abundance. Consult the PI before selecting a final analytical approach.
+:::
+
+#### 6.5.1 Data Exploration and Visualization
+
+1. Plot gene copy numbers (log~10~-transformed) by treatment, site, or
+   depth using boxplots or dot plots
+2. Assess normality of log-transformed data using Shapiro-Wilk tests and
+   Q-Q plots
+3. Check for outliers and investigate whether they represent true
+   biological variation or analytical artifacts
+
+#### 6.5.2 Comparing Gene Abundance Across Treatments
+
+- For two-group comparisons (e.g., amended vs. control): use Welch's
+  t-test on log~10~-transformed copies per g dry soil, or the
+  non-parametric Wilcoxon rank-sum test if normality assumptions are
+  not met [@frostegard1999]
+- For multi-group comparisons: use one-way ANOVA on log~10~-transformed
+  data with Tukey HSD post hoc tests, or Kruskal-Wallis with Dunn's
+  test for non-parametric data
+- For factorial designs (e.g., treatment x depth): use two-way ANOVA or
+  linear mixed-effects models with site as a random effect
+  [@pinheiro2000]
+
+#### 6.5.3 Gene Ratios
+
+Ratios of functional gene abundances can provide insight into the
+balance of nitrogen cycling processes [@hallin2009]:
+
+- *nirK*/*nirS*: relative contribution of the two nitrite reductase
+  pathways to denitrification
+- *nosZ*/(*nirK* + *nirS*): completeness of denitrification (higher
+  values suggest greater N~2~O reduction capacity)
+- *amoA* AOA/*amoA* AOB: relative dominance of archaeal vs. bacterial
+  ammonia oxidation
+- *nrfA*/(*nirK* + *nirS*): relative importance of DNRA vs.
+  denitrification
+
+*TBD -- determine which gene ratios are most relevant for the lab's
+current research questions and establish standard visualization formats.*
+
+#### 6.5.4 Correlations with Environmental Variables
+
+- Correlate gene abundances with soil physicochemical data (pH, moisture,
+  total C, total N, nitrate, ammonium) using Pearson or Spearman
+  correlations
+- *TBD -- evaluate whether multivariate approaches (e.g., PCA,
+  redundancy analysis) are appropriate given the number of samples and
+  variables*
+- *TBD -- determine whether gene abundance data should be related to
+  process rate measurements (e.g., N~2~O flux, nitrification potential)
+  and define the analytical framework for doing so*
+
+#### 6.5.5 Reporting
+
+- Report gene abundance as copies per g dry soil (mean +/- standard
+  error) and/or copies per ng DNA
+- Present data on a log~10~ scale in figures; report back-transformed
+  means and confidence intervals in tables where appropriate
+  [@bolker2009]
+- Include all QC metrics (droplet counts, NTC results, positive control
+  recovery) as supplementary tables
+- *TBD -- create a standardized R Markdown/Quarto reporting template
+  for ddPCR results that the lab can reuse across projects*
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Raw `.qlp` files must be archived on the lab shared drive before any
+  analysis proceeds
+- All R scripts must be committed to the lab GitHub repository with
+  meaningful commit messages
+- QC filtering must be applied before any statistical analysis;
+  unfiltered data should never be reported
+- Positive control recovery within 20% of expected value
+- *TBD -- define minimum sample sizes required for each statistical test
+  based on power analysis*
+- *TBD -- establish whether and how to handle values below the limit of
+  detection (e.g., substitution with LOD/2, censored regression, or
+  Tobit models) [@helsel2011]*
+
+
+## 8. Waste Disposal
+
+No physical waste is generated by this procedure. Data management
+practices are described in Section 6.4.
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing this procedure independently, personnel must:
+
+1. Read this SOP, [SOP-L81 Primer Design](SOP-L81-ddpcr-nitrogen-cycle-primers.qmd),
+   and [SOP-L80 DNA Extraction](SOP-L80-dna-extraction.qmd)
+2. Complete [SOP-L05 RStudio and GitHub](SOP-L05-rstudio-github.qmd)
+   training
+3. Demonstrate competence exporting data from QuantaSoft
+4. Successfully run the QC and analysis pipeline on a practice dataset
+   under supervision
+5. Be signed off by the PI or lab manager
+
+
+## Appendix A: Example QC Filtering Script {.appendix}
+
+```{r}
+#| label: qc-filter-example
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+# Read exported QuantaSoft CSV
+raw <- read_csv("data/raw/2025-05-14_amoA_wetland_plate1.csv")
+
+# QC filtering
+qc_filtered <- raw %>%
+  filter(
+    AcceptedDroplets >= 10000        # Minimum droplet threshold
+  ) %>%
+  mutate(
+    qc_flag = case_when(
+      Sample == "NTC" & Positives > 3 ~ "NTC_contamination",
+      Sample == "Extraction_Blank" & Positives > 3 ~ "Extraction_contamination",
+      TRUE ~ "Pass"
+    )
+  )
+
+# Flag and report QC failures
+qc_failures <- qc_filtered %>%
+  filter(qc_flag != "Pass")
+
+if (nrow(qc_failures) > 0) {
+  warning("QC failures detected:")
+  print(qc_failures %>% select(Well, Sample, Target, Positives, qc_flag))
+}
+
+# Retain only passing sample wells
+analysis_ready <- qc_filtered %>%
+  filter(qc_flag == "Pass",
+         !Sample %in% c("NTC", "Extraction_Blank", "Positive_Control"))
+```
+
+
+## Appendix B: Visualization Template {.appendix}
+
+```{r}
+#| label: gene-abundance-plot
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+# Assumes analysis_ready has columns: sample_id, gene, copies_per_g_dry, treatment
+analysis_ready %>%
+  ggplot(aes(x = treatment, y = log10(copies_per_g_dry), fill = treatment)) +
+  geom_boxplot(alpha = 0.7, outlier.shape = NA) +
+  geom_jitter(width = 0.2, alpha = 0.5, size = 1.5) +
+  facet_wrap(~ gene, scales = "free_y") +
+  labs(
+    x = "Treatment",
+    y = expression(log[10]~"(gene copies g"^{-1}~"dry soil)"),
+    title = "Nitrogen Cycle Gene Abundance by Treatment"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+
+## Appendix C: Sending Samples to External Laboratories {.appendix}
+
+*TBD -- if ddPCR analysis is outsourced to an external service provider
+(e.g., university core facility, commercial lab), document the following:*
+
+- *Preferred service provider(s) and contact information*
+- *Sample submission requirements (volume, concentration, format)*
+- *Data format and file types returned by the provider*
+- *Turnaround time expectations*
+- *Cost per sample and funding source/account number*
+- *How to reconcile externally generated data with in-house QC standards*
