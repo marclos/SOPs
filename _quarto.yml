@@ -48,21 +48,19 @@ website:
       - text: "**Statistics and R**"
         href: https://marclos.github.io/RTricks/
       - text: "---"
-      - section: "Recently Updated Field SOPs"
+      - section: "Commonly Used Field SOPs"
         contents:
           - field_sops/SOP-F01-field-safety.qmd
-          - field_sops/SOP-F21-surface-water-sampling.qmd
-          - field_sops/SOP-F40-soil-sampling.qmd
-      - section: "Recently Updated Lab SOPs"
+          - field_sops/SOP-F41-surface-water-sampling.qmd
+          - field_sops/SOP-F56-soil-sampling.qmd
+      - section: "Commonly Used Lab SOPs"
         contents:
           - lab_sops/SOP-L01-laboratory-safety.qmd
           - lab_sops/SOP-L02-hazardous-materials-handling.qmd
-          - lab_sops/SOP-L41-soil-moisture.qmd
-          - lab_sops/SOP-L46-nitrate-ammonium-kcl.qmd
-          - lab_sops/SOP-L50-loss-on-ignition.qmd
-          - lab_sops/SOP-L52-solvita-co2-burst.qmd
-          - lab_sops/SOP-L53-microbial-biomass-carbon.qmd
-
+          - lab_sops/SOP-L55-soil-moisture.qmd
+          - lab_sops/SOP-L58-nitrate-ammonium-kcl.qmd
+          - lab_sops/SOP-L61-loss-on-ignition.qmd
+          - lab_sops/SOP-L63-solvita-co2-burst.qmd
 
 format:
   html:
