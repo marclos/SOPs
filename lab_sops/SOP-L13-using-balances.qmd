@@ -1,0 +1,226 @@
+---
+# =============================================================================
+# SOP-L13: Using Balances
+# =============================================================================
+title: "Using Balances"
+sop-number: "SOP-L13"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.2"
+
+revision-history:
+  - version: "0.1"
+    date: "2016-08-10"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+  - version: "0.2"
+    date: "2023-05-10"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to Quarto"
+---
+
+## 1. Purpose
+
+This procedure describes the proper use, zeroing, taring, and routine
+quality checks for the laboratory balances in the EA Program. Correct
+weighing technique is fundamental to virtually every quantitative
+laboratory procedure. For calibration and verification protocols, see
+[SOP-L21 Analytical Balance Calibration](SOP-L21-analytical-balance-calibration.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** All Mettler Toledo balances in the EA Program
+  laboratory, including the basic balances (MS1602TS/00) and the
+  precision balance (XPE205 DeltaRange)
+- **Does not apply to:** Portable field balances or calibration
+  procedures (see [SOP-L21](SOP-L21-analytical-balance-calibration.qmd))
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Dropping heavy items onto the balance pan can damage the
+  weighing cell. Handle objects carefully and never exceed the rated
+  capacity.
+- **Chemical:** Some materials weighed on the balance may be hazardous.
+  Refer to the relevant SOP for the material being weighed. Never place
+  chemicals directly on the weighing pan; always use a sample vessel.
+:::
+
+### Required PPE
+
+- [ ] Lab coat
+- [ ] Nitrile gloves (when handling chemical samples)
+- [ ] Safety glasses (when weighing chemical reagents)
+
+### Emergency Procedures
+
+If a chemical spill occurs on or near the balance, clean the spill per
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+before resuming use.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Specifications                            |
+|:------------------------------|:------------------------------------------|
+| Basic Balance (3 units)       | Mettler Toledo MS1602TS/00; 1620 g max, d = 0.1 g |
+| Precision Balance (1 unit)    | Mettler Toledo XPE205 DeltaRange; 81 g / 220 g max, d = 0.01 mg / 0.1 mg |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Weighing vessels (boats, beakers, etc.) | Appropriate to the material being weighed |
+| Lint-free wipes (Kimwipes)    | For cleaning the weighing pan             |
+| Forceps                       | For handling calibration weights (see [SOP-L21](SOP-L21-analytical-balance-calibration.qmd)) |
+
+
+## 6. Procedure
+
+### 6.1 Switching On and Warm-Up
+
+1. The balance switches on automatically when connected to the power
+   supply
+2. Before the balance gives reliable results, it must acclimatize to
+   room temperature and warm up while connected to power. Refer to the
+   instrument manual for the recommended warm-up time for each model.
+3. To exit standby mode, press the power/standby key. The display turns
+   on and the balance is ready immediately.
+
+::: {.callout-note}
+If the balance was completely disconnected from power for an extended
+period, allow it to warm up for at least 30 minutes before use
+[@harris2020].
+:::
+
+### 6.2 Zeroing the Balance
+
+1. Open the draft shield (precision balance only)
+2. Ensure the weighing pan is clear
+3. Close the draft shield
+4. Press the **Zero** key. The display reads 0.0000 g (precision) or
+   0.0 g (basic)
+
+### 6.3 Taring
+
+If a sample vessel is used, tare the balance before adding sample
+material:
+
+1. Zero the balance (Section 6.2)
+2. Open the draft shield
+3. Place the sample vessel on the center of the weighing pan
+4. Close the draft shield
+5. Press the **Tare** key. The display reads zero and the **Net**
+   indicator appears
+
+### 6.4 Performing a Weighing
+
+1. Open the draft shield (if applicable)
+2. Place the weighing object into the tared sample vessel
+3. Close the draft shield and wait for the stability indicator
+4. Record the displayed mass in the lab notebook
+5. If using the XPE205 electronic results feature, tap **Add result**
+   to append the value to the results list
+
+### 6.5 Completing and Saving Results (XPE205)
+
+1. Tap **Complete** to open the task completion dialog
+2. Select an option to save or print the results list
+3. Follow the on-screen instructions
+4. Tap **Complete** to finalize; the results list is saved or printed
+   and then cleared
+
+### 6.6 Shutdown
+
+1. Remove all samples and vessels from the weighing pan
+2. Clean the pan and draft shield interior with a lint-free wipe
+3. Close the draft shield
+4. To enter standby mode, hold the power/standby key. The display goes
+   dark but the balance remains powered on and thermally stable.
+5. To switch the balance off completely, disconnect from the power
+   supply. Note that the balance will require a full warm-up before its
+   next use.
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Leveling the Balance
+
+Exact horizontal positioning is essential for repeatable and accurate
+results:
+
+1. Check the spirit level before each use session
+2. If the message "Balance is out of level" appears, tap **Level the
+   balance** to open the leveling aid
+3. Adjust the leveling feet following the on-screen instructions until
+   the bubble is centered
+4. The leveling aid can also be accessed via **Balance menu > Leveling
+   aid**
+
+### 7.2 Internal Adjustment (XPE205)
+
+1. Navigate to **Methods > Adjustments**
+2. Verify that the adjustment strategy is set to **Internal adjustment**
+3. Open the Methods section, tap **Adjustments**, select the adjustment,
+   and tap **Start** (or from the main weighing screen, tap **More >
+   Start adjustment**)
+4. Do not touch the balance during the adjustment
+5. When complete, review the adjustment results
+6. Tap **Print** if a record is needed, then tap **Finish adjustment**
+
+For external calibration verification using traceable reference weights,
+see [SOP-L21](SOP-L21-analytical-balance-calibration.qmd).
+
+
+## 8. Waste Disposal
+
+No waste is generated by this procedure. Cleaning materials (Kimwipes)
+can be disposed of in standard trash unless they contacted hazardous
+chemicals, in which case follow
+[SOP-L02](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 9. References
+
+- Mettler Toledo. *XPE205 DeltaRange Precision Balance: Operating
+  Instructions*.
+- Mettler Toledo. *MS1602TS Basic Balance: Operating Instructions*.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using the laboratory balances independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   training
+3. Demonstrate proper leveling, zeroing, taring, and weighing technique
+   under supervision
+4. For the XPE205 precision balance, also demonstrate use of the draft
+   shield and internal adjustment procedure
+5. Be signed off by the PI or lab manager

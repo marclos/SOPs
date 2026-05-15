@@ -61,11 +61,10 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|
 | [F41](field_sops/SOP-F41-surface-water-sampling.qmd) | Surface Water Sampling | 0.9 |
 | [F42](field_sops/SOP-F42-stream-discharge-measurement.qmd)   | *Stream Discharge Measurement* | 0.1 | Needs conversion |
-| F43   | *TBD -- Groundwater Sampling* | -- |
 | F43   | *TBD -- Stormwater Sampling* | -- |
-| F44   | *TBD -- Stream Discharge Measurement* | -- |
-| F43   | *Stream Physical Habitat Analysis* | 0.1 | Needs conversion |
-| F44   | *Stormwater Sampling* | -- | TBD |
+| F44   | *TBD -- Groundwater Sampling* | -- |
+| F45   | *Stream Physical Habitat Analysis* | 0.1 | Needs conversion |
+
 
 ### Soil Physical Characteristics and Processes (F55--F69)
 
@@ -131,12 +130,14 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:------|
 | L11   | *Milli-Q Water System* | 0.2 | Needs conversion |
 | L12   | *TBD -- Glassware Cleaning and Preparation* | 0.1 | Needs conversion |
-| L13   | *Using Balances* | 0.2 | Needs conversion |
+| [L13](lab_sops/SOP-L13-using-balances.qmd)   | Using Balances | 0.2 | 
 | L14   | *Micropipettes* | 0.3 | Needs conversion |
 | L15   | *Using a Vortex Mixer* | 0.1 | Needs conversion |
 | [L16](lab_sops/SOP-L16-drying-ovens.qmd)   | Drying Ovens | 0.1 | Needs conversion |
 | [L17](lab_sops/SOP-L17-refrigerators-freezers.qmd)   | Refrigerators and Freezers | 0.1 | 
 | L18   | *Hot Plates and Dry Bath* | 0.1 | Needs conversion |
+| L19   | *Clinical Centrifuge* | 0.1 | Needs conversion |
+| [L20](lab_sops/SOP-L21-sorvall-centrifuge.qmd)   | Sorvall ST8R Centrifuge | 0.1 |
 
 ### Instrumentation (L20--L39)
 
@@ -145,9 +146,7 @@ tbl-classes: table-sm
 | [L21](lab_sops/SOP-L21-analytical-balance-calibration.qmd)   | Analytical Balance Calibration | 1.0 | TBD |
 | L22   | *TBD -- Spectrophotometer Operation* | -- |
 | L23   | *Accumet pH Meter* | 0.4 | Needs conversion |
-| L25   | *Clinical Centrifuge* | 0.1 | Needs conversion |
-| L26   | *Microcentrifuge (MySpin 12)* | 0.1 | Needs conversion |
-| L27   | *Sorvall ST8R Centrifuge* | 0.1 | Needs conversion |
+
 | L28   | *TBD -- Ion Chromatograph Operation* | -- |
 | [L29](lab_sops/SOP-L29-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
 | L30   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
