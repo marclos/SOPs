@@ -123,7 +123,7 @@ Log in with your Pomona College username and password.
 
 <!-- IMAGE: Screenshot of RStudio Server login page -->
 <!-- Take new screenshot; save as images/rstudio_server_login.png -->
-![RStudio Server login page](../images/rstudio_server_login.png){width=80% fig-align="center"}
+![RStudio Server login page](../images/rstudio_server_login.png){width=50% fig-align="center"}
 
 ### 10.2 The Four RStudio Panels
 
@@ -131,7 +131,7 @@ When RStudio opens, you see up to four panels. To see all four, create a file: F
 
 <!-- IMAGE: Annotated screenshot with all 4 panels labeled -->
 <!-- Take new screenshot; save as images/rstudio_four_panels.png -->
-![RStudio Server login page](../images/rstudio_four_panels.png){width=80% fig-align="center"}
+![Annotated screenshot with all 4 panels](../images/rstudio_four_panels.png){width=90% fig-align="center"}
 
 | Panel | Location | What It Does |
 |:------|:---------|:-------------|
@@ -171,6 +171,7 @@ This creates a secure connection so RStudio and GitHub can communicate.
 <!-- IMAGE: Git/SVN menu showing Create SSH Key -->
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/Updated_creating_SSH.png -->
 <!-- Rename to: images/create_ssh_key.png -->
+![Git/SVN menu showing Create SSH Key](../images/create_ssh_key.png){width=50% fig-align="center"}
 
 ### 11.3 Add the SSH Key to GitHub
 
@@ -186,7 +187,7 @@ RStudio and GitHub can now communicate securely.
 <!-- IMAGE: GitHub SSH key settings page -->
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/Github_SavedSSH.jpg -->
 <!-- Rename to: images/github_ssh_settings.png -->
-
+![GitHub SSH key settings page](../images/github_SSH_settings.jpg){width=60% fig-align="center"}
 
 ## 12. Part 3: Cloning Your First Repository
 
@@ -200,6 +201,7 @@ We'll practice with a repository called `beginnersluck`. Search GitHub for it un
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/Github_GreenCodeButton.png -->
 <!-- Rename to: images/github_code_button.png -->
+![Green Clone/Code Button](../images/github_code_button.png){width=60% fig-align="center"}
 
 2. Make sure the tab says **SSH** (not HTTPS). If it says HTTPS, click the **SSH** tab to switch.
 
@@ -210,6 +212,8 @@ If you clone with HTTPS instead of SSH, pushing will fail and the project is dif
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/CloningGithub2.jpg -->
 <!-- Rename to: images/clone_with_ssh.png -->
+![Cloning Repository Link](../images/clone_with_ssh.png){width=60% fig-align="center"}
+
 
 3. Click the clipboard icon to copy the URL
 
@@ -220,22 +224,28 @@ If you clone with HTTPS instead of SSH, pushing will fail and the project is dif
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/RstudioNewProject.jpg -->
 <!-- Rename to: images/new_project_dialog.png -->
+![New Project Dialog](../images//new_project_dialog.jpg){width=60% fig-align="center"}
+
 
 3. Select **Git**
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/RstudioNewProject2.jpg -->
 <!-- Rename to: images/new_project_git.png -->
+![Cloning Repository Link](../images/clone_with_ssh.png){width=60% fig-align="center"}
+
 
 4. Paste the SSH URL into **Repository URL** (Ctrl-V). The project directory name should auto-fill.
 5. Click **Create Project**
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/RstudioNewProject3.jpg -->
 <!-- Rename to: images/clone_git_repo.png -->
+![Clone Git Respository Dialog --notice that all the of the fields are filled](../images/clone_git_repo.jpg){width=70% fig-align="center"}
 
 6. If prompted about "establishing authenticity," type `yes` and click OK
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/Authenticity.jpg -->
 <!-- Rename to: images/authenticity_prompt.png -->
+![Authenticity prompt](../images/authenticity_prompt.png){width=70% fig-align="center"}
 
 You should now see the repository files in RStudio's Files panel (lower right).
 
