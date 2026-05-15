@@ -51,16 +51,12 @@ website:
       - section: "Commonly Used Field SOPs"
         contents:
           - field_sops/SOP-F01-field-safety.qmd
-          - field_sops/SOP-F41-surface-water-sampling.qmd
           - field_sops/SOP-F56-soil-sampling.qmd
       - section: "Commonly Used Lab SOPs"
         contents:
           - lab_sops/SOP-L01-laboratory-safety.qmd
-          - lab_sops/SOP-L02-hazardous-materials-handling.qmd
+          - lab_sops/SOP-L05-rstudio-github.qmd
           - lab_sops/SOP-L55-soil-moisture.qmd
-          - lab_sops/SOP-L58-nitrate-ammonium-kcl.qmd
-          - lab_sops/SOP-L61-loss-on-ignition.qmd
-          - lab_sops/SOP-L63-solvita-co2-burst.qmd
 
 format:
   html:
