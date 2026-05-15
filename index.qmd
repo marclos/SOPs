@@ -106,7 +106,7 @@ number-sections: false
 |:------|:-------------------------------|:-------------|
 | [L01](lab_sops/SOP-L01-laboratory-safety.qmd)   | Laboratory Safety | 1.04 |
 | [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
-| [L05](lab_sops/SOP-L05-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 | Needs conversion |
+| [L05](lab_sops/SOP-L05-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 |
 | L06   | *Quality Control and Quality Assurance* | 1.0 | Needs conversion |
 | L07   | *TBD -- Glassware Cleaning and Preparation* | -- |
 | L08   | *TBD -- Chemical Inventory Management* | -- |
@@ -136,7 +136,7 @@ number-sections: false
 | L26   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
 | L27   | *Hach DR3900 Spectrophotometer* | 0.1 | Needs conversion |
 | L28   | *Hach DR900 Colorimeter* | 0.1 | Needs conversion |
-| L29   | *Bacteria Screening (Colilert Quanti-Tray)* | 4.3 | Needs conversion |
+| [L29](SOP-L29-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
 | L30   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
 | L31   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
 | L32   | *Microplastics in Water* | 0.2 | Needs conversion |
@@ -175,7 +175,7 @@ number-sections: false
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | L80   | *TBD -- RO Water* | -- | TBD |
-| L81   | *TBD -- Analytical Balance Calibration* | -- | TBD |
+| [L81](SOP-L81-analytical-balance-calibration.qmd)   | Analytical Balance Calibration | 1.0 | TBD |
 | L82   | *TBD -- Spectrophotometer Operation* | -- |
 | L83   | *Accumet pH Meter* | 0.4 | Needs conversion |
 | L85   | *Clinical Centrifuge* | 0.1 | Needs conversion |

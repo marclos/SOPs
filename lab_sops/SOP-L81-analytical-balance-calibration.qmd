@@ -1,0 +1,307 @@
+---
+# =============================================================================
+# SOP-L61: Analytical Balance Calibration and Operation -- Mettler Toledo
+# =============================================================================
+title: "Analytical Balance Calibration and Operation -- Mettler Toledo"
+sop-number: "SOP-L81"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2025-05-14"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the routine calibration, verification, and
+proper operation of Mettler Toledo analytical balances used in the EA
+Program laboratory. Accurate mass measurements are fundamental to nearly
+every quantitative laboratory procedure, including soil moisture
+determination ([SOP-L41](SOP-L41-soil-moisture.qmd)), loss on ignition
+([SOP-L50](SOP-L50-loss-on-ignition.qmd)), DNA extraction
+([SOP-L80](SOP-L80-dna-extraction.qmd)), and chemical reagent
+preparation. Regular calibration ensures that balance readings are
+traceable to national standards and within acceptable tolerance for
+analytical work [@harris2020; @mettler_basic2023].
+
+
+## 2. Scope
+
+- **Applies to:** All Mettler Toledo analytical balances (0.1 mg
+  readability) and precision balances (0.01 g or 0.001 g readability)
+  in the EA Program laboratory
+- **Does not apply to:** Portable field balances, top-loading balances
+  used only for rough weighing (greater than 1 g tolerance), or
+  microbalances (0.001 mg readability) requiring specialized calibration
+  procedures
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Ensure annual professional calibration is scheduled |
+| Lab Manager       | Perform monthly verification checks, maintain calibration log |
+| Trained Personnel | Perform daily checks before use, report malfunctions |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Calibration weights are dense metal objects; dropping
+  them can cause injury to feet or damage to the balance pan. Handle
+  with forceps only.
+- **Chemical:** Some samples weighed on the balance may be hazardous.
+  Refer to the relevant SOP for the material being weighed.
+:::
+
+### Required PPE
+
+- [ ] Lab coat
+- [ ] Nitrile gloves (when handling calibration weights or chemical samples)
+- [ ] Safety glasses (when weighing chemical reagents)
+
+### Emergency Procedures
+
+If a chemical spill occurs on or near the balance, clean the spill per
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+before resuming use. If the balance pan or draft shield is damaged,
+remove the balance from service and contact the lab manager.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                              | Location         | Notes                          |
+|:----------------------------------|:-----------------|:-------------------------------|
+| Mettler Toledo analytical balance | Lab bench, SGM 133 | *TBD -- confirm model number (e.g., ME204, MS205DU, or XPE205)* |
+| Anti-vibration table or stone slab | Lab bench       | Balance must sit on a stable, vibration-free surface |
+| Spirit level (built into balance) | On balance base  | For leveling verification      |
+
+### Calibration Weights and Supplies
+
+| Item                              | Notes                                  |
+|:----------------------------------|:---------------------------------------|
+| ASTM Class 1 or OIML Class E2 calibration weight set | Traceable to NIST; includes 1 mg, 10 mg, 100 mg, 1 g, 10 g, 50 g, 100 g, 200 g (or as appropriate for balance capacity) |
+| Weight handling forceps           | Never touch weights with bare hands    |
+| Lint-free wipes (Kimwipes)        | For cleaning the pan                   |
+| Compressed air canister (filtered)| For removing dust from the chamber     |
+| Calibration log binder or digital log | For recording all checks            |
+
+
+## 6. Procedure
+
+### 6.1 Balance Placement and Environment
+
+Proper placement is essential for accurate weighing. The balance should
+remain in the same location and should not be moved unless absolutely
+necessary [@mettler_basic2023].
+
+1. Place the balance on a dedicated anti-vibration table or stone slab,
+   away from doors, windows, air vents, and foot traffic
+2. Keep the balance away from direct sunlight and heat sources (ovens,
+   hot plates), which cause thermal drift
+3. Verify the balance is level using the built-in spirit level. Adjust
+   the leveling feet until the bubble is centered.
+4. Allow the balance to warm up for at least 30 minutes after being
+   powered on before performing any measurements or calibration
+   [@harris2020]
+
+### 6.2 Internal Calibration (FACT/iSOCAL)
+
+Most Mettler Toledo analytical balances are equipped with an internal
+calibration function (Fully Automatic Calibration Technology, FACT, or
+iSOCAL) that uses a built-in reference weight [@mettler_basic2023].
+
+1. Ensure the balance is unloaded and the draft shield doors are closed
+2. Press the internal calibration button or navigate to **Menu >
+   Calibration > Internal Calibration** (exact path varies by model)
+3. The balance will automatically perform the calibration sequence. Do
+   not touch the balance, lean on the bench, or create air currents
+   during this process.
+4. When the display reads "Calibration Done" or returns to the weighing
+   screen, record the date and result in the calibration log
+5. If the internal calibration fails, repeat the process. If it fails
+   again, remove the balance from service and contact the lab manager.
+
+::: {.callout-note}
+If the balance is set to automatic FACT mode, it will self-calibrate
+whenever it detects a temperature change of 1.5 C or more. However,
+manual internal calibration should still be performed monthly as part
+of the verification schedule.
+:::
+
+### 6.3 External Calibration Verification (Monthly)
+
+External verification uses traceable reference weights to confirm that
+the balance is reading accurately across its range. This check does not
+replace the annual professional calibration but provides ongoing
+confidence in measurement quality [@aac_guide2019].
+
+1. Perform an internal calibration first (Section 6.2)
+2. Allow the balance to stabilize with an empty pan and closed draft
+   shield. Tare to read 0.0000 g (for a 0.1 mg balance).
+3. Using forceps, place the reference weights on the center of the pan
+   one at a time, starting with the smallest. Record the displayed mass
+   for each weight.
+4. Test at a minimum of three points spanning the expected working range
+   of the balance (e.g., low, mid, and high):
+
+| Check Point | Reference Weight | Acceptance Criterion (analytical, 0.1 mg) |
+|:------------|:-----------------|:-------------------------------------------|
+| Low         | 1 g              | Displayed value within +/- 0.5 mg of nominal |
+| Mid         | 50 g             | Displayed value within +/- 0.5 mg of nominal |
+| High        | 200 g            | Displayed value within +/- 1.0 mg of nominal |
+
+5. If any reading falls outside the acceptance criterion, re-zero, repeat
+   the measurement, and clean the pan and weight with a lint-free wipe.
+   If the reading is still out of tolerance, perform an external
+   calibration (Section 6.4) or remove the balance from service.
+6. Record all results, the date, and the operator initials in the
+   calibration log.
+
+::: {.callout-tip}
+### Tip
+Always place weights in the center of the pan. Off-center loading
+(corner loading) can introduce errors, especially on high-resolution
+balances. Periodically test corner loading by placing a single weight
+at each corner and comparing readings.
+:::
+
+### 6.4 External Calibration (As Needed)
+
+If the internal calibration or monthly verification indicates the
+balance is out of tolerance, perform a full external calibration using
+a traceable reference weight.
+
+1. Navigate to **Menu > Calibration > External Calibration**
+2. When prompted, place the specified calibration weight (the balance
+   will display the required mass, typically its full capacity or a
+   specific test weight)
+3. Place the weight on the center of the pan using forceps
+4. Wait for the calibration to complete and record the result
+5. Repeat the verification checks in Section 6.3 to confirm the balance
+   is now within tolerance
+6. *TBD -- confirm external calibration weight value for the specific
+   Mettler model in the lab*
+
+### 6.5 Annual Professional Calibration
+
+1. Schedule an annual on-site calibration by a Mettler Toledo service
+   technician or an ISO 17025-accredited calibration laboratory
+2. The technician will perform a comprehensive calibration including
+   linearity, eccentricity (corner loading), repeatability, and
+   hysteresis tests
+3. Retain the calibration certificate in the lab's quality records binder
+4. *TBD -- record the current service contract details and contact
+   information for scheduling*
+
+### 6.6 Daily Use and Best Practices
+
+Follow these practices every time you use the balance to ensure accurate
+and reproducible results [@harris2020; @mettler_basic2023]:
+
+1. Check that the balance is level before use
+2. Close all draft shield doors before taring or reading a mass
+3. Allow the reading to stabilize fully (stability indicator appears)
+   before recording a value
+4. Use appropriate weighing vessels (aluminum tins, ceramic crucibles,
+   weighing paper, or glass vials depending on the application)
+5. Tare the vessel before adding sample material
+6. Handle objects with forceps, spatulas, or gloves; fingerprints add
+   mass and oils that cause drift
+7. Never place chemicals directly on the pan
+8. Clean up any spills immediately with a lint-free wipe or brush
+9. Leave the draft shield closed and the balance powered on between uses
+   to maintain thermal equilibrium
+10. Record the balance ID, date, and any anomalies in the lab notebook
+
+### 6.7 Cleaning and Maintenance
+
+1. Wipe the pan and interior of the draft shield with a lint-free wipe
+   after each use
+2. Use filtered compressed air to remove dust from hard-to-reach areas
+   inside the weighing chamber
+3. If the pan becomes stained or corroded, remove it and clean with mild
+   soap and water; dry thoroughly before replacing
+4. Do not use solvents to clean the draft shield (they may damage
+   acrylic or glass)
+5. Inspect the draft shield gaskets periodically for wear; replace if
+   they no longer seal properly
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Internal calibration (FACT): at minimum monthly, or after any balance
+  relocation or significant temperature change
+- External verification with traceable weights: monthly, recorded in
+  the calibration log
+- Annual professional calibration: required; certificate on file
+- Daily pre-use level check: required
+- Acceptance tolerance for routine analytical work (0.1 mg readability):
+  displayed value within +/- 0.5 mg of the nominal weight for loads up
+  to 100 g, and within +/- 1.0 mg for loads above 100 g
+- If tolerance is exceeded after re-calibration, tag the balance
+  "OUT OF SERVICE" and notify the lab manager
+
+### Calibration Log
+
+Maintain a calibration log (paper binder or spreadsheet) with the
+following columns:
+
+| Date | Operator | Check Type | Weight Used (g) | Displayed Value (g) | Pass/Fail | Notes |
+|:-----|:---------|:-----------|:----------------|:--------------------|:----------|:------|
+|      |          |            |                 |                     |           |       |
+
+
+## 8. Waste Disposal
+
+No waste is generated by this procedure. Cleaning materials (Kimwipes)
+can be disposed of in standard trash unless they contacted hazardous
+chemicals, in which case follow
+[SOP-L02](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using the analytical balance independently, personnel must:
+
+1. Read this SOP in full
+2. Observe a trained operator perform internal calibration and external
+   verification
+3. Demonstrate proper leveling, taring, weighing, and draft shield use
+4. Successfully complete a verification check with reference weights
+   under supervision
+5. Be signed off by the PI or lab manager
+
+
+## Appendix A: Troubleshooting {.appendix}
+
+| Symptom                          | Probable Cause                     | Corrective Action                          |
+|:---------------------------------|:-----------------------------------|:-------------------------------------------|
+| Reading drifts continuously      | Air currents or vibration          | Close draft shield doors; check placement away from vents and traffic |
+| Reading drifts slowly in one direction | Temperature change or warm sample | Allow balance to equilibrate; cool samples to room temperature before weighing |
+| Balance does not tare to zero    | Residue on pan or overloaded tare  | Clean pan; remove vessel and re-tare       |
+| Internal calibration fails       | Significant temperature change or mechanical issue | Allow 30 min warm-up; retry. If persistent, contact lab manager. |
+| Displayed value differs from reference weight by more than tolerance | Calibration drift | Perform external calibration (Section 6.4). If still out, remove from service. |
+| "Overload" message               | Sample exceeds balance capacity    | Use a balance with higher capacity         |
+| Balance will not power on        | Power supply disconnected or fuse blown | Check power connection; contact lab manager |
+| Unstable reading with small masses (less than 10 mg) | Static charge on sample or vessel | Use anti-static device or ionizer; ground yourself before weighing |

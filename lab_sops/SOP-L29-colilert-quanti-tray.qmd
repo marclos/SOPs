@@ -1,0 +1,422 @@
+---
+# =============================================================================
+# SOP-L29: IDEXX Colilert / Quanti-Tray 2000 -- E. coli and Total Coliform
+# =============================================================================
+title: "IDEXX Quanti-Tray 2000 for *E. coli* and Total Coliform Bacteria Enumeration"
+sop-number: "SOP-L29"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "4.3"
+
+revision-history:
+  - version: "1.0"
+    date: "2022-06-12"
+    author: "Marc Los Huertos"
+    changes: "Initial release (LaTeX)"
+  - version: "2.0"
+    date: "2022-06-12"
+    author: "Marc Los Huertos"
+    changes: "Added revision date"
+  - version: "3.0"
+    date: "2022-06-12"
+    author: "Marc Los Huertos"
+    changes: "Fixed file/name spelling errors"
+  - version: "4.0"
+    date: "2022-06-12"
+    author: "Marc Los Huertos"
+    changes: "Added how-it-works figure; clarified counting of large/small wells for data analysis"
+  - version: "4.3"
+    date: "2025-05-14"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to QMD format"
+---
+
+## 1. Purpose
+
+This procedure describes the collection and analysis of water samples
+for the enumeration of *Escherichia coli* (*E. coli*) and total
+coliform bacteria using the IDEXX Colilert-18 / Quanti-Tray 2000
+method. Results are reported as Most Probable Number (MPN) per 100 mL
+[@apha2012].
+
+This method is applicable for analyzing drinking water, surface water,
+groundwater, and wastewater to assess microbial contamination levels.
+
+
+## 2. Scope
+
+- **Applies to:** Enumeration of *E. coli* and total coliform bacteria
+  in drinking water, surface water, groundwater, and wastewater using
+  the IDEXX Colilert-18 defined substrate method with Quanti-Tray 2000
+- **Does not apply to:** Non-coliform bacterial analysis, viral or
+  parasitic pathogens, or samples requiring membrane filtration methods
+- **Location:** Biogeochemistry Lab and field sampling sites
+- **Detection limit:** 1 MPN per 100 mL
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI / Lab Director | Approve SOP, verify and sign off on results |
+| QA Manager        | Review completed bench sheets, sign lab notebook |
+| Trained Personnel | Collect samples, perform analysis, record results |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Biological:** Water samples may contain live microorganisms and
+  pose a threat of infection. Treat all samples as potentially
+  infectious.
+- **Physical:** UV lamp (365 nm) can cause eye damage with prolonged
+  exposure.
+- **Chemical:** Colilert-18 reagent is not classified as hazardous per
+  the manufacturer's SDS, but gloves and safety glasses are
+  recommended.
+:::
+
+### Required PPE
+
+- [ ] Clean disposable nitrile gloves
+- [ ] Safety glasses (especially during UV reading and reagent handling)
+- [ ] Lab coat
+- [ ] Closed-toed shoes
+
+### Emergency Procedures
+
+Water quality can range from potable to highly contaminated with
+assorted pathogens. Take every precaution to protect yourself. Wash
+hands frequently. In case of exposure to potentially contaminated water,
+wash affected area with soap and water immediately. Refer to
+[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd) and
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Location         | Notes                              |
+|:------------------------------|:-----------------|:-----------------------------------|
+| Quanti-Tray Sealer            | Lab bench        | IDEXX Model B9-10894-04, Serial QT1757 |
+| UV light source (365 nm)      | Lab bench        | For *E. coli* fluorescence reading |
+| Incubator                     | Lab              | Set to 35 +/- 0.5 C; Catalog 150152632, Serial IMC40490982 |
+| Comparator                    | Lab refrigerator | Catalog 2100Q-01; stored in red zip-lock bag |
+
+### Reagents and Consumables
+
+| Item                                          | Catalog No.       | Storage          |
+|:----------------------------------------------|:------------------|:-----------------|
+| IDEXX Colilert-18 reagent                     | 98-27164-00       | Room temperature |
+| Sterile 100 mL IDEXX bottles (shrink-wrapped) | WV120SBT-200     | Room temperature |
+| Sterile 100 mL IDEXX bottles with sodium thiosulfate (for chlorinated samples) | WV120SBT-200 | Room temperature |
+| IDEXX Quanti-Tray 2000                        | --                | Room temperature |
+| Pipettes and sterile pipette tips             | --                | --               |
+| Disposable gloves and lab coat                | --                | --               |
+| Deionized water (for reagent preparation)     | --                | --               |
+
+
+## 6. Procedure
+
+### 6.1 Definitions
+
+The following definitions apply throughout this SOP:
+
+- **Analytical batch:** The set of samples processed at the same time.
+- **Control cultures:** Known positive and negative cultures used to
+  verify each lot of medium. *E. coli* serves as the positive control;
+  *Staphylococcus aureus* serves as the negative control.
+- **Field duplicate (FD):** Two samples taken at the same time and place
+  under identical circumstances, treated identically through field and
+  laboratory procedures. Analysis of FDs indicates the precision
+  associated with sample collection, preservation, storage, and
+  laboratory procedures.
+- **Laboratory reagent blank (LRB):** An aliquot of sterilized water
+  treated as a sample in all aspects, except that it is not taken to
+  the sampling site. The purpose is to determine if analytes or
+  interferences are present in the laboratory environment, reagents, or
+  apparatus.
+- **Laboratory duplicate (LD):** Two aliquots of the same environmental
+  sample treated identically throughout a laboratory analytical
+  procedure. Analysis of LDs indicates precision associated with
+  laboratory procedures but not with sample collection, preservation,
+  or storage.
+
+### 6.2 Biases and Interferences
+
+- Water samples containing humic material or other colored substances
+  may interfere with visual readings. If there is background color,
+  compare inoculated trays to a control tray containing only water
+  (SM, 9223 A) [@apha2012].
+- Chlorinated water may inhibit the growth of coliform bacteria. If the
+  water has been chlorinated, use the sodium thiosulfate bottles to
+  neutralize the chlorine.
+
+### 6.3 Sample Collection
+
+1. Arrive at the site and record site number, date, and time
+2. Label the bottle with: location (geographic area and stream or lake
+   name), date, time, water temperature, and sampler's initials. Label
+   the bottle before immersion using a black permanent marker or
+   pre-printed labels.
+3. Put on latex or nitrile gloves before handling bottles. Fingers
+   contain contaminants such as nitrates; bug repellent and sunscreen
+   are particularly troublesome. Once gloves are on, do not touch your
+   face, the ground, or anything other than the bottles.
+4. Collect the sample from flowing (not stagnant) water, facing upstream
+5. Immerse the bottle completely, approximately 10 cm (4 inches) deep,
+   with the mouth pointing upstream so no water flows over your hand
+   into the bottle. Do not allow the bottle to contact the stream
+   bottom where sediments can be disturbed. Collect water 6--12 inches
+   below the surface.
+6. Fill the bottle to the 100 mL line on the first immersion. Pour off
+   any excess and cap immediately. Do not underfill, overfill, or
+   re-dunk. If too much water is poured off, use a new 100 mL
+   container.
+7. Do not touch the bottle mouth or inside of the cap. Be careful not
+   to contaminate the sample with surface film, contact with human
+   skin, or breathing into the bottle or cap. If the stream is too
+   shallow to fully immerse the bottle, collect as much as possible
+   while avoiding the bottom, and note the depth in field notes.
+
+::: {.callout-tip}
+### Tip
+Collect one field duplicate (FD) sample every two weeks of sampling.
+Duplicate sites are selected at random. The duplicate is the second
+sample when two samples are collected at the same location. Duplicates
+document repeatability of sample collection and reproducibility of
+laboratory results.
+:::
+
+### 6.4 Sample Preservation and Storage
+
+1. Keep samples cool during transport using a cooler with ice
+2. Store at 4 C until analysis; do not freeze
+3. Analyze within 6 hours of collection
+4. Record the location number, bottle numbers, and collection time in
+   the field sample log
+5. Samples must remain in the possession of the researcher who both
+   collects and analyzes them
+
+### 6.5 Sample Processing
+
+1. Turn on the Quanti-Tray sealer
+2. Set the incubator to 35 C
+3. Allow samples to reach room temperature before analysis
+4. Aseptically add one packet of Colilert-18 reagent to the 100 mL
+   water sample
+5. Replace the lid and shake well until the reagent has fully dissolved
+6. Label the Quanti-Tray with a permanent marker, recording information
+   that identifies the sample
+7. Open the Quanti-Tray by holding it at the top with the well side
+   facing your palm. Push the top edge inward with your free hand while
+   squeezing the tray into a circle. Gently pull the foil tab away from
+   the plastic side. Be careful not to tear the tab. Do not touch the
+   inside of the tray.
+8. Pour the sample mixture into the Quanti-Tray, avoiding contact with
+   the foil tab
+9. Tap the small wells 2--3 times to release air bubbles. Allow foam to
+   settle.
+10. Place the filled Quanti-Tray on the rubber insert, making sure each
+    well fits its corresponding hole
+11. Push the insert with the tray into the sealer, non-foil-tab end
+    first, until the sealer grabs the tray and pulls it through. If you
+    need to reverse the motor, press and hold the reverse button.
+    However, do not reverse the motor if the rubber insert is
+    completely inside the sealer.
+12. The sealer distributes the sample mixture into the wells, seals
+    them, and partially ejects the sealed tray
+13. Remove the rubber insert and tray from the sealer
+
+::: {.callout-important}
+If the sealer jams or malfunctions, do not force the tray. Contact the
+lab manager for assistance.
+:::
+
+### 6.6 Incubation
+
+1. Incubate the sealed tray at 35 +/- 0.5 C for 18 hours
+2. Do not stack trays or block airflow around them in the incubator
+
+### 6.7 Reading Results -- Total Coliforms
+
+1. After 18 hours of incubation, remove the tray from the incubator
+2. Count the number of large wells and small wells that are yellow and
+   equal to or greater than the comparator, including the large
+   overflow well at the top
+3. Mark positive wells with a permanent marker as you count
+4. Record the number of positive small wells and positive large wells in
+   the lab notebook
+
+### 6.8 Reading Results -- *E. coli*
+
+1. In a darkened area, view the Quanti-Tray under the UV lamp (365 nm)
+
+::: {.callout-warning}
+### UV Safety
+Be careful to avoid eye damage when using the UV lamp. Do not look
+directly at the UV light source. Wear UV-protective safety glasses if
+available.
+:::
+
+2. Count the number of fluorescent wells that are equal to or greater
+   than the comparator
+3. Record the number of fluorescent small wells and fluorescent large
+   wells in the lab notebook
+
+### 6.9 Determining MPN
+
+1. Use the IDEXX MPN table (see Appendix) to look up the MPN based on
+   the number of positive large wells and positive small wells
+2. Cross-check results using the IDEXX MPN Generator software:
+   <https://www.idexx.com/en/water/resources/mpn-generator/> (Windows
+   only)
+3. Record results on the bench sheet for both total coliforms and
+   *E. coli*
+
+### 6.10 Interpreting Results
+
+| MPN/100 mL    | Risk Level  |
+|:--------------|:------------|
+| 1--10         | Low risk    |
+| 11--100       | Medium risk |
+| Greater than 100 | High risk |
+
+### 6.11 Review and Sign-Off
+
+1. The completed bench sheet should be reviewed by the researcher, the
+   laboratory director, and the QA manager
+2. The Lab Director or QA Manager must sign the lab notebook to verify
+   that the results are accurate
+
+### 6.12 Expected Results for Control Organisms
+
+| Organism                  | Expected Result                  |
+|:--------------------------|:---------------------------------|
+| *Escherichia coli*        | Yellow wells, fluorescence       |
+| *Klebsiella pneumoniae*   | Yellow wells, no fluorescence    |
+| *Pseudomonas aeruginosa*  | Clear wells, no fluorescence     |
+| Method blank              | Clear wells, no fluorescence     |
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### QA/QC for Each New Lot
+
+For initial analyst demonstration of capability and for each new lot of
+Quanti-Tray 2000, perform the following checks:
+
+1. **Reagent lot check:** Shine the UV lamp on the Colilert media snap
+   packs. If the unopened lot is fluorescent, discard it.
+2. **Blank control:** Dissolve one packet of Colilert media in 100 mL
+   of distilled water. Check for fluorescence. The blank must show no
+   fluorescence.
+3. **Positive control:** Dissolve one packet of Colilert media and 1--2
+   Control Culture vials (stored in freezer) in 100 mL of distilled
+   water. Incubate for 18 hours. Confirm fluorescence.
+4. **Reagent water blank:** Analyze a sterile reagent water blank with
+   each batch of samples to verify a negative result after 18--22
+   hours.
+5. **Sterile bottle check:** Gravimetrically check each new lot of
+   sterile bottles to confirm they are transparent and non-fluorescing.
+
+### Precision
+
+Calculate precision for duplicate analyses using relative percent
+difference (RPD):
+
+$$
+\text{RPD} = \frac{(A - B) \times 100}{(A + B) / 2}
+$$
+
+where $A$ = MPN from aliquot A and $B$ = MPN from aliquot B.
+
+### Acceptance Criteria
+
+- Desired precision: +/- 20% RPD
+- Desired detection limit: 1 MPN/100 mL
+- If a precision value exceeds 20%, record in the comments section of
+  the bench sheet: "These data are associated with an out-of-control
+  duplicate analysis. The UCL = 20%."
+- If a blank value exceeds 1 MPN/100 mL, record in the comments
+  section: "These data are associated with a blank value that exceeds
+  the detection limit of 1 MPN/100 mL."
+- Samples cannot be reanalyzed because the sample volume is depleted
+  after the initial analysis
+- If data are unacceptable for any reason, the analyst should review
+  their technique before conducting this analysis again
+
+
+## 8. Waste Disposal
+
+| Waste Type                        | Disposal Method                          |
+|:----------------------------------|:-----------------------------------------|
+| Used Quanti-Trays and media       | Autoclave before disposal, then standard trash |
+| Used sample bottles               | Autoclave before disposal, then standard trash |
+| Workspace surfaces                | Disinfect thoroughly after each session  |
+
+::: {.callout-important}
+All materials that have contacted water samples or culture media must
+be autoclaved prior to disposal. Workspaces must be thoroughly
+disinfected after each analytical session.
+:::
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing this procedure independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   and [SOP-F01 Field Safety](../field_sops/SOP-F01-field-safety.qmd)
+   training
+3. Review the Colilert-18 manufacturer's instructions
+4. Review sampling and analysis procedures with the Lab Manager
+5. Observe a trained operator perform the complete procedure (collection
+   through enumeration)
+6. Perform the procedure under supervision with acceptable QC results
+7. Be signed off by the PI or lab manager
+
+
+## Appendix A: Troubleshooting {.appendix}
+
+*TBD -- add troubleshooting guidance for common issues (e.g., trays not
+sealing properly, ambiguous well color, incubator temperature
+deviations).*
+
+
+## Appendix B: IDEXX MPN Tables {.appendix}
+
+*The original LaTeX document included two pages of MPN lookup tables
+(scanned PDFs). These should be included here as linked PDF files or
+reproduced as tables. The tables can also be accessed via the IDEXX MPN
+Generator at
+<https://www.idexx.com/en/water/resources/mpn-generator/>.*
+
+<!-- TODO: Add MPN table images or link to PDF files:
+![MPN Table Page 1](figures/0312_002.pdf)
+![MPN Table Page 2](figures/0312_001.pdf)
+-->
+
+
+## Appendix C: Estimated Time {.appendix}
+
+| Task                    | Time Required                |
+|:------------------------|:-----------------------------|
+| Sample setup            | Approximately 12 minutes     |
+| Incubation              | 18 hours                     |
+| Reading and enumeration | Approximately 10 minutes     |
