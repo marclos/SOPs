@@ -1,0 +1,499 @@
+---
+# =============================================================================
+# SOP-F60: Picarro GHG Analyzer -- Field Deployment with Eosense Chambers
+# =============================================================================
+title: "Greenhouse Gas Measurements -- Picarro G2508 with Eosense Soil Flux Chambers"
+sop-number: "SOP-F64"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.01"
+
+revision-history:
+  - version: "1.0"
+    date: "2021-03-18"
+    author: "Marc Los Huertos"
+    changes: "Initial release (LaTeX)"
+  - version: "1.0-qmd"
+    date: "2025-05-14"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to QMD format; added citations"
+---
+
+## 1. Purpose
+
+This procedure describes how to install Eosense eosAC soil gas flux
+chambers, connect them to the eosMX-P multiplexer, and operate the
+Picarro G2508 cavity ring-down spectroscopy (CRDS) analyzer for
+measuring greenhouse gas fluxes (N~2~O, CH~4~, CO~2~, NH~3~, and
+H~2~O) from soil. The SOP also covers data acquisition using the
+eosAnalyze-AC software and data export for analysis [@picarro_g2508;
+@eosense_eosac].
+
+This SOP was originally developed for greenhouse gas emission
+measurements from strawberry fields in Northern California and has been
+modified as new projects have come on line.
+
+
+## 2. Scope
+
+- **Applies to:** Field deployment of the Picarro G2508 CRDS analyzer
+  coupled with Eosense eosAC dynamic soil flux chambers and the eosMX-P
+  multiplexer for automated soil greenhouse gas flux measurements
+- **Does not apply to:** Laboratory (bench-top) Picarro configuration
+  (see [SOP-L76](../lab_sops/SOP-L76-picarro-lab.qmd)), atmospheric
+  concentration monitoring without flux chambers, or eddy covariance
+  measurements
+- **Location:** All EA Program field sites within 30 m cable reach of a
+  power source
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve deployment plan, review data        |
+| Trained Personnel | Set up instruments, run cycles, retrieve data |
+| New Students      | Complete training before independent use    |
+
+### Acknowledgements
+
+We thank Isaac Medina, Neha Vaingankar, and Bailey Lai, who worked with
+the instrument early on and developed early versions of this SOP.
+Improvements were made by Allison Joseph and Virginia Paschal.
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Compressed gas cylinders (calibration standards) pose
+  crush and high-pressure hazards. The generator (if used) presents
+  fuel spill, carbon monoxide, and noise hazards.
+- **Chemical:** Drierite desiccant is a mild irritant. Calibration gas
+  cylinders may contain pressurized gases.
+- **Electrical:** Power strip, generator, and instrument connections in
+  outdoor conditions; keep connections dry and off the ground.
+- **Environmental:** High ambient temperatures (above 35 C) can cause
+  instrument overheating.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Safety glasses (when handling gas cylinders)
+- [ ] Work gloves (when handling cylinders and generator)
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Hearing protection (if generator is running nearby)
+
+### Required Training
+
+- [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+- *SOP-F04 Electrical Power in the Field*
+
+### Emergency Procedures
+
+In case of gas leak from calibration cylinders, move upwind and ventilate
+the area. For generator fuel spills, contain with absorbent materials.
+Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) for general
+field emergency response.
+
+
+## 5. Equipment and Materials
+
+### Instruments
+
+| Item                              | Serial / Model           | Notes                          |
+|:----------------------------------|:-------------------------|:-------------------------------|
+| Picarro G2508 CRDS Analyzer       | S/N 2143-JFAADS2048      | Measures N~2~O, CH~4~, CO~2~, NH~3~, H~2~O |
+| Eosense eosMX-P Multiplexer      | S/N listed inside device | Connects up to 12 eosAC chambers |
+| Recirculation Pump (PN: A0702)    | --                       | Provides vacuum for gas sequencing |
+| Monitor, mouse, and keyboard      | --                       | Connected to Picarro via USB   |
+
+### Chambers
+
+| Chamber S/N (old)          | Firmware | Software ID | Field ID | Notes                          |
+|:---------------------------|:---------|:------------|:---------|:-------------------------------|
+| AC20150501 (1001501)       | 2.2.4    | 50501       | #1       |                                |
+| NA (1001502)               | 2.2.4    | NA          | #2       | Unable to identify             |
+| AC20150503 (1001503)       | 2.2.4    | 50503       | #3       |                                |
+| AC20150504 (1001504)       | 2.2.4    | 50504       | #4       |                                |
+| AC20150505 (1001505)       | 2.2.4    | 50505       | #5       |                                |
+| AC20190333 (1001506)       | 2.2.4    | 31333       | #6       | Repaired                       |
+| AC20150507 (1001507)       | 2.2.4    | 50507       | #7       |                                |
+| AC20150508 (1001508)       | 2.2.4    | 50508       | #8       |                                |
+| AC20150509 (1001509)       | 2.2.4    | NA          | #9       | Unable to identify             |
+| AC20150510 (1001510)       | 2.2.4    | 50510       | #10      |                                |
+| AC20150511 (1001511)       | 2.2.4    | 50511       | #11      | Fails to close properly / not fully open |
+| AC20150512 (1001512)       | 2.2.4    | 50512       | #12      |                                |
+| AC20XX33714 (44714)        | ??       | ??          | #14      | Unsure of status               |
+| AC20190315                 | 2.1.1    | 31315       | #15      |                                |
+| AC20190316                 | 2.2.4    | 31316       | #16      |                                |
+| AC20190317                 | 2.2.4    | 31317       | #17      |                                |
+
+### Additional Supplies
+
+| Item                                  | Notes                              |
+|:--------------------------------------|:-----------------------------------|
+| Teflon tubing and cables (30 m each)  | Lettered; check for damage before use |
+| Corrugated metal hose                 | Connects pump to analyzer VACUUM port |
+| Swagelok washers                      | Use new washers each connection    |
+| Drierite desiccant                    | For moisture management            |
+| Generator (if no grid power)          | Place 100+ feet downwind           |
+| Zip ties / Velcro straps              | For cable management               |
+
+### Customer Support Contacts
+
+| Organization | Contact                                    |
+|:-------------|:-------------------------------------------|
+| Picarro      | Melissa, 408-962-3978; Scott, 408-962-3987; Karrin Alstad (applications/calibration), 408-962-3991 |
+| Eosense      | 888-352-8313 (toll-free); support@eosense.com (Eastern Time Zone) |
+
+
+## 6. Procedure
+
+### 6.1 Sampling Design
+
+1. Locate the Picarro analyzer, multiplexer, and pump at the base
+   station. Choose a level, shaded location if possible.
+2. Use a random number generator to determine the chamber placement
+   locations within the study area
+3. All chambers must be within 30 m of the multiplexer (the length of
+   the cables and tubing)
+4. If a generator is used, place it at least 100 feet downwind of the
+   chambers to avoid contaminating flux measurements with exhaust
+
+### 6.2 Hardware Setup
+
+1. Connect the recirculation pump to the analyzer VACUUM port using the
+   corrugated metal hose. Use new Swagelok washers each time.
+   Hand-tighten, then seal with a wrench.
+2. Connect the multiplexer to the Picarro through USB ports on the
+   Picarro (any port)
+3. Connect the monitor, mouse, and keyboard to the Picarro via the
+   remaining USB ports (two additional ports are available on the front
+   of the Picarro)
+4. Connect the blue monitor cable to the Picarro and the monitor power
+   cable to the outlet
+5. Ensure all machines are in the off position (circle symbol = off)
+   before connecting power
+6. Connect power cables for the CRDS analyzer, multiplexer, and pump
+7. Connect the pump to the multiplexer:
+   a. Connect the control and data ports on the back of the pump to the
+      Picarro, ensuring the white triangles face upward
+   b. Insert the other ends into any USB port on the Picarro
+8. Connect clear tubing from the pump inlet (left side, clear tube) to
+   the multiplexer inlet (right side, labeled)
+9. Connect the outlet tubing: multiplexer outlet to the Picarro inlet
+   (clear tube); pump outlet (right side, silver tube) to the Picarro
+   outlet
+10. Attach one end of the power/data cable to the COMM port on the pump
+    and the other end to the matching COMM port on the multiplexer
+
+::: {.callout-important}
+Never turn off the pump while the Picarro is running. Never disconnect
+the vacuum while the analyzer is operating. Doing so can damage the
+instrument.
+:::
+
+### 6.3 Installing Chamber Rings
+
+Chamber ring installation varies based on experimental design.
+Install rings in advance of the measurement day to minimize soil
+disturbance during data collection. *TBD -- add project-specific ring
+installation protocols as needed.*
+
+### 6.4 Picarro Startup
+
+1. Ensure all instruments are off and turn on the power strip
+2. Turn on the recirculation pump first (no wait time required)
+3. Switch on the Picarro. The boot-up sequence initializes the CRDS
+   software and analyzer.
+4. Switch on the multiplexer. The system requires approximately 30
+   minutes to warm up; warning alarms are normal until the cavity and
+   other components reach operating temperature.
+5. Keep ambient temperature below 35 C. If the DAS temperature
+   approaches 45 C, shut down or use a fan to cool the air around the
+   Picarro.
+
+### 6.5 Placing Chambers
+
+1. While the Picarro is warming up, connect all tubing and cables.
+   Route tubing along the bed surface; do not let tubes fall into
+   furrows.
+2. Place chambers onto the ring bases, pressing down to achieve a good
+   seal. Try to avoid disturbing the chamber after installation.
+3. After all chambers have opened, perform a second check for foliage
+   or debris that might obstruct the chamber seal.
+
+### 6.6 Data Collection
+
+Once the Picarro alarm indicator is green, the system is ready.
+
+1. Verify typical atmospheric concentrations on the Picarro display:
+
+| Gas    | Expected Ambient Concentration |
+|:-------|:-------------------------------|
+| N~2~O  | Approximately 0.3 ppm          |
+| CH~4~  | Approximately 2.4 ppm          |
+| CO~2~  | 300--600 ppm                   |
+| NH~3~  | Variable                       |
+| H~2~O  | 1--5%                          |
+
+2. Open the FP-Monitor multiplexer software
+3. Uncheck "Default Cycle"
+4. Load the appropriate cycle from the user folder. Available cycles
+   include:
+
+   - *TBD -- list current cycle names (e.g., "Straw 5 Chamber,"
+     "Full 12," "Full 12 minus #4")*
+
+5. When the Picarro G2508 is warm, press "Start Cycle"
+6. Check all chambers to ensure good seals
+7. If a generator is in use, check fuel every two hours and top off.
+   Release pressure before inserting the nozzle into the filler throat.
+   Open the valve and press the green button for 3--5 second intervals,
+   checking between fills to see if fuel is at or near the red line.
+8. Aim for at least 3 complete measurement cycles. For irrigation
+   studies, target 2 cycles before irrigation, 2 during, and 2 after.
+
+### 6.7 Shutdown
+
+1. After at least two post-irrigation cycles (or at the end of the
+   measurement period), begin retrieving chambers after each one
+   completes its measurement, starting with chamber #1
+2. Cap all tube ends with a glove secured by tape
+3. Carefully coil each set of tubes and cables to limit twisting and
+   scratching of the Teflon. Zip-tie or Velcro together and stack in
+   order on the ground.
+4. Remove chambers from the sampling locations. Separate bases from
+   chambers and repackage into boxes.
+5. When the final chamber measurement is complete, end the sampling
+   cycle in the software
+6. Connect a spare chamber to a channel and select the "Desiccate"
+   method. Run dry air through the Picarro for 10 minutes to prevent
+   condensation damage [@picarro_g2508].
+7. Initiate the Picarro shutdown sequence; select the option for moving
+   the instrument
+8. After the Picarro has fully shut down, manually switch off in this
+   order:
+   a. Multiplexer
+   b. Picarro
+   c. Vacuum pump
+   d. Power strip
+
+
+## 7. Calibration
+
+The Picarro G2508 analyzer calibration is intended to be performed
+infrequently [@picarro_g2508]. The procedure requires three calibration
+standards per gas species (two points define the calibration line and a
+third intermediate point is used for verification).
+
+### 7.1 Calibration Procedure
+
+1. Select calibration standards that span the representative range of
+   concentrations the analyzer will typically measure. A concentration
+   of zero is acceptable for the low-end standard.
+2. Introduce the first calibration standard into the analyzer for long
+   enough to yield a stable reading
+3. Record the stated concentration of the standard and the analyzer's
+   displayed value
+4. Repeat for the remaining two standards
+5. Plot the data with the analyzer's reported concentration on the
+   horizontal axis and the standards' stated concentrations on the
+   vertical axis
+6. Calculate a linear best-fit equation. The slope and intercept are
+   used to apply a correction to the analyzer's factory calibration.
+
+::: {.callout-note}
+*TBD -- develop a dedicated calibration SOP including parts to order
+(permeation tubes, calibration gas cylinders) and a step-by-step
+calibration workflow. Contact Karrin Alstad at Picarro
+(408-962-3991) for calibration supplies.*
+:::
+
+
+## 8. Data Export and Analysis
+
+### 8.1 Using eosAnalyze-AC
+
+1. On the Picarro desktop, open the "eosAnalyze-AC" program. If it is
+   not on the desktop, navigate to Start Menu and search
+   "eosAnalyze-AC." Open the "eosAnalyze-AC-v3.4.2" folder and run the
+   `.exe` application.
+2. You do not need to wait for the Picarro system to warm up if you are
+   only downloading data.
+3. Click "Collect Data." Enter the start and end times for the period
+   you want to download. Repeat for each cycle separately; combining
+   multiple non-contiguous periods into one export will produce a
+   single table with large time gaps.
+4. Ensure the time zone is set correctly. Pacific Time Zone is UTC-8:00.
+5. Verify the data under "Measurements." Check that the correct dates,
+   times, and data graphs look reasonable.
+6. Click "Export Data Table" and save the CSV to the desktop or an
+   accessible location.
+7. To export additional data tables, close and reopen the program before
+   creating each new export.
+8. Transfer the `.csv` files to a USB drive or external hard drive for
+   analysis on another computer. The files are compatible with Excel or
+   R [@rcoreteam2024].
+
+### 8.2 Troubleshooting Data Export
+
+If data does not load or you see a "No measurements detected" message:
+
+1. Go to **Data > Analyzer Data Path** in eosAnalyze-AC. The data path
+   should be `\UserData\DataLog_Forerunner\`. You should see subfolders
+   organized by year.
+2. Click OK, then retry collecting data.
+3. If the problem persists, use Windows Explorer to search for `.DAT`
+   files in `\UserData\DataLog_Forerunner\YEAR\MONTH\DATE\`. The file
+   naming convention is:
+   `JFAADS2048-YYYYMMDD-HHMMSS-DataLog_Forerunner.dat`
+   where JFAADS2048 is the instrument serial number, followed by the
+   date and time the file was created in 24-hour format.
+
+### 8.3 Flux Calculation
+
+Soil gas fluxes are calculated from the rate of change of gas
+concentration within the chamber headspace over the closure period. The
+eosAnalyze-AC software fits both linear and exponential models to the
+concentration time series for each closure event [@livingston1995;
+@hutchinson1981].
+
+$$
+F = \frac{V}{A} \cdot \frac{dC}{dt} \cdot \frac{P}{RT}
+$$
+
+where:
+
+- $F$ = flux (mass per area per time)
+- $V$ = chamber headspace volume (L)
+- $A$ = chamber area (m^2^)
+- $dC/dt$ = rate of concentration change (ppm/s)
+- $P$ = atmospheric pressure (atm)
+- $R$ = ideal gas constant
+- $T$ = temperature (K)
+
+*TBD -- clarify in eosAnalyze-AC output what (L) and (E) designations
+mean for flux values (likely Linear and Exponential fits). Confirm
+whether "dead band range" and "chamber offset" in the data processor
+options need to be set for each deployment.*
+
+
+## 9. Quality Control
+
+- Verify atmospheric background concentrations before starting each
+  measurement cycle (see table in Section 6.6)
+- Inspect all tubing connections for leaks before each deployment
+- Check chamber seals visually and by monitoring initial concentration
+  traces
+- Log any chambers that fail to open or close properly and remove them
+  from the dataset
+- Do not disconnect chambers from the multiplexer during an active
+  measurement cycle, as this can cause the data processor to miss
+  measurements
+- Ensure the FRMonitor software recognizes all connected chambers at
+  startup; use the "System Info" button to verify. Chambers not
+  recognized will not record data even if they open and close.
+- Use FRMonitor software version 1.6.2 or later to schedule
+  measurements
+
+### Biases and Interferences
+
+- Ambient temperature extremes can prevent the analyzer from
+  stabilizing properly
+- High-moisture gas samples can cause condensation damage. Always run
+  dry air through the instrument for several minutes before shutdown
+  [@picarro_g2508].
+- *TBD -- develop QC criteria for acceptable flux curve fits (r^2^
+  thresholds, maximum allowable dead band)*
+
+
+## 10. Waste Disposal
+
+| Waste Type                | Disposal Method                          |
+|:--------------------------|:-----------------------------------------|
+| Spent Drierite desiccant  | Regenerate by heating at 210 C or dispose as non-hazardous solid waste |
+| Generator fuel spills     | Absorb with spill kit materials; dispose per EH&S |
+| Damaged Teflon tubing     | Standard trash (non-hazardous)           |
+
+
+## 11. References
+
+::: {#refs}
+:::
+
+
+## 12. Training Record
+
+Before deploying this instrument independently, personnel must:
+
+1. Read this SOP, [SOP-F01 Field Safety](SOP-F01-field-safety.qmd),
+   and *SOP-F04 Electrical Power in the Field*
+2. Observe a trained operator perform a full deployment (setup through
+   shutdown)
+3. Demonstrate competence with hardware connections (pump, multiplexer,
+   tubing, chambers)
+4. Perform a supervised deployment including startup, data collection,
+   and shutdown
+5. Demonstrate ability to export data using eosAnalyze-AC
+6. Be signed off by the PI or field lead
+
+
+## Appendix A: Troubleshooting {.appendix}
+
+### Days with Unexpected Data
+
+If data appears on unexpected Julian days, check whether the system
+clock or local time on the analyzer has been changed. Compare the
+processed measurements against field notes to identify obvious gaps that
+may correspond to mislabeled days.
+
+### Days That Should Have More Data
+
+Errors in FRMonitor log files can cause the data processor to overlook
+measurements. If measurements appear to be missing, check the FRMonitor
+logs for errors. Do not disconnect chambers from the multiplexer while
+it is actively running a measurement cycle, as this can cause the data
+processor to miss measurements, especially if the chamber was closed
+when removed.
+
+### Days Where Some Chambers Are Missing
+
+If certain chambers (e.g., #1 or #2) are not sending data, this
+indicates either a communication issue between the multiplexer and
+analyzer or that the chambers were not connected. Verify that the
+FRMonitor software recognizes all connected chambers at startup using
+the "System Info" button. Disconnecting and reconnecting chambers during
+a measurement cycle can also cause communication errors.
+
+### N~2~O Noise
+
+N~2~O measurements from the Picarro G2508 can be noisy at ambient
+concentrations. *TBD -- document strategies for reducing N~2~O noise
+(e.g., longer closure times, post-processing smoothing, data filtering
+thresholds). Contact Picarro technical support for recommendations.*
+
+
+## Appendix B: Open Questions {.appendix}
+
+The following questions from previous deployments remain unresolved.
+Update this appendix as answers are obtained.
+
+1. What is the difference between "dry," "regular," and "timed" data
+   columns in the Data Logger setup tool?
+2. What is "etalon temp" (listed under sensors in the data source)?
+3. Recommendations for car-mounting the instrument? Is it acceptable to
+   stack the multiplexer on top of the Picarro during transport?
+4. Is there a way to turn on the computer without powering on the gas
+   analyzer and vacuum?
+5. What files need to be sent to the PI for reprocessing?
+6. Should chamber offset (distance between the bottom of the chamber
+   and the soil surface due to the collar) be measured for each chamber
+   at each deployment?
