@@ -276,6 +276,7 @@ Make your changes to files as needed. Save your work.
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/stagedcheckboxes.png -->
 <!-- Rename to: images/staged_checkboxes.png -->
+![Staged files to put in repository](../images/staged_checkboxes.png){width=75% fig-align="center"}
 
 2. Click **Commit**
 3. Write a short, meaningful commit message describing what you changed (e.g., "Added pH results for site 3")
@@ -296,6 +297,7 @@ Click the green **upward arrow** labeled "Push" in the Git tab.
 <!-- IMAGE: Oliver Steele's git workflow diagram -->
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/MgaV9.png -->
 <!-- Rename to: images/git_workflow_diagram.png -->
+![Git workflow](../images/git_workflow_diagram.png){width=90% fig-align="center"}
 
 ::: {.callout-tip}
 ### Remember the Rhythm
@@ -335,6 +337,8 @@ To push changes to someone else's repository, the owner must add you as a collab
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/IdentityError.png -->
 <!-- Rename to: images/identity_error.png -->
+![Identity error](../images/identity_error.png){width=60% fig-align="center"}
+
 
 **Fix:** In the Git tab, click the gear icon > Shell, then type:
 
@@ -349,6 +353,7 @@ git config user.name "Your Name"
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/MergeError.jpg -->
 <!-- Rename to: images/merge_error.png -->
+![Merge error](../images/merge_error.jpg){width=70% fig-align="center"}
 
 **Fix:**
 
@@ -374,6 +379,8 @@ git pull --rebase
 
 <!-- EXISTING FILE: 10_Rstudio_Server_and_Github/graphics/UnmergedError.jpg -->
 <!-- Rename to: images/unmerged_error.png -->
+![Merge error](../images/unmerged_error.jpg){width=70% fig-align="center"}
+
 
 **Fix:** Resolve the merge conflicts first (Section 15.2), commit, then pull again.
 
