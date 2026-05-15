@@ -15,40 +15,46 @@ number-sections: false
 - **Create a new SOP:** Copy `lab_sops/SOP-TEMPLATE.qmd`, fill it in, and
   submit a Pull Request.
 
-## SOP Numbering Scheme
+### Generic SOP Numbering Scheme
 
 | Range       | Category                        |
 |:------------|:--------------------------------|
 | 00--09      | General safety and admin        |
 | 10--19      | Equipment                       |
 | 20--39      | Instrumentation                 |
-| 40--59      | Water / aquatic methods        |
-| 60--74      | Soil methods              |
-| 75--79      | Air / atmospheric methods       |
-| 80--90      | Microbes, Plants, and Animals methods|
-| 90--99      | Molecular Biology and DNA       |
+| 40--54      | Water / aquatic methods        |
+| 55--69      | Soil methods              |
+| 70--79      | Air / atmospheric methods       |
+| 80--94      | Microbes, Plants, and Animals methods|
+| 95--99      | Molecular Biology and DNA       |
 
 ## Field SOPs
 
-### General (F01--F19)
+### General (F00--F09)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F01](field_sops/SOP-F01-field-safety.qmd) | Field Safety | 1.1 |
 | F02   | *TBD -- Field Equipment Checklist* | -- |
 | F03   | *TBD -- Field Notebook Protocols* | -- |
-| F04   | *Electrical Power in the Field* | 0.2 | Needs conversion |
 | F05   | *Random Sampling Design* | 1.0 | Needs conversion |
 
 ### Equipment (F10--F19)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F10](field_sops/ .qmd) | Vehicles | -- |
+| F11   | *Electrical Power in the Field* | 0.2 | Needs conversion |
+
 
 ### Instrumentation (F20--F39)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F22](field_sops/SOP-F22-eureka-manta2.qmd) | Eureka Manta2 Multiprobe | 0.7 |
+| [F23](field_sops/ .qmd) | Pygmy and Type A Velocity Meters | -- |
 
-### Water / Aquatic Systems (F40--F59)
+### Water / Aquatic Systems (F40--F54)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
@@ -60,18 +66,18 @@ number-sections: false
 | F43   | *Stream Physical Habitat Analysis* | 0.1 | Needs conversion |
 | F44   | *Stormwater Sampling* | -- | TBD |
 
-### Soil Physical Characteristics and Processes (F55--F74)
+### Soil Physical Characteristics and Processes (F55--F69)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| [F55](field_sops/SOP-F40-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 |
-| F56   | *Foreign Soil Handling (Import Permits)* | 0.3 | Needs conversion |
-| [F57](field_sops/SOP-F42-soil-texture-by-feel.qmd)   | Texture by Feel | 0.1 |
-| F53   | *TBD -- Soil Bulk Density (Core Method)* | -- |
-| F54   | *TBD -- Soil Infiltration Rate* | -- |
-| [F55](field_sops/SOP-F45-soil-temperature-profiles.qmd)   | Soil Temperature Profiles | 0.1 |
+| [F56](field_sops/SOP-F56-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 |
+| F57   | *Foreign Soil Handling (Import Permits)* | 0.3 | Needs conversion |
+| [F58](field_sops/SOP-F58-soil-texture-by-feel.qmd)   | Texture by Feel | 0.1 |
+| F59   | *TBD -- Soil Bulk Density (Core Method)* | -- |
+| F60   | *TBD -- Soil Infiltration Rate* | -- |
+| [F61](field_sops/SOP-F61-soil-temperature-profiles.qmd)   | Soil Temperature Profiles | 0.1 |
 
-### Air (F75--F84)
+### Air (F70--F79)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
@@ -83,7 +89,7 @@ number-sections: false
 | F65   | *Ozone Generator Operation* | 0.1 | Needs conversion |
 | F66   | *Air Quality Monitoring (Portable Sensors)* | -- | TBD |
 
-### Microbes, Plants, and Animals (F85--F99)
+### Microbes, Plants, and Animals (F80--F95)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
@@ -98,6 +104,12 @@ number-sections: false
 | F89  | *360 Camera* | 0.1 | Needs conversion |
 | F90  | *Macroinvertebrate Sampling* | -- | TBD |
 | F91  | *Bird Point Count Surveys* | -- | TBD |
+
+### Molecular Biology and DNA (F96--F99)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| F96   | *TBD * | -- |
 
 ## Lab SOPs
 
@@ -137,7 +149,7 @@ number-sections: false
 | L26   | *Microcentrifuge (MySpin 12)* | 0.1 | Needs conversion |
 | L27   | *Sorvall ST8R Centrifuge* | 0.1 | Needs conversion |
 | L28   | *TBD -- Ion Chromatograph Operation* | -- |
-| [L29](lab_sops/SOP-L89-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
+| [L29](lab_sops/SOP-L29-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
 | L30   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
 | L31   | *ICP-MS* | 0.1 | Needs conversion |
 | L32   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
@@ -147,50 +159,54 @@ number-sections: false
 | L36   | *Picarro GHG Analyzer (Lab Configuration)* | 1.0 | Needs conversion |
 | L37   | *Radiometric Dating* | 0.1 | Needs conversion |
 
-### Water Analysis (L50--L59)
+### Water Analysis (L40--L54)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| [L40](lab_sops/SOP-L20-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
+| [L40](lab_sops/SOP-L40-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
 | L41   | *TBD -- Alkalinity Titration* | -- |
 | L42   | *TBD -- Turbidity Measurement* | -- |
-| [L45](lab_sops/SOP-L25-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
+| [L45](lab_sops/SOP-L45-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
 | L46   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
-| [L49](lab_sops/SOP-L29-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
+| [L49](lab_sops/SOP-L49-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
 | L30   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
 | L31   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
 | L32   | *Microplastics in Water* | 0.2 | Needs conversion |
 | L33   | *Pesticide Analysis* | 0.1 | Needs conversion |
 | L34   | *Chlorophyll Extraction and Analysis* | 0.1 | Needs conversion |
 
-### Soil and Carbon Analysis (L40--L59)
+### Soil and Carbon Analysis (L55--L69)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| [L41](lab_sops/SOP-L41-soil-moisture.qmd) | Soil Moisture -- Gravimetric Method | 0.2 |
-| L42   | *Soil Texture (Hydrometer Method)* | 0.1 | Needs conversion |
-| L45   | *Soil pH and Salinity* | 0.1 | Needs conversion |
-|[L46](lab_sops/SOP-L46-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.2 |
-| L47   | *Nitrate Quick Test* | 0.1 | Needs conversion |
-| L48   | *TBD -- Extractable Phosphorus* | -- |
-| [L50](lab_sops/SOP-L50-loss-on-ignition.qmd) | Loss on Ignition (SOM) | 1.0 |
-| [L51](lab_sops/SOP-L51-total-carbon.qmd) |  Total Carbon -- Soil | 1.0 |
-| [L52](lab_sops/SOP-L52-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | 1.0 |
-| [L53](lab_sops/SOP-L53-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 |
-| L54   | *Soil Lead Analysis (Acid Digestion)* | 0.2 | Needs conversion |
-| L55   | *Soil Lead Analysis (MARS Microwave)* | 0.2 | Needs conversion |
-| L56   | *Nitrification Potential* | 0.1 | Needs conversion |
-| L57   | *Solvita Compost Maturity* | 0.1 | Needs conversion |
+| [L55](lab_sops/SOP-L55-soil-moisture.qmd) | Soil Moisture -- Gravimetric Method | 0.2 |
+| L56   | *Soil Texture (Hydrometer Method)* | 0.1 | Needs conversion |
+| L57   | *Soil pH and Salinity* | 0.1 | Needs conversion |
+|[L58](lab_sops/SOP-L58-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.2 |
+| L59   | *Nitrate Quick Test* | 0.1 | Needs conversion |
+| L60   | *TBD -- Extractable Phosphorus* | -- |
+| [L61](lab_sops/SOP-L61-loss-on-ignition.qmd) | Loss on Ignition (SOM) | 1.0 |
+| [L62](lab_sops/SOP-L62-total-carbon.qmd) |  Total Carbon -- Soil | 1.0 |
+| [L63](lab_sops/SOP-L63-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | 1.0 |
+| [L64](lab_sops/SOP-L64-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 |
+| L65   | *Soil Lead Analysis (Acid Digestion)* | 0.2 | Needs conversion |
+| L66   | *Soil Lead Analysis (MARS Microwave)* | 0.2 | Needs conversion |
+| L67   | *Nitrification Potential* | 0.1 | Needs conversion |
+| L68   | *Solvita Compost Maturity* | 0.1 | Needs conversion |
 
-### Microbes, Plants, and Animals (L60--L79)
+### Microbes, Plants, and Animals (L80--L94)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| [L60](lab_sops/SOP-L60-dna-extraction.qmd) | DNA Extraction | 0.1 |
-| [L61](lab_sops/SOP-L61-ddpcr-nitrogen-cycle-primers.qmd) | Primer Selection and Design for Nitrogen Cycle Genes | 0.1 |
-| [L62](lab_sops/SOP-L62-ddpcr-data-analysis.qmd) | ddPCR Data Export and Analysis | 0.1 |
+| L80   | *TBD * | -- |
 
+### Molecular Biology and DNA (L95--L99)
 
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L95](lab_sops/SOP-L95-dna-extraction.qmd) | DNA Extraction | 0.1 |
+| [L96](lab_sops/SOP-L96-ddpcr-nitrogen-cycle-primers.qmd) | Primer Selection and Design for Nitrogen Cycle Genes | 0.1 |
+| [L97](lab_sops/SOP-L97-ddpcr-data-analysis.qmd) | ddPCR Data Export and Analysis | 0.1 |
 
 
 ::: {.callout-note}
