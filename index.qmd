@@ -19,14 +19,14 @@ number-sections: false
 
 | Range       | Category                        |
 |:------------|:--------------------------------|
-| 01--09      | General safety and admin        |
+| 00--09      | General safety and admin        |
 | 10--19      | Equipment                       |
 | 20--39      | Instrumentation                 |
 | 40--59      | Water / aquatic methods        |
-| 60--79      | Soil methods              |
-| 80--89      | Air / atmospheric methods       |
-| 80--99      | Microbes, Plants, and Animals methods|
-| L80--L89    | Molecular Biology and DNA       |
+| 60--74      | Soil methods              |
+| 75--79      | Air / atmospheric methods       |
+| 80--90      | Microbes, Plants, and Animals methods|
+| 90--99      | Molecular Biology and DNA       |
 
 ## Field SOPs
 
@@ -53,25 +53,25 @@ number-sections: false
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F41](field_sops/SOP-F41-surface-water-sampling.qmd) | Surface Water Sampling | 0.9 |
-| F22   | *TBD -- Groundwater Sampling* | -- |
-| F23   | *TBD -- Stormwater Sampling* | -- |
-| F24   | *TBD -- Stream Discharge Measurement* | -- |
-| F22   | *Stream Discharge Measurement* | 0.1 | Needs conversion |
-| F23   | *Stream Physical Habitat Analysis* | 0.1 | Needs conversion |
-| F24   | *Stormwater Sampling* | -- | TBD |
+| F42   | *TBD -- Groundwater Sampling* | -- |
+| F43   | *TBD -- Stormwater Sampling* | -- |
+| F44   | *TBD -- Stream Discharge Measurement* | -- |
+| F42   | *Stream Discharge Measurement* | 0.1 | Needs conversion |
+| F43   | *Stream Physical Habitat Analysis* | 0.1 | Needs conversion |
+| F44   | *Stormwater Sampling* | -- | TBD |
 
-### Soil Physical Characteristics and Processes (F60--F79)
+### Soil Physical Characteristics and Processes (F55--F74)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| [F40](field_sops/SOP-F40-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 |
-| F41   | *Foreign Soil Handling (Import Permits)* | 0.3 | Needs conversion |
-| [F42](field_sops/SOP-F42-soil-texture-by-feel.qmd)   | Texture by Feel | 0.1 |
-| F43   | *TBD -- Soil Bulk Density (Core Method)* | -- |
-| F44   | *TBD -- Soil Infiltration Rate* | -- |
-| [F45](field_sops/SOP-F45-soil-temperature-profiles.qmd)   | Soil Temperature Profiles | 0.1 |
+| [F55](field_sops/SOP-F40-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 |
+| F56   | *Foreign Soil Handling (Import Permits)* | 0.3 | Needs conversion |
+| [F57](field_sops/SOP-F42-soil-texture-by-feel.qmd)   | Texture by Feel | 0.1 |
+| F53   | *TBD -- Soil Bulk Density (Core Method)* | -- |
+| F54   | *TBD -- Soil Infiltration Rate* | -- |
+| [F55](field_sops/SOP-F45-soil-temperature-profiles.qmd)   | Soil Temperature Profiles | 0.1 |
 
-### Air (F60--F79)
+### Air (F75--F84)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
@@ -83,7 +83,7 @@ number-sections: false
 | F65   | *Ozone Generator Operation* | 0.1 | Needs conversion |
 | F66   | *Air Quality Monitoring (Portable Sensors)* | -- | TBD |
 
-### Microbes, Plants, and Animals (F80--F99)
+### Microbes, Plants, and Animals (F85--F99)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
