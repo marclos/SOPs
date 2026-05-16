@@ -1,0 +1,546 @@
+---
+# =============================================================================
+# SOP-L60: Soil Extractable Phosphorus
+# =============================================================================
+title: "Soil Extractable Phosphorus"
+sop-number: "SOP-L60"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the extraction and colorimetric determination
+of plant-available (extractable) phosphorus in soils. Two extraction
+methods are presented: the Olsen method (0.5 M NaHCO~3~ at pH 8.5) for
+neutral to alkaline soils, and the Bray-1 method (0.03 M NH~4~F +
+0.025 M HCl) for acidic soils [@olsen1954; @bray1945]. Extractable P
+is quantified colorimetrically using the ascorbic acid/molybdate blue
+method [@murphy1962; @kuo1996].
+
+Soil phosphorus availability is a key factor controlling plant
+productivity, and excess P in runoff is a primary driver of
+eutrophication in freshwater systems. Routine soil P testing guides
+fertilizer management and helps assess the environmental risk of P loss
+from agricultural and urban soils [@sharpley2003].
+
+
+## 2. Scope
+
+- **Applies to:** Air-dried, sieved (less than 2 mm) mineral soils from
+  all EA Program field sites. The Olsen method is the default for
+  southern California soils, which are typically neutral to alkaline.
+  Use Bray-1 for soils with pH below 6.5.
+- **Does not apply to:** Total phosphorus determination (requires acid
+  digestion); dissolved reactive phosphorus in water samples (see
+  [SOP-L45 Hach Colorimetric](SOP-L45-hach-colorimetric.qmd)); organic
+  phosphorus fractionation
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Lab Manager       | Prepare and standardize reagents, maintain spectrophotometer |
+| Trained Personnel | Perform extractions and analyses, report results |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Ascorbic acid, ammonium molybdate, and antimony
+  potassium tartrate are mild irritants. Sulfuric acid (used in the
+  color reagent) is corrosive at concentrated strengths. Ammonium
+  fluoride (NH~4~F, Bray-1 extractant) is toxic and corrosive; handle
+  in the fume hood. Sodium hydroxide (NaOH, for pH adjustment of Olsen
+  reagent) is corrosive.
+- **Physical:** Standard glassware handling risks.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses (splash goggles when handling H~2~SO~4~ or NH~4~F)
+- [ ] Lab coat
+- [ ] Nitrile gloves
+- [ ] Work in fume hood when handling NH~4~F
+
+### Emergency Procedures
+
+For acid or NH~4~F splashes, flush with water for at least 15 minutes.
+For NH~4~F skin contact, flush with water and apply 2.5% calcium
+gluconate gel if available. Refer to
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Reciprocating or end-over-end shaker | For extraction               |
+| Spectrophotometer or colorimeter | 880 nm wavelength; Hach DR3900 ([SOP-L45](SOP-L45-hach-colorimetric.qmd)) or equivalent |
+| Analytical balance (0.01 g)   | See [SOP-L13](SOP-L13-using-balances.qmd) |
+| pH meter                      | For verifying extractant pH; see [SOP-L40](SOP-L40-pH-conductivity-bench.qmd) |
+| Centrifuge or vacuum filtration apparatus | For clarifying extracts |
+| Volumetric flasks (100 mL, 500 mL, 1 L) | Class A                  |
+| Erlenmeyer flasks (125 or 250 mL) | One per sample plus blanks      |
+| Graduated cylinders (25, 50, 100 mL) | For measuring extractant volumes |
+| Pipettes (1--10 mL)          | Class A volumetric or calibrated micropipettes |
+| Cuvettes (1 cm path length)  | Glass or polystyrene, matched               |
+| Filter funnels and Whatman No. 42 filter paper | For clarifying extracts |
+
+### Reagents -- Olsen Extraction
+
+| Reagent                       | Preparation / Notes                       |
+|:------------------------------|:------------------------------------------|
+| Sodium bicarbonate (NaHCO~3~), 0.5 M at pH 8.5 | Dissolve 42.0 g NaHCO~3~ in approximately 900 mL DI water. Adjust to pH 8.5 with 1 M NaOH. Bring to 1 L. Prepare fresh weekly. |
+| Activated charcoal (P-free)   | For decolorizing extracts; wash with 0.5 M NaHCO~3~ before use to remove any residual P [@olsen1954] |
+
+### Reagents -- Bray-1 Extraction
+
+| Reagent                       | Preparation / Notes                       |
+|:------------------------------|:------------------------------------------|
+| Bray-1 extractant (0.03 M NH~4~F + 0.025 M HCl) | Dissolve 1.11 g NH~4~F in approximately 900 mL DI water. Add 2.1 mL concentrated HCl (12 M). Bring to 1 L. Prepare in fume hood. Store in polyethylene. [@bray1945] |
+
+### Reagents -- Ascorbic Acid Colorimetric Determination
+
+| Reagent                       | Preparation / Notes                       |
+|:------------------------------|:------------------------------------------|
+| Sulfuric acid (H~2~SO~4~), 5 N | Dilute 70 mL concentrated H~2~SO~4~ (18 M) into approximately 400 mL DI water; bring to 500 mL after cooling. **Add acid to water.** |
+| Ammonium molybdate ((NH~4~)~6~Mo~7~O~24~-4H~2~O), 4% | Dissolve 20 g in 500 mL DI water |
+| Antimony potassium tartrate (K(SbO)C~4~H~4~O~6~-1/2H~2~O), 0.274% | Dissolve 0.274 g in 100 mL DI water |
+| Ascorbic acid, 1.76% | Dissolve 1.76 g in 100 mL DI water. Prepare fresh daily. |
+| **Combined color reagent** | Mix in order: 50 mL 5 N H~2~SO~4~ + 15 mL ammonium molybdate + 5 mL antimony potassium tartrate + 30 mL ascorbic acid. Prepare fresh for each batch. [@murphy1962] |
+| Phosphorus stock standard (1000 mg/L P) | Dissolve 4.394 g anhydrous KH~2~PO~4~ (dried at 105 C) in 1 L DI water. Stable for months at 4 C. |
+| Phosphorus working standards | Dilute stock to 0, 0.1, 0.2, 0.5, 1.0, 2.0, 5.0 mg/L P in the appropriate extractant matrix (NaHCO~3~ or Bray-1) |
+
+### Reagents -- General
+
+| Reagent                       | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Deionized water (Type I or II) | From [*SOP-L11*](SOP-L11-milli-q-water.qmd) |
+
+
+## 6. Procedure
+
+### 6.1 Sample Preparation
+
+1. Air-dry the soil at room temperature until constant mass
+2. Pass through a 2 mm sieve per
+   [SOP-F56 Soil Sampling](../field_sops/SOP-F56-soil-sampling.qmd)
+3. Determine gravimetric moisture content on a subsample per
+   [SOP-L55](SOP-L55-soil-moisture.qmd) to express results on a
+   dry-weight basis
+
+### 6.2 Selecting the Extraction Method
+
+| Soil pH    | Recommended Extractant | Reference             |
+|:-----------|:-----------------------|:----------------------|
+| 6.5 or above | Olsen (0.5 M NaHCO~3~, pH 8.5) | @olsen1954   |
+| Below 6.5  | Bray-1 (0.03 M NH~4~F + 0.025 M HCl) | @bray1945 |
+
+Determine soil pH per [SOP-L57](SOP-L57-soil-pH-salinity.qmd) before
+selecting the extractant. If comparing across sites with widely varying
+pH, consider using Mehlich-3 for all samples (consult the PI).
+
+::: {.callout-note}
+The Olsen extractant (NaHCO~3~ at pH 8.5) dissolves calcium phosphate
+precipitates and reduces Fe^3+^ and Al^3+^ activity, releasing
+adsorbed P. It works across a wide pH range but is the standard for
+calcareous and alkaline soils. The Bray-1 extractant dissolves
+Al-bound and Fe-bound P via fluoride complexation and acid dissolution;
+it underestimates P in calcareous soils because the acid is neutralized
+by free CaCO~3~ [@kuo1996].
+:::
+
+### 6.3 Olsen Extraction
+
+1. Weigh 2.50 g of air-dried, sieved soil into a 125 mL Erlenmeyer
+   flask
+2. Add approximately 0.25 g of P-free activated charcoal (pre-washed
+   with 0.5 M NaHCO~3~)
+3. Add 50 mL of 0.5 M NaHCO~3~ extractant (pH 8.5)
+4. Stopper and shake on the reciprocating shaker at 180 oscillations
+   per minute for 30 minutes
+5. Filter immediately through Whatman No. 42 filter paper into a clean
+   flask or tube. The filtrate should be clear and colorless; if
+   yellow-brown, the charcoal was insufficient or not pre-washed.
+6. Proceed to colorimetric analysis (Section 6.5) within 24 hours.
+   Store extracts at 4 C if analysis is delayed.
+
+### 6.4 Bray-1 Extraction
+
+1. Weigh 2.00 g of air-dried, sieved soil into a 125 mL Erlenmeyer
+   flask
+2. Add 20 mL of Bray-1 extractant (1:10 soil-to-solution ratio)
+3. Shake on the reciprocating shaker at 180 oscillations per minute for
+   5 minutes (the short extraction time is critical; extended shaking
+   can re-adsorb released P)
+4. Filter immediately through Whatman No. 42 filter paper
+5. Proceed to colorimetric analysis (Section 6.5) within 24 hours
+
+::: {.callout-important}
+The Bray-1 extraction is exactly 5 minutes. Timing begins when the
+extractant contacts the soil. Over-extraction will underestimate
+available P due to re-sorption, while under-extraction will miss
+slowly dissolving forms.
+:::
+
+### 6.5 Colorimetric Determination (Ascorbic Acid/Molybdate Blue)
+
+This procedure follows @murphy1962 as adapted by @kuo1996.
+
+1. Prepare the combined color reagent fresh (see Section 5, Reagents)
+2. Pipette a 5 mL aliquot of the filtered extract into a clean test
+   tube or cuvette
+3. For Olsen extracts: acidify the aliquot with 1 drop (approximately
+   0.05 mL) of concentrated H~2~SO~4~ and swirl to expel CO~2~
+   (the NaHCO~3~ matrix effervesces; wait until bubbling stops before
+   adding color reagent)
+4. Add 0.8 mL of the combined color reagent to each tube
+5. Mix by vortexing or inversion
+6. Allow the color to develop for 15 minutes at room temperature. The
+   solution turns blue in proportion to the phosphorus concentration.
+7. Read the absorbance at 880 nm (or 882 nm) against a DI water blank
+   within 30 minutes of color development
+8. Determine the P concentration from the calibration curve (Section
+   6.6)
+
+**Alternative: Hach DR3900 PhosVer 3 method.** If using the Hach
+spectrophotometer, follow the PhosVer 3 (ascorbic acid) method per
+[SOP-L45](SOP-L45-hach-colorimetric.qmd), Program 490. Prepare
+standards in the same extractant matrix as the samples.
+
+### 6.6 Calibration
+
+1. Prepare a minimum of five working standards (e.g., 0, 0.1, 0.5,
+   1.0, 2.0, 5.0 mg/L P) by diluting the stock standard with the
+   same extractant used for the samples
+2. Treat each standard exactly as the samples (acidification for Olsen,
+   color reagent addition, timing)
+3. Read absorbance at 880 nm
+4. Plot absorbance versus concentration and fit a linear regression.
+   Acceptable $r^2$ is 0.995 or higher.
+
+### 6.7 Calculations
+
+**Extractable P in soil (mg P / kg dry soil):**
+
+$$
+P_{\text{soil}} = \frac{C \times V}{M \times \left(\frac{100}{100 + \theta_H}\right)}
+$$
+
+where $C$ = P concentration in the extract (mg/L), $V$ = volume of
+extractant (mL), $M$ = mass of air-dried soil (g), and $\theta_H$ =
+hygroscopic moisture (%, determined per
+[SOP-L55](SOP-L55-soil-moisture.qmd)). The term
+$\frac{100}{100 + \theta_H}$ converts the air-dried mass to an
+oven-dry basis.
+
+For the Olsen method with the standard parameters (2.50 g soil, 50 mL
+extractant):
+
+$$
+P_{\text{soil}} \; (\text{mg/kg}) = C \times \frac{50}{2.50} \times \frac{100 + \theta_H}{100} = C \times 20 \times \frac{100 + \theta_H}{100}
+$$
+
+For Bray-1 (2.00 g soil, 20 mL extractant):
+
+$$
+P_{\text{soil}} \; (\text{mg/kg}) = C \times \frac{20}{2.00} \times \frac{100 + \theta_H}{100} = C \times 10 \times \frac{100 + \theta_H}{100}
+$$
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Interpretation of Olsen P
+
+| Olsen P (mg/kg) | Classification | Agronomic Interpretation               |
+|:-----------------|:---------------|:---------------------------------------|
+| Less than 5      | Very low       | P deficiency likely; fertilize         |
+| 5 -- 10          | Low            | P may limit yield; fertilize           |
+| 10 -- 20         | Medium         | Adequate for most crops                |
+| 20 -- 40         | High           | No response to added P expected        |
+| Greater than 40  | Very high      | Excess P; environmental risk of runoff losses |
+
+*Thresholds are approximate and crop-dependent [@olsen1954;
+@sharpley2003]. Consult local extension guidelines.*
+
+### 7.2 Interpretation of Bray-1 P
+
+| Bray-1 P (mg/kg) | Classification | Agronomic Interpretation              |
+|:------------------|:---------------|:--------------------------------------|
+| Less than 10      | Very low       | P deficiency likely                   |
+| 10 -- 20          | Low            | Fertilize to build P levels           |
+| 20 -- 40          | Medium         | Adequate for most crops               |
+| 40 -- 80          | High           | No additional P needed                |
+| Greater than 80   | Very high      | Environmental risk                    |
+
+### 7.3 QC Requirements
+
+- Prepare all standards in the same extractant matrix as the samples
+  (matrix-matched calibration) to account for background color and
+  ionic strength effects
+- Run a reagent blank (extractant only, no soil) with each batch. The
+  blank absorbance should be near zero at 880 nm.
+- Run a laboratory reference soil with known extractable P in each
+  batch. Recovery should be within +/- 15% of the established value.
+- Run duplicate extractions on at least 10% of samples. Acceptable
+  precision: relative percent difference (RPD) less than 15%.
+- Calibration curve $r^2$ must be 0.995 or higher
+- Check the mid-range standard after every 20 samples. Recalibrate if
+  the check standard deviates by more than 10%.
+- For Olsen extracts, verify the NaHCO~3~ pH is 8.5 +/- 0.1 before
+  each batch; pH drift changes extraction efficiency substantially.
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Olsen extracts (NaHCO~3~)    | Neutralize to pH 6--8 and drain, or collect for EH&S |
+| Bray-1 extracts (NH~4~F/HCl) | Collect in fluoride waste carboy; EH&S pickup. Do not drain. |
+| Color reagent waste (molybdate/H~2~SO~4~) | Collect in inorganic waste; EH&S pickup |
+| Used filter paper and soil    | Standard trash (if non-hazardous soil)   |
+| Spent charcoal                | Standard trash                           |
+
+::: {.callout-warning}
+### Fluoride Waste
+
+Bray-1 extracts contain ammonium fluoride. **Do not pour down the
+drain.** Collect all fluoride-containing waste in a labeled
+polyethylene carboy for EH&S hazardous waste pickup.
+:::
+
+
+## 9. References
+
+- Bray, R.H. & Kurtz, L.T. (1945). Determination of total, organic,
+  and available forms of phosphorus in soils. *Soil Science*, 59(1),
+  39--45.
+- Kuo, S. (1996). Phosphorus. In: Sparks, D.L. et al. (Eds.),
+  *Methods of Soil Analysis, Part 3: Chemical Methods*. SSSA Book
+  Series No. 5. pp. 869--919.
+- Murphy, J. & Riley, J.P. (1962). A modified single solution method
+  for the determination of phosphate in natural waters. *Analytica
+  Chimica Acta*, 27, 31--36.
+- Olsen, S.R., Cole, C.V., Watanabe, F.S., & Dean, L.A. (1954).
+  *Estimation of available phosphorus in soils by extraction with
+  sodium bicarbonate*. USDA Circular No. 939. U.S. Government Printing
+  Office, Washington, DC.
+- Sharpley, A.N., Daniel, T., Sims, T., Lemunyon, J., Stevens, R., &
+  Parry, R. (2003). *Agricultural phosphorus and eutrophication*. 2nd
+  ed. USDA-ARS Publication No. 149.
+- Frank, K., Beegle, D., & Denning, J. (2015). Phosphorus. In:
+  Brown, J.R. (Ed.), *Recommended Chemical Soil Test Procedures for the
+  North Central Region*. NCR Publication No. 221 (revised). pp. 21--29.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing soil extractable P analyses independently, personnel
+must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   training
+3. Review the SDS for ammonium fluoride (if using Bray-1)
+4. Demonstrate preparation of the extractant, color reagent, and
+   calibration standards under supervision
+5. Run a practice batch (at least 5 samples + blank + reference soil +
+   duplicate) with acceptable QC results
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Example Calculation in R {.appendix}
+
+```{r}
+#| label: extractable-P-calc
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+# --- Calibration curve ---
+standards <- tibble(
+  P_mg_L = c(0, 0.1, 0.5, 1.0, 2.0, 5.0),
+  abs_880 = c(0.002, 0.018, 0.075, 0.148, 0.295, 0.740)
+)
+
+cal_model <- lm(abs_880 ~ P_mg_L, data = standards)
+cat(sprintf("Calibration R-squared: %.5f\n", summary(cal_model)$r.squared))
+
+# --- Sample calculation (Olsen method) ---
+sample_abs <- 0.210            # Absorbance at 880 nm
+soil_mass_g <- 2.50            # Air-dried soil (g)
+extract_vol_mL <- 50           # Extractant volume (mL)
+hygroscopic_moisture_pct <- 2.1 # Percent hygroscopic moisture
+
+# Determine C from calibration
+C_mg_L <- (sample_abs - coef(cal_model)[1]) / coef(cal_model)[2]
+
+# Calculate soil extractable P (mg/kg dry soil)
+P_soil_mg_kg <- C_mg_L * (extract_vol_mL / soil_mass_g) *
+                ((100 + hygroscopic_moisture_pct) / 100)
+
+cat(sprintf("Extract P concentration: %.3f mg/L\n", C_mg_L))
+cat(sprintf("Olsen P:                %.1f mg/kg dry soil\n", P_soil_mg_kg))
+
+# Interpret
+interpret <- case_when(
+  P_soil_mg_kg < 5  ~ "Very low",
+  P_soil_mg_kg < 10 ~ "Low",
+  P_soil_mg_kg < 20 ~ "Medium",
+  P_soil_mg_kg < 40 ~ "High",
+  TRUE               ~ "Very high"
+)
+cat(sprintf("Classification:         %s\n", interpret))
+```
+
+
+## Appendix B: Reagent Preparation Quick Reference {.appendix}
+
+### Olsen Extractant (0.5 M NaHCO~3~, pH 8.5)
+
+1. Dissolve 42.0 g NaHCO~3~ in approximately 900 mL DI water
+2. Adjust pH to 8.5 with 1 M NaOH (dropwise, with stirring)
+3. Bring to 1 L with DI water
+4. Check pH before each batch; re-adjust if needed
+5. Prepare fresh weekly
+
+### Bray-1 Extractant (0.03 M NH~4~F + 0.025 M HCl)
+
+1. In a fume hood, dissolve 1.11 g NH~4~F in approximately 900 mL DI
+   water
+2. Add 2.1 mL concentrated HCl (12 M)
+3. Bring to 1 L with DI water
+4. Store in polyethylene at room temperature. Stable for several weeks.
+
+### Combined Color Reagent (Murphy-Riley)
+
+Mix in order, swirling between additions:
+
+1. 50 mL of 5 N H~2~SO~4~
+2. 15 mL of 4% ammonium molybdate
+3. 5 mL of 0.274% antimony potassium tartrate
+4. 30 mL of 1.76% ascorbic acid (freshly prepared)
+
+Total volume: 100 mL. Prepare fresh for each analytical batch.
+
+### P Stock Standard (1000 mg/L P)
+
+1. Dry KH~2~PO~4~ at 105 C for 2 hours; cool in a desiccator
+2. Dissolve 4.394 g in DI water in a 1 L volumetric flask
+3. Bring to volume. Store at 4 C. Stable for months.
+
+
+## Appendix C: BibTeX Entries {.appendix}
+
+Append these to the project `references.bib`:
+
+```bibtex
+@techreport{olsen1954,
+  title     = {Estimation of Available Phosphorus in Soils by
+               Extraction with Sodium Bicarbonate},
+  author    = {Olsen, S. R. and Cole, C. V. and Watanabe, F. S.
+               and Dean, L. A.},
+  institution = {United States Department of Agriculture},
+  number    = {Circular No. 939},
+  year      = {1954},
+  address   = {Washington, DC}
+}
+
+@article{bray1945,
+  title     = {Determination of total, organic, and available forms
+               of phosphorus in soils},
+  author    = {Bray, Roger H. and Kurtz, L. T.},
+  journal   = {Soil Science},
+  volume    = {59},
+  number    = {1},
+  pages     = {39--45},
+  year      = {1945},
+  doi       = {10.1097/00010694-194501000-00006}
+}
+
+@article{murphy1962,
+  title     = {A modified single solution method for the
+               determination of phosphate in natural waters},
+  author    = {Murphy, J. and Riley, J. P.},
+  journal   = {Analytica Chimica Acta},
+  volume    = {27},
+  pages     = {31--36},
+  year      = {1962},
+  doi       = {10.1016/S0003-2670(00)88444-5}
+}
+
+@incollection{kuo1996,
+  title     = {Phosphorus},
+  author    = {Kuo, S.},
+  booktitle = {Methods of Soil Analysis, Part 3: Chemical Methods},
+  editor    = {Sparks, D. L. and Page, A. L. and Helmke, P. A.
+               and Loeppert, R. H.},
+  series    = {SSSA Book Series No. 5},
+  pages     = {869--919},
+  year      = {1996},
+  publisher = {Soil Science Society of America},
+  address   = {Madison, WI},
+  doi       = {10.2136/sssabookser5.3.c32}
+}
+
+@techreport{sharpley2003,
+  title     = {Agricultural Phosphorus and Eutrophication},
+  author    = {Sharpley, Andrew N. and Daniel, T. and Sims, T.
+               and Lemunyon, J. and Stevens, R. and Parry, R.},
+  institution = {USDA Agricultural Research Service},
+  number    = {ARS-149},
+  edition   = {2nd},
+  year      = {2003},
+  address   = {University Park, PA}
+}
+
+@incollection{frank2015,
+  title     = {Phosphorus},
+  author    = {Frank, K. and Beegle, D. and Denning, J.},
+  booktitle = {Recommended Chemical Soil Test Procedures for the
+               {North Central Region}},
+  editor    = {Brown, J. R.},
+  series    = {NCR Publication No. 221 (revised)},
+  pages     = {21--29},
+  year      = {2015},
+  publisher = {Missouri Agricultural Experiment Station},
+  address   = {Columbia, MO}
+}
+```
+
+
+## Appendix D: Troubleshooting {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| Yellow-brown Olsen extract    | Insufficient charcoal; charcoal not pre-washed | Increase charcoal; pre-wash with 0.5 M NaHCO~3~ |
+| Calibration curve non-linear above 5 mg/L | Beer's Law limit exceeded | Dilute high samples; add lower standards |
+| Bray-1 P unexpectedly low on calcareous soil | Acid neutralized by CaCO~3~ | Use Olsen method for soils with pH above 6.5 |
+| Blank reads above 0.01 absorbance | Contaminated glassware or reagent | Acid-wash glassware ([SOP-L12](SOP-L12-glassware-cleaning.qmd)); prepare fresh reagents |
+| Color fades after 30 min      | Ascorbic acid degradation       | Read within 30 min; prepare ascorbic acid solution fresh daily |
+| Duplicates disagree by more than 15% RPD | Soil heterogeneity; inconsistent extraction timing | Homogenize soil more thoroughly; use a timer for extraction |
+| Reference soil out of range   | Extractant pH drift (Olsen); reagent degradation | Verify NaHCO~3~ pH; remake color reagent |

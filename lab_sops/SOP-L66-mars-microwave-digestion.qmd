@@ -1,0 +1,417 @@
+---
+# =============================================================================
+# SOP-L66: Microwave-Assisted Acid Digestion of Soils (MARS 5 / EPA 3051A)
+# =============================================================================
+title: "Microwave-Assisted Acid Digestion of Soils for Trace Metal Analysis"
+sop-number: "SOP-L66"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+  - name: "Isaac Medina"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.2"
+
+revision-history:
+  - version: "0.1"
+    date: "2017-11-11"
+    author: "Marc Los Huertos, Isaac Medina"
+    changes: "Initial release"
+  - version: "0.2"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to Quarto"
+---
+
+## 1. Purpose
+
+This procedure describes the microwave-assisted acid digestion of soil,
+sediment, and sludge samples for trace metal analysis, following US EPA
+Method 3051A [@epa3051a]. The digested extract can be analyzed by flame
+atomic absorption spectrometry (FAAS), inductively coupled plasma mass
+spectrometry (ICP-MS), or other suitable methods. This is a
+near-total-dissolution method; silicates and some refractory oxides
+(SiO~2~, TiO~2~) may not fully dissolve but environmentally available
+metals are recovered.
+
+For non-microwave hot-plate acid digestion, see *SOP-L65*.
+
+
+## 2. Scope
+
+- **Applies to:** Soils, sediments, and sludge samples requiring trace
+  metal analysis (Pb, Cd, Cu, Zn, Cr, As, Ni, Fe, Mn, and others) at
+  all EA Program sites, including urban soil lead surveys and
+  photovoltaic panel site characterizations
+- **Does not apply to:** Water samples (direct acidification or
+  separate digestion per EPA 3005A); samples requiring complete
+  silicate dissolution (use HF-based methods); organic tissue digestion
+- **Location:** Advanced Laboratory, Seaver North (MARS 5 microwave);
+  EA Program laboratory, SGM 133 (sample preparation and filtration)
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Lab Manager       | Maintain MARS 5 microwave, stock reagents   |
+| Trained Personnel | Perform digestion and filtration per this SOP |
+| New Students      | Complete training before independent use; must be supervised for first digestion run |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-danger}
+### Critical Safety Warning
+
+This procedure uses concentrated nitric acid (HNO~3~) under high
+temperature and pressure in sealed vessels. Improper handling can cause
+severe acid burns, toxic fume exposure, or vessel rupture. Read the
+entire procedure and the MARS 5 operator's manual before beginning.
+:::
+
+### Hazards
+
+- **Chemical:** Concentrated HNO~3~ (15.8 M) is severely corrosive and
+  produces toxic NO~x~ fumes. Optional HCl (12 M) is also severely
+  corrosive. Both cause severe burns on skin and eye contact.
+- **Physical:** Microwave vessels reach 175 C and develop significant
+  internal pressure. Residual pressure and acid vapor remain in the
+  headspace after digestion. Hot vessels can cause burns.
+- **Inhalation:** NO~x~ and HCl fumes are toxic. All acid handling and
+  vessel venting must occur in the fume hood.
+
+### Required PPE
+
+- [ ] Chemical splash goggles (not safety glasses)
+- [ ] Face shield (when opening hot vessels)
+- [ ] Lab coat
+- [ ] Neoprene or heavy-duty acid-resistant gloves (long-cuffed)
+- [ ] Closed-toed shoes
+
+### Emergency Procedures
+
+For acid splashes to skin or eyes, flush immediately at the eyewash
+station or safety shower for at least 15 minutes. For inhalation of
+fumes, move to fresh air and seek medical attention if symptoms persist.
+For vessel rupture or spill, evacuate the area and notify the lab
+manager. Refer to
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| MARS 5 Microwave Accelerated Reaction System | CEM Corporation; with pre-programmed EPA 3051A method |
+| Microwave digestion vessels with carbon fiber sleeves | Must be compatible with the MARS 5; pressure-relief mechanism required |
+| Temperature and pressure sensors (if applicable) | Consult instrument supervisor |
+| Fume hood                     | Required for all acid handling and vessel venting |
+| Analytical balance (0.001 g)  | See [SOP-L13](SOP-L13-using-balances.qmd) |
+| Centrifuge                    | Capable of 2,000--3,000 rpm; see *SOP-L25* or *SOP-L27* |
+| Mortar and pestle             | For grinding dried soil                   |
+| No. 10 sieve (2 mm mesh)     | For sieving ground soil                   |
+| Drying oven                   | Set to 60 C; see [SOP-L16](SOP-L16-drying-ovens.qmd) |
+
+### Consumables
+
+| Item                          | Cat. No. / Notes                          |
+|:------------------------------|:------------------------------------------|
+| 50 mL graduated centrifuge tubes | For dilution and centrifugation        |
+| 15 mL centrifuge tubes        | For filtered digest storage               |
+| Disposable syringes (10 mL)  | Acid-resistant polypropylene               |
+| Syringe filters, 0.45 um, 25 mm | Fisherbrand Cat. No. 09-719D           |
+| 100 mL beakers or aluminum crinkle dishes | For drying samples            |
+
+### Reagents
+
+| Reagent                       | Grade / Notes                             |
+|:------------------------------|:------------------------------------------|
+| Nitric acid (HNO~3~), concentrated (15.8 M) | Trace Metal grade; Fisher A509P500 or equivalent |
+| Hydrochloric acid (HCl), concentrated (12 M) (optional) | Trace Metal grade; for improved recovery of Al, Sb, Ba, Be, Cr, Fe, Mg, Ag, V [@epa3051a] |
+| Reagent water (Type I)        | From [*SOP-L11*](SOP-L11-milli-q-water.qmd); must be interference-free at target MDLs |
+
+::: {.callout-note}
+All reagents must be Trace Metal grade or equivalent. Analyze a reagent
+blank before use; the blank must read below the method detection limit
+(MDL) for all target analytes.
+:::
+
+
+## 6. Procedure
+
+### 6.1 Glassware and Vessel Cleaning
+
+1. Acid-wash all vessels, centrifuge tubes, and volumetric ware per
+   [SOP-L12 Glassware Cleaning](SOP-L12-glassware-cleaning.qmd),
+   Section 6.3 (10% HNO~3~ acid bath)
+2. Rinse with reagent water and dry in a clean environment
+3. For microwave vessels, follow the manufacturer's cleaning protocol
+   (CEM recommends a cleaning cycle with dilute HNO~3~ between batches)
+
+### 6.2 Sample Preparation
+
+1. Weigh approximately 3--5 g of soil into a clean beaker or aluminum
+   dish. Avoid obviously non-soil material (large rocks, twigs, leaves).
+2. Dry at 60 C overnight in the drying oven. Do not exceed 60 C;
+   higher temperatures can volatilize mercury and other semi-volatile
+   metals.
+3. Allow to cool. Using a clean mortar and pestle, grind the dried soil
+   and pass through a No. 10 sieve (2 mm).
+
+### 6.3 Microwave Digestion
+
+1. Weigh 0.500 g (+/- 0.001 g) of the sieved, dried soil into a clean
+   microwave vessel. For oil-contaminated or high-organic samples, use
+   no more than 0.250 g. Record the exact mass.
+2. Working in the fume hood, add 10.0 mL (+/- 0.1 mL) of concentrated
+   HNO~3~ (Trace Metal grade) to the vessel.
+
+::: {.callout-warning}
+### Vigorous Reaction
+
+Adding acid to samples with high organic matter may cause immediate
+effervescence. If a vigorous reaction occurs, leave the vessel uncapped
+in the fume hood for 1--2 hours to allow pre-digestion before sealing.
+:::
+
+3. *Optional:* For improved recovery of Al, Sb, Ba, Be, Cr, Fe, Mg,
+   Ag, and V, substitute 9 mL HNO~3~ + 3 mL concentrated HCl (aqua
+   regia variant). Note: HCl can increase interferences with some
+   ICP-MS analyses; consult the analyst.
+4. Seal the vessels according to the manufacturer's instructions
+5. Place each sealed vessel into a slot on the vessel rack **with a
+   carbon fiber sleeve in place**
+
+::: {.callout-danger}
+### Critical
+
+Never place a vessel into a rack slot without its carbon fiber sleeve.
+The sleeve provides essential containment in the event of a vessel
+failure. Operating without the sleeve risks vessel explosion.
+:::
+
+6. Secure the rack into the MARS 5 microwave
+7. If applicable, connect the temperature and pressure sensors to the
+   designated control vessel(s)
+8. Select the pre-programmed EPA 3051A method. Verify the following
+   parameters:
+
+| Parameter                     | Specification (EPA 3051A)     |
+|:------------------------------|:------------------------------|
+| Ramp to 175 C                | 5.5 +/- 0.25 minutes         |
+| Hold at 175 +/- 5 C          | 4.5 minutes (remainder of 10 min total) |
+| Maximum pressure              | Per vessel rating; relief mechanism must activate before failure |
+
+9. With instructor verification that all vessels are sealed and the
+   rack is properly installed, close the microwave door and start the
+   program
+10. After the program finishes, allow the vessels to cool inside the
+    microwave for at least 5 minutes, then transfer to the fume hood
+    for further cooling
+
+### 6.4 Filtration and Extract Preparation
+
+1. Working in the fume hood, carefully uncap each vessel and vent for
+   2--3 minutes to release residual acid vapor and pressure
+2. Quantitatively transfer the digest into a clean 50 mL graduated
+   centrifuge tube, rinsing the vessel walls with small portions of
+   reagent water to ensure complete transfer
+3. Dilute to the 25.0 mL mark with reagent water. Record the final
+   volume. Keep all samples as close to the same volume as possible.
+4. Cap and centrifuge at 2,000--3,000 rpm for 10 minutes or until the
+   supernatant is clear
+
+::: {.callout-note}
+Refractory materials (SiO~2~, TiO~2~, Al~2~O~3~) may remain
+undissolved and cause persistent turbidity. If the supernatant is not
+clear after centrifugation, allow the sample to stand overnight before
+filtering.
+:::
+
+5. Using a clean 10 mL syringe, carefully withdraw 10 mL of
+   supernatant without disturbing the pellet
+6. Attach a fresh 0.45 um syringe filter (Fisherbrand 09-719D) and
+   filter the supernatant into a clean 15 mL centrifuge tube
+7. Use a new syringe and filter for each sample
+8. Cap and label the filtered extract. Store at 4 C until analysis.
+
+### 6.5 Disposal and Cleanup
+
+1. Collect all acid digestion waste (vessel rinses, supernatant
+   residues, centrifuge pellets in acid) in a labeled acid waste carboy
+   in the fume hood. EH&S pickup.
+2. Rinse and clean microwave vessels per the manufacturer's protocol
+3. Dispose of used syringe filters and syringes in the acid waste
+   stream (they are contaminated with concentrated HNO~3~ digest)
+4. Wipe down all bench surfaces with DI water
+5. Remove and properly dispose of gloves; wash hands thoroughly
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 QC Requirements
+
+- **Reagent blank:** Include one vessel containing only 10 mL HNO~3~
+  (no soil) in each digestion batch. The blank must read below the MDL
+  for all target analytes.
+- **Laboratory control sample (LCS):** Digest a certified reference
+  material (CRM) or laboratory reference soil with known metal
+  concentrations in each batch. Recovery should be 75--125% of the
+  certified value.
+- **Matrix spike:** Spike a duplicate sample with a known concentration
+  of the target analyte(s). Recovery should be 75--125%.
+- **Duplicate digestions:** Process at least 10% of samples in
+  duplicate. Relative percent difference (RPD) should be less than 20%.
+- **Calibration verification:** After instrument analysis, verify the
+  calibration with a mid-range check standard every 10 samples.
+
+### 7.2 Calculations
+
+**Metal concentration in soil (mg/kg dry weight):**
+
+$$
+C_{\text{soil}} = \frac{C_{\text{digest}} \times V_{\text{final}}}{M_{\text{soil}}}
+$$
+
+where $C_{\text{digest}}$ = concentration in the digest (mg/L from
+ICP-MS or FAAS), $V_{\text{final}}$ = final digest volume (mL,
+typically 25), and $M_{\text{soil}}$ = mass of dried soil (g).
+
+Since the soil was dried at 60 C (not 105 C), apply a moisture
+correction if reporting on a 105 C oven-dry basis:
+
+$$
+C_{\text{soil, OD}} = C_{\text{soil}} \times \frac{100 + \theta_{60}}{100 + \theta_{105}}
+$$
+
+where $\theta_{60}$ and $\theta_{105}$ are the moisture contents at
+60 C and 105 C respectively (determined on a companion subsample per
+[SOP-L55](SOP-L55-soil-moisture.qmd)).
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Acid digest waste (vessels, rinses, pellets) | Collect in acid waste carboy; EH&S hazardous waste pickup |
+| Used syringe filters and syringes | Acid waste stream (contaminated with HNO~3~) |
+| Centrifuge tube residues      | Acid waste carboy                        |
+| Digested soil pellets         | Acid waste carboy (contain concentrated acid) |
+
+::: {.callout-warning}
+### Acid Waste
+
+All waste from this procedure contains concentrated HNO~3~ and
+dissolved metals. **Do not pour down the drain.** Collect in a labeled
+polyethylene carboy for EH&S hazardous waste pickup.
+:::
+
+
+## 9. References
+
+- USEPA. (2007). Method 3051A: Microwave assisted acid digestion of
+  sediments, sludges, soils, and oils. Revision 1. In: *Test Methods
+  for Evaluating Solid Waste, Physical/Chemical Methods* (SW-846).
+  U.S. Environmental Protection Agency, Washington, DC.
+- CEM Corporation. *MARS 5 Microwave Accelerated Reaction System:
+  Operator's Manual*. CEM Corporation, Matthews, NC.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing microwave acid digestion independently, personnel
+must:
+
+1. Read this SOP, [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd),
+   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   in full
+2. Review the SDS for concentrated HNO~3~ and HCl
+3. Review the MARS 5 operator's manual (vessel loading, program
+   selection, safety interlocks)
+4. Observe a trained operator perform a complete digestion cycle
+   (vessel loading through filtration)
+5. Perform at least one complete digestion batch under direct
+   supervision, including a blank and a CRM, with acceptable QC results
+6. Be signed off by the PI or lab manager
+
+::: {.callout-important}
+First-time users must be directly supervised for their entire first
+digestion run. Independent operation is permitted only after sign-off.
+:::
+
+
+## Appendix A: Example Calculation {.appendix}
+
+```{r}
+#| label: mars-digestion-calc
+#| echo: true
+#| eval: false
+
+# Trace metal concentration from microwave digest
+# EPA 3051A, analyzed by ICP-MS
+
+C_digest_mg_L <- 0.452     # Pb concentration in filtered digest (mg/L)
+V_final_mL <- 25.0         # Final volume after dilution (mL)
+M_soil_g <- 0.503           # Mass of dried soil digested (g)
+
+# Concentration in soil (mg/kg)
+C_soil_mg_kg <- (C_digest_mg_L * V_final_mL) / M_soil_g
+
+cat(sprintf("Digest concentration: %.3f mg/L Pb\n", C_digest_mg_L))
+cat(sprintf("Soil mass:           %.3f g\n", M_soil_g))
+cat(sprintf("Final volume:        %.1f mL\n", V_final_mL))
+cat(sprintf("Soil Pb:             %.1f mg/kg\n", C_soil_mg_kg))
+
+# Compare to screening levels
+cat(sprintf("\nCalifornia DTSC residential screening level for Pb: 80 mg/kg\n"))
+cat(sprintf("EPA RSL for Pb (residential): 400 mg/kg\n"))
+if (C_soil_mg_kg > 400) {
+  cat("WARNING: Exceeds EPA residential screening level\n")
+} else if (C_soil_mg_kg > 80) {
+  cat("NOTE: Exceeds CA DTSC residential screening level\n")
+} else {
+  cat("Below both screening levels\n")
+}
+```
+
+
+## Appendix B: Troubleshooting {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| Vigorous reaction when acid added | High organic matter or carbonite content | Pre-digest uncapped in fume hood for 1--2 hours before sealing |
+| Vessel pressure exceeds limit during run | Sample mass too large; excessive organic content | Reduce sample mass to 0.250 g; extend pre-digestion time |
+| Supernatant not clear after centrifugation | Refractory oxides (SiO~2~, TiO~2~) remain undissolved | Allow to stand overnight; filter through 0.45 um; this is normal for EPA 3051A |
+| Blank reads above MDL         | Contaminated acid, vessels, or water | Use fresh Trace Metal grade acid; re-clean vessels; check DI water quality |
+| CRM recovery below 75%        | Incomplete digestion; sample loss during transfer | Verify temperature reached 175 C; rinse vessels quantitatively; consider HNO~3~/HCl mixture |
+| CRM recovery above 125%       | Contamination; calibration error | Check blank; recalibrate instrument; re-analyze |
+| High RPD between duplicates   | Soil heterogeneity; inconsistent weighing | Grind and sieve more thoroughly; weigh to 0.001 g precision |
+
+
+## Appendix C: BibTeX Entry {.appendix}
+
+Append to the project `references.bib`:
+
+```bibtex
+@techreport{epa3051a,
+  title     = {Method 3051A: Microwave Assisted Acid Digestion of
+               Sediments, Sludges, Soils, and Oils},
+  author    = {{U.S. Environmental Protection Agency}},
+  institution = {U.S. Environmental Protection Agency},
+  number    = {SW-846, Revision 1},
+  year      = {2007},
+  address   = {Washington, DC},
+  url       = {https://www.epa.gov/sites/production/files/2015-12/documents/3051a.pdf}
+}
+```
