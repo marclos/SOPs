@@ -1,0 +1,356 @@
+---
+# =============================================================================
+# SOP-L24: Trilogy Laboratory Fluorometer
+# =============================================================================
+# =============================================================================
+title: "Trilogy Laboratory Fluorometer"
+sop-number: "SOP-24"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.4"
+
+revision-history:
+  - version: "0.1"
+    date: "2019-06-10"
+    author: "Isaac Medina"
+    changes: "Initial release"
+  - version: "0.3"
+    date: "2023-05-10"
+    author: "Virginia Paschal"
+    changes: "Major revision and expansion"
+  - version: "0.4"
+    date: "2025-05-15"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to Quarto"
+---
+
+## 1. Purpose
+
+This procedure describes the operation, calibration, and maintenance of
+the Turner Designs Trilogy Laboratory Fluorometer, a compact,
+multifunctional instrument used for fluorescence, absorbance, and
+turbidity measurements with interchangeable snap-in optical modules. The
+Trilogy is the primary instrument in the EA Program laboratory for
+chlorophyll *a* determination and turbidity analysis of water samples.
+
+
+## 2. Scope
+
+- **Applies to:** Turner Designs Trilogy Laboratory Fluorometer equipped
+  with fluorescence, absorbance, and turbidity optical modules
+- **Does not apply to:** Field fluorometers, in-vivo chlorophyll
+  measurements with multiprobes (see
+  [SOP-F22](../field_sops/SOP-F22-eureka-manta2.qmd)), or benchtop
+  spectrophotometers (Hach DR3900; see
+  [SOP-L45](SOP-L45-hach-colorimetric.qmd))
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure calibration standards are current |
+| Lab Manager       | Maintain optical modules, replace light sources as needed |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Chlorophyll extraction uses 90% acetone, which is
+  flammable and an irritant. Handle in the fume hood. Acidification
+  with HCl (0.1 N) is required for EPA 445.0. See
+  [SOP-L02](SOP-L02-hazardous-materials-handling.qmd).
+- **Physical:** Glass test tubes used for extracted chlorophyll
+  measurements can break. Handle with care.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves (especially when handling acetone or standards)
+
+### Emergency Procedures
+
+For acetone spills, extinguish all ignition sources, ventilate the area,
+and clean up per
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+For skin or eye contact with acetone or acid, flush with water for at
+least 15 minutes.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Turner Designs Trilogy Fluorometer | With color touch screen               |
+| Fluorescence optical module(s) | Application-specific (e.g., chlorophyll *a*, Rhodamine WT) |
+| Absorbance optical module     | With interchangeable filter paddles (560/10, 600/10, 750/10 nm) |
+| Turbidity optical module      | Infrared LED at 850 nm (ISO 7027)         |
+| Solid secondary standard      | For verifying instrument stability        |
+| Printer or PC connection      | For data export (USB or serial)           |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Methacrylate cuvettes (10 x 10 mm) | Minimum 2 mL volume; for ammonium and general fluorescence |
+| Polystyrene cuvettes (10 x 10 mm) | For turbidity measurements              |
+| Glass cuvettes (10 x 10 mm)  | Minimum 1.5 mL volume; for absorbance     |
+| Glass test tubes (12 x 35 mm) | For extracted chlorophyll measurements    |
+
+### Reagents and Standards
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Chlorophyll *a* standard      | Pure chlorophyll *a* in 90% acetone; Turner Designs or equivalent |
+| Rhodamine WT standard         | If using Rhodamine fluorescence module    |
+| 90% acetone (reagent grade)   | For chlorophyll extraction solvent         |
+| 0.1 N HCl                    | For acidification step (EPA 445.0)        |
+| Formazine turbidity standards | 4,000 NTU primary standard; valid for 4 weeks after preparation |
+| Ultrapure water               | For blanks                                |
+
+
+## 6. Procedure
+
+### 6.1 Startup
+
+1. Turn on the Trilogy using the power switch on the back of the
+   instrument
+2. Allow the instrument to warm up for approximately 10 minutes before
+   taking measurements
+3. Connect the Trilogy to a printer or PC if data export is needed
+
+### 6.2 Installing an Optical Module
+
+1. Select the appropriate optical module for the analysis:
+   - **Fluorescence module** for chlorophyll *a*, Rhodamine WT, or other
+     fluorescent analytes
+   - **Absorbance module** for colorimetric assays
+   - **Turbidity module** for nephelometric turbidity measurements
+2. Open the sample compartment lid
+3. Align the module with the slot and press firmly until it clicks into
+   place
+4. The Trilogy will automatically detect the installed module and display
+   the corresponding menu on the touch screen
+5. If using the absorbance module, install the appropriate filter paddle
+   for the target wavelength
+
+### 6.3 Selecting the Measurement Mode
+
+Each module offers two measurement modes:
+
+| Mode                      | When to Use                                |
+|:--------------------------|:-------------------------------------------|
+| **Raw mode**              | Qualitative measurements, tracking relative changes. No calibration required. Results in RFU (fluorescence), raw absorbance, or NTU (turbidity). |
+| **Direct Concentration mode** | Quantitative measurements requiring calibrated output in concentration units. Calibration required (see Section 7). |
+
+Touch **Mode** on the home screen to toggle between modes.
+
+### 6.4 Fluorescence Module: Chlorophyll *a* (EPA 445.0)
+
+EPA Method 445.0 is the standard method for measuring extracted
+chlorophyll *a* and pheophytin *a* in marine and freshwater algae by
+fluorescence. It requires extraction with 90% acetone and measurements
+before and after acidification.
+
+1. Calibrate the fluorescence module in Direct Concentration mode using
+   a known concentration of pure chlorophyll *a* in 90% acetone (see
+   Section 7.3)
+2. Insert the glass test tube containing the extracted sample
+3. Touch **Measure Fluorescence** to obtain the pre-acidification
+   reading
+4. Add the prescribed volume of 0.1 N HCl, mix gently, and wait
+   90 seconds
+5. Measure again to obtain the post-acidification reading
+6. Calculate chlorophyll *a* and pheophytin *a* concentrations per
+   EPA 445.0
+
+::: {.callout-tip}
+### Tip
+For greatest accuracy, recalibrate with a fresh chlorophyll *a* standard
+every few months. The standard degrades over time, especially if exposed
+to light or warmth.
+:::
+
+### 6.5 Single-Sample Measurements
+
+1. Open the lid and insert the appropriate cuvette or test tube
+2. Close the lid
+3. Optionally, touch **Sample ID** to name the sample using the on-screen
+   keypad; touch **Save**
+4. Touch the **Measure** button corresponding to the installed module
+   (Measure Fluorescence, Measure Absorbance, or Measure Turbidity)
+5. The Trilogy measures the sample for 6 seconds and reports the average
+   reading
+6. Results for the most recent 20 measurements are displayed on the home
+   screen; use the arrow keys to scroll through them
+
+::: {.callout-important}
+The Trilogy stores a maximum of 20 measurements at one time. Older
+readings are overwritten. Measurements are not retained between power
+cycles. Always export data to a printer or PC before turning off the
+instrument or exceeding 20 readings.
+:::
+
+### 6.6 Continuous Sampling
+
+1. Touch **Continuous Sampling** on the home screen and turn the feature
+   **ON**
+2. Set the measurement frequency and the total number of measurements
+   (maximum 9,999)
+3. Touch **OK** to return to the home screen
+4. Connect the Trilogy to a printer or PC to capture all data
+5. Do not touch the screen repeatedly during continuous sampling, as
+   this will abort the measurement sequence
+
+### 6.7 Shutdown
+
+1. Export all data to a printer or PC
+2. Remove the cuvette or test tube from the sample compartment
+3. Clean the cuvette holder if any liquid was spilled (wipe with 70%
+   ethanol and a lint-free tissue)
+4. Close the sample compartment lid
+5. Turn off the instrument using the rear power switch
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 When to Calibrate
+
+1. Before running a new batch of samples (for greatest accuracy)
+2. After a temperature change of +/- 5 C in the lab
+3. After changing to a different optical module or switching to a
+   different analyte
+4. When verification readings on a known standard deviate unacceptably
+   from the expected value
+
+### 7.2 Calibration Overview
+
+Calibration converts the raw instrument signal to concentration units.
+The Trilogy supports single-point and multi-point calibrations (up to
+five standards plus a blank). Multi-point calibrations generate a
+calibration curve and provide superior accuracy across a wide
+concentration range.
+
+### 7.3 Direct Concentration Calibration Procedure
+
+This procedure applies to all fluorescence and turbidity modules
+(except the chlorophyll acidification and non-acidification modules,
+which have their own dedicated procedures in the Trilogy manual).
+
+1. Turn on the Trilogy and confirm the correct module is installed
+2. Touch **Calibrate** on the home screen
+3. Select **Run New Calibration**
+4. Select the desired unit of measurement
+5. Insert the blank (ultrapure water or 90% acetone, as appropriate)
+   and touch **OK**
+6. Enter the concentration of the first standard. For multi-point
+   calibrations, begin with the lowest concentration and proceed in
+   order of increasing concentration.
+7. Insert the standard and touch **OK**
+8. After the reading, either select **Proceed with Current Calibration**
+   or **Enter More Standards** to add additional points
+9. Optionally, save the calibration for future use
+10. Verify the calibration by measuring the same standard used in step 6.
+    The displayed concentration should match the known value within the
+    acceptable tolerance for the application.
+
+### 7.4 Verification
+
+- After calibration, re-read a mid-range standard to confirm accuracy
+- Re-read the standard every few hours during extended analytical
+  sessions to detect drift
+- Optionally, read the solid secondary standard and record its value
+  for future instrument stability checks
+- If the verification reading drifts beyond acceptable limits,
+  recalibrate before continuing
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Acetone extracts              | Collect in organic waste carboy in fume hood; EH&S pickup |
+| Acidified samples (HCl)       | Neutralize and dispose per [SOP-L02](SOP-L02-hazardous-materials-handling.qmd) |
+| Used cuvettes (non-hazardous) | Standard trash (polystyrene, methacrylate) or recycle (glass) |
+| Formazine standards           | Collect in aqueous waste; EH&S pickup    |
+
+
+## 9. References
+
+- Turner Designs. *Trilogy Laboratory Fluorometer: User's Manual*.
+  Turner Designs, San Jose, CA.
+- USEPA. (1997). Method 445.0: *In Vitro Determination of Chlorophyll a
+  and Pheophytin a in Marine and Freshwater Algae by Fluorescence*.
+  Revision 1.2. National Exposure Research Laboratory, Cincinnati, OH.
+- ISO 7027. *Water Quality -- Determination of Turbidity*.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before operating the Trilogy Fluorometer independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   training
+3. Review the Turner Designs Trilogy User's Manual
+4. Observe a trained operator perform module installation, calibration,
+   and sample measurement
+5. Perform a calibration and measure a set of standards with acceptable
+   results under supervision
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Troubleshooting -- Fluorescence {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| "Bad Calibration" error       | Blank brighter than standard    | Compare blank and standard in Raw mode; ensure standard is more concentrated than blank |
+| Erratic readings              | Incorrect standard value entered during calibration | Review the standard value entered; it must match the actual standard concentration |
+| Negative values               | Sample reading less than blank  | Normal if sample concentration is near zero; the blank value is automatically subtracted |
+| Low readings                  | Wrong optical module for analyte | Verify that the excitation and emission wavelengths of the module match the analyte |
+| High background signal        | Contaminated cuvette holder     | Clean the holder with 70% ethanol and a lint-free tissue |
+
+
+## Appendix B: Troubleshooting -- Absorbance {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| Non-linear response           | Assay chemistry produces sigmoidal curve | Expected for some assays; use multi-point calibration |
+| Low readings                  | Wrong filter paddle installed   | Check filter wavelength against assay requirements |
+| "Bad Calibration" error       | Wrong filter or dirty blank     | Install correct filter; use ultrapure water in a clean cuvette to update the zero |
+
+
+## Appendix C: Troubleshooting -- Turbidity {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| Readings disagree with other meters | Other meter uses visible light, not IR | Calibrate both with the same standard; color interference affects visible-light meters but not the Trilogy |
+| Readings vary between replicates | Particle movement in sample    | Normal; particles shift position and scatter light differently each time |
+| Readings change after recalibration with new standard | Formazine standard has aged | Use fresh formazine (valid for 4 weeks per ISO 7027) |
+
+<!-- TODO: Add figures from original LaTeX document:
+- Capture.jpg: Power switch location
+- Capture2.jpg: Module installed in fluorometer
+- Capture3.jpg: Fluorescence module menu
+- Capture4.jpg: Mode selection screen
+- figure5.jpg: Filter paddle installation
+- figure6turbidity.jpg: Turbidity module menu
+-->
