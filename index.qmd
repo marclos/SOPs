@@ -99,7 +99,7 @@ tbl-classes: table-sm
 | F83   | *Plant Tissue Sampling* | -- | TBD |
 | F85  | *TBD -- Macroinvertebrate Sampling* | -- |
 | F86  | *TBD -- Bird Point Count Surveys* | -- |
-| F87  | *Camera Trap (CamPark T20)* | 0.1 | Needs conversion |
+| [F87](field_sops/SOP-F87-camera-trap.qmd)  | Camera Trap (CamPark T20) | 0.1 | 
 | F88  | *Drone Operations (DJI Matrice/Mavic)* | 0.1 | Needs conversion |
 | F89  | *360 Camera* | 0.1 | Needs conversion |
 | F90  | *Macroinvertebrate Sampling* | -- | TBD |
@@ -165,6 +165,7 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|
 | [L40](lab_sops/SOP-L40-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
 | [L41](lab_sops/SOP-L41-alkalinity-titration.qmd)   | Alkalinity Titration* | -- |
+
 | L42   | *TBD -- Turbidity Measurement* | -- |
 | [L45](lab_sops/SOP-L45-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
 | L46   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
@@ -188,7 +189,7 @@ tbl-classes: table-sm
 | [L62](lab_sops/SOP-L62-total-carbon.qmd) |  Total Carbon -- Soil | 1.0 |
 | [L63](lab_sops/SOP-L63-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | 1.0 |
 | [L64](lab_sops/SOP-L64-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 |
-| [L65](lab_sops/)   | *Soil Lead Analysis (Acid Digestion)* | 0.2 | Needs conversion |
+| [L65](lab_sops/SOP-L65-hotplate-acid-digestion.qmd)   | Hot-Plate Acid Digestion of Soils for Trace Metal Analysis | 0.2 | Needs conversion |
 | [L66](lab_sops/SOP-L66-mars-microwave-digestion.qmd)   | Soil Lead Analysis (MARS Microwave) | 0.2 | 
 | [L67](lab_sops/SOP-L67-nitrification-potential.qmd)   | Nitrification Potential | 0.1 |
 | [L68](lab_sops/SOP-L68-solvita-compost-maturity.qmd)   | Solvita Compost Maturity | 0.1 | 

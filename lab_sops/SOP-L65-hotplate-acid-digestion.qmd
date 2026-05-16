@@ -1,0 +1,369 @@
+---
+# =============================================================================
+# SOP-L65: Hot-Plate Acid Digestion of Soils for Trace Metal Analysis
+# =============================================================================
+title: "Hot-Plate Acid Digestion of Soils for Trace Metal Analysis"
+sop-number: "SOP-L65"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.2"
+
+revision-history:
+  - version: "0.1"
+    date: "2017-11-11"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+  - version: "0.2"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to Quarto"
+---
+
+## 1. Purpose
+
+This procedure describes the open-vessel, hot-plate acid digestion of
+soil, sediment, and sludge samples for near-total extraction of lead
+(Pb) and other trace metals, following US EPA Method 3050B [@epa3050b].
+The digested extract can be analyzed by ICP-OES, ICP-MS, or flame/
+graphite furnace AAS. This is a near-total-dissolution method;
+silicates and some refractory oxides are not fully dissolved, but
+environmentally available metals are recovered.
+
+For microwave-assisted digestion using the MARS 5 system, see
+[SOP-L66](SOP-L66-mars-microwave-digestion.qmd). The microwave method
+is faster but processes fewer samples per batch; the hot-plate method
+described here is slower but requires only standard fume-hood equipment.
+
+
+## 2. Scope
+
+- **Applies to:** Soils, sediments, and sludge samples requiring trace
+  metal analysis (Pb, Cd, Cu, Zn, Cr, As, Ni, Fe, Mn, and others),
+  including urban soil lead surveys and photovoltaic panel site
+  characterizations
+- **Does not apply to:** Water samples (direct acidification or
+  separate digestion); samples requiring total silicate dissolution
+  (HF-based methods); microwave digestion (see
+  [SOP-L66](SOP-L66-mars-microwave-digestion.qmd))
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Lab Manager       | Maintain equipment, stock reagents          |
+| Trained Personnel | Perform digestion per this SOP              |
+| New Students      | Complete training before independent use; supervised for first digestion |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-danger}
+### Critical Safety Warning
+
+This procedure uses concentrated mineral acids (HNO~3~, HCl) and
+hydrogen peroxide (H~2~O~2~) at elevated temperatures in open vessels.
+All acid handling and digestion must be performed in a certified
+chemical fume hood.
+:::
+
+### Hazards
+
+- **Chemical:** Concentrated HNO~3~ (15.8 M) is a severe oxidizer and
+  corrosive. Concentrated HCl (12 M) is severely corrosive. 30%
+  H~2~O~2~ is a reactive oxidizer that can cause exothermic reactions
+  with organic matter.
+- **Physical:** Hot plate operates at approximately 95 C; digestion
+  vessels and watch glasses are hot. Burns from contact with heated
+  glassware or splashing acid.
+- **Inhalation:** HNO~3~ digestion produces toxic NO~x~ fumes.
+  HCl produces irritating HCl vapor. All heating must occur in the
+  fume hood.
+
+### Required PPE
+
+- [ ] Chemical splash goggles or face shield
+- [ ] Lab coat
+- [ ] Acid-resistant gloves (neoprene or heavy-duty nitrile, long-cuffed)
+- [ ] Closed-toed shoes
+
+### Emergency Procedures
+
+For acid splashes to skin or eyes, flush immediately at the eyewash
+station or safety shower for at least 15 minutes. For inhalation of
+fumes, move to fresh air. For acid spills, neutralize small spills with
+sodium bicarbonate; for large spills, evacuate and use the spill kit.
+Refer to
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+
+::: {.callout-important}
+Never add water to concentrated acid. Add acid slowly to samples. Never
+allow digestion vessels to go to dryness; this can volatilize analytes
+and damage vessels.
+:::
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Hot plate with temperature control | Capable of maintaining 95 C; placed inside fume hood |
+| Digestion vessels             | Teflon (PFA) beakers, glass beakers, or borosilicate digestion tubes |
+| Watch glasses                 | Sized to cover the digestion vessels      |
+| Analytical balance (0.001 g)  | See [SOP-L13](SOP-L13-using-balances.qmd) |
+| Fume hood                     | Required for all steps involving acid and heating |
+| Volumetric flasks (50 mL, Class A) | For final dilution                   |
+| Graduated pipettes or dispensers | For acid delivery                      |
+| Filter funnels and Whatman No. 41 filter paper | For clarifying digests |
+| Tongs or heat-resistant clamps | For handling hot vessels                |
+
+### Reagents
+
+| Reagent                       | Grade / Notes                             |
+|:------------------------------|:------------------------------------------|
+| Nitric acid (HNO~3~), concentrated (15.8 M) | Trace Metal grade          |
+| Hydrochloric acid (HCl), concentrated (12 M) | Trace Metal grade         |
+| Hydrogen peroxide (H~2~O~2~), approximately 30% | ACS reagent grade    |
+| Deionized water (Type I)      | From [*SOP-L11*](SOP-L11-milli-q-water.qmd) |
+
+::: {.callout-note}
+All reagents must be Trace Metal grade or equivalent. Analyze a reagent
+blank before each batch; the blank must read below the method detection
+limit (MDL) for all target analytes.
+:::
+
+
+## 6. Procedure
+
+### 6.1 Sample Preparation
+
+1. Air-dry the soil at room temperature or at 60 C until constant mass
+2. Pass through a No. 10 sieve (2 mm) per
+   [SOP-F56 Soil Sampling](../field_sops/SOP-F56-soil-sampling.qmd)
+3. Homogenize thoroughly using a mortar and pestle
+4. Determine gravimetric moisture on a companion subsample per
+   [SOP-L55](SOP-L55-soil-moisture.qmd)
+
+### 6.2 Glassware Cleaning
+
+Acid-wash all vessels, volumetric flasks, and watch glasses per
+[SOP-L12 Glassware Cleaning](SOP-L12-glassware-cleaning.qmd),
+Section 6.3 (10% HNO~3~ acid bath). Rinse with reagent water and
+dry in a clean environment.
+
+### 6.3 Weighing
+
+1. Weigh 0.50--1.00 g of prepared soil into a clean digestion vessel
+2. Record the exact mass to the nearest 0.001 g in the lab notebook
+
+### 6.4 Initial Nitric Acid Digestion
+
+1. Working in the fume hood, add approximately 10 mL of concentrated
+   HNO~3~ to the vessel
+2. Cover with a watch glass
+3. Place on the hot plate set to approximately 95 C. Do not allow the
+   solution to boil.
+4. Reflux gently until the initial vigorous reaction subsides and the
+   volume begins to reduce. Do not allow the sample to go to dryness.
+5. Continue heating for approximately 30--60 minutes, periodically
+   lifting the watch glass to rinse the underside with DI water back
+   into the vessel
+
+### 6.5 Oxidation with H~2~O~2~
+
+1. Remove the vessel from the hot plate and allow to cool slightly
+2. Add 1--2 mL of 30% H~2~O~2~ dropwise. Wait for effervescence to
+   subside between drops.
+3. Return to the hot plate and resume heating at 95 C
+4. Repeat the H~2~O~2~ additions until the reaction is minimal
+   (typically 2--4 additions) and the digest appears light-colored
+
+::: {.callout-warning}
+Add H~2~O~2~ very slowly. The reaction with organic matter is
+exothermic and can cause violent spattering if added too quickly,
+especially to hot solutions. Always cool the vessel first.
+:::
+
+### 6.6 HCl Treatment
+
+1. Add approximately 5 mL of concentrated HCl to the digest
+2. Cover and heat at approximately 95 C for 15--30 minutes
+3. This step dissolves residual metal precipitates and improves
+   recovery of metals such as Fe, Al, and Pb
+
+### 6.7 Volume Reduction
+
+1. Remove the watch glass and continue heating at approximately 95 C
+2. Reduce the volume to approximately 5 mL
+3. Monitor closely and do not allow the sample to go to dryness
+
+::: {.callout-important}
+Evaporation to dryness will cause loss of volatile analytes (As, Se,
+Hg) and can bake residues onto the vessel walls, making quantitative
+recovery impossible.
+:::
+
+### 6.8 Dilution and Filtration
+
+1. Remove from the hot plate and allow to cool to room temperature
+2. Rinse the vessel walls and watch glass with small portions of
+   DI water
+3. If undissolved material is present, filter through Whatman No. 41
+   filter paper into a clean 50 mL volumetric flask, rinsing the
+   filter and vessel quantitatively
+4. If the solution is clear, transfer directly to the volumetric flask
+5. Bring to 50.0 mL with DI water
+6. Mix thoroughly
+7. Transfer to a clean, labeled polyethylene or polypropylene storage
+   bottle. Store at 4 C until analysis.
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 QC Requirements
+
+- **Method blank:** Include one vessel containing reagents only (no
+  soil) in each digestion batch. The blank must read below the MDL for
+  all target analytes.
+- **Certified reference material (CRM):** Digest a CRM with known
+  metal concentrations in each batch. Recovery: 80--120%.
+- **Matrix spike:** Spike a duplicate sample with a known concentration
+  of the target analyte(s). Recovery: 75--125%.
+- **Duplicate digestions:** At least 10% of samples. Relative percent
+  difference (RPD) less than 20%.
+- **Calibration verification:** Verify with a mid-range check standard
+  every 10 samples during instrumental analysis.
+
+### 7.2 Calculations
+
+**Metal concentration in soil (mg/kg dry weight):**
+
+$$
+C_{\text{soil}} = \frac{C_{\text{digest}} \times V_{\text{final}}}{M_{\text{soil}}}
+$$
+
+where $C_{\text{digest}}$ = concentration in the digest (mg/L),
+$V_{\text{final}}$ = final volume (mL, typically 50), and
+$M_{\text{soil}}$ = mass of dried soil (g).
+
+For soil dried at 60 C, apply a moisture correction to report on a
+105 C oven-dry basis (see
+[SOP-L55](SOP-L55-soil-moisture.qmd)):
+
+$$
+C_{\text{soil, OD}} = C_{\text{soil}} \times \frac{100 + \theta_{60}}{100 + \theta_{105}}
+$$
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Acid digest waste (all liquids from digestion) | Collect in labeled acid waste carboy; EH&S hazardous waste pickup |
+| Used filter paper             | Acid waste stream (contaminated with metals and acid) |
+| Digested soil residue         | Acid waste carboy                        |
+| Spent H~2~O~2~               | Small volumes may go into acid waste; large volumes, consult EH&S |
+
+::: {.callout-warning}
+### Acid Waste
+
+All waste from this procedure contains concentrated mineral acids and
+dissolved metals. **Do not pour down the drain.** Collect in a labeled
+polyethylene carboy for EH&S hazardous waste pickup.
+:::
+
+
+## 9. References
+
+- USEPA. (1996). Method 3050B: Acid digestion of sediments, sludges,
+  and soils. Revision 2. In: *Test Methods for Evaluating Solid Waste,
+  Physical/Chemical Methods* (SW-846). U.S. Environmental Protection
+  Agency, Washington, DC.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing hot-plate acid digestion independently, personnel
+must:
+
+1. Read this SOP, [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd),
+   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   in full
+2. Review the SDS for concentrated HNO~3~, HCl, and 30% H~2~O~2~
+3. Observe a trained operator perform a complete digestion cycle
+4. Perform at least one complete digestion batch under direct
+   supervision, including blank and CRM, with acceptable QC results
+5. Be signed off by the PI or lab manager
+
+
+## Appendix A: Example Calculation {.appendix}
+
+```{r}
+#| label: hotplate-digestion-calc
+#| echo: true
+#| eval: false
+
+# Trace metal concentration from hot-plate digest
+# EPA 3050B
+
+C_digest_mg_L <- 1.24      # Pb concentration from ICP-MS (mg/L)
+V_final_mL <- 50.0         # Final dilution volume (mL)
+M_soil_g <- 0.752           # Mass of dried soil digested (g)
+
+C_soil_mg_kg <- (C_digest_mg_L * V_final_mL) / M_soil_g
+
+cat(sprintf("Digest concentration: %.3f mg/L Pb\n", C_digest_mg_L))
+cat(sprintf("Soil mass:           %.3f g\n", M_soil_g))
+cat(sprintf("Final volume:        %.1f mL\n", V_final_mL))
+cat(sprintf("Soil Pb:             %.1f mg/kg\n", C_soil_mg_kg))
+
+# Screening levels
+cat(sprintf("\nCA DTSC residential screening level: 80 mg/kg\n"))
+cat(sprintf("EPA RSL residential: 400 mg/kg\n"))
+```
+
+
+## Appendix B: Method Comparison -- Hot Plate vs. Microwave {.appendix}
+
+| Feature                       | Hot Plate (EPA 3050B, this SOP) | Microwave (EPA 3051A, [SOP-L66](SOP-L66-mars-microwave-digestion.qmd)) |
+|:------------------------------|:-------------------------------|:--------------------------------------|
+| Vessel type                   | Open (reflux under watch glass) | Sealed (pressurized)                 |
+| Temperature                   | Approximately 95 C             | 175 C                                |
+| Digestion time                | 2--4 hours (hands-on)          | 10 minutes (automated)               |
+| Sample throughput             | Limited by hot plate space     | Up to 24 vessels per run              |
+| Equipment required            | Hot plate + fume hood          | MARS 5 microwave system              |
+| Acid volume per sample        | Approximately 15 mL total      | 10 mL                                |
+| Organic matter handling       | H~2~O~2~ oxidation step        | Sealed vessel; pre-digest if vigorous |
+| Metal recovery                | Comparable for most elements   | Comparable; slightly higher for volatile elements due to sealed system |
+| Best for                      | Small batches; no access to microwave | Routine batches; time-sensitive work |
+
+
+## Appendix C: BibTeX Entry {.appendix}
+
+Append to the project `references.bib`:
+
+```bibtex
+@techreport{epa3050b,
+  title     = {Method 3050B: Acid Digestion of Sediments, Sludges,
+               and Soils},
+  author    = {{U.S. Environmental Protection Agency}},
+  institution = {U.S. Environmental Protection Agency},
+  number    = {SW-846, Revision 2},
+  year      = {1996},
+  address   = {Washington, DC},
+  url       = {https://www.epa.gov/sites/production/files/2015-06/documents/epa-3050b.pdf}
+}
+```
