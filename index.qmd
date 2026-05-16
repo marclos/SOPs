@@ -129,9 +129,9 @@ tbl-classes: table-sm
 | SOP   | Title                          | Rev.  |
 |:------|:-------------------------------|:------|
 | L11   | *Milli-Q Water System* | 0.2 | Needs conversion |
-| L12   | *TBD -- Glassware Cleaning and Preparation* | 0.1 | Needs conversion |
+| [L12](lab_sops/SOP-L12-glassware-cleaning.qmd)   | Glassware Cleaning and Preparation* | 0.1 |
 | [L13](lab_sops/SOP-L13-using-balances.qmd)   | Using Balances | 0.2 | 
-| L14   | *Micropipettes* | 0.3 | Needs conversion |
+| [L14](lab_sops/SOP-L14-micropipettes.qmd)   | Micropipettes | 0.3 |
 | L15   | *Using a Vortex Mixer* | 0.1 | Needs conversion |
 | [L16](lab_sops/SOP-L16-drying-ovens.qmd)   | Drying Ovens | 0.1 | Needs conversion |
 | [L17](lab_sops/SOP-L17-refrigerators-freezers.qmd)   | Refrigerators and Freezers | 0.1 | 
@@ -146,7 +146,7 @@ tbl-classes: table-sm
 | [L21](lab_sops/SOP-L21-analytical-balance-calibration.qmd)   | Analytical Balance Calibration | 1.0 | TBD |
 | L22   | *TBD -- Spectrophotometer Operation* | -- |
 | L23   | *Accumet pH Meter* | 0.4 | Needs conversion |
-
+| [L24](lab_sops/SOP-L24-trilogy-fluorometer.qmd)   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
 | L28   | *TBD -- Ion Chromatograph Operation* | -- |
 | [L29](lab_sops/SOP-L29-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
 | L30   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
@@ -155,7 +155,6 @@ tbl-classes: table-sm
 | L33   | *IRMS -- Becoming a User* | 0.2 | Needs conversion |
 | L34   | *IRMS -- Flash EA Operation* | 0.2 | Needs conversion |
 | L35   | *IRMS -- Post-Analysis Correction* | 0.1 | Needs conversion |
-| L36   | *Picarro GHG Analyzer (Lab Configuration)* | 1.0 | Needs conversion |
 | L37   | *Radiometric Dating* | 0.1 | Needs conversion |
 
 ### Water Analysis (L40--L54)
@@ -163,13 +162,12 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [L40](lab_sops/SOP-L40-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
-| L41   | *TBD -- Alkalinity Titration* | -- |
+| [L41](SOP-L41-alkalinity-titration.qmd)   | Alkalinity Titration* | -- |
 | L42   | *TBD -- Turbidity Measurement* | -- |
 | [L45](lab_sops/SOP-L45-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
 | L46   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
 | [L49](lab_sops/SOP-L49-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
 | L30   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
-| L31   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
 | L32   | *Microplastics in Water* | 0.2 | Needs conversion |
 | L33   | *Pesticide Analysis* | 0.1 | Needs conversion |
 | L34   | *Chlorophyll Extraction and Analysis* | 0.1 | Needs conversion |
