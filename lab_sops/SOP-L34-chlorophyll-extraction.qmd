@@ -1,0 +1,409 @@
+---
+# =============================================================================
+# SOP-L34: Chlorophyll a Extraction and Fluorometric Analysis
+# =============================================================================
+title: "Chlorophyll *a* Extraction and Fluorometric Analysis"
+sop-number: "SOP-L34"
+author:
+  - name: "Kristy Morris"
+    affiliation: "EA Program, Pomona College"
+  - name: "Virginia Paschal"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2016-08-05"
+    author: "Kristy Morris"
+    changes: "Initial release"
+  - version: "0.1"
+    date: "2025-05-16"
+    author: "Virginia Paschal"
+    changes: "Converted from LaTeX to Quarto; substantial revision"
+---
+
+## 1. Purpose
+
+This procedure describes the in vitro determination of chlorophyll *a*
+and pheophytin *a* concentrations in marine and freshwater phytoplankton
+by fluorescence. Chlorophyll-containing cells are concentrated on a
+glass fiber filter, extracted in 90% acetone, and measured on the Turner
+Designs Trilogy Fluorometer before and after acidification with 0.1 N
+HCl. The method is modified from US EPA Method 445.0 and APHA Standard
+Methods 10200 H [@apha2012; @epa445].
+
+
+## 2. Scope
+
+- **Applies to:** Chlorophyll *a* and pheophytin *a* in surface water,
+  freshwater, and marine water samples collected per
+  [SOP-F41](../field_sops/SOP-F41-surface-water-sampling.qmd)
+- **Does not apply to:** In vivo chlorophyll measurements with field
+  multiprobes (see [SOP-F22](../field_sops/SOP-F22-eureka-manta2.qmd));
+  benthic algae unless filtration volumes are adjusted; HPLC-based
+  pigment analysis
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure standards are current   |
+| Lab Manager       | Maintain fluorometer, stock reagents and filters |
+| Trained Personnel | Follow this SOP, report deviations          |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Acetone (HPLC grade) is highly flammable and an
+  irritant. Work in the fume hood and away from ignition sources.
+  Concentrated HCl is severely corrosive. 0.1 N HCl is a mild irritant.
+- **Physical:** Glass filtration apparatus and cuvettes pose breakage
+  risk. Sonicator tip generates heat and noise.
+- **Noise:** The sonicator requires hearing protection (ear plugs or
+  ear muffs) whenever it is in use.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves
+- [ ] Hearing protection (when using sonicator)
+
+### Emergency Procedures
+
+For acetone spills, extinguish all ignition sources, ventilate the area,
+and clean up per
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+For HCl splashes, flush with water for at least 15 minutes. Dispose of
+all acetone waste in the designated organic waste collection bottle.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Turner Designs Trilogy Fluorometer (P/N 998-7210) | With Chlorophyll Acidification (Chlor-A) module; see [SOP-L31](SOP-L31-trilogy-fluorometer.qmd) |
+| Millipore glass filtration unit | With vacuum pump and 47 mm fritted glass base |
+| Sonicator                     | With probe tip; set to 70% amplitude      |
+| Tissue grinder (alternative)  | Teflon-tipped pestle with grooved surface, 30 mL glass grinding tube |
+| Clinical benchtop centrifuge  | Capable of 1,000 x g with fixed-angle rotor; see *SOP-L25* |
+| Fume hood                     | Required for all acetone and HCl work     |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Whatman GF/F glass fiber filters (47 mm, 0.7 um) | For concentrating phytoplankton |
+| Glass cuvettes (10 x 10 mm)  | For fluorometer; see [SOP-L31](SOP-L31-trilogy-fluorometer.qmd) |
+| 15 mL glass or polypropylene centrifuge tubes | Screw-cap; for extraction |
+| Plastic petri dishes          | For storing filters before extraction     |
+| Aluminum foil                 | For wrapping samples to exclude light     |
+| Kimwipes                      | For blotting filters and cleaning cuvettes |
+| Forceps (flat-tipped)         | For handling filters                      |
+| Pasteur pipettes or medicine droppers | For dispensing HCl                  |
+| Class A volumetric pipettes   | Assorted sizes                            |
+| Class A volumetric flasks (50 mL, 100 mL, 1 L) | For standard preparation |
+
+### Reagents and Standards
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Acetone, HPLC grade (CAS 67-64-1) | Stored in flammables cabinet         |
+| Concentrated HCl (sp. gr. 1.19; CAS 7647-01-0) | Stored in acid cabinet |
+| Chlorophyll *a* standard (free of chlorophyll *b*) | Commercial source (e.g., Sigma); stored at --20 C |
+| Milli-Q water (Type I)       | From [*SOP-L11*](SOP-L11-milli-q-water.qmd) |
+
+
+## 6. Procedure
+
+### 6.1 Reagent Preparation
+
+**0.1 N HCl:** Add 0.85 mL of concentrated HCl to approximately 50 mL
+of Milli-Q water in a 100 mL volumetric flask. Bring to volume with
+Milli-Q water. Mix thoroughly.
+
+**90% Aqueous Acetone:** Measure 100 mL of Milli-Q water into a 100 mL
+volumetric flask, then transfer to a 1 L volumetric flask. Fill to the
+1 L mark with HPLC-grade acetone. Mix and transfer to a dark amber
+bottle. Label and store in the flammables cabinet.
+
+**Chlorophyll *a* Stock Standard Solution (SSS):** Working in subdued
+light, transfer the contents of the chlorophyll *a* ampoule into a
+50 mL volumetric flask and dilute to volume with 90% acetone. Determine
+the concentration spectrophotometrically. Wrap in foil and label with
+the lot number. Stable for at least six months in an airtight container
+at room temperature.
+
+**Primary Dilution Standard (PDS):** Add 1 mL of SSS to a 100 mL
+volumetric flask and dilute to volume with 90% acetone. If the SSS was
+prepared from exactly 1 mg of pure chlorophyll *a*, the PDS
+concentration is 200 ug/L. Prepare fresh before use. Wrap in foil.
+
+**Quality Control Standards (QCs):** Prepare from the PDS at the
+following concentrations: 5, 20, 50, and 200 ug/L. Wrap in foil.
+
+::: {.callout-important}
+All photosynthetic pigments are light- and temperature-sensitive.
+Perform all work in subdued light. Store all standards, QC materials,
+and filter samples in the dark at --20 C when not in use.
+:::
+
+### 6.2 Filtration
+
+1. Invert the sample bottle gently several times to suspend particles
+2. Assemble the glass filtration unit: place the fritted glass base on
+   the Erlenmeyer flask, position a GF/F filter on the frit using
+   forceps, seat the glass funnel on top, and secure with the spring
+   clamp
+3. Connect the vacuum hose and turn on the vacuum
+4. Working in subdued light, filter the sample in 20 mL increments
+   using a graduated cylinder. The volume required depends on algal
+   density:
+
+| Sample Type     | Typical Volume |
+|:----------------|:---------------|
+| Benthic samples | approximately 5 mL |
+| Freshwater      | 20--300 mL     |
+| Seawater        | 100--1000+ mL  |
+
+5. Stop filtering when a brown or green tint is visible on the filter.
+   Record the exact filtered volume. If the filter becomes too darkly
+   colored, the sample may exceed the linear dynamic range and require
+   dilution during analysis.
+6. Using forceps and a micro spatula, fold the filter in half with the
+   retained material on the inside
+7. Gently blot excess water from the outside of the filter with a
+   Kimwipe
+8. Place the folded filter in a clean 15 mL centrifuge tube or a
+   plastic petri dish
+9. Include a laboratory reagent blank (100 mL Milli-Q water through a
+   GF/F filter) and a field duplicate every 10--15 samples
+10. Wrap the tubes or dishes in aluminum foil and store at --20 C.
+    Filters may be stored frozen for up to 28 days before extraction.
+
+### 6.3 Extraction -- Sonication Method
+
+1. Remove samples and QCs from the freezer and allow to reach room
+   temperature
+2. Add 25 mL of 90% aqueous acetone to each tube, ensuring the filter
+   is fully submerged. Cap the tubes and invert several times.
+3. Secure the sonicator probe in its clamp stand
+4. **Put on hearing protection**
+5. Set the sonicator to 70% amplitude
+6. Submerge the tip halfway into the acetone solution and sonicate,
+   moving the tip around the sample to break up the filter completely
+7. After sonication, shake the tube vigorously, wrap in foil, and steep
+   in the refrigerator (4 C) for a minimum of 2 hours
+
+::: {.callout-important}
+Never operate the sonicator outside of solution. The tip will overheat
+and be damaged.
+:::
+
+### 6.4 Extraction -- Tissue Grinder Method (Alternative)
+
+1. Using forceps, transfer the filter into a 30 mL glass grinding tube
+   and push it to the bottom with the pestle or a glass rod
+2. Add 4 mL of 90% acetone and grind with the pestle until the filter
+   is converted to a slurry. Avoid overheating.
+3. Pour the slurry into a 15 mL screw-cap centrifuge tube
+4. Rinse the pestle and grinding tube with 6 mL of 90% acetone and add
+   the rinse to the centrifuge tube
+5. Cap, shake vigorously, wrap in foil, and steep at 4 C for 2 hours
+6. Clean the grinder and pestle with water followed by acetone between
+   samples; wipe dry with a Kimwipe
+
+### 6.5 Post-Extraction Processing
+
+1. Remove samples from the refrigerator and allow to reach room
+   temperature (approximately 30 minutes)
+2. Shake each tube vigorously
+3. Centrifuge at 1,000 x g for 5 minutes using the fixed-angle rotor
+   until all filter material is pelleted
+4. Handle tubes carefully after centrifugation; do not resuspend the
+   pellet
+
+### 6.6 Fluorometric Analysis
+
+1. Transfer 2.5 mL of clear supernatant from each tube into a clean
+   glass cuvette, taking care not to disturb the pellet
+2. Turn on the Trilogy Fluorometer and allow the 10-minute warm-up to
+   complete (see [SOP-L31](SOP-L31-trilogy-fluorometer.qmd))
+3. Select the **Chlor-A** (Chlorophyll Acidification) module on the
+   touch screen
+4. Calibrate using the QCs prepared from the PDS, or load a saved
+   calibration. For a new calibration, follow the Direct Multipoint
+   Calibration procedure in [SOP-L31](SOP-L31-trilogy-fluorometer.qmd),
+   Section 7.3.
+5. Run a 90% acetone blank
+6. Wipe the outside of each cuvette with a Kimwipe before inserting
+   into the fluorometer
+7. Measure and record the pre-acidification fluorescence ($F_b$)
+
+::: {.callout-note}
+If the chlorophyll *a* reading exceeds 90% of the upper limit of the
+linear dynamic range (LDR = 1,000 ug/L), dilute the sample before
+proceeding. For a 1:2 dilution, add 1 mL of sample to 1 mL of 90%
+acetone. For a 1:100 dilution, add 50 uL of sample to 4.95 mL of 90%
+acetone.
+:::
+
+8. Add 75 uL of 0.1 N HCl to the cuvette. Seal with parafilm and
+   invert several times to mix. Wait 90 seconds.
+9. Measure and record the post-acidification fluorescence ($F_a$)
+10. Repeat for all samples, QCs, and blanks
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Calculations
+
+**Variables:**
+
+- $[Std]$ = concentration of the calibration standard used (ug/L)
+- $S_b$ = standard fluorescence reading before acidification
+- $S_a$ = standard fluorescence reading after acidification
+- $F_b$ = sample fluorescence before acidification
+- $F_a$ = sample fluorescence after acidification
+- $V_e$ = volume of extract (mL)
+- $V_s$ = volume of sample filtered (mL)
+
+**Equations:**
+
+$$
+AR = \frac{S_b - \text{Blank}}{S_a - \text{Blank}}
+$$
+
+$$
+\text{InterpB} = [Std] \times \frac{F_b - \text{Blank}}{S_b - \text{Blank}}
+$$
+
+$$
+\text{InterpA} = [Std] \times \frac{F_a - \text{Blank}}{S_b - \text{Blank}}
+$$
+
+$$
+\text{Chlorophyll } a \; (\mu\text{g/L}) =
+\frac{AR}{AR - 1} \times (\text{InterpB} - \text{InterpA}) \times \frac{V_e}{V_s}
+$$
+
+$$
+\text{Pheophytin } a \; (\mu\text{g/L}) =
+\left(AR \times \text{InterpA} - \text{InterpB}\right) \times \frac{V_e}{V_s}
+$$
+
+### 7.2 QC Requirements
+
+- Run a laboratory reagent blank (LRB) every 10--15 samples. The LRB
+  should read below the calculated lower detection limit.
+- QC standards should recover within +/- 20% of the known value
+- Relative standard deviation (RSD) of replicate measurements should be
+  within +/- 20%
+- Field duplicates should agree within +/- 20% relative percent
+  difference
+- Samples, standards, LRBs, and QCs must all be at ambient room
+  temperature during analysis. Fluorescence is temperature-dependent;
+  cooler samples produce artificially high readings.
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Acetone extracts and rinses   | Collect in the designated organic waste bottle in the fume hood; EH&S pickup |
+| Acidified sample waste (HCl)  | Add to the organic waste bottle (small volumes of dilute HCl in acetone matrix) |
+| Used GF/F filters             | Standard trash (if non-hazardous samples) |
+| Used cuvettes                 | Rinse with acetone, then DI water; reuse or recycle |
+
+
+## 9. References
+
+- USEPA. (1997). Method 445.0: *In Vitro Determination of Chlorophyll a
+  and Pheophytin a in Marine and Freshwater Algae by Fluorescence*.
+  Revision 1.2. National Exposure Research Laboratory, Cincinnati, OH.
+- APHA, AWWA, WEF. (2012). Standard Methods 10200 H: Chlorophyll. In:
+  *Standard Methods for Examination of Water and Wastewater*. 22nd ed.
+  American Public Health Association (Eds.). Washington. 1360 pp.
+- Turner Designs. *Trilogy Laboratory Fluorometer: User's Manual*.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing chlorophyll analysis independently, personnel must:
+
+1. Read this SOP, [SOP-L31 Trilogy Fluorometer](SOP-L31-trilogy-fluorometer.qmd),
+   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   in full
+2. Review the SDS for acetone and HCl
+3. Demonstrate proper filtration technique under supervision
+4. Perform at least one complete extraction-through-analysis cycle on
+   QC standards with acceptable recovery (+/- 20%)
+5. Demonstrate proper fluorometer calibration
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Example Calculation {.appendix}
+
+```{r}
+#| label: chlorophyll-calc
+#| echo: true
+#| eval: false
+
+# Corrected chlorophyll a and pheophytin a calculation
+# Per EPA Method 445.0
+
+# Calibration standard
+Std_conc <- 50       # ug/L (QC standard concentration)
+S_b <- 485           # Standard fluorescence before acid
+S_a <- 210           # Standard fluorescence after acid
+blank <- 5           # Blank fluorescence
+
+# Sample readings
+F_b <- 320           # Sample fluorescence before acid
+F_a <- 140           # Sample fluorescence after acid
+
+# Volumes
+V_e <- 25            # mL of extract (acetone)
+V_s <- 100           # mL of sample filtered
+
+# Calculations
+AR <- (S_b - blank) / (S_a - blank)
+InterpB <- Std_conc * (F_b - blank) / (S_b - blank)
+InterpA <- Std_conc * (F_a - blank) / (S_b - blank)
+
+chl_a <- (AR / (AR - 1)) * (InterpB - InterpA) * (V_e / V_s)
+pheo_a <- (AR * InterpA - InterpB) * (V_e / V_s)
+
+cat(sprintf("Acid ratio (AR):        %.3f\n", AR))
+cat(sprintf("Chlorophyll a:          %.2f ug/L\n", chl_a))
+cat(sprintf("Pheophytin a:           %.2f ug/L\n", pheo_a))
+```
+
+
+## Appendix B: Interferences {.appendix}
+
+| Interference                  | Effect                                    | Mitigation                                |
+|:------------------------------|:------------------------------------------|:------------------------------------------|
+| Chlorophyll *b*               | Overestimates chlorophyll *a*             | Optical filters in the Chlor-A module minimize this; if severe, use HPLC |
+| Pheophytin *a*                | Overestimates chlorophyll *a* if not acidified | Acidification step corrects for this    |
+| Other fluorescent compounds   | Positive bias                             | Laboratory reagent blanks detect this     |
+| Quenching (concentrated samples) | Underestimates concentration           | Dilute samples approaching 90% of LDR    |
+| Temperature differences       | Higher sensitivity at lower temperatures  | Ensure all materials are at ambient temperature |
+| Light exposure                 | Degrades pigments                        | Work in subdued light; wrap in foil       |
+
+<!-- TODO: Add filtration setup figure (Filtersetup.jpg from original
+LaTeX document) -->
