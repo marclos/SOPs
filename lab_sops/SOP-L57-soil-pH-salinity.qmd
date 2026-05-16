@@ -1,0 +1,389 @@
+---
+# =============================================================================
+# SOP-L57: Soil pH and Salinity
+# =============================================================================
+title: "Soil pH and Salinity"
+sop-number: "SOP-L57"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the measurement of soil pH and electrical
+conductivity (EC, as a proxy for salinity) on soil-water and
+soil-CaCl~2~ extracts. Soil pH controls nutrient availability, metal
+solubility, microbial activity, and the fate of contaminants. Soil
+salinity (estimated from EC) affects plant growth, soil structure, and
+is a primary criterion for classifying saline, sodic, and saline-sodic
+soils. The methods follow Thomas (1996) for pH and Rhoades (1996) for
+EC, as described in the SSSA *Methods of Soil Analysis, Part 3*
+[@thomas1996; @rhoades1996].
+
+For meter operation, calibration, and electrode maintenance, see
+[SOP-L40 pH and Conductivity -- Bench-Top Measurements](SOP-L40-pH-conductivity-bench.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** Air-dried, sieved (less than 2 mm) mineral soils from
+  all EA Program sites; compost and potting media (with appropriate
+  extraction ratios noted in Section 6)
+- **Does not apply to:** In situ field pH measurements with portable
+  probes (see [SOP-F22](../field_sops/SOP-F22-eureka-manta2.qmd));
+  water sample pH and conductivity (see
+  [SOP-L40](SOP-L40-pH-conductivity-bench.qmd)); saturated paste
+  extraction for formal salinity classification of irrigation water
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Lab Manager       | Maintain meter and electrodes, stock reagents |
+| Trained Personnel | Prepare extracts, measure and record results |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** 0.01 M CaCl~2~ is a mild irritant. pH buffer solutions
+  and conductivity standards are low-hazard but should not contact eyes.
+- **Physical:** No significant physical hazards beyond standard
+  glassware handling.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves
+
+### Emergency Procedures
+
+For buffer or chemical splashes, flush with water. Refer to
+[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| pH/conductivity meter         | Calibrated per [SOP-L40](SOP-L40-pH-conductivity-bench.qmd) |
+| pH combination electrode      | Glass bulb with refillable KCl junction preferred |
+| Conductivity cell             | With automatic temperature compensation   |
+| Analytical balance (0.01 g)   | See [SOP-L13](SOP-L13-using-balances.qmd) |
+| Beakers (50--100 mL)         | Clean; one per sample plus blanks         |
+| Graduated cylinder or dispenser | For volumetric delivery of water or CaCl~2~ |
+| Glass stirring rods           | One per sample or rinsed between samples  |
+| Timer                         | For equilibration period                  |
+
+### Reagents
+
+| Reagent                       | Preparation / Notes                       |
+|:------------------------------|:------------------------------------------|
+| Deionized water (Type I or II) | From [*SOP-L11*](SOP-L11-milli-q-water.qmd) |
+| 0.01 M CaCl~2~ solution      | Dissolve 1.47 g CaCl~2~-2H~2~O in 1 L DI water |
+| pH buffer solutions (4.01, 7.00, 10.01) | For pH meter calibration    |
+| Conductivity standard (1413 uS/cm) | For conductivity meter calibration  |
+
+
+## 6. Procedure
+
+### 6.1 Sample Preparation
+
+1. Air-dry the soil at room temperature until constant mass (typically
+   24--48 hours)
+2. Pass the dried soil through a 2 mm sieve. See
+   [SOP-F56 Soil Sampling](../field_sops/SOP-F56-soil-sampling.qmd) for
+   details on sieving and homogenization.
+3. Store the sieved soil in a labeled bag or container at room
+   temperature
+
+### 6.2 Selecting the Extraction Ratio
+
+Two standard soil-to-solution ratios are used. The choice depends on
+the project objectives and the need for comparability with published
+data:
+
+| Ratio     | Method                 | When to Use                        |
+|:----------|:-----------------------|:-----------------------------------|
+| 1:1       | 10 g soil : 10 mL water (or CaCl~2~) | Most common in agronomic soil testing; closest to field conditions |
+| 1:5       | 10 g soil : 50 mL water (or CaCl~2~) | Useful for saline soils, compost, or when more extract volume is needed for subsequent analyses |
+
+::: {.callout-note}
+Soil pH measured in 0.01 M CaCl~2~ is typically 0.3--0.5 units lower
+than pH measured in DI water because the salt displaces H^+^ and
+Al^3+^ from exchange sites. CaCl~2~ pH is less sensitive to seasonal
+variation in soil salt content and is preferred for monitoring studies
+where consistency over time matters [@thomas1996]. Record the extraction
+medium (water or CaCl~2~) and ratio with every result.
+:::
+
+### 6.3 Preparing the Soil Slurry (1:1 Method)
+
+1. Weigh 10.0 g of air-dried, sieved soil into a clean beaker
+2. Add 10 mL of DI water (for pH~water~ and EC) or 10 mL of 0.01 M
+   CaCl~2~ (for pH~CaCl2~)
+3. Stir vigorously with a glass rod for 30 seconds
+4. Allow to stand for 10 minutes
+5. Stir briefly again before measurement
+
+### 6.4 Preparing the Soil Extract (1:5 Method)
+
+1. Weigh 10.0 g of air-dried, sieved soil into a clean beaker
+2. Add 50 mL of DI water (or 50 mL of 0.01 M CaCl~2~)
+3. Stir vigorously for 30 seconds
+4. Allow to stand for 30 minutes, stirring occasionally
+5. For EC measurement on the 1:5 extract, allow the soil to settle and
+   insert the conductivity cell into the clear supernatant. For pH,
+   insert the electrode into the slurry while still partially suspended.
+
+### 6.5 Measuring Electrical Conductivity
+
+::: {.callout-important}
+Always measure EC before pH on the same aliquot. The pH electrode's KCl
+reference junction leaks electrolyte into the sample and will
+artificially elevate the EC reading [@apha2012].
+:::
+
+1. Calibrate the conductivity meter per
+   [SOP-L40](SOP-L40-pH-conductivity-bench.qmd), Section 6.3
+2. Rinse the conductivity cell with DI water and blot dry
+3. Insert the cell into the supernatant (1:5 method) or into the
+   settled portion of the slurry (1:1 method). Tap gently to dislodge
+   air bubbles.
+4. Allow the reading to stabilize with automatic temperature
+   compensation active
+5. Record the specific conductance (uS/cm at 25 C), sample ID, and
+   extraction ratio
+6. Rinse the cell with DI water between samples
+
+### 6.6 Measuring Soil pH
+
+1. Calibrate the pH meter with a three-point calibration per
+   [SOP-L40](SOP-L40-pH-conductivity-bench.qmd), Section 6.2
+2. Rinse the pH electrode with DI water and blot gently
+3. Insert the electrode into the slurry so that the glass bulb and
+   reference junction are fully immersed. For the 1:1 method, the
+   electrode should contact the settled soil.
+4. Allow the reading to stabilize (typically 30--60 seconds; may take
+   2--3 minutes for poorly buffered soils)
+5. Record the pH value, extraction medium (water or CaCl~2~), ratio,
+   and sample ID
+6. Rinse the electrode with DI water between samples
+
+### 6.7 Converting 1:5 EC to Estimated Saturated Paste EC (EC~e~)
+
+The saturated paste extract (EC~e~) is the standard for soil salinity
+classification, but the 1:5 extract is quicker to prepare. An
+approximate conversion can be made using the following relationship,
+though the factor varies with texture [@rhoades1996]:
+
+$$
+EC_e \approx EC_{1:5} \times f
+$$
+
+where $f$ is an empirical factor:
+
+| Soil Texture | $f$ (approximate) |
+|:-------------|:-------------------|
+| Sand         | 6 -- 8             |
+| Loam         | 8 -- 10            |
+| Clay         | 10 -- 13           |
+
+::: {.callout-warning}
+These conversion factors are approximate and site-specific. For formal
+salinity classification (e.g., land-use planning, irrigation
+suitability), prepare an actual saturated paste extract per USDA
+Handbook 60.
+:::
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Interpretation of Soil pH
+
+| pH Range     | Classification      | Agronomic Significance            |
+|:-------------|:--------------------|:----------------------------------|
+| Less than 4.5 | Extremely acidic   | Toxic Al^3+^ levels; few crops tolerate |
+| 4.5 -- 5.5   | Strongly acidic     | Low P availability; Mo deficiency; lime recommended |
+| 5.5 -- 6.5   | Moderately acidic   | Suitable for most crops; some nutrient limitations |
+| 6.5 -- 7.5   | Neutral             | Optimal for most crops and nutrient availability |
+| 7.5 -- 8.5   | Moderately alkaline | Common in arid soils; Fe, Mn, Zn may be limiting |
+| Greater than 8.5 | Strongly alkaline | Possible sodicity; Na toxicity    |
+
+### 7.2 Interpretation of Soil Salinity (EC~e~)
+
+| EC~e~ (dS/m)   | Classification      | Plant Response                   |
+|:----------------|:--------------------|:---------------------------------|
+| 0 -- 2          | Non-saline          | No yield reduction for most crops |
+| 2 -- 4          | Slightly saline     | Sensitive crops affected          |
+| 4 -- 8          | Moderately saline   | Many crops affected               |
+| 8 -- 16         | Strongly saline     | Only tolerant crops survive       |
+| Greater than 16 | Very strongly saline | Few plants survive               |
+
+### 7.3 Saline, Sodic, and Saline-Sodic Classification
+
+| Class         | EC~e~ (dS/m) | SAR / ESP               | pH     |
+|:--------------|:-------------|:------------------------|:-------|
+| Normal        | Less than 4  | SAR less than 13 / ESP less than 15 | Variable |
+| Saline        | 4 or greater | SAR less than 13 / ESP less than 15 | Usually less than 8.5 |
+| Sodic         | Less than 4  | SAR 13 or greater / ESP 15 or greater | Usually greater than 8.5 |
+| Saline-sodic  | 4 or greater | SAR 13 or greater / ESP 15 or greater | Variable |
+
+SAR = sodium adsorption ratio; ESP = exchangeable sodium percentage.
+Full SAR/ESP determination requires cation analysis beyond the scope of
+this SOP.
+
+### 7.4 QC Requirements
+
+- Calibrate the pH meter before each measurement session (three-point).
+  Acceptable slope: 90--102% of theoretical.
+- Calibrate the conductivity meter before each session
+- Re-read pH 7.00 buffer after every 10 samples; recalibrate if drift
+  exceeds +/- 0.05 pH units
+- Re-read the conductivity standard after every 10 samples; recalibrate
+  if drift exceeds +/- 5%
+- Run a DI water blank and a laboratory reference soil (if available)
+  with each batch
+- Run duplicate measurements on at least 10% of samples. Acceptable
+  precision: +/- 0.1 pH units and +/- 5% relative percent difference
+  for EC.
+- Record extraction medium, ratio, calibration data, and QC results
+  in the lab notebook
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Soil slurry waste (non-hazardous) | Standard trash once settled          |
+| CaCl~2~ extract solutions     | Drain with copious water (non-hazardous) |
+| Used pH buffer solutions      | Collect in waste container per [SOP-L40](SOP-L40-pH-conductivity-bench.qmd) |
+| Used conductivity standard    | Drain with copious water                 |
+| DI water rinses               | Drain                                    |
+
+
+## 9. References
+
+- Thomas, G.W. (1996). Soil pH and soil acidity. In: Sparks, D.L.
+  et al. (Eds.), *Methods of Soil Analysis, Part 3: Chemical Methods*.
+  SSSA Book Series No. 5. pp. 475--490.
+- Rhoades, J.D. (1996). Salinity: Electrical conductivity and total
+  dissolved solids. In: Sparks, D.L. et al. (Eds.), *Methods of Soil
+  Analysis, Part 3: Chemical Methods*. SSSA Book Series No. 5.
+  pp. 417--435.
+- USDA. (1954). *Diagnosis and Improvement of Saline and Alkali Soils*.
+  USDA Agriculture Handbook No. 60. U.S. Salinity Laboratory,
+  Riverside, CA.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before measuring soil pH and EC independently, personnel must:
+
+1. Read this SOP and [SOP-L40](SOP-L40-pH-conductivity-bench.qmd) in
+   full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   training
+3. Demonstrate pH meter three-point calibration with acceptable slope
+4. Demonstrate conductivity meter calibration
+5. Prepare 1:1 and 1:5 extracts and measure a set of at least 5
+   practice soils under supervision with acceptable duplicate precision
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Example Calculation and Reporting {.appendix}
+
+```{r}
+#| label: soil-pH-EC-example
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+# Example data entry
+soil_data <- tibble(
+  sample_id = c("PV-01", "PV-02", "PV-03", "PV-04", "PV-05"),
+  pH_water_1_1 = c(6.82, 7.45, 5.91, 8.12, 7.03),
+  pH_CaCl2_1_1 = c(6.48, 7.10, 5.55, 7.78, 6.68),
+  EC_1_5_uS_cm = c(245, 1820, 85, 3450, 310),
+  texture = c("loam", "clay", "sand", "clay", "loam")
+)
+
+# Estimate EC_e from 1:5 EC using texture-based conversion factors
+conversion <- c(sand = 7, loam = 9, clay = 11.5)
+
+soil_data <- soil_data %>%
+  mutate(
+    EC_e_dS_m = (EC_1_5_uS_cm / 1000) * conversion[texture],
+    salinity_class = case_when(
+      EC_e_dS_m < 2 ~ "Non-saline",
+      EC_e_dS_m < 4 ~ "Slightly saline",
+      EC_e_dS_m < 8 ~ "Moderately saline",
+      EC_e_dS_m < 16 ~ "Strongly saline",
+      TRUE ~ "Very strongly saline"
+    ),
+    pH_class = case_when(
+      pH_water_1_1 < 4.5 ~ "Extremely acidic",
+      pH_water_1_1 < 5.5 ~ "Strongly acidic",
+      pH_water_1_1 < 6.5 ~ "Moderately acidic",
+      pH_water_1_1 < 7.5 ~ "Neutral",
+      pH_water_1_1 < 8.5 ~ "Moderately alkaline",
+      TRUE ~ "Strongly alkaline"
+    )
+  )
+
+print(soil_data %>% select(sample_id, pH_water_1_1, pH_CaCl2_1_1,
+                           EC_e_dS_m, salinity_class, pH_class))
+```
+
+
+## Appendix B: Reagent Preparation {.appendix}
+
+### 0.01 M CaCl~2~ Solution
+
+1. Weigh 1.47 g of CaCl~2~-2H~2~O (MW 147.01) on the analytical
+   balance
+2. Dissolve in approximately 800 mL of DI water in a 1 L volumetric
+   flask
+3. Bring to 1 L with DI water and mix thoroughly
+4. Label with concentration, preparation date, and preparer's initials
+5. Store at room temperature in a capped polyethylene or borosilicate
+   bottle. Stable indefinitely.
+
+
+## Appendix C: Troubleshooting {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| pH reading drifts continuously | Poorly buffered soil; electrode junction fouled | Allow longer equilibration (up to 5 min); clean electrode per [SOP-L40](SOP-L40-pH-conductivity-bench.qmd) |
+| pH in CaCl~2~ higher than pH in water | Measurement error; contaminated CaCl~2~ solution | Verify CaCl~2~ concentration; recalibrate meter; re-measure |
+| EC reading unexpectedly high  | Fertilizer residue; saline soil; contaminated beaker | Verify with a blank; use acid-washed glassware ([SOP-L12](SOP-L12-glassware-cleaning.qmd)) |
+| EC reading near zero          | Electrode not fully immersed; air bubble in cell | Reposition cell; tap to dislodge bubbles |
+| Large difference between 1:1 and 1:5 EC | Normal; dilution effect | Report both with the ratio clearly stated; convert to EC~e~ using appropriate factor |
+| pH calibration slope below 90% | Aged electrode; dirty glass bulb | Soak in cleaning solution or 0.1 M HCl for 15--30 min; if slope does not recover, replace electrode |

@@ -1,0 +1,519 @@
+---
+# =============================================================================
+# SOP-L56: Soil Texture Analysis -- Hydrometer Method
+# =============================================================================
+title: "Soil Texture Analysis -- Hydrometer Method"
+sop-number: "SOP-L56"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+  - name: "Isaac Medina"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2015-07-12"
+    author: "Marc Los Huertos, Isaac Medina"
+    changes: "Initial release"
+  - version: "0.1"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to Quarto"
+---
+
+## 1. Purpose
+
+This procedure describes the determination of soil particle size
+distribution using the hydrometer method (ASTM D422). Soil texture
+(the relative proportions of sand, silt, and clay) is a fundamental
+physical property that controls water-holding capacity, drainage,
+nutrient retention, and soil structure. The hydrometer method measures
+the density of a soil-water suspension at timed intervals as
+progressively finer particles settle, allowing calculation of the
+percent sand, silt, and clay and assignment of a USDA textural class.
+
+For a rapid field estimate of texture without laboratory equipment, see
+[SOP-F58 Texture by Feel](../field_sops/SOP-F58-soil-texture-by-feel.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** Mineral soils with less than approximately 20% coarse
+  fragments (greater than 2 mm). Soils with high organic matter or
+  carbonates require pre-treatment (see Section 6.4).
+- **Does not apply to:** Pure gravel, organic soils (histosols), or
+  soils where only a textural class estimate is needed (use
+  [SOP-F58](../field_sops/SOP-F58-soil-texture-by-feel.qmd) instead)
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Lab Manager       | Maintain equipment, prepare HMP solution    |
+| Trained Personnel | Perform the analysis over multiple sessions |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Sodium hexametaphosphate (HMP) is a mild skin and eye
+  irritant. Hydrogen peroxide (30%) is a strong oxidizer and causes
+  burns on contact. Hydrochloric acid (1 N) is corrosive.
+- **Physical:** The milkshake mixer creates a vigorous vortex; keep
+  loose clothing and hair clear. Hot plates and drying ovens pose burn
+  risk.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses (chemical-safety goggles when using H~2~O~2~ or
+  HCl)
+- [ ] Lab coat
+- [ ] Nitrile or latex gloves
+- [ ] Hearing protection not required but recommended near the mixer
+
+### Emergency Procedures
+
+For H~2~O~2~ or HCl splashes, flush with water for at least 15 minutes.
+For HMP powder inhalation, move to fresh air. Refer to
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| No. 10 sieve (2 mm mesh)     | For removing gravel                       |
+| No. 200 sieve (0.075 mm mesh) | For sand fraction recovery               |
+| Milkshake mixer and dispersion cup | For mechanical dispersion            |
+| 151H hydrometer               | ASTM standard                            |
+| 1 L sedimentation cylinder with No. 13 stopper | Glass or polycarbonate |
+| Stopwatch or timer            | For recording settling times              |
+| Thermometer (0.5 C resolution) | For temperature corrections             |
+| Analytical balance (0.01 g)   | See [SOP-L13](SOP-L13-using-balances.qmd) |
+| Drying oven (110 C)           | See [SOP-L16](SOP-L16-drying-ovens.qmd) |
+| Hot plate                     | For pre-treatment heating                 |
+| 250 mL and 400 mL beakers    | For pre-treatment and weighing            |
+| Soil tins (pre-weighed)       | For moisture determination                |
+| Mortar and pestle             | For breaking up air-dried aggregates      |
+| Squeeze bottle (DI water)    | For quantitative transfers                |
+
+### Reagents
+
+| Reagent                       | Preparation / Notes                       |
+|:------------------------------|:------------------------------------------|
+| Sodium hexametaphosphate (HMP) | 40 g/L solution in DI water; prepare fresh weekly |
+| Hydrogen peroxide, 30% (CAS 7722-84-1) | For organic matter removal (pre-treatment) |
+| Hydrochloric acid, 1 N (CAS 7647-01-0) | For carbonate removal (pre-treatment) |
+| Distilled or deionized water  | From [*SOP-L11*](SOP-L11-milli-q-water.qmd) |
+
+
+## 6. Procedure
+
+The analysis spans multiple lab sessions. Plan accordingly:
+
+| Session | Tasks                                             | Time Required |
+|:--------|:--------------------------------------------------|:--------------|
+| 1       | Air-dry 200 g of soil                             | 24+ hours (passive) |
+| 2       | Sieve through No. 10; subsample for moisture      | 1--2 hours    |
+| 3       | Calculate $DW_e$; pre-treat and/or disperse       | 2--3 hours + 16 h soak |
+| 4       | Conduct hydrometer readings                       | 24+ hours (intermittent) |
+| 5       | Recover sand on No. 200 sieve; complete data entry | 1--2 hours   |
+
+### 6.1 Air-Drying the Soil
+
+1. Spread approximately 200 g of field-moist soil in a labeled tin or
+   beaker
+2. Allow to equilibrate with laboratory air for 24 hours or more. Very
+   wet soils may require several days.
+3. Break up large clods periodically to promote even drying
+
+### 6.2 Sieving Through the No. 10 Sieve
+
+Soil is defined as particles less than 2 mm. Gravel must be removed
+before analysis but quantified.
+
+1. Homogenize the air-dried soil by thorough mixing
+2. Weigh approximately 65 g (silt/clay soils) or 120 g (sandy soils)
+   of air-dried soil and record the mass
+3. Using a mortar and pestle, gently break up aggregates so that
+   individual particles pass the No. 10 sieve. Do not crush primary
+   mineral grains.
+4. Sieve the soil through the No. 10 sieve (2 mm)
+5. Weigh and record the mass of soil that passed through the sieve
+6. Calculate the percent passing:
+
+$$
+\text{Percent passing No. 10} = \frac{M_{\text{passed}}}{M_{\text{total}}} \times 100
+$$
+
+### 6.3 Determining Hygroscopic Moisture Content
+
+Air-dried soil still contains hygroscopic water adsorbed to clay
+surfaces, salts, and organic matter. This must be measured and corrected
+for.
+
+1. Select a soil tin; record the tin number and tare mass
+2. Transfer a 10--15 g subsample of the air-dried, sieved soil to the
+   tin and record the air-dried mass (tin + soil)
+3. Dry in the oven at 110 C for approximately 24 hours
+4. Cool in a desiccator and record the oven-dried mass (tin + soil)
+5. Calculate hygroscopic moisture:
+
+$$
+\text{Moisture}_H = \frac{M_{\text{air-dry w/ tin}} - M_{\text{oven-dry w/ tin}}}{M_{\text{air-dry w/ tin}} - M_{\text{tin}}}
+$$
+
+::: {.callout-note}
+The standard drying temperature of 105--110 C is somewhat arbitrary.
+Clay minerals may retain 10--15% water (dry basis) at 400 C. Organic
+components also release volatiles over a range of temperatures. The key
+is to specify and consistently use the same temperature.
+:::
+
+### 6.4 Calculating Oven-Dry Equivalent Mass ($DW_e$)
+
+The target oven-dry equivalent mass for the hydrometer test is 50 g
+for fine-textured soils or 100 g for coarse-textured soils (greater
+than approximately 70% sand).
+
+Since air-dried soil contains hygroscopic water, the actual mass of
+air-dried soil to weigh out is:
+
+$$
+DW_{\text{air}} = \frac{DW_e}{1 - \text{Moisture}_H}
+$$
+
+where $DW_e$ = 50 g or 100 g.
+
+### 6.5 Pre-Treatment (If Required)
+
+Pre-treatment is necessary for soils high in organic matter, carbonates,
+iron oxides, or soluble salts. If the soil is low in all of these,
+proceed directly to Section 6.6.
+
+1. Transfer $DW_{\text{air}}$ g of soil to a 400 mL beaker
+
+2. **Carbonate removal:** Add 50 mL DI water and sufficient 1 N HCl to
+   reduce the pH to 3.0--4.0. Stir and allow to equilibrate for
+   10 minutes until effervescence ceases.
+
+3. **Organic matter removal:** Carefully add 30% H~2~O~2~ a few
+   milliliters at a time, allowing frothing to subside between
+   additions. If necessary, acidify the suspension with a few drops of
+   1 N HCl (H~2~O~2~ oxidation requires an acidic medium). When
+   frothing subsides, heat to 90 C and continue adding H~2~O~2~ until
+   no further reaction occurs. Rinse down the beaker walls and continue
+   heating until excess H~2~O~2~ is consumed.
+
+4. **Iron oxide removal (if needed):** Add 150 mL citrate-bicarbonate
+   buffer. Add 3 g sodium hydrosulfite (Na~2~S~2~O~4~) gradually (may
+   froth). Heat in a water bath at 80 C for 20 minutes.
+
+5. **Soluble salt removal (if needed):** Transfer soil to a centrifuge
+   tube, add 100 mL DI water, and centrifuge at 1,500 rpm for 10
+   minutes. Decant the supernatant. Repeat until the supernatant is
+   clear.
+
+::: {.callout-warning}
+Handle 30% H~2~O~2~ in the fume hood. It is a strong oxidizer that
+causes skin burns on contact. Add it slowly to avoid violent frothing.
+:::
+
+### 6.6 Dispersing the Soil Sample
+
+1. Weigh $DW_{\text{air}}$ g of pre-treated (or untreated) soil into
+   the dispersion cup and record the mass to 0.1 g
+2. Add 125 mL of 40 g/L sodium hexametaphosphate solution
+3. Stir until the slurry is thoroughly wetted
+4. Cover and soak for at least 16 hours (overnight)
+5. Add distilled water to the first indentation mark on the dispersion
+   cup
+6. Attach the cup to the milkshake mixer and mix for 5 minutes (sandy
+   soils) or 15 minutes (fine-textured soils)
+
+### 6.7 Conducting the Hydrometer Test
+
+**Blank preparation:**
+
+1. Prepare a blank cylinder: add 125 mL of HMP solution and fill to
+   the 1,000 mL mark with distilled water
+2. Record the blank hydrometer reading and temperature. If the zero
+   mark is below the meniscus surface, record the correction as a
+   negative number. Read at the top of the meniscus (the suspension is
+   opaque).
+
+**Sample measurement:**
+
+1. Transfer the dispersed soil suspension to a sedimentation cylinder,
+   using a squeeze bottle to rinse all material from the dispersion cup
+2. Fill the cylinder to the 1,000 mL mark with distilled water
+3. Stopper the cylinder (No. 13) and invert 180 degrees and back in a
+   steady 2-second cycle for one full minute. Vigorously agitate during
+   the first two inversions to loosen settled material.
+4. Set the cylinder upright and start the timer immediately
+5. At 20 seconds elapsed, slowly lower the hydrometer into the
+   suspension (spinning gently to dislodge air bubbles) and read at
+   40 seconds. Remove, rinse, and dry the hydrometer.
+6. Repeat the inversion and 40-second reading two more times (three
+   total readings at 40 s) for accuracy
+7. After the final 40-second reading, lower a thermometer into the
+   suspension and record the temperature
+
+::: {.callout-important}
+The hydrometer must be removed, rinsed, and dried between every
+reading. Particles accumulate on the glass surface and progressively
+bias subsequent readings if not cleaned.
+:::
+
+8. Continue taking hydrometer and temperature readings at the following
+   schedule:
+
+| Reading | Time After Inversion | Temperature? | Blank Reading? |
+|:--------|:---------------------|:-------------|:---------------|
+| 0       | Before inverting     | Yes          | Yes            |
+| 1       | 40 seconds (x3)     | Yes (after)  | --             |
+| 2       | 2 minutes            | --           | --             |
+| 3       | 5 minutes            | Yes          | Yes            |
+| 4       | 15 minutes           | --           | --             |
+| 5       | 30 minutes           | --           | --             |
+| 6       | 60 minutes           | Yes          | Yes            |
+| 7       | 2 hours              | Yes          | Yes            |
+| 8       | 3 hours (optional)   | Yes          | Yes            |
+| 9       | 6--8 hours (optional) | Yes         | Yes            |
+| 10      | 24 hours             | Yes          | Yes            |
+
+9. Place the cylinder in a stable, undisturbed location between readings
+
+### 6.8 Recovering Sand on the No. 200 Sieve
+
+The hydrometer method does not resolve sand subfractions well. Sieve
+analysis of the sand fraction provides this detail.
+
+1. After the final hydrometer reading, pour the cylinder contents
+   through a No. 200 sieve (0.075 mm)
+2. Using tap water (with a sediment trap in the sink), wash the material
+   on the sieve until the rinse water is clear
+3. Select a soil tin; record the tin number and tare mass
+4. Carefully wash the retained sand from the sieve into the tin using a
+   squeeze bottle. Do not use a brush or metal tool on the sieve mesh.
+5. Dry at 110 C for 24 hours
+6. Cool and weigh the tin plus dried sand; record the mass
+
+::: {.callout-tip}
+### Tip
+The No. 200 sieve screens are delicate. Forcing particles through or
+scrubbing with a brush can stretch or distort the mesh. Always use a
+gentle water stream or squeeze bottle.
+:::
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Calculations
+
+The key calculated quantities for each hydrometer reading are:
+
+**Corrected hydrometer reading:**
+
+$$
+R_c = R_{\text{actual}} - R_{\text{blank}}
+$$
+
+**Effective particle diameter** ($D_e$, mm) at each reading time is
+calculated from Stokes' Law, accounting for temperature-corrected
+viscosity and density of the suspension fluid.
+
+**Percent finer** at each reading:
+
+$$
+PF = \frac{R_c \times a}{DW_e} \times 100
+$$
+
+where $a$ is a correction factor based on the specific gravity of soil
+particles (typically 2.65 for mineral soils).
+
+**Textural class** is determined by plotting the calculated percent
+sand, silt, and clay on the USDA textural triangle.
+
+### 7.2 Bias and Interference Sources
+
+| Source                        | Effect                  | Correction              |
+|:------------------------------|:------------------------|:------------------------|
+| Temperature and viscosity     | Cold water increases viscosity, slowing settling | Temperature correction factor applied to each reading |
+| Temperature and density       | Water density varies with temperature | Density correction in Stokes' Law |
+| Hygroscopic moisture          | Air-dried soil mass overestimates oven-dry mass | $DW_e$ correction (Section 6.4) |
+| Incomplete dispersion         | Aggregates settle as single large particles; underestimates clay | Use HMP + mechanical mixing; pre-treat if needed |
+| Meniscus reading              | Opaque suspension prevents reading at bottom of meniscus | Read at top of meniscus; apply meniscus correction |
+| Flocculation                  | Ca^2+^ and Al^3+^ bridge clay particles | HMP displaces polyvalent cations; Na^+^ hydrates clay surfaces |
+
+### 7.3 QC Requirements
+
+- Run a duplicate analysis on at least 10% of samples
+- Duplicate results should agree within one textural class
+- Include a blank cylinder (HMP + water, no soil) with every batch
+- Record all temperatures; temperature drift greater than 2 C during
+  the reading series indicates an unstable environment
+- Cross-check a subset of hydrometer results against field texture-by-
+  feel estimates ([SOP-F58](../field_sops/SOP-F58-soil-texture-by-feel.qmd))
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Soil suspension (no pre-treatment chemicals) | Settle, decant water, dispose of soil in standard trash |
+| HMP solution (spent)          | Drain with copious water (low hazard)    |
+| H~2~O~2~ waste (from pre-treatment) | Dilute and drain, or collect for EH&S if concentrated |
+| HCl waste (from pre-treatment) | Neutralize with NaHCO~3~ and drain, or collect per [SOP-L02](SOP-L02-hazardous-materials-handling.qmd) |
+| Sieve washings                | Use a sediment trap; dispose of trapped soil in standard trash |
+
+
+## 9. References
+
+- ASTM D422-63(2007)e2. *Standard Test Method for Particle-Size
+  Analysis of Soils*. ASTM International, West Conshohocken, PA.
+  (Withdrawn 2016; replaced by D7928, but D422 remains widely used in
+  teaching and soil science.)
+- Gee, G.W. & Or, D. (2002). Particle-size analysis. In: Dane, J.H. &
+  Topp, G.C. (Eds.), *Methods of Soil Analysis, Part 4: Physical
+  Methods*. SSSA Book Series No. 5. pp. 255--293.
+- Wilde, S.A., Corey, R.B., Iyer, J.G., & Voigt, G.K. (1979). *Soil
+  and Plant Analysis for Tree Culture*. Oxford and IBH Publishing Co.,
+  New Delhi. pp. 12--13.
+- Anderson, J.M. & Ingram, J.S., eds. (1993). *Tropical Soil Biology
+  and Fertility: A Handbook of Methods*. 2nd ed. CAB International,
+  Wallingford, UK. pp. 93--94.
+- Soil Science Division Staff. (2017). *Soil Survey Manual*. USDA
+  Handbook No. 18. USDA-NRCS.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing hydrometer analysis independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd),
+   [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd),
+   and [SOP-L55 Soil Moisture](SOP-L55-soil-moisture.qmd) training
+3. Observe a trained operator perform the full multi-session analysis
+4. Demonstrate proper soil dispersion, hydrometer reading technique,
+   and temperature recording under supervision
+5. Complete one full analysis (all sessions) with acceptable duplicate
+   precision
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Example Calculations in R {.appendix}
+
+```{r}
+#| label: hydrometer-calcs
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+# --- Hygroscopic moisture correction ---
+tin_mass_g <- 15.32
+air_dry_w_tin_g <- 27.45
+oven_dry_w_tin_g <- 27.18
+
+moisture_H <- (air_dry_w_tin_g - oven_dry_w_tin_g) /
+              (air_dry_w_tin_g - tin_mass_g)
+
+cat(sprintf("Hygroscopic moisture: %.4f g/g\n", moisture_H))
+
+# --- Oven-dry equivalent mass ---
+DW_e <- 50  # g; use 100 for sandy soils
+DW_air <- DW_e / (1 - moisture_H)
+
+cat(sprintf("Air-dried soil to weigh: %.2f g\n", DW_air))
+
+# --- Hydrometer readings ---
+# Example data: time (min), hydrometer reading, temp (C), blank reading
+readings <- tibble(
+  time_min = c(0.67, 2, 5, 15, 30, 60, 120, 1440),
+  R_actual = c(38, 32, 27, 22, 19, 16, 13, 8),
+  temp_C = c(23, 23, 23, 22, 22, 22, 22, 21),
+  R_blank = c(5, 5, 5, 5, 5, 5, 5, 5)
+)
+
+# Corrected readings
+readings <- readings %>%
+  mutate(
+    R_corrected = R_actual - R_blank,
+    # Simplified percent finer (a = 1 for Gs = 2.65)
+    percent_finer = (R_corrected / DW_e) * 100
+  )
+
+# Sand, silt, clay from key readings
+# Percent sand: 100 - PF at 40 sec (0.67 min)
+# Percent clay: PF at 1440 min (24 h)
+pct_sand <- 100 - readings$percent_finer[readings$time_min == 0.67]
+pct_clay <- readings$percent_finer[readings$time_min == 1440]
+pct_silt <- 100 - pct_sand - pct_clay
+
+cat(sprintf("\nSand: %.1f%%  Silt: %.1f%%  Clay: %.1f%%\n",
+            pct_sand, pct_silt, pct_clay))
+
+# Plot particle size distribution curve
+ggplot(readings, aes(x = time_min, y = percent_finer)) +
+  geom_point(size = 3) +
+  geom_line() +
+  scale_x_log10() +
+  labs(
+    x = "Settling time (minutes, log scale)",
+    y = "Percent finer (%)",
+    title = "Hydrometer Particle Size Distribution"
+  ) +
+  theme_minimal()
+```
+
+
+## Appendix B: USDA Textural Classes {.appendix}
+
+Once percent sand, silt, and clay are determined, assign the textural
+class using the USDA textural triangle. The 12 classes are:
+
+| Class              | Sand (%) | Silt (%) | Clay (%) |
+|:-------------------|:---------|:---------|:---------|
+| Sand               | 85--100  | 0--15    | 0--10    |
+| Loamy sand         | 70--90   | 0--30    | 0--15    |
+| Sandy loam         | 43--85   | 0--50    | 0--20    |
+| Loam               | 23--52   | 28--50   | 7--27    |
+| Silt loam          | 0--50    | 50--88   | 0--27    |
+| Silt               | 0--20    | 80--100  | 0--12    |
+| Sandy clay loam    | 45--80   | 0--28    | 20--35   |
+| Clay loam          | 20--45   | 15--53   | 27--40   |
+| Silty clay loam    | 0--20    | 40--73   | 27--40   |
+| Sandy clay         | 45--65   | 0--20    | 35--55   |
+| Silty clay         | 0--20    | 40--60   | 40--60   |
+| Clay               | 0--45    | 0--40    | 40--100  |
+
+<!-- TODO: Add USDA textural triangle figure -->
+
+
+## Appendix C: Troubleshooting {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| Clay content seems too low    | Incomplete dispersion           | Extend soaking time; increase mixer time; verify HMP concentration |
+| Readings inconsistent at 40 s | Insufficient mixing; uneven settling | Ensure vigorous, consistent inversions; repeat three times |
+| Temperature drifts more than 2 C | Lab temperature unstable     | Move cylinder away from heat sources; consider a water bath |
+| Blank reading changes over time | HMP solution degrading       | Prepare fresh HMP solution weekly |
+| Sand fraction sums do not match hydrometer | Soil lost during sieve transfer | Rinse quantitatively; check for cracks in the sieve |
+| Percent finer exceeds 100% or is negative | Data entry or calculation error | Double-check raw readings, blank correction, and $DW_e$ |

@@ -1,0 +1,389 @@
+---
+# =============================================================================
+# SOP-L67: Nitrification Potential -- Shaken Soil Slurry Method
+# =============================================================================
+title: "Nitrification Potential -- Shaken Soil Slurry Method"
+sop-number: "SOP-L67"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-06-16"
+    author: "Marc Los Huertos"
+    changes: "Initial release; based on ISO 15685"
+---
+
+## 1. Purpose
+
+This procedure describes a rapid method for measuring the potential rate
+of ammonium oxidation in soils using a shaken soil slurry. The method
+provides an estimate of the activity of the existing ammonium-oxidizing
+microbial population at the time of sampling. It is based on ISO 15685
+(*Soil quality -- Determination of potential nitrification and
+inhibition of nitrification -- Rapid test by ammonium oxidation*)
+[@iso15685].
+
+Ammonium oxidation is the first step in autotrophic nitrification.
+Soil is incubated in a buffered (pH 7.2) ammonium sulfate solution
+with sodium chlorate added to inhibit nitrite oxidation. The
+accumulation of nitrite (NO~2~^-^) over a 6-hour incubation period
+serves as the measure of potential nitrification activity. Because the
+generation time of ammonia-oxidizing bacteria exceeds 10 hours, the
+assay measures the activity of the population present at sampling, not
+population growth.
+
+This method can be used to compare soils (e.g., polluted vs. reference),
+to screen the effects of management practices or chemical substances on
+nitrifying communities, and to evaluate the impact of biosolids or waste
+materials on soil nitrification.
+
+
+## 2. Scope
+
+- **Applies to:** Field-moist soils containing a population of
+  nitrifying microorganisms; assessment of nitrification inhibition by
+  chemical substances (except volatiles with Henry's constant H > 1),
+  biosolid extracts, and polluted soil mixtures
+- **Does not apply to:** Soils with no detectable nitrifying population;
+  measurement of in situ nitrification rates (this is a potential
+  activity assay under optimized conditions); volatile inhibitors
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve experimental design, ensure training compliance |
+| Lab Manager       | Prepare reagents, maintain shaking incubator |
+| Trained Personnel | Perform assay, record and report results    |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Sodium chlorate (NaClO~3~) is an oxidizer; avoid
+  contact with organic materials and combustible substances. Potassium
+  chloride (4 M KCl) is a mild irritant. Ammonium sulfate is a mild
+  irritant.
+- **Physical:** The orbital shaking incubator has moving parts; keep
+  hair and loose clothing clear. Centrifuge operation poses standard
+  mechanical hazards.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves
+
+### Emergency Procedures
+
+For chemical spills, refer to
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+For sodium chlorate spills, do not use organic absorbents (sawdust,
+paper towels); use vermiculite or sand.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Orbital shaking incubator     | Thermostatically controlled at 25 +/- 2 C; capable of 175 rpm |
+| Erlenmeyer flasks (250 mL)   | One per replicate                         |
+| Centrifuge                    | Capable of 3,000 x g; see *SOP-L25* or *SOP-L27* |
+| Analytical balance            | 0.001 g resolution; see [SOP-L13](SOP-L13-using-balances.qmd) |
+| Volumetric flasks (100 mL, 1 L) | Class A                                |
+| Graduated cylinders           | 10, 100, 1000 mL                         |
+| Pipettes                      | 2 mL (for slurry sampling) and assorted   |
+| Test tubes with caps          | For subsamples                            |
+| Filter funnels and filter paper | High-filtration-speed paper; chemical purity can be below the highest grade |
+| pH meter                      | Calibrated per [SOP-L40](SOP-L40-pH-conductivity-bench.qmd) |
+
+### Reagents
+
+| Reagent                       | Concentration / Preparation               |
+|:------------------------------|:------------------------------------------|
+| Distilled or deionized water  | From [*SOP-L11*](SOP-L11-milli-q-water.qmd) |
+| Potassium dihydrogen phosphate (KH~2~PO~4~) | 0.2 mol/L solution       |
+| Dipotassium hydrogen phosphate (K~2~HPO~4~) | 0.2 mol/L solution       |
+| Sodium chlorate (NaClO~3~)   | 0.5 mol/L solution                        |
+| Ammonium sulfate ((NH~4~)~2~SO~4~) | Solid; 0.198 g per liter of test medium |
+| Sodium bicarbonate (NaHCO~3~) | 5 mmol/L solution (optional; see Section 6.2) |
+| Potassium chloride (KCl)     | 4 mol/L solution (extraction/stop solution) |
+
+
+## 6. Procedure
+
+### 6.1 Stock Solution A (Phosphate Buffer)
+
+Combine the following in a volumetric flask and bring to 200 mL with
+distilled water:
+
+- 28 mL of 0.2 mol/L KH~2~PO~4~
+- 72 mL of 0.2 mol/L K~2~HPO~4~
+
+This yields a phosphate buffer at approximately pH 7.2.
+
+### 6.2 Test Medium
+
+Prepare 1 L of test medium as follows:
+
+1. Transfer 10 mL of Stock Solution A to a 1 L volumetric flask
+2. Add 10--30 mL of 0.5 mol/L NaClO~3~ (see note below on
+   concentration selection)
+3. Add 0.198 g of (NH~4~)~2~SO~4~
+4. If a carbon source is needed (e.g., when testing biosolids with high
+   nitrate), add 10 mL of 5 mmol/L NaHCO~3~
+5. Dilute to 1 L with distilled water
+6. Verify that the pH is approximately 7.2; adjust if necessary
+
+The final test medium contains approximately 1 mmol/L potassium
+phosphate buffer, 5--15 mmol/L sodium chlorate, and 1.5 mmol/L
+ammonium sulfate.
+
+::: {.callout-note}
+The sodium chlorate concentration should be sufficient to inhibit
+biological nitrite oxidation without negatively affecting ammonium
+oxidation. If the appropriate concentration for your soil type is
+unknown, run a preliminary trial at 5, 10, and 15 mmol/L NaClO~3~ to
+identify the optimal level.
+:::
+
+### 6.3 Preparing the 4 M KCl Stop Solution
+
+Dissolve 298.2 g KCl in distilled water and bring to 1 L in a
+volumetric flask. This solution is used to halt ammonium oxidation at
+each sampling time.
+
+### 6.4 Soil Moisture Determination
+
+Determine the gravimetric moisture content of the soil per
+[SOP-L55](SOP-L55-soil-moisture.qmd) (dry at 105 C, 24 h). This value
+is needed to calculate the volume of water in the initial soil sample
+and to express results on a dry-mass basis.
+
+### 6.5 Setting Up the Incubation
+
+1. Weigh approximately 25 g of field-moist soil into each of at least
+   three replicate 250 mL Erlenmeyer flasks
+2. Calculate the volume of water already present in the soil:
+
+$$
+V_{\text{water}} = M_{\text{soil}} \times \theta_g
+$$
+
+where $M_{\text{soil}}$ = mass of moist soil (g) and $\theta_g$ =
+gravimetric moisture content (g water / g dry soil).
+
+3. Calculate the volume of test medium to add:
+
+$$
+V_{\text{medium}} = V_{\text{total}} - V_{\text{water}}
+$$
+
+where $V_{\text{total}}$ = desired total liquid volume (typically
+100 mL).
+
+4. Add the calculated volume of test medium to each flask
+5. Place the flasks upright on the orbital shaking incubator set to
+   25 +/- 2 C and 175 rpm (sufficient to keep solids suspended)
+
+::: {.callout-important}
+If testing chemical substances, dissolve them in the phosphate buffer
+and add to the test medium before diluting to 1 L. For substances with
+low water solubility, use mechanical dispersion or a low-toxicity
+vehicle (organic solvent, emulsifier). If a vehicle is used, include an
+additional control to assess its effect on ammonium oxidation.
+:::
+
+### 6.6 Sampling the Slurry
+
+1. At 2 h and 6 h after the start of incubation, shake each flask well
+   to resuspend solids and withdraw a 2 mL aliquot of the slurry.
+   Ensure the ratio of solution to soil is consistent across all
+   samples.
+2. Dispense the 2 mL aliquot into a test tube
+3. Immediately add 2 mL of 4 M KCl to stop ammonium oxidation
+4. Centrifuge at 3,000 x g for 2 minutes, or filter through
+   high-speed filter paper
+5. Transfer the clear supernatant or filtrate to a clean, labeled tube
+
+### 6.7 Nitrite Analysis
+
+Analyze the extracts for NO~2~^-^-N using a suitable colorimetric
+method (e.g., ISO 14256-2; diazotization with sulfanilamide and
+N-(1-naphthyl)ethylenediamine). Extracts may be stored at 4--8 C but
+must be analyzed within 24 hours.
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Calculations
+
+**Potential ammonium oxidation rate:**
+
+$$
+\text{Rate} = \frac{[\text{NO}_2^{-}\text{-N}]_{6h} - [\text{NO}_2^{-}\text{-N}]_{2h}}{\Delta t \times M_{\text{dry}}} \times V_{\text{total}}
+$$
+
+where the NO~2~^-^-N concentrations are in ug/mL (= mg/L), $\Delta t$
+= time interval (4 h), $M_{\text{dry}}$ = dry mass of soil (g), and
+$V_{\text{total}}$ = total liquid volume in the flask (mL). Report
+results as ng NO~2~^-^-N per g dry soil per hour.
+
+**Inhibition (%) by a test chemical:**
+
+$$
+\text{Inhibition} \; (\%) = \frac{R_{\text{control}} - R_{\text{treatment}}}{R_{\text{control}}} \times 100
+$$
+
+where $R$ = ammonium oxidation rate.
+
+**Toxicity assessment for polluted soil mixtures:**
+
+When mixing polluted and unpolluted (reference) soils, the polluted
+soil is considered toxic if:
+
+$$
+A_m + s_m < 0.9 \times \frac{A_c + A_p}{2}
+$$
+
+where $A_m$ = mean activity in the mixture, $s_m$ = standard deviation
+in the mixture, $A_c$ = mean activity in the control soil, and $A_p$ =
+mean activity in the polluted soil (each tested separately). This
+threshold applies with a minimum of four replicates.
+
+### 7.2 QC Requirements
+
+- Use a minimum of three replicates per treatment
+- Four replicates are required when applying the toxicity assessment
+  equation above
+- Include a negative control (soil with no ammonium addition) and a
+  positive control (reference soil with known nitrification activity)
+  in each batch
+- Verify that ammonium oxidation is linear between the 2 h and 6 h
+  sampling points. If non-linearity is suspected, add sampling at 0 h
+  and 4 h to characterize the time course.
+- Blank controls (test medium without soil) should show no significant
+  nitrite accumulation
+- Report the coefficient of variation among replicates. A CV greater
+  than 15% suggests sampling inconsistency or soil heterogeneity;
+  consider additional replicates.
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Soil slurries (non-hazardous) | Drain liquid; dispose of soil in standard trash |
+| KCl extracts                  | Drain with copious water                 |
+| NaClO~3~-containing solutions | Collect in oxidizer waste; EH&S pickup. Do not mix with organic waste. |
+| Used filter paper and tubes   | Standard trash (if non-hazardous soil)   |
+
+
+## 9. References
+
+- ISO 15685:2012. *Soil quality -- Determination of potential
+  nitrification and inhibition of nitrification -- Rapid test by
+  ammonium oxidation*. International Organization for Standardization,
+  Geneva.
+- ISO 14256-2. *Soil quality -- Determination of nitrate, nitrite and
+  ammonium in field-moist soils by extraction with potassium chloride
+  solution -- Part 2: Automated method with segmented flow analysis*.
+- ISO 11465. *Soil quality -- Determination of dry matter and water
+  content on a mass basis -- Gravimetric method*.
+- Hart, S.C., Stark, J.M., Davidson, E.A., & Firestone, M.K. (1994).
+  Nitrogen mineralization, immobilization, and nitrification. In:
+  Weaver, R.W. et al. (Eds.), *Methods of Soil Analysis, Part 2:
+  Microbiological and Biochemical Properties*. SSSA Book Series No. 5.
+  pp. 985--1018.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing the nitrification potential assay independently,
+personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   training
+3. Review the SDS for sodium chlorate
+4. Complete [SOP-L55 Soil Moisture](SOP-L55-soil-moisture.qmd) training
+5. Observe a trained operator perform the full assay from slurry setup
+   through nitrite analysis
+6. Perform the assay under supervision with acceptable replicate
+   precision (CV less than 15%)
+7. Be signed off by the PI or lab manager
+
+
+## Appendix A: Example Calculation {.appendix}
+
+```{r}
+#| label: nitrification-potential-calc
+#| echo: true
+#| eval: false
+
+# Nitrification potential calculation per ISO 15685
+
+# Input data
+no2_2h_mg_L <- 0.15       # NO2-N at 2 h (mg/L in the extract)
+no2_6h_mg_L <- 0.95       # NO2-N at 6 h (mg/L in the extract)
+delta_t_h <- 4             # Time interval (h)
+soil_moist_g <- 25.0       # Mass of field-moist soil (g)
+theta_g <- 0.22            # Gravimetric moisture (g water / g dry soil)
+V_total_mL <- 100          # Total liquid volume in the flask (mL)
+
+# Dry mass of soil
+M_dry_g <- soil_moist_g / (1 + theta_g)
+
+# Potential ammonium oxidation rate (ng NO2-N / g dry soil / h)
+# Convert mg/L to ug/mL (same units), then multiply by V_total to get
+# total ug in the flask, divide by dry mass and time, convert to ng.
+rate_ng_per_g_per_h <- ((no2_6h_mg_L - no2_2h_mg_L) *
+                          V_total_mL / (delta_t_h * M_dry_g)) * 1000
+
+cat(sprintf("Dry soil mass:            %.2f g\n", M_dry_g))
+cat(sprintf("Delta NO2-N:              %.2f mg/L\n",
+            no2_6h_mg_L - no2_2h_mg_L))
+cat(sprintf("Nitrification potential:  %.1f ng NO2-N / g dry soil / h\n",
+            rate_ng_per_g_per_h))
+```
+
+
+## Appendix B: Reagent Preparation Quick Reference {.appendix}
+
+| Reagent                       | Preparation                               |
+|:------------------------------|:------------------------------------------|
+| 0.2 mol/L KH~2~PO~4~        | Dissolve 27.22 g in 1 L distilled water   |
+| 0.2 mol/L K~2~HPO~4~        | Dissolve 34.84 g in 1 L distilled water   |
+| Stock Solution A              | 28 mL KH~2~PO~4~ + 72 mL K~2~HPO~4~ + 100 mL water |
+| 0.5 mol/L NaClO~3~          | Dissolve 53.23 g in 1 L distilled water   |
+| 4 mol/L KCl                  | Dissolve 298.2 g in 1 L distilled water   |
+| 5 mmol/L NaHCO~3~           | Dissolve 0.420 g in 1 L distilled water   |
+| Test medium (1 L)            | 10 mL Stock A + 10--30 mL NaClO~3~ + 0.198 g (NH~4~)~2~SO~4~ + water to 1 L |
+
+
+## Appendix C: Troubleshooting {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| No nitrite accumulation       | Soil has no active nitrifying population; NaClO~3~ concentration too high | Test a reference soil in parallel; reduce NaClO~3~ to 5 mmol/L |
+| Non-linear NO~2~^-^ accumulation | Nitrifier population growing during incubation; substrate depletion | Add intermediate time points (0 h, 4 h); use only the linear portion of the curve |
+| High variability among replicates | Heterogeneous soil; inconsistent slurry sampling | Sieve and mix soil thoroughly; ensure slurry is well-shaken before each aliquot |
+| Nitrite detected in controls (no NH~4~^+^) | Background nitrification from soil organic N | Note in results; subtract control values from treatment values |
+| NaClO~3~ appears to inhibit ammonium oxidation | Concentration too high for this soil | Run a NaClO~3~ dose-response trial (5, 10, 15 mmol/L) |

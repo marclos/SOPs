@@ -1,0 +1,380 @@
+---
+# =============================================================================
+# SOP-L39: Echo Labs Revolve Microscope
+# =============================================================================
+title: "Echo Labs Revolve Microscope"
+sop-number: "SOP-L39"
+author:
+  - name: "Dmaia Curry"
+    affiliation: "EA Program, Pomona College"
+  - name: "Aparna Chintapalli"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2016-08-01"
+    author: "Dmaia Curry, Aparna Chintapalli"
+    changes: "Initial release"
+  - version: "0.1"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to Quarto"
+---
+
+## 1. Purpose
+
+This procedure describes the operation, image capture, and maintenance
+of the Echo Labs Revolve microscope. The Revolve is a hybrid instrument
+that combines an upright microscope (for prepared glass slides) and an
+inverted microscope (for live samples in dishes) in a single rotating
+platform, with an iPad retina display replacing the traditional
+eyepiece. The microscope supports bright field, phase contrast,
+fluorescence, and dark field imaging modes. It represents a substantial
+investment by the EA Program and requires careful handling.
+
+
+## 2. Scope
+
+- **Applies to:** All use of the Echo Labs Revolve microscope in the
+  EA Program laboratory, including bright field, phase contrast,
+  fluorescence, and dark field modes in both upright and inverted
+  configurations
+- **Does not apply to:** Electron microscopy, confocal microscopy,
+  dissecting/stereo microscopes, or other optical microscopes not
+  described here
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, authorize instrument access    |
+| Lab Manager       | Schedule maintenance, manage software updates, maintain optics |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete training (including video modules) before independent use |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Optical:** The fluorescence LED produces intense illumination.
+  Avoid looking directly into the excitation light source. The iPad
+  display eliminates the need to view through an eyepiece, reducing
+  direct optical exposure, but reflected excitation light can still
+  cause eye strain.
+- **Electrical:** Keep liquids away from the iPad and the microscope
+  base. If immersion oil or sample fluid contacts the electronics,
+  disconnect power immediately and notify the lab manager.
+- **Physical:** The microscope is heavy. Use both hands when rotating
+  the platform between upright and inverted modes. Objective lenses and
+  condensers are precision optics; handle with care.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses (especially during fluorescence mode)
+- [ ] Lab coat
+- [ ] Nitrile gloves (when handling biological specimens or immersion
+  oil)
+
+### Emergency Procedures
+
+If a biological spill occurs on or near the microscope, clean and
+disinfect per [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd).
+If immersion oil contacts the iPad or electronics, power off
+immediately and contact the lab manager before attempting cleanup.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Echo Labs Revolve microscope  | With iPad retina display                  |
+| Objective lenses              | 4x, 10x, 40x, 100x (oil immersion)       |
+| Low-magnification condenser   | For 4x through 60x objectives             |
+| High-magnification condenser  | For 100x oil immersion objective           |
+| Fluorescence LED module       | Excitation wavelength TBD nm               |
+| Phase contrast rings          | PhL, Ph1, Ph2, Ph3 (matched to objectives) |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Microscope slides             | Standard 25 x 75 mm                       |
+| Cover slips                   | No. 1.5 thickness (0.17 mm)               |
+| Immersion oil (Type A or NF)  | For 100x objective only                   |
+| Lens cleaning solution        | Optical-grade; for objectives and condenser |
+| Lens cleaning tissue (lint-free) | Do not use Kimwipes on coated optics   |
+| Compressed gas duster         | For removing dust from the optical path   |
+| Flash drive or cloud account  | For exporting captured images              |
+
+
+## 6. Procedure
+
+### 6.1 Microscopy Modes Overview
+
+The Revolve supports four imaging modes. Select the mode appropriate
+for the specimen and analysis:
+
+| Mode            | Best For                                   | Staining Required? |
+|:----------------|:-------------------------------------------|:-------------------|
+| Bright field    | Stained specimens, gross morphology        | Recommended        |
+| Phase contrast  | Unstained transparent specimens, live cells | No                |
+| Fluorescence    | Specimens with fluorescent labels or autofluorescent pigments (e.g., cyanobacteria) | Fluorophore-dependent |
+| Dark field      | Fine structures, edges, unstained specimens | No                |
+
+### 6.2 Starting the Microscope
+
+1. Press the power button on the top left corner of the iPad, or press
+   the Home button
+2. Swipe to unlock. The overhead microscope light should turn on and a
+   live image should appear on the screen.
+3. If the light does not turn on or no image appears, open the
+   **Echo Labs** app from the home screen
+4. If the screen reads "Light Off," tap **BF** at the top of the screen
+   to enable bright field illumination
+5. Load the prepared slide into the stage clips (upright mode) or place
+   the culture dish on the stage (inverted mode)
+
+### 6.3 Rotating Between Upright and Inverted Mode
+
+::: {.callout-important}
+This is the most mechanically delicate operation on the Revolve. Follow
+each step carefully to avoid damaging the objectives or condenser.
+:::
+
+1. Rotate the nosepiece to move all objective lenses out of the optical
+   path
+2. Unscrew the stage and carefully lift it away from the microscope
+   body without contacting the condenser
+3. Push the iPad flat so it is out of the rotation path
+4. Press the release button on the upper back of the microscope body
+5. Rotate the microscope body 180 degrees counterclockwise until it
+   clicks into place
+6. Reinstall the stage and tighten the mounting knob until secure
+7. Rotate the desired objective lens back into position and realign the
+   iPad
+
+### 6.4 Using Bright Field Mode
+
+1. Confirm that **BF** is selected on the screen
+2. Place the slide or specimen on the stage
+3. Start with the lowest magnification objective (4x) to locate the
+   region of interest
+4. Use the outer coarse focus knob (to the right of the iPad) to bring
+   the specimen into approximate focus, then use the inner fine focus
+   knob to sharpen the image
+5. Use the stage translation knobs to move the slide: the lower knob
+   moves the stage left/right, the upper knob moves it toward/away from
+   you
+6. Increase magnification by rotating the nosepiece to the next
+   objective (10x, 40x)
+7. Adjust brightness, contrast, and color balance using the sliding
+   controls on the bottom right of the screen. Adjust the physical
+   light intensity using the flat knob on the bottom right of the
+   microscope body.
+
+### 6.5 Using Phase Contrast Mode
+
+Phase contrast converts differences in refractive index into
+differences in brightness, allowing transparent, unstained specimens to
+be visualized.
+
+1. Set up the specimen in bright field mode first and bring it into
+   focus
+2. Select the phase contrast ring that matches the current objective:
+
+| Objective | Phase Ring |
+|:----------|:-----------|
+| 4x        | PhL        |
+| 10x       | Ph1        |
+| 40x       | Ph2        |
+| 100x      | Ph3        |
+
+3. Tap the **PH** mode selector on the screen (if available) or
+   manually rotate the condenser turret to the matching phase ring
+4. Fine-tune focus and centering as needed
+
+::: {.callout-note}
+Phase contrast images may exhibit a bright "halo" around large objects
+(positive phase contrast) or a dark edge (negative phase contrast).
+This is a normal optical artifact caused by diffracted light passing
+through the phase ring. A "shade-off" effect, in which homogeneous
+regions appear at the same intensity as the background, is also
+expected.
+:::
+
+### 6.6 Using Fluorescence Mode
+
+1. Tap **FL** at the top of the screen to switch to fluorescence mode
+2. The fluorescence LED will illuminate automatically
+3. Place the specimen on the stage and focus using the same procedure
+   as bright field
+4. Minimize illumination time to reduce photobleaching. Locate the
+   region of interest in bright field first, then switch to fluorescence
+   only for image capture.
+
+::: {.callout-warning}
+Fluorophores lose their ability to fluoresce over time when illuminated
+(photobleaching). Work quickly, minimize unnecessary excitation, and
+consider using photoprotective mounting media when possible.
+:::
+
+### 6.7 Using Dark Field Mode
+
+*Section TBD. Consult the lab manager for dark field setup procedures
+until this section is completed.*
+
+### 6.8 Capturing and Exporting Images
+
+1. To capture an image, tap the white camera shutter button on the left
+   side of the screen
+2. Enable the **anti-shake** feature (hand icon below the shutter
+   button; it should turn orange when active) to reduce vibration blur
+3. To review captured images, tap the gallery icon (square) at the top
+   left of the screen. Tap **Done** to return to the live view.
+4. Export images via a flash drive connected to the iPad, AirDrop, or
+   the cloud sharing option in the Echo Labs app
+5. Use a consistent file-naming convention:
+   `YYYY-MM-DD_SampleID_Objective_Mode.jpg`
+
+### 6.9 Using Oil Immersion (100x Objective)
+
+1. Focus the specimen at 40x first
+2. Rotate the nosepiece to an empty position (no objective in the light
+   path)
+3. Place a single small drop of immersion oil directly on the cover
+   slip at the point of illumination
+4. Rotate the 100x objective into position. The lens front element
+   should contact the oil without trapping an air bubble.
+5. Focus carefully using the fine focus knob only
+6. After use, immediately clean the 100x objective with lens cleaning
+   solution and lint-free tissue. Never allow oil to dry on the lens.
+7. Clean the slide or dispose of it as appropriate
+
+### 6.10 Replacing the Condenser
+
+The Revolve has two condensers: one for low magnification (4x through
+60x) and one for 100x oil immersion. Condenser swaps require care
+to avoid contaminating or scratching the optics. Consult the lab
+manager before performing this procedure for the first time.
+
+*Detailed replacement steps TBD; to be documented with the lab manager.*
+
+### 6.11 Shutdown and Daily Maintenance
+
+1. Remove the specimen from the stage
+2. Rotate the nosepiece to the lowest-magnification objective (4x) or
+   to an empty position
+3. If oil immersion was used, clean the 100x objective immediately
+4. Wipe any sample residue or oil from the stage with a Kimwipe
+   dampened with lens cleaning solution
+5. Close the Echo Labs app on the iPad
+6. Press and hold the power button to turn off the iPad
+7. Cover the microscope with the dust cover
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Optics Cleaning
+
+If specks or smudges appear in captured images that do not move when
+the specimen is translated, the optical path may need cleaning:
+
+1. Do not attempt to clean internal optics without the lab manager
+   present
+2. For objective lens surfaces, apply a small amount of lens cleaning
+   solution to lint-free tissue and gently wipe in a circular motion
+   from center to edge
+3. For dust on internal surfaces, remove the arm and use short bursts
+   of compressed gas duster. Do not allow the compressed air canister
+   to become cold, as it will deposit a film on the optics.
+4. For persistent contamination, contact Echo Labs support or the lab
+   manager
+
+### 7.2 Image Quality Checklist
+
+Before accepting an image for publication or analysis, verify:
+
+- Focus is sharp across the region of interest
+- Illumination is even (no hot spots or vignetting)
+- Scale bar or magnification metadata is recorded
+- Anti-shake was enabled during capture
+- In fluorescence mode, confirm that photobleaching has not
+  significantly degraded the signal
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used immersion oil tissues    | Standard trash                           |
+| Used microscope slides (non-hazardous) | Broken-glass box if glass; standard trash if plastic |
+| Biological specimen waste     | Biohazard bag if applicable; autoclave before disposal |
+| Spent lens cleaning solution  | Standard trash (small volumes on tissues) |
+
+
+## 9. References
+
+- Echo Labs. *Revolve Microscope: User Guide*. Echo Labs, San Diego, CA.
+- Murphy, D.B. & Davidson, M.W. (2012). *Fundamentals of Light
+  Microscopy and Electronic Imaging*. 2nd ed. Wiley.
+
+Training video: [Echo Labs Revolve Introduction](https://www.youtube.com/watch?v=IcubmIsxa7w)
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using the Revolve microscope independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   training
+3. Watch the Echo Labs training video linked in Section 9
+4. Observe a trained operator demonstrate upright/inverted rotation,
+   all four imaging modes, and oil immersion setup and cleanup
+5. Demonstrate proper startup, focusing, image capture, and shutdown
+   under supervision
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Microscope Anatomy Quick Reference {.appendix}
+
+| Component               | Function                                    |
+|:-------------------------|:--------------------------------------------|
+| iPad display (eyepiece replacement) | High-resolution live view and image capture |
+| Arm                      | Connects optics to base; removable for optical path cleaning |
+| Stage                    | Flat platform for specimens; translatable via X/Y knobs |
+| Nosepiece (turret)       | Holds and rotates objective lenses          |
+| Objective lenses         | 4x, 10x, 40x, 100x (oil); determine magnification |
+| Condenser                | Focuses illumination light onto the specimen |
+| Coarse/fine focus knobs  | Outer knob = coarse focus; inner knob = fine focus |
+| Light intensity knob     | Physical control on the base for illumination brightness |
+| Phase contrast turret    | PhL, Ph1, Ph2, Ph3 rings matched to objectives |
+| Fluorescence LED         | Excitation source for fluorescence imaging  |
+| Platform release button  | On the upper back; allows 180-degree rotation between upright and inverted modes |
+
+
+## Appendix B: Sections Requiring Completion {.appendix}
+
+The following sections from the original SOP were incomplete or marked
+as placeholders. They should be completed with input from the lab
+manager:
+
+| Section                       | Status          | Notes                          |
+|:------------------------------|:----------------|:-------------------------------|
+| Fluorescence LED wavelength   | TBD             | Record the excitation wavelength from the module specifications |
+| Dark field mode procedure     | TBD             | Document setup and use         |
+| Condenser replacement steps   | TBD             | Document with the lab manager  |
+| Specific catalog numbers for consumables | TBD  | Add slide, cover slip, oil, lens cleaner part numbers |

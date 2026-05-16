@@ -1,0 +1,325 @@
+---
+# =============================================================================
+# SOP-L59: Soil Nitrate Quick Test (Test Strip Method)
+# =============================================================================
+title: "Soil Nitrate Quick Test -- Test Strip Method"
+sop-number: "SOP-L59"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2016-08-11"
+    author: "Researcher Name"
+    changes: "Initial release"
+  - version: "0.1"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Converted from LaTeX to Quarto"
+---
+
+## 1. Purpose
+
+This procedure describes a rapid, semi-quantitative field or laboratory
+method for estimating soil nitrate (NO~3~^-^) concentration using
+colorimetric test strips in a calcium chloride (CaCl~2~) extracting
+solution [@hartz2010; @bronikowski2022]. The method is useful as a
+screening tool for assessing soil nitrogen status, guiding fertilizer
+decisions, and identifying spatial patterns in nitrate availability
+across a site [@magdoff1984]. It is not a substitute for the
+quantitative KCl extraction and colorimetric analysis described in
+[SOP-L58](SOP-L58-nitrate-ammonium-kcl.qmd) [@mulvaney1996], but
+provides rapid, low-cost results that can be obtained in the field or
+with minimal laboratory equipment.
+
+
+## 2. Scope
+
+- **Applies to:** Rapid estimation of soil nitrate in field-moist or
+  air-dried mineral soils from all EA Program sites; on-site field
+  screening during sampling campaigns
+- **Does not apply to:** Quantitative reporting of soil nitrate for
+  publication (use [SOP-L58](SOP-L58-nitrate-ammonium-kcl.qmd));
+  ammonium determination (test strips do not measure NH~4~^+^); water
+  sample nitrate (use [SOP-L45 Hach Colorimetric](SOP-L45-hach-colorimetric.qmd))
+- **Location:** Field sites or EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Field Lead        | Coordinate field testing logistics           |
+| Trained Personnel | Perform tests, record and report results    |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Calcium chloride (CaCl~2~) is a mild irritant to skin
+  and eyes. The extracting solution is dilute (approximately 0.01 M)
+  and poses minimal risk.
+- **Biological:** Soil may contain pathogens. Wash hands after handling.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Safety glasses
+- [ ] Closed-toed shoes (if testing in the field)
+
+### Emergency Procedures
+
+For CaCl~2~ solution contact with eyes, flush with water for
+15 minutes. Refer to
+[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Graduated centrifuge tubes (50 mL, e.g., Falcon tubes) | With volume markings at 30 and 40 mL |
+| 1-gallon jug or carboy        | For preparing CaCl~2~ extracting solution |
+| Soil probe or auger           | For field sampling                        |
+| Bucket                        | For compositing and mixing field samples  |
+| Timer or watch                | For tracking settling and reading times   |
+| Field notebook                | For recording results                     |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Nitrate test strips           | Semi-quantitative colorimetric strips (e.g., Hach, EM Quant, or equivalent) |
+| Calcium chloride (CaCl~2~), anhydrous or dihydrate | For preparing extracting solution |
+| Distilled or deionized water  | For preparing extracting solution         |
+| Color comparison chart        | Provided with test strips                 |
+
+
+## 6. Procedure
+
+### 6.1 Preparing the Extracting Solution
+
+1. Add 6 g (approximately 1 teaspoon) of anhydrous CaCl~2~ to 1 gallon
+   (3.78 L) of distilled water
+2. Cap and shake until dissolved
+3. This produces approximately 0.014 M CaCl~2~, sufficient for
+   approximately 125 tests
+4. Label the container with the reagent name, concentration, and
+   preparation date
+5. Store at room temperature. The solution is stable indefinitely.
+
+::: {.callout-note}
+CaCl~2~ is used instead of plain water because the calcium ions
+displace nitrate from soil exchange sites, giving a more complete
+extraction [@houba1986; @gelderman2015]. The low concentration avoids
+interference with the test strip chemistry.
+:::
+
+### 6.2 Collecting the Soil Sample
+
+1. Collect soil from the target depth (typically 0--15 cm or 0--30 cm)
+   using a probe or auger per
+   [SOP-F56 Soil Sampling](../field_sops/SOP-F56-soil-sampling.qmd)
+2. Composite multiple subsamples if a plot-level estimate is desired
+3. Homogenize the soil in a bucket by hand-mixing
+4. Remove visible roots and stones
+
+### 6.3 Performing the Quick Test
+
+1. Fill a graduated centrifuge tube with 30 mL of the CaCl~2~
+   extracting solution
+2. Add soil to the tube until the total volume reaches the 40 mL mark
+   (approximately 10 mL of soil displaced)
+3. Cap the tube securely
+4. Shake vigorously until all soil is well mixed (approximately
+   30 seconds)
+5. Allow the tube to stand upright for the soil particles to settle.
+   Wait at least 10 minutes but no more than 1 hour.
+6. Dip a nitrate test strip into the clearer supernatant near the top
+   of the tube for 1 second. Do not stir up settled soil.
+7. Remove the strip and hold horizontally
+8. Compare the strip to the manufacturer's color chart at both
+   30 seconds and 60 seconds after dipping
+9. Record the nitrate reading (ppm NO~3~^-^-N or ppm NO~3~^-^,
+   depending on the strip brand) and the reading time used
+
+::: {.callout-important}
+Read the strip at the times specified by the manufacturer. Reading too
+early or too late gives inaccurate results. If the strip brand reports
+in ppm NO~3~^-^, divide by 4.43 to convert to ppm NO~3~^-^-N.
+:::
+
+### 6.4 Applying the Soil Texture Correction Factor
+
+The test strip reads the nitrate concentration in the extract solution,
+not in the soil. To estimate the nitrate concentration in the soil
+itself, apply a correction factor based on soil texture and moisture
+status [@gelderman2015]:
+
+| Texture | Moist Soil Factor | Dry Soil Factor |
+|:--------|:-----------------:|:---------------:|
+| Sand    | 2.3               | 2.6             |
+| Loam    | 2.0               | 2.5             |
+| Clay    | 1.7               | 2.2             |
+
+$$
+\text{Soil NO}_3^{-}\text{-N (ppm)} = \text{Strip reading (ppm)} \times \text{Correction factor}
+$$
+
+Determine the soil texture using
+[SOP-F58 Texture by Feel](../field_sops/SOP-F58-soil-texture-by-feel.qmd)
+or [SOP-L56 Hydrometer](SOP-L56-texture-hydrometer.qmd).
+
+### 6.5 Recording Results
+
+Record the following in the field notebook or data sheet for each test:
+
+- Date, time, site, plot ID
+- Sampling depth (cm)
+- Soil condition (moist or dry)
+- Estimated texture (sand, loam, or clay)
+- Strip reading (ppm) and reading time (30 s or 60 s)
+- Correction factor applied
+- Corrected soil NO~3~^-^-N (ppm)
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Limitations
+
+The test strip method is semi-quantitative. Results should be
+interpreted as approximate categories (low, moderate, high) rather than
+precise concentrations [@hartz2010; @schmidhalter2005]. Key limitations
+include:
+
+- Strip resolution is typically 10--25 ppm increments; fine differences
+  are not detectable
+- Color matching is subjective (ambient lighting affects perception)
+- The method does not measure ammonium (NH~4~^+^); total inorganic N
+  requires [SOP-L58](SOP-L58-nitrate-ammonium-kcl.qmd)
+- Soil moisture, organic matter, and temperature all influence
+  extraction efficiency
+
+### 7.2 Interpretation Guide
+
+| Corrected Soil NO~3~^-^-N (ppm) | Interpretation      | Agronomic Implication          |
+|:---------------------------------|:--------------------|:-------------------------------|
+| Less than 10                     | Low                 | N likely limiting; fertilization may be warranted |
+| 10 -- 25                         | Moderate            | Adequate for many crops        |
+| 25 -- 50                         | High                | Sufficient N; reduce or defer applications |
+| Greater than 50                  | Very high           | Excess N; potential leaching risk |
+
+*These thresholds are general guidelines adapted from @magdoff1984 and
+@hartz2010. Consult crop-specific guidelines and local extension
+recommendations.*
+
+### 7.3 QC Requirements
+
+- Run a blank (CaCl~2~ solution only, no soil) at the start of each
+  testing session. The strip should read 0 ppm or below the lowest
+  detection increment.
+- Run a duplicate test on at least 1 in 10 samples. Duplicates should
+  agree within one color-chart increment.
+- Verify test strip expiration date before use. Expired strips may give
+  unreliable color development.
+- For critical decisions, confirm quick-test results with the
+  quantitative KCl extraction method
+  ([SOP-L58](SOP-L58-nitrate-ammonium-kcl.qmd))
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Soil slurry waste             | Return to field site or standard trash   |
+| CaCl~2~ solution              | Drain (non-hazardous at this concentration) |
+| Used test strips              | Standard trash                           |
+| Used centrifuge tubes         | Rinse and reuse, or standard trash       |
+
+
+## 9. References
+
+- Bronikowski, A. & Thomason, W. (2022). Use of quick tests for
+  determination of soil nitrate. *Virginia Cooperative Extension
+  Publication* CSES-179.
+- Gelderman, R.H. & Beegle, D. (2015). Nitrate-nitrogen. In: Brown,
+  J.R. (Ed.), *Recommended Chemical Soil Test Procedures for the North
+  Central Region*. NCR Publication No. 221 (revised). pp. 17--20.
+- Hartz, T.K. (2010). Efficient nitrogen use in California vegetable
+  production. *Western Nutrient Management Conference Proceedings*,
+  Vol. 9, pp. 25--30.
+- Houba, V.J.G., Novozamsky, I., Huybregts, A.W.M., & van der Lee,
+  J.J. (1986). Comparison of soil extractions by 0.01 M CaCl~2~, by
+  EUF and by some conventional extraction procedures. *Plant and Soil*,
+  96, 433--437.
+- Magdoff, F.R., Ross, D., & Amadon, J. (1984). A soil test for
+  nitrogen availability to corn. *Soil Science Society of America
+  Journal*, 48, 1301--1304.
+- Mulvaney, R.L. (1996). Nitrogen: inorganic forms. In: Sparks, D.L.
+  (Ed.), *Methods of Soil Analysis, Part 3: Chemical Methods*. SSSA
+  Book Series No. 5. pp. 1123--1184.
+- Schmidhalter, U. (2005). Development of a quick on-farm test to
+  determine nitrate levels in soil. *Journal of Plant Nutrition and
+  Soil Science*, 168, 432--438.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing the nitrate quick test independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-F01 Field Safety](../field_sops/SOP-F01-field-safety.qmd)
+   training (if testing in the field) or
+   [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd) (if in
+   the lab)
+3. Prepare the CaCl~2~ extracting solution under supervision
+4. Perform at least three practice tests with acceptable blank and
+   duplicate results
+5. Demonstrate correct use of the color chart and correction factor
+6. Be signed off by the PI, field lead, or lab manager
+
+
+## Appendix A: Example Calculation {.appendix}
+
+```{r}
+#| label: nitrate-quick-test-calc
+#| echo: true
+#| eval: false
+
+# Nitrate quick test correction example
+
+strip_reading_ppm <- 15       # ppm NO3-N from test strip
+soil_texture <- "loam"
+soil_condition <- "moist"     # "moist" or "dry"
+
+# Correction factors
+factors <- data.frame(
+  texture = c("sand", "loam", "clay"),
+  moist = c(2.3, 2.0, 1.7),
+  dry = c(2.6, 2.5, 2.2)
+)
+
+cf <- factors[factors$texture == soil_texture, soil_condition]
+
+corrected_ppm <- strip_reading_ppm * cf
+
+cat(sprintf("Strip reading:     %d ppm NO3-N\n", strip_reading_ppm))
+cat(sprintf("Texture:           %s\n", soil_texture))
+cat(sprintf("Condition:         %s\n", soil_condition))
+cat(sprintf("Correction factor: %.1f\n", cf))
+cat(sprintf("Corrected value:   %.0f ppm NO3-N\n", corrected_ppm))
+```

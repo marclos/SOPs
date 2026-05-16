@@ -1,0 +1,371 @@
+---
+# =============================================================================
+# SOP-L68: Compost Maturity -- Solvita CO2/NH3 Test
+# =============================================================================
+title: "Compost Maturity -- Solvita CO~2~/NH~3~ Test"
+sop-number: "SOP-L68"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the determination of compost maturity and
+stability using the Solvita Compost Maturity Test (Woods End
+Laboratories). The test simultaneously measures carbon dioxide (CO~2~)
+and ammonia (NH~3~) emissions from a compost sample during a 4-hour
+incubation, providing a dual indicator of biological activity and
+nitrogen stabilization. The intersection of the two readings yields a
+Compost Maturity Index (CMI) that indicates whether compost is immature,
+active, curing, or finished [@vargas2005assessing].
+
+CO~2~ evolution reflects ongoing microbial decomposition of organic
+carbon. NH~3~ volatilization indicates incomplete nitrogen stabilization
+and is associated with odor, phytotoxicity, and high pH. True compost
+maturity is reached when both gases have declined to low levels. Because
+the CO~2~ and NH~3~ cycles do not always track together, the
+dual-measurement approach provides a more reliable maturity assessment
+than either gas alone.
+
+This SOP is distinct from
+[SOP-L63 Solvita CO~2~ Burst](SOP-L63-solvita-co2-burst.qmd), which
+measures rewetted *soil* respiration over 24 hours using only a CO~2~
+paddle.
+
+
+## 2. Scope
+
+- **Applies to:** Assessment of maturity and stability of composted
+  organic materials, including green waste, food waste, biosolids
+  compost, manure compost, and vermicompost
+- **Does not apply to:** Soil respiration measurements (see
+  [SOP-L63](SOP-L63-solvita-co2-burst.qmd)); raw feedstock
+  characterization; long-term (7--28 day) laboratory respirometry;
+  finished potting mixes where compost is a minor component
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Lab Manager       | Maintain Solvita kit inventory, stock gel paddles |
+| Trained Personnel | Perform assay, record and report results    |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Biological:** Compost may contain elevated microbial loads, fungal
+  spores, and trace pathogens. Handle as a potential biohazard. Avoid
+  inhaling dust when opening bags or scooping dry compost.
+- **Chemical:** NH~3~ released from immature compost is an irritant at
+  high concentrations. Work in a well-ventilated area when handling
+  fresh or actively decomposing compost.
+- **Physical:** Minor risk of glass breakage from incubation jars.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Dust mask (recommended when handling dry or dusty compost)
+
+### Emergency Procedures
+
+If compost dust is inhaled and respiratory irritation occurs, move to
+fresh air. For skin contact with compost, wash thoroughly with soap and
+water. Refer to
+[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Solvita Compost Maturity Test kit | Includes CO~2~ and NH~3~ gel paddles, incubation jars, scoop, and color charts |
+| Solvita Digital Color Reader (DCR) | Recommended for quantitative readings; provides numerical color values |
+| Incubation jars (approx. 475 mL) | Glass or polycarbonate; provided with kit |
+| Timer                         | 4-hour countdown                          |
+| Thermometer                   | For recording ambient and sample temperature |
+| Lab notebook or data sheet    | For recording results                     |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Solvita CO~2~ gel paddles     | One per test; store sealed at room temperature in the dark |
+| Solvita NH~3~ gel paddles     | One per test; store sealed at room temperature in the dark |
+| Solvita CMI Calculator spreadsheet | Available from Woods End / solvita.com for precise index calculation |
+
+
+## 6. Procedure
+
+### 6.1 Sample Collection and Preparation
+
+1. Collect a representative compost sample of at least 500 g from the
+   pile or windrow. Sample from the interior of the pile (at least 30 cm
+   below the surface) to avoid surface drying artifacts.
+2. If the compost is very heterogeneous, collect from multiple locations
+   and composite the subsamples
+3. The sample should be at "natural" moisture, not artificially wetted
+   or dried. Compost that has been stored at 4 C should be brought to
+   room temperature (20--25 C) before testing. Allow at least 30
+   minutes.
+4. Gently break up large clumps by hand but do not sieve or grind the
+   compost. The test is designed for material in its as-produced
+   condition.
+
+::: {.callout-important}
+Do not test compost that is above 40 C (i.e., still in the
+thermophilic phase). Elevated temperatures accelerate gas production
+and will give artificially high CO~2~ and NH~3~ readings that do not
+reflect the maturity of the material once cooled.
+:::
+
+### 6.2 Setting Up the Test
+
+1. Fill a clean Solvita incubation jar loosely to the fill line with
+   compost using the supplied scoop. Do not pack or compress the
+   material. The volume should be approximately 150--200 mL.
+2. Remove one CO~2~ gel paddle and one NH~3~ gel paddle from their
+   sealed foil packets
+3. Inspect each paddle: the gel should be uniform in color with no
+   cracks, discoloration, or signs of prior exposure. Discard any
+   compromised paddles.
+4. Insert both paddles into the jar so that the gel faces are exposed to
+   the headspace above the compost surface. The paddles should stand
+   upright and not be buried in the compost.
+5. Seal the jar immediately and securely
+6. Record the jar number, sample ID, compost source, ambient
+   temperature, and start time
+7. Start the 4-hour timer
+
+### 6.3 Incubation
+
+1. Place sealed jars at room temperature (20--25 C) in a location
+   shielded from direct sunlight and drafts
+2. Do not open, move, or disturb jars during the 4-hour incubation
+
+::: {.callout-note}
+The standard incubation time is 4 hours. This is shorter than the
+24-hour incubation used for the Solvita soil CO~2~ burst test
+([SOP-L63](SOP-L63-solvita-co2-burst.qmd)) because compost produces
+gas at much higher rates than soil.
+:::
+
+### 6.4 Reading Results
+
+1. After exactly 4 hours, open the jar and immediately remove both
+   paddles
+2. Read each paddle promptly. Prolonged exposure to ambient air will
+   alter the gel color.
+
+**Using the Solvita Color Charts (visual method):**
+
+3. Compare the CO~2~ paddle to the Solvita CO~2~ color chart. Record
+   the color number (1--8 scale, where 1 = highest CO~2~ / least
+   stable, 8 = lowest CO~2~ / most stable).
+4. Compare the NH~3~ paddle to the Solvita NH~3~ color chart. Record
+   the color number (1--5 scale, where 1 = highest NH~3~ / least
+   mature, 5 = lowest NH~3~ / most mature).
+
+**Using the Solvita Digital Color Reader (DCR, recommended):**
+
+3. Insert the CO~2~ paddle into the DCR and record the numerical
+   reading
+4. Insert the NH~3~ paddle into the DCR and record the numerical
+   reading
+5. The DCR values can be entered into the Solvita CMI Calculator
+   spreadsheet for a more precise Maturity Index
+
+### 6.5 Determining the Compost Maturity Index (CMI)
+
+Use the CO~2~ and NH~3~ color numbers to determine the CMI from the
+Solvita lookup table (printed in the kit manual) or the CMI Calculator
+spreadsheet:
+
+| CMI | Interpretation            | Recommended Action              |
+|:----|:--------------------------|:--------------------------------|
+| 1   | Raw, very immature        | Continue active composting      |
+| 2   | Immature, highly active   | Continue active composting      |
+| 3   | Immature, active          | Continue composting/curing      |
+| 4   | Moderately immature       | Begin curing phase              |
+| 5   | Mid-range maturity        | Continue curing                 |
+| 6   | Moderately mature         | Approaching readiness           |
+| 7   | Mature                    | Ready for most applications     |
+| 8   | Very mature, highly stable | Fully finished compost         |
+
+::: {.callout-tip}
+### Tip
+Most regulatory agencies and compost quality programs consider a CMI of
+6 or above as "mature" and suitable for unrestricted use. A CMI of 7--8
+indicates a fully finished product with minimal phytotoxicity risk. For
+sensitive applications (seed germination, potting mixes), target CMI 7
+or 8.
+:::
+
+### 6.6 Cleanup
+
+1. Dispose of used compost in the designated waste container or return
+   it to the compost pile
+2. Wash incubation jars thoroughly with soap and water; rinse with
+   deionized water and allow to air-dry
+3. Dispose of used gel paddles in standard trash
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 QC Requirements
+
+- Run duplicate tests on at least 10% of samples (two jars from the
+  same homogenized compost). Duplicate CO~2~ readings should agree
+  within 1 color number; NH~3~ readings within 1 color number.
+- Include a blank jar (empty, sealed with both paddles) in each batch
+  to check for ambient CO~2~ and NH~3~ interference. Both paddles
+  should read at or near their maximum (most stable) values.
+- Verify that the compost sample temperature is between 20 and 40 C
+  before testing. Record the temperature.
+- Calibrate the DCR per the manufacturer's instructions before each
+  batch if using the digital reader.
+- Store gel paddles sealed in their foil packets, at room temperature,
+  away from light. Check expiration dates; do not use expired paddles.
+
+### 7.2 Complementary Tests
+
+For a comprehensive compost quality assessment, consider pairing the
+Solvita test with:
+
+| Parameter                     | SOP / Method                              |
+|:------------------------------|:------------------------------------------|
+| pH and electrical conductivity | [SOP-L57](SOP-L57-soil-pH-salinity.qmd) (1:5 compost-water extract) |
+| Moisture content               | [SOP-L55](SOP-L55-soil-moisture.qmd) (105 C, 24 h) |
+| Organic matter (LOI)           | [SOP-L61](SOP-L61-loss-on-ignition.qmd)  |
+| Total C and N (C:N ratio)      | [SOP-L62](SOP-L62-total-carbon.qmd) and elemental analysis |
+| Seed germination bioassay      | *TBD*                                     |
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used compost                  | Return to compost pile or standard trash  |
+| Used gel paddles              | Standard trash                           |
+| Jar wash water                | Drain                                    |
+
+
+## 9. References
+
+- Woods End Laboratories. *Solvita Compost Maturity Test: User's
+  Guide*. Woods End Laboratories, Mount Vernon, ME.
+- Brinton, W.F. (2000). *Compost Quality Standards and Guidelines*.
+  Woods End Research Laboratory Report.
+- USDA and US Composting Council. (2001). *Test Methods for the
+  Examination of Composting and Compost (TMECC)*. Section 05.08-A:
+  Respirometry -- Solvita Method.
+- CCME. (2005). *Guidelines for Compost Quality*. Canadian Council of
+  Ministers of the Environment, PN 1340.
+- Thompson, W.H., Leege, P.B., Millner, P.D., & Watson, M.E. (Eds.).
+  (2002). *Test Methods for the Examination of Composting and Compost
+  (TMECC)*. US Composting Council.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing the Solvita compost maturity test independently,
+personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   training
+3. Review the Solvita Compost Maturity Test User's Guide (included in
+   the kit)
+4. Observe a trained operator perform the full procedure from sample
+   collection through CMI determination
+5. Perform at least one test under supervision with acceptable duplicate
+   precision (within 1 color number)
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Solvita Compost Maturity Index Lookup Table {.appendix}
+
+The following table reproduces the general structure of the Solvita CMI
+lookup. Consult the kit manual or CMI Calculator spreadsheet for the
+official version.
+
+|            | **NH~3~ = 1** | **NH~3~ = 2** | **NH~3~ = 3** | **NH~3~ = 4** | **NH~3~ = 5** |
+|:-----------|:------------:|:------------:|:------------:|:------------:|:------------:|
+| **CO~2~ = 1** | 1         | 1            | 1            | 2            | 2            |
+| **CO~2~ = 2** | 1         | 2            | 2            | 3            | 3            |
+| **CO~2~ = 3** | 2         | 2            | 3            | 4            | 4            |
+| **CO~2~ = 4** | 2         | 3            | 4            | 5            | 5            |
+| **CO~2~ = 5** | 3         | 4            | 5            | 6            | 6            |
+| **CO~2~ = 6** | 3         | 4            | 5            | 6            | 7            |
+| **CO~2~ = 7** | 4         | 5            | 6            | 7            | 7            |
+| **CO~2~ = 8** | 5         | 5            | 6            | 7            | 8            |
+
+*Note: This table is approximate. Use the official Solvita color charts
+and CMI Calculator for definitive results.*
+
+
+## Appendix B: Interpreting Results in Context {.appendix}
+
+### CO~2~ Color Number Interpretation
+
+| Color No. | CO~2~ Level          | Stability Interpretation         |
+|:----------|:---------------------|:---------------------------------|
+| 1--2      | Very high            | Actively decomposing; unstable   |
+| 3--4      | Moderate to high     | Active composting phase          |
+| 5--6      | Low to moderate      | Curing; approaching stability    |
+| 7--8      | Very low             | Stable; decomposition essentially complete |
+
+### NH~3~ Color Number Interpretation
+
+| Color No. | NH~3~ Level          | Maturity Interpretation          |
+|:----------|:---------------------|:---------------------------------|
+| 1         | Very high            | Strong odor; phytotoxic; immature |
+| 2         | High                 | Significant ammonia; not ready   |
+| 3         | Moderate             | Some ammonia; continue curing    |
+| 4         | Low                  | Approaching maturity             |
+| 5         | Very low / none      | Nitrogen stabilized; mature      |
+
+### Common Patterns
+
+| CO~2~ | NH~3~ | Interpretation                                    |
+|:------|:------|:--------------------------------------------------|
+| High  | High  | Actively decomposing with unstable N; classic immature compost |
+| High  | Low   | Carbon-rich material still decomposing but N is stabilized; may need more time |
+| Low   | High  | Unusual; possible anaerobic conditions or recent N-rich amendment; investigate |
+| Low   | Low   | Both carbon and nitrogen cycles complete; finished compost |
+
+
+## Appendix C: Troubleshooting {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| CO~2~ paddle reads 1 (max activity) after 4 h | Compost is very fresh or sample was too warm | Verify sample temperature was below 40 C; confirm composting has progressed past thermophilic phase |
+| NH~3~ paddle reads 1 (max ammonia) | High free ammonia; fresh manure or urea input | Continue composting; ensure adequate C:N ratio (target 25:1--30:1) |
+| Both paddles show no color change (max stability) | Compost is fully mature, or paddles expired | Verify paddle expiration date; confirm with a known immature sample |
+| Duplicates disagree by more than 1 color number | Heterogeneous compost; inconsistent fill level | Homogenize sample more thoroughly; fill jars to consistent level |
+| CO~2~ high but NH~3~ low | High-carbon, low-N material (e.g., wood chip compost) | Normal for C-rich substrates; continue composting until CO~2~ declines |
+| CO~2~ low but NH~3~ high | Possible anaerobic pocket; recent N amendment | Turn the pile to aerate; reduce N inputs; retest in 1--2 weeks |
