@@ -1,0 +1,363 @@
+---
+# =============================================================================
+# SOP-L12: Glassware Cleaning and Preparation
+# =============================================================================
+title: "Glassware Cleaning and Preparation"
+sop-number: "SOP-L12"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the inspection, routine cleaning, acid washing,
+drying, and storage of laboratory glassware used in the EA Program
+laboratory. Properly cleaned glassware is essential for reliable
+analytical results; residual detergent, organic films, or trace metals
+can introduce systematic bias into water quality, soil extraction, and
+instrumental analyses. The cleaning tier required depends on the
+downstream analysis, ranging from routine detergent washing for general
+use to trace-metal-grade acid washing for ICP-MS and other sensitive
+techniques.
+
+
+## 2. Scope
+
+- **Applies to:** All reusable borosilicate glass labware (beakers,
+  Erlenmeyer flasks, graduated cylinders, volumetric flasks, watch
+  glasses, funnels, and media bottles) used in the EA Program laboratory
+- **Does not apply to:** Disposable glassware (e.g., serological
+  pipettes), plastic labware, quartz cuvettes, or specialty items
+  requiring manufacturer-specific cleaning (e.g., NMR tubes,
+  electrochemistry cells)
+- **Location:** Glassware washing station, EA Program laboratory,
+  SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure supplies are stocked    |
+| Lab Manager       | Maintain acid bath schedule, monitor DI water quality |
+| Trained Personnel | Clean glassware after each use, report damaged items |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Broken or chipped glassware can cause lacerations. Hot
+  glassware from the drying oven (105 C) causes burns on contact.
+- **Chemical:** Concentrated acids (HCl, HNO~3~) used in acid baths are
+  corrosive and emit irritating fumes. Alconox detergent is a mild
+  irritant.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or splash goggles (goggles required for acid bath
+  work)
+- [ ] Lab coat
+- [ ] Nitrile gloves (heavy-duty acid-resistant gloves for acid bath
+  handling)
+- [ ] Closed-toed shoes
+
+### Emergency Procedures
+
+- **Acid splash to skin or eyes:** Flush immediately with water at the
+  eyewash station or safety shower for at least 15 minutes. Refer to
+  [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+- **Broken glass injury:** Apply pressure with a clean cloth. If the
+  cut is deep or contaminated with chemicals, seek medical attention.
+- **Acid spill:** Neutralize small spills with sodium bicarbonate; for
+  large spills, use the spill kit and evacuate the area. See
+  [SOP-L02](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Glassware washing sink        | With hot and cold water supply            |
+| Drying oven                   | Set to 105 C; see [SOP-L16](SOP-L16-drying-ovens.qmd) |
+| Drying rack (peg-style)       | Wall-mounted or countertop               |
+| Acid bath (polyethylene tub with lid) | Dedicated to acid washing; kept in fume hood |
+| Fume hood                     | Required for all acid bath work           |
+
+### Glassware Inventory
+
+Common Fisherbrand borosilicate glassware used in the EA Program
+laboratory:
+
+| Item                            | Fisherbrand Cat. No.  | Sizes in Lab          |
+|:--------------------------------|:----------------------|:----------------------|
+| Low-Form Griffin Beakers        | FB100050 -- FB1002000 | 50 -- 2000 mL        |
+| Narrow-Mouth Erlenmeyer Flasks | FB500125 -- FB5001000 | 125 -- 1000 mL       |
+| Wide-Mouth Erlenmeyer Flasks   | FB501125 -- FB501500  | 125 -- 500 mL        |
+| Class A Volumetric Flasks      | FB400100 -- FB4002000 | 100 -- 2000 mL       |
+| Graduated Cylinders            | S63457 -- S63461      | 50 -- 1000 mL        |
+| Glass Media Bottles with Cap   | FB800100 -- FB8001000 | 100 -- 1000 mL       |
+
+### Cleaning Reagents and Consumables
+
+| Item                          | Cat. No. / Source     | Storage              |
+|:------------------------------|:----------------------|:---------------------|
+| Alconox powdered detergent    | Fisher 04-320-1       | Shelf above wash sink |
+| Hydrochloric acid, ACS grade (for general acid bath) | Fisher A144-212 | Acid cabinet, fume hood |
+| Nitric acid, Trace Metal grade (for trace-metal acid bath) | Fisher A509P500 | Acid cabinet, fume hood |
+| Deionized water (Type I or II) | Milli-Q system; see *SOP-L11* | Dispenser at wash station |
+| Glassware brushes (assorted sizes) | Fisher 03-578 series | Drawer at wash station |
+| Lint-free wipes (Kimwipes)    | Fisher 06-666 series  | Benchtop dispenser   |
+
+
+## 6. Procedure
+
+### 6.1 Inspection Before Use
+
+1. Inspect every piece of glassware before use. Check for chips, cracks,
+   stars, or deep scratches, especially around rims, spouts, and the base
+2. Discard any piece that is broken, chipped, starred, or badly
+   scratched. Place it in the designated broken-glass box (rigid
+   cardboard container labeled "BROKEN GLASS"), not in the regular trash
+3. Check volumetric glassware (flasks, graduated cylinders) for legible
+   graduation marks. Do not use glassware with faded or unreadable
+   scales.
+
+::: {.callout-tip}
+### Tip
+Run your fingernail gently around the rim of a beaker or flask. If you
+feel a nick or irregularity, the piece should be discarded. Chipped rims
+create stress points that can propagate into cracks during heating.
+:::
+
+### 6.2 Routine Cleaning (General Laboratory Use)
+
+Use this procedure for glassware that will be used for general
+chemistry, soil extractions (KCl, K~2~SO~4~), gravimetric analyses, and
+other procedures that do not require trace-metal cleanliness.
+
+1. Rinse the glassware with tap water immediately after use to prevent
+   residues from drying
+2. Prepare a warm solution of Alconox detergent (approximately 10 g per
+   liter of warm tap water) in the wash basin
+3. Submerge the glassware and scrub all interior and exterior surfaces
+   with an appropriately sized brush. Use brushes with wooden or plastic
+   handles only; metal-handled brushes and worn brushes where the spine
+   contacts the glass will scratch the surface
+4. Pay special attention to the interior bottom of beakers and flasks,
+   where residues accumulate
+5. Rinse thoroughly under running tap water, inverting and filling
+   each piece at least three times to remove all detergent
+6. Perform a final rinse with three changes of deionized (DI) water
+7. Invert the glassware on a peg-style drying rack or place upright in
+   the drying oven at 105 C for 2--4 hours (see
+   [SOP-L16](SOP-L16-drying-ovens.qmd))
+
+::: {.callout-important}
+### Critical
+
+Do not allow acid to contact glassware before detergent is thoroughly
+removed. Acid reacting with residual soap creates a hydrophobic film
+that is difficult to remove and will interfere with subsequent analyses.
+:::
+
+### 6.3 Acid Washing (Trace-Metal and Nutrient Analysis)
+
+Use this procedure for glassware destined for trace-metal analysis
+(ICP-MS, ICP-OES, XRF digestions), nutrient analysis, or any procedure
+where the SOP specifies "acid-washed glassware." All acid bath work
+must be performed in the fume hood.
+
+1. Complete the routine cleaning procedure (Section 6.2) first.
+   Glassware must be detergent-free before entering the acid bath.
+2. Prepare the acid bath in a dedicated polyethylene tub inside the fume
+   hood:
+   - **General acid bath:** 10% (v/v) HCl in DI water
+   - **Trace-metal acid bath:** 10% (v/v) HNO~3~ (Trace Metal grade) in
+     DI water
+3. Submerge the clean glassware completely in the acid bath, ensuring no
+   air bubbles are trapped inside
+4. Cover the tub with its lid and soak for a minimum of 4 hours;
+   overnight soaking (12--24 hours) is preferred
+5. Using acid-resistant gloves and splash goggles, remove the glassware
+   from the acid bath
+6. Rinse each piece with at least five changes of DI water. For
+   trace-metal work, use Type I (18.2 M-ohm) water from the Milli-Q
+   system for the final three rinses.
+7. Place the rinsed glassware on a clean drying rack or in the drying
+   oven. Do not use paper towels or Kimwipes to dry the interior of
+   acid-washed glassware, as fibers introduce contamination.
+8. Once dry, cover the opening of each piece with a clean watch glass,
+   aluminum foil, or parafilm and label it "ACID WASHED" with the date
+
+::: {.callout-note}
+The acid bath should be replaced when it becomes visibly discolored or
+after approximately 20 uses, whichever comes first. Record replacement
+dates in the acid bath log on the fume hood.
+:::
+
+### 6.4 New Glassware
+
+New borosilicate glassware is slightly alkaline from the manufacturing
+process. Before first use in quantitative analyses:
+
+1. Soak the new glassware in a 1% HCl or 1% HNO~3~ solution for several
+   hours
+2. Proceed with the routine cleaning procedure (Section 6.2)
+3. For trace-metal applications, also complete the acid-washing procedure
+   (Section 6.3)
+
+### 6.5 Stubborn Residues and Special Cases
+
+| Residue Type             | Cleaning Method                            |
+|:-------------------------|:-------------------------------------------|
+| Dried organic matter     | Soak overnight in Alconox; scrub with brush |
+| Mineral scale or precipitates | Soak in 10% HCl for 4+ hours          |
+| Grease or stopcock lubricant | Rinse with acetone in the fume hood, then routine wash |
+| Biological residues (agar, culture media) | Autoclave before washing; see [SOP-L01](SOP-L01-laboratory-safety.qmd) |
+| Unknown or heavily stained | Soak in 10% HNO~3~ overnight; if persistent, contact the lab manager |
+
+::: {.callout-warning}
+### Do Not Use Chromic Acid
+
+Chromic acid (potassium dichromate in sulfuric acid) was historically
+used as a glassware cleaner but is a potent human carcinogen and is
+prohibited in this laboratory. Use the acid-wash procedures described
+above instead.
+:::
+
+### 6.6 Drying and Storage
+
+1. Air-dry inverted on a peg rack, or oven-dry at 105 C for 2--4 hours
+   (see [SOP-L16](SOP-L16-drying-ovens.qmd))
+2. Do not oven-dry volumetric glassware (volumetric flasks, graduated
+   cylinders). Thermal expansion can permanently alter the calibration.
+   Air-dry volumetric glassware only.
+3. Store clean, dry glassware in designated cabinets with shelf liner
+4. Store glassware inverted or covered to prevent dust accumulation
+5. Keep acid-washed glassware in a separate, labeled section of the
+   cabinet or on a dedicated shelf to prevent accidental use for
+   non-critical applications
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### Water-Break Test
+
+The water-break test is a simple visual check for cleanliness:
+
+1. Rinse the interior of the glassware with DI water
+2. Observe the drainage pattern as water sheets off the surface
+3. **Pass:** Water forms a uniform, unbroken film across the entire
+   interior surface
+4. **Fail:** Water beads up, forms droplets, or breaks into rivulets,
+   indicating residual organic contamination or grease
+
+If the water-break test fails, repeat the cleaning procedure. If it
+fails again after acid washing, discard the piece, as surface damage may
+be preventing adequate cleaning.
+
+### Routine Verification
+
+- Perform the water-break test on a representative sample (1 in 10
+  pieces) from each cleaning batch
+- For acid-washed glassware, run a DI water blank through the glassware
+  and analyze it on the target instrument (e.g., ICP-MS) to confirm
+  background levels are below method detection limits
+- Record cleaning batch dates and water-break test results in the
+  glassware cleaning log
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Spent acid bath (HCl or HNO~3~) | Neutralize with sodium bicarbonate to pH 6--8, then dispose down the drain with copious water, or collect for EH&S pickup if volume is large |
+| Broken glass                  | Place in the rigid "BROKEN GLASS" disposal box; do not place in regular trash or recycling |
+| Detergent wash water          | Drain; Alconox is biodegradable          |
+| Acetone rinse waste           | Collect in organic waste carboy in fume hood; EH&S pickup |
+
+
+## 9. References
+
+- Corning Life Sciences. *Suggestions for Cleaning Glassware*.
+  Application Note CLS-AN-112. Corning, NY.
+- Sigma-Aldrich / MilliporeSigma. *Cleaning Laboratory Glassware*.
+  Technical Document.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before cleaning glassware independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   training
+3. Demonstrate proper use of brushes, detergent preparation, and the
+   rinse sequence under supervision
+4. For acid-washed glassware: demonstrate proper fume hood use,
+   acid-resistant PPE donning, and acid bath handling under supervision
+5. Perform a water-break test and have results reviewed by the lab
+   manager
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Quick-Reference Cleaning Decision Guide {.appendix}
+
+| Downstream Analysis           | Cleaning Tier Required                    |
+|:------------------------------|:------------------------------------------|
+| Gravimetric soil moisture ([SOP-L55](SOP-L55-soil-moisture.qmd)) | Routine (Section 6.2) |
+| Loss on ignition ([SOP-L61](SOP-L61-loss-on-ignition.qmd)) | Routine (Section 6.2) |
+| KCl extraction for NH~4~^+^/NO~3~^-^ ([SOP-L58](SOP-L58-nitrate-ammonium-kcl.qmd)) | Routine (Section 6.2) |
+| TOC / TC analysis ([SOP-L62](SOP-L62-total-carbon.qmd)) | Routine + combust ceramic boats at 900 C |
+| pH and conductivity ([SOP-L40](SOP-L40-pH-conductivity-bench.qmd)) | Routine (Section 6.2) |
+| Hach colorimetric methods ([SOP-L45](SOP-L45-hach-colorimetric.qmd)) | Routine (Section 6.2) |
+| ICP-MS / ICP-OES (*SOP-L31*)  | Acid wash with 10% HNO~3~ (Section 6.3)  |
+| XRF acid digestions (*SOP-L30*) | Acid wash with 10% HNO~3~ (Section 6.3) |
+| DNA extraction ([SOP-L95](SOP-L95-dna-extraction.qmd)) | Autoclave; routine wash |
+| Microbial biomass carbon ([SOP-L64](SOP-L64-microbial-biomass-carbon.qmd)) | Acid wash with 10% HCl (Section 6.3) |
+
+
+## Appendix B: Acid Bath Preparation {.appendix}
+
+### 10% HCl Acid Bath
+
+1. Place the clean polyethylene tub in the fume hood
+2. Fill the tub approximately 90% full with DI water
+3. Slowly add concentrated HCl (approximately 37%) to reach a final
+   concentration of 10% (v/v). For a 20 L bath, add approximately 2 L
+   of concentrated HCl to approximately 18 L of DI water.
+4. Always add acid to water, never water to acid
+5. Label the tub with: acid type, concentration, preparation date, and
+   a hazard warning
+6. Cover with the fitted lid when not in use
+
+### 10% HNO~3~ Acid Bath (Trace Metal Grade)
+
+1. Follow the same steps as above, substituting Trace Metal grade
+   HNO~3~ (Fisher A509P500) for HCl
+2. Use Type I DI water from the Milli-Q system
+3. This bath is reserved for trace-metal glassware only; do not
+   cross-contaminate with the general HCl bath

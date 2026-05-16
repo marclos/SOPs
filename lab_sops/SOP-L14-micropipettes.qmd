@@ -1,0 +1,294 @@
+---
+# =============================================================================
+# SOP-L14: Using Micropipettes
+# =============================================================================
+title: "Using Micropipettes"
+sop-number: "SOP-L14"
+author:
+  - name: "Isaac Medina"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.3"
+
+revision-history:
+  - version: "0.1"
+    date: "2016-08-10"
+    author: "Isaac Medina"
+    changes: "Initial release"
+  - version: "0.3"
+    date: "2023-05-10"
+    author: "Isaac Medina"
+    changes: "Converted from LaTeX to Quarto"
+---
+
+## 1. Purpose
+
+This procedure describes the proper use, volume setting, tip loading,
+sample aspiration and dispensing, and care of Gilson Pipetman
+micropipettes. Micropipettes are precision instruments used to transfer
+small volumes of liquid (less than 1 mL) with high accuracy. Correct
+technique is essential for reproducible results in chemical, biological,
+and environmental analyses.
+
+
+## 2. Scope
+
+- **Applies to:** All Gilson Pipetman micropipettes (P10, P20, P200,
+  P1000) in the EA Program laboratory
+- **Does not apply to:** Serological pipettes, Pasteur pipettes, bottle-
+  top dispensers, or Repipet-type dispensers
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure annual calibration      |
+| Lab Manager       | Schedule calibration, maintain tip inventory |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Liquids being pipetted may be hazardous. Consult the
+  relevant SOP and Safety Data Sheet for the material being transferred.
+- **Physical:** Repetitive pipetting can cause repetitive strain
+  injuries. Take breaks during extended pipetting sessions.
+- **Biological:** When pipetting biological samples, use filter tips to
+  prevent aerosol contamination of the pipette barrel.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves
+
+### Emergency Procedures
+
+If hazardous liquid enters the pipette barrel, stop immediately.
+Decontaminate the pipette per the manufacturer's instructions and refer
+to [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item              | Volume Range        | Notes                        |
+|:------------------|:--------------------|:-----------------------------|
+| Pipetman P10      | 1.0 -- 10.0 uL     | Yellow or white tip          |
+| Pipetman P20      | 2.0 -- 20.0 uL     | Yellow tip                   |
+| Pipetman P200     | 20 -- 200 uL       | Yellow tip                   |
+| Pipetman P1000    | 200 -- 1000 uL     | Blue tip                     |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Disposable pipette tips       | Match tip size to pipette; see Section 6.3 |
+| Filter pipette tips           | Required for biological or volatile samples |
+| Tip waste container           | Benchtop receptacle for used tips          |
+
+
+## 6. Procedure
+
+### 6.1 Selecting the Correct Pipette
+
+Always select the smallest pipette that covers the target volume. Using
+an unnecessarily large pipette for a small volume reduces accuracy. The
+volume ranges are:
+
+| Pipette  | Range             | Smallest Graduation |
+|:---------|:------------------|:--------------------|
+| P10      | 1.0 -- 10.0 uL   | 0.02 uL             |
+| P20      | 2.0 -- 20.0 uL   | 0.02 uL             |
+| P200     | 20 -- 200 uL     | 0.2 uL              |
+| P1000    | 200 -- 1000 uL   | 2 uL                |
+
+::: {.callout-important}
+Never set the pipette below the minimum or above the maximum of its
+range. Exceeding these limits will damage the piston seal and put the
+pipette out of calibration.
+:::
+
+### 6.2 Setting the Volume
+
+1. Identify the volume display window on the front face of the pipette.
+   The three-digit display reads differently for each pipette size:
+   - **P10:** digits represent ones, tenths, and hundredths of uL
+   - **P20:** digits represent tens, ones, and tenths of uL
+   - **P200:** digits represent hundreds, tens, and ones of uL
+   - **P1000:** digits represent thousands, hundreds, and tens of uL
+2. Turn the volume adjustment ring clockwise to increase volume or
+   counterclockwise to decrease volume
+3. If you overshoot the target while dialing down, dial below the
+   desired setting and then dial back up to the correct value. This
+   avoids mechanical backlash in the piston mechanism.
+
+### 6.3 Loading a Tip
+
+1. Select the correct tip size for the pipette being used. Tip boxes
+   are labeled with the compatible pipette sizes. When in doubt, confirm
+   with the lab manager.
+2. Press the pipette shaft firmly into a tip in the tip box. A slight
+   twist while pressing helps ensure a secure, airtight seal.
+3. Do not touch the tip with your hands.
+4. Always use a fresh tip for each different reagent or sample to
+   prevent cross-contamination.
+
+### 6.4 Aspirating (Loading) a Sample
+
+1. Depress the plunger slowly to the **first stop** (the point of
+   initial resistance). This is the calibrated load volume.
+2. While holding the plunger at the first stop, immerse the tip into
+   the liquid just enough to cover the opening (3--4 mm). Do not plunge
+   the tip to the bottom of the vessel.
+3. Slowly and steadily release the plunger to draw liquid into the tip.
+   Do not let the plunger snap back.
+4. Wait one to two seconds before removing the tip from the liquid,
+   especially with viscous solutions. This allows the full volume to
+   enter the tip and prevents air bubbles.
+5. Visually inspect the tip: there should be no air gap or bubble at
+   the distal end. If there is, dispense the liquid back and repeat.
+
+::: {.callout-tip}
+### Tip
+For viscous liquids (glycerol, concentrated DNA solutions), use the
+"reverse pipetting" technique: depress the plunger to the **second
+stop** before immersing the tip, draw up the liquid by releasing to the
+rest position, and then dispense by pressing only to the **first stop**.
+The small amount of liquid remaining in the tip is discarded.
+:::
+
+### 6.5 Dispensing a Sample
+
+1. Touch the tip to the inner wall of the receiving vessel at a slight
+   angle
+2. Depress the plunger slowly to the **first stop** to dispense most of
+   the liquid
+3. Continue pressing to the **second stop** to expel the final drop
+4. Hold the plunger at the second stop while withdrawing the tip from
+   the vessel
+5. Release the plunger only after the tip is clear of the liquid
+
+### 6.6 Ejecting the Tip
+
+1. Hold the pipette over the tip waste container
+2. Press the tip ejector button on the back of the pipette
+3. Never reuse a tip between different solutions
+
+### 6.7 Important Precautions
+
+- Never point a pipette upward with liquid in the tip. Liquid can flow
+  back into the barrel and damage the piston and seals.
+- Never lay a pipette down with a loaded tip.
+- When not in use, set the pipette to its maximum volume and hang it
+  vertically on the pipette stand. This relaxes the piston spring and
+  extends the instrument's life.
+- Do not use a pipette as a stirring rod.
+- If the plunger action feels rough, sticky, or inconsistent, stop
+  using the pipette and report the issue to the lab manager.
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Gravimetric Accuracy Check
+
+Verify pipette accuracy by weighing dispensed volumes of distilled water
+on the analytical balance (see
+[SOP-L21](SOP-L21-analytical-balance-calibration.qmd)):
+
+1. Tare a clean microcentrifuge tube on the analytical balance
+2. Pipette the test volume of distilled water into the tube
+3. Record the mass. At 20 C, 1 uL of water weighs approximately 1.00 mg.
+4. Repeat for a total of 10 replicates
+5. Calculate the mean and coefficient of variation (CV)
+
+| Pipette | Test Volume | Acceptable CV   |
+|:--------|:------------|:----------------|
+| P10     | 10 uL       | less than 3%    |
+| P20     | 20 uL       | less than 2%    |
+| P200    | 200 uL      | less than 1%    |
+| P1000   | 1000 uL     | less than 0.5%  |
+
+If the CV exceeds the acceptable threshold, the pipette should be
+removed from service and sent for professional calibration.
+
+### 7.2 Calibration Schedule
+
+All micropipettes must be professionally calibrated at least once per
+year. Calibration stickers on each pipette show the date of last
+calibration and the next due date. Do not use a pipette with an expired
+calibration.
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used pipette tips (non-hazardous) | Standard tip waste box; dispose in regular trash when full |
+| Used tips contaminated with hazardous chemicals | Chemical waste per [SOP-L02](SOP-L02-hazardous-materials-handling.qmd) |
+| Used tips contaminated with biological material | Biohazard bag; autoclave before disposal |
+
+
+## 9. References
+
+- Gilson. *Pipetman Classic: User's Guide*. Gilson, Inc., Middleton, WI.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using micropipettes independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   training
+3. Demonstrate correct volume setting, tip loading, aspiration, and
+   dispensing technique under supervision
+4. Perform a gravimetric accuracy check (Section 7.1) with acceptable
+   results for at least two pipette sizes
+5. Be signed off by the PI or lab manager
+
+
+## Appendix A: Volume Display Reading Guide {.appendix}
+
+The three-digit volume display reads differently for each Pipetman size.
+The table below shows the maximum display setting and the place value of
+each digit:
+
+| Pipette | Max Display | Digit 1 (top) | Digit 2 (middle) | Digit 3 (bottom) |
+|:--------|:------------|:--------------|:------------------|:------------------|
+| P10     | 1 0 . 0 0   | 10 uL         | 1 uL              | 0.1 uL            |
+| P20     | 2 0 . 0     | 10 uL         | 1 uL              | 0.1 uL            |
+| P200    | 2 0 0       | 100 uL        | 10 uL             | 1 uL              |
+| P1000   | 1 0 0 0     | 1000 uL       | 100 uL            | 10 uL             |
+
+<!-- TODO: Add figure of pipetman display windows (pipetman2.jpg from
+original LaTeX document) -->
+
+
+## Appendix B: Troubleshooting {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| Liquid drips from tip after aspiration | Tip not seated properly; damaged tip | Reseat or replace tip  |
+| Air bubble in tip after aspiration | Plunger released too quickly; tip not immersed deep enough | Re-aspirate slowly with tip 3--4 mm below surface |
+| Dispensed volume too low      | Pipette out of calibration; wrong tip size | Perform gravimetric check; verify tip compatibility |
+| Plunger feels sticky or rough | Liquid entered barrel; worn piston seal | Clean barrel; send for service |
+| Volume display will not turn  | Mechanical jam                  | Do not force; contact lab manager |
+
+<!-- TODO: Add figure of pipetman anatomy (pipetman.jpg) and loading
+technique (pipetman3.jpg) from original LaTeX document -->
