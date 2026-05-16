@@ -1,0 +1,437 @@
+---
+# =============================================================================
+# SOP-F60: Soil Infiltration Rate -- Ring Infiltrometer Method
+# =============================================================================
+title: "Soil Infiltration Rate -- Ring Infiltrometer Method"
+sop-number: "SOP-F60"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the field measurement of soil infiltration
+rate using single-ring and double-ring infiltrometers. Infiltration
+rate is the velocity at which water enters the soil surface, typically
+expressed in cm/h or mm/h. It is a key parameter for evaluating
+stormwater management, irrigation efficiency, soil compaction,
+hydrologic modeling, and land use impacts on soil physical properties.
+The double-ring method follows ASTM D3385 [@astm_d3385_2018]; the
+single-ring method follows Bouwer (1986) [@bouwer1986].
+
+
+## 2. Scope
+
+- **Applies to:** Field measurement of infiltration rate on mineral
+  soils at all EA Program sites, including agricultural plots,
+  photovoltaic panel study sites, restoration areas, and urban soils
+- **Does not apply to:** Soils with very low hydraulic conductivity
+  (less than 1 x 10^-5^ cm/s; see ASTM D5093 for sealed-inner-ring
+  method); rocky or gravelly soils that prevent ring insertion;
+  laboratory column permeability tests
+- **Location:** All EA Program field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve sampling plan, ensure training compliance |
+| Field Lead        | Coordinate logistics, select test locations  |
+| Trained Personnel | Conduct infiltration tests per this SOP      |
+| New Students      | Complete training before independent testing |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Driving metal rings into the soil with a sledge or mallet
+  poses a risk of hand, finger, and foot injury. The rings have sharp
+  edges.
+- **Ergonomic:** Carrying water containers (20 L jugs) and rings to
+  remote field sites can cause strain.
+- **Environmental:** Standard field hazards (heat exposure, uneven
+  terrain, insects).
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots (steel-toed preferred when
+  driving rings)
+- [ ] Leather work gloves (when handling rings and sledge)
+- [ ] Safety glasses (when driving rings)
+- [ ] Sun protection (hat, sunscreen)
+
+### Related SOPs
+
+Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) for general
+field safety procedures.
+
+
+## 5. Equipment and Materials
+
+### Method A: Double-Ring Infiltrometer (ASTM D3385)
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Inner ring                    | Minimum 30 cm (12 in) diameter, 20 cm tall; 14-gauge or heavier steel |
+| Outer ring                    | Minimum 60 cm (24 in) diameter, 20 cm tall; same gauge as inner ring |
+| Sledge hammer (3--5 kg)       | For driving rings                         |
+| Driving cap or wooden plank   | Placed on top of the ring to distribute hammer blows evenly and prevent ring deformation |
+| Carpenter's level             | For checking ring verticality             |
+| Ruler or graduated staff (mm) | For measuring water level in the inner ring |
+| Stopwatch or timer            | For recording time intervals              |
+| Water supply                  | 40--80 L per test; carry in jerrycans or connect to a portable tank |
+| Bucket or pitcher             | For filling rings without disturbing the soil surface |
+| Plastic sheeting or burlap    | Placed inside the ring during initial filling to prevent soil disturbance |
+| Mariotte bottle (optional)    | For maintaining constant head automatically |
+| Field data sheet              | Printed from Appendix A                   |
+| Clipboard and pencil          | Mechanical pencil preferred               |
+| GPS unit or smartphone        | For recording test locations               |
+| Tape measure                  | For measuring ring insertion depth         |
+
+### Method B: Single-Ring Infiltrometer
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Single ring                   | 30 cm diameter minimum (larger is better; 90 cm preferred for accuracy); 20 cm tall |
+| All other equipment           | Same as Method A, minus the outer ring    |
+
+
+## 6. Procedure
+
+### 6.1 Site Selection and Preparation
+
+1. Select test locations based on the project sampling plan. Avoid
+   locations with visible animal burrows, large root channels, cracks,
+   or other macropore features unless the objective is specifically to
+   characterize preferential flow.
+2. Record GPS coordinates and site description
+3. Clear surface litter and loose organic debris from a 1 x 1 m area
+   without disturbing the mineral soil surface
+4. Note antecedent conditions in the field notebook: recent rainfall,
+   soil moisture (qualitative: dry, moist, wet), and surface condition
+   (bare, vegetated, crusted)
+
+::: {.callout-tip}
+### Tip
+Collect a companion bulk density core
+([SOP-F59](SOP-F59-soil-bulk-density.qmd)) and a texture-by-feel
+assessment ([SOP-F58](SOP-F58-soil-texture-by-feel.qmd)) at each
+infiltration test location. These measurements help interpret the
+infiltration results.
+:::
+
+### 6.2 Ring Installation -- Double-Ring Method
+
+1. Center the inner ring at the test location
+2. Place the driving cap or wooden plank on top of the ring
+3. Drive the inner ring vertically into the soil to a depth of
+   approximately 5--10 cm (2--4 in) using even blows from the sledge.
+   Avoid tilting the ring; check periodically with the level.
+4. Measure and record the insertion depth on at least two sides
+5. Center the outer ring around the inner ring. Drive it to
+   approximately 10--15 cm (4--6 in), deeper than the inner ring, to
+   prevent test water from escaping beneath the outer ring.
+6. Check that the inner ring is still centered and level
+
+::: {.callout-important}
+Do not drive the rings deeper than necessary. Over-driving compresses
+the soil along the ring walls and creates an artificial seal that
+reduces measured infiltration rates. If the soil cracks or separates
+from the ring wall, abandon the test location and start at a new spot.
+:::
+
+### 6.3 Ring Installation -- Single-Ring Method
+
+1. Place the single ring at the test location
+2. Drive to approximately 5 cm depth using the same technique as above
+3. For best accuracy, use the largest diameter ring available (90 cm or
+   larger reduces lateral flow error) [@bouwer1986]
+
+### 6.4 Initial Filling
+
+1. Place a sheet of plastic or burlap on the soil surface inside the
+   inner ring (and inside the annular space for the double-ring method)
+   to cushion the water and prevent soil disturbance during filling
+2. Gently pour water into the outer ring (annular space) first, then
+   into the inner ring, to approximately 10--15 cm depth
+3. Carefully remove the plastic or burlap
+4. For the double-ring method, maintain the water level in the outer
+   ring at approximately the same height as the inner ring throughout
+   the test. This eliminates the lateral pressure gradient and forces
+   flow beneath the inner ring to be vertical.
+
+### 6.5 Measuring Infiltration Rate
+
+**Falling-head method (most common for EA Program):**
+
+1. Record the initial water level in the inner ring and the start time
+2. Allow the water to infiltrate. Record the water level at regular
+   time intervals. Suggested intervals:
+
+| Elapsed Time        | Recording Interval |
+|:--------------------|:-------------------|
+| 0--30 minutes       | Every 5 minutes    |
+| 30--60 minutes      | Every 10 minutes   |
+| 60--120 minutes     | Every 15 minutes   |
+| 120+ minutes        | Every 30 minutes   |
+
+3. When the water level drops to approximately 3 cm above the soil
+   surface, refill to the original level and record the new starting
+   level and time. Record each refill event.
+4. Maintain the water level in the outer ring by refilling as needed.
+5. Continue the test until the infiltration rate reaches a steady state
+   (three or more consecutive readings with less than 10% change). This
+   is the steady-state or "final" infiltration rate.
+6. For most soils, steady state is reached within 1--3 hours. Clayey
+   soils may require 4--6 hours or longer.
+
+**Constant-head method (Mariotte bottle):**
+
+1. Set up the Mariotte bottle to maintain a constant water depth
+   (typically 5--10 cm) in the inner ring
+2. Record the volume of water consumed from the bottle at regular
+   time intervals
+3. Calculate the infiltration rate from the volume consumed, the ring
+   area, and the time interval
+4. Continue until steady state is reached
+
+### 6.6 Ending the Test
+
+1. Record the final water level, time, and cumulative number of refills
+2. Remove the rings by rocking gently and pulling upward
+3. Backfill the holes and restore the site
+4. Record any observations about the wetting front depth, root
+   channels, or other features visible after ring removal
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Calculations
+
+**Infiltration rate** for each time interval (falling-head method):
+
+$$
+f = \frac{\Delta h}{\Delta t}
+$$
+
+where $f$ = infiltration rate (cm/h), $\Delta h$ = drop in water level
+(cm) during the interval, and $\Delta t$ = duration of the interval (h).
+If the ring was refilled during the interval, add the refill depth to
+$\Delta h$.
+
+**Cumulative infiltration:**
+
+$$
+F = \sum_{i=1}^{n} f_i \times \Delta t_i
+$$
+
+where $F$ = cumulative infiltration (cm) and $n$ = number of intervals.
+
+**Steady-state infiltration rate** ($f_c$) is the final, approximately
+constant rate, typically reported as the mean of the last three or more
+consistent readings.
+
+### 7.2 Expected Ranges
+
+Steady-state infiltration rates vary widely with soil texture and
+structure:
+
+| Soil Type / Condition                | Expected $f_c$ (cm/h)  |
+|:-------------------------------------|:-----------------------|
+| Coarse sand, well-structured         | 5 -- 25+               |
+| Sandy loam                           | 2.5 -- 7.5             |
+| Loam, well-structured               | 1.0 -- 5.0             |
+| Silt loam                            | 0.5 -- 2.5             |
+| Clay loam                            | 0.1 -- 1.0             |
+| Compacted or crusted soil            | less than 0.5          |
+
+Values outside the range of 0.01--50 cm/h should be investigated for
+measurement error or unusual soil conditions.
+
+### 7.3 QC Requirements
+
+- Conduct a minimum of three replicate tests per plot or treatment to
+  capture spatial variability
+- Record antecedent soil moisture and recent precipitation for each
+  test; these strongly affect initial rates
+- Verify that the outer ring water level is maintained throughout the
+  test (double-ring method)
+- Inspect ring installation for gaps between the ring wall and the soil;
+  if gaps are visible, the test is invalid
+- Plot the infiltration rate versus time curve for each test. A
+  monotonically decreasing curve approaching a constant value is
+  expected. Erratic increases may indicate macropore activation or ring
+  leakage.
+
+
+## 8. Waste Disposal
+
+| Waste Type              | Disposal Method                             |
+|:------------------------|:--------------------------------------------|
+| Test water              | Allowed to infiltrate on site; no disposal needed |
+| Used plastic sheeting   | Standard trash                              |
+| Used gloves             | Standard trash                              |
+
+
+## 9. References
+
+- ASTM D3385-18. (2018). *Standard Test Method for Infiltration Rate
+  of Soils in Field Using Double-Ring Infiltrometer*. ASTM
+  International, West Conshohocken, PA.
+- Bouwer, H. (1986). Intake rate: Cylinder infiltrometer. In: Klute, A.
+  (Ed.), *Methods of Soil Analysis, Part 1: Physical and Mineralogical
+  Methods*. 2nd ed. SSSA Book Series No. 5. pp. 825--844.
+- Reynolds, W.D., Elrick, D.E., Youngs, E.G., Amoozegar, A., Booltink,
+  H.W.G., & Bouma, J. (2002). Saturated and field-saturated water flow
+  parameters. In: Dane, J.H. & Topp, G.C. (Eds.), *Methods of Soil
+  Analysis, Part 4: Physical Methods*. SSSA Book Series No. 5.
+  pp. 797--878.
+- Hillel, D. (1998). *Environmental Soil Physics*. Academic Press.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before conducting infiltration tests independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) training
+3. Observe a trained operator perform a complete double-ring
+   infiltration test from ring installation through steady state
+4. Demonstrate proper ring driving technique without ring deformation
+   or soil cracking
+5. Conduct at least one complete test under supervision and produce an
+   infiltration curve that reaches steady state
+6. Be signed off by the field lead or PI
+
+
+## Appendix A: Infiltration Test Field Data Sheet {.appendix}
+
+Print this sheet and use it in the field.
+
+**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Plot ID:** \_\_\_\_\_\_\_\_\_\_
+**Date:** \_\_\_\_\_\_\_\_\_\_\_\_
+
+**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **GPS:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Method:** Double-ring / Single-ring (circle one)
+
+**Inner ring diameter:** \_\_\_\_\_\_\_\_ cm
+**Outer ring diameter:** \_\_\_\_\_\_\_\_ cm (if double-ring)
+
+**Ring insertion depth:** Inner \_\_\_\_\_ cm, Outer \_\_\_\_\_ cm
+
+**Antecedent conditions:** Last rain \_\_\_\_\_ days ago,
+\_\_\_\_\_ mm; Soil moisture: dry / moist / wet
+
+**Surface condition:** bare / vegetated / crusted / mulched
+
+**Initial water depth in inner ring:** \_\_\_\_\_\_\_\_ cm
+
+| Reading # | Clock Time | Elapsed (min) | Water Level (cm) | Refill? (Y/N) | Level After Refill (cm) | Interval $\Delta h$ (cm) | Interval Rate (cm/h) | Notes |
+|:----------|:-----------|:--------------|:-----------------|:--------------|:------------------------|:-------------------------|:---------------------|:------|
+| 0 | | 0 | | -- | -- | -- | -- | Start |
+| 1 | | | | | | | | |
+| 2 | | | | | | | | |
+| 3 | | | | | | | | |
+| 4 | | | | | | | | |
+| 5 | | | | | | | | |
+| 6 | | | | | | | | |
+| 7 | | | | | | | | |
+| 8 | | | | | | | | |
+| 9 | | | | | | | | |
+| 10 | | | | | | | | |
+| 11 | | | | | | | | |
+| 12 | | | | | | | | |
+| 13 | | | | | | | | |
+| 14 | | | | | | | | |
+| 15 | | | | | | | | |
+
+**Steady-state rate ($f_c$):** \_\_\_\_\_\_\_\_ cm/h
+(mean of last \_\_\_ readings)
+
+**Total test duration:** \_\_\_\_\_\_\_\_ minutes
+
+**Additional notes:**
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+## Appendix B: Example Calculation and Plotting {.appendix}
+
+```{r}
+#| label: infiltration-calc
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+# Example data from a falling-head double-ring test
+# Ring inner diameter = 30 cm
+ring_diam_cm <- 30
+ring_area_cm2 <- pi * (ring_diam_cm / 2)^2
+
+infiltration <- tibble(
+  elapsed_min = c(0, 5, 10, 15, 20, 30, 45, 60, 90, 120, 150, 180),
+  water_level_cm = c(15.0, 13.8, 12.9, 12.1, 11.4, 10.2, 8.8, 7.6,
+                     5.8, 4.2, 2.8, 1.5)
+)
+
+# Calculate interval infiltration rates
+infiltration <- infiltration %>%
+  mutate(
+    delta_h_cm = -diff(c(NA, water_level_cm)),
+    delta_t_h = c(NA, diff(elapsed_min)) / 60,
+    rate_cm_h = delta_h_cm / delta_t_h,
+    cumulative_cm = cumsum(replace_na(delta_h_cm, 0))
+  )
+
+# Steady-state rate (last 3 intervals)
+f_c <- mean(tail(infiltration$rate_cm_h[!is.na(infiltration$rate_cm_h)], 3))
+cat(sprintf("Steady-state infiltration rate: %.2f cm/h\n", f_c))
+
+# Plot infiltration rate vs time
+ggplot(infiltration %>% filter(!is.na(rate_cm_h)),
+       aes(x = elapsed_min, y = rate_cm_h)) +
+  geom_point(size = 3) +
+  geom_line() +
+  geom_hline(yintercept = f_c, linetype = "dashed", color = "blue") +
+  annotate("text", x = max(infiltration$elapsed_min) * 0.7,
+           y = f_c + 0.3,
+           label = sprintf("f[c] == %.2f~cm/h", f_c),
+           parse = TRUE, color = "blue") +
+  labs(
+    x = "Elapsed time (min)",
+    y = "Infiltration rate (cm/h)",
+    title = "Double-Ring Infiltration Test"
+  ) +
+  theme_minimal()
+```
+
+
+## Appendix C: Troubleshooting {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| Water leaks around the outside of the ring | Insufficient insertion depth; gap between ring wall and soil | Drive ring deeper; pack bentonite or moist soil around the outside base |
+| Infiltration rate increases mid-test | Macropore activation; preferential flow path opened | Note in field notebook; this may be a real feature of the soil. If clearly an artifact (ring shifted), restart. |
+| Very slow infiltration (less than 0.1 cm/h) | Dense clay; surface crust; compacted layer | Continue test for at least 4--6 hours to confirm steady state; consider ASTM D5093 sealed-ring method |
+| Rate never stabilizes         | Heterogeneous soil; macropores draining and refilling | Extend test duration; collect additional replicates; report the range rather than a single value |
+| Ring deformed during installation | Rocks or roots; excessive force | Replace with a new ring at a nearby location |
+| Soil disturbed inside the ring | Overly aggressive filling; ring bounced during driving | Restart at a new location; always use plastic sheeting during initial fill |
+| Single-ring rate much higher than expected | Lateral flow beneath the ring | Use a larger-diameter ring (90 cm+) or switch to the double-ring method |

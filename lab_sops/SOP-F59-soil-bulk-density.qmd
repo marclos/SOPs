@@ -1,0 +1,373 @@
+---
+# =============================================================================
+# SOP-F59: Soil Bulk Density -- Core Method
+# =============================================================================
+title: "Soil Bulk Density -- Core Method"
+sop-number: "SOP-F59"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-16"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the determination of soil bulk density using
+the volumetric core method. Bulk density ($\rho_b$) is the mass of
+oven-dried soil per unit volume of field-moist soil, expressed in
+g/cm^3^. It is used to convert gravimetric measurements (e.g., nutrient
+concentrations in mg/kg) to volumetric or areal bases (e.g., kg/ha),
+to assess soil compaction, to calculate total porosity, and to evaluate
+management effects on soil physical quality. The core method is the
+most widely used direct measurement of bulk density and is described
+in the SSSA Methods of Soil Analysis [@blake1986; @grossman2002].
+
+
+## 2. Scope
+
+- **Applies to:** Mineral soils at all EA Program field sites, including
+  agricultural plots, photovoltaic panel study sites, and restoration
+  sites. Suitable for depths of 0--30 cm using hand-driven cores.
+- **Does not apply to:** Soils with abundant coarse fragments (greater
+  than approximately 20% by volume of gravel, cobbles, or stones),
+  which require the excavation or clod method. Also not applicable to
+  organic soils (histosols) or very loose sandy soils where core
+  insertion causes compaction of the sample.
+- **Location:** All EA Program field sites; laboratory drying and
+  weighing in SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve sampling plan, ensure training compliance |
+| Field Lead        | Coordinate sampling logistics, verify equipment |
+| Trained Personnel | Collect cores and process samples per this SOP |
+| New Students      | Complete training before independent sampling |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Driving the core sampler with a mallet or hammer poses
+  a risk of hand and finger injury. Trowels and soil knives are sharp.
+  Repetitive hammering can cause strain.
+- **Biological:** Soil-borne pathogens; wash hands thoroughly after
+  handling soil. Tick and insect exposure at field sites.
+- **Environmental:** Standard field hazards (heat, uneven terrain, sun
+  exposure).
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Nitrile or leather work gloves
+- [ ] Safety glasses (when driving the sampler)
+- [ ] Sun protection (hat, sunscreen)
+
+### Related SOPs
+
+Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) for general
+field safety procedures, including transportation, weather hazards, and
+emergency response.
+
+
+## 5. Equipment and Materials
+
+### Field Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Bulk density core rings       | Known internal volume; typical dimensions: 5 cm height x 5 cm diameter (approximately 98 cm^3^) or 7.5 cm x 7.5 cm |
+| Core sampler (drive head)     | Fits over the core ring; beveled cutting edge |
+| Rubber mallet or dead-blow hammer | For driving the sampler                |
+| Driving cap or block          | Wooden or rubber block to protect the sampler from mallet strikes |
+| Flat-blade trowel or soil knife | For excavating around the core and trimming ends |
+| Straight-edged blade or spatula | For trimming flush with ring ends        |
+| Plastic caps or aluminum foil | Two per core, to seal both ends after trimming |
+| Pre-labeled ziplock bags      | For transporting sealed cores             |
+| Cooler with ice packs         | If gravimetric moisture will be determined separately |
+| Ruler or depth gauge          | For measuring insertion depth              |
+| Field notebook                | For recording site, depth, and core ID    |
+| GPS unit or smartphone        | For recording sampling coordinates         |
+
+### Laboratory Equipment
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Drying oven                   | Set to 105 C; see [SOP-L16](../lab_sops/SOP-L16-drying-ovens.qmd) |
+| Analytical balance            | 0.01 g resolution minimum; see [SOP-L13](../lab_sops/SOP-L13-using-balances.qmd) |
+| Desiccator                    | For cooling dried samples before weighing |
+| Pre-weighed aluminum drying tins | Large enough to hold the full core volume |
+| Calipers or ruler             | For verifying core ring dimensions        |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Sampling Preparation
+
+1. Measure and record the internal dimensions of each core ring
+   (inside diameter and height) using calipers. Calculate the volume:
+
+$$
+V = \pi \left(\frac{d}{2}\right)^2 \times h
+$$
+
+where $d$ = inside diameter (cm) and $h$ = height (cm).
+
+2. Pre-label core rings or bags with site name, plot ID, depth, and
+   replicate number
+3. Pre-weigh aluminum drying tins and record the tare mass
+4. Clean core rings and the sampler with DI water before use
+5. File a field work planning form per
+   [SOP-F01](SOP-F01-field-safety.qmd)
+
+### 6.2 Field Sampling
+
+1. Navigate to the predetermined sampling location and record GPS
+   coordinates
+2. Clear surface litter, loose organic debris, and any vegetation from
+   a small area (approximately 15 x 15 cm) at the sampling point
+   without disturbing the mineral soil surface
+
+::: {.callout-important}
+Do not compress or disturb the soil surface before inserting the core.
+The goal is to capture the soil at its natural field density.
+:::
+
+3. Assemble the core ring inside the drive head. Ensure the beveled
+   cutting edge faces downward.
+4. Place the assembled sampler vertically on the soil surface
+5. Position the driving cap or wooden block on top of the sampler
+6. Drive the sampler into the soil using the mallet, applying steady,
+   even blows. Drive until the top of the core ring is flush with, or
+   slightly below, the soil surface.
+7. Do not over-drive the sampler. If the ring is driven more than 1 cm
+   past flush, the sample may be compacted and should be discarded.
+8. Carefully excavate the soil around the sampler using the trowel,
+   leaving a pedestal of soil beneath and around the core
+9. Slide the trowel or soil knife beneath the bottom of the core to
+   sever it from the underlying soil
+10. Lift the sampler and core out of the ground
+
+### 6.3 Trimming and Capping
+
+1. Remove the core ring from the drive head
+2. Using a straight-edged blade, trim the soil flush with the top and
+   bottom of the ring. Remove any material that extends beyond the
+   ring face. Be careful not to smear or compress the soil.
+3. If large roots or rocks protrude from the core face, note this in
+   the field notebook. If coarse fragments constitute a substantial
+   fraction of the core, record this and consider whether the core
+   method is appropriate for this site.
+4. Cap both ends of the ring with plastic caps or wrap tightly with
+   aluminum foil
+5. Place the capped core in a labeled ziplock bag
+6. Store in the cooler for transport to the laboratory
+
+::: {.callout-tip}
+### Tip
+Collect a minimum of three replicate cores per plot or treatment to
+account for spatial variability. Five replicates are preferred for
+statistical robustness, especially in heterogeneous soils or when
+detecting small differences between treatments.
+:::
+
+### 6.4 Backfilling
+
+Backfill the sampling hole with surrounding soil to minimize site
+disturbance and prevent tripping hazards.
+
+### 6.5 Laboratory Processing
+
+1. Remove the plastic caps or foil from the core
+2. Transfer the entire soil core from the ring into a pre-weighed
+   aluminum drying tin. Use a spatula or trowel to ensure all soil is
+   transferred; scrape the inside of the ring if necessary.
+3. Record the mass of the tin plus field-moist soil (this can also be
+   used to calculate gravimetric moisture if a separate subsample is
+   not taken)
+4. Place the tin in the drying oven at 105 C for a minimum of 24 hours
+   (until constant mass is achieved). See
+   [SOP-L16](../lab_sops/SOP-L16-drying-ovens.qmd).
+5. Remove the tin from the oven and cool in a desiccator for 20--30
+   minutes
+6. Weigh the tin plus oven-dried soil and record the mass
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Calculations
+
+**Bulk density** (g/cm^3^):
+
+$$
+\rho_b = \frac{M_{\text{dry}}}{V_{\text{core}}}
+$$
+
+where $M_{\text{dry}}$ = mass of oven-dried soil (g) and
+$V_{\text{core}}$ = internal volume of the core ring (cm^3^).
+
+**Gravimetric moisture content** (if determined from the same core):
+
+$$
+\theta_g = \frac{M_{\text{wet}} - M_{\text{dry}}}{M_{\text{dry}}}
+$$
+
+where $M_{\text{wet}}$ = mass of field-moist soil (g).
+
+**Total porosity** (fraction):
+
+$$
+\phi = 1 - \frac{\rho_b}{\rho_s}
+$$
+
+where $\rho_s$ is the particle density, typically assumed to be
+2.65 g/cm^3^ for mineral soils.
+
+### 7.2 Expected Ranges
+
+Typical bulk density values for mineral soils:
+
+| Soil Type                     | Expected $\rho_b$ (g/cm^3^) |
+|:------------------------------|:----------------------------|
+| Well-aggregated forest or prairie topsoil | 0.8 -- 1.2        |
+| Cultivated agricultural topsoil | 1.1 -- 1.5                |
+| Compacted or traffic-affected soil | 1.5 -- 1.8             |
+| Sandy subsoil                 | 1.4 -- 1.8                  |
+| Clay-rich subsoil             | 1.1 -- 1.6                  |
+
+Values outside the range of 0.5 -- 2.0 g/cm^3^ for mineral soils
+should be investigated for sampling or measurement error.
+
+### 7.3 QC Requirements
+
+- Collect a minimum of three replicate cores per plot or treatment
+- Calculate the coefficient of variation (CV) among replicates. A CV
+  greater than 10% suggests high spatial variability or possible
+  sampling problems (compaction, lost soil during extraction). Consider
+  collecting additional replicates.
+- Verify core ring dimensions at the start of each sampling campaign.
+  If the ring is dented or deformed, replace it.
+- Dry samples to constant mass. If the mass changes by more than
+  0.1 g between successive weighings (at least 4 hours apart), continue
+  drying.
+
+
+## 8. Waste Disposal
+
+| Waste Type              | Disposal Method                             |
+|:------------------------|:--------------------------------------------|
+| Dried soil              | Return to field site if uncontaminated, or standard trash |
+| Used aluminum tins      | Recycle or standard trash                   |
+| Used gloves             | Standard trash                              |
+
+
+## 9. References
+
+- Blake, G.R. & Hartge, K.H. (1986). Bulk density. In: Klute, A.
+  (Ed.), *Methods of Soil Analysis, Part 1: Physical and Mineralogical
+  Methods*. 2nd ed. SSSA Book Series No. 5. pp. 363--375.
+- Grossman, R.B. & Reinsch, T.G. (2002). Bulk density and linear
+  extensibility. In: Dane, J.H. & Topp, G.C. (Eds.), *Methods of Soil
+  Analysis, Part 4: Physical Methods*. SSSA Book Series No. 5.
+  pp. 201--228.
+- Robertson, G.P., Coleman, D.C., Bledsoe, C.S., & Sollins, P. (1999).
+  *Standard Soil Methods for Long-Term Ecological Research*. Oxford
+  University Press.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before collecting bulk density cores independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) training
+3. Complete [SOP-F56 Soil Sampling](SOP-F56-soil-sampling.qmd) training
+4. Observe a trained operator perform core collection, trimming, and
+   laboratory processing
+5. Demonstrate proper core driving technique, trimming to flush, and
+   capping without compacting the sample
+6. Process at least three replicate cores through drying and weighing
+   with a CV below 10%
+7. Be signed off by the field lead or PI
+
+
+## Appendix A: Example Calculation {.appendix}
+
+```{r}
+#| label: bulk-density-calc
+#| echo: true
+#| eval: false
+
+# Bulk density calculation from core method
+# Core ring dimensions
+diameter_cm <- 5.0
+height_cm <- 5.0
+volume_cm3 <- pi * (diameter_cm / 2)^2 * height_cm
+
+# Masses
+tin_g <- 15.32             # Tare mass of aluminum tin
+tin_wet_g <- 112.45        # Tin + field-moist soil
+tin_dry_g <- 95.78         # Tin + oven-dried soil (105 C, 24 h)
+
+# Calculations
+mass_dry_g <- tin_dry_g - tin_g
+mass_wet_g <- tin_wet_g - tin_g
+
+bulk_density <- mass_dry_g / volume_cm3
+grav_moisture <- (mass_wet_g - mass_dry_g) / mass_dry_g
+porosity <- 1 - (bulk_density / 2.65)
+
+cat(sprintf("Core volume:          %.2f cm3\n", volume_cm3))
+cat(sprintf("Oven-dry soil mass:   %.2f g\n", mass_dry_g))
+cat(sprintf("Bulk density:         %.2f g/cm3\n", bulk_density))
+cat(sprintf("Gravimetric moisture: %.3f g/g\n", grav_moisture))
+cat(sprintf("Total porosity:       %.2f\n", porosity))
+```
+
+
+## Appendix B: Coarse Fragment Correction {.appendix}
+
+If the core contains gravel or rock fragments larger than 2 mm, the
+bulk density of the fine-earth fraction (less than 2 mm) can be
+calculated by removing the coarse fragments from the oven-dried sample,
+weighing them separately, and estimating their volume:
+
+$$
+\rho_{b,\text{fine}} = \frac{M_{\text{dry}} - M_{\text{cf}}}{V_{\text{core}} - V_{\text{cf}}}
+$$
+
+where $M_{\text{cf}}$ = mass of coarse fragments (g) and
+$V_{\text{cf}}$ = volume of coarse fragments (cm^3^), estimated by
+water displacement or by dividing $M_{\text{cf}}$ by an assumed rock
+density (typically 2.65 g/cm^3^).
+
+Record the coarse fragment mass fraction and report whether the bulk
+density value refers to the whole soil or the fine-earth fraction.
+
+
+## Appendix C: Troubleshooting {.appendix}
+
+| Symptom                       | Probable Cause                  | Corrective Action              |
+|:------------------------------|:--------------------------------|:-------------------------------|
+| Core compacted during insertion | Soil too dry and hard; excessive force | Moisten the surface slightly (note in field notebook); do not hammer past flush |
+| Soil falls out of the bottom  | Loose sandy soil; insufficient cohesion | Try sampling when soil is slightly moist; use a core sampler with a retaining basket |
+| Large roots fill the core     | Heavily rooted location          | Move to a nearby location; note the root density |
+| CV among replicates exceeds 10% | High spatial variability; compaction artifacts | Collect additional replicates; inspect technique |
+| Bulk density above 2.0 g/cm^3^ | Measurement error or rock fragment in core | Re-check masses and volume; inspect for gravel |
+| Bulk density below 0.5 g/cm^3^ | Organic layer sampled; incomplete core | Verify that mineral soil was sampled; check for lost soil |

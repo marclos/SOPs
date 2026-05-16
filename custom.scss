@@ -13,3 +13,29 @@
   font-size: 0.8rem;
   line-height: 1.3;
 }
+
+/* -------------------------------------------------------------------------
+   Colored sidebar links for highlighted navigation items
+   Used in _quarto.yml sidebar text entries via <span> classes
+   ------------------------------------------------------------------------- */
+
+.sidebar-violet,
+.sidebar-violet strong {
+  color: #7B2D8E !important;
+}
+
+.sidebar-green,
+.sidebar-green strong {
+  color: #2E7D32 !important;
+}
+
+/* Hover states: slightly darker for accessibility */
+.sidebar-navigation .sidebar-item a:hover .sidebar-violet,
+.sidebar-navigation .sidebar-item a:hover .sidebar-violet strong {
+  color: #5B1A6E !important;
+}
+
+.sidebar-navigation .sidebar-item a:hover .sidebar-green,
+.sidebar-navigation .sidebar-item a:hover .sidebar-green strong {
+  color: #1B5E20 !important;
+}

@@ -43,9 +43,9 @@ website:
     contents:
       - text: "SOP Index"
         href: index.qmd
-      - text: "**New to the Lab? Start Here**"
+      - text: "<span class='sidebar-violet'>**New to the Lab? Start Here**</span>"
         href: sops/orientation.qmd
-      - text: "**Statistics and R**"
+      - text: "<span class='sidebar-green'>**Statistics and R**</span>"
         href: https://marclos.github.io/RTricks/
       - text: "---"
       - section: "Commonly Used Field SOPs"
@@ -57,7 +57,6 @@ website:
           - lab_sops/SOP-L01-laboratory-safety.qmd
           - lab_sops/SOP-L05-rstudio-github.qmd
           - lab_sops/SOP-L55-soil-moisture.qmd
-
 format:
   html:
     format-links: [pdf]
