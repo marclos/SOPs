@@ -81,6 +81,7 @@ jobs:
             pdflscape multirow wrapfig colortbl tabu \
             threeparttable threeparttablex makecell \
             environ trimspaces
+            || true
 
       # ── R (pinned version) ───────────────────────────────────────────
       - name: Setup R
