@@ -13,7 +13,7 @@
 #   - Cached R packages via pak
 #   - Cached Quarto setup
 #   - Trimmed system dependencies
-#   - Actions pinned to latest stable releases (checkout v6, deploy-pages v4)
+#   - Actions pinned to latest stable releases (checkout v6, deploy-pages v5)
 # =============================================================================
 name: Build and Deploy SOPs
 
@@ -78,10 +78,10 @@ jobs:
           tlmgr install \
             fancyhdr lastpage geometry xcolor hyperref \
             booktabs longtable caption float lm etoolbox \
-            pdflscape multirow wrapfig colortbl tabu \
+            pdflscape multirow wrapfig colortbl tabu varwidth \
             threeparttable threeparttablex makecell \
             environ trimspaces \
-            || true
+          || true
 
       # ── R (pinned version) ───────────────────────────────────────────
       - name: Setup R
@@ -95,10 +95,6 @@ jobs:
         uses: actions/cache@v5
         with:
           path: ${{ env.R_LIBS_USER }}
-          # NOTE: cache key hashes this workflow file; any edit to the
-          # workflow (even comments) will bust the R package cache.
-          # Consider keying on a dedicated packages.txt if that becomes
-          # a nuisance.
           key: r-packages-${{ runner.os }}-4.4.1-${{ hashFiles('.github/workflows/build-deploy-sops.yml') }}
           restore-keys: |
             r-packages-${{ runner.os }}-4.4.1-
@@ -133,11 +129,6 @@ jobs:
 
       # ── Upload for Pages ──────────────────────────────────────────────
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-- name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: docs
