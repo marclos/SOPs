@@ -18,6 +18,61 @@
 library(qpdf)
 
 # ---------------------------------------------------------------------------
+# 0. Find Pandoc (Quarto bundles its own; rmarkdown needs to know where)
+# ---------------------------------------------------------------------------
+# Try quarto's pandoc first, then fall back to PATH
+quarto_pandoc <- Sys.which("quarto")
+if (nzchar(quarto_pandoc)) {
+  quarto_bin <- tryCatch(
+    system2("quarto", "--paths", stdout = TRUE, stderr = FALSE),
+    error = function(e) character(0)
+  )
+  # quarto --paths returns: line 1 = quarto share, line 2 = pandoc dir (if present)
+  pandoc_candidates <- c(
+    file.path(dirname(quarto_pandoc), "tools"),
+    if (length(quarto_bin) >= 1) file.path(quarto_bin[1], "bin", "tools"),
+    dirname(quarto_pandoc)
+  )
+  for (p in pandoc_candidates) {
+    if (file.exists(file.path(p, "pandoc")) || file.exists(file.path(p, "pandoc.exe"))) {
+      Sys.setenv(RSTUDIO_PANDOC = p)
+      cat(sprintf("Using Pandoc from: %s\n", p))
+      break
+    }
+  }
+}
+
+# Last resort: search common CI locations
+if (!rmarkdown::pandoc_available()) {
+  common_paths <- c(
+    "/opt/quarto/bin/tools",
+    "/usr/local/bin",
+    file.path(Sys.getenv("HOME"), ".local", "bin"),
+    "/opt/hostedtoolcache/quarto"
+  )
+  for (p in common_paths) {
+    if (file.exists(file.path(p, "pandoc"))) {
+      Sys.setenv(RSTUDIO_PANDOC = p)
+      cat(sprintf("Using Pandoc from fallback: %s\n", p))
+      break
+    }
+  }
+}
+
+if (!rmarkdown::pandoc_available()) {
+  # Find pandoc anywhere on the system
+  pandoc_path <- Sys.which("pandoc")
+  if (nzchar(pandoc_path)) {
+    Sys.setenv(RSTUDIO_PANDOC = dirname(pandoc_path))
+    cat(sprintf("Using Pandoc from system PATH: %s\n", dirname(pandoc_path)))
+  } else {
+    stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
+  }
+}
+
+cat(sprintf("Pandoc version: %s\n", rmarkdown::pandoc_version()))
+
+# ---------------------------------------------------------------------------
 # 1. Locate the individual PDFs
 # ---------------------------------------------------------------------------
 args <- commandArgs(trailingOnly = TRUE)
