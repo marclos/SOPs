@@ -36,10 +36,10 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F01](field_sops/SOP-F01-field-safety.qmd) | Field Safety | 1.1 |
-| F02   | *TBD -- Field Equipment Checklist* | -- |
-| F03   | *TBD -- Field Notebook Protocols* | -- |
-| F04   | *TBD   | -- |
-| F05   | *Random Sampling Design* | 1.0 | Needs conversion |
+| F02(field_sops/)   | *TBD -- Field Equipment Checklist* | -- |
+| F03(field_sops/)   | *TBD -- Field Notebook Protocols* | -- |
+| F04(field_sops/)   | *TBD   | -- |
+| F05(field_sops/)   | *Random Sampling Design* | 1.0 | Needs conversion |
 
 ### Equipment (F10--F24)
 
@@ -61,10 +61,10 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F41](field_sops/SOP-F41-surface-water-sampling.qmd) | Surface Water Sampling | 0.9 |
-| [F42](field_sops/SOP-F42-stream-discharge-measurement.qmd)   | *Stream Discharge Measurement* | 0.1 | Needs conversion |
-| F43   | *TBD -- Stormwater Sampling* | -- |
-| F44   | *TBD -- Groundwater Sampling* | -- |
-| F45   | *Stream Physical Habitat Analysis* | 0.1 | Needs conversion |
+| [F42](field_sops/SOP-F42-stream-discharge-measurement.qmd)   | Stream Discharge Measurement | 0.1 |
+| [F43](field_sops/)   | Stormwater Sampling  | -- |
+| [F44](field_sops/)   | Groundwater Sampling  | -- |
+| [F45](field_sops/SOP-F45-stream-physical-habitat.qmd)   | Stream Physical Habitat Analysis | 0.1 |
 
 
 ### Soil Physical Characteristics and Processes (F55--F69)
@@ -72,7 +72,7 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F56](field_sops/SOP-F56-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 |
-| F57   | *Foreign Soil Handling (Import Permits)* | 0.3 | Needs conversion |
+| [F57](field_sops/)   | *Foreign Soil Handling (Import Permits)* | 0.3 | 
 | [F58](field_sops/SOP-F58-soil-texture-by-feel.qmd)   | Texture by Feel | 0.1 |
 | [F59](field_sops/SOP-F59-soil-bulk-density.qmd)   | Soil Bulk Density (Core Method) | -- |
 | [F60](field_sops/SOP-F60-soil-infiltration-rate.qmd)   | Soil Infiltration Rate | -- |
@@ -82,29 +82,28 @@ tbl-classes: table-sm
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| F60   | *TBD --* | -- |
-| F61   | *TBD -- Air Temperature Monitoring (Sensors)* | -- |
-| F62   | *TBD -- Air Quality Monitoring (Portable Sensors)* | -- |
-| F63   | *TBD -- Particulate Matter Sampling* | -- |
+| [F60](field_sops/)   | *TBD --* | -- |
+| [F61](field_sops/)   | *TBD -- Air Temperature Monitoring (Sensors)* | -- |
+| [F62](field_sops/)   | *TBD -- Air Quality Monitoring (Portable Sensors)* | -- |
+| [F63](field_sops/)   | *TBD -- Particulate Matter Sampling* | -- |
 | [F64](field_sops/SOP-F64-picarro-field-deployment.qmd)   | Picarro GHG Analyzer (Field Deployment) | 1.0 |
-
-| F66   | *Air Quality Monitoring (Portable Sensors)* | -- | TBD |
+| [F66](field_sops/)   | *Air Quality Monitoring (Portable Sensors)* | -- | TBD |
 
 ### Microbes, Plants, and Animals (F80--F95)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| F80   | *TBD * | -- |
+| [F80](field_sops/)   | *TBD * | -- |
 | [F81](field_sops/SOP-F81-vegetation-transect-surveys.qmd)   | Vegetation Transect Surveys | -- | 0.1 |
-| F82   | *Leaf Area Index Measurement* | -- | TBD |
-| F83   | *Plant Tissue Sampling* | -- | TBD |
-| F85  | *TBD -- Macroinvertebrate Sampling* | -- |
-| F86  | *TBD -- Bird Point Count Surveys* | -- |
+| [F82]   | *Leaf Area Index Measurement* | -- | TBD |
+| [F83]   | *Plant Tissue Sampling* | -- | TBD |
+| [F85]  | *TBD -- Macroinvertebrate Sampling* | -- |
+| [F86]  | *TBD -- Bird Point Count Surveys* | -- |
 | [F87](field_sops/SOP-F87-camera-trap.qmd)  | Camera Trap (CamPark T20) | 0.1 | 
-| F88  | *Drone Operations (DJI Matrice/Mavic)* | 0.1 | Needs conversion |
-| F89  | *360 Camera* | 0.1 | Needs conversion |
-| F90  | *Macroinvertebrate Sampling* | -- | TBD |
-| F91  | *Bird Point Count Surveys* | -- | TBD |
+| [F88]  | *Drone Operations (DJI Matrice/Mavic)* | 0.1 | Needs conversion |
+| [F89]  | *360 Camera* | 0.1 | Needs conversion |
+| [F90]  | *Macroinvertebrate Sampling* | -- | TBD |
+| [F91]  | *Bird Point Count Surveys* | -- | TBD |
 
 ### Molecular Biology and DNA (F96--F99)
 
