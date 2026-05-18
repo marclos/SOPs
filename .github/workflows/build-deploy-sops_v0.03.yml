@@ -87,7 +87,8 @@ jobs:
             booktabs longtable caption float lm etoolbox \
             pdflscape multirow wrapfig colortbl tabu varwidth \
             threeparttable threeparttablex makecell \
-            environ trimspaces
+            environ trimspaces\
+            || true
 
       # ── R (pinned version) ───────────────────────────────────────────
       - name: Setup R
