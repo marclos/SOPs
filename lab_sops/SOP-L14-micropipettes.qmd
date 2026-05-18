@@ -1,10 +1,10 @@
 ---
 # =============================================================================
-# SOP-L14: $\mu$sing Micropipettes
+# SOP-L14: Using Micropipettes
 # =============================================================================
-title: "$\mu$sing Micropipettes"
-sop-n$\mu$mber: "SOP-L14"
-a$\mu$thor:
+title: "Using Micropipettes"
+sop-number: "SOP-L14"
+author:
   - name: "Isaac Medina"
     affiliation: "EA Program, Pomona College"
 date: last-modified
@@ -14,21 +14,21 @@ revision: "0.3"
 revision-history:
   - version: "0.1"
     date: "2016-08-10"
-    a$\mu$thor: "Isaac Medina"
+    author: "Isaac Medina"
     changes: "Initial release"
   - version: "0.3"
     date: "2023-05-10"
-    a$\mu$thor: "Isaac Medina"
-    changes: "Converted from LaTeX to Q$\mu$arto"
+    author: "Isaac Medina"
+    changes: "Converted from LaTeX to Quarto"
 ---
 
-## 1. P$\mu$rpose
+## 1. Purpose
 
-This proced$\mu$re describes the proper $\mu$se, vol$\mu$me setting, tip loading,
+This procedure describes the proper use, volume setting, tip loading,
 sample aspiration and dispensing, and care of Gilson Pipetman
-micropipettes. Micropipettes are precision instr$\mu$ments $\mu$sed to transfer
-small vol$\mu$mes of liq$\mu$id (less than 1 mL) with high acc$\mu$racy. Correct
-techniq$\mu$e is essential for reprod$\mu$cible res$\mu$lts in chemical, biological,
+micropipettes. Micropipettes are precision instruments used to transfer
+small volumes of liquid (less than 1 mL) with high accuracy. Correct
+technique is essential for reproducible results in chemical, biological,
 and environmental analyses.
 
 
@@ -36,7 +36,7 @@ and environmental analyses.
 
 - **Applies to:** All Gilson Pipetman micropipettes (P10, P20, P200,
   P1000) in the EA Program laboratory
-- **Does not apply to:** Serological pipettes, Paste$\mu$r pipettes, bottle-
+- **Does not apply to:** Serological pipettes, Pasteur pipettes, bottle-
   top dispensers, or Repipet-type dispensers
 - **Location:** EA Program laboratory, SGM 133
 
@@ -45,187 +45,187 @@ and environmental analyses.
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
-| Lab PI            | Approve SOP, ens$\mu$re ann$\mu$al calibration      |
-| Lab Manager       | Sched$\mu$le calibration, maintain tip inventory |
-| Trained Personnel | Follow this SOP, report malf$\mu$nctions        |
-| New St$\mu$dents      | Complete training before independent $\mu$se    |
+| Lab PI            | Approve SOP, ensure annual calibration      |
+| Lab Manager       | Schedule calibration, maintain tip inventory |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete training before independent use    |
 
 
 ## 4. Safety and Hazards
 
-::: {.callo$\mu$t-warning}
+::: {.callout-warning}
 ### Hazards
 
-- **Chemical:** Liq$\mu$ids being pipetted may be hazardo$\mu$s. Cons$\mu$lt the
+- **Chemical:** Liquids being pipetted may be hazardous. Consult the
   relevant SOP and Safety Data Sheet for the material being transferred.
-- **Physical:** Repetitive pipetting can ca$\mu$se repetitive strain
-  inj$\mu$ries. Take breaks d$\mu$ring extended pipetting sessions.
-- **Biological:** When pipetting biological samples, $\mu$se filter tips to
+- **Physical:** Repetitive pipetting can cause repetitive strain
+  injuries. Take breaks during extended pipetting sessions.
+- **Biological:** When pipetting biological samples, use filter tips to
   prevent aerosol contamination of the pipette barrel.
 :::
 
-### Req$\mu$ired PPE
+### Required PPE
 
 - [ ] Safety glasses
 - [ ] Lab coat
 - [ ] Nitrile gloves
 
-### Emergency Proced$\mu$res
+### Emergency Procedures
 
-If hazardo$\mu$s liq$\mu$id enters the pipette barrel, stop immediately.
-Decontaminate the pipette per the man$\mu$fact$\mu$rer's instr$\mu$ctions and refer
-to [SOP-L02 Hazardo$\mu$s Materials Handling](SOP-L02-hazardo$\mu$s-materials-handling.qmd).
+If hazardous liquid enters the pipette barrel, stop immediately.
+Decontaminate the pipette per the manufacturer's instructions and refer
+to [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
 
 
-## 5. Eq$\mu$ipment and Materials
+## 5. Equipment and Materials
 
-### Eq$\mu$ipment
+### Equipment
 
-| Item              | Vol$\mu$me Range        | Notes                        |
+| Item              | Volume Range        | Notes                        |
 |:------------------|:--------------------|:-----------------------------|
-| Pipetman P10      | 1.0 -- 10.0 $\mu$L     | Yellow or white tip          |
-| Pipetman P20      | 2.0 -- 20.0 $\mu$L     | Yellow tip                   |
-| Pipetman P200     | 20 -- 200 $\mu$L       | Yellow tip                   |
-| Pipetman P1000    | 200 -- 1000 $\mu$L     | Bl$\mu$e tip                     |
+| Pipetman P10      | 1.0 -- 10.0 uL     | Yellow or white tip          |
+| Pipetman P20      | 2.0 -- 20.0 uL     | Yellow tip                   |
+| Pipetman P200     | 20 -- 200 uL       | Yellow tip                   |
+| Pipetman P1000    | 200 -- 1000 uL     | Blue tip                     |
 
-### Cons$\mu$mables
+### Consumables
 
 | Item                          | Notes                                     |
 |:------------------------------|:------------------------------------------|
 | Disposable pipette tips       | Match tip size to pipette; see Section 6.3 |
-| Filter pipette tips           | Req$\mu$ired for biological or volatile samples |
-| Tip waste container           | Benchtop receptacle for $\mu$sed tips          |
+| Filter pipette tips           | Required for biological or volatile samples |
+| Tip waste container           | Benchtop receptacle for used tips          |
 
 
-## 6. Proced$\mu$re
+## 6. Procedure
 
 ### 6.1 Selecting the Correct Pipette
 
-Always select the smallest pipette that covers the target vol$\mu$me. $\mu$sing
-an $\mu$nnecessarily large pipette for a small vol$\mu$me red$\mu$ces acc$\mu$racy. The
-vol$\mu$me ranges are:
+Always select the smallest pipette that covers the target volume. using
+an unnecessarily large pipette for a small volume reduces accuracy. The
+volume ranges are:
 
-| Pipette  | Range             | Smallest Grad$\mu$ation |
+| Pipette  | Range             | Smallest Graduation |
 |:---------|:------------------|:--------------------|
-| P10      | 1.0 -- 10.0 $\mu$L   | 0.02 $\mu$L             |
-| P20      | 2.0 -- 20.0 $\mu$L   | 0.02 $\mu$L             |
-| P200     | 20 -- 200 $\mu$L     | 0.2 $\mu$L              |
-| P1000    | 200 -- 1000 $\mu$L   | 2 $\mu$L                |
+| P10      | 1.0 -- 10.0 uL   | 0.02 uL             |
+| P20      | 2.0 -- 20.0 uL   | 0.02 uL             |
+| P200     | 20 -- 200 uL     | 0.2 uL              |
+| P1000    | 200 -- 1000 uL   | 2 uL                |
 
-::: {.callo$\mu$t-important}
-Never set the pipette below the minim$\mu$m or above the maxim$\mu$m of its
-range. Exceeding these limits will damage the piston seal and p$\mu$t the
-pipette o$\mu$t of calibration.
+::: {.callout-important}
+Never set the pipette below the minimum or above the maximum of its
+range. Exceeding these limits will damage the piston seal and put the
+pipette out of calibration.
 :::
 
-### 6.2 Setting the Vol$\mu$me
+### 6.2 Setting the Volume
 
-1. Identify the vol$\mu$me display window on the front face of the pipette.
+1. Identify the volume display window on the front face of the pipette.
    The three-digit display reads differently for each pipette size:
-   - **P10:** digits represent ones, tenths, and h$\mu$ndredths of $\mu$L
-   - **P20:** digits represent tens, ones, and tenths of $\mu$L
-   - **P200:** digits represent h$\mu$ndreds, tens, and ones of $\mu$L
-   - **P1000:** digits represent tho$\mu$sands, h$\mu$ndreds, and tens of $\mu$L
-2. T$\mu$rn the vol$\mu$me adj$\mu$stment ring clockwise to increase vol$\mu$me or
-   co$\mu$nterclockwise to decrease vol$\mu$me
-3. If yo$\mu$ overshoot the target while dialing down, dial below the
-   desired setting and then dial back $\mu$p to the correct val$\mu$e. This
+   - **P10:** digits represent ones, tenths, and hundredths of uL
+   - **P20:** digits represent tens, ones, and tenths of uL
+   - **P200:** digits represent hundreds, tens, and ones of uL
+   - **P1000:** digits represent thousands, hundreds, and tens of uL
+2. Turn the volume adjustment ring clockwise to increase volume or
+   counterclockwise to decrease volume
+3. If you overshoot the target while dialing down, dial below the
+   desired setting and then dial back up to the correct value. This
    avoids mechanical backlash in the piston mechanism.
 
 ### 6.3 Loading a Tip
 
-1. Select the correct tip size for the pipette being $\mu$sed. Tip boxes
-   are labeled with the compatible pipette sizes. When in do$\mu$bt, confirm
+1. Select the correct tip size for the pipette being used. Tip boxes
+   are labeled with the compatible pipette sizes. When in doubt, confirm
    with the lab manager.
 2. Press the pipette shaft firmly into a tip in the tip box. A slight
-   twist while pressing helps ens$\mu$re a sec$\mu$re, airtight seal.
-3. Do not to$\mu$ch the tip with yo$\mu$r hands.
-4. Always $\mu$se a fresh tip for each different reagent or sample to
+   twist while pressing helps ensure a secure, airtight seal.
+3. Do not touch the tip with your hands.
+4. Always use a fresh tip for each different reagent or sample to
    prevent cross-contamination.
 
 ### 6.4 Aspirating (Loading) a Sample
 
-1. Depress the pl$\mu$nger slowly to the **first stop** (the point of
-   initial resistance). This is the calibrated load vol$\mu$me.
-2. While holding the pl$\mu$nger at the first stop, immerse the tip into
-   the liq$\mu$id j$\mu$st eno$\mu$gh to cover the opening (3--4 mm). Do not pl$\mu$nge
+1. Depress the plunger slowly to the **first stop** (the point of
+   initial resistance). This is the calibrated load volume.
+2. While holding the plunger at the first stop, immerse the tip into
+   the liquid just enough to cover the opening (3--4 mm). Do not plunge
    the tip to the bottom of the vessel.
-3. Slowly and steadily release the pl$\mu$nger to draw liq$\mu$id into the tip.
-   Do not let the pl$\mu$nger snap back.
-4. Wait one to two seconds before removing the tip from the liq$\mu$id,
-   especially with visco$\mu$s sol$\mu$tions. This allows the f$\mu$ll vol$\mu$me to
-   enter the tip and prevents air b$\mu$bbles.
-5. Vis$\mu$ally inspect the tip: there sho$\mu$ld be no air gap or b$\mu$bble at
-   the distal end. If there is, dispense the liq$\mu$id back and repeat.
+3. Slowly and steadily release the plunger to draw liquid into the tip.
+   Do not let the plunger snap back.
+4. Wait one to two seconds before removing the tip from the liquid,
+   especially with viscous solutions. This allows the full volume to
+   enter the tip and prevents air bubbles.
+5. Visually inspect the tip: there should be no air gap or bubble at
+   the distal end. If there is, dispense the liquid back and repeat.
 
-::: {.callo$\mu$t-tip}
+::: {.callout-tip}
 ### Tip
-For visco$\mu$s liq$\mu$ids (glycerol, concentrated DNA sol$\mu$tions), $\mu$se the
-"reverse pipetting" techniq$\mu$e: depress the pl$\mu$nger to the **second
-stop** before immersing the tip, draw $\mu$p the liq$\mu$id by releasing to the
+For viscous liquids (glycerol, concentrated DNA solutions), use the
+"reverse pipetting" technique: depress the plunger to the **second
+stop** before immersing the tip, draw up the liquid by releasing to the
 rest position, and then dispense by pressing only to the **first stop**.
-The small amo$\mu$nt of liq$\mu$id remaining in the tip is discarded.
+The small amount of liquid remaining in the tip is discarded.
 :::
 
 ### 6.5 Dispensing a Sample
 
-1. To$\mu$ch the tip to the inner wall of the receiving vessel at a slight
+1. Touch the tip to the inner wall of the receiving vessel at a slight
    angle
-2. Depress the pl$\mu$nger slowly to the **first stop** to dispense most of
-   the liq$\mu$id
-3. Contin$\mu$e pressing to the **second stop** to expel the final drop
-4. Hold the pl$\mu$nger at the second stop while withdrawing the tip from
+2. Depress the plunger slowly to the **first stop** to dispense most of
+   the liquid
+3. Continue pressing to the **second stop** to expel the final drop
+4. Hold the plunger at the second stop while withdrawing the tip from
    the vessel
-5. Release the pl$\mu$nger only after the tip is clear of the liq$\mu$id
+5. Release the plunger only after the tip is clear of the liquid
 
 ### 6.6 Ejecting the Tip
 
 1. Hold the pipette over the tip waste container
-2. Press the tip ejector b$\mu$tton on the back of the pipette
-3. Never re$\mu$se a tip between different sol$\mu$tions
+2. Press the tip ejector button on the back of the pipette
+3. Never reuse a tip between different solutions
 
-### 6.7 Important Preca$\mu$tions
+### 6.7 Important Precautions
 
-- Never point a pipette $\mu$pward with liq$\mu$id in the tip. Liq$\mu$id can flow
+- Never point a pipette upward with liquid in the tip. Liquid can flow
   back into the barrel and damage the piston and seals.
 - Never lay a pipette down with a loaded tip.
-- When not in $\mu$se, set the pipette to its maxim$\mu$m vol$\mu$me and hang it
+- When not in use, set the pipette to its maximum volume and hang it
   vertically on the pipette stand. This relaxes the piston spring and
-  extends the instr$\mu$ment's life.
-- Do not $\mu$se a pipette as a stirring rod.
-- If the pl$\mu$nger action feels ro$\mu$gh, sticky, or inconsistent, stop
-  $\mu$sing the pipette and report the iss$\mu$e to the lab manager.
+  extends the instrument's life.
+- Do not use a pipette as a stirring rod.
+- If the plunger action feels rough, sticky, or inconsistent, stop
+  using the pipette and report the issue to the lab manager.
 
 
-## 7. Q$\mu$ality Control and Acceptance Criteria
+## 7. Quality Control and Acceptance Criteria
 
-### 7.1 Gravimetric Acc$\mu$racy Check
+### 7.1 Gravimetric Accuracy Check
 
-Verify pipette acc$\mu$racy by weighing dispensed vol$\mu$mes of distilled water
+Verify pipette accuracy by weighing dispensed volumes of distilled water
 on the analytical balance (see
 [SOP-L25](SOP-L25-analytical-balance-calibration.qmd)):
 
-1. Tare a clean microcentrif$\mu$ge t$\mu$be on the analytical balance
-2. Pipette the test vol$\mu$me of distilled water into the t$\mu$be
-3. Record the mass. At 20 C, 1 $\m$\mu$$L of water weighs approximately 1.00 mg.
+1. Tare a clean microcentrifuge tube on the analytical balance
+2. Pipette the test volume of distilled water into the tube
+3. Record the mass. At 20 C, 1 $\mu$L of water weighs approximately 1.00 mg.
 4. Repeat for a total of 10 replicates
-5. Calc$\mu$late the mean and coefficient of variation (CV)
+5. Calculate the mean and coefficient of variation (CV)
 
-| Pipette | Test Vol$\mu$me | Acceptable CV   |
+| Pipette | Test Volume | Acceptable CV   |
 |:--------|:------------|:----------------|
-| P10     | 10 $\m$\mu$$L       | less than 3%    |
-| P20     | 20 $\m$\mu$$L       | less than 2%    |
-| P200    | 200 $\m$\mu$$L      | less than 1%    |
-| P1000   | 1000 $\m$\mu$$L     | less than 0.5%  |
+| P10     | 10 $\mu$L       | less than 3%    |
+| P20     | 20 $\mu$L       | less than 2%    |
+| P200    | 200 $\mu$L      | less than 1%    |
+| P1000   | 1000 $\mu$L     | less than 0.5%  |
 
-If the CV exceeds the acceptable threshold, the pipette sho$\mu$ld be
+If the CV exceeds the acceptable threshold, the pipette should be
 removed from service and sent for professional calibration.
 
-### 7.2 Calibration Sched$\mu$le
+### 7.2 Calibration Schedule
 
-All micropipettes m$\mu$st be professionally calibrated at least once per
+All micropipettes must be professionally calibrated at least once per
 year. Calibration stickers on each pipette show the date of last
-calibration and the next d$\mu$e date. Do not $\mu$se a pipette with an expired
+calibration and the next due date. Do not use a pipette with an expired
 calibration.
 
 
@@ -233,16 +233,16 @@ calibration.
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
-| $\mu$sed pipette tips (non-hazardo$\mu$s) | Standard tip waste box; dispose in reg$\mu$lar trash when f$\mu$ll |
-| $\mu$sed tips contaminated with hazardo$\mu$s chemicals | Chemical waste per [SOP-L02](SOP-L02-hazardo$\mu$s-materials-handling.qmd) |
-| $\mu$sed tips contaminated with biological material | Biohazard bag; a$\mu$toclave before disposal |
+| used pipette tips (non-hazardous) | Standard tip waste box; dispose in regular trash when full |
+| used tips contaminated with hazardous chemicals | Chemical waste per [SOP-L02](SOP-L02-hazardous-materials-handling.qmd) |
+| used tips contaminated with biological material | Biohazard bag; autoclave before disposal |
 
 
 ## 9. References
 
-- Gilson. *Pipetman Classic: $\mu$ser's G$\mu$ide*. Gilson, Inc., Middleton, WI.
+- Gilson. *Pipetman Classic: user's Guide*. Gilson, Inc., Middleton, WI.
 - APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
-  and Wastewater*. 22nd ed. American P$\mu$blic Health Association (Eds.).
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
   Washington. 1360 pp.
 
 ::: {#refs}
@@ -251,44 +251,44 @@ calibration.
 
 ## 10. Training Record
 
-Before $\mu$sing micropipettes independently, personnel m$\mu$st:
+Before using micropipettes independently, personnel must:
 
-1. Read this SOP in f$\mu$ll
+1. Read this SOP in full
 2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
    training
-3. Demonstrate correct vol$\mu$me setting, tip loading, aspiration, and
-   dispensing techniq$\mu$e $\mu$nder s$\mu$pervision
-4. Perform a gravimetric acc$\mu$racy check (Section 7.1) with acceptable
-   res$\mu$lts for at least two pipette sizes
+3. Demonstrate correct volume setting, tip loading, aspiration, and
+   dispensing technique under supervision
+4. Perform a gravimetric accuracy check (Section 7.1) with acceptable
+   results for at least two pipette sizes
 5. Be signed off by the PI or lab manager
 
 
-## Appendix A: Vol$\mu$me Display Reading G$\mu$ide {.appendix}
+## Appendix A: Volume Display Reading Guide {.appendix}
 
-The three-digit vol$\mu$me display reads differently for each Pipetman size.
-The table below shows the maxim$\mu$m display setting and the place val$\mu$e of
+The three-digit volume display reads differently for each Pipetman size.
+The table below shows the maximum display setting and the place value of
 each digit:
 
 | Pipette | Max Display | Digit 1 (top) | Digit 2 (middle) | Digit 3 (bottom) |
 |:--------|:------------|:--------------|:------------------|:------------------|
-| P10     | 1 0 . 0 0   | 10 $\m$\mu$$L         | 1 $\m$\mu$$L              | 0.1 $\mu$L            |
-| P20     | 2 0 . 0     | 10 $\mu$L         | 1 $\mu$L              | 0.1 $\mu$L            |
-| P200    | 2 0 0       | 100 $\mu$L        | 10 $\mu$L             | 1 $\mu$L              |
-| P1000   | 1 0 0 0     | 1000 $\mu$L       | 100 $\mu$L            | 10 $\mu$L             |
+| P10     | 1 0 . 0 0   | 10 $\mu$L         | 1 $\mu$L              | 0.1 $\mu$L            |
+| P20     | 2 0 . 0     | 10 $\mu$L         | 1 $\mu$L              | 0.1 uL            |
+| P200    | 2 0 0       | 100 uL        | 10 uL             | 1 uL              |
+| P1000   | 1 0 0 0     | 1000 uL       | 100 uL            | 10 uL             |
 
-<!-- TODO: Add fig$\mu$re of pipetman display windows (pipetman2.jpg from
-original LaTeX doc$\mu$ment) -->
+<!-- TODO: Add figure of pipetman display windows (pipetman2.jpg from
+original LaTeX document) -->
 
 
-## Appendix B: Tro$\mu$bleshooting {.appendix}
+## Appendix B: Troubleshooting {.appendix}
 
-| Symptom                       | Probable Ca$\mu$se                  | Corrective Action              |
+| Symptom                       | Probable Cause                  | Corrective Action              |
 |:------------------------------|:--------------------------------|:-------------------------------|
-| Liq$\mu$id drips from tip after aspiration | Tip not seated properly; damaged tip | Reseat or replace tip  |
-| Air b$\mu$bble in tip after aspiration | Pl$\mu$nger released too q$\mu$ickly; tip not immersed deep eno$\mu$gh | Re-aspirate slowly with tip 3--4 mm below s$\mu$rface |
-| Dispensed vol$\mu$me too low      | Pipette o$\mu$t of calibration; wrong tip size | Perform gravimetric check; verify tip compatibility |
-| Pl$\mu$nger feels sticky or ro$\mu$gh | Liq$\mu$id entered barrel; worn piston seal | Clean barrel; send for service |
-| Vol$\mu$me display will not t$\mu$rn  | Mechanical jam                  | Do not force; contact lab manager |
+| Liquid drips from tip after aspiration | Tip not seated properly; damaged tip | Reseat or replace tip  |
+| Air bubble in tip after aspiration | Plunger released too quickly; tip not immersed deep enough | Re-aspirate slowly with tip 3--4 mm below surface |
+| Dispensed volume too low      | Pipette out of calibration; wrong tip size | Perform gravimetric check; verify tip compatibility |
+| Plunger feels sticky or rough | Liquid entered barrel; worn piston seal | Clean barrel; send for service |
+| Volume display will not turn  | Mechanical jam                  | Do not force; contact lab manager |
 
-<!-- TODO: Add fig$\mu$re of pipetman anatomy (pipetman.jpg) and loading
-techniq$\mu$e (pipetman3.jpg) from original LaTeX doc$\mu$ment -->
+<!-- TODO: Add figure of pipetman anatomy (pipetman.jpg) and loading
+technique (pipetman3.jpg) from original LaTeX document -->
