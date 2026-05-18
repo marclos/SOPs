@@ -1,0 +1,439 @@
+---
+# =============================================================================
+# SOP-F44: Groundwater Monitoring Well Sampling
+# =============================================================================
+title: "Groundwater Monitoring Well Sampling"
+sop-number: "SOP-F44"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-17"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes procedures for collecting representative
+groundwater samples from monitoring wells using the low-flow (minimal
+drawdown) purging and sampling method. Low-flow sampling minimizes
+disturbance to the well and surrounding formation, reduces turbidity
+artifacts, and yields samples that are more representative of in-situ
+groundwater chemistry than traditional high-volume purge methods.
+
+The procedures follow the U.S. EPA low-flow guidance (Puls and
+Barcelona, 1996), EPA Region 9 groundwater sampling procedures, and
+the Cal-EPA Department of Toxic Substances Control (DTSC) guidance on
+representative groundwater sampling.
+
+
+## 2. Scope
+
+- **Applies to:** Sampling of existing groundwater monitoring wells
+  with an inside diameter of 2 inches (5 cm) or greater, screened
+  intervals of 3 m (10 ft) or less, and a water level above the top
+  of the screen
+- **Does not apply to:** Well installation or development; direct-push
+  (e.g., Geoprobe) sampling; spring or seep sampling; wells requiring
+  high-volume purging for regulatory compliance; wells with water
+  levels below the top of the screen (consult the PI for alternative
+  procedures)
+- **Location:** All EA Program groundwater monitoring sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Project Lead | Approve sampling plan and well selection                |
+| Field Lead        | Coordinate logistics, maintain well access agreements   |
+| Trained Personnel | Purge and sample wells per this SOP                     |
+| New Students      | Complete training before participating in well sampling |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Heavy well caps and locks; lifting pumps and
+  equipment; uneven terrain around well pads; potential for back
+  strain when bending over flush-mount wells
+- **Chemical:** Groundwater may contain volatile organic compounds
+  (VOCs), metals, or other contaminants. Purge water may require
+  containerization as hazardous waste. Preservative acids (HNO~3~,
+  H~2~SO~4~, HCl) in pre-preserved bottles are corrosive.
+- **Biological:** Standing water in well vaults may harbor mosquitoes
+  or other vectors
+- **Confined spaces:** Flush-mount well vaults may be classified as
+  confined spaces. Do not enter vaults. Sample from the surface.
+:::
+
+### 4.1 Required PPE
+
+- [ ] Nitrile gloves (change between wells)
+- [ ] Safety glasses
+- [ ] Steel-toed boots or sturdy closed-toed footwear
+- [ ] High-visibility vest (if near roads)
+- [ ] Sun protection (hat, sunscreen)
+
+### 4.2 Emergency Procedures
+
+If a spill of purge water or preservative acid occurs, contain with
+absorbent materials and refer to
+[SOP-L02 Hazardous Materials Handling](../lab_sops/SOP-L02-hazardous-materials-handling.qmd).
+For general field emergencies, refer to
+[SOP-F01 Field Safety](SOP-F01-field-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Sampling Equipment
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Peristaltic pump or bladder pump      | Low-flow capable (0.1--0.5 L/min); peristaltic for shallow wells, bladder for deeper wells |
+| Dedicated or disposable polyethylene tubing | Sized to fit pump and well; new tubing for each well if not dedicated |
+| Electronic water level indicator (e-tape) | For measuring depth to water           |
+| Flow-through cell with multiparameter probe | For monitoring field parameters during purging (pH, temperature, specific conductance, dissolved oxygen, ORP, turbidity) |
+| Calibration standards                 | pH 4, 7, 10; conductivity standard; DO zero and saturation |
+| Graduated bucket or cylinder          | For measuring purge volume and flow rate |
+| Stopwatch or timer                    | For timing purge intervals               |
+| Pre-labeled sample bottles            | From analytical lab, with preservatives as required |
+| Deionized water                       | For equipment blanks and rinsing         |
+| Well keys                             | For locked well caps                     |
+
+### Field Documentation
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Well construction logs                | Casing depth, screen interval, diameter  |
+| Groundwater purge log (Appendix A)    | For recording stabilization parameters   |
+| Chain of custody (COC) forms          | Required for lab submission              |
+| Field notebook                        | For observations and deviations          |
+| Camera                                | Photo-document well condition            |
+| GPS unit or smartphone                | For confirming well locations             |
+
+### Waste Management
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| 5-gallon HDPE buckets or carboys      | For containing purge water               |
+| Drum or tote (if large volumes)       | For sites with contaminated groundwater  |
+| Absorbent pads                        | For spill containment                    |
+
+
+## 6. Estimated Time
+
+| Task                                  | Time per Well                            |
+|:--------------------------------------|:-----------------------------------------|
+| Setup (unlock, measure water level, deploy pump) | 10--15 minutes           |
+| Low-flow purging to parameter stabilization | 20--60 minutes (site-dependent) |
+| Sample collection                     | 10--20 minutes                           |
+| Decontamination and breakdown         | 10--15 minutes                           |
+| Total                                 | 50--110 minutes per well                 |
+
+
+## 7. Procedure
+
+### 7.1 Pre-Sampling Preparation
+
+1. Review well construction logs for each well to be sampled: casing
+   material, diameter, total depth, screen interval, and previous
+   water level data
+2. Calculate the volume of standing water in the well casing above
+   the screen using:
+
+$$
+V = \pi r^2 h
+$$
+
+where $r$ is the inside radius of the casing and $h$ is the height
+of the water column above the bottom of the well (or above the top
+of the screen, for estimating stagnant casing water)
+
+3. Calibrate the multiparameter probe per the manufacturer's
+   instructions. Record calibration data on the purge log.
+4. Assemble pump, tubing, and flow-through cell. For non-dedicated
+   equipment, decontaminate with deionized water before use at each
+   well.
+
+### 7.2 Water Level Measurement
+
+1. Remove the well cap. Note the condition of the well (damage,
+   standing water in vault, obstructions).
+2. Wipe the e-tape sensor with a clean paper towel
+3. Lower the e-tape slowly into the well until the alarm sounds at
+   the water surface
+4. Record depth to water from the surveyed reference point (typically
+   the top of casing, or TOC) to the nearest 0.3 cm (0.01 ft)
+5. Measure well depth from the same reference point (measure after
+   sampling, not before, to avoid resuspending settled solids)
+6. Calculate the water column height and standing water volume
+
+::: {.callout-tip}
+### Tip
+Always measure water level before inserting the pump. Lowering the
+pump displaces water and changes the apparent water level.
+:::
+
+### 7.3 Pump Placement and Low-Flow Purging
+
+1. Slowly lower the pump intake to the center of the screened interval
+   (or the target sampling depth specified in the sampling plan).
+   Avoid dropping the pump or allowing it to contact the bottom of
+   the well.
+2. Start the pump at the lowest speed setting and slowly increase
+   until discharge begins. Target a flow rate of 0.1--0.5 L/min.
+3. Check the water level. Drawdown should not exceed 10 cm (0.33 ft)
+   during purging. If drawdown exceeds 10 cm, reduce the pumping
+   rate.
+4. Route the discharge through the flow-through cell for continuous
+   monitoring of field parameters.
+5. Record field parameters (pH, temperature, specific conductance,
+   dissolved oxygen, ORP, turbidity) and cumulative purge volume on
+   the purge log at 3--5 minute intervals.
+6. Continue purging until field parameters have stabilized.
+   Stabilization criteria:
+
+| Parameter              | Stabilization Criterion               |
+|:-----------------------|:--------------------------------------|
+| pH                     | +/- 0.1 units over three consecutive readings |
+| Temperature            | +/- 0.2 C over three consecutive readings     |
+| Specific conductance   | +/- 3% over three consecutive readings        |
+| Dissolved oxygen       | +/- 0.3 mg/L over three consecutive readings  |
+| ORP                    | +/- 10 mV over three consecutive readings     |
+| Turbidity              | +/- 10% over three consecutive readings (or < 10 NTU) |
+
+7. Once all parameters are stable, proceed immediately to sample
+   collection. Do not turn off the pump between purging and sampling.
+
+::: {.callout-important}
+### If the Well Purges Dry
+
+If the well dewaters before stabilization is achieved, stop pumping
+and allow the well to recover. Sample as soon as adequate volume has
+recovered (ideally within 24 hours). Record the dewatering event and
+recovery time on the purge log. Note that samples from wells purged
+to dryness may not be representative.
+:::
+
+### 7.4 Sample Collection
+
+1. Disconnect the flow-through cell from the discharge line. Collect
+   samples directly from the pump tubing.
+2. Maintain the same low flow rate used during purging.
+3. Collect samples in the following order to minimize bias from
+   changes in flow or chemistry:
+
+   a. Volatile organic compounds (VOCs), if applicable -- fill
+      directly into 40 mL glass vials with zero headspace; do not
+      filter
+   b. Dissolved gases, if applicable
+   c. Total metals and other unfiltered analytes
+   d. Filtered (dissolved) analytes -- attach a 0.45 um in-line
+      filter to the discharge tubing
+   e. General chemistry (pH, conductivity, alkalinity, nutrients)
+   f. Bacteria (use sterile bottles)
+
+4. Fill bottles slowly to minimize aeration and turbulence. Tilt the
+   bottle and let water flow down the inside wall.
+5. For pre-preserved bottles, do not overfill (preservative will be
+   diluted). Fill to the shoulder of the bottle.
+6. Cap immediately, label with site ID, well ID, date, time, depth
+   to water, and sampler initials.
+7. Place in a cooler with ice immediately.
+
+### 7.5 Post-Sampling Procedures
+
+1. Measure and record the final depth to water
+2. Measure the total well depth (now that sampling is complete)
+3. Remove the pump and tubing. Coil tubing carefully if it is
+   dedicated equipment.
+4. Replace the well cap and lock
+5. Containerize all purge water. Dispose of according to the site
+   waste management plan (non-contaminated purge water may be
+   discharged on-site per the sampling plan; contaminated purge water
+   must be drummed and disposed of properly).
+6. Decontaminate non-dedicated equipment with a detergent wash
+   followed by deionized water rinse. Collect an equipment blank from
+   the final rinse.
+7. Complete the chain of custody form
+
+### 7.6 Decontamination Between Wells
+
+If using non-dedicated equipment:
+
+1. Flush the pump and tubing with a minimum of 1 L of laboratory-
+   grade detergent solution (Alconox or equivalent)
+2. Flush with a minimum of 3 L of deionized water
+3. Allow to air-dry or flush with additional deionized water
+4. Change nitrile gloves between wells
+5. Collect one equipment blank per sampling event to verify
+   decontamination adequacy
+
+
+## 8. Sample Preservation and Holding Times
+
+Follow the preservation requirements specified by your analytical
+laboratory. Common groundwater analytes:
+
+| Analyte              | Container          | Preservative           | Holding Time    |
+|:---------------------|:-------------------|:-----------------------|:----------------|
+| pH                   | Poly, 250 mL       | None; measure in field | 15 minutes      |
+| Specific conductance | Poly, 250 mL       | Refrigerate 4 C        | 28 days         |
+| Alkalinity           | Poly, 250 mL       | Refrigerate 4 C        | 14 days         |
+| Nitrate + nitrite    | Poly, 250 mL       | H~2~SO~4~ to pH < 2; 4 C | 28 days      |
+| Ammonia              | Poly, 250 mL       | H~2~SO~4~ to pH < 2; 4 C | 28 days      |
+| Total phosphorus     | Poly, 250 mL       | H~2~SO~4~ to pH < 2; 4 C | 28 days      |
+| Total metals         | Poly, 500 mL       | HNO~3~ to pH < 2; 4 C | 6 months        |
+| Dissolved metals     | Poly, 500 mL       | Filter 0.45 um; HNO~3~ to pH < 2; 4 C | 6 months |
+| VOCs                 | Glass, 40 mL (x3)  | HCl to pH < 2; 4 C    | 14 days         |
+| General minerals     | Poly, 1 L          | Refrigerate 4 C        | 28 days         |
+
+
+## 9. Quality Control
+
+### 9.1 Field Blanks
+
+One field blank per sampling event: fill a sample bottle with
+deionized water at the well site, preserve and handle identically to
+field samples, and submit to the laboratory.
+
+### 9.2 Equipment Blanks
+
+One equipment blank per sampling event: collect the final deionized
+water rinse from the decontaminated pump and tubing.
+
+### 9.3 Field Duplicates
+
+Collect one field duplicate per 10 wells sampled (or at least one per
+event). Duplicates are collected immediately after the primary sample
+from the same well at the same flow rate.
+
+### 9.4 Trip Blanks (VOCs Only)
+
+If sampling for VOCs, include one trip blank per cooler. The trip
+blank is a set of 40 mL VOC vials filled with laboratory-grade water
+at the lab and transported unopened with the field samples.
+
+
+## 10. Data Management
+
+1. Enter purge log data, water levels, and sample IDs into the project
+   database within 48 hours
+2. Calculate the water table elevation for each well from the depth-
+   to-water measurement and the surveyed TOC elevation
+3. When laboratory results are received, merge with field data and
+   apply QC flags per
+   [SOP-L06 Quality Control](../lab_sops/SOP-L06-quality-control.qmd)
+4. Archive original field data sheets (scan if paper)
+5. Version-control all analysis scripts per
+   [SOP-L05 RStudio and GitHub](../lab_sops/SOP-L05-rstudio-github.qmd)
+
+
+## 11. References
+
+- Puls, R.W. and M.J. Barcelona. 1996. Low-Flow (Minimal Drawdown)
+  Ground-Water Sampling Procedures. U.S. EPA Ground Water Issue Paper,
+  EPA/540/S-95/504. Available at:
+  <https://www.epa.gov/sites/default/files/2015-06/documents/lwflw2a.pdf>
+- U.S. EPA Region 9 Laboratory. 2004. Ground-Water Well Sampling SOP
+  #1220, Rev. 1.
+- Cal-EPA Department of Toxic Substances Control. Representative
+  Sampling of Groundwater for Hazardous Substances. Available at:
+  <https://dtsc.ca.gov/>
+- U.S. EPA Region 4. Science and Ecosystem Support Division.
+  Groundwater Sampling Operating Procedure SESDGUID-301-R4.
+  Available at:
+  <https://www.epa.gov/sites/default/files/2017-07/documents/groundwater_sampling301_af.r4.pdf>
+- ASTM D6771-02. Standard Practice for Low-Flow Purging and Sampling
+  for Wells and Devices Used for Ground-Water Quality Investigations.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+
+::: {#refs}
+:::
+
+
+## 12. Training Record
+
+Before sampling groundwater monitoring wells independently, personnel
+must:
+
+1. Read this SOP, [SOP-F01 Field Safety](SOP-F01-field-safety.qmd),
+   and [SOP-F41 Surface Water Sampling](SOP-F41-surface-water-sampling.qmd)
+   in full
+2. Review well construction logs for the wells to be sampled
+3. Demonstrate proper water level measurement technique
+4. Observe a trained operator complete a full low-flow purge and
+   sample collection at one well
+5. Perform a supervised purge and sampling event with parameter
+   stabilization achieved within the criteria in Section 7.3
+6. Demonstrate proper decontamination and chain of custody procedures
+7. Be signed off by the PI or field lead
+
+
+## Appendix A: Groundwater Purge Log {.appendix}
+
+Print on waterproof paper and complete one form per well.
+
+**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Well ID:** \_\_\_\_\_\_\_\_\_\_
+**Date:** \_\_\_\_\_\_\_\_\_\_\_\_ **Sampler:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Well Construction:**
+
+- Casing diameter: \_\_\_\_\_\_ in
+- Total well depth (from TOC): \_\_\_\_\_\_ ft
+- Screen interval: \_\_\_\_\_\_ to \_\_\_\_\_\_ ft below TOC
+- Casing material: \_\_\_\_\_\_\_\_\_\_\_\_
+
+**Water Level:**
+
+- Depth to water (pre-sampling): \_\_\_\_\_\_\_\_ ft from TOC
+- Depth to water (post-sampling): \_\_\_\_\_\_\_\_ ft from TOC
+- Calculated water column: \_\_\_\_\_\_\_\_ ft
+- Calculated standing water volume: \_\_\_\_\_\_\_\_ L
+
+**Pump Information:**
+
+- Pump type: \_\_\_\_\_\_\_\_\_\_\_\_
+- Pump intake depth: \_\_\_\_\_\_\_\_ ft below TOC
+- Tubing material: \_\_\_\_\_\_\_\_\_\_\_\_
+- Dedicated? Y / N
+
+**Purge Record:**
+
+| Time | Elapsed (min) | Cumulative Volume (L) | Flow Rate (L/min) | Drawdown (cm) | pH | Temp (C) | SpC (uS/cm) | DO (mg/L) | ORP (mV) | Turbidity (NTU) | Notes |
+|:-----|:--------------|:----------------------|:-------------------|:--------------|:---|:---------|:-------------|:----------|:---------|:----------------|:------|
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+|      |               |                       |                    |               |    |          |              |           |          |                 |       |
+
+**Stabilization achieved?** Y / N **Time:** \_\_\_\_\_\_\_\_\_\_
+
+**Samples collected:**
+
+| Bottle ID | Analyte | Filtered? | Preservative | Time |
+|:----------|:--------|:----------|:-------------|:-----|
+|           |         |           |              |      |
+|           |         |           |              |      |
+|           |         |           |              |      |
+|           |         |           |              |      |
+
+**Well condition notes:**
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
