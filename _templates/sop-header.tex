@@ -1,11 +1,13 @@
 % =============================================================================
 % SOP PDF Header/Footer Configuration
 % =============================================================================
-% This template reads the following YAML metadata from each SOP:
-%   sop-number:  e.g., "SOP-L29"
-%   revision:    e.g., "2.0"
-% They are injected by Quarto/Pandoc as \$sop-number\$ and \$revision\$.
-% We store them in LaTeX macros for use in headers and footers.
+% Included via include-in-header in _quarto.yml.
+% This file is RAW LATEX -- no Pandoc template variables allowed here.
+%
+% The macros \sopnumber and \soprevision are defined with defaults below.
+% They are overridden by the companion file sop-metadata.tex (included via
+% include-before-body as a Pandoc template partial) when the YAML fields
+% sop-number and revision are present.
 % =============================================================================
 
 \usepackage{fancyhdr}
@@ -16,19 +18,10 @@
 \definecolor{eablue}{HTML}{0057B8}
 
 % ---------------------------------------------------------------------------
-% Capture YAML metadata as LaTeX macros (with fallback defaults)
+% Default macros (overridden by sop-metadata.tex if YAML fields exist)
 % ---------------------------------------------------------------------------
-$if(sop-number)$
-  \newcommand{\sopnumber}{$sop-number$}
-$else$
-  \newcommand{\sopnumber}{SOP-XXX}
-$endif$
-
-$if(revision)$
-  \newcommand{\soprevision}{$revision$}
-$else$
-  \newcommand{\soprevision}{--}
-$endif$
+\newcommand{\sopnumber}{SOP-XXX}
+\newcommand{\soprevision}{--}
 
 % ---------------------------------------------------------------------------
 % Header and Footer

@@ -71,6 +71,11 @@ format:
     smooth-scroll: true
     embed-resources: false
 
+# The two changes are:
+#   1. template-partials: adds before-body.tex (Pandoc template, reads YAML)
+#   2. include-in-header: unchanged (raw LaTeX, no Pandoc variables)
+# ===========================================================================
+ 
   pdf:
     documentclass: article
     papersize: letter
@@ -88,6 +93,8 @@ format:
     citecolor: eablue
     include-in-header:
       - _templates/sop-header.tex
+    template-partials:
+      - _templates/before-body.tex
 
 execute:
   echo: false

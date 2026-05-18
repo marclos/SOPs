@@ -1,0 +1,444 @@
+---
+# =============================================================================
+# SOP-L07: Foreign Soil Handling and Import Permits
+# =============================================================================
+title: "Foreign Soil Handling and Import Permits"
+sop-number: "SOP-L07"
+author:
+  - name: "Kathryn Hargan"
+    affiliation: "EA Program, Pomona College"
+approved-by: "Marc Los Huertos"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "0.1"
+    date: "2018-02-02"
+    author: "Kathryn Hargan"
+    changes: "Initial release (LaTeX)"
+  - version: "0.3"
+    date: "2018-08-01"
+    author: "Kathryn Hargan"
+    changes: "Revised shipping and storage sections"
+  - version: "1.0"
+    date: "2025-05-17"
+    author: "Marc Los Huertos"
+    changes: "Converted to Quarto; reorganized sections; added callout boxes for permit-critical steps"
+---
+
+## 1. Purpose
+
+This SOP outlines the mandatory practices for securely and safely
+handling, analyzing, and disposing of soils and sediments collected
+from outside the United States. The importation and movement of
+untreated foreign soil is classified by the USDA Animal and Plant
+Health Inspection Service (APHIS) as an extremely high-risk activity.
+Several levels of review and approval are required before a permit can
+be issued. This SOP has been written to fulfill the conditions of the
+EA Program's APHIS foreign soil permit.
+
+These practices are mandatory for all personnel working with foreign
+soils in the EA Teaching and Research Laboratory at Pomona College.
+Additionally, all persons working in the laboratory, even those not
+directly handling foreign soils, must read this SOP and be aware of
+standard operations involving quarantine materials so that a safe and
+secure laboratory environment is maintained.
+
+
+## 2. Scope
+
+- **Applies to:** All soils and sediments collected outside the United
+  States and its territories that are imported to or processed in the
+  EA Program laboratory
+- **Does not apply to:** Domestic soils (including soils from Hawaii,
+  Puerto Rico, and the U.S. Virgin Islands, which are not foreign
+  countries under APHIS regulations); fully sterilized or commercially
+  prepared soil reference materials
+- **Analyses covered:** ICP-MS, EA-IRMS (total C, N, S and stable
+  isotope ratios), texture, organic matter content, and other
+  parameters where soils can be disposed of properly after analysis
+- **Location:** Foreign soil storage in SGM 133 (designated cabinet);
+  processing in SGM 134 (dedicated area)
+
+
+## 3. Definitions
+
+- **Foreign soils:** Soils and sediments collected outside the United
+  States and its territories
+- **APHIS:** The Animal and Plant Health Inspection Service, a USDA
+  agency responsible for protecting U.S. agricultural health,
+  regulating genetically engineered organisms, and administering
+  quarantine regulations
+- **Plant Inspection Station (PIS):** A facility where imported
+  shipments are inspected and cleared by Customs and Border Protection
+  (CBP) and APHIS inspectors
+- **CBP:** U.S. Customs and Border Protection, the agency that clears
+  imported soils and plant material for entry
+- **Decontamination:** A procedure that eliminates or reduces microbial
+  contamination to a safe level with respect to transmission of
+  infection
+- **PPQ Form 508:** Green and yellow APHIS shipping label for
+  shipments of 3 lbs or less that will be treated at the PIS
+- **PPQ Form 550:** Black and white APHIS shipping label for shipments
+  routed directly to a USDA-approved facility
+
+
+## 4. Responsibilities
+
+| Role                  | Responsibility                                   |
+|:----------------------|:-------------------------------------------------|
+| PI (Permit Holder)    | Maintain active APHIS permit; ensure compliance  |
+| Lab Manager           | Oversee quarantine storage; verify sterilization |
+| Trained Personnel     | Handle soils per this SOP; log all activity      |
+| All Lab Personnel     | Read this SOP; understand quarantine protocols even if not handling foreign soils |
+
+
+## 5. Safety and Hazards
+
+::: {.callout-danger}
+### APHIS Quarantine Requirement
+
+Soil is strictly controlled under APHIS quarantine regulations 7 CFR
+330 because it can readily provide a pathway for introducing dangerous
+organisms into the United States. Importation of soil from foreign
+sources is prohibited unless authorized by APHIS under specific
+conditions, safeguards, and controlled circumstances described in a
+valid permit and/or compliance agreement. Noncompliance can result in
+permit revocation, fines, and legal action.
+:::
+
+### Required PPE
+
+- [ ] Standard laboratory coat
+- [ ] Nitrile gloves
+- [ ] Lab safety goggles
+- [ ] Closed-toe shoes
+
+### Storage Restrictions
+
+- Foreign soils must be stored only in the designated quarantine
+  cabinet in SGM 133
+- Foreign soils must be processed only in the dedicated area in SGM 134
+- Soils must never be opened or processed outside these designated
+  areas
+
+### Chemical Hazards
+
+If chemicals are used during analysis (e.g., acids for digestion),
+review the Safety Data Sheets before beginning. For isopropyl alcohol
+used in decontamination, work in a well-ventilated area and keep away
+from ignition sources.
+
+### Emergency Procedures
+
+Refer to
+[SOP-L01 Laboratory Safety](../lab_sops/SOP-L01-laboratory-safety.qmd)
+and
+[SOP-L02 Hazardous Materials Handling](../lab_sops/SOP-L02-hazardous-materials-handling.qmd).
+For spills of foreign soil, see Section 11 (Spill Cleanup).
+
+
+## 6. Personnel and Training Requirements
+
+All personnel working with foreign soils must complete the following
+before handling any quarantine material:
+
+1. Complete
+   [SOP-L01 Laboratory Safety](../lab_sops/SOP-L01-laboratory-safety.qmd)
+   training, including the annual Pomona College lab safety course
+2. Read the USDA/APHIS Compliance Agreement (current agreement number
+   on file with the PI)
+3. Read the current Foreign Soil Permit (permit number on file with
+   the PI)
+4. Read this SOP in full
+5. Complete [SOP-L16 Drying Ovens](../lab_sops/SOP-L16-drying-ovens.qmd)
+   training (required for sterilization procedures)
+6. Be signed off by the PI or lab manager
+
+::: {.callout-important}
+### All Lab Users
+Even personnel who do not work directly with foreign soils must read
+this SOP so they understand the quarantine protocols in effect in
+SGM 133 and SGM 134. This is a condition of the APHIS permit.
+:::
+
+::: {.callout-note}
+### APHIS Contact
+For questions about the permit, shipping, or compliance, contact the
+local APHIS Plant Protection and Quarantine office. Verify current
+contact information with the PI before each import event, as personnel
+assignments may change.
+:::
+
+
+## 7. Required Materials
+
+| Item                                | Location  | Notes                              |
+|:------------------------------------|:----------|:-----------------------------------|
+| Drying oven (capable of 250 C)      | SGM 134   | See [SOP-L16](../lab_sops/SOP-L16-drying-ovens.qmd) |
+| Foreign Soils Log Book              | SGM 133   | Stored with quarantine cabinet     |
+| Quarantine cabinet (labeled)        | SGM 133   | Lockable; red "Quarantine Soil" tags |
+| Refrigerator or freezer (if required) | SGM 133 | Designated area for foreign soils  |
+| Whirl-Pak bags and Ziplock bags     | SGM 133   | For sample containment             |
+| Isopropyl alcohol                   | SGM 134   | For decontamination of surfaces and equipment |
+| Red tags ("Quarantine Soil -- Unsterilized") | SGM 133 |                              |
+| Green tags ("Quarantine Soil -- Sterilized") | SGM 133 |                               |
+| PPQ Form 508 and/or PPQ Form 550 labels | On file | Requested through ePermits or by email |
+
+
+## 8. Sample Collection and Import
+
+### 8.1 Equipment Decontamination at the Collection Site
+
+All field equipment must be thoroughly cleaned and disinfected of all
+soil residues at the collection site before packing for transport.
+Acceptable methods:
+
+- Soak in isopropyl alcohol for one hour, or
+- Soak and wash in hot water with detergent for 30 minutes
+
+### 8.2 Shipping Foreign Soils
+
+1. Pack soil and sediment samples in sturdy, leak-proof containers.
+   Declare contents as "Soil samples."
+2. The primary container (test tube, vial, or bag) must be securely
+   closed and watertight
+3. Enclose the primary container in a second, durable, watertight
+   secondary container. Each container must be capable of containing
+   the soil independently.
+4. Attach the appropriate APHIS shipping label to the exterior of each
+   shipping package:
+   - **PPQ Form 508** (green and yellow): For shipments of 3 lbs or
+     less that will be treated at the PIS
+   - **PPQ Form 550** (black and white): For shipments routed directly
+     to the USDA-approved facility (Pomona College)
+
+::: {.callout-warning}
+### Label Placement
+Packages without APHIS shipping labels on the exterior may be refused
+entry even if labels are enclosed inside the package.
+:::
+
+5. Each label is individually numbered with a distinctive barcode. The
+   permit holder must request the appropriate labels at the time of
+   permit issuance.
+6. Additional labels can be obtained through the "My Shipments/Labels"
+   feature in ePermits or by emailing
+   `BlackWhiteGreenYellowlabelrequest@aphis.usda.gov`
+
+### 8.3 Waybills
+
+- **PPQ Form 508 shipments** require two waybills: one international
+  waybill to direct the shipment to the PIS, and one domestic waybill
+  (placed inside the package) to direct the shipment from the PIS to
+  the permit holder
+- **PPQ Form 550 shipments** require one waybill to direct the
+  shipment to the permit holder
+
+The waybill must include: carrier account number or postage, permit
+holder name, permit number, label number, delivery address, and
+telephone number. If the waybill address does not match the permit
+address, the package may be refused entry by CBP.
+
+### 8.4 Hand-Carrying Soils into the United States
+
+Permitted articles may be hand-carried into the U.S. only if:
+
+1. Hand carrying was requested in the permit application and
+   authorized in the permit conditions
+2. The permit conditions list the specific steps that must be followed
+3. If someone other than the permit holder will hand-carry, that
+   person must be identified on the permit
+4. The authorized hand-carrier must follow all permit conditions
+   pertaining to hand-carried shipments
+
+### 8.5 Problems at the PIS or CBP
+
+If a shipment encounters problems at the PIS or CBP, contact the
+local APHIS office immediately (verify current contact information
+with the PI). Do not attempt to resolve the issue without APHIS
+guidance.
+
+::: {.callout-note}
+### PPQ 550 Labels Not Needed for U.S. Territories
+PPQ 550 shipping labels are not required for soil originating in
+Hawaii, Puerto Rico, or the U.S. Virgin Islands, as these are not
+foreign countries under APHIS regulations.
+:::
+
+
+## 9. Receiving, Storage, and Logging
+
+### 9.1 Receiving
+
+1. Transport soils directly to the Biogeochemistry Lab quarantine
+   cabinet in SGM 133. Under no circumstances may soils be opened or
+   processed until they reach the quarantine cabinet.
+2. Open containers only inside the designated closed room area in
+   SGM 133 or SGM 134. Take all precautions to prevent the escape of
+   any potential pest that may be in the soil.
+
+### 9.2 Logging
+
+Upon arrival at Pomona College, log every sample in the Foreign Soils
+Log Book. Each entry must include:
+
+| Field                    | Description                                    |
+|:-------------------------|:-----------------------------------------------|
+| Sample number            | Year and consecutive number (e.g., 18-01)      |
+| Date of arrival          | YYYY-MM-DD                                     |
+| Origin (provenance)      | Country, region, site name                     |
+| Collector name/initials  | Who collected the sample in the field           |
+| Mass (grams)             | As received                                    |
+| Reason for collection    | Research project or study name                 |
+| Storage location         | SGM 133 cabinet shelf, refrigerator, or freezer |
+| Sterilization status     | Unsterilized (red tag) on arrival              |
+
+### 9.3 Labeling and Storage
+
+1. Samples remain sealed in original Whirl-Pak bags within Ziplock
+   bags until processed
+2. Store bags on shelf trays within the closed quarantine cabinet.
+   Samples must not be left on tables or elsewhere when not in use.
+3. All stored, unsterilized soils must be labeled with red tags
+   stating "Quarantine Soil -- Unsterilized"
+4. Sterilized samples must be labeled with green tags stating
+   "Quarantine Soil -- Sterilized"
+5. Any individual sample being processed outside its storage cabinet
+   must also be clearly labeled to indicate sterilization status
+
+### 9.4 Reshipment
+
+Reshipment of foreign soil samples to other laboratories is not
+permitted unless the soils have been sterilized. A detailed request to
+reship must be submitted to the enforcing agricultural inspectors
+before any transfer.
+
+
+## 10. Treatment, Sterilization, and Disposal
+
+### 10.1 Sterilization Method
+
+Soil samples must be sterilized by dry heat treatment at 250 C for
+24 hours, or by one of the other approved methods documented in the
+Foreign Soils Log Book.
+
+::: {.callout-important}
+### All Residues Must Be Sterilized
+All residues from processing (including ash, rinse water filter
+residues, and equipment rinse material) must be sterilized using the
+same methods as the soil itself.
+:::
+
+### 10.2 Container Disposal
+
+Once emptied, all containers (shipping boxes, plastic bags) must be
+either:
+
+- Sterilized by an approved heat treatment method, if they will be
+  reused, or
+- Disposed of by burning
+
+Containers may also be decontaminated by wiping or soaking with
+isopropyl alcohol if they are non-combustible and will be reused.
+
+### 10.3 Contaminated Water Disposal
+
+Whenever water is used in processing (including initial rinse water
+from contaminated equipment), the contaminated water must be disposed
+of by one of the following methods:
+
+1. Boiling the water for 1 minute
+2. Treating with a strong detergent for 30 minutes
+3. Filtering through a 100-mesh screen or suitable paper filter. The
+   filter residues must be burned or sterilized.
+
+### 10.4 Final Disposal of Soils
+
+After all analyses are complete, sterilize remaining soils and ash at
+250 C for 24 hours. Discard the sterilized material to a solid waste
+facility. Record the disposal date, mass disposed, and method of
+treatment in the Foreign Soils Log Book.
+
+
+## 11. Spill Cleanup
+
+If soils are spilled during handling or transport:
+
+1. Immediately contain the spill. Do not allow soil to spread.
+2. Recover all spilled soil material.
+3. Heat the recovered soil for sterilization at 250 C for 24 hours.
+4. Decontaminate all affected surfaces by wiping with isopropyl
+   alcohol.
+5. Record the spill event, location, amount, and cleanup actions in
+   the Foreign Soils Log Book.
+
+
+## 12. Surveillance and Logging
+
+In addition to the data logged upon arrival (Section 9.2), the
+Foreign Soils Log Book must be updated for each sample as it moves
+through processing:
+
+| Event                    | Record                                         |
+|:-------------------------|:-----------------------------------------------|
+| Processing               | Date, analysis type, analyst name              |
+| Sterilization            | Date, method, temperature, duration            |
+| Disposal                 | Date, mass disposed, disposal method/location  |
+
+::: {.callout-important}
+### Mass Accountability
+The mass of treated and disposed soils must be within 10% of the
+imported soil mass. Discrepancies exceeding 10% must be investigated
+and documented.
+:::
+
+
+## 13. Quality Control
+
+- Verify that the APHIS Foreign Soil Permit is current and has not
+  expired before any import activity
+- Confirm that APHIS shipping labels match the current permit number
+- Audit the Foreign Soils Log Book at least once per semester to
+  verify all entries are complete and mass accountability is within 10%
+- Report any anomalies (missing samples, mass discrepancies, permit
+  questions) to the PI immediately
+
+
+## 14. References
+
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+- USDA APHIS. *Importing Soil*. 7 CFR 330. Available at:
+  <https://www.aphis.usda.gov/aphis/ourfocus/planthealth/import-information/permits/regulated-organism-and-soil-permits/sa_soil/ct_reg_soil>
+- USDA APHIS. *ePermits System*. Available at:
+  <https://www.aphis.usda.gov/aphis/ourfocus/planthealth/import-information/permits/epermits>
+
+
+## 15. Training Record
+
+Before handling foreign soils independently, personnel must:
+
+1. Read this SOP in full
+2. Complete
+   [SOP-L01 Laboratory Safety](../lab_sops/SOP-L01-laboratory-safety.qmd)
+   training
+3. Complete
+   [SOP-L16 Drying Ovens](../lab_sops/SOP-L16-drying-ovens.qmd)
+   training
+4. Read the current APHIS Compliance Agreement and Foreign Soil Permit
+   (copies on file with the PI)
+5. Complete the annual Pomona College lab safety course
+6. Demonstrate proper logging, labeling (red/green tags), and
+   sterilization procedures under supervision
+7. Be signed off by the PI
+
+
+## Appendix A: Sample Numbering Convention {.appendix}
+
+Each sample receives a number consisting of the two-digit year and a
+consecutive number for that year. For example, 18-34 indicates the
+34th sample logged in 2018. The numbering resets to 01 at the start
+of each calendar year.
