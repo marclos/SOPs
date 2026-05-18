@@ -436,7 +436,72 @@ TBD
 
 ### 16.3 Branching Workflows
 
-TBD
+# Git Branching: Purpose, Naming, and RStudio Workflow
+
+Branches let you work on a new feature or fix a bug without messing up the "official" version (usually called `main`).
+
+---
+
+## 1. Defining Your Branch Purpose & Naming Conventions
+
+Before creating a branch, you should know exactly what it is for. A good branch focuses on **one single task** and uses a clear, descriptive name. 
+
+Most teams use a prefix system (`category/short-description`) to instantly communicate the branch's purpose:
+
+*   **`feature/`** → For adding new capabilities or tools.
+    *   *Example:* `feature/linear-regression-model`
+*   **`bugfix/`** or **`fix/`** → For fixing errors, broken code, or broken links.
+    *   *Example:* `bugfix/data-import-error`
+*   **`docs/`** → For writing or updating documentation and README files.
+    *   *Example:* `docs/update-package-instructions`
+*   **`data/`** or **`refactor/`** → For cleaning up code structure or updating data assets.
+    *   *Example:* `refactor/clean-ggplot-themes`
+
+---
+
+## 2. How to Create a Branch in RStudio (Visual Interface)
+
+Once you know your branch purpose and name, you can create it directly inside RStudio with a few clicks:
+
+### Step 1: Open the Git Pane
+*   Look at the top-right environment pane of RStudio.
+*   Click on the **Git** tab. *(If you do not see it, ensure your project is linked to Git via Tools > Project Options > Git/SVN).*
+
+### Step 2: Open the New Branch Window
+*   Click the **New Branch button** located in the Git toolbar. 
+*   *Visual Anchor:* Look for the purple icon featuring two connected squares.
+
+### Step 3: Name and Link Your Branch
+*   **Branch Name:** Type your descriptive name (e.g., `feature/add-plots`) into the box.
+*   **Remote:** Ensure the **"Sync branch with remote"** box is checked. This links your local RStudio branch directly to your online GitHub repository.
+*   Click **Create**. RStudio will automatically switch you to this new branch.
+
+---
+
+## 3. Handling Merge Conflicts (Locally vs. Web)
+
+If two branches change the exact same line of code, Git will throw a conflict. You must manually choose which changes to keep.
+
+### Method A: Resolving Conflicts in RStudio
+1.  **Identify the Conflict:** Open the conflicted file (marked with a **U icon** for Unmerged in the Git tab).
+2.  **Locate the Markers:** Look for the text markers injected by Git:
+    ```text
+    <<<<<<< HEAD
+    Your current branch code.
+    =======
+    The incoming branch code.
+    >>>>>>> branch-name
+    ```
+3.  **Clean the Code:** Delete the `<<<<<<<`, `=======`, and `>>>>>>>` lines. Keep only the correct code.
+4.  **Commit the Fix:** Check the **Staged** box next to the file in the Git tab, click **Commit**, write a message, and click **Push**.
+
+### Method B: Resolving Conflicts on GitHub Website
+1.  Navigate to your Pull Request page on GitHub.
+2.  Click the gray **Resolve conflicts** button.
+3.  Use the web editor to delete the markers (`<<<<<<<`, `=======`, `>>>>>>>`) and edit the code.
+4.  Click **Mark as resolved**, then click **Commit merge**.
+
+> ⚠️ **Note:** If the conflict involves large binary files (like an `.RData` file, `.rds` file, or saved plot images), GitHub's web editor cannot open it. You must resolve it locally using RStudio.
 
 
 ## 17. Recommended Resources
