@@ -524,57 +524,6 @@ Print this sheet and carry it during deployment and retrieval.
 | Human review tools      | Built-in web interface  | External (R, spreadsheet) | Built-in viewer       |
 | Data privacy            | Images stored on Google Cloud | Images stay local | Images stay local       |
 | Best for                | Standard projects; collaboration | Large datasets; custom pipelines | Users who prefer GUI |
+ 
 
 
-## Appendix C: BibTeX Entries {.appendix}
-
-Append to the project `references.bib`:
-
-```bibtex
-@misc{wildlifeinsights,
-  title     = {Wildlife Insights: About {AI}},
-  author    = {{Wildlife Insights}},
-  year      = {2026},
-  url       = {https://www.wildlifeinsights.org/about-wildlife-insights-ai},
-  note      = {Accessed 2026-05-16}
-}
-
-@misc{speciesnet2026,
-  title     = {Where Wild Things Roam: Identifying Wildlife with
-               {SpeciesNet}},
-  author    = {{Google Research}},
-  year      = {2026},
-  url       = {https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet/},
-  note      = {Accessed 2026-05-16}
-}
-
-@article{beery2019megadetector,
-  title     = {Efficient Pipeline for Camera Trap Image Review},
-  author    = {Beery, Sara and Morris, Dan and Yang, Siyu},
-  journal   = {arXiv preprint arXiv:1907.06772},
-  year      = {2019}
-}
-
-@article{niedballa2016camtrapr,
-  title     = {{camtrapR}: An {R} Package for Efficient Camera Trap
-               Data Management},
-  author    = {Niedballa, J{\"u}rgen and Sollmann, Rahel and
-               Courtiol, Alexandre and Wilting, Andreas},
-  journal   = {Methods in Ecology and Evolution},
-  volume    = {7},
-  number    = {12},
-  pages     = {1457--1462},
-  year      = {2016},
-  doi       = {10.1111/2041-210X.12600}
-}
-
-@article{thornton2026,
-  title     = {Identification of Camera Trap Images by Artificial
-               Intelligence and Human Experts Produces Similar
-               Multi-Species Occupancy Models},
-  author    = {Thornton, Stuart A. and others},
-  journal   = {Journal of Applied Ecology},
-  year      = {2026},
-  doi       = {10.1111/1365-2664.14862}
-}
-```
