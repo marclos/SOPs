@@ -122,7 +122,8 @@ tbl-classes: table-sm
 | [L03](lab_sops/)   | Chemical Spill Response | -- |
 | [L04](lab_sops/)   | *TBD -- Chemical Inventory Management* | -- |
 | [L05](lab_sops/SOP-L05-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 |
-| [L06](lab_sops/SOP-L06-quality-control.qmd)   | Quality Control and Quality Assurance | 1.0 
+| [L06](lab_sops/SOP-L06-quality-control.qmd)   | Quality Control and Quality Assurance | 1.0 |
+| [L00](lab_sops/SOP-L00-quality-control.qmd)   | Equipment and Instrument Inventory | 1.0 |
 
 
 ### Laboratory Equipment (L10--L24)
@@ -148,8 +149,8 @@ tbl-classes: table-sm
 | [L25](lab_sops/SOP-L25-analytical-balance-calibration.qmd)   | Analytical Balance Calibration | 1.0 | TBD |
 | L26   | *TBD -- Spectrophotometer Operation* | -- |
 | L27   | *Accumet pH Meter* | 0.4 | Needs conversion |
-| [L28](lab_sops/SOP-L28-trilogy-fluorometer.qmd)   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
-| [L29](lab_sops/SOP-L29-shimadzu-toc-ton.qmd) | Shimadzu TOC/TON Analyzer | 1.0 |
+| [L28](lab_sops/SOP-L28-trilogy-fluorometer.qmd)   | Trilogy Laboratory Fluorometer | 0.4 | 
+| [L29](lab_sops/SOP-L29-shimadzu-toc-l.qmd) | Shimadzu TOC/TON Analyzer | 1.0 |
 | L30   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
 | L31   | *ICP-MS* | 0.1 | Needs conversion |
 | L32   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
@@ -165,8 +166,7 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [L40](lab_sops/SOP-L40-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
-| [L41](lab_sops/SOP-L41-alkalinity-titration.qmd)   | Alkalinity Titration* | -- |
-
+| [L41](lab_sops/SOP-L41-alkalinity-titration.qmd)   | Alkalinity Titration | -- |
 | [L42](lab_sops/)   | *TBD -- Turbidity Measurement* | -- |
 | [L45](lab_sops/SOP-L45-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
 | [L46](lab_sops/)   | *TBD -- Nutrient Analysis (Water Samples)* | -- |

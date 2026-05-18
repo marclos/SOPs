@@ -1,0 +1,512 @@
+---
+# =============================================================================
+# SOP-L29: Shimadzu TOC-L Analyzer with TNM-L and SSM-5000A
+# =============================================================================
+title: "Shimadzu TOC-L Analyzer with TNM-L and SSM-5000A"
+sop-number: "SOP-L29"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "2.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2025-01-15"
+    author: "Marc Los Huertos"
+    changes: "Initial release (TOC-L with SSM-5000A only)"
+  - version: "2.0"
+    date: "2025-05-17"
+    author: "Marc Los Huertos"
+    changes: "Expanded to include TNM-L total nitrogen module; restructured as broad instrument SOP independent of specific analytical applications"
+---
+
+## 1. Purpose
+
+This SOP describes the general operation, calibration, maintenance,
+and shutdown of the Shimadzu TOC-L total organic carbon analyzer and
+its companion modules: the TNM-L Total Nitrogen Module and the
+SSM-5000A Solid Sample Module. All instrument control is performed
+through the LabSolutions TOC software on the dedicated computer.
+
+This SOP covers the instrument itself. For application-specific sample
+preparation, measurement modes, and calculations, refer to the
+relevant analytical SOPs (e.g.,
+[SOP-L62 Total Carbon](SOP-L62-total-carbon.qmd)).
+
+
+## 2. Scope
+
+- **Applies to:** All use of the Shimadzu TOC-L analyzer, TNM-L
+  module, SSM-5000A module, and ASI-L autosampler in the EA Program
+  laboratory, operated through LabSolutions TOC software
+- **Does not apply to:** Manual or standalone operation without
+  computer control; instruments at other institutions; application-
+  specific sample preparation or data interpretation (see analytical
+  method SOPs)
+- **Location:** EA Program analytical laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role               | Responsibility                                         |
+|:-------------------|:-------------------------------------------------------|
+| Lab PI             | Authorize instrument access, approve maintenance       |
+| Instrument Manager | Perform preventive maintenance, replace consumables, manage software updates |
+| Trained Personnel  | Operate the instrument per this SOP, log all runs      |
+| New Students       | Complete training before independent use               |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Thermal:** The combustion furnace operates at 680 C in liquid
+  analysis mode and up to 900 C in SSM mode. Ceramic boats, combustion
+  tubes, and furnace surfaces can cause severe burns.
+- **Chemical:** Hydrochloric acid (2 M HCl) is used for acidification
+  and inorganic carbon sparging. Avoid skin and eye contact.
+- **Compressed gas:** The instrument requires high-purity carrier gas
+  (air or oxygen) supplied from a pressurized cylinder. Follow all
+  compressed gas safety procedures.
+- **Electrical:** The instrument operates on high-voltage mains power.
+  Do not open instrument panels or attempt internal repairs.
+- **Ozone:** The TNM-L chemiluminescence detector uses an ozone
+  generator. The instrument vents ozone through an internal
+  decomposer, but ensure that the exhaust line is connected and
+  unobstructed. If an ozone odor is detected, shut down the TNM-L
+  and ventilate the area.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves (when handling acid, standards, or samples)
+- [ ] Heat-resistant gloves (when handling ceramic boats from the SSM)
+
+### Emergency Procedures
+
+For acid splashes, flush the affected area with water for at least 15
+minutes. For burns from hot surfaces, apply cool running water and
+seek first aid. If ozone is detected, shut down the TNM-L, open
+windows, and leave the room until the odor dissipates. Refer to
+[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd) and
+[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+
+
+## 5. Instrument Description
+
+### 5.1 System Overview
+
+The Shimadzu TOC-L is a combustion catalytic oxidation analyzer that
+quantifies carbon (and, with the TNM-L, nitrogen) in liquid samples.
+The system in the EA Program laboratory consists of four main
+components:
+
+- **TOC-L analyzer:** Combusts liquid samples at 680 C over a platinum
+  catalyst. The resulting CO~2~ is measured by a non-dispersive
+  infrared (NDIR) detector. The analyzer supports multiple measurement
+  modes (TC, IC, TOC, NPOC, POC).
+- **TNM-L Total Nitrogen Module:** Measures total nitrogen (TN)
+  simultaneously with carbon analysis. Nitrogen compounds in the
+  combustion gas are converted to nitric oxide (NO), which is detected
+  by a chemiluminescence detector after reaction with ozone. The TNM-L
+  operates in parallel with the NDIR carbon detector, so carbon and
+  nitrogen data are acquired from the same injection.
+- **SSM-5000A Solid Sample Module:** Accepts solid samples in ceramic
+  boats for direct combustion at up to 900 C. Connects to the TOC-L
+  for CO~2~ detection. The TNM-L is not used during SSM operation.
+- **ASI-L Autosampler:** Holds up to 93 sample vials (8 mL or 40 mL)
+  for unattended sequential analysis of liquid samples. Includes an
+  automated rinse function between injections.
+
+### 5.2 Measurement Modes (Liquid Samples)
+
+| Mode | Full Name                            | What It Measures                                                    |
+|:-----|:-------------------------------------|:--------------------------------------------------------------------|
+| TC   | Total Carbon                         | All carbon (organic + inorganic) by direct combustion               |
+| IC   | Inorganic Carbon                     | Carbonate/bicarbonate carbon by acidification and sparging only     |
+| TOC  | Total Organic Carbon (by difference) | TOC = TC - IC; requires two sequential measurements                |
+| NPOC | Non-Purgeable Organic Carbon         | Sample is acidified and sparged to remove IC, then combusted; the most common mode for routine analysis |
+| POC  | Purgeable Organic Carbon             | Volatile organic carbon recovered during the sparging step; POC = TC - (NPOC + IC) |
+| TN   | Total Nitrogen (TNM-L)               | All nitrogen species measured simultaneously with any carbon mode   |
+
+### 5.3 Detection Principles
+
+The TOC-L and TNM-L rely on two detectors operating in series on the
+same combustion gas stream:
+
+- **NDIR detector (carbon):** Infrared absorption by CO~2~ is
+  proportional to the mass of carbon injected. The detector is
+  selective for CO~2~ and insensitive to other combustion gases.
+- **Chemiluminescence detector (nitrogen, TNM-L only):** NO in the
+  combustion gas reacts with ozone (O~3~) to produce excited NO~2~*,
+  which emits light as it returns to the ground state. The emitted
+  light intensity is proportional to the mass of nitrogen injected.
+  The ozone is generated internally by the TNM-L module.
+
+
+## 6. Required Materials
+
+### Instrument Components
+
+| Component                     | Notes                                        |
+|:------------------------------|:---------------------------------------------|
+| Shimadzu TOC-L analyzer       | With combustion furnace and NDIR detector    |
+| TNM-L Total Nitrogen Module   | Chemiluminescence detector for TN            |
+| SSM-5000A Solid Sample Module | For direct combustion of solid samples       |
+| ASI-L Autosampler             | 93-position; 8 mL or 40 mL vials            |
+| Dedicated computer            | Running LabSolutions TOC software            |
+| Carrier gas (high-purity air) | Regulated to 200 kPa (or per manual)         |
+| Exhaust tubing                | Connected to fume hood or building exhaust   |
+
+### Consumables
+
+| Item                                   | Notes                                     |
+|:---------------------------------------|:------------------------------------------|
+| TC catalyst (Pt on alumina beads)      | Replace when blanks rise or sensitivity drops |
+| IC reagent (25% phosphoric acid)       | For IC/NPOC acidification; check level weekly |
+| Combustion tubes (quartz)              | Inspect monthly; replace if cracked or discolored |
+| Ceramic sample boats                   | For SSM; pre-combust at 900 C before first use |
+| Halogen scrubber                       | Replace per maintenance schedule           |
+| Dehumidifier / moisture trap           | Drain weekly                               |
+| Autosampler vials and septa            | Acid-washed for trace-level work           |
+| Syringe needle (instrument syringe)    | Inspect for bends or clogs; replace as needed |
+
+### Calibration Standards
+
+| Standard                               | Use                                       |
+|:---------------------------------------|:------------------------------------------|
+| Potassium hydrogen phthalate (KHP)     | Primary TC/NPOC calibration               |
+| Sodium bicarbonate / sodium carbonate  | Primary IC calibration                    |
+| Potassium nitrate (KNO~3~)            | Primary TN calibration (TNM-L)            |
+| Deionized water (18 M$\Omega$ quality) | Blanks, dilutions, and standard preparation |
+
+
+## 7. Procedure
+
+::: {.callout-important}
+### Computer Control Only
+All operations described below are performed through LabSolutions TOC.
+Do not adjust furnace temperature, gas flow, or other parameters using
+the instrument front panel unless directed by the instrument manager
+during troubleshooting.
+:::
+
+### 7.1 Instrument Startup
+
+1. Confirm that the carrier gas cylinder valve is open and the
+   regulator is set to the pressure specified in the instrument manual
+   (typically 200 kPa at the instrument inlet)
+2. Confirm that the exhaust line from the TNM-L ozone decomposer is
+   connected and routed to the fume hood or building exhaust
+3. Power on the TOC-L main unit using the switch on the right side
+   panel. If the TNM-L is needed, confirm that its power is also on
+   (the TNM-L has a separate power switch on its rear panel)
+4. Power on the ASI-L autosampler
+5. Turn on the dedicated computer and launch LabSolutions TOC
+6. In LabSolutions TOC, confirm that communication with the TOC-L (and
+   TNM-L, if applicable) is established. The status bar should show
+   "Ready" or "Warming Up"
+7. Allow the combustion furnace to reach operating temperature. The
+   software status will change from "Warming Up" to "Ready" when the
+   set point is reached (typically 20--30 minutes for 680 C)
+8. If the TNM-L is in use, allow the chemiluminescence detector and
+   ozone generator to stabilize. The TNM-L status indicator in the
+   software will show "Ready" when stabilization is complete
+9. Run 3--5 injections of deionized water as system blanks to flush
+   the injection port and verify baseline stability. TC blank values
+   should be below 0.1 mg/L C; TN blank values should be below
+   0.1 mg/L N
+
+::: {.callout-note}
+### Warm-Up Time
+From a cold start, allow at least 30 minutes for the furnace and at
+least 45 minutes for the TNM-L detector to stabilize before running
+calibration standards.
+:::
+
+### 7.2 Software Navigation
+
+LabSolutions TOC organizes work into the following areas. Familiarize
+yourself with each before your first independent run:
+
+- **Instrument Monitor:** Real-time display of furnace temperature,
+  carrier gas flow, detector signal (NDIR and chemiluminescence), and
+  system status
+- **Method Editor:** Define measurement mode (TC, IC, NPOC, TN, etc.),
+  injection volume, number of replicate injections, sparge time (for
+  NPOC), acidification volume, and calibration curve parameters
+- **Sample Table:** Enter sample IDs, vial positions, dilution
+  factors, and measurement method for each sample. This table drives
+  the autosampler sequence.
+- **Calibration:** Build, view, and edit calibration curves. The
+  software fits curves by least-squares regression and reports r^2^
+  and residuals.
+- **Data Browser:** Review completed runs, view peak integrations,
+  export results to CSV, and reprocess data
+
+### 7.3 Calibration
+
+Calibrate at the start of each analytical session or whenever the
+method, measurement mode, or concentration range changes. Carbon and
+nitrogen calibrations are built independently but can be run
+simultaneously if both detectors are active.
+
+#### Carbon Calibration
+
+1. Prepare a multi-point calibration series from KHP dissolved in
+   deionized water. Choose concentrations that bracket the expected
+   sample range (e.g., 0, 1, 5, 10, 25, 50, 100 mg/L C)
+2. For IC calibration, prepare standards from sodium
+   bicarbonate/sodium carbonate in deionized water
+3. In LabSolutions TOC, open the Method Editor and select the
+   measurement mode (e.g., NPOC, TC, or TC-IC)
+4. Enter calibration standard concentrations in the Calibration window
+5. Load standards into the autosampler in order of increasing
+   concentration
+6. Run the calibration sequence. The software will perform replicate
+   injections (typically 3) of each standard and fit a regression
+7. Verify that r^2^ $\geq$ 0.999 and that each standard back-
+   calculates to within 10% of its nominal value (15% at the lowest
+   standard is acceptable)
+8. Save the calibration curve
+
+#### Nitrogen Calibration (TNM-L)
+
+1. Prepare a multi-point calibration series from KNO~3~ dissolved in
+   deionized water (e.g., 0, 0.5, 1, 5, 10, 25, 50 mg/L N)
+2. In the Method Editor, confirm that TN measurement is enabled
+   alongside the carbon mode
+3. Enter TN calibration concentrations in the Calibration window
+4. The TN calibration runs simultaneously with the carbon calibration
+   if both are loaded in the same sample table; otherwise, run the TN
+   standards as a separate sequence
+5. Verify that r^2^ $\geq$ 0.999 for the nitrogen curve
+6. Save the calibration curve
+
+### 7.4 Setting Up an Analytical Run (Liquid Samples)
+
+1. In the Method Editor, confirm the measurement mode, injection
+   volume, number of replicate injections, and (for NPOC mode) sparge
+   time and acid volume
+2. In the Sample Table, enter the run sequence:
+   a. Calibration verification standard (mid-range) as the first
+      sample
+   b. Instrument blanks (deionized water) at positions corresponding
+      to the beginning, every 10--15 samples, and the end of the run
+   c. Method blanks appropriate to the application (e.g., 0.5 M
+      K~2~SO~4~ for soil extracts; consult the analytical method SOP)
+   d. Sample vials in the order they are loaded in the autosampler
+   e. A final calibration verification standard
+3. Set the dilution factor for each sample if applicable; the software
+   applies the factor automatically to reported concentrations
+4. Verify that autosampler vial positions in the Sample Table match
+   the physical rack positions
+5. Confirm that the rinse reservoir on the autosampler is filled with
+   deionized water
+6. Click **Start** to begin the sequence
+
+::: {.callout-tip}
+### Replicate Injection Settings
+The software default is 3 replicate injections per sample. If the
+coefficient of variation (CV) among replicates exceeds 2%, the software
+can be configured to add up to 2 additional injections automatically
+(set in Method Editor under "Maximum Injections"). The outlier
+replicate is excluded from the reported mean.
+:::
+
+### 7.5 Setting Up a Solid Sample Run (SSM-5000A)
+
+1. In LabSolutions TOC, switch to SSM mode (Instrument Monitor will
+   confirm communication with the SSM-5000A)
+2. Pre-combust ceramic boats at 900 C in a muffle furnace to remove
+   residual carbon. Allow boats to cool in a desiccator
+3. Weigh the solid sample into a clean ceramic boat using an analytical
+   balance. Record the mass to 0.01 mg.
+4. In the Sample Table, enter the sample ID, boat number, and sample
+   mass
+5. Place the ceramic boat on the SSM sample port and push it into the
+   furnace when prompted by the software
+6. The SSM combusts the sample; evolved CO~2~ flows to the TOC-L NDIR
+   detector
+7. The software reports carbon content in mg C or as a percentage of
+   sample mass, using the stored calibration curve
+
+::: {.callout-note}
+### TNM-L and SSM
+The TNM-L chemiluminescence detector is not used during SSM solid
+sample analysis. Total nitrogen in solid samples requires a separate
+instrument (e.g., the Flash EA coupled to the IRMS; see SOP-L34).
+:::
+
+### 7.6 Monitoring a Run in Progress
+
+1. Use the Instrument Monitor to watch real-time peak shapes and
+   detector baselines during the run
+2. If a peak appears saturated (flat top), the sample concentration
+   exceeds the calibration range. Pause the run, dilute the sample,
+   and re-queue it.
+3. If the CV among replicate injections for a sample exceeds 2%, the
+   software flags the result. Investigate possible causes (air bubble,
+   particulates, insufficient sample volume) and consider re-running
+   the sample.
+4. If the system blank (deionized water) reads above 0.5 mg/L C or
+   0.5 mg/L N during a run, the combustion tube or catalyst may need
+   replacement. Complete the current run, note affected samples, and
+   consult the Maintenance section.
+
+### 7.7 Data Export
+
+1. After the run completes, open the Data Browser and review all
+   results
+2. Check that calibration verification standards (beginning and end of
+   run) recovered within 90--110% of their nominal values
+3. Export results to CSV using **File > Export**. Include sample ID,
+   measurement mode, mean concentration, standard deviation, CV, and
+   number of valid injections
+4. Save the LabSolutions TOC run file (.toc) to the instrument
+   computer and back up to the lab network drive
+5. Record the run date, analyst, method, and file name in the
+   instrument logbook
+
+### 7.8 Instrument Shutdown
+
+1. After the final sample, run 3--5 deionized water blanks through the
+   autosampler to flush the system
+2. In LabSolutions TOC, verify that the sample queue is complete and
+   no samples are pending
+3. If the instrument will be used again within 24 hours, leave the
+   furnace at temperature and the carrier gas flowing ("standby" mode).
+   The TNM-L can remain powered on in standby.
+4. If the instrument will not be used for more than 24 hours:
+   a. Set the furnace to cool down through the software (or power off
+      the TOC-L main unit)
+   b. Power off the TNM-L
+   c. Power off the ASI-L autosampler
+   d. Close the carrier gas cylinder valve after the furnace has cooled
+   e. Close LabSolutions TOC and shut down the computer
+5. Empty the autosampler rinse reservoir if the instrument will be idle
+   for more than one week to prevent microbial growth
+6. Cover the autosampler with a dust cover
+
+
+## 8. Quality Control
+
+QC procedures are tailored to each analytical method and are specified
+in the relevant method SOP (e.g., SOP-L62). The following instrument-
+level QC applies to all runs regardless of application:
+
+- System blanks (deionized water) at the start of every session must
+  read below 0.1 mg/L C and 0.1 mg/L N
+- A calibration verification standard (mid-range) must be run at the
+  beginning and end of every sample sequence, with recovery within
+  90--110%
+- Replicate injection CV must be below 2% for liquid samples
+- All QC results are recorded in the instrument logbook and in the
+  exported data file
+- For additional QC requirements (method blanks, duplicates, matrix
+  spikes, continuing calibration verification frequency), refer to
+  [SOP-L06 Quality Control](SOP-L06-quality-control.qmd) and the
+  relevant analytical method SOP
+
+
+## 9. Maintenance
+
+| Task                               | Frequency                                    |
+|:-----------------------------------|:---------------------------------------------|
+| System blank check                 | Before each analytical session               |
+| Drain moisture trap / dehumidifier | Weekly (more often in humid conditions)      |
+| Check IC reagent (phosphoric acid) level | Weekly                                 |
+| Inspect injection syringe needle   | Weekly; replace if bent or clogged           |
+| Inspect combustion tube            | Monthly or after approximately 500 injections |
+| Replace TC catalyst                | As needed (rising blanks or declining sensitivity) |
+| Replace halogen scrubber           | Per manufacturer schedule                    |
+| Replace TNM-L ozone decomposer    | Per manufacturer schedule (typically annually) |
+| Replace SSM combustion tube        | As needed (inspect after each batch of solids) |
+| Carrier gas cylinder replacement   | As needed (monitor regulator pressure)       |
+| Software and firmware updates      | As released by Shimadzu; coordinate with instrument manager |
+
+All maintenance activities must be recorded in the instrument logbook
+with the date, description of work performed, and the name of the
+person who performed it. After catalyst or combustion tube replacement,
+re-run system blanks and a calibration verification standard before
+resuming sample analysis.
+
+::: {.callout-warning}
+### Catalyst and Combustion Tube Replacement
+These procedures involve handling components at or near furnace
+temperature. Allow the furnace to cool completely before opening. Wear
+heat-resistant gloves and safety glasses. Follow the replacement
+procedures in the Shimadzu TOC-L User Manual.
+:::
+
+
+## 10. Troubleshooting
+
+| Symptom                                  | Probable Cause                         | Corrective Action                                  |
+|:-----------------------------------------|:---------------------------------------|:---------------------------------------------------|
+| Blank values increasing over time        | Catalyst degradation or contaminated combustion tube | Replace catalyst; inspect and replace combustion tube if discolored |
+| Poor replicate precision (CV > 2%)       | Air bubble in syringe; particulates in sample; insufficient sample volume | Check syringe for air leaks; re-filter sample; verify vial volume |
+| NDIR signal saturated (flat-top peaks)   | Sample concentration exceeds calibration range | Dilute sample and re-run                          |
+| TNM-L "Not Ready" status persists        | Ozone generator not warmed up; ozone decomposer exhausted; exhaust line blocked | Allow additional warm-up time; replace decomposer; check exhaust tubing |
+| No communication with instrument         | USB/serial cable disconnected; software crash; instrument not powered on | Check cable connections; restart software; verify instrument power |
+| Autosampler skips vials                  | Vial position mismatch between sample table and rack; vial cap not pierced | Verify positions; check that septa are intact       |
+| SSM signal noisy or irreproducible       | Boat not fully inserted; sample mass too large; residual carbon on boat | Confirm boat position; reduce sample mass; pre-combust boats longer |
+| Carrier gas pressure alarm               | Cylinder empty or regulator not set correctly | Replace cylinder; adjust regulator to specification |
+
+
+## 11. Waste Disposal
+
+| Waste Type                        | Disposal Method                              |
+|:----------------------------------|:---------------------------------------------|
+| Acidified liquid waste (HCl/H~3~PO~4~) | Neutralize and dispose per EH&S guidelines |
+| Spent TC catalyst (Pt on alumina) | Collect for EH&S hazardous waste pickup     |
+| Used combustion tubes (quartz)    | Standard glass waste (broken-glass box) if not contaminated |
+| Used ceramic boats (SSM)          | Clean and reuse, or standard trash           |
+| Autosampler rinse water           | Drain to sink                                |
+| Calibration standard waste        | Aqueous waste; drain to sink if dilute       |
+
+
+## 12. References
+
+- Shimadzu Corporation. *TOC-L Series Total Organic Carbon Analyzer:
+  User Manual*.
+- Shimadzu Corporation. *TNM-L Total Nitrogen Module: User Manual*.
+- Shimadzu Corporation. *SSM-5000A Solid Sample Combustion Unit: User
+  Manual*.
+- Shimadzu Corporation. *ASI-L Auto Sample Injector: User Manual*.
+- Shimadzu Corporation. *LabSolutions TOC Software: Operation Guide*.
+
+
+## 13. Related SOPs
+
+| SOP    | Title                                       | Relationship                              |
+|:-------|:--------------------------------------------|:------------------------------------------|
+| [L06](SOP-L06-quality-control.qmd) | Quality Control and Quality Assurance | QC requirements for all analytical runs  |
+| [L62](SOP-L62-total-carbon.qmd)    | Total Carbon -- Shimadzu TOC-L with SSM-5000A | Application SOP for soil carbon analysis |
+| [L64](SOP-L64-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | Application SOP; DOC extracts analyzed on the TOC-L |
+| [L02](SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Chemical safety for HCl, phosphoric acid |
+
+
+## 14. Training Record
+
+Before operating this instrument independently, personnel must:
+
+1. Read this SOP in full and the relevant sections of the Shimadzu
+   TOC-L, TNM-L, and SSM-5000A user manuals
+2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+   and
+   [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   training
+3. Observe a trained operator perform a complete session: startup,
+   calibration (carbon and nitrogen), sample analysis, data export,
+   and shutdown
+4. Demonstrate competence preparing calibration standards (KHP and
+   KNO~3~)
+5. Perform a supervised analytical run with acceptable QC results
+   (blanks, calibration verification recovery, replicate CV)
+6. Be signed off by the instrument manager or PI
