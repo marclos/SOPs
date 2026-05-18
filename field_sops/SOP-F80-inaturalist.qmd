@@ -1,0 +1,493 @@
+---
+title: "iNaturalist for Biodiversity Documentation"
+sop-number: "SOP-F80"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-17"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes how to use iNaturalist
+(<https://www.inaturalist.org>) as a standardized tool for documenting
+biodiversity at EA Program field sites. iNaturalist is a community
+science platform that combines field observation, AI-assisted species
+identification, and expert community verification into a single
+workflow. Observations that receive community agreement on
+identification reach "Research Grade" status and are automatically
+shared with the Global Biodiversity Information Facility (GBIF),
+making them part of the global scientific record.
+
+This SOP covers making high-quality observations, creating and
+managing collaborative projects for EA Program research, and exporting
+data for analysis in R.
+
+
+## 2. Scope
+
+- **Applies to:** All EA Program biodiversity surveys, species
+  inventories, and community science activities where iNaturalist is
+  used to document plant, animal, fungal, or other organism
+  occurrences
+- **Does not apply to:** Quantitative vegetation transect surveys
+  ([SOP-F81](SOP-F81-vegetation-transect-surveys.qmd)); camera trap
+  image processing ([SOP-F87](SOP-F87-camera-trap.qmd)); formal
+  specimen collection requiring voucher preparation; eDNA sampling
+- **Location:** All EA Program field sites and campus
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                   |
+|:------------------|:-------------------------------------------------|
+| PI / Field Lead   | Create and administer iNaturalist projects; review data quality |
+| Project Admin     | Manage project settings, curate observations, invite members |
+| Trained Personnel | Make observations per this SOP; contribute identifications |
+| New Students      | Create an account and complete training before using iNaturalist for research data |
+
+
+## 4. Safety and Hazards
+
+Standard field safety applies when making observations in the field.
+Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd). Additional
+considerations specific to iNaturalist use:
+
+- **Location privacy:** iNaturalist observations include GPS
+  coordinates by default. Be aware that your location is visible to
+  other users unless you obscure or hide it. Do not post observations
+  from private residences without obscuring the location.
+- **Sensitive species:** iNaturalist automatically obscures the
+  locations of threatened and endangered species ("taxon geoprivacy").
+  Do not override this obscuring for sensitive taxa.
+- **Disturbance:** Do not disturb, handle, or collect organisms solely
+  for an iNaturalist photo. Photograph organisms in situ where
+  possible.
+
+
+## 5. Definitions
+
+- **Observation:** A record of an encounter with an individual organism
+  at a specific place and time, documented with at least one photo or
+  sound recording.
+- **Research Grade:** An observation that has a date, location, photo
+  or sound, and community agreement on the identification (at least
+  two-thirds of identifiers agree). Research Grade observations are
+  shared with GBIF.
+- **Needs ID:** An observation that has not yet received enough
+  community identifications to reach Research Grade.
+- **Casual:** An observation that is missing date, location, or
+  evidence (photo/sound), or that the community has voted as not
+  meeting quality standards.
+- **Collection Project:** A project that automatically includes all
+  observations matching defined criteria (taxa, place, users, dates,
+  quality grade). No manual curation needed.
+- **Traditional Project:** A project where observations must be added
+  manually by members. Can require custom observation fields. Requires
+  the creator to have at least 50 verifiable observations.
+- **Umbrella Project:** A project that aggregates observations from
+  multiple other projects. Useful for coordinating across sites or
+  taxa.
+- **Observation Field:** A custom data field that can be attached to
+  observations (e.g., "habitat type," "number of individuals,"
+  "flowering status"). Only Traditional Projects can require
+  observation fields.
+
+
+## 6. Required Materials
+
+| Item                                     | Notes                              |
+|:-----------------------------------------|:-----------------------------------|
+| Smartphone with iNaturalist app          | iOS or Android; free download      |
+| iNaturalist account                      | Free at <https://www.inaturalist.org> |
+| Camera (optional)                        | For higher-quality photos; phone camera is sufficient for most uses |
+| Field notebook                           | For recording additional data not captured in iNaturalist |
+| GPS unit (optional)                      | Phone GPS is usually adequate      |
+
+
+## 7. Procedure
+
+### 7.1 Account Setup
+
+1. Go to <https://www.inaturalist.org> or download the iNaturalist app
+2. Create an account using your Claremont email address
+3. In your profile settings:
+   - Set your default photo license to **CC-BY** or **CC-BY-NC**
+     (this allows your photos to be used in research with attribution)
+   - Set your default observation license to **CC0** or **CC-BY**
+     (this allows your observation data to be shared with GBIF)
+   - Set your default location to "open" (you can obscure individual
+     observations as needed)
+4. Send your iNaturalist username to the project administrator so you
+   can be added to the EA Program project
+
+::: {.callout-important}
+### License Settings Matter for Research
+Observations with "All Rights Reserved" licenses are excluded from
+GBIF exports and many research datasets. For EA Program work, always
+use a Creative Commons license. CC-BY is recommended.
+:::
+
+### 7.2 Making High-Quality Observations
+
+A useful iNaturalist observation needs four things: a photo (or sound),
+a date, a location, and enough visual detail for identification. Follow
+these guidelines to maximize the chances of reaching Research Grade.
+
+#### Photography Tips
+
+1. Take multiple photos of each organism from different angles:
+   - **Plants:** Whole plant habit, close-up of leaves (both sides),
+     flowers or fruit, stem, bark (for trees)
+   - **Insects:** Dorsal view (top), lateral view (side), close-up of
+     head and wing venation if possible
+   - **Birds:** Best angle available; include habitat context if
+     possible
+   - **Fungi:** Top of cap, underside (gills/pores), stem, habitat
+     context
+2. Include something for scale (a finger, a coin, a ruler) when
+   practical
+3. Photograph the organism in its natural position; do not relocate it
+4. For plants, photograph vegetative and reproductive structures
+   together if both are present
+5. Ensure the photo is in focus and adequately lit
+
+#### Recording the Observation
+
+6. Open the iNaturalist app and tap the camera icon to start a new
+   observation
+7. Take photos directly in the app, or select photos from your camera
+   roll
+8. The app will suggest an identification using its AI model (trained
+   on the iNaturalist community's data). Accept the suggestion if it
+   looks correct, or refine the identification manually. When in doubt,
+   identify to the broadest level you are confident in (e.g., "Plants"
+   or "Oaks" rather than guessing a specific species).
+9. Verify that the date and location are correct. The app captures
+   these automatically from the photo metadata, but check that the GPS
+   pin is accurate on the map.
+10. Add any relevant notes in the "Notes" field (habitat, behavior,
+    abundance, associated species)
+11. If the observation is part of a Traditional Project, add it to the
+    project before submitting (see Section 7.4)
+12. Tap **Submit**
+
+::: {.callout-tip}
+### Sound Observations
+For birds, frogs, and insects, a sound recording can be as useful as
+(or more useful than) a photo. The iNaturalist app can record audio
+directly. Hold the phone steady and minimize background noise.
+:::
+
+### 7.3 Contributing Identifications
+
+Identifying other people's observations is as valuable as making your
+own. It builds community expertise, helps observations reach Research
+Grade, and improves the AI model.
+
+1. Go to the **Identify** tab on the website (or use the Explore page
+   and filter by "Needs ID")
+2. Filter by your area of expertise (taxa, location)
+3. Add your identification. Agree with the existing suggestion if
+   correct, or provide a different identification with a brief
+   explanation.
+4. Use the "Compare" tool to check similar species
+5. Mark observations as "No, it's as good as it can be" only if the
+   evidence is genuinely insufficient for identification
+
+### 7.4 Creating and Managing Projects
+
+iNaturalist offers three project types. Choose based on your research
+needs:
+
+| Feature                          | Collection Project | Traditional Project | Umbrella Project |
+|:---------------------------------|:-------------------|:--------------------|:-----------------|
+| Observations added               | Automatically (by filter criteria) | Manually by members | From member projects |
+| Custom observation fields         | No                 | Yes (can be required) | No              |
+| Creator requirements             | Any user           | 50+ verifiable observations | Any user      |
+| Best for                         | Site-based inventories, class bioblitzes | Projects needing custom data fields | Multi-site or multi-taxon coordination |
+| Obscured coordinate access       | Yes (with Trust enabled) | Yes (with member permission) | No (via member projects) |
+
+#### Creating a Collection Project
+
+This is the recommended type for most EA Program site inventories and
+class projects. Observations matching your criteria are included
+automatically.
+
+1. Go to <https://www.inaturalist.org/projects/new>
+2. Click **Get Started** under Collection Projects
+3. Fill in the project details:
+   - **Title:** Use a descriptive name (e.g., "EA Program -- Bernard
+     Field Station Biodiversity 2025")
+   - **Icon:** Upload the EA Program logo or a representative photo
+   - **Banner:** Upload a site photo
+   - **Description:** Explain the project's purpose, study site, and
+     time frame
+4. Set the project requirements (filters):
+   - **Place:** Select the iNaturalist Place for your study area. If
+     one does not exist, create a custom Place by drawing a boundary
+     on the map (Community > Places > Add a New Place).
+   - **Taxa:** Leave blank to include all organisms, or restrict to
+     specific groups (e.g., Plantae, Aves)
+   - **Users:** Leave blank to include anyone, or list specific
+     usernames for a closed team
+   - **Date range:** Set start and end dates if the project covers a
+     specific period (e.g., a class semester or field season)
+   - **Quality grade:** Select "Research Grade" and "Needs ID" for
+     most research projects
+5. Under **Trust** (optional but recommended for research): enable
+   Trust to allow project admins to access the true coordinates of
+   observations with obscured or private locations. Members must
+   individually opt in to share their coordinates.
+6. Click **Save**
+
+::: {.callout-note}
+### Creating a Custom Place
+If your study area (e.g., the Bernard Field Station, a specific
+watershed) does not exist as an iNaturalist Place, create one:
+
+1. Go to <https://www.inaturalist.org/places/new>
+2. Name the place (e.g., "Bernard Field Station, Claremont, CA")
+3. Draw the boundary on the map using the polygon tool
+4. Save
+
+The place will be available as a filter in your Collection Project.
+Note that very small places (e.g., a single backyard) work better
+with Traditional Projects because GPS accuracy and obscured
+coordinates can cause observations to fall outside tiny boundaries.
+:::
+
+#### Creating a Traditional Project
+
+Use when you need custom observation fields or when the study area is
+too small for reliable GPS-based filtering.
+
+1. You must have at least 50 verifiable observations on your account
+2. Go to <https://www.inaturalist.org/projects/new>
+3. Look for the small text link at the bottom of the page: "click here
+   to create a traditional project"
+4. Fill in the project details (title, icon, banner, description)
+5. Set the membership model:
+   - **Open:** Anyone can join
+   - **Invite-only:** Only users you invite can join (recommended for
+     research teams)
+6. Set the submission model:
+   - **Any member:** All members can add observations
+   - **Project curators:** Only curators can add observations
+     (recommended when the PI needs to control data quality)
+7. Add observation fields if needed (e.g., "Habitat type," "Transect
+   number," "Number of individuals"). Keep required fields to a
+   minimum to avoid discouraging participation.
+8. Click **Save**
+9. Invite team members by their iNaturalist username
+
+#### Creating an Umbrella Project
+
+Use when you want to aggregate observations from multiple existing
+projects (e.g., across multiple EA study sites or across both a
+vegetation project and a bird project).
+
+1. Go to <https://www.inaturalist.org/projects/new>
+2. Click **Get Started** under Umbrella Projects
+3. Fill in the project details
+4. Under **Projects:** search for and add each member project
+5. Click **Save**
+
+The Umbrella Project displays combined species lists and observation
+counts from all member projects.
+
+### 7.5 Managing a Project
+
+#### Adding Members
+
+- **Collection Projects:** Members join voluntarily (or are
+  auto-included if you filter by username). Share the project URL with
+  your team.
+- **Traditional Projects (invite-only):** Go to the project page >
+  Members > Invite. Enter the iNaturalist username.
+
+#### Curating Observations
+
+- Review observations periodically for data quality (correct
+  identifications, accurate locations, appropriate photos)
+- Add identifications to "Needs ID" observations to help them reach
+  Research Grade
+- For Traditional Projects, remove observations that do not belong
+  (spam, wrong location, unrelated taxa)
+
+#### Project Journal
+
+Use the project Journal feature to post updates, share results, and
+communicate with members. Journal posts are visible to anyone
+following the project.
+
+
+## 8. Data Export
+
+### 8.1 Export via the Website
+
+1. Navigate to your project page
+2. For Collection Projects: click **View All** to see all observations,
+   then click **Export Observations** (or go to
+   <https://www.inaturalist.org/observations/export>)
+3. For Traditional Projects: click **Export Observations** in the right
+   sidebar
+4. Select the fields you want to include (at minimum: scientific name,
+   common name, date, latitude, longitude, quality grade, observer,
+   photo URL)
+5. Click **Create Export**. iNaturalist will email you a download link
+   for the CSV file.
+
+### 8.2 Export via R (rinat Package)
+
+The `rinat` R package provides programmatic access to the iNaturalist
+API. This is the preferred method for reproducible analysis.
+
+```{r}
+#| label: rinat-example
+#| eval: false
+#| echo: true
+
+# Install rinat (one time)
+install.packages("rinat")
+
+library(rinat)
+
+# Get observations from a project by slug
+# (the slug is the project URL name, e.g., "ea-program-bfs-2025")
+proj_obs <- get_inat_obs_project(
+  "ea-program-bfs-2025",
+  type = "observations"
+)
+
+# Get Research Grade observations of a taxon in a place
+oaks <- get_inat_obs(
+  taxon_name = "Quercus",
+  place_id   = 962,          # Claremont, CA (find IDs on the iNat website)
+  quality    = "research",
+  maxresults = 500
+)
+
+# Quick map of observations
+library(ggplot2)
+inat_map(oaks, plot = FALSE) +
+  labs(title = "Research Grade Quercus observations, Claremont, CA")
+```
+
+::: {.callout-note}
+### API Rate Limits
+The iNaturalist API limits requests. For large exports (more than
+10,000 observations), use the website export tool or the GBIF
+DarwinCore Archive download rather than making repeated API calls.
+:::
+
+### 8.3 Export via GBIF
+
+Research Grade observations with open licenses are automatically
+shared with GBIF. For large-scale analyses:
+
+1. Go to <https://www.gbif.org>
+2. Search for your taxon or location
+3. Filter by "iNaturalist" as the dataset
+4. Download the DarwinCore Archive
+
+GBIF provides DOIs for downloads, making them citable in publications.
+
+
+## 9. Quality Control
+
+### 9.1 Observation Quality
+
+- Every observation must have at least one clear, in-focus photo (or
+  sound recording), a date, and an accurate location
+- Identify to the lowest taxonomic level you are confident in; do not
+  guess species
+- Add multiple photos showing diagnostic features
+- For plants, include both vegetative and reproductive structures when
+  available
+
+### 9.2 Project-Level QC
+
+- The project administrator should review "Needs ID" observations
+  weekly and add identifications
+- Flag observations with incorrect locations or dates
+- For Traditional Projects, verify that required observation fields
+  are completed
+- Track the proportion of Research Grade observations over time; aim
+  for greater than 70% Research Grade in active projects
+
+### 9.3 Data Citation
+
+When using iNaturalist data in publications or reports, cite both the
+iNaturalist platform and the specific dataset:
+
+- **Platform citation:** iNaturalist. Available at:
+  <https://www.inaturalist.org>. Accessed [date].
+- **GBIF download citation:** Use the DOI provided with the GBIF
+  download.
+- **Individual observations:** Cite by observation URL (e.g.,
+  <https://www.inaturalist.org/observations/123456>) when referencing
+  specific records.
+
+
+## 10. Responsible Use
+
+- Respect copyright: each user retains ownership of their observations
+  and photos. Your rights to use them are governed by the license the
+  user selected. Most iNaturalist photos use CC-BY-NC.
+- Do not create observations for specimens you did not personally
+  encounter (no uploading photos from field guides, the internet, or
+  other people's cameras)
+- Do not harass, collect, or relocate organisms for the purpose of
+  getting a better photo
+- For sensitive species (rare plants, nesting sites), manually obscure
+  the location even if iNaturalist does not do so automatically
+- Follow iNaturalist's Community Guidelines:
+  <https://www.inaturalist.org/pages/community+guidelines>
+
+::: {.callout-warning}
+### Student Use
+Before assigning students to use iNaturalist, read the iNaturalist
+Teacher's Guide
+(<https://www.inaturalist.org/pages/teacher's+guide>). The majority
+of low-quality observations and inappropriate content on iNaturalist
+comes from poorly managed class assignments. Set clear expectations,
+demonstrate proper technique, and monitor student contributions.
+:::
+
+
+## 11. References
+
+- iNaturalist. Available at: <https://www.inaturalist.org>
+- iNaturalist Help: Understanding Projects. Available at:
+  <https://help.inaturalist.org/en/support/solutions/articles/151000176472-understanding-projects-on-inaturalist>
+- iNaturalist Help: Common Collection Project Use Cases. Available at:
+  <https://help.inaturalist.org/en/support/solutions/articles/151000176246-common-collection-project-use-cases>
+- Barve, V. and Hart, E. (2025). rinat: Access iNaturalist Data
+  Through APIs. R package. Available at:
+  <https://CRAN.R-project.org/package=rinat>
+- GBIF. Global Biodiversity Information Facility. Available at:
+  <https://www.gbif.org>
+
+
+## 12. Training Record
+
+Before using iNaturalist for EA Program research data, personnel must:
+
+1. Read this SOP in full
+2. Create an iNaturalist account with appropriate license settings
+   (Section 7.1)
+3. Make at least 10 observations that reach Research Grade (or "Needs
+   ID" with correct identifications added by the community)
+4. Contribute at least 10 identifications to other users' observations
+5. Demonstrate familiarity with the project type relevant to their
+   research (Collection or Traditional)
+6. Be signed off by the PI or project lead

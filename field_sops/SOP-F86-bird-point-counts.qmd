@@ -1,0 +1,204 @@
+---
+title: "Bird Point Count Surveys"
+sop-number: "SOP-F86"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-17"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes procedures for conducting standardized bird point count surveys. Point counts are the most widely used method for monitoring bird populations and community composition in terrestrial habitats. An observer stands at a fixed point for a defined time period and records all birds detected by sight or sound within a specified radius. This SOP follows protocols compatible with the North American Breeding Bird Survey (BBS) and Partners in Flight (PIF) guidelines to enable comparison with regional and national datasets [@ralph1993; @ralph1995].
+
+
+## 2. Scope
+
+- **Applies to:** Fixed-radius and unlimited-radius bird point count surveys at all EA Program field sites, including the Bernard Field Station, Pomona College campus, restoration areas, and agricultural study sites
+- **Does not apply to:** Area searches, nest monitoring, mist-netting, raptor surveys, nocturnal surveys, or aquatic bird surveys (these require separate protocols)
+- **Location:** All EA Program terrestrial field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                   |
+|:------------------|:-------------------------------------------------|
+| PI / Field Lead   | Approve survey design; ensure permit compliance  |
+| Trained Observer  | Conduct point counts; identify all species by sight and sound |
+| Data Recorder     | Record observations if a second person is available |
+| New Students      | Complete training (Section 13) before recording data independently |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Early morning work:** Surveys begin at or before sunrise. Reduced visibility increases trip and fall risk. Use a headlamp while walking to survey points.
+- **Biological:** Ticks, rattlesnakes, and stinging insects in brushy and riparian habitats. Poison oak along riparian corridors.
+- **Heat:** Summer surveys in southern California can reach high temperatures by mid-morning.
+:::
+
+### Required PPE
+
+- [ ] Closed-toe shoes or field boots
+- [ ] Long pants (tick and brush protection)
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Headlamp (for pre-dawn travel to survey points)
+
+### Permits
+
+Bird surveys do not typically require a Scientific Collecting Permit as long as birds are not captured or handled. However, access to certain sites may require permission from landowners or managing agencies. The PI must confirm access authorization before fieldwork.
+
+### Emergency Procedures
+
+A minimum of two people is recommended for early morning surveys. Carry a cell phone and a first aid kit. Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd).
+
+
+## 5. Definitions
+
+- **Point count:** A survey method in which an observer records all birds detected from a single fixed point during a standardized time period.
+- **Fixed-radius point count:** Detections are recorded only within a specified distance from the observer (e.g., 50 m). Provides density estimates without distance estimation models.
+- **Unlimited-radius point count:** All detections are recorded regardless of distance, with the estimated distance to each bird noted. Allows distance sampling analysis to estimate detection probability and density.
+- **Detection type:** How the bird was detected: singing (S), calling (C), visual (V), flyover (F), or drumming/mechanical sound (D).
+- **Breeding Bird Survey (BBS):** A long-running North American monitoring program using roadside point counts; the EA Program protocol is designed to be compatible with BBS methods.
+
+
+## 6. Required Materials
+
+| Item                                     | Notes                              |
+|:-----------------------------------------|:-----------------------------------|
+| Binoculars (8x42 or 10x42)              | Essential for visual identification |
+| Field guide                              | *Sibley Guide to Birds* or *Kaufman Field Guide* |
+| Rangefinder (laser)                      | For estimating detection distances in unlimited-radius counts |
+| Stopwatch or timer (phone app)           | For standardizing count duration   |
+| GPS unit or smartphone                   | For recording point locations      |
+| Bird point count data sheet              | Pre-printed (see Appendix A)       |
+| Clipboard and pencils                    | Mechanical pencils; avoid pens that smear |
+| Headlamp                                 | For pre-dawn travel                |
+| Audio recorder (optional)                | For later verification of song identifications; Merlin or eBird app |
+| Compass                                  | For recording bearing to detections (optional, for distance sampling) |
+
+
+## 7. Estimated Time
+
+| Task                                    | Time                          |
+|:----------------------------------------|:------------------------------|
+| Travel to first point (before sunrise)  | Variable                      |
+| Count period per point                  | 5 or 10 minutes (see Section 8.3) |
+| Travel between points                   | 5--10 minutes (minimum 150 m apart) |
+| Full survey (10 points)                 | 2--3 hours (must finish within 4 hours of sunrise) |
+
+
+## 8. Procedure
+
+### 8.1 Survey Design
+
+1. Establish point count locations before the first survey:
+   - Points must be at least 150 m apart (250 m preferred) to minimize double-counting of the same individuals [@ralph1995]
+   - Distribute points using a systematic or stratified random design within the study area
+   - Permanently mark each point with a GPS waypoint and, where possible, a discreet physical marker (flagging tape, small stake)
+2. Record the habitat type at each point (e.g., coastal sage scrub, riparian woodland, grassland, developed)
+3. Determine whether fixed-radius (50 m) or unlimited-radius counts will be used. Fixed-radius counts are simpler and require less observer experience. Unlimited-radius counts with distance estimation allow more sophisticated density modeling.
+
+### 8.2 Survey Timing
+
+- Conduct surveys during the breeding season (mid-March through mid-June in southern California) when singing activity is highest
+- Begin surveys at local sunrise and complete all counts within 4 hours of sunrise. Detection rates decline substantially after this window.
+- Avoid surveying during rain, sustained wind above 20 mph, or dense fog, as these conditions reduce detectability and violate the assumption of constant detection probability across surveys
+- Record weather conditions (wind speed on the Beaufort scale, cloud cover, temperature, precipitation) at the start and end of each survey
+
+### 8.3 Conducting a Point Count
+
+1. Arrive at the point quietly. Wait 1--2 minutes for birds disturbed by your approach to resume normal activity.
+2. Start the timer. The standard count duration is:
+   - **5 minutes** for fixed-radius counts or BBS-compatible surveys
+   - **10 minutes** for unlimited-radius distance sampling (often split into 0--3, 3--5, and 5--10 minute intervals to model detection over time)
+3. Stand still and record every bird detected within the count period:
+   - Species (use the 4-letter AOU alpha code, e.g., HOFI for House Finch, CALT for California Towhee)
+   - Number of individuals
+   - Detection type: Singing (S), Calling (C), Visual (V), Flyover (F), Drumming (D)
+   - Distance band or estimated distance:
+     - Fixed-radius: Within 50 m / Beyond 50 m
+     - Unlimited-radius: Estimate distance to the nearest 5 m (or use bands: 0--25, 25--50, 50--100, 100--200, >200 m)
+   - Direction (compass bearing, optional but useful for distance sampling)
+   - Time interval (0--3, 3--5, 5--10 min, if splitting the count)
+4. Record flyovers separately. Birds flying over the point without landing or interacting with the habitat are recorded but flagged as flyovers and excluded from density calculations.
+5. At the end of the count period, stop recording. Do not add birds detected after the timer ends.
+
+::: {.callout-tip}
+### Identification by Sound
+The majority of detections during breeding season are auditory (songs and calls). Invest time learning bird songs before the survey season. The Merlin Bird ID app (Cornell Lab of Ornithology) can assist with real-time song identification in the field, but do not rely on it exclusively.
+:::
+
+### 8.4 Between Points
+
+1. Walk to the next point. Record any notable observations along the way as incidental sightings (separate from point count data).
+2. Allow a 1--2 minute settling period before starting the next count.
+
+### 8.5 Repeat Visits
+
+For occupancy modeling or trend analysis, repeat the survey at each point at least 2--3 times during the breeding season, spaced at least 10 days apart. Record the date of each visit.
+
+
+## 9. Quality Control
+
+- Each observer should demonstrate proficiency by passing a field identification test (greater than 90% correct identification of common species by sound and sight) before conducting surveys independently
+- On 10% of surveys, a second observer independently records detections at the same point to assess inter-observer agreement
+- Record the observer's name on every data sheet; observer identity is a variable in analysis
+- Flag any uncertain identifications on the data sheet ("?" after the species code) for later review
+- If an audio recorder is used, archive recordings for at least one season to allow verification
+
+
+## 10. Data Management
+
+1. Enter field data into the project spreadsheet or database within 48 hours
+2. Each row represents one detection: point ID, date, time interval, species code, count, detection type, distance, flyover flag
+3. Reconcile uncertain identifications using audio recordings or field notes
+4. Archive field data sheets (scan if paper)
+5. Version-control all analysis scripts per [SOP-L05](../lab_sops/SOP-L05-rstudio-github.qmd)
+6. For analyses requiring detection probability correction, use the `unmarked` R package [@fiske2011] for distance sampling or N-mixture models
+
+
+## 11. References
+
+See the project-level `references.bib` for full citations. Key references: @ralph1993, @ralph1995, @bibby2000, @fiske2011.
+
+::: {#refs}
+:::
+
+
+## 12. Training Record
+
+Before conducting bird point counts independently, personnel must:
+
+1. Read this SOP and [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+2. Demonstrate identification of at least 90% of common species (by sight and sound) at the study site during a supervised field test
+3. Participate in at least two supervised point count survey sessions
+4. Demonstrate proper data recording (species codes, distance estimation, detection types)
+5. Be signed off by the PI or field lead
+
+
+## Appendix A: Point Count Field Data Sheet {.appendix}
+
+Print and carry in the field.
+
+**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_\_ **Start time:** \_\_\_\_\_\_
+
+**Weather:** Wind (Beaufort): \_\_\_ Cloud cover: \_\_\_% Temp: \_\_\_ C Precip: Y / N
+
+| Point ID | Time Start | Species Code | Count | Detection (S/C/V/F/D) | Distance (m) | Flyover? | Notes |
+|:---------|:-----------|:-------------|:------|:-----------------------|:-------------|:---------|:------|
+|          |            |              |       |                        |              |          |       |
+|          |            |              |       |                        |              |          |       |
+|          |            |              |       |                        |              |          |       |
+|          |            |              |       |                        |              |          |       |
+|          |            |              |       |                        |              |          |       |

@@ -1,0 +1,222 @@
+---
+title: "Plant Tissue Sampling"
+sop-number: "SOP-F83"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-17"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes procedures for collecting, handling, and preserving plant tissue samples in the field for subsequent laboratory analysis. Plant tissue analysis provides data on nutrient concentrations (C, N, P, K, metals), stable isotope ratios ($\delta^{13}$C, $\delta^{15}$N), and other biogeochemical parameters. Proper sampling technique is essential to ensure that results represent the target tissue and are not contaminated or degraded during collection and transport.
+
+
+## 2. Scope
+
+- **Applies to:** Collection of leaf, stem, root, and reproductive tissue from vascular plants for nutrient and isotope analysis at all EA Program field sites
+- **Does not apply to:** Soil organic matter sampling (see [SOP-F56](SOP-F56-soil-sampling.qmd)); algal tissue sampling; plant tissue culture; DNA extraction from plant tissue (see [SOP-L95](../lab_sops/SOP-L95-dna-extraction.qmd))
+- **Location:** All EA Program field sites; initial processing in SGM 133/134
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| PI / Field Lead   | Approve sampling design and target species  |
+| Trained Personnel | Collect and process tissue per this SOP     |
+| New Students      | Complete training before independent sampling |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Biological:** Contact with allergenic plants (poison oak, stinging nettles). Some target species may have thorns or irritating sap.
+- **Physical:** Use of pruning shears and scissors poses a laceration risk.
+- **Chemical:** If using liquid nitrogen for snap-freezing, follow cryogenic safety procedures (gloves, face shield, ventilated area).
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Closed-toe shoes or field boots
+- [ ] Sun protection
+- [ ] Leather gloves (for thorny species)
+- [ ] Cryogenic gloves and face shield (if using liquid nitrogen)
+
+### Emergency Procedures
+
+For cuts from pruning shears, apply direct pressure and clean the wound. For poison oak exposure, wash with cold water and soap as soon as possible. Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd).
+
+
+## 5. Definitions
+
+- **Tissue type:** The specific plant organ sampled (e.g., fully expanded mature leaves, current-year stem growth, fine roots less than 2 mm diameter, seeds).
+- **Composite sample:** A sample formed by combining tissue from multiple individuals of the same species within a plot to represent the population average.
+- **Voucher specimen:** A pressed and identified plant specimen collected alongside tissue samples to verify species identification.
+
+
+## 6. Required Materials
+
+| Item                                     | Notes                              |
+|:-----------------------------------------|:-----------------------------------|
+| Stainless steel pruning shears or scissors | Clean between species             |
+| Paper coin envelopes or labeled paper bags | For drying samples; avoid plastic for fresh tissue intended for drying |
+| Ziplock bags (gallon size)               | For fresh tissue requiring freezing |
+| Cooler with ice packs                    | For transport of fresh tissue      |
+| Permanent markers (Sharpie)              | For labeling                       |
+| Pre-printed labels                       | Site, species, tissue type, date, collector |
+| DI water squeeze bottle                  | For rinsing contamination          |
+| Ethanol (70%) in a spray bottle          | For decontaminating tools between species |
+| Paper towels                             | For drying tools after decontamination |
+| GPS unit                                 | For recording sampling locations   |
+| Plant identification guides              | For species verification           |
+| Plant press (if collecting vouchers)     | See [SOP-F81](SOP-F81-vegetation-transect-surveys.qmd) Section 9 |
+| Field data sheet                         | Pre-printed                        |
+| Liquid nitrogen dewar and cryo-vials     | Only if snap-freezing is required  |
+| Analytical balance (field-portable, optional) | For recording fresh mass        |
+
+
+## 7. Estimated Time
+
+| Task                                   | Time                         |
+|:---------------------------------------|:-----------------------------|
+| Site setup and species identification  | 15--30 minutes               |
+| Tissue collection (10 samples)         | 30--60 minutes               |
+| Labeling and packing for transport     | 15 minutes                   |
+| Lab processing (cleaning, drying)      | Variable (see Section 9)     |
+
+
+## 8. Procedure
+
+### 8.1 Sampling Design
+
+1. Define the target species, tissue type, and number of replicates in the sampling plan before going to the field
+2. Determine whether individual or composite samples are needed. For nutrient analysis where individual variation is important, collect tissue from individual plants. For site-level averages, composite tissue from 5--10 individuals per species per plot.
+3. Select individuals randomly within the sampling area. Avoid plants at plot edges, obviously damaged or diseased individuals, and plants with heavy herbivory or epiphyte loads (unless these are the target condition).
+
+### 8.2 Leaf Tissue Collection
+
+1. Put on clean nitrile gloves. Change gloves between species to avoid cross-contamination.
+2. Select fully expanded, mature leaves from the upper canopy (sun leaves) unless the project specifically targets shade leaves or another position.
+3. Using clean pruning shears, clip the petiole at its base. For grasses, clip the most recent fully expanded blade at the ligule.
+4. Collect enough tissue mass for the planned analyses. As a guideline:
+
+| Analysis                          | Minimum dry mass   |
+|:----------------------------------|:-------------------|
+| C, N, S by EA-IRMS               | 2--5 mg            |
+| $\delta^{13}$C, $\delta^{15}$N   | 2--5 mg            |
+| Total P, metals (acid digestion)  | 100--500 mg        |
+| Multiple analyses from one sample | 2--5 g fresh weight recommended |
+
+5. For composite samples, collect an approximately equal mass of tissue from each individual and combine in a single bag.
+6. Place tissue immediately into a labeled paper envelope (if air-drying) or a labeled Ziplock bag (if freezing or transporting fresh). For frozen samples, place bags into the cooler with ice packs.
+
+### 8.3 Stem, Root, and Reproductive Tissue
+
+- **Stems:** Clip current-year growth. Record the diameter and length of the stem segment.
+- **Fine roots (less than 2 mm diameter):** Excavate carefully around the base of the target plant using a trowel. Separate live roots from dead roots and soil. Rinse briefly with DI water in the field or at the first opportunity in the lab.
+- **Seeds/fruits:** Collect from a minimum of 5 individuals. Record the phenological stage (e.g., immature, mature, dehisced).
+
+### 8.4 Decontamination Between Species
+
+1. Spray pruning shears with 70% ethanol
+2. Wipe dry with a clean paper towel
+3. Allow to air-dry for 30 seconds before cutting the next species
+4. For metal analysis, use stainless steel tools only (no galvanized or painted tools) and rinse with DI water after ethanol to remove residual salts
+
+### 8.5 Labeling
+
+Every sample must be labeled with:
+
+- Site name and plot/transect ID
+- Species (use the 6-letter code from [SOP-F81](SOP-F81-vegetation-transect-surveys.qmd) Section 11.2)
+- Tissue type (leaf, stem, root, seed)
+- Individual or composite (if composite, record the number of individuals)
+- Date (YYYY-MM-DD)
+- Collector initials
+
+Write on both the bag/envelope and a separate tag inside (in case the exterior label smudges).
+
+### 8.6 Field Data Sheet
+
+Record the following for each sample:
+
+| Field                | Entry                               |
+|:---------------------|:------------------------------------|
+| Sample ID            | Unique sequential number            |
+| Site / Plot          |                                     |
+| Species              |                                     |
+| Tissue type          |                                     |
+| Number of individuals| (if composite)                      |
+| GPS coordinates      |                                     |
+| Fresh mass (g)       | (if field balance available)        |
+| Notes                | Condition, herbivory, phenology     |
+
+
+## 9. Sample Preservation and Lab Processing
+
+### 9.1 Drying
+
+The default preservation method for nutrient and isotope analysis:
+
+1. Transport paper envelopes to the lab within 24 hours
+2. Dry at 60 C in the drying oven ([SOP-L16](../lab_sops/SOP-L16-drying-ovens.qmd)) for at least 48 hours or until a constant mass is reached
+3. Record the dry mass
+4. Store dried tissue in labeled coin envelopes in a desiccator or sealed container until grinding
+
+::: {.callout-important}
+### Temperature Matters
+Do not exceed 60 C for tissue intended for nitrogen or carbon isotope analysis. Higher temperatures can volatilize nitrogen compounds and alter $\delta^{15}$N values [@kalra1998].
+:::
+
+### 9.2 Freezing
+
+For analyses requiring fresh tissue (enzyme assays, gene expression, volatile compounds):
+
+1. Transport in cooler with ice packs (or snap-freeze with liquid nitrogen in the field)
+2. Transfer to the -80 C freezer ([SOP-L17](../lab_sops/SOP-L17-refrigerators-freezers.qmd)) within 6 hours of collection
+3. Record in the freezer inventory
+
+### 9.3 Grinding
+
+1. Grind dried tissue to a fine powder using a ball mill or mortar and pestle
+2. Clean the grinding equipment between samples (brush, then wipe with ethanol)
+3. Store ground tissue in labeled microcentrifuge tubes or coin envelopes
+
+
+## 10. Quality Control
+
+- Collect at least one field blank per sampling event: open an empty labeled bag at the site, expose it to the same conditions as the samples, then seal and process identically
+- For metal analysis, verify that tools are stainless steel and DI-rinsed
+- Record the time between collection and drying/freezing on the data sheet; flag any samples exceeding the 24-hour (drying) or 6-hour (freezing) window
+- For composite samples, verify that approximately equal mass was contributed by each individual
+
+
+## 11. References
+
+See the project-level `references.bib` for full citations. Key references: @kalra1998, @mills2004, @jones2001.
+
+::: {#refs}
+:::
+
+
+## 12. Training Record
+
+Before collecting plant tissue independently, personnel must:
+
+1. Read this SOP and [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+2. Demonstrate species identification for the target community
+3. Demonstrate proper collection technique (glove changes, tool decontamination, labeling)
+4. Process one set of samples through drying and grinding under supervision
+5. Be signed off by the PI or field lead

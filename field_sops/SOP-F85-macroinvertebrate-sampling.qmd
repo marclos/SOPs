@@ -1,0 +1,236 @@
+---
+title: "Benthic Macroinvertebrate Sampling"
+sop-number: "SOP-F85"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2025-05-17"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes procedures for collecting benthic macroinvertebrate (BMI) samples from wadeable streams. BMI communities are widely used indicators of water quality and biological integrity because different taxa have varying tolerances to pollution, habitat degradation, and hydrologic alteration. This SOP follows the California Surface Water Ambient Monitoring Program (SWAMP) protocols to enable comparison with statewide bioassessment datasets [@ode2016].
+
+
+## 2. Scope
+
+- **Applies to:** BMI sampling in wadeable streams (depth less than 1 m, velocity allowing safe wading) at all EA Program study sites
+- **Does not apply to:** Non-wadeable rivers or lakes (require different sampling gear); estuarine or marine macroinvertebrates; terrestrial invertebrates; meiofauna (organisms passing through a 500 um sieve)
+- **Location:** All EA Program stream sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                   |
+|:------------------|:-------------------------------------------------|
+| PI / Field Lead   | Approve sampling plan; ensure permit compliance  |
+| Trained Personnel | Collect and preserve samples per this SOP        |
+| New Students      | Complete training before independent sampling    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Drowning and swift water:** Do not wade in flows deeper than waist height or where footing is unstable. Always face upstream. Use a wading rod for support.
+- **Slippery substrates:** Algae-covered rocks are extremely slippery. Wear felt-soled or studded wading boots.
+- **Biological:** Waterborne pathogens, ticks in riparian vegetation, stinging insects
+- **Chemical:** Ethanol (95%) preservative is flammable. Keep away from ignition sources.
+:::
+
+### Required PPE
+
+- [ ] Chest or hip waders with felt or studded soles
+- [ ] Nitrile gloves
+- [ ] Safety glasses (when handling preservatives)
+- [ ] Sun protection
+
+### Permits
+
+BMI sampling may require a Scientific Collecting Permit (California Department of Fish and Wildlife). The PI must confirm permit status before fieldwork at any new site. Some sites may also fall under federal Section 7 or Section 10 requirements if listed species are present.
+
+### Invasive Species Prevention
+
+Decontaminate all equipment (nets, waders, buckets) between sites to prevent transfer of invasive species and pathogens. Inspect, scrub, and dry all gear, or treat with dilute bleach or hot water (60 C). See [SOP-F45 Section 4.3](SOP-F45-stream-physical-habitat.qmd).
+
+### Emergency Procedures
+
+A minimum of two people must be present for in-stream work. Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd).
+
+
+## 5. Definitions
+
+- **Benthic macroinvertebrate (BMI):** An invertebrate organism living on or in the stream bottom substrate that is retained by a 500 um mesh sieve. Includes aquatic insects, crustaceans, mollusks, worms, and other taxa.
+- **Riffle:** A shallow stream section with fast, turbulent flow over coarse substrate. The primary habitat sampled for BMI in wadeable streams.
+- **Reach:** A 150 m to 250 m stream segment (typically 150 m in California SWAMP protocols) within which all sampling occurs.
+- **Targeted riffle composite (TRC):** The SWAMP standard method in which BMI samples are collected from multiple riffles and composited into a single reach-level sample.
+- **D-frame kick net:** A D-shaped net with 500 um mesh mounted on a frame, used for dislodging and capturing BMI from the streambed.
+
+
+## 6. Required Materials
+
+| Item                                     | Notes                              |
+|:-----------------------------------------|:-----------------------------------|
+| D-frame kick net (500 um mesh)           | Standard SWAMP gear                |
+| 500 um sieve (brass or stainless steel)  | For field processing               |
+| White sorting trays                      | For inspecting samples             |
+| Sample jars (1 L, wide-mouth, HDPE)      | Pre-labeled                        |
+| 95% ethanol                              | For preservation (final concentration approximately 70% after dilution by sample water) |
+| Squirt bottles (DI water and ethanol)    | For rinsing nets and transferring organisms |
+| Forceps (soft-tipped)                    | For picking organisms from the net |
+| Flagging tape                            | For marking transect locations     |
+| GPS unit                                 | For recording reach coordinates    |
+| Measuring tape (50 m)                    | For delineating the reach          |
+| Field data sheets                        | SWAMP BMI collection forms         |
+| Camera                                   | For photo-documenting reach conditions |
+| Pencils and waterproof notebook          | For field notes                    |
+| Cooler                                   | For transporting preserved samples |
+
+
+## 7. Estimated Time
+
+| Task                                    | Time                          |
+|:----------------------------------------|:------------------------------|
+| Reach setup and reconnaissance          | 15--30 minutes                |
+| BMI collection (targeted riffle composite) | 45--90 minutes             |
+| Field processing and preservation       | 15--30 minutes                |
+| Decontamination                         | 10--15 minutes                |
+
+
+## 8. Procedure
+
+### 8.1 Reach Delineation
+
+1. Identify the downstream boundary of the reach at the most downstream riffle or pool tail
+2. Lay out the measuring tape upstream for 150 m (SWAMP standard reach length; adjust proportionally for streams narrower than 2 m or wider than 10 m per SWAMP guidance)
+3. Record GPS coordinates at the downstream and upstream boundaries
+4. Photograph the reach from the downstream end looking upstream
+
+### 8.2 Habitat Assessment
+
+Before disturbing the streambed for BMI collection, complete the physical habitat assessment per [SOP-F45](SOP-F45-stream-physical-habitat.qmd) if required by the project design. If habitat and BMI are collected on the same visit, always complete habitat measurements first (working upstream) before BMI sampling.
+
+### 8.3 Targeted Riffle Composite Collection (SWAMP Method)
+
+The SWAMP TRC method collects BMI from riffle habitats throughout the reach, compositing all kicks into a single sample.
+
+1. Identify all riffles within the 150 m reach. A riffle is defined as a section with visibly turbulent flow over coarse substrate (gravel, cobble, boulder).
+2. Allocate sampling effort across riffles proportional to their area. The target is 8 kicks distributed across all available riffles. If only one riffle is present, all 8 kicks are taken from that riffle.
+3. Position yourself facing downstream at the downstream edge of the first riffle
+4. Place the D-frame kick net on the substrate, opening facing upstream, with the bottom edge pressed firmly against the streambed
+5. Disturb the substrate immediately upstream of the net opening by vigorously kicking and rubbing rocks with your boots for 30 seconds over an area of approximately 0.09 m^2^ (one net width by one net width)
+6. Lift the net and inspect the contents. Remove large rocks, sticks, and leaves after rinsing them in the net to dislodge clinging organisms.
+7. Transfer the net contents into the composite sample bucket or directly into the sieve
+8. Move upstream to the next kick location. Space kicks at least 2 m apart within each riffle.
+9. Repeat until all 8 kicks are completed across the available riffles
+
+::: {.callout-important}
+### Always Work Upstream
+Sampling must proceed from downstream to upstream to avoid disturbing habitats before they are sampled. Never walk through a riffle before sampling it.
+:::
+
+### 8.4 Field Processing
+
+1. Pour the composite sample through the 500 um sieve
+2. Rinse the net and bucket thoroughly into the sieve to recover all organisms
+3. Transfer the sieved material into a labeled 1 L sample jar
+4. Add enough 95% ethanol to achieve a final preservative concentration of approximately 70% (the sample water dilutes the ethanol; adding ethanol equal to the sample volume is a reasonable approximation)
+5. Seal the jar tightly. Invert gently to mix.
+6. Label the jar with: site ID, date, "BMI-TRC," collector initials. Place a second label (pencil on waterproof paper) inside the jar.
+
+### 8.5 Non-Riffle Habitats (Optional)
+
+If the project requires sampling pools, runs, or other habitats in addition to riffles, collect these as separate samples (not composited with the TRC). Label accordingly (e.g., "BMI-POOL").
+
+### 8.6 Field Data Sheet
+
+Record the following:
+
+| Field                    | Entry                               |
+|:-------------------------|:------------------------------------|
+| Site ID                  |                                     |
+| Date                     | YYYY-MM-DD                          |
+| Collectors               |                                     |
+| Reach length (m)         |                                     |
+| Number of riffles sampled|                                     |
+| Number of kicks          | (target: 8)                         |
+| GPS (downstream boundary)|                                     |
+| GPS (upstream boundary)  |                                     |
+| Weather conditions       |                                     |
+| Flow conditions          | Normal, low, high                   |
+| Preservative used        | 95% EtOH                            |
+| Notes                    | Unusual conditions, disturbances    |
+
+
+## 9. Laboratory Processing
+
+Laboratory identification and enumeration of BMI are typically performed by a contracted taxonomic laboratory or by trained students under PI supervision. The general workflow:
+
+1. Transfer the preserved sample to a gridded sorting tray
+2. Randomly select grid cells and pick all organisms from those cells until a minimum of 500 organisms are identified (SWAMP standard)
+3. Identify organisms to the lowest practical taxonomic level (genus for most insects; family or higher for non-insect taxa) using standard keys [@merritt2019; @thorp2015]
+4. Record counts by taxon
+5. Calculate summary metrics: total taxa richness, EPT (Ephemeroptera, Plecoptera, Trichoptera) richness, percent tolerant taxa, and other indices as required
+6. Archive voucher specimens of difficult identifications
+
+::: {.callout-note}
+### SWAMP Data Submission
+If data will be submitted to the California Environmental Data Exchange Network (CEDEN), use SWAMP-compatible data formats and QA/QC protocols. Consult the SWAMP Bioassessment SOP 004 [@ode2016] and the PI.
+:::
+
+
+## 10. Quality Control
+
+### 10.1 Field QC
+
+- Record the number of kicks and their distribution across riffles on the data sheet
+- If fewer than 8 kicks are possible (limited riffle habitat), record the actual number and the reason
+- Take one field blank per sampling event: rinse the net into a clean jar with ethanol; this documents any organisms retained in the net from the decontamination process
+
+### 10.2 Lab QC
+
+- Re-sort 10% of processed samples to estimate sorting efficiency (target: greater than 90% removal of organisms from the sample)
+- Have a second taxonomist verify identification of 10% of specimens
+- Report QC results with the final dataset
+
+### 10.3 Metric Calculation
+
+Calculate the California Stream Condition Index (CSCI) if sufficient data are available. CSCI integrates observed vs. expected taxa composition (O/E) and a predictive multi-metric index (pMMI) into a single biological condition score [@mazor2016].
+
+
+## 11. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Ethanol-preserved samples (after analysis) | Evaporate ethanol in fume hood; dispose of residual solids in regular trash |
+| Excess 95% ethanol            | Flammable waste container; EH&S pickup   |
+| Used gloves and paper towels  | Regular trash                            |
+
+
+## 12. References
+
+See the project-level `references.bib` for full citations. Key references: @ode2016, @barbour1999, @mazor2016, @merritt2019, @thorp2015.
+
+::: {#refs}
+:::
+
+
+## 13. Training Record
+
+Before collecting BMI samples independently, personnel must:
+
+1. Read this SOP, [SOP-F01 Field Safety](SOP-F01-field-safety.qmd), and [SOP-F45 Stream Physical Habitat](SOP-F45-stream-physical-habitat.qmd)
+2. Review the SWAMP Bioassessment SOP 004 (BMI collection sections)
+3. Demonstrate D-frame kick net technique (proper positioning, 30-second kick, net rinsing) under supervision
+4. Participate in at least one complete reach-level BMI collection event
+5. Demonstrate proper preservation and labeling
+6. Be signed off by the PI or field lead
