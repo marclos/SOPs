@@ -39,7 +39,7 @@ tbl-classes: table-sm
 | F02(field_sops/)   | *TBD -- Field Equipment Checklist* | -- |
 | F03(field_sops/)   | *TBD -- Field Notebook Protocols* | -- |
 | F04(field_sops/)   | *TBD   | -- |
-| F05(field_sops/)   | *Random Sampling Design* | 1.0 | Needs conversion |
+| F05(field_sops/SOP-F05-random-sampling-design.qmd)   | Random Sampling Design | 1.0 |
 
 ### Equipment (F10--F24)
 
@@ -119,7 +119,8 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|
 | [L01](lab_sops/SOP-L01-laboratory-safety.qmd)   | Laboratory Safety | 1.04 |
 | [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
-| L03   | *TBD -- Chemical Inventory Management* | -- |
+| [L03](lab_sops/)   | Chemical Spill Response | -- |
+| [L04](lab_sops/)   | *TBD -- Chemical Inventory Management* | -- |
 | [L05](lab_sops/SOP-L05-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 |
 | [L06](lab_sops/SOP-L06-quality-control.qmd)   | Quality Control and Quality Assurance | 1.0 
 
@@ -128,17 +129,17 @@ tbl-classes: table-sm
 
 | SOP   | Title                          | Rev.  |
 |:------|:-------------------------------|:------|
-| L11   | *Milli-Q Water System* | 0.2 | Needs conversion |
+| L11](lab_sops/)   | *Milli-Q Water System* | 0.2 | Needs conversion |
 | [L12](lab_sops/SOP-L12-glassware-cleaning.qmd)   | Glassware Cleaning and Preparation | 0.1 |
 | [L13](lab_sops/SOP-L13-using-balances.qmd)   | Using Balances | 0.2 | 
 | [L14](lab_sops/SOP-L14-micropipettes.qmd)   | Micropipettes | 0.3 |
-| L15   | *Using a Vortex Mixer* | 0.1 | Needs conversion |
+| L15](lab_sops/)   | *Using a Vortex Mixer* | 0.1 | Needs conversion |
 | [L16](lab_sops/SOP-L16-drying-ovens.qmd)   | Drying Ovens | 0.1 
 | [L17](lab_sops/SOP-L17-refrigerators-freezers.qmd)   | Refrigerators and Freezers | 0.1 | 
-| L18   | *Hot Plates and Dry Bath* | 0.1 | Needs conversion |
-| L19   | *Clinical Centrifuge* | 0.1 | Needs conversion |
+| L18](lab_sops/)   | *Hot Plates and Dry Bath* | 0.1 | Needs conversion |
+| L19](lab_sops/)   | *Clinical Centrifuge* | 0.1 | Needs conversion |
 | [L20](lab_sops/SOP-L20-sorvall-centrifuge.qmd)   | Sorvall ST8R Centrifuge | 0.1 |
-| [F21]   | *Ozone Generator Operation* | 0.1 | Needs conversion |
+| [F21](lab_sops/)   | *Ozone Generator Operation* | 0.1 | Needs conversion |
 
 ### Instrumentation (L25--L39)
 
@@ -148,7 +149,7 @@ tbl-classes: table-sm
 | L26   | *TBD -- Spectrophotometer Operation* | -- |
 | L27   | *Accumet pH Meter* | 0.4 | Needs conversion |
 | [L28](lab_sops/SOP-L28-trilogy-fluorometer.qmd)   | *Trilogy Laboratory Fluorometer* | 0.4 | Needs conversion |
-| [L29](lab_sops/SOP-L29-shimadzu-toc-l.qmd) | Shimadzu TOC-L with SSM-5000A | 1.0 |
+| [L29](lab_sops/SOP-L29-shimadzu-toc-ton.qmd) | Shimadzu TOC/TON Analyzer | 1.0 |
 | L30   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
 | L31   | *ICP-MS* | 0.1 | Needs conversion |
 | L32   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
@@ -166,13 +167,13 @@ tbl-classes: table-sm
 | [L40](lab_sops/SOP-L40-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
 | [L41](lab_sops/SOP-L41-alkalinity-titration.qmd)   | Alkalinity Titration* | -- |
 
-| L42   | *TBD -- Turbidity Measurement* | -- |
+| [L42](lab_sops/)   | *TBD -- Turbidity Measurement* | -- |
 | [L45](lab_sops/SOP-L45-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
-| L46   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
+| [L46](lab_sops/)   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
 | [L49](lab_sops/SOP-L49-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
-| L50   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
-| L52   | *Microplastics in Water* | 0.2 | Needs conversion |
-| L53   | *Pesticide Analysis* | 0.1 | Needs conversion |
+| [L50](lab_sops/)   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
+| [L52](lab_sops/)   | *Microplastics in Water* | 0.2 | Needs conversion |
+| [L53](lab_sops/)   | *Pesticide Analysis* | 0.1 | Needs conversion |
 | [L54](lab_sops/SOP-L54-chlorophyll-extraction.qmd)   | Chlorophyll Extraction and Analysis | 0.1 |
 
 ### Soil and Carbon Analysis (L55--L69)
@@ -198,7 +199,8 @@ tbl-classes: table-sm
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
-| L80   | *TBD * | -- |
+| [L80](lab_sops/)   | *TBD * | -- |
+| [L81](lab_sops/SOP-L81-wet-mount-microscopy.qmd)   | Wet Mount for Microscopy | -- |
 
 ### Molecular Biology and DNA (L95--L99)
 

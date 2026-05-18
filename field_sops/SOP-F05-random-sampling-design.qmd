@@ -1,0 +1,321 @@
+---
+# =============================================================================
+# SOP-F05: Random Sampling Design
+# =============================================================================
+title: "Random Sampling Design"
+sop-number: "SOP-F05"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "0.1"
+    date: "2017-08-18"
+    author: "Marc Los Huertos"
+    changes: "Initial release (LaTeX/knitr)"
+  - version: "1.0"
+    date: "2025-05-17"
+    author: "Marc Los Huertos"
+    changes: "Converted to Quarto; expanded procedure sections for simple random, grid-based, and stratified random sampling"
+---
+
+## 1. Purpose
+
+This SOP provides standardized procedures for designing and executing
+random sampling in field and laboratory settings. Random sampling
+ensures that every unit in the target population has an equal and
+independent probability of selection, eliminating researcher bias and
+supporting valid statistical inference.
+
+
+## 2. Scope
+
+- **Applies to:** Any EA Program study where population estimates are
+  the goal, including vegetation surveys, soil sampling, water quality
+  monitoring, and laboratory subsampling
+- **Does not apply to:** Targeted or judgmental sampling designs (e.g.,
+  hot-spot investigations); mark-release-recapture studies for mobile
+  organisms (see separate SOP)
+- **Sampling types covered:** Simple random sampling, grid-based random
+  sampling, and stratified random sampling
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| PI / Field Lead   | Approve sampling design, review sampling plan |
+| Trained Personnel | Execute random selection, collect and record data |
+| New Students      | Complete training before independent fieldwork |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+Field sampling involves site-specific hazards including uneven terrain,
+heat exposure, wildlife encounters, and sharp equipment (stakes, pins).
+Review site conditions before each sampling event.
+:::
+
+### Required PPE
+
+- [ ] Closed-toe shoes or boots
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Gloves (when handling equipment or samples)
+
+### Emergency Procedures
+
+Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd). Carry a
+first aid kit and charged cell phone to all field sites.
+
+
+## 5. Definitions
+
+- **Sampling universe (population):** The complete set of units from
+  which a sample will be drawn.
+- **Sampling frame:** A numbered list or spatial grid that enumerates
+  every unit in the population. Missing units have zero probability of
+  selection and introduce bias.
+- **Quadrat:** A square frame of known area (typically 0.25, 0.5, or
+  1.0 m^2^) used to delineate sampling units in the field.
+- **Stratum:** A subdivision of the sampling universe into internally
+  homogeneous zones (e.g., by elevation, vegetation type, or soil
+  moisture gradient).
+
+
+## 6. Required Materials
+
+| Item                                          | Notes                              |
+|:----------------------------------------------|:-----------------------------------|
+| Two survey tape measures (20--50 m)           | For establishing coordinate grids  |
+| Ground pins or stakes                         | To anchor tape measures            |
+| Quadrat frame(s)                              | Size appropriate to target organisms |
+| Random number table or generator app          | See Section 8.1                    |
+| GPS unit                                      | To record sampling locations       |
+| Field data sheets and waterproof markers      | Pre-printed with site and date fields |
+| Compass                                       | For establishing grid orientation  |
+| Field identification guides                   | If sampling vegetation or organisms |
+
+
+## 7. Biases and Interferences
+
+Representative sampling requires strict adherence to randomized
+procedures. Common sources of bias include:
+
+- **Incomplete sampling frames.** Any unit missing from the frame has
+  zero probability of selection.
+- **Haphazard placement.** Never "throw" a quadrat to choose a
+  location. Human throws cluster toward the center of the study area,
+  violating equal probability assumptions.
+- **Environmental heterogeneity.** If the study area contains distinct
+  gradients (e.g., wet to dry, shaded to open), simple random sampling
+  may under-represent one end of the gradient. Use stratified random
+  sampling instead (Section 8.4).
+- **Edge effects.** Establish and apply a consistent border rule when
+  counting organisms in quadrats (Section 8.3).
+
+
+## 8. Procedure
+
+### 8.1 Generating Random Numbers
+
+Use a software-based random number generator to produce unbiased
+selections. Never rely on manual or mental number selection.
+
+In R, generate a set of random integers within a defined range:
+
+```{r}
+#| label: random-numbers
+#| echo: true
+
+# Generate 15 random integers between 1 and 100
+set.seed(NULL)  # ensure a fresh seed each session
+random_vals <- sample(1:100, size = 15, replace = FALSE)
+sort(random_vals)
+```
+
+For field use without a computer, a printed random number table is
+acceptable. Begin at a pre-selected (arbitrary) starting position and
+read values sequentially. @tbl-randomnumbers provides a reference table
+of 200 random numbers between 0 and 1000.
+
+```{r}
+#| label: tbl-randomnumbers
+#| tbl-cap: "Reference table of 200 random numbers (0--1000)"
+#| echo: false
+
+set.seed(2017)
+rand_mat <- matrix(round(runif(200, min = 0, max = 1000), 1),
+                   nrow = 20, ncol = 10)
+colnames(rand_mat) <- 1:10
+knitr::kable(rand_mat)
+```
+
+### 8.2 Simple Random Sampling
+
+Use this approach when the population can be enumerated as a list
+(e.g., lab samples, batch numbers, individual organisms in a database).
+
+1. Define the target population and compile a complete, numbered
+   sampling frame
+2. Determine the required sample size ($n$) using a power analysis or
+   standard formula
+3. Use `sample()` in R (or an equivalent tool) to draw $n$ unit numbers
+   from the frame without replacement
+4. Document the random seed (if reproducibility is desired), the
+   selected unit IDs, and the date of selection
+5. Collect the data or specimens from the selected units
+
+### 8.3 Grid-Based Random Sampling (Field)
+
+Use this approach when the sampling universe is a spatially defined
+area (e.g., a meadow, forest plot, intertidal zone). This is the
+standard method for quadrat-based ecological sampling.
+
+#### Establishing the Baseline Grid
+
+1. Locate the boundaries of the study site and select a level,
+   representative area
+2. Drive a stake at the origin point and lay two tape measures at 90
+   degrees to create X and Y axes
+3. Secure the tapes with ground pins to define a coordinate grid (e.g.,
+   20 m $\times$ 20 m)
+
+#### Generating Coordinates and Placing Quadrats
+
+4. Generate pairs of random integers within the range of each axis. In
+   R:
+
+```{r}
+#| label: xy-random
+#| echo: true
+
+# Grid dimensions
+x_max <- 20
+y_max <- 20
+n_quadrats <- 15
+
+# Generate random coordinates
+coords <- data.frame(
+  X = sample(0:x_max, size = n_quadrats, replace = TRUE),
+  Y = sample(0:y_max, size = n_quadrats, replace = TRUE)
+)
+
+# Sort by X to create an efficient walking order
+coords <- coords[order(coords$X), ]
+coords$QuadratID <- seq_len(nrow(coords))
+knitr::kable(coords, row.names = FALSE)
+```
+
+5. Walk along the axes to each coordinate intersection and place the
+   bottom-left corner of the quadrat at that point
+6. Never reposition a quadrat after placement; if a coordinate falls on
+   an obstruction, record the obstruction and sample as-is
+
+#### Recording Data Within Quadrats
+
+7. Quantify the target variable using one of three standardized
+   metrics:
+
+   - **Density:** Count every individual of the target species within
+     the frame
+   - **Percent cover:** Estimate the percentage of ground area covered
+     by the target species (suited for colonial plants, mosses, or
+     ground cover)
+   - **Frequency:** Score presence (1) or absence (0) of the species
+
+8. Apply a consistent **border rule** to avoid double-counting:
+   count organisms touching the top and right edges of the quadrat;
+   exclude those touching the bottom and left edges.
+
+#### Replication and Extrapolation
+
+9. Aim to sample at least 5--10% of the total grid area, or a minimum
+   of 30 quadrat placements, to achieve adequate statistical power
+10. Calculate the mean count (or cover) per quadrat and extrapolate to
+    the full site:
+
+$$
+\text{Estimated population} =
+\bar{x}_{\text{quadrat}} \times
+\frac{\text{Total site area}}{\text{Area of one quadrat}}
+$$
+
+### 8.4 Stratified Random Sampling
+
+Use this approach when the study area contains distinct environmental
+gradients or habitat types that would increase variance under simple
+random sampling.
+
+1. Divide the study area into homogeneous strata based on a relevant
+   environmental variable (e.g., elevation bands, vegetation type, soil
+   moisture class, distance from a water source)
+2. Within each stratum, establish an independent coordinate grid
+   following the procedure in Section 8.3
+3. Generate random coordinates separately for each stratum
+4. Sample each stratum independently; do not pool random selections
+   across strata
+5. Weight stratum means by the proportion of total area each stratum
+   represents when calculating site-level estimates
+
+### 8.5 Map-Based Sampling with Exclusion Zones
+
+For sites where portions of the area are inaccessible or must be
+excluded (buildings, water bodies, restricted zones):
+
+1. Obtain or create a georeferenced map of the study area
+2. Delineate exclusion zones and calculate the remaining accessible
+   area
+3. Generate random coordinates across the full extent, then discard any
+   that fall within exclusion zones
+4. Continue generating coordinates until the target sample size is met
+   within the accessible area
+5. Record discarded coordinates in the sampling log for documentation
+
+::: {.callout-tip}
+### R Implementation
+An R script for map-based random sampling with exclusion polygons can be
+built using the `sf` package. Generate random points with
+`sf::st_sample()`, then filter against exclusion polygons with
+`sf::st_difference()`.
+:::
+
+
+## 9. Data Management
+
+1. Record all sampling metadata (date, site, grid dimensions, random
+   seed or table starting position, personnel) on the field data sheet
+2. Enter field data into the project database within 48 hours
+3. Archive original data sheets (scan if paper)
+4. Version-control all analysis scripts per
+   [SOP-L05 RStudio and GitHub](../lab_sops/SOP-L05-rstudio-github.qmd)
+
+
+## 10. References
+
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
+  Washington. 1360 pp.
+- Krebs, C.J. (1999). *Ecological Methodology*. 2nd ed. Benjamin
+  Cummings, Menlo Park, CA.
+- Elzinga, C.L., Salzer, D.W., & Willoughby, J.W. (1998). *Measuring
+  and Monitoring Plant Populations*. U.S. Bureau of Land Management
+  Technical Reference 1730-1.
+
+
+## 11. Training Record
+
+Training is documented in EA Program files. Before designing or
+executing random sampling independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) training
+3. Demonstrate proficiency with random number generation in R
+4. Participate in a supervised field sampling session using the
+   grid-based procedure
+5. Be signed off by the PI or field lead
