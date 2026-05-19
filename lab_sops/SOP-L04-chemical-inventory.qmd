@@ -1,0 +1,289 @@
+---
+# =============================================================================
+# SOP-L04: Chemical Inventory Management
+# =============================================================================
+# Procedures for maintaining the laboratory chemical inventory:
+# receiving, logging, labeling, storage assignment, periodic audits,
+# disposal of expired chemicals, and the electronic inventory system.
+# =============================================================================
+
+title: "Chemical Inventory Management"
+sop-number: "SOP-L04"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "Environmental Analysis, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2026-05-18"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP establishes the procedures for managing the chemical inventory
+in EA Program laboratories. A current, accurate inventory is essential
+for safety (knowing what is on hand in an emergency), regulatory
+compliance (fire code limits on flammable storage, Pomona College
+Chemical Hygiene Plan), waste minimization (avoiding duplicate
+purchases and expired stockpiles), and research efficiency (knowing
+what is available before ordering).
+
+
+## 2. Scope
+
+- **Applies to:** All chemicals stored in EA Program laboratories
+  (SGM 133, 134, 135), including reagents, standards, solvents, acids,
+  bases, compressed gases, and prepared solutions.
+- **Does not apply to:** Common consumables that are not hazardous
+  (Kimwipes, gloves, filter paper, etc.), or chemicals stored
+  exclusively in other departments' spaces.
+- **Location:** All EA Program laboratory spaces.
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve purchases; ensure compliance with fire code limits |
+| Lab Manager       | Maintain the inventory database; conduct audits         |
+| All Lab Personnel | Log new chemicals upon receipt; update inventory when chemicals are consumed or disposed |
+| Chemical Safety Officer | Review inventory for incompatibilities and compliance |
+
+
+## 4. Safety Considerations
+
+Accurate inventory management is a safety measure:
+
+- First responders and the fire department use the chemical inventory
+  to assess hazards during emergencies.
+- NFPA fire code limits the total quantity of flammable liquids that
+  may be stored outside of approved flammable-storage cabinets.
+- Knowing what is stored and where prevents accidental mixing of
+  incompatible chemicals.
+- Expired chemicals (especially peroxide-forming solvents) can become
+  hazardous over time.
+
+See [SOP-L02](SOP-L02-hazardous-materials-handling.qmd) for chemical
+storage, compatibility, and labeling requirements.
+
+
+## 5. The Inventory System
+
+### 5.1 Electronic Inventory
+
+The EA Program maintains a shared Google Sheet (or equivalent
+spreadsheet) as the master chemical inventory. The spreadsheet is
+stored on the lab shared drive and accessible to all lab personnel.
+
+**Required columns:**
+
+| Column              | Description                                      |
+|:--------------------|:-------------------------------------------------|
+| Chemical name       | Full name (no abbreviations or formulas only)    |
+| CAS number          | Chemical Abstracts Service registry number       |
+| Manufacturer        | Supplier name                                    |
+| Catalog number      | Supplier catalog/part number                     |
+| Lot number          | Manufacturer lot number                          |
+| Date received       | YYYY-MM-DD                                       |
+| Quantity received   | Amount and units (e.g., 500 mL, 100 g)          |
+| Current quantity    | Updated when significantly depleted              |
+| Concentration/purity| If applicable (e.g., "ACS reagent grade, 37%")  |
+| Expiration date     | From manufacturer label, or calculated shelf life|
+| Hazard class        | Flammable, corrosive, oxidizer, toxic, etc.      |
+| Storage location    | Room, cabinet/shelf code (e.g., SGM 133, Flam-1) |
+| SDS on file         | Yes/No                                           |
+| Owner/project       | Who ordered it and for what project               |
+| Status              | In use / Sealed / Expired / Disposed             |
+
+### 5.2 Physical Labels
+
+Every chemical container in the lab must have a label that includes:
+
+- Chemical name (spelled out)
+- Concentration (if a prepared solution)
+- Hazard warning(s)
+- Date received or date prepared
+- Researcher name
+- Expiration date (if applicable)
+
+See [SOP-L02, Section 6.4](SOP-L02-hazardous-materials-handling.qmd)
+for detailed labeling requirements.
+
+
+## 6. Procedures
+
+### 6.1 Receiving New Chemicals
+
+1. When a chemical shipment arrives, the person who receives it must
+   inspect the container for damage, leaks, or missing labels.
+2. If the container is damaged or leaking, do not accept it into the
+   lab. Notify the lab manager. Follow spill procedures if needed
+   ([SOP-L03](SOP-L03-chemical-spill-response.qmd)).
+3. Add the chemical to the inventory spreadsheet immediately,
+   completing all required columns.
+4. Verify that the SDS is on file. If not, download it from the
+   manufacturer's website and add it to the SDS binder and/or
+   electronic SDS folder.
+5. Label the container with the date received and the researcher's
+   name if not already present.
+6. Store the chemical in the correct location based on its hazard
+   class (see Section 6.3).
+
+### 6.2 Ordering Chemicals
+
+Before ordering a new chemical:
+
+1. Check the inventory spreadsheet to see if the chemical is already
+   in stock.
+2. Check with other lab users to see if someone has an open container
+   that can be shared.
+3. Order only the quantity needed for the project. Purchasing excess
+   chemicals generates waste and occupies storage space.
+4. For highly hazardous chemicals, consult the PI and review the SDS
+   before ordering.
+
+### 6.3 Storage Assignment
+
+Assign storage based on hazard class. Chemicals must be segregated by
+compatibility:
+
+| Hazard Class       | Storage Location                              |
+|:-------------------|:----------------------------------------------|
+| Flammable liquids  | Flammable-storage cabinet (yellow, self-closing) |
+| Corrosive acids    | Acid cabinet (under fume hood) -- separate from bases |
+| Corrosive bases    | Base cabinet (under fume hood) -- separate from acids |
+| Oxidizers          | Separate from flammables and organics          |
+| Toxics / reagents  | General chemical shelves, secured              |
+| Compressed gases   | Chained to wall or bench; away from corrosives |
+| Refrigerated/frozen| Lab refrigerator or freezer (no food)          |
+
+::: {.callout-important}
+Never store chemicals on the floor. Use low shelves or cabinets with
+front lips. Ensure shelves are fastened to the wall. See SOP-L02,
+Section 6.3 for detailed storage rules.
+:::
+
+### 6.4 Using and Depleting Chemicals
+
+- When you open a sealed container for the first time, write the
+  date opened on the label.
+- When a container is nearly empty or fully consumed, update the
+  "Current quantity" and "Status" columns in the inventory spreadsheet.
+- Return every chemical to its designated storage location after use.
+
+### 6.5 Disposing of Chemicals
+
+When a chemical is expired, no longer needed, or in poor condition:
+
+1. Update the inventory spreadsheet: change Status to "Disposed" and
+   record the disposal date.
+2. Follow the waste disposal procedures in
+   [SOP-L02, Section 8](SOP-L02-hazardous-materials-handling.qmd):
+   fill out a waste tag, complete the packing manifest, and schedule
+   pickup.
+3. Do not pour chemicals down the drain unless explicitly permitted by
+   the SDS and local regulations for that specific chemical.
+
+### 6.6 Peroxide-Forming Chemicals
+
+Certain solvents (e.g., diethyl ether, tetrahydrofuran, isopropanol)
+form explosive peroxides over time. These chemicals require special
+attention:
+
+- Record the date received and date opened on the label.
+- Test for peroxides at the intervals specified in the SDS (typically
+  every 3--6 months after opening) using peroxide test strips.
+- Dispose of the chemical if it exceeds the safe peroxide
+  concentration or if it has been open longer than the recommended
+  shelf life.
+- Never distill or evaporate a peroxide-forming solvent without first
+  testing for peroxides.
+
+
+## 7. Inventory Audits
+
+### 7.1 Frequency
+
+| Audit Type          | Frequency        | Conducted By          |
+|:--------------------|:-----------------|:----------------------|
+| Spot check          | Monthly          | Lab manager or designee |
+| Full inventory audit| Every semester   | Lab manager + student assistant |
+| Fire code compliance| Annually         | Chemical Safety Officer or Facilities |
+
+### 7.2 Spot Check Procedure
+
+1. Select one cabinet or shelf section.
+2. Verify that every container on the shelf has a corresponding entry
+   in the inventory spreadsheet.
+3. Verify that every entry assigned to that location is physically
+   present.
+4. Check for expired chemicals, missing labels, or damaged containers.
+5. Correct any discrepancies and note the check date in the inventory
+   log.
+
+### 7.3 Full Audit Procedure
+
+1. Print the current inventory spreadsheet sorted by storage location.
+2. Walk through each storage area and verify every container against
+   the printout. Mark each item as "confirmed," "missing,"
+   "unlisted," or "expired."
+3. Investigate discrepancies (missing items may have been consumed
+   without updating the spreadsheet; unlisted items may have been
+   received without logging).
+4. Remove expired chemicals for disposal.
+5. Update the spreadsheet to reflect the audit results.
+6. File the annotated printout as the audit record.
+
+
+## 8. Waste Minimization
+
+- Order the smallest quantity that will meet your needs.
+- Share chemicals across projects when possible.
+- Prepare only the volume of working solutions needed for an
+  analytical session.
+- Substitute less hazardous chemicals when feasible (e.g., replace a
+  halogenated solvent with a non-halogenated alternative).
+- Dispose of expired chemicals promptly rather than letting them
+  accumulate.
+
+See [SOP-L02, Section 8.3](SOP-L02-hazardous-materials-handling.qmd)
+for additional waste minimization guidance.
+
+
+## 9. References
+
+OSHA. (2012). *Laboratory Safety Guidance*. OSHA 3404-11R.
+
+National Research Council. (2011). *Prudent Practices in the
+Laboratory: Handling and Management of Chemical Hazards* (updated ed.).
+National Academies Press.
+
+NFPA 45. (2019). *Standard on Fire Protection for Laboratories Using
+Chemicals*. National Fire Protection Association.
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                       | Relationship                      |
+|:------|:--------------------------------------------|:----------------------------------|
+| [L01](SOP-L01-laboratory-safety.qmd)       | Laboratory Safety       | General safety framework     |
+| [L02](SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Storage, labeling, waste disposal |
+| [L03](SOP-L03-chemical-spill-response.qmd) | Chemical Spill Response | Spill procedures for inventoried chemicals |
+
+
+## 11. Training Record
+
+Before ordering, receiving, or storing chemicals independently,
+personnel must:
+
+1. Read this SOP and [SOP-L02](SOP-L02-hazardous-materials-handling.qmd)
+   in full
+2. Demonstrate how to add a new chemical to the inventory spreadsheet
+3. Locate SDS binders and the electronic SDS folder
+4. Identify the correct storage location for a given hazard class
+5. Be signed off by the lab manager or PI

@@ -57,6 +57,8 @@ tbl-classes: table-sm
 | [F22](field_sops/SOP-F22-eureka-manta2.qmd) | Eureka Manta2 Multiprobe | 0.7 |
 | [F23](field_sops/SOP-F23-pygmy-type-aa-velocity-meters.qmd) | Pygmy and Type A Velocity Meters | -- |
 | [F24](field_sops/SOP-F24-sontek-velocity-meters) | Sontek Velocity Meters | -- |
+| [F25](field_sops/)   | HOBO Water Level Pressure Transducers   | -- |
+| [F04](field_sops/)   | *TBD   | -- |
 
 ### Water / Aquatic Systems (F40--F54)
 
@@ -119,14 +121,12 @@ tbl-classes: table-sm
 | [L00](lab_sops/SOP-L00-equipment-inventory.qmd)   | Equipment and Instrument Inventory | 1.0 |
 | [L01](lab_sops/SOP-L01-laboratory-safety.qmd)   | Laboratory Safety | 1.04 |
 | [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
-| [L03](lab_sops/)   | Chemical Spill Response | -- |
-| [L04](lab_sops/)   | *TBD -- Chemical Inventory Management* | -- |
+| [L03](lab_sops/SOP-L03-chemical-spill-response.qmd)   | Chemical Spill Response | -- |
+| [L04](lab_sops/SOP-L04-chemical-inventory.qmd)   | Chemical Inventory Management | -- |
 | [L05](lab_sops/SOP-L05-lab-notebook-recording.qmd)   |  | 0.1 |
 | [L06](lab_sops/SOP-L06-foreign-soil-handling.qmd)   | Foreign Soil Handling (Import Permits) | 0.3 |
 | [L07](lab_sops/SOP-L07-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 |
 | [L08](lab_sops/SOP-L08-quality-control.qmd)   | Quality Control and Quality Assurance | 1.0 |
-
-
 
 ### Laboratory Equipment (L10--L24)
 
@@ -157,7 +157,7 @@ tbl-classes: table-sm
 | [L31](lab_sops/)   | *ICP-MS* | 0.1 | Needs conversion |
 | [L32](lab_sops/)   | *LA-ICP-MS (Laser Ablation)* | 0.1 | 
 | [L33](lab_sops/SOP-L33-irms-general-instrument.qmd)   | ThermoFisher Delta V IRMS (Isotope Ratio Mass Spectrophotometer) | 0.2 | 
-| [L37](lab_sops/)   | *Radiometric Dating* | 0.1 | 
+| [L37](lab_sops/)   | *TBD -- Radiometric Dating* | 0.1 | 
 | [L38](lab_sops/)   | *TBD -- Ion Chromatograph Operation* | -- |
 | [L39](lab_sops/SOP-L39-revolve-microscope.qmd)   | Echo Labs Revolve Microscope | -- |
 
@@ -171,9 +171,10 @@ tbl-classes: table-sm
 | [L45](lab_sops/SOP-L45-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
 | [L46](lab_sops/)   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
 | [L49](lab_sops/SOP-L49-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
-| [L50](lab_sops/)   | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
+| [L50](lab_sops/)   | *TBD -- BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
+| [L51](lab_sops/)   | *TBD -- Elisa: BPA, BPB, Pesticides * | 0.3 | Needs conversion |
 | [L52](lab_sops/SOP-L52-microplastics-water.qmd)   | Microplastics in Water | 0.2 | Needs conversion |
-| [L53](lab_sops/)   | *Pesticide Analysis* | 0.1 | Needs conversion |
+| [L53](lab_sops/)   | *TBD --Pesticide Analysis* | 0.1 | Needs conversion |
 | [L54](lab_sops/SOP-L54-chlorophyll-extraction.qmd)   | Chlorophyll Extraction and Analysis | 0.1 |
 
 ### Soil and Carbon Analysis (L55--L79)
