@@ -39,7 +39,7 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|
 | [F01](field_sops/SOP-F01-field-safety.qmd) | Field Safety | 1.1 |
 | [F02](field_sops/SOP-F02-field-equipment-checklist.qmd)   | Field Equipment Checklist | -- |
-| [F03](field_sops/)   | *TBD -- Field Notebook Protocols* | -- |
+| [F03](field_sops/SOP-F03-field-notebook-protocols.qmd)   | Field Notebook Protocols | -- |
 | [F04](field_sops/)   | *TBD   | -- |
 | [F05](field_sops/SOP-F05-random-sampling-design.qmd)   | Random Sampling Design | 1.0 |
 
@@ -84,7 +84,7 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [F70](field_sops/)   | *TBD --* | -- |
-| [F71](field_sops/)   | *TBD -- Air Temperature Monitoring (Sensors)* | -- |
+| [F71](field_sops/SOP-F71-air-temperature-sensors.qmd)   | Air Temperature Monitoring (Sensors) | -- |
 | [F72](field_sops/SOP-F72-air-quality-portable-sensors.qmd)   |  Air Quality Monitoring (Portable Sensors) | -- |
 | [F73](field_sops/)   | *TBD -- Particulate Matter Sampling* | -- |
 | [F74](field_sops/SOP-F74-picarro-field-deployment.qmd)   | Picarro GHG Analyzer (Field Deployment) | 1.0 |
@@ -121,9 +121,12 @@ tbl-classes: table-sm
 | [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
 | [L03](lab_sops/)   | Chemical Spill Response | -- |
 | [L04](lab_sops/)   | *TBD -- Chemical Inventory Management* | -- |
-| [L05](lab_sops/SOP-L05-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 |
-| [L06](lab_sops/SOP-L06-quality-control.qmd)   | Quality Control and Quality Assurance | 1.0 |
-| [L07](lab_sops/SOP-L07-foreign-soil-handling.qmd)   | Foreign Soil Handling (Import Permits) | 0.3 |
+| [L05](lab_sops/SOP-L05-lab-notebook-recording.qmd)   |  | 0.1 |
+| [L06](lab_sops/SOP-L06-foreign-soil-handling.qmd)   | Foreign Soil Handling (Import Permits) | 0.3 |
+| [L07](lab_sops/SOP-L07-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 |
+| [L08](lab_sops/SOP-L08-quality-control.qmd)   | Quality Control and Quality Assurance | 1.0 |
+
+
 
 ### Laboratory Equipment (L10--L24)
 
@@ -191,8 +194,8 @@ tbl-classes: table-sm
 | [L66](lab_sops/SOP-L66-mars-microwave-digestion.qmd)   | Soil Lead Analysis (MARS Microwave) | 0.2 | 
 | [L67](lab_sops/SOP-L67-nitrification-potential.qmd)   | Nitrification Potential | 0.1 |
 | [L68](lab_sops/SOP-L68-solvita-compost-maturity.qmd)   | Solvita Compost Maturity | 0.1 | 
-| [L69](lab_sops/SOP-L69-flash-ea-soil-combustion.qmd)   | Flash EA Soil dN15 and dC13 Combustion | 0.1 |
-| [L70](lab_sops/SOP-L70-carbonate-gasbench-irms.qmd)    | Flash EA Soil dN15 and dC13 Combustion | 0.1 |
+| [L69](lab_sops/SOP-L69-soil-ea-irms.qmd)   | Flash EA Soil dN15 and dC13 Combustion | 0.1 |
+| [L70](lab_sops/SOP-L70-carbonate-gasbench-irms.qmd)    | Carbonate Isotope Analysis by GasBench II-IRMS  | 0.1 |
  
 
 ### Microbes, Plants, and Animals (L80--L94)

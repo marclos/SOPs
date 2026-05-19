@@ -1,0 +1,456 @@
+---
+# =============================================================================
+# SOP-F71: Air Temperature Monitoring (Portable Sensors)
+# =============================================================================
+# Deployment, calibration, and data processing for low-cost air
+# temperature and relative humidity sensor networks using iButton,
+# HOBO, and Raspberry Pi + BME280 platforms.
+# =============================================================================
+
+title: "Air Temperature Monitoring with Portable Sensors"
+sop-number: "SOP-F71"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "Environmental Analysis, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2026-05-18"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the deployment, calibration, data retrieval, and
+post-processing of low-cost portable sensor networks for ambient air
+temperature and relative humidity monitoring. Three sensor platforms are
+covered: Maxim/Analog Devices Thermochron iButton loggers, Onset HOBO
+data loggers, and Raspberry Pi single-board computers with BME280
+environmental sensor modules.
+
+Dense networks of inexpensive air temperature sensors enable studies of
+urban heat island (UHI) effects, microclimatic gradients beneath
+photovoltaic arrays, canopy-vs.-open temperature contrasts, and diurnal
+and seasonal temperature variability at spatial resolutions not
+achievable with conventional weather stations [@muller2013;
+@chapman2017].
+
+
+## 2. Scope
+
+- **Applies to:** Outdoor ambient air temperature and relative humidity
+  monitoring at 1.5--2.0 m above ground level using portable sensor
+  networks.
+- **Does not apply to:** Soil temperature profiles (see
+  [SOP-F61](SOP-F61-soil-temperature-profiles.qmd)), indoor
+  temperature monitoring, or air quality (PM, gases; see
+  [SOP-F72](SOP-F72-air-quality-portable-sensors.qmd)).
+- **Location:** EA Program field sites including the Pomona College
+  campus, Bernard Field Station, photovoltaic study sites, and
+  surrounding Inland Empire communities.
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve monitoring plan, oversee data quality           |
+| Field Lead        | Coordinate site access and logistics                    |
+| Trained Personnel | Calibrate, deploy, retrieve data, process results       |
+| New Students      | Complete training before independent deployment         |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Working at height:** Mounting sensors at 1.5--2.0 m on poles or
+  structures may require a stepladder. Follow ladder safety protocols.
+- **Traffic:** Some monitoring locations are near roadways. Wear
+  high-visibility vests.
+- **Heat exposure:** Deployment and retrieval in summer in the Inland
+  Empire involves significant heat risk. Carry water, work in pairs,
+  and schedule field work for early morning when possible.
+- **Electrical:** Raspberry Pi units use low-voltage USB power. Do not
+  expose connections to rain or standing water without weatherproof
+  enclosures.
+:::
+
+### Required PPE
+
+- [ ] Closed-toe shoes
+- [ ] High-visibility vest (if near roadways)
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Safety glasses (during mounting/drilling)
+
+
+## 5. Prerequisites
+
+- [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+- For Raspberry Pi deployments: basic familiarity with Raspberry Pi OS,
+  SSH, and file transfer (see also
+  [SOP-F72](SOP-F72-air-quality-portable-sensors.qmd))
+
+
+## 6. Sensor Platforms
+
+### 6.1 Comparison
+
+| Feature              | iButton DS1921/DS1923 | HOBO U23 Pro v2       | Raspberry Pi + BME280 |
+|:---------------------|:---------------------:|:---------------------:|:---------------------:|
+| Approximate cost     | $20--60               | $130--200             | $40--80               |
+| Temperature accuracy | $\pm$0.5--1.0 °C      | $\pm$0.21 °C          | $\pm$0.5 °C (BME280) |
+| RH measurement       | DS1923 only           | Yes                   | Yes                   |
+| Logging interval     | 1 min -- 255 min      | 1 s -- 18 h           | User-defined (script) |
+| Memory               | 2048--8192 readings   | ~42,000 readings      | SD card (unlimited)   |
+| Communication        | 1-Wire (download)     | USB (download)        | Wi-Fi / SD card       |
+| Battery life         | ~1 year               | ~1 year               | Requires continuous power |
+| Size                 | 17 mm coin            | 6 x 5 x 2 cm         | Variable (enclosure)  |
+
+### 6.2 Choosing a Platform
+
+- **iButton:** Best for dense spatial networks where low cost and small
+  size are priorities. Limited memory requires periodic retrieval.
+  Ideal for short-term (weeks to months) UHI transects.
+- **HOBO:** Best general-purpose option with highest accuracy, long
+  battery life, and large memory. Good for season-long deployments.
+- **Raspberry Pi + BME280:** Best for real-time or near-real-time
+  monitoring with Wi-Fi. Requires continuous power. Already available
+  in the EA Program inventory (16 Pi Zero+ units).
+
+
+## 7. Radiation Shielding {#sec-shielding}
+
+::: {.callout-important}
+### Radiation Shields Are Mandatory
+Unshielded sensors exposed to direct or reflected solar radiation can
+read 5--15 °C higher than true air temperature. Every deployed sensor
+**must** be housed in a radiation shield [@hubbart2005; @terando2017].
+:::
+
+### 7.1 Commercial Shields
+
+- **Onset RS3:** Louvered, naturally ventilated, white plastic. Fits
+  HOBO loggers. Proven performance in the literature [@hubbart2005].
+- **Onset M-RSA:** Aspirated shield (fan-ventilated). Highest accuracy
+  but requires power.
+- **Davis 7714:** Louvered shield compatible with various loggers.
+
+### 7.2 Custom Shields
+
+For iButton deployments where cost must be minimized, fabricate shields
+from white plastic funnels, stacked white plastic plates, or PVC
+fittings. Key design principles [@terando2017; @hubbart2005]:
+
+- Use white, UV-resistant material to reflect solar radiation.
+- Allow natural ventilation from below while blocking direct and
+  reflected shortwave radiation from above.
+- Orient the sensor opening downward to prevent rain entry.
+- Test custom shields against a commercial shield before deployment.
+
+### 7.3 Mounting
+
+Mount radiation shields at 1.5--2.0 m above ground on a pole, post, or
+structure. Avoid mounting directly against walls, fences, or dark
+surfaces that radiate heat. Secure with zip ties, hose clamps, or
+U-bolts.
+
+
+## 8. Calibration {#sec-calibration}
+
+Calibrate all sensors before each deployment season and after any
+suspected damage.
+
+### 8.1 Ice-Water Bath Check
+
+1. Prepare a well-stirred ice-water bath (crushed ice + deionized water
+   in an insulated container). This produces 0.0 °C.
+2. Submerge all sensors simultaneously. Wait at least 5 minutes for
+   equilibration.
+3. Record the reading from each sensor.
+4. Sensors should read within $\pm$0.5 °C of 0.0 °C. Document offsets.
+
+### 8.2 Room-Temperature Inter-Comparison
+
+1. Place all sensors in a well-mixed, stable indoor environment
+   (e.g., a lab bench away from HVAC vents) alongside a NIST-traceable
+   reference thermometer.
+2. Log for at least 2 hours.
+3. Calculate the mean offset of each sensor relative to the reference.
+4. Sensors with offsets >1.0 °C should be replaced or have a correction
+   applied in post-processing.
+
+### 8.3 Collocation in the Field
+
+For highest accuracy, collocate 2--3 sensors at one site for the first
+48 hours of deployment to confirm agreement under field conditions
+(including radiation shield effects). All sensors should agree within
+0.5 °C at night (when radiation bias is absent).
+
+```{r}
+#| label: calibration-offsets
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+# Read calibration bath data
+cal <- read_csv("data/calibration/ice_bath_YYYYMMDD.csv")
+
+# Calculate offsets from 0.0 C
+cal_summary <- cal %>%
+  group_by(sensor_id) %>%
+  summarize(
+    mean_reading = mean(temp_c, na.rm = TRUE),
+    offset       = mean_reading - 0.0,
+    sd           = sd(temp_c, na.rm = TRUE),
+    .groups      = "drop"
+  )
+
+# Flag sensors outside tolerance
+cal_summary <- cal_summary %>%
+  mutate(status = if_else(abs(offset) <= 0.5, "PASS", "REVIEW"))
+
+print(cal_summary)
+write_csv(cal_summary, "data/calibration/offsets_YYYYMMDD.csv")
+```
+
+
+## 9. Deployment Procedure
+
+### 9.1 iButton
+
+1. Program the iButton using OneWireViewer or equivalent software:
+   set logging interval (typically 10--15 minutes), delayed start
+   time, and enable rollover if the study will exceed memory capacity.
+2. Place the iButton in its radiation shield (see @sec-shielding).
+3. Mount the shield at the site at 1.5--2.0 m height.
+4. Record: site ID, sensor serial number, GPS coordinates, mounting
+   height, shield type, start time, land use/land cover description.
+
+### 9.2 HOBO U23
+
+1. Launch the logger in HOBOware: set logging interval, delayed start,
+   and file name.
+2. Attach the logger to the RS3 radiation shield.
+3. Mount the shield at the site.
+4. Record metadata as above.
+
+### 9.3 Raspberry Pi + BME280
+
+1. Verify the BME280 is reading correctly (SSH in, check the log).
+2. Mount the Pi enclosure with the BME280 sensor exposed inside the
+   radiation shield (sensor element facing downward for ventilation).
+3. Connect power (AC, solar + battery, or long USB cable).
+4. Verify data logging remotely.
+5. Record metadata as above.
+
+
+## 10. Data Retrieval
+
+| Platform    | Retrieval Method                          | Frequency           |
+|:------------|:------------------------------------------|:--------------------|
+| iButton     | Remove, connect to 1-Wire reader, download in OneWireViewer | Every 2--4 weeks |
+| HOBO U23    | Connect USB shuttle or cable, download in HOBOware | Every 1--3 months |
+| Raspberry Pi| SSH + `scp`, or remove SD card             | Weekly or as needed |
+
+After retrieval, archive the raw file immediately. Never modify the
+original.
+
+
+## 11. Data Processing
+
+### 11.1 Import and Standardize
+
+```{r}
+#| label: import-standardize
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+library(lubridate)
+
+# Example: import iButton CSV
+raw <- read_csv("data/raw/site01_ibutton_ABC123.csv",
+                skip = 14) %>%     # skip header lines (varies by software)
+  rename(timestamp = 1, temp_c = 2) %>%
+  mutate(
+    timestamp = mdy_hms(timestamp, tz = "America/Los_Angeles"),
+    sensor_id = "ABC123",
+    site_id   = "site01",
+    platform  = "iButton"
+  )
+
+# Apply calibration offset (from Section 8)
+offsets <- read_csv("data/calibration/offsets_YYYYMMDD.csv")
+
+raw <- raw %>%
+  left_join(offsets %>% select(sensor_id, offset), by = "sensor_id") %>%
+  mutate(temp_corrected = temp_c - offset)
+```
+
+### 11.2 Quality Control
+
+```{r}
+#| label: qc-flags
+#| echo: true
+#| eval: false
+
+raw <- raw %>%
+  mutate(
+    qc_flag = case_when(
+      temp_corrected < -10 | temp_corrected > 55 ~ "out_of_range",
+      temp_corrected == lag(temp_corrected) &
+        temp_corrected == lag(temp_corrected, 2) &
+        temp_corrected == lag(temp_corrected, 3)   ~ "stuck_sensor",
+      abs(temp_corrected - lag(temp_corrected)) > 10 ~ "spike",
+      TRUE ~ "valid"
+    )
+  )
+
+# Summary
+count(raw, qc_flag)
+
+# Keep only valid data for analysis
+clean <- raw %>% filter(qc_flag == "valid")
+```
+
+### 11.3 Hourly and Daily Summaries
+
+```{r}
+#| label: summaries
+#| echo: true
+#| eval: false
+
+hourly <- clean %>%
+  mutate(hour = floor_date(timestamp, "hour")) %>%
+  group_by(site_id, sensor_id, hour) %>%
+  summarize(
+    temp_mean = mean(temp_corrected, na.rm = TRUE),
+    temp_min  = min(temp_corrected, na.rm = TRUE),
+    temp_max  = max(temp_corrected, na.rm = TRUE),
+    n_obs     = n(),
+    .groups   = "drop"
+  ) %>%
+  filter(n_obs >= 3)  # at least 3 of 4 readings per hour (15-min interval)
+
+daily <- hourly %>%
+  mutate(date = as_date(hour)) %>%
+  group_by(site_id, sensor_id, date) %>%
+  summarize(
+    t_mean = mean(temp_mean, na.rm = TRUE),
+    t_min  = min(temp_min, na.rm = TRUE),
+    t_max  = max(temp_max, na.rm = TRUE),
+    n_hours = n(),
+    .groups = "drop"
+  ) %>%
+  filter(n_hours >= 18)  # 75% completeness
+```
+
+### 11.4 Urban Heat Island Intensity
+
+UHI intensity is typically calculated as the difference between an
+urban site and a rural (or least-developed) reference site:
+
+$$
+\Delta T_{\text{UHI}} = T_{\text{urban}} - T_{\text{rural}}
+$$
+
+```{r}
+#| label: uhi-intensity
+#| echo: true
+#| eval: false
+
+# Define the reference (rural) site
+ref_site <- "site_rural01"
+
+uhi <- hourly %>%
+  select(site_id, hour, temp_mean) %>%
+  pivot_wider(names_from = site_id, values_from = temp_mean) %>%
+  mutate(across(-c(hour, all_of(ref_site)),
+                ~ . - .data[[ref_site]],
+                .names = "uhi_{.col}"))
+```
+
+
+## 12. Quality Control Summary
+
+| Check                                | Criterion                        |
+|:--------------------------------------|:---------------------------------|
+| Ice-bath calibration                  | Reading within $\pm$0.5 °C of 0.0 °C |
+| Inter-sensor agreement (collocation) | Within $\pm$0.5 °C at night      |
+| Hourly data completeness             | $\geq$75% of expected readings   |
+| Daily data completeness              | $\geq$18 of 24 hours             |
+| Stuck-sensor detection               | $\geq$4 identical consecutive readings flagged |
+| Spike detection                      | $\geq$10 °C change between consecutive readings flagged |
+
+
+## 13. Data Management
+
+- Raw files archived unmodified: `data/raw/siteID_platform_sensorID.csv`
+- Calibration records: `data/calibration/`
+- Processed files: `data/processed/`
+- Site metadata (coordinates, height, shield type, land cover, sensor
+  serial numbers, deployment/retrieval dates):
+  `data/metadata/site_metadata.csv`
+- All scripts version-controlled in the project Git repository
+
+
+## 14. Definitions
+
+BME280
+: Bosch environmental sensor measuring temperature, relative humidity,
+  and barometric pressure. Used with Raspberry Pi platforms.
+
+iButton
+: A coin-sized temperature (and optionally RH) data logger
+  manufactured by Maxim/Analog Devices (Thermochron series).
+
+HOBO
+: A family of portable data loggers manufactured by Onset Computer
+  Corporation.
+
+Radiation shield
+: A louvered or ventilated housing that protects a temperature sensor
+  from direct and reflected solar radiation while allowing ambient air
+  to flow past the sensor.
+
+Urban Heat Island (UHI)
+: The phenomenon whereby urban areas experience higher air temperatures
+  than surrounding rural areas due to impervious surfaces, waste heat,
+  reduced vegetation, and altered energy balance.
+
+
+## 15. References
+
+::: {#refs}
+:::
+
+
+## 16. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F01](SOP-F01-field-safety.qmd)       | Field Safety        | Required prerequisite             |
+| [F11](SOP-F11-electrical-power-in-the-field.qmd) | Electrical Power in the Field | Power for Pi deployments |
+| [F61](SOP-F61-soil-temperature-profiles.qmd) | Soil Temperature Profiles | Companion: soil vs. air temp |
+| [F72](SOP-F72-air-quality-portable-sensors.qmd) | Air Quality Monitoring | Companion: PM sensors on same Pi units |
+
+
+## 17. Training Record
+
+Before deploying air temperature sensors independently, personnel must:
+
+1. Read this SOP and [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+   in full
+2. Perform a calibration (ice-water bath and room-temperature
+   inter-comparison) under supervision
+3. Assemble and mount a radiation shield
+4. Deploy and retrieve a sensor at a test site
+5. Import, clean, and summarize data using the R workflow
+6. Be signed off by the PI or field lead

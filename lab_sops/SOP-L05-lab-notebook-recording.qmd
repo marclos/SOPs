@@ -1,0 +1,341 @@
+---
+# =============================================================================
+# SOP-L05: Laboratory Notebook Recording
+# =============================================================================
+# Physical notebook policy and good documentation practice (GDP) for
+# laboratory records: notebook selection, pen requirements, entry
+# formatting, carbon-copy duplicates, witness signatures, error
+# correction, and archiving.
+# =============================================================================
+
+title: "Laboratory Notebook Recording"
+sop-number: "SOP-L05"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "Environmental Analysis, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "0.3"
+    date: "2024-01-01"
+    author: "Marc Los Huertos"
+    changes: "Original LaTeX draft"
+  - version: "1.0"
+    date: "2026-05-18"
+    author: "Marc Los Huertos"
+    changes: "Converted to QMD; expanded to full SOP"
+---
+
+## 1. Purpose
+
+This SOP establishes the physical documentation standards for
+laboratory notebooks in the EA Program. A properly maintained notebook
+is a legal record that establishes what was done, when, by whom, and
+what was observed. These standards follow Good Documentation Practice
+(GDP) principles used in regulated laboratories and ensure that EA
+Program data are traceable, contemporaneous, and defensible.
+
+This SOP covers *how* to record. For *what* to record during an
+analytical session, see
+[SOP-L06 Quality Control](SOP-L06-quality-control.qmd), Section 7.1.
+For field notebook protocols, see
+[SOP-F03 Field Notebook Protocols](../field_sops/SOP-F03-field-notebook-protocols.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** All laboratory work performed under EA Program SOPs,
+  including sample preparation, instrument operation, calibration,
+  data reduction, and reagent/standard preparation.
+- **Does not apply to:** Field notebooks (see SOP-F03) or purely
+  electronic records in R scripts and Git (see
+  [SOP-L05](SOP-L05-rstudio-github.qmd)), though electronic records
+  should meet the same traceability standards.
+- **Location:** All EA Program laboratories (SGM 133, 134, 135).
+
+
+## 3. Responsibilities
+
+| Role               | Responsibility                                         |
+|:-------------------|:-------------------------------------------------------|
+| Lab PI             | Set documentation standards; review notebooks          |
+| Lab Manager        | Issue notebooks; maintain archive; verify compliance   |
+| All Lab Personnel  | Maintain a notebook per this SOP                       |
+| New Students       | Read this SOP before beginning any lab work            |
+
+
+## 4. Notebook Selection
+
+### 4.1 Required Type
+
+Use a **bound, duplicate carbon-copy laboratory notebook** with
+sequentially numbered pages. Each page produces an original (white) and
+a carbon-copy duplicate (yellow). Acceptable examples:
+
+- National Brand 43-648 (200 numbered pages, carbon duplicate)
+- Boorum & Pease 09-900-2 series
+- Any equivalent bound duplicate notebook with numbered pages
+
+::: {.callout-important}
+### Why Carbon-Copy Duplicates?
+The duplicate page creates an instant backup that can be separated from
+the notebook without destroying the original record. Duplicates are
+filed separately, so that if a notebook is lost, damaged, or in use by
+another researcher, the data are preserved. This is standard practice
+in GLP, GMP, and patent-documentation environments.
+:::
+
+### 4.2 Unacceptable Notebooks
+
+Do not use:
+
+- Loose-leaf binders or spiral notebooks with perforated tear-out pages
+- Composition books without numbered pages
+- Unbound paper, sticky notes, or scrap paper
+- Notebooks without duplicate (carbon-copy) pages
+
+### 4.3 Issuing and Registering
+
+1. The lab manager issues each new notebook and records the notebook
+   number, researcher name, project, and date issued in the
+   **Notebook Registry** (a spreadsheet maintained on the lab shared
+   drive).
+2. On the inside front cover, record: your name, contact information,
+   project name, and the date the notebook was put into service.
+3. Reserve the first two pages for a Table of Contents. Update the TOC
+   as you fill the notebook.
+
+
+## 5. Writing Instruments
+
+### 5.1 Required
+
+Write **all** entries in permanent, non-erasable ink. Use a ballpoint
+pen that produces a clear impression on both the original and the
+carbon-copy page. Black or dark blue ink is preferred.
+
+### 5.2 Not Permitted
+
+- Pencil (can be erased)
+- Gel ink or felt-tip pens that do not transfer reliably to the carbon
+  copy
+- Erasable ink pens
+
+::: {.callout-tip}
+Test your pen on a spare carbon-copy page before starting a new
+notebook. Press firmly enough to produce a legible duplicate, but not
+so hard that you tear the paper.
+:::
+
+
+## 6. Entry Formatting
+
+### 6.1 Every Entry Begins With
+
+At the top of each new entry (or new day), record:
+
+1. **Date** in ISO format: YYYY-MM-DD (e.g., 2026-05-18)
+2. **Your name** (or initials, if your full name is on the inside cover
+   and you are the sole user)
+3. **Purpose** of the work session in one sentence (e.g., "TOC-L
+   calibration and K~2~SO~4~ extract analysis, Project: BFS Soils")
+4. **SOP(s) in use** with revision numbers
+
+### 6.2 Contemporaneous Recording
+
+Write entries **at the time the work is performed**, not from memory
+afterward. If you record a result on a printout, sticky note, or scrap
+paper during an urgent moment, tape or staple the original into the
+notebook and initial and date it at the earliest opportunity. Never
+discard the original note.
+
+### 6.3 Level of Detail
+
+Write enough detail so that another trained researcher could reproduce
+your work using only the notebook and the referenced SOP. At minimum,
+include all items listed in
+[SOP-L06, Section 7.1](SOP-L06-quality-control.qmd).
+
+### 6.4 Printouts, Graphs, and Attachments
+
+Tape or staple instrument printouts, chromatograms, calibration reports,
+or other documents directly into the notebook. Write across the border
+of the attachment and the notebook page so that it is clear the
+attachment was placed at that time. Initial and date each attachment.
+
+### 6.5 Tables and Calculations
+
+- Draw tables with a ruler if practical.
+- Show all calculations, including units and intermediate steps, so
+  that results can be verified.
+- Circle or box final results for easy identification.
+
+### 6.6 Blank Space and Unused Pages
+
+- Do not leave large blank areas within an entry. If you finish an
+  entry partway down a page, draw a diagonal line through the remaining
+  blank space and initial and date it. This prevents later additions.
+- Never skip pages. If you accidentally skip a page, draw a diagonal
+  line through it, write "INTENTIONALLY LEFT BLANK," and initial and
+  date it.
+
+
+## 7. Signatures
+
+### 7.1 Daily Signature
+
+At the end of each work session (or at the end of each day if work
+spans a full day), sign and date the last line of your entry:
+
+> Signed: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  Date: \_\_\_\_\_\_\_\_\_\_
+
+### 7.2 Witness Signature
+
+For work that may be used in regulatory submissions, patent
+applications, or formal reports, have a second person (the lab manager,
+PI, or another trained researcher) review the entry, sign, and date it
+as a witness:
+
+> Witnessed and understood by: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  Date: \_\_\_\_\_\_\_\_\_\_
+
+The witness confirms that the entry is legible, clear, and appears
+complete. The witness does not need to have been present during the
+work.
+
+::: {.callout-note}
+For routine student projects, a daily signature by the researcher is
+sufficient. Witness signatures are required for thesis work, externally
+funded projects, and any data that may be submitted to regulatory
+agencies.
+:::
+
+
+## 8. Error Corrections
+
+Errors in a laboratory notebook are normal. The way you correct them
+matters.
+
+### 8.1 How to Correct
+
+1. Draw a **single horizontal line** through the incorrect text so
+   that the original remains legible.
+2. Write the correct information nearby (above, below, or in the
+   margin).
+3. Initial and date the correction.
+4. Optionally, add a brief reason (e.g., "wrong sample ID" or
+   "calculation error").
+
+### 8.2 What Not to Do
+
+- Never erase, white-out, scribble over, or obliterate any entry.
+- Never remove or tear out a page.
+- Never use correction fluid (Wite-Out, Liquid Paper, etc.).
+- Never write over existing text to change it.
+
+::: {.callout-warning}
+Obliterated entries raise questions about data integrity. Even if the
+error was innocent, an unreadable original looks like a concealment.
+A single-line strikethrough with initials and a date is always the
+correct approach.
+:::
+
+
+## 9. Handling Duplicate (Carbon-Copy) Pages
+
+1. After completing an entry and signing it, carefully tear out the
+   yellow carbon-copy duplicate along the perforated edge.
+2. Place the duplicate in the **Notebook Duplicates** folder for your
+   project, organized by notebook number and date.
+3. Duplicate pages are filed in the lab (SGM 133, designated cabinet).
+4. Do not take duplicate pages home or discard them.
+
+If you do not tear out duplicates daily, do so at least weekly. Do not
+allow a large backlog of unremoved duplicate pages to accumulate, as
+the carbon transfer quality can degrade over time.
+
+
+## 10. Electronic Supplements
+
+Many analyses produce electronic data files (Isodat exports, TOC-L
+CSVs, R scripts, photographs). The notebook must reference these files:
+
+- Record the file name, storage location, and date for every electronic
+  file associated with an entry.
+- Example: "Raw data exported to
+  `lab_data/BFS_Soils/2026/TOC-L/raw/20260518_BFS_run01.csv`"
+- Electronic files are managed per
+  [SOP-L06, Section 7.2](SOP-L06-quality-control.qmd) and
+  [SOP-L05](SOP-L05-rstudio-github.qmd).
+
+The notebook is the master index; electronic files are supplements. If
+there is ever a conflict between the notebook and an electronic record,
+investigate and resolve the discrepancy (do not simply overwrite one
+with the other).
+
+
+## 11. Notebook Completion and Archiving
+
+1. When a notebook is full, record the date range on the front cover
+   and spine (e.g., "2026-01 to 2026-08").
+2. Update the Table of Contents on the first two pages.
+3. File the completed notebook in the **Notebook Archive** (SGM 133,
+   labeled shelf), organized by project and date.
+4. Update the Notebook Registry spreadsheet with the completion date.
+5. Notebooks are retained for a minimum of **7 years** after the end
+   of the associated project, or longer if required by a funding
+   agency, IRB, or regulatory body.
+6. Notebooks are the property of the EA Program and Pomona College.
+   They must not be taken home, discarded, or removed from the archive
+   without PI approval.
+
+
+## 12. Common Mistakes
+
+| Mistake                                  | Consequence                              |
+|:-----------------------------------------|:-----------------------------------------|
+| Using pencil                             | Entries can be erased; not a permanent record |
+| Recording data on scratch paper first    | Scratch paper gets lost; transcription adds errors |
+| Leaving entries unsigned                 | Cannot confirm who performed the work    |
+| Leaving blank space without striking through | Appearance that data could be inserted later |
+| Using white-out or scribbling over errors | Raises data integrity concerns           |
+| Not removing carbon-copy duplicates      | Backup is only useful if stored separately |
+| Forgetting to reference electronic files | Data become disconnected from context    |
+| Skipping the Table of Contents           | Information is hard to locate later      |
+
+
+## 13. References
+
+Kanare, H. M. (1985). *Writing the Laboratory Notebook*. American
+Chemical Society.
+
+US EPA. (2002). *Guidance for Quality Assurance Project Plans* (EPA
+QA/G-5). EPA/240/R-02/009.
+
+FDA. (2004). *Guidance for Industry: Part 11, Electronic Records;
+Electronic Signatures -- Scope and Application*. US Food and Drug
+Administration.
+
+
+## 14. Related SOPs
+
+| SOP   | Title                                       | Relationship                      |
+|:------|:--------------------------------------------|:----------------------------------|
+| [L01](SOP-L01-laboratory-safety.qmd)       | Laboratory Safety       | Training documentation forms |
+| [L05](SOP-L05-rstudio-github.qmd)          | RStudio Server and GitHub | Electronic data management  |
+| [L06](SOP-L06-quality-control.qmd)         | Quality Control and QA  | What to record (Section 7.1) |
+| [F03](../field_sops/SOP-F03-field-notebook-protocols.qmd) | Field Notebook Protocols | Field counterpart        |
+
+
+## 15. Training Record
+
+Before beginning independent laboratory work, all personnel must:
+
+1. Read this SOP in full
+2. Set up a new notebook correctly (inside cover, Table of Contents,
+   registry entry)
+3. Demonstrate a properly formatted entry including: header, data
+   recording, attached printout, error correction, blank-space
+   management, and signature
+4. Be signed off by the lab manager or PI

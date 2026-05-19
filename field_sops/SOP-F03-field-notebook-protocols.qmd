@@ -1,0 +1,316 @@
+---
+# =============================================================================
+# SOP-F03: Field Notebook Protocols
+# =============================================================================
+# Standards for field documentation: notebook selection, required entries,
+# sketch and photo conventions, chain of custody, data transcription,
+# and archiving.
+# =============================================================================
+
+title: "Field Notebook Protocols"
+sop-number: "SOP-F03"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "Environmental Analysis, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2026-05-18"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP establishes the minimum standards for field documentation in
+the EA Program. Complete, legible, and contemporaneous field notes are
+the foundation of defensible environmental data. Notes recorded in the
+field cannot be reconstructed later from memory; what is not written
+down at the time is effectively lost. This SOP ensures that every field
+visit produces a record sufficient for another trained researcher to
+understand what was done, where, when, by whom, and under what
+conditions.
+
+For laboratory notebook requirements, see
+[SOP-L06 Quality Control](../lab_sops/SOP-L06-quality-control.qmd),
+Section 7.1.
+
+
+## 2. Scope
+
+- **Applies to:** All EA Program field activities, including sampling,
+  sensor deployment/retrieval, site reconnaissance, equipment
+  installation, and monitoring visits.
+- **Does not apply to:** Laboratory work (see SOP-L06) or purely
+  digital data collection on tablets/phones (though digital entries
+  should follow the same content standards described here).
+- **Location:** All EA Program field sites.
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Set documentation standards; review notebooks periodically |
+| Field Lead        | Ensure all team members record required entries         |
+| All Field Personnel | Maintain a field notebook per this SOP               |
+| New Students      | Read this SOP before their first field outing           |
+
+
+## 4. Notebook Selection and Preparation
+
+### 4.1 Acceptable Notebooks
+
+Use a bound, weather-resistant field notebook with numbered pages. The
+following are acceptable:
+
+- Rite in the Rain (top-spiral or side-spiral, any size)
+- Any hardbound notebook with numbered pages (if weather protection is
+  not needed)
+
+Do **not** use loose-leaf paper, spiral notebooks with perforated pages,
+or sticky notes for primary field records.
+
+### 4.2 Front Matter
+
+On the inside front cover or first page of a new notebook, record:
+
+- Your name, phone number, and email
+- "If found, please return to: EA Program, Pomona College, SGM 133"
+- Project name(s)
+- Date the notebook was put into service
+
+### 4.3 Page Numbering
+
+If pages are not pre-numbered, number them in ink before going to the
+field. Never remove pages from a field notebook.
+
+
+## 5. Required Entries for Every Field Visit
+
+Every field visit entry must begin with the following header information.
+Write it before you do anything else on site.
+
+### 5.1 Header Block
+
+Record at the top of a new page (or clearly separated section):
+
+| Field               | Example                                       |
+|:--------------------|:----------------------------------------------|
+| Date                | 2026-05-18 (use ISO format: YYYY-MM-DD)       |
+| Time of arrival     | 08:15 PST                                     |
+| Site name / ID      | Bernard Field Station, Plot BFS-03             |
+| GPS coordinates     | 34.0975 N, 117.7125 W (WGS84)                |
+| Personnel present   | M. Los Huertos, J. Smith                       |
+| Weather conditions  | Clear, ~25 °C, light wind from W, no recent rain |
+| Purpose of visit    | Soil sampling for CN analysis; sensor download |
+| SOPs in use         | F56, F61, F72                                  |
+
+### 5.2 Time Stamps
+
+Record the time of every discrete action: sample collection, instrument
+reading, equipment start/stop, calibration check, photo taken. Use
+24-hour format or AM/PM consistently throughout the notebook.
+
+### 5.3 Site Observations
+
+Before beginning work, take a moment to look around and note anything
+relevant:
+
+- Visible changes since the last visit (new construction, vegetation
+  removal, standing water, animal activity, vandalism, equipment
+  condition)
+- Odors or visual indicators of contamination
+- Land use activities in progress nearby (mowing, irrigation,
+  construction)
+
+### 5.4 Sample and Measurement Records
+
+For each sample collected or measurement taken, record at minimum:
+
+- Sample ID (use the project's naming convention)
+- Time of collection/measurement
+- Location (plot, transect position, depth, or other descriptor)
+- Value or description (e.g., "pH = 7.2," "soil moist, dark brown,
+  loamy texture")
+- Preservation method applied (e.g., "filtered, acidified with HNO~3~
+  to pH <2")
+- Container type and label
+
+::: {.callout-tip}
+### Write More Than You Think You Need
+Include observations that seem obvious at the time. "Soil was saturated
+and smelled of sulfide" or "sensor housing had spider web across inlet"
+may be critical for interpreting data months later.
+:::
+
+### 5.5 Equipment and Instrument Notes
+
+- Instrument ID (serial number or lab ID)
+- Calibration status (when was it last calibrated? did you verify in
+  the field?)
+- Settings (logging interval, flow rate, method name)
+- Any malfunctions, error messages, or anomalies
+
+### 5.6 Deviations from SOPs
+
+If you deviate from the standard procedure for any reason, record:
+
+- What you did differently and why
+- Whether the deviation may affect data quality
+- Who authorized the deviation (if applicable)
+
+### 5.7 Departure
+
+Before leaving the site, record:
+
+- Time of departure
+- Summary of work completed and any work left undone
+- Disposition of samples (e.g., "cooler with ice, to lab by 12:00")
+- Any follow-up actions needed
+
+
+## 6. Sketches and Diagrams
+
+A simple sketch is often worth more than a paragraph of text. Include
+sketches of:
+
+- Site layout showing sampling locations, landmarks, and compass
+  orientation
+- Equipment placement (sensor positions, transect layout, plot
+  boundaries)
+- Anything unusual (erosion features, spill boundaries, wildlife
+  sightings relevant to the study)
+
+Label all sketches with a north arrow, approximate scale, date, and
+your initials.
+
+
+## 7. Photographs
+
+### 7.1 When to Photograph
+
+- At the start of every visit: a general site photo showing conditions
+- Each sampling location before and after sampling
+- Equipment installations and sensor positions
+- Anything unusual or noteworthy (damage, contamination indicators,
+  unexpected conditions)
+- Calibration setups
+
+### 7.2 Photo Naming and Logging
+
+Record in the notebook the photo number (from the camera/phone) and a
+brief description for every photo taken:
+
+> "Photo IMG\_4231: Plot BFS-03 looking NE, pre-sampling, 08:22"
+
+Transfer photos to the project folder within 48 hours and rename using
+the convention:
+
+`YYYY-MM-DD_SiteID_Description_PhotoNumber.jpg`
+
+
+## 8. Corrections and Errors
+
+- Never erase, white-out, or obliterate an entry.
+- To correct an error, draw a single line through the incorrect text so
+  it remains legible, write the correction nearby, and initial and date
+  the change.
+- If you skip a page or leave blank space, draw a diagonal line through
+  the unused area and initial it to prevent later additions.
+
+
+## 9. Chain of Custody
+
+When samples will be submitted to an analytical laboratory (internal or
+external), complete a Chain of Custody (COC) form. The COC must
+accompany the samples and include:
+
+- Project name and PI
+- Sample IDs matching the field notebook entries
+- Date and time of collection
+- Number and type of containers
+- Analyses requested
+- Preservatives applied
+- Signatures at each transfer (field to transport, transport to lab)
+
+Record the COC form number in the field notebook for cross-reference.
+
+
+## 10. Data Transcription
+
+### 10.1 Timeline
+
+Transcribe field data into the project database or spreadsheet within
+**48 hours** of returning from the field. Delays increase the risk of
+transcription errors and data loss.
+
+### 10.2 Procedure
+
+1. Enter data from the notebook into the standardized project
+   spreadsheet or R script.
+2. Have a second person verify the transcription against the original
+   notebook entries (or perform a self-check against the notebook).
+3. Flag any entries that are ambiguous, illegible, or questionable.
+   Resolve with the original recorder.
+4. Store the digital file per the project's data management plan (see
+   [SOP-L06](../lab_sops/SOP-L06-quality-control.qmd), Section 7.2).
+
+
+## 11. Notebook Archiving
+
+- Completed notebooks are the property of the EA Program and must not
+  be taken home or discarded.
+- When a notebook is full or a project ends, write the date range on
+  the cover and file it in the designated notebook archive (SGM 133,
+  labeled shelf).
+- Notebooks must be retained for a minimum of 5 years after the end of
+  the project, or longer if required by a funding agency.
+- If digital scans are desired, photograph or scan every used page and
+  store as a PDF in the project archive:
+  `data/notebooks/YYYY_ProjectName_NotebookNN.pdf`
+
+
+## 12. Common Mistakes to Avoid
+
+| Mistake                                  | Why It Matters                           |
+|:-----------------------------------------|:-----------------------------------------|
+| Recording data on scrap paper "to copy later" | Scrap paper gets lost; transcription introduces errors |
+| Omitting the date or time               | Data cannot be placed in temporal context |
+| Omitting GPS coordinates                | Samples cannot be linked to spatial data  |
+| Omitting weather conditions             | Weather affects many environmental measurements |
+| Writing in pencil                        | Pencil fades and can be erased; use waterproof ink |
+| Leaving blank pages without striking through | Creates the appearance that data could be added later |
+| Not recording deviations from SOPs      | Unexplained deviations undermine data defensibility |
+| Waiting days to transcribe data          | Memory fades; illegible entries cannot be deciphered |
+
+
+## 13. References
+
+Kanare, H. M. (1985). *Writing the Laboratory Notebook*.
+American Chemical Society.
+
+US EPA. (2002). *Guidance for Quality Assurance Project Plans* (EPA
+QA/G-5). EPA/240/R-02/009.
+
+
+## 14. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F01](SOP-F01-field-safety.qmd)                    | Field Safety        | Required prerequisite             |
+| [F02](SOP-F02-field-equipment-checklist.qmd)       | Field Equipment Checklist | Notebook is on the checklist |
+| [L06](../lab_sops/SOP-L06-quality-control.qmd)     | Quality Control and QA | Lab notebook standards; data management |
+
+
+## 15. Training Record
+
+Before conducting independent field work, all personnel must:
+
+1. Read this SOP in full
+2. Demonstrate a properly formatted notebook entry (header block,
+   sample records, sketch, photo log) during a supervised field visit
+3. Be signed off by the field lead or PI
