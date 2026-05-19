@@ -50,13 +50,13 @@ website:
       - text: "---"
       - section: "Commonly Used Field SOPs"
         contents:
-          - field_sops/SOP-F01-field-safety.qmd
-          - field_sops/SOP-F56-soil-sampling.qmd
+          - field_sops/SOP-F001-field-safety.qmd
+          - field_sops/SOP-F00-soil-sampling.qmd
       - section: "Commonly Used Lab SOPs"
         contents:
-          - lab_sops/SOP-L01-laboratory-safety.qmd
-          - lab_sops/SOP-L05-rstudio-github.qmd
-          - lab_sops/SOP-L55-soil-moisture.qmd
+          - lab_sops/SOP-L002-laboratory-safety.qmd
+          - lab_sops/SOP-L801-rstudio-github.qmd
+          - lab_sops/SOP-L400-soil-moisture.qmd
 format:
   html:
     format-links: [pdf]

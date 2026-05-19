@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-L03: Chemical Spill Response
+# SOP-L004: Chemical Spill Response
 # =============================================================================
 # Quick-reference spill response procedures: classification, decision
 # logic, cleanup by chemical class, decontamination, incident reporting,
@@ -8,7 +8,7 @@
 # =============================================================================
 
 title: "Chemical Spill Response"
-sop-number: "SOP-L03"
+sop-number: "SOP-L004"
 author:
   - name: "Marc Los Huertos"
     affiliation: "Environmental Analysis, Pomona College"
@@ -34,9 +34,9 @@ emergency; read it in advance so the procedures are familiar before
 you need them.
 
 For general chemical safety, storage, and waste disposal, see
-[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+[SOP-L02 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 For general lab emergency procedures (fire, earthquake, medical), see
-[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd).
+[SOP-L01 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
 
 
 ## 2. Scope
@@ -45,7 +45,7 @@ For general lab emergency procedures (fire, earthquake, medical), see
   (SGM 133, 134, 135).
 - **Does not apply to:** Radioactive material spills, biological spills
   (BSL-2 organisms), or field spills (handle per
-  [SOP-F01](../field_sops/SOP-F01-field-safety.qmd) and local
+  [SOP-F001](../field_sops/SOP-F001-field-safety.qmd) and local
   regulations).
 - **Location:** All EA Program laboratory spaces.
 
@@ -343,9 +343,9 @@ Pomona College. *Emergency Instructions*. Available at:
 
 | SOP   | Title                                       | Relationship                      |
 |:------|:--------------------------------------------|:----------------------------------|
-| [L01](SOP-L01-laboratory-safety.qmd)       | Laboratory Safety       | General emergency procedures |
-| [L02](SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Chemical safety, storage, waste |
-| [L04](SOP-L04-chemical-inventory.qmd)      | Chemical Inventory Management | Inventory affected by spills |
+| [L002](SOP-L002-laboratory-safety.qmd)       | Laboratory Safety       | General emergency procedures |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Chemical safety, storage, waste |
+| [L005](SOP-L005-chemical-inventory.qmd)      | Chemical Inventory Management | Inventory affected by spills |
 
 
 ## 14. Training Record
@@ -353,8 +353,8 @@ Pomona College. *Emergency Instructions*. Available at:
 Before working independently in the lab, all personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-L01](SOP-L01-laboratory-safety.qmd) and
-   [SOP-L02](SOP-L02-hazardous-materials-handling.qmd) training
+2. Complete [SOP-L002](SOP-L002-laboratory-safety.qmd) and
+   [SOP-L003](SOP-L003-hazardous-materials-handling.qmd) training
 3. Locate all spill kits, the safety shower, and the eyewash station
    in their assigned lab
 4. Walk through a simulated minor spill cleanup with the lab manager

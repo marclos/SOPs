@@ -1,10 +1,13 @@
 $-- =============================================================================
-$-- SOP Metadata Injection (Pandoc template partial)
+$-- SOP Metadata Injection + Title Page (Pandoc template partial)
 $-- =============================================================================
-$-- This file is processed by Pandoc as a TEMPLATE, so $variable$ syntax works.
-$-- It redefines the LaTeX macros set up by sop-header.tex.
+$-- This file is processed by Pandoc as a TEMPLATE, so $$variable$$ syntax works.
+$-- It redefines the LaTeX macros set up by sop-header.tex, then calls the
+$-- custom title page command and suppresses Quarto's default \maketitle.
 $-- Referenced in _quarto.yml under format > pdf > template-partials.
 $-- =============================================================================
+
+$-- Inject YAML metadata into LaTeX macros
 $if(sop-number)$
 \renewcommand{\sopnumber}{$sop-number$}
 $endif$
@@ -14,3 +17,21 @@ $endif$
 $if(revision)$
 \renewcommand{\soprevision}{$revision$}
 $endif$
+
+$-- Build author string from the author array
+$if(author)$
+\renewcommand{\sopauthor}{$for(author)$$author.name$$sep$, $endfor$}
+$endif$
+
+$-- Capture the date
+$if(date)$
+\renewcommand{\sopdate}{$date$}
+$else$
+\renewcommand{\sopdate}{\today}
+$endif$
+
+$-- Render the custom title page
+\maketitlepage
+
+$-- Suppress Quarto's default title block so it does not repeat
+\renewcommand{\maketitle}{}

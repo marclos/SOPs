@@ -1,0 +1,16 @@
+$-- =============================================================================
+$-- SOP Metadata Injection (Pandoc template partial)
+$-- =============================================================================
+$-- This file is processed by Pandoc as a TEMPLATE, so $variable$ syntax works.
+$-- It redefines the LaTeX macros set up by sop-header.tex.
+$-- Referenced in _quarto.yml under format > pdf > template-partials.
+$-- =============================================================================
+$if(sop-number)$
+\renewcommand{\sopnumber}{$sop-number$}
+$endif$
+$if(title)$
+\renewcommand{\soptitle}{$title$}
+$endif$
+$if(revision)$
+\renewcommand{\soprevision}{$revision$}
+$endif$

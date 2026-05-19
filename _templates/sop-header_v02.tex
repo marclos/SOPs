@@ -1,0 +1,67 @@
+% =============================================================================
+% SOP PDF Header/Footer Configuration
+% =============================================================================
+% Included via include-in-header in _quarto.yml.
+% This file is RAW LATEX -- no Pandoc template variables allowed here.
+%
+% The macros \sopnumber and \soprevision are defined with defaults below.
+% They are overridden by the companion file sop-metadata.tex (included via
+% include-before-body as a Pandoc template partial) when the YAML fields
+% sop-number and revision are present.
+% =============================================================================
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xcolor}
+
+% Define EA Program colors
+\definecolor{eablue}{HTML}{0057B8}
+
+% ---------------------------------------------------------------------------
+% Default macros (overridden by sop-metadata.tex if YAML fields exist)
+% ---------------------------------------------------------------------------
+\newcommand{\sopnumber}{SOP-XXX}
+\newcommand{\soprevision}{--}
+% In the "Default macros" section, add:
+\newcommand{\soptitle}{}
+% ---------------------------------------------------------------------------
+% Header and Footer
+% ---------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+
+% Header
+\fancyhead[L]{%
+  \small\textcolor{eablue}{\textbf{EA Program -- Pomona College}}%
+}
+% Then change the header-right from just the SOP number to number + title:
+\fancyhead[R]{%
+  \small\textcolor{eablue}{\sopnumber: \soptitle}%
+}
+
+% Footer
+\fancyfoot[L]{\small\textit{Rev.\ \soprevision\ (\today)}}
+\fancyfoot[C]{\small\textsc{For Internal Use Only}}
+\fancyfoot[R]{\small Page \thepage\ of \pageref{LastPage}}
+
+% Header/footer rules
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{eablue}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{eablue}\leaders\hrule height \footrulewidth\hfill}}
+
+% ---------------------------------------------------------------------------
+% First page style (title page)
+% ---------------------------------------------------------------------------
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[L]{%
+    \textcolor{eablue}{\textbf{EA Program -- Pomona College}}%
+  }
+  \fancyhead[R]{\small\textcolor{eablue}{\sopnumber}}
+  \fancyfoot[L]{\small\textit{Rev.\ \soprevision\ (\today)}}
+  \fancyfoot[C]{\small\textsc{For Internal Use Only}}
+  \fancyfoot[R]{\small Page \thepage\ of \pageref{LastPage}}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+}
