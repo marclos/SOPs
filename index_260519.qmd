@@ -1,0 +1,222 @@
+---
+title: "Biogeochemistry Lab Resource Page"
+subtitle: "Standard Operating Procedures -- EA Program, Pomona College"
+author: "Marc Los Huertos"
+date: last-modified
+number-sections: false
+tbl-classes: table-sm
+---
+
+## How to Use This Site
+
+- **Find an SOP:** Use the sidebar navigation or the search bar (top right).
+- **Download a PDF:** Each SOP page has a "View as PDF" link at the top.
+- **Suggest a change:** Click the "Edit this page" link on any SOP, or
+  [open an issue](https://github.com/marclos/SOPs/issues/new).
+- **Create a new SOP:** Copy `lab_sops/SOP-TEMPLATE.qmd`, fill it in, and
+  submit a Pull Request.
+
+### Generic SOP Numbering Scheme
+
+| Range       | Category                        |
+|:------------|:--------------------------------|
+| 00--09      | General safety and admin        |
+| 10--24      | Equipment                       |
+| 25--39      | Instrumentation                 |
+| 40--54      | Water / aquatic methods         |
+| 55--74      | Soil methods                    |
+| 75--79      | Air / atmospheric methods       |
+| 80--94      | Microbes, Plants, and Animals methods|
+| 95--99      | Molecular Biology and DNA       |
+
+[Complete Set of SOPs (pdf)](https://marclos.github.io/SOPs/EA-Program-SOPs-Complete.pdf)
+
+## Field SOPs
+
+### General (F00--F09)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F01](field_sops/SOP-F01-field-safety.qmd) | Field Safety | 1.1 |
+| [F02](field_sops/SOP-F02-field-equipment-checklist.qmd)   | Field Equipment Checklist | -- |
+| [F03](field_sops/SOP-F03-field-notebook-protocols.qmd)   | Field Notebook Protocols | -- |
+| [F04](field_sops/)   | *TBD   | -- |
+| [F05](field_sops/SOP-F05-random-sampling-design.qmd)   | Random Sampling Design | 1.0 |
+
+### Equipment (F10--F24)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F10](field_sops/SOP-F10-vehicles.qmd) | EA Program Vehicle Use | -- |
+| [F11](field_sops/SOP-F11-electrical-power-in-the-field.qmd)   | Electrical Power in the Field | 0.2 |
+
+### Instrumentation (F25--F39)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F22](field_sops/SOP-F22-eureka-manta2.qmd) | Eureka Manta2 Multiprobe | 0.7 |
+| [F23](field_sops/SOP-F23-pygmy-type-aa-velocity-meters.qmd) | Pygmy and Type A Velocity Meters | -- |
+| [F24](field_sops/SOP-F24-sontek-velocity-meters) | Sontek Velocity Meters | -- |
+| [F25](field_sops/)   | HOBO Water Level Pressure Transducers   | -- |
+| [F04](field_sops/)   | *TBD   | -- |
+
+### Water / Aquatic Systems (F40--F54)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F41](field_sops/SOP-F41-surface-water-sampling.qmd) | Surface Water Sampling | 0.9 |
+| [F42](field_sops/SOP-F42-stream-discharge-measurement.qmd)   | Stream Discharge Measurement | 0.1 |
+| [F43](field_sops/SOP-F43-stormwater-sampling.qmd)   | Stormwater Sampling  | -- |
+| [F44](field_sops/SOP-F44-groundwater-sampling.qmd)   | Groundwater Sampling  | -- |
+| [F45](field_sops/SOP-F45-stream-physical-habitat.qmd)   | Stream Physical Habitat Analysis | 0.1 |
+
+
+### Soil Physical Characteristics and Processes (F55--F74)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F56](field_sops/SOP-F56-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 |
+| [F58](field_sops/SOP-F58-soil-texture-by-feel.qmd)   | Texture by Feel | 0.1 |
+| [F59](field_sops/SOP-F59-soil-bulk-density.qmd)   | Soil Bulk Density (Core Method) | -- |
+| [F60](field_sops/SOP-F60-soil-infiltration-rate.qmd)   | Soil Infiltration Rate | -- |
+| [F61](field_sops/SOP-F61-soil-temperature-profiles.qmd)   | Soil Temperature Profiles | 0.1 |
+
+### Air (F75--F79)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F70](field_sops/)   | *TBD --* | -- |
+| [F71](field_sops/SOP-F71-air-temperature-sensors.qmd)   | Air Temperature Monitoring (Sensors) | -- |
+| [F72](field_sops/SOP-F72-air-quality-portable-sensors.qmd)   |  Air Quality Monitoring (Portable Sensors) | -- |
+| [F73](field_sops/)   | *TBD -- Particulate Matter Sampling* | -- |
+| [F74](field_sops/SOP-F74-picarro-field-deployment.qmd)   | Picarro GHG Analyzer (Field Deployment) | 1.0 |
+| [F76](field_sops/)   | *Air Quality Monitoring (Portable Sensors)* | -- | TBD |
+
+### Microbes, Plants, and Animals (F80--F95)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [F80](field_sops/SOP-F80-inaturalist.qmd) | iNaturalist for Biodiversity Documentation | 0.1 |
+| [F81](field_sops/SOP-F81-vegetation-transect-surveys.qmd)   | Vegetation Transect Surveys | -- | 0.1 |
+| [F82](field_sops/SOP-F82-leaf-area-index.qmd)    | Leaf Area Index Measurement | -- | TBD |
+| [F83](field_sops/SOP-F83-plant-tissue-sampling.qmd)    | Plant Tissue Sampling | -- | TBD |
+| [F85](field_sops/SOP-F85-macroinvertebrate-sampling.qmd)   | Macroinvertebrate Sampling | -- |
+| [F86](field_sops/SOP-F86-bird-point-counts.qmd)   | Bird Point Count Surveys | -- |
+| [F87](field_sops/SOP-F87-camera-trap.qmd)  | Camera Trap (CamPark T20) | 0.1 | 
+| [F88](field_sops/SOP-F88-drone-operations.qmd)  | Drone Operations (DJI Matrice/Mavic) | 0.1 | Needs conversion |
+| [F89]  | *360 Camera* | 0.1 | Needs conversion |
+
+### Molecular Biology and DNA (F96--F99)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| F96   | *TBD * | -- |
+
+## Lab SOPs
+
+### General Lab Safety, Administration, and Maintanence (L01--L09)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L00](lab_sops/SOP-L00-equipment-inventory.qmd)   | Equipment and Instrument Inventory | 1.0 |
+| [L01](lab_sops/SOP-L01-laboratory-safety.qmd)   | Laboratory Safety | 1.04 |
+| [L02](lab_sops/SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 |
+| [L03](lab_sops/SOP-L03-chemical-spill-response.qmd)   | Chemical Spill Response | -- |
+| [L04](lab_sops/SOP-L04-chemical-inventory.qmd)   | Chemical Inventory Management | -- |
+| [L05](lab_sops/SOP-L05-lab-notebook-recording.qmd)   |  | 0.1 |
+| [L06](lab_sops/SOP-L06-foreign-soil-handling.qmd)   | Foreign Soil Handling (Import Permits) | 0.3 |
+| [L07](lab_sops/SOP-L07-rstudio-github.qmd)   | RStudio Server and GitHub | 1.5 |
+| [L08](lab_sops/SOP-L08-quality-control.qmd)   | Quality Control and Quality Assurance | 1.0 |
+
+### Laboratory Equipment (L10--L24)
+
+| SOP   | Title                          | Rev.  |
+|:------|:-------------------------------|:------|
+| [L11](lab_sops/)   | *Milli-Q Water System* | 0.2 | Needs conversion |
+| [L12](lab_sops/SOP-L12-glassware-cleaning.qmd)   | Glassware Cleaning and Preparation | 0.1 |
+| [L13](lab_sops/SOP-L13-using-balances.qmd)   | Using Balances | 0.2 | 
+| [L14](lab_sops/SOP-L14-micropipettes.qmd)   | Micropipettes | 0.3 |
+| L15](lab_sops/)   | *Using a Vortex Mixer* | 0.1 | Needs conversion |
+| [L16](lab_sops/SOP-L16-drying-ovens.qmd)   | Drying Ovens | 0.1 
+| [L17](lab_sops/SOP-L17-refrigerators-freezers.qmd)   | Refrigerators and Freezers | 0.1 | 
+| L18](lab_sops/)   | *Hot Plates and Dry Bath* | 0.1 | Needs conversion |
+| L19](lab_sops/)   | *Clinical Centrifuge* | 0.1 | Needs conversion |
+| [L20](lab_sops/SOP-L20-sorvall-centrifuge.qmd)   | Sorvall ST8R Centrifuge | 0.1 |
+| [F21](lab_sops/)   | *Ozone Generator Operation* | 0.1 | Needs conversion |
+
+### Instrumentation (L25--L39)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L25](lab_sops/SOP-L25-analytical-balance-calibration.qmd)   | Analytical Balance Calibration | 1.0 | TBD |
+| [L26](lab_sops/)   | *TBD -- Spectrophotometer Operation* | -- |
+| [L27](lab_sops/)   | *Accumet pH Meter* | 0.4 |
+| [L28](lab_sops/SOP-L28-trilogy-fluorometer.qmd)   | Trilogy Laboratory Fluorometer | 0.4 | 
+| [L29](lab_sops/SOP-L29-shimadzu-toc-l.qmd) | Shimadzu TOC/TON Analyzer | 1.0 |
+| [L30](lab_sops/SOP-L30-xrf-sample-prep-analysis.qmd)   | XRF (X-Ray Fluorescence) | 0.1 | 
+| [L31](lab_sops/)   | *ICP-MS* | 0.1 | Needs conversion |
+| [L32](lab_sops/)   | *LA-ICP-MS (Laser Ablation)* | 0.1 | 
+| [L33](lab_sops/SOP-L33-irms-general-instrument.qmd)   | ThermoFisher Delta V IRMS (Isotope Ratio Mass Spectrophotometer) | 0.2 | 
+| [L37](lab_sops/)   | *TBD -- Radiometric Dating* | 0.1 | 
+| [L38](lab_sops/)   | *TBD -- Ion Chromatograph Operation* | -- |
+| [L39](lab_sops/SOP-L39-revolve-microscope.qmd)   | Echo Labs Revolve Microscope | -- |
+
+### Water Analysis (L40--L54)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L40](lab_sops/SOP-L40-pH-conductivity-bench.qmd)   | pH and Conductivity (Bench) | 1.0 |
+| [L41](lab_sops/SOP-L41-alkalinity-titration.qmd)   | Alkalinity Titration | -- |
+| [L42](lab_sops/)   | *TBD -- Turbidity Measurement* | -- |
+| [L45](lab_sops/SOP-L45-hach-colorimetric.qmd)   | Hach Colorimetric Analysis | 1.0 |
+| [L46](lab_sops/)   | *TBD -- Nutrient Analysis (Water Samples)* | -- |
+| [L49](lab_sops/SOP-L49-colilert-quanti-tray.qmd)   | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |
+| [L50](lab_sops/)   | *TBD -- BOD5 (Biochemical Oxygen Demand)* | 0.3 | Needs conversion |
+| [L51](lab_sops/)   | *TBD -- Elisa: BPA, BPB, Pesticides * | 0.3 | Needs conversion |
+| [L52](lab_sops/SOP-L52-microplastics-water.qmd)   | Microplastics in Water | 0.2 | Needs conversion |
+| [L53](lab_sops/)   | *TBD --Pesticide Analysis* | 0.1 | Needs conversion |
+| [L54](lab_sops/SOP-L54-chlorophyll-extraction.qmd)   | Chlorophyll Extraction and Analysis | 0.1 |
+
+### Soil and Carbon Analysis (L55--L79)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L55](lab_sops/SOP-L55-soil-moisture.qmd) | Soil Moisture -- Gravimetric Method | 0.2 |
+| [L56](lab_sops/SOP-L56-texture-hydrometer.qmd)   | Soil Texture (Hydrometer Method) | 0.1 | 
+| [L57](lab_sops/SOP-L57-soil-pH-salinity.qmd)   | Soil pH and Salinity | 0.1 | 
+| [L58](lab_sops/SOP-L58-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.2 |
+| [L59](lab_sops/SOP-L59-nitrate-quick-test.qmd)   | Nitrate Quick Test | 0.1 | 
+| [L60](lab_sops/SOP-L60-extractable-phosphorus.qmd)   | Extractable Phosphorus | -- |
+| [L61](lab_sops/SOP-L61-loss-on-ignition.qmd) | Loss on Ignition (SOM) | 1.0 |
+| [L62](lab_sops/SOP-L62-total-carbon.qmd) |  Total Carbon -- Soil | 1.0 |
+| [L63](lab_sops/SOP-L63-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | 1.0 |
+| [L64](lab_sops/SOP-L64-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 |
+| [L65](lab_sops/SOP-L65-hotplate-acid-digestion.qmd)   | Hot-Plate Acid Digestion of Soils for Trace Metal Analysis | 0.2 | Needs conversion |
+| [L66](lab_sops/SOP-L66-mars-microwave-digestion.qmd)   | Soil Lead Analysis (MARS Microwave) | 0.2 | 
+| [L67](lab_sops/SOP-L67-nitrification-potential.qmd)   | Nitrification Potential | 0.1 |
+| [L68](lab_sops/SOP-L68-solvita-compost-maturity.qmd)   | Solvita Compost Maturity | 0.1 | 
+| [L69](lab_sops/SOP-L69-soil-ea-irms.qmd)   | Flash EA Soil dN15 and dC13 Combustion | 0.1 |
+| [L70](lab_sops/SOP-L70-carbonate-gasbench-irms.qmd)    | Carbonate Isotope Analysis by GasBench II-IRMS  | 0.1 |
+ 
+
+### Microbes, Plants, and Animals (L80--L94)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L80](lab_sops/)   | *TBD * | -- |
+| [L81](lab_sops/SOP-L81-wet-mount-microscopy.qmd)   | Wet Mount for Microscopy | -- |
+
+### Molecular Biology and DNA (L95--L99)
+
+| SOP   | Title                          | Current Rev. |
+|:------|:-------------------------------|:-------------|
+| [L95](lab_sops/SOP-L95-dna-extraction.qmd) | DNA Extraction | 0.1 |
+| [L96](lab_sops/SOP-L96-ddpcr-nitrogen-cycle-primers.qmd) | Primer Selection and Design for Nitrogen Cycle Genes | 0.1 |
+| [L97](lab_sops/SOP-L97-ddpcr-data-analysis.qmd) | ddPCR Data Export and Analysis | 0.1 |
+
+
+::: {.callout-note}
+This table is maintained manually. Italicized entries marked *TBD* are
+planned SOPs that have not yet been written. The sidebar navigation
+reflects every `.qmd` file in the repository automatically.
+:::

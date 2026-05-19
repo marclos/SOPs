@@ -63,7 +63,7 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|:------|
 | [F200](field_sops/SOP-F200-eureka-manta2.qmd) | Eureka Manta2 Multiprobe | 0.7 | |
 | [F201](field_sops/SOP-F201-pygmy-type-aa-velocity-meters.qmd) | Pygmy and Type A Velocity Meters | -- | |
-| [F202](field_sops/) | Sontek Velocity Meters | -- | |
+| [F202](field_sops/SOP-F202-sontek-velocity-meters.qmd) | Sontek Velocity Meters | -- | |
 | [F203](field_sops/) | HOBO Water Level Pressure Transducers | -- | |
 | F204 | *HOBO Weather Station Deployment* | -- | **NEW**: HOBO pendant/MX loggers for temp, RH, light |
 | F205 | *Handheld Turbidity Meter* | -- | **NEW**: field turbidity using LaMotte or Hach |
@@ -113,21 +113,20 @@ tbl-classes: table-sm
 
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
-| [F602](field_sops/SOP-F602-inaturalist.qmd) | iNaturalist for Biodiversity Documentation | 0.1 | |
-| [F603](field_sops/SOP-F603-vegetation-transect-surveys.qmd) | Vegetation Transect Surveys | 0.1 | |
-| F604 | *Tree DBH and Forest Inventory* | -- | **NEW**: diameter tape, basal area, allometry |
-| [F605](field_sops/SOP-F605-leaf-area-index.qmd) | Leaf Area Index Measurement | -- | |
-| F606 | *Canopy Cover (Densiometer and Hemispherical Photography)* | -- | **NEW**: currently embedded in F304; deserves standalone |
-| [F608](field_sops/SOP-F608-plant-tissue-sampling.qmd) | Plant Tissue Sampling | -- | |
-| [F610](field_sops/SOP-F610-macroinvertebrate-sampling.qmd) | Macroinvertebrate Sampling | -- | |
-| F611 | *Pollinator Observation Surveys* | -- | **NEW**: timed observations, pan traps |
-| [F615](field_sops/SOP-F615-bird-point-counts.qmd) | Bird Point Count Surveys | -- | |
-| [F620](field_sops/SOP-F620-camera-trap.qmd) | Camera Trap (CamPark T20) | 0.1 | |
-
-| F621 | *Acoustic Monitoring (Bioacoustics)* | -- | **NEW**: AudioMoth, sound recorders for birds/bats/frogs |
-| F622 | *Small Mammal Trapping (Sherman Traps)* | -- | **NEW**: live trapping, IACUC protocols |
-| [F630](field_sops/SOP-F630-drone-operations.qmd) | Drone Operations (DJI Matrice/Mavic) | 0.1 | |
-| F631 | *360 Camera* | 0.1 | |
+| [F600](field_sops/SOP-F600-inaturalist.qmd) | iNaturalist for Biodiversity Documentation | 0.1 | |
+| [F601](field_sops/SOP-F601-vegetation-transect-surveys.qmd) | Vegetation Transect Surveys | 0.1 | |
+| [F602](field_sops/SOP-F602-leaf-area-index.qmd) | Leaf Area Index Measurement | -- | |
+| [F603](field_sops/SOP-F603-plant-tissue-sampling.qmd) | Plant Tissue Sampling | -- | |
+| [F604](field_sops/SOP-F604-macroinvertebrate-sampling.qmd) | Macroinvertebrate Sampling | -- | |
+| [F605](field_sops/SOP-F605-bird-point-counts.qmd) | Bird Point Count Surveys | -- | |
+| [F606](field_sops/SOP-F606-camera-trap.qmd) | Camera Trap (CamPark T20) | 0.1 | |
+| [F607](field_sops/SOP-F607-drone-operations.qmd) | Drone Operations (DJI Matrice/Mavic) | 0.1 | |
+| F608 | *360 Camera* | 0.1 | |
+| F609 | *Acoustic Monitoring (Bioacoustics)* | -- | **NEW**: AudioMoth, sound recorders for birds/bats/frogs |
+| F610 | *Tree DBH and Forest Inventory* | -- | **NEW**: diameter tape, basal area, allometry |
+| F611 | *Small Mammal Trapping (Sherman Traps)* | -- | **NEW**: live trapping, IACUC protocols |
+| F612 | *Pollinator Observation Surveys* | -- | **NEW**: timed observations, pan traps |
+| F613 | *Canopy Cover (Densiometer and Hemispherical Photography)* | -- | **NEW**: currently embedded in F304; deserves standalone |
 
 ### Molecular Biology and DNA (F700--F799)
 
