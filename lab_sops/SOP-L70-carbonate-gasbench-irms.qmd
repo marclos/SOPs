@@ -1,0 +1,478 @@
+---
+# =============================================================================
+# SOP-L70: Carbonate Isotope Analysis by GasBench II-IRMS
+# =============================================================================
+# Application SOP for d13C and d18O determination in carbonate samples
+# using phosphoric acid digestion on the GasBench II coupled to the
+# Delta V IRMS.  Includes sample preparation, vial flushing, PAL
+# autosampler operation, and post-analysis data correction with R code.
+# =============================================================================
+
+title: "Carbonate Isotope Analysis by GasBench II-IRMS"
+sop-number: "SOP-L70"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "Environmental Analysis, Pomona College"
+  - name: "Kyle McCarty"
+    affiliation: "Oxtoby Isotope Lab, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2026-05-18"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the determination of $\delta^{13}$C and
+$\delta^{18}$O in carbonate minerals and sediments using phosphoric
+acid digestion and headspace analysis on the GasBench II coupled to
+the Delta V IRMS. It covers sample preparation, vial flushing and
+acidification, the analytical run, and post-analysis data correction.
+
+For general instrument operation, startup/shutdown, gas checks, tuning,
+and pre-analysis tests, see
+[SOP-L33](SOP-L33-irms-general-instrument.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** Carbonate-bearing samples (calcite, dolomite,
+  aragonite, shell, foraminifera, soil carbonates, cement, and similar
+  materials) analyzed for $\delta^{13}$C (VPDB) and $\delta^{18}$O
+  (VPDB or VSMOW) by phosphoric acid digestion and continuous-flow
+  IRMS.
+- **Does not apply to:** DIC in water, breath gas, CO~2~ at atmospheric
+  concentrations, or water equilibration methods (these use the
+  GasBench but with different sample preparation and Isodat methods).
+- **Location:** Sample preparation in SGM Rm 133; analysis in the
+  Oxtoby Isotope Lab, SGM Rm 135.
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                           |
+|:------------------|:---------------------------------------------------------|
+| Lab PI            | Approve methods, oversee data quality                    |
+| Lab Manager       | Prepare/verify Isodat methods; maintain GasBench and PAL |
+| Certified User    | All steps from sample prep through data reduction        |
+| Student Researcher| May perform sample prep and data reduction under supervision |
+
+
+## 4. Safety and Hazards
+
+See [SOP-L33, Section 4](SOP-L33-irms-general-instrument.qmd) for the
+full hazard list. Hazards specific to this application:
+
+::: {.callout-warning}
+### Application-Specific Hazards
+
+- **100% phosphoric acid (H~3~PO~4~):** Corrosive. Handle in the fume
+  hood. Wear nitrile gloves and safety glasses at all times. In case of
+  skin contact, flush with water for at least 15 minutes.
+- **Syringes and needles:** Puncture hazard. Dispose of used needles in
+  a sharps container.
+- **Pressurized vials:** Sealed Exetainer vials may be pressurized with
+  He after flushing. Vent carefully.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves
+
+
+## 5. Prerequisites
+
+- Certification as an IRMS User per
+  [SOP-L33](SOP-L33-irms-general-instrument.qmd)
+- [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+- [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+  (for phosphoric acid)
+- Familiarity with the Isodat software and GasBench/PAL interface
+
+
+## 6. Required Materials
+
+### 6.1 Equipment
+
+| Item                               | Notes                                    |
+|:-----------------------------------|:-----------------------------------------|
+| GasBench II with PAL autosampler   | Oxtoby Lab, SGM 135                      |
+| Heating block (or water bath)      | For maintaining reaction temperature     |
+| Analytical balance                 | For weighing carbonate samples           |
+| Fume hood                          | For acid handling                        |
+
+### 6.2 Consumables
+
+| Item                               | Notes                                    |
+|:-----------------------------------|:-----------------------------------------|
+| Exetainer vials (12 mL)           | Borosilicate glass with screw-cap septum |
+| Septa (butyl rubber or equivalent)| Replace after each use                   |
+| Syringes (various volumes)         | For acid injection                       |
+| Needles (side-port or blunt-tip)   | For acid injection and vial flushing     |
+| 100% phosphoric acid (H~3~PO~4~)  | Reagent grade; store in desiccator       |
+| Helium (He)                        | For vial flushing                        |
+
+### 6.3 Standards
+
+Carbonate reference materials with certified $\delta^{13}$C and
+$\delta^{18}$O values. Common choices:
+
+| Standard  | $\delta^{13}$C (VPDB) | $\delta^{18}$O (VPDB) |
+|:----------|:---------------------:|:---------------------:|
+| NBS-18    | --5.01                | --23.01               |
+| NBS-19    | 1.95                  | --2.20                |
+| IAEA-603  | 2.46                  | --2.37                |
+| LSVEC     | --46.6                | ---                   |
+
+::: {.callout-note}
+NBS-19 is exhausted at IAEA but may still be available in the lab.
+IAEA-603 is its replacement. Confirm which standards are on hand with
+the lab manager before planning your run.
+:::
+
+
+## 7. Sample Preparation
+
+### 7.1 Weighing
+
+1. Determine the carbonate content of your samples (if unknown, run a
+   pilot batch at several masses).
+2. Weigh the target mass of powdered sample into a clean, labeled
+   Exetainer vial. Typical masses:
+
+| Sample Type                | Approximate Mass |
+|:---------------------------|:----------------:|
+| Pure calcite / aragonite   | 100--200 $\mu$g  |
+| Impure carbonate / marl    | 0.5--2.0 mg      |
+| Soil carbonate (low CaCO~3~%) | 2--10 mg     |
+
+3. Prepare standards at a mass that produces a similar signal intensity
+   to your samples.
+4. Include blanks (empty vials, flushed and acidified identically).
+
+### 7.2 Vial Flushing
+
+Each vial must be flushed with helium to remove atmospheric N~2~,
+O~2~, and CO~2~ before acidification.
+
+**Online flushing (PAL autosampler):** The PAL can flush vials
+automatically, but this ties up the GasBench and IRMS. You cannot
+analyze samples while flushing.
+
+**Offline flushing (recommended for large batches):** Flush vials with
+a manifold or individual He line while the IRMS analyzes a previously
+prepared batch. Flush for a minimum of 5 minutes per vial at a flow
+rate sufficient to displace the headspace several times over.
+
+### 7.3 Acidification
+
+1. Work in the fume hood.
+2. Using a syringe and needle, inject the appropriate volume of 100%
+   phosphoric acid through the septum into each vial:
+
+| Reaction Temperature | Acid Volume (typical) | Reaction Time  |
+|:---------------------|:---------------------:|:--------------:|
+| 25 °C                | 0.1--0.3 mL           | 24 hours       |
+| 50 °C                | 0.1--0.3 mL           | 2--4 hours     |
+| 70 °C                | 0.1--0.3 mL           | 1--2 hours     |
+
+3. Place acidified vials in the heating block or water bath at the
+   specified reaction temperature for the required duration.
+4. Gently swirl or agitate vials periodically to ensure complete
+   reaction.
+
+::: {.callout-caution}
+The acid-fractionation factor for $\delta^{18}$O is temperature
+dependent. Use a consistent reaction temperature for all samples and
+standards in a batch. The Isodat method must match the temperature used.
+:::
+
+
+## 8. Sequence Design
+
+A typical GasBench carbonate sequence:
+
+| Position(s) | Contents                          | Purpose                        |
+|:------------|:----------------------------------|:-------------------------------|
+| 1--3        | Standard A (e.g., NBS-19)        | Normalization + conditioning   |
+| 4--6        | Standard B (e.g., NBS-18)        | Normalization anchor 2         |
+| 7           | Blank (empty flushed/acidified vial) | Blank check               |
+| 8--15       | Unknown samples                   |                                |
+| 16--18      | Check standard (e.g., NBS-19)    | Drift/QC monitor               |
+| 19--26      | Unknown samples                   |                                |
+| 27--29      | Check standard                    | Drift/QC monitor               |
+| ...         | Continue pattern                  |                                |
+| Last 3      | Standard A                        | End-of-run normalization check |
+| Last 3      | Standard B                        | End-of-run normalization check |
+
+The GasBench samples each vial 11 times (11 injections). The
+CO~2~\_630 method takes approximately 10.5 minutes per vial plus ~1
+minute for peak centering and magnet switching.
+
+
+## 9. Running the Analysis
+
+1. Complete all pre-analysis checks per
+   [SOP-L33, Section 13](SOP-L33-irms-general-instrument.qmd#sec-pre-analysis).
+   The GasBench is a low-flow peripheral, so backgrounds tend to be
+   lower and on/off tests pass more quickly than with the Flash EA.
+2. Load vials into the PAL autosampler tray. Verify positions match
+   the sequence.
+3. Build the sequence in Isodat. Select the appropriate carbonate
+   method (e.g., CO~2~\_630). Ensure **Peak Center** is checked.
+4. Click **Start**. Save as:
+   `YYYYMMDD_Project_SequenceID_Username.seq`
+5. Monitor the first few vials to confirm peak shapes and signal
+   intensities are within the expected range.
+
+
+## 10. End-of-Run Shutdown and Cleanup
+
+1. Confirm the sequence completed successfully.
+2. Remove vials from the PAL tray.
+3. Dispose of acidified vials and used needles/syringes properly
+   (sharps container for needles; acid waste for residual acid).
+4. Follow the shutdown procedure in SOP-L33, Section 11.3.
+5. Log gas usage and issues in the lab logbook.
+6. Clean up. Push in your chair.
+
+
+## 11. Post-Analysis Data Correction
+
+### 11.1 Overview
+
+The correction sequence is the same as for EA analyses
+(see [SOP-L75, Section 10](SOP-L75-soil-ea-irms.qmd)), applied to
+$\delta^{13}$C and $\delta^{18}$O:
+
+1. Blank correction (subtract blank CO~2~ contribution)
+2. Linearity correction
+3. Scale normalization (two-point or multi-point)
+4. Drift correction
+5. QC evaluation
+
+### 11.2 GasBench-Specific Considerations
+
+The GasBench produces 11 replicate injections per vial. Standard
+practice is to:
+
+- Discard the first 2--3 injections (carry-over and equilibration
+  artifacts).
+- Average the remaining 8--9 injections to produce a single
+  $\delta^{13}$C and $\delta^{18}$O value per vial.
+- Evaluate the within-vial standard deviation as an internal precision
+  check.
+
+```{r}
+#| label: gasbench-averaging
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+raw <- read_csv("data/raw/YYYYMMDD_Project_SeqID_User_raw.csv")
+
+# Each vial has 11 injections. Discard the first 3.
+vial_means <- raw %>%
+  group_by(Identifier1) %>%
+  mutate(injection = row_number()) %>%
+  filter(injection > 3) %>%
+  summarize(
+    d13C_mean    = mean(d13C_raw, na.rm = TRUE),
+    d13C_sd      = sd(d13C_raw, na.rm = TRUE),
+    d18O_mean    = mean(d18O_raw, na.rm = TRUE),
+    d18O_sd      = sd(d18O_raw, na.rm = TRUE),
+    Area44_mean  = mean(Area44, na.rm = TRUE),
+    n_injections = n(),
+    .groups      = "drop"
+  )
+
+# Classify
+vial_means <- vial_means %>%
+  mutate(
+    type = case_when(
+      str_detect(Identifier1, regex("blank|BLK", ignore_case = TRUE)) ~ "blank",
+      str_detect(Identifier1, "NBS|IAEA|LSVEC")                      ~ "standard",
+      TRUE                                                             ~ "sample"
+    )
+  )
+```
+
+### 11.3 Scale Normalization for Carbonates
+
+```{r}
+#| label: carbonate-normalization
+#| echo: true
+#| eval: false
+
+std_cert <- tibble(
+  Identifier1 = c("NBS-19", "NBS-18"),
+  d13C_true   = c(1.95, -5.01),
+  d18O_true   = c(-2.20, -23.01)
+)
+
+std_meas <- vial_means %>%
+  filter(Identifier1 %in% std_cert$Identifier1) %>%
+  left_join(std_cert, by = "Identifier1")
+
+fit_C <- lm(d13C_true ~ d13C_mean, data = std_meas)
+fit_O <- lm(d18O_true ~ d18O_mean, data = std_meas)
+
+cat(sprintf("d13C: slope = %.4f, intercept = %.4f\n",
+            coef(fit_C)[2], coef(fit_C)[1]))
+cat(sprintf("d18O: slope = %.4f, intercept = %.4f\n",
+            coef(fit_O)[2], coef(fit_O)[1]))
+
+vial_means <- vial_means %>%
+  mutate(
+    d13C_cal = coef(fit_C)[1] + coef(fit_C)[2] * d13C_mean,
+    d18O_cal = coef(fit_O)[1] + coef(fit_O)[2] * d18O_mean
+  )
+```
+
+### 11.4 Drift and QC
+
+Apply drift correction following the same approach as
+[SOP-L75, Section 10.7](SOP-L75-soil-ea-irms.qmd). Use your check
+standard (e.g., NBS-19) to monitor drift.
+
+```{r}
+#| label: carbonate-qc
+#| echo: true
+#| eval: false
+
+qc <- vial_means %>%
+  filter(type == "standard") %>%
+  group_by(Identifier1) %>%
+  summarize(
+    n         = n(),
+    d13C_mean = mean(d13C_cal, na.rm = TRUE),
+    d13C_sd   = sd(d13C_cal, na.rm = TRUE),
+    d18O_mean = mean(d18O_cal, na.rm = TRUE),
+    d18O_sd   = sd(d18O_cal, na.rm = TRUE),
+    .groups   = "drop"
+  )
+
+print(qc)
+
+results <- vial_means %>%
+  filter(type == "sample") %>%
+  select(Identifier1, d13C_cal, d18O_cal)
+
+write_csv(results,
+  "data/processed/YYYYMMDD_Project_SeqID_carbonates_calibrated.csv")
+write_csv(qc,
+  "data/processed/YYYYMMDD_Project_SeqID_carbonates_qc.csv")
+```
+
+
+## 12. QC/QA Criteria
+
+### 12.1 Within-Vial Precision
+
+The standard deviation of the 8--9 retained injections per vial should
+be:
+
+| Parameter        | Maximum 1$\sigma$ (per mil) |
+|:-----------------|:---------------------------:|
+| $\delta^{13}$C   | 0.06                        |
+| $\delta^{18}$O   | 0.10                        |
+
+Vials exceeding these thresholds may indicate insufficient sample,
+incomplete reaction, or septum leakage.
+
+### 12.2 Between-Vial Standard Reproducibility
+
+| Parameter        | Maximum 1$\sigma$ (per mil) |
+|:-----------------|:---------------------------:|
+| $\delta^{13}$C   | 0.10                        |
+| $\delta^{18}$O   | 0.15                        |
+
+### 12.3 Calibration Accuracy
+
+After normalization, the mean of each reference material should fall
+within 0.10 per mil ($\delta^{13}$C) or 0.15 per mil ($\delta^{18}$O)
+of its certified value.
+
+### 12.4 Blanks
+
+CO~2~ signal in blank vials should be <1% of the mean sample signal.
+
+
+## 13. Reporting
+
+Report final values as:
+
+- $\delta^{13}$C vs. VPDB
+- $\delta^{18}$O vs. VPDB (conventional for carbonates) or VSMOW
+  (specify which)
+
+Include: reference materials and certified values, within-run
+precision, corrections applied, acid digestion temperature, and the
+acid-fractionation factor used (if converting from acid-liberated CO~2~
+to mineral $\delta^{18}$O).
+
+
+## 14. Troubleshooting
+
+| Symptom                              | Possible Cause / Action                       |
+|:-------------------------------------|:----------------------------------------------|
+| No CO~2~ peak or very small signal   | Insufficient sample mass; incomplete reaction |
+| High blank signal                    | Atmospheric CO~2~ leaking through septum; replace septa |
+| Poor within-vial precision           | Septum leak; vial not fully flushed           |
+| $\delta^{18}$O offset but $\delta^{13}$C OK | Wrong reaction temperature; acid fractionation mismatch |
+| First 3 injections wildly different  | Normal carry-over; discard as planned         |
+| Signal too large (off scale)         | Too much sample; reduce mass                  |
+
+
+## 15. References
+
+Coplen, T. B. (2011). Guidelines and recommended terms for expression
+of stable-isotope-ratio and gas-ratio measurement results. *Rapid
+Communications in Mass Spectrometry*, 25(17), 2538--2560.
+
+Kim, S.-T., Mucci, A., & Taylor, B. E. (2007). Phosphoric acid
+fractionation factors for calcite and aragonite between 25 and 75 °C.
+*Chemical Geology*, 246(3--4), 135--146.
+
+Swart, P. K., Burns, S. J., & Leder, J. J. (1991). Fractionation of
+the stable isotopes of oxygen and carbon in carbon dioxide during the
+reaction of calcite with phosphoric acid as a function of temperature
+and technique. *Chemical Geology: Isotope Geoscience Section*, 86(2),
+89--96.
+
+
+## 16. Related SOPs
+
+| SOP   | Title                                       | Relationship                      |
+|:------|:--------------------------------------------|:----------------------------------|
+| [L01](SOP-L01-laboratory-safety.qmd)       | Laboratory Safety       | Required prerequisite             |
+| [L02](SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Acid handling               |
+| [L06](SOP-L06-quality-control.qmd)         | Quality Control and Quality Assurance | General QC framework   |
+| [L33](SOP-L33-irms-general-instrument.qmd) | IRMS -- General Instrument Use | Instrument-level procedures |
+| [L75](SOP-L75-soil-ea-irms.qmd)            | Soil CN by Flash EA-IRMS | Companion application SOP        |
+
+
+## 17. Training Record
+
+Before performing carbonate isotope analysis independently, personnel
+must:
+
+1. Read this SOP and [SOP-L33](SOP-L33-irms-general-instrument.qmd) in
+   full
+2. Be a certified IRMS User (SOP-L33, Section 6)
+3. Complete
+   [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   (acid handling)
+4. Observe a GasBench carbonate run from vial preparation through data
+   export
+5. Perform a supervised run with acceptable QC results
+6. Complete a supervised data reduction session
+7. Be signed off by the lab manager or PI

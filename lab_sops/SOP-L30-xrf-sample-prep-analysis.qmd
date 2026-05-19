@@ -1,0 +1,500 @@
+---
+# =============================================================================
+# SOP-L30: X-Ray Fluorescence (XRF) Sample Preparation and Analysis
+# =============================================================================
+# Covers the full workflow from rock powdering through fusion bead
+# preparation, polishing, and analysis on the PANalytical XRF
+# spectrometer using the SuperQ software.
+# =============================================================================
+
+title: "X-Ray Fluorescence (XRF) Sample Preparation and Analysis"
+sop-number: "SOP-L30"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "Environmental Analysis, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2026-05-18"
+    author: "Marc Los Huertos"
+    changes: "Initial release; migrated from Geology Dept. XRF manual"
+---
+
+## 1. Purpose
+
+This SOP describes the complete workflow for preparing geological rock
+samples and analyzing their major-element oxide composition by
+wavelength-dispersive X-ray fluorescence (WD-XRF). The procedure covers
+sample powdering, flux fusion bead preparation, bead polishing, and
+instrument operation on the PANalytical XRF spectrometer using the
+SuperQ software with the "Geology Beads" application.
+
+
+## 2. Scope
+
+- **Applies to:** Rock, mineral, and geological samples analyzed as
+  lithium tetraborate fusion beads for major-element oxide determination
+  (e.g., SiO~2~, Al~2~O~3~, Fe~2~O~3~, CaO, MgO, Na~2~O, K~2~O,
+  TiO~2~, P~2~O~5~, MnO).
+- **Does not apply to:** Pressed-pellet trace-element analysis, handheld
+  (portable) XRF measurements, or non-geological materials.
+- **Locations:** Rock preparation lab (powdering and polishing),
+  analytical lab / wet lab (weighing, fusion), XRF lab (instrument
+  operation).
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                        |
+|:------------------|:------------------------------------------------------|
+| Lab PI            | Approve methods, ensure training compliance            |
+| Lab Technician    | Maintain instrument, assist with troubleshooting       |
+| Trained Personnel | Follow this SOP, maintain sample tracking, clean up    |
+| New Students      | Complete training before independent use               |
+
+Contact the lab technician, Jade Star, or Bob with any questions.
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **High-temperature furnace:** The muffle furnace operates at 1000 °C.
+  Crucibles and tiles removed from the furnace are extremely hot. Do not
+  touch them, even with gloves, until fully cooled. Note the burn marks on
+  the existing gloves.
+- **Compressed air:** Loud; wear ear protection when blowing out equipment.
+- **Rock chipper:** Flying rock fragments are common. Always wear safety
+  glasses. Never look into the chipper while it is running.
+- **Shatterbox:** The unit vibrates intensely and can travel across the
+  floor. Get help repositioning it if needed.
+- **Chemical reagents:** Dilithium tetraborate flux is a fine powder; avoid
+  inhalation. Ethanol is flammable.
+- **X-ray radiation:** The XRF instrument contains an X-ray source.
+  Follow all posted radiation safety procedures. Do not open the
+  instrument lid while the arm is moving or the flap is up.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses (always, in all labs)
+- [ ] Lab coat
+- [ ] Nitrile gloves (especially when handling beads and flux)
+- [ ] Ear protection (when using compressed air)
+- [ ] Heat-resistant gloves (when loading/unloading the furnace)
+
+### General Lab Rules
+
+Before you start, make sure each sample has a unique number. Label all
+containers and keep your workspace clean. Consult the safety manuals
+posted in each lab. Do not work in the lab without letting someone know
+your plans and estimated time. There are phones and safety showers in all
+labs.
+
+
+## 5. Prerequisites and Required Reading
+
+- SOP-L01: Laboratory Safety
+- Furnace operating instructions (posted on the wall above the furnace)
+- This SOP in full
+
+::: {.callout-important}
+Minimize contamination at every step. Wear gloves, clean equipment
+thoroughly between samples, and assume any shared equipment is dirty
+unless you just cleaned it. When you are done, leave the lab and
+equipment cleaner than you found it.
+:::
+
+
+## 6. Required Materials
+
+### 6.1 Equipment
+
+| Item                               | Location / Notes                         |
+|:-----------------------------------|:-----------------------------------------|
+| Small rock chipper                 | Rock prep lab                            |
+| Rocklabs shatterbox (tungsten carbide head) | Rock prep lab                   |
+| Analytical balance                 | Analytical lab, corner by XRD room       |
+| Vortex mixer                       | Counter left of weigh station            |
+| Deionizing bar                     | Right of the Vortex mixer                |
+| Muffle furnace (1000 °C)           | Far left corner, wet lab                 |
+| Grinding/polishing laps (4 stages) | Darkroom / grinding lab                  |
+| Ultrasonic cleaner (sonicator)     | Grinding lab or XRF lab                  |
+| Diamond-tipped pen or rotary tool  | Darkroom                                 |
+| PANalytical XRF spectrometer       | XRF lab                                  |
+
+### 6.2 Consumables
+
+| Item                                | Notes                                   |
+|:------------------------------------|:----------------------------------------|
+| Dilithium tetraborate flux          | Stored in desiccator, left of weigh station |
+| Graphite crucibles (9 per batch)    | Drawer under the furnace                |
+| Plastic cups with lids              | Cabinet left of weigh station           |
+| Brown butcher paper                 | Shelves, back wall, rock prep lab       |
+| White printer paper                 | For transferring powder                 |
+| Kimwipes                            | General use                             |
+| Ethanol                             | Bottle on shatterbox table; bulk jug on side counter |
+| Sand (for cleaning shatterbox)      | Bowl in center of table, rock prep lab  |
+| Green Brillo pads                   | Drawer, rock prep lab                   |
+| Sample bags and labels              | Drawer under counter, XRF lab           |
+| XRF sample sheets                   | Drawer left of weigh station            |
+| SiC sandpaper                       | For removing saw marks                  |
+
+
+## 7. Procedure
+
+### 7.1 Step 1: Powdering the Sample
+
+A complete fusion batch is 9 samples. If you plan fusions, turn on the
+furnace first (see @sec-first-fusion) since it takes about 1 hour to
+reach 1000 °C.
+
+#### Chipping
+
+1. Place the sample in a small, labeled container. If the sample is
+   large, chip it to a size suitable for grinding and to provide a
+   representative subsample.
+2. If the sample is weathered, remove weathered surfaces with a hammer
+   or by sawing. Rinse the slab, dry with an ethanol rinse and
+   compressed air, and ideally dry overnight in the drying oven to
+   remove residual water from sawing. If saw marks are present on the
+   analysis surface, remove them by dry-sanding with SiC sandpaper.
+3. For very coarse-grained samples, use a splitter to obtain a
+   representative split. Ask Jade Star or the technician for guidance.
+4. Wearing safety glasses, turn on the small rock chipper (switch on
+   the power cord). Drop the sample into the opening, covering it with
+   the container or the plastic board. **Do not look into the chipper
+   while it is running.**
+5. Check the chipper drawer level; empty it when full. Transfer chips to
+   a labeled container.
+6. Clean the chipper: remove the pin from the left side of the bar
+   holding the stationary plate. Slide the bar out to the right. Wipe
+   all contact surfaces with an ethanol-dampened Kimwipe (both plates,
+   sides, and collecting tray).
+
+#### Grinding
+
+7. Lift the shatterbox lid, unscrew the handle (~8 cranks), and remove
+   the tungsten carbide head (it is heavy). Remove the top of the bowl
+   and confirm the ring and puck are present and clean. If unsure, run
+   a scoop of sand for 15 seconds and discard the powder.
+8. Add your chips to the bowl (inside and outside the ring). Add one
+   drop of ethanol. If you add too much, leave the top off briefly to
+   let it evaporate.
+9. Replace the bowl lid, set the head in the shatterbox, tighten the
+   handle, and close the shatterbox lid.
+10. Set the timer to 2 minutes for a fresh sample (30 seconds for a
+    touch-up re-grind). Press the green button.
+11. Wait for the shatterbox to finish before opening. If it has traveled
+    across the floor, get help to reposition it.
+12. Remove the head and place it on a clean sheet of white printer paper
+    laid over brown butcher paper. Using the brush (middle drawer under
+    the side counter; confirm the metal bristle holder is taped over),
+    brush powder from the lid, ring, puck, and bowl onto the paper.
+    Keep all parts on the edge of the paper so exterior metal surfaces
+    do not contact the sample. Funnel the powder into your labeled
+    container using the paper. Use a fresh sheet of paper for every sample.
+
+#### Cleaning the Head
+
+13. If powder is stuck, scrub with a green Brillo pad. If that is
+    insufficient, run a scoop of sand for 15 seconds and discard the
+    powder.
+14. Detail all pieces with compressed air (place the hose in the vise
+    and hold pieces in the airflow; scrub with the Brillo pad). **Do
+    not let the metal hose tip touch any bowl surface.** Use ear
+    protection.
+15. Finish with an ethanol wipe on a Kimwipe. The bowl dries quickly
+    from residual heat.
+16. After the last sample, clean up, recycle paper, replace the bowl,
+    and turn off the shatterbox.
+
+
+### 7.2 Step 2: Weighing and Mixing
+
+1. Bring your 9 powdered samples to the analytical lab. Get an XRF
+   sample sheet from the drawer left of the weigh station and fill out
+   the top portion. Place the sheet on a wooden tray (from the cabinet
+   in the XRF lab) and keep it next to the balance.
+2. Retrieve a small cup of flux from the desiccator (pour from the
+   large jug into the cup labeled "Flux").
+3. For each sample:
+   a. Label a plastic cup lid with the sample number (cross out any
+      previous labels). Label the corresponding circle on the XRF
+      sample sheet.
+   b. Place the cup (no lid) in the cardboard holder on the balance,
+      close the sliding door, and zero.
+   c. Weigh 3.5000 g ($\pm$ 0.0004 g) of sample powder into the cup.
+      Record the exact mass. Zero the balance.
+   d. Add 7.0000 g ($\pm$ 0.0004 g) of flux (2:1 flux-to-sample ratio).
+      Record the mass. If you add too much flux, remove the excess but
+      **do not return it to the reagent container** -- discard it.
+   e. If you have less than 3.5 g of sample, weigh what you have and
+      adjust the flux to maintain the 2:1 ratio.
+   f. Seal the lid tightly.
+4. Arrange the cups on the counter in the order they appear on the
+   sample sheet.
+5. Mix each cup on the Vortex mixer for about one minute, moving the
+   cup around on the pad. If powder clings to the sides, pass the
+   deionizing bar (red switch) over the cup.
+
+
+### 7.3 Step 3: First Fusion {#sec-first-fusion}
+
+#### Furnace Startup
+
+1. Flip the black switch on the front of the furnace.
+2. Press the T1 temperature button and confirm T = 1000 °C. Adjust on
+   the keypad if needed.
+3. Set a reasonable duration (e.g., 24, 48, or 72 hours) on the first
+   Time/Duration button. If you will use the furnace multiple times in
+   a week, set the duration for the full week to reduce thermal cycling
+   wear on the heating elements.
+4. Press Enter and Start. An audible click confirms the ramp has begun.
+   It takes roughly 1 hour to reach 1000 °C.
+
+::: {.callout-caution}
+Do not spill glass in the furnace or introduce liquids. Do not use this
+furnace for temperatures below 500 °C -- use a regular drying oven
+instead. Do not shut off the furnace mid-cycle with the power button;
+let it run out its programmed time and shut off automatically.
+:::
+
+#### Loading Crucibles
+
+5. Select 9 sturdy-looking graphite crucibles from the drawer under the
+   furnace. Clean the inside of each by gently wiping with a Kimwipe
+   (avoid scoring the bottom) and blowing out with compressed air under
+   the fume hood.
+6. Back at the analytical lab, carefully empty each cup into the
+   corresponding crucible. Use the deionizing bar if powder clings. Place
+   each crucible on its matching circle on the XRF sample sheet.
+   **Maintaining the correct order is critical -- once the powder is in
+   the crucible, there is no way to tell samples apart.**
+7. Place the empty cups (lids on) in the box labeled "Dirty Cups for
+   Blowing Out."
+
+#### Fusing
+
+8. In the wet lab, place a tile on the brick stand (small hole facing
+   toward you) and crank the stand up until the tile is about halfway up
+   the side of the furnace. Arrange the crucibles on the tile in the same
+   layout as on the sample sheet (orient so the tile hole corresponds to
+   the bottom of the sheet).
+9. Put on both long heat-resistant gloves. Using the tongs (drawer under
+   the furnace), slide the tile into the furnace. Close the door as
+   quickly as possible -- the temperature drops rapidly when the door is
+   open.
+10. Wait 20--30 minutes for the furnace to recover to 1000 °C, then
+    leave the samples for 10--15 minutes. Longer fusion times are
+    acceptable and help carbon-rich samples degas fully. Insufficient
+    time leads to poor fusions.
+11. While fusing, clean the plastic cups: blow out each cup and lid with
+    compressed air under the fume hood (do not touch the inside). Discard
+    cups that have been used 6 or more times.
+
+#### Removing Crucibles
+
+12. Crank the stand down a few turns. Wearing gloves, open the furnace
+    and position the stand in front. Pull the tile out using the tongs
+    and the tile hole. Move the stand to the left side and close the
+    furnace. Crank the stand down level with the hot plate and slide the
+    tile onto it. The hot plate dissipates heat faster than the bricks.
+
+::: {.callout-danger}
+The tile and crucibles are extremely hot when removed from the furnace.
+Do not touch them, even with gloves, until fully cooled.
+:::
+
+
+### 7.4 Step 4: Regrinding and Second Fusion
+
+1. After the crucibles have cooled completely (at least 2 hours), place
+   them on the sample sheet in the correct order and take them to the
+   rock grinding lab.
+2. Set up as before: brown butcher paper, white paper, brush, Brillo
+   pad, compressed air, Kimwipes, and ethanol.
+3. For each sample, turn the crucible over and gently tap the bead out
+   onto the Brillo pad. Scrub off any residual graphite. Place the bead
+   in the shatterbox bowl (outside the ring), add a drop of ethanol, and
+   grind for 30 seconds.
+4. While grinding, clean the crucible (Kimwipe and air).
+5. Brush the powder onto a piece of white paper, funnel it back into the
+   clean crucible, and return it to the sample sheet. **Do not tamp down
+   the powder.** Clean the shatterbox head thoroughly before the next
+   sample.
+6. Once all 9 samples are reground, take the tray back to the wet lab
+   and fuse again as before. The furnace recovers to 1000 °C faster on
+   the second round (typically 15--20 minutes). Fuse for 10--15 minutes.
+
+::: {.callout-tip}
+This is a good time to prepare sample bags and labels (ask for a
+template; bags are in a drawer under the counter in the XRF lab).
+:::
+
+7. After removal, check that the glass fully covers the bottom of each
+   crucible (look carefully -- do not bring your face close while still
+   hot). If the glass is incomplete, wait until the bead is no longer
+   glowing orange (a darker red), then gently press the brass rod (drawer
+   under the furnace) into the crucible to flatten the glass. Do not
+   press so hard that glass flows up around the rod. Repeat if needed.
+8. Once the beads have cooled completely, remove them one at a time and
+   place each in the correctly labeled bag (following the sample sheet
+   order). If any bead is cracked, broken, or has air-bubble holes
+   extending more than halfway through, return it to the crucible for a
+   third fusion (only a few minutes at 1000 °C are needed).
+
+
+### 7.5 Step 5: Engraving and Polishing
+
+#### Engraving
+
+1. Take the samples to the darkroom. Turn on the upper light switch.
+2. Using the diamond-tipped pen or rotary tool (on the counter at left),
+   etch the sample number on the top (non-flat) side of each bead. If
+   the top is glassy, either tool works. If carbon is built up on the
+   top, use the rotary tool.
+
+#### Polishing
+
+Three important rules for polishing:
+
+- **Keep laps dry when not in use but wet when grinding.** Laps will rust
+  if left wet. When finished with a lap, move the water spigot aside and
+  spin the wheel at high speed until all water is gone.
+- **Do not leave beads in water.** Water will hydrate the glass and
+  affect the analysis. If a bead is not actively being polished, dip it
+  in ethanol and leave it under the heat lamp to dry.
+- **Do not transfer grains between laps.** Rinse the bead in water after
+  each stage before moving to the next.
+
+3. Turn on the water to all four laps using the faucet on the right side
+   of the sink. Adjust each spigot as needed.
+4. Start with the coarse-grain disc (normally far left, ~150 rpm). Place
+   the bead flat-side down and slide it across the lap, removing
+   irregularities and air bubbles. Generally, at least 1 mm of material
+   should be removed from the bottom.
+5. Move to the medium lap, removing scratches from the coarse stage.
+6. Move to the third (fine) lap, removing scratches from the medium
+   stage. Apply moderate pressure at each stage.
+7. Rinse the bead in water, dip in ethanol, and leave under the lamp on
+   a piece of paper to dry. Repeat for all beads.
+8. When finished with a lap, move the spigot aside and spin-dry the lap
+   for several minutes.
+
+#### Ultrasonic Cleaning
+
+9. Check the water level in the sonicator and add water if needed.
+10. Place 4--5 beads in a beaker, add enough ethanol to cover them, and
+    run the sonicator for about 1 minute. **Do not put your hand in the
+    sonicator while it is running.**
+11. Remove the beads (wearing gloves) and place them on a Kimwipe to dry.
+
+
+### 7.6 Step 6: Loading and Running the XRF
+
+1. Open the XRF lid and load the dry beads into cups, flat side down.
+   Wear gloves and avoid touching the flat (analytical) surface.
+2. On the computer, open a "Measure and Analyze" window from the
+   SuperQ Manager.
+3. Click the multi-cup icon (upper left) to open the Sample Changer.
+   Double-click the first cup position (A1). Enter the sample name; set
+   type to "Routine," application to "Geology Beads," priority to
+   "Normal," and verify that the weights are correct. Click Add. The
+   changer advances automatically (A2, A3, etc.). Available positions
+   are A1--A8 and B5--B8.
+4. Once all samples are entered, click **Measure**.
+
+::: {.callout-note}
+If the XRF has not been running recently, the instrument needs to warm up
+until the front-panel readouts display 60 and 50. Run the first bead
+until those values are reached, then click Abort. Wait for the arm to
+return the sample, then click Measure to restart. Running samples before
+warm-up can compromise the analysis.
+:::
+
+5. The XRF changes samples automatically after each analysis finishes.
+   If you have more samples than loaded positions, you can open the lid
+   and load additional beads while the instrument runs -- but **do not
+   open the lid if the flap is up and the arm is moving**.
+
+
+### 7.7 Step 7: Retrieving Results
+
+1. Open a "Results Evaluation" window. Set the archive to "Geology
+   Beads" and adjust the date range. Use the "Name Mask" field
+   (enter your prefix followed by the wildcard character) to filter
+   results. Click on a sample and then click "View."
+2. To export data: open a "Results Quantitative" window (icon in upper
+   left). Adjust date and name mask. Click the Print icon, then
+   "Delimited Values Report" to clipboard. Paste into a spreadsheet.
+
+
+## 8. Quality Control
+
+- Verify the 2:1 flux-to-sample ratio is maintained for every sample.
+  Record exact masses on the XRF sample sheet.
+- Visually inspect beads before loading: reject cracked, broken, or
+  bubble-compromised beads.
+- Run laboratory reference standards alongside unknowns to monitor
+  instrument drift and accuracy.
+- If a bead required a third fusion, note this on the sample sheet.
+
+
+## 9. Cleanup Checklist
+
+- [ ] All paper recycled (butcher paper, white paper)
+- [ ] Shatterbox bowl cleaned and replaced; shatterbox off
+- [ ] Chipper cleaned (ethanol wipe on all contact surfaces)
+- [ ] Crucibles returned to the drawer (or discarded if degraded)
+- [ ] Plastic cups blown out and restocked (or discarded after 6 uses)
+- [ ] Polishing laps spun dry
+- [ ] Sonicator drained if not in regular use
+- [ ] XRF sample sheet completed and filed
+- [ ] All personal items removed from the lab
+- [ ] Work surfaces wiped down
+
+
+## 10. Troubleshooting
+
+| Symptom                                   | Possible Cause / Action                          |
+|:------------------------------------------|:-------------------------------------------------|
+| Glass does not cover crucible bottom       | Insufficient fusion time; re-fuse longer         |
+| Bead cracked or has deep air bubbles       | Air trapped during fusion; re-fuse briefly       |
+| Carbon pellet at bottom of bead            | Carbon not fully degassed; fuse longer next time |
+| Powder clings to plastic cup walls         | Pass the deionizing bar over the cup             |
+| Shatterbox head has stuck-on powder        | Run sand for 15 seconds; scrub with Brillo pad   |
+| XRF front-panel numbers not at 60/50       | Instrument not warmed up; run a bead until ready |
+| XRF data appear anomalous                  | Sample may have been run before warm-up; re-run  |
+
+For problems you cannot resolve, contact the lab technician, Jade Star,
+or Bob.
+
+
+## 11. Definitions
+
+- **Fusion bead:** A glass disc produced by melting a mixture of powdered
+  rock sample and lithium tetraborate flux at 1000 °C. The homogeneous
+  glass eliminates mineralogical effects during XRF analysis.
+- **Flux:** Dilithium tetraborate (Li~2~B~4~O~7~), a reagent that lowers
+  the melting point of the sample and produces a homogeneous glass.
+- **Shatterbox:** A vibratory ring-and-puck mill used to grind rock chips
+  to a fine powder.
+- **SuperQ:** The PANalytical software used to control the XRF
+  spectrometer, define measurement sequences, and retrieve results.
+- **Geology Beads:** The SuperQ application/archive configured for
+  major-element oxide analysis of fusion beads.
+
+
+## 12. References
+
+Norrish, K., & Hutton, J. T. (1969). An accurate X-ray spectrographic
+method for the analysis of a wide range of geological samples.
+*Geochimica et Cosmochimica Acta*, 33(4), 431--453.
+
+Claisse, F. (2003). *Fusion and Fluxes for XRF Sample Preparation*.
+Corporation Scientifique Claisse.

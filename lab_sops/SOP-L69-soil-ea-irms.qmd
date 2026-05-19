@@ -1,0 +1,569 @@
+---
+# =============================================================================
+# SOP-L69: Soil Carbon and Nitrogen Analysis by Flash EA-IRMS
+# =============================================================================
+# Application SOP for d13C, d15N, %C, and %N determination in soil and
+# sediment samples using the Flash IRMS EA coupled to the Delta V IRMS.
+# Includes sample preparation, sequence design, and complete post-analysis
+# data correction workflow with R code.
+# =============================================================================
+
+title: "Soil Carbon and Nitrogen Analysis by Flash EA-IRMS"
+sop-number: "SOP-L69"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "Environmental Analysis, Pomona College"
+  - name: "Kyle McCarty"
+    affiliation: "Oxtoby Isotope Lab, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2026-05-18"
+    author: "Marc Los Huertos"
+    changes: "Initial release; migrated from LaTeX SOPs 75A/75B and SOP 75 v0.1"
+---
+
+## 1. Purpose
+
+This SOP describes the complete workflow for determining
+$\delta^{13}$C, $\delta^{15}$N, and elemental concentrations (%C, %N)
+in soil and sediment samples by combustion on the Thermo Scientific
+Flash IRMS Elemental Analyzer (EA) coupled to the Delta V IRMS through
+the ConFlo IV interface. It covers sample preparation, sequence design,
+the analytical run, and post-analysis data correction including blank
+correction, linearity correction, scale normalization, and drift
+correction.
+
+For general instrument operation, startup/shutdown, gas checks, tuning,
+and pre-analysis tests, see
+[SOP-L33](SOP-L33-irms-general-instrument.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** Soil, sediment, and plant tissue samples analyzed for
+  $\delta^{13}$C, $\delta^{15}$N, %C, and %N by combustion EA-IRMS in
+  NC (dual reactor) mode.
+- **Does not apply to:** Sulfur isotope analysis (NCS mode; requires
+  dedicated reactor and Sulfinert column), GasBench applications
+  (see [SOP-L76](SOP-L76-carbonate-gasbench-irms.qmd)), TC/EA
+  applications ($\delta^{2}$H, $\delta^{18}$O), or liquid samples.
+- **Location:** Sample preparation in SGM Rm 133; analysis in the
+  Oxtoby Isotope Lab, SGM Rm 135.
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                           |
+|:------------------|:---------------------------------------------------------|
+| Lab PI            | Approve methods, oversee data quality                    |
+| Lab Manager       | Prepare/verify Isodat methods; maintain reactors         |
+| Certified User    | All steps from sample prep through data reduction        |
+| Student Researcher| May perform sample prep and data reduction under supervision |
+
+
+## 4. Safety and Hazards
+
+See [SOP-L33, Section 4](SOP-L33-irms-general-instrument.qmd) for the
+full hazard list. Hazards specific to this application:
+
+- **Hot ash fingers and reactor tubes** during reactor inspection or
+  exchange.
+- **Chromium oxide, silvered cobaltous/cobaltic oxide, reduced copper
+  wires** used in reactor packing. Consult SDS sheets.
+- **Tin capsules:** small and sharp when crimped.
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves
+
+
+## 5. Prerequisites
+
+- Certification as an IRMS User per
+  [SOP-L33](SOP-L33-irms-general-instrument.qmd)
+- [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+- Familiarity with the Isodat software (see SOP-L33, Section 15)
+
+
+## 6. Sample Preparation
+
+### 6.1 Drying and Grinding
+
+1. Weigh soil or sediment into an aluminum crucible.
+2. Oven-dry at 105 °C until constant mass.
+3. Grind dried samples to a fine, homogeneous powder using a mortar and
+   pestle or ball mill.
+
+### 6.2 Elemental Pre-screening
+
+Submit a subset of samples to elemental analysis (EA only, no IRMS) to
+determine %C and %N. Use these results to calculate the target mass for
+isotopic analysis. An online calculator is available at
+<http://stableisotopefacility.ucdavis.edu/sample-weight-calculator.html>.
+
+### 6.3 Capsule Weighing
+
+1. Tare the microbalance with an empty tin capsule.
+2. Weigh the target mass of sample (typically 0.5--20 mg, depending on
+   %C and %N) into the capsule.
+3. If required by your method, add approximately 2 parts WO~3~ as a
+   combustion aid.
+4. Crimp the capsule tightly into a ball, eliminating all air pockets.
+   A poorly sealed capsule introduces atmospheric N~2~.
+5. Place each capsule into a labeled cell well.
+6. Prepare standards and blanks identically. Plan for at least 2--3
+   replicates of each bracketing standard per run.
+
+::: {.callout-tip}
+Maintain a detailed sample log with IDs, target masses, and actual
+masses. This log is essential for data reduction.
+:::
+
+
+## 7. Sequence Design
+
+A well-designed sequence is critical for data quality. A typical layout:
+
+| Position(s) | Contents                          | Purpose                      |
+|:------------|:----------------------------------|:-----------------------------|
+| 1--3        | Conditioning standard (e.g., LOCSS) | Stabilize reactor/column    |
+| 4--5        | Blank (empty tin capsule)         | Blank determination          |
+| 6--8        | Standard A (e.g., USGS40)        | Normalization anchor 1       |
+| 9--11       | Standard B (e.g., USGS41a)       | Normalization anchor 2       |
+| 12--19      | Unknown samples                   |                              |
+| 20--22      | Check standard (e.g., LOCSS)     | Drift/QC monitor             |
+| 23--30      | Unknown samples                   |                              |
+| 31--33      | Check standard                    | Drift/QC monitor             |
+| ...         | Continue pattern                  |                              |
+| Last 3      | Standard A replicates             | End-of-run normalization check |
+| Last 3      | Standard B replicates             | End-of-run normalization check |
+
+::: {.callout-note}
+Each autosampler carousel holds 32 wells. Up to three carousels can be
+stacked for 94 positions total. A full NC dual run of 94 samples takes
+roughly 12 hours.
+:::
+
+
+## 8. Running the Analysis
+
+1. Complete all pre-analysis checks per
+   [SOP-L33, Section 13](SOP-L33-irms-general-instrument.qmd#sec-pre-analysis):
+   gas checks, backgrounds, on/off tests, and blank determination.
+2. Build the sequence in Isodat (see SOP-L33, Section 15).
+3. Load autosampler carousels. Verify that physical positions match the
+   sequence.
+4. Click **Start**. Save as:
+   `YYYYMMDD_Project_SequenceID_Username.seq`
+5. Monitor the first several samples to confirm chromatographic
+   separation and peak shapes are normal.
+
+### 8.1 Approximate Run Times
+
+| Analysis              | Time per Sample (approx.) |
+|:----------------------|:-------------------------:|
+| $\delta^{15}$N only   | ~4--5 min                 |
+| $\delta^{13}$C only   | ~5--6 min                 |
+| NC dual method        | ~7--8 min                 |
+
+Times include ~1 minute for peak centering and magnet switching.
+
+
+## 9. End-of-Run Shutdown and Cleanup
+
+1. Confirm the sequence completed successfully.
+2. Follow the shutdown procedure in SOP-L33, Section 11.3.
+3. Log gas usage and any issues in the lab logbook.
+4. Remove samples and personal items. Clean up. Push in your chair.
+
+
+## 10. Post-Analysis Data Correction
+
+### 10.1 Overview
+
+Corrections are applied in the following order:
+
+1. **Blank correction:** Subtract the blank contribution from peak
+   areas.
+2. **Linearity correction:** Adjust $\delta$ values for signal-size
+   dependence.
+3. **Scale normalization:** Calibrate to the international scale using
+   bracketing standards.
+4. **Drift correction:** Correct for temporal trends during the run.
+5. **QC evaluation:** Verify standard reproducibility and accuracy.
+
+::: {.callout-important}
+Apply corrections in this order. Skipping or reordering steps can
+introduce systematic error.
+:::
+
+### 10.2 Export Raw Data
+
+Export completed results from Isodat as CSV. Include: sample identifier,
+peak areas (Area 28, Area 44), raw $\delta$ values vs. reference gas,
+and signal amplitudes (Ampl 28, Ampl 44). Save as:
+
+`YYYYMMDD_Project_SeqID_User_raw.csv`
+
+### 10.3 Import and Classify
+
+```{r}
+#| label: import-classify
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+raw <- read_csv("data/raw/YYYYMMDD_Project_SeqID_User_raw.csv")
+
+# Classify rows
+raw <- raw %>%
+  mutate(
+    type = case_when(
+      str_detect(Identifier1, regex("blank|BLK", ignore_case = TRUE)) ~ "blank",
+      str_detect(Identifier1, "LOCSS|HOCSS|Urea|USGS")               ~ "standard",
+      TRUE                                                             ~ "sample"
+    )
+  )
+
+count(raw, type)
+```
+
+### 10.4 Blank Correction
+
+Empty tin capsules contribute a small amount of N~2~ and CO~2~. Subtract
+the mean blank peak area from all samples.
+
+```{r}
+#| label: blank-correction
+#| echo: true
+#| eval: false
+
+blank_means <- raw %>%
+  filter(type == "blank") %>%
+  summarize(
+    Area28_blank = mean(Area28, na.rm = TRUE),
+    Area44_blank = mean(Area44, na.rm = TRUE)
+  )
+
+cat(sprintf("Mean blank Area 28: %.1f mVs\n", blank_means$Area28_blank))
+cat(sprintf("Mean blank Area 44: %.1f mVs\n", blank_means$Area44_blank))
+
+raw <- raw %>%
+  mutate(
+    Area28_corr = Area28 - blank_means$Area28_blank,
+    Area44_corr = Area44 - blank_means$Area44_blank
+  )
+```
+
+::: {.callout-note}
+If blank areas exceed 5% of the smallest sample peak area, investigate
+contamination (leaky capsules, dirty carousel) before proceeding.
+:::
+
+### 10.5 Linearity Correction
+
+Use the slope from the pre-analysis on/off tests to adjust $\delta$
+values for signal-size dependence.
+
+```{r}
+#| label: linearity-correction
+#| echo: true
+#| eval: false
+
+# Enter on/off test data from your pre-analysis records
+onoff <- tibble(
+  amplitude = c(1000, 2000, 4000, 6000, 8000, 10000),   # mV
+  d15N_raw  = c(-0.15, -0.10, -0.02, 0.03, 0.07, 0.12)  # per mil vs ref gas
+)
+
+lin_fit <- lm(d15N_raw ~ amplitude, data = onoff)
+lin_slope <- coef(lin_fit)["amplitude"]
+
+cat(sprintf("Linearity slope (d15N): %.6f per mil / mV\n", lin_slope))
+
+# Reference amplitude = mean amplitude of your normalization standards
+ref_ampl <- mean(raw$Ampl28[raw$type == "standard"], na.rm = TRUE)
+
+raw <- raw %>%
+  mutate(d15N_lin = d15N_raw - lin_slope * (Ampl28 - ref_ampl))
+
+# Repeat for d13C using Ampl44 and the corresponding on/off data
+```
+
+### 10.6 Scale Normalization (Two-Point)
+
+Map measured $\delta$ values onto the international scale using two
+reference materials with certified values.
+
+```{r}
+#| label: two-point-normalization
+#| echo: true
+#| eval: false
+
+std_cert <- tibble(
+  Identifier1 = c("USGS40", "USGS41a"),
+  d13C_true   = c(-26.39, 36.55),
+  d15N_true   = c(-4.52, 47.6)
+)
+
+std_meas <- raw %>%
+  filter(Identifier1 %in% std_cert$Identifier1) %>%
+  group_by(Identifier1) %>%
+  summarize(
+    d13C_meas = mean(d13C_lin, na.rm = TRUE),
+    d15N_meas = mean(d15N_lin, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  left_join(std_cert, by = "Identifier1")
+
+# Calibration regressions: true = slope * measured + intercept
+fit_C <- lm(d13C_true ~ d13C_meas, data = std_meas)
+fit_N <- lm(d15N_true ~ d15N_meas, data = std_meas)
+
+cat(sprintf("d13C calibration: slope = %.4f, intercept = %.4f\n",
+            coef(fit_C)[2], coef(fit_C)[1]))
+cat(sprintf("d15N calibration: slope = %.4f, intercept = %.4f\n",
+            coef(fit_N)[2], coef(fit_N)[1]))
+
+raw <- raw %>%
+  mutate(
+    d13C_cal = coef(fit_C)[1] + coef(fit_C)[2] * d13C_lin,
+    d15N_cal = coef(fit_N)[1] + coef(fit_N)[2] * d15N_lin
+  )
+```
+
+::: {.callout-tip}
+### Multi-Point Normalization
+If three or more reference materials are available (e.g., USGS40,
+USGS41a, USGS61), include all of them. This improves robustness and
+provides a check on calibration linearity through the residuals.
+:::
+
+### 10.7 Drift Correction
+
+If check standards (e.g., LOCSS) show a systematic shift over the
+course of the run, apply a time-based correction.
+
+```{r}
+#| label: drift-correction
+#| echo: true
+#| eval: false
+
+checks <- raw %>%
+  filter(Identifier1 == "LOCSS") %>%
+  arrange(Row) %>%
+  mutate(
+    d13C_residual = d13C_cal - (-26.66),
+    d15N_residual = d15N_cal - 7.30
+  )
+
+drift_C <- lm(d13C_residual ~ Row, data = checks)
+drift_N <- lm(d15N_residual ~ Row, data = checks)
+
+# Apply correction only if drift is statistically significant
+if (summary(drift_C)$coefficients["Row", "Pr(>|t|)"] < 0.05) {
+  cat(sprintf("Significant d13C drift: %.5f per mil / position\n",
+              coef(drift_C)["Row"]))
+  raw <- raw %>%
+    mutate(d13C_final = d13C_cal -
+             predict(drift_C, newdata = tibble(Row = Row)))
+} else {
+  cat("No significant d13C drift.\n")
+  raw <- raw %>% mutate(d13C_final = d13C_cal)
+}
+
+if (summary(drift_N)$coefficients["Row", "Pr(>|t|)"] < 0.05) {
+  cat(sprintf("Significant d15N drift: %.5f per mil / position\n",
+              coef(drift_N)["Row"]))
+  raw <- raw %>%
+    mutate(d15N_final = d15N_cal -
+             predict(drift_N, newdata = tibble(Row = Row)))
+} else {
+  cat("No significant d15N drift.\n")
+  raw <- raw %>% mutate(d15N_final = d15N_cal)
+}
+```
+
+
+## 11. Elemental Concentrations (%C, %N)
+
+Elemental concentrations are determined from blank-corrected peak areas
+using a calibration curve built from standards of known %C and %N.
+
+```{r}
+#| label: elemental-concentrations
+#| echo: true
+#| eval: false
+
+# Build area-to-mass calibration from standards with known %C and %N
+std_elemental <- tibble(
+  Identifier1 = c("LOCSS", "HOCSS", "Urea"),
+  pctC_true   = c(2.28, 42.1, 20.0),   # replace with actual certified values
+  pctN_true   = c(0.20, 4.6, 46.6),    # replace with actual certified values
+  mass_mg     = c(10.0, 2.5, 1.5)      # replace with actual weighed masses
+)
+
+# Merge with measured areas
+std_areas <- raw %>%
+  filter(Identifier1 %in% std_elemental$Identifier1) %>%
+  group_by(Identifier1) %>%
+  summarize(
+    Area44_mean = mean(Area44_corr, na.rm = TRUE),
+    Area28_mean = mean(Area28_corr, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  left_join(std_elemental, by = "Identifier1") %>%
+  mutate(
+    C_mass_ug = pctC_true / 100 * mass_mg * 1000,
+    N_mass_ug = pctN_true / 100 * mass_mg * 1000
+  )
+
+# Fit: area = slope * mass_ug
+fit_pctC <- lm(Area44_mean ~ C_mass_ug, data = std_areas)
+fit_pctN <- lm(Area28_mean ~ N_mass_ug, data = std_areas)
+
+# Apply to samples
+raw <- raw %>%
+  mutate(
+    C_mass_ug = (Area44_corr - coef(fit_pctC)[1]) / coef(fit_pctC)[2],
+    N_mass_ug = (Area28_corr - coef(fit_pctN)[1]) / coef(fit_pctN)[2],
+    pctC = C_mass_ug / (sample_mass_mg * 1000) * 100,
+    pctN = N_mass_ug / (sample_mass_mg * 1000) * 100
+  )
+```
+
+::: {.callout-note}
+The `sample_mass_mg` column must come from your sample log. Merge it
+with the Isodat export before running this step.
+:::
+
+
+## 12. QC/QA Criteria
+
+### 12.1 Blanks
+
+Blank peak areas must be negligible (<5% of the smallest sample peak).
+
+### 12.2 Standard Reproducibility
+
+| Parameter        | Maximum 1$\sigma$ (per mil) |
+|:-----------------|:---------------------------:|
+| $\delta^{13}$C   | 0.10                        |
+| $\delta^{15}$N   | 0.15                        |
+
+### 12.3 Calibration Accuracy
+
+After normalization, the mean calibrated value of each reference
+material should fall within 0.2 per mil of its certified value.
+
+### 12.4 Drift
+
+If the difference between first and last check standards exceeds
+0.3 per mil, apply a drift correction. If drift exceeds 0.5 per mil
+after correction, re-analyze the affected portion.
+
+### 12.5 QC Summary Report
+
+```{r}
+#| label: qc-summary
+#| echo: true
+#| eval: false
+
+qc <- raw %>%
+  filter(type == "standard") %>%
+  group_by(Identifier1) %>%
+  summarize(
+    n         = n(),
+    d13C_mean = mean(d13C_final, na.rm = TRUE),
+    d13C_sd   = sd(d13C_final, na.rm = TRUE),
+    d15N_mean = mean(d15N_final, na.rm = TRUE),
+    d15N_sd   = sd(d15N_final, na.rm = TRUE),
+    .groups   = "drop"
+  )
+
+print(qc)
+
+# Write final results
+results <- raw %>%
+  filter(type == "sample") %>%
+  select(Identifier1, d13C_final, d15N_final, pctC, pctN)
+
+write_csv(results,
+  "data/processed/YYYYMMDD_Project_SeqID_calibrated.csv")
+write_csv(qc,
+  "data/processed/YYYYMMDD_Project_SeqID_qc_summary.csv")
+```
+
+
+## 13. Reporting
+
+Report final values as:
+
+- $\delta^{13}$C vs. VPDB (Vienna Pee Dee Belemnite)
+- $\delta^{15}$N vs. Air-N~2~
+
+Include in any data table or publication:
+
+- Reference materials used and their certified values
+- Within-run precision (1$\sigma$) of each reference material
+- Which corrections were applied (blank, linearity, drift)
+- The calibration equation (slope and intercept)
+
+
+## 14. Troubleshooting
+
+See [SOP-L33, Section 18](SOP-L33-irms-general-instrument.qmd) for the
+full troubleshooting table. Issues specific to soil CN analysis:
+
+| Symptom                              | Possible Cause / Action                       |
+|:-------------------------------------|:----------------------------------------------|
+| Noisy or double N~2~ peak            | Capsule not fully sealed; air leak             |
+| CO~2~ peak tailing into next sample  | Column needs bake-out or replacement           |
+| %C or %N values systematically low   | Sample mass error; re-check sample log         |
+| High blank at m/z 28                 | Dirty carousel; residual sample in drop tube   |
+| Standards acceptable, samples erratic | Sample heterogeneity; grind finer or increase mass |
+
+
+## 15. References
+
+Coplen, T. B. (2011). Guidelines and recommended terms for expression
+of stable-isotope-ratio and gas-ratio measurement results. *Rapid
+Communications in Mass Spectrometry*, 25(17), 2538--2560.
+
+Paul, D., Skrzypek, G., & Forizs, I. (2007). Normalization of measured
+stable isotopic compositions to isotope reference scales -- a review.
+*Rapid Communications in Mass Spectrometry*, 21(18), 3006--3014.
+
+Werner, R. A., & Brand, W. A. (2001). Referencing strategies and
+techniques in stable isotope ratio analysis. *Rapid Communications in
+Mass Spectrometry*, 15(7), 501--519.
+
+
+## 16. Related SOPs
+
+| SOP   | Title                                       | Relationship                      |
+|:------|:--------------------------------------------|:----------------------------------|
+| [L01](SOP-L01-laboratory-safety.qmd)       | Laboratory Safety       | Required prerequisite             |
+| [L06](SOP-L06-quality-control.qmd)         | Quality Control and Quality Assurance | General QC framework   |
+| [L33](SOP-L33-irms-general-instrument.qmd) | IRMS -- General Instrument Use | Instrument-level procedures |
+| [L76](SOP-L76-carbonate-gasbench-irms.qmd) | Carbonate Isotopes by GasBench-IRMS | Companion application SOP |
+
+
+## 17. Training Record
+
+Before performing soil CN analysis independently, personnel must:
+
+1. Read this SOP and [SOP-L33](SOP-L33-irms-general-instrument.qmd) in
+   full
+2. Be a certified IRMS User (SOP-L33, Section 6)
+3. Demonstrate capsule preparation under supervision
+4. Perform a supervised analytical run with acceptable QC results
+5. Complete at least one supervised data reduction session
+6. Be signed off by the lab manager or PI

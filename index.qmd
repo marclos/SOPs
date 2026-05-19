@@ -146,18 +146,16 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
 | [L25](lab_sops/SOP-L25-analytical-balance-calibration.qmd)   | Analytical Balance Calibration | 1.0 | TBD |
-| L26   | *TBD -- Spectrophotometer Operation* | -- |
-| L27   | *Accumet pH Meter* | 0.4 | Needs conversion |
+| [L26](lab_sops/)   | *TBD -- Spectrophotometer Operation* | -- |
+| [L27](lab_sops/)   | *Accumet pH Meter* | 0.4 |
 | [L28](lab_sops/SOP-L28-trilogy-fluorometer.qmd)   | Trilogy Laboratory Fluorometer | 0.4 | 
 | [L29](lab_sops/SOP-L29-shimadzu-toc-l.qmd) | Shimadzu TOC/TON Analyzer | 1.0 |
-| L30   | *XRF (X-Ray Fluorescence)* | 0.1 | Needs conversion |
-| L31   | *ICP-MS* | 0.1 | Needs conversion |
-| L32   | *LA-ICP-MS (Laser Ablation)* | 0.1 | Needs conversion |
-| L33   | *IRMS -- Becoming a User* | 0.2 | Needs conversion |
-| L34   | *IRMS -- Flash EA Operation* | 0.2 | Needs conversion |
-| L35   | *IRMS -- Post-Analysis Correction* | 0.1 | Needs conversion |
-| L37   | *Radiometric Dating* | 0.1 | Needs conversion |
-| L38   | *TBD -- Ion Chromatograph Operation* | -- |
+| [L30](lab_sops/SOP-L30-xrf-sample-prep-analysis.qmd)   | XRF (X-Ray Fluorescence) | 0.1 | 
+| [L31](lab_sops/)   | *ICP-MS* | 0.1 | Needs conversion |
+| [L32](lab_sops/)   | *LA-ICP-MS (Laser Ablation)* | 0.1 | 
+| [L33](lab_sops/SOP-L33-irms-general-instrument.qmd)   | ThermoFisher Delta V IRMS (Isotope Ratio Mass Spectrophotometer) | 0.2 | 
+| [L37](lab_sops/)   | *Radiometric Dating* | 0.1 | 
+| [L38](lab_sops/)   | *TBD -- Ion Chromatograph Operation* | -- |
 | [L39](lab_sops/SOP-L39-revolve-microscope.qmd)   | Echo Labs Revolve Microscope | -- |
 
 ### Water Analysis (L40--L54)
@@ -175,7 +173,7 @@ tbl-classes: table-sm
 | [L53](lab_sops/)   | *Pesticide Analysis* | 0.1 | Needs conversion |
 | [L54](lab_sops/SOP-L54-chlorophyll-extraction.qmd)   | Chlorophyll Extraction and Analysis | 0.1 |
 
-### Soil and Carbon Analysis (L55--L69)
+### Soil and Carbon Analysis (L55--L79)
 
 | SOP   | Title                          | Current Rev. |
 |:------|:-------------------------------|:-------------|
@@ -193,7 +191,9 @@ tbl-classes: table-sm
 | [L66](lab_sops/SOP-L66-mars-microwave-digestion.qmd)   | Soil Lead Analysis (MARS Microwave) | 0.2 | 
 | [L67](lab_sops/SOP-L67-nitrification-potential.qmd)   | Nitrification Potential | 0.1 |
 | [L68](lab_sops/SOP-L68-solvita-compost-maturity.qmd)   | Solvita Compost Maturity | 0.1 | 
-| [L69](lab_sops/SOP-L75-flash-ea-soil-combustion.qmd)   | Flash EA Soil dN15 and dC13 Combustion | 0.1 |
+| [L69](lab_sops/SOP-L69-flash-ea-soil-combustion.qmd)   | Flash EA Soil dN15 and dC13 Combustion | 0.1 |
+| [L70](lab_sops/SOP-L70-carbonate-gasbench-irms.qmd)    | Flash EA Soil dN15 and dC13 Combustion | 0.1 |
+ 
 
 ### Microbes, Plants, and Animals (L80--L94)
 
