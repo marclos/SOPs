@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-L05: Laboratory Notebook Recording
+# SOP-L010: Laboratory Notebook Recording
 # =============================================================================
 # Physical notebook policy and good documentation practice (GDP) for
 # laboratory records: notebook selection, pen requirements, entry
@@ -9,7 +9,7 @@
 # =============================================================================
 
 title: "Laboratory Notebook Recording"
-sop-number: "SOP-L05"
+sop-number: "SOP-L010"
 author:
   - name: "Marc Los Huertos"
     affiliation: "Environmental Analysis, Pomona College"
@@ -39,9 +39,9 @@ Program data are traceable, contemporaneous, and defensible.
 
 This SOP covers *how* to record. For *what* to record during an
 analytical session, see
-[SOP-L06 Quality Control](SOP-L06-quality-control.qmd), Section 7.1.
+[SOP-L802 Quality Control](SOP-L802-quality-control.qmd), Section 7.1.
 For field notebook protocols, see
-[SOP-F03 Field Notebook Protocols](../field_sops/SOP-F03-field-notebook-protocols.qmd).
+[SOP-F003 Field Notebook Protocols](../field_sops/SOP-F003-field-notebook-protocols.qmd).
 
 
 ## 2. Scope
@@ -156,7 +156,7 @@ discard the original note.
 Write enough detail so that another trained researcher could reproduce
 your work using only the notebook and the referenced SOP. At minimum,
 include all items listed in
-[SOP-L06, Section 7.1](SOP-L06-quality-control.qmd).
+[SOP-L802, Section 7.1](SOP-L802-quality-control.qmd).
 
 ### 6.4 Printouts, Graphs, and Attachments
 
@@ -266,8 +266,8 @@ CSVs, R scripts, photographs). The notebook must reference these files:
 - Example: "Raw data exported to
   `lab_data/BFS_Soils/2026/TOC-L/raw/20260518_BFS_run01.csv`"
 - Electronic files are managed per
-  [SOP-L06, Section 7.2](SOP-L06-quality-control.qmd) and
-  [SOP-L05](SOP-L05-rstudio-github.qmd).
+  [SOP-L802, Section 7.2](SOP-L802-quality-control.qmd) and
+  [SOP-L801](SOP-L801-rstudio-github.qmd).
 
 The notebook is the master index; electronic files are supplements. If
 there is ever a conflict between the notebook and an electronic record,
@@ -322,10 +322,10 @@ Administration.
 
 | SOP   | Title                                       | Relationship                      |
 |:------|:--------------------------------------------|:----------------------------------|
-| [L01](SOP-L01-laboratory-safety.qmd)       | Laboratory Safety       | Training documentation forms |
-| [L05](SOP-L05-rstudio-github.qmd)          | RStudio Server and GitHub | Electronic data management  |
-| [L06](SOP-L06-quality-control.qmd)         | Quality Control and QA  | What to record (Section 7.1) |
-| [F03](../field_sops/SOP-F03-field-notebook-protocols.qmd) | Field Notebook Protocols | Field counterpart        |
+| [L002](SOP-L002-laboratory-safety.qmd)       | Laboratory Safety       | Training documentation forms |
+| [L801](SOP-L801-rstudio-github.qmd)          | RStudio Server and GitHub | Electronic data management  |
+| [L802](SOP-L802-quality-control.qmd)         | Quality Control and QA  | What to record (Section 7.1) |
+| [F003](../field_sops/SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | Field counterpart        |
 
 
 ## 15. Training Record

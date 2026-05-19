@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-L04: Chemical Inventory Management
+# SOP-L005: Chemical Inventory Management
 # =============================================================================
 # Procedures for maintaining the laboratory chemical inventory:
 # receiving, logging, labeling, storage assignment, periodic audits,
@@ -8,7 +8,7 @@
 # =============================================================================
 
 title: "Chemical Inventory Management"
-sop-number: "SOP-L04"
+sop-number: "SOP-L005"
 author:
   - name: "Marc Los Huertos"
     affiliation: "Environmental Analysis, Pomona College"
@@ -111,7 +111,7 @@ Every chemical container in the lab must have a label that includes:
 - Researcher name
 - Expiration date (if applicable)
 
-See [SOP-L02, Section 6.4](SOP-L02-hazardous-materials-handling.qmd)
+See [SOP-L003, Section 6.4](SOP-L003-hazardous-materials-handling.qmd)
 for detailed labeling requirements.
 
 
@@ -123,7 +123,7 @@ for detailed labeling requirements.
    inspect the container for damage, leaks, or missing labels.
 2. If the container is damaged or leaking, do not accept it into the
    lab. Notify the lab manager. Follow spill procedures if needed
-   ([SOP-L03](SOP-L03-chemical-spill-response.qmd)).
+   ([SOP-L004](SOP-L004-chemical-spill-response.qmd)).
 3. Add the chemical to the inventory spreadsheet immediately,
    completing all required columns.
 4. Verify that the SDS is on file. If not, download it from the
@@ -183,7 +183,7 @@ When a chemical is expired, no longer needed, or in poor condition:
 1. Update the inventory spreadsheet: change Status to "Disposed" and
    record the disposal date.
 2. Follow the waste disposal procedures in
-   [SOP-L02, Section 8](SOP-L02-hazardous-materials-handling.qmd):
+   [SOP-L003, Section 8](SOP-L003-hazardous-materials-handling.qmd):
    fill out a waste tag, complete the packing manifest, and schedule
    pickup.
 3. Do not pour chemicals down the drain unless explicitly permitted by
@@ -251,7 +251,7 @@ attention:
 - Dispose of expired chemicals promptly rather than letting them
   accumulate.
 
-See [SOP-L02, Section 8.3](SOP-L02-hazardous-materials-handling.qmd)
+See [SOP-L003, Section 8.3](SOP-L003-hazardous-materials-handling.qmd)
 for additional waste minimization guidance.
 
 
@@ -271,9 +271,9 @@ Chemicals*. National Fire Protection Association.
 
 | SOP   | Title                                       | Relationship                      |
 |:------|:--------------------------------------------|:----------------------------------|
-| [L01](SOP-L01-laboratory-safety.qmd)       | Laboratory Safety       | General safety framework     |
-| [L02](SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Storage, labeling, waste disposal |
-| [L03](SOP-L03-chemical-spill-response.qmd) | Chemical Spill Response | Spill procedures for inventoried chemicals |
+| [L002](SOP-L002-laboratory-safety.qmd)       | Laboratory Safety       | General safety framework     |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Storage, labeling, waste disposal |
+| [L004](SOP-L004-chemical-spill-response.qmd) | Chemical Spill Response | Spill procedures for inventoried chemicals |
 
 
 ## 11. Training Record
@@ -281,7 +281,7 @@ Chemicals*. National Fire Protection Association.
 Before ordering, receiving, or storing chemicals independently,
 personnel must:
 
-1. Read this SOP and [SOP-L02](SOP-L02-hazardous-materials-handling.qmd)
+1. Read this SOP and [SOP-L003](SOP-L003-hazardous-materials-handling.qmd)
    in full
 2. Demonstrate how to add a new chemical to the inventory spreadsheet
 3. Locate SDS binders and the electronic SDS folder
