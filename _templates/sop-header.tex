@@ -22,7 +22,8 @@
 % ---------------------------------------------------------------------------
 \newcommand{\sopnumber}{SOP-XXX}
 \newcommand{\soprevision}{--}
-
+% In the "Default macros" section, add:
+\newcommand{\soptitle}{}
 % ---------------------------------------------------------------------------
 % Header and Footer
 % ---------------------------------------------------------------------------
@@ -33,8 +34,9 @@
 \fancyhead[L]{%
   \small\textcolor{eablue}{\textbf{EA Program -- Pomona College}}%
 }
+% Then change the header-right from just the SOP number to number + title:
 \fancyhead[R]{%
-  \small\textcolor{eablue}{\sopnumber}%
+  \small\textcolor{eablue}{\sopnumber: \soptitle}%
 }
 
 % Footer
