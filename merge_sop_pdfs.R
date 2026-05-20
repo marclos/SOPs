@@ -172,10 +172,9 @@ anchors <- make_anchor(toc_entries$Number)
 
 # -- TOC table: each row is a clickable hyperlink --------------------------
 toc_lines <- sprintf(
-  "  \\hyperlink{%s}{%s} & \\hyperlink{%s}{%s} \\\\",
+  "  \\hyperlink{%s}{%s} & %s \\\\",
   anchors,
   escape_latex(toc_entries$Number),
-  anchors,
   escape_latex(toc_entries$SOP)
 )
 
