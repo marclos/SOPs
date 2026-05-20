@@ -145,11 +145,36 @@ print(toc_entries, row.names = FALSE)
 # ---------------------------------------------------------------------------
 # 3. Render a TOC cover page to PDF via a temporary .Rmd
 # ---------------------------------------------------------------------------
-toc_lines <- sprintf("| %s | %s | %d |", toc_entries$Number, toc_entries$SOP, toc_entries$Start)
+
+# Escape any LaTeX special characters in titles and SOP numbers
+escape_latex <- function(x) {
+  x <- gsub("\\", "\\textbackslash{}", x, fixed = TRUE)
+  x <- gsub("&", "\\&", x, fixed = TRUE)
+  x <- gsub("%", "\\%", x, fixed = TRUE)
+  x <- gsub("\\$", "\\$", x, fixed = TRUE)
+  x <- gsub("#", "\\#", x, fixed = TRUE)
+  x <- gsub("_", "\\_", x, fixed = TRUE)
+  x <- gsub("\\{", "\\{", x, fixed = TRUE)
+  x <- gsub("\\}", "\\}", x, fixed = TRUE)
+  x <- gsub("~", "\\textasciitilde{}", x, fixed = TRUE)
+  x <- gsub("\\^", "\\textasciicircum{}", x, fixed = TRUE)
+  x
+}
+
+# Build LaTeX tabularx rows
+toc_lines <- sprintf("  %s & %s & %d \\\\",
+                     escape_latex(toc_entries$Number),
+                     escape_latex(toc_entries$SOP),
+                     toc_entries$Start)
+
 toc_table <- paste(
-  "| SOP Number | Title | Page |",
-  "|:-----------|:------|-----:|",
-  paste(toc_lines, collapse = "\n"),
+  "\\begin{tabularx}{\\textwidth}{|p{2.2cm}|X|r|}",
+  "\\hline",
+  "\\textbf{SOP Number} & \\textbf{Title} & \\textbf{Page} \\\\",
+  "\\hline",
+  paste(toc_lines, collapse = "\n  \\hline\n"),
+  "\\hline",
+  "\\end{tabularx}",
   sep = "\n"
 )
 
@@ -161,6 +186,8 @@ date: "', format(Sys.Date(), "%B %d, %Y"), '"
 output:
   pdf_document:
     latex_engine: pdflatex
+header-includes:
+  - \\usepackage{tabularx}
 geometry: margin=1in
 fontsize: 11pt
 ---
