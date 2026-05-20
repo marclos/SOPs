@@ -1,0 +1,262 @@
+---
+# =============================================================================
+# SOP-F209: Dissolved Oxygen Meter (Field)
+# =============================================================================
+title: "Dissolved Oxygen Meter (Field)"
+sop-number: "SOP-F209"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the calibration, field operation, and maintenance
+of standalone handheld dissolved oxygen (DO) meters for in situ
+measurement of dissolved oxygen concentration and percent saturation
+in surface waters. Dissolved oxygen is a fundamental indicator of
+water quality and aquatic habitat condition. This SOP covers optical
+(luminescent) and electrochemical (polarographic and galvanic) DO
+probes operated as standalone instruments, separate from multiparameter
+sondes.
+
+
+## 2. Scope
+
+- **Applies to:** Handheld DO meters (e.g., YSI Pro20i, YSI ProSolo,
+  Hach HQ40d with LDO probe, Extech DO600) used for in situ DO
+  measurements at EA Program surface water field sites
+- **Does not apply to:** DO measured by the Eureka Manta2 multiprobe
+  (see [SOP-F200](SOP-F200-eureka-manta2.qmd)); Winkler titration
+  (laboratory method); BOD analysis (see future SOP-L306); continuous
+  DO monitoring with deployed sondes
+- **Location:** All EA Program surface water field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Approve instrument selection; review QC data            |
+| Trained Personnel | Calibrate and operate the meter per this SOP            |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Measuring DO requires placing the probe in or near
+  water. Slip, fall, and drowning hazards apply. Work in pairs at
+  stream sites.
+- **Chemical:** Some polarographic DO probes use KCl electrolyte
+  solution, which is a mild irritant.
+- **Biological:** Water may contain pathogens. Avoid ingestion;
+  wash hands after field work.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or wading boots
+- [ ] Nitrile gloves (especially for impaired waters)
+- [ ] Sun protection (hat, sunscreen)
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
+
+
+## 5. Instrument Types
+
+### 5.1 Optical (Luminescent) DO Probes
+
+Optical probes (e.g., Hach LDO, YSI ProSolo ODO) measure DO by
+detecting the quenching of luminescence from a sensing element by
+oxygen molecules. They require no electrolyte, no warm-up time, no
+stirring, and no membrane replacement.
+
+| Advantage                         | Limitation                           |
+|:----------------------------------|:-------------------------------------|
+| No membrane to replace            | Higher initial cost                  |
+| No electrolyte                    | Sensing cap has a finite lifespan (typically 1--2 years) |
+| No stirring required              |                                      |
+| Faster stabilization              |                                      |
+| Lower maintenance                 |                                      |
+
+### 5.2 Electrochemical (Polarographic / Galvanic) DO Probes
+
+Electrochemical probes (e.g., YSI Pro20i) measure DO through an
+oxygen-permeable membrane covering an electrode that produces a
+current proportional to DO concentration. They require periodic
+membrane and electrolyte replacement and a brief warm-up period.
+
+| Advantage                         | Limitation                           |
+|:----------------------------------|:-------------------------------------|
+| Lower cost                        | Requires membrane replacement        |
+| Well-established method           | Requires electrolyte refill          |
+| Widely available                  | Needs 5--15 min warm-up              |
+|                                   | Flow-dependent (stirring or moving water needed) |
+
+*TBD -- confirm which DO meter model(s) the EA Program currently owns.*
+
+
+## 6. Equipment and Materials
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Handheld DO meter with probe          | Fully charged; confirm calibration supplies |
+| Water-saturated air calibration chamber | Typically a wet sponge in the probe storage cap |
+| Barometric pressure reference         | Built into some meters; otherwise use a Kestrel or phone app |
+| Spare membranes and electrolyte (electrochemical probes) | Keep in the field kit |
+| Spare sensing cap (optical probes)    | Replace when expired or readings become erratic |
+| Thermometer (for verification)        | Most DO probes include temperature; useful for cross-check |
+| DI water (squeeze bottle)             | For rinsing the probe                    |
+| Lint-free wipes                       | For drying the probe before calibration  |
+| Field notebook                        | For recording calibration and measurements |
+| Spare batteries                       | Matched to meter model                   |
+
+
+## 7. Procedure
+
+### 7.1 Calibration
+
+Calibrate the DO meter before each field day. The most common
+calibration method is the **water-saturated air** method, which is
+simple, reliable, and does not require chemical reagents.
+
+**Water-saturated air calibration:**
+
+1. Ensure the calibration chamber (probe storage cap with a damp
+   sponge) contains a moist sponge. The sponge should be damp but not
+   dripping; the probe tip should not touch the sponge or water.
+2. Turn on the meter. For electrochemical probes, allow a warm-up
+   period of 5--15 minutes (consult the manual for your model).
+3. Enter the current barometric pressure (in mmHg or hPa). Some
+   meters auto-sense pressure; verify the displayed value against a
+   Kestrel or weather station.
+4. Place the probe in the calibration chamber and wait for the reading
+   to stabilize (1--3 minutes for optical probes; 5--10 minutes for
+   electrochemical probes).
+5. Press **Cal** (or follow the on-screen calibration prompts). The
+   meter adjusts to 100% saturation at the current temperature and
+   pressure.
+6. Record in the field notebook: calibration date, time, barometric
+   pressure, temperature, and whether the calibration was accepted.
+
+**Zero-oxygen calibration (optional, for low-DO environments):**
+
+1. Prepare a zero-oxygen solution by dissolving excess sodium sulfite
+   (Na~2~SO~3~) in DI water with a pinch of cobalt chloride catalyst.
+2. Immerse the probe and wait for the reading to stabilize.
+3. Calibrate the zero point per the meter instructions.
+4. This step is recommended when expected DO values are below 2 mg/L.
+
+### 7.2 Field Measurement
+
+1. At the sampling location, immerse the probe to mid-depth in the
+   water column. For electrochemical probes, maintain a minimum flow
+   of 0.3 m/s past the membrane (gently move the probe back and forth
+   in still water). Optical probes do not require flow.
+2. Wait for the reading to stabilize (the display will indicate
+   "stable" or the reading will stop fluctuating).
+3. Record in the field notebook:
+   - DO concentration (mg/L)
+   - DO percent saturation (%)
+   - Water temperature (C), as reported by the probe
+   - Date, time, and sample ID
+   - Measurement depth
+   - Flow conditions (e.g., "riffle," "pool," "still water with
+     manual stirring")
+4. If measuring at multiple depths (e.g., lake profiling), lower the
+   probe in 0.5 or 1.0 m increments and allow the reading to
+   stabilize at each depth. Record depth, DO, and temperature for
+   each measurement.
+
+### 7.3 Post-Field Care
+
+1. Rinse the probe with DI water after each use.
+2. For electrochemical probes, check the membrane for tears, bubbles,
+   or deposits. Replace the membrane and electrolyte if damaged.
+3. For optical probes, gently wipe the sensing cap with a soft, damp
+   cloth if biofouling is visible. Do not use solvents.
+4. Store the probe in the calibration chamber with a moist sponge (not
+   submerged in water).
+5. Turn off the meter to conserve battery. Remove batteries if storing
+   for more than one month.
+
+
+## 8. Data Interpretation
+
+DO concentrations in surface waters are influenced by temperature,
+atmospheric pressure, salinity, photosynthesis, respiration, and
+reaeration. General reference values for freshwater:
+
+| DO (mg/L) | Condition                              |
+|:----------|:---------------------------------------|
+| > 8       | Well-oxygenated; suitable for most aquatic life |
+| 5--8      | Adequate for many species; marginal for cold-water fish |
+| 2--5      | Stressful for most fish; hypoxic conditions |
+| < 2       | Severe hypoxia; lethal to most aquatic organisms |
+
+DO saturation near 100% indicates equilibrium with the atmosphere.
+Supersaturation (> 100%) often indicates active photosynthesis; values
+well below 100% suggest high biological oxygen demand or poor
+reaeration.
+
+
+## 9. Quality Control
+
+- Calibrate at the start of each field day (Section 7.1).
+- At the end of the field day, check the calibration by placing the
+  probe in the water-saturated air chamber. The reading should be
+  within +/- 2% of 100% saturation. If it has drifted more than 5%,
+  note the drift and recalibrate; consider re-measuring recent
+  samples.
+- When possible, verify the probe against a second DO meter or the
+  Eureka Manta2 by measuring the same water body. Readings should
+  agree within +/- 0.5 mg/L.
+- For long field days (> 6 hours), perform a mid-day calibration check.
+- Record all QC results in the field notebook.
+
+
+## 10. References
+
+- YSI Inc. *ProSolo Optical Dissolved Oxygen Meter User Manual*.
+  <https://www.ysi.com>
+- Hach Company. *HQ40d Portable Multi-Parameter Meter User Manual*.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. Method 4500-O: Oxygen (Dissolved).
+- US EPA. Method 360.1: Dissolved Oxygen (Membrane Electrode).
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F200](SOP-F200-eureka-manta2.qmd)     | Eureka Manta2 Multiprobe  | Multiprobe includes DO sensor     |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sampling context                  |
+| [F304](SOP-F304-stream-physical-habitat.qmd) | Stream Physical Habitat | Habitat characterization |
+
+
+## 12. Training Record
+
+Before using DO meters independently, personnel must:
+
+1. Read this SOP in full
+2. Demonstrate a complete water-saturated air calibration
+3. Perform supervised DO measurements at one field site
+4. Demonstrate proper membrane inspection and replacement (for
+   electrochemical probes) or sensing cap inspection (for optical
+   probes)
+5. Be signed off by the PI or field lead

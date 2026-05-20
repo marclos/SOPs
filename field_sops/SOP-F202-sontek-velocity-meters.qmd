@@ -1,0 +1,288 @@
+---
+# =============================================================================
+# SOP-F202: SonTek Velocity Meters
+# =============================================================================
+title: "SonTek Acoustic Velocity Meters"
+sop-number: "SOP-F202"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the operation, calibration verification, and
+maintenance of SonTek acoustic Doppler velocity meters used for point
+velocity and discharge measurements in wadeable streams. Acoustic
+Doppler instruments measure water velocity by transmitting ultrasonic
+pulses and detecting the frequency shift of sound reflected by
+suspended particles in the water column. Unlike mechanical current
+meters ([SOP-F201](SOP-F201-pygmy-type-aa-velocity-meters.qmd)), acoustic
+meters have no moving parts, respond faster to turbulent fluctuations,
+and can measure very low velocities.
+
+
+## 2. Scope
+
+- **Applies to:** SonTek FlowTracker2 and FlowTracker (original model)
+  handheld acoustic Doppler velocimeters (ADVs) used for wading
+  discharge measurements in streams and channels
+- **Does not apply to:** SonTek ADP/ADCP profiling instruments for
+  non-wadeable rivers or boat-mounted surveys; mechanical current
+  meters (see [SOP-F201](SOP-F201-pygmy-type-aa-velocity-meters.qmd));
+  fixed-installation acoustic flow meters in pipes or culverts
+- **Location:** All EA Program wadeable stream sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Approve instrument deployment; ensure firmware is current |
+| Trained Personnel | Operate instrument per this SOP; download and archive data |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Wading in flowing water carries drowning risk. Always
+  work in pairs. Do not wade in flows deeper than waist height or
+  where footing is unstable.
+- **Electrical:** The FlowTracker uses internal rechargeable batteries.
+  Do not open the sealed housing in the field.
+- **Biological:** Waterborne pathogens; decontaminate equipment between
+  sites per [SOP-F007](SOP-F007-field-decontamination.qmd).
+:::
+
+### Required PPE
+
+- [ ] Chest or hip waders with felt or studded soles
+- [ ] Closed-toed shoes or wading boots
+- [ ] Sun protection (hat, sunscreen)
+
+### Emergency Procedures
+
+A minimum of two people must be present for all in-stream work. Refer
+to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
+emergency procedures.
+
+
+## 5. Instrument Specifications
+
+### 5.1 FlowTracker2
+
+| Parameter              | Value                                      |
+|:-----------------------|:-------------------------------------------|
+| Measurement principle  | Acoustic Doppler velocimetry (ADV)         |
+| Velocity range         | 0.001--4.0 m/s (0.003--13 ft/s)           |
+| Velocity accuracy      | +/- 1% of measured velocity                |
+| Velocity resolution    | 0.0001 m/s                                 |
+| Sampling volume        | Located 10 cm from the transducer          |
+| Depth sensor           | Integrated pressure sensor, 0--5 m range   |
+| Data storage           | Internal memory; USB download              |
+| Battery                | Rechargeable lithium-ion; approximately 12 hours continuous use |
+| QC diagnostics         | Built-in automated QA/QC (SNR, boundary, flow angle, spike detection) |
+
+### 5.2 FlowTracker (Original)
+
+| Parameter              | Value                                      |
+|:-----------------------|:-------------------------------------------|
+| Measurement principle  | Acoustic Doppler velocimetry (ADV)         |
+| Velocity range         | 0.001--4.5 m/s                             |
+| Velocity accuracy      | +/- 1% of measured velocity                |
+| Sampling volume        | Located 10 cm from the transducer          |
+| Data storage           | Internal memory; RS-232 download           |
+| Battery                | 3 C-cell alkaline batteries                |
+
+*TBD -- confirm which model(s) the EA Program currently owns and update
+this section accordingly.*
+
+
+## 6. Equipment and Materials
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| SonTek FlowTracker2 (or original)     | Charged and firmware updated             |
+| Top-setting wading rod                | Standard USGS-type; FlowTracker mounts on the rod |
+| Mounting bracket and thumbscrew       | Specific to SonTek; included with instrument |
+| USB cable                             | For data download (FlowTracker2)         |
+| RS-232 cable and adapter (if original model) | For data download                  |
+| Measuring tape (50 m)                 | For establishing the tag line            |
+| Tape stakes (2)                       | For anchoring the tag line               |
+| Laptop or tablet with SonTek software | FlowTracker2 uses SonTek's desktop software |
+| Field data sheet (backup)             | Printed on waterproof paper              |
+| Spare batteries                       | C-cells for original model               |
+
+
+## 7. Procedure
+
+### 7.1 Pre-Field Setup
+
+1. Charge the FlowTracker2 battery fully before each field day. For
+   the original model, install fresh batteries.
+2. Power on the instrument and verify that the firmware version is
+   current. Update if prompted.
+3. Set the site information on the instrument: site name, station ID,
+   date, and operator initials.
+4. Select the measurement method:
+   - **Mid-section** (default, consistent with USGS practice)
+   - **Mean-section** (if required by the project)
+5. Set the measurement parameters:
+   - Averaging time: 40 seconds (default; increase to 60 seconds for
+     low or turbulent flows)
+   - Number of measurements per vertical: 1 (six-tenths method) or 2
+     (two-point method at 0.2 and 0.8 depth)
+
+### 7.2 Beam Check
+
+Perform a beam check before each measurement to verify that the
+acoustic transducers are functioning properly.
+
+1. Submerge the probe head at least 15 cm below the water surface in a
+   location with minimal turbulence
+2. On the FlowTracker2, select **QC > Beam Check** from the menu
+3. The instrument tests all three acoustic beams and reports signal-
+   to-noise ratio (SNR) for each beam
+4. All beams must report SNR > 4 dB. If any beam fails, clean the
+   transducer faces and retest. If the beam check still fails, do not
+   proceed with the measurement.
+5. Record the beam check result in the field notebook
+
+### 7.3 Site Selection and Tag Line
+
+Follow the site selection and tag line procedures described in
+[SOP-F301 Stream Discharge Measurement](SOP-F301-stream-discharge-measurement.qmd),
+Sections 7.1--7.3. The same cross-section criteria apply to acoustic
+and mechanical meters.
+
+### 7.4 Making the Measurement
+
+1. Mount the FlowTracker probe on the wading rod at the correct depth
+   setting:
+   - **Six-tenths method:** Set the probe at 0.6 of the total depth
+     below the water surface (same as for mechanical meters)
+   - **Two-point method:** Measure at 0.2 and 0.8 of the depth
+2. At each vertical, the instrument automatically:
+   - Records the velocity (Vx, Vy components)
+   - Runs QC checks (SNR, spike detection, boundary check, flow angle)
+   - Flags any measurement that fails QC criteria
+3. If a measurement is flagged, the instrument displays the reason.
+   Common flags and responses:
+
+| Flag               | Meaning                              | Response                          |
+|:-------------------|:-------------------------------------|:----------------------------------|
+| Low SNR            | Insufficient suspended particles     | Increase averaging time; stir bed gently upstream |
+| Boundary           | Probe too close to bed or surface     | Adjust depth setting              |
+| High flow angle    | Flow not perpendicular to tag line    | Reposition tag line or note angle |
+| Spike              | Velocity spike detected              | Repeat measurement                |
+
+4. After completing all verticals, the instrument computes the total
+   discharge automatically using the mid-section method.
+5. Review the on-screen discharge summary before leaving the site.
+
+### 7.5 Post-Measurement
+
+1. Save the measurement file on the instrument.
+2. Record a backup note in the field notebook: site, date, total
+   discharge, number of verticals, and any flagged stations.
+3. Rinse the probe with clean water. Do not use solvents or abrasives
+   on the transducer faces.
+4. Decontaminate per [SOP-F007](SOP-F007-field-decontamination.qmd)
+   before moving to the next site.
+
+### 7.6 Data Download
+
+1. Connect the FlowTracker2 to a laptop via USB.
+2. Open the SonTek desktop software and download all measurement files.
+3. Export each measurement as a `.csv` and a `.dis` (discharge summary)
+   file.
+4. Save files using the naming convention:
+   `YYYY-MM-DD_SiteID_discharge_FT2.csv`
+5. Upload to the project GitHub repository under `data/discharge/`
+   within 48 hours.
+6. Archive the raw `.mmt` file to the lab shared drive.
+
+
+## 8. Maintenance
+
+### 8.1 After Each Field Day
+
+1. Rinse the entire probe head and cable with clean fresh water
+2. Dry with a lint-free cloth
+3. Inspect the transducer faces for scratches, algae buildup, or
+   debris. Clean gently with a soft brush if needed.
+4. Charge the battery (FlowTracker2) or remove batteries (original
+   model) if storing for more than one week
+
+### 8.2 Periodic Maintenance
+
+- **Monthly (during active use):** Inspect the wading rod mounting
+  bracket for wear. Verify firmware version.
+- **Annually:** Contact SonTek for factory calibration verification if
+  the instrument is used for regulatory or compliance monitoring.
+
+*TBD -- determine whether annual factory calibration is required for
+EA Program research applications or whether beam checks are sufficient.*
+
+
+## 9. Quality Control
+
+- Beam check before every measurement (Section 7.2)
+- If two measurements are made at the same cross-section, they should
+  agree within 5%. If they differ by more than 5%, make a third
+  measurement.
+- Compare FlowTracker results with mechanical meter results at least
+  once per year by measuring the same cross-section with both
+  instruments. Results should agree within 5--8%.
+- Review the instrument's automated QC flags for every measurement
+  file during data processing. Do not discard flagged data without
+  documentation.
+
+
+## 10. References
+
+- SonTek/Xylem. *FlowTracker2 Handheld ADV Technical Manual*.
+  <https://www.sontek.com>
+- Turnipseed, D. P., and Sauer, V. B. (2010). *Discharge Measurements
+  at Gaging Stations.* USGS Techniques and Methods, Book 3, Chapter
+  A8. <https://pubs.usgs.gov/tm/tm3-a8/>
+- Rehmel, M.S. (2007). *Application of Acoustic Doppler Velocimeters
+  for Streamflow Measurements.* USGS Scientific Investigations Report
+  2007-5091.
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F007](SOP-F007-field-decontamination.qmd) | Field Decontamination | Between-site cleaning             |
+| [F201](SOP-F201-pygmy-type-aa-velocity-meters.qmd) | Pygmy and Type AA Velocity Meters | Mechanical alternative |
+| [F301](SOP-F301-stream-discharge-measurement.qmd) | Stream Discharge Measurement | Cross-section procedures |
+
+
+## 12. Training Record
+
+Before using SonTek velocity meters independently, personnel must:
+
+1. Read this SOP and
+   [SOP-F301 Stream Discharge Measurement](SOP-F301-stream-discharge-measurement.qmd)
+   in full
+2. Complete [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) training
+3. Observe a trained operator perform a complete discharge measurement
+   including beam check, measurement, and data download
+4. Perform a supervised discharge measurement with results that agree
+   within 5% of the trainer's independent measurement
+5. Be signed off by the PI or field lead

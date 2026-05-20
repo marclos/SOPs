@@ -1,0 +1,197 @@
+---
+# =============================================================================
+# SOP-F205: Handheld Turbidity Meter
+# =============================================================================
+title: "Handheld Turbidity Meter"
+sop-number: "SOP-F205"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the calibration, operation, and maintenance of
+handheld nephelometric turbidity meters for field measurement of water
+clarity. Turbidity is a measure of the optical scattering caused by
+suspended particles (sediment, algae, organic matter) and is a
+standard water quality parameter required by the Surface Water Ambient
+Monitoring Program (SWAMP), NPDES permits, and many ecological
+studies. Field turbidity measurements complement laboratory analysis
+by providing an immediate, on-site result.
+
+
+## 2. Scope
+
+- **Applies to:** Handheld nephelometric turbidity meters (e.g., Hach
+  2100Q, LaMotte 2020we, Oakton T-100) used for in situ and grab-
+  sample turbidity measurements at EA Program field sites
+- **Does not apply to:** Laboratory bench-top turbidimeters; Secchi
+  disk transparency measurements (see
+  [SOP-F207](SOP-F207-secchi-disk.qmd)); continuous turbidity
+  sensors deployed on multiparameter sondes (see
+  [SOP-F200](SOP-F200-eureka-manta2.qmd))
+- **Location:** All EA Program surface water field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Approve instrument selection; review QC data            |
+| Trained Personnel | Calibrate and operate the meter per this SOP            |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Sampling near water involves slip and fall hazards.
+- **Biological:** Water samples may contain pathogens. Wear gloves.
+- **Chemical:** Calibration standards (formazin or StablCal) are mild
+  irritants. Do not ingest. Formazin contains hydrazine; handle with
+  gloves and dispose of as hazardous waste.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Safety glasses (during calibration)
+- [ ] Closed-toed shoes or wading boots
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). For
+formazin contact with skin or eyes, flush with water for at least 15
+minutes and consult the SDS.
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Handheld turbidity meter              | Confirm model and battery level          |
+| Calibration standards                 | Hach StablCal (sealed vials): < 0.1, 20, 100, 800 NTU; or formazin dilution series |
+| Sample vials (matched to instrument)  | Glass or optical-grade; use only with the meter they were supplied for |
+| Silicone oil and applicator cloth     | For coating sample vials to reduce light scattering from scratches |
+| Lint-free wipes (Kimwipes)            | For cleaning vials                       |
+| DI water (squeeze bottle)             | For rinsing vials                        |
+| Waste container (for formazin)        | Labeled for hazardous waste              |
+| Field notebook                        | For recording calibration and measurements |
+| Spare batteries                       | Matched to meter model                   |
+
+
+## 6. Procedure
+
+### 6.1 Calibration
+
+Calibrate the meter at the start of each field day or when the
+instrument has been stored for more than one week.
+
+1. Turn on the meter and allow it to warm up (approximately 1 minute).
+2. Clean the outside of each calibration standard vial with a lint-free
+   wipe. Apply a thin film of silicone oil and wipe evenly.
+3. Insert the lowest standard (< 0.1 NTU) into the sample chamber
+   with the orientation mark aligned. Close the lid.
+4. Press **Cal** (or follow the on-screen prompts for the specific
+   model). The meter reads the standard and stores the value.
+5. Repeat with each subsequent standard in ascending order (e.g.,
+   20, 100, 800 NTU).
+6. When all standards have been read, the meter confirms a successful
+   calibration. Record the calibration date, standard lot number,
+   and any correction factors in the field notebook.
+7. Verify the calibration by re-reading the 20 NTU standard. The
+   reading should be within +/- 10% of 20 NTU. If not, repeat the
+   calibration.
+
+### 6.2 Sample Collection
+
+1. Collect a grab sample in a clean container (glass jar or
+   polypropylene bottle). Follow the procedures in
+   [SOP-F300 Surface Water Sampling](SOP-F300-surface-water-sampling.qmd).
+2. Avoid disturbing bottom sediments during collection.
+3. Analyze the sample as soon as possible. If a delay is unavoidable,
+   keep the sample in the dark to prevent algal growth and analyze
+   within 24 hours.
+
+### 6.3 Measurement
+
+1. Gently invert the sample container 3--4 times to resuspend
+   particles uniformly. Do not shake vigorously (creates bubbles).
+2. Pour the sample into a clean sample vial, filling to the line.
+3. Cap the vial and let it sit for 1 minute to allow large air
+   bubbles to rise.
+4. Wipe the outside of the vial with a lint-free cloth. Apply
+   silicone oil if using glass vials.
+5. Insert the vial into the sample chamber with the orientation mark
+   aligned. Close the lid completely.
+6. Press **Read**. Wait for the display to stabilize.
+7. Record the result (NTU) in the field notebook along with the
+   sample ID, time, and site.
+8. For samples above the meter range (typically > 1000 NTU), dilute
+   with DI water, measure, and multiply by the dilution factor.
+   Record both the diluted reading and the calculated result.
+9. Rinse the vial 3 times with DI water between samples.
+
+### 6.4 Post-Field Care
+
+1. Rinse all sample vials with DI water and allow to air-dry inverted.
+2. Wipe silicone oil residue from vials before storage.
+3. Store calibration standards in their original case at room
+   temperature, away from direct sunlight.
+4. Turn off the meter and remove batteries if storing for more than
+   one month.
+
+
+## 7. Quality Control
+
+- Calibrate at the start of each field day (Section 6.1).
+- Measure a DI water blank at the start and end of each sampling event.
+  The blank should read < 1 NTU.
+- Measure one field duplicate per 10 samples (minimum one per event).
+  Duplicate RPD should be < 20% for readings above 10 NTU.
+- If the meter reading drifts (DI blank reads > 1 NTU during the
+  day), recalibrate and re-measure the most recent samples.
+- Inspect sample vials for scratches before each use. Replace scratched
+  vials, as scratches scatter light and produce false high readings.
+
+
+## 8. References
+
+- Hach Company. *2100Q Portable Turbidimeter User Manual*.
+- LaMotte Company. *2020we Portable Turbidimeter Instruction Manual*.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. Method 2130B: Nephelometric Method.
+- US EPA. Method 180.1: Turbidity (Nephelometric).
+
+
+## 9. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F207](SOP-F207-secchi-disk.qmd)       | Secchi Disk               | Alternative transparency measure  |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection procedures      |
+| [L303](../lab_sops/SOP-L303-hach-colorimetric.qmd) | Hach Colorimetric Analysis | Lab-based Hach methods |
+
+
+## 10. Training Record
+
+Before using turbidity meters independently, personnel must:
+
+1. Read this SOP in full
+2. Demonstrate a complete calibration using StablCal or formazin
+   standards
+3. Perform supervised field measurements at one site
+4. Be signed off by the PI or field lead

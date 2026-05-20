@@ -1,0 +1,223 @@
+---
+# =============================================================================
+# SOP-F208: Portable Spectrophotometer / Colorimeter (Field)
+# =============================================================================
+title: "Portable Spectrophotometer / Colorimeter (Field Use)"
+sop-number: "SOP-F208"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the field operation of the Hach DR900 portable
+colorimeter for on-site water quality analysis. The DR900 enables
+rapid, field-based measurement of nutrients, metals, and other
+parameters using Hach pre-packaged reagent kits. Field colorimetry
+provides same-day results when samples cannot be transported to the
+lab within required hold times, and it supports real-time decisions
+during stormwater events, spill response, or reconnaissance sampling.
+
+This SOP focuses on field-specific procedures (transport, outdoor
+operation, field QC). For detailed method chemistry, reagent handling,
+the Method Registry, and laboratory use of the DR3900 and DR900, see
+[SOP-L303 Hach Colorimetric Analysis](../lab_sops/SOP-L303-hach-colorimetric.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** Field use of the Hach DR900 portable colorimeter at
+  EA Program field sites for grab-sample analysis of nutrients (PO~4~,
+  NO~3~, NH~3~), metals (Fe, Mn, Cu), and general chemistry
+  (hardness, chloride, silica, chlorine)
+- **Does not apply to:** Laboratory bench-top analysis (see
+  [SOP-L303](../lab_sops/SOP-L303-hach-colorimetric.qmd)); field
+  turbidity (see [SOP-F205](SOP-F205-handheld-turbidity-meter.qmd));
+  in situ sonde-based measurements (see
+  [SOP-F200](SOP-F200-eureka-manta2.qmd))
+- **Location:** All EA Program surface water, groundwater, and
+  stormwater field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Select analytes and approve field methods               |
+| Trained Personnel | Operate the DR900 per this SOP; record results          |
+| New Students      | Complete training on both this SOP and SOP-L303 before
+                      independent field use                                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Hach reagent powder pillows and liquid reagents may
+  contain acids, oxidizers, or heavy metal indicators. Review the SDS
+  for each kit before field use. Some reagents (e.g., cadmium in older
+  nitrate methods) are classified as hazardous waste.
+- **Physical:** Glass sample vials can break during field transport.
+  Pack in padded cases.
+- **Biological:** Water samples may contain pathogens. Wear gloves.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Safety glasses (required for all reagent handling)
+- [ ] Closed-toed shoes or wading boots
+
+### Emergency Procedures
+
+For reagent splashes to skin or eyes, flush with clean water for at
+least 15 minutes. Carry a squeeze bottle of DI water for emergency
+rinsing. Refer to
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd) and
+[SOP-L003 Hazardous Materials Handling](../lab_sops/SOP-L003-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Hach DR900 Portable Colorimeter       | Confirm battery level; charge before field day |
+| Sample vials (10 mL, 25 mL, 1-inch round) | Matched to the methods being run     |
+| Hach reagent kits (powder pillows or TNT vials) | Select analytes per project needs; check expiration dates |
+| DI water (squeeze bottle, 500 mL minimum) | For blanks, rinsing, and dilutions   |
+| Lint-free wipes (Kimwipes)            | For cleaning vial exteriors              |
+| Silicone oil and applicator cloth     | For 1-inch round vials                   |
+| Timer                                 | Phone timer or stopwatch for reaction times |
+| Graduated cylinder or pipette         | For measured sample volumes              |
+| Waste container (sealable)            | For used reagent vials and waste solution |
+| Padded carrying case                  | For protecting vials during transport    |
+| Field notebook                        | For recording results and QC data        |
+| Ziplock bags                          | For isolating used reagent packets       |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Field Preparation
+
+1. Identify the analytes to be measured in the field and pack the
+   corresponding reagent kits. Verify that none are expired.
+2. Pack sufficient DI water for blanks and rinsing (a minimum of
+   500 mL for a typical sampling event).
+3. Pack at least two extra clean sample vials per method.
+4. Charge the DR900 battery. Confirm the stored programs for your
+   methods are accessible on the instrument.
+5. Print or photograph the method procedure cards for each analyte
+   (from the kit box or
+   [SOP-L303](../lab_sops/SOP-L303-hach-colorimetric.qmd) Method
+   Registry).
+
+### 6.2 Field Setup
+
+1. Set up the DR900 on a flat, stable surface out of direct sunlight.
+   Direct sunlight on the sample chamber produces erroneous readings.
+2. If no shade is available, use a jacket, tarp, or your body to
+   shade the instrument during reading.
+3. Turn on the DR900 and allow it to complete its self-check.
+4. Select the stored program for your analyte (see
+   [SOP-L303](../lab_sops/SOP-L303-hach-colorimetric.qmd), Section 6).
+
+### 6.3 Blank and Calibration Check
+
+1. Fill a clean sample vial with DI water to the line.
+2. Wipe the vial exterior with a lint-free cloth.
+3. Insert the vial, close the lid, and press **Zero**.
+4. The display should read 0.00 (within the method detection limit).
+   If it does not, clean the vial and re-zero.
+5. If a known standard is available (mid-range Hach standard), run it
+   after zeroing. The result should be within +/- 10% of the stated
+   value. Record the result in the field notebook.
+
+### 6.4 Sample Analysis
+
+Follow the method-specific procedure from the reagent kit or
+[SOP-L303](../lab_sops/SOP-L303-hach-colorimetric.qmd) Method Registry.
+The general workflow is:
+
+1. Collect a grab sample per
+   [SOP-F300](SOP-F300-surface-water-sampling.qmd).
+2. Fill the sample vial to the line with the sample.
+3. Add the reagent (powder pillow, liquid dropper, or TNT vial) per
+   the method instructions.
+4. Cap, invert, and mix as directed. Start the timer for the required
+   reaction time.
+5. When the reaction time is complete, wipe the vial exterior with a
+   lint-free cloth (apply silicone oil for round vials).
+6. Insert the vial into the DR900, close the lid (shading from
+   sunlight), and press **Read**.
+7. Record the result in the field notebook: analyte, method number,
+   sample ID, reading, units, date, and time.
+8. Rinse the vial 3 times with DI water before the next sample.
+
+### 6.5 Waste Management
+
+1. Collect all used reagent packets, vials, and waste solution in a
+   sealable container or ziplock bag.
+2. Do not discard reagent waste in the field.
+3. Return waste to the lab and dispose of per
+   [SOP-L003](../lab_sops/SOP-L003-hazardous-materials-handling.qmd).
+   Cadmium-containing reagents (NitraVer 5 older formulation) are
+   hazardous waste.
+
+
+## 7. Quality Control
+
+- Zero the instrument with DI water before each batch of samples.
+- Run one DI blank and one mid-range standard at the start of each
+  field session. Record results in the field notebook.
+- Analyze one field duplicate per 10 samples (minimum one per event).
+  Duplicate RPD should be < 20% for concentrations above 5 times the
+  detection limit.
+- If the field blank reads above the method detection limit,
+  investigate contamination (dirty vials, contaminated DI water) and
+  re-run.
+- Note ambient temperature in the field notebook. Some Hach methods
+  are temperature-sensitive; if the sample temperature is outside the
+  method-specified range (typically 20--25 C), allow the sample to
+  equilibrate or note the potential bias.
+
+
+## 8. References
+
+- Hach Company. *DR900 Portable Colorimeter Procedures Manual*.
+  <https://www.hach.com>
+- Hach Company. (2024). *Water Analysis Guide*. 7th ed.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed.
+
+
+## 9. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection procedures      |
+| [L003](../lab_sops/SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials | Reagent waste disposal |
+| [L303](../lab_sops/SOP-L303-hach-colorimetric.qmd) | Hach Colorimetric Analysis | Full method registry and lab procedures |
+
+
+## 10. Training Record
+
+Before using the DR900 in the field independently, personnel must:
+
+1. Read this SOP and
+   [SOP-L303 Hach Colorimetric Analysis](../lab_sops/SOP-L303-hach-colorimetric.qmd)
+   in full
+2. Demonstrate a complete field analysis (zero, standard check, sample
+   analysis, waste collection) under supervision
+3. Be signed off by the PI or field lead

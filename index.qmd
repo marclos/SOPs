@@ -65,13 +65,13 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|:------|
 | [F200](field_sops/SOP-F200-eureka-manta2.qmd) | Eureka Manta2 Multiprobe | 0.7 | |
 | [F201](field_sops/SOP-F201-pygmy-type-aa-velocity-meters.qmd) | Pygmy and Type A Velocity Meters | -- | |
-| [F202](field_sops/) | Sontek Velocity Meters | -- | |
-| [F203](field_sops/) | HOBO Water Level Pressure Transducers | -- | |
-| F204 | *HOBO Weather Station Deployment* | -- | **NEW**: HOBO pendant/MX loggers for temp, RH, light |
-| F205 | *Handheld Turbidity Meter* | -- | **NEW**: field turbidity using LaMotte or Hach |
-| F207 | Secchi Disk/Sicchi Disk Tube | -- | **NEW**|
-| F208 | *Portable Spectrophotometer / Colorimeter (Field)* | -- | **NEW**: Hach DR900 field use |
-| F209 | *Dissolved Oxygen Meter (Field)* | -- | **NEW**: standalone DO probe calibration and use |
+| [F202](field_sops/SOP-F202-sontek-velocity-meters.qmd) | SonTek Acoustic Velocity Meters | -- | |
+| [F203](field_sops/SOP-F203-hobo-water-level-transducers.qmd) | HOBO Water Level Pressure Transducers | -- | |
+| [F204](field_sops/SOP-F204-hobo-weather-station.qmd) | HOBO Weather Station Deployment | -- | **NEW** |
+| [F205](field_sops/SOP-F205-handheld-turbidity-meter.qmd) | Handheld Turbidity Meter | -- | **NEW** |
+| [F207](field_sops/SOP-F207-secchi-disk.qmd) | Secchi Disk and Secchi Disk Tube | -- | **NEW**|
+| [F208](field_sops/SOP-F208-portable-colorimeter-field.qmd) | Portable Spectrophotometer / Colorimeter (Field) | -- | **NEW** |
+| [F209](field_sops/SOP-F209-dissolved-oxygen-meter.qmd) | Dissolved Oxygen Meter (Field) | -- | **NEW** |
 
 ### Water / Aquatic Systems (F300--F399)
 
