@@ -1,0 +1,303 @@
+---
+# =============================================================================
+# SOP-F008: Sample Labeling, Chain of Custody, and Transport
+# =============================================================================
+title: "Sample Labeling, Chain of Custody, and Transport"
+sop-number: "SOP-F008"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft; consolidates labeling and COC guidance previously scattered across F300, F302, F303, F400, and F003"
+---
+
+## 1. Purpose
+
+This SOP establishes a single, program-wide standard for labeling field
+samples, completing chain of custody (COC) documentation, and
+transporting samples from the field to the laboratory. Consistent
+labeling prevents sample mix-ups, and a complete chain of custody
+ensures that data are legally defensible and scientifically traceable.
+These procedures apply to all sample types (water, soil, sediment,
+biological tissue, air filters) collected by the EA Program.
+
+
+## 2. Scope
+
+- **Applies to:** All environmental samples collected during EA Program
+  field activities, whether analyzed in-house or submitted to an
+  external laboratory
+- **Does not apply to:** Internal laboratory standards and reagents
+  (labeled per [SOP-L005](../lab_sops/SOP-L005-chemical-inventory.qmd));
+  data files and digital records (see
+  [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd))
+- **Location:** All EA Program field sites, vehicles, and laboratory
+  receiving areas (SGM 133, 134)
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Project Lead | Approve sample ID scheme for each project; designate
+                      receiving personnel                                  |
+| Field Lead        | Verify labels and COC forms before leaving the field    |
+| Trained Personnel | Label samples and complete COC per this SOP             |
+| Receiving Personnel | Accept custody, verify sample condition, log receipt  |
+| New Students      | Complete training before independent sampling           |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Some sample containers include chemical preservatives
+  (sulfuric acid, nitric acid, sodium thiosulfate). Handle
+  pre-preserved bottles with care. Refer to
+  [SOP-L003](../lab_sops/SOP-L003-hazardous-materials-handling.qmd).
+- **Physical:** Coolers loaded with ice and sample bottles can be
+  heavy. Use proper lifting technique.
+- **Biological:** Soil and water samples may contain pathogens. Wear
+  nitrile gloves when handling samples.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Safety glasses (when handling preserved bottles)
+
+### Emergency Procedures
+
+For acid preservative spills, neutralize with baking soda and flush
+with water. Refer to
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd) and
+[SOP-L004 Chemical Spill Response](../lab_sops/SOP-L004-chemical-spill-response.qmd).
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Waterproof labels (adhesive)          | Pre-printed or blank; must survive moisture and ice |
+| Permanent marker (Sharpie, fine tip)  | For writing on bottles and bags          |
+| Clear packing tape                    | For protecting labels from water damage  |
+| Chain of custody forms (printed)      | Blank forms stored in SGM 133            |
+| Custody seals (tamper-evident tape)   | For sealing coolers before transport     |
+| Coolers with ice or ice packs         | Maintain samples at approximately 4 C   |
+| Ziplock bags                          | For double-bagging soil samples and protecting labels |
+| Field notebook                        | For cross-referencing sample IDs         |
+| Sample log sheet                      | Printed template (Appendix A)            |
+
+
+## 6. Procedure
+
+### 6.1 Sample Identification Scheme
+
+All EA Program samples use the following ID format:
+
+`PROJECT-SITE-MATRIX-YYYYMMDD-NN`
+
+where:
+
+| Field     | Description                            | Example         |
+|:----------|:---------------------------------------|:----------------|
+| PROJECT   | Two- to four-letter project code       | WLD (Wildlands) |
+| SITE      | Three-letter site abbreviation         | BFS (Bernard Field Station) |
+| MATRIX    | Two-letter matrix code (see below)     | SW (surface water) |
+| YYYYMMDD  | Collection date                        | 20260519        |
+| NN        | Sequential sample number for the day   | 01, 02, ...     |
+
+**Matrix codes:**
+
+| Code | Matrix                    |
+|:-----|:--------------------------|
+| SW   | Surface water             |
+| GW   | Groundwater               |
+| ST   | Stormwater                |
+| SL   | Soil                      |
+| SD   | Sediment                  |
+| PT   | Plant tissue              |
+| BM   | Biological / macroinvertebrate |
+| AF   | Air filter                |
+| FB   | Field blank               |
+| FD   | Field duplicate           |
+| EB   | Equipment blank           |
+
+Projects may extend this scheme with additional fields (e.g., depth,
+treatment). Document any project-specific additions in the project
+README file and field notebook.
+
+### 6.2 Labeling Samples
+
+1. **Before going to the field**, pre-label as many containers as
+   possible. Use waterproof labels or write directly on the container
+   with permanent marker. Cover all handwritten labels with clear
+   packing tape to prevent smearing.
+2. At a minimum, every sample container must display:
+   - Sample ID (per Section 6.1)
+   - Date and time of collection
+   - Collector's initials
+   - Preservative (if any), e.g., "H~2~SO~4~" or "None"
+3. For soil samples in bags, write the sample ID on both the bag and
+   an internal tag (a slip of paper inside the bag) in case the
+   external label becomes illegible.
+4. For pre-preserved bottles provided by an analytical lab, do not
+   remove the lab's label. Add the EA sample ID on a separate label
+   or directly on the bottle.
+5. Record every sample ID, time, location, and any field observations
+   in the field notebook and on the sample log sheet (Appendix A).
+
+### 6.3 Quality Control Samples
+
+Include the following QC samples in every sampling event. Label them
+using the matrix codes FB, FD, and EB so they are clearly
+distinguishable from field samples.
+
+| QC Type          | Frequency                  | Procedure                        |
+|:-----------------|:---------------------------|:---------------------------------|
+| Field blank (FB) | 1 per sampling event       | Fill a sample bottle with DI water at the site; preserve and handle identically to field samples |
+| Field duplicate (FD) | 1 per 10 samples (minimum 1 per event) | Collect a second sample at the same location immediately after the primary sample |
+| Equipment blank (EB) | 1 per sampling event    | Rinse decontaminated sampling equipment with DI water; collect the rinse water |
+
+### 6.4 Chain of Custody
+
+A COC form must accompany every set of samples submitted for analysis,
+whether to the EA Program lab or to an external laboratory. The COC
+establishes an unbroken record of sample possession from collection to
+final analysis.
+
+**Completing the COC form:**
+
+1. Fill in the header: project name, PI name, date, and contact
+   information.
+2. List each sample by its sample ID (Section 6.1), collection date
+   and time, number and type of containers, preservative used, and
+   analyses requested.
+3. Note the total number of containers being transferred.
+4. Record any relevant field conditions (e.g., "high turbidity,"
+   "post-storm event").
+5. The person relinquishing the samples signs and dates the
+   "Relinquished by" field.
+6. The person receiving the samples signs and dates the "Received by"
+   field, inspects the samples for damage or discrepancies, and notes
+   any issues.
+7. If custody transfers occur in multiple steps (e.g., field to
+   vehicle, vehicle to lab), each transfer requires a signature pair.
+8. Record the COC form number in the field notebook for
+   cross-reference (see
+   [SOP-F003](SOP-F003-field-notebook-protocols.qmd), Section 9).
+
+### 6.5 Sample Transport
+
+1. Place all sample containers upright in a cooler with ice or frozen
+   ice packs. Target a temperature of approximately 4 C for water and
+   soil samples unless the analytical method specifies otherwise.
+2. Use ziplock bags or bubble wrap to prevent bottles from breaking
+   during transport.
+3. Seal the cooler with tamper-evident custody seals across the lid
+   opening. Write the date and your initials on each seal.
+4. Transport samples to the laboratory as quickly as possible. Most
+   water quality parameters have maximum hold times (see table below).
+   Do not leave samples in a vehicle overnight unless the vehicle is
+   temperature-controlled.
+
+**Common maximum hold times:**
+
+| Parameter                  | Preservative       | Max Hold Time |
+|:---------------------------|:-------------------|:--------------|
+| Bacteria (total coliform, *E. coli*) | Na~2~S~2~O~3~ (in bottle) | 6 hours |
+| Nutrients (N, P)           | H~2~SO~4~ to pH < 2 | 28 days      |
+| Metals (dissolved)         | HNO~3~ to pH < 2   | 180 days     |
+| pH, conductivity, turbidity | None (measure in field or ASAP) | 15 minutes (field); analyze same day (lab) |
+| Soil moisture              | None               | Analyze within 24 hours |
+| Soil for nutrient analysis | Cool to 4 C        | 28 days      |
+
+::: {.callout-important}
+Samples for bacteria analysis (Colilert) must be processed within
+6 hours of collection. Plan field logistics accordingly. See
+[SOP-L305](../lab_sops/SOP-L305-colilert-quanti-tray.qmd).
+:::
+
+### 6.6 Receiving Samples in the Laboratory
+
+1. Upon arrival at the lab, the receiving person opens the cooler,
+   checks the custody seal for tampering, and signs the COC form.
+2. Verify that the number of containers matches the COC listing.
+   Note any discrepancies on the COC form.
+3. Check sample temperature using a thermometer placed among the
+   bottles. Record the temperature on the COC form.
+4. Transfer samples to the appropriate storage location:
+   - Water samples: refrigerator at 4 C
+     ([SOP-L106](../lab_sops/SOP-L106-refrigerators-freezers.qmd))
+   - Soil samples: refrigerator at 4 C (for short-term) or freezer
+     (for archiving)
+   - Biological samples: freezer at -20 C or -80 C as required
+5. File the signed COC form with the project records.
+
+
+## 7. Quality Control
+
+- The field lead reviews all labels and the COC form before leaving
+  the field site.
+- Receiving personnel verify sample count, condition, and temperature
+  upon arrival.
+- Any broken, leaking, or incorrectly labeled samples are flagged on
+  the COC form and reported to the PI within 24 hours.
+- COC forms are retained for the duration of the project plus a
+  minimum of 5 years.
+
+
+## 8. References
+
+- US EPA. (2002). *Guidance for Quality Assurance Project Plans* (EPA
+  QA/G-5). EPA/240/R-02/009.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. Table 1060:I (sample containers,
+  preservatives, and holding times).
+- California SWAMP. (2017). *Quality Assurance Program Plan*.
+
+
+## 9. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F002](SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | Labeling supplies on checklist |
+| [F003](SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | COC recorded in notebook |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling   | Sample-specific preservation |
+| [F303](SOP-F303-groundwater-sampling.qmd) | Groundwater Sampling     | Well-specific labeling |
+| [F400](SOP-F400-soil-sampling.qmd)     | Soil Sampling             | Soil-specific labeling |
+| [L305](../lab_sops/SOP-L305-colilert-quanti-tray.qmd) | Colilert Quanti-Tray | 6-hour hold time |
+| [L802](../lab_sops/SOP-L802-quality-control.qmd) | Quality Control and QA  | QC sample requirements |
+
+
+## 10. Training Record
+
+Before labeling and handling samples independently, personnel must:
+
+1. Read this SOP and
+   [SOP-F003 Field Notebook Protocols](SOP-F003-field-notebook-protocols.qmd)
+   in full
+2. Demonstrate correct sample labeling using the project ID scheme
+3. Complete a COC form correctly during a supervised field outing
+4. Be signed off by the PI or field lead
+
+
+## Appendix A: Sample Log Sheet Template
+
+| Sample ID | Date | Time | Site | Matrix | Preservative | Container | Collector | Notes |
+|:----------|:-----|:-----|:-----|:-------|:-------------|:----------|:----------|:------|
+|           |      |      |      |        |              |           |           |       |
+|           |      |      |      |        |              |           |           |       |
+|           |      |      |      |        |              |           |           |       |
+|           |      |      |      |        |              |           |           |       |
+
+*Print on waterproof paper (Rite in the Rain) for field use.*

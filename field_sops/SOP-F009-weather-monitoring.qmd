@@ -1,0 +1,262 @@
+---
+# =============================================================================
+# SOP-F009: Weather Monitoring and Field Meteorology
+# =============================================================================
+title: "Weather Monitoring and Field Meteorology"
+sop-number: "SOP-F009"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes procedures for recording weather and meteorological
+conditions during field activities. Documenting weather conditions at
+the time of sampling is essential for interpreting environmental data,
+identifying storm-driven events, establishing baseline climate
+conditions, and ensuring field safety. This SOP covers manual weather
+observations, use of portable weather instruments, and deployment of
+unattended data loggers for continuous monitoring.
+
+
+## 2. Scope
+
+- **Applies to:** All EA Program field activities where weather
+  conditions may affect data interpretation, sample quality, or
+  personnel safety; deployment and retrieval of portable weather
+  stations and data loggers
+- **Does not apply to:** Climate modeling or historical meteorological
+  analysis; operation of fixed, permanently installed weather stations
+  managed by other departments; air quality monitoring (see
+  [SOP-F502](SOP-F502-air-quality-portable-sensors.qmd))
+- **Location:** All EA Program field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Identify which weather variables are required for the
+                      project; approve deployment of data loggers           |
+| Trained Personnel | Record weather observations, deploy and retrieve
+                      loggers, download data                               |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Lightning:** Cease all field activities and seek shelter in a
+  vehicle or enclosed structure when lightning is observed. Wait at
+  least 30 minutes after the last lightning strike before resuming.
+- **Heat:** Southern California field sites can exceed 40 C. Carry
+  adequate water, take shade breaks, and monitor for heat-related
+  illness.
+- **Wind:** High winds can topple tripod-mounted instruments and
+  create hazardous conditions near exposed ridgelines or water bodies.
+- **Flooding:** Rapidly changing weather can cause flash flooding in
+  Southern California canyons and channels. Monitor upstream conditions
+  and have an evacuation route planned.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Sun protection (hat, sunscreen, long sleeves)
+- [ ] Rain gear (if sampling during wet weather)
+- [ ] Adequate water (minimum 1 L per person per 2 hours in hot
+      conditions)
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). For
+lightning safety, follow the 30-30 rule: if the time between a flash
+and thunder is 30 seconds or less, seek shelter; remain sheltered for
+30 minutes after the last flash.
+
+
+## 5. Equipment and Materials
+
+### Manual Observation Equipment
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Sling psychrometer or digital hygrometer | For air temperature and relative humidity |
+| Handheld anemometer (Kestrel or equivalent) | For wind speed and direction       |
+| Manual rain gauge (graduated cylinder type) | For on-site precipitation measurement |
+| Compass                               | For determining wind direction           |
+| Cloud identification chart            | Laminated card for consistent sky observations |
+| Field notebook                        | For recording all observations           |
+
+### Portable Weather Stations and Data Loggers
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| HOBO MX series data logger (Onset)    | Temperature, relative humidity, light intensity |
+| HOBO rain gauge (tipping bucket)      | For automated precipitation logging      |
+| Tripod or mounting hardware           | For securing instruments at consistent height |
+| Radiation shield (for temperature sensors) | Prevents direct solar heating of the sensor |
+| Laptop or smartphone with HOBOconnect app | For programming loggers and downloading data |
+| USB cable or Bluetooth adapter        | For data transfer                        |
+| Spare batteries                       | Matched to logger model                  |
+| Cable ties and ground stakes          | For securing equipment against wind      |
+
+
+## 6. Procedure
+
+### 6.1 Manual Weather Observations
+
+Record the following observations at the start and end of every field
+visit, and at the time of each sample collection. Enter all
+observations in the field notebook per
+[SOP-F003](SOP-F003-field-notebook-protocols.qmd).
+
+| Variable                | Method                          | Units       |
+|:------------------------|:--------------------------------|:------------|
+| Air temperature         | Sling psychrometer, Kestrel, or digital thermometer | C |
+| Relative humidity       | Sling psychrometer or Kestrel   | %           |
+| Wind speed              | Kestrel or Beaufort scale estimate | m/s or Beaufort number |
+| Wind direction          | Compass bearing from which wind blows | degrees or cardinal direction |
+| Cloud cover             | Visual estimate                 | Tenths (0--10) or oktas (0--8) |
+| Cloud type              | Identify dominant type using chart | Name (e.g., cumulus, cirrus) |
+| Precipitation           | Observation and rain gauge      | mm; also note type (rain, drizzle, none) |
+| Barometric pressure (if available) | Kestrel or smartphone app | hPa or mbar |
+
+::: {.callout-tip}
+### Tip
+If you do not have a weather instrument, still record qualitative
+observations: "clear sky, calm winds, warm" is far better than nothing.
+Note the source of any weather data you look up online (e.g., "NWS
+Ontario station, 08:00 reading").
+:::
+
+### 6.2 Beaufort Wind Scale (Quick Reference)
+
+| Beaufort | Description     | Speed (m/s) | Visual Indicator                |
+|:---------|:----------------|:------------|:--------------------------------|
+| 0        | Calm            | < 0.3       | Smoke rises vertically          |
+| 1        | Light air       | 0.3--1.5    | Smoke drifts                    |
+| 2        | Light breeze    | 1.6--3.3    | Leaves rustle                   |
+| 3        | Gentle breeze   | 3.4--5.4    | Leaves and twigs in motion      |
+| 4        | Moderate breeze | 5.5--7.9    | Small branches move; dust rises |
+| 5        | Fresh breeze    | 8.0--10.7   | Small trees sway                |
+| 6        | Strong breeze   | 10.8--13.8  | Large branches in motion        |
+
+### 6.3 Deploying Portable Data Loggers
+
+1. Select a deployment location that is representative of the site
+   conditions and will not be disturbed by people, animals, or
+   flooding.
+2. Mount temperature and humidity loggers inside a radiation shield at
+   a height of 1.5 m above ground level. Secure the shield to a
+   tripod, post, or tree using cable ties.
+3. Mount rain gauges on a level surface with no overhead obstructions
+   (tree canopy, buildings). The gauge orifice should be
+   approximately 1 m above ground.
+4. Program the logger using the HOBOconnect app or HOBOware software:
+   - Set the logging interval (typically 5 or 15 minutes for weather
+     variables).
+   - Set the start time (delayed start or immediate).
+   - Confirm that the clock is synchronized to the correct time zone
+     (Pacific Time).
+5. Record the following in the field notebook:
+   - Logger serial number
+   - Deployment location (GPS coordinates per
+     [SOP-F006](SOP-F006-gps-site-navigation.qmd))
+   - Date and time of deployment
+   - Logging interval
+   - Sensor height above ground
+6. Take a photograph of the deployed logger with surrounding context
+   visible.
+
+### 6.4 Retrieving Data from Loggers
+
+1. Connect to the logger via Bluetooth (HOBOconnect) or USB cable
+   (HOBOware).
+2. Download the data and save the raw file using the naming convention:
+   `YYYY-MM-DD_SiteID_LoggerSN_weather.csv`
+3. Do not clear the logger memory until you have verified the
+   downloaded file opens correctly and contains the expected date
+   range.
+4. If the logger is being left in the field, check the battery level
+   and confirm the logging interval is still correct.
+5. Upload the raw data file to the project GitHub repository under
+   `data/weather/` within 48 hours.
+
+### 6.5 Using Online Weather Data
+
+When on-site instruments are not available, supplement field
+observations with data from nearby weather stations. Preferred sources
+for Southern California:
+
+| Source                            | URL                                      |
+|:----------------------------------|:-----------------------------------------|
+| NWS (National Weather Service)    | <https://www.weather.gov>                |
+| MesoWest / SynopticData          | <https://synopticdata.com/mesowest>      |
+| CIMIS (California Irrigation Management Information System) | <https://cimis.water.ca.gov> |
+| Weather Underground (personal stations) | <https://www.wunderground.com>     |
+
+Record the station name, distance from field site, and retrieval date
+in the field notebook and data file metadata.
+
+
+## 7. Quality Control
+
+- Cross-check manually recorded air temperature against the nearest
+  reliable weather station (NWS or CIMIS). Discrepancies greater than
+  3 C at similar elevation and time should be investigated.
+- Inspect data loggers for drift by deploying two loggers side by side
+  for at least 24 hours once per year. Temperature readings should
+  agree within 0.5 C; humidity within 5%.
+- Check rain gauge calibration at least once per year by pouring a
+  known volume of water through the gauge and comparing the logged
+  total to the expected value.
+- Flag any suspicious data (e.g., sudden temperature jumps, constant
+  humidity at 100% for days) during data review and note the issue in
+  the project data log.
+
+
+## 8. References
+
+- Onset Computer Corporation. *HOBO MX Series Data Logger User
+  Manual*. <https://www.onsetcomp.com>
+- National Weather Service. *Observing Handbook No. 1: Marine Surface
+  Weather Observations*. (Beaufort scale reference.)
+- WMO (World Meteorological Organization). (2018). *Guide to
+  Meteorological Instruments and Methods of Observation* (WMO-No. 8).
+
+
+## 9. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Lightning and heat safety         |
+| [F003](SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | Weather recorded in notebook |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation  | Logger deployment coordinates |
+| [F501](SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring | Dedicated temperature sensor SOP |
+| [F502](SOP-F502-air-quality-portable-sensors.qmd) | Air Quality Monitoring | Related atmospheric measurements |
+| [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub      | Data file version control |
+
+
+## 10. Training Record
+
+Before recording weather observations or deploying loggers
+independently, personnel must:
+
+1. Read this SOP in full
+2. Demonstrate correct use of a sling psychrometer or Kestrel meter
+3. Demonstrate logger programming, deployment, and data download
+   during a supervised field visit
+4. Be signed off by the PI or field lead

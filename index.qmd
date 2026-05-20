@@ -42,12 +42,12 @@ tbl-classes: table-sm
 | [F001](field_sops/SOP-F001-field-safety.qmd) | Field Safety | 1.1 | |
 | [F002](field_sops/SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | -- | |
 | [F003](field_sops/SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | -- | |
-| F004 | *TBD -- Site Access and Permits* | -- | **NEW** |
+| [F004](field_sops/) | *TBD -- Site Access and Permits* | TBD | **NEW** |
 | [F005](field_sops/SOP-F005-random-sampling-design.qmd) | Random Sampling Design | 1.0 | |
-| F006 | *GPS and Site Navigation* | -- | **NEW**: handheld GPS, phone apps, waypoint logging |
-| F007 | *Field Decontamination Protocols* | -- | **NEW**: cross-site decontamination for boots, nets, equipment |
-| F008 | *Sample Labeling, Chain of Custody, and Transport* | -- | **NEW**: currently scattered across individual SOPs |
-| F009 | *Weather Monitoring and Field Meteorology* | -- | **NEW**: portable weather stations, logging conditions |
+| [F006](field_sops/SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation |  |  |
+| [F007](field_sops/SOP-F007-field-decontamination.qmd) | Field Decontamination Protocols | -- | **NEW**: |
+| [F008](field_sops/SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling, Chain of Custody, and Transport | -- | **NEW**|
+| [F009](field_sops/SOP-F009-weather-monitoring.qmd) | Weather Monitoring and Field Meteorology | -- | **NEW** |
 
 ### Equipment (F100--F199)
 
@@ -55,6 +55,7 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|:------|
 | [F100](field_sops/SOP-F100-vehicles.qmd) | EA Program Vehicle Use | -- | |
 | [F101](field_sops/SOP-F101-electrical-power-in-the-field.qmd) | Electrical Power in the Field | 0.2 | |
+| F102 | Waders/wetsuit | -- |  |
 | F102 | *Canoe / Kayak / Small Watercraft* | -- | **NEW**: for lake and wetland sampling |
 | F103 | *Field Laptop and Tablet Use* | -- | **NEW**: rugged computing, data entry in field |
 
@@ -68,8 +69,9 @@ tbl-classes: table-sm
 | [F203](field_sops/) | HOBO Water Level Pressure Transducers | -- | |
 | F204 | *HOBO Weather Station Deployment* | -- | **NEW**: HOBO pendant/MX loggers for temp, RH, light |
 | F205 | *Handheld Turbidity Meter* | -- | **NEW**: field turbidity using LaMotte or Hach |
-| F206 | *Portable Spectrophotometer / Colorimeter (Field)* | -- | **NEW**: Hach DR900 field use |
-| F207 | *Dissolved Oxygen Meter (Field)* | -- | **NEW**: standalone DO probe calibration and use |
+| F207 | Secchi Disk/Sicchi Disk Tube | -- | **NEW**|
+| F208 | *Portable Spectrophotometer / Colorimeter (Field)* | -- | **NEW**: Hach DR900 field use |
+| F209 | *Dissolved Oxygen Meter (Field)* | -- | **NEW**: standalone DO probe calibration and use |
 
 ### Water / Aquatic Systems (F300--F399)
 
