@@ -24,7 +24,7 @@ This SOP describes the field determination of soil color using the
 Munsell Soil Color Charts. Soil color is one of the most readily
 observable soil properties and provides information about organic
 matter content, drainage and aeration status, mineralogy, and degree
-of weathering. Consistent color determination is essential for soil
+of weathering [@munsell2009; @schoeneberger2012]. Consistent color determination is essential for soil
 profile descriptions ([SOP-F407](SOP-F407-soil-profile-description.qmd)),
 wetland delineation, and site characterization.
 
@@ -86,7 +86,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 ## 6. Background: The Munsell System
 
-Munsell color notation has three components:
+Munsell color notation has three components [@munsell2009; @soilsurveystaff2022]:
 
 - **Hue:** The dominant spectral color (e.g., 10YR, 2.5Y, 5YR).
   Pages in the chart book are arranged by hue.
@@ -122,7 +122,7 @@ A complete Munsell notation is written as: **Hue Value/Chroma**
    artificial light or at twilight.
 2. Hold the soil sample behind the chart page apertures so that the
    soil is visible through the holes.
-3. Compare the soil to the color chips. Start with the hue page that
+3. Compare the soil to the color chips [@schoeneberger2012]. Start with the hue page that
    appears closest, then move to the value row that matches, then
    slide along the chroma axis.
 4. Select the chip that most closely matches the soil. If the soil
@@ -185,13 +185,8 @@ prolonged saturation and reducing conditions.
 
 ## 9. References
 
-- Munsell Color. (2009). *Munsell Soil Color Charts*. Grand Rapids,
-  MI: Munsell Color.
-- Soil Survey Staff. (2022). *Keys to Soil Taxonomy*. 13th ed. USDA
-  Natural Resources Conservation Service.
-- Schoeneberger, P.J., Wysocki, D.A., Benham, E.C., and Soil Survey
-  Staff. (2012). *Field Book for Describing and Sampling Soils*.
-  Version 3.0. USDA NRCS, National Soil Survey Center, Lincoln, NE.
+::: {#refs}
+:::
 
 
 ## 10. Related SOPs

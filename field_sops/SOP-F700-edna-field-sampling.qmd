@@ -26,7 +26,7 @@ consists of DNA shed into the environment by organisms through skin
 cells, mucus, feces, gametes, and decomposing tissue. Detecting eDNA
 in water samples allows non-invasive detection of aquatic species
 (fish, amphibians, invertebrates, pathogens) without direct
-observation or capture. Because eDNA is present at extremely low
+observation or capture [@goldberg2016]. Because eDNA is present at extremely low
 concentrations, preventing contamination during field collection is
 critical. This SOP covers the field side of the workflow; laboratory
 processing (filtration, extraction, inhibition testing) is covered in
@@ -186,7 +186,7 @@ preservation and reducing the volume transported.
    (typically 500 mL to 1 L). Record the total volume filtered.
 3. Expel remaining water from the capsule.
 4. Add 1--2 mL of Longmire's buffer or fill with molecular-grade
-   ethanol using a syringe. Cap both ends of the Sterivex.
+   ethanol using a syringe [@renshaw2015]. Cap both ends of the Sterivex.
 5. Label the capsule and place in a ziplock bag on ice.
 
 **Open filter funnel method:**
@@ -203,7 +203,8 @@ preservation and reducing the volume transported.
 
 If field filtration is not practical, keep the whole-water sample on
 ice (4 C) and filter in the lab within 6 hours of collection.
-Exceeding 6 hours significantly increases DNA degradation.
+Exceeding 6 hours significantly increases DNA degradation
+[@goldberg2016].
 
 ### 6.6 Field Blanks and Controls
 
@@ -259,18 +260,8 @@ decontamination procedures.
 
 ## 9. References
 
-- Goldberg, C.S., Turner, C.R., Deiner, K., et al. (2016). Critical
-  considerations for the application of environmental DNA methods to
-  detect aquatic species. *Methods in Ecology and Evolution*, 7,
-  1299--1307.
-- Renshaw, M.A., Olds, B.P., Jerde, C.L., McVeigh, M.M., and Lodge,
-  D.M. (2015). The room temperature preservation of filtered
-  environmental DNA samples and assimilation into a phenol-chloroform-
-  isoamyl alcohol DNA extraction. *Molecular Ecology Resources*, 15,
-  168--176.
-- US Fish and Wildlife Service. (2019). *Quality Assurance Project
-  Plan for eDNA Monitoring of Bighead and Silver Carps*. USFWS,
-  Bloomington, MN.
+::: {#refs}
+:::
 
 
 ## 10. Related SOPs

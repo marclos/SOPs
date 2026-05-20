@@ -29,7 +29,8 @@ gradients when the Picarro CRDS automated system
 or when additional spatial replication is needed. The method captures
 headspace gas samples at timed intervals, which are analyzed for CO~2~
 concentration using a portable infrared gas analyzer (IRGA), syringe
-samples returned to the lab, or soda-lime traps.
+samples returned to the lab, or soda-lime traps
+[@hutchinson1981; @livingston1995; @parkin2012].
 
 
 ## 2. Scope
@@ -145,7 +146,7 @@ allow the soil disturbance from insertion to subside.
 4. Using the mallet and a wooden block placed on top of the collar,
    drive the collar into the soil to a depth of 3--5 cm. Avoid driving
    deeper than 5 cm, as this severs a disproportionate fraction of
-   surface roots and alters the flux.
+   surface roots and alters the flux [@rochette2005].
 5. Measure and record the collar insertion depth and the height of the
    collar rim above the soil surface (this determines the headspace
    volume).
@@ -197,7 +198,7 @@ If a portable IRGA is available:
 
 ::: {.callout-note}
 The soda-lime method provides an integrated 24-hour flux estimate but
-is less precise than syringe or IRGA methods. It is best suited for
+is less precise than syringe or IRGA methods [@raich2000]. It is best suited for
 comparative studies (e.g., treatment vs. control) rather than absolute
 flux quantification.
 :::
@@ -224,8 +225,8 @@ where:
 - $T$ = air temperature (K)
 
 If the concentration increase is nonlinear, a nonlinear (e.g.,
-Hutchinson-Mosier) model may provide a better flux estimate. Consult
-the PI.
+Hutchinson-Mosier) model may provide a better flux estimate
+[@hutchinson1981; @pihlatie2013]. Consult the PI.
 
 
 ## 8. Quality Control
@@ -246,17 +247,8 @@ the PI.
 
 ## 9. References
 
-- Hutchinson, G.L. and Mosier, A.R. (1981). Improved soil cover method
-  for field measurement of nitrous oxide fluxes. *Soil Science Society
-  of America Journal*, 45, 311--316.
-- Parkin, T.B. and Venterea, R.T. (2012). USDA-ARS GRACEnet Project
-  Protocols, Chapter 3: Chamber-Based Trace Gas Flux Measurements.
-- Rochette, P. and Eriksen-Hamel, N.S. (2005). Estimation of N~2~O
-  emissions from agricultural soils. *SSSAJ*, 69, 1256--1264.
-- Livingston, G.P. and Hutchinson, G.L. (1995). Enclosure-based
-  measurement of trace gas exchange: applications and sources of error.
-  In: Matson, P.A. and Harriss, R.C. (Eds.), *Biogenic Trace Gases*.
-  Blackwell Science.
+::: {#refs}
+:::
 
 
 ## 10. Related SOPs
