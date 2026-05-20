@@ -60,8 +60,8 @@ whenever equipment is acquired, moved, or decommissioned.
 
 | Item                          | ID#   | Qty | Location          | Related SOP |
 |:------------------------------|:------|:----|:------------------|:------------|
-| 2016 Ford Explorer #1        | *TBD* | 1   | Garage, EA Slot   | [F10](../field_sops/SOP-F10-vehicles.qmd) |
-| 2016 Ford Explorer #2        | *TBD* | 1   | Garage, EA Slot   | [F10](../field_sops/SOP-F10-vehicles.qmd) |
+| 2016 Ford Explorer #1        | *TBD* | 1   | Garage, EA Slot   | [F100](../field_sops/SOP-F100-vehicles.qmd) |
+| 2016 Ford Explorer #2        | *TBD* | 1   | Garage, EA Slot   | [F100](../field_sops/SOP-F100-vehicles.qmd) |
 
 
 ## 5. Field Equipment
@@ -75,17 +75,17 @@ whenever equipment is acquired, moved, or decommissioned.
 | Meter Tape (25 m)                           | *TBD* | 1   | SGM 131   | --          |
 | Meter Tape (100 m)                          | *TBD* | 1   | SGM 131   | --          |
 | Infiltrometer                               | *TBD* | 3   | SGM 131   | --          |
-| VanDorn Bottle (Horizontal)                 | *TBD* | 1   | SGM 133   | [F41](../field_sops/SOP-F41-surface-water-sampling.qmd) |
-| VanDorn Bottle (Vertical)                   | *TBD* | 1   | SGM 133   | [F41](../field_sops/SOP-F41-surface-water-sampling.qmd) |
+| VanDorn Bottle (Horizontal)                 | *TBD* | 1   | SGM 133   | [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) |
+| VanDorn Bottle (Vertical)                   | *TBD* | 1   | SGM 133   | [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) |
 | LiCor Underwater PAR Sensor                 | *TBD* | 1   | SGM 133   | --          |
 | Walkie Talkies                              | *TBD* | 3   | SGM 131   | --          |
-| Honda Field Generator                       | *TBD* | 1   | SGM 132   | [F11](../field_sops/SOP-F11-electrical-power-in-the-field.qmd) |
-| Ryobi Field Generator                       | *TBD* | 1   | SGM 132   | [F11](../field_sops/SOP-F11-electrical-power-in-the-field.qmd) |
-| Eureka Manta2 WQ Sonde                      | *TBD* | 2   | *TBD*     | [F22](../field_sops/SOP-F22-eureka-manta2.qmd) |
-| Pygmy Velocity Meter                        | *TBD* | 1   | *TBD*     | [F23](../field_sops/SOP-F23-pygmy-type-aa-velocity-meters.qmd) |
-| Type AA Velocity Meter                      | *TBD* | 1   | *TBD*     | [F23](../field_sops/SOP-F23-pygmy-type-aa-velocity-meters.qmd) |
+| Honda Field Generator                       | *TBD* | 1   | SGM 132   | [F101](../field_sops/SOP-F101-electrical-power-in-the-field.qmd) |
+| Ryobi Field Generator                       | *TBD* | 1   | SGM 132   | [F101](../field_sops/SOP-F101-electrical-power-in-the-field.qmd) |
+| Eureka Manta2 WQ Sonde                      | *TBD* | 2   | *TBD*     | [F200](../field_sops/SOP-F200-eureka-manta2.qmd) |
+| Pygmy Velocity Meter                        | *TBD* | 1   | *TBD*     | [F201](../field_sops/SOP-F201-pygmy-type-aa-velocity-meters.qmd) |
+| Type AA Velocity Meter                      | *TBD* | 1   | *TBD*     | [F201](../field_sops/SOP-F201-pygmy-type-aa-velocity-meters.qmd) |
 | Stop Watches                                | *TBD* | 10  | *TBD*     | --          |
-| Alkalinity Test Kit                         | *TBD* | 3   | *TBD*     | [L41](SOP-L41-alkalinity-titration.qmd) |
+| Alkalinity Test Kit                         | *TBD* | 3   | *TBD*     | [L301](SOP-L301-alkalinity-titration.qmd) |
 
 
 ## 6. Remote Sensing and Drones
@@ -112,34 +112,34 @@ whenever equipment is acquired, moved, or decommissioned.
 
 | Item                                         | ID# / Serial         | Qty | Location  | Related SOP |
 |:---------------------------------------------|:----------------------|:----|:----------|:------------|
-| Shimadzu TOC-L Analyzer (with TNM-L and SSM-5000A) | *TBD*          | 1   | SGM 133   | [L29](SOP-L29-shimadzu-toc-l.qmd), [L62](SOP-L62-total-carbon.qmd) |
+| Shimadzu TOC-L Analyzer (with TNM-L and SSM-5000A) | *TBD*          | 1   | SGM 133   | [L204](SOP-L204-shimadzu-toc-l.qmd), [L407](SOP-L407-total-carbon.qmd) |
 | Agilent 8900 ICP-MS                          | *TBD*                 | 1   | *TBD*     | --          |
 | Delta V IRMS (Isotope Ratio Mass Spectrometer) | *TBD*              | 1   | *TBD*     | --          |
-| Turner Designs Fluorometer                   | *TBD*                 | 1   | *TBD*     | [L28](SOP-L28-trilogy-fluorometer.qmd) |
-| Hach DR3900 Benchtop Spectrophotometer       | *TBD*                 | 1   | SGM 133   | [L45](SOP-L45-hach-colorimetric.qmd) |
-| Hach DR900 Portable Colorimeter              | *TBD*                 | 3   | *TBD*     | [L45](SOP-L45-hach-colorimetric.qmd) |
-| Hach DRB 200 Digital Reactor Block           | *TBD*                 | 1   | SGM 134   | [L45](SOP-L45-hach-colorimetric.qmd) |
-| Hach Digital Reactor Block                   | *TBD*                 | 1   | SGM 133   | [L45](SOP-L45-hach-colorimetric.qmd) |
-| Fisher Scientific Accumet pH Meter           | *TBD*                 | 1   | *TBD*     | [L40](SOP-L40-pH-conductivity-bench.qmd) |
-| Echo Labs Revolve Microscope                 | *TBD*                 | 1   | SGM 133   | [L39](SOP-L39-revolve-microscope.qmd) |
+| Turner Designs Fluorometer                   | *TBD*                 | 1   | *TBD*     | [L203](SOP-L203-trilogy-fluorometer.qmd) |
+| Hach DR3900 Benchtop Spectrophotometer       | *TBD*                 | 1   | SGM 133   | [L303](SOP-L303-hach-colorimetric.qmd) |
+| Hach DR900 Portable Colorimeter              | *TBD*                 | 3   | *TBD*     | [L303](SOP-L303-hach-colorimetric.qmd) |
+| Hach DRB 200 Digital Reactor Block           | *TBD*                 | 1   | SGM 134   | [L303](SOP-L303-hach-colorimetric.qmd) |
+| Hach Digital Reactor Block                   | *TBD*                 | 1   | SGM 133   | [L303](SOP-L303-hach-colorimetric.qmd) |
+| Fisher Scientific Accumet pH Meter           | *TBD*                 | 1   | *TBD*     | [L300](SOP-L300-pH-conductivity-bench.qmd) |
+| Echo Labs Revolve Microscope                 | *TBD*                 | 1   | SGM 133   | [L211](SOP-L211-revolve-microscope.qmd) |
 | Dissecting Scopes w/ lights                  | *TBD*                 | 7   | *TBD*     | --          |
 | Dissecting Scope w/ lights and camera        | *TBD*                 | 1   | *TBD*     | --          |
-| NanoDrop One Spectrophotometer               | *TBD*                 | 1   | SGM 133   | [L95](SOP-L95-dna-extraction.qmd) |
-| Qubit 4 Fluorometer                         | *TBD*                 | 1   | SGM 133   | [L95](SOP-L95-dna-extraction.qmd) |
-| Bio-Rad QX200 ddPCR System                  | *TBD*                 | 1   | *TBD*     | [L96](SOP-L96-ddpcr-nitrogen-cycle-primers.qmd) |
-| Picarro G2508 CRDS Analyzer                  | S/N 2143-JFAADS2048   | 1   | *TBD*     | [F74](../field_sops/SOP-F74-picarro-field-deployment.qmd) |
-| Eosense eosMX-P Multiplexer                 | *TBD*                 | 1   | *TBD*     | [F74](../field_sops/SOP-F74-picarro-field-deployment.qmd) |
+| NanoDrop One Spectrophotometer               | *TBD*                 | 1   | SGM 133   | [L700](SOP-L700-dna-extraction.qmd) |
+| Qubit 4 Fluorometer                         | *TBD*                 | 1   | SGM 133   | [L700](SOP-L700-dna-extraction.qmd) |
+| Bio-Rad QX200 ddPCR System                  | *TBD*                 | 1   | *TBD*     | [L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) |
+| Picarro G2508 CRDS Analyzer                  | S/N 2143-JFAADS2048   | 1   | *TBD*     | [F504](../field_sops/SOP-F504-picarro-field-deployment.qmd) |
+| Eosense eosMX-P Multiplexer                 | *TBD*                 | 1   | *TBD*     | [F504](../field_sops/SOP-F504-picarro-field-deployment.qmd) |
 
 
 ## 9. Balances and Measurement
 
 | Item                                         | ID# / Serial   | Qty | Location  | Related SOP |
 |:---------------------------------------------|:----------------|:----|:----------|:------------|
-| Mettler Toledo XPE205 Delta Range Microbalance | *TBD*         | 1   | *TBD*     | [L13](SOP-L13-using-balances.qmd), [L25](SOP-L25-analytical-balance-calibration.qmd) |
-| Mettler Toledo Balance                       | *TBD*           | 3   | *TBD*     | [L13](SOP-L13-using-balances.qmd) |
+| Mettler Toledo XPE205 Delta Range Microbalance | *TBD*         | 1   | *TBD*     | [L102](SOP-L102-using-balances.qmd), [L200](SOP-L200-analytical-balance-calibration.qmd) |
+| Mettler Toledo Balance                       | *TBD*           | 3   | *TBD*     | [L102](SOP-L102-using-balances.qmd) |
 | High Capacity Portable Scale (24 x 24 in)   | *TBD*           | 1   | *TBD*     | --          |
 | Digital Calipers                             | *TBD*           | 7   | *TBD*     | --          |
-| Hydrometer                                  | *TBD*           | 5   | *TBD*     | [L56](SOP-L56-texture-hydrometer.qmd) |
+| Hydrometer                                  | *TBD*           | 5   | *TBD*     | [L401](SOP-L401-texture-hydrometer.qmd) |
 
 
 ## 10. Laboratory Equipment
@@ -148,14 +148,14 @@ whenever equipment is acquired, moved, or decommissioned.
 |:---------------------------------------------|:----------------------|:----|:----------|:------------|
 | MilliQ Elix Water Purification System        | *TBD*                 | 1   | SGM 134   | --          |
 | ESCO Laminar Flow Cabinet                    | *TBD*                 | 1   | SGM 134   | --          |
-| Drying Oven                                  | *TBD*                 | 1   | SGM 134   | [L16](SOP-L16-drying-ovens.qmd) |
-| Thermo Fisher Sorvall ST 8R Centrifuge       | *TBD*                 | 1   | SGM 133   | [L20](SOP-L20-sorvall-centrifuge.qmd) |
+| Drying Oven                                  | *TBD*                 | 1   | SGM 134   | [L105](SOP-L105-drying-ovens.qmd) |
+| Thermo Fisher Sorvall ST 8R Centrifuge       | *TBD*                 | 1   | SGM 133   | [L109](SOP-L109-sorvall-centrifuge.qmd) |
 | Thermo Fisher Legend Micro 21 Centrifuge     | SN41972616            | 1   | SGM 133   | --          |
 | Fisher Scientific accuSpin 8C Clinical Centrifuge | *TBD*           | 1   | SGM 133   | --          |
 | Thermo Scientific mySPIN 12 Micro Centrifuge | *TBD*                | 1   | SGM 133   | --          |
-| Thermo Fisher -80 C Freezer                  | *TBD*                 | 1   | SGM 133   | [L17](SOP-L17-refrigerators-freezers.qmd) |
-| Thermo Fisher -30 C Freezer                  | *TBD*                 | 1   | SGM 133   | [L17](SOP-L17-refrigerators-freezers.qmd) |
-| Thermo Fisher 4 C Double Wide Refrigerator   | *TBD*                 | 1   | SGM 134   | [L17](SOP-L17-refrigerators-freezers.qmd) |
+| Thermo Fisher -80 C Freezer                  | *TBD*                 | 1   | SGM 133   | [L106](SOP-L106-refrigerators-freezers.qmd) |
+| Thermo Fisher -30 C Freezer                  | *TBD*                 | 1   | SGM 133   | [L106](SOP-L106-refrigerators-freezers.qmd) |
+| Thermo Fisher 4 C Double Wide Refrigerator   | *TBD*                 | 1   | SGM 134   | [L106](SOP-L106-refrigerators-freezers.qmd) |
 | Fisher Scientific Isotemp Tube               | SN GFBF60022010       | 1   | SGM 133   | --          |
 | Thermo Scientific Cimarec Hot Plate          | *TBD*                 | 4   | SGM 134   | --          |
 | Lab Armor Dry Bath                           | *TBD*                 | 1   | SGM 134   | --          |
