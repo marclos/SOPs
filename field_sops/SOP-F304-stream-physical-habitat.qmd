@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-F45: Stream Physical Habitat Assessment
+# SOP-F304: Stream Physical Habitat Assessment
 # =============================================================================
 title: "Stream Physical Habitat Assessment -- SWAMP Protocol"
 sop-number: "SOP-F304"
@@ -112,7 +112,7 @@ solution or 60 C hot water.
 A minimum of two people must be present for any in-stream work. If a
 team member loses footing, release equipment and float feet-first
 downstream to a recovery point. Refer to
-[SOP-F01 Field Safety](SOP-F001-field-safety.qmd) for general
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
 emergen0cy procedures.
 
 
@@ -142,7 +142,7 @@ emergen0cy procedures.
 |:--------------------------------------|:-----------------------------------------|
 | Current meter and top-setting wading rod | If discharge is collected concurrently; see [SOP-F301](SOP-F301-stream-discharge-measurement.qmd) |
 | Eureka Manta2 multiprobe              | If water chemistry is collected concurrently; see [SOP-F200](SOP-F200-eureka-manta2.qmd) |
-| Water sampling bottles and preservatives | If water quality samples are collected; see [SOP-F400](SOP-F400-surface-water-sampling.qmd) |
+| Water sampling bottles and preservatives | If water quality samples are collected; see [SOP-F300](SOP-F300-surface-water-sampling.qmd) |
 
 
 ## 6. Estimated Time
@@ -422,7 +422,7 @@ the inter-transect distance.
 ### 7.15 Module O: Stream Discharge (Optional)
 
 If discharge is measured concurrently, follow
-[SOP-F42 Stream Discharge Measurement](SOP-F42-stream-discharge-measurement.qmd).
+[SOP-F301 Stream Discharge Measurement](SOP-F301-stream-discharge-measurement.qmd).
 Select a cross-section near the downstream end of the reach (at or
 near Transect A) that meets discharge measurement criteria. If a
 current meter is not available, the neutrally buoyant object (NBO)
@@ -461,7 +461,7 @@ record qualitative observations on the field form:
 2. Use the SWAMP-compatible data format if data will be submitted to
    the California Environmental Data Exchange Network (CEDEN)
 3. All data entry scripts should be version-controlled per
-   [SOP-L07 RStudio and GitHub](../lab_sops/SOP-L07-rstudio-github.qmd)
+   [SOP-L801 RStudio and GitHub](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 ### 8.3 Calculating the Index of Physical-habitat Integrity (IPI)
 
@@ -543,7 +543,7 @@ hours.
 Before conducting physical habitat assessments independently,
 personnel must:
 
-1. Read this SOP, [SOP-F01 Field Safety](SOP-F01-field-safety.qmd),
+1. Read this SOP, [SOP-F001 Field Safety](SOP-F001-field-safety.qmd),
    and the SWAMP Supplemental Guidance Document in full
 2. Review the SWAMP physical habitat field data sheets and understand
    all fields
