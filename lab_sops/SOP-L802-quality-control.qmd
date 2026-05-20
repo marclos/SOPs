@@ -3,7 +3,7 @@
 # SOP-L08: Quality Control and Quality Assurance
 # =============================================================================
 title: "Quality Control and Quality Assurance"
-sop-number: "SOP-L08"
+sop-number: "SOP-L802"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -40,10 +40,10 @@ control that quality in real time [@taylor1987].
 
 - **Applies to:** All quantitative chemical, physical, and biological
   analyses performed in the EA Program laboratory, including those
-  described in SOPs L40 through L99 and analyses of field-collected
-  samples (SOPs F01 through F99)
+  described in SOPs L002 through L999 and analyses of field-collected
+  samples (SOPs F001 through F999)
 - **Does not apply to:** Qualitative screening tests (e.g., visual soil
-  texture by feel, [SOP-F58](../field_sops/SOP-F58-soil-texture-by-feel.qmd))
+  texture by feel, [SOP-F401](../field_sops/SOP-F401-soil-texture-by-feel.qmd))
   unless those tests include a quantitative component
 - **Location:** EA Program laboratory, SGM 133
 
@@ -64,7 +64,7 @@ QA/QC activities use the same reagents and equipment as the parent
 analytical method. Refer to the method-specific SOP for safety
 information. When preparing standards from stock solutions, observe
 all PPE and fume hood requirements specified in
-[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
 ## 5. Definitions
@@ -162,7 +162,7 @@ analytical process:
 | Method blank         | Reagent water processed through the entire method | 1 per batch (or 1 per 20 samples) | Less than MDL |
 | Field blank          | Clean matrix (e.g., DI water) taken to the field and back | 1 per field event | Less than MDL |
 | Equipment blank      | Reagent water rinsed through sampling equipment | 1 per equipment set per event | Less than MDL |
-| Bottle blank         | DI water in a sample container, preserved identically to samples | 1 per 10 bottles per type ([SOP-F41](../field_sops/SOP-F41-surface-water-sampling.qmd)) | Less than MDL |
+| Bottle blank         | DI water in a sample container, preserved identically to samples | 1 per 10 bottles per type ([SOP-F300](../field_sops/SOP-F300-surface-water-sampling.qmd)) | Less than MDL |
 
 If a blank exceeds the MDL:
 
@@ -298,16 +298,16 @@ Common holding times for EA Program analyses:
 
 | Analysis                  | Holding Time              | Preservation              | Reference SOP |
 |:--------------------------|:--------------------------|:--------------------------|:--------------|
-| pH                        | 15 minutes (field); 24 h (lab) | None; analyze ASAP   | [L40](SOP-L40-pH-conductivity-bench.qmd), [L57](SOP-L57-soil-pH-salinity.qmd) |
-| Conductivity              | 28 days                   | Refrigerate 4 C           | [L40](SOP-L40-pH-conductivity-bench.qmd) |
-| Nitrate/nitrite           | 48 hours                  | Refrigerate 4 C; H~2~SO~4~ to pH < 2 | [L58](SOP-L58-nitrate-ammonium-kcl.qmd) |
-| Ammonium                  | 48 hours                  | Refrigerate 4 C; H~2~SO~4~ to pH < 2 | [L58](SOP-L58-nitrate-ammonium-kcl.qmd) |
-| Total phosphorus          | 28 days                   | H~2~SO~4~ to pH < 2; 4 C | [L60](SOP-L60-extractable-phosphorus.qmd) |
-| Chlorophyll *a* (filter)  | 28 days frozen            | Freeze at --20 C in dark  | [L54](SOP-L54-chlorophyll-extraction.qmd) |
-| Metals (acid-digested)    | 6 months                  | HNO~3~ to pH < 2; 4 C    | [L65](SOP-L65-hotplate-acid-digestion.qmd), [L66](SOP-L66-mars-microwave-digestion.qmd) |
-| Coliforms (Colilert)      | 6 hours to incubation     | Refrigerate 4 C           | [L49](SOP-L49-colilert-quanti-tray.qmd) |
-| Soil KCl extracts         | 24 hours                  | Refrigerate 4 C           | [L58](SOP-L58-nitrate-ammonium-kcl.qmd) |
-| Soil moisture             | Analyze immediately or freeze | Freeze if delayed > 24 h | [L55](SOP-L55-soil-moisture.qmd) |
+| pH                        | 15 minutes (field); 24 h (lab) | None; analyze ASAP   | [L300](SOP-L300-pH-conductivity-bench.qmd), [L57](SOP-L57-soil-pH-salinity.qmd) |
+| Conductivity              | 28 days                   | Refrigerate 4 C           | [L300](SOP-L300-pH-conductivity-bench.qmd) |
+| Nitrate/nitrite           | 48 hours                  | Refrigerate 4 C; H~2~SO~4~ to pH < 2 | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
+| Ammonium                  | 48 hours                  | Refrigerate 4 C; H~2~SO~4~ to pH < 2 | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
+| Total phosphorus          | 28 days                   | H~2~SO~4~ to pH < 2; 4 C | [L405](SOP-L405-extractable-phosphorus.qmd) |
+| Chlorophyll *a* (filter)  | 28 days frozen            | Freeze at --20 C in dark  | [L310](SOP-L310-chlorophyll-extraction.qmd) |
+| Metals (acid-digested)    | 6 months                  | HNO~3~ to pH < 2; 4 C    | [L410](SOP-L410-hotplate-acid-digestion.qmd), [L66](SOP-L66-mars-microwave-digestion.qmd) |
+| Coliforms (Colilert)      | 6 hours to incubation     | Refrigerate 4 C           | [L305](SOP-L305-colilert-quanti-tray.qmd) |
+| Soil KCl extracts         | 24 hours                  | Refrigerate 4 C           | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
+| Soil moisture             | Analyze immediately or freeze | Freeze if delayed > 24 h | [L400](SOP-L400-soil-moisture.qmd) |
 
 ### 6.7 Corrective Actions
 
@@ -771,8 +771,8 @@ method's waste disposal procedure.
 Before performing analytical work independently, personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
-   and [SOP-L05 RStudio and GitHub](SOP-L05-rstudio-github.qmd)
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   and [SOP-L801 RStudio and GitHub](SOP-L801-rstudio-github.qmd)
    training
 3. Complete training on the specific analytical SOP(s) they will use
 4. Demonstrate ability to prepare calibration standards, blanks, and
