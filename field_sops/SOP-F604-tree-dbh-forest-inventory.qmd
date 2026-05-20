@@ -1,0 +1,302 @@
+---
+# =============================================================================
+# SOP-F604: Tree DBH and Forest Inventory
+# =============================================================================
+title: "Tree DBH and Forest Inventory"
+sop-number: "SOP-F604"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes standardized procedures for measuring tree diameter
+at breast height (DBH), conducting fixed-area plot-based forest
+inventories, and estimating basal area using prism or angle-gauge
+sampling. These measurements are fundamental to characterizing forest
+structure, estimating stand density and biomass, monitoring tree growth,
+and providing inputs to allometric equations for carbon accounting
+[@avery2002; @westfall2020].
+
+
+## 2. Scope
+
+- **Applies to:** All EA Program field sites with tree cover, including
+  riparian forests, oak woodlands, mixed conifer stands, and planted
+  trees at restoration and campus sites
+- **Does not apply to:** Shrubs with DBH below 2.5 cm (use
+  [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd) for shrub cover);
+  timber cruising for commercial harvest; urban tree risk assessment
+- **Location:** All EA Program terrestrial field sites with woody
+  vegetation
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Approve plot design and minimum DBH threshold           |
+| Trained Personnel | Measure trees and record data per this SOP              |
+| New Students      | Complete training before independent measurement        |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Dead or leaning trees (snags, widow-makers) may shed
+  branches. Look up before working under any tree. Do not measure trees
+  during high winds.
+- **Biological:** Poison oak, ticks, stinging insects, and snakes in
+  wooded habitats. Wasp nests may be present in tree cavities.
+- **Terrain:** Steep slopes in forested areas increase fall risk. Use
+  caution when navigating uneven terrain with equipment.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Long pants
+- [ ] Hard hat (in areas with overhead hazard trees)
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Tick repellent
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). Work in
+pairs in remote forested areas.
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Diameter tape (DBH tape, metric)      | Graduated in diameter units (pi tape); reads directly in cm |
+| Standard measuring tape (50 m)        | For establishing plot boundaries         |
+| Clinometer (Suunto or equivalent)     | For measuring tree height (optional)     |
+| Basal area factor (BAF) prism or angle gauge | For variable-radius plot sampling   |
+| GPS unit or smartphone                | Per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| Field notebook or data sheet          | Pre-printed inventory form (Appendix A)  |
+| Compass                               | For plot layout and stem mapping         |
+| Flagging tape                         | For marking plot center and measured trees |
+| Tree tags and nails (aluminum)        | For permanent plot re-measurement        |
+| Paint marker or timber crayon         | For marking the DBH measurement point    |
+| Laser rangefinder (optional)          | For measuring tree height and distances  |
+| Calculator                            | For basal area and density calculations  |
+
+
+## 6. Procedure
+
+### 6.1 Measuring DBH
+
+DBH is measured at 1.37 m (4.5 ft) above ground level on the uphill
+side of the tree [@avery2002].
+
+1. Identify the measurement height: 1.37 m above the ground surface on
+   the uphill side of the tree. If the ground is level, measure from
+   any side.
+2. Wrap the diameter tape around the trunk at 1.37 m, perpendicular to
+   the axis of the trunk (not perpendicular to the slope).
+3. Ensure the tape is snug against the bark, not twisted, and level.
+   Read the diameter directly from the DBH tape to the nearest 0.1 cm.
+4. Record the measurement in the field notebook or data sheet.
+
+**Special cases:**
+
+| Situation                         | Measurement Rule                     |
+|:----------------------------------|:-------------------------------------|
+| Tree on a slope                   | Measure at 1.37 m from the uphill side of the base |
+| Forked below 1.37 m               | Measure each fork as a separate tree |
+| Forked at or above 1.37 m         | Measure as one tree below the fork   |
+| Swelling or abnormality at 1.37 m | Measure above and below the abnormality and average |
+| Leaning tree                      | Measure 1.37 m along the underside of the trunk |
+| Buttressed tree                   | Measure above the buttress where the trunk becomes cylindrical |
+
+::: {.callout-tip}
+### Tip
+For permanent monitoring plots, mark the DBH measurement point on the
+bark with a paint marker or timber crayon so that subsequent measurements
+are taken at the exact same height. For long-term studies, tag each tree
+with a numbered aluminum tag nailed above breast height.
+:::
+
+### 6.2 Fixed-Area Plot Inventory
+
+Fixed-area plots are the standard method for forest inventory. Plot
+size depends on tree density.
+
+| Tree Density      | Recommended Plot Size     | Radius (circular) |
+|:------------------|:--------------------------|:-------------------|
+| Dense forest      | 0.01 ha (100 m^2^)       | 5.64 m             |
+| Moderate forest   | 0.04 ha (400 m^2^)       | 11.28 m            |
+| Open woodland     | 0.10 ha (1000 m^2^)      | 17.84 m            |
+
+**Procedure:**
+
+1. Navigate to the plot center and record GPS coordinates per
+   [SOP-F006](SOP-F006-gps-site-navigation.qmd).
+2. Mark the plot center with a stake or flagging tape.
+3. For circular plots, use the measuring tape as a radius to determine
+   which trees are inside the plot boundary. A tree is "in" if more
+   than half of its trunk at DBH lies within the plot radius.
+4. Measure and record the following for every tree with DBH at or above
+   the minimum threshold (typically 2.5 cm or 10 cm, as specified by
+   the project):
+   - Species (common name and/or scientific name)
+   - DBH (cm)
+   - Condition class: live, standing dead (snag), leaning
+   - Crown class (optional): dominant, co-dominant, intermediate,
+     suppressed
+   - Height (optional; measured with a clinometer or rangefinder)
+5. Record the total number of stems and species per plot.
+
+### 6.3 Variable-Radius Plot Sampling (Basal Area Prism)
+
+The BAF prism provides a rapid estimate of stand basal area without
+establishing fixed plot boundaries [@avery2002; @grosenbaugh1952].
+
+1. Stand at the sample point and hold the BAF prism at arm's length,
+   looking through it at each surrounding tree at breast height.
+2. For each tree, the prism refracts the image of the trunk. Compare
+   the offset image to the original:
+   - **Tree is "in":** The offset image overlaps the unrefracted trunk.
+     Count the tree.
+   - **Tree is "out":** The offset image is completely separated from
+     the unrefracted trunk. Do not count.
+   - **Borderline:** The offset image just touches the trunk edge.
+     Count every other borderline tree.
+3. Rotate 360 degrees, counting all "in" trees.
+4. Calculate basal area:
+
+$$
+\text{Basal area (m}^2\text{/ha)} = n \times \text{BAF}
+$$
+
+where $n$ is the number of "in" trees and BAF is the basal area factor
+of the prism (typically 1, 2, 4, or 5 m^2^/ha per tree counted;
+check the prism label).
+
+### 6.4 Tree Height Measurement (Optional)
+
+Use a clinometer or laser rangefinder to measure total tree height:
+
+1. Stand at a known horizontal distance from the tree base (e.g.,
+   15--30 m; measure with a tape or rangefinder).
+2. Sight the tree top through the clinometer and record the angle to
+   the top ($\alpha$).
+3. Sight the tree base and record the angle to the base ($\beta$).
+   If the base is below eye level, $\beta$ is negative.
+4. Calculate height:
+
+$$
+H = D \times (\tan\alpha - \tan\beta)
+$$
+
+where $D$ is the horizontal distance (m) and $H$ is the total height
+(m).
+
+
+## 7. Derived Calculations
+
+### 7.1 Basal Area per Tree
+
+$$
+\text{BA (m}^2\text{)} = \frac{\pi}{4} \times \left(\frac{\text{DBH}}{100}\right)^2
+$$
+
+where DBH is in cm.
+
+### 7.2 Stand Density and Basal Area per Hectare
+
+$$
+\text{Trees/ha} = \frac{n}{\text{plot area (ha)}}
+$$
+
+$$
+\text{BA/ha (m}^2\text{/ha)} = \frac{\sum \text{BA}_i}{\text{plot area (ha)}}
+$$
+
+### 7.3 Biomass Estimation
+
+Above-ground biomass can be estimated using published allometric
+equations of the form:
+
+$$
+\text{Biomass (kg)} = a \times \text{DBH}^b
+$$
+
+where $a$ and $b$ are species-specific coefficients from published
+sources [@chojnacky2014; @jenkins2003]. Document the allometric
+equation, source, and species used in the project README.
+
+
+## 8. Quality Control
+
+- Measure DBH twice (wrap the tape, read, remove, re-wrap, re-read).
+  The two readings should agree within 0.5 cm. Record the mean.
+- On 10% of plots, have a second observer independently measure all
+  trees. DBH measurements should agree within 1 cm; tree counts should
+  match exactly.
+- Verify the diameter tape calibration at the start of each field
+  season by measuring a cylinder of known diameter.
+- For permanent plots, verify that tags are intact and measurement
+  points are correctly located at each re-measurement.
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation  | Plot center coordinates           |
+| [F603](SOP-F603-vegetation-transect-surveys.qmd) | Vegetation Transects | Understory and shrub cover        |
+| [F605](SOP-F605-leaf-area-index.qmd)   | Leaf Area Index           | Canopy measurement companion      |
+| [F606](SOP-F606-canopy-cover.qmd)      | Canopy Cover              | Densiometer and photo methods     |
+
+
+## 11. Training Record
+
+Before conducting tree measurements independently, personnel must:
+
+1. Read this SOP in full
+2. Demonstrate correct DBH measurement technique, including special
+   cases (forks, slopes, buttresses)
+3. Participate in a supervised plot inventory
+4. Demonstrate BAF prism technique with results within 10% of the
+   trainer's count
+5. Be signed off by the PI or field lead
+
+
+## Appendix A: Forest Inventory Data Sheet {.appendix}
+
+**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Plot ID:** \_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_\_\_
+
+**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_ **Plot size:** \_\_\_\_\_ m^2^ **Min DBH:** \_\_\_\_ cm
+
+**GPS:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Elevation:** \_\_\_\_\_\_ m **Slope:** \_\_\_\_ %
+
+| Tree # | Species | DBH (cm) | Height (m) | Condition | Crown Class | Notes |
+|:-------|:--------|:---------|:-----------|:----------|:------------|:------|
+|        |         |          |            |           |             |       |
+|        |         |          |            |           |             |       |
+|        |         |          |            |           |             |       |
+|        |         |          |            |           |             |       |
+
+**Basal area prism count (BAF = \_\_\_\_):** \_\_\_\_\_ trees in = \_\_\_\_\_ m^2^/ha

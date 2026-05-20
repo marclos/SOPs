@@ -1,0 +1,302 @@
+---
+# =============================================================================
+# SOP-L705: Bioinformatics Pipeline (QIIME2 / DADA2)
+# =============================================================================
+title: "Bioinformatics Pipeline (QIIME 2 / DADA2)"
+sop-number: "SOP-L705"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the bioinformatics workflow for processing amplicon
+sequencing data (16S rRNA, ITS, 18S rRNA) from raw demultiplexed FASTQ
+files through quality filtering, denoising, taxonomic classification,
+and generation of analysis-ready feature tables. The pipeline uses
+QIIME 2 as the primary framework with DADA2 as the denoising algorithm
+[@bolyen2019; @callahan2016]. DADA2 resolves amplicon sequence variants
+(ASVs) at single-nucleotide resolution, replacing the older OTU-clustering
+approach with a more reproducible and sensitive method [@callahan2017].
+
+
+## 2. Scope
+
+- **Applies to:** Processing of Illumina paired-end amplicon sequencing
+  data (MiSeq, NextSeq) for 16S, ITS, and 18S marker genes generated
+  from EA Program environmental samples
+- **Does not apply to:** Shotgun metagenomics; long-read sequencing
+  (PacBio, Nanopore); transcriptomics (RNA-seq); ddPCR data analysis
+  (see [SOP-L702](SOP-L702-ddpcr-data-analysis.qmd))
+- **Location:** EA Program lab computers or personal workstations with
+  QIIME 2 installed; high-performance computing cluster if available
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve pipeline parameters and taxonomy database |
+| Trained Personnel | Run the pipeline per this SOP; document all parameters |
+| New Students      | Complete training before independent analysis |
+
+
+## 4. Software Requirements
+
+| Software              | Version (minimum) | Notes                          |
+|:----------------------|:------------------|:-------------------------------|
+| QIIME 2               | 2024.2 or later   | Install via conda/mamba; see <https://docs.qiime2.org> |
+| DADA2 (QIIME 2 plugin) | Bundled with QIIME 2 | R package also available for standalone use |
+| R and RStudio         | R 4.3+            | For downstream statistical analysis; see [SOP-L801](SOP-L801-rstudio-github.qmd) |
+| phyloseq (R package)  | 1.44+             | For importing QIIME 2 artifacts into R [@mcmurdie2013] |
+| FastQC                | 0.12+             | Optional; for initial read quality inspection |
+
+Install QIIME 2 in a dedicated conda environment to avoid dependency
+conflicts:
+
+```bash
+# Example installation (check docs.qiime2.org for current commands)
+conda env create -n qiime2-2024.2 \
+  --file https://data.qiime2.org/distro/amplicon/qiime2-amplicon-2024.2-py39-linux-conda.yml
+conda activate qiime2-2024.2
+```
+
+
+## 5. Procedure
+
+### 5.1 Data Organization
+
+1. Create a project directory with the following structure:
+
+```
+project_name/
+├── raw_data/          # Demultiplexed FASTQ files from sequencing facility
+├── qiime2/            # QIIME 2 artifacts and visualizations
+├── results/           # Exported tables, trees, taxonomy
+├── scripts/           # Shell and R scripts
+└── metadata/          # Sample metadata TSV file
+```
+
+2. Prepare a sample metadata file (`metadata.tsv`) in tab-separated
+   format. The first column must be `sample-id` matching the FASTQ
+   filenames. Include all experimental variables (site, treatment, date,
+   depth, replicate). Validate the file at
+   <https://keemei.qiime2.org/> [@rideout2016].
+
+### 5.2 Import Raw Reads
+
+Import demultiplexed paired-end FASTQ files into a QIIME 2 artifact:
+
+```bash
+qiime tools import \
+  --type 'SampleData[PairedEndSequencesWithQuality]' \
+  --input-path raw_data/ \
+  --input-format CasavaOneEightSingleLanePerSampleDirFmt \
+  --output-path qiime2/demux.qza
+```
+
+Visualize read quality:
+
+```bash
+qiime demux summarize \
+  --i-data qiime2/demux.qza \
+  --o-visualization qiime2/demux-summary.qzv
+```
+
+Open `demux-summary.qzv` at <https://view.qiime2.org> to inspect
+quality score profiles. Use these plots to determine truncation
+parameters for DADA2 (Section 5.3).
+
+### 5.3 Denoising with DADA2
+
+DADA2 performs quality filtering, chimera removal, and denoising in a
+single step, producing an ASV feature table and representative sequences
+[@callahan2016].
+
+```bash
+qiime dada2 denoise-paired \
+  --i-demultiplexed-seqs qiime2/demux.qza \
+  --p-trunc-len-f 240 \
+  --p-trunc-len-r 200 \
+  --p-trim-left-f 0 \
+  --p-trim-left-r 0 \
+  --p-n-threads 4 \
+  --o-table qiime2/table.qza \
+  --o-representative-sequences qiime2/rep-seqs.qza \
+  --o-denoising-stats qiime2/dada2-stats.qza
+```
+
+::: {.callout-important}
+### Setting Truncation Parameters
+
+Choose `--p-trunc-len-f` and `--p-trunc-len-r` based on the quality
+plots from Section 5.2. Truncate where the median quality score drops
+below 25--30. The forward and reverse reads must still overlap by at
+least 20 bp after truncation for successful merging. For 16S V4
+(515F/806R, ~290 bp amplicon) with 2x250 reads, typical values are
+240 (forward) and 200 (reverse).
+:::
+
+Review denoising statistics:
+
+```bash
+qiime metadata tabulate \
+  --m-input-file qiime2/dada2-stats.qza \
+  --o-visualization qiime2/dada2-stats.qzv
+```
+
+Check the percentage of reads passing each filter step (input, filtered,
+denoised, merged, non-chimeric). A healthy run retains > 60% of input
+reads through the full pipeline.
+
+### 5.4 Taxonomic Classification
+
+Assign taxonomy to ASVs using a pre-trained Naive Bayes classifier.
+Download the appropriate classifier from the QIIME 2 Data Resources
+page (<https://docs.qiime2.org/2024.2/data-resources/>).
+
+**For 16S (SILVA 138.1):**
+
+```bash
+qiime feature-classifier classify-sklearn \
+  --i-classifier silva-138.1-ssu-nr99-515f-806r-classifier.qza \
+  --i-reads qiime2/rep-seqs.qza \
+  --o-classification qiime2/taxonomy.qza
+```
+
+**For ITS (UNITE):**
+
+```bash
+qiime feature-classifier classify-sklearn \
+  --i-classifier unite-ver9-dynamic-all-29.11.2022-classifier.qza \
+  --i-reads qiime2/rep-seqs.qza \
+  --o-classification qiime2/taxonomy.qza
+```
+
+Visualize taxonomy:
+
+```bash
+qiime taxa barplot \
+  --i-table qiime2/table.qza \
+  --i-taxonomy qiime2/taxonomy.qza \
+  --m-metadata-file metadata/metadata.tsv \
+  --o-visualization qiime2/taxa-barplot.qzv
+```
+
+### 5.5 Phylogenetic Tree Construction
+
+Build a rooted phylogenetic tree for diversity analyses:
+
+```bash
+qiime phylogeny align-to-tree-mafft-fasttree \
+  --i-sequences qiime2/rep-seqs.qza \
+  --o-alignment qiime2/aligned-rep-seqs.qza \
+  --o-masked-alignment qiime2/masked-aligned-rep-seqs.qza \
+  --o-tree qiime2/unrooted-tree.qza \
+  --o-rooted-tree qiime2/rooted-tree.qza
+```
+
+### 5.6 Filtering
+
+Remove contaminant ASVs identified in negative controls, mitochondrial
+and chloroplast sequences, and low-frequency ASVs:
+
+```bash
+# Remove mitochondria and chloroplast
+qiime taxa filter-table \
+  --i-table qiime2/table.qza \
+  --i-taxonomy qiime2/taxonomy.qza \
+  --p-exclude mitochondria,chloroplast \
+  --o-filtered-table qiime2/table-filtered.qza
+
+# Remove low-frequency ASVs (e.g., singletons)
+qiime feature-table filter-features \
+  --i-table qiime2/table-filtered.qza \
+  --p-min-frequency 2 \
+  --o-filtered-table qiime2/table-final.qza
+```
+
+For decontamination using negative control data, export the feature
+table to R and use the `decontam` package [@davis2018].
+
+### 5.7 Export for R Analysis
+
+Export QIIME 2 artifacts for downstream analysis in R with phyloseq
+[@mcmurdie2013]:
+
+```bash
+qiime tools export \
+  --input-path qiime2/table-final.qza \
+  --output-path results/
+
+qiime tools export \
+  --input-path qiime2/taxonomy.qza \
+  --output-path results/
+
+qiime tools export \
+  --input-path qiime2/rooted-tree.qza \
+  --output-path results/
+```
+
+Alternatively, import QIIME 2 artifacts directly into R using the
+`qiime2R` package.
+
+
+## 6. Quality Control
+
+- Inspect the DADA2 denoising stats for every run. Flag samples with
+  fewer than 1,000 reads after denoising.
+- Verify that negative controls (NTC, extraction blank) contain fewer
+  than 100 reads. If controls contain substantial reads, use `decontam`
+  to identify and remove contaminant ASVs [@davis2018; @salter2014].
+- Confirm that the positive control (mock community) recovers the
+  expected taxa at the expected relative abundances.
+- Document all QIIME 2 and DADA2 parameters in the project README and
+  in the analysis scripts. Reproducibility requires recording the exact
+  software versions, classifier version, and truncation lengths.
+- Archive raw FASTQ files, the QIIME 2 artifacts, and the analysis
+  scripts in the project GitHub repository per
+  [SOP-L801](SOP-L801-rstudio-github.qmd).
+
+
+## 7. References
+
+::: {#refs}
+:::
+
+
+## 8. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L700](SOP-L700-dna-extraction.qmd)   | DNA Extraction            | Upstream: sample preparation      |
+| [L703](SOP-L703-pcr-gel-electrophoresis.qmd) | PCR and Gel Electrophoresis | Amplicon verification       |
+| [L704](SOP-L704-amplicon-library-prep.qmd) | Amplicon Library Prep   | Upstream: library preparation     |
+| [L706](SOP-L706-edna-metabarcoding.qmd) | eDNA Metabarcoding       | eDNA-specific application         |
+| [L801](SOP-L801-rstudio-github.qmd)   | RStudio and GitHub        | Data management and version control |
+| [L802](SOP-L802-quality-control.qmd)  | Quality Control and QA    | General QA/QC framework           |
+
+
+## 9. Training Record
+
+Before running the bioinformatics pipeline independently, personnel
+must:
+
+1. Read this SOP in full
+2. Complete the QIIME 2 "Moving Pictures" tutorial
+   (<https://docs.qiime2.org/2024.2/tutorials/moving-pictures/>)
+3. Process a test dataset under supervision, from import through
+   taxonomy assignment and export to R
+4. Demonstrate correct interpretation of DADA2 denoising statistics and
+   quality plots
+5. Be signed off by the PI or lab manager

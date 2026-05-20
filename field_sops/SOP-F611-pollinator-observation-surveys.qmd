@@ -1,0 +1,309 @@
+---
+# =============================================================================
+# SOP-F611: Pollinator Observation Surveys
+# =============================================================================
+title: "Pollinator Observation Surveys"
+sop-number: "SOP-F611"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes standardized methods for surveying pollinator
+communities at EA Program field sites using timed visual observations
+and passive pan traps. Pollinator surveys document the diversity and
+relative abundance of bees, butterflies, flies, beetles, and other
+flower-visiting insects, providing data for assessing habitat quality,
+restoration success, and the effects of land use on pollination
+services [@potts2010; @lebuhn2013].
+
+
+## 2. Scope
+
+- **Applies to:** Standardized pollinator observation surveys and pan
+  trap sampling at all EA Program terrestrial field sites with
+  flowering vegetation, including the Bernard Field Station, campus
+  landscapes, restoration sites, and agricultural study areas
+- **Does not apply to:** Targeted bee nesting surveys; hive management;
+  pollen analysis (palynology); pollinator genetics or molecular
+  identification (though specimens collected here may be used for
+  those purposes); aquatic insect sampling (see
+  [SOP-F610](SOP-F610-macroinvertebrate-sampling.qmd))
+- **Location:** All EA Program field sites with floral resources
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Approve survey design and collection permits            |
+| Trained Personnel | Conduct surveys and process pan trap samples per this SOP |
+| New Students      | Complete training (insect identification and sting safety) before independent work |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Biological:** Bee and wasp stings are the primary hazard. Personnel
+  with known Hymenoptera allergies must carry a prescribed epinephrine
+  auto-injector (EpiPen) and inform the field lead before every outing.
+  Africanized honey bees may be present at some Southern California
+  sites.
+- **Chemical:** Soapy water in pan traps (low risk). Ethanol (70%) used
+  for specimen preservation is flammable.
+- **Physical:** Heat exposure during mid-day surveys. Uneven terrain.
+  Pan traps may be trampled by people or wildlife.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Light-colored clothing (dark colors attract bees)
+- [ ] Sun protection (hat, sunscreen)
+- [ ] EpiPen (if allergic; inform field lead)
+- [ ] Nitrile gloves (when handling preserved specimens)
+
+### Permits
+
+Insect collection may require a Scientific Collecting Permit from the
+California Department of Fish and Wildlife (CDFW) depending on the site
+and target taxa. The PI must confirm permit status before fieldwork. No
+permit is needed for observation-only surveys.
+
+### Emergency Procedures
+
+For anaphylactic reactions to stings: administer EpiPen, call 911,
+begin CPR if needed. Refer to
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd). If encountering
+an aggressive swarm, walk calmly and quickly away from the area; do
+not swat or run erratically.
+
+
+## 5. Equipment and Materials
+
+### Timed Observations
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Stopwatch or phone timer              | For standardizing observation periods    |
+| Hand lens or magnifying glass         | For in situ identification              |
+| Camera (macro-capable or phone)       | For photo-documenting pollinators on flowers |
+| Field notebook or data sheet          | Pre-printed observation form (Appendix A) |
+| Insect field guide                    | e.g., *California Bees and Blooms* (Frankie et al.) |
+| iNaturalist app (smartphone)          | For photo-based identification; see [SOP-F602](SOP-F602-inaturalist.qmd) |
+| Compass and GPS                       | For recording transect or plot locations  |
+
+### Pan Traps
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Plastic bowls (12 oz, 3.25 in rim)    | White, fluorescent blue, and fluorescent yellow; one of each color per station |
+| Fluorescent spray paint (blue, yellow) | For painting white bowls; use UV-bright paints |
+| Unscented liquid dish soap            | 2--3 drops per bowl (breaks surface tension) |
+| Water                                 | To fill bowls approximately 2/3 full     |
+| Wooden stakes or wire stands          | For elevating bowls to canopy height in tall vegetation |
+| Fine mesh strainer                    | For removing insects from bowls           |
+| Whirl-Pak bags or vials               | For storing collected specimens           |
+| 70% ethanol                           | For preserving specimens                 |
+| Forceps (soft-tipped)                 | For handling specimens                   |
+| Labels (waterproof, internal)         | For vial and bag identification          |
+
+
+## 6. Procedure
+
+### 6.1 Survey Timing and Conditions
+
+Conduct pollinator surveys during peak pollinator activity:
+
+- **Time of day:** 09:00--15:00 local time (peak flight activity)
+- **Weather:** Sunny to partly cloudy; wind speed below Beaufort 4
+  (< 5.5 m/s); temperature above 15 C. Do not survey during rain,
+  heavy overcast, or high winds, as pollinator activity drops sharply.
+- **Season:** During peak bloom at the study site. In Southern
+  California, this is typically March through June for most habitats,
+  with a secondary bloom in fall for some species.
+- **Flowering requirement:** Surveys are only meaningful when flowers
+  are present. Record the dominant flowering species and estimate
+  floral density (flowers per m^2^) at each survey location.
+
+### 6.2 Method A: Timed Observation Surveys
+
+Timed observations record pollinator visits to flowers along a fixed
+route or within a fixed plot during a standardized time period
+[@dicks2016; @lebuhn2013].
+
+**Transect walk method:**
+
+1. Establish a transect (typically 50 m x 2 m, or a 100 m x 1 m
+   corridor) through the area of interest. Record the transect
+   coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd).
+2. Walk the transect slowly at a pace of approximately 10 m per minute.
+3. Record every pollinator observed visiting a flower within the 2 m
+   band on either side of the transect center line (or 1 m on each
+   side for a 2 m wide transect).
+4. For each observation, record:
+   - Pollinator group or species (see Section 6.4)
+   - Flower species being visited
+   - Behavior (nectaring, pollen collecting, resting)
+   - Time of observation
+5. Complete the transect in 10--15 minutes. Do not stop and wait for
+   pollinators; maintain a steady pace.
+6. Repeat the transect 2--3 times per sampling event, spaced at least
+   30 minutes apart.
+
+**Focal flower observation method:**
+
+1. Select a flowering plant or patch and observe for a fixed period
+   (typically 10 minutes).
+2. Record every pollinator that visits any flower on the focal plant
+   during the observation period.
+3. This method is useful for comparing visitation rates among plant
+   species or treatments.
+
+### 6.3 Method B: Pan Trap Sampling
+
+Pan traps passively capture flying insects attracted to colored bowls
+[@lebuhn2013; @westphal2008].
+
+1. At each sampling station, set out three bowls: one white, one
+   fluorescent blue, one fluorescent yellow. Space bowls approximately
+   3 m apart.
+2. Fill each bowl approximately 2/3 full with water. Add 2--3 drops
+   of unscented dish soap (this breaks the surface tension so insects
+   sink).
+3. Place bowls at the height of the surrounding vegetation canopy:
+   - In short grass or bare ground: set directly on the ground
+   - In tall vegetation (> 30 cm): elevate on stakes or wire stands
+     so the bowl rim is at canopy height
+4. Deploy traps in the morning (by 09:00) and retrieve after 24 hours.
+   For shorter deployments (4--6 hours), retrieve in the afternoon.
+5. Pour the contents of each bowl through a fine mesh strainer.
+   Transfer captured insects to a labeled Whirl-Pak bag or vial with
+   70% ethanol.
+6. Label each vial with: site, station number, bowl color, date
+   deployed, date retrieved, and collector initials.
+7. Return specimens to the lab for sorting, pinning, and
+   identification.
+
+::: {.callout-note}
+Pan traps are biased toward small- to medium-sized bees and may
+under-represent large-bodied bees (bumble bees) and butterflies
+[@westphal2008]. Combine pan traps with timed observations for a
+more complete picture of the pollinator community.
+:::
+
+### 6.4 Pollinator Identification
+
+Identify pollinators to the finest taxonomic level possible in the
+field. At a minimum, assign each observation to one of the following
+functional groups:
+
+| Code | Group                    | Examples                          |
+|:-----|:-------------------------|:----------------------------------|
+| HB   | Honey bee                | *Apis mellifera*                  |
+| BB   | Bumble bee               | *Bombus* spp.                     |
+| SB   | Small native bee         | *Halictus*, *Lasioglossum*, *Ceratina* |
+| LB   | Large native bee         | *Xylocopa*, *Megachile*           |
+| BF   | Butterfly                | All Lepidoptera                   |
+| SF   | Syrphid fly (hover fly)  | Syrphidae                         |
+| OF   | Other fly                | Bombyliidae, Tachinidae, etc.     |
+| BT   | Beetle                   | Flower-visiting Coleoptera        |
+| WA   | Wasp                     | Vespidae, Sphecidae, etc.         |
+| OT   | Other                    | Hummingbirds, moths, ants         |
+
+Photograph all specimens that cannot be identified in the field.
+Upload photos to iNaturalist per
+[SOP-F602](SOP-F602-inaturalist.qmd) for community-assisted
+identification.
+
+### 6.5 Specimen Processing (Lab)
+
+1. Sort pan trap specimens by order under a dissecting scope.
+2. Pin bee specimens following standard entomological practice (pin
+   through the right mesopleuron) and label with locality, date,
+   collector, and determination.
+3. Store pinned specimens in a labeled unit tray in the insect
+   collection.
+4. Specimens can be submitted to a taxonomic specialist or DNA
+   barcoded (COI) for species confirmation.
+
+
+## 7. Quality Control
+
+- Record weather conditions (temperature, wind, cloud cover) at the
+  start and end of every survey. Do not compare data collected under
+  different weather conditions without accounting for detectability.
+- On 10% of surveys, have two observers independently record
+  pollinators on the same transect to assess inter-observer agreement.
+- Record floral density and dominant flowering species at every survey;
+  pollinator abundance is strongly influenced by floral resource
+  availability.
+- For pan traps, inspect bowls mid-deployment if wind or wildlife
+  disturbance is likely. Refill or replace tipped bowls and note
+  the interruption.
+- Voucher-pin at least 5 representative specimens per functional group
+  per site per season for the reference collection.
+
+
+## 8. References
+
+::: {#refs}
+:::
+
+
+## 9. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite; sting response |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation  | Survey location coordinates       |
+| [F602](SOP-F602-inaturalist.qmd)       | iNaturalist               | Photo-based identification        |
+| [F603](SOP-F603-vegetation-transect-surveys.qmd) | Vegetation Transects | Floral resource documentation |
+| [F615](SOP-F615-bird-point-counts.qmd) | Bird Point Counts         | Companion fauna survey method     |
+
+
+## 10. Training Record
+
+Before conducting pollinator surveys independently, personnel must:
+
+1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
+   in full
+2. Disclose any Hymenoptera allergy to the field lead and carry an
+   EpiPen if prescribed
+3. Demonstrate identification of the 10 pollinator functional groups
+   (Section 6.4) using pinned specimens or photographs
+4. Participate in a supervised transect observation survey and pan trap
+   deployment
+5. Be signed off by the PI or field lead
+
+
+## Appendix A: Pollinator Observation Data Sheet {.appendix}
+
+**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Transect ID:** \_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_\_\_
+
+**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_ **Start time:** \_\_\_\_\_\_ **End time:** \_\_\_\_\_\_
+
+**Weather:** Temp: \_\_\_ C  Wind (Beaufort): \_\_\_  Cloud: \_\_\_ %  Sun: Y / N
+
+**Dominant flowering species:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+| Time | Pollinator Group/Species | Flower Species | Behavior | Photo # |
+|:-----|:-------------------------|:---------------|:---------|:--------|
+|      |                          |                |          |         |
+|      |                          |                |          |         |
+|      |                          |                |          |         |
+|      |                          |                |          |         |
+|      |                          |                |          |         |

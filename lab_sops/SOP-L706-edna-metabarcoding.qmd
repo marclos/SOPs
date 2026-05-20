@@ -1,0 +1,295 @@
+---
+# =============================================================================
+# SOP-L706: eDNA Metabarcoding Lab Workflow
+# =============================================================================
+title: "eDNA Metabarcoding Lab Workflow"
+sop-number: "SOP-L706"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the end-to-end laboratory workflow for environmental
+DNA (eDNA) metabarcoding, from receipt of field-collected water filter
+samples through DNA extraction, PCR amplification, library preparation,
+sequencing, and bioinformatics analysis. eDNA metabarcoding combines
+universal or group-specific primers with high-throughput sequencing to
+detect and characterize aquatic biodiversity from water samples without
+capturing organisms [@taberlet2012; @deiner2017].
+
+This SOP serves as the integrating document that ties together the
+field collection procedures in
+[SOP-F700](../field_sops/SOP-F700-edna-field-sampling.qmd) with the
+molecular and computational SOPs in the L700 series. It does not
+repeat detailed procedures described in other SOPs but provides the
+eDNA-specific modifications, QC requirements, and decision points that
+distinguish eDNA metabarcoding from standard amplicon sequencing of
+soil or tissue samples.
+
+
+## 2. Scope
+
+- **Applies to:** Laboratory processing of eDNA water samples for
+  multi-species detection via amplicon sequencing on Illumina
+  platforms; target taxa include fish (12S), amphibians (16S/12S),
+  macroinvertebrates (COI), and general biodiversity surveys
+  (18S, COI)
+- **Does not apply to:** Species-specific eDNA detection by qPCR or
+  ddPCR (single-species assays); soil microbial community analysis
+  (see [SOP-L704](SOP-L704-amplicon-library-prep.qmd) and
+  [SOP-L705](SOP-L705-bioinformatics-pipeline.qmd)); field collection
+  procedures (see
+  [SOP-F700](../field_sops/SOP-F700-edna-field-sampling.qmd))
+- **Location:** Molecular biology bench, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve target markers, primers, and sequencing plan |
+| Trained Personnel | Process samples per this SOP; maintain contamination controls |
+| New Students      | Complete eDNA-specific contamination training before participating |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Lysis buffers (guanidine salts), ethanol, SPRI beads,
+  and DNA stains. See individual SOP safety sections for details.
+- **Biological:** eDNA samples may originate from water bodies
+  containing pathogens. Handle with standard precautions.
+- **UV radiation:** If using UV transilluminator for gel imaging.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves (changed frequently; mandatory at all steps)
+
+### Emergency Procedures
+
+Refer to
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+
+
+## 5. Workflow Overview
+
+The eDNA metabarcoding workflow consists of six stages. Each stage
+references a detailed SOP.
+
+| Stage | Description                          | SOP Reference |
+|:------|:-------------------------------------|:--------------|
+| 1     | Field collection and preservation    | [F700](../field_sops/SOP-F700-edna-field-sampling.qmd) |
+| 2     | DNA extraction from filters          | [L700](SOP-L700-dna-extraction.qmd) |
+| 3     | PCR amplification and verification   | [L703](SOP-L703-pcr-gel-electrophoresis.qmd) |
+| 4     | Library preparation and sequencing   | [L704](SOP-L704-amplicon-library-prep.qmd) |
+| 5     | Bioinformatics (QIIME 2 / DADA2)    | [L705](SOP-L705-bioinformatics-pipeline.qmd) |
+| 6     | Taxonomic interpretation and reporting | This SOP, Section 6.6 |
+
+
+## 6. Procedure: eDNA-Specific Modifications
+
+### 6.1 Sample Receipt and Logging
+
+1. Upon receipt from the field, verify that all samples match the chain
+   of custody form per
+   [SOP-F008](../field_sops/SOP-F008-sample-labeling-coc-transport.qmd).
+2. Inspect Sterivex capsules or filter bags for integrity (no leaks,
+   caps intact, preservative present).
+3. Log each sample in the lab notebook and
+   [Freezer Inventory Google Sheet](<!-- LINK_PLACEHOLDER -->).
+4. Store preserved filters at -20 C (short-term) or -80 C (long-term)
+   until extraction.
+
+### 6.2 DNA Extraction from Filters
+
+Follow [SOP-L700](SOP-L700-dna-extraction.qmd) with the following
+eDNA-specific modifications:
+
+- **Sterivex capsules:** Open the capsule aseptically using a sterile
+  razor blade or the Sterivex extraction adapter. Transfer the membrane
+  into the PowerBead Pro tube using sterile forceps. If Longmire's buffer
+  was used as preservative, add the buffer to the bead tube as well.
+- **Open membrane filters:** Transfer the folded filter directly into
+  the bead tube using sterile forceps.
+- **Extraction blanks:** Process one extraction blank per batch. For
+  eDNA, this means running an empty bead tube through the full protocol.
+- **Field blanks:** The field blank filter (from
+  [SOP-F700](../field_sops/SOP-F700-edna-field-sampling.qmd)) is
+  extracted alongside samples and serves as the primary contamination
+  control for the entire field-to-lab chain.
+
+### 6.3 Inhibition Testing
+
+eDNA extracts from natural waters frequently contain PCR inhibitors
+(humic acids, tannins, metal ions) [@mckee2015]. Test for inhibition
+before committing to full library preparation:
+
+1. Run an internal positive control (IPC) qPCR assay on a subset of
+   extracts (or all extracts, if the batch is small). The IPC uses a
+   synthetic DNA target spiked into the PCR reaction at a known
+   concentration.
+2. If the IPC C~t~ value shifts by more than 2 cycles compared to the
+   uninhibited control, the extract is inhibited.
+3. For inhibited samples, dilute the extract 1:5 or 1:10 with
+   nuclease-free water and retest. Alternatively, clean the extract
+   using a OneStep PCR Inhibitor Removal Kit (Zymo Research).
+
+### 6.4 Primer Selection for eDNA Metabarcoding
+
+| Target Taxa          | Marker   | Primers              | Amplicon | Reference         |
+|:---------------------|:---------|:---------------------|:---------|:------------------|
+| Fish                 | 12S rRNA | MiFish-U-F / MiFish-U-R | ~170 bp | @miya2015         |
+| Amphibians           | 16S rRNA | 16Smam / 16Smam-R (modified) | ~250 bp | @vences2005  |
+| Macroinvertebrates   | COI      | mlCOIintF / jgHCO2198 | ~313 bp | @leray2013        |
+| General eukaryotes   | 18S rRNA | Euk1391f / EukBr     | ~130 bp  | @amaralzettler2009 |
+| General eukaryotes   | COI      | fwhF2 / fwhR2n       | ~205 bp  | @vamos2022         |
+
+::: {.callout-note}
+Primer choice determines which taxa can be detected. Discuss target taxa
+and primer selection with the PI before beginning library preparation.
+Multi-marker approaches (e.g., 12S + COI) provide broader taxonomic
+coverage but require separate library preparations and sequencing runs
+[@deiner2017].
+:::
+
+### 6.5 PCR and Library Preparation
+
+Follow [SOP-L703](SOP-L703-pcr-gel-electrophoresis.qmd) for initial PCR
+screening and [SOP-L704](SOP-L704-amplicon-library-prep.qmd) for library
+preparation, with these eDNA-specific considerations:
+
+- **Replicates:** Run 3 independent PCR replicates per sample to improve
+  detection probability for rare species [@ficetola2015]. Pool the
+  replicates after PCR1 before cleanup and indexing.
+- **Cycle number:** Use 35 cycles for PCR1 (higher than standard 16S
+  amplicon work) because eDNA concentrations are typically very low.
+  Be aware that additional cycles increase the risk of chimera formation
+  and tag-jumping [@schnell2015].
+- **Blocking primers (optional):** If non-target taxa (e.g., human DNA)
+  dominate the PCR product, consider using blocking primers or PNA
+  (peptide nucleic acid) clamps to suppress amplification of non-target
+  sequences.
+- **Controls:** In addition to the standard NTC and extraction blank,
+  include the field blank and (if available) a positive control
+  consisting of a mock community of known species at known
+  concentrations.
+
+### 6.6 Bioinformatics and Taxonomic Assignment
+
+Follow [SOP-L705](SOP-L705-bioinformatics-pipeline.qmd) for denoising
+and taxonomic classification, with these modifications:
+
+- **Reference database:** Use a curated database matched to the marker
+  and target taxa:
+  - 12S fish: MitoFish or MIDORI2
+  - COI: BOLD / MIDORI2
+  - 16S/18S: SILVA or GenBank nt
+- **Species-level assignment:** For eDNA, species-level identification
+  is the primary goal (unlike microbiome studies where genus-level is
+  often sufficient). Use BLAST-based classification (`classify-consensus-
+  blast` in QIIME 2) in addition to or instead of the Naive Bayes
+  classifier for improved species-level resolution [@goldberg2016].
+- **Decontamination:** Use the `decontam` R package to identify and
+  remove contaminant ASVs using the field blank and extraction blank
+  data [@davis2018].
+- **Detection criteria:** An ASV is considered a positive detection for
+  a species only if:
+  1. It matches a reference sequence at greater than or equal to 97--99%
+     identity (marker-dependent)
+  2. It is absent from all negative controls (field blank, extraction
+     blank, NTC), or its abundance in the sample exceeds 10x the
+     abundance in the highest-read control
+  3. It is detected in at least 2 of 3 PCR replicates (if replicates
+     were sequenced independently) [@ficetola2015]
+
+### 6.7 Reporting
+
+eDNA metabarcoding results are reported as a species detection list per
+site with the following metadata:
+
+- ASV sequence and percent identity to reference
+- Number of reads per ASV per sample
+- Detection across replicates (e.g., detected in 2/3 replicates)
+- Negative control results
+- Any taxa flagged as potential contaminants
+
+::: {.callout-important}
+eDNA metabarcoding provides presence/detection data. Quantitative
+interpretation of read counts as species abundance is not recommended
+without careful validation, because PCR amplification bias, primer
+affinity, and DNA shedding rates vary among taxa [@kelly2019].
+:::
+
+
+## 7. Quality Control
+
+- **Field blanks:** Must be negative for all target taxa. Any target
+  taxon detected in a field blank compromises the detection claim for
+  that taxon across all samples in the same sampling event.
+- **Extraction blanks:** Must be negative. Positive extraction blanks
+  indicate lab contamination; the entire extraction batch is suspect.
+- **NTC:** Must be negative. Positive NTCs indicate PCR contamination.
+- **Positive control (mock community):** Must recover all expected
+  species. Failure to detect a known species in the mock community
+  indicates primer bias or PCR failure.
+- **Replication:** A minimum of 3 PCR replicates per sample is
+  recommended for occupancy-based detection analyses.
+- Document all control results in the project data file and report
+  alongside species detections.
+
+
+## 8. Waste Disposal
+
+Refer to waste disposal tables in
+[SOP-L700](SOP-L700-dna-extraction.qmd),
+[SOP-L703](SOP-L703-pcr-gel-electrophoresis.qmd), and
+[SOP-L704](SOP-L704-amplicon-library-prep.qmd).
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F700](../field_sops/SOP-F700-edna-field-sampling.qmd) | eDNA Field Sampling | Upstream: field collection |
+| [F008](../field_sops/SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling and COC | Chain of custody |
+| [L700](SOP-L700-dna-extraction.qmd)   | DNA Extraction            | Stage 2: extraction               |
+| [L703](SOP-L703-pcr-gel-electrophoresis.qmd) | PCR and Gel Electrophoresis | Stage 3: amplification     |
+| [L704](SOP-L704-amplicon-library-prep.qmd) | Amplicon Library Prep   | Stage 4: library prep             |
+| [L705](SOP-L705-bioinformatics-pipeline.qmd) | Bioinformatics Pipeline | Stage 5: sequence analysis  |
+| [L801](SOP-L801-rstudio-github.qmd)   | RStudio and GitHub        | Data management                   |
+
+
+## 11. Training Record
+
+Before processing eDNA samples independently, personnel must:
+
+1. Read this SOP and all related SOPs (F700, L700, L703, L704, L705)
+2. Demonstrate aseptic filter handling and extraction under supervision
+3. Complete an eDNA-specific contamination awareness session covering
+   pre-PCR/post-PCR separation, filter handling, and control
+   interpretation
+4. Process a supervised batch including field blank, extraction blank,
+   and positive control with clean results
+5. Be signed off by the PI or lab manager

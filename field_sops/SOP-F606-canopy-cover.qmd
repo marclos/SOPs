@@ -1,0 +1,258 @@
+---
+# =============================================================================
+# SOP-F606: Canopy Cover (Densiometer and Hemispherical Photography)
+# =============================================================================
+title: "Canopy Cover (Densiometer and Hemispherical Photography)"
+sop-number: "SOP-F606"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial draft; standalone version of methods previously
+              embedded in SOP-F304"
+---
+
+## 1. Purpose
+
+This SOP describes two methods for estimating canopy cover (the
+proportion of the sky obscured by vegetation when viewed from below):
+the convex spherical densiometer and hemispherical (fisheye)
+photography. Canopy cover is a key variable in stream habitat
+assessments (SWAMP protocol), forest ecology, microclimate studies,
+and solar radiation modeling. Separating this SOP from
+[SOP-F304](SOP-F304-stream-physical-habitat.qmd) allows the methods
+to be applied in any habitat, not just stream reaches [@jennings1999;
+@lemmon1956].
+
+
+## 2. Scope
+
+- **Applies to:** Measurement of overhead canopy cover in forests,
+  riparian corridors, oak woodlands, restoration sites, and any
+  habitat where tree or tall shrub canopy is present; includes both
+  the spherical densiometer method and hemispherical photography
+- **Does not apply to:** Canopy closure measured by line-intercept or
+  vertical projection methods (see
+  [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd)); leaf area
+  index (see [SOP-F605](SOP-F605-leaf-area-index.qmd)); remote sensing
+  canopy cover from aerial or satellite imagery
+- **Location:** All EA Program field sites with tree or tall shrub cover
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Specify method and number of measurement points         |
+| Trained Personnel | Perform measurements per this SOP                       |
+| New Students      | Complete training before independent measurement        |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Looking upward while walking increases trip and fall
+  risk. Stop walking before looking up.
+- **Biological:** Ticks, poison oak, and snakes in forested and
+  riparian habitats.
+- **Environmental:** Bright sunlight reflecting off the densiometer
+  can cause glare. Wear sunglasses when not actively reading the
+  instrument.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Long pants
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Tick repellent (riparian and woodland sites)
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Method A: Spherical Densiometer
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Convex spherical densiometer (Forestry Suppliers Model A or equivalent) | Concave models also exist; specify which model is used |
+| Bubble level (built into the densiometer) | Essential for consistent readings    |
+| Field notebook or data sheet          | For recording dot counts                 |
+| Compass                               | For orienting the four cardinal readings |
+
+### Method B: Hemispherical Photography
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Camera with fisheye lens              | Full-frame fisheye (180 degrees circular) preferred; or smartphone with clip-on fisheye lens |
+| Self-leveling tripod or monopod       | Camera must be level and facing directly upward |
+| Bubble level (hot-shoe mounted or tripod-integrated) | For leveling the camera |
+| Gray card or exposure reference       | For consistent exposure settings         |
+| Laptop with canopy analysis software  | Gap Light Analyzer (GLA), hemIMAGE, or ImageJ with the Hemispherical plugin |
+| GPS unit                              | Per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+
+
+## 6. Procedure
+
+### 6.1 Measurement Point Selection
+
+Canopy cover measurements are typically taken at systematic intervals
+along a transect or at the center and edges of fixed-area plots.
+
+- **Stream habitat surveys (SWAMP):** Measure at 11 equally spaced
+  points along each cross-section transect (left bank, center, right
+  bank at each of the main transect positions). See
+  [SOP-F304](SOP-F304-stream-physical-habitat.qmd).
+- **Forest inventory plots:** Measure at the plot center and at 4
+  points on the plot boundary (N, E, S, W).
+- **Transect-based surveys:** Measure at regular intervals (e.g.,
+  every 10 m or 25 m along a 50 m transect).
+
+Record the GPS coordinates of each measurement point or its position
+along the transect.
+
+### 6.2 Method A: Convex Spherical Densiometer
+
+The densiometer has a convex mirror with an etched grid. The observer
+counts the number of grid intersections that are open to the sky
+(not obstructed by vegetation) in each of four cardinal directions
+[@lemmon1956; @strickler1959].
+
+1. Hold the densiometer at elbow height (approximately 30--40 cm in
+   front of your body), level it using the bubble level.
+2. Position your head so that its reflection is just outside the grid
+   area. This ensures a consistent viewing angle.
+3. Face **north**. Imagine the grid divided into 24 squares (4 rows x
+   6 columns). At each of the 24 grid intersections, determine whether
+   the sky or vegetation is reflected. Count the number of open (sky)
+   intersections. Record this count.
+4. Rotate 90 degrees and face **east**. Repeat the count.
+5. Repeat for **south** and **west**.
+6. Calculate canopy cover:
+
+$$
+\text{Canopy openness (\%)} = \frac{\text{sum of 4 counts}}{96} \times 100
+$$
+
+$$
+\text{Canopy cover (\%)} = 100 - \text{canopy openness (\%)}
+$$
+
+where 96 is the total number of possible open points across 4
+directions (24 per direction x 4 directions).
+
+::: {.callout-important}
+The convex densiometer systematically overestimates canopy openness
+compared to hemispherical photography because of the wide-angle optics
+and the observer's head position [@cook1995]. Report the method used
+alongside all canopy cover values, and do not mix methods within a
+dataset.
+:::
+
+### 6.3 Method B: Hemispherical Photography
+
+Hemispherical photographs capture a 180-degree view of the canopy and
+are analyzed digitally to classify sky vs. canopy pixels [@frazer2001].
+
+**In the field:**
+
+1. Mount the camera on the tripod at breast height (1.37 m) or at a
+   height specified by the project protocol.
+2. Level the camera using the bubble level. The lens must point directly
+   upward (zenith).
+3. Orient the top of the camera toward magnetic north. Record the
+   declination if relevant.
+4. Set the camera to manual exposure. Bracket the exposure (take 3
+   photos: one at the metered exposure, one stop under, one stop
+   over) to ensure at least one well-exposed image.
+5. Shoot in overcast or uniformly cloudy conditions whenever possible.
+   Direct sunlight produces bright spots that confound automatic
+   thresholding.
+6. Include a gray card in one reference photo per site for exposure
+   calibration.
+7. Record the photo number, GPS coordinates, date, time, and sky
+   conditions in the field notebook.
+
+**In the lab:**
+
+1. Import images into canopy analysis software (Gap Light Analyzer,
+   hemIMAGE, or ImageJ with the Hemispherical plugin).
+2. Register the image (set lens projection, define the circular
+   boundary, orient to north).
+3. Apply a binary threshold to classify each pixel as sky (white) or
+   canopy (black). Adjust the threshold manually if automated
+   thresholding produces obvious errors.
+4. The software calculates canopy openness, canopy cover, leaf area
+   index (effective), and gap fraction by zenith angle.
+5. Export results as a `.csv` file. Save to the project repository
+   under `data/canopy/`.
+
+### 6.4 Reporting
+
+Report canopy cover values with the following metadata:
+
+- Method (densiometer or hemispherical photography)
+- Instrument model (densiometer type; camera and lens model)
+- Measurement height above ground
+- Date, time, and sky conditions
+- Software and thresholding method (for photography)
+- Number of measurement points and their spatial arrangement
+
+
+## 7. Quality Control
+
+- **Densiometer:** Have two observers independently read the same point.
+  Readings should agree within 5 percentage points. If they disagree
+  by more than 10 points, re-read together to identify the source of
+  discrepancy.
+- **Hemispherical photography:** Process the same image twice using
+  different threshold values (+/- 10 units). If the resulting canopy
+  cover differs by more than 5 percentage points, the image may be
+  poorly exposed; re-shoot if possible.
+- At a subset of sites, measure canopy cover with both methods and
+  report the comparison. This allows future users to relate datasets
+  collected with different methods.
+- Record the observer's name with every densiometer measurement;
+  observer bias is the largest error source.
+
+
+## 8. References
+
+::: {#refs}
+:::
+
+
+## 9. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F304](SOP-F304-stream-physical-habitat.qmd) | Stream Physical Habitat | Canopy cover in stream reaches |
+| [F603](SOP-F603-vegetation-transect-surveys.qmd) | Vegetation Transects | Understory cover companion   |
+| [F604](SOP-F604-tree-dbh-forest-inventory.qmd) | Tree DBH and Forest Inventory | Stand structure companion |
+| [F605](SOP-F605-leaf-area-index.qmd)   | Leaf Area Index           | Related canopy metric             |
+
+
+## 10. Training Record
+
+Before measuring canopy cover independently, personnel must:
+
+1. Read this SOP in full
+2. Demonstrate correct densiometer technique (leveling, head position,
+   cardinal-direction counts) with results within 5 percentage points
+   of the trainer's reading on at least 5 test points
+3. If using hemispherical photography, demonstrate camera setup,
+   exposure bracketing, and image analysis in the lab
+4. Be signed off by the PI or field lead

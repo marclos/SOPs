@@ -1,0 +1,304 @@
+---
+# =============================================================================
+# SOP-L703: PCR Amplification and Gel Electrophoresis
+# =============================================================================
+title: "PCR Amplification and Gel Electrophoresis"
+sop-number: "SOP-L703"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes standard polymerase chain reaction (PCR) amplification
+of target DNA fragments and visualization of PCR products by agarose gel
+electrophoresis. PCR is used in the EA Program for confirming DNA
+extraction success, screening for target genes before ddPCR or
+sequencing, and verifying amplicon size and specificity prior to library
+preparation [@mullis1990; @lorenz2012]. Gel electrophoresis separates DNA
+fragments by size, providing a visual confirmation that amplification
+produced the expected product.
+
+
+## 2. Scope
+
+- **Applies to:** Standard endpoint PCR amplification of environmental
+  DNA extracts (soil, water, tissue) and visualization of products on
+  agarose gels; applicable to gene-specific screening, amplicon
+  verification, and colony PCR
+- **Does not apply to:** Quantitative PCR (qPCR) or digital PCR (ddPCR;
+  see [SOP-L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) and
+  [SOP-L702](SOP-L702-ddpcr-data-analysis.qmd)); RT-PCR for RNA targets;
+  polyacrylamide gel electrophoresis (PAGE)
+- **Location:** Molecular biology bench, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve primer selections and cycling protocols |
+| Trained Personnel | Set up PCR reactions and run gels per this SOP |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Ethidium bromide (EtBr) and SYBR Safe are nucleic acid
+  stains. EtBr is a suspected mutagen; handle with gloves at all times
+  and dispose of gels and buffers as hazardous waste. SYBR Safe is a
+  safer alternative but should still be handled with gloves.
+- **Electrical:** Gel electrophoresis uses high voltage (80--120 V). Do
+  not touch the buffer or gel while the power supply is on. Always
+  disconnect the leads before opening the gel box.
+- **UV radiation:** Transilluminators emit UV light that can cause skin
+  burns and eye damage. Use a UV shield, wear UV-blocking safety glasses,
+  and minimize exposure time. Blue-light transilluminators are preferred
+  when used with SYBR Safe.
+- **Biological:** Environmental DNA extracts may originate from samples
+  containing pathogens. Handle with standard precautions.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses (UV-blocking if using a UV transilluminator)
+- [ ] Lab coat
+- [ ] Nitrile gloves (change frequently; required at all times when
+      handling gels, stains, or PCR products)
+
+### Emergency Procedures
+
+For EtBr contact with skin, wash immediately with soap and water. For
+UV exposure, flush eyes with water and seek medical attention. Refer to
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                              | Location         | Notes                          |
+|:----------------------------------|:-----------------|:-------------------------------|
+| Thermal cycler (Bio-Rad C1000 Touch or equivalent) | Mol bio bench | Verify block type matches tube format |
+| Gel electrophoresis system (tank, comb, casting tray) | Mol bio bench | Mini-gel (7 x 10 cm) or midi-gel |
+| Power supply                      | Mol bio bench    | Capable of 10--300 V           |
+| Gel imaging system (transilluminator + camera) | Mol bio bench | UV or blue-light; with gel documentation software |
+| Micropipettes (2, 10, 100, 1000 uL) | Mol bio bench | Calibrated annually            |
+| Microwave                         | Lab              | For melting agarose            |
+| Microcentrifuge                   | Mol bio bench    | For brief spin-downs           |
+
+### Reagents and Consumables
+
+| Item                                  | Notes                              |
+|:--------------------------------------|:-----------------------------------|
+| Taq DNA polymerase or high-fidelity polymerase | e.g., GoTaq (Promega), Q5 (NEB), or OneTaq (NEB) |
+| 5x or 10x PCR buffer (with MgCl~2~)  | Supplied with polymerase           |
+| dNTP mix (10 mM each)                | Store at --20 C                    |
+| Forward and reverse primers (10 uM working stocks) | Store at --20 C |
+| Nuclease-free water                   | For master mix and negative controls |
+| PCR tubes or plates (0.2 mL, thin-wall) | Matched to thermal cycler block  |
+| Agarose (molecular biology grade)     | For gel preparation                |
+| 1x TAE or TBE buffer                  | Running buffer; prepare from 50x stock |
+| DNA stain (SYBR Safe or ethidium bromide) | SYBR Safe preferred              |
+| DNA ladder (100 bp and/or 1 kb)       | e.g., NEB 100 bp or 1 kb Plus    |
+| 6x gel loading dye                    | Often included with ladder or polymerase |
+| Filter pipette tips (10, 100, 1000 uL) | Barrier tips mandatory to prevent cross-contamination |
+
+
+## 6. Procedure
+
+### 6.1 PCR Workspace Preparation
+
+::: {.callout-important}
+### Contamination Prevention
+
+PCR is extremely sensitive to contamination. Follow these rules:
+
+- Set up reactions in a designated pre-PCR area, physically separated
+  from post-PCR work (gel loading, product analysis).
+- Never bring PCR products, gels, or gel imaging equipment into the
+  pre-PCR area.
+- Use dedicated pipettes for pre-PCR work. Use filter tips exclusively.
+- Wipe bench surfaces with 10% bleach followed by 70% ethanol before
+  setting up reactions.
+- Change gloves frequently, especially after touching any surface
+  outside the pre-PCR area.
+:::
+
+### 6.2 Master Mix Preparation
+
+Prepare all components on ice. Calculate volumes for the number of
+reactions plus 10% overage to account for pipetting losses.
+
+**Standard 25 uL reaction (GoTaq example):**
+
+| Component                  | Volume per reaction | Final concentration |
+|:---------------------------|:--------------------|:--------------------|
+| 5x GoTaq Reaction Buffer   | 5.0 uL              | 1x                  |
+| dNTP mix (10 mM each)      | 0.5 uL              | 200 uM each         |
+| Forward primer (10 uM)     | 1.25 uL             | 500 nM              |
+| Reverse primer (10 uM)     | 1.25 uL             | 500 nM              |
+| GoTaq DNA Polymerase (5 U/uL) | 0.125 uL         | 0.625 U             |
+| Nuclease-free water        | 14.875 uL           | --                  |
+| **Subtotal (master mix)**  | **23.0 uL**         |                     |
+| Template DNA               | 2.0 uL              | Variable (1--10 ng) |
+| **Total**                  | **25.0 uL**         |                     |
+
+1. Thaw buffer, dNTPs, and primers on ice. Vortex briefly and spin down.
+2. Prepare the master mix in a sterile 1.5 mL tube, adding polymerase
+   last. Mix by pipetting; do not vortex.
+3. Aliquot 23 uL of master mix into each labeled PCR tube.
+4. Add 2 uL of template DNA to each tube. Include controls:
+   - **Positive control:** DNA known to amplify with these primers
+   - **Negative control (NTC):** 2 uL of nuclease-free water
+   - **Extraction blank:** DNA extract from
+     [SOP-L700](SOP-L700-dna-extraction.qmd) extraction blank
+5. Cap tubes, vortex briefly, and spin down.
+
+### 6.3 Thermal Cycling
+
+Program the thermal cycler with the following general protocol. Adjust
+the annealing temperature for your specific primer set.
+
+| Step                   | Temperature | Time     | Cycles |
+|:-----------------------|:------------|:---------|:-------|
+| Initial denaturation   | 95 C        | 2 min    | 1      |
+| Denaturation           | 95 C        | 30 s     | 30--35 |
+| Annealing              | *T~a~* C    | 30 s     | 30--35 |
+| Extension              | 72 C        | 1 min/kb | 30--35 |
+| Final extension        | 72 C        | 5 min    | 1      |
+| Hold                   | 4 C         | Hold     | --     |
+
+where *T~a~* is the annealing temperature, typically 3--5 C below the
+lower primer T~m~. For primers with T~m~ of 55--60 C, start at 55 C.
+Optimize by running a gradient if needed [@lorenz2012].
+
+Record the cycling parameters, primer names, and annealing temperature
+in the lab notebook.
+
+### 6.4 Agarose Gel Preparation
+
+1. Weigh agarose for a 1--2% gel (w/v), depending on the expected
+   amplicon size:
+
+| Agarose % | Effective separation range |
+|:----------|:--------------------------|
+| 0.8%      | 500--10,000 bp            |
+| 1.0%      | 250--7,000 bp             |
+| 1.5%      | 100--3,000 bp             |
+| 2.0%      | 50--1,500 bp              |
+
+2. Add agarose to 1x TAE (or TBE) buffer in an Erlenmeyer flask.
+3. Microwave in 30-second intervals, swirling between intervals, until
+   the agarose is fully dissolved and the solution is clear.
+4. Cool to approximately 55 C (comfortable to hold).
+5. If using SYBR Safe, add 5 uL per 50 mL of gel. Swirl gently.
+6. Pour into the casting tray with the comb in place. Allow to solidify
+   (approximately 20--30 minutes at room temperature).
+
+### 6.5 Loading and Running the Gel
+
+1. Remove the comb carefully. Place the gel in the electrophoresis tank
+   and fill with 1x TAE (or TBE) buffer until the gel is submerged by
+   2--3 mm.
+2. Load 5 uL of DNA ladder into the first well.
+3. Add loading dye to each PCR product (if not already included in the
+   PCR buffer). Load 5--10 uL per well.
+4. Record the loading order in the lab notebook.
+5. Connect the leads: DNA migrates toward the positive (red) electrode.
+   Confirm the orientation.
+6. Run at 80--120 V for 30--45 minutes, or until the leading dye front
+   has migrated approximately two-thirds of the gel length.
+7. Turn off the power supply and disconnect the leads before removing
+   the gel.
+
+### 6.6 Gel Imaging
+
+1. Place the gel on the transilluminator (blue light for SYBR Safe;
+   UV for EtBr).
+2. Capture an image using the gel documentation system.
+3. Save the image with the naming convention:
+   `YYYY-MM-DD_primers_project_gel.tif`
+4. Evaluate the image:
+   - Positive control: visible band at the expected size
+   - NTC and extraction blank: no visible band
+   - Samples: band at the expected size indicates successful
+     amplification
+5. Upload the image to the project GitHub repository under
+   `results/gels/`.
+
+
+## 7. Troubleshooting
+
+| Symptom                    | Probable Cause                     | Corrective Action                     |
+|:---------------------------|:-----------------------------------|:--------------------------------------|
+| No bands in any lane       | Failed reaction; wrong cycling parameters | Check primer and dNTP stocks; verify cycling program |
+| Bands in NTC               | Contamination                      | Discard reagents; clean workspace with bleach; use fresh aliquots |
+| Multiple bands             | Non-specific amplification         | Increase annealing temperature; reduce primer concentration; redesign primers |
+| Smear instead of band      | DNA degradation or overloaded gel   | Reduce template amount; check DNA quality on NanoDrop |
+| Bands too faint             | Insufficient template or cycles    | Increase template to 5--10 ng; increase to 35 cycles |
+| Bands in samples but not positive control | Positive control degraded | Prepare fresh positive control DNA |
+
+
+## 8. Quality Control
+
+- Every PCR run must include: positive control, NTC, and extraction blank
+- No bands should appear in the NTC or extraction blank. Any
+  amplification in controls invalidates the run [@salter2014].
+- Band size must match the expected amplicon size (compare to the DNA
+  ladder)
+- For quantitative downstream applications (library prep, sequencing),
+  confirm band intensity is roughly uniform across samples
+
+
+## 9. Waste Disposal
+
+| Waste Type                    | Container                 | Disposal Method                     |
+|:------------------------------|:--------------------------|:------------------------------------|
+| EtBr-stained gels and buffer | Designated EtBr waste container | EH&S hazardous waste pickup    |
+| SYBR Safe-stained gels       | Standard trash (check local EH&S policy) | Non-hazardous per manufacturer |
+| Used PCR tubes and tips       | Standard trash            | Non-hazardous after thermal cycling |
+| Unused EtBr stock solution    | Chemical waste            | EH&S hazardous waste pickup         |
+
+
+## 10. References
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials | EtBr and UV safety                |
+| [L700](SOP-L700-dna-extraction.qmd)   | DNA Extraction            | Upstream: provides template DNA   |
+| [L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) | ddPCR Primers    | Primer design and validation      |
+| [L704](SOP-L704-amplicon-library-prep.qmd) | Amplicon Library Prep | Downstream: library preparation   |
+| [L106](SOP-L106-refrigerators-freezers.qmd) | Freezers           | Reagent and DNA storage           |
+
+
+## 12. Training Record
+
+Before performing PCR and gel electrophoresis independently, personnel
+must:
+
+1. Read this SOP and [SOP-L700](SOP-L700-dna-extraction.qmd) in full
+2. Demonstrate master mix preparation with correct volumes and controls
+3. Run a supervised PCR and gel, producing a clean positive control
+   band with no NTC contamination
+4. Demonstrate safe handling of DNA stains and proper gel disposal
+5. Be signed off by the PI or lab manager

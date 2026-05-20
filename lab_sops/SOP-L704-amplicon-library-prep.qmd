@@ -1,0 +1,298 @@
+---
+# =============================================================================
+# SOP-L704: Amplicon Library Preparation for Sequencing
+# =============================================================================
+title: "Amplicon Library Preparation for Sequencing"
+sop-number: "SOP-L704"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the preparation of amplicon sequencing libraries for
+Illumina platforms, following a two-step PCR approach. The first PCR
+amplifies the target marker gene (e.g., 16S rRNA for bacteria, ITS for
+fungi) with gene-specific primers tailed with Illumina adapter
+overhangs. The second PCR attaches unique dual-index barcodes and the
+full Illumina adapter sequences, enabling multiplexed sequencing of many
+samples per run. This protocol is based on the Illumina 16S Metagenomic
+Sequencing Library Preparation guide and the Earth Microbiome Project
+(EMP) standards [@caporaso2012; @illumina_16s_2013; @thompson2017].
+
+
+## 2. Scope
+
+- **Applies to:** Preparation of amplicon libraries targeting 16S rRNA
+  (V4 or V3--V4 region), ITS (ITS1 or ITS2 region), 18S rRNA, or other
+  marker genes from environmental DNA extracts for paired-end sequencing
+  on Illumina MiSeq or NextSeq platforms
+- **Does not apply to:** Shotgun metagenomic library preparation; long-
+  read amplicon sequencing (PacBio, Nanopore); ddPCR (see
+  [SOP-L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd)); eDNA
+  metabarcoding using non-Illumina workflows
+- **Location:** Molecular biology bench, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve target region, primer choice, and sequencing facility |
+| Trained Personnel | Prepare libraries per this SOP; submit to sequencing facility |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** AMPure XP beads (or equivalent SPRI beads) contain
+  polyethylene glycol (PEG) and carboxylated magnetic particles; low
+  toxicity but handle with gloves. Molecular-grade ethanol is flammable.
+- **Biological:** Environmental DNA extracts may contain pathogen-derived
+  DNA. Handle with standard precautions.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves (changed frequently)
+
+### Emergency Procedures
+
+Refer to
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                              | Location         | Notes                          |
+|:----------------------------------|:-----------------|:-------------------------------|
+| Thermal cycler                    | Mol bio bench    | For both PCR1 and PCR2         |
+| Magnetic stand (for 96-well plates or strip tubes) | Mol bio bench | For SPRI bead cleanup |
+| Qubit 4 fluorometer              | Instrument bench | For library quantification     |
+| NanoDrop One                      | Instrument bench | Optional purity check          |
+| Gel electrophoresis system        | Mol bio bench    | For amplicon verification; see [SOP-L703](SOP-L703-pcr-gel-electrophoresis.qmd) |
+| Multichannel pipette (optional)   | Mol bio bench    | For high-throughput plate work |
+| Plate vortex mixer                | Mol bio bench    | For mixing bead suspensions    |
+| Microcentrifuge and plate spinner | Mol bio bench    | For brief spin-downs           |
+
+### Reagents and Consumables
+
+| Item                                  | Notes                              |
+|:--------------------------------------|:-----------------------------------|
+| High-fidelity DNA polymerase          | e.g., KAPA HiFi HotStart (Roche), Q5 (NEB), or Phusion (Thermo Fisher); high-fidelity polymerase is required to minimize PCR-introduced errors [@schirmer2015] |
+| Gene-specific primers with Illumina overhangs (PCR1) | See Section 6.1 |
+| Nextera XT Index Kit v2 (or equivalent dual-index primers) | For PCR2 barcoding |
+| AMPure XP beads (Beckman Coulter) or equivalent SPRI beads | For size selection and cleanup |
+| Molecular-grade ethanol (80%, freshly prepared) | For bead washes |
+| Nuclease-free water                   | For elution and dilutions          |
+| Qubit dsDNA HS Assay Kit              | For library quantification         |
+| Agarose and gel supplies              | For amplicon verification          |
+| PCR plates or strip tubes (0.2 mL)    | Low-bind preferred                 |
+| Plate sealing film or strip caps      |                                    |
+| Filter pipette tips                   | Barrier tips mandatory             |
+
+
+## 6. Procedure
+
+### 6.1 Primer Design (PCR1: Gene-Specific Amplification)
+
+Primers for the first PCR consist of the gene-specific sequence plus
+the Illumina adapter overhang. The overhang sequences are:
+
+- Forward overhang:
+  `5'-TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG-[gene-specific forward]-3'`
+- Reverse overhang:
+  `5'-GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG-[gene-specific reverse]-3'`
+
+**Commonly used gene-specific primers:**
+
+| Target          | Primers        | Region  | Amplicon | Reference         |
+|:----------------|:---------------|:--------|:---------|:------------------|
+| 16S bacteria/archaea | 515F / 806R | V4      | ~290 bp  | @caporaso2012; @parada2016 |
+| 16S bacteria    | 341F / 785R    | V3--V4  | ~460 bp  | @klindworth2013   |
+| ITS fungi       | ITS1f / ITS2   | ITS1    | ~250--400 bp | @smith2009; @white1990 |
+| ITS fungi       | fITS7 / ITS4   | ITS2    | ~250--400 bp | @ihrmark2012      |
+| 18S eukaryotes  | Euk1391f / EukBr | V9    | ~130 bp  | @amaralzettler2009 |
+
+::: {.callout-note}
+The EMP standard primers for 16S V4 are 515F (Parada) / 806R (Apprill),
+which include degeneracies for improved archaeal coverage
+[@parada2016; @apprill2015]. Use these unless the project specifically
+requires a different region.
+:::
+
+### 6.2 PCR1: Target Amplification
+
+1. Prepare the master mix on ice. Use a high-fidelity polymerase.
+
+| Component                    | Volume per reaction | Final concentration |
+|:-----------------------------|:--------------------|:--------------------|
+| 2x KAPA HiFi HotStart ReadyMix | 12.5 uL         | 1x                  |
+| Forward primer with overhang (10 uM) | 1.0 uL   | 400 nM              |
+| Reverse primer with overhang (10 uM) | 1.0 uL   | 400 nM              |
+| Nuclease-free water          | 8.5 uL              | --                  |
+| Template DNA (1--10 ng)      | 2.0 uL              | Variable            |
+| **Total**                    | **25.0 uL**         |                     |
+
+2. Include controls: positive control, NTC, and extraction blank.
+3. Cycling parameters (adjust annealing temperature per primer set):
+
+| Step                   | Temperature | Time   | Cycles |
+|:-----------------------|:------------|:-------|:-------|
+| Initial denaturation   | 95 C        | 3 min  | 1      |
+| Denaturation           | 95 C        | 30 s   | 25--28 |
+| Annealing              | 55 C        | 30 s   | 25--28 |
+| Extension              | 72 C        | 30 s   | 25--28 |
+| Final extension        | 72 C        | 5 min  | 1      |
+| Hold                   | 4 C         | Hold   | --     |
+
+::: {.callout-important}
+Limit PCR1 to 25--28 cycles to minimize chimera formation and PCR bias
+[@schirmer2015]. More cycles increase the proportion of artifacts in the
+sequencing data.
+:::
+
+4. Verify amplification by running 2 uL on a 1.5% agarose gel per
+   [SOP-L703](SOP-L703-pcr-gel-electrophoresis.qmd).
+
+### 6.3 PCR1 Cleanup (SPRI Beads)
+
+1. Allow AMPure XP beads to reach room temperature (approximately
+   30 minutes). Vortex well before use.
+2. Add 20 uL (0.8x ratio) of beads to each 25 uL PCR product. Mix by
+   pipetting 10 times.
+3. Incubate at room temperature for 5 minutes.
+4. Place on the magnetic stand for 2 minutes until the solution clears.
+5. Aspirate and discard the supernatant.
+6. Wash twice with 200 uL of freshly prepared 80% ethanol. Do not
+   disturb the bead pellet. Allow 30 seconds per wash.
+7. Remove all ethanol and air-dry the beads for 3--5 minutes. Do not
+   over-dry (beads will crack and yield drops).
+8. Remove from the magnetic stand. Elute in 27.5 uL of nuclease-free
+   water. Pipette to mix.
+9. Return to the magnetic stand. Transfer 25 uL of the clear eluate to
+   a new tube.
+
+### 6.4 PCR2: Index PCR (Barcoding)
+
+1. Assign a unique dual-index combination (i7 + i5) to each sample.
+   Record the plate map in the lab notebook and in the sample sheet.
+2. Set up the index PCR:
+
+| Component                    | Volume per reaction |
+|:-----------------------------|:--------------------|
+| 2x KAPA HiFi HotStart ReadyMix | 12.5 uL         |
+| Nextera XT Index Primer 1 (i7) | 2.5 uL           |
+| Nextera XT Index Primer 2 (i5) | 2.5 uL           |
+| Cleaned PCR1 product         | 2.5 uL              |
+| Nuclease-free water          | 5.0 uL              |
+| **Total**                    | **25.0 uL**         |
+
+3. Cycling parameters:
+
+| Step                   | Temperature | Time   | Cycles |
+|:-----------------------|:------------|:-------|:-------|
+| Initial denaturation   | 95 C        | 3 min  | 1      |
+| Denaturation           | 95 C        | 30 s   | 8      |
+| Annealing              | 55 C        | 30 s   | 8      |
+| Extension              | 72 C        | 30 s   | 8      |
+| Final extension        | 72 C        | 5 min  | 1      |
+| Hold                   | 4 C         | Hold   | --     |
+
+4. Clean the indexed PCR product with AMPure XP beads (0.8x ratio)
+   as in Section 6.3. Elute in 27.5 uL.
+
+### 6.5 Library Quantification and QC
+
+1. Quantify each library using the Qubit dsDNA HS Assay
+   ([SOP-L700](SOP-L700-dna-extraction.qmd), Section 6.4).
+2. Verify library size by running 1 uL on a 1.5% agarose gel. The
+   expected size is the amplicon plus approximately 120 bp of adapter
+   and index sequence.
+3. Libraries with concentrations below 1 nM may not sequence well.
+   Re-amplify or exclude them.
+
+### 6.6 Library Pooling and Submission
+
+1. Normalize each library to an equimolar concentration (typically
+   4 nM) by diluting with nuclease-free water.
+2. Pool equal volumes of all normalized libraries into a single tube.
+3. Quantify the pooled library by Qubit.
+4. Prepare the sample sheet (Illumina Experiment Manager format or
+   the sequencing facility's template) listing every sample with its
+   index combination.
+5. Submit the pooled library and sample sheet to the sequencing
+   facility per their submission guidelines.
+6. Record the submission date, facility, run type (e.g., MiSeq 2x250
+   or 2x300), and expected turnaround in the lab notebook.
+
+
+## 7. Quality Control
+
+- Every library prep run must include: positive control (mock
+  community, if available), NTC, and extraction blank carried through
+  both PCR1 and PCR2
+- NTC and extraction blanks must show no visible band on the
+  verification gel and no detectable concentration on the Qubit. If
+  blanks are positive, the entire batch is suspect [@salter2014].
+- Verify amplicon size on gel after PCR1; verify library size (amplicon
+  + adapters) on gel after PCR2
+- Record the number of PCR1 cycles and the index assignments for every
+  sample; these are required for data analysis and troubleshooting
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Container                 | Disposal Method                     |
+|:------------------------------|:--------------------------|:------------------------------------|
+| Used SPRI beads               | Standard trash            | Non-hazardous                       |
+| Ethanol wash waste            | Chemical waste or evaporate in fume hood | Small volumes can evaporate |
+| Used PCR tubes, plates, tips  | Standard trash            | Non-hazardous                       |
+| Gel waste                     | Per [SOP-L703](SOP-L703-pcr-gel-electrophoresis.qmd) | Depends on stain used |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L700](SOP-L700-dna-extraction.qmd)   | DNA Extraction            | Upstream: provides template DNA   |
+| [L703](SOP-L703-pcr-gel-electrophoresis.qmd) | PCR and Gel Electrophoresis | Amplicon verification       |
+| [L705](SOP-L705-bioinformatics-pipeline.qmd) | Bioinformatics Pipeline | Downstream: sequence processing |
+| [L706](SOP-L706-edna-metabarcoding.qmd) | eDNA Metabarcoding       | eDNA-specific workflow            |
+| [F701](../field_sops/SOP-F701-soil-microbial-field-sampling.qmd) | Soil Microbial Sampling | Field collection |
+
+
+## 11. Training Record
+
+Before preparing amplicon libraries independently, personnel must:
+
+1. Read this SOP, [SOP-L703](SOP-L703-pcr-gel-electrophoresis.qmd), and
+   [SOP-L700](SOP-L700-dna-extraction.qmd) in full
+2. Demonstrate SPRI bead cleanup with correct bead ratios and wash steps
+3. Prepare a supervised library from positive control DNA through pooling,
+   with clean controls and correct library size on gel
+4. Complete the sequencing facility's sample submission training
+5. Be signed off by the PI or lab manager
