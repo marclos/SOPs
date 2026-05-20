@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-L33: ThermoFisher Delta V IRMS -- General Instrument Use
+# SOP-L208: ThermoFisher Delta V IRMS -- General Instrument Use
 # =============================================================================
 # Instrument-level SOP covering the Delta V IRMS and all four front-end
 # peripherals (ConFlo IV, Flash EA, TC/EA, GasBench II).  Covers user
@@ -13,7 +13,7 @@
 # =============================================================================
 
 title: "ThermoFisher Delta V IRMS -- General Instrument Use"
-sop-number: "SOP-L33"
+sop-number: "SOP-L208"
 author:
   - name: "Marc Los Huertos"
     affiliation: "Environmental Analysis, Pomona College"
@@ -36,8 +36,8 @@ This SOP describes the general operation, care, and policies governing
 the ThermoFisher Delta V Isotope Ratio Mass Spectrometer (IRMS) and its
 four front-end peripherals in the Oxtoby Environmental Isotope Lab. It
 is the single instrument-level reference for all IRMS work. Individual
-application SOPs (e.g., [SOP-L75](SOP-L75-soil-ea-irms.qmd) for soil
-CN analysis, [SOP-L76](SOP-L76-carbonate-gasbench-irms.qmd) for
+application SOPs (e.g., [SOP-L414](SOP-L414-soil-ea-irms.qmd) for soil
+CN analysis, [SOP-L415](SOP-L415-carbonate-gasbench-irms.qmd) for
 carbonate isotopes) build on this SOP and should be read in conjunction
 with it.
 
@@ -91,7 +91,7 @@ with it.
 ### Emergency Procedures
 
 Follow the procedures in
-[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd). Contact the
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd). Contact the
 lab manager or Dr. Marc Los Huertos immediately for gas leaks, spills,
 injuries, or instrument malfunctions.
 
@@ -641,7 +641,7 @@ Mass Spectrometry*, 15(7), 501--519.
 Before using the IRMS independently, personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
 3. Read the application SOP for the peripheral(s) they will use
 4. Observe at least one complete analysis session by an experienced user
 5. Complete supervised practice runs
