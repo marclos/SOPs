@@ -1,9 +1,9 @@
 ---
 # =============================================================================
-# SOP-L12: Glassware Cleaning and Preparation
+# SOP-L101: Glassware Cleaning and Preparation
 # =============================================================================
 title: "Glassware Cleaning and Preparation"
-sop-number: "SOP-L12"
+sop-number: "SOP-L101"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -79,12 +79,12 @@ techniques.
 
 - **Acid splash to skin or eyes:** Flush immediately with water at the
   eyewash station or safety shower for at least 15 minutes. Refer to
-  [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+  [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 - **Broken glass injury:** Apply pressure with a clean cloth. If the
   cut is deep or contaminated with chemicals, seek medical attention.
 - **Acid spill:** Neutralize small spills with sodium bicarbonate; for
   large spills, use the spill kit and evacuate the area. See
-  [SOP-L02](SOP-L02-hazardous-materials-handling.qmd).
+  [SOP-L002](SOP-L002-hazardous-materials-handling.qmd).
 
 
 ## 5. Equipment and Materials
@@ -94,7 +94,7 @@ techniques.
 | Item                          | Notes                                     |
 |:------------------------------|:------------------------------------------|
 | Glassware washing sink        | With hot and cold water supply            |
-| Drying oven                   | Set to 105 C; see [SOP-L16](SOP-L16-drying-ovens.qmd) |
+| Drying oven                   | Set to 105 C; see [SOP-L105](SOP-L105-drying-ovens.qmd) |
 | Drying rack (peg-style)       | Wall-mounted or countertop               |
 | Acid bath (polyethylene tub with lid) | Dedicated to acid washing; kept in fume hood |
 | Fume hood                     | Required for all acid bath work           |
@@ -166,7 +166,7 @@ other procedures that do not require trace-metal cleanliness.
 6. Perform a final rinse with three changes of deionized (DI) water
 7. Invert the glassware on a peg-style drying rack or place upright in
    the drying oven at 105 C for 2--4 hours (see
-   [SOP-L16](SOP-L16-drying-ovens.qmd))
+   [SOP-L105](SOP-L105-drying-ovens.qmd))
 
 ::: {.callout-important}
 ### Critical
@@ -244,7 +244,7 @@ above instead.
 ### 6.6 Drying and Storage
 
 1. Air-dry inverted on a peg rack, or oven-dry at 105 C for 2--4 hours
-   (see [SOP-L16](SOP-L16-drying-ovens.qmd))
+   (see [SOP-L105](SOP-L105-drying-ovens.qmd))
 2. Do not oven-dry volumetric glassware (volumetric flasks, graduated
    cylinders). Thermal expansion can permanently alter the calibration.
    Air-dry volumetric glassware only.
@@ -312,8 +312,8 @@ be preventing adequate cleaning.
 Before cleaning glassware independently, personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
-   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+2. Complete [SOP-L001 Laboratory Safety](SOP-L001-laboratory-safety.qmd)
+   and [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
    training
 3. Demonstrate proper use of brushes, detergent preparation, and the
    rinse sequence under supervision
@@ -328,16 +328,16 @@ Before cleaning glassware independently, personnel must:
 
 | Downstream Analysis           | Cleaning Tier Required                    |
 |:------------------------------|:------------------------------------------|
-| Gravimetric soil moisture ([SOP-L55](SOP-L55-soil-moisture.qmd)) | Routine (Section 6.2) |
-| Loss on ignition ([SOP-L61](SOP-L61-loss-on-ignition.qmd)) | Routine (Section 6.2) |
-| KCl extraction for NH~4~^+^/NO~3~^-^ ([SOP-L58](SOP-L58-nitrate-ammonium-kcl.qmd)) | Routine (Section 6.2) |
-| TOC / TC analysis ([SOP-L62](SOP-L62-total-carbon.qmd)) | Routine + combust ceramic boats at 900 C |
-| pH and conductivity ([SOP-L40](SOP-L40-pH-conductivity-bench.qmd)) | Routine (Section 6.2) |
-| Hach colorimetric methods ([SOP-L45](SOP-L45-hach-colorimetric.qmd)) | Routine (Section 6.2) |
+| Gravimetric soil moisture ([SOP-L400](SOP-L400-soil-moisture.qmd)) | Routine (Section 6.2) |
+| Loss on ignition ([SOP-L406](SOP-L406-loss-on-ignition.qmd)) | Routine (Section 6.2) |
+| KCl extraction for NH~4~^+^/NO~3~^-^ ([SOP-L403](SOP-L403-nitrate-ammonium-kcl.qmd)) | Routine (Section 6.2) |
+| TOC / TC analysis ([SOP-L407](SOP-L407-total-carbon.qmd)) | Routine + combust ceramic boats at 900 C |
+| pH and conductivity ([SOP-L402](SOP-L402-pH-conductivity-bench.qmd)) | Routine (Section 6.2) |
+| Hach colorimetric methods ([SOP-L303](SOP-L303-hach-colorimetric.qmd)) | Routine (Section 6.2) |
 | ICP-MS / ICP-OES (*SOP-L31*)  | Acid wash with 10% HNO~3~ (Section 6.3)  |
 | XRF acid digestions (*SOP-L30*) | Acid wash with 10% HNO~3~ (Section 6.3) |
-| DNA extraction ([SOP-L95](SOP-L95-dna-extraction.qmd)) | Autoclave; routine wash |
-| Microbial biomass carbon ([SOP-L64](SOP-L64-microbial-biomass-carbon.qmd)) | Acid wash with 10% HCl (Section 6.3) |
+| DNA extraction ([SOP-L700](SOP-L700-dna-extraction.qmd)) | Autoclave; routine wash |
+| Microbial biomass carbon ([SOP-L408](SOP-L408-microbial-biomass-carbon.qmd)) | Acid wash with 10% HCl (Section 6.3) |
 
 
 ## Appendix B: Acid Bath Preparation {.appendix}

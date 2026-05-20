@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-F72: Air Quality Monitoring (Portable Sensors)
+# SOP-F502: Air Quality Monitoring (Portable Sensors)
 # =============================================================================
 # Deployment, operation, data retrieval, and correction of Raspberry Pi
 # based low-cost particulate matter sensor networks using Plantower
@@ -8,7 +8,7 @@
 # =============================================================================
 
 title: "Air Quality Monitoring with Portable PM Sensors"
-sop-number: "SOP-F72"
+sop-number: "SOP-F502"
 author:
   - name: "Marc Los Huertos"
     affiliation: "Environmental Analysis, Pomona College"
@@ -75,7 +75,7 @@ results [@barkjohn2021; @ardondryer2023].
   enclosures.
 - **Traffic and site access:** Many monitoring locations are near
   roadways. Follow all traffic safety procedures in
-  [SOP-F01](SOP-F01-field-safety.qmd).
+  [SOP-F001](SOP-F001-field-safety.qmd).
 - **Working at height:** If mounting sensors on poles or structures,
   follow ladder safety protocols.
 :::
@@ -479,16 +479,16 @@ PM~2.5~
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
-| [F01](SOP-F01-field-safety.qmd)       | Field Safety        | Required prerequisite             |
-| [F11](SOP-F11-electrical-power-in-the-field.qmd) | Electrical Power in the Field | Power supply guidance  |
-| [F74](SOP-F74-picarro-field-deployment.qmd) | Picarro GHG Analyzer | Companion field instrument SOP |
+| [F001](SOP-F001-field-safety.qmd)       | Field Safety        | Required prerequisite             |
+| [F101](SOP-F101-electrical-power-in-the-field.qmd) | Electrical Power in the Field | Power supply guidance  |
+| [F504](SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer | Companion field instrument SOP |
 
 
 ## 16. Training Record
 
 Before deploying air quality sensors independently, personnel must:
 
-1. Read this SOP and [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
    in full
 2. Demonstrate Raspberry Pi setup (OS flash, SSH, sensor script
    configuration) under supervision

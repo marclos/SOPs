@@ -1,9 +1,9 @@
 ---
 # =============================================================================
-# SOP-F74: Picarro GHG Analyzer -- Field Deployment with Eosense Chambers
+# SOP-F504: Picarro GHG Analyzer -- Field Deployment with Eosense Chambers
 # =============================================================================
 title: "Greenhouse Gas Measurements -- Picarro G2508 with Eosense Soil Flux Chambers"
-sop-number: "SOP-F74"
+sop-number: "SOP-F504"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -44,7 +44,7 @@ modified as new projects have come on line.
   coupled with Eosense eosAC dynamic soil flux chambers and the eosMX-P
   multiplexer for automated soil greenhouse gas flux measurements
 - **Does not apply to:** Laboratory (bench-top) Picarro configuration
-  (see [SOP-L76](../lab_sops/SOP-L76-picarro-lab.qmd)), atmospheric
+  (see [SOP-F504](../lab_sops/SOP-F504-picarro-lab.qmd)), atmospheric
   concentration monitoring without flux chambers, or eddy covariance
   measurements
 - **Location:** All EA Program field sites within 30 m cable reach of a
@@ -92,14 +92,14 @@ Improvements were made by Allison Joseph and Virginia Paschal.
 
 ### Required Training
 
-- [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
-- *SOP-F04 Electrical Power in the Field*
+- [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
+- [SOP-F101 Electrical Power in the Field](SOP-F101-electrical-power-in-the-field.qmd)
 
 ### Emergency Procedures
 
 In case of gas leak from calibration cylinders, move upwind and ventilate
 the area. For generator fuel spills, contain with absorbent materials.
-Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) for general
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
 field emergency response.
 
 
@@ -424,13 +424,7 @@ options need to be set for each deployment.*
 | Damaged Teflon tubing     | Standard trash (non-hazardous)           |
 
 
-## 11. References
-
-::: {#refs}
-:::
-
-
-## 12. Training Record
+## 11. Training Record
 
 Before deploying this instrument independently, personnel must:
 

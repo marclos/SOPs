@@ -1,9 +1,9 @@
 ---
 # =============================================================================
-# SOP-F88: Drone Operations (DJI Mavic and Matrice)
+# SOP-F607: Drone Operations (DJI Mavic and Matrice)
 # =============================================================================
 title: "Drone Operations (DJI Mavic and Matrice UAVs)"
-sop-number: "SOP-F88"
+sop-number: "SOP-F607"
 author:
   - name: "Liz Johnson"
     affiliation: "EA Program, Pomona College"
@@ -115,7 +115,7 @@ RTH function immediately. If RTH fails, allow the drone to execute
 its failsafe (automatic landing or hover). Do not attempt to catch a
 falling drone. If a crash occurs, document the location and any
 property damage, recover the drone, and report the incident to the PI.
-Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) for general
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
 field emergency procedures.
 
 
@@ -471,7 +471,7 @@ consistent lighting conditions.
 Before operating any EA Program drone independently, personnel must:
 
 1. Read this SOP and
-   [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) in full
+   [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) in full
 2. Hold a current FAA Part 107 Remote Pilot certificate, or have
    passed the TRUST exam (for recreational-only operations under
    direct PI supervision)

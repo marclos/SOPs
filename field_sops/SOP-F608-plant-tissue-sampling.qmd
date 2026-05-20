@@ -1,6 +1,6 @@
 ---
 title: "Plant Tissue Sampling"
-sop-number: "SOP-F83"
+sop-number: "SOP-F608"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -23,7 +23,7 @@ This SOP describes procedures for collecting, handling, and preserving plant tis
 ## 2. Scope
 
 - **Applies to:** Collection of leaf, stem, root, and reproductive tissue from vascular plants for nutrient and isotope analysis at all EA Program field sites
-- **Does not apply to:** Soil organic matter sampling (see [SOP-F56](SOP-F56-soil-sampling.qmd)); algal tissue sampling; plant tissue culture; DNA extraction from plant tissue (see [SOP-L95](../lab_sops/SOP-L95-dna-extraction.qmd))
+- **Does not apply to:** Soil organic matter sampling (see [SOP-F400](SOP-F400-soil-sampling.qmd)); algal tissue sampling; plant tissue culture; DNA extraction from plant tissue (see [SOP-L700](../lab_sops/SOP-L700-dna-extraction.qmd))
 - **Location:** All EA Program field sites; initial processing in SGM 133/134
 
 
@@ -140,7 +140,7 @@ For cuts from pruning shears, apply direct pressure and clean the wound. For poi
 Every sample must be labeled with:
 
 - Site name and plot/transect ID
-- Species (use the 6-letter code from [SOP-F81](SOP-F81-vegetation-transect-surveys.qmd) Section 11.2)
+- Species (use the 6-letter code from [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd) Section 11.2)
 - Tissue type (leaf, stem, root, seed)
 - Individual or composite (if composite, record the number of individuals)
 - Date (YYYY-MM-DD)
@@ -171,7 +171,7 @@ Record the following for each sample:
 The default preservation method for nutrient and isotope analysis:
 
 1. Transport paper envelopes to the lab within 24 hours
-2. Dry at 60 C in the drying oven ([SOP-L16](../lab_sops/SOP-L16-drying-ovens.qmd)) for at least 48 hours or until a constant mass is reached
+2. Dry at 60 C in the drying oven ([SOP-L105](../lab_sops/SOP-L105-drying-ovens.qmd)) for at least 48 hours or until a constant mass is reached
 3. Record the dry mass
 4. Store dried tissue in labeled coin envelopes in a desiccator or sealed container until grinding
 
@@ -185,7 +185,7 @@ Do not exceed 60 C for tissue intended for nitrogen or carbon isotope analysis. 
 For analyses requiring fresh tissue (enzyme assays, gene expression, volatile compounds):
 
 1. Transport in cooler with ice packs (or snap-freeze with liquid nitrogen in the field)
-2. Transfer to the -80 C freezer ([SOP-L17](../lab_sops/SOP-L17-refrigerators-freezers.qmd)) within 6 hours of collection
+2. Transfer to the -80 C freezer ([SOP-L106](../lab_sops/SOP-L106-refrigerators-freezers.qmd)) within 6 hours of collection
 3. Record in the freezer inventory
 
 ### 9.3 Grinding
@@ -215,7 +215,7 @@ See the project-level `references.bib` for full citations. Key references: @kalr
 
 Before collecting plant tissue independently, personnel must:
 
-1. Read this SOP and [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 2. Demonstrate species identification for the target community
 3. Demonstrate proper collection technique (glove changes, tool decontamination, labeling)
 4. Process one set of samples through drying and grinding under supervision

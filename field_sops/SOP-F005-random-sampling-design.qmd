@@ -1,9 +1,9 @@
 ---
 # =============================================================================
-# SOP-F05: Random Sampling Design
+# SOP-F005: Random Sampling Design
 # =============================================================================
 title: "Random Sampling Design"
-sop-number: "SOP-F05"
+sop-number: "SOP-F005"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -70,7 +70,7 @@ Review site conditions before each sampling event.
 
 ### Emergency Procedures
 
-Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd). Carry a
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). Carry a
 first aid kit and charged cell phone to all field sites.
 
 
@@ -293,7 +293,7 @@ built using the `sf` package. Generate random points with
 2. Enter field data into the project database within 48 hours
 3. Archive original data sheets (scan if paper)
 4. Version-control all analysis scripts per
-   [SOP-L07 RStudio and GitHub](../lab_sops/SOP-L07-rstudio-github.qmd)
+   [SOP-L801 RStudio and GitHub](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 
 ## 10. References
@@ -314,7 +314,7 @@ Training is documented in EA Program files. Before designing or
 executing random sampling independently, personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-F01 Field Safety](SOP-F01-field-safety.qmd) training
+2. Complete [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) training
 3. Demonstrate proficiency with random number generation in R
 4. Participate in a supervised field sampling session using the
    grid-based procedure

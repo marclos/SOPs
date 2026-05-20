@@ -1,9 +1,9 @@
 ---
 # =============================================================================
-# SOP-F44: Groundwater Monitoring Well Sampling
+# SOP-F303: Groundwater Monitoring Well Sampling
 # =============================================================================
 title: "Groundwater Monitoring Well Sampling"
-sop-number: "SOP-F44"
+sop-number: "SOP-F303"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -87,9 +87,9 @@ representative groundwater sampling.
 
 If a spill of purge water or preservative acid occurs, contain with
 absorbent materials and refer to
-[SOP-L02 Hazardous Materials Handling](../lab_sops/SOP-L02-hazardous-materials-handling.qmd).
+[SOP-L003 Hazardous Materials Handling](../lab_sops/SOP-L003-hazardous-materials-handling.qmd).
 For general field emergencies, refer to
-[SOP-F01 Field Safety](SOP-F01-field-safety.qmd).
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
 ## 5. Equipment and Materials
@@ -332,10 +332,10 @@ at the lab and transported unopened with the field samples.
    to-water measurement and the surveyed TOC elevation
 3. When laboratory results are received, merge with field data and
    apply QC flags per
-   [SOP-L06 Quality Control](../lab_sops/SOP-L06-quality-control.qmd)
+   [SOP-L802 Quality Control](../lab_sops/SOP-802-quality-control.qmd)
 4. Archive original field data sheets (scan if paper)
 5. Version-control all analysis scripts per
-   [SOP-L05 RStudio and GitHub](../lab_sops/SOP-L05-rstudio-github.qmd)
+   [SOP-L801 RStudio and GitHub](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 
 ## 11. References
@@ -368,8 +368,8 @@ at the lab and transported unopened with the field samples.
 Before sampling groundwater monitoring wells independently, personnel
 must:
 
-1. Read this SOP, [SOP-F01 Field Safety](SOP-F01-field-safety.qmd),
-   and [SOP-F41 Surface Water Sampling](SOP-F41-surface-water-sampling.qmd)
+1. Read this SOP, [SOP-F001 Field Safety](SOP-F001-field-safety.qmd),
+   and [SOP-F300 Surface Water Sampling](SOP-F300-surface-water-sampling.qmd)
    in full
 2. Review well construction logs for the wells to be sampled
 3. Demonstrate proper water level measurement technique

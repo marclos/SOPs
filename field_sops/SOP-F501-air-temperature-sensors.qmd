@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-F71: Air Temperature Monitoring (Portable Sensors)
+# SOP-F501: Air Temperature Monitoring (Portable Sensors)
 # =============================================================================
 # Deployment, calibration, and data processing for low-cost air
 # temperature and relative humidity sensor networks using iButton,
@@ -8,7 +8,7 @@
 # =============================================================================
 
 title: "Air Temperature Monitoring with Portable Sensors"
-sop-number: "SOP-F71"
+sop-number: "SOP-F501"
 author:
   - name: "Marc Los Huertos"
     affiliation: "Environmental Analysis, Pomona College"
@@ -46,9 +46,9 @@ achievable with conventional weather stations [@muller2013;
   monitoring at 1.5--2.0 m above ground level using portable sensor
   networks.
 - **Does not apply to:** Soil temperature profiles (see
-  [SOP-F61](SOP-F61-soil-temperature-profiles.qmd)), indoor
+  [SOP-F404](SOP-F404-soil-temperature-profiles.qmd)), indoor
   temperature monitoring, or air quality (PM, gases; see
-  [SOP-F72](SOP-F72-air-quality-portable-sensors.qmd)).
+  [SOP-F502](SOP-F502-air-quality-portable-sensors.qmd)).
 - **Location:** EA Program field sites including the Pomona College
   campus, Bernard Field Station, photovoltaic study sites, and
   surrounding Inland Empire communities.
@@ -91,10 +91,10 @@ achievable with conventional weather stations [@muller2013;
 
 ## 5. Prerequisites
 
-- [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+- [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 - For Raspberry Pi deployments: basic familiarity with Raspberry Pi OS,
   SSH, and file transfer (see also
-  [SOP-F72](SOP-F72-air-quality-portable-sensors.qmd))
+  [SOP-F502](SOP-F502-air-quality-portable-sensors.qmd))
 
 
 ## 6. Sensor Platforms
@@ -436,17 +436,17 @@ Urban Heat Island (UHI)
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
-| [F01](SOP-F01-field-safety.qmd)       | Field Safety        | Required prerequisite             |
-| [F11](SOP-F11-electrical-power-in-the-field.qmd) | Electrical Power in the Field | Power for Pi deployments |
-| [F61](SOP-F61-soil-temperature-profiles.qmd) | Soil Temperature Profiles | Companion: soil vs. air temp |
-| [F72](SOP-F72-air-quality-portable-sensors.qmd) | Air Quality Monitoring | Companion: PM sensors on same Pi units |
+| [F001](SOP-F001-field-safety.qmd)       | Field Safety        | Required prerequisite             |
+| [F101](SOP-F101-electrical-power-in-the-field.qmd) | Electrical Power in the Field | Power for Pi deployments |
+| [F404](SOP-F404-soil-temperature-profiles.qmd) | Soil Temperature Profiles | Companion: soil vs. air temp |
+| [F502](SOP-F==502-air-quality-portable-sensors.qmd) | Air Quality Monitoring | Companion: PM sensors on same Pi units |
 
 
 ## 17. Training Record
 
 Before deploying air temperature sensors independently, personnel must:
 
-1. Read this SOP and [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
    in full
 2. Perform a calibration (ice-water bath and room-temperature
    inter-comparison) under supervision

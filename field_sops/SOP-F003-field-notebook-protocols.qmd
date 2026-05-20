@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-F03: Field Notebook Protocols
+# SOP-F003: Field Notebook Protocols
 # =============================================================================
 # Standards for field documentation: notebook selection, required entries,
 # sketch and photo conventions, chain of custody, data transcription,
@@ -8,7 +8,7 @@
 # =============================================================================
 
 title: "Field Notebook Protocols"
-sop-number: "SOP-F03"
+sop-number: "SOP-F003"
 author:
   - name: "Marc Los Huertos"
     affiliation: "Environmental Analysis, Pomona College"
@@ -35,7 +35,7 @@ understand what was done, where, when, by whom, and under what
 conditions.
 
 For laboratory notebook requirements, see
-[SOP-L06 Quality Control](../lab_sops/SOP-L06-quality-control.qmd),
+[SOP-L802 Quality Control](../lab_sops/SOP-802-quality-control.qmd),
 Section 7.1.
 
 
@@ -257,7 +257,7 @@ transcription errors and data loss.
 3. Flag any entries that are ambiguous, illegible, or questionable.
    Resolve with the original recorder.
 4. Store the digital file per the project's data management plan (see
-   [SOP-L06](../lab_sops/SOP-L06-quality-control.qmd), Section 7.2).
+   [SOP-L802](../lab_sops/SOP-L801=2-quality-control.qmd), Section 7.2).
 
 
 ## 11. Notebook Archiving
@@ -301,9 +301,9 @@ QA/G-5). EPA/240/R-02/009.
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
-| [F01](SOP-F01-field-safety.qmd)                    | Field Safety        | Required prerequisite             |
-| [F02](SOP-F02-field-equipment-checklist.qmd)       | Field Equipment Checklist | Notebook is on the checklist |
-| [L06](../lab_sops/SOP-L06-quality-control.qmd)     | Quality Control and QA | Lab notebook standards; data management |
+| [F001](SOP-F001-field-safety.qmd)                    | Field Safety        | Required prerequisite             |
+| [F002](SOP-F002-field-equipment-checklist.qmd)       | Field Equipment Checklist | Notebook is on the checklist |
+| [L802](../lab_sops/SOP-L802-quality-control.qmd)     | Quality Control and QA | Lab notebook standards; data management |
 
 
 ## 15. Training Record

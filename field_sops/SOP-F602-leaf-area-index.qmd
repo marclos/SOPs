@@ -1,6 +1,6 @@
 ---
 title: "Leaf Area Index Measurement"
-sop-number: "SOP-F82"
+sop-number: "SOP-F602"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -54,7 +54,7 @@ This SOP describes field methods for estimating Leaf Area Index (LAI), the total
 
 ### Emergency Procedures
 
-Refer to [SOP-F01 Field Safety](SOP-F01-field-safety.qmd).
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
 ## 5. Definitions
@@ -154,7 +154,7 @@ where $\tau$ is the ratio of below-canopy to above-canopy PAR and $K$ is the ext
 1. Download ceptometer data to the lab computer within 48 hours
 2. Organize hemispherical images by site and date: `LAI_SiteID_YYYYMMDD/`
 3. Archive raw data and images on the lab shared drive
-4. Version-control analysis scripts per [SOP-L05](../lab_sops/SOP-L05-rstudio-github.qmd)
+4. Version-control analysis scripts per [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 
 ## 11. References
@@ -169,7 +169,7 @@ See the project-level `references.bib` for full citations. Key references: @jonc
 
 Before measuring LAI independently, personnel must:
 
-1. Read this SOP and [SOP-F01 Field Safety](SOP-F01-field-safety.qmd)
+1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 2. Demonstrate correct ceptometer operation (power on, set parameters, above/below readings, data download)
 3. Demonstrate correct hemispherical photography technique (leveling, orientation, exposure settings)
 4. Process one set of images through gap fraction analysis under supervision
