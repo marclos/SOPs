@@ -3,7 +3,7 @@
 # SOP-L65: Hot-Plate Acid Digestion of Soils for Trace Metal Analysis
 # =============================================================================
 title: "Hot-Plate Acid Digestion of Soils for Trace Metal Analysis"
-sop-number: "SOP-L65"
+sop-number: "SOP-L410"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -33,7 +33,7 @@ silicates and some refractory oxides are not fully dissolved, but
 environmentally available metals are recovered.
 
 For microwave-assisted digestion using the MARS 5 system, see
-[SOP-L66](SOP-L66-mars-microwave-digestion.qmd). The microwave method
+[SOP-L411](SOP-L411-mars-microwave-digestion.qmd). The microwave method
 is faster but processes fewer samples per batch; the hot-plate method
 described here is slower but requires only standard fume-hood equipment.
 
@@ -47,7 +47,7 @@ described here is slower but requires only standard fume-hood equipment.
 - **Does not apply to:** Water samples (direct acidification or
   separate digestion); samples requiring total silicate dissolution
   (HF-based methods); microwave digestion (see
-  [SOP-L66](SOP-L66-mars-microwave-digestion.qmd))
+  [SOP-L411](SOP-L411-mars-microwave-digestion.qmd))
 - **Location:** EA Program laboratory, SGM 133
 
 
@@ -99,7 +99,7 @@ station or safety shower for at least 15 minutes. For inhalation of
 fumes, move to fresh air. For acid spills, neutralize small spills with
 sodium bicarbonate; for large spills, evacuate and use the spill kit.
 Refer to
-[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 ::: {.callout-important}
 Never add water to concentrated acid. Add acid slowly to samples. Never
@@ -117,7 +117,7 @@ and damage vessels.
 | Hot plate with temperature control | Capable of maintaining 95 C; placed inside fume hood |
 | Digestion vessels             | Teflon (PFA) beakers, glass beakers, or borosilicate digestion tubes |
 | Watch glasses                 | Sized to cover the digestion vessels      |
-| Analytical balance (0.001 g)  | See [SOP-L13](SOP-L13-using-balances.qmd) |
+| Analytical balance (0.001 g)  | See [SOP-L102](SOP-L102-using-balances.qmd) |
 | Fume hood                     | Required for all steps involving acid and heating |
 | Volumetric flasks (50 mL, Class A) | For final dilution                   |
 | Graduated pipettes or dispensers | For acid delivery                      |
@@ -146,15 +146,15 @@ limit (MDL) for all target analytes.
 
 1. Air-dry the soil at room temperature or at 60 C until constant mass
 2. Pass through a No. 10 sieve (2 mm) per
-   [SOP-F56 Soil Sampling](../field_sops/SOP-F56-soil-sampling.qmd)
+   [SOP-F400 Soil Sampling](../field_sops/SOP-F400-soil-sampling.qmd)
 3. Homogenize thoroughly using a mortar and pestle
 4. Determine gravimetric moisture on a companion subsample per
-   [SOP-L55](SOP-L55-soil-moisture.qmd)
+   [SOP-L401](SOP-L401-soil-moisture.qmd)
 
 ### 6.2 Glassware Cleaning
 
 Acid-wash all vessels, volumetric flasks, and watch glasses per
-[SOP-L12 Glassware Cleaning](SOP-L12-glassware-cleaning.qmd),
+[SOP-L101 Glassware Cleaning](SOP-L101-glassware-cleaning.qmd),
 Section 6.3 (10% HNO~3~ acid bath). Rinse with reagent water and
 dry in a clean environment.
 
@@ -299,8 +299,8 @@ polyethylene carboy for EH&S hazardous waste pickup.
 Before performing hot-plate acid digestion independently, personnel
 must:
 
-1. Read this SOP, [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd),
-   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+1. Read this SOP, [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd),
+   and [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
    in full
 2. Review the SDS for concentrated HNO~3~, HCl, and 30% H~2~O~2~
 3. Observe a trained operator perform a complete digestion cycle
@@ -350,20 +350,3 @@ cat(sprintf("EPA RSL residential: 400 mg/kg\n"))
 | Metal recovery                | Comparable for most elements   | Comparable; slightly higher for volatile elements due to sealed system |
 | Best for                      | Small batches; no access to microwave | Routine batches; time-sensitive work |
 
-
-## Appendix C: BibTeX Entry {.appendix}
-
-Append to the project `references.bib`:
-
-```bibtex
-@techreport{epa3050b,
-  title     = {Method 3050B: Acid Digestion of Sediments, Sludges,
-               and Soils},
-  author    = {{U.S. Environmental Protection Agency}},
-  institution = {U.S. Environmental Protection Agency},
-  number    = {SW-846, Revision 2},
-  year      = {1996},
-  address   = {Washington, DC},
-  url       = {https://www.epa.gov/sites/production/files/2015-06/documents/epa-3050b.pdf}
-}
-```

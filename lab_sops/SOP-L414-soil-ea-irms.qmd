@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-L69: Soil Carbon and Nitrogen Analysis by Flash EA-IRMS
+# SOP-L414: Soil Carbon and Nitrogen Analysis by Flash EA-IRMS
 # =============================================================================
 # Application SOP for d13C, d15N, %C, and %N determination in soil and
 # sediment samples using the Flash IRMS EA coupled to the Delta V IRMS.
@@ -9,7 +9,7 @@
 # =============================================================================
 
 title: "Soil Carbon and Nitrogen Analysis by Flash EA-IRMS"
-sop-number: "SOP-L69"
+sop-number: "SOP-L414"
 author:
   - name: "Marc Los Huertos"
     affiliation: "Environmental Analysis, Pomona College"
@@ -39,7 +39,7 @@ correction.
 
 For general instrument operation, startup/shutdown, gas checks, tuning,
 and pre-analysis tests, see
-[SOP-L33](SOP-L33-irms-general-instrument.qmd).
+[SOP-L208](SOP-L208-irms-general-instrument.qmd).
 
 
 ## 2. Scope
@@ -49,7 +49,7 @@ and pre-analysis tests, see
   NC (dual reactor) mode.
 - **Does not apply to:** Sulfur isotope analysis (NCS mode; requires
   dedicated reactor and Sulfinert column), GasBench applications
-  (see [SOP-L76](SOP-L76-carbonate-gasbench-irms.qmd)), TC/EA
+  (see [SOP-L415](SOP-L415-carbonate-gasbench-irms.qmd)), TC/EA
   applications ($\delta^{2}$H, $\delta^{18}$O), or liquid samples.
 - **Location:** Sample preparation in SGM Rm 133; analysis in the
   Oxtoby Isotope Lab, SGM Rm 135.
@@ -67,7 +67,7 @@ and pre-analysis tests, see
 
 ## 4. Safety and Hazards
 
-See [SOP-L33, Section 4](SOP-L33-irms-general-instrument.qmd) for the
+See [SOP-L208, Section 4](SOP-L208-irms-general-instrument.qmd) for the
 full hazard list. Hazards specific to this application:
 
 - **Hot ash fingers and reactor tubes** during reactor inspection or
@@ -87,8 +87,8 @@ full hazard list. Hazards specific to this application:
 
 - Certification as an IRMS User per
   [SOP-L33](SOP-L33-irms-general-instrument.qmd)
-- [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
-- Familiarity with the Isodat software (see SOP-L33, Section 15)
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+- Familiarity with the Isodat software (see SOP-L208, Section 15)
 
 
 ## 6. Sample Preparation
@@ -154,7 +154,7 @@ roughly 12 hours.
 ## 8. Running the Analysis
 
 1. Complete all pre-analysis checks per
-   [SOP-L33, Section 13](SOP-L33-irms-general-instrument.qmd#sec-pre-analysis):
+   [SOP-L208, Section 13](SOP-L208-irms-general-instrument.qmd#sec-pre-analysis):
    gas checks, backgrounds, on/off tests, and blank determination.
 2. Build the sequence in Isodat (see SOP-L33, Section 15).
 3. Load autosampler carousels. Verify that physical positions match the
@@ -178,7 +178,7 @@ Times include ~1 minute for peak centering and magnet switching.
 ## 9. End-of-Run Shutdown and Cleanup
 
 1. Confirm the sequence completed successfully.
-2. Follow the shutdown procedure in SOP-L33, Section 11.3.
+2. Follow the shutdown procedure in SOP-L208, Section 11.3.
 3. Log gas usage and any issues in the lab logbook.
 4. Remove samples and personal items. Clean up. Push in your chair.
 
@@ -519,7 +519,7 @@ Include in any data table or publication:
 
 ## 14. Troubleshooting
 
-See [SOP-L33, Section 18](SOP-L33-irms-general-instrument.qmd) for the
+See [SOP-L208, Section 18](SOP-L208-irms-general-instrument.qmd) for the
 full troubleshooting table. Issues specific to soil CN analysis:
 
 | Symptom                              | Possible Cause / Action                       |
@@ -550,19 +550,19 @@ Mass Spectrometry*, 15(7), 501--519.
 
 | SOP   | Title                                       | Relationship                      |
 |:------|:--------------------------------------------|:----------------------------------|
-| [L01](SOP-L01-laboratory-safety.qmd)       | Laboratory Safety       | Required prerequisite             |
-| [L06](SOP-L06-quality-control.qmd)         | Quality Control and Quality Assurance | General QC framework   |
-| [L33](SOP-L33-irms-general-instrument.qmd) | IRMS -- General Instrument Use | Instrument-level procedures |
-| [L76](SOP-L76-carbonate-gasbench-irms.qmd) | Carbonate Isotopes by GasBench-IRMS | Companion application SOP |
+| [L002](SOP-L002-laboratory-safety.qmd)       | Laboratory Safety       | Required prerequisite             |
+| [L802](SOP-L802-quality-control.qmd)         | Quality Control and Quality Assurance | General QC framework   |
+| [L208](SOP-L208-irms-general-instrument.qmd) | IRMS -- General Instrument Use | Instrument-level procedures |
+| [L415](SOP-L415-carbonate-gasbench-irms.qmd) | Carbonate Isotopes by GasBench-IRMS | Companion application SOP |
 
 
 ## 17. Training Record
 
 Before performing soil CN analysis independently, personnel must:
 
-1. Read this SOP and [SOP-L33](SOP-L33-irms-general-instrument.qmd) in
+1. Read this SOP and [SOP-L208](SOP-L208-irms-general-instrument.qmd) in
    full
-2. Be a certified IRMS User (SOP-L33, Section 6)
+2. Be a certified IRMS User (SOP-L208, Section 6)
 3. Demonstrate capsule preparation under supervision
 4. Perform a supervised analytical run with acceptable QC results
 5. Complete at least one supervised data reduction session

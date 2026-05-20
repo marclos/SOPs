@@ -1,9 +1,9 @@
 ---
 # =============================================================================
-# SOP-L66: Microwave-Assisted Acid Digestion of Soils (MARS 5 / EPA 3051A)
+# SOP-L411: Microwave-Assisted Acid Digestion of Soils (MARS 5 / EPA 3051A)
 # =============================================================================
 title: "Microwave-Assisted Acid Digestion of Soils for Trace Metal Analysis"
-sop-number: "SOP-L66"
+sop-number: "SOP-L411"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -98,7 +98,7 @@ station or safety shower for at least 15 minutes. For inhalation of
 fumes, move to fresh air and seek medical attention if symptoms persist.
 For vessel rupture or spill, evacuate the area and notify the lab
 manager. Refer to
-[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
 ## 5. Equipment and Materials
@@ -111,11 +111,11 @@ manager. Refer to
 | Microwave digestion vessels with carbon fiber sleeves | Must be compatible with the MARS 5; pressure-relief mechanism required |
 | Temperature and pressure sensors (if applicable) | Consult instrument supervisor |
 | Fume hood                     | Required for all acid handling and vessel venting |
-| Analytical balance (0.001 g)  | See [SOP-L13](SOP-L13-using-balances.qmd) |
-| Centrifuge                    | Capable of 2,000--3,000 rpm; see *SOP-L25* or *SOP-L27* |
+| Analytical balance (0.001 g)  | See [SOP-L102](SOP-L102-using-balances.qmd) |
+| Centrifuge                    | Capable of 2,000--3,000 rpm; see *SOP-L109* or *SOP-L108* |
 | Mortar and pestle             | For grinding dried soil                   |
 | No. 10 sieve (2 mm mesh)     | For sieving ground soil                   |
-| Drying oven                   | Set to 60 C; see [SOP-L16](SOP-L16-drying-ovens.qmd) |
+| Drying oven                   | Set to 60 C; see [SOP-L105](SOP-L105-drying-ovens.qmd) |
 
 ### Consumables
 
@@ -147,7 +147,7 @@ blank before use; the blank must read below the method detection limit
 ### 6.1 Glassware and Vessel Cleaning
 
 1. Acid-wash all vessels, centrifuge tubes, and volumetric ware per
-   [SOP-L12 Glassware Cleaning](SOP-L12-glassware-cleaning.qmd),
+   [SOP-L101 Glassware Cleaning](SOP-L101-glassware-cleaning.qmd),
    Section 6.3 (10% HNO~3~ acid bath)
 2. Rinse with reagent water and dry in a clean environment
 3. For microwave vessels, follow the manufacturer's cleaning protocol
@@ -291,7 +291,7 @@ $$
 
 where $\theta_{60}$ and $\theta_{105}$ are the moisture contents at
 60 C and 105 C respectively (determined on a companion subsample per
-[SOP-L55](SOP-L55-soil-moisture.qmd)).
+[SOP-L400](SOP-L400-soil-moisture.qmd)).
 
 
 ## 8. Waste Disposal
@@ -333,8 +333,8 @@ polyethylene carboy for EH&S hazardous waste pickup.
 Before performing microwave acid digestion independently, personnel
 must:
 
-1. Read this SOP, [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd),
-   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+1. Read this SOP, [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd),
+   and [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
    in full
 2. Review the SDS for concentrated HNO~3~ and HCl
 3. Review the MARS 5 operator's manual (vessel loading, program
@@ -399,19 +399,3 @@ if (C_soil_mg_kg > 400) {
 | High RPD between duplicates   | Soil heterogeneity; inconsistent weighing | Grind and sieve more thoroughly; weigh to 0.001 g precision |
 
 
-## Appendix C: BibTeX Entry {.appendix}
-
-Append to the project `references.bib`:
-
-```bibtex
-@techreport{epa3051a,
-  title     = {Method 3051A: Microwave Assisted Acid Digestion of
-               Sediments, Sludges, Soils, and Oils},
-  author    = {{U.S. Environmental Protection Agency}},
-  institution = {U.S. Environmental Protection Agency},
-  number    = {SW-846, Revision 1},
-  year      = {2007},
-  address   = {Washington, DC},
-  url       = {https://www.epa.gov/sites/production/files/2015-12/documents/3051a.pdf}
-}
-```

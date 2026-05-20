@@ -168,13 +168,14 @@ toc_lines <- sprintf("  %s & %s & %d \\\\",
                      toc_entries$Start)
 
 toc_table <- paste(
-  "\\begin{tabularx}{\\textwidth}{|p{2.2cm}|X|r|}",
+  "\\begin{longtable}{|p{2.2cm}|p{11cm}|r|}",
   "\\hline",
   "\\textbf{SOP Number} & \\textbf{Title} & \\textbf{Page} \\\\",
   "\\hline",
+  "\\endhead",
   paste(toc_lines, collapse = "\n  \\hline\n"),
   "\\hline",
-  "\\end{tabularx}",
+  "\\end{longtable}",
   sep = "\n"
 )
 
@@ -187,7 +188,7 @@ output:
   pdf_document:
     latex_engine: pdflatex
 header-includes:
-  - \\usepackage{tabularx}
+  - \\usepackage{longtable}
 geometry: margin=1in
 fontsize: 11pt
 ---
@@ -195,10 +196,6 @@ fontsize: 11pt
 # Table of Contents
 
 ', toc_table, '
-
-\\vfill
-
-*This document was generated automatically by `merge_sop_pdfs.R`.*
 ')
 
 toc_rmd <- tempfile(fileext = ".Rmd")

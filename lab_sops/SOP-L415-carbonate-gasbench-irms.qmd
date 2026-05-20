@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-L70: Carbonate Isotope Analysis by GasBench II-IRMS
+# SOP-L415: Carbonate Isotope Analysis by GasBench II-IRMS
 # =============================================================================
 # Application SOP for d13C and d18O determination in carbonate samples
 # using phosphoric acid digestion on the GasBench II coupled to the
@@ -9,7 +9,7 @@
 # =============================================================================
 
 title: "Carbonate Isotope Analysis by GasBench II-IRMS"
-sop-number: "SOP-L70"
+sop-number: "SOP-L415"
 author:
   - name: "Marc Los Huertos"
     affiliation: "Environmental Analysis, Pomona College"
@@ -36,7 +36,7 @@ acidification, the analytical run, and post-analysis data correction.
 
 For general instrument operation, startup/shutdown, gas checks, tuning,
 and pre-analysis tests, see
-[SOP-L33](SOP-L33-irms-general-instrument.qmd).
+[SOP-L208](SOP-L208-irms-general-instrument.qmd).
 
 
 ## 2. Scope
@@ -65,7 +65,7 @@ and pre-analysis tests, see
 
 ## 4. Safety and Hazards
 
-See [SOP-L33, Section 4](SOP-L33-irms-general-instrument.qmd) for the
+See [SOP-L208, Section 4](SOP-L208-irms-general-instrument.qmd) for the
 full hazard list. Hazards specific to this application:
 
 ::: {.callout-warning}
@@ -90,9 +90,9 @@ full hazard list. Hazards specific to this application:
 ## 5. Prerequisites
 
 - Certification as an IRMS User per
-  [SOP-L33](SOP-L33-irms-general-instrument.qmd)
-- [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
-- [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+  [SOP-L208](SOP-L208-irms-general-instrument.qmd)
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+- [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
   (for phosphoric acid)
 - Familiarity with the Isodat software and GasBench/PAL interface
 
@@ -220,7 +220,7 @@ minute for peak centering and magnet switching.
 ## 9. Running the Analysis
 
 1. Complete all pre-analysis checks per
-   [SOP-L33, Section 13](SOP-L33-irms-general-instrument.qmd#sec-pre-analysis).
+   [SOP-L208, Section 13](SOP-L208-irms-general-instrument.qmd#sec-pre-analysis).
    The GasBench is a low-flow peripheral, so backgrounds tend to be
    lower and on/off tests pass more quickly than with the Flash EA.
 2. Load vials into the PAL autosampler tray. Verify positions match
@@ -239,7 +239,7 @@ minute for peak centering and magnet switching.
 2. Remove vials from the PAL tray.
 3. Dispose of acidified vials and used needles/syringes properly
    (sharps container for needles; acid waste for residual acid).
-4. Follow the shutdown procedure in SOP-L33, Section 11.3.
+4. Follow the shutdown procedure in SOP-L208, Section 11.3.
 5. Log gas usage and issues in the lab logbook.
 6. Clean up. Push in your chair.
 
@@ -249,7 +249,7 @@ minute for peak centering and magnet switching.
 ### 11.1 Overview
 
 The correction sequence is the same as for EA analyses
-(see [SOP-L75, Section 10](SOP-L75-soil-ea-irms.qmd)), applied to
+(see [SOP-L414, Section 10](SOP-L414-soil-ea-irms.qmd)), applied to
 $\delta^{13}$C and $\delta^{18}$O:
 
 1. Blank correction (subtract blank CO~2~ contribution)
@@ -340,7 +340,7 @@ vial_means <- vial_means %>%
 ### 11.4 Drift and QC
 
 Apply drift correction following the same approach as
-[SOP-L75, Section 10.7](SOP-L75-soil-ea-irms.qmd). Use your check
+[SOP-L414, Section 10.7](SOP-L414-soil-ea-irms.qmd). Use your check
 standard (e.g., NBS-19) to monitor drift.
 
 ```{r}
@@ -453,11 +453,11 @@ and technique. *Chemical Geology: Isotope Geoscience Section*, 86(2),
 
 | SOP   | Title                                       | Relationship                      |
 |:------|:--------------------------------------------|:----------------------------------|
-| [L01](SOP-L01-laboratory-safety.qmd)       | Laboratory Safety       | Required prerequisite             |
-| [L02](SOP-L02-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Acid handling               |
-| [L06](SOP-L06-quality-control.qmd)         | Quality Control and Quality Assurance | General QC framework   |
-| [L33](SOP-L33-irms-general-instrument.qmd) | IRMS -- General Instrument Use | Instrument-level procedures |
-| [L75](SOP-L75-soil-ea-irms.qmd)            | Soil CN by Flash EA-IRMS | Companion application SOP        |
+| [L001](SOP-L002-laboratory-safety.qmd)       | Laboratory Safety       | Required prerequisite             |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Acid handling               |
+| [L802](SOP-L802-quality-control.qmd)         | Quality Control and Quality Assurance | General QC framework   |
+| [L208](SOP-L208-irms-general-instrument.qmd) | IRMS -- General Instrument Use | Instrument-level procedures |
+| [L414](SOP-L414-soil-ea-irms.qmd)            | Soil CN by Flash EA-IRMS | Companion application SOP        |
 
 
 ## 17. Training Record
@@ -465,11 +465,11 @@ and technique. *Chemical Geology: Isotope Geoscience Section*, 86(2),
 Before performing carbonate isotope analysis independently, personnel
 must:
 
-1. Read this SOP and [SOP-L33](SOP-L33-irms-general-instrument.qmd) in
+1. Read this SOP and [SOP-L208](SOP-L208-irms-general-instrument.qmd) in
    full
-2. Be a certified IRMS User (SOP-L33, Section 6)
+2. Be a certified IRMS User (SOP-L208, Section 6)
 3. Complete
-   [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
    (acid handling)
 4. Observe a GasBench carbonate run from vial preparation through data
    export

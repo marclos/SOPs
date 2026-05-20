@@ -1,9 +1,9 @@
 ---
 # =============================================================================
-# SOP-L68: Compost Maturity -- Solvita CO2/NH3 Test
+# SOP-L413: Compost Maturity -- Solvita CO2/NH3 Test
 # =============================================================================
 title: "Compost Maturity -- Solvita CO~2~/NH~3~ Test"
-sop-number: "SOP-L68"
+sop-number: "SOP-L413"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -38,7 +38,7 @@ dual-measurement approach provides a more reliable maturity assessment
 than either gas alone.
 
 This SOP is distinct from
-[SOP-L63 Solvita CO~2~ Burst](SOP-L63-solvita-co2-burst.qmd), which
+[SOP-L408 Solvita CO~2~ Burst](SOP-L408-solvita-co2-burst.qmd), which
 measures rewetted *soil* respiration over 24 hours using only a CO~2~
 paddle.
 
@@ -49,7 +49,7 @@ paddle.
   organic materials, including green waste, food waste, biosolids
   compost, manure compost, and vermicompost
 - **Does not apply to:** Soil respiration measurements (see
-  [SOP-L63](SOP-L63-solvita-co2-burst.qmd)); raw feedstock
+  [SOP-L408](SOP-L408-solvita-co2-burst.qmd)); raw feedstock
   characterization; long-term (7--28 day) laboratory respirometry;
   finished potting mixes where compost is a minor component
 - **Location:** EA Program laboratory, SGM 133
@@ -91,7 +91,7 @@ paddle.
 If compost dust is inhaled and respiratory irritation occurs, move to
 fresh air. For skin contact with compost, wash thoroughly with soap and
 water. Refer to
-[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd).
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
 
 
 ## 5. Equipment and Materials
@@ -167,7 +167,7 @@ reflect the maturity of the material once cooled.
 ::: {.callout-note}
 The standard incubation time is 4 hours. This is shorter than the
 24-hour incubation used for the Solvita soil CO~2~ burst test
-([SOP-L63](SOP-L63-solvita-co2-burst.qmd)) because compost produces
+([SOP-L408](SOP-L408-solvita-co2-burst.qmd)) because compost produces
 gas at much higher rates than soil.
 :::
 
@@ -255,10 +255,10 @@ Solvita test with:
 
 | Parameter                     | SOP / Method                              |
 |:------------------------------|:------------------------------------------|
-| pH and electrical conductivity | [SOP-L57](SOP-L57-soil-pH-salinity.qmd) (1:5 compost-water extract) |
-| Moisture content               | [SOP-L55](SOP-L55-soil-moisture.qmd) (105 C, 24 h) |
-| Organic matter (LOI)           | [SOP-L61](SOP-L61-loss-on-ignition.qmd)  |
-| Total C and N (C:N ratio)      | [SOP-L62](SOP-L62-total-carbon.qmd) and elemental analysis |
+| pH and electrical conductivity | [SOP-L402](SOP-L402-soil-pH-salinity.qmd) (1:5 compost-water extract) |
+| Moisture content               | [SOP-L401](SOP-L401-soil-moisture.qmd) (105 C, 24 h) |
+| Organic matter (LOI)           | [SOP-L406](SOP-L406-loss-on-ignition.qmd)  |
+| Total C and N (C:N ratio)      | [SOP-L407](SOP-L407-total-carbon.qmd) and elemental analysis |
 | Seed germination bioassay      | *TBD*                                     |
 
 
@@ -296,7 +296,7 @@ Before performing the Solvita compost maturity test independently,
 personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
    training
 3. Review the Solvita Compost Maturity Test User's Guide (included in
    the kit)

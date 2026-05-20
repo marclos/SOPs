@@ -1,9 +1,9 @@
 ---
 # =============================================================================
-# SOP-L59: Soil Nitrate Quick Test (Test Strip Method)
+# SOP-L404: Soil Nitrate Quick Test (Test Strip Method)
 # =============================================================================
 title: "Soil Nitrate Quick Test -- Test Strip Method"
-sop-number: "SOP-L59"
+sop-number: "SOP-L404"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -43,9 +43,9 @@ with minimal laboratory equipment.
   air-dried mineral soils from all EA Program sites; on-site field
   screening during sampling campaigns
 - **Does not apply to:** Quantitative reporting of soil nitrate for
-  publication (use [SOP-L58](SOP-L58-nitrate-ammonium-kcl.qmd));
+  publication (use [SOP-L403](SOP-L343-nitrate-ammonium-kcl.qmd));
   ammonium determination (test strips do not measure NH~4~^+^); water
-  sample nitrate (use [SOP-L45 Hach Colorimetric](SOP-L45-hach-colorimetric.qmd))
+  sample nitrate (use [SOP-L303 Hach Colorimetric](SOP-L303-hach-colorimetric.qmd))
 - **Location:** Field sites or EA Program laboratory, SGM 133
 
 
@@ -130,7 +130,7 @@ interference with the test strip chemistry.
 
 1. Collect soil from the target depth (typically 0--15 cm or 0--30 cm)
    using a probe or auger per
-   [SOP-F56 Soil Sampling](../field_sops/SOP-F56-soil-sampling.qmd)
+   [SOP-F400 Soil Sampling](../field_sops/SOP-F400-soil-sampling.qmd)
 2. Composite multiple subsamples if a plot-level estimate is desired
 3. Homogenize the soil in a bucket by hand-mixing
 4. Remove visible roots and stones
@@ -178,8 +178,8 @@ $$
 $$
 
 Determine the soil texture using
-[SOP-F58 Texture by Feel](../field_sops/SOP-F58-soil-texture-by-feel.qmd)
-or [SOP-L56 Hydrometer](SOP-L56-texture-hydrometer.qmd).
+[SOP-F401 Texture by Feel](../field_sops/SOP-F401-soil-texture-by-feel.qmd)
+or [SOP-L401 Hydrometer](SOP-L401-texture-hydrometer.qmd).
 
 ### 6.5 Recording Results
 
@@ -282,9 +282,9 @@ recommendations.*
 Before performing the nitrate quick test independently, personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-F01 Field Safety](../field_sops/SOP-F01-field-safety.qmd)
+2. Complete [SOP-F001 Field Safety](../field_sops/SOP-F001-field-safety.qmd)
    training (if testing in the field) or
-   [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd) (if in
+   [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) (if in
    the lab)
 3. Prepare the CaCl~2~ extracting solution under supervision
 4. Perform at least three practice tests with acceptable blank and
