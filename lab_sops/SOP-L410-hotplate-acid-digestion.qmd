@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-L65: Hot-Plate Acid Digestion of Soils for Trace Metal Analysis
+# SOP-L410: Hot-Plate Acid Digestion of Soils for Trace Metal Analysis
 # =============================================================================
 title: "Hot-Plate Acid Digestion of Soils for Trace Metal Analysis"
 sop-number: "SOP-L410"
@@ -149,7 +149,7 @@ limit (MDL) for all target analytes.
    [SOP-F400 Soil Sampling](../field_sops/SOP-F400-soil-sampling.qmd)
 3. Homogenize thoroughly using a mortar and pestle
 4. Determine gravimetric moisture on a companion subsample per
-   [SOP-L401](SOP-L401-soil-moisture.qmd)
+   [SOP-L400](SOP-L400-soil-moisture.qmd)
 
 ### 6.2 Glassware Cleaning
 
@@ -255,7 +255,7 @@ $M_{\text{soil}}$ = mass of dried soil (g).
 
 For soil dried at 60 C, apply a moisture correction to report on a
 105 C oven-dry basis (see
-[SOP-L55](SOP-L55-soil-moisture.qmd)):
+[SOP-L400](SOP-L400-soil-moisture.qmd)):
 
 $$
 C_{\text{soil, OD}} = C_{\text{soil}} \times \frac{100 + \theta_{60}}{100 + \theta_{105}}
@@ -338,7 +338,7 @@ cat(sprintf("EPA RSL residential: 400 mg/kg\n"))
 
 ## Appendix B: Method Comparison -- Hot Plate vs. Microwave {.appendix}
 
-| Feature                       | Hot Plate (EPA 3050B, this SOP) | Microwave (EPA 3051A, [SOP-L66](SOP-L66-mars-microwave-digestion.qmd)) |
+| Feature                       | Hot Plate (EPA 3050B, this SOP) | Microwave (EPA 3051A, [SOP-L411](SOP-L411-mars-microwave-digestion.qmd)) |
 |:------------------------------|:-------------------------------|:--------------------------------------|
 | Vessel type                   | Open (reflux under watch glass) | Sealed (pressurized)                 |
 | Temperature                   | Approximately 95 C             | 175 C                                |

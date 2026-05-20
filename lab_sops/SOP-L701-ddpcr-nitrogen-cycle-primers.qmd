@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# SOP-L81: Primer Selection and Design for Nitrogen Cycle Genes (ddPCR)
+# SOP-L701: Primer Selection and Design for Nitrogen Cycle Genes (ddPCR)
 # =============================================================================
 title: "Primer Selection and Design for Nitrogen Cycle Genes -- ddPCR"
 sop-number: "SOP-L701"
@@ -253,7 +253,7 @@ amplification or suboptimal primer binding [@lievens2016].
 ### 6.7 Assay Validation
 
 1. **Specificity:** Run no-template controls (NTC) and extraction blanks
-   from [SOP-L80](SOP-L80-dna-extraction.qmd) to confirm the absence of
+   from [SOP-L700](SOP-L700-dna-extraction.qmd) to confirm the absence of
    false positives
 2. **Dynamic range:** Prepare a serial dilution of gBlock positive
    control (10 to 100,000 copies per reaction) and verify linearity of
@@ -285,7 +285,7 @@ amplification or suboptimal primer binding [@lievens2016].
 ## 7. Quality Control and Acceptance Criteria
 
 - Every ddPCR run must include: NTC (minimum 2 wells), extraction blank
-  (from SOP-L80), and positive control gBlock at a known concentration
+  (from SOP-L700), and positive control gBlock at a known concentration
 - Droplet count per well must exceed 10,000 accepted droplets (out of
   approximately 20,000 generated); wells below this threshold should be
   excluded [@biorad_qx200_2024]

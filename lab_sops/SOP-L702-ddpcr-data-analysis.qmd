@@ -25,7 +25,7 @@ Bio-Rad QX200 ddPCR system, performing quality control checks,
 calculating gene copy numbers normalized to soil mass or DNA
 concentration, and conducting statistical analyses of nitrogen cycle gene
 abundance data. The SOP links the instrument output from
-[SOP-L81](SOP-L81-ddpcr-nitrogen-cycle-primers.qmd) to reproducible
+[SOP-L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) to reproducible
 analysis scripts written in R [@rcoreteam2024].
 
 
@@ -38,7 +38,7 @@ analysis scripts written in R [@rcoreteam2024].
 - **Does not apply to:** Amplicon sequencing data, metagenomics, or
   qPCR data processed with different software
 - **Location:** Instrument computer (QuantaSoft) and RStudio Server
-  (see [SOP-L05 RStudio and GitHub](SOP-L05-rstudio-github.qmd))
+  (see [SOP-L801 RStudio and GitHub](SOP-L801-rstudio-github.qmd))
 
 
 ## 3. Responsibilities
@@ -73,7 +73,7 @@ integrity and reproducibility are the primary concerns.
 | Item                              | Location           | Notes                          |
 |:----------------------------------|:-------------------|:-------------------------------|
 | QX200 instrument computer         | Instrument room    | Runs QuantaSoft or QuantaSoft Analysis Pro |
-| RStudio Server                    | Remote (see SOP-L05) | For R-based analysis          |
+| RStudio Server                    | Remote (see SOP-L801) | For R-based analysis          |
 | USB drive or network share        | Lab                | For transferring `.qlp` and `.csv` files |
 
 ### Software
@@ -95,7 +95,7 @@ integrity and reproducibility are the primary concerns.
 1. Open the completed experiment file (`.qlp`) in QuantaSoft
 2. Review the droplet plots for each well. Confirm that the
    positive/negative threshold was set appropriately during the run
-   (see SOP-L81, Section 6.6)
+   (see SOP-L701, Section 6.6)
 3. If threshold adjustment is needed, use QuantaSoft Analysis Pro to
    re-apply thresholds manually. Document any threshold changes in the
    lab notebook.
@@ -326,9 +326,9 @@ practices are described in Section 6.4.
 
 Before performing this procedure independently, personnel must:
 
-1. Read this SOP, [SOP-L81 Primer Design](SOP-L81-ddpcr-nitrogen-cycle-primers.qmd),
-   and [SOP-L80 DNA Extraction](SOP-L80-dna-extraction.qmd)
-2. Complete [SOP-L05 RStudio and GitHub](SOP-L05-rstudio-github.qmd)
+1. Read this SOP, [SOP-L701 Primer Design](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd),
+   and [SOP-L700 DNA Extraction](SOP-L700-dna-extraction.qmd)
+2. Complete [SOP-L801 RStudio and GitHub](SOP-L801-rstudio-github.qmd)
    training
 3. Demonstrate competence exporting data from QuantaSoft
 4. Successfully run the QC and analysis pipeline on a practice dataset
