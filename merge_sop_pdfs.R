@@ -1,15 +1,22 @@
 #!/usr/bin/env Rscript
 # =============================================================================
 # merge_sop_pdfs.R
-# Merge all rendered SOP PDFs into a single document with a TOC cover page.
+# Merge all rendered SOP PDFs into a single document with a hyperlinked TOC.
+#
+# Strategy:
+#   Build a single LaTeX document that uses \includepdf (pdfpages package) to
+#   embed every SOP. Each SOP's first page gets a \hypertarget anchor, and the
+#   TOC entries are clickable \hyperlink jumps. No combined-document page
+#   numbers are added -- each SOP retains its own internal pagination.
 #
 # Usage (after quarto render):
 #   Rscript merge_sop_pdfs.R              # uses docs/pdfs/ by default
 #   Rscript merge_sop_pdfs.R path/to/pdfs  # custom input directory
 #
 # Requirements:
-#   install.packages(c("qpdf", "pdftools", "rmarkdown"))
-#   TinyTeX or a LaTeX distribution (for the TOC page)
+#   install.packages(c("qpdf", "rmarkdown", "tinytex"))
+#   TinyTeX or a LaTeX distribution with: pdfpages, longtable, xcolor,
+#     geometry, hyperref, tabularx
 #
 # Output:
 #   docs/EA-Program-SOPs-Complete.pdf
@@ -20,21 +27,20 @@ library(qpdf)
 # ---------------------------------------------------------------------------
 # 0. Find Pandoc (Quarto bundles its own; rmarkdown needs to know where)
 # ---------------------------------------------------------------------------
-# Try quarto's pandoc first, then fall back to PATH
 quarto_pandoc <- Sys.which("quarto")
 if (nzchar(quarto_pandoc)) {
   quarto_bin <- tryCatch(
     system2("quarto", "--paths", stdout = TRUE, stderr = FALSE),
     error = function(e) character(0)
   )
-  # quarto --paths returns: line 1 = quarto share, line 2 = pandoc dir (if present)
   pandoc_candidates <- c(
     file.path(dirname(quarto_pandoc), "tools"),
     if (length(quarto_bin) >= 1) file.path(quarto_bin[1], "bin", "tools"),
     dirname(quarto_pandoc)
   )
   for (p in pandoc_candidates) {
-    if (file.exists(file.path(p, "pandoc")) || file.exists(file.path(p, "pandoc.exe"))) {
+    if (file.exists(file.path(p, "pandoc")) ||
+        file.exists(file.path(p, "pandoc.exe"))) {
       Sys.setenv(RSTUDIO_PANDOC = p)
       cat(sprintf("Using Pandoc from: %s\n", p))
       break
@@ -42,7 +48,6 @@ if (nzchar(quarto_pandoc)) {
   }
 }
 
-# Last resort: search common CI locations
 if (!rmarkdown::pandoc_available()) {
   common_paths <- c(
     "/opt/quarto/bin/tools",
@@ -60,7 +65,6 @@ if (!rmarkdown::pandoc_available()) {
 }
 
 if (!rmarkdown::pandoc_available()) {
-  # Find pandoc anywhere on the system
   pandoc_path <- Sys.which("pandoc")
   if (nzchar(pandoc_path)) {
     Sys.setenv(RSTUDIO_PANDOC = dirname(pandoc_path))
@@ -92,13 +96,12 @@ if (length(pdf_files) == 0) {
 cat(sprintf("Found %d SOP PDFs in %s\n", length(pdf_files), pdf_dir))
 
 # ---------------------------------------------------------------------------
-# 2. Build a TOC by reading each PDF's page count + metadata from .qmd YAML
+# 2. Read metadata from .qmd YAML for each PDF
 # ---------------------------------------------------------------------------
 page_counts <- vapply(pdf_files, function(f) {
   length(qpdf::pdf_length(f))
 }, integer(1))
 
-# Helper: find the .qmd source that corresponds to a given PDF
 find_qmd <- function(pdf_path) {
   stem <- tools::file_path_sans_ext(basename(pdf_path))
   qmd_candidates <- list.files(
@@ -109,7 +112,6 @@ find_qmd <- function(pdf_path) {
   if (length(qmd_candidates) >= 1) qmd_candidates[1] else NA_character_
 }
 
-# Extract titles and SOP numbers from YAML front matter
 titles <- vapply(pdf_files, function(f) {
   qmd <- find_qmd(f)
   if (!is.na(qmd)) {
@@ -128,14 +130,10 @@ sop_numbers <- vapply(pdf_files, function(f) {
   tools::file_path_sans_ext(basename(f))
 }, character(1))
 
-# Page 1 = TOC; first SOP starts on page 2
-start_page <- cumsum(c(2L, head(page_counts, -1)))
-
 toc_entries <- data.frame(
   Number = sop_numbers,
   SOP    = titles,
   Pages  = page_counts,
-  Start  = start_page,
   stringsAsFactors = FALSE
 )
 
@@ -143,34 +141,48 @@ cat("\nTable of Contents:\n")
 print(toc_entries, row.names = FALSE)
 
 # ---------------------------------------------------------------------------
-# 3. Render a TOC cover page to PDF via a temporary .Rmd
+# 3. Helpers
 # ---------------------------------------------------------------------------
-
-# Escape any LaTeX special characters in titles and SOP numbers
 escape_latex <- function(x) {
   x <- gsub("\\", "\\textbackslash{}", x, fixed = TRUE)
-  x <- gsub("&", "\\&", x, fixed = TRUE)
-  x <- gsub("%", "\\%", x, fixed = TRUE)
-  x <- gsub("\\$", "\\$", x, fixed = TRUE)
-  x <- gsub("#", "\\#", x, fixed = TRUE)
-  x <- gsub("_", "\\_", x, fixed = TRUE)
-  x <- gsub("\\{", "\\{", x, fixed = TRUE)
-  x <- gsub("\\}", "\\}", x, fixed = TRUE)
-  x <- gsub("~", "\\textasciitilde{}", x, fixed = TRUE)
-  x <- gsub("\\^", "\\textasciicircum{}", x, fixed = TRUE)
+  x <- gsub("&",  "\\&",  x, fixed = TRUE)
+  x <- gsub("%",  "\\%",  x, fixed = TRUE)
+  x <- gsub("$",  "\\$",  x, fixed = TRUE)
+  x <- gsub("#",  "\\#",  x, fixed = TRUE)
+  x <- gsub("_",  "\\_",  x, fixed = TRUE)
+  x <- gsub("{",  "\\{",  x, fixed = TRUE)
+  x <- gsub("}",  "\\}",  x, fixed = TRUE)
+  x <- gsub("~",  "\\textasciitilde{}",  x, fixed = TRUE)
+  x <- gsub("^",  "\\textasciicircum{}", x, fixed = TRUE)
   x
 }
 
-# Build LaTeX tabularx rows
-toc_lines <- sprintf("  %s & %s & %d \\\\",
-                     escape_latex(toc_entries$Number),
-                     escape_latex(toc_entries$SOP),
-                     toc_entries$Start)
+# Create a clean anchor name from SOP number (letters, digits, hyphens only)
+make_anchor <- function(x) {
+  gsub("[^A-Za-z0-9-]", "", x)
+}
+
+# ---------------------------------------------------------------------------
+# 4. Build the master LaTeX document
+# ---------------------------------------------------------------------------
+pdf_abs <- normalizePath(pdf_files)
+n <- length(pdf_abs)
+
+anchors <- make_anchor(toc_entries$Number)
+
+# -- TOC table: each row is a clickable hyperlink --------------------------
+toc_lines <- sprintf(
+  "  \\hyperlink{%s}{%s} & \\hyperlink{%s}{%s} \\\\",
+  anchors,
+  escape_latex(toc_entries$Number),
+  anchors,
+  escape_latex(toc_entries$SOP)
+)
 
 toc_table <- paste(
-  "\\begin{longtable}{|p{2.2cm}|p{11cm}|r|}",
+  "\\begin{longtable}{|p{2.2cm}|p{13cm}|}",
   "\\hline",
-  "\\textbf{SOP Number} & \\textbf{Title} & \\textbf{Page} \\\\",
+  "\\textbf{SOP Number} & \\textbf{Title} \\\\",
   "\\hline",
   "\\endhead",
   paste(toc_lines, collapse = "\n  \\hline\n"),
@@ -179,48 +191,103 @@ toc_table <- paste(
   sep = "\n"
 )
 
-toc_rmd_content <- paste0(
-'---
-title: "EA Program -- Standard Operating Procedures"
-subtitle: "Biogeochemistry Lab, Pomona College"
-date: "', format(Sys.Date(), "%B %d, %Y"), '"
-output:
-  pdf_document:
-    latex_engine: pdflatex
-header-includes:
-  - \\usepackage{longtable}
-geometry: margin=1in
-fontsize: 11pt
----
+# -- \includepdf blocks: first page of each SOP gets a \hypertarget --------
+# pagecommand on page 1 plants the anchor; subsequent pages get no extra
+# command (empty pagecommand keeps the SOP's own headers/footers intact).
+includepdf_lines <- vapply(seq_len(n), function(i) {
+  np <- page_counts[i]
+  anchor_cmd <- sprintf("\\hypertarget{%s}{}", anchors[i])
+  if (np == 1L) {
+    # Single-page SOP
+    sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
+            anchor_cmd, pdf_abs[i])
+  } else {
+    # Multi-page: anchor on page 1, nothing extra on the rest
+    sprintf("\\includepdf[pages=1, pagecommand={%s}]{%s}\n\\includepdf[pages=2-, pagecommand={}]{%s}",
+            anchor_cmd, pdf_abs[i], pdf_abs[i])
+  }
+}, character(1))
 
-# Table of Contents
+master_tex <- paste0(
+'\\documentclass[11pt,letterpaper]{article}
+
+\\usepackage[margin=1in]{geometry}
+\\usepackage{pdfpages}
+\\usepackage{longtable}
+\\usepackage{xcolor}
+\\usepackage[
+  colorlinks=true,
+  linkcolor=eablue,
+  urlcolor=eablue,
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfstartview=FitH
+]{hyperref}
+
+% Colors
+\\definecolor{eablue}{HTML}{0057B8}
+
+% No headers/footers on the combined document -- each SOP keeps its own
+\\pagestyle{empty}
+
+\\begin{document}
+
+% -----------------------------------------------------------------------
+% Title / TOC page
+% -----------------------------------------------------------------------
+\\begin{center}
+  {\\Large\\textbf{\\textcolor{eablue}{EA Program -- Standard Operating Procedures}}}\\\\[6pt]
+  {\\large Biogeochemistry Lab, Pomona College}\\\\[4pt]
+  {\\normalsize ', format(Sys.Date(), "%B %d, %Y"), '}
+\\end{center}
+
+\\vspace{12pt}
+
+\\section*{Table of Contents}
+\\noindent\\textit{Click any SOP number or title to jump to that procedure.}
+
+\\vspace{6pt}
 
 ', toc_table, '
+
+\\newpage
+
+% -----------------------------------------------------------------------
+% Include each SOP PDF (hyperlink anchors on first page of each)
+% -----------------------------------------------------------------------
+', paste(includepdf_lines, collapse = "\n\n"), '
+
+\\end{document}
 ')
 
-toc_rmd <- tempfile(fileext = ".Rmd")
-toc_pdf <- tempfile(fileext = ".pdf")
-writeLines(toc_rmd_content, toc_rmd)
+# ---------------------------------------------------------------------------
+# 5. Compile the master LaTeX document
+# ---------------------------------------------------------------------------
+build_dir <- tempdir()
+tex_file  <- file.path(build_dir, "EA-Program-SOPs-Complete.tex")
+writeLines(master_tex, tex_file)
 
-cat("\nRendering TOC cover page...\n")
-rmarkdown::render(toc_rmd, output_file = toc_pdf, quiet = TRUE)
+cat("\nCompiling combined PDF with hyperlinked TOC...\n")
+
+compiled_pdf <- tinytex::latexmk(
+  tex_file,
+  engine  = "pdflatex",
+  clean   = TRUE
+)
 
 # ---------------------------------------------------------------------------
-# 4. Merge TOC + all SOP PDFs
+# 6. Move to output location
 # ---------------------------------------------------------------------------
 output_file <- file.path(dirname(pdf_dir), "EA-Program-SOPs-Complete.pdf")
+file.copy(compiled_pdf, output_file, overwrite = TRUE)
 
-all_pdfs <- c(toc_pdf, pdf_files)
-
-cat("Merging into", output_file, "...\n")
-qpdf::pdf_combine(all_pdfs, output = output_file)
+total_pages <- length(qpdf::pdf_length(output_file))
 
 cat(sprintf(
-  "Done. Combined PDF: %s (%d SOPs, %d total pages)\n",
+  "\nDone. Combined PDF: %s (%d SOPs, %d total pages)\n",
   output_file,
   length(pdf_files),
-  sum(page_counts) + length(qpdf::pdf_length(toc_pdf))
+  total_pages
 ))
-
-# Cleanup temp files
-unlink(c(toc_rmd, toc_pdf))
+cat("TOC entries are hyperlinked to each SOP.\n")
+cat("Each SOP retains its own internal page numbering.\n")
