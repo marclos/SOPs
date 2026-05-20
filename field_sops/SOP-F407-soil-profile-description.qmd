@@ -1,0 +1,277 @@
+---
+# =============================================================================
+# SOP-F407: Soil Profile Description
+# =============================================================================
+title: "Soil Profile Description"
+sop-number: "SOP-F407"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the systematic description of soil profiles exposed
+in hand-dug pits or road cuts. A soil profile description documents
+the vertical sequence of horizons, their physical and morphological
+properties, and the relationships among them. Profile descriptions are
+fundamental to soil classification, land use assessment, understanding
+pedogenic processes, and interpreting laboratory analytical data in a
+landscape context.
+
+
+## 2. Scope
+
+- **Applies to:** Field description of soil profiles at all EA Program
+  sites, including research plots, restoration sites, and
+  instructional field exercises
+- **Does not apply to:** Auger-based sampling where no profile face is
+  exposed (see [SOP-F400](SOP-F400-soil-sampling.qmd)); engineering
+  soil classifications (Unified Soil Classification System);
+  geotechnical borehole logging
+- **Location:** All EA Program field sites where soil pits can be
+  safely excavated
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Select pit locations; approve excavation; ensure safety |
+| Trained Personnel | Excavate pits and describe profiles per this SOP        |
+| New Students      | Complete training before independent profile description |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Soil pits deeper than 50 cm can collapse, especially
+  in sandy or dry soils. Pits deeper than 1.2 m (4 ft) require
+  shoring or sloping per OSHA regulations (29 CFR 1926, Subpart P).
+  Never enter an unshored pit deeper than 1.2 m.
+- **Biological:** Soil-borne pathogens; ticks, snakes, and burrowing
+  insects in riparian or wildland settings.
+- **Environmental:** Heat exposure; dehydration during summer
+  fieldwork.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Nitrile gloves
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Safety glasses (when chopping through indurated horizons)
+- [ ] Hard hat (if working in deep pits or near road cuts)
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). If a pit
+wall collapses while someone is inside, call 911 immediately. Do not
+attempt excavation without proper rescue training and equipment.
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Sharpshooter shovel                   | For excavating the pit                   |
+| Flat-edged spade or soil knife        | For cleaning the profile face            |
+| Hand pick or mattock                  | For indurated or cemented horizons       |
+| Munsell Soil Color Charts             | See [SOP-F405](SOP-F405-soil-color-munsell.qmd) |
+| Squeeze bottle with DI water          | For moistening soil for color and texture |
+| Metric tape measure (2 m)             | For measuring horizon depths             |
+| Clinometer or hand level              | For measuring slope at the pit site      |
+| Compass                               | For recording aspect                     |
+| 10% HCl solution in dropper bottle    | For testing for carbonates (effervescence) |
+| Field notebook or profile description form | NRCS-style form preferred          |
+| Camera                                | For photographing the profile face       |
+| Ruler or scale bar                    | Placed against the profile for photo scale |
+| GPS unit                              | For recording pit coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| Flagging tape                         | For marking horizon boundaries           |
+| Sample bags (labeled)                 | If collecting horizon samples for lab analysis |
+
+
+## 6. Procedure
+
+### 6.1 Pit Excavation
+
+1. Select the pit location based on the project objectives and
+   landscape position. Avoid disturbed areas, utility lines, and
+   locations near structures.
+2. Excavate a pit approximately 50 cm wide and 80--120 cm deep (or to
+   the parent material or restrictive layer, whichever is shallower).
+   One vertical face should be oriented to receive even light (face
+   the sun or open shade).
+3. Pile excavated soil upslope and on a tarp to facilitate backfilling.
+4. Clean the profile face with the flat-edged spade or soil knife to
+   expose a fresh, undisturbed surface. Avoid smearing.
+
+### 6.2 Identifying Horizon Boundaries
+
+1. Examine the profile face for changes in color, texture, structure,
+   roots, pores, and cementation. Each distinct zone is a horizon.
+2. Mark horizon boundaries with flagging tape pins or nails.
+3. Measure the depth of each boundary from the soil surface using the
+   metric tape. Record the upper and lower boundary depth for each
+   horizon (e.g., A: 0--18 cm; Bt: 18--45 cm).
+4. Describe the boundary distinctness and topography:
+
+| Distinctness | Width of Transition        |
+|:-------------|:---------------------------|
+| Abrupt       | < 2 cm                     |
+| Clear        | 2--5 cm                     |
+| Gradual      | 5--15 cm                    |
+| Diffuse      | > 15 cm                    |
+
+| Topography   | Description                |
+|:-------------|:---------------------------|
+| Smooth       | Nearly a plane             |
+| Wavy         | Pockets wider than deep    |
+| Irregular    | Pockets deeper than wide   |
+| Broken       | Discontinuous              |
+
+### 6.3 Describing Each Horizon
+
+For each horizon, record the following properties:
+
+**Horizon designation:** Use standard USDA master horizon symbols
+(O, A, E, B, C, R) with appropriate suffixes (t, k, w, g, etc.).
+
+**Color:** Determine moist and dry color using Munsell charts per
+[SOP-F405](SOP-F405-soil-color-munsell.qmd). Record matrix color
+and any mottles.
+
+**Texture:** Determine texture by feel per
+[SOP-F401](SOP-F401-soil-texture-by-feel.qmd). Record the USDA
+textural class (e.g., sandy loam, clay loam).
+
+**Structure:** Describe the type, size, and grade:
+
+| Type        | Shape Description                    |
+|:------------|:-------------------------------------|
+| Granular    | Roughly spherical, porous            |
+| Blocky (angular) | Sharp-edged blocks              |
+| Blocky (subangular) | Rounded-edge blocks          |
+| Platy       | Flat, plate-like                     |
+| Prismatic   | Vertical columns, flat tops          |
+| Columnar    | Vertical columns, rounded tops       |
+| Massive     | No visible structure (coherent mass) |
+| Single grain | No structure (loose, individual particles) |
+
+Size: very fine, fine, medium, coarse, very coarse (ranges depend on
+structure type; consult the *Field Book for Describing and Sampling
+Soils*).
+
+Grade: weak, moderate, strong.
+
+**Consistence:** Describe the resistance to rupture at the appropriate
+moisture state:
+
+- Dry: loose, soft, slightly hard, hard, very hard, extremely hard
+- Moist: loose, very friable, friable, firm, very firm, extremely firm
+- Wet: nonsticky/nonplastic to very sticky/very plastic
+
+**Roots:** Record abundance (few, common, many) and size (very fine,
+fine, medium, coarse).
+
+**Pores:** Record abundance and size.
+
+**Effervescence:** Apply 1--2 drops of 10% HCl to the horizon face
+and record the reaction:
+
+| Effervescence | Description                        |
+|:--------------|:-----------------------------------|
+| None          | No visible bubbles                 |
+| Slight        | Few bubbles, barely audible        |
+| Strong        | Obvious bubbles, clearly audible   |
+| Violent       | Vigorous bubbling, foam            |
+
+**Other features:** Record any clay films, coatings, concretions,
+cementation, or biological features (krotovinas, worm casts).
+
+### 6.4 Site Description
+
+Record the following site-level information:
+
+- GPS coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd)
+- Slope (percent) and aspect (degrees)
+- Landscape position (summit, shoulder, backslope, footslope, toeslope)
+- Parent material (if identifiable: alluvium, colluvium, residuum,
+  loess, etc.)
+- Vegetation and land use
+- Drainage class (excessively drained to very poorly drained)
+- Depth to water table or bedrock (if encountered)
+- Evidence of erosion or deposition
+
+### 6.5 Photography
+
+1. Place a ruler or scale bar vertically against the profile face.
+2. Photograph the entire profile with horizon labels visible.
+3. Take close-up photos of features of interest (mottles, clay films,
+   cementation, root channels).
+4. Record photo numbers in the field notebook.
+
+### 6.6 Backfilling
+
+Backfill the pit promptly after description and sampling. Replace
+soil in reverse order (subsoil first, topsoil last). Compact gently
+to prevent subsidence. Restore surface litter.
+
+
+## 7. Quality Control
+
+- Use the NRCS *Field Book for Describing and Sampling Soils* as the
+  authoritative reference for all terminology and classification.
+- Have a second observer verify at least the horizon designations and
+  colors for profiles used in research publications.
+- Photograph every profile with a scale bar as a permanent record.
+- Cross-check field texture estimates with laboratory hydrometer
+  results ([SOP-L401](../lab_sops/SOP-L401-texture-hydrometer.qmd))
+  for at least one horizon per profile.
+
+
+## 8. References
+
+- Schoeneberger, P.J., Wysocki, D.A., Benham, E.C., and Soil Survey
+  Staff. (2012). *Field Book for Describing and Sampling Soils*.
+  Version 3.0. USDA NRCS, National Soil Survey Center, Lincoln, NE.
+- Soil Survey Staff. (2022). *Keys to Soil Taxonomy*. 13th ed. USDA
+  NRCS.
+- Soil Survey Division Staff. (2017). *Soil Survey Manual*. USDA
+  Handbook 18. Government Printing Office, Washington, DC.
+
+
+## 9. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F400](SOP-F400-soil-sampling.qmd)     | Soil Sampling             | Horizon samples for lab analysis  |
+| [F401](SOP-F401-soil-texture-by-feel.qmd) | Texture by Feel        | Field texture for each horizon    |
+| [F402](SOP-F402-soil-bulk-density.qmd) | Soil Bulk Density         | Core samples from horizons        |
+| [F405](SOP-F405-soil-color-munsell.qmd) | Soil Color (Munsell)    | Color determination per horizon   |
+| [L401](../lab_sops/SOP-L401-texture-hydrometer.qmd) | Texture (Hydrometer) | Lab confirmation of field texture |
+
+
+## 10. Training Record
+
+Before describing soil profiles independently, personnel must:
+
+1. Read this SOP, [SOP-F405](SOP-F405-soil-color-munsell.qmd), and
+   [SOP-F401](SOP-F401-soil-texture-by-feel.qmd) in full
+2. Describe at least two supervised soil profiles with results
+   reviewed by the PI or a trained pedologist
+3. Demonstrate correct use of the Munsell charts, texture by feel,
+   HCl effervescence test, and structure terminology
+4. Be signed off by the PI or field lead

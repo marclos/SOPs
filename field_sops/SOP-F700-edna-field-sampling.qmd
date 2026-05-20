@@ -1,0 +1,297 @@
+---
+# =============================================================================
+# SOP-F700: eDNA Field Sampling and Preservation
+# =============================================================================
+title: "eDNA Field Sampling and Preservation"
+sop-number: "SOP-F700"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes field procedures for collecting, filtering, and
+preserving environmental DNA (eDNA) samples from surface waters. eDNA
+consists of DNA shed into the environment by organisms through skin
+cells, mucus, feces, gametes, and decomposing tissue. Detecting eDNA
+in water samples allows non-invasive detection of aquatic species
+(fish, amphibians, invertebrates, pathogens) without direct
+observation or capture. Because eDNA is present at extremely low
+concentrations, preventing contamination during field collection is
+critical. This SOP covers the field side of the workflow; laboratory
+processing (filtration, extraction, inhibition testing) is covered in
+[SOP-L700 DNA Extraction](../lab_sops/SOP-L700-dna-extraction.qmd)
+and future SOP-L315 and SOP-L706.
+
+
+## 2. Scope
+
+- **Applies to:** Collection and preservation of water samples for
+  eDNA analysis at all EA Program surface water sites (streams, lakes,
+  ponds, wetlands, stormwater basins)
+- **Does not apply to:** Soil eDNA or soil microbial sampling (see
+  [SOP-F701](SOP-F701-soil-microbial-field-sampling.qmd)); tissue
+  biopsy or organism capture for DNA; airborne eDNA sampling; lab-side
+  filtration, extraction, and molecular analysis
+- **Location:** All EA Program surface water field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Approve sampling design; ensure permits are in place    |
+| Trained Personnel | Collect and preserve eDNA samples per this SOP          |
+| New Students      | Complete training (including contamination awareness)
+                      before participating in eDNA sampling                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Wading and sampling near water carry slip, fall, and
+  drowning hazards. Work in pairs.
+- **Chemical:** DNA preservatives (ethanol, Longmire's buffer) are
+  flammable (ethanol) or contain EDTA and SDS (Longmire's). Handle
+  with gloves.
+- **Biological:** Water may contain pathogens. Wear gloves and avoid
+  ingestion.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves (change between samples and sites)
+- [ ] Closed-toed shoes or wading boots
+- [ ] Safety glasses (when handling preservatives)
+- [ ] Sun protection (hat, sunscreen)
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). For
+ethanol splashes to eyes, flush with water for at least 15 minutes.
+
+
+## 5. Equipment and Materials
+
+### Sterile Sampling Supplies
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Sterile sample bottles (1 L or 500 mL, single-use) | Individually wrapped; nalgene or Whirl-Pak |
+| Sterile disposable filter funnels (enclosed, 0.45 um PES) | e.g., Nalgene analytical filter units; or Sterivex capsule filters |
+| 60 mL sterile syringes (Luer-lock)    | For Sterivex filtration                  |
+| Sterile forceps (individually wrapped) | If handling open membrane filters        |
+| Molecular-grade ethanol (95--100%)     | For preserving filters; dispense from a dedicated squeeze bottle |
+| Longmire's buffer (alternative)        | EDTA/SDS-based preservation buffer       |
+| Cooler with ice packs                  | Maintain samples at 4 C during transport |
+| Ziplock bags (gallon size)             | For double-bagging preserved filters     |
+| DI water (molecular-grade or autoclaved) | For field blanks                      |
+| Bleach (10% sodium hypochlorite)       | For decontaminating reusable equipment   |
+
+### Field Documentation
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Field notebook (Rite in the Rain)      | For recording sample metadata            |
+| Chain of custody forms                 | Per [SOP-F008](SOP-F008-sample-labeling-coc-transport.qmd) |
+| Permanent marker (Sharpie)            | For labeling bottles and bags            |
+| GPS unit or smartphone                 | For recording coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| Camera                                | For photo-documenting site conditions    |
+
+::: {.callout-important}
+### Contamination Prevention
+
+eDNA sampling is an ultra-clean procedure. The following rules are
+non-negotiable:
+
+- Never reuse sample bottles, filter funnels, or syringes.
+- Change gloves between every sample and every site.
+- Do not open sample bottles or filter packages until the moment of
+  use.
+- Keep all sterile supplies in sealed bags until deployment.
+- The sampler should not have handled live organisms (fish, amphibians)
+  immediately before eDNA sampling. If organism handling occurred,
+  change all clothing, boots, and gloves, and use fresh equipment.
+:::
+
+
+## 6. Procedure
+
+### 6.1 Pre-Field Preparation
+
+1. Assemble individually wrapped sterile bottles, filter units,
+   syringes, and forceps in a clean, dedicated eDNA field kit.
+2. Prepare Longmire's buffer or aliquot molecular-grade ethanol into
+   labeled squeeze bottles.
+3. Prepare field blank bottles: fill two sterile 1 L bottles with
+   molecular-grade DI water in the lab and seal. These travel with the
+   field samples.
+4. Prepare equipment blank supplies: one additional sterile bottle for
+   collecting a rinse of decontaminated equipment.
+5. Pre-label all ziplock bags and sample tags using the ID scheme from
+   [SOP-F008](SOP-F008-sample-labeling-coc-transport.qmd). Use matrix
+   code **EB** for equipment blanks and **FB** for field blanks.
+
+### 6.2 Site Approach and Sample Collection Order
+
+1. If multiple sites will be sampled in one day, sample the least
+   likely occupied site (negative reference) first and the most likely
+   occupied site last, to minimize the risk of carry-over
+   contamination.
+2. At each site, approach the sampling location from downstream and
+   collect the eDNA sample before entering the water or disturbing
+   sediment.
+3. Put on a fresh pair of nitrile gloves.
+4. Open the sterile sample bottle just before collection. Do not
+   touch the inside of the bottle or cap.
+
+### 6.3 Water Collection
+
+**Grab sampling (preferred for streams < 1 m depth):**
+
+1. Face upstream. Submerge the open bottle to approximately 15 cm
+   below the surface, tilted slightly into the current.
+2. Fill the bottle to the line (typically 1 L). Cap immediately.
+3. Collect replicate samples if required by the study design (commonly
+   3 replicates per site).
+
+**Composite sampling (for larger water bodies or variable habitats):**
+
+1. Collect partial volumes (e.g., 250 mL) from 4--5 locations spanning
+   the site (different microhabitats, depths, or transect points).
+2. Combine into a single sterile 1 L bottle.
+
+### 6.4 Field Filtration (If Filtering On-Site)
+
+Field filtration concentrates eDNA onto a filter membrane, improving
+preservation and reducing the volume transported.
+
+**Sterivex capsule method:**
+
+1. Attach a sterile 60 mL syringe to the Sterivex filter inlet.
+2. Draw water from the sample bottle and push through the filter.
+   Repeat until the filter clogs or the target volume is filtered
+   (typically 500 mL to 1 L). Record the total volume filtered.
+3. Expel remaining water from the capsule.
+4. Add 1--2 mL of Longmire's buffer or fill with molecular-grade
+   ethanol using a syringe. Cap both ends of the Sterivex.
+5. Label the capsule and place in a ziplock bag on ice.
+
+**Open filter funnel method:**
+
+1. Pour the sample through a sterile 0.45 um PES filter unit.
+2. When filtration is complete, use sterile forceps to fold the filter
+   membrane in half (sample side inward) and place in a labeled
+   cryovial or ziplock bag.
+3. Add preservative (ethanol or Longmire's buffer) to cover the
+   filter. Seal.
+4. Place on ice immediately.
+
+### 6.5 If Not Filtering On-Site
+
+If field filtration is not practical, keep the whole-water sample on
+ice (4 C) and filter in the lab within 6 hours of collection.
+Exceeding 6 hours significantly increases DNA degradation.
+
+### 6.6 Field Blanks and Controls
+
+- **Field blank:** At one site per sampling event, open a bottle of
+  molecular-grade DI water (prepared in the lab), filter it using the
+  same method as the field samples, and preserve the filter. This blank
+  detects contamination introduced during field handling.
+- **Equipment blank:** If any reusable equipment contacts the sample
+  (e.g., a pump), collect a rinse of the decontaminated equipment as
+  a blank.
+- Process blanks alongside field samples through the entire lab
+  workflow.
+
+### 6.7 Decontamination Between Sites
+
+1. Spray or soak all reusable equipment (boots, waders, sampling
+   poles) with 10% bleach solution for at least 1 minute.
+2. Rinse with clean water.
+3. Change gloves.
+4. eDNA-specific single-use items (bottles, filters, syringes) are
+   discarded after each sample and do not require decontamination.
+
+See [SOP-F007](SOP-F007-field-decontamination.qmd) for general
+decontamination procedures.
+
+
+## 7. Sample Transport and Storage
+
+1. Keep all samples and preserved filters on ice (4 C) during
+   transport.
+2. Deliver to the lab the same day. If overnight storage is
+   unavoidable, store at -20 C.
+3. For long-term storage (> 1 week before extraction), store preserved
+   filters at -20 C or -80 C.
+4. Complete the chain of custody form per
+   [SOP-F008](SOP-F008-sample-labeling-coc-transport.qmd).
+
+
+## 8. Quality Control
+
+- Minimum 1 field blank per sampling event; 1 equipment blank if
+  reusable equipment is used.
+- Collect 3 replicate samples per site unless the study design
+  specifies otherwise.
+- Record the total volume filtered for each sample (required for
+  calculating eDNA concentration).
+- Any field blank that tests positive for target DNA invalidates the
+  samples from that event unless the concentration is below a
+  pre-established threshold. Consult the PI.
+- Log all glove changes, bottle openings, and deviations in the field
+  notebook.
+
+
+## 9. References
+
+- Goldberg, C.S., Turner, C.R., Deiner, K., et al. (2016). Critical
+  considerations for the application of environmental DNA methods to
+  detect aquatic species. *Methods in Ecology and Evolution*, 7,
+  1299--1307.
+- Renshaw, M.A., Olds, B.P., Jerde, C.L., McVeigh, M.M., and Lodge,
+  D.M. (2015). The room temperature preservation of filtered
+  environmental DNA samples and assimilation into a phenol-chloroform-
+  isoamyl alcohol DNA extraction. *Molecular Ecology Resources*, 15,
+  168--176.
+- US Fish and Wildlife Service. (2019). *Quality Assurance Project
+  Plan for eDNA Monitoring of Bighead and Silver Carps*. USFWS,
+  Bloomington, MN.
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F007](SOP-F007-field-decontamination.qmd) | Field Decontamination | Between-site decon                |
+| [F008](SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling and COC | Sample ID and chain of custody |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | General water collection          |
+| [F701](SOP-F701-soil-microbial-field-sampling.qmd) | Soil Microbial Sampling | Companion soil DNA protocol  |
+| [L700](../lab_sops/SOP-L700-dna-extraction.qmd) | DNA Extraction        | Lab-side extraction               |
+
+
+## 11. Training Record
+
+Before collecting eDNA samples independently, personnel must:
+
+1. Read this SOP, [SOP-F007](SOP-F007-field-decontamination.qmd), and
+   [SOP-L700](../lab_sops/SOP-L700-dna-extraction.qmd) in full
+2. Demonstrate proper sterile technique (glove changes, bottle
+   handling, filter preservation) during a supervised practice session
+3. Successfully process a field blank with a negative result
+4. Be signed off by the PI or field lead

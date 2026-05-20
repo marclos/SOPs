@@ -1,0 +1,287 @@
+---
+# =============================================================================
+# SOP-F406: Soil Respiration Chambers (Field)
+# =============================================================================
+title: "Soil Respiration Chambers (Field Static Chamber Method)"
+sop-number: "SOP-F406"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the deployment and operation of static (closed,
+non-flow-through) chambers for manual measurement of soil CO~2~ efflux
+in the field. Static chambers are a simple, low-cost method for
+quantifying soil respiration across treatments, land uses, or seasonal
+gradients when the Picarro CRDS automated system
+([SOP-F504](SOP-F504-picarro-field-deployment.qmd)) is not available
+or when additional spatial replication is needed. The method captures
+headspace gas samples at timed intervals, which are analyzed for CO~2~
+concentration using a portable infrared gas analyzer (IRGA), syringe
+samples returned to the lab, or soda-lime traps.
+
+
+## 2. Scope
+
+- **Applies to:** Manual static chamber measurements of soil CO~2~
+  efflux at EA Program field sites; applicable to grasslands,
+  agricultural plots, restoration sites, and forest soils
+- **Does not apply to:** Automated dynamic chambers with the Picarro
+  CRDS analyzer (see [SOP-F504](SOP-F504-picarro-field-deployment.qmd));
+  eddy covariance or gradient flux methods; aquatic CO~2~ flux
+  measurements; N~2~O or CH~4~ flux measurements requiring GC or CRDS
+  analysis (though the same chambers can be used with different
+  analytical endpoints)
+- **Location:** All EA Program terrestrial field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Approve chamber design and deployment plan              |
+| Trained Personnel | Install collars, deploy chambers, collect gas samples   |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Driving collars into soil with a mallet poses impact
+  injury risk. Carrying chambers and equipment over uneven terrain.
+- **Heat:** Southern California field sites can exceed 40 C. Metal
+  chambers become extremely hot in direct sunlight; handle with gloves.
+- **Chemical:** Soda-lime (NaOH/Ca(OH)~2~) is corrosive and causes
+  burns on skin and eye contact. Concentrated NaOH solutions used for
+  soda-lime traps are hazardous. Handle with gloves and safety glasses.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Nitrile gloves (required when handling soda-lime)
+- [ ] Safety glasses (required when handling soda-lime or NaOH)
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Work gloves (when driving collars)
+
+### Emergency Procedures
+
+For soda-lime or NaOH contact with skin or eyes, flush with clean
+water for at least 15 minutes. Refer to
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd) and
+[SOP-L003 Hazardous Materials Handling](../lab_sops/SOP-L003-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Chamber Components
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| PVC soil collars (20--30 cm diameter, 10--15 cm tall) | Installed 24+ hours before first measurement |
+| PVC chamber tops (opaque, with rubber gasket) | Must seal against collar; include a sampling port and a vent tube |
+| Rubber gasket or closed-cell foam     | For airtight seal between collar and top |
+| Vent tube (small-diameter tubing, 30--50 cm) | Equilibrates internal and atmospheric pressure without mass flow |
+| Sampling port with septum             | For syringe sampling of headspace gas    |
+| Reflective tape or insulation (optional) | To minimize solar heating of the chamber headspace |
+
+### Gas Sampling (Syringe Method)
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Gas-tight syringes (20 or 60 mL)      | Luer-lock with stopcock                  |
+| Pre-evacuated vials (Exetainer, 12 mL) | For storing gas samples for lab analysis |
+| Needles (22 gauge)                    | For piercing septa                       |
+| Portable IRGA (e.g., LI-COR LI-830 or PP Systems EGM-5) | Optional; provides real-time CO~2~ readings |
+
+### Soda-Lime Method (Alternative)
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Soda-lime granules (indicating grade) | Weighed pre- and post-deployment         |
+| Glass jars with lids                  | For containing soda-lime during deployment |
+| Analytical balance (0.01 g)           | For pre- and post-weighing               |
+| Desiccator                            | For equilibrating soda-lime moisture     |
+
+### General
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Stopwatch or timer                    | For timed gas sampling intervals         |
+| Thermometer (soil and air)            | For recording temperature during deployment |
+| Soil moisture probe or TDR (optional) | For recording volumetric moisture        |
+| Mallet or dead-blow hammer            | For driving collars into soil            |
+| Measuring tape and ruler              | For measuring collar insertion depth and headspace height |
+| Field notebook                        | For recording all metadata               |
+
+
+## 6. Procedure
+
+### 6.1 Collar Installation
+
+Install collars at least 24 hours before the first measurement to
+allow the soil disturbance from insertion to subside.
+
+1. Select collar locations according to the experimental design
+   (randomized, stratified, etc.; see
+   [SOP-F005](SOP-F005-random-sampling-design.qmd)).
+2. Clear surface litter from a circular area slightly larger than the
+   collar diameter.
+3. Place the collar on the soil surface and press gently to mark the
+   insertion point.
+4. Using the mallet and a wooden block placed on top of the collar,
+   drive the collar into the soil to a depth of 3--5 cm. Avoid driving
+   deeper than 5 cm, as this severs a disproportionate fraction of
+   surface roots and alters the flux.
+5. Measure and record the collar insertion depth and the height of the
+   collar rim above the soil surface (this determines the headspace
+   volume).
+6. Record the collar ID and GPS coordinates per
+   [SOP-F006](SOP-F006-gps-site-navigation.qmd).
+
+### 6.2 Syringe Sampling Method
+
+1. Record ambient air temperature and soil temperature (at 5 cm depth
+   adjacent to the collar).
+2. Place the chamber top on the collar. Ensure the gasket creates a
+   tight seal. Note the deployment time (T~0~).
+3. Immediately take a T~0~ headspace sample: insert the syringe needle
+   through the sampling septum, pump the syringe 3 times to mix the
+   headspace, then withdraw the sample volume. Close the stopcock.
+   Transfer to a pre-evacuated Exetainer vial by puncturing the vial
+   septum.
+4. Repeat sampling at regular intervals. A typical schedule is T~0~,
+   T~10~, T~20~, and T~30~ (minutes). For high-flux soils, use shorter
+   intervals (e.g., 0, 5, 10, 15 min).
+5. After the final sample, remove the chamber top and record the time.
+6. Label each Exetainer with the collar ID, date, and time point.
+7. Store vials at room temperature and analyze within 48 hours by GC
+   or IRGA.
+
+### 6.3 Portable IRGA Method (Real-Time)
+
+If a portable IRGA is available:
+
+1. Connect the IRGA inlet to the chamber sampling port via tubing.
+2. Deploy the chamber and record CO~2~ concentration continuously or
+   at 1-minute intervals for 5--10 minutes.
+3. The flux is calculated from the linear increase in CO~2~
+   concentration over time.
+
+### 6.4 Soda-Lime Method (24-Hour Deployment)
+
+1. Pre-dry soda-lime granules at 105 C for 2 hours, cool in a
+   desiccator, and weigh to 0.01 g. Record the initial mass.
+2. Place 20--30 g of soda-lime in an open glass jar inside the collar.
+3. Seal the chamber top onto the collar. Deploy for 24 hours.
+4. Include at least two "blank" chambers: sealed chambers with
+   soda-lime but placed on an impermeable surface (plastic sheeting)
+   to measure handling and atmospheric absorption artifacts.
+5. After 24 hours, remove the jar, cap it, and return to the lab.
+6. Dry the soda-lime at 105 C for 2 hours, cool, and reweigh.
+7. Calculate CO~2~ absorbed as the mass gain, correcting for the
+   blank.
+
+::: {.callout-note}
+The soda-lime method provides an integrated 24-hour flux estimate but
+is less precise than syringe or IRGA methods. It is best suited for
+comparative studies (e.g., treatment vs. control) rather than absolute
+flux quantification.
+:::
+
+
+## 7. Flux Calculation
+
+For the syringe or IRGA method, calculate the flux using:
+
+$$
+F = \frac{\Delta C}{\Delta t} \times \frac{V}{A} \times \frac{P}{R \times T}
+$$
+
+where:
+
+- $F$ = CO~2~ flux (umol m^-2^ s^-1^)
+- $\Delta C / \Delta t$ = rate of change of CO~2~ concentration in the
+  headspace (ppm s^-1^), from the slope of a linear regression of
+  concentration vs. time
+- $V$ = headspace volume (m^3^) = collar area $\times$ headspace height
+- $A$ = collar area (m^2^)
+- $P$ = atmospheric pressure (Pa)
+- $R$ = universal gas constant (8.314 J mol^-1^ K^-1^)
+- $T$ = air temperature (K)
+
+If the concentration increase is nonlinear, a nonlinear (e.g.,
+Hutchinson-Mosier) model may provide a better flux estimate. Consult
+the PI.
+
+
+## 8. Quality Control
+
+- Deploy at least 3 replicate chambers per treatment or plot.
+- Include at least one "blank" chamber per sampling event (chamber
+  sealed on an impermeable surface) to assess leakage and background.
+- Inspect collar seals before each deployment. Soil settling or animal
+  disturbance can break the seal.
+- Record soil temperature and moisture alongside every flux
+  measurement; these are the primary drivers of soil respiration.
+- Reject any measurement where the R^2^ of the linear regression
+  (concentration vs. time) is below 0.90, unless the flux is near
+  zero.
+- Avoid measuring during or immediately after rainfall, as water
+  pooling on the collar disrupts gas exchange.
+
+
+## 9. References
+
+- Hutchinson, G.L. and Mosier, A.R. (1981). Improved soil cover method
+  for field measurement of nitrous oxide fluxes. *Soil Science Society
+  of America Journal*, 45, 311--316.
+- Parkin, T.B. and Venterea, R.T. (2012). USDA-ARS GRACEnet Project
+  Protocols, Chapter 3: Chamber-Based Trace Gas Flux Measurements.
+- Rochette, P. and Eriksen-Hamel, N.S. (2005). Estimation of N~2~O
+  emissions from agricultural soils. *SSSAJ*, 69, 1256--1264.
+- Livingston, G.P. and Hutchinson, G.L. (1995). Enclosure-based
+  measurement of trace gas exchange: applications and sources of error.
+  In: Matson, P.A. and Harriss, R.C. (Eds.), *Biogenic Trace Gases*.
+  Blackwell Science.
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F005](SOP-F005-random-sampling-design.qmd) | Random Sampling Design | Chamber placement design          |
+| [F400](SOP-F400-soil-sampling.qmd)     | Soil Sampling             | Companion soil samples            |
+| [F504](SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer | Automated alternative             |
+| [L400](../lab_sops/SOP-L400-soil-moisture.qmd) | Soil Moisture        | Moisture alongside flux           |
+| [L408](../lab_sops/SOP-L408-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | Lab respiration complement |
+
+
+## 11. Training Record
+
+Before deploying soil respiration chambers independently, personnel
+must:
+
+1. Read this SOP and [SOP-F504](SOP-F504-picarro-field-deployment.qmd)
+   in full
+2. Demonstrate proper collar installation and headspace volume
+   measurement
+3. Perform a supervised syringe sampling or IRGA measurement at one
+   site
+4. Calculate flux from field data and demonstrate agreement with the
+   trainer's calculation
+5. Be signed off by the PI or field lead

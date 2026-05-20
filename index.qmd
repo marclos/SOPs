@@ -55,9 +55,9 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|:------|
 | [F100](field_sops/SOP-F100-vehicles.qmd) | EA Program Vehicle Use | -- | |
 | [F101](field_sops/SOP-F101-electrical-power-in-the-field.qmd) | Electrical Power in the Field | 0.2 | |
-| F102 | Waders/wetsuit | -- |  |
-| F102 | *Canoe / Kayak / Small Watercraft* | -- | **NEW**: for lake and wetland sampling |
-| F103 | *Field Laptop and Tablet Use* | -- | **NEW**: rugged computing, data entry in field |
+| [F102](field_sops/) | Waders/wetsuit | -- |  |
+| [F102](field_sops/) | *Canoe / Kayak / Small Watercraft* | -- | **NEW**: for lake and wetland sampling |
+| [F103](field_sops/) | *Field Laptop and Tablet Use* | -- | **NEW**: rugged computing, data entry in field |
 
 ### Instrumentation (F200--F299)
 
@@ -82,11 +82,11 @@ tbl-classes: table-sm
 | [F302](field_sops/SOP-F302-stormwater-sampling.qmd) | Stormwater Sampling | -- | |
 | [F303](field_sops/SOP-F303-groundwater-sampling.qmd) | Groundwater Sampling | -- | |
 | [F304](field_sops/SOP-F304-stream-physical-habitat.qmd) | Stream Physical Habitat Analysis | 0.1 | |
-| F305 | *Sediment Sampling (Streams and Lakes)* | -- | **NEW**: grab samplers, Ekman dredge, core tubes |
-| F306 | *Wetland Hydrology Monitoring* | -- | **NEW**: water table depth, piezometers, stage gauges |
-| F307 | *Lake and Reservoir Profiling* | -- | **NEW**: depth profiles, Secchi disk, stratification |
-| F308 | *eDNA Water Sample Collection* | -- | **NEW**: sterile filtration for environmental DNA |
-| F309 | *Periphyton / Algae Sampling* | -- | **NEW**: SWAMP-compatible algae collection |
+| [F305](field_sops/) | *Sediment Sampling (Streams and Lakes)* | -- | **NEW**: grab samplers, Ekman dredge, core tubes |
+| [F306](field_sops/) | *Wetland Hydrology Monitoring* | -- | **NEW**: water table depth, piezometers, stage gauges |
+| [F307](field_sops/) | *Lake and Reservoir Profiling* | -- | **NEW**: depth profiles, Secchi disk, stratification |
+| [F308](field_sops/) | *eDNA Water Sample Collection* | -- | **NEW**: sterile filtration for environmental DNA |
+| [F309](field_sops/) | *Periphyton / Algae Sampling* | -- | **NEW**: SWAMP-compatible algae collection |
 
 ### Soil (F400--F499)
 
@@ -97,9 +97,9 @@ tbl-classes: table-sm
 | [F402](field_sops/SOP-F402-soil-bulk-density.qmd) | Soil Bulk Density (Core Method) | -- | |
 | [F403](field_sops/SOP-F403-soil-infiltration-rate.qmd) | Soil Infiltration Rate | -- | |
 | [F404](field_sops/SOP-F404-soil-temperature-profiles.qmd) | Soil Temperature Profiles | 0.1 | |
-| F405 | *Soil Color (Munsell)* | -- | **NEW**: Munsell chart use, field color determination |
-| F406 | *Soil Respiration Chambers (Field)* | -- | **NEW**: static chamber CO2 flux measurements |
-| F407 | *Soil Profile Description* | -- | **NEW**: horizon identification, field morphology |
+| [F405](field_sops/SOP-F405-soil-color-munsell.qmd) | *Soil Color (Munsell)* | -- | **NEW**:  |
+| [F406](field_sops/SOP-F406-soil-respiration-chambers.qmd) | *Soil Respiration Chambers (Field)* | -- | **NEW**:  |
+| [F407](field_sops/SOP-F407-soil-profile-description.qmd) | *Soil Profile Description* | -- | **NEW** |
 
 ### Air / Atmospheric (F500--F599)
 
@@ -107,10 +107,10 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|:------|
 | [F501](field_sops/SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring (Sensors) | -- | |
 | [F502](field_sops/SOP-F502-air-quality-portable-sensors.qmd) | Air Quality Monitoring (Portable Sensors) | -- | |
-| F503 | *Particulate Matter Sampling* | -- | was TBD |
+| [F503](field_sops/) | *Particulate Matter Sampling* | -- | was TBD |
 | [F504](field_sops/SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer (Field Deployment) | 1.0 | |
-| F505 | *Passive Air Samplers (Diffusion Tubes)* | -- | **NEW**: NO2, O3 passive badges |
-| F506 | *Noise Level Monitoring* | -- | **NEW**: environmental noise surveys, decibel meters |
+| [F505](field_sops/) | *Passive Air Samplers (Diffusion Tubes)* | -- | **NEW**: NO2, O3 passive badges |
+| [F506](field_sops/) | *Noise Level Monitoring* | -- | **NEW**: environmental noise surveys, decibel meters |
 
 ### Microbes, Plants, and Animals (F600--F699)
 
@@ -118,26 +118,25 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|:------|
 | [F602](field_sops/SOP-F602-inaturalist.qmd) | iNaturalist for Biodiversity Documentation | 0.1 | |
 | [F603](field_sops/SOP-F603-vegetation-transect-surveys.qmd) | Vegetation Transect Surveys | 0.1 | |
-| F604 | *Tree DBH and Forest Inventory* | -- | **NEW**: diameter tape, basal area, allometry |
+| [F604](field_sops/) | *Tree DBH and Forest Inventory* | -- | **NEW**: diameter tape, basal area, allometry |
 | [F605](field_sops/SOP-F605-leaf-area-index.qmd) | Leaf Area Index Measurement | -- | |
-| F606 | *Canopy Cover (Densiometer and Hemispherical Photography)* | -- | **NEW**: currently embedded in F304; deserves standalone |
+| [F606](field_sops/) | *Canopy Cover (Densiometer and Hemispherical Photography)* | -- | **NEW**: currently embedded in F304; deserves standalone |
 | [F608](field_sops/SOP-F608-plant-tissue-sampling.qmd) | Plant Tissue Sampling | -- | |
 | [F610](field_sops/SOP-F610-macroinvertebrate-sampling.qmd) | Macroinvertebrate Sampling | -- | |
-| F611 | *Pollinator Observation Surveys* | -- | **NEW**: timed observations, pan traps |
+| [F611](field_sops/) | *Pollinator Observation Surveys* | -- | **NEW**: timed observations, pan traps |
 | [F615](field_sops/SOP-F615-bird-point-counts.qmd) | Bird Point Count Surveys | -- | |
 | [F620](field_sops/SOP-F620-camera-trap.qmd) | Camera Trap (CamPark T20) | 0.1 | |
-
-| F621 | *Acoustic Monitoring (Bioacoustics)* | -- | **NEW**: AudioMoth, sound recorders for birds/bats/frogs |
-| F622 | *Small Mammal Trapping (Sherman Traps)* | -- | **NEW**: live trapping, IACUC protocols |
+| [F621](field_sops/) | *Acoustic Monitoring (Bioacoustics)* | -- | **NEW**: AudioMoth, sound recorders for birds/bats/frogs |
+| [F622](field_sops/) | *Small Mammal Trapping (Sherman Traps)* | -- | **NEW**: live trapping, IACUC protocols |
 | [F630](field_sops/SOP-F630-drone-operations.qmd) | Drone Operations (DJI Matrice/Mavic) | 0.1 | |
-| F631 | *360 Camera* | 0.1 | |
+| [F631](field_sops/) | *360 Camera* | 0.1 | |
 
 ### Molecular Biology and DNA (F700--F799)
 
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
-| F700 | *eDNA Field Sampling and Preservation* | -- | **NEW**: sterile field collection, preservative, blanks |
-| F701 | *Soil Microbial Field Sampling for Molecular Analysis* | -- | **NEW**: field collection targeting DNA/RNA integrity |
+| [F700](field_sops/SOP-F700-edna-field-sampling.qmd) | eDNA Field Sampling and Preservation | -- | **NEW* |
+| [F701](field_sops/SOP-F701-soil-microbial-field-sampling.qmd) | Soil Microbial Field Sampling for Molecular Analysis | -- | **NEW** |
 
 ## Lab SOPs
 
@@ -154,7 +153,7 @@ tbl-classes: table-sm
 | [L007](lab_sops/SOP-L007-equipment-inventory.qmd) | Equipment and Instrument Inventory | 1.0 | |
 | [L010](lab_sops/SOP-L010-lab-notebook-recording.qmd) | Lab Notebook Recording | 0.1 | |
 | [L015](lab_sops/SOP-L015-foreign-soil-handling.qmd) | Foreign Soil Handling (Import Permits) | 0.3 | |
-| L020 | *Reagent and Standard Preparation* | -- | **NEW**: general guidance for making standards, buffers |
+| [L020](lab_sops/) | *Reagent and Standard Preparation* | -- | **NEW**: general guidance for making standards, buffers |
 
 ### Laboratory Equipment (L100--L199)
 
@@ -171,12 +170,12 @@ tbl-classes: table-sm
 | [L108](lab_sops/) | *Clinical Centrifuge* | 0.1 | |
 | [L109](lab_sops/SOP-L109-sorvall-centrifuge.qmd) | Sorvall ST8R Centrifuge | 0.1 | |
 | [L110](lab_sops/) | *Ozone Generator Operation* | 0.1 | |
-| L111 | *Muffle Furnace* | -- | **NEW**: used in LOI, ashing; currently undocumented |
-| L112 | *Autoclave / Sterilization* | -- | **NEW**: media prep, biohazard waste treatment |
-| L113 | *Laminar Flow Cabinet* | -- | **NEW**: aseptic technique, listed in inventory but no SOP |
-| L114 | *Vacuum Filtration Apparatus* | -- | **NEW**: membrane filtration, used in water/chlorophyll SOPs |
-| L115 | *Sonicator* | -- | **NEW**: listed in inventory, no SOP |
-| L116 | *Sample Grinding and Homogenization (Ball Mill, Mortar and Pestle)* | -- | **NEW**: referenced in plant tissue and soil SOPs |
+| [L111](lab_sops/) | *Muffle Furnace* | -- | **NEW**: used in LOI, ashing; currently undocumented |
+| [L112](lab_sops/) | *Autoclave / Sterilization* | -- | **NEW**: media prep, biohazard waste treatment |
+| [L113](lab_sops/) | *Laminar Flow Cabinet* | -- | **NEW**: aseptic technique, listed in inventory but no SOP |
+| [L114](lab_sops/) | *Vacuum Filtration Apparatus* | -- | **NEW**: membrane filtration, used in water/chlorophyll SOPs |
+| [L115](lab_sops/) | *Sonicator* | -- | **NEW**: listed in inventory, no SOP |
+| [L116](lab_sops/) | *Sample Grinding and Homogenization (Ball Mill, Mortar and Pestle)* | -- | **NEW**: referenced in plant tissue and soil SOPs |
 
 ### Instrumentation (L200--L299)
 

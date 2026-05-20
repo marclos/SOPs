@@ -1,0 +1,214 @@
+---
+# =============================================================================
+# SOP-F405: Soil Color (Munsell)
+# =============================================================================
+title: "Soil Color Determination (Munsell)"
+sop-number: "SOP-F405"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-19"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the field determination of soil color using the
+Munsell Soil Color Charts. Soil color is one of the most readily
+observable soil properties and provides information about organic
+matter content, drainage and aeration status, mineralogy, and degree
+of weathering. Consistent color determination is essential for soil
+profile descriptions ([SOP-F407](SOP-F407-soil-profile-description.qmd)),
+wetland delineation, and site characterization.
+
+
+## 2. Scope
+
+- **Applies to:** Field determination of soil color for all EA Program
+  soil sampling campaigns, profile descriptions, and site
+  characterizations
+- **Does not apply to:** Instrumental color measurement (colorimeters
+  or spectrophotometers); rock or sediment color classification using
+  the Rock Color Chart; Munsell readings on dried, ground samples in
+  the lab (see future SOP-L419)
+- **Location:** All EA Program field sites; can also be performed on
+  fresh samples in the lab
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Ensure Munsell charts are available and in good condition |
+| Trained Personnel | Determine soil color per this SOP                       |
+| New Students      | Complete training and inter-observer calibration exercise |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Biological:** Soil-borne pathogens; wash hands after handling soil.
+- **Physical:** Standard field hazards (ticks, snakes, heat exposure).
+- **Chemical:** At contaminated sites, soil may contain heavy metals or
+  other hazardous materials; wear gloves.
+:::
+
+### Required PPE
+
+- [ ] Closed-toed shoes or field boots
+- [ ] Nitrile gloves (recommended)
+- [ ] Sun protection (hat, sunscreen)
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Munsell Soil Color Charts (current edition) | Handle with clean, dry hands; protect from rain and direct soil contact |
+| Trowel or soil knife                  | For exposing fresh soil surfaces         |
+| Squeeze bottle with DI water          | For moistening dry samples               |
+| Paper towels                          | For cleaning hands between samples       |
+| Field notebook                        | For recording colors                     |
+
+
+## 6. Background: The Munsell System
+
+Munsell color notation has three components:
+
+- **Hue:** The dominant spectral color (e.g., 10YR, 2.5Y, 5YR).
+  Pages in the chart book are arranged by hue.
+- **Value:** Lightness, from 0 (absolute black) to 10 (absolute white).
+  Vertical axis on each page.
+- **Chroma:** Color intensity or saturation, from 0 (neutral gray)
+  outward. Horizontal axis on each page.
+
+A complete Munsell notation is written as: **Hue Value/Chroma**
+(e.g., 10YR 4/3). The corresponding color name (e.g., "brown" or
+"dark yellowish brown") is listed on each chip.
+
+
+## 7. Procedure
+
+### 7.1 Sample Preparation
+
+1. Expose a fresh soil surface by breaking a ped or cutting with a
+   trowel. Do not use smeared or scraped surfaces, as smearing
+   compresses the soil and alters the apparent color.
+2. Determine color on **moist** soil. If the soil is dry, add a few
+   drops of DI water to a small subsample and allow it to absorb for
+   30 seconds before reading.
+3. If both moist and dry colors are needed (e.g., for profile
+   descriptions), read the moist color first, then allow a portion
+   to air-dry and read the dry color.
+
+### 7.2 Reading the Color
+
+1. Work in natural daylight, ideally under an overcast sky or in
+   open shade. Avoid direct sunlight on the soil or the chart, as
+   glare distorts color perception. Do not read colors under
+   artificial light or at twilight.
+2. Hold the soil sample behind the chart page apertures so that the
+   soil is visible through the holes.
+3. Compare the soil to the color chips. Start with the hue page that
+   appears closest, then move to the value row that matches, then
+   slide along the chroma axis.
+4. Select the chip that most closely matches the soil. If the soil
+   falls between two chips, record the notation of the nearest chip
+   and note "between X and Y" in the field notebook.
+5. Record the full Munsell notation and the color name:
+   - Example: **10YR 3/2 (very dark grayish brown)**
+6. If the soil contains mottles or redoximorphic features, record the
+   matrix color and then the mottle color(s) separately, noting the
+   abundance (few, common, many), size (fine, medium, coarse), and
+   contrast (faint, distinct, prominent).
+
+### 7.3 Special Cases
+
+**Organic soils (O horizons, peat):** Use the Gley pages or the 10YR
+page with very low value and chroma. Very dark colors (value 2 or
+less) are common.
+
+**Gleyed soils:** Use the Gley 1 and Gley 2 pages for soils with
+chroma of 2 or less and hues bluer than 5Y. Gleyed colors indicate
+prolonged saturation and reducing conditions.
+
+**Mottled soils:** Record:
+
+- Matrix color (dominant color occupying more than 50% of the surface)
+- Mottle colors (each distinct color)
+- For each mottle: abundance, size, and contrast
+
+| Abundance | Definition                          |
+|:----------|:------------------------------------|
+| Few       | < 2% of exposed surface             |
+| Common    | 2--20% of exposed surface            |
+| Many      | > 20% of exposed surface            |
+
+| Size      | Definition                          |
+|:----------|:------------------------------------|
+| Fine      | < 5 mm diameter                     |
+| Medium    | 5--15 mm diameter                    |
+| Coarse    | > 15 mm diameter                    |
+
+| Contrast  | Definition                          |
+|:----------|:------------------------------------|
+| Faint     | Hue, value, and chroma differ by 1 unit or less from matrix |
+| Distinct  | Differ by 2--3 units in value or chroma |
+| Prominent | Differ by more than 3 units         |
+
+
+## 8. Quality Control
+
+- At the start of each field season, have two or more observers
+  independently read the same soil samples to assess inter-observer
+  agreement. Readings should agree within one chip (one unit of value
+  or chroma) in at least 80% of comparisons.
+- Replace Munsell charts when color chips are faded, soiled, or
+  damaged. Faded chips produce systematic errors.
+- Record lighting conditions (overcast, open shade, sunny) in the
+  field notebook; lighting affects color perception.
+- Always specify whether the reading was on moist or dry soil.
+
+
+## 9. References
+
+- Munsell Color. (2009). *Munsell Soil Color Charts*. Grand Rapids,
+  MI: Munsell Color.
+- Soil Survey Staff. (2022). *Keys to Soil Taxonomy*. 13th ed. USDA
+  Natural Resources Conservation Service.
+- Schoeneberger, P.J., Wysocki, D.A., Benham, E.C., and Soil Survey
+  Staff. (2012). *Field Book for Describing and Sampling Soils*.
+  Version 3.0. USDA NRCS, National Soil Survey Center, Lincoln, NE.
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F400](SOP-F400-soil-sampling.qmd)     | Soil Sampling             | Soil collection for color reading |
+| [F407](SOP-F407-soil-profile-description.qmd) | Soil Profile Description | Color is part of profile description |
+
+
+## 11. Training Record
+
+Before determining soil color independently, personnel must:
+
+1. Read this SOP in full
+2. Complete an inter-observer calibration exercise with a trained
+   operator, achieving agreement within one chip on at least 8 of 10
+   test samples
+3. Be signed off by the PI or field lead
