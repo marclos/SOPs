@@ -86,10 +86,10 @@ For buffer or chemical splashes, flush with water. Refer to
 
 | Item                          | Notes                                     |
 |:------------------------------|:------------------------------------------|
-| pH/conductivity meter         | Calibrated per [SOP-L40](SOP-L40-pH-conductivity-bench.qmd) |
+| pH/conductivity meter         | Calibrated per [SOP-L300](SOP-L300-pH-conductivity-bench.qmd) |
 | pH combination electrode      | Glass bulb with refillable KCl junction preferred |
 | Conductivity cell             | With automatic temperature compensation   |
-| Analytical balance (0.01 g)   | See [SOP-L13](SOP-L13-using-balances.qmd) |
+| Analytical balance (0.01 g)   | See [SOP-L102](SOP-L102-using-balances.qmd) |
 | Beakers (50--100 mL)         | Clean; one per sample plus blanks         |
 | Graduated cylinder or dispenser | For volumetric delivery of water or CaCl~2~ |
 | Glass stirring rods           | One per sample or rinsed between samples  |
@@ -165,7 +165,7 @@ artificially elevate the EC reading [@apha2012].
 :::
 
 1. Calibrate the conductivity meter per
-   [SOP-L40](SOP-L40-pH-conductivity-bench.qmd), Section 6.3
+   [SOP-L300](SOP-L300-pH-conductivity-bench.qmd), Section 6.3
 2. Rinse the conductivity cell with DI water and blot dry
 3. Insert the cell into the supernatant (1:5 method) or into the
    settled portion of the slurry (1:1 method). Tap gently to dislodge
@@ -179,7 +179,7 @@ artificially elevate the EC reading [@apha2012].
 ### 6.6 Measuring Soil pH
 
 1. Calibrate the pH meter with a three-point calibration per
-   [SOP-L40](SOP-L40-pH-conductivity-bench.qmd), Section 6.2
+   [SOP-L300](SOP-L300-pH-conductivity-bench.qmd), Section 6.2
 2. Rinse the pH electrode with DI water and blot gently
 3. Insert the electrode into the slurry so that the glass bulb and
    reference junction are fully immersed. For the 1:1 method, the
@@ -277,7 +277,7 @@ this SOP.
 |:------------------------------|:-----------------------------------------|
 | Soil slurry waste (non-hazardous) | Standard trash once settled          |
 | CaCl~2~ extract solutions     | Drain with copious water (non-hazardous) |
-| Used pH buffer solutions      | Collect in waste container per [SOP-L40](SOP-L40-pH-conductivity-bench.qmd) |
+| Used pH buffer solutions      | Collect in waste container per [SOP-L300](SOP-L300-pH-conductivity-bench.qmd) |
 | Used conductivity standard    | Drain with copious water                 |
 | DI water rinses               | Drain                                    |
 
@@ -381,9 +381,9 @@ print(soil_data %>% select(sample_id, pH_water_1_1, pH_CaCl2_1_1,
 
 | Symptom                       | Probable Cause                  | Corrective Action              |
 |:------------------------------|:--------------------------------|:-------------------------------|
-| pH reading drifts continuously | Poorly buffered soil; electrode junction fouled | Allow longer equilibration (up to 5 min); clean electrode per [SOP-L40](SOP-L40-pH-conductivity-bench.qmd) |
+| pH reading drifts continuously | Poorly buffered soil; electrode junction fouled | Allow longer equilibration (up to 5 min); clean electrode per [SOP-L300](SOP-L300-pH-conductivity-bench.qmd) |
 | pH in CaCl~2~ higher than pH in water | Measurement error; contaminated CaCl~2~ solution | Verify CaCl~2~ concentration; recalibrate meter; re-measure |
-| EC reading unexpectedly high  | Fertilizer residue; saline soil; contaminated beaker | Verify with a blank; use acid-washed glassware ([SOP-L12](SOP-L12-glassware-cleaning.qmd)) |
+| EC reading unexpectedly high  | Fertilizer residue; saline soil; contaminated beaker | Verify with a blank; use acid-washed glassware ([SOP-L101](SOP-L101-glassware-cleaning.qmd)) |
 | EC reading near zero          | Electrode not fully immersed; air bubble in cell | Reposition cell; tap to dislodge bubbles |
 | Large difference between 1:1 and 1:5 EC | Normal; dilution effect | Report both with the ratio clearly stated; convert to EC~e~ using appropriate factor |
 | pH calibration slope below 90% | Aged electrode; dirty glass bulb | Soak in cleaning solution or 0.1 M HCl for 15--30 min; if slope does not recover, replace electrode |

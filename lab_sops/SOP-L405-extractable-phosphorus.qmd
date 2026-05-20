@@ -145,7 +145,7 @@ gluconate gel if available. Refer to
 2. Pass through a 2 mm sieve per
    [SOP-F400 Soil Sampling](../field_sops/SOP-F400-soil-sampling.qmd)
 3. Determine gravimetric moisture content on a subsample per
-   [SOP-L55](SOP-L55-soil-moisture.qmd) to express results on a
+   [SOP-L400](SOP-L400-soil-moisture.qmd) to express results on a
    dry-weight basis
 
 ### 6.2 Selecting the Extraction Method
@@ -155,7 +155,7 @@ gluconate gel if available. Refer to
 | 6.5 or above | Olsen (0.5 M NaHCO~3~, pH 8.5) | @olsen1954   |
 | Below 6.5  | Bray-1 (0.03 M NH~4~F + 0.025 M HCl) | @bray1945 |
 
-Determine soil pH per [SOP-L57](SOP-L57-soil-pH-salinity.qmd) before
+Determine soil pH per [SOP-L402](SOP-L402-soil-pH-salinity.qmd) before
 selecting the extractant. If comparing across sites with widely varying
 pH, consider using Mehlich-3 for all samples (consult the PI).
 
@@ -224,7 +224,7 @@ This procedure follows @murphy1962 as adapted by @kuo1996.
 
 **Alternative: Hach DR3900 PhosVer 3 method.** If using the Hach
 spectrophotometer, follow the PhosVer 3 (ascorbic acid) method per
-[SOP-L45](SOP-L45-hach-colorimetric.qmd), Program 490. Prepare
+[SOP-L303](SOP-L303-hach-colorimetric.qmd), Program 490. Prepare
 standards in the same extractant matrix as the samples.
 
 ### 6.6 Calibration
@@ -249,7 +249,7 @@ $$
 where $C$ = P concentration in the extract (mg/L), $V$ = volume of
 extractant (mL), $M$ = mass of air-dried soil (g), and $\theta_H$ =
 hygroscopic moisture (%, determined per
-[SOP-L55](SOP-L55-soil-moisture.qmd)). The term
+[SOP-L400](SOP-L400-soil-moisture.qmd)). The term
 $\frac{100}{100 + \theta_H}$ converts the air-dried mass to an
 oven-dry basis.
 
@@ -361,8 +361,8 @@ Before performing soil extractable P analyses independently, personnel
 must:
 
 1. Read this SOP in full
-2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
-   and [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+2. Complete [SOP-L001 Laboratory Safety](SOP-L001-laboratory-safety.qmd)
+   and [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
    training
 3. Review the SDS for ammonium fluoride (if using Bray-1)
 4. Demonstrate preparation of the extractant, color reagent, and
@@ -470,7 +470,7 @@ Append these to the project `references.bib`:
 | Yellow-brown Olsen extract    | Insufficient charcoal; charcoal not pre-washed | Increase charcoal; pre-wash with 0.5 M NaHCO~3~ |
 | Calibration curve non-linear above 5 mg/L | Beer's Law limit exceeded | Dilute high samples; add lower standards |
 | Bray-1 P unexpectedly low on calcareous soil | Acid neutralized by CaCO~3~ | Use Olsen method for soils with pH above 6.5 |
-| Blank reads above 0.01 absorbance | Contaminated glassware or reagent | Acid-wash glassware ([SOP-L12](SOP-L12-glassware-cleaning.qmd)); prepare fresh reagents |
+| Blank reads above 0.01 absorbance | Contaminated glassware or reagent | Acid-wash glassware ([SOP-L101](SOP-L101-glassware-cleaning.qmd)); prepare fresh reagents |
 | Color fades after 30 min      | Ascorbic acid degradation       | Read within 30 min; prepare ascorbic acid solution fresh daily |
 | Duplicates disagree by more than 15% RPD | Soil heterogeneity; inconsistent extraction timing | Homogenize soil more thoroughly; use a timer for extraction |
 | Reference soil out of range   | Extractant pH drift (Olsen); reagent degradation | Verify NaHCO~3~ pH; remake color reagent |
