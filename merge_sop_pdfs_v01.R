@@ -92,50 +92,45 @@ if (length(pdf_files) == 0) {
 cat(sprintf("Found %d SOP PDFs in %s\n", length(pdf_files), pdf_dir))
 
 # ---------------------------------------------------------------------------
-# 2. Build a TOC by reading each PDF's page count + metadata from .qmd YAML
+# 2. Build a TOC by reading each PDF's page count
 # ---------------------------------------------------------------------------
 page_counts <- vapply(pdf_files, function(f) {
   length(qpdf::pdf_length(f))
 }, integer(1))
 
-# Helper: find the .qmd source that corresponds to a given PDF
-find_qmd <- function(pdf_path) {
-  stem <- tools::file_path_sans_ext(basename(pdf_path))
+# Build cumulative page numbers (the TOC page itself will be page 1)
+# ---------------------------------------------------------------------------
+# 2. Build a TOC by reading each PDF's page count + titles from .qmd YAML
+# ---------------------------------------------------------------------------
+page_counts <- vapply(pdf_files, function(f) {
+  length(qpdf::pdf_length(f))
+}, integer(1))
+
+# Extract human-readable titles from matching .qmd source files
+titles <- vapply(pdf_files, function(f) {
+  stem <- tools::file_path_sans_ext(basename(f))
+  # Search for the .qmd in the directories Quarto renders from
   qmd_candidates <- list.files(
     c("lab_sops", "field_sops", "sops"),
     pattern = paste0("^", stem, "\\.qmd$"),
     full.names = TRUE, recursive = FALSE
   )
-  if (length(qmd_candidates) >= 1) qmd_candidates[1] else NA_character_
-}
-
-# Extract titles and SOP numbers from YAML front matter
-titles <- vapply(pdf_files, function(f) {
-  qmd <- find_qmd(f)
-  if (!is.na(qmd)) {
-    yaml_front <- rmarkdown::yaml_front_matter(qmd)
+  if (length(qmd_candidates) >= 1) {
+    yaml_front <- rmarkdown::yaml_front_matter(qmd_candidates[1])
     if (!is.null(yaml_front$title)) return(yaml_front$title)
   }
-  tools::file_path_sans_ext(basename(f))
+  # Fallback to filename if no .qmd or no title field
+  stem
 }, character(1))
 
-sop_numbers <- vapply(pdf_files, function(f) {
-  qmd <- find_qmd(f)
-  if (!is.na(qmd)) {
-    yaml_front <- rmarkdown::yaml_front_matter(qmd)
-    if (!is.null(yaml_front[["sop-number"]])) return(yaml_front[["sop-number"]])
-  }
-  tools::file_path_sans_ext(basename(f))
-}, character(1))
 
-# Page 1 = TOC; first SOP starts on page 2
-start_page <- cumsum(c(2L, head(page_counts, -1)))
+start_page <- cumsum(c(2L, head(page_counts, -1)))  
+# page 1 = TOC; first SOP starts on page 2
 
 toc_entries <- data.frame(
-  Number = sop_numbers,
-  SOP    = titles,
-  Pages  = page_counts,
-  Start  = start_page,
+  SOP   = titles,
+  Pages = page_counts,
+  Start = start_page,
   stringsAsFactors = FALSE
 )
 
@@ -145,6 +140,30 @@ print(toc_entries, row.names = FALSE)
 # ---------------------------------------------------------------------------
 # 3. Render a TOC cover page to PDF via a temporary .Rmd
 # ---------------------------------------------------------------------------
+# Also grab sop-number from YAML
+sop_numbers <- vapply(pdf_files, function(f) {
+  stem <- tools::file_path_sans_ext(basename(f))
+  qmd_candidates <- list.files(
+    c("lab_sops", "field_sops", "sops"),
+    pattern = paste0("^", stem, "\\.qmd$"),
+    full.names = TRUE, recursive = FALSE
+  )
+  if (length(qmd_candidates) >= 1) {
+    yaml_front <- rmarkdown::yaml_front_matter(qmd_candidates[1])
+    if (!is.null(yaml_front[["sop-number"]])) return(yaml_front[["sop-number"]])
+  }
+  stem
+}, character(1))
+
+toc_entries <- data.frame(
+  Number = sop_numbers,
+  SOP    = titles,
+  Pages  = page_counts,
+  Start  = start_page,
+  stringsAsFactors = FALSE
+)
+
+# Update the markdown table format
 toc_lines <- sprintf("| %s | %s | %d |", toc_entries$Number, toc_entries$SOP, toc_entries$Start)
 toc_table <- paste(
   "| SOP Number | Title | Page |",

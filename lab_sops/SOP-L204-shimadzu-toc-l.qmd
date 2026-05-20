@@ -1,9 +1,9 @@
 ---
 # =============================================================================
-# SOP-L29: Shimadzu TOC-L Analyzer with TNM-L and SSM-5000A
+# SOP-L204: Shimadzu TOC-L Analyzer with TNM-L and SSM-5000A
 # =============================================================================
 title: "Shimadzu TOC-L Analyzer with TNM-L and SSM-5000A"
-sop-number: "SOP-L29"
+sop-number: "SOP-L204"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -33,7 +33,7 @@ through the LabSolutions TOC software on the dedicated computer.
 This SOP covers the instrument itself. For application-specific sample
 preparation, measurement modes, and calculations, refer to the
 relevant analytical SOPs (e.g.,
-[SOP-L62 Total Carbon](SOP-L62-total-carbon.qmd)).
+[SOP-L407 Total Carbon](SOP-L407-total-carbon.qmd)).
 
 
 ## 2. Scope
@@ -93,8 +93,8 @@ For acid splashes, flush the affected area with water for at least 15
 minutes. For burns from hot surfaces, apply cool running water and
 seek first aid. If ozone is detected, shut down the TNM-L, open
 windows, and leave the room until the odor dissipates. Refer to
-[SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd) and
-[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) and
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
 ## 5. Instrument Description
@@ -410,7 +410,7 @@ level QC applies to all runs regardless of application:
   exported data file
 - For additional QC requirements (method blanks, duplicates, matrix
   spikes, continuing calibration verification frequency), refer to
-  [SOP-L06 Quality Control](SOP-L06-quality-control.qmd) and the
+  [SOP-L802 Quality Control](SOP-L802-quality-control.qmd) and the
   relevant analytical method SOP
 
 
@@ -498,9 +498,9 @@ Before operating this instrument independently, personnel must:
 
 1. Read this SOP in full and the relevant sections of the Shimadzu
    TOC-L, TNM-L, and SSM-5000A user manuals
-2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
    and
-   [SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd)
+   [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
    training
 3. Observe a trained operator perform a complete session: startup,
    calibration (carbon and nitrogen), sample analysis, data export,

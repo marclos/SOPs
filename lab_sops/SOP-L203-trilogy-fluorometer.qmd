@@ -1,10 +1,10 @@
 ---
 # =============================================================================
-# SOP-L28: Trilogy Laboratory Fluorometer
+# SOP-L203: Trilogy Laboratory Fluorometer
 # =============================================================================
 # =============================================================================
 title: "Trilogy Laboratory Fluorometer"
-sop-number: "SOP-28"
+sop-number: "SOP-203"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
@@ -43,9 +43,9 @@ chlorophyll *a* determination and turbidity analysis of water samples.
   with fluorescence, absorbance, and turbidity optical modules
 - **Does not apply to:** Field fluorometers, in-vivo chlorophyll
   measurements with multiprobes (see
-  [SOP-F22](../field_sops/SOP-F22-eureka-manta2.qmd)), or benchtop
+  [SOP-F200](../field_sops/SOP-F200-eureka-manta2.qmd)), or benchtop
   spectrophotometers (Hach DR3900; see
-  [SOP-L45](SOP-L45-hach-colorimetric.qmd))
+  [SOP-L303](SOP-L303-hach-colorimetric.qmd))
 - **Location:** EA Program laboratory, SGM 133
 
 
@@ -67,7 +67,7 @@ chlorophyll *a* determination and turbidity analysis of water samples.
 - **Chemical:** Chlorophyll extraction uses 90% acetone, which is
   flammable and an irritant. Handle in the fume hood. Acidification
   with HCl (0.1 N) is required for EPA 445.0. See
-  [SOP-L02](SOP-L02-hazardous-materials-handling.qmd).
+  [SOP-L003](SOP-L003-hazardous-materials-handling.qmd).
 - **Physical:** Glass test tubes used for extracted chlorophyll
   measurements can break. Handle with care.
 :::
@@ -82,7 +82,7 @@ chlorophyll *a* determination and turbidity analysis of water samples.
 
 For acetone spills, extinguish all ignition sources, ventilate the area,
 and clean up per
-[SOP-L02 Hazardous Materials Handling](SOP-L02-hazardous-materials-handling.qmd).
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 For skin or eye contact with acetone or acid, flush with water for at
 least 15 minutes.
 
@@ -308,7 +308,7 @@ which have their own dedicated procedures in the Trilogy manual).
 Before operating the Trilogy Fluorometer independently, personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-L01 Laboratory Safety](SOP-L01-laboratory-safety.qmd)
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
    training
 3. Review the Turner Designs Trilogy User's Manual
 4. Observe a trained operator perform module installation, calibration,
