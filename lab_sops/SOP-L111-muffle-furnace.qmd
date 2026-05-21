@@ -1,0 +1,239 @@
+---
+# =============================================================================
+# SOP-L111: Muffle Furnace
+# =============================================================================
+title: "Muffle Furnace Operation"
+sop-number: "SOP-L111"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the safe operation, temperature programming,
+and maintenance of the muffle furnace used in the EA Program
+laboratory. The muffle furnace provides controlled high-temperature
+combustion (up to 1,100 C) for loss-on-ignition analysis
+([SOP-L406](SOP-L406-loss-on-ignition.qmd)), pre-combustion of
+crucibles and glass fiber filters, ashing of organic materials, and
+flux fusion preparations.
+
+
+## 2. Scope
+
+- **Applies to:** All use of muffle furnaces in EA Program
+  laboratories, including routine ignition (550 C for SOM), high-
+  temperature ashing (up to 1,000 C), and pre-combustion of labware
+- **Does not apply to:** Drying ovens operating below 300 C (see
+  [SOP-L105](SOP-L105-drying-ovens.qmd)); tube furnaces for
+  elemental analysis (integral to analytical instruments); kilns
+- **Location:** EA Program laboratory, SGM 134
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, authorize furnace use          |
+| Lab Manager       | Schedule maintenance, verify thermocouple calibration |
+| Trained Personnel | Operate the furnace per this SOP            |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Thermal:** The furnace exterior, door, and chamber reach extremely
+  high temperatures. Crucibles removed from the furnace at 550 C or
+  above can cause severe burns on contact. The furnace remains hot for
+  hours after shutdown.
+- **Fire:** Combustible materials (paper, wood, plastic) placed on or
+  near the furnace can ignite. Keep a 30 cm clear zone around the
+  furnace on all sides.
+- **Fumes:** Combustion of organic matter produces CO~2~, water vapor,
+  and potentially odorous or irritating fumes. Ensure adequate room
+  ventilation or connect the furnace exhaust to a fume hood or duct
+  if available.
+- **Electrical:** The furnace draws high current. Do not use extension
+  cords. Inspect the power cord for damage before each use.
+:::
+
+### Required PPE
+
+- [ ] Heat-resistant gloves (rated to at least 500 C)
+- [ ] Safety glasses or face shield
+- [ ] Lab coat (cotton preferred; synthetic fabrics melt)
+- [ ] Closed-toed shoes
+
+### Emergency Procedures
+
+For burns, apply cool running water immediately and seek first aid.
+If the furnace produces unusual smoke, odors, or sparks, shut it off
+at the circuit breaker and evacuate the room. Refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| Muffle furnace (programmable)         | SGM 134; confirm maximum temperature rating |
+| Crucible tongs (long-handled, heat-rated) | For placing and retrieving crucibles |
+| Ceramic crucibles or porcelain boats  | Pre-combusted before first use |
+| Heat-resistant pad or ceramic tile    | For resting hot crucibles during transfer to desiccator |
+| Desiccator with active desiccant      | For cooling crucibles before weighing |
+| Thermocouple or secondary thermometer | For periodic temperature verification |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Use Inspection
+
+1. Inspect the furnace chamber for debris, cracked insulation, or
+   damage to the heating elements. Do not operate if damage is visible;
+   report to the lab manager.
+2. Verify that the area around the furnace is clear of combustible
+   materials (minimum 30 cm clearance on all sides and top)
+3. Confirm that the furnace is plugged directly into a dedicated wall
+   outlet (no extension cords or power strips)
+
+### 6.2 Loading
+
+1. Arrange crucibles or boats inside the chamber so they do not touch
+   each other or the heating elements. Leave space for air circulation.
+2. Close the furnace door gently; do not slam (the refractory lining
+   is fragile)
+
+### 6.3 Temperature Programming
+
+1. Set the target temperature and ramp rate per the analytical SOP:
+   - Loss on ignition (SOP-L406): ramp to 550 C, hold 4 hours
+   - Pre-combustion of glass fiber filters: ramp to 450 C, hold
+     4 hours
+   - Pre-combustion of crucibles: ramp to 550 C, hold 1 hour
+   - Ceramic boat preparation (SSM, SOP-L407): ramp to 900 C, hold
+     30 minutes
+2. If the furnace is programmable, set the ramp rate to approximately
+   10 C per minute unless the analytical SOP specifies otherwise
+3. Start the program and verify that the displayed temperature begins
+   to rise
+
+::: {.callout-tip}
+Avoid placing samples into a furnace that is already at full
+temperature unless the analytical SOP explicitly requires it. Rapid
+thermal shock can crack crucibles and cause spattering.
+:::
+
+### 6.4 During Operation
+
+1. Do not leave the furnace unattended during the initial ramp-up
+   (first 30 minutes). Check that the temperature is tracking the
+   set point.
+2. Post a "Furnace in Use" sign on the furnace and the lab door,
+   noting the expected completion time
+3. Do not open the furnace door during the hold period unless
+   troubleshooting
+
+### 6.5 Unloading
+
+1. After the hold period, turn off the furnace or allow the programmed
+   cooldown to proceed
+2. Allow the furnace to cool to below 200 C before opening the door.
+   Opening at higher temperatures causes rapid thermal shock to
+   samples and exposes the operator to radiant heat.
+3. Using crucible tongs and heat-resistant gloves, transfer crucibles
+   to a heat-resistant pad, then immediately to the desiccator
+4. Allow crucibles to cool to room temperature in the desiccator
+   (approximately 30--45 minutes) before weighing
+
+### 6.6 Shutdown
+
+1. Verify that the furnace is off and the temperature is decreasing
+2. Remove the "Furnace in Use" sign
+3. Leave the furnace door slightly ajar (1--2 cm) after it has cooled
+   below 100 C to prevent moisture buildup inside the chamber
+
+
+## 7. Maintenance
+
+| Task                                  | Frequency              |
+|:--------------------------------------|:-----------------------|
+| Visual inspection of chamber and elements | Before each use    |
+| Clean furnace floor of spilled material | After each use       |
+| Thermocouple verification (compare to NIST-traceable thermometer) | Annually or after suspected malfunction |
+| Replace heating elements              | As needed (contact manufacturer or lab manager) |
+| Check door seal and gasket            | Every 6 months         |
+
+::: {.callout-important}
+Never use water or wet cloths to clean the furnace interior. Allow the
+chamber to cool completely, then brush out ash and debris with a dry,
+soft brush.
+:::
+
+
+## 8. Quality Control
+
+- Verify furnace temperature with an independent thermocouple or
+  NIST-traceable thermometer at least annually. The furnace set point
+  and the verified temperature should agree within +/- 10 C at 550 C.
+- Record the verification date and result in the instrument logbook.
+- If temperature uniformity is critical (e.g., for large batches),
+  place thermocouples at the front, center, and back of the chamber
+  and record any gradient.
+
+
+## 9. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Combusted soil ash            | Standard trash (inert mineral residue)   |
+| Crucibles                     | Clean and reuse                          |
+| Failed heating elements       | E-waste; coordinate with campus facilities |
+
+
+## 10. References
+
+- Furnace manufacturer's operating manual (consult for model-specific
+  instructions and maximum temperature rating)
+- Heiri, O., Lotter, A. F., & Lemcke, G. (2001). Loss on ignition
+  as a method for estimating organic and carbonate content in
+  sediments. *Journal of Paleolimnology*, 25, 101--110.
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | General safety framework          |
+| [L105](SOP-L105-drying-ovens.qmd)      | Drying Ovens             | Low-temperature companion         |
+| [L200](SOP-L200-analytical-balance-calibration.qmd) | Balance Calibration | Pre- and post-ignition weighing |
+| [L406](SOP-L406-loss-on-ignition.qmd)  | Loss on Ignition         | Primary application SOP           |
+| [L407](SOP-L407-total-carbon.qmd)      | Total Carbon             | Ceramic boat preparation          |
+
+
+## 12. Training Record
+
+Before operating the muffle furnace independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Demonstrate proper use of heat-resistant gloves and crucible tongs
+4. Load, program, and unload the furnace under supervision for one
+   complete cycle
+5. Be signed off by the PI or lab manager

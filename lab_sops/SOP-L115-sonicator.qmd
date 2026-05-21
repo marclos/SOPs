@@ -1,0 +1,238 @@
+---
+# =============================================================================
+# SOP-L115: Sonicator (Ultrasonic Bath and Probe)
+# =============================================================================
+title: "Sonicator -- Ultrasonic Bath and Probe"
+sop-number: "SOP-L115"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the operation and maintenance of the
+ultrasonic bath and probe sonicator used in the EA Program laboratory.
+Sonication uses high-frequency sound waves (typically 20--40 kHz) to
+generate cavitation bubbles in a liquid medium. The collapse of these
+bubbles produces localized shear forces that disaggregate particles,
+disperse samples, degas solutions, enhance extraction, and clean
+labware. In the EA Program, sonication is used for soil particle
+dispersion, glassware cleaning, sample homogenization, and cell lysis
+in DNA extraction workflows.
+
+
+## 2. Scope
+
+- **Applies to:** The Fisher Scientific ultrasonic bath (SGM 134) and
+  any probe-tip sonicators available in EA Program laboratories
+- **Does not apply to:** Vortex mixing (see future SOP-L104); bead
+  beating for DNA extraction (integral to the extraction protocol in
+  [SOP-L700](SOP-L700-dna-extraction.qmd)); industrial-scale
+  ultrasonics
+- **Location:** SGM 134
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP                                 |
+| Lab Manager       | Maintain sonicator, replace bath water       |
+| Trained Personnel | Operate the sonicator per this SOP          |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Hearing:** Ultrasonic baths produce audible noise (buzzing/
+  humming) during operation. Probe sonicators at high power can
+  produce high-intensity noise. Wear hearing protection if exposure
+  exceeds a few minutes at high power settings.
+- **Aerosol generation:** Probe sonication of open samples generates
+  aerosols. If the sample contains hazardous biological or chemical
+  material, sonicate inside a fume hood or biological safety cabinet.
+- **Heat:** Extended sonication heats the bath water and the sample.
+  Monitor temperature if heat-sensitive analytes are involved.
+- **Skin contact:** Do not immerse hands in the bath while it is
+  operating. Cavitation can damage skin tissue.
+- **Glassware:** Thin-walled or cracked glassware may fail under
+  sonication. Use containers rated for ultrasonic use.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Nitrile gloves
+- [ ] Lab coat
+- [ ] Hearing protection (for probe sonication at high power or
+      extended bath sonication)
+
+### Emergency Procedures
+
+For chemical spills from broken containers, follow
+[SOP-L004 Chemical Spill Response](SOP-L004-chemical-spill-response.qmd).
+If the sonicator sparks, smokes, or produces unusual odors, unplug
+immediately and report to the lab manager.
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Location  | Notes                          |
+|:--------------------------------------|:----------|:-------------------------------|
+| Fisher Scientific ultrasonic bath     | SGM 134   | With lid, timer, and heater (if equipped) |
+| Probe sonicator (if available)        | SGM 134   | With microtip and standard tip |
+| Rack or beaker holder for bath        | SGM 134   | Keeps sample containers off the bath floor for uniform sonication |
+| Deionized water                       | --        | For filling the bath           |
+| Detergent solution (for cleaning applications) | -- | Per [SOP-L101](SOP-L101-glassware-cleaning.qmd) |
+
+
+## 6. Procedure
+
+### 6.1 Ultrasonic Bath
+
+#### Setup
+
+1. Fill the bath with deionized water to the manufacturer's
+   recommended level (typically 2--3 cm above the transducer surface
+   or to the fill line). Do not operate the bath without water; this
+   damages the transducer.
+2. If using the bath for cleaning, add the appropriate detergent
+   concentration per [SOP-L101](SOP-L101-glassware-cleaning.qmd)
+3. Degas the bath water by running the sonicator for 5 minutes
+   without a load (degassed water transmits ultrasonic energy more
+   effectively)
+
+#### Operation
+
+1. Place sample containers (tubes, beakers, flasks) in the bath using
+   a rack or holder. Containers should be partially submerged but not
+   resting on the bath floor (direct contact with the floor can cause
+   hot spots and uneven sonication).
+2. Set the timer for the duration specified in the analytical SOP
+   (typical ranges: 1--15 minutes for sample dispersion, 15--30
+   minutes for glassware cleaning)
+3. If the bath has a heater, set the temperature as required (common:
+   room temperature for samples, 40--50 C for cleaning)
+4. Start the sonicator. Verify cavitation by observing fine bubbles
+   rising from the bath surface.
+5. Do not open the lid or reach into the bath during operation
+6. When the timer stops, remove containers using tongs or gloves
+
+#### Post-Use
+
+1. Turn off the sonicator
+2. If the bath water is visibly contaminated, drain, rinse, and refill
+   with fresh DI water
+3. Replace the bath water at least weekly even if it appears clean
+4. Wipe the exterior with a damp cloth
+
+### 6.2 Probe Sonicator
+
+#### Setup
+
+1. Select the appropriate tip (microtip for volumes less than 10 mL;
+   standard tip for 10--50 mL)
+2. Attach the tip securely; a loose tip reduces energy transfer and
+   can damage the probe
+3. Clamp the probe in a ring stand so the tip is immersed in the
+   sample to approximately one-third of the liquid depth. Do not
+   touch the container walls or bottom with the tip.
+
+#### Operation
+
+1. Set the power level and pulse settings per the analytical SOP
+   (common: 20--40% amplitude, 5 seconds on / 5 seconds off pulsing
+   to minimize heating)
+2. If the sample is hazardous, work inside a fume hood or biological
+   safety cabinet with the sash lowered
+3. Start sonication. A faint hissing and visible agitation confirm
+   cavitation.
+4. Monitor sample temperature; if overheating is a concern, place the
+   sample container in an ice bath during sonication
+5. After the prescribed duration, stop the sonicator
+
+#### Post-Use
+
+1. Immediately wipe the probe tip with a lint-free tissue dampened
+   with 70% ethanol or DI water
+2. For molecular biology work (eDNA, PCR), decontaminate the tip with
+   10% bleach, rinse with DI water, then wipe with 70% ethanol
+3. Inspect the tip for pitting or erosion; a heavily pitted tip
+   reduces performance and should be replaced
+
+
+## 7. Maintenance
+
+| Task                                  | Frequency              |
+|:--------------------------------------|:-----------------------|
+| Replace bath water                    | Weekly                 |
+| Clean bath interior (drain, wipe, refill) | Weekly             |
+| Inspect probe tip for pitting         | Before each use        |
+| Replace probe tip                     | When pitted or eroded  |
+| Check bath transducer (listen for changes in tone) | Monthly |
+
+
+## 8. Quality Control
+
+- For soil particle dispersion, verify that the sonication time and
+  power are sufficient by checking particle size distribution results
+  against the analytical SOP's acceptance criteria
+- For glassware cleaning, verify cleanliness by rinsing with DI water
+  and checking for water sheeting (clean glass sheets evenly; dirty
+  glass beads)
+- If the bath fails to produce visible cavitation, contact the lab
+  manager (the transducer may be failing)
+
+
+## 9. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used bath water (no hazardous chemicals) | Drain                     |
+| Used bath water (with detergent or chemicals) | Dispose per [SOP-L006](SOP-L006-waste-disposal.qmd) |
+| Spent probe tips              | Standard trash (stainless steel)         |
+
+
+## 10. References
+
+- Fisher Scientific. *Ultrasonic Bath User Manual*. (Consult for
+  model-specific instructions.)
+- Mason, T. J. & Lorimer, J. P. (2002). *Applied Sonochemistry: Uses
+  of Power Ultrasound in Chemistry and Processing*. Wiley-VCH.
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L101](SOP-L101-glassware-cleaning.qmd) | Glassware Cleaning      | Ultrasonic cleaning application   |
+| [L401](SOP-L401-texture-hydrometer.qmd) | Soil Texture (Hydrometer) | Particle dispersion              |
+| [L700](SOP-L700-dna-extraction.qmd)    | DNA Extraction           | Cell lysis application            |
+
+
+## 12. Training Record
+
+Before operating the sonicator independently, personnel must:
+
+1. Read this SOP in full
+2. Demonstrate proper bath fill level and degassing
+3. For probe sonicator users: demonstrate tip attachment, immersion
+   depth, and power/pulse settings under supervision
+4. Perform one sonication task under supervision
+5. Be signed off by the PI or lab manager

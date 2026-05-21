@@ -1,0 +1,262 @@
+---
+# =============================================================================
+# SOP-L112: Autoclave / Sterilization
+# =============================================================================
+title: "Autoclave and Steam Sterilization"
+sop-number: "SOP-L112"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the safe operation and maintenance of the
+laboratory autoclave for steam sterilization of glassware, media,
+reagent water, and biohazardous waste. Autoclaving uses saturated
+steam under pressure (typically 121 C at 15 psi for 15--30 minutes)
+to achieve sterilization by denaturing proteins and nucleic acids in
+microorganisms. In the EA Program, the autoclave is used to sterilize
+equipment for microbiological analyses (e.g.,
+[SOP-L305 Colilert](SOP-L305-colilert-quanti-tray.qmd)), to
+decontaminate foreign soil samples
+([SOP-L015](SOP-L015-foreign-soil-handling.qmd)), and to sterilize
+waste before disposal.
+
+
+## 2. Scope
+
+- **Applies to:** All use of the laboratory autoclave in EA Program
+  laboratories for sterilization of liquids, solids, glassware, and
+  biohazardous waste
+- **Does not apply to:** Dry heat sterilization (use muffle furnace or
+  drying oven); chemical sterilization (e.g., bleach, ethylene oxide);
+  filter sterilization (see [SOP-L114](SOP-L114-vacuum-filtration.qmd))
+- **Location:** *TBD* (confirm autoclave location; shared facility or
+  SGM)
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Authorize autoclave use, approve waste protocols |
+| Lab Manager       | Schedule maintenance, verify biological indicators |
+| Trained Personnel | Operate the autoclave per this SOP          |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Thermal/Pressure:** The autoclave operates at 121 C and 15 psi.
+  Pressurized steam causes severe burns. Never attempt to open the
+  door while the chamber is pressurized.
+- **Scalding liquids:** Autoclaved liquids are superheated and can
+  boil violently (bumping) when disturbed. Allow liquids to cool
+  inside the chamber for at least 10 minutes after the cycle
+  completes, and open the door slowly.
+- **Glassware failure:** Cracked or starred glassware may shatter
+  under pressure. Inspect all glassware before loading.
+- **Biological:** Biohazardous waste must be contained in autoclave
+  bags. Assume the exterior of bags is contaminated until the cycle
+  is verified.
+:::
+
+### Required PPE
+
+- [ ] Heat-resistant gloves (autoclave gloves, rated for steam)
+- [ ] Safety glasses or face shield
+- [ ] Lab coat
+- [ ] Closed-toed shoes
+
+### Emergency Procedures
+
+For steam burns, flush with cool running water for at least
+20 minutes and seek medical attention. If the autoclave fails to
+depressurize, do not force the door; shut off power and contact the
+lab manager. Refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| Laboratory autoclave (gravity or pre-vacuum) | Confirm model and location with lab manager |
+| Autoclave-safe trays (stainless steel or polypropylene) | For containing loads |
+| Autoclave bags (clear or orange, printed with biohazard symbol) | For waste sterilization |
+| Autoclave tape (indicator tape)       | External indicator; changes color at 121 C |
+| Biological indicator ampoules (e.g., *Geobacillus stearothermophilus* spore strips) | For periodic verification |
+| Chemical integrator strips (Class 5)  | Internal indicator in each load |
+| Aluminum foil                         | For covering flask openings    |
+| Heat-resistant secondary containers   | For liquids (to contain boil-over) |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Use Inspection
+
+1. Check the water level in the autoclave reservoir; refill with
+   distilled or deionized water if below the minimum mark
+2. Inspect the door gasket for cracks, brittleness, or debris; clean
+   if needed
+3. Verify that the drain screen/strainer is clear of debris
+4. Ensure the pressure gauge reads zero and the chamber is at ambient
+   temperature
+
+### 6.2 Loading
+
+1. Select the appropriate cycle for the load type:
+
+   | Load Type        | Cycle             | Temperature | Time     | Notes                          |
+   |:-----------------|:------------------|:------------|:---------|:-------------------------------|
+   | Wrapped instruments, glassware | Gravity | 121 C | 30 min | Loosely pack for steam penetration |
+   | Liquids (media, water) | Liquid / Slow exhaust | 121 C | 15--30 min | Leave caps loose or cover with foil; use slow exhaust to prevent boil-over |
+   | Biohazardous waste | Gravity          | 121 C       | 60 min   | Double-bag in autoclave bags; do not seal bags tightly |
+   | Foreign soil (SOP-L015) | Gravity     | 121 C       | 30 min   | Per SOP-L015 requirements      |
+
+2. Place items in autoclave-safe trays. Do not overload; leave space
+   for steam circulation.
+3. For liquids: loosen caps or cover with foil. Place containers in a
+   secondary tray to catch boil-over.
+4. For waste bags: leave bags slightly open or use bags with
+   steam-permeable patches. Place bags upright in a tray.
+5. Place a chemical integrator strip inside the center of the load
+   (the coldest point)
+6. Apply autoclave indicator tape to the outside of each package or bag
+
+### 6.3 Running the Cycle
+
+1. Close and latch the autoclave door securely
+2. Select the appropriate cycle (see table above)
+3. Start the cycle and record the start time in the autoclave logbook
+4. Monitor the temperature and pressure gauges during the initial
+   pressurization to confirm normal operation
+5. Do not leave the area until the autoclave has reached operating
+   temperature and pressure
+
+### 6.4 Unloading
+
+1. When the cycle is complete, verify that the chamber pressure has
+   returned to zero before opening the door
+2. Crack the door open 1--2 cm and wait 2--5 minutes to allow residual
+   steam to vent (prevents steam flash and liquid bumping)
+3. Wearing autoclave gloves and face shield, open the door fully
+4. Allow liquids to sit in the chamber for an additional 10 minutes
+   after opening the door before removing
+5. Remove trays using autoclave gloves; place on a heat-resistant
+   surface away from foot traffic
+6. Check the chemical integrator strip: it should show a complete
+   color change indicating adequate steam exposure. If incomplete,
+   the load must be re-processed.
+7. Record the cycle completion time, temperature, pressure, and
+   integrator result in the autoclave logbook
+
+### 6.5 Waste Handling After Sterilization
+
+1. After a successful waste cycle, seal the autoclave bags
+2. Sterilized biohazardous waste can be disposed in the regular trash
+   **only if** the institution's waste policy permits this and the
+   biological indicator program confirms efficacy
+3. Label the sealed bag with "Autoclaved" and the date
+4. If the chemical integrator did not pass, do not dispose; re-run the
+   cycle or contact the lab manager
+
+### 6.6 Shutdown
+
+1. After the final cycle of the day, drain the chamber if the
+   manufacturer recommends it
+2. Leave the door slightly ajar to allow the chamber to dry and
+   prevent odor buildup
+3. Wipe the door gasket with a damp cloth to remove debris
+
+
+## 7. Verification and Quality Control
+
+- **Chemical indicators:** Include a Class 5 integrator strip in every
+  load. This confirms that the load reached the target temperature for
+  the required duration.
+- **Biological indicators:** Run a *Geobacillus stearothermophilus*
+  spore test at least monthly (or per campus EH&S policy). Incubate
+  the exposed ampoule per the manufacturer's instructions. A positive
+  (growth) result means the autoclave failed; quarantine all loads
+  processed since the last successful test and contact the lab manager.
+- **Autoclave logbook:** Record every cycle: date, operator, load
+  description, cycle type, temperature, pressure, duration, and
+  indicator results.
+- **Annual maintenance:** Schedule a professional inspection and
+  calibration of the pressure gauge, safety valve, and temperature
+  sensor at least annually.
+
+
+## 8. Maintenance
+
+| Task                                  | Frequency              |
+|:--------------------------------------|:-----------------------|
+| Check water level in reservoir        | Before each use        |
+| Clean door gasket                     | Weekly                 |
+| Clean drain screen/strainer           | Weekly                 |
+| Run biological indicator test         | Monthly                |
+| Professional inspection and calibration | Annually              |
+| Replace door gasket                   | As needed (when cracked or leaking) |
+
+
+## 9. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Successfully autoclaved biohazardous waste | Standard trash (if permitted by campus policy) |
+| Failed autoclave loads (indicator did not pass) | Re-process or contact EH&S |
+| Used chemical/biological indicator strips | Standard trash         |
+| Autoclave water (drain)       | Drain (non-hazardous unless contaminated) |
+
+
+## 10. References
+
+- CDC/HICPAC. (2008). *Guideline for Disinfection and Sterilization
+  in Healthcare Facilities*. Centers for Disease Control and
+  Prevention.
+- Autoclave manufacturer's operating manual (consult for model-
+  specific instructions, cycle parameters, and maintenance schedules)
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | General safety framework          |
+| [L006](SOP-L006-waste-disposal.qmd)    | Waste Disposal           | Waste classification and pickup   |
+| [L015](SOP-L015-foreign-soil-handling.qmd) | Foreign Soil Handling | Autoclave requirement for imported soil |
+| [L101](SOP-L101-glassware-cleaning.qmd) | Glassware Cleaning      | Pre-sterilization cleaning        |
+| [L305](SOP-L305-colilert-quanti-tray.qmd) | Colilert Quanti-Tray | Sterilized glassware requirement  |
+
+
+## 12. Training Record
+
+Before operating the autoclave independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Observe a trained operator run a complete cycle (loading through
+   unloading and indicator verification)
+4. Demonstrate proper loading for liquids and for waste (bag
+   preparation, indicator placement, cycle selection)
+5. Run one complete cycle under supervision with a passing chemical
+   integrator result
+6. Be signed off by the PI or lab manager

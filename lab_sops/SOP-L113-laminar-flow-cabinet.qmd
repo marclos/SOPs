@@ -1,0 +1,228 @@
+---
+# =============================================================================
+# SOP-L113: Laminar Flow Cabinet
+# =============================================================================
+title: "Laminar Flow Cabinet Operation"
+sop-number: "SOP-L113"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the operation, decontamination, and
+maintenance of the ESCO laminar flow cabinet (clean bench) used in
+the EA Program laboratory. The cabinet provides an ISO Class 5
+(Class 100) particle-free work environment by passing HEPA-filtered
+air across the work surface in a unidirectional (laminar) flow
+pattern. It is used for aseptic work that requires protection of the
+*sample or product* from airborne contamination, including eDNA
+extraction setup, PCR master mix preparation, sterile media
+preparation, and filter handling for microplastics analysis.
+
+::: {.callout-important}
+A laminar flow cabinet (clean bench) protects the **work** from
+contamination. It does **not** protect the **operator** from hazardous
+aerosols, pathogens, or chemical vapors. For work involving
+biohazardous materials (BSL-2 organisms, human pathogens), a
+biological safety cabinet (BSC, Class II) is required. The EA Program
+does not currently work with BSL-2 materials, but if the scope changes,
+consult the PI and campus biosafety officer.
+:::
+
+
+## 2. Scope
+
+- **Applies to:** All use of the ESCO laminar flow cabinet in SGM 134,
+  including eDNA and PCR work, sterile reagent preparation, and
+  microplastics filter handling
+- **Does not apply to:** Fume hoods (for chemical vapor protection);
+  biological safety cabinets (BSC, Class II); field work
+- **Location:** SGM 134
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, schedule HEPA filter replacement |
+| Lab Manager       | Coordinate annual certification, maintain UV lamp log |
+| Trained Personnel | Operate the cabinet per this SOP            |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **UV radiation:** The cabinet may include a UV germicidal lamp for
+  surface decontamination. UV-C (254 nm) causes skin burns and eye
+  damage. Never operate the UV lamp while hands or face are inside the
+  cabinet. The UV lamp must be off and the sash open before working.
+- **Electrical:** The cabinet uses high-voltage blower motors.
+  Do not modify electrical components.
+- **Chemical:** If using ethanol or bleach for surface
+  decontamination, follow standard chemical safety precautions.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Lab coat (clean; lint-free preferred for molecular work)
+- [ ] Safety glasses (if UV lamp has been recently active, as a
+      precaution during the transition)
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| ESCO laminar flow cabinet             | SGM 134; horizontal or vertical flow |
+| 70% ethanol spray bottle              | For surface decontamination    |
+| 10% bleach solution (for eDNA work)   | Destroys residual DNA on surfaces |
+| Lint-free wipes (Kimtech or equivalent) | For wiping surfaces          |
+| UV germicidal lamp (if installed)     | Built into cabinet; timer-controlled or manual |
+
+
+## 6. Procedure
+
+### 6.1 Startup
+
+1. Ensure the UV lamp is off
+2. Raise or open the sash to the working position
+3. Turn on the blower fan and allow it to run for at least 15 minutes
+   before beginning work. This purges the cabinet interior and
+   establishes stable laminar flow.
+4. While the cabinet purges, wipe down the entire work surface, side
+   walls, and interior of the sash with 70% ethanol using lint-free
+   wipes. For eDNA work, follow the ethanol wipe with a 10% bleach
+   wipe, then a final ethanol wipe to remove bleach residue.
+5. Place only the materials needed for the immediate task inside the
+   cabinet. Minimize clutter; objects block airflow and create
+   turbulence.
+
+::: {.callout-tip}
+Arrange items so that clean (sterile) materials are upstream (closer
+to the HEPA filter) and used/contaminated items are downstream (closer
+to the operator). This prevents contaminated air from passing over
+clean surfaces.
+:::
+
+### 6.2 Working in the Cabinet
+
+1. Wear clean nitrile gloves; spray gloves with 70% ethanol before
+   reaching into the cabinet
+2. Work at least 10 cm from the front edge to stay within the laminar
+   flow zone
+3. Move slowly and deliberately; rapid arm movements disrupt laminar
+   flow and pull room air into the work zone
+4. Do not block the air intake grilles (front and/or rear) with
+   equipment, paper, or notebooks
+5. Do not use open flames (Bunsen burners) inside a laminar flow
+   cabinet; they disrupt airflow and can damage the HEPA filter
+6. Keep the cabinet running continuously while working; do not turn
+   the blower off between tasks during a session
+
+### 6.3 Shutdown
+
+1. Remove all materials from the cabinet
+2. Wipe the work surface with 70% ethanol (and bleach for eDNA work)
+3. Lower the sash if applicable
+4. Optionally, turn on the UV lamp for 15--30 minutes for surface
+   decontamination. Ensure no personnel are exposed to UV light during
+   this period. Post a "UV Lamp Active" sign.
+5. After UV exposure, turn off the UV lamp
+6. Turn off the blower (or leave it running on low if lab policy
+   requires continuous operation to maintain cabinet cleanliness)
+
+### 6.4 UV Lamp Use
+
+1. The UV lamp is a supplemental decontamination tool, not a
+   substitute for chemical wipe-down
+2. Run the UV lamp for 15--30 minutes after each use session
+3. Record UV lamp use in the UV lamp log (posted on the cabinet).
+   UV lamps lose efficacy over time; replace after the manufacturer's
+   recommended hours (typically 5,000--8,000 hours).
+4. Do not rely solely on UV decontamination for eDNA work; chemical
+   wipe-down with bleach is more effective at destroying DNA.
+
+
+## 7. Maintenance
+
+| Task                                  | Frequency              |
+|:--------------------------------------|:-----------------------|
+| Wipe interior with 70% ethanol        | Before and after each use |
+| Bleach wipe (eDNA/PCR work)           | Before and after each use |
+| Check blower operation and airflow    | Monthly (hold a tissue at the intake to confirm airflow direction) |
+| Replace pre-filter (if present)       | Every 6 months or when visibly dirty |
+| HEPA filter certification (by qualified technician) | Annually |
+| Replace UV lamp                       | Per manufacturer hours or when annual certification shows reduced germicidal output |
+
+
+## 8. Quality Control
+
+- Annual HEPA filter certification must confirm that the cabinet meets
+  ISO Class 5 (less than 100 particles per ft^3^ at 0.5 um). If it
+  fails, the cabinet must not be used for aseptic work until the
+  filter is replaced and the cabinet re-certified.
+- For eDNA/PCR work: periodically swab the work surface and run a PCR
+  negative control to verify that the decontamination procedure is
+  effective
+- Log all UV lamp hours to track lamp aging
+
+
+## 9. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used wipes (ethanol/bleach)   | Standard trash                           |
+| Used gloves                   | Standard trash                           |
+| Spent HEPA or pre-filters     | Standard trash (non-hazardous unless contaminated with biohazardous material) |
+| Spent UV lamp                 | Mercury-containing waste; coordinate with campus EH&S for recycling |
+
+
+## 10. References
+
+- ESCO Corporation. *Laminar Flow Cabinet User Manual*. (Consult for
+  model-specific instructions.)
+- NSF/ANSI 49. *Biosafety Cabinetry: Design, Construction,
+  Performance, and Field Certification*. (Reference standard for
+  BSCs; laminar flow cabinets are distinct but share some maintenance
+  practices.)
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | General safety framework          |
+| [L700](SOP-L700-dna-extraction.qmd)    | DNA Extraction           | eDNA work requiring clean bench   |
+| [L703](SOP-L703-pcr-gel-electrophoresis.qmd) | PCR and Gel Electrophoresis | PCR master mix preparation |
+| [L308](SOP-L308-microplastics-water.qmd) | Microplastics in Water | Filter handling under clean air   |
+
+
+## 12. Training Record
+
+Before operating the laminar flow cabinet independently, personnel
+must:
+
+1. Read this SOP in full
+2. Demonstrate proper startup, surface decontamination, and shutdown
+3. Demonstrate correct working technique (arm position, airflow
+   awareness, material arrangement)
+4. For eDNA/PCR users: demonstrate the bleach decontamination protocol
+5. Be signed off by the PI or lab manager

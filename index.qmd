@@ -115,10 +115,10 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|:------|
 | [F501](field_sops/SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring (Sensors) | 0.1 | |
 | [F502](field_sops/SOP-F502-air-quality-portable-sensors.qmd) | Air Quality Monitoring (Portable Sensors) | 0.1 | |
-| [F503](field_sops/) | *Particulate Matter Sampling* | -- | TBD |
+| [F503](field_sops/SOP-F503-particulate-matter-sampling.qmd) | *Particulate Matter Sampling* | -- | TBD |
 | [F504](field_sops/SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer (Field Deployment) | 1.0 | |
-| [F505](field_sops/) | *Passive Air Samplers (Diffusion Tubes)* | -- | To be developed  |
-| [F506](field_sops/) | *Noise Level Monitoring* | -- | To be developed |
+| [F505](field_sops/SOP-F505-passive-air-samplers.qmd) | *Passive Air Samplers (Diffusion Tubes)* | -- | To be developed  |
+| [F506](field_sops/SOP-F506-noise-level-monitoring.qmd) | *Noise Level Monitoring* | -- | To be developed |
 
 ### Microbes, Plants, and Animals (F600--F699)
 
@@ -157,11 +157,11 @@ tbl-classes: table-sm
 | [L003](lab_sops/SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 | |
 | [L004](lab_sops/SOP-L004-chemical-spill-response.qmd) | Chemical Spill Response | 0.1 | |
 | [L005](lab_sops/SOP-L005-chemical-inventory.qmd) | Chemical Inventory Management | 0.1 | |
-| L006 | *Waste Disposal and Hazardous Waste Pickup* | -- | To be developed  |
+| [L006](lab_sops/SOP-L006-waste-disposal.qmd) | Waste Disposal and Hazardous Waste Pickup | -- | |
 | [L007](lab_sops/SOP-L007-equipment-inventory.qmd) | Equipment and Instrument Inventory | 1.0 | |
 | [L010](lab_sops/SOP-L010-lab-notebook-recording.qmd) | Lab Notebook Recording | 0.1 | |
 | [L015](lab_sops/SOP-L015-foreign-soil-handling.qmd) | Foreign Soil Handling (Import Permits) | 0.3 | |
-| [L020](lab_sops/) | *Reagent and Standard Preparation* | -- | To be developed  |
+| [L020](lab_sops/SOP-L020-reagent-standard-preparation.qmd) | Reagent and Standard Preparation | -- |   |
 
 ### Laboratory Equipment (L100--L199)
 
@@ -178,12 +178,12 @@ tbl-classes: table-sm
 | [L108](lab_sops/) | *Clinical Centrifuge* | 0.1 | |
 | [L109](lab_sops/SOP-L109-sorvall-centrifuge.qmd) | Sorvall ST8R Centrifuge | 0.1 | |
 | [L110](lab_sops/) | *Ozone Generator Operation* | 0.1 | |
-| [L111](lab_sops/) | *Muffle Furnace* | -- | To be developed |
-| [L112](lab_sops/) | *Autoclave / Sterilization* | -- | To be developed |
-| [L113](lab_sops/) | *Laminar Flow Cabinet* | -- | To be developed  |
-| [L114](lab_sops/) | *Vacuum Filtration Apparatus* | -- | To be developed |
-| [L115](lab_sops/) | *Sonicator* | -- | To be developed |
-| [L116](lab_sops/) | *Sample Grinding and Homogenization (Ball Mill, Mortar and Pestle)* | -- | To be developed  |
+| [L111](lab_sops/SOP-L111-muffle-furnace.qmd) | Muffle Furnace | -- | |
+| [L112](lab_sops/SOP-L112-autoclave-sterilization.qmd) | Autoclave / Sterilization | -- |  |
+| [L113](lab_sops/SOP-L113-laminar-flow-cabinet.qmd) | Laminar Flow Cabinet | -- |   |
+| [L114](lab_sops/SOP-L114-vacuum-filtration.qmd) | Vacuum Filtration Apparatus | -- |  |
+| [L115](lab_sops/SOP-L115-sonicator.qmd) | Sonicator | -- |  |
+| [L116](lab_sops/SOP-L116-sample-grinding-homogenization.qmd) | Sample Grinding and Homogenization (Ball Mill, Mortar and Pestle) | -- |   |
 
 ### Instrumentation (L200--L299)
 

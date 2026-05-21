@@ -1,0 +1,273 @@
+---
+# =============================================================================
+# SOP-L114: Vacuum Filtration Apparatus
+# =============================================================================
+title: "Vacuum Filtration Apparatus"
+sop-number: "SOP-L114"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the assembly, operation, and maintenance of
+vacuum filtration systems used in the EA Program laboratory. Vacuum
+filtration separates suspended solids from liquids by drawing the
+liquid through a filter membrane or glass fiber filter under reduced
+pressure. It is used across many analytical methods, including soil
+and water extract filtration (SOPs L403, L409, L418), microplastics
+analysis ([SOP-L308](SOP-L308-microplastics-water.qmd)), chlorophyll
+extraction ([SOP-L310](SOP-L310-chlorophyll-extraction.qmd)), and
+eDNA concentration ([SOP-L700](SOP-L700-dna-extraction.qmd)).
+
+
+## 2. Scope
+
+- **Applies to:** All vacuum filtration in EA Program laboratories
+  using filter flasks, filter funnels (Buchner, glass frit,
+  analytical, or Nalgene disposable units), and Fisher Scientific
+  Maxidry vacuum pumps or building vacuum lines
+- **Does not apply to:** Syringe filtration (push-through, no vacuum);
+  centrifugal ultrafiltration; field filtration of eDNA samples
+  (covered in [SOP-F700](../field_sops/SOP-F700-edna-field-sampling.qmd))
+- **Location:** SGM 133 and SGM 134
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP                                 |
+| Lab Manager       | Maintain pumps, replace tubing              |
+| Trained Personnel | Operate filtration systems per this SOP     |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Glassware under vacuum:** Filter flasks (Erlenmeyer with
+  sidearm) are under reduced pressure during operation. Cracked or
+  starred flasks can implode. Inspect all glassware before each use;
+  reject any with visible damage.
+- **Chemical:** Filtrates may contain hazardous chemicals (acids,
+  solvents). Handle filtrate according to the analytical SOP.
+- **Biological:** Samples may contain pathogens. Wear gloves.
+- **Sharp edges:** Broken glass fiber filters and fritted glass
+  funnels can cut skin. Handle with forceps.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses (mandatory; protects against glass implosion)
+- [ ] Nitrile gloves
+- [ ] Lab coat
+
+### Emergency Procedures
+
+If a filter flask implodes, do not touch the broken glass. Sweep up
+fragments with a brush and dustpan (not hands) and dispose in a
+sharps container or labeled "Broken Glass" box. If contaminated with
+hazardous chemicals, follow
+[SOP-L004 Chemical Spill Response](SOP-L004-chemical-spill-response.qmd).
+
+
+## 5. Equipment and Materials
+
+### Filtration Hardware
+
+| Item                                  | Qty | Location  | Notes                          |
+|:--------------------------------------|:----|:----------|:-------------------------------|
+| Fisher Scientific Maxidry vacuum pump | 4   | SGM 134   | Oil-free diaphragm pump        |
+| Filter flask (sidearm Erlenmeyer, 500 mL or 1 L) | Multiple | SGM 134 | Borosilicate glass; inspect for cracks |
+| Rubber stopper with hole (matched to funnel stem) | Multiple | SGM 134 | Connects funnel to flask      |
+| Vacuum tubing (thick-wall rubber or silicone) | -- | SGM 134 | Check for cracks and kinks    |
+| In-line vacuum trap (flask or bottle between the filter flask and pump) | 1 per pump | SGM 134 | Prevents liquid from reaching the pump |
+
+### Funnel Types
+
+| Funnel Type                           | Application                              |
+|:--------------------------------------|:-----------------------------------------|
+| Buchner funnel (porcelain or polypropylene) | General filtration with flat filter paper or GF filters |
+| Glass frit funnel (sintered glass, various porosities) | Fine filtration; reusable; requires careful cleaning |
+| Nalgene analytical filter unit (disposable, sterile, 0.45 um PES) | Sterile filtration for microbiological and eDNA work |
+| Millipore glass filter holder (47 mm) | Membrane filtration for water quality (TSS, chlorophyll, microplastics) |
+
+### Filter Media
+
+| Filter Type                           | Pore Size | Application                          |
+|:--------------------------------------|:----------|:-------------------------------------|
+| Whatman GF/A (glass fiber)            | 1.6 um    | General particulate filtration       |
+| Whatman GF/F (glass fiber)            | 0.7 um    | Chlorophyll, DOC                     |
+| Whatman 934-AH (glass fiber)          | 1.5 um    | TSS, microplastics (SOP-L308)        |
+| Cellulose nitrate membrane            | 0.45 um   | Bacterial enumeration, general       |
+| PES membrane (polyethersulfone)       | 0.45 um   | Sterile filtration, eDNA             |
+| PVDF membrane                         | 0.45 um   | DOC filtration (low carbon blank)    |
+| PTFE membrane                         | 0.45 um   | Organic solvent filtration           |
+
+::: {.callout-note}
+Select the filter type and pore size specified in the relevant
+analytical SOP. Using the wrong filter can bias results (e.g.,
+cellulose acetate filters leach DOC and are unsuitable for carbon
+analysis).
+:::
+
+
+## 6. Procedure
+
+### 6.1 Assembly
+
+1. Inspect the filter flask for cracks or stars. Do not use damaged
+   flasks.
+2. Connect vacuum tubing from the flask sidearm to the vacuum trap
+   inlet, and from the vacuum trap outlet to the pump
+3. Place the rubber stopper into the neck of the flask
+4. Seat the appropriate funnel into the stopper
+5. If using a 47 mm filter holder: assemble the base, place the
+   filter on the fritted support using forceps (avoid touching the
+   filter with fingers), and clamp the funnel top in place
+
+### 6.2 Pre-Wetting or Pre-Combustion (If Required)
+
+- For gravimetric analyses (TSS): pre-dry and pre-weigh the filter
+  per the analytical SOP
+- For DOC filtration: pre-rinse the filter with 50--100 mL of sample
+  or DI water and discard the first rinse (removes filter-leached
+  carbon)
+- For pre-combusted GF/F filters (chlorophyll, DOC): filters should
+  have been fired at 450 C for 4 hours per
+  [SOP-L111](SOP-L111-muffle-furnace.qmd) and stored in a clean
+  container
+
+### 6.3 Filtration
+
+1. Turn on the vacuum pump. Verify suction by briefly covering the
+   funnel opening with a gloved hand (you should feel resistance).
+2. Pour the sample into the funnel slowly and steadily. For
+   particulate-laden samples, add in small aliquots to avoid
+   overloading the filter.
+3. Allow the liquid to pass through completely
+4. Rinse the funnel walls with a small volume of DI water (or the
+   matrix specified in the analytical SOP) to transfer any adhering
+   particles to the filter
+5. Continue vacuum for 10--30 seconds after the last visible liquid
+   has passed through to remove residual moisture (do not over-dry
+   if the filter will be extracted for chlorophyll or DOC)
+6. Turn off the vacuum pump
+7. Carefully disconnect the funnel from the stopper
+
+### 6.4 Filter Handling
+
+1. Remove the filter from the funnel using clean forceps
+2. Transfer the filter to the appropriate container per the analytical
+   SOP:
+   - Aluminum tin (for drying/weighing: TSS)
+   - Amber vial with extraction solvent (chlorophyll)
+   - Extraction tube (eDNA, microplastics)
+   - Petri dish (if storing before analysis)
+3. Label the container immediately
+
+### 6.5 Filtrate Handling
+
+1. If the filtrate is the analyte of interest (e.g., dissolved
+   nutrients, DOC), transfer it from the filter flask to a labeled
+   sample vial using a clean graduated cylinder or by pouring
+2. Acidify or preserve the filtrate per the analytical SOP
+3. If the filtrate is waste, dispose per
+   [SOP-L006](SOP-L006-waste-disposal.qmd)
+
+### 6.6 Cleanup
+
+1. Discard used disposable funnels and filters per the analytical SOP
+2. Rinse reusable funnels, stoppers, and filter flasks with DI water
+   immediately after use
+3. For glass frit funnels: back-flush with DI water, then soak in an
+   appropriate cleaning solution (acid bath for inorganic work,
+   detergent for general use) per
+   [SOP-L101](SOP-L101-glassware-cleaning.qmd)
+4. Coil vacuum tubing loosely (do not kink) and store
+
+
+## 7. Vacuum Pump Maintenance
+
+| Task                                  | Frequency              |
+|:--------------------------------------|:-----------------------|
+| Check vacuum tubing for cracks/kinks  | Before each use        |
+| Empty and clean the vacuum trap       | After each use session |
+| Verify pump suction (should reach at least 20 in Hg / 500 mmHg) | Monthly |
+| Replace vacuum tubing                 | Annually or when degraded |
+| Service pump (diaphragm replacement)  | Per manufacturer schedule or when suction declines |
+
+::: {.callout-important}
+Always use a vacuum trap (secondary flask or bottle) between the
+filter flask and the pump. If liquid reaches the pump, it can damage
+the diaphragm and contaminate the pump internals.
+:::
+
+
+## 8. Quality Control
+
+- For analytical methods requiring pre-weighed filters (TSS),
+  follow the weighing QC in the analytical SOP
+- For DOC filtration, verify filter blanks by filtering DI water and
+  analyzing the filtrate; blank DOC should be less than 0.5 mg/L
+- Inspect all glassware for cracks before every use
+
+
+## 9. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used filters (non-hazardous)  | Standard trash                           |
+| Used filters (hazardous matrix) | Chemical waste per SOP-L006            |
+| Filtrate (hazardous)          | Appropriate waste stream per SOP-L006    |
+| Filtrate (non-hazardous)      | Drain with water if approved by EH&S     |
+| Broken glassware              | Sharps container or "Broken Glass" box   |
+
+
+## 10. References
+
+- Fisher Scientific. *Maxidry Vacuum Pump User Manual*.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of
+  Water and Wastewater*. 22nd ed. Section 2540: Solids.
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L101](SOP-L101-glassware-cleaning.qmd) | Glassware Cleaning      | Cleaning funnels and flasks       |
+| [L111](SOP-L111-muffle-furnace.qmd)    | Muffle Furnace           | Pre-combustion of GF filters      |
+| [L308](SOP-L308-microplastics-water.qmd) | Microplastics in Water | Filtration application            |
+| [L310](SOP-L310-chlorophyll-extraction.qmd) | Chlorophyll Extraction | Filtration application         |
+| [L403](SOP-L403-nitrate-ammonium-kcl.qmd) | KCl Extraction        | Extract filtration                |
+| [L409](SOP-L409-microbial-biomass-carbon.qmd) | Microbial Biomass C | Extract filtration               |
+| [L700](SOP-L700-dna-extraction.qmd)    | DNA Extraction           | eDNA filter processing            |
+
+
+## 12. Training Record
+
+Before operating vacuum filtration systems independently, personnel
+must:
+
+1. Read this SOP in full
+2. Demonstrate proper assembly of the filtration system (flask,
+   stopper, funnel, trap, pump, tubing)
+3. Demonstrate correct filter handling with forceps
+4. Perform one filtration under supervision
+5. Be signed off by the PI or lab manager
