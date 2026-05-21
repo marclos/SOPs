@@ -1,0 +1,249 @@
+---
+# =============================================================================
+# SOP-F305: Sediment Sampling (Streams and Lakes)
+# =============================================================================
+title: "Sediment Sampling -- Streams and Lakes"
+sop-number: "SOP-F305"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the collection, handling, and field
+documentation of sediment samples from streams, rivers, lakes, and
+reservoirs. Sediment is a major sink and source of nutrients, metals,
+organic contaminants, and fine particles in aquatic systems. The
+procedures in this SOP are designed to produce samples suitable for
+physical characterization (grain size, organic matter content),
+chemical analysis (metals, nutrients, organic contaminants), and
+biological assessment (benthic invertebrate habitat substrate)
+[@mudroch1999; @usepa2001sediment].
+
+
+## 2. Scope
+
+- **Applies to:** Surficial sediment sampling (top 0--10 cm) in
+  wadeable streams, non-wadeable rivers (from bridges or boats), and
+  lentic systems (lakes, ponds, reservoirs). Deeper cores for
+  stratigraphic or paleolimnological work follow the same safety and
+  documentation requirements but use specialized coring equipment
+  not covered in detail here.
+- **Does not apply to:** Soil sampling on upland or riparian surfaces
+  (see [SOP-F400](SOP-F400-soil-sampling.qmd)); suspended sediment
+  sampling by filtration (see future SOP-L312); bedload transport
+  measurements; marine sediment sampling
+- **Location:** All EA Program surface water field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| PI / Field Lead   | Approve sampling plan, coordinate permits   |
+| Trained Personnel | Collect and handle samples per this SOP     |
+| New Students      | Complete training before independent sampling |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Wading in streams and working from boats carry slip,
+  fall, and drowning hazards. Sediment sampling often involves
+  bending, lifting, and handling heavy wet material.
+- **Biological:** Sediment may harbor pathogens, parasites (e.g.,
+  *Schistosoma*, *Naegleria*), and sharp debris (glass, metal).
+- **Chemical:** Sediment from urban or industrial sites may contain
+  heavy metals, hydrocarbons, or pesticides. Avoid skin contact
+  and do not ingest.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves (doubled for contaminated sites)
+- [ ] Wading boots or hip waders
+- [ ] Personal flotation device (boat sampling)
+- [ ] Safety glasses
+- [ ] Sun protection
+
+### Emergency Procedures
+
+A minimum of two people must be present for any in-water work. Refer
+to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Sampling Devices
+
+| Device                     | Application                                 | Notes                          |
+|:---------------------------|:--------------------------------------------|:-------------------------------|
+| Stainless steel scoop or trowel | Wadeable stream surficial sediment    | Simplest; suitable for coarse to fine sediment |
+| Ponar grab sampler (standard or petite) | Lakes, deep pools, non-wadeable rivers | Collects approximately 0.023 m^2^ (petite) to 0.052 m^2^ (standard) |
+| Ekman grab sampler         | Soft lake-bottom sediment (silt, clay, organic muck) | Lighter than Ponar; not suitable for sand or gravel |
+| Hand corer (acrylic tube, 5--7 cm ID) | Intact surficial cores in soft sediment | Preserves vertical stratigraphy |
+| Gravity corer or piston corer | Deep cores for paleolimnological work | Specialized; consult PI       |
+
+### Support Equipment
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| Stainless steel bowls and spoons      | For homogenizing grab samples  |
+| Pre-labeled sample bags (Whirl-Pak) or jars | Appropriate to analyte (see Section 7) |
+| Cooler with ice packs                 | Maintain samples at 4 C        |
+| Deionized water (squeeze bottle)      | For rinsing equipment          |
+| Measuring tape and depth rod          | For recording water depth at sample location |
+| GPS unit                              | For recording coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| Field notebook and data sheets        | Waterproof (Rite in the Rain)  |
+| Camera                                | For photo-documenting sample location and sediment appearance |
+| Chain of custody forms                | Per [SOP-F008](SOP-F008-sample-labeling-coc-transport.qmd) |
+
+
+## 6. Procedure
+
+### 6.1 Site Selection and Documentation
+
+1. Identify the sampling location based on the study design (e.g.,
+   depositional zones for contaminant assessment, riffles for
+   substrate characterization)
+2. Record GPS coordinates, date, time, water depth, and a visual
+   description of the sediment surface (color, texture, odor,
+   presence of debris or biota) in the field notebook
+3. Photograph the site and the sediment surface before disturbing it
+
+### 6.2 Stream Sediment (Wadeable)
+
+1. Approach the sampling location from downstream to avoid disturbing
+   the target area
+2. Using a stainless steel scoop or trowel, carefully skim the top
+   5--10 cm of sediment. Avoid collecting underlying undisturbed
+   substrate unless the study requires a depth profile.
+3. Transfer the sediment into a stainless steel bowl
+4. If a composite sample is required, collect sediment from 3--5
+   locations within the reach (e.g., across the channel width at the
+   designated transect) and combine in the bowl
+5. Homogenize using a stainless steel spoon; remove large rocks,
+   sticks, and debris
+6. Transfer the homogenized sample into the appropriate container(s)
+   (see Section 7)
+
+### 6.3 Lake and Reservoir Sediment (Grab Sampler)
+
+1. Lower the Ponar or Ekman grab sampler to the bottom on a measured
+   line from a boat or dock. Record the water depth.
+2. Trip the sampler per the manufacturer's instructions
+3. Raise the sampler slowly to avoid losing material; keep it
+   horizontal as it breaks the water surface
+4. Inspect the sample: a successful grab is at least half full with an
+   undisturbed sediment surface and overlying water. Reject and re-
+   sample if the grab is less than one-third full, tilted, or shows
+   evidence of washout [@usepa2001sediment].
+5. Carefully drain overlying water without disturbing the sediment
+   surface
+6. For surficial samples, subsample the top 2--5 cm using a stainless
+   steel spoon
+7. Homogenize and containerize as in Section 6.2
+
+### 6.4 Intact Cores (Hand Corer)
+
+1. Push the acrylic core tube vertically into soft sediment to the
+   desired depth (typically 10--30 cm)
+2. Cap the top of the tube (creating suction) before pulling the core
+   from the sediment
+3. Once extracted, cap the bottom immediately
+4. Label the core tube with sample ID, date, depth, and orientation
+   (top/bottom)
+5. Keep the core vertical during transport and store at 4 C
+
+### 6.5 Decontamination Between Sites
+
+1. Scrub all stainless steel equipment with a brush and rinse with
+   site water
+2. Follow with a deionized water rinse
+3. For trace metal work, perform an additional acid rinse (10% HNO~3~)
+   followed by a triple DI water rinse
+4. See [SOP-F007 Field Decontamination](SOP-F007-field-decontamination.qmd)
+
+
+## 7. Sample Containers and Preservation
+
+| Analyte                    | Container                | Preservative                |
+|:---------------------------|:-------------------------|:----------------------------|
+| Grain size / texture       | Whirl-Pak or poly bag    | Refrigerate 4 C             |
+| Organic matter (LOI)       | Whirl-Pak or poly bag    | Refrigerate 4 C             |
+| Total metals               | Glass jar (acid-washed)  | Refrigerate 4 C; freeze if holding > 7 days |
+| Nutrients (N, P)           | Whirl-Pak or poly bag    | Refrigerate 4 C; freeze if holding > 48 hours |
+| Organic contaminants       | Glass jar (solvent-rinsed) | Refrigerate 4 C           |
+| Benthic macroinvertebrates | Separate container       | 95% ethanol or 10% formalin |
+
+::: {.callout-note}
+Confirm specific container requirements and holding times with the
+analytical laboratory before each sampling event.
+:::
+
+
+## 8. Quality Control
+
+- Collect field duplicates at a rate of at least 1 per 10 samples (or
+  1 per sampling event, whichever is greater)
+- Collect one equipment blank per sampling event: rinse
+  decontaminated equipment with DI water and submit the rinse as a
+  sample
+- Record all deviations from this SOP in the field notebook
+- Complete the chain of custody form per
+  [SOP-F008](SOP-F008-sample-labeling-coc-transport.qmd)
+- Photograph each grab or core before subsampling
+
+
+## 9. Data Management
+
+1. Enter field data into the project database within 48 hours
+2. Archive original field data sheets (scan if paper)
+3. When laboratory results are received, merge with field data and
+   apply QC flags per
+   [SOP-L802](../lab_sops/SOP-L802-quality-control.qmd)
+
+
+## 10. References
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F007](SOP-F007-field-decontamination.qmd) | Field Decontamination | Between-site decontamination      |
+| [F008](SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling and COC | Sample ID and chain of custody |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Companion water collection        |
+| [F400](SOP-F400-soil-sampling.qmd)     | Soil Sampling             | Upland soil sampling              |
+| [L406](../lab_sops/SOP-L406-loss-on-ignition.qmd) | Loss on Ignition   | Sediment organic matter analysis  |
+| [L410](../lab_sops/SOP-L410-hotplate-acid-digestion.qmd) | Acid Digestion | Sediment metals preparation  |
+
+
+## 12. Training Record
+
+Before collecting sediment samples independently, personnel must:
+
+1. Read this SOP, [SOP-F001](SOP-F001-field-safety.qmd), and
+   [SOP-F007](SOP-F007-field-decontamination.qmd) in full
+2. Observe a trained operator demonstrate grab sampler deployment,
+   core collection, and decontamination
+3. Practice deploying the Ponar or Ekman sampler (or hand corer) under
+   supervision
+4. Demonstrate proper homogenization, containerization, and labeling
+5. Be signed off by the PI or field lead

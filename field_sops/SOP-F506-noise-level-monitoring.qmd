@@ -1,0 +1,247 @@
+---
+# =============================================================================
+# SOP-F506: Noise Level Monitoring
+# =============================================================================
+title: "Noise Level Monitoring"
+sop-number: "SOP-F506"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes field measurement and documentation of
+environmental noise levels using handheld sound level meters and
+logging dosimeters. Environmental noise is an increasingly recognized
+pollutant affecting human health (cardiovascular risk, sleep
+disturbance, cognitive impairment) and wildlife behavior (altered
+communication, habitat avoidance) [@who2018; @barber2010].
+
+Noise monitoring in the EA Program supports community environmental
+assessments, transportation corridor studies, urban ecology research,
+and environmental justice analyses where noise disproportionately
+affects disadvantaged communities.
+
+
+## 2. Scope
+
+- **Applies to:** Outdoor environmental noise measurements
+  (community noise, traffic noise, construction noise, natural
+  soundscapes) using Type 1 or Type 2 integrating sound level meters
+  and personal noise dosimeters
+- **Does not apply to:** Occupational noise exposure assessment
+  (governed by OSHA standards and conducted by campus EH&S); indoor
+  building acoustics; underwater acoustics
+- **Location:** All EA Program field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| PI / Field Lead   | Approve monitoring design, coordinate site access |
+| Trained Personnel | Calibrate instruments, collect and document measurements |
+| New Students      | Complete training before independent monitoring |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Traffic:** Noise monitoring often occurs near roadways. Wear a
+  high-visibility vest. Never stand in a travel lane.
+- **Hearing:** If monitoring near very loud sources (e.g., active
+  construction, aircraft operations above 85 dBA), wear hearing
+  protection.
+- **Personal safety:** Monitoring in urban areas may involve working
+  alone or in unfamiliar neighborhoods. Work in pairs when possible
+  and inform someone of your schedule and locations.
+:::
+
+### Required PPE
+
+- [ ] High-visibility vest (near roadways)
+- [ ] Hearing protection (if sustained levels exceed 85 dBA)
+- [ ] Closed-toed shoes
+- [ ] Sun protection
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| Integrating sound level meter (Type 1 or Type 2, IEC 61672) | With A-weighting and slow/fast time weighting |
+| Acoustic calibrator (94 dB or 114 dB reference) | Matched to the microphone; calibrate before and after each session |
+| Windscreen (foam cover for microphone) | Required for all outdoor measurements |
+| Tripod with microphone mount          | Position microphone at 1.2--1.5 m above ground |
+| Noise dosimeter (optional)            | For unattended time-integrated measurements |
+| GPS unit or smartphone                | For recording coordinates      |
+| Field notebook and noise monitoring data sheet | Record metadata and observations |
+| Stopwatch or timer                    | For timed measurement intervals |
+| Camera                                | For photo-documenting site and source conditions |
+| Spare batteries                       | For the meter and calibrator   |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Field Calibration
+
+1. In a quiet indoor location, attach the acoustic calibrator to the
+   microphone and turn on the calibrator
+2. Adjust the sound level meter reading to match the calibrator
+   reference level (e.g., 94.0 dB) per the meter's calibration
+   procedure
+3. Record the calibration date, time, calibrator serial number, and
+   meter reading in the field notebook
+4. If the meter reading deviates from the reference by more than
+   0.5 dB, recalibrate or service the instrument
+
+### 6.2 Site Setup
+
+1. Select a measurement location that represents the receptor of
+   interest (e.g., residential facade, park boundary, school
+   playground)
+2. Position the microphone on a tripod at 1.2--1.5 m above the ground,
+   at least 3.5 m from any large reflecting surface (building wall,
+   barrier, parked vehicle) to minimize reflections [@iso1996]
+3. Orient the microphone toward the dominant noise source (or upward
+   if the sound field is diffuse)
+4. Attach the windscreen
+5. Record: site ID, GPS coordinates, date, time, weather conditions
+   (wind speed and direction, temperature), distance and bearing to
+   the dominant source(s), ground cover, and any shielding
+
+::: {.callout-important}
+Do not measure when wind speed exceeds 5 m/s (approximately 11 mph).
+Wind noise inflates readings even with a windscreen. Record the wind
+speed at the start and end of each measurement period.
+:::
+
+### 6.3 Measurement Protocol
+
+The following protocol collects standard community noise metrics.
+Adjust the duration and intervals to match the study design.
+
+1. Set the meter to: A-weighting, fast time constant, and L~eq~
+   (equivalent continuous level) integration mode
+2. Start the measurement and let it run for the designated period:
+   - **Short-term survey:** 15 minutes per measurement location (the
+     minimum recommended by most community noise standards)
+   - **1-hour L~eq~:** Run for 60 minutes if comparing to local
+     noise ordinance limits
+   - **Long-term (24-hour):** Use a dosimeter or logging meter; deploy
+     and secure the instrument
+3. During the measurement, note all significant noise events in the
+   field notebook: vehicle pass-bys, aircraft overflights, dog
+   barking, construction activity, etc. Record the time and estimated
+   duration of each event.
+4. At the end of the measurement period, record the following metrics
+   from the meter display:
+   - L~eq~ (equivalent continuous level)
+   - L~max~ (maximum level)
+   - L~min~ (minimum level)
+   - L~10~, L~50~, L~90~ (statistical levels, if the meter computes
+     them)
+5. If the meter logs time-history data, download the file after the
+   session
+
+### 6.4 Post-Field Calibration Check
+
+1. After the final measurement at the last site, re-check the
+   calibration with the acoustic calibrator
+2. Record the post-measurement calibration reading. If it differs
+   from the pre-measurement value by more than 1.0 dB, flag all data
+   from that session for review.
+
+### 6.5 Data Recording
+
+For each measurement, record on the data sheet:
+
+- Site ID, GPS coordinates, date, start/end times
+- Meter make, model, serial number
+- Calibration readings (pre and post)
+- Weather: wind speed/direction, temperature, sky conditions
+- Source description and distance
+- Measurement duration and metrics (L~eq~, L~max~, L~min~, L~10~,
+  L~50~, L~90~)
+- Notable noise events and their times
+- Observer name
+
+
+## 7. Data Interpretation
+
+| Metric  | Meaning                                           |
+|:--------|:--------------------------------------------------|
+| L~eq~   | Energy-averaged sound level over the measurement period; the single most important descriptor of community noise exposure |
+| L~max~  | Highest instantaneous level recorded              |
+| L~min~  | Lowest instantaneous level recorded               |
+| L~10~   | Level exceeded 10% of the time (approximates "loud" events) |
+| L~50~   | Median level                                      |
+| L~90~   | Level exceeded 90% of the time (approximates background or residual noise) |
+| L~dn~   | Day-night average; L~eq~ with a 10 dB penalty applied to nighttime (10 PM--7 AM) hours |
+
+::: {.callout-note}
+Community noise standards in California (Title 24, local general plans)
+typically set limits in terms of L~dn~ (CNEL) or L~eq~ for specific
+land use categories. A residential exterior standard of 60--65 dB
+L~dn~ is common.
+:::
+
+
+## 8. Quality Control
+
+- Calibrate before and after every measurement session; flag data if
+  drift exceeds 1.0 dB
+- Use the windscreen for all outdoor measurements
+- Do not measure when wind speed exceeds 5 m/s
+- Record all extraneous noise events so they can be identified in
+  the time-history data
+- For long-term deployments, perform a calibration check at each data
+  retrieval visit
+- Maintain a calibration and maintenance log for each meter
+
+
+## 9. Waste Disposal
+
+No waste is generated by noise monitoring. Dispose of used batteries
+per campus battery recycling procedures.
+
+
+## 10. References
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F502](SOP-F502-air-quality-portable-sensors.qmd) | Portable PM Sensors | Companion air monitoring SOP      |
+| [F505](SOP-F505-passive-air-samplers.qmd) | Passive Air Samplers   | Companion air monitoring SOP      |
+
+
+## 12. Training Record
+
+Before performing noise monitoring independently, personnel must:
+
+1. Read this SOP and [SOP-F001](SOP-F001-field-safety.qmd) in full
+2. Demonstrate proper calibration of the sound level meter
+3. Perform a supervised 15-minute measurement at one site, including
+   correct microphone positioning, windscreen use, event logging, and
+   post-calibration check
+4. Demonstrate ability to read and record L~eq~, L~max~, L~min~, and
+   statistical levels from the meter
+5. Be signed off by the PI or field lead

@@ -1,0 +1,264 @@
+---
+# =============================================================================
+# SOP-L006: Waste Disposal and Hazardous Waste Pickup
+# =============================================================================
+title: "Waste Disposal and Hazardous Waste Pickup"
+sop-number: "SOP-L006"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release; consolidates waste procedures from L003 Sections 8.1--8.6"
+---
+
+## 1. Purpose
+
+This procedure describes the classification, segregation, labeling,
+storage, and disposal of all laboratory waste generated in EA Program
+laboratories, with emphasis on hazardous chemical waste requiring
+EH&S pickup. It consolidates and expands the waste disposal sections
+of [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
+(Sections 8.1--8.6) into a standalone reference that can be posted in
+the waste accumulation area and used during training.
+
+
+## 2. Scope
+
+- **Applies to:** All laboratory waste generated in EA Program
+  laboratories (SGM 133, 134, 135), including chemical waste,
+  biological waste, sharps, and non-hazardous solid waste
+- **Does not apply to:** Radioactive waste (not generated in EA
+  Program labs); field waste (see
+  [SOP-F001](../field_sops/SOP-F001-field-safety.qmd)); e-waste and
+  surplus equipment (coordinate with campus surplus property office)
+- **Location:** All EA Program laboratory spaces
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Ensure compliance with campus and regulatory waste policies; sign manifests as generator |
+| Lab Manager       | Coordinate EH&S pickups, maintain satellite accumulation areas, train personnel |
+| All Lab Personnel | Segregate and label waste correctly per this SOP |
+| Campus EH&S       | Collect hazardous waste, prepare manifests, arrange off-site disposal |
+
+
+## 4. Regulatory Context
+
+Pomona College is classified as a Small Quantity Generator (SQG) of
+hazardous waste under RCRA (40 CFR Part 262) and California DTSC
+regulations. Key requirements:
+
+- Hazardous waste may be accumulated in satellite accumulation areas
+  (SAAs) near the point of generation in containers of 55 gallons or
+  less (1 quart for acutely hazardous waste)
+- Once full, containers must be moved to the central accumulation area
+  and picked up by EH&S within 3 days
+- All containers must be labeled with the words "Hazardous Waste,"
+  the contents, the hazard(s), and the accumulation start date
+- The generator (Lab PI) must sign the packing manifest
+
+
+## 5. Waste Classification
+
+### 5.1 Non-Hazardous Solid Waste
+
+| Waste Type                    | Disposal                                 |
+|:------------------------------|:-----------------------------------------|
+| Paper, packaging, cardboard   | Recycling bins                           |
+| Uncontaminated gloves and wipes | Standard trash                         |
+| Clean glassware (broken)      | Sharps box or wrapped cardboard, then trash |
+| Uncontaminated soil (dried)   | Standard trash or return to field site   |
+| Used aluminum tins (clean)    | Recycle or reuse                         |
+
+### 5.2 Hazardous Chemical Waste
+
+Any waste that is ignitable, corrosive, reactive, or toxic (per RCRA
+D-list), or that is a listed waste (F, K, P, or U list), must be
+collected and disposed as hazardous waste. Common EA Program
+hazardous waste streams:
+
+| Waste Stream                  | Typical Source SOPs             | Container                     |
+|:------------------------------|:--------------------------------|:------------------------------|
+| Acid waste (HNO~3~, HCl, H~2~SO~4~) | L410, L411, L403       | Poly carboy, labeled "Acid Waste" |
+| Base waste (NaOH, KOH)       | Various                         | Separate poly carboy          |
+| Halogenated solvent waste (chloroform, DCM) | L409              | Amber glass, labeled "Halogenated Solvent Waste" |
+| Non-halogenated solvent waste (acetone, ethanol, hexane) | Various | Separate glass or poly container |
+| Heavy metal solutions (Pb, Cd, Cr, Hg) | L410, L411            | Poly carboy, labeled by metal |
+| Formaldehyde solutions        | L305 (preservatives)           | Glass, labeled "Formaldehyde Waste" |
+| Oxidizer solutions (H~2~O~2~, NaClO~3~) | L412               | Collect separately; do not mix with organic waste |
+| Used oil (pump oil)           | Vacuum pumps                    | Labeled container             |
+
+::: {.callout-warning}
+### Critical Segregation Rules
+
+- **Never mix** acids with bases, oxidizers with organics, or
+  halogenated with non-halogenated solvents.
+- **Never pour** hazardous waste down the drain unless explicitly
+  approved by EH&S for that specific waste stream.
+- When in doubt, treat as hazardous and collect for EH&S pickup.
+:::
+
+### 5.3 Biological Waste
+
+| Waste Type                    | Disposal                                 |
+|:------------------------------|:-----------------------------------------|
+| Non-pathogenic cultures (soil microbes) | Autoclave, then standard trash |
+| Colilert/Quanti-Tray materials (L305) | Standard trash after UV deactivation or autoclave |
+| eDNA extraction waste (bead tubes, filters) | Standard trash (non-infectious after extraction) |
+| Foreign soil waste (L015)     | Autoclave per SOP-L015 before disposal   |
+
+### 5.4 Sharps
+
+| Waste Type                    | Disposal                                 |
+|:------------------------------|:-----------------------------------------|
+| Needles, syringes with needles | Sharps container (red)                  |
+| Broken glass (contaminated)   | Sharps container                         |
+| Razor blades, scalpels        | Sharps container                         |
+| Broken glass (uncontaminated) | Cardboard box labeled "Broken Glass," then trash |
+| Intact glass vials (uncontaminated) | Rinse and recycle, or trash       |
+
+### 5.5 Drain-Disposable Waste
+
+A limited set of aqueous, non-hazardous solutions may be poured down
+the drain with copious water, **only if approved by EH&S**:
+
+- Dilute (less than 1%) salt solutions (NaCl, KCl, K~2~SO~4~,
+  Na~2~SO~4~) at neutral pH
+- Dilute sugar or buffer solutions at neutral pH
+- Neutralized acid or base solutions (pH 5--9) that contain no metals
+  or other hazardous constituents
+
+::: {.callout-important}
+If you are unsure whether a waste can go down the drain, collect it
+as chemical waste. The default is always to collect, never to drain.
+:::
+
+
+## 6. Procedure
+
+### 6.1 Labeling Waste Containers
+
+1. Every waste container in the SAA must have a hazardous waste label
+   (available from EH&S or the lab manager) before any waste is added
+2. Fill in: waste description (chemical names and approximate
+   percentages), hazard(s) (corrosive, flammable, toxic, etc.),
+   accumulation start date, and laboratory location
+3. Update the label if new constituents are added to the container
+
+### 6.2 Accumulating Waste
+
+1. Add waste to the appropriate labeled container in the SAA
+2. Keep containers closed when not actively adding waste
+3. Do not fill containers beyond 80% capacity (leave headspace for
+   thermal expansion and safe handling)
+4. Inspect containers weekly for leaks, corrosion, or label
+   degradation
+
+### 6.3 Requesting EH&S Pickup
+
+1. When a container is full (or the study is complete), notify the
+   lab manager
+2. The lab manager contacts campus EH&S to schedule a pickup
+3. Prepare a packing manifest listing: container number, contents
+   (chemical names and approximate percentages), volume, hazard
+   class, and generator (PI) name
+4. The PI reviews and signs the manifest
+5. Move the container to the central pickup area designated by EH&S
+6. EH&S collects the waste, provides a manifest copy, and arranges
+   off-site treatment or disposal
+
+### 6.4 Empty Container Management
+
+1. Triple-rinse empty reagent bottles with the appropriate solvent
+   (water for aqueous chemicals, the same solvent for organic
+   chemicals)
+2. Remove or deface the original label
+3. Collect rinse liquid as waste (add to the corresponding waste
+   stream)
+4. Clean, delabeled glass bottles may be reused for non-critical
+   purposes or recycled
+5. Do not reuse containers that held acutely hazardous (P-listed)
+   chemicals; dispose as hazardous waste
+
+
+## 7. Satellite Accumulation Area (SAA) Management
+
+- Each SAA is located at or near the point of waste generation (e.g.,
+  the fume hood where digestions are performed, the bench where
+  extractions occur)
+- Maximum volume in an SAA: 55 gallons of hazardous waste (or 1 quart
+  of acutely hazardous waste)
+- Containers in the SAA must be in good condition, compatible with
+  the waste, and kept closed except when adding waste
+- Spill containment (secondary tray) is required under all liquid
+  waste containers
+- The lab manager inspects SAAs monthly and logs the inspection on
+  the SAA checklist posted in each area
+
+
+## 8. Emergency Spill Response
+
+For waste container spills, follow
+[SOP-L004 Chemical Spill Response](SOP-L004-chemical-spill-response.qmd).
+Key points:
+
+- Contain the spill using absorbent materials appropriate to the
+  waste type (do not use paper towels for solvent spills; use
+  chemical absorbent pads)
+- Contaminated absorbent becomes hazardous waste; bag, label, and
+  include in the next EH&S pickup
+- Report all spills to the lab manager and PI; document in the
+  incident log
+
+
+## 9. References
+
+- 40 CFR Part 262. *Standards Applicable to Generators of Hazardous
+  Waste*. US EPA.
+- California Code of Regulations, Title 22, Division 4.5. *Hazardous
+  Waste Control Law*. California DTSC.
+- Pomona College EH&S. *Hazardous Waste Management Guide*. Available
+  from the Campus Safety Office.
+- National Research Council. (2011). *Prudent Practices in the
+  Laboratory: Handling and Management of Chemical Hazards* (updated
+  ed.). National Academies Press.
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | General safety framework          |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Chemical safety and storage |
+| [L004](SOP-L004-chemical-spill-response.qmd) | Chemical Spill Response | Spill cleanup procedures          |
+| [L005](SOP-L005-chemical-inventory.qmd) | Chemical Inventory       | Tracking chemicals and SDS        |
+| [L015](SOP-L015-foreign-soil-handling.qmd) | Foreign Soil Handling  | Autoclave requirements for imported soil |
+
+
+## 11. Training Record
+
+Before handling laboratory waste independently, personnel must:
+
+1. Read this SOP and
+   [SOP-L003](SOP-L003-hazardous-materials-handling.qmd) in full
+2. Locate the SAAs in each laboratory room and identify the waste
+   streams currently in use
+3. Demonstrate proper waste labeling (fill out a hazardous waste label
+   correctly)
+4. Demonstrate correct segregation by assigning 5 sample waste items
+   to the correct container
+5. Review the spill response procedure in
+   [SOP-L004](SOP-L004-chemical-spill-response.qmd)
+6. Be signed off by the lab manager or PI

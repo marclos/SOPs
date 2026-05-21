@@ -1,0 +1,268 @@
+---
+# =============================================================================
+# SOP-F306: Wetland Hydrology Monitoring
+# =============================================================================
+title: "Wetland Hydrology Monitoring"
+sop-number: "SOP-F306"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes field methods for monitoring wetland
+hydrology, including measurement of water table depth, surface
+inundation extent, and hydroperiod documentation. Hydrology is the
+primary driver of wetland ecosystem structure and function: it controls
+soil saturation, redox chemistry, plant community composition, and
+jurisdictional wetland status under the Clean Water Act
+[@mitsch2015; @usace1987].
+
+Wetland hydrology monitoring supports baseline characterization,
+impact assessment, restoration monitoring, and regulatory compliance
+(e.g., Army Corps of Engineers wetland delineation criteria).
+
+
+## 2. Scope
+
+- **Applies to:** Freshwater wetlands (marshes, swamps, riparian
+  wetlands, vernal pools, constructed wetlands) at EA Program field
+  sites. Methods include manual water-level measurements in
+  monitoring wells and piezometers, crest gauges, staff gauges, and
+  automated water level loggers.
+- **Does not apply to:** Tidal wetland hydrology (requires tide-
+  corrected methods); stream stage-discharge relationships (see
+  [SOP-F301](SOP-F301-stream-discharge-measurement.qmd)); groundwater
+  monitoring in non-wetland wells (see
+  [SOP-F303](SOP-F303-groundwater-sampling.qmd))
+- **Location:** All EA Program wetland field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| PI / Field Lead   | Approve monitoring design, coordinate permits |
+| Trained Personnel | Install equipment, collect data per this SOP |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Wetland substrates are unstable; risk of sinking in
+  soft muck, tripping on submerged debris, or falling. Standing water
+  may conceal holes and channels.
+- **Biological:** Mosquitoes (disease vectors), ticks, venomous
+  snakes, poison oak/ivy, and waterborne pathogens. Avoid direct
+  skin contact with standing water.
+- **Environmental:** Heat stress in summer; hypothermia in winter.
+  Wetlands offer little shade.
+:::
+
+### Required PPE
+
+- [ ] Rubber boots or chest waders
+- [ ] Nitrile gloves
+- [ ] Long sleeves and pants (tick and mosquito protection)
+- [ ] Insect repellent (DEET or picaridin)
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Personal flotation device (if water depth exceeds knee level)
+
+### Emergency Procedures
+
+Work in pairs. If a team member becomes stuck in soft substrate,
+distribute weight on a board or backpack and pull laterally rather
+than vertically. Refer to
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Manual Measurement
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| Water level indicator (electric tape, e-line) | For measuring depth to water in wells and piezometers |
+| Staff gauge (graduated, metric)       | For measuring surface water stage |
+| Crest gauge                           | Records peak water level between visits |
+| Meter stick or folding rule           | Backup; for shallow inundation depth |
+| Field notebook and data sheets        | Waterproof (Rite in the Rain)  |
+| GPS unit                              | Per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| Camera                                | For photo-documenting site conditions |
+
+### Automated Monitoring
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| Pressure transducer water level logger (e.g., HOBO U20L, Solinst Levelogger, In-Situ Level TROLL) | Deployed in wells or stilling wells |
+| Barometric pressure logger            | Required for compensating non-vented transducers; install above the high water line at or near the site |
+| PVC monitoring wells (2 in or 4 in diameter, slotted screen) | Installed per Section 6.1 |
+| Well caps and locks                   | To prevent tampering and wildlife entry |
+| Well keys or locks                    | For secured installations      |
+| Laptop or shuttle for data download   | With manufacturer software     |
+
+
+## 6. Procedure
+
+### 6.1 Monitoring Well Installation
+
+::: {.callout-note}
+Well installation may require permits (e.g., well permits, Section 404
+permits for work in wetlands). Confirm requirements with the PI before
+installation.
+:::
+
+1. Select well locations based on the study design (e.g., transect
+   from upland to wetland center, paired wells at different depths)
+2. Auger a borehole to the target depth (typically 1--2 m for shallow
+   water table monitoring)
+3. Install a 2-inch or 4-inch PVC well with a slotted screen in the
+   saturated zone and a solid riser above the ground surface
+4. Backfill the annular space around the screen with clean silica sand;
+   seal the upper portion with bentonite to prevent surface water
+   infiltration along the well casing
+5. Install a protective well cap; record the top-of-casing (TOC)
+   elevation relative to a local benchmark using a survey level
+6. Develop the well by surging and bailing to remove drilling mud and
+   fine sediment. Allow the well to equilibrate for at least 24 hours
+   before the first measurement.
+7. Record the well construction details (total depth, screen interval,
+   stick-up height, TOC elevation, GPS coordinates) on the well
+   installation log
+
+### 6.2 Manual Water Level Measurement
+
+1. Remove the well cap. If the well is locked, note the time and
+   condition of the lock.
+2. Lower the water level indicator (e-line) slowly into the well. When
+   the probe contacts the water surface, the indicator will sound or
+   light up.
+3. Read the depth to water from the top of casing (TOC) to the nearest
+   0.01 ft or 0.5 cm. Record this value.
+4. Calculate the water table elevation:
+
+   $$
+   \text{WTE} = \text{TOC elevation} - \text{depth to water}
+   $$
+
+5. If the water table is above the ground surface (artesian or flooded
+   conditions), measure the height of water above the TOC or use a
+   staff gauge for ponded water.
+6. Record date, time, depth to water, and any observations (e.g., well
+   condition, nearby disturbance, wildlife activity) in the field
+   notebook.
+7. Replace and secure the well cap.
+
+### 6.3 Staff Gauge and Crest Gauge Reading
+
+1. Read the water level on the staff gauge to the nearest 0.5 cm.
+   Read at eye level to avoid parallax.
+2. Record the reading, date, time, and any obstructions (debris on the
+   gauge, algae).
+3. For crest gauges: record the peak water mark left by granular cork
+   or paint inside the gauge since the last visit. Reset the gauge
+   per the manufacturer's instructions.
+
+### 6.4 Automated Logger Deployment and Download
+
+1. Program the logger for the desired recording interval (typically
+   15 minutes to 1 hour for wetland hydrology)
+2. Deploy the logger in the well, suspended at a known depth below
+   the TOC using a stainless steel cable or direct-read cable
+3. Deploy a barometric logger above the expected high water line (for
+   non-vented transducers)
+4. Record the deployment details: logger serial number, deployment
+   depth, start time, recording interval
+5. On each visit, download data using the manufacturer's software.
+   Take a manual water level measurement at the time of download for
+   calibration verification.
+6. Compensate pressure transducer data for barometric pressure changes
+   using the barometric logger data. Most manufacturer software
+   includes an automated compensation routine.
+
+### 6.5 Inundation Mapping
+
+1. During each visit, note the spatial extent of surface water or
+   saturated soil at the site
+2. Record the inundation boundary on a site map or using GPS waypoints
+3. Photograph fixed photo points to document seasonal changes in
+   inundation
+4. Record the presence of wetland hydrology indicators
+   (oxidized rhizospheres, water-stained leaves, drift lines,
+   sediment deposits, water marks on trees) per the Army Corps of
+   Engineers wetland delineation manual [@usace1987]
+
+
+## 7. Quality Control
+
+- Take a manual water level reading concurrent with every logger
+  download to verify logger accuracy. If the manual reading and logger
+  reading differ by more than 2 cm, troubleshoot the logger (drift,
+  fouling, cable slip).
+- Record duplicate manual readings at 10% of wells per visit (read,
+  remove the tape, re-read). Duplicates should agree within 0.5 cm.
+- Check e-line calibration against a measured standard (e.g., a
+  surveyed depth) at least once per season.
+- Maintain a well construction log with TOC elevations; re-survey
+  TOC elevations annually or after ground disturbance (frost heave,
+  animal activity, mowing).
+- Archive raw logger files in the project data folder before any
+  processing. Version-control all compensation and correction scripts
+  per [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd).
+
+
+## 8. Data Management
+
+1. Enter manual water level data into the project database within
+   48 hours of collection
+2. Download, compensate, and archive logger data within 7 days of
+   retrieval
+3. Convert all water level data to a common datum (e.g., NAVD88 or a
+   local benchmark) before analysis
+4. Flag and document any data gaps, logger malfunctions, or well
+   damage
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation | Well and gauge locations          |
+| [F200](SOP-F200-eureka-manta2.qmd)    | Eureka Manta2 Multiprobe  | Water quality at wetland sites    |
+| [F301](SOP-F301-stream-discharge-measurement.qmd) | Stream Discharge | Surface water flow context        |
+| [F303](SOP-F303-groundwater-sampling.qmd) | Groundwater Sampling   | Well sampling companion           |
+| [F400](SOP-F400-soil-sampling.qmd)     | Soil Sampling             | Wetland soil characterization     |
+
+
+## 11. Training Record
+
+Before performing wetland hydrology monitoring independently,
+personnel must:
+
+1. Read this SOP and [SOP-F001](SOP-F001-field-safety.qmd) in full
+2. Observe a trained operator demonstrate manual water level
+   measurement and logger download at an active monitoring site
+3. Practice using the water level indicator (e-line) under supervision
+   and demonstrate agreement within 0.5 cm on duplicate readings
+4. Demonstrate competence in logger programming and data download
+5. Be signed off by the PI or field lead

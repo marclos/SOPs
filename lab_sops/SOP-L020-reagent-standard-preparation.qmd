@@ -1,0 +1,298 @@
+---
+# =============================================================================
+# SOP-L020: Reagent and Standard Preparation
+# =============================================================================
+title: "Reagent and Standard Preparation"
+sop-number: "SOP-L020"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes general best practices for preparing,
+labeling, storing, and documenting laboratory reagents and calibration
+standards used across EA Program analytical methods. Individual
+analytical SOPs specify the exact reagents and concentrations required
+for each method; this SOP provides the overarching framework for
+solution preparation that ensures traceability, accuracy, and safety.
+
+
+## 2. Scope
+
+- **Applies to:** Preparation of aqueous reagent solutions, extraction
+  solutions, calibration standards, buffer solutions, and indicator
+  solutions used in EA Program laboratory analyses
+- **Does not apply to:** Preparation of biological growth media
+  (covered in microbiology SOPs); preparation of molecular biology
+  reagents (master mixes, primers, probes; see SOP-L701 and related
+  SOPs); field reagent preparation (covered in field SOPs)
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve reagent-grade specifications        |
+| Lab Manager       | Maintain chemical inventory, order reagents, prepare shared stock solutions |
+| Trained Personnel | Prepare working solutions per this SOP and the relevant analytical SOP |
+| New Students      | Complete training before preparing solutions independently |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Concentrated acids, bases, and organic solvents used
+  in reagent preparation are corrosive, toxic, and/or flammable.
+  Review the SDS for every chemical before use.
+- **Thermal:** Dissolving some solutes (e.g., NaOH, H~2~SO~4~
+  dilution) is exothermic. Add solute to solvent slowly, never the
+  reverse for acid dilutions.
+- **Glassware:** Volumetric flasks and graduated cylinders can break
+  during mixing. Inspect for cracks before use.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or splash goggles (for concentrated acids/bases)
+- [ ] Lab coat
+- [ ] Nitrile gloves
+- [ ] Fume hood (for volatile or fuming reagents)
+
+### Emergency Procedures
+
+For chemical splashes, flush with water for at least 15 minutes.
+For spills, follow
+[SOP-L004 Chemical Spill Response](SOP-L004-chemical-spill-response.qmd).
+
+
+## 5. Water Quality
+
+All reagent and standard preparation must use water of appropriate
+purity:
+
+| Water Grade                   | Source              | Use                              |
+|:------------------------------|:--------------------|:---------------------------------|
+| Type I (18.2 MOhm, ultrapure) | Milli-Q system (see future SOP-L100) | Calibration standards, trace metal work, DOC analysis, molecular biology |
+| Type II (deionized)           | Central DI supply   | General reagent preparation, rinsing |
+| Tap water                     | Building supply     | Initial glassware rinse only; never for reagent preparation |
+
+::: {.callout-note}
+Verify Milli-Q resistivity (should read 18.2 MOhm-cm at 25 C) before
+preparing trace-level standards. If the reading is below 18.0, replace
+the cartridge or consult the lab manager.
+:::
+
+
+## 6. Procedure
+
+### 6.1 Planning
+
+1. Consult the relevant analytical SOP for the exact reagent name,
+   concentration, and grade required
+2. Calculate the mass or volume of solute needed using the target
+   concentration and final volume. Document the calculation in the
+   lab notebook.
+3. Verify that the chemical in inventory matches the required grade
+   (ACS reagent grade, trace metal grade, molecular biology grade,
+   etc.)
+
+### 6.2 Weighing Solids
+
+1. Calibrate or verify the analytical balance per
+   [SOP-L200](SOP-L200-analytical-balance-calibration.qmd)
+2. Use a clean, dry weighing vessel (weigh boat or beaker)
+3. Tare the vessel on the balance
+4. Transfer the required mass of solid reagent using a clean spatula.
+   Record the actual mass to the precision of the balance.
+5. Return the reagent bottle cap immediately to prevent contamination
+   and moisture uptake
+
+### 6.3 Dissolving and Diluting
+
+1. Transfer the weighed solid to a clean beaker and add approximately
+   75% of the final volume of water. Stir with a magnetic stir bar or
+   glass rod until dissolved.
+2. For acid dilutions: always add acid to water ("Do as you oughta,
+   add acid to water"). Stir continuously and allow the solution to
+   cool before adjusting to final volume.
+3. Transfer the solution quantitatively to a volumetric flask of the
+   target volume
+4. Rinse the beaker and stir bar with small portions of water and add
+   the rinses to the flask
+5. Bring to the mark on the volumetric flask at room temperature.
+   Read the meniscus at eye level.
+6. Stopper the flask and invert 10 times to mix
+
+### 6.4 Preparing Calibration Standards by Serial Dilution
+
+1. Prepare or obtain a stock standard of known concentration
+   (certified reference material or gravimetrically prepared stock)
+2. Using calibrated volumetric pipettes or micropipettes
+   ([SOP-L103](SOP-L103-micropipettes.qmd)), transfer the calculated
+   aliquot of stock solution into a volumetric flask
+3. Dilute to the mark with the appropriate matrix (water, extractant
+   solution, or acid matrix matching the samples)
+4. Prepare the full calibration curve (typically 5--7 points plus a
+   blank) in order from lowest to highest concentration to minimize
+   carryover contamination
+5. Record all dilution steps, pipette volumes, and flask sizes in
+   the lab notebook
+
+::: {.callout-tip}
+For trace-level calibration standards (ppb range), prepare fresh daily
+or per the stability guidance in the analytical SOP. Dilute standards
+degrade faster than concentrated stocks due to adsorption to container
+walls.
+:::
+
+### 6.5 pH Adjustment (When Required)
+
+1. After dissolving, measure the pH with a calibrated pH meter per
+   [SOP-L300](SOP-L300-pH-conductivity-bench.qmd)
+2. Adjust to the target pH using the appropriate acid or base (as
+   specified in the analytical SOP), added dropwise with stirring
+3. Record the final pH and the volume of acid/base added
+
+### 6.6 Labeling
+
+Every prepared solution must be labeled with the following information
+before it leaves the preparation bench:
+
+- Solution name and concentration (e.g., "0.5 M K~2~SO~4~")
+- Solvent or matrix (e.g., "in DI water")
+- Date prepared
+- Expiration date or shelf life (per the analytical SOP or
+  manufacturer recommendation)
+- Preparer's initials
+- Hazard warnings if applicable (e.g., "Corrosive," "Flammable")
+
+::: {.callout-important}
+Never use an unlabeled solution. If you find an unlabeled container,
+do not use it. Dispose per
+[SOP-L006 Waste Disposal](SOP-L006-waste-disposal.qmd).
+:::
+
+### 6.7 Storage
+
+| Solution Type                 | Storage Conditions             |
+|:------------------------------|:-------------------------------|
+| Aqueous inorganic standards   | Room temperature, dark; amber bottles for light-sensitive analytes |
+| Organic solvent solutions     | Flammable cabinet; fume hood if volatile |
+| Buffer solutions              | Room temperature or 4 C per the analytical SOP |
+| Concentrated acids and bases  | Acid cabinet (acids) or base shelf (bases); never store together |
+| Molecular biology reagents    | -20 C (primers, probes, enzymes) or 4 C (buffers) per manufacturer |
+
+### 6.8 Documentation
+
+Record the following in the lab notebook for every prepared solution:
+
+- Reagent name, lot number, manufacturer, and grade
+- Calculation showing target concentration and volumes/masses
+- Actual mass weighed (to balance precision)
+- Final volume and flask size
+- Date prepared, preparer's initials
+- Expiration date
+- Any deviations from the standard procedure
+
+
+## 7. Quality Control
+
+- Verify the concentration of each new stock standard by analyzing it
+  against the previous batch or against a certified reference material
+  (CRM). Agreement should be within 5%.
+- For critical calibration standards, prepare from a second
+  independent source (different manufacturer or lot) and compare
+- Discard solutions past their expiration date; do not extend shelf
+  life without re-verification
+- Check volumetric glassware calibration (Class A tolerance) annually
+  by gravimetric verification
+- Verify micropipette accuracy quarterly per
+  [SOP-L103](SOP-L103-micropipettes.qmd)
+
+
+## 8. Common Reagent Recipes
+
+The table below lists frequently used reagent solutions across EA
+Program methods. Refer to the source SOP for complete preparation
+details.
+
+| Solution                      | Concentration | Source SOP     | Shelf Life     |
+|:------------------------------|:--------------|:---------------|:---------------|
+| KCl extraction solution       | 2 M           | L403           | 6 months       |
+| K~2~SO~4~ extraction solution | 0.5 M         | L409           | 6 months       |
+| Sodium hexametaphosphate (HMP) | 50 g/L       | L401           | 1 month        |
+| HNO~3~ (for sample acidification) | 2%        | L410           | Prepare fresh   |
+| KHP stock standard (DOC)      | 1,000 mg C/L  | L407           | 1 month (refrigerated) |
+| KNO~3~ stock standard (TN)    | 1,000 mg N/L  | L407           | 6 months       |
+| NaOH (for pH adjustment)      | 1 M           | Various        | 6 months       |
+| HCl (for pH adjustment)       | 1 M           | Various        | 6 months       |
+| Longmire's buffer (eDNA preservation) | As formulated | F700 | 6 months (refrigerated) |
+
+
+## 9. Waste Disposal
+
+Dispose of expired or unwanted reagent solutions per
+[SOP-L006 Waste Disposal](SOP-L006-waste-disposal.qmd). Key points:
+
+- Hazardous reagents (acids, bases, solvents, metal solutions) go to
+  the appropriate waste stream in the SAA
+- Dilute, non-hazardous salt solutions at neutral pH may be drained
+  with copious water if approved by EH&S
+- Never pour an unknown or unlabeled solution down the drain
+
+
+## 10. References
+
+- National Research Council. (2011). *Prudent Practices in the
+  Laboratory: Handling and Management of Chemical Hazards* (updated
+  ed.). National Academies Press.
+- Harris, D.C. (2016). *Quantitative Chemical Analysis*. 9th ed.
+  W.H. Freeman.
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. Section 1080: Reagent Water.
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | General safety framework          |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Chemical safety                   |
+| [L005](SOP-L005-chemical-inventory.qmd) | Chemical Inventory       | Reagent sourcing and tracking     |
+| [L006](SOP-L006-waste-disposal.qmd)    | Waste Disposal           | Disposing of expired reagents     |
+| [L102](SOP-L102-using-balances.qmd)    | Using Balances           | Weighing technique                |
+| [L103](SOP-L103-micropipettes.qmd)     | Micropipettes            | Volumetric transfers              |
+| [L200](SOP-L200-analytical-balance-calibration.qmd) | Balance Calibration | Ensuring mass accuracy           |
+| [L300](SOP-L300-pH-conductivity-bench.qmd) | pH and Conductivity   | pH verification of prepared solutions |
+
+
+## 12. Training Record
+
+Before preparing reagents or standards independently, personnel must:
+
+1. Read this SOP and
+   [SOP-L003](SOP-L003-hazardous-materials-handling.qmd) in full
+2. Demonstrate proper use of the analytical balance (SOP-L102/L200)
+   and micropipettes (SOP-L103)
+3. Prepare one reagent solution and one set of calibration standards
+   under supervision, demonstrating correct calculation, weighing,
+   dissolving, volumetric dilution, labeling, and documentation
+4. Demonstrate correct acid dilution technique (acid to water)
+5. Be signed off by the lab manager or PI

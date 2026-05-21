@@ -1,0 +1,253 @@
+---
+# =============================================================================
+# SOP-F505: Passive Air Samplers (Diffusion Tubes)
+# =============================================================================
+title: "Passive Air Samplers -- Diffusion Tubes"
+sop-number: "SOP-F505"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the deployment, retrieval, and documentation
+of passive (diffusion-based) air samplers for time-integrated
+measurement of gaseous air pollutants. Passive samplers require no
+pump or power supply: the target gas diffuses along a concentration
+gradient through a defined path length and is captured by a sorbent or
+reactive medium at the closed end of the tube. After a known exposure
+period, the sampler is sealed, returned to the laboratory, and
+analyzed to determine the time-weighted average ambient concentration
+[@palmes1976; @cape2009].
+
+Common target analytes include nitrogen dioxide (NO~2~), ozone (O~3~),
+sulfur dioxide (SO~2~), ammonia (NH~3~), and volatile organic compounds
+(VOCs). Passive samplers are widely used in spatial surveys and
+community-based exposure studies because they are inexpensive,
+silent, and require no electricity, making dense network deployments
+feasible [@vardoulakis2009].
+
+
+## 2. Scope
+
+- **Applies to:** Deployment and retrieval of passive diffusion tube
+  samplers (e.g., Palmes tubes for NO~2~, Ogawa badges for NO~2~/O~3~,
+  Radiello cartridges for VOCs/NH~3~) at EA Program field sites
+- **Does not apply to:** Active (pump-based) gas sampling; passive PM
+  samplers; low-cost electronic gas sensors; laboratory analysis of
+  exposed samplers (handled by the analytical laboratory or per
+  analyte-specific lab SOPs)
+- **Location:** EA Program field deployment sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| PI / Field Lead   | Approve sampling design, select sampler type and analytical lab |
+| Trained Personnel | Deploy, retrieve, and document samplers     |
+| New Students      | Complete training before independent deployment |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Some sorbent media (e.g., triethanolamine for NO~2~)
+  are mild irritants. Handle prepared tubes with gloves and avoid
+  skin contact with the open end.
+- **Traffic:** Many monitoring locations are near roadways. Wear a
+  high-visibility vest and follow
+  [SOP-F001](SOP-F001-field-safety.qmd) traffic safety procedures.
+- **Height:** Mounting samplers on poles or structures may require
+  ladder work. Follow standard ladder safety.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves (when handling samplers)
+- [ ] Closed-toed shoes
+- [ ] High-visibility vest (if near roadways)
+- [ ] Sun protection
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| Passive samplers (type matched to target analyte; see Section 6.1) | Pre-prepared by analytical lab or in-house |
+| Protective rain shelters (inverted cup or tube shelter) | Shields the open end from rain and direct sunlight while allowing airflow |
+| Mounting clips, zip ties, or cable ties | For attaching shelters and tubes to poles, posts, or structures |
+| Airtight storage containers or bags   | For transporting unexposed and exposed samplers |
+| Cooler with ice packs (for heat-sensitive sorbents) | Maintain samplers at 4 C during transport if required by the analytical lab |
+| GPS unit                              | Per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| Field notebook and deployment log     | For recording dates, times, and site conditions |
+| Permanent marker (Sharpie)            | For labeling tubes             |
+
+
+## 6. Procedure
+
+### 6.1 Sampler Selection
+
+Select the sampler type based on the target analyte and exposure
+period:
+
+| Target Analyte | Sampler Type           | Typical Exposure | Analytical Method |
+|:---------------|:-----------------------|:-----------------|:------------------|
+| NO~2~          | Palmes diffusion tube (TEA-coated grids) | 1--4 weeks | Spectrophotometry (Griess reaction) |
+| NO~2~ / O~3~   | Ogawa passive sampler  | 1--2 weeks       | Spectrophotometry |
+| NH~3~          | Radiello cartridge or acid-coated filter | 1--4 weeks | Spectrophotometry or IC |
+| VOCs (BTEX)    | Radiello cartridge (Carbograph sorbent) or 3M OVM badge | 1--4 weeks | GC-MS (thermal desorption) |
+| SO~2~          | Impregnated filter or Radiello cartridge | 1--4 weeks | Ion chromatography |
+
+::: {.callout-note}
+The analytical laboratory typically prepares and supplies the
+samplers, pre-loaded with the appropriate sorbent. Confirm sampler
+type, handling instructions, and shipping requirements with the lab
+before each deployment.
+:::
+
+### 6.2 Pre-Deployment
+
+1. Keep sealed samplers refrigerated (4 C) until deployment day unless
+   the analytical lab specifies otherwise
+2. Assign a unique ID to each sampler and record it in the deployment
+   log
+3. Designate at least 2 field blanks per batch: samplers that travel
+   to the site, are briefly unsealed (less than 30 seconds), re-sealed,
+   and returned to the lab with the exposed samplers
+
+### 6.3 Deployment
+
+1. At the monitoring location, mount the rain shelter at a height of
+   2--3 m above ground, away from walls (at least 1 m), exhaust vents,
+   and vegetation canopy
+2. Remove the sampler from its sealed container, note the date and
+   time, and attach the open end downward inside the rain shelter
+3. Secure the sampler with clips or zip ties
+4. Record in the field notebook: site ID, sampler ID, deployment
+   date/time, GPS coordinates, mounting height, distance to nearest
+   road, weather conditions, and any potential sources nearby
+5. Photograph the installed sampler for documentation
+
+### 6.4 Exposure Period
+
+- The exposure period depends on the expected ambient concentration
+  and the sampler's capacity. Follow the analytical lab's
+  recommendation (typically 1--4 weeks for NO~2~ Palmes tubes).
+- Note any unusual events during the exposure period (wildfires,
+  construction, power outages affecting nearby sources) in the field
+  notebook.
+
+### 6.5 Retrieval
+
+1. Record the retrieval date and time in the field notebook
+2. Remove the sampler from the shelter, immediately cap or seal it,
+   and place in an airtight container or bag
+3. Calculate the total exposure time in hours
+4. Place sealed samplers in a cooler with ice packs for transport (if
+   required by the analytical lab)
+5. Retrieve and seal the field blanks in the same manner
+
+### 6.6 Shipping to Analytical Laboratory
+
+1. Pack sealed samplers securely with cushioning material in an
+   insulated shipping container with ice packs (if heat-sensitive)
+2. Include a chain of custody form listing all sampler IDs, site
+   locations, deployment and retrieval dates/times, and total exposure
+   hours
+3. Ship via overnight courier or deliver in person to the analytical
+   lab
+
+### 6.7 Concentration Calculation
+
+The analytical laboratory reports the mass of analyte captured on each
+sampler. The time-weighted average ambient concentration is calculated
+using Fick's first law of diffusion:
+
+$$
+C = \frac{m}{D \times A / L \times t}
+$$
+
+where:
+
+- $C$ = ambient concentration (ug/m^3^ or ppb, after unit conversion)
+- $m$ = mass of analyte on the sampler (ug)
+- $D$ = molecular diffusion coefficient of the analyte in air
+  (cm^2^/s)
+- $A$ = cross-sectional area of the diffusion path (cm^2^)
+- $L$ = length of the diffusion path (cm)
+- $t$ = exposure time (s)
+
+::: {.callout-note}
+The analytical lab typically performs this calculation using published
+uptake rates for the specific sampler-analyte combination. Confirm
+which party is responsible for the calculation.
+:::
+
+
+## 7. Quality Control
+
+- Deploy at least 2 field blanks per batch (minimum 10% of total
+  samplers). Field blank analyte mass should be below the method
+  detection limit; if not, subtract the mean field blank mass from
+  all samples.
+- Deploy co-located duplicate samplers at 10% of sites. Duplicates
+  should agree within 20% for NO~2~ Palmes tubes [@cape2009].
+- If collocating with an active reference sampler (chemiluminescence
+  NO~2~ analyzer, UV O~3~ analyzer), compare the passive sampler
+  result with the reference average over the same period.
+- Document any site disturbances (construction, shelter damage,
+  vandalism) that could affect results.
+- Archive field notebooks and chain of custody forms with the project
+  data.
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Exposed Palmes tubes (TEA grids) | Return to analytical lab or dispose as chemical waste (TEA is a mild irritant) |
+| Radiello cartridges (used)    | Return to analytical lab                 |
+| Rain shelters and mounting hardware | Clean and reuse                    |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F502](SOP-F502-air-quality-portable-sensors.qmd) | Portable PM Sensors | Companion low-cost sensor SOP     |
+| [F503](SOP-F503-particulate-matter-sampling.qmd) | PM Filter Sampling   | Active filter sampling companion  |
+| [F504](SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer | Companion field instrument        |
+
+
+## 11. Training Record
+
+Before deploying passive air samplers independently, personnel must:
+
+1. Read this SOP and [SOP-F001](SOP-F001-field-safety.qmd) in full
+2. Review the handling instructions provided by the analytical
+   laboratory for the specific sampler type
+3. Observe a trained operator demonstrate deployment and retrieval at
+   one site
+4. Deploy and retrieve samplers at one site under supervision,
+   including field blank handling
+5. Be signed off by the PI or field lead

@@ -1,0 +1,278 @@
+---
+# =============================================================================
+# SOP-F307: Lake and Reservoir Profiling
+# =============================================================================
+title: "Lake and Reservoir Profiling"
+sop-number: "SOP-F307"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the collection of vertical depth profiles of
+water quality parameters (temperature, dissolved oxygen, pH,
+conductivity, turbidity, and chlorophyll fluorescence) in lakes,
+reservoirs, and deep ponds. Depth profiling characterizes thermal
+stratification, the location and extent of the thermocline and
+oxycline, and vertical gradients in water chemistry that control
+nutrient cycling, habitat availability, and water treatment operations
+[@wetzel2001; @kalff2002].
+
+
+## 2. Scope
+
+- **Applies to:** Vertical profiling from boats, docks, or platforms
+  in lentic water bodies (lakes, reservoirs, ponds) and slow-moving
+  deep river pools. Covers both manual sonde profiles and Secchi depth
+  measurements.
+- **Does not apply to:** Continuous deployed sonde monitoring (see
+  future SOP); horizontal spatial surveys; stream cross-section water
+  quality (see [SOP-F200](SOP-F200-eureka-manta2.qmd) for general
+  sonde operation); bathymetric mapping
+- **Location:** All EA Program lake and reservoir field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| PI / Field Lead   | Approve profiling plan, coordinate boat access and permits |
+| Trained Personnel | Calibrate sonde, perform profiling per this SOP |
+| New Students      | Complete training and boat safety orientation before participating |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Drowning:** All lake work involves drowning risk. Personal
+  flotation devices (PFDs) are mandatory for all personnel on boats,
+  docks, and platforms.
+- **Weather:** Lightning, high winds, and sudden storms pose serious
+  hazards on open water. Abort profiling if thunderstorms are within
+  10 miles or winds exceed safe boating conditions for the vessel.
+- **Sun exposure:** Extended time on open water increases UV exposure
+  and heat stress.
+- **Equipment:** Heavy sonde and cable assemblies can cause hand and
+  back injuries when deployed over the side of a boat.
+:::
+
+### Required PPE
+
+- [ ] Personal flotation device (PFD) -- worn at all times on the water
+- [ ] Closed-toed shoes with non-slip soles
+- [ ] Nitrile gloves (when handling calibration solutions)
+- [ ] Sun protection (hat, sunscreen, sunglasses)
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). All
+boat occupants must know the location of PFDs, throwable flotation
+devices, and communication equipment (VHF radio or charged cell
+phone). If a person falls overboard, deploy the throwable device
+immediately and maneuver the boat to the person.
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| Eureka Manta2 multiprobe or equivalent sonde | Calibrated per [SOP-F200](SOP-F200-eureka-manta2.qmd) |
+| Sonde cable (length sufficient for maximum expected depth) | Graduated at 0.5 m or 1 m intervals |
+| Secchi disk and graduated line        | Per [SOP-F207](SOP-F207-secchi-disk.qmd) |
+| Depth sounder or weighted line        | For measuring total water depth at the profiling station |
+| Boat, canoe, kayak, or dock access    | Appropriate to site conditions |
+| Anchor(s) or tie-off lines            | To hold the boat stationary during profiling |
+| GPS unit                              | For recording station coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| Field notebook and profiling data sheet | Waterproof (Rite in the Rain); see Appendix A |
+| Camera                                | For photo-documenting site and weather conditions |
+| Water sample bottles and cooler       | If discrete-depth water samples are collected alongside the profile |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Field Preparation
+
+1. Calibrate the sonde per
+   [SOP-F200 Eureka Manta2](SOP-F200-eureka-manta2.qmd) before
+   departing for the field
+2. Verify that the sonde cable is marked at depth intervals (0.5 m or
+   1 m). If using a direct-read cable, confirm depth readings against
+   a tape measure.
+3. Check weather forecast; postpone if thunderstorms are likely or
+   sustained winds exceed the vessel's safe operating threshold
+4. Review the profiling station coordinates and planned depth intervals
+
+### 6.2 Station Setup
+
+1. Navigate to the profiling station (typically the deepest point of
+   the lake or a fixed monitoring location)
+2. Record GPS coordinates, date, time, weather conditions (sky cover,
+   wind speed and direction, air temperature), and total water depth
+3. Anchor or tie off the boat to minimize drift during the profile
+4. Perform the Secchi disk measurement per
+   [SOP-F207](SOP-F207-secchi-disk.qmd)
+
+### 6.3 Sonde Deployment and Profile Collection
+
+1. Lower the sonde to 0.5 m below the surface. Allow at least
+   60 seconds for the sensors to equilibrate (longer for optical DO
+   in cold water).
+2. Record all parameters (temperature, DO, pH, conductivity,
+   turbidity, chlorophyll) at that depth. If the sonde is logging
+   internally, note the time and depth; if reading from the handheld
+   display, record values on the data sheet.
+3. Lower the sonde to the next depth increment (typically 0.5 m in
+   the epilimnion and through the thermocline; 1 m increments are
+   acceptable in deep hypolimnetic water where parameters change
+   slowly).
+4. At each depth, allow 30--60 seconds for sensor equilibration before
+   recording.
+5. Continue to within 0.5 m of the bottom. Do not allow the sonde to
+   contact the sediment (stirs up sediment and can foul sensors).
+6. After the deepest reading, raise the sonde steadily to the surface.
+   If time permits, record an ascending profile for comparison.
+
+::: {.callout-tip}
+In productive lakes, the most rapid changes in temperature and DO
+occur at the thermocline and oxycline. When you detect these
+transitions, switch to 0.5 m or even 0.25 m intervals to resolve
+the gradient.
+:::
+
+### 6.4 Discrete-Depth Water Sampling (Optional)
+
+If the study design requires water samples at specific depths (e.g.,
+epilimnion, metalimnion, hypolimnion):
+
+1. Use a Van Dorn or Kemmerer bottle lowered to the target depth
+2. Trip the sampler and raise to the surface
+3. Dispense into pre-labeled sample bottles per
+   [SOP-F300](SOP-F300-surface-water-sampling.qmd) preservation
+   requirements
+4. Record the collection depth and time for each sample
+
+### 6.5 Post-Profiling
+
+1. Rinse the sonde sensors with deionized water
+2. Replace the sonde in its calibration/storage cup with storage
+   solution (especially the pH sensor)
+3. Download logged data or scan the data sheet for completeness
+4. Confirm that GPS coordinates, Secchi depth, total depth, and all
+   profile readings are recorded
+
+
+## 7. Data Interpretation
+
+A typical stratified lake profile shows three zones:
+
+| Zone          | Characteristics                                        |
+|:--------------|:-------------------------------------------------------|
+| Epilimnion    | Warm, well-mixed surface layer; high DO, uniform temperature |
+| Metalimnion (thermocline) | Rapid temperature decrease with depth (at least 1 C per meter) |
+| Hypolimnion   | Cold, dense bottom layer; may be anoxic in productive lakes |
+
+::: {.callout-note}
+Not all lakes stratify. Shallow, wind-exposed, or polymictic lakes may
+be fully mixed during some or all seasons. Record whether stratification
+is present and the depths of the thermocline boundaries.
+:::
+
+
+## 8. Quality Control
+
+- Calibrate the sonde on the day of profiling; record calibration
+  results on the calibration log
+- Allow adequate sensor equilibration time at each depth (minimum
+  30 seconds; 60 seconds at the first depth and near the thermocline)
+- Record an ascending profile periodically to check for sensor drift
+  during the profile
+- Verify depth markings on the cable against a tape measure at least
+  once per season
+- If the sonde includes an internal depth (pressure) sensor, compare
+  cable-marked depth to the sensor depth at several points; discrepancies
+  greater than 0.3 m require investigation
+- For long-term monitoring, profile at the same station, same time of
+  day (within 2 hours), and same depth intervals for comparability
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F200](SOP-F200-eureka-manta2.qmd)    | Eureka Manta2 Multiprobe  | Sonde calibration and operation   |
+| [F207](SOP-F207-secchi-disk.qmd)       | Secchi Disk               | Transparency measurement          |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Discrete-depth water samples      |
+| [F305](SOP-F305-sediment-sampling.qmd) | Sediment Sampling         | Lake sediment collection          |
+| [L300](../lab_sops/SOP-L300-pH-conductivity-bench.qmd) | pH and Conductivity (Bench) | Lab verification of field readings |
+| [L310](../lab_sops/SOP-L310-chlorophyll-extraction.qmd) | Chlorophyll Extraction | Lab chlorophyll from depth samples |
+
+
+## 11. Training Record
+
+Before performing lake profiling independently, personnel must:
+
+1. Read this SOP, [SOP-F001](SOP-F001-field-safety.qmd), and
+   [SOP-F200](SOP-F200-eureka-manta2.qmd) in full
+2. Complete boat safety orientation (PFD use, boat handling, man-
+   overboard procedures) for the vessel type used at the site
+3. Observe a trained operator perform a complete depth profile
+   including sonde calibration, Secchi measurement, and data recording
+4. Perform a supervised profile and demonstrate proper sensor
+   equilibration timing and depth-interval decisions at the
+   thermocline
+5. Be signed off by the PI or field lead
+
+
+## Appendix A: Profiling Data Sheet {.appendix}
+
+Print on waterproof paper. One sheet per station per date.
+
+**Station ID:** \_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_
+**Time start:** \_\_\_\_\_\_ **Time end:** \_\_\_\_\_\_
+
+**GPS:** Lat \_\_\_\_\_\_\_\_ Lon \_\_\_\_\_\_\_\_
+**Total depth (m):** \_\_\_\_\_\_
+**Secchi depth (m):** \_\_\_\_\_\_
+
+**Weather:** Sky \_\_\_\_\_\_ Wind \_\_\_\_\_\_ Air temp \_\_\_\_ C
+
+**Sonde ID:** \_\_\_\_\_\_\_\_ **Calibration date:** \_\_\_\_\_\_\_\_
+
+| Depth (m) | Temp (C) | DO (mg/L) | DO (%) | pH | SpC (uS/cm) | Turb (NTU) | Chl (ug/L) | Notes |
+|:----------|:---------|:----------|:-------|:---|:-------------|:-----------|:-----------|:------|
+| 0.5       |          |           |        |    |              |            |            |       |
+| 1.0       |          |           |        |    |              |            |            |       |
+| 1.5       |          |           |        |    |              |            |            |       |
+| 2.0       |          |           |        |    |              |            |            |       |
+| 2.5       |          |           |        |    |              |            |            |       |
+| 3.0       |          |           |        |    |              |            |            |       |
+| 3.5       |          |           |        |    |              |            |            |       |
+| 4.0       |          |           |        |    |              |            |            |       |
+| 5.0       |          |           |        |    |              |            |            |       |
+| 6.0       |          |           |        |    |              |            |            |       |
+| 7.0       |          |           |        |    |              |            |            |       |
+| 8.0       |          |           |        |    |              |            |            |       |
+| 9.0       |          |           |        |    |              |            |            |       |
+| 10.0      |          |           |        |    |              |            |            |       |
+
+**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

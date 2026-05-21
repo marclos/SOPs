@@ -1,0 +1,227 @@
+---
+# =============================================================================
+# SOP-F308: eDNA Water Sample Collection
+# =============================================================================
+title: "eDNA Water Sample Collection"
+sop-number: "SOP-F308"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release -- water-collection companion to SOP-F700"
+---
+
+## 1. Purpose
+
+This procedure describes site-specific water collection strategies for
+environmental DNA (eDNA) sampling across the range of aquatic habitats
+encountered in EA Program projects: wadeable streams, non-wadeable
+rivers, lakes and reservoirs, ponds and vernal pools, and constructed
+wetlands. It supplements
+[SOP-F700 eDNA Field Sampling and Preservation](SOP-F700-edna-field-sampling.qmd),
+which covers the core filtration, preservation, and contamination-
+control protocols that apply to all eDNA water samples regardless of
+habitat type.
+
+The separation recognizes that contamination prevention, filtration,
+and preservation (SOP-F700) are universal, while the physical act of
+collecting water varies with habitat. This SOP addresses the
+collection step: where to sample within a water body, how many
+samples to collect, and how to adapt the approach to different
+hydrological settings [@goldberg2016; @deiner2017].
+
+
+## 2. Scope
+
+- **Applies to:** Water collection for eDNA analysis at all EA Program
+  aquatic field sites. Once water is collected, filtration and
+  preservation follow [SOP-F700](SOP-F700-edna-field-sampling.qmd).
+- **Does not apply to:** Soil eDNA or sediment eDNA sampling (see
+  [SOP-F701](SOP-F701-soil-microbial-field-sampling.qmd)); airborne
+  eDNA; tissue-based DNA sampling; lab-side filtration and extraction
+  (see [SOP-L700](../lab_sops/SOP-L700-dna-extraction.qmd))
+- **Location:** All EA Program surface water field sites
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| PI / Field Lead   | Approve sampling design, confirm permits    |
+| Trained Personnel | Collect eDNA water samples per this SOP and SOP-F700 |
+| New Students      | Complete SOP-F700 contamination training before participating |
+
+
+## 4. Safety and Hazards
+
+All safety requirements from
+[SOP-F700](SOP-F700-edna-field-sampling.qmd) and
+[SOP-F001](SOP-F001-field-safety.qmd) apply. Additional hazards
+specific to collection settings:
+
+::: {.callout-warning}
+### Additional Hazards by Habitat
+
+- **Non-wadeable rivers and lakes:** Boat access required; drowning
+  risk. PFDs mandatory.
+- **Vernal pools:** Often in remote locations with limited access;
+  fragile habitat. Minimize trampling of pool margins.
+- **Constructed wetlands:** May contain treated wastewater. Wear
+  doubled gloves and avoid ingestion or skin contact.
+:::
+
+
+## 5. Equipment and Materials
+
+All sterile sampling supplies, preservatives, and field documentation
+are listed in [SOP-F700](SOP-F700-edna-field-sampling.qmd) Section 5.
+Additional items for specific habitats:
+
+| Item                                  | Habitat              | Notes                          |
+|:--------------------------------------|:---------------------|:-------------------------------|
+| Extension pole with sterile bottle clamp | Non-wadeable streams, bridges | For mid-channel collection without entering the water |
+| Van Dorn or Kemmerer bottle (dedicated to eDNA, pre-sterilized) | Lakes, deep pools | For discrete-depth collection |
+| Peristaltic pump with sterile tubing  | Any depth-specific application | Single-use tubing per sample |
+| Telescoping boat hook                 | Boat-based sampling  | For retrieving floating bottles |
+
+
+## 6. Procedure
+
+### 6.1 General Principles (All Habitats)
+
+These principles supplement SOP-F700:
+
+- **Sample where the target organism is most likely detected.** eDNA
+  concentration varies spatially: it is higher near organism activity
+  centers (spawning areas, resting pools, feeding zones) and
+  downstream of occupied habitat in lotic systems [@jane2015].
+- **Sample volume:** Collect at least 1 L per replicate (the volume
+  actually filtered may be less if the filter clogs). Plan for 3
+  replicates per site unless the study design specifies otherwise.
+- **Sampling order:** Within a day, sample sites from least likely to
+  most likely occupied (downstream to upstream in a connected system,
+  or reference sites before impacted sites) to minimize carry-over
+  contamination [@goldberg2016].
+
+### 6.2 Wadeable Streams
+
+1. Approach the sampling point from downstream
+2. Face upstream; submerge the sterile bottle to 10--20 cm below the
+   surface, tilted slightly into the current
+3. Fill to the 1 L mark and cap immediately
+4. For a reach-level composite: collect 250 mL from each of 4
+   microhabitats (pool tail, riffle margin, run, and backwater) and
+   combine into one bottle
+5. Proceed to filtration per SOP-F700 Section 6.4
+
+### 6.3 Non-Wadeable Rivers and Bridges
+
+1. From a bridge or bank, lower a sterile bottle attached to an
+   extension pole or a pre-sterilized Van Dorn sampler to mid-depth
+2. If using an extension pole: open the bottle at depth, fill by
+   current flow, and cap using a pull-string mechanism or retrieve
+   and cap immediately
+3. Record the approximate depth and distance from shore
+4. Decontaminate the extension pole between sites per SOP-F700
+   Section 6.7
+
+### 6.4 Lakes and Reservoirs
+
+1. Collect samples from a boat positioned over the target area (e.g.,
+   littoral zone for nearshore species, open water for pelagic species)
+2. For surface eDNA: submerge a sterile bottle to 15--30 cm below the
+   surface from the upwind side of the boat to avoid contamination
+   from the vessel
+3. For depth-specific eDNA (e.g., below the thermocline): deploy a
+   pre-sterilized Van Dorn bottle to the target depth, trip, and
+   retrieve. Transfer to a sterile sample bottle.
+4. If sampling multiple depths, work from deepest to shallowest to
+   minimize disturbance
+5. Record collection depth, water depth, and location (GPS)
+
+### 6.5 Ponds and Vernal Pools
+
+1. Approach slowly to minimize sediment disturbance (eDNA can be
+   resuspended from sediment, creating false-positive risk for species
+   no longer present) [@turner2015]
+2. Collect water from 5--10 cm below the surface near the center or
+   deepest point of the pool
+3. For very shallow pools (less than 15 cm), tip the bottle on its
+   side to fill without disturbing the bottom
+4. If the pool is small (less than 10 m^2^), a single 1 L grab from
+   the center is acceptable; for larger pools, composite from 3--5
+   points around the perimeter
+
+### 6.6 Constructed Wetlands and Treatment Systems
+
+1. Wear doubled nitrile gloves; these systems may contain treated
+   wastewater, elevated pathogen loads, or chemical residues
+2. Collect from the outflow or from an open water area; avoid
+   collecting from areas with dense emergent vegetation where
+   filtration may be rapid
+3. Collect a field blank at the site using the molecular-grade DI
+   water from the field kit (this is especially important in
+   constructed systems where background DNA loads are high)
+
+### 6.7 Filtration and Preservation
+
+After collection in any habitat, proceed immediately to filtration
+and preservation per [SOP-F700](SOP-F700-edna-field-sampling.qmd)
+Section 6.4. If on-site filtration is not possible, keep samples on
+ice and filter within 6 hours.
+
+
+## 7. Quality Control
+
+All QC requirements from SOP-F700 Section 8 apply. Additional
+habitat-specific considerations:
+
+- For lake depth samples, collect a field blank at the same depth
+  using the same equipment to detect cross-contamination from the
+  Van Dorn or pump
+- For bridge sampling with an extension pole, collect an equipment
+  blank (DI water poured through the pole apparatus) at least once
+  per event
+- When sampling connected sites in a watershed, record the order
+  of site visits and the time elapsed between sites
+
+
+## 8. References
+
+::: {#refs}
+:::
+
+
+## 9. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F007](SOP-F007-field-decontamination.qmd) | Field Decontamination | Between-site decon                |
+| [F008](SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling and COC | Sample ID and chain of custody |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | General water collection          |
+| [F700](SOP-F700-edna-field-sampling.qmd) | eDNA Field Sampling and Preservation | Core eDNA protocol (filtration, preservation, contamination control) |
+| [L700](../lab_sops/SOP-L700-dna-extraction.qmd) | DNA Extraction        | Lab-side extraction               |
+| [L706](../lab_sops/SOP-L706-edna-metabarcoding.qmd) | eDNA Metabarcoding | Full lab workflow                 |
+
+
+## 10. Training Record
+
+Before collecting eDNA water samples independently, personnel must:
+
+1. Complete all training requirements in
+   [SOP-F700](SOP-F700-edna-field-sampling.qmd) Section 11
+2. Review the habitat-specific collection methods in this SOP for
+   the site(s) to be sampled
+3. If boat-based sampling is required, complete boat safety
+   orientation (PFD use, boat handling)
+4. Demonstrate proper sterile collection technique (bottle handling,
+   depth sampling) under supervision
+5. Be signed off by the PI or field lead
