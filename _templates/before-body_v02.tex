@@ -19,14 +19,7 @@ $if(revision)$
 $endif$
 
 $-- Build author string from the author array
-$-- Quarto normalizes author metadata into "by-author" with subfield
-$-- "name.literal". The old "$for(author)$$author.name$" syntax does
-$-- not work because Quarto restructures the author list before Pandoc
-$-- sees it. We try by-author first (Quarto), then fall back to the
-$-- plain author variable (standalone Pandoc / older Quarto).
-$if(by-author)$
-\renewcommand{\sopauthor}{$for(by-author)$$by-author.name.literal$$sep$, $endfor$}
-$elseif(author)$
+$if(author)$
 \renewcommand{\sopauthor}{$for(author)$$author.name$$sep$, $endfor$}
 $endif$
 
