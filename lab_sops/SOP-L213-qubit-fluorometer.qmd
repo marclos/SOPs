@@ -1,0 +1,247 @@
+---
+# =============================================================================
+# SOP-L213: Qubit Fluorometer
+# =============================================================================
+title: "Qubit 4 Fluorometer"
+sop-number: "SOP-L213"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release -- instrument-focused SOP separated from SOP-L700"
+---
+
+## 1. Purpose
+
+This procedure describes the operation, calibration, and maintenance
+of the Invitrogen Qubit 4 Fluorometer. The Qubit uses fluorescent dyes
+that bind selectively to the target molecule (dsDNA, ssDNA, RNA, or
+protein), providing more accurate quantification than UV absorbance
+methods, especially at low concentrations or when contaminants are
+present. For the role of Qubit measurements within the DNA extraction
+workflow, see
+[SOP-L700 DNA Extraction](SOP-L700-dna-extraction.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** All use of the Qubit 4 Fluorometer in the EA Program
+  laboratory, including dsDNA Broad Range (BR), dsDNA High Sensitivity
+  (HS), RNA, and protein assays
+- **Does not apply to:** UV-Vis spectrophotometric quantification (see
+  [SOP-L212](SOP-L212-nanodrop-spectrophotometer.qmd)), Turner Designs
+  fluorometry for chlorophyll or other environmental analytes (see
+  [SOP-L203](SOP-L203-trilogy-fluorometer.qmd))
+- **Location:** Instrument bench, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, authorize instrument access    |
+| Lab Manager       | Maintain reagent inventory, schedule service |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Qubit reagent concentrate contains DMSO. Avoid skin
+  contact; review the SDS before handling.
+- **Biological:** Samples may contain hazardous biological material.
+  Treat all samples as potentially infectious.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves
+
+### Emergency Procedures
+
+For chemical splashes, flush with water for at least 15 minutes and
+consult the SDS. For biological spills, clean per
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Location         | Notes                          |
+|:------------------------------|:-----------------|:-------------------------------|
+| Qubit 4 Fluorometer           | Instrument bench, SGM 133 | Invitrogen / Thermo Fisher |
+| USB drive or Wi-Fi connection | --               | For data export                |
+
+### Reagents and Consumables
+
+| Item                                  | Catalog No.   | Storage          |
+|:--------------------------------------|:--------------|:-----------------|
+| Qubit dsDNA BR Assay Kit              | Q32850        | Room temperature |
+| Qubit dsDNA HS Assay Kit              | Q32851        | Room temperature |
+| Qubit assay tubes (0.5 mL, thin-wall) | Q32856        | Room temperature |
+| Nuclease-free water                   | Various       | Room temperature |
+
+::: {.callout-note}
+Use only the thin-wall 0.5 mL Qubit assay tubes (Cat. Q32856). Standard
+microcentrifuge tubes are not optically compatible and will produce
+inaccurate readings.
+:::
+
+
+## 6. Procedure
+
+### 6.1 Selecting the Assay
+
+Choose the assay based on expected concentration:
+
+| Assay         | Detection Range          | When to Use                     |
+|:--------------|:-------------------------|:--------------------------------|
+| dsDNA BR      | 2--1,000 ng              | Most soil/sediment extractions  |
+| dsDNA HS      | 0.2--100 ng              | Low-yield samples (e.g., water filters, dilute extracts) |
+| RNA BR / HS   | See kit documentation    | RNA quantification              |
+| Protein       | See kit documentation    | Protein quantification          |
+
+### 6.2 Preparing the Working Solution
+
+1. Calculate the volume of working solution needed: 200 uL per assay
+   tube (all samples plus 2 standards)
+2. Dilute the Qubit reagent concentrate 1:200 in Qubit buffer. For
+   example, for 10 tubes: 10 uL reagent + 1,990 uL buffer = 2,000 uL
+   total.
+3. Vortex briefly to mix
+
+::: {.callout-important}
+Prepare the working solution fresh for each session. Do not store
+diluted working solution.
+:::
+
+### 6.3 Preparing Standards
+
+1. Label two Qubit assay tubes: **Std 1** and **Std 2**
+2. Add 190 uL of working solution to each tube
+3. Add 10 uL of Standard 1 to the first tube and 10 uL of Standard 2
+   to the second tube
+4. Vortex each tube briefly (2--3 seconds)
+
+### 6.4 Preparing Samples
+
+1. Label one Qubit assay tube per sample
+2. Add 198 uL of working solution to each tube
+3. Add 2 uL of sample (DNA extract, RNA, or protein solution) to the
+   corresponding tube
+4. Vortex each tube briefly (2--3 seconds)
+
+::: {.callout-tip}
+The sample volume can range from 1--20 uL as long as the total volume
+in each tube equals 200 uL (adjust the working solution volume
+accordingly). Using 2 uL of sample minimizes consumption of precious
+extracts.
+:::
+
+### 6.5 Incubation
+
+1. Incubate all tubes (standards and samples) at room temperature for
+   2 minutes
+2. Do not incubate for longer than 30 minutes; fluorescence signal
+   decays over time
+
+### 6.6 Calibration
+
+1. On the Qubit home screen, select the appropriate assay (e.g.,
+   **dsDNA Broad Range**)
+2. Tap **Read Standards**
+3. Insert the Std 1 tube, close the lid, and tap **Read**
+4. When prompted, insert the Std 2 tube, close the lid, and tap **Read**
+5. Verify that the calibration is accepted (green checkmark). If it
+   fails, prepare fresh standards and repeat.
+
+### 6.7 Reading Samples
+
+1. Tap **Run Samples**
+2. Set the sample volume to match the volume of sample added (e.g.,
+   2 uL)
+3. Set the output units (ng/uL is standard for DNA extracts)
+4. Insert the sample tube, close the lid, and tap **Read**
+5. Record the concentration (ng/uL, corrected for dilution by the
+   instrument)
+6. Repeat for all samples
+
+### 6.8 Data Export
+
+1. Export results via USB or Wi-Fi to the designated project folder
+2. Use a consistent file-naming convention:
+   `YYYY-MM-DD_Qubit_ProjectName.csv`
+3. Record results in the lab notebook and/or project data sheet
+
+### 6.9 Shutdown and Daily Maintenance
+
+1. Remove all tubes from the instrument
+2. Wipe the sample chamber with a lint-free tissue if any liquid was
+   spilled
+3. Close the lid
+4. Dispose of used assay tubes (see Section 8)
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Run fresh standards at the beginning of each session; do not rely on
+  a previous calibration
+- Standards must be within the acceptable range indicated by the
+  instrument (green checkmark)
+- If a sample reads "Out of Range," re-prepare it using the other assay
+  sensitivity (e.g., switch from BR to HS for low-concentration samples)
+- Acceptable DNA yield from 0.25 g of soil: typically 1--20 ng/uL in a
+  100 uL elution, depending on soil type
+- If the NanoDrop and Qubit concentrations disagree by more than a
+  factor of two, the NanoDrop reading is likely inflated by
+  contaminants; trust the Qubit value for downstream planning
+
+*TBD -- establish a periodic performance check using Qubit DNA standards
+of known concentration.*
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used Qubit assay tubes        | Standard trash (rinse if biohazardous)   |
+| Leftover working solution     | Standard drain (dilute DMSO, non-hazardous at this concentration) |
+| Pipette tips                  | Standard trash (or biohazard if samples are hazardous) |
+
+
+## 9. References
+
+- Invitrogen. *Qubit 4 Fluorometer User Guide*. Thermo Fisher
+  Scientific, Waltham, MA.
+- Invitrogen. *Qubit dsDNA BR Assay Kit Product Information*. Cat.
+  Q32850.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using the Qubit independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Observe a trained operator demonstrate standard preparation,
+   calibration, sample reading, and data export
+4. Perform a practice session (calibration plus at least 5 samples)
+   under supervision
+5. Be signed off by the PI or lab manager

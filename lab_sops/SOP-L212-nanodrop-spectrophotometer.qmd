@@ -1,0 +1,212 @@
+---
+# =============================================================================
+# SOP-L212: NanoDrop Spectrophotometer
+# =============================================================================
+title: "NanoDrop One Spectrophotometer"
+sop-number: "SOP-L212"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release -- instrument-focused SOP separated from SOP-L700"
+---
+
+## 1. Purpose
+
+This procedure describes the operation, calibration verification, and
+maintenance of the Thermo Scientific NanoDrop One micro-volume
+UV-Vis spectrophotometer. The NanoDrop measures nucleic acid and
+protein concentrations from samples as small as 1--2 uL and provides
+absorbance ratios (A~260~/A~280~ and A~260~/A~230~) used to assess
+sample purity. For the role of NanoDrop measurements within the DNA
+extraction workflow, see
+[SOP-L700 DNA Extraction](SOP-L700-dna-extraction.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** All use of the NanoDrop One spectrophotometer in the
+  EA Program laboratory, including nucleic acid quantification, protein
+  quantification (A~280~ method), and custom wavelength measurements
+- **Does not apply to:** Cuvette-based spectrophotometers (see
+  [SOP-L201](SOP-L201-spectrophotometer-operation.qmd)), fluorometric
+  quantification (see [SOP-L213](SOP-L213-qubit-fluorometer.qmd)), or
+  Hach benchtop spectrophotometry (see
+  [SOP-L215](SOP-L215-hach-dr3900.qmd))
+- **Location:** Instrument bench, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, authorize instrument access    |
+| Lab Manager       | Schedule maintenance, manage software updates |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Optical:** The NanoDrop uses a pulsed xenon flash lamp. Do not look
+  directly into the light source when the pedestal arm is open.
+- **Biological:** Samples may contain hazardous biological material.
+  Treat all samples as potentially infectious.
+- **Chemical:** Cleaning solvents (e.g., 0.5 M HCl for decontamination)
+  require appropriate handling.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves
+
+### Emergency Procedures
+
+For biological spills on or near the instrument, clean and disinfect per
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd). If liquid
+enters the instrument housing, disconnect power immediately and contact
+the lab manager.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Location         | Notes                          |
+|:------------------------------|:-----------------|:-------------------------------|
+| NanoDrop One spectrophotometer | Instrument bench, SGM 133 | Thermo Scientific |
+| Connected laptop or NanoDrop display | Instrument bench | For data export     |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Lint-free wipes (Kimtech)     | For pedestal cleaning between samples     |
+| Nuclease-free water           | For blanking and pedestal cleaning         |
+| Elution buffer                | Must match the buffer used in extraction   |
+
+
+## 6. Procedure
+
+### 6.1 Startup
+
+1. Open the NanoDrop One software (or wake the integrated touchscreen)
+2. Select the appropriate application (e.g., **Nucleic Acid**,
+   **Protein A280**, or **UV-Vis**)
+3. Clean the upper and lower pedestals with 2 uL of nuclease-free
+   water; wipe with a lint-free tissue
+4. Perform a blank measurement (see Section 6.2)
+
+### 6.2 Blanking
+
+1. Pipette 2 uL of the blank solution onto the lower pedestal. The
+   blank must match the sample matrix -- use the same elution buffer or
+   solvent that the samples are dissolved in.
+2. Lower the sampling arm and tap **Blank**
+3. Verify that the blank spectrum is flat and the baseline absorbance
+   at 260 nm is near zero
+4. Wipe both pedestals with a lint-free tissue
+
+::: {.callout-tip}
+Re-blank whenever you switch sample types, change buffers, or if the
+instrument has been idle for more than 30 minutes.
+:::
+
+### 6.3 Measuring Samples
+
+1. Pipette 2 uL of sample onto the lower pedestal
+2. Lower the sampling arm and tap **Measure**
+3. Record the following for each sample:
+   - Concentration (ng/uL)
+   - A~260~/A~280~ ratio
+   - A~260~/A~230~ ratio
+4. Wipe both pedestals with a lint-free tissue between every sample
+5. Repeat for all samples
+
+### 6.4 Interpreting Results
+
+| Parameter       | Expected Range | Interpretation                              |
+|:----------------|:---------------|:--------------------------------------------|
+| A~260~/A~280~   | 1.8--2.0       | Values below 1.8 suggest protein or phenol contamination |
+| A~260~/A~230~   | 2.0--2.2       | Values below 2.0 suggest humic acid, carbohydrate, salt, or guanidine contamination |
+
+::: {.callout-note}
+For environmental DNA extracts, A~260~/A~230~ ratios are frequently
+below 2.0. If the NanoDrop concentration is more than twice the Qubit
+reading, the UV absorbance is likely inflated by co-extracted
+contaminants; use the Qubit value for planning downstream reactions.
+:::
+
+### 6.5 Data Export
+
+1. Save the session file (.tsv or .csv) to the designated project
+   folder on the connected laptop
+2. Use a consistent file-naming convention:
+   `YYYY-MM-DD_NanoDrop_ProjectName.tsv`
+3. Record results in the lab notebook and/or project data sheet
+
+### 6.6 Shutdown and Daily Maintenance
+
+1. Wipe both pedestals with 2 uL of nuclease-free water, then dry
+   with a lint-free tissue
+2. If protein or concentrated DNA residue is visible, clean with 2 uL
+   of 0.5 M HCl, wait 10 seconds, then rinse with nuclease-free water
+3. Close the software and lower the sampling arm
+4. Cover the instrument with the dust cover if available
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Verify instrument performance at the start of each session by
+  measuring a blank; the 260 nm absorbance should read 0.00 +/- 0.02
+- If the NanoDrop and Qubit concentrations disagree by more than a
+  factor of two, the NanoDrop reading is likely inflated by
+  contaminants; trust the Qubit value
+- *TBD -- establish a schedule for periodic performance verification
+  using Thermo Scientific NanoDrop verification standards*
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used lint-free wipes          | Standard trash                           |
+| Pipette tips                  | Standard trash (or biohazard if samples are hazardous) |
+| Residual sample on pedestal   | Wiped and cleaned as part of shutdown    |
+
+
+## 9. References
+
+- Thermo Fisher Scientific. *NanoDrop One/One^C^ User Guide*. Thermo
+  Fisher Scientific, Waltham, MA.
+- Desjardins, P. & Bhatt, T. (2010). Micro-volume quantification of
+  nucleic acids. *Current Protocols*, A.3J.1--A.3J.16.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using the NanoDrop independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Observe a trained operator demonstrate blanking, measurement, and
+   data export
+4. Perform a practice session (blank plus at least 5 samples) under
+   supervision
+5. Be signed off by the PI or lab manager

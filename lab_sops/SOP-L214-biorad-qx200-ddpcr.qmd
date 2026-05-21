@@ -1,0 +1,280 @@
+---
+# =============================================================================
+# SOP-L214: Bio-Rad QX200 ddPCR System (Instrument)
+# =============================================================================
+title: "Bio-Rad QX200 Droplet Digital PCR System"
+sop-number: "SOP-L214"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release -- instrument-focused SOP separated from SOP-L701"
+---
+
+## 1. Purpose
+
+This procedure describes the operation, maintenance, and troubleshooting
+of the Bio-Rad QX200 Droplet Digital PCR (ddPCR) system, including the
+QX200 Droplet Generator, the C1000 Touch Thermal Cycler with the 96-well
+Deep Well Reaction Module, and the QX200 Droplet Reader. The QX200
+partitions each PCR reaction into approximately 20,000 nanoliter-sized
+droplets, enabling absolute quantification of target DNA sequences
+without a standard curve. For assay design, primer/probe sequences, and
+data analysis, see
+[SOP-L701 ddPCR Nitrogen Cycle Primers](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd)
+and
+[SOP-L702 ddPCR Data Analysis](SOP-L702-ddpcr-data-analysis.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** All use of the Bio-Rad QX200 ddPCR system in the EA
+  Program laboratory, including droplet generation, thermal cycling,
+  and droplet reading
+- **Does not apply to:** Assay design, primer validation, or data
+  analysis (see SOP-L701 and SOP-L702); conventional qPCR on other
+  instruments
+- **Location:** *TBD* (confirm room and bench assignment)
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, authorize instrument access    |
+| Lab Manager       | Schedule maintenance, manage consumable inventory, coordinate Bio-Rad service visits |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete Bio-Rad training modules and supervised practice before independent use |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Droplet generation oil (Bio-Rad Cat. 1863005) is a
+  fluorinated oil. Avoid skin contact and inhalation. Work in a
+  well-ventilated area or fume hood when handling bulk oil. Review the
+  SDS before first use.
+- **Biological:** Samples may contain environmental DNA from unknown
+  organisms. Treat all samples and amplified products as potentially
+  biohazardous.
+- **Physical:** The thermal cycler reaches temperatures up to 98 C.
+  Allow the block to cool before removing plates. The Droplet Reader
+  needle is sharp; do not reach into the reader bay.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves (change between pre-PCR and post-PCR areas)
+
+### Emergency Procedures
+
+For oil spills, absorb with paper towels and dispose as chemical waste.
+For thermal burns, apply cool running water and seek first aid. Refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) and
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                  | Location  | Notes                          |
+|:--------------------------------------|:----------|:-------------------------------|
+| QX200 Droplet Generator               | *TBD*     | Generates water-in-oil emulsion |
+| C1000 Touch Thermal Cycler            | *TBD*     | With 96-Deep Well Reaction Module |
+| QX200 Droplet Reader                  | *TBD*     | Reads fluorescence per droplet |
+| Computer with QuantaSoft / QuantaSoft AP | *TBD* | For instrument control and analysis |
+| DG8 Cartridge Holder                  | *TBD*     | Holds cartridges during generation |
+| Plate sealer (PX1 PCR Plate Sealer)   | *TBD*     | Heat-seals 96-well plates      |
+
+### Reagents and Consumables
+
+| Item                                       | Catalog No. | Storage          |
+|:-------------------------------------------|:------------|:-----------------|
+| DG8 Cartridges for QX200                   | 1864008     | Room temperature |
+| DG8 Gaskets                                | 1863009     | Room temperature |
+| Droplet Generation Oil for Probes          | 1863005     | Room temperature |
+| Droplet Generation Oil for EvaGreen        | 1864006     | Room temperature |
+| ddPCR 96-Well Plates                       | 12001925    | Room temperature |
+| Pierceable Foil Heat Seals                 | 1814040     | Room temperature |
+| ddPCR Supermix for Probes (No dUTP)        | 1863024     | --20 C           |
+| QX200 ddPCR EvaGreen Supermix              | 1864034     | --20 C           |
+
+
+## 6. Procedure
+
+### 6.1 Pre-PCR Setup (Clean Area)
+
+::: {.callout-important}
+All pre-PCR work (reaction assembly, droplet generation) must be
+performed in the designated pre-PCR area to prevent amplicon
+contamination. Use dedicated pipettes and wear clean gloves.
+:::
+
+1. Thaw the ddPCR Supermix and DNA templates on ice
+2. Prepare the reaction master mix according to the assay protocol
+   (see SOP-L701 for primer/probe concentrations and cycling conditions)
+3. Dispense 20 uL of each assembled reaction into the sample wells
+   (middle row) of a DG8 cartridge
+4. Add 70 uL of Droplet Generation Oil to the oil wells (bottom row)
+5. Attach a DG8 gasket to the cartridge
+
+### 6.2 Droplet Generation
+
+1. Place the loaded cartridge into the QX200 Droplet Generator
+2. Close the lid and press **Start**. Generation takes approximately
+   2 minutes per cartridge.
+3. When complete, carefully open the lid. Do not tilt or shake the
+   cartridge -- the droplets are fragile.
+4. Using a multichannel pipette set to 40 uL, gently aspirate the
+   droplets from the top row of the cartridge and dispense into the
+   96-well plate. Pipette slowly (approximately 3 seconds to aspirate,
+   3 seconds to dispense) to avoid shearing droplets.
+5. Repeat for each cartridge
+
+### 6.3 Plate Sealing
+
+1. Place the pierceable foil heat seal over the loaded 96-well plate
+2. Seal using the PX1 PCR Plate Sealer at 180 C for 5 seconds
+3. Visually confirm a uniform seal across all wells
+
+### 6.4 Thermal Cycling
+
+1. Place the sealed plate into the C1000 Touch Thermal Cycler with the
+   96-Deep Well Reaction Module
+2. Program the thermal cycling protocol per SOP-L701 (typical: 95 C
+   activation, 40 cycles of denaturation/annealing, 98 C droplet
+   stabilization, 4 C hold)
+3. Set the ramp rate to 2 C/s (critical for ddPCR; do not use the
+   default maximum ramp rate)
+4. Start the run. Cycling typically takes 2--2.5 hours.
+5. After cycling, plates can be held at 4 C for up to 24 hours before
+   reading, but immediate reading is preferred
+
+### 6.5 Droplet Reading
+
+1. Open QuantaSoft software on the connected computer
+2. Set up the plate layout: assign sample names, target names,
+   experiment type (ABS for absolute quantification), and supermix type
+3. Place the sealed plate into the QX200 Droplet Reader
+4. Confirm that the reader waste and buffer bottles are at appropriate
+   levels (refill or empty as needed before starting a full plate)
+5. Tap **Start** to begin reading. The reader processes each well
+   individually (approximately 1--2 minutes per well).
+6. Monitor the first few wells to confirm that droplet counts exceed
+   10,000 accepted events per well
+
+### 6.6 Data Review
+
+1. After reading, review the 1-D amplitude plots in QuantaSoft to
+   verify clear separation between positive and negative droplet
+   clusters
+2. Set the fluorescence amplitude threshold manually using the NTC
+   and positive control wells as guides
+3. Check that all wells have at least 10,000 accepted droplets; flag
+   any wells below this threshold
+4. Export results as .csv for downstream analysis (see SOP-L702)
+
+### 6.7 Shutdown and Daily Maintenance
+
+1. Remove the plate from the Droplet Reader
+2. Check the reader waste bottle; empty if more than 75% full
+3. Check the reader buffer bottle; refill if less than 25% full
+4. Wipe down the Droplet Generator cartridge holder with a lint-free
+   tissue
+5. Dispose of used cartridges and gaskets (see Section 8)
+6. Close QuantaSoft and shut down instruments if no further runs are
+   scheduled
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Every run must include: no-template controls (NTC, minimum 2 wells),
+  extraction blanks (from SOP-L700), and positive controls (gBlock or
+  plasmid at known concentration)
+- Droplet count per well must exceed 10,000 accepted droplets (out of
+  approximately 20,000 generated); wells below this threshold should be
+  excluded
+- NTC wells must show 0 or fewer than 3 positive droplets; more than 3
+  indicates contamination and the plate or affected target should be
+  rerun
+- Positive/negative droplet cluster separation must be unambiguous on
+  the 1-D amplitude plot
+- *TBD -- define acceptable coefficients of variation for technical
+  replicates (typically less than 15--25% for ddPCR)*
+- *TBD -- establish a maintenance log and schedule for Bio-Rad service
+  visits*
+
+
+## 8. Waste Disposal
+
+| Waste Type                          | Container                 | Disposal Method                     |
+|:------------------------------------|:--------------------------|:------------------------------------|
+| Used DG8 cartridges and gaskets     | Standard trash            | Non-hazardous                       |
+| Droplet generation oil waste        | Chemical waste container  | EH&S hazardous waste pickup         |
+| Used PCR plates and foil seals      | Standard trash            | Non-hazardous after thermal cycling |
+| Pipette tips (pre- and post-PCR)    | Standard trash            | Non-hazardous                       |
+| Reader waste fluid                  | Chemical waste container  | EH&S hazardous waste pickup         |
+
+
+## 9. References
+
+- Bio-Rad Laboratories. *QX200 Droplet Digital PCR System Instruction
+  Manual*. Bio-Rad Laboratories, Hercules, CA.
+- Bio-Rad Laboratories. *Droplet Digital PCR Applications Guide*. Bio-Rad
+  Bulletin 6407.
+- Hindson, B. J. et al. (2011). High-throughput droplet digital PCR
+  system for absolute quantitation of DNA copy number. *Analytical
+  Chemistry*, 83(22), 8604--8610.
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using the QX200 system independently, personnel must:
+
+1. Read this SOP, [SOP-L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd),
+   and [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
+2. Complete the Bio-Rad QX200 online training modules or equivalent
+   manufacturer training
+3. Observe a trained operator demonstrate droplet generation, thermal
+   cycling setup, and droplet reading for a full plate
+4. Perform a supervised run including reaction assembly, droplet
+   generation, plate sealing, thermal cycling, and reading
+5. Demonstrate competence in QuantaSoft plate setup and threshold
+   setting
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Troubleshooting {.appendix}
+
+| Symptom                              | Probable Cause                     | Corrective Action                          |
+|:--------------------------------------|:-----------------------------------|:-------------------------------------------|
+| Low droplet count (below 10,000)      | Pipetting error during transfer; clogged cartridge | Pipette more slowly (3 s up, 3 s down); use a fresh cartridge |
+| No separation between positive and negative clusters | Poor primer/probe design; degraded reagents | Review assay (SOP-L701); use fresh Supermix |
+| Rain (droplets between clusters)      | Suboptimal annealing temperature; partial inhibition | Run a temperature gradient; dilute template |
+| Reader error or blockage              | Air bubble or debris in reader line | Run a cleaning cycle per Bio-Rad instructions; contact lab manager |
+| Positive droplets in NTC wells        | Amplicon contamination             | Decontaminate pre-PCR area with 10% bleach; use fresh reagents; separate pre- and post-PCR areas strictly |
+
+
+## Appendix B: Sections Requiring Completion {.appendix}
+
+| Section                              | Status | Notes                                       |
+|:--------------------------------------|:-------|:--------------------------------------------|
+| Instrument location                  | TBD    | Confirm room and bench assignment           |
+| Maintenance schedule                 | TBD    | Establish log and Bio-Rad service intervals |
+| Reader cleaning cycle details        | TBD    | Document with Bio-Rad field service engineer |
+| Lab-specific LOD/LOQ values          | TBD    | Establish after primer validation (SOP-L701) |

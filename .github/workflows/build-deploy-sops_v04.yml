@@ -58,7 +58,7 @@ jobs:
 
     env:
       R_LIBS_USER: ${{ github.workspace }}/R/library
-     TZ: America/Los_Angeles
+      TZ: America/Los_Angeles
      
     steps:
       - name: Checkout repository
