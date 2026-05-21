@@ -1,0 +1,249 @@
+---
+# =============================================================================
+# SOP-L603: Plant Tissue Drying, Grinding, and Preparation for Analysis
+# =============================================================================
+title: "Plant Tissue Drying, Grinding, and Preparation for Analysis"
+sop-number: "SOP-L603"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-21"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the laboratory procedures for drying, grinding, and
+preparing plant tissue samples for subsequent elemental, isotopic, or
+nutrient analysis. Proper sample preparation is essential for obtaining
+representative, reproducible analytical results. The procedures follow
+standard methods for plant analysis [@kalra1998; @mills2004;
+@jones2001].
+
+
+## 2. Scope
+
+- **Applies to:** Leaf, stem, root, litter, and other plant tissue
+  samples collected from EA Program field sites, prepared for total
+  carbon and nitrogen (EA-IRMS), total phosphorus, metal analysis
+  (ICP-MS after digestion), or other elemental determinations
+- **Does not apply to:** Fresh tissue assays that require unfixed
+  material (e.g., chlorophyll extraction from fresh leaves, enzyme
+  activity assays); seed or fruit tissue with high oil content
+  (requires freeze-drying); soil organic matter (see
+  [SOP-L406](SOP-L406-loss-on-ignition.qmd))
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve drying protocol and grinding method |
+| Trained Personnel | Process samples per this SOP                |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Drying ovens operate at 60--105 °C; burn risk from
+  hot trays and glassware. The Wiley mill and ball mill contain
+  rapidly moving parts; keep hands, hair, and loose clothing away from
+  the grinding chamber.
+- **Noise:** The Wiley mill generates noise above 85 dBA. Wear hearing
+  protection during operation.
+- **Dust:** Grinding produces fine particulate matter. Work in a
+  well-ventilated area or use a dust mask, especially when processing
+  large batches.
+- **Biological:** Field-collected plant tissue may harbor ticks,
+  spiders, or allergenic compounds (e.g., poison oak resin). Inspect
+  samples before handling; wear gloves.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or goggles
+- [ ] Lab coat
+- [ ] Nitrile gloves
+- [ ] Hearing protection (Wiley mill operation)
+- [ ] Dust mask or N95 respirator (grinding large batches)
+
+### Emergency Procedures
+
+For burns from the oven, cool affected area under running water.
+Refer to [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Drying oven                           | Forced-air convection; set to 60 °C (standard) or 105 °C (rapid dry) |
+| Wiley mill (Thomas Scientific)        | With 1 mm (20-mesh) screen              |
+| Ball mill or mortar and pestle         | For fine grinding (< 250 $\mu$m) for IRMS |
+| Analytical balance                    | 0.0001 g readability (for weighing into tin capsules) |
+| Desiccator with desiccant             | For cooling dried samples               |
+
+### Consumables
+
+| Item                              | Notes                              |
+|:----------------------------------|:-----------------------------------|
+| Paper bags or aluminum foil trays | For oven drying; labeled with pencil |
+| Labeled sample bags (polyethylene or paper) | For storing ground tissue |
+| Tin capsules (5 x 9 mm)          | For EA-IRMS analysis               |
+| Kimwipes                          | For cleaning mill between samples  |
+| 70% ethanol (spray bottle)        | For decontaminating equipment      |
+
+
+## 6. Procedure
+
+### 6.1 Sample Receiving and Cleaning
+
+1. Log incoming samples in the laboratory tracking spreadsheet. Verify
+   site ID, date, species or tissue type, and collector.
+2. If tissue was not rinsed in the field, briefly rinse leaf or stem
+   material with deionized water to remove surface soil, dust, and
+   epiphytes. Do not soak, as leaching of soluble compounds will occur
+   [@kalra1998].
+3. Blot excess water with paper towels.
+4. For root samples, remove adhering soil by gentle agitation in DI
+   water; multiple rinses may be required.
+
+### 6.2 Drying
+
+1. Place cleaned tissue in labeled paper bags or foil trays. Do not
+   overload bags; tissue should be loosely arranged to allow air
+   circulation.
+2. Dry at 60 °C in the forced-air oven for a minimum of 48 hours, or
+   until constant mass is achieved (two consecutive weighings 4 hours
+   apart differ by less than 0.1% of sample mass) [@jones2001].
+3. For samples intended only for total C and N by combustion (not
+   volatile compound analysis), drying at 70 °C is acceptable and
+   reduces drying time.
+
+::: {.callout-important}
+Do not exceed 70 °C for samples intended for nitrogen analysis, as
+volatile nitrogen compounds may be lost at higher temperatures. Do not
+exceed 60 °C for samples intended for analysis of volatile organic
+compounds, essential oils, or lipids [@kalra1998].
+:::
+
+4. Remove dried samples from the oven and cool in a desiccator for at
+   least 30 minutes before weighing or grinding.
+5. Record the dry mass if gravimetric moisture content is needed.
+
+### 6.3 Coarse Grinding (Wiley Mill)
+
+1. Inspect the mill: confirm the 1 mm (20-mesh) screen is installed
+   and the cutting blades are sharp and properly seated.
+2. Turn on the mill and allow it to reach full speed before feeding
+   material.
+3. Feed dried tissue into the hopper in small amounts, pushing
+   material gently with the wooden plunger. Do not force tissue into
+   the blades.
+4. Collect the ground material passing through the screen in a clean,
+   labeled container or bag.
+5. Between samples, disassemble the grinding chamber and clean
+   thoroughly:
+   - Brush all surfaces with a stiff brush to remove residual material
+   - Wipe with 70% ethanol
+   - Run a small amount of acid-washed quartz sand through the mill
+     as a blank grind if cross-contamination of trace metals is a
+     concern
+   - Allow to dry before the next sample
+
+### 6.4 Fine Grinding (for IRMS or Homogeneity-Critical Analyses)
+
+For EA-IRMS analysis, the Wiley-milled material (less than 1 mm) must
+be further ground to a fine, homogeneous powder (less than 250 $\mu$m):
+
+1. Transfer approximately 1--2 g of coarsely ground tissue to a clean
+   ball mill vial with grinding balls.
+2. Grind for 2--3 minutes until the material is a uniform fine powder.
+3. Alternatively, use an agate mortar and pestle, grinding until no
+   gritty texture remains.
+4. Transfer the powder to a labeled vial or sample bag.
+5. Clean the ball mill vial and balls between samples with 70% ethanol
+   and Kimwipes.
+
+### 6.5 Weighing into Tin Capsules (for EA-IRMS)
+
+1. Using the analytical balance, tare a tin capsule on the balance pan.
+2. Weigh 3--5 mg of finely ground tissue into the capsule
+   [@brodie2011]. Record the mass to 0.001 mg.
+3. Fold the capsule into a tight pellet using forceps, ensuring no
+   material escapes.
+4. Place the pellet in a labeled well of a microplate or sample tray.
+5. Include blanks (empty tin capsules) and reference materials (e.g.,
+   acetanilide, USGS-40) in the run sequence per
+   [SOP-L414](SOP-L414-soil-ea-irms.qmd).
+
+
+## 7. Quality Control
+
+- Grind and analyze duplicate subsamples at a rate of at least 1 per
+  10 samples to assess preparation variability. Analytical duplicates
+  should agree within 5% RPD for C and N concentrations.
+- Include a laboratory reference material (e.g., NIST SRM 1515
+  Apple Leaves or NIST SRM 1547 Peach Leaves) in each analytical
+  batch to verify accuracy [@kalra1998].
+- Document all cleaning steps in the laboratory notebook, especially
+  the blank grind between samples when trace metal analysis is planned.
+- Confirm drying completeness by re-weighing a subset of samples after
+  an additional 4 hours of drying.
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Plant tissue waste            | Standard trash (non-hazardous)           |
+| Ethanol cleaning rinses       | Evaporate in fume hood or flammable waste |
+| Used tin capsules (unfired)   | Standard trash                           |
+| Quartz sand (blank grind)     | Standard trash                           |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety          | Required safety training          |
+| [L102](SOP-L102-using-balances.qmd)    | Using Balances             | Balance operation                 |
+| [L406](SOP-L406-loss-on-ignition.qmd)  | Loss on Ignition           | Related preparation for SOM       |
+| [L414](SOP-L414-soil-ea-irms.qmd)      | Flash EA Combustion (IRMS) | Downstream analytical method      |
+| [L410](SOP-L410-hotplate-acid-digestion.qmd) | Acid Digestion       | Downstream digestion for metals   |
+
+
+## 11. Training Record
+
+Before processing plant tissue independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Demonstrate safe Wiley mill operation (startup, feeding, cleaning,
+   shutdown) under supervision
+4. Process at least five samples under supervision, including
+   decontamination steps between samples
+5. If preparing samples for IRMS, demonstrate fine grinding and
+   accurate weighing into tin capsules (target mass 3--5 mg, recorded
+   to 0.001 mg)
+6. Be signed off by the PI or lab manager

@@ -1,0 +1,255 @@
+---
+# =============================================================================
+# SOP-L604: Algae / Periphyton Identification and Enumeration
+# =============================================================================
+title: "Algae / Periphyton Identification and Enumeration"
+sop-number: "SOP-L604"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-21"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the laboratory procedures for identifying and
+enumerating benthic algae (periphyton) from stream bioassessment
+samples. Periphyton assemblages are sensitive indicators of water
+quality, nutrient enrichment, and physical habitat condition, and are
+a required component of the California SWAMP bioassessment protocol
+[@ode2016; @barbour1999]. This SOP covers soft-bodied algae (green
+algae, cyanobacteria, and other non-diatom taxa) and diatoms, which
+are processed separately due to different preparation requirements
+[@charles2002; @stevenson1996].
+
+
+## 2. Scope
+
+- **Applies to:** Identification and enumeration of benthic periphyton
+  from composite epilithic, epiphytic, or epidendric samples collected
+  per SWAMP protocols at EA Program stream sites
+- **Does not apply to:** Phytoplankton (water column) identification;
+  chlorophyll *a* extraction (see
+  [SOP-L310](SOP-L310-chlorophyll-extraction.qmd)); algal culture or
+  toxin analysis; molecular identification (eDNA metabarcoding)
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Lab Manager  | Approve taxonomic protocols; arrange external QC        |
+| Trained Personnel | Process samples, identify and enumerate algae           |
+| New Students      | Complete training before independent identification     |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Lugol's iodine solution (preservative) contains
+  potassium iodide and iodine; it is a mild irritant and stains skin
+  and clothing. Nitric acid (used in diatom cleaning) is corrosive;
+  handle in the fume hood. The mounting medium Naphrax contains
+  toluene, which is flammable and toxic by inhalation.
+- **Physical:** Hot plates used for diatom cleaning and slide
+  preparation pose burn risk. Coverslips and slides are fragile.
+- **Biological:** Stream samples may contain pathogens. Wear gloves.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or goggles
+- [ ] Lab coat
+- [ ] Nitrile gloves
+- [ ] Fume hood (required for nitric acid cleaning and Naphrax mounting)
+
+### Emergency Procedures
+
+For acid splashes, flush immediately with copious water for at least
+15 minutes. For Naphrax/toluene spills, ventilate and absorb. Refer
+to [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Compound microscope (brightfield)     | 400x and 1000x (oil immersion) for diatoms |
+| Inverted microscope (optional)        | For soft-bodied algae in settling chambers |
+| Palmer-Maloney counting cell          | For soft-bodied algae enumeration        |
+| Hot plate                             | For diatom acid cleaning                 |
+| Centrifuge                            | For concentrating cleaned diatom material |
+| Slide warmer                          | For drying diatom mounts                 |
+
+### Consumables
+
+| Item                              | Notes                              |
+|:----------------------------------|:-----------------------------------|
+| Lugol's iodine solution           | Preservative for soft-bodied algae |
+| Concentrated HNO~3~ (trace metal grade) | For diatom frustule cleaning  |
+| 30% H~2~O~2~                     | Alternative oxidizer for cleaning  |
+| Naphrax mounting medium           | High refractive index (n = 1.73); for permanent diatom slides |
+| Coverslips (22 x 22 mm, No. 1)   |                                    |
+| Glass microscope slides           |                                    |
+| Immersion oil                     |                                    |
+
+
+## 6. Procedure
+
+### 6.1 Sample Processing Overview
+
+Periphyton samples are processed in two parallel workflows:
+
+1. **Soft-bodied algae:** Examined alive or preserved in Lugol's
+   solution using a Palmer-Maloney cell or settling chamber at
+   400x magnification.
+2. **Diatoms:** Cleaned with acid or peroxide to remove organic matter,
+   mounted in Naphrax on permanent slides, and identified at 1000x
+   (oil immersion).
+
+### 6.2 Soft-Bodied Algae Identification
+
+1. Homogenize the preserved sample by gently inverting the jar 20
+   times.
+2. Pipette a known volume (typically 0.1 mL) into a Palmer-Maloney
+   counting cell.
+3. Allow cells to settle for 5 minutes.
+4. Scan the entire cell at 400x magnification.
+5. Identify and count a minimum of 300 natural units (cells, colonies,
+   or filament lengths of 10 $\mu$m). A natural unit is the smallest
+   entity that can be identified: a single cell for unicellular taxa,
+   a colony for colonial taxa, or a 10 $\mu$m filament segment for
+   filamentous taxa [@stevenson1996].
+6. Record counts by taxon. Identify to genus where possible; use
+   higher-level groupings (family or order) for taxa that cannot be
+   resolved without specialized preparation.
+7. Calculate cell density:
+
+$$
+\text{Cells/cm}^2 = \frac{N \times V_{\text{sample}}}{V_{\text{counted}} \times A_{\text{substrate}}}
+$$
+
+where $N$ = number of cells counted, $V_{\text{sample}}$ = total
+sample volume (mL), $V_{\text{counted}}$ = volume examined in the
+counting cell (mL), and $A_{\text{substrate}}$ = total area of
+substrate scraped in the field (cm^2^).
+
+### 6.3 Diatom Cleaning
+
+1. Transfer approximately 5 mL of well-mixed sample to a labeled
+   glass beaker or test tube.
+2. In the fume hood, add an equal volume of concentrated HNO~3~
+   (or 30% H~2~O~2~ as a less hazardous alternative).
+3. Heat on the hot plate at low-to-medium heat (approximately 80 °C)
+   until the sample clears and all organic material is digested
+   (30--60 minutes). Do not boil.
+4. Allow to cool. Centrifuge at 1500 x g for 5 minutes and decant
+   the supernatant.
+5. Wash the pellet with DI water, centrifuge, and decant. Repeat the
+   wash 3--5 times until the pH of the supernatant is near neutral.
+6. Resuspend the cleaned frustules in a small volume of DI water
+   (approximately 1--2 mL).
+
+### 6.4 Diatom Slide Preparation
+
+1. Pipette a drop of cleaned diatom suspension onto a clean coverslip.
+   Allow to air-dry completely on the slide warmer.
+2. Place a drop of Naphrax on a labeled glass slide (work in the fume
+   hood; Naphrax contains toluene).
+3. Invert the coverslip (diatom side down) onto the Naphrax drop.
+4. Heat gently on the hot plate or slide warmer to drive off the
+   toluene until no more bubbles appear.
+5. Allow to cool. The slide is now a permanent mount.
+
+### 6.5 Diatom Identification and Enumeration
+
+1. Examine the slide at 1000x under oil immersion.
+2. Count a minimum of 600 diatom valves, traversing random transects
+   across the coverslip [@charles2002].
+3. Identify each valve to the lowest practical taxonomic level (species
+   where possible) using regional diatom floras and SWAMP reference
+   keys [@krammer2000; @spaulding2021].
+4. Record counts by taxon.
+
+### 6.6 Data Entry and Metric Calculation
+
+1. Enter soft-bodied and diatom counts into the standardized data
+   entry spreadsheet.
+2. Calculate summary metrics: total taxa richness, relative abundance
+   of indicator taxa (e.g., pollution-tolerant vs. sensitive diatoms),
+   and community-level indices.
+3. If submitting to SWAMP/CEDEN, format data per SWAMP requirements.
+
+
+## 7. Quality Control
+
+- **Soft-bodied algae:** Re-count 10% of samples. Counts should agree
+  within 15% RPD for dominant taxa.
+- **Diatoms:** Have a second identifier verify 10% of slides. Taxonomic
+  agreement should be greater than or equal to 85% at the species
+  level.
+- For SWAMP submissions, submit 10% of diatom slides to a
+  SWAMP-certified taxonomist for external QC.
+- Include a reference slide set in the laboratory for training and
+  calibration.
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Nitric acid waste             | Neutralize and collect in acid waste; EH&S pickup |
+| H~2~O~2~ waste               | Dilute and drain with copious water      |
+| Naphrax / toluene waste       | Collect in organic waste; EH&S pickup    |
+| Lugol's iodine waste          | Collect in designated container; EH&S pickup |
+| Used slides and coverslips    | Standard sharps/glass waste              |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety          | Required safety training          |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Acid and solvent safety |
+| [L310](SOP-L310-chlorophyll-extraction.qmd) | Chlorophyll Extraction  | Complementary biomass metric      |
+| [L601](SOP-L601-wet-mount-microscopy.qmd) | Wet Mount for Microscopy | General microscopy technique |
+| [F610](../field_sops/SOP-F610-macroinvertebrate-sampling.qmd) | BMI Sampling | Co-collected bioassessment data |
+
+
+## 11. Training Record
+
+Before identifying and enumerating algae independently, personnel
+must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   and [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
+   training
+3. Review the SDS for nitric acid and Naphrax
+4. Study the diatom and soft-bodied algae reference collections and
+   identification keys
+5. Complete a supervised identification exercise (minimum 100 diatom
+   valves and 50 soft-bodied algae natural units) with greater than
+   80% agreement with reference identifications
+6. Demonstrate safe acid cleaning and Naphrax mounting under
+   supervision
+7. Be signed off by the PI or lab manager

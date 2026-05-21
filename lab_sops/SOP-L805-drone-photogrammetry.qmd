@@ -1,0 +1,374 @@
+---
+# =============================================================================
+# SOP-L805: Drone Image Processing (Photogrammetry)
+# =============================================================================
+title: "Drone Image Processing (Photogrammetry)"
+sop-number: "SOP-L805"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-21"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the post-processing workflow for aerial imagery
+collected by uncrewed aerial systems (UAS/drones). It covers image
+organization, photogrammetric reconstruction (orthomosaics, digital
+surface models, and point clouds), ground control point integration,
+accuracy assessment, and data archiving [@anderson2019; @iglhaut2019].
+
+
+## 2. Scope
+
+- **Applies to:** Photogrammetric processing of RGB, multispectral,
+  and thermal drone imagery collected for EA Program research
+- **Does not apply to:** Drone flight planning, airspace authorization,
+  or FAA Part 107 compliance (covered in the drone operations field
+  SOP); GIS analysis of processed outputs (see
+  [SOP-L804](SOP-L804-gis-spatial-data.qmd))
+- **Location:** EA Program laboratory (SGM 133) and processing
+  workstations
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve processing workflows; ensure data storage compliance |
+| Drone Pilot / Operator | Deliver organized imagery with flight logs; place and survey GCPs |
+| Processing Analyst | Run photogrammetric software; assess quality; archive outputs |
+| Data Reviewer     | Verify accuracy metrics before outputs are used in analysis |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+Photogrammetric processing is computationally intensive but poses no
+physical hazards. However, extended processing sessions may generate
+significant heat from workstation components. Ensure adequate
+ventilation around processing workstations.
+:::
+
+For field-related hazards during drone operations and GCP placement,
+refer to [SOP-F001 Field Safety](../field_sops/SOP-F001-field-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Software
+
+| Item                        | Access                | Notes                        |
+|:----------------------------|:----------------------|:-----------------------------|
+| Agisoft Metashape Professional | Campus license     | Primary photogrammetry tool  |
+| OpenDroneMap (ODM)          | Free / open source    | Alternative processing       |
+| WebODM                      | Self-hosted           | Browser interface for ODM    |
+| QGIS (3.x)                 | Free download         | Visualization and QC         |
+| R with `terra` / `sf`      | RStudio Server        | Post-processing analysis     |
+| CloudCompare                | Free download         | Point cloud inspection       |
+
+### Hardware
+
+| Item                        | Minimum Specs         | Notes                        |
+|:----------------------------|:----------------------|:-----------------------------|
+| Processing workstation      | 32 GB RAM, dedicated GPU, SSD | More RAM for large datasets |
+| External storage            | 2 TB+ portable SSD   | Raw image archive            |
+
+### Drone Platforms
+
+| Platform                    | Sensor                | Resolution               |
+|:----------------------------|:----------------------|:-------------------------|
+| DJI Mavic 3 Enterprise      | RGB (Hasselblad)     | 20 MP; 0.7 cm/px at 100 m |
+| DJI Matrice 350 RTK         | Zenmuse P1 / L2      | High-res RGB or LiDAR   |
+| Custom multispectral rig    | MicaSense RedEdge-P  | 5-band multispectral     |
+
+
+## 6. Procedure
+
+### 6.1 Image Organization
+
+Before processing, organize raw imagery following a consistent
+directory structure:
+
+```
+project_name/
+├── drone/
+│   ├── raw_images/
+│   │   ├── flight_2026-05-21_rgb/
+│   │   │   ├── DJI_0001.JPG
+│   │   │   ├── DJI_0002.JPG
+│   │   │   └── ...
+│   │   └── flight_2026-05-21_multi/
+│   ├── flight_logs/
+│   │   └── flight_2026-05-21.csv
+│   ├── gcp/
+│   │   └── gcp_coordinates.csv
+│   ├── processed/
+│   │   ├── orthomosaic/
+│   │   ├── dsm/
+│   │   ├── point_cloud/
+│   │   └── report/
+│   └── README.md
+```
+
+Check that all images have valid EXIF data (GPS coordinates, camera
+parameters). Remove obviously corrupted or blurry images before
+processing.
+
+```{r}
+#| label: exif-check
+#| echo: true
+#| eval: false
+
+library(exifr)
+
+# Read EXIF from all images in a flight folder
+exif_data <- read_exif(
+  list.files("drone/raw_images/flight_2026-05-21_rgb/",
+             pattern = "\\.JPG$", full.names = TRUE),
+  tags = c("FileName", "GPSLatitude", "GPSLongitude",
+           "GPSAltitude", "FocalLength", "ImageWidth",
+           "ImageHeight", "DateTimeOriginal")
+)
+
+# Check for missing GPS
+missing_gps <- exif_data %>%
+  filter(is.na(GPSLatitude) | is.na(GPSLongitude))
+cat(sprintf("%d images missing GPS coordinates\n", nrow(missing_gps)))
+
+# Summary
+cat(sprintf("Total images: %d\n", nrow(exif_data)))
+cat(sprintf("Date range: %s to %s\n",
+            min(exif_data$DateTimeOriginal),
+            max(exif_data$DateTimeOriginal)))
+```
+
+### 6.2 Ground Control Points (GCPs)
+
+GCPs are surveyed reference points used to improve the geometric
+accuracy of photogrammetric outputs.
+
+1. Place GCPs before the flight. Use high-contrast targets (black
+   and white checkerboard, minimum 30 cm) visible from flight altitude
+2. Survey GCP positions using a differential GPS or RTK receiver.
+   Record coordinates in WGS 84 (EPSG:4326) and a local projected
+   CRS (e.g., EPSG:26911)
+3. Format GCP data as a CSV file:
+
+```
+gcp_id,longitude,latitude,elevation_m,crs
+GCP01,-117.7123,34.0966,398.2,EPSG:4326
+GCP02,-117.7118,34.0971,401.5,EPSG:4326
+```
+
+4. Use a minimum of 5 GCPs distributed across the study area.
+   Reserve 2 or more as independent check points for accuracy
+   assessment
+
+### 6.3 Photogrammetric Processing (Agisoft Metashape)
+
+The following workflow applies to Agisoft Metashape Professional.
+Adapt parameters for your specific project needs.
+
+**Step 1: Create project and import photos**
+
+1. Create a new Metashape project and save to `drone/processed/`
+2. Add photos from the flight folder
+3. Verify camera positions on the reference pane
+
+**Step 2: Align photos**
+
+1. Workflow > Align Photos
+2. Settings: Accuracy = High; Key point limit = 40,000;
+   Tie point limit = 10,000; Adaptive camera model fitting = enabled
+3. Review the sparse point cloud and camera positions
+
+**Step 3: Import and assign GCPs**
+
+1. Import GCP coordinates from the CSV file
+2. Assign each GCP to its corresponding target in at least 3 photos
+3. Uncheck GCPs designated as check points
+4. Run Optimize Cameras
+
+**Step 4: Build dense point cloud**
+
+1. Workflow > Build Point Cloud
+2. Quality = High (or Medium for initial assessment);
+   Depth filtering = Moderate
+3. Inspect the dense cloud for artifacts; remove obvious noise
+   manually or with CloudCompare
+
+**Step 5: Build DEM and orthomosaic**
+
+1. Workflow > Build DEM (Source: Point Cloud)
+2. Workflow > Build Orthomosaic (Surface: DEM;
+   Blending mode: Mosaic)
+
+**Step 6: Export products**
+
+1. Export DEM as GeoTIFF to `drone/processed/dsm/`
+2. Export orthomosaic as GeoTIFF to `drone/processed/orthomosaic/`
+3. Export point cloud as `.laz` to `drone/processed/point_cloud/`
+4. Export processing report as PDF to `drone/processed/report/`
+
+::: {.callout-tip}
+### Tip
+For large datasets (more than 1,000 images), process on the
+lab workstation rather than a laptop. Expect processing times of
+several hours for dense cloud generation at High quality.
+:::
+
+### 6.4 OpenDroneMap (Alternative Workflow)
+
+For projects using the open-source pipeline:
+
+```{bash}
+#| echo: true
+#| eval: false
+
+# Run ODM with standard settings
+docker run -ti --rm \
+  -v /path/to/project/drone:/datasets \
+  opendronemap/odm \
+  --project-path /datasets \
+  --dsm \
+  --orthophoto-resolution 2.0 \
+  --dem-resolution 5.0 \
+  --gcp /datasets/gcp/gcp_list.txt
+```
+
+### 6.5 Accuracy Assessment
+
+Evaluate positional accuracy using the reserved check points:
+
+```{r}
+#| label: accuracy-assessment
+#| echo: true
+#| eval: false
+
+library(terra)
+library(sf)
+
+# Load the DSM
+dsm <- rast("drone/processed/dsm/dsm_2026-05-21.tif")
+
+# Load check points
+check_pts <- read_csv("drone/gcp/check_points.csv") %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326) %>%
+  st_transform(crs = crs(dsm))
+
+# Extract DSM elevation at check points
+check_pts$dsm_elev <- extract(dsm, check_pts)$value
+
+# Calculate vertical RMSE
+check_pts <- check_pts %>%
+  mutate(error_m = dsm_elev - elevation_m)
+
+rmse_z <- sqrt(mean(check_pts$error_m^2, na.rm = TRUE))
+mae_z <- mean(abs(check_pts$error_m), na.rm = TRUE)
+
+cat(sprintf("Vertical RMSE: %.3f m\n", rmse_z))
+cat(sprintf("Vertical MAE:  %.3f m\n", mae_z))
+cat(sprintf("n check points: %d\n", nrow(check_pts)))
+```
+
+Report accuracy metrics in all publications and project reports.
+Typical targets for environmental applications: horizontal RMSE
+less than 2 times the ground sampling distance (GSD); vertical RMSE
+less than 3 times the GSD [@james2017].
+
+### 6.6 Multispectral Processing
+
+For multispectral imagery (e.g., MicaSense RedEdge):
+
+1. Include reflectance calibration panel images (taken before and
+   after each flight)
+2. Process each band alignment in Metashape or use MicaSense's
+   Atlas or `micasense` Python library
+3. Export calibrated reflectance orthomosaics (not raw DN values)
+4. Calculate vegetation indices in R:
+
+```{r}
+#| label: ndvi-calc
+#| echo: true
+#| eval: false
+
+library(terra)
+
+# Load calibrated reflectance bands
+red <- rast("drone/processed/orthomosaic/red_reflectance.tif")
+nir <- rast("drone/processed/orthomosaic/nir_reflectance.tif")
+
+# Calculate NDVI
+ndvi <- (nir - red) / (nir + red)
+names(ndvi) <- "NDVI"
+
+writeRaster(ndvi, "drone/processed/orthomosaic/ndvi_2026-05-21.tif",
+            overwrite = TRUE)
+```
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Photo alignment: at least 90% of images must align successfully
+- Reprojection error: mean below 1.0 pixel after GCP optimization
+- Check point RMSE: document and compare against project requirements
+- Visual inspection: no visible seam lines, ghosting, or geometric
+  distortion in the orthomosaic
+- File integrity: verify that all exported GeoTIFFs have valid CRS
+  headers and correct extent
+
+
+## 8. Waste Disposal
+
+Not applicable (computational procedure).
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Training is documented in the EA Program training log. Before
+processing drone imagery independently, personnel must:
+
+1. Read this SOP in full
+2. Complete Agisoft Metashape (or ODM) training with a supervised
+   practice dataset
+3. Demonstrate a complete processing workflow from raw images to
+   accuracy-assessed outputs
+4. Be signed off by the PI or drone operations lead
+
+
+## Appendix A: Processing Parameter Reference
+
+| Parameter             | Low Quality    | Medium         | High (Recommended) |
+|:----------------------|:---------------|:---------------|:-------------------|
+| Photo alignment       | Low accuracy   | Medium         | High               |
+| Dense cloud           | Low            | Medium         | High               |
+| DEM resolution        | 10x GSD        | 5x GSD         | 2x GSD             |
+| Orthomosaic           | 10x GSD        | 5x GSD         | Native GSD         |
+| Approx. processing time (500 images) | 30 min | 2 hr | 6 hr+          |
+
+## Appendix B: Troubleshooting
+
+| Symptom                       | Probable Cause           | Corrective Action              |
+|:------------------------------|:-------------------------|:-------------------------------|
+| Low alignment rate (<80%)     | Insufficient overlap     | Re-fly with 80%+ front/side overlap |
+| High reprojection error       | Incorrect GCP placement  | Re-identify GCP markers in photos |
+| Artifacts in orthomosaic      | Moving objects (water, cars) | Mask affected areas; adjust blending |
+| Out-of-memory error           | Dataset too large for RAM | Reduce quality; split into chunks |
+| DSM shows "doming" distortion | No GCPs; insufficient geometry | Add GCPs; increase flight line diversity |

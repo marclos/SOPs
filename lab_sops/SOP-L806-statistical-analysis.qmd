@@ -1,0 +1,463 @@
+---
+# =============================================================================
+# SOP-L806: Statistical Analysis Templates (R)
+# =============================================================================
+title: "Statistical Analysis Templates (R)"
+sop-number: "SOP-L806"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-21"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP provides standardized R analysis templates for common
+statistical procedures used in EA Program research. It establishes
+reproducible workflows for exploratory data analysis, hypothesis
+testing, regression modeling, and reporting, ensuring that all
+analyses are transparent, well-documented, and consistent across
+projects [@zuur2010; @wickham2023].
+
+
+## 2. Scope
+
+- **Applies to:** All quantitative statistical analyses performed
+  for EA Program research, coursework, and publications
+- **Does not apply to:** Bioinformatics sequence analysis (see
+  [SOP-L705](SOP-L705-bioinformatics-pipeline.qmd)); GIS-specific
+  spatial statistics (see [SOP-L804](SOP-L804-gis-spatial-data.qmd));
+  instrument calibration curve fitting (see method-specific SOPs)
+- **Location:** RStudio Server (rstudio.pomona.edu)
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve analytical approach; review statistical methods in manuscripts |
+| Analyst / Student | Select appropriate methods; follow templates; document all decisions |
+| Data Reviewer     | Verify that assumptions are checked and reported |
+| Statistical Advisor | Consult on complex designs (mixed models, multivariate methods) |
+
+
+## 4. Safety and Hazards
+
+Statistical analysis is a computational activity with no physical
+hazards.
+
+
+## 5. Equipment and Materials
+
+### Software
+
+| Item                        | Access                | Notes                        |
+|:----------------------------|:----------------------|:-----------------------------|
+| R (version 4.x)            | RStudio Server        | Primary analysis platform    |
+| RStudio IDE                 | rstudio.pomona.edu    | Integrated development environment |
+| Quarto                      | Pre-installed         | Report generation            |
+| Git / GitHub                | github.com/marclos    | Version control              |
+
+### Core R Packages
+
+| Package          | Purpose                                     |
+|:-----------------|:--------------------------------------------|
+| `tidyverse`      | Data wrangling and visualization            |
+| `broom`          | Tidy model output                           |
+| `car`            | Diagnostic tests (Levene, VIF)              |
+| `lme4`           | Mixed-effects models                        |
+| `emmeans`        | Estimated marginal means and contrasts      |
+| `vegan`          | Community ecology and ordination            |
+| `MuMIn`          | Model selection and multi-model inference   |
+| `performance`    | Model diagnostics and assumption checks     |
+| `report`         | Automated statistical reporting             |
+| `ggplot2`        | Publication-quality figures                 |
+| `knitr` / `kableExtra` | Formatted tables                      |
+
+
+## 6. Procedure
+
+### 6.1 Analysis Workflow Overview
+
+Every statistical analysis should follow this sequence:
+
+1. State the research question and hypotheses
+2. Import and validate data (see [SOP-L803](SOP-L803-data-entry-database.qmd))
+3. Conduct exploratory data analysis (EDA)
+4. Check assumptions for the intended statistical test
+5. Fit the model
+6. Evaluate model diagnostics
+7. Interpret results and generate figures/tables
+8. Write up methods and results in a Quarto document
+9. Commit the complete analysis to Git
+
+### 6.2 Quarto Document Header
+
+Begin every analysis with a standard Quarto header:
+
+```yaml
+---
+title: "Analysis: [Project Name]"
+author: "[Your Name]"
+date: today
+format:
+  html:
+    toc: true
+    code-fold: true
+    embed-resources: true
+bibliography: references.bib
+---
+```
+
+### 6.3 Exploratory Data Analysis Template
+
+```{r}
+#| label: eda-template
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+# --- 1. Load and inspect data ---
+dat <- read_csv("data/processed/project_data.csv")
+glimpse(dat)
+
+# --- 2. Summary statistics ---
+dat %>%
+  group_by(treatment) %>%
+  summarize(
+    n = n(),
+    mean = mean(response, na.rm = TRUE),
+    sd = sd(response, na.rm = TRUE),
+    median = median(response, na.rm = TRUE),
+    min = min(response, na.rm = TRUE),
+    max = max(response, na.rm = TRUE)
+  )
+
+# --- 3. Distributional plots ---
+ggplot(dat, aes(x = response)) +
+  geom_histogram(bins = 20, fill = "steelblue", color = "white") +
+  facet_wrap(~ treatment) +
+  labs(x = "Response Variable (units)", y = "Count") +
+  theme_minimal()
+
+ggplot(dat, aes(x = treatment, y = response)) +
+  geom_boxplot(fill = "steelblue", alpha = 0.5) +
+  geom_jitter(width = 0.1, alpha = 0.4) +
+  labs(x = "Treatment", y = "Response Variable (units)") +
+  theme_minimal()
+
+# --- 4. Missing data assessment ---
+dat %>%
+  summarize(across(everything(), ~ sum(is.na(.)))) %>%
+  pivot_longer(everything(), names_to = "variable",
+               values_to = "n_missing") %>%
+  filter(n_missing > 0)
+```
+
+### 6.4 Two-Sample Comparisons
+
+```{r}
+#| label: two-sample
+#| echo: true
+#| eval: false
+
+# --- Check normality within groups ---
+dat %>%
+  group_by(treatment) %>%
+  summarize(
+    shapiro_p = shapiro.test(response)$p.value
+  )
+
+# --- Check equal variances ---
+car::leveneTest(response ~ treatment, data = dat)
+
+# --- Parametric: two-sample t-test ---
+t_result <- t.test(response ~ treatment, data = dat, var.equal = FALSE)
+t_result
+
+# --- Nonparametric alternative: Wilcoxon rank-sum ---
+wilcox.test(response ~ treatment, data = dat)
+
+# --- Effect size ---
+library(effectsize)
+cohens_d(response ~ treatment, data = dat)
+```
+
+### 6.5 One-Way ANOVA Template
+
+```{r}
+#| label: anova-template
+#| echo: true
+#| eval: false
+
+# --- Fit ANOVA ---
+aov_model <- aov(response ~ treatment, data = dat)
+
+# --- Check assumptions ---
+# Normality of residuals
+shapiro.test(residuals(aov_model))
+qqnorm(residuals(aov_model)); qqline(residuals(aov_model))
+
+# Homogeneity of variance
+car::leveneTest(response ~ treatment, data = dat)
+
+# Residual vs. fitted plot
+plot(aov_model, which = 1)
+
+# --- ANOVA table ---
+summary(aov_model)
+
+# --- Post-hoc pairwise comparisons ---
+library(emmeans)
+emm <- emmeans(aov_model, ~ treatment)
+pairs(emm, adjust = "tukey")
+
+# --- Nonparametric alternative: Kruskal-Wallis ---
+kruskal.test(response ~ treatment, data = dat)
+```
+
+::: {.callout-tip}
+### Tip
+Always check assumptions before interpreting p-values. If residuals
+are non-normal or variances are unequal, consider a transformation
+(log, square root) or switch to a nonparametric test. Document the
+reasoning in your analysis script [@zuur2010].
+:::
+
+### 6.6 Linear Regression Template
+
+```{r}
+#| label: regression-template
+#| echo: true
+#| eval: false
+
+# --- Fit linear model ---
+lm_model <- lm(response ~ predictor1 + predictor2, data = dat)
+
+# --- Model summary ---
+summary(lm_model)
+
+# --- Tidy output ---
+library(broom)
+tidy(lm_model, conf.int = TRUE)
+glance(lm_model)
+
+# --- Diagnostics ---
+par(mfrow = c(2, 2))
+plot(lm_model)
+par(mfrow = c(1, 1))
+
+# Check multicollinearity
+car::vif(lm_model)
+
+# --- Model performance ---
+library(performance)
+check_model(lm_model)
+
+# --- Visualization ---
+ggplot(dat, aes(x = predictor1, y = response)) +
+  geom_point(alpha = 0.6) +
+  geom_smooth(method = "lm", se = TRUE, color = "steelblue") +
+  labs(x = "Predictor (units)", y = "Response (units)",
+       caption = sprintf("R-squared = %.3f, p = %.4f",
+                         summary(lm_model)$r.squared,
+                         glance(lm_model)$p.value)) +
+  theme_minimal()
+```
+
+### 6.7 Mixed-Effects Model Template
+
+For data with nested or repeated-measures structure:
+
+```{r}
+#| label: mixed-model
+#| echo: true
+#| eval: false
+
+library(lme4)
+library(lmerTest)  # For p-values via Satterthwaite
+
+# --- Fit mixed model ---
+# Fixed effect: treatment
+# Random effect: site (multiple samples per site)
+mixed_model <- lmer(response ~ treatment + (1 | site_id), data = dat)
+
+# --- Summary with p-values ---
+summary(mixed_model)
+
+# --- Marginal and conditional R-squared ---
+MuMIn::r.squaredGLMM(mixed_model)
+
+# --- Post-hoc comparisons ---
+library(emmeans)
+emm <- emmeans(mixed_model, ~ treatment)
+pairs(emm, adjust = "tukey")
+
+# --- Residual diagnostics ---
+plot(mixed_model)
+qqnorm(resid(mixed_model)); qqline(resid(mixed_model))
+```
+
+### 6.8 Multivariate / Community Analysis Template
+
+```{r}
+#| label: multivariate
+#| echo: true
+#| eval: false
+
+library(vegan)
+
+# --- Prepare community matrix ---
+# Rows = sites, columns = species/variables
+comm_matrix <- dat %>%
+  select(site_id, species, abundance) %>%
+  pivot_wider(names_from = species, values_from = abundance,
+              values_fill = 0) %>%
+  column_to_rownames("site_id")
+
+# --- Diversity indices ---
+diversity_h <- diversity(comm_matrix, index = "shannon")
+richness <- specnumber(comm_matrix)
+
+# --- Ordination (NMDS) ---
+nmds <- metaMDS(comm_matrix, distance = "bray", k = 2,
+                trymax = 100)
+stressplot(nmds)
+
+# Plot
+ordiplot(nmds, type = "n")
+points(nmds, col = as.factor(env_data$treatment), pch = 16)
+legend("topright", legend = levels(as.factor(env_data$treatment)),
+       col = 1:nlevels(as.factor(env_data$treatment)), pch = 16)
+
+# --- PERMANOVA ---
+adonis2(comm_matrix ~ treatment, data = env_data,
+        method = "bray", permutations = 999)
+```
+
+### 6.9 Figure Formatting Standards
+
+All figures for reports and publications must follow these conventions:
+
+1. Use `theme_minimal()` or a consistent custom theme
+2. Label axes with variable names and units
+3. Use colorblind-friendly palettes (e.g., `viridis`, `RColorBrewer`
+   "Set2")
+4. Include figure captions using the `#| fig-cap:` chunk option
+5. Save publication figures at 300 DPI as both PDF and PNG:
+
+```{r}
+#| label: save-figure
+#| echo: true
+#| eval: false
+
+ggsave("analysis/output/fig_treatment_response.pdf",
+       width = 6, height = 4, units = "in")
+ggsave("analysis/output/fig_treatment_response.png",
+       width = 6, height = 4, units = "in", dpi = 300)
+```
+
+### 6.10 Reporting Statistical Results
+
+When writing results in a Quarto document, follow APA conventions:
+
+- Report test statistics, degrees of freedom, and p-values:
+  "Treatment had a significant effect on soil pH (F(2, 27) = 4.53,
+  p = 0.020)"
+- Report effect sizes alongside p-values
+- Include confidence intervals for parameter estimates
+- Round to a consistent number of decimal places (typically 2 for
+  test statistics, 3 for p-values)
+- Use `broom::tidy()` and `knitr::kable()` for formatted tables
+
+```{r}
+#| label: results-table
+#| echo: true
+#| eval: false
+
+library(broom)
+library(knitr)
+
+tidy(aov_model) %>%
+  kable(digits = 3, caption = "ANOVA results for soil pH by treatment")
+```
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Every analysis must include explicit assumption checks (normality,
+  homoscedasticity, independence) documented in the script
+- All models must include diagnostic plots
+- Results must be reproducible: running the script from start to
+  finish on the same data must produce identical output
+- Analyses must be committed to Git with clear commit messages
+- The PI or a designated reviewer must approve the analytical approach
+  before results are included in publications
+
+
+## 8. Waste Disposal
+
+Not applicable (computational procedure).
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Training is documented in the EA Program training log. Before
+conducting statistical analyses independently, personnel must:
+
+1. Read this SOP in full
+2. Complete the RStudio and GitHub orientation
+   ([SOP-L801](SOP-L801-rstudio-github.qmd))
+3. Complete the introductory R statistics module (see
+   [RTricks](https://marclos.github.io/RTricks/))
+4. Demonstrate a complete analysis workflow (EDA through reporting)
+   on a practice dataset under supervision
+5. Be signed off by the PI
+
+
+## Appendix A: Decision Guide for Choosing a Statistical Test
+
+| Research Question                | Data Type          | Groups | Recommended Test         |
+|:---------------------------------|:-------------------|:-------|:-------------------------|
+| Compare 2 group means            | Continuous, normal | 2      | Two-sample t-test        |
+| Compare 2 group medians          | Non-normal         | 2      | Wilcoxon rank-sum        |
+| Compare 3+ group means           | Continuous, normal | 3+     | One-way ANOVA            |
+| Compare 3+ group medians         | Non-normal         | 3+     | Kruskal-Wallis           |
+| Relationship between 2 variables | Both continuous    | N/A    | Linear regression / correlation |
+| Multiple predictors              | Continuous response| N/A    | Multiple regression      |
+| Nested / repeated measures       | Continuous         | Any    | Mixed-effects model      |
+| Community composition            | Abundance matrix   | Any    | NMDS + PERMANOVA         |
+| Categorical association          | Counts             | Any    | Chi-squared / Fisher's exact |
+
+## Appendix B: Common Data Transformations
+
+| Transformation      | R Code                   | When to Use                     |
+|:---------------------|:-------------------------|:--------------------------------|
+| Log (natural)       | `log(x)`                 | Right-skewed data; multiplicative relationships |
+| Log (base 10)       | `log10(x)`               | Concentration data spanning orders of magnitude |
+| Square root         | `sqrt(x)`                | Count data; moderate skew       |
+| Arcsine square root | `asin(sqrt(x))`          | Proportions (0 to 1)           |
+| Box-Cox             | `MASS::boxcox(model)`    | Let the data determine the best transformation |
+
+::: {.callout-warning}
+### Caution
+Always report whether data were transformed and provide results on both
+the transformed and original scales when possible. Transformations
+change the hypothesis being tested (e.g., log-transformed ANOVA
+compares geometric means, not arithmetic means).
+:::

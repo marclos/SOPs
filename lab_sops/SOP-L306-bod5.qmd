@@ -1,0 +1,334 @@
+---
+# =============================================================================
+# SOP-L306: Biochemical Oxygen Demand (BOD5)
+# =============================================================================
+title: "Biochemical Oxygen Demand (BOD5)"
+sop-number: "SOP-L306"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "0.3"
+    date: "2024-01-01"
+    author: "Researcher Name"
+    changes: "Legacy LaTeX version (SOP 24 v.03)"
+  - version: "1.0"
+    date: "2026-05-21"
+    author: "Marc Los Huertos"
+    changes: "Converted to Quarto format; reorganized to match EA Program template; expanded QC and procedure sections"
+---
+
+## 1. Purpose
+
+This SOP describes the determination of five-day biochemical oxygen
+demand (BOD~5~) in water and wastewater samples using the manometric
+method (WTW OxiTop system). BOD~5~ is a measure of the dissolved
+oxygen consumed by microorganisms during the aerobic decomposition of
+organic matter over a five-day incubation period at 20 °C and serves
+as a standard indicator of the organic pollution load in water.
+
+
+## 2. Scope
+
+- **Applies to:** Surface water, wastewater, and effluent samples
+  analyzed for BOD~5~ using the WTW OxiTop manometric method in the
+  EA Program laboratory
+- **Does not apply to:** Carbonaceous BOD (CBOD) with nitrification
+  inhibitor; BOD by Winkler titration or dissolved oxygen probe
+  methods; chemical oxygen demand (COD)
+- **Location:** Biogeochemistry Laboratory, Pomona College
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Lab Manager  | Approve SOP; review QC data; maintain equipment         |
+| Trained Personnel | Prepare reagents, run analyses, record results          |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Nutrient buffer solutions contain phosphate and
+  ammonium salts; NaOH pellets (used as CO~2~ absorbent) are
+  corrosive. Handle with gloves and avoid skin or eye contact.
+- **Biological:** Wastewater samples may contain pathogens. Treat all
+  samples as potentially infectious.
+- **Physical:** Glass BOD bottles are fragile. Handle with care to
+  avoid breakage.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or goggles
+- [ ] Lab coat
+- [ ] Nitrile gloves
+
+### Emergency Procedures
+
+In case of chemical spill or exposure, refer to
+[SOP-L004 Chemical Spill Response](SOP-L004-chemical-spill-response.qmd)
+or call Campus Safety. For NaOH contact with skin or eyes, flush
+immediately with copious water for at least 15 minutes and seek
+medical attention.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| WTW OxiTop manometers (3 per run)     | One blank + two samples minimum          |
+| BOD~5~ incubation bottles (nominal 500 mL) | Brown glass, with bottle neck adapter |
+| Rubber quivers (CO~2~ absorber holders) | One per bottle                          |
+| Incubator set to 20.0 +/- 1.0 °C     | Verify temperature daily                 |
+| Magnetic stirrer platform (in incubator) | Low-speed continuous stirring          |
+| Magnetic stir bars                    | One per bottle                           |
+| 500 mL graduated cylinder             |                                          |
+| Micropipette, 100--1000 $\mu$L        | With disposable tips                     |
+| pH meter                              | Calibrated per [SOP-L300](SOP-L300-pH-conductivity-bench.qmd) |
+| Air pump with diffuser stone          | For aerating dilution water              |
+| 1000 mL volumetric flask or beaker    | For dilution water preparation           |
+
+### Consumables
+
+| Item                          | Storage          | Notes                       |
+|:------------------------------|:-----------------|:----------------------------|
+| NaOH pellets                  | Desiccator       | CO~2~ absorbent; 2 pellets per bottle |
+| Phosphate buffer solution     | Refrigerator     | See Section 6              |
+| MgSO~4~ solution              | Shelf            | See Section 6              |
+| CaCl~2~ solution              | Shelf            | See Section 6              |
+| FeCl~3~ solution              | Shelf            | See Section 6              |
+| Seed inoculum (if needed)     | Fresh            | Settled domestic wastewater or commercial seed |
+
+
+## 6. Reagents and Standards
+
+### 6.1 Dilution Water Nutrient Solutions
+
+Prepare the following stock solutions. Add 1 mL of each per liter of
+dilution water.
+
+1. **Phosphate buffer:** Dissolve 8.5 g KH~2~PO~4~, 21.75 g
+   K~2~HPO~4~, 33.4 g Na~2~HPO~4~·7H~2~O, and 1.7 g NH~4~Cl in
+   approximately 500 mL deionized water and dilute to 1 L. The pH
+   should be 7.2.
+2. **Magnesium sulfate:** Dissolve 22.5 g MgSO~4~·7H~2~O in
+   deionized water and dilute to 1 L.
+3. **Calcium chloride:** Dissolve 27.5 g CaCl~2~ in deionized water
+   and dilute to 1 L.
+4. **Ferric chloride:** Dissolve 0.25 g FeCl~3~·6H~2~O in deionized
+   water and dilute to 1 L.
+
+### 6.2 Dilution Water Preparation
+
+1. Fill a clean 1 L vessel with deionized water.
+2. Add 1 mL of each nutrient stock solution (Section 6.1).
+3. Aerate the dilution water with the air pump for at least one hour
+   to bring dissolved oxygen to near saturation.
+4. Verify pH is between 6.8 and 7.2; adjust with dilute HCl or NaOH
+   if necessary.
+5. Allow the water to equilibrate to 20 °C before use.
+
+### 6.3 Measuring Range and Volume Selection
+
+The volume of sample placed in the BOD bottle depends on the expected
+BOD~5~ concentration. Use the table below to select the appropriate
+sample volume. Each analysis requires one blank bottle (dilution water
+only) and at least two replicate sample bottles.
+
+| Expected BOD~5~ (mg/L) | Total volume in bottle (mL) | Sample volume (mL) | Dilution water volume (mL) |
+|:------------------------|:----------------------------|:--------------------|:--------------------------|
+| 0--40                   | 432                         | 216                 | 216                       |
+| 0--80                   | 365                         | 182.5               | 182.5                     |
+| 0--200                  | 250                         | 125                 | 125                       |
+| 0--400                  | 164                         | 82                  | 82                        |
+| 0--800                  | 97                          | 48.5                | 48.5                      |
+| 0--2000                 | 43.5                        | 21.75               | 21.75                     |
+
+: Volume selection for WTW OxiTop BOD~5~ analysis based on expected concentration. {#tbl-volumes}
+
+For most surface water samples in the EA Program, the 0--200 mg/L
+range (125 mL sample + 125 mL dilution water) is a reasonable starting
+point. If the expected concentration is unknown, run samples at two
+different dilutions.
+
+
+## 7. Procedure
+
+### 7.1 Preparation (Day 0)
+
+1. Calibrate the pH meter per
+   [SOP-L300](SOP-L300-pH-conductivity-bench.qmd).
+2. Prepare dilution water as described in Section 6.2. Make enough for
+   all bottles (blanks and samples). For a standard run with one blank
+   and two sample bottles at the 0--200 range, prepare at least 800 mL.
+3. Collect or thaw samples. If samples have been refrigerated, allow
+   them to equilibrate to 20 °C. If samples require seeding, add a
+   known volume of seed inoculum to both sample and blank bottles.
+4. Verify that all OxiTop manometers are functional (battery check,
+   reset previous readings).
+
+### 7.2 Bottle Setup
+
+1. Place a clean magnetic stir bar in each BOD~5~ incubation bottle.
+2. Using the graduated cylinder, measure the appropriate volume of
+   sample into each sample bottle (see @tbl-volumes).
+3. Add the corresponding volume of dilution water to each sample
+   bottle.
+4. For the blank bottle, add dilution water only (total volume should
+   match the sample bottles).
+5. Place 2 NaOH pellets in each rubber quiver.
+6. Insert the quiver into the neck of each bottle. The quiver must sit
+   above the liquid surface; the NaOH absorbs CO~2~ produced during
+   microbial respiration, ensuring that the pressure drop measured by
+   the manometer reflects only oxygen consumption.
+7. Screw the OxiTop manometer head onto each bottle. Ensure a
+   gas-tight seal.
+
+::: {.callout-tip}
+### Tip
+Label each bottle clearly (Blank, Sample A-1, Sample A-2, etc.) on
+both the bottle and the manometer. Record the bottle assignments in
+your lab notebook before starting incubation.
+:::
+
+### 7.3 Incubation
+
+1. Place all bottles on the magnetic stirrer platform inside the
+   incubator set to 20.0 +/- 1.0 °C.
+2. Activate the OxiTop manometers to begin recording pressure.
+3. Incubate for five days (120 +/- 2 hours) in the dark. The
+   incubator door should remain closed except for brief checks.
+4. Verify incubator temperature at least once daily and record in the
+   instrument logbook.
+
+### 7.4 Reading Results (Day 5)
+
+1. After five days, read the BOD~5~ value displayed on each OxiTop
+   manometer. The instrument converts the measured pressure decrease
+   to mg/L BOD~5~ automatically based on the selected measuring
+   range.
+2. Record all readings in the lab notebook, including: date and time
+   of setup, date and time of reading, incubator temperature log,
+   measuring range selected, sample identification, and
+   replicate values.
+3. Remove bottles from the incubator. Discard sample water per
+   Section 9. Clean bottles and stir bars thoroughly with hot water
+   and laboratory detergent; rinse with deionized water.
+
+
+## 8. Data Analysis and Calculations
+
+### 8.1 OxiTop Direct Reading
+
+The OxiTop system calculates BOD~5~ internally from the pressure
+decrease in the bottle headspace. The displayed value in mg/L already
+accounts for the measuring range selected during setup. Record this
+value directly.
+
+### 8.2 Blank Correction
+
+Subtract the blank BOD~5~ reading from each sample reading:
+
+$$
+\text{BOD}_{5,\text{corrected}} = \text{BOD}_{5,\text{sample}} - \text{BOD}_{5,\text{blank}}
+$$
+
+The blank value should be less than 0.2 mg/L for unseeded dilution
+water. If the blank exceeds 0.2 mg/L, investigate the dilution water
+quality and consider re-running the analysis.
+
+### 8.3 Dilution Factor
+
+If the sample was diluted beyond the standard OxiTop protocol (e.g.,
+for highly concentrated wastewater), apply the appropriate dilution
+factor:
+
+$$
+\text{BOD}_{5,\text{final}} = \text{BOD}_{5,\text{corrected}} \times \frac{V_{\text{total}}}{V_{\text{sample}}}
+$$
+
+For standard OxiTop runs where the measuring range was set correctly,
+the dilution factor is already incorporated into the displayed result.
+
+
+## 9. Quality Control
+
+- Run at least one blank per analytical batch.
+- Run duplicate sample bottles for each sample; the relative percent
+  difference (RPD) between duplicates should be less than 20%.
+- If available, include a glucose-glutamic acid (GGA) standard check
+  solution at a concentration of 300 mg/L combined (150 mg/L each).
+  The expected BOD~5~ of the GGA standard is 198 +/- 30.5 mg/L
+  (Standard Methods 5210 B).
+- The blank BOD~5~ should be less than 0.2 mg/L (unseeded) or less
+  than 0.6 mg/L (seeded).
+- Verify incubator temperature is 20.0 +/- 1.0 °C throughout the
+  incubation period.
+- Log all QC results. If QC criteria are not met, flag the data and
+  consult the PI before reporting.
+
+
+## 10. Troubleshooting
+
+| Problem                              | Possible Cause                        | Corrective Action                     |
+|:-------------------------------------|:--------------------------------------|:--------------------------------------|
+| No pressure change after 5 days      | Dead battery in manometer; poor seal  | Check battery; reseat manometer       |
+| Blank BOD~5~ too high                | Contaminated dilution water or glassware | Reclean bottles; prepare fresh dilution water |
+| Replicate RPD exceeds 20%            | Heterogeneous sample; pipetting error | Mix samples well; check pipette calibration |
+| BOD~5~ exceeds measuring range       | Sample more concentrated than expected | Re-run at a higher range (lower sample volume) |
+| Negative BOD~5~ reading              | Leak in bottle seal; NaOH saturated   | Inspect seal; use fresh NaOH pellets  |
+
+
+## 11. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Analyzed sample water         | Drain with copious water (if non-hazardous); collect if industrial wastewater |
+| NaOH pellets (used)           | Dissolve in water, neutralize, drain     |
+| Dilution water                | Drain                                    |
+| Broken glass                  | Sharps container                         |
+
+
+## 12. References
+
+- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
+  and Wastewater*. 22nd ed. Method 5210 B: 5-Day BOD Test. American
+  Public Health Association, Washington, DC.
+- WTW (Xylem Analytics). *OxiTop Control System: Operating Manual*.
+- US EPA. Method 405.1: Biochemical Oxygen Demand (5 days, 20 °C).
+
+
+## 13. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety          | Required safety training          |
+| [L300](SOP-L300-pH-conductivity-bench.qmd) | pH and Conductivity (Bench) | pH meter calibration for dilution water |
+| [F209](../field_sops/SOP-F209-dissolved-oxygen-meter.qmd) | Dissolved Oxygen Meter (Field) | Related field DO measurement |
+| [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection context |
+
+
+## 14. Training Record
+
+Before performing BOD~5~ analysis independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Review the WTW OxiTop operating manual
+4. Observe a trained operator perform the complete procedure (setup
+   through Day 5 reading)
+5. Perform the analysis under supervision with acceptable QC results
+   (duplicate RPD within 20%; blank within criteria)
+6. Be signed off by the PI or lab manager

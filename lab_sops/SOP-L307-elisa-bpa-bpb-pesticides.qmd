@@ -1,0 +1,397 @@
+---
+# =============================================================================
+# SOP-L307: ELISA -- Bisphenol A, Bisphenol B, and Pesticides in Water
+# =============================================================================
+title: "ELISA: Bisphenol A, Bisphenol B, and Pesticides in Water"
+sop-number: "SOP-L307"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "0.3"
+    date: "2024-01-01"
+    author: "Researcher Name"
+    changes: "Legacy version"
+  - version: "1.0"
+    date: "2026-05-21"
+    author: "Marc Los Huertos"
+    changes: "Converted to Quarto format; reorganized to match EA Program template; added QC criteria and BibTeX references"
+---
+
+## 1. Purpose
+
+This SOP describes the use of competitive enzyme-linked immunosorbent
+assay (ELISA) kits to screen water samples for bisphenol A (BPA),
+bisphenol B (BPB), and selected pesticides (atrazine, glyphosate, and
+2,4-D). ELISA provides a rapid, cost-effective immunochemical screening
+method for detecting trace-level organic contaminants in environmental
+water samples without the need for extensive sample preparation or
+chromatographic instrumentation [@goda2000; @aga2013;
+@voller1978]. Results exceeding the kit detection threshold should be
+considered presumptive and confirmed by an instrumental method (e.g.,
+LC-MS/MS or GC-MS) when data will be used for regulatory reporting
+[@usepa_immunoassay1996].
+
+
+## 2. Scope
+
+- **Applies to:** Screening of surface water, groundwater, treated
+  effluent, and drinking water source water for BPA, BPB, atrazine,
+  glyphosate, and 2,4-D using commercially available competitive ELISA
+  plate kits (96-well microplate format)
+- **Does not apply to:** Confirmatory quantitative analysis by LC-MS/MS
+  or GC-MS (see [SOP-L309](SOP-L309-pesticide-analysis.qmd));
+  soil or sediment extracts (matrix effects require separate validation);
+  clinical or food-safety testing
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Lab Manager  | Select analytes and approve kit vendors; review QC data |
+| Trained Personnel | Run ELISA assays, record results, flag exceedances      |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** ELISA kits contain dilute acids (stop solution, typically
+  1 N HCl or H~2~SO~4~), enzyme conjugates, and substrate solutions
+  (typically 3,3',5,5'-tetramethylbenzidine, TMB). Stop solution is
+  corrosive at working concentration. Review the Safety Data Sheet (SDS)
+  provided with each kit.
+- **Biological:** Environmental water samples may contain pathogens.
+  Treat all samples as potentially infectious.
+- **Physical:** Microplate wells are fragile. Handle plates carefully to
+  avoid cracking wells or cross-contaminating adjacent wells.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or goggles
+- [ ] Lab coat
+- [ ] Nitrile gloves (change between samples to prevent cross-contamination)
+
+### Emergency Procedures
+
+For stop solution (acid) contact with skin or eyes, flush immediately
+with copious water for at least 15 minutes. Refer to
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Microplate reader (450 nm filter)     | Absorbance mode; confirm filter is installed |
+| Microplate washer (optional)          | Manual wash with squeeze bottle is acceptable |
+| Adjustable micropipettes (10--100 $\mu$L, 100--1000 $\mu$L) | Calibrated per manufacturer schedule |
+| Multichannel micropipette (optional)  | For 8- or 12-channel dispensing          |
+| Plate shaker or orbital incubator     | Low speed (200--300 rpm)                 |
+| Timer                                 |                                          |
+| Incubator or water bath (if kit requires temperature control) | Some kits specify 25 °C or 37 °C |
+
+### Consumables
+
+| Item                              | Notes                              |
+|:----------------------------------|:-----------------------------------|
+| ELISA kit (analyte-specific)      | See Section 6 for kit selection    |
+| Disposable pipette tips           | Use fresh tips for every transfer  |
+| Deionized water (Type II or better) | For dilutions and wash steps     |
+| Absorbent paper towels            | For blotting plates after washing  |
+| Aluminum foil                     | For covering plates during incubation |
+
+
+## 6. ELISA Kit Selection
+
+The EA Program uses commercial competitive ELISA kits. The table below
+lists the kits currently validated for use. All kits follow the same
+general competitive ELISA workflow (Section 7) but differ in incubation
+times, dilution requirements, and detection ranges. Always consult the
+kit insert for analyte-specific instructions.
+
+| Analyte     | Manufacturer   | Catalog No. | Detection Range            | Sample Volume | Status   |
+|:------------|:---------------|:------------|:---------------------------|:--------------|:---------|
+| Bisphenol A | Abraxis        | 530701      | 0.05--10 $\mu$g/L         | 50 $\mu$L     | Active   |
+| Bisphenol B | Abraxis        | *TBD*       | *TBD*                      | 50 $\mu$L     | *TBD*    |
+| Atrazine    | Abraxis        | 500001      | 0.04--5.0 $\mu$g/L        | 50 $\mu$L     | Active   |
+| Glyphosate  | Abraxis        | 500086      | 0.075--4.0 $\mu$g/L       | 50 $\mu$L     | *TBD*    |
+| 2,4-D       | Abraxis        | 500201      | 0.05--5.0 $\mu$g/L        | 50 $\mu$L     | *TBD*    |
+
+: ELISA kits validated or under evaluation for EA Program use. {#tbl-kits}
+
+::: {.callout-note}
+Catalog numbers and detection ranges are based on Abraxis (Eurofins)
+kits as of 2025. Verify against the current kit insert before use.
+Other manufacturers (EnviroLogix, Neogen) produce equivalent kits that
+may be substituted after validation.
+:::
+
+
+## 7. Procedure
+
+### 7.1 General Competitive ELISA Workflow
+
+All competitive ELISA kits in this SOP share the same principle: the
+analyte in the sample competes with an enzyme-labeled analyte conjugate
+for a limited number of antibody binding sites coated on the microplate
+well. Higher analyte concentrations in the sample result in less
+conjugate binding and therefore lower color development after substrate
+addition. The relationship between absorbance and concentration is
+inversely proportional [@voller1978; @goda2000].
+
+### 7.2 Preparation
+
+1. Remove the ELISA kit from the refrigerator and allow all reagents
+   to equilibrate to room temperature (20--25 °C) for at least
+   30 minutes before opening.
+2. Prepare wash buffer by diluting the concentrate per kit instructions
+   (typically 1:10 with deionized water). Mix thoroughly.
+3. If samples require dilution (e.g., wastewater with expected high
+   concentrations), prepare dilutions in deionized water or the
+   sample diluent provided with the kit. Record all dilution factors.
+4. Label a plate map in the lab notebook showing the position of
+   standards, controls, blanks, and samples. Each standard and sample
+   should be run in duplicate.
+
+### 7.3 Assay Procedure
+
+Follow the specific kit insert for exact volumes and incubation times.
+The general sequence is:
+
+1. **Add standards and samples.** Pipette the specified volume (typically
+   50 $\mu$L) of each calibration standard, positive control, negative
+   control (zero standard), and sample into the appropriate wells.
+   Change tips between every addition.
+2. **Add enzyme conjugate.** Pipette the conjugate solution into each
+   well. The conjugate competes with any analyte present in the sample
+   for antibody binding sites.
+3. **Incubate.** Cover the plate with foil and incubate on the plate
+   shaker at the specified temperature and duration (typically
+   60 minutes at room temperature for BPA; consult kit insert for
+   other analytes).
+4. **Wash.** Aspirate or decant the well contents. Wash each well 3--5
+   times with wash buffer (approximately 250 $\mu$L per wash). After
+   the final wash, invert the plate and tap firmly on absorbent paper
+   to remove residual liquid. Incomplete washing is the most common
+   source of high background and poor precision.
+5. **Add substrate.** Pipette the TMB substrate solution into each well.
+   Incubate for the specified time (typically 20--30 minutes at room
+   temperature) in the dark. A blue color develops in wells with bound
+   conjugate.
+6. **Add stop solution.** Pipette the stop solution (acid) into each
+   well. The blue color turns yellow. Read the plate within 15 minutes
+   of adding stop solution.
+7. **Read absorbance.** Measure absorbance at 450 nm using the
+   microplate reader.
+
+::: {.callout-tip}
+### Tip
+Dispense reagents quickly and consistently across the plate. Use a
+multichannel pipette when possible to minimize time differences between
+the first and last wells. Stagger plates if running more than one
+analyte simultaneously.
+:::
+
+### 7.4 Plate Washing Details
+
+Inadequate washing is the most frequent source of assay failure in
+ELISA. Follow these guidelines:
+
+1. Aspirate well contents completely (manual flicking or vacuum
+   aspiration)
+2. Fill each well with approximately 250 $\mu$L wash buffer
+3. Allow wash buffer to soak for 5--10 seconds
+4. Aspirate again
+5. Repeat for the total number of wash cycles specified by the kit
+   (typically 3--5)
+6. After the final aspirate, invert the plate and tap firmly on a pad
+   of clean paper towels 3--4 times to remove residual buffer
+
+
+## 8. Data Analysis and Calculations
+
+### 8.1 Standard Curve Construction
+
+1. Calculate the mean absorbance of the duplicate wells for each
+   standard concentration.
+2. Express each standard as a percentage of the zero standard
+   (maximum binding, B~0~):
+
+$$
+\%B/B_0 = \frac{\bar{A}_{\text{standard or sample}}}{\bar{A}_{B_0}} \times 100
+$$
+
+3. Plot %B/B~0~ (y-axis) against the log of the standard concentration
+   (x-axis). Fit a four-parameter logistic (4PL) curve, which is the
+   standard model for competitive immunoassay calibration
+   [@findlay2000]:
+
+$$
+y = D + \frac{A - D}{1 + \left(\frac{x}{C}\right)^B}
+$$
+
+where $A$ = maximum asymptote (zero dose), $D$ = minimum asymptote,
+$C$ = IC~50~ (inflection point), and $B$ = slope factor.
+
+4. Interpolate sample concentrations from the 4PL curve. Most
+   microplate reader software includes 4PL curve fitting.
+   Alternatively, use R:
+
+```{r}
+#| label: elisa-4pl-curve
+#| echo: true
+#| eval: false
+
+# Four-parameter logistic (4PL) curve fitting for ELISA data
+library(drc)
+
+# Example data: concentration (ug/L) and %B/B0
+standards <- data.frame(
+  conc = c(0.05, 0.1, 0.5, 1.0, 5.0, 10.0),
+  pct_b_b0 = c(92.3, 84.1, 55.7, 38.2, 12.4, 6.8)
+)
+
+# Fit 4PL model
+model_4pl <- drm(pct_b_b0 ~ conc, data = standards,
+                 fct = LL.4(names = c("Slope", "Lower", "Upper", "IC50")))
+summary(model_4pl)
+
+# Predict concentration for a sample with %B/B0 = 45.0
+sample_pct <- 45.0
+pred_conc <- ED(model_4pl, sample_pct, type = "absolute", display = FALSE)
+cat(sprintf("Sample concentration: %.3f ug/L\n", pred_conc[1]))
+```
+
+### 8.2 Dilution Correction
+
+If samples were diluted before analysis, multiply the interpolated
+concentration by the dilution factor:
+
+$$
+C_{\text{original}} = C_{\text{interpolated}} \times DF
+$$
+
+### 8.3 Reporting
+
+Report results as $\mu$g/L (ppb) for water samples. Indicate whether
+the result is a screening (ELISA) value and whether it exceeds any
+applicable regulatory threshold. Flag any result that falls outside the
+linear range of the standard curve (below the lowest standard or above
+the highest standard) and re-run with appropriate dilution if above
+range.
+
+
+## 9. Quality Control
+
+### 9.1 Within-Assay QC
+
+- Run all standards and samples in duplicate. The coefficient of
+  variation (CV) between duplicates should be less than 15%. If a
+  duplicate pair exceeds 15% CV, re-run those samples.
+- Include the kit-supplied positive control on every plate. The control
+  must fall within the range stated on the certificate of analysis.
+- Include at least one reagent blank (deionized water) per plate.
+- The zero standard (B~0~) absorbance should typically be greater than
+  0.8 (consult kit insert for acceptable range). Low B~0~ values
+  indicate degraded antibody or conjugate.
+
+### 9.2 Between-Assay QC
+
+- Run a laboratory-prepared quality control sample (spiked DI water
+  at a known concentration within the linear range) with each batch.
+  Recovery should be 80--120%.
+- Track control chart performance (mean and +/- 2 SD limits) over time.
+- Record kit lot numbers and expiration dates. Do not mix reagents
+  from different kit lots.
+
+### 9.3 Method Detection Limits
+
+The method detection limit (MDL) for each analyte is kit-specific and
+is defined as the concentration producing a %B/B~0~ response
+statistically distinguishable from the zero standard at the 95%
+confidence level. MDLs are typically provided in the kit insert.
+Report results below the MDL as "less than MDL."
+
+### 9.4 Cross-Reactivity
+
+Competitive ELISA antibodies may cross-react with structurally related
+compounds. For example, BPA antibodies may exhibit partial
+cross-reactivity with BPB, BPS, or BPF. Atrazine antibodies may
+cross-react with simazine, propazine, or other triazine herbicides.
+Consult the cross-reactivity table in the kit insert and report
+results accordingly (e.g., "total triazines" rather than "atrazine"
+if significant cross-reactivity is known) [@aga2013].
+
+
+## 10. Troubleshooting
+
+| Problem                              | Possible Cause                        | Corrective Action                     |
+|:-------------------------------------|:--------------------------------------|:--------------------------------------|
+| High background (all wells yellow)   | Incomplete washing; contaminated wash buffer | Increase wash cycles; prepare fresh buffer |
+| Poor standard curve ($r^2 < 0.95$)   | Reagent degradation; pipetting error  | Check kit expiration; verify pipette calibration |
+| Sample absorbance above B~0~         | Matrix interference; very low analyte | Dilute and re-run; consider sample cleanup |
+| Sample absorbance below lowest standard | Concentration exceeds range         | Dilute sample and re-run              |
+| High CV between duplicates (> 15%)   | Bubbles in wells; inconsistent pipetting | Tap plate to remove bubbles; use multichannel pipette |
+| Positive control out of range        | Kit degradation; incorrect storage    | Check storage conditions; use new kit |
+| Edge effects (outer wells differ)    | Temperature gradient across plate     | Use plate shaker; avoid outer wells for critical samples |
+
+
+## 11. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used microplate and wells     | Standard trash (after stop solution is added) |
+| Stop solution waste (acid)    | Neutralize with NaHCO~3~; drain with copious water |
+| TMB substrate waste           | Standard liquid waste; drain             |
+| Conjugate and antibody waste  | Standard liquid waste; non-hazardous at kit dilutions |
+| Sample waste                  | Drain with copious water (non-hazardous surface water) |
+| Pipette tips                  | Standard trash                           |
+
+
+## 12. References
+
+::: {#refs}
+:::
+
+
+## 13. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety          | Required safety training          |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | Waste and chemical safety |
+| [L303](SOP-L303-hach-colorimetric.qmd) | Hach Colorimetric Analysis | Complementary screening for nutrients/metals |
+| [L308](SOP-L308-microplastics-water.qmd) | Microplastics in Water   | Related contaminant screening     |
+| [L309]() | Pesticide Analysis (GC-MS/LC-MS)       | Confirmatory instrumental method  |
+| [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection context |
+
+
+## 14. Training Record
+
+Before performing ELISA analyses independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Review the SDS for the ELISA kit reagents (especially stop solution)
+4. Review the kit insert for the specific analyte(s) to be analyzed
+5. Observe a trained operator perform a complete assay (plate setup
+   through data analysis)
+6. Perform the assay under supervision with acceptable QC results
+   (duplicate CV less than 15%; positive control within range;
+   standard curve $r^2 > 0.98$)
+7. Be signed off by the PI or lab manager
+
+

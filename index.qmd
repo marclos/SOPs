@@ -50,7 +50,7 @@ tbl-classes: table-sm
 | [F001](field_sops/SOP-F001-field-safety.qmd) | Field Safety | 1.1 | |
 | [F002](field_sops/SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | -- | |
 | [F003](field_sops/SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | -- | |
-| [F004](field_sops/) | *TBD -- Site Access and Permits* | TBD | To be developed |
+| [F004](field_sops/SOP-TBD.qmd) | *TBD -- Site Access and Permits* | TBD | To be developed |
 | [F005](field_sops/SOP-F005-random-sampling-design.qmd) | Random Sampling Design | 1.0 | |
 | [F006](field_sops/SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation |  |  |
 | [F007](field_sops/SOP-F007-field-decontamination.qmd) | Field Decontamination Protocols | -- | To be developed |
@@ -63,9 +63,9 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|:------|
 | [F100](field_sops/SOP-F100-vehicles.qmd) | EA Program Vehicle Use | -- | |
 | [F101](field_sops/SOP-F101-electrical-power-in-the-field.qmd) | Electrical Power in the Field | 0.2 | |
-| [F102](field_sops/) | Waders/wetsuit | -- |  |
-| [F102](field_sops/) | *Canoe / Kayak / Small Watercraft* | -- | To be developed |
-| [F103](field_sops/) | *Field Laptop and Tablet Use* | -- | To be developed  |
+| [F102](field_sops/SOP-TBD.qmd) | Waders/wetsuit | -- |  |
+| [F102](field_sops/SOP-TBD.qmd) | *Canoe / Kayak / Small Watercraft* | -- | To be developed |
+| [F103](field_sops/SOP-TBD.qmd) | *Field Laptop and Tablet Use* | -- | To be developed  |
 
 ### Instrumentation (F200--F299)
 
@@ -94,7 +94,7 @@ tbl-classes: table-sm
 | [F306](field_sops/SOP-F306-wetland-hydrology-monitoring.qmd) | *Wetland Hydrology Monitoring* | -- |  |
 | [F307](field_sops/SOP-F307-lake-reservoir-profiling.qmd) | *Lake and Reservoir Profiling* | -- |  |
 | [F308](field_sops/SOP-F308-edna-water-sample-collection.qmd) | *eDNA Water Sample Collection* | -- |  |
-| [F309](field_sops/) | *Periphyton / Algae Sampling* | -- | To be developed  |
+| [F309](field_sops/SOP-TBD.qmd) | *Periphyton / Algae Sampling* | -- | To be developed  |
 
 ### Soil (F400--F499)
 
@@ -134,10 +134,10 @@ tbl-classes: table-sm
 | [F611](field_sops/SOP-F611-pollinator-observation-surveys.qmd) | Pollinator Observation Surveys | -- |   |
 | [F615](field_sops/SOP-F615-bird-point-counts.qmd) | Bird Point Count Surveys | 0.1 | |
 | [F620](field_sops/SOP-F620-camera-trap.qmd) | Camera Trap (CamPark T20) | 0.1 | |
-| [F621](field_sops/) | *Acoustic Monitoring (Bioacoustics)* | -- | To be developed  |
-| [F622](field_sops/) | *Small Mammal Trapping (Sherman Traps)* | -- | To be developed  |
+| [F621](field_sops/SOP-TBD.qmd) | *Acoustic Monitoring (Bioacoustics)* | -- | To be developed  |
+| [F622](field_sops/SOP-TBD.qmd) | *Small Mammal Trapping (Sherman Traps)* | -- | To be developed  |
 | [F630](field_sops/SOP-F630-drone-operations.qmd) | Drone Operations (DJI Matrice/Mavic) | 0.1 | |
-| [F631](field_sops/) | *360 Camera* | 0.1 | |
+| [F631](field_sops/SOP-TBD.qmd) | *360 Camera* | 0.1 | |
 
 ### Molecular Biology and DNA (F700--F799)
 
@@ -167,17 +167,17 @@ tbl-classes: table-sm
 
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
-| [L100](lab_sops/) | *Milli-Q Water System* | 0.2 | |
+| [L100](lab_sops/SOP-TBD.qmd) | *Milli-Q Water System* | 0.2 | |
 | [L101](lab_sops/SOP-L101-glassware-cleaning.qmd) | Glassware Cleaning and Preparation | 0.1 | |
 | [L102](lab_sops/SOP-L102-using-balances.qmd) | Using Balances | 0.2 | |
 | [L103](lab_sops/SOP-L103-micropipettes.qmd) | Micropipettes | 0.3 | |
-| [L104](lab_sops/) | *Using a Vortex Mixer* | 0.1 | |
+| [L104](lab_sops/SOP-TBD.qmd) | *Using a Vortex Mixer* | 0.1 | |
 | [L105](lab_sops/SOP-L105-drying-ovens.qmd) | Drying Ovens | 0.1 | |
 | [L106](lab_sops/SOP-L106-refrigerators-freezers.qmd) | Refrigerators and Freezers | 0.1 | |
-| [L107](lab_sops/) | *Hot Plates and Dry Bath* | 0.1 | |
-| [L108](lab_sops/) | *Clinical Centrifuge* | 0.1 | |
+| [L107](lab_sops/SOP-TBD.qmd) | *Hot Plates and Dry Bath* | 0.1 | |
+| [L108](lab_sops/SOP-TBD.qmd) | *Clinical Centrifuge* | 0.1 | |
 | [L109](lab_sops/SOP-L109-sorvall-centrifuge.qmd) | Sorvall ST8R Centrifuge | 0.1 | |
-| [L110](lab_sops/) | *Ozone Generator Operation* | 0.1 | |
+| [L110](lab_sops/SOP-TBD.qmd) | *Ozone Generator Operation* | 0.1 | |
 | [L111](lab_sops/SOP-L111-muffle-furnace.qmd) | Muffle Furnace | -- | |
 | [L112](lab_sops/SOP-L112-autoclave-sterilization.qmd) | Autoclave / Sterilization | -- |  |
 | [L113](lab_sops/SOP-L113-laminar-flow-cabinet.qmd) | Laminar Flow Cabinet | -- |   |
@@ -190,22 +190,22 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
 | [L200](lab_sops/SOP-L200-analytical-balance-calibration.qmd) | Analytical Balance Calibration | 1.0 | |
-| [L201](lab_sops/) | *Spectrophotometer Operation* | -- | |
-| [L202](lab_sops/) | *Accumet pH Meter* | 0.4 | |
+| [L201](lab_sops/SOP-TBD.qmd) | *Spectrophotometer Operation* | -- | |
+| [L202](lab_sops/SOP-TBD.qmd) | *Accumet pH Meter* | 0.4 | |
 | [L203](lab_sops/SOP-L203-trilogy-fluorometer.qmd) | Trilogy Laboratory Fluorometer | 0.4 | |
 | [L204](lab_sops/SOP-L204-shimadzu-toc-l.qmd) | Shimadzu TOC/TON Analyzer | 1.0 | |
 | [L205](lab_sops/SOP-L205-xrf-sample-prep-analysis.qmd) | XRF (X-Ray Fluorescence) | 0.1 | |
-| [L206](lab_sops/) | *ICP-MS* | 0.1 | |
-| [L207](lab_sops/) | *LA-ICP-MS (Laser Ablation)* | 0.1 | |
+| [L206](lab_sops/SOP-TBD.qmd) | *ICP-MS* | 0.1 | |
+| [L207](lab_sops/SOP-TBD.qmd) | *LA-ICP-MS (Laser Ablation)* | 0.1 | |
 | [L208](lab_sops/SOP-L208-irms-general-instrument.qmd) | ThermoFisher Delta V IRMS | 0.2 | |
-| [L209](lab_sops/) | *Radiometric Dating* | 0.1 | |
-| [L210](lab_sops/) | *Ion Chromatograph Operation* | -- | |
+| [L209](lab_sops/SOP-TBD.qmd) | *Radiometric Dating* | 0.1 | |
+| [L210](lab_sops/SOP-TBD.qmd) | *Ion Chromatograph Operation* | -- | |
 | [L211](lab_sops/SOP-L211-revolve-microscope.qmd) | Echo Labs Revolve Microscope | 0.1 | |
 | [L212](lab_sops/SOP-L212-nanodrop-spectrophotometer.qmd) | NanoDrop Spectrophotometer | -- |   |
 | [L213](lab_sops/SOP-L213-qubit-fluorometer.qmd)  | Qubit Fluorometer | -- |   |
 | [L214](lab_sops/SOP-L214-biorad-qx200-ddpcr.qmd)  | Bio-Rad QX200 ddPCR System (Instrument) | -- |   |
-| [L215](lab_sops/)  | *Hach DR3900 Benchtop Spectrophotometer* | -- | To be developed  |
-| [L216](lab_sops/)  | *Dissecting and Compound Microscope* | -- | To be developed  |
+| [L215](lab_sops/SOP-TBD.qmd)  | *Hach DR3900 Benchtop Spectrophotometer* | -- | To be developed  |
+| [L216](lab_sops/SOP-TBD.qmd)  | *Dissecting and Compound Microscope* | -- | To be developed  |
 
 ### Water Analysis (L300--L399)
 
@@ -213,20 +213,20 @@ tbl-classes: table-sm
 |:------|:-------------------------------|:-------------|:------|
 | [L300](lab_sops/SOP-L300-pH-conductivity-bench.qmd) | pH and Conductivity (Bench) | 1.0 | |
 | [L301](lab_sops/SOP-L301-alkalinity-titration.qmd) | Alkalinity Titration | 0.1 | |
-| [L302](lab_sops/) | *Turbidity Measurement* | -- | TBD |
+| [L302](lab_sops/SOP-TBD.qmd) | *Turbidity Measurement* | -- | TBD |
 | [L303](lab_sops/SOP-L303-hach-colorimetric.qmd) | Hach Colorimetric Analysis | 1.0 | |
-| [L304](lab_sops/) | *Nutrient Analysis (Water Samples)* | -- | was TBD |
+| [L304](lab_sops/SOP-TBD.qmd) | *Nutrient Analysis (Water Samples)* | -- | was TBD |
 | [L305](lab_sops/SOP-L305-colilert-quanti-tray.qmd) | Bacteria Screening (Colilert Quanti-Tray) | 4.3 | |
-| [L306](lab_sops/) | *BOD5 (Biochemical Oxygen Demand)* | 0.3 | |
-| [L307](lab_sops/) | *ELISA: BPA, BPB, Pesticides* | 0.3 | |
+| [L306](lab_sops/SOP-L306-bod5.qmd) | BOD5 (Biochemical Oxygen Demand) | 0.3 | |
+| [L307](lab_sops/SOP-L307-elisa-bpa-bpb-pesticides.qmd) | ELISA: BPA, BPB, Pesticides | 0.3 | |
 | [L308](lab_sops/SOP-L308-microplastics-water.qmd) | Microplastics in Water | 0.2 | |
-| [L309](lab_sops/) | *Pesticide Analysis* | -- | |
+| [L309](lab_sops/SOP-TBD.qmd) | *Pesticide Analysis  -Gas Chromotography* | -- | |
 | [L310](lab_sops/SOP-L310-chlorophyll-extraction.qmd) | Chlorophyll Extraction and Analysis | 0.1 | |
-| [L311](lab_sops/)  | *Dissolved Organic Carbon (Water) -- Shimadzu* | -- | To be developed  |
-| [L312](lab_sops/)  | *Total Suspended Solids / Total Dissolved Solids* | -- | To be developed |
-| [L313](lab_sops/)  | *Metals in Water (ICP-MS Prep and Acidification)* | -- | To be developed s |
-| [L314](lab_sops/)  | *Anion Analysis (Ion Chromatography)* | -- | To be developed |
-| [L315](lab_sops/)  | *eDNA Lab Processing (Filtration, Extraction, Inhibition Testing)* | -- | To be developed |
+| [L311](lab_sops/SOP-TBD.qmd)  | *Dissolved Organic Carbon (Water) -- Shimadzu* | -- | To be developed  |
+| [L312](lab_sops/SOP-TBD.qmd)  | *Total Suspended Solids / Total Dissolved Solids* | -- | To be developed |
+| [L313](lab_sops/SOP-TBD.qmd)  | *Metals in Water (ICP-MS Prep and Acidification)* | -- | To be developed s |
+| [L314](lab_sops/SOP-TBD.qmd)  | *Anion Analysis (Ion Chromatography)* | -- | To be developed |
+| [L315](lab_sops/SOP-TBD.qmd)  | *eDNA Lab Processing (Filtration, Extraction, Inhibition Testing)* | -- | To be developed |
 
 ### Soil and Carbon Analysis (L400--L499)
 
@@ -248,7 +248,7 @@ tbl-classes: table-sm
 | [L413](lab_sops/SOP-L413-solvita-compost-maturity.qmd) | Solvita Compost Maturity | 0.1 | |
 | [L414](lab_sops/SOP-L414-soil-ea-irms.qmd) | Flash EA Soil dN15 and dC13 Combustion | 0.1 | |
 | [L415](lab_sops/SOP-L415-carbonate-gasbench-irms.qmd) | Carbonate Isotope Analysis by GasBench II-IRMS | 0.1 | |
-| [L416](lab_sops/)  | *Cation Exchange Capacity (CEC)* | -- | To be developed |
+| [L416](lab_sops/SOP-TBD.qmd)  | *Cation Exchange Capacity (CEC)* | -- | To be developed |
 | [L417](lab_sops/SOP-L417-soil-aggregate-stability.qmd)  | Soil Aggregate Stability (Wet Sieving) | 0.1 |  |
 | [L418](lab_sops/SOP-L418-water-extractable-doc.qmd)  | Water-Extractable Dissolved Organic Carbon (Soil) | 0.1 | |
 | [L419](lab_sops/SOP-L419-soil-color-munsell.qmd)  | Soil Color (Munsell -- Lab Confirmation) | 0.1 |  |
@@ -260,19 +260,19 @@ No lab air SOPs exist yet. Range is reserved. Potential future SOPs:
 
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
-| [L500](lab_sops/)  | *Gravimetric PM Filter Analysis* | -- | To be developed  |
-| [L501](lab_sops/)  | *Passive Sampler Extraction and Analysis* | -- | To be developed |
+| [L500](lab_sops/SOP-TBD.qmd)  | *Gravimetric PM Filter Analysis* | -- | To be developed  |
+| [L501](lab_sops/SOP-TBD.qmd)  | *Passive Sampler Extraction and Analysis* | -- | To be developed |
 
 ### Microbes, Plants, and Animals (L600--L699)
 
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
-| [L600](lab_sops/)  | *TBD* | -- | |
+| [L600](lab_sops/SOP-TBD.qmd)  | *TBD* | -- | |
 | [L601](lab_sops/SOP-L601-wet-mount-microscopy.qmd) | Wet Mount for Microscopy | 0.1 | |
-| [L602](lab_sops/)  | *Macroinvertebrate Sorting, Subsampling, and Identification* | -- | To be developed  |
-| [L603](lab_sops/)  | *Plant Tissue Drying, Grinding, and Preparation for Analysis* | -- | To be developed|
-| [L604](lab_sops/)  | *Algae / Periphyton Identification and Enumeration* | -- | To be developed  |
-| [L605](lab_sops/)  | *Soil Enzyme Assays (Fluorometric)* | -- | To be developed |
+| [L602](lab_sops/SOP-L602-macroinvertebrate-sorting.qmd)  | *Macroinvertebrate Sorting, Subsampling, and Identification* | -- | To be developed  |
+| [L603](lab_sops/SOP-L603-plant-tissue-preparation.qmd)  | *Plant Tissue Drying, Grinding, and Preparation for Analysis* | -- | To be developed|
+| [L604](lab_sops/SOP-L604-algae-periphyton-identification.qmd)  | *Algae / Periphyton Identification and Enumeration* | -- | To be developed  |
+| [L605](lab_sops/SOP-L605-soil-enzyme-assays.qmd)  | *Soil Enzyme Assays (Fluorometric)* | -- | To be developed |
 
 ### Molecular Biology and DNA (L700--L799)
 
@@ -292,11 +292,11 @@ No lab air SOPs exist yet. Range is reserved. Potential future SOPs:
 |:------|:-------------------------------|:-------------|:------|
 | [L801](lab_sops/SOP-L801-rstudio-github.qmd) | RStudio Server and GitHub | 1.5 | |
 | [L802](lab_sops/SOP-L802-quality-control.qmd) | Quality Control and Quality Assurance | 1.0 | |
-| [L803](lab_sops/)  | *Data Entry and Database Management* | -- | To be developed  |
-| [L804](lab_sops/)  | *GIS and Spatial Data Management* | -- | To be developed  |
-| [L805](lab_sops/)  | *Drone Image Processing (Photogrammetry)* | -- | To be developed |
-| [L806](lab_sops/)  | *Statistical Analysis Templates (R)* | -- | To be developed  |
-| [L807](lab_sops/)  | *Instrument Data Export and File Management* | -- | To be developed  |
+| [L803](lab_sops/SOP-L803-data-entry-database.qmd)  | Data Entry and Database Management | -- | |
+| [L805](lab_sops/SOP-L805-drone-photogrammetry.qmd)  | Drone Image Processing (Photogrammetry) | -- |  |
+| [L804](lab_sops/SOP-L804-gis-spatial-data.qmd)  | GIS | -- |  |
+| [L806](lab_sops/SOP-L806-statistical-analysis.qmd)  | Statistical Analysis Templates (R) | -- |  |
+| [L807](lab_sops/SOP-L807-instrument-data-export.qmd)  | Instrument Data Export and File Management | -- |  |
 
 ::: {.callout-note}
 This table is maintained manually. Italicized entries marked *TBD* are

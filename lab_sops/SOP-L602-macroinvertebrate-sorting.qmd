@@ -1,0 +1,259 @@
+---
+# =============================================================================
+# SOP-L602: Macroinvertebrate Sorting, Subsampling, and Identification
+# =============================================================================
+title: "Macroinvertebrate Sorting, Subsampling, and Identification"
+sop-number: "SOP-L602"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-21"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the laboratory procedures for sorting, subsampling,
+and identifying benthic macroinvertebrates (BMI) collected from wadeable
+streams per [SOP-F610](../field_sops/SOP-F610-macroinvertebrate-sampling.qmd).
+The procedure follows the California Surface Water Ambient Monitoring
+Program (SWAMP) laboratory processing protocols to ensure compatibility
+with statewide bioassessment datasets [@ode2016; @barbour1999].
+Taxonomic identifications are used to calculate biological condition
+metrics, including the California Stream Condition Index (CSCI)
+[@mazor2016].
+
+
+## 2. Scope
+
+- **Applies to:** Laboratory processing of ethanol-preserved BMI
+  samples from wadeable streams, including subsampling, sorting,
+  identification to the lowest practical taxonomic level, and
+  enumeration
+- **Does not apply to:** Field collection of BMI (see
+  [SOP-F610](../field_sops/SOP-F610-macroinvertebrate-sampling.qmd));
+  marine or estuarine macroinvertebrates; meiofauna (organisms passing
+  through a 500 $\mu$m sieve); molecular identification (eDNA
+  metabarcoding)
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Lab Manager  | Approve taxonomic level targets; arrange external QC    |
+| Trained Personnel | Sort, identify, and enumerate organisms per this SOP    |
+| New Students      | Complete training before independent sorting            |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Preserved samples contain approximately 70% ethanol,
+  which is flammable and an inhalation irritant. Work in a
+  well-ventilated area away from ignition sources.
+- **Physical:** Forceps and dissecting needles are sharp. Use caution
+  when handling small organisms.
+- **Biological:** Stream organisms may harbor parasites or pathogens.
+  Wear gloves when handling preserved samples.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Safety glasses
+- [ ] Lab coat
+
+### Emergency Procedures
+
+For ethanol spills, ventilate the area, absorb with paper towels, and
+dispose in flammable waste. Refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Dissecting microscope (stereo)        | 7--45x magnification; illuminated base   |
+| Compound microscope                   | For slide-mounted specimens requiring higher magnification |
+| Gridded Caton sorting tray            | White, subdivided into numbered cells    |
+| Fine-tipped forceps (2 pairs)         | Dumont #5 or equivalent                  |
+| Dissecting needles                    | For separating tangled organisms         |
+| Petri dishes                          | For isolating specimens during ID        |
+| Wash bottles (ethanol and DI water)   |                                          |
+
+### Consumables
+
+| Item                              | Notes                              |
+|:----------------------------------|:-----------------------------------|
+| 70% ethanol                       | For topping off vials              |
+| Scintillation vials (20 mL)       | For archiving sorted taxa          |
+| Labels (pencil on waterproof paper) | Internal and external labels     |
+| Depression slides                 | For compound microscope work       |
+
+
+## 6. Procedure
+
+### 6.1 Sample Receiving and Logging
+
+1. Verify that the sample jar label matches the chain-of-custody or
+   field data sheet: site ID, date, collector, preservative.
+2. Log the sample into the laboratory tracking spreadsheet.
+3. Inspect the sample for adequate preservative (organisms should not
+   appear soft or discolored). If the ethanol is diluted below
+   approximately 50%, decant carefully and replace with fresh 70%
+   ethanol before proceeding.
+
+### 6.2 Subsampling
+
+The SWAMP standard requires identification of a minimum of 500
+organisms per sample. A fixed-count random subsampling procedure is
+used [@caton1991]:
+
+1. Pour the entire sample through a 500 $\mu$m sieve. Rinse the jar
+   into the sieve to recover all material.
+2. Transfer the sieved material to the gridded Caton sorting tray.
+   Distribute the material as evenly as possible across all grid cells.
+3. Use a random number generator or random number table to select grid
+   cells for sorting.
+4. Under the dissecting microscope, remove all organisms from the
+   selected cell using forceps, transferring them to a labeled petri
+   dish or vial. Count each organism as it is picked.
+5. Continue selecting and sorting random cells until the cumulative
+   organism count reaches or exceeds 500. Complete the cell in
+   progress even if the count exceeds 500 mid-cell.
+6. Record the number of cells sorted, the total cells in the tray,
+   and the total organism count.
+
+::: {.callout-tip}
+### Tip
+Keep the residue (unsorted cells) in a labeled jar with 70% ethanol.
+The residue is needed for the re-sort QC check and may be required if
+additional identifications are needed later.
+:::
+
+### 6.3 Identification
+
+1. Separate sorted organisms into major taxonomic groups (e.g.,
+   Ephemeroptera, Plecoptera, Trichoptera, Diptera, Coleoptera,
+   non-insect taxa) under the dissecting microscope.
+2. Identify each organism to the lowest practical taxonomic level
+   using standard keys [@merritt2019; @thorp2015]:
+   - Insects: genus (family for early instars or damaged specimens)
+   - Non-insect invertebrates: family or order (depending on group
+     and specimen condition)
+3. For specimens requiring higher magnification (e.g., chironomid
+   head capsules, oligochaete chaetae), prepare slide mounts and
+   examine under the compound microscope.
+4. Record counts by taxon on the laboratory data sheet or directly
+   into the data entry spreadsheet.
+
+### 6.4 Voucher Specimens
+
+1. Retain at least one representative specimen of each taxon as a
+   voucher in a labeled scintillation vial with 70% ethanol.
+2. Label each vial with: site ID, date, taxon name, identifier
+   initials, identification date.
+3. Store voucher vials in the BMI reference collection.
+
+### 6.5 Data Entry and Metric Calculation
+
+1. Enter identification data into the standardized spreadsheet or
+   database.
+2. Calculate summary metrics:
+   - Total taxa richness
+   - EPT (Ephemeroptera, Plecoptera, Trichoptera) richness
+   - Percent tolerant taxa
+   - Percent dominant taxon
+   - Shannon diversity index ($H'$)
+3. If sufficient data are available, calculate the CSCI score using
+   the CSCI R package or the online CSCI calculator [@mazor2016].
+
+```{r}
+#| label: bmi-diversity
+#| echo: true
+#| eval: false
+
+# Example: Shannon diversity from BMI count data
+library(vegan)
+
+# counts is a named vector of organism counts by taxon
+counts <- c(Baetis = 120, Hydropsyche = 85, Chironomidae = 210,
+            Simulium = 45, Optioservus = 30, Physa = 10)
+
+H_prime <- diversity(counts, index = "shannon")
+cat(sprintf("Shannon H': %.3f\n", H_prime))
+cat(sprintf("Total taxa: %d\n", length(counts)))
+cat(sprintf("Total organisms: %d\n", sum(counts)))
+cat(sprintf("EPT richness: count EPT genera from full dataset\n"))
+```
+
+
+## 7. Quality Control
+
+- **Sorting efficiency:** Re-sort 10% of processed samples (randomly
+  selected). The re-sort technician examines all residue material from
+  the original subsampling. Sorting efficiency must be greater than or
+  equal to 90% (i.e., fewer than 10% of total organisms were missed).
+- **Taxonomic verification:** Have a second identifier verify
+  identifications for 10% of specimens. Agreement should be greater
+  than or equal to 90% at the operational taxonomic level.
+- **External QC:** For data submitted to SWAMP or CEDEN, submit 10%
+  of samples to a SWAMP-certified taxonomic laboratory for independent
+  re-identification.
+- Record all QC results in the QC log.
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Ethanol from samples          | Evaporate in fume hood or collect in flammable waste |
+| Sorted residue (organic material) | Drain ethanol; dispose in standard trash |
+| Used gloves and paper towels  | Standard trash                           |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F610](../field_sops/SOP-F610-macroinvertebrate-sampling.qmd) | Benthic Macroinvertebrate Sampling | Upstream: field collection |
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety          | Required safety training          |
+| [L601](SOP-L601-wet-mount-microscopy.qmd) | Wet Mount for Microscopy | Slide preparation for ID   |
+
+
+## 11. Training Record
+
+Before sorting and identifying BMI independently, personnel must:
+
+1. Read this SOP and
+   [SOP-F610](../field_sops/SOP-F610-macroinvertebrate-sampling.qmd) in
+   full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Review the major taxonomic keys [@merritt2019; @thorp2015]
+4. Complete a supervised sorting exercise achieving greater than 90%
+   sorting efficiency
+5. Correctly identify a training set of at least 30 taxa under
+   supervision (greater than 85% agreement with reference
+   identifications)
+6. Be signed off by the PI or lab manager

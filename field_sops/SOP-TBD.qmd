@@ -1,0 +1,60 @@
+---
+# =============================================================================
+# Placeholder page for SOPs that have not yet been written
+# =============================================================================
+# This file serves as the link target for any SOP listed in index.qmd
+# whose .qmd file does not yet exist. Place it (or symlink it) at the
+# path referenced in the index table, or point all TBD links here.
+#
+# To replace this placeholder with a real SOP:
+#   1. Copy the template:  cp SOP-TEMPLATE.qmd SOP-LXX-short-name.qmd
+#   2. Fill in the YAML header and procedure sections
+#   3. Update the link in index.qmd to point to the new file
+# =============================================================================
+
+title: "SOP Under Development"
+date: last-modified
+date-format: "YYYY-MM-DD"
+---
+
+::: {.column-page}
+
+```{=html}
+<div style="text-align: center; padding: 4rem 1rem;">
+
+  <!-- Construction symbol -->
+  <p style="font-size: 6rem; margin-bottom: 0.5rem;">🚧</p>
+
+  <h2 style="color: var(--bs-warning, #e6a817); margin-bottom: 1rem;">
+    This SOP is under development
+  </h2>
+
+  <p style="font-size: 1.1rem; max-width: 40em; margin: 0 auto 2rem auto;">
+    The procedure you are looking for has been identified in the EA Program
+    SOP numbering system but has not yet been written. If you need this
+    procedure, please contact the PI or open an
+    <a href="https://github.com/marclos/SOPs/issues/new">issue on GitHub</a>
+    to request it.
+  </p>
+
+  <p style="font-size: 0.95rem; color: var(--bs-secondary, #6c757d);">
+    Page generated: {{< meta date >}}
+  </p>
+
+  <p style="margin-top: 2rem;">
+    <a href="../index.qmd"
+       style="display: inline-block;
+              padding: 0.6rem 1.5rem;
+              background-color: #0057B8;
+              color: white;
+              text-decoration: none;
+              border-radius: 4px;
+              font-weight: bold;">
+      ← Return to SOP Index
+    </a>
+  </p>
+
+</div>
+```
+
+:::

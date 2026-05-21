@@ -1,0 +1,327 @@
+---
+# =============================================================================
+# SOP-L605: Soil Enzyme Assays (Fluorometric Microplate Method)
+# =============================================================================
+title: "Soil Enzyme Assays (Fluorometric Microplate Method)"
+sop-number: "SOP-L605"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-21"
+    author: "Marc Los Huertos"
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the fluorometric microplate method for measuring the
+potential activity of extracellular enzymes in soils. Extracellular
+enzymes mediate the decomposition of organic matter and the cycling of
+carbon, nitrogen, phosphorus, and sulfur in soils. Assays use
+fluorogenic substrates based on 4-methylumbelliferone (MUB) and
+7-amino-4-methylcoumarin (AMC), which release a fluorescent product
+upon enzymatic hydrolysis [@sinsabaugh1994; @german2011; @bell2013].
+The method is high-throughput (96-well microplate format), sensitive,
+and widely used in soil biogeochemistry and ecosystem ecology.
+
+
+## 2. Scope
+
+- **Applies to:** Measurement of potential hydrolytic enzyme activities
+  in field-moist, sieved (less than 2 mm) mineral and organic soils
+  from EA Program sites, using MUB- and AMC-linked fluorogenic
+  substrates in a 96-well microplate format
+- **Does not apply to:** Oxidative enzyme assays (e.g., phenol oxidase,
+  peroxidase), which use colorimetric substrates (L-DOPA); enzyme
+  assays in aquatic samples (requires modified dilution); commercially
+  available enzyme activity kits with different substrates
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Lab Manager  | Select target enzymes; approve substrate concentrations |
+| Trained Personnel | Prepare reagents, run assays, analyze data              |
+| New Students      | Complete training before independent use                |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** MUB and AMC substrates are dissolved in dimethyl
+  sulfoxide (DMSO), which is readily absorbed through the skin and can
+  carry dissolved solutes into the body. Sodium acetate buffer and
+  sodium hydroxide (for pH adjustment) are mild to moderate irritants.
+  Concentrated NaOH is corrosive.
+- **Biological:** Soil samples may contain pathogens. Handle with
+  gloves.
+- **Physical:** Microplate reader UV lamp may cause eye strain with
+  prolonged direct viewing.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves (double glove when handling DMSO solutions)
+
+### Emergency Procedures
+
+For DMSO contact with skin, wash immediately with soap and water (do
+not use ethanol, which enhances absorption). For NaOH contact, flush
+with water for 15 minutes. Refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Fluorescence microplate reader        | Excitation 365 nm, emission 450 nm       |
+| Multichannel micropipette (8-channel) | 50--300 $\mu$L range                     |
+| Single-channel micropipettes          | 10--100 $\mu$L and 100--1000 $\mu$L      |
+| 96-well black flat-bottom microplates | Non-treated; opaque walls to prevent bleedthrough |
+| Orbital shaker or plate shaker        |                                          |
+| Analytical balance                    | For weighing soil                        |
+| pH meter                              | For buffer preparation                   |
+| Centrifuge (optional)                 | For clarifying soil slurries             |
+
+### Consumables
+
+| Item                              | Notes                              |
+|:----------------------------------|:-----------------------------------|
+| 4-Methylumbelliferyl substrates   | See enzyme table (Section 6)       |
+| 7-Amino-4-methylcoumarin substrates | For leucine aminopeptidase      |
+| 4-Methylumbelliferone (MUB) standard | For calibration curves          |
+| 7-Amino-4-methylcoumarin (AMC) standard | For calibration curves      |
+| DMSO (ACS grade)                  | Solvent for substrate stocks       |
+| Sodium acetate buffer (50 mM, pH 5.0) | Or Tris buffer pH 7.8 for alkaline soils |
+| NaOH (1 N)                        | To stop reactions and enhance fluorescence |
+| DI water (Type II)                |                                    |
+| Reagent reservoirs                 | For multichannel pipetting         |
+| Adhesive plate seals               | For incubation                    |
+
+
+## 6. Target Enzymes and Substrates
+
+The following enzymes are routinely assayed in the EA Program. Other
+MUB- or AMC-linked substrates can be added using the same general
+protocol.
+
+| Enzyme                        | Abbreviation | Substrate                                    | Nutrient Cycle | Substrate Conc. |
+|:------------------------------|:-------------|:---------------------------------------------|:---------------|:----------------|
+| $\beta$-1,4-glucosidase       | BG           | 4-MUB-$\beta$-D-glucopyranoside              | Carbon         | 200 $\mu$M      |
+| Cellobiohydrolase             | CBH          | 4-MUB-$\beta$-D-cellobioside                 | Carbon         | 200 $\mu$M      |
+| $\beta$-1,4-N-acetylglucosaminidase | NAG   | 4-MUB-N-acetyl-$\beta$-D-glucosaminide       | Carbon / Nitrogen | 200 $\mu$M   |
+| Acid (alkaline) phosphatase   | AP           | 4-MUB-phosphate                              | Phosphorus     | 200 $\mu$M      |
+| $\beta$-1,4-xylosidase        | BX           | 4-MUB-$\beta$-D-xylopyranoside               | Carbon         | 200 $\mu$M      |
+| Leucine aminopeptidase        | LAP          | L-Leucine-7-AMC                              | Nitrogen       | 200 $\mu$M      |
+| Sulfatase                     | SUL          | 4-MUB-sulfate                                | Sulfur         | 200 $\mu$M      |
+
+: Target enzymes, substrates, and associated nutrient cycles. {#tbl-enzymes}
+
+
+## 7. Procedure
+
+### 7.1 Soil Slurry Preparation
+
+1. Weigh 1.0 g of field-moist, sieved (less than 2 mm) soil into a
+   clean container.
+2. Add 125 mL of 50 mM sodium acetate buffer (pH adjusted to match
+   the soil pH, typically 5.0 for acidic soils or 7.8 for alkaline
+   soils) [@german2011].
+3. Homogenize with a magnetic stir bar or by vortexing for 1 minute.
+4. Keep the slurry stirring continuously during pipetting to maintain
+   a uniform suspension.
+
+### 7.2 Substrate Stock Preparation
+
+1. Dissolve each MUB or AMC substrate in DMSO to prepare a 10 mM
+   stock solution. Store at --20 °C in amber vials; stable for at
+   least 6 months.
+2. Prepare working solutions by diluting the DMSO stock in buffer to
+   the target concentration (typically 200 $\mu$M final concentration
+   in the well).
+3. Prepare MUB and AMC calibration standards in buffer at
+   concentrations of 0, 0.5, 1, 2.5, 5, 10, and 25 $\mu$M.
+
+### 7.3 Microplate Layout
+
+For each soil sample, set up the following wells (8 analytical
+replicates per enzyme) [@bell2013]:
+
+| Well Type              | Contents                                       | Purpose              |
+|:-----------------------|:-----------------------------------------------|:---------------------|
+| Sample assay (n = 8)   | 200 $\mu$L slurry + 50 $\mu$L substrate        | Enzyme activity      |
+| Sample control (n = 8) | 200 $\mu$L slurry + 50 $\mu$L buffer            | Soil background fluorescence |
+| Substrate control (n = 8) | 200 $\mu$L buffer + 50 $\mu$L substrate      | Substrate autofluorescence |
+| MUB/AMC standard curve | 200 $\mu$L buffer + 50 $\mu$L standard          | Calibration          |
+| Blank                  | 200 $\mu$L buffer + 50 $\mu$L buffer             | Instrument blank     |
+
+### 7.4 Incubation
+
+1. Seal the plate with an adhesive seal.
+2. Incubate at 20 °C (or field-relevant temperature) in the dark on
+   a plate shaker at low speed for 2--4 hours. The incubation time
+   depends on expected activity; 3 hours is a standard starting point
+   [@sinsabaugh1994].
+
+::: {.callout-tip}
+### Tip
+For soils with unknown activity, run a pilot plate at 1, 2, and
+4 hours to identify the linear range. Activity calculations assume
+linearity over the incubation period; if the reaction plateaus, shorten
+the incubation.
+:::
+
+### 7.5 Stopping and Reading
+
+1. After incubation, add 10 $\mu$L of 1 N NaOH to each well to stop
+   the reaction and maximize fluorescence of the MUB/AMC product
+   (the fluorophore is brightest above pH 10).
+2. Read fluorescence on the microplate reader at excitation 365 nm /
+   emission 450 nm within 5 minutes of adding NaOH.
+3. Export the raw fluorescence data for analysis.
+
+
+## 8. Data Analysis and Calculations
+
+### 8.1 Activity Calculation
+
+For each enzyme, calculate the net fluorescence:
+
+$$
+F_{\text{net}} = F_{\text{sample}} - F_{\text{soil control}} - F_{\text{substrate control}} + F_{\text{blank}}
+$$
+
+Convert net fluorescence to nmol of product released using the MUB or
+AMC standard curve (linear regression of fluorescence vs.
+concentration).
+
+Calculate enzyme activity:
+
+$$
+\text{Activity} \; (\text{nmol g}^{-1} \text{h}^{-1}) =
+\frac{F_{\text{net}} / m \times V_{\text{well}}}{M_{\text{soil}} \times t}
+$$
+
+where $m$ = slope of the standard curve (fluorescence per nmol),
+$V_{\text{well}}$ = total well volume (L), $M_{\text{soil}}$ = dry
+mass equivalent of soil in the well (g, corrected for moisture
+content per [SOP-L400](SOP-L400-soil-moisture.qmd)), and $t$ =
+incubation time (h).
+
+```{r}
+#| label: enzyme-activity-calc
+#| echo: true
+#| eval: false
+
+# Example enzyme activity calculation
+library(tidyverse)
+
+# Standard curve data
+standards <- tibble(
+  conc_uM = c(0, 0.5, 1.0, 2.5, 5.0, 10.0, 25.0),
+  fluorescence = c(120, 850, 1580, 3750, 7200, 14100, 34500)
+)
+
+# Fit linear model
+cal_model <- lm(fluorescence ~ conc_uM, data = standards)
+slope <- coef(cal_model)[2]  # fluorescence units per uM
+
+# Sample data (means of 8 replicates)
+F_sample <- 5200
+F_soil_ctrl <- 350
+F_sub_ctrl <- 180
+F_blank <- 125
+
+F_net <- F_sample - F_soil_ctrl - F_sub_ctrl + F_blank
+
+# Convert to concentration (uM in well)
+conc_well <- F_net / slope
+
+# Calculate activity
+V_well_L <- 250e-6          # 250 uL total well volume in liters
+soil_fresh_g <- 1.0         # g fresh soil in 125 mL slurry
+frac_in_well <- 200 / (125 * 1000)  # fraction of slurry in well
+soil_in_well_g <- soil_fresh_g * frac_in_well
+moisture <- 0.25            # gravimetric moisture content
+soil_dry_g <- soil_in_well_g * (1 - moisture)
+incubation_h <- 3
+
+activity <- (conc_well * V_well_L * 1e6) / (soil_dry_g * incubation_h)
+# Result in nmol / g dry soil / h
+
+cat(sprintf("Net fluorescence: %.0f\n", F_net))
+cat(sprintf("Activity: %.1f nmol g-1 h-1\n", activity))
+```
+
+
+## 9. Quality Control
+
+- Run 8 analytical replicates per enzyme per sample. Report the mean
+  and coefficient of variation; CV should be less than 20%.
+- Include substrate and soil quench controls on every plate.
+- Run the MUB/AMC standard curve on each plate (do not carry over
+  calibrations between plates, as reader sensitivity may drift).
+- Include a laboratory reference soil in each batch to track
+  inter-batch variability.
+- Verify that activity is linear over the incubation period by running
+  a time-course pilot for new soil types.
+
+
+## 10. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Plate contents (soil slurry + substrates) | Drain with copious water (dilute, non-hazardous at assay concentrations) |
+| DMSO substrate stock waste    | Collect in organic waste; EH&S pickup    |
+| NaOH waste                    | Neutralize and drain                     |
+| Used microplates              | Standard trash                           |
+| Used pipette tips              | Standard trash                          |
+
+
+## 11. References
+
+::: {#refs}
+:::
+
+
+## 12. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety          | Required safety training          |
+| [L400](SOP-L400-soil-moisture.qmd)     | Soil Moisture (Gravimetric) | Moisture correction for dry-mass calculations |
+| [L409](SOP-L409-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon | Complementary microbial activity measure |
+| [L408](SOP-L408-solvita-co2-burst.qmd) | Solvita CO~2~ Burst       | Related microbial activity metric |
+| [F400](../field_sops/SOP-F400-soil-sampling.qmd) | Soil Sampling       | Upstream: sample collection       |
+
+
+## 13. Training Record
+
+Before performing soil enzyme assays independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Review the SDS for DMSO, NaOH, and the fluorogenic substrates
+4. Observe a trained operator perform a complete assay (slurry
+   preparation through plate reading and data export)
+5. Perform the assay under supervision with acceptable QC results
+   (replicate CV less than 20%; standard curve $r^2 > 0.99$)
+6. Demonstrate correct use of the multichannel pipette and microplate
+   reader
+7. Be signed off by the PI or lab manager
