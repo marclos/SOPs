@@ -1,0 +1,244 @@
+---
+# =============================================================================
+# SOP-L417: Soil Aggregate Stability (Wet Sieving)
+# =============================================================================
+title: "Soil Aggregate Stability -- Wet Sieving Method"
+sop-number: "SOP-L417"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the determination of soil aggregate stability
+using the wet sieving method. Aggregate stability quantifies the
+resistance of soil structural units to disintegration when subjected to
+disruptive forces such as wetting, raindrop impact, and mechanical
+disturbance. It is a key indicator of soil physical quality, erosion
+susceptibility, and the effects of management practices (tillage,
+cover cropping, organic amendments) on soil structure
+[@kemper1986; @nimmo2004].
+
+
+## 2. Scope
+
+- **Applies to:** Air-dried mineral soil samples sieved to a defined
+  aggregate size class (typically 1--2 mm or 2--4 mm). Samples must
+  have been collected and processed per
+  [SOP-F400 Soil Sampling](../field_sops/SOP-F400-soil-sampling.qmd).
+- **Does not apply to:** Sandy soils with negligible aggregation,
+  organic soils (histosols), or aggregate characterization by dry
+  sieving alone
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Lab Manager       | Maintain wet sieving apparatus              |
+| Trained Personnel | Follow this SOP, report results             |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** Sodium hexametaphosphate (dispersing agent) is a mild
+  irritant. Hydrogen peroxide (if used for organic matter correction)
+  is a strong oxidizer.
+- **Physical:** Drying oven operates at 105 C; burn risk from hot
+  containers.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves (when handling dispersing solution or H~2~O~2~)
+- [ ] Heat-resistant gloves (when handling containers from the oven)
+
+### Emergency Procedures
+
+For chemical splashes, flush with water for at least 15 minutes. Refer
+to [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) and
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                  | Location  | Notes                          |
+|:--------------------------------------|:----------|:-------------------------------|
+| Wet sieving apparatus (Yoder-type or Eijkelkamp) | SGM 133 | Oscillating sieve holder |
+| Nested sieves (e.g., 2 mm, 1 mm, 0.5 mm, 0.25 mm, 0.053 mm) | SGM 133 | Stainless steel, 8 cm diameter |
+| Drying oven (105 C)                   | SGM 133   |                                |
+| Analytical balance (0.001 g)          | SGM 133   | See [SOP-L200](SOP-L200-analytical-balance-calibration.qmd) |
+| Desiccator with active desiccant      | SGM 133   |                                |
+| Pre-weighed aluminum drying tins      | SGM 133   |                                |
+
+### Reagents and Consumables
+
+| Item                                       | Notes                          |
+|:-------------------------------------------|:-------------------------------|
+| Deionized water                            | For wetting and sieving        |
+| Sodium hexametaphosphate solution (5 g/L)  | For dispersing residual aggregates (sand correction) |
+| Hydrogen peroxide (30%), optional          | For removing organic matter if sand correction requires it |
+
+
+## 6. Procedure
+
+### 6.1 Sample Preparation
+
+1. Air-dry soil samples at room temperature until friable (typically
+   48--72 hours)
+2. Gently break large clods along natural planes of weakness by hand;
+   do not grind or crush
+3. Dry-sieve the sample through a nest of sieves to isolate the
+   desired aggregate size class (e.g., 1--2 mm or 2--4 mm)
+4. Discard material outside the target size range for this analysis
+5. Weigh out replicate subsamples (typically 4.0 g each, minimum 3
+   replicates per sample) into labeled containers
+
+### 6.2 Pre-Wetting (Capillary Wetting)
+
+Rapid wetting causes slaking, which may overestimate instability for
+some research questions. If slow pre-wetting is desired:
+
+1. Place each subsample on a moistened filter paper in a closed
+   container
+2. Allow capillary wetting for 10 minutes (or a duration standardized
+   for the study)
+3. Proceed to wet sieving
+
+If the goal is to assess slaking resistance under rapid wetting (the
+more common approach), omit the pre-wetting step and place air-dried
+aggregates directly onto the sieve.
+
+### 6.3 Wet Sieving
+
+1. Place the pre-weighed aggregates on the top sieve of the wet sieving
+   apparatus (e.g., 0.25 mm for a single-sieve method, or the top of
+   a nested stack)
+2. Raise the water level in the sieving cans until the sieves are
+   submerged to the appropriate depth (typically 1--2 cm above the
+   sieve mesh)
+3. Allow the aggregates to soak for 5 minutes (standardize this time
+   for the study) before starting oscillation
+4. Start the wet sieving apparatus. The standard cycle is 3 cm stroke
+   at 34 cycles per minute for 3 minutes [@kemper1986]. Record the
+   exact settings used.
+5. After sieving, carefully raise the sieves from the water
+
+### 6.4 Collection and Drying
+
+1. Backwash the material retained on each sieve into a pre-weighed
+   aluminum tin using a wash bottle with deionized water
+2. Transfer any material that passed through the finest sieve (the
+   material in the sieving can) into a separate tin if size
+   fractionation is desired
+3. Dry all tins at 105 C for 24 hours (or until constant mass)
+4. Cool in a desiccator and weigh to the nearest 0.001 g
+
+### 6.5 Sand Correction
+
+The material retained on the sieve after wet sieving includes both
+water-stable aggregates and primary sand particles that are inherently
+larger than the sieve openings. To correct for sand:
+
+1. Add 50 mL of 5 g/L sodium hexametaphosphate to the dried residue
+   in each tin
+2. Allow to soak for at least 2 hours (or overnight) to fully disperse
+   remaining aggregates
+3. Pour the dispersed slurry back through the same sieve used in the
+   wet sieving step
+4. Rinse thoroughly with deionized water
+5. Backwash the retained sand into a clean tin, dry at 105 C, cool,
+   and weigh
+
+### 6.6 Calculations
+
+**Water-stable aggregates (WSA) as a fraction of the total sample,
+corrected for sand:**
+
+$$
+\text{WSA} (\%) = \frac{M_{\text{stable}} - M_{\text{sand}}}{M_{\text{total}} - M_{\text{sand}}} \times 100
+$$
+
+where:
+
+- $M_{\text{stable}}$ = oven-dry mass of material retained on the sieve
+  after wet sieving (g)
+- $M_{\text{sand}}$ = oven-dry mass of sand retained after dispersal (g)
+- $M_{\text{total}}$ = initial oven-dry equivalent mass of the
+  subsample (g; corrected for moisture using gravimetric moisture from
+  [SOP-L400](SOP-L400-soil-moisture.qmd))
+
+If a nested sieve set is used, calculate the mean weight diameter (MWD):
+
+$$
+\text{MWD} = \sum_{i=1}^{n} \bar{x}_i \, w_i
+$$
+
+where $\bar{x}_i$ is the mean diameter of the $i$th size fraction and
+$w_i$ is the proportion of the total sample weight in that fraction
+(after sand correction) [@vanBavel1950].
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Run a minimum of 3 replicates per sample; report the mean and
+  standard deviation
+- The coefficient of variation among replicates should be less than 15%
+- Include a laboratory reference soil in each batch to monitor method
+  consistency over time
+- Record all apparatus settings (stroke length, frequency, sieving
+  duration) so results are reproducible
+- *TBD -- identify or prepare a reference soil for long-term QC
+  tracking*
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Sieved soil and sand          | Standard trash or return to sample stock |
+| Sodium hexametaphosphate solution | Drain with copious water (non-hazardous at this concentration) |
+| H~2~O~2~ waste (if used)     | Dilute and drain, or collect for EH&S    |
+| Used aluminum tins            | Clean and reuse, or recycle              |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing this procedure independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Complete [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
+   training (required for moisture correction)
+4. Observe a trained operator perform the full procedure including
+   sand correction
+5. Perform the analysis under supervision with acceptable replicate
+   precision (CV less than 15%)
+6. Be signed off by the PI or lab manager

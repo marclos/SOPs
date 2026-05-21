@@ -1,0 +1,224 @@
+---
+# =============================================================================
+# SOP-L418: Water-Extractable Dissolved Organic Carbon (Soil)
+# =============================================================================
+title: "Water-Extractable Dissolved Organic Carbon (Soil)"
+sop-number: "SOP-L418"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the extraction and quantification of
+water-extractable dissolved organic carbon (WEOC) from soil. WEOC
+represents the fraction of soil organic matter that is readily
+soluble in water and includes simple sugars, organic acids, amino
+acids, and other low-molecular-weight compounds. It is a sensitive
+indicator of labile carbon availability, microbial substrate supply,
+and changes in soil management or land use [@ghani2003; @jones2006].
+
+WEOC is distinct from the K~2~SO~4~-extractable DOC measured in the
+chloroform fumigation-extraction method
+([SOP-L409](SOP-L409-microbial-biomass-carbon.qmd)) and from total
+soil organic carbon ([SOP-L407](SOP-L407-total-carbon.qmd)). The
+water extraction uses no salt, making it a closer analogue to the
+dissolved organic carbon that would leach from soil under natural
+rainfall or irrigation.
+
+
+## 2. Scope
+
+- **Applies to:** Mineral and organic soil samples, compost, and
+  organic amendments. Samples should be collected per
+  [SOP-F400 Soil Sampling](../field_sops/SOP-F400-soil-sampling.qmd)
+  and stored at 4 C (for field-moist analysis) or air-dried.
+- **Does not apply to:** Water samples (analyze directly on the TOC-L),
+  K~2~SO~4~ extracts for microbial biomass carbon (see SOP-L409), or
+  total soil carbon by combustion (see SOP-L407)
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Perform extraction and submit samples for TOC analysis |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Drying oven (105 C) and orbital shaker pose minor
+  physical hazards.
+- **Biological:** Soil samples may harbor pathogens. Wash hands after
+  handling soil.
+- **Chemical:** Concentrated HCl (if used for acidification before
+  TOC analysis) is corrosive.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves
+
+### Emergency Procedures
+
+For acid splashes, flush with water for at least 15 minutes. Refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                                  | Location  | Notes                          |
+|:--------------------------------------|:----------|:-------------------------------|
+| Orbital or end-over-end shaker        | SGM 133   |                                |
+| Centrifuge (capable of 4,000 x g)     | SGM 133   |                                |
+| Vacuum filtration apparatus or syringe filters | SGM 133 |                         |
+| Shimadzu TOC-L analyzer               | SGM 133   | See [SOP-L204](SOP-L204-shimadzu-toc-l.qmd) |
+| Analytical balance (0.01 g)           | SGM 133   | See [SOP-L200](SOP-L200-analytical-balance-calibration.qmd) |
+| Drying oven (105 C)                   | SGM 133   | For gravimetric moisture       |
+
+### Reagents and Consumables
+
+| Item                                       | Notes                          |
+|:-------------------------------------------|:-------------------------------|
+| Deionized water (Type I or II, 18.2 MOhm)  | Carbon-free; verify with TOC blank |
+| 50 mL centrifuge tubes (polypropylene)     | Pre-rinsed with DI water       |
+| 0.45 um membrane or syringe filters        | Pre-combusted glass fiber (GF/F) or PVDF; do not use cellulose acetate (leaches DOC) |
+| Pre-combusted 40 mL glass vials with PTFE-lined caps | For TOC-L analysis    |
+| 2 M HCl                                   | For acidifying extracts if NPOC mode is used |
+
+
+## 6. Procedure
+
+### 6.1 Sample Preparation
+
+1. If using field-moist soil, determine gravimetric moisture content on
+   a separate subsample per [SOP-L400](SOP-L400-soil-moisture.qmd)
+2. If using air-dried soil, pass through a 2 mm sieve and determine
+   residual moisture content
+
+### 6.2 Extraction
+
+1. Weigh 5.0 g (oven-dry equivalent) of soil into a 50 mL centrifuge
+   tube. Record the exact mass.
+2. Add 25 mL of deionized water (1:5 soil-to-water ratio)
+   [@ghani2003; @jones2006]
+3. Cap the tube and shake on an end-over-end or orbital shaker at
+   approximately 150 rpm for 1 hour at room temperature
+4. Centrifuge at 4,000 x g for 10 minutes to separate the supernatant
+
+::: {.callout-tip}
+Some protocols use a hot water extraction (80 C for 16 hours) to
+capture a larger fraction of labile carbon [@ghani2003]. If hot water
+extraction is desired, specify the temperature and duration explicitly
+in the lab notebook and report, as the two methods are not directly
+comparable.
+:::
+
+### 6.3 Filtration
+
+1. Filter the supernatant through a 0.45 um filter into a pre-combusted
+   glass vial
+2. If using syringe filters, discard the first 2--3 mL of filtrate to
+   flush any carbon leached from the filter
+3. Collect at least 15 mL of filtrate for TOC analysis (enough for
+   multiple injections plus rinse volume)
+
+### 6.4 Storage
+
+1. If extracts cannot be analyzed within 24 hours, acidify to pH less
+   than 2 with 2 M HCl (approximately 1 drop per 10 mL) and store at
+   4 C
+2. Analyze within 7 days of extraction; prolonged storage may alter
+   DOC concentrations even when acidified
+
+### 6.5 DOC Analysis
+
+1. Analyze filtered extracts on the Shimadzu TOC-L in NPOC mode per
+   [SOP-L204](SOP-L204-shimadzu-toc-l.qmd)
+2. Prepare a deionized water blank and extraction blanks (DI water
+   processed through the full extraction procedure) alongside samples
+3. Run calibration standards (potassium hydrogen phthalate, KHP) as
+   described in SOP-L204
+
+### 6.6 Calculations
+
+$$
+\text{WEOC (mg C kg}^{-1}\text{ dry soil)} =
+\frac{(C_{\text{sample}} - C_{\text{blank}}) \times V_{\text{extract}}}{m_{\text{soil}}}
+$$
+
+where:
+
+- $C_{\text{sample}}$ = DOC concentration in the filtered extract
+  (mg C/L)
+- $C_{\text{blank}}$ = DOC concentration in the extraction blank
+  (mg C/L)
+- $V_{\text{extract}}$ = total volume of extractant added (L; e.g.,
+  0.025 L)
+- $m_{\text{soil}}$ = oven-dry mass of soil extracted (kg)
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Include extraction blanks (DI water only, no soil) in each batch to
+  quantify background carbon from filters, tubes, and water
+- Run sample duplicates for at least 10% of samples; CV between
+  duplicates should be less than 10%
+- Include a laboratory reference soil in each batch
+- Verify that extraction blank DOC is less than 1 mg/L; if higher,
+  troubleshoot water quality and filter blanks
+- Instrument QC follows [SOP-L204](SOP-L204-shimadzu-toc-l.qmd)
+  requirements (calibration verification, instrument blanks, replicate
+  injection CV less than 2%)
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Soil residue after extraction | Standard trash or return to sample stock |
+| Filtered water extracts       | Drain with copious water (non-hazardous) |
+| Acidified extracts            | Neutralize and drain, or collect for EH&S |
+| Used filters                  | Standard trash                           |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing this procedure independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Complete [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
+   training (required for moisture correction)
+4. Be trained on [SOP-L204 Shimadzu TOC-L](SOP-L204-shimadzu-toc-l.qmd)
+   or have extracts analyzed by a trained operator
+5. Perform the extraction under supervision with acceptable duplicate
+   precision (CV less than 10%)
+6. Be signed off by the PI or lab manager

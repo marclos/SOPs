@@ -1,0 +1,213 @@
+---
+# =============================================================================
+# SOP-L419: Soil Color (Munsell -- Lab Confirmation)
+# =============================================================================
+title: "Soil Color -- Munsell Lab Confirmation"
+sop-number: "SOP-L419"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the determination of soil color under
+controlled laboratory lighting using the Munsell Soil Color Charts.
+Soil color is a rapid, non-destructive indicator of organic matter
+content, mineralogy, drainage condition, and degree of weathering. It
+is a required observation in soil profile descriptions and is used in
+soil taxonomy (e.g., distinguishing Mollisols by dark surface colors)
+[@soilsurveystaff2017; @lynn2009].
+
+Field color determinations (see
+[SOP-F400](../field_sops/SOP-F400-soil-sampling.qmd)) are affected by
+variable natural lighting, sun angle, and observer fatigue. This
+laboratory procedure standardizes the observation under a controlled
+illuminant to improve reproducibility and provide a reference-quality
+color record.
+
+
+## 2. Scope
+
+- **Applies to:** All soil and sediment samples for which a
+  reference-quality Munsell color determination is needed, including
+  both moist and air-dried conditions
+- **Does not apply to:** Rock or mineral color determinations using the
+  Munsell Rock Color Chart, instrumental colorimetry or
+  spectrophotometry, or quick field assessments (which remain valuable
+  but are less reproducible)
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Perform color determinations, record results |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Biological:** Soil samples may contain pathogens. Wash hands after
+  handling soil.
+- **Physical:** No significant hazards. If using a spray bottle to
+  moisten samples, avoid wetting electronic equipment or Munsell
+  charts.
+:::
+
+### Required PPE
+
+- [ ] Nitrile gloves
+- [ ] Lab coat
+
+
+## 5. Equipment and Materials
+
+| Item                                  | Notes                          |
+|:--------------------------------------|:-------------------------------|
+| Munsell Soil Color Charts (current edition) | Replace when pages are faded, stained, or damaged |
+| Daylight-balanced lamp (D65 or equivalent, 5,000--6,500 K) | Position to illuminate the sample and chart evenly without glare |
+| Spray bottle with deionized water     | For moistening air-dried samples |
+| White ceramic tile or neutral gray card | For calibrating eye to neutral |
+| Spatula or palette knife              | For preparing a smooth sample surface |
+| Lab notebook or standardized data sheet | For recording results       |
+
+
+## 6. Procedure
+
+### 6.1 Lighting Setup
+
+1. Position the daylight-balanced lamp so it illuminates the sample and
+   the Munsell chart at approximately the same angle and distance
+2. Avoid mixing light sources (turn off overhead fluorescent or LED
+   room lights if their color temperature differs significantly from
+   the reference lamp)
+3. Allow the lamp to warm up for at least 5 minutes before beginning
+   observations
+
+::: {.callout-note}
+If a daylight-balanced lamp is not available, work near a north-facing
+window under overcast sky conditions. Avoid direct sunlight, which
+changes color temperature with sun angle and clouds.
+:::
+
+### 6.2 Sample Preparation
+
+1. For **moist** color: if the sample is already field-moist, proceed
+   directly. If it has been air-dried, moisten a subsample by adding
+   deionized water drop by drop with a spray bottle or pipette until
+   the sample glistens but no free water pools on the surface
+   [@soilsurveystaff2017]
+2. For **dry** color: use the air-dried sample without adding water
+3. Use a spatula to press the soil into a smooth, flat surface
+   (approximately 2--3 cm diameter) on a white or neutral background.
+   A rough surface creates shadows that bias the reading toward darker
+   values.
+4. If the sample is heterogeneous (e.g., redoximorphic features),
+   determine the color of the matrix and the color of each distinct
+   mottle or concentration separately
+
+### 6.3 Color Determination
+
+1. Hold the Munsell chart adjacent to the prepared sample so both are
+   under the same illumination
+2. Look through the apertures on the chart page, placing the sample
+   behind each hole, to find the closest match
+3. First identify the correct **hue** page (e.g., 10YR, 7.5YR, 2.5Y)
+4. Then match the **value** (lightness, vertical axis) and **chroma**
+   (saturation, horizontal axis) within that page
+5. Record the Munsell notation in the format: hue value/chroma (e.g.,
+   10YR 4/3)
+6. If the sample falls between two chips, record the interpolated
+   notation or the nearest chip with a note (e.g., "10YR 4/3 to 4/4")
+7. Repeat the determination for both moist and dry conditions
+
+::: {.callout-tip}
+Color vision varies between individuals and can shift with fatigue.
+For critical determinations, have two observers independently determine
+the color and compare results. If readings differ by more than one
+chip in any dimension, re-examine jointly.
+:::
+
+### 6.4 Recording Results
+
+Record the following for each sample:
+
+- Sample ID and depth
+- Munsell notation (moist)
+- Munsell notation (dry)
+- Descriptive color name from the chart (e.g., "dark yellowish brown")
+- Any redoximorphic features (mottle color, abundance, size, contrast)
+- Observer name(s)
+- Date and lighting conditions
+
+### 6.5 Special Cases
+
+**Redoximorphic features:** When mottles or concentrations are present,
+record the matrix color and the color, abundance (few, common, many),
+size (fine, medium, coarse), and contrast (faint, distinct, prominent)
+of each type of feature per the standards in the Soil Survey Manual
+[@soilsurveystaff2017].
+
+**Very dark samples (value 2 or less):** These may be difficult to
+distinguish on the chart. Prepare a thinner smear and confirm under
+slightly brighter illumination.
+
+**Effervescent or calcareous samples:** Note the presence of
+carbonates (tested with dilute HCl per
+[SOP-L402](SOP-L402-soil-pH-salinity.qmd)), as carbonate coatings
+affect apparent color.
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Perform duplicate readings (by the same or a second observer) on at
+  least 10% of samples
+- Acceptable agreement: readings should match within one chip in value
+  and one chip in chroma on the same hue page
+- Inspect the Munsell chart for fading or staining at the start of each
+  session; replace if the neutral chip (N/) no longer appears true gray
+- Record the lamp model and approximate color temperature in the lab
+  notebook
+
+
+## 8. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Used soil subsamples          | Return to sample container or standard trash |
+| No chemical waste generated   | --                                       |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before performing Munsell color determinations independently,
+personnel must:
+
+1. Read this SOP in full
+2. Review the introductory pages of the Munsell Soil Color Charts
+3. Practice matching at least 10 samples under supervision and compare
+   readings with a trained observer
+4. Demonstrate agreement within one chip in value and chroma on
+   duplicate determinations
+5. Be signed off by the PI or lab manager
