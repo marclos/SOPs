@@ -14,6 +14,9 @@
 # Field (F) and Lab (L) SOPs are combined within each group.
 # Only groups containing at least one SOP produce a PDF.
 #
+# Each SOP is padded (if necessary) so that the next SOP always begins
+# on an odd-numbered page -- i.e. a fresh front side when duplex printing.
+#
 # Usage (after quarto render):
 #   Rscript merge_sop_pdfs_by_topic.R              # uses docs/pdfs/
 #   Rscript merge_sop_pdfs_by_topic.R path/to/pdfs  # custom input directory
@@ -37,23 +40,22 @@ library(qpdf)
 # 0. Find Pandoc (Quarto bundles its own; rmarkdown needs to know where)
 # ---------------------------------------------------------------------------
 quarto_pandoc <- Sys.which("quarto")
-if (!nzchar(Sys.which("pandoc"))) {
-  rstudio_pandoc <- Sys.getenv("RSTUDIO_PANDOC", "")
-  if (nzchar(rstudio_pandoc) && file.exists(file.path(rstudio_pandoc, "pandoc"))) {
-    cat(sprintf("Using Pandoc from RSTUDIO_PANDOC: %s\n", rstudio_pandoc))
-  } else {
-    pandoc_candidates <- c(
-      file.path(rstudio_pandoc, "pandoc"),
-      file.path(Sys.getenv("HOME"), ".local", "bin", "pandoc"),
-      "/opt/quarto/bin/tools/x86_64/pandoc",
-      "/usr/local/bin/pandoc",
-      "/usr/bin/pandoc"
-    )
-    found <- pandoc_candidates[file.exists(pandoc_candidates)]
-    if (length(found) > 0) {
-      Sys.setenv(RSTUDIO_PANDOC = dirname(found[1]))
-    } else {
-      stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
+if (nzchar(quarto_pandoc)) {
+  quarto_bin <- tryCatch(
+    system2("quarto", "--paths", stdout = TRUE, stderr = FALSE),
+    error = function(e) character(0)
+  )
+  pandoc_candidates <- c(
+    file.path(dirname(quarto_pandoc), "tools"),
+    if (length(quarto_bin) >= 1) file.path(quarto_bin[1], "bin", "tools"),
+    dirname(quarto_pandoc)
+  )
+  for (p in pandoc_candidates) {
+    if (file.exists(file.path(p, "pandoc")) ||
+        file.exists(file.path(p, "pandoc.exe"))) {
+      Sys.setenv(RSTUDIO_PANDOC = p)
+      cat(sprintf("Using Pandoc from: %s\n", p))
+      break
     }
   }
 }
@@ -220,6 +222,8 @@ make_anchor <- function(x) {
 
 # ---------------------------------------------------------------------------
 # 6. Build and compile one PDF per group
+#    Each SOP is padded with a blank page when needed so the next SOP
+#    starts on an odd (front) page for duplex printing.
 # ---------------------------------------------------------------------------
 build_group_pdf <- function(group_key, idx) {
   info <- group_info[[group_key]]
@@ -253,20 +257,41 @@ build_group_pdf <- function(group_key, idx) {
     sep = "\n"
   )
 
-  # includepdf blocks
+  # Estimate the number of TOC pages (conservative: ~38 rows per page)
+  toc_pages <- ceiling(n / 38)
+
+  # Track the running page total so we know when to insert blank pages.
+  # After the TOC + \newpage we have consumed toc_pages pages.
+  running_pages <- toc_pages
+
+  # Build includepdf lines with odd-page padding
   includepdf_lines <- vapply(seq_len(n), function(i) {
     np <- g_pages[i]
     anchor_cmd <- sprintf("\\hypertarget{%s}{}", g_anchors[i])
+
+    # Pad before this SOP if the running total is odd (meaning the next
+    # page, running_pages+1, would be even = back side in duplex).
+    pad_before <- ""
+    if (running_pages %% 2 == 1) {
+      pad_before <- "\\null\\thispagestyle{empty}\\newpage\n"
+      running_pages <<- running_pages + 1L
+    }
+
     if (np == 1L) {
-      sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
-              anchor_cmd, g_pdf_abs[i])
+      block <- sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
+                        anchor_cmd, g_pdf_abs[i])
     } else {
-      sprintf(
+      block <- sprintf(
         "\\includepdf[pages=1, pagecommand={%s}]{%s}\n\\includepdf[pages=2-, pagecommand={}]{%s}",
         anchor_cmd, g_pdf_abs[i], g_pdf_abs[i]
       )
     }
+
+    running_pages <<- running_pages + np
+    paste0(pad_before, block)
   }, character(1))
+
+  cat(sprintf("  Total pages (with padding): %d\n", running_pages))
 
   # LaTeX document
   master_tex <- paste0(

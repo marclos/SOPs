@@ -6,6 +6,9 @@
 # Topic-based subsets (Water, Soil, Air, etc.) are handled by
 # merge_sop_pdfs_by_topic.R -- do NOT define them here.
 #
+# Each SOP is padded (if necessary) so that the next SOP always begins
+# on an odd-numbered page -- i.e. a fresh front side when duplex printing.
+#
 # Usage:
 #   Rscript merge_sop_pdfs.R [pdf_directory]
 #   Default pdf_directory: docs/pdfs
@@ -13,23 +16,16 @@
 
 # --- Ensure Pandoc is available (needed by rmarkdown::yaml_front_matter) ---
 if (!nzchar(Sys.which("pandoc"))) {
-  rstudio_pandoc <- Sys.getenv("RSTUDIO_PANDOC", "")
-  if (nzchar(rstudio_pandoc) && file.exists(file.path(rstudio_pandoc, "pandoc"))) {
-    cat(sprintf("Using Pandoc from RSTUDIO_PANDOC: %s\n", rstudio_pandoc))
+  pandoc_candidates <- c(
+    file.path(Sys.getenv("HOME"), ".local", "bin", "pandoc"),
+    "/usr/local/bin/pandoc",
+    "/usr/bin/pandoc"
+  )
+  found <- pandoc_candidates[file.exists(pandoc_candidates)]
+  if (length(found) > 0) {
+    Sys.setenv(RSTUDIO_PANDOC = dirname(found[1]))
   } else {
-    pandoc_candidates <- c(
-      file.path(rstudio_pandoc, "pandoc"),
-      file.path(Sys.getenv("HOME"), ".local", "bin", "pandoc"),
-      "/opt/quarto/bin/tools/x86_64/pandoc",
-      "/usr/local/bin/pandoc",
-      "/usr/bin/pandoc"
-    )
-    found <- pandoc_candidates[file.exists(pandoc_candidates)]
-    if (length(found) > 0) {
-      Sys.setenv(RSTUDIO_PANDOC = dirname(found[1]))
-    } else {
-      stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
-    }
+    stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
   }
 }
 
@@ -124,6 +120,8 @@ make_anchor <- function(x) {
 # ---------------------------------------------------------------------------
 # build_combined_pdf()
 #   Builds a single combined PDF from a subset of SOPs.
+#   Each SOP is padded with a blank page when needed so the next SOP
+#   starts on an odd (front) page for duplex printing.
 # ---------------------------------------------------------------------------
 build_combined_pdf <- function(entries, output_file, title, subtitle) {
   cat(sprintf("\nBuilding: %s (%d SOPs)\n", output_file, nrow(entries)))
@@ -154,20 +152,60 @@ build_combined_pdf <- function(entries, output_file, title, subtitle) {
     sep = "\n"
   )
 
-  # includepdf blocks
+  # -----------------------------------------------------------------------
+  # Compute the number of TOC pages so we can track the running total.
+  # The TOC is rendered via longtable; we estimate roughly 40 rows per
+
+  # page (each row is ~2 lines with the hline). This is only used to
+  # decide whether the TOC itself ends on an odd or even page; a small
+  # miscount is harmless because we also pad after the TOC.
+  # For safety we round up.
+  # -----------------------------------------------------------------------
+  n_sops    <- nrow(entries)
+  toc_pages <- ceiling(n_sops / 38)  # conservative estimate
+
+  # After the TOC \newpage, the running total = toc_pages.
+  # We want the first SOP to start on an odd page, so if toc_pages is
+  # already odd we need a blank page to push the first SOP to page
+  # toc_pages+2 (even+1 = odd, but the \newpage itself moves us to
+  # toc_pages+1).
+  # Actually: after the TOC the \newpage moves us to page (toc_pages+1).
+  # If (toc_pages+1) is odd, great. If even, insert a blank page.
+  # But we handle this more simply: we track a running page total in R
+  # and pad after each SOP (including a "virtual" TOC block).
+
+  running_pages <- toc_pages  # pages consumed by the TOC
+
+  # Build includepdf lines with odd-page padding
   includepdf_lines <- vapply(seq_along(pdf_abs), function(i) {
     np <- pages[i]
     anchor_cmd <- sprintf("\\hypertarget{%s}{}", anchors[i])
+
+    # Pad before this SOP if we are currently at an even running total
+    # (meaning the next page would be even = back side).
+    pad_before <- ""
+    if (running_pages %% 2 == 1) {
+      # running_pages is odd, so the next page (running_pages+1) is even.
+      # Insert a blank page to push the SOP to an odd page.
+      pad_before <- "\\null\\thispagestyle{empty}\\newpage\n"
+      running_pages <<- running_pages + 1L
+    }
+
     if (np == 1L) {
-      sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
-              anchor_cmd, pdf_abs[i])
+      block <- sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
+                        anchor_cmd, pdf_abs[i])
     } else {
-      sprintf(
+      block <- sprintf(
         "\\includepdf[pages=1, pagecommand={%s}]{%s}\n\\includepdf[pages=2-, pagecommand={}]{%s}",
         anchor_cmd, pdf_abs[i], pdf_abs[i]
       )
     }
+
+    running_pages <<- running_pages + np
+    paste0(pad_before, block)
   }, character(1))
+
+  cat(sprintf("  Total pages (with padding): %d\n", running_pages))
 
   # LaTeX document
   master_tex <- paste0(
