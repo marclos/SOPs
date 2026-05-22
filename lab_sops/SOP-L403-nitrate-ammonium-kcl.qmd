@@ -7,7 +7,7 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.3"
+revision: "0.4"
 
 revision-history:
   - version: "0.1"
@@ -22,18 +22,34 @@ revision-history:
     date: "2025-06-16"
     author: "Marc Los Huertos"
     changes: "Added centrifugation, Consumables Cat. No.'s"
+  - version: "0.4"
+    date: "2026-05-21"
+    author: "Marc Los Huertos"
+    changes: "Added literature citations, R calculation code (Appendix A), expanded QC"
 ---
 
 ## 1. Purpose
 
-This SOP describes the extraction of inorganic nitrogen (nitrate, NO~3~^-^, and ammonium, NH~4~^+^) from soil using 2 M potassium chloride (KCl). The filtered extracts are subsequently analyzed for NO~3~^-^ and NH~4~^+^ concentrations using colorimetric or other analytical methods.
+This SOP describes the extraction of inorganic nitrogen (nitrate,
+NO~3~^-^, and ammonium, NH~4~^+^) from soil using 2 M potassium
+chloride (KCl). The KCl extraction is the standard method for
+determining plant-available inorganic nitrogen in soils
+[@keeney1982; @mulvaney1996]. The high ionic strength of the KCl
+solution displaces NH~4~^+^ from cation exchange sites and brings
+NO~3~^-^ into solution, producing a filtered extract suitable for
+colorimetric, flow-injection, or ion chromatographic analysis
+[@maynard2008].
 
 
 ## 2. Scope
 
-- **Applies to:** Field-moist or air-dried soil samples collected per [SOP-F400 Soil Sampling and Processing](../field_sops/SOP-F400-soil-sampling.qmd)
-- **Does not apply to:** Total nitrogen analysis (requires digestion); dissolved nitrogen in water samples
-- **Location:** EA Program laboratory
+- **Applies to:** Field-moist or air-dried soil samples collected per
+  [SOP-F400 Soil Sampling and Processing](../field_sops/SOP-F400-soil-sampling.qmd)
+- **Does not apply to:** Total nitrogen analysis (requires Kjeldahl or
+  combustion digestion; see [SOP-L407](SOP-L407-total-carbon.qmd));
+  dissolved nitrogen in water samples; semi-quantitative field
+  screening (see [SOP-L404](SOP-L404-nitrate-quick-test.qmd))
+- **Location:** EA Program laboratory, SGM 133
 
 
 ## 3. Responsibilities
@@ -52,13 +68,16 @@ Students using this SOP should be trained on:
 - [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
 - [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
 
+
 ## 4. Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
 
-- **Chemical:** 2 M KCl is a mild irritant; avoid contact with eyes and skin
-- **Physical:** Reciprocating shaker can pinch fingers if containers are not secured properly
+- **Chemical:** 2 M KCl is a mild irritant; avoid contact with eyes
+  and skin. Review the SDS before first use.
+- **Physical:** Reciprocating shaker can pinch fingers if containers
+  are not secured properly.
 :::
 
 ### Required PPE
@@ -75,31 +94,32 @@ Students using this SOP should be trained on:
 
 | Item                          | Notes                                        |
 |:------------------------------|:---------------------------------------------|
-| Reciprocating shaker          | For 2-hour extraction                        |
+| Reciprocating shaker          | For 2-hour extraction [@keeney1982]          |
 | Magnetic stirrer with stir bar | For preparing KCl solution                  |
 | Stir bar retriever            | Magnetic wand                                |
 | Top-loading balance           | 0.1 g resolution                             |
 | Graduated cylinder or volumetric flask | 2 L capacity for KCl preparation    |
 | Repipet-type dispenser        | For dispensing KCl solution (optional)       |
 | Drying oven                   | Set to 105 C (for moisture subsample)        |
+| Sorvall ST8R Centrifuge       | Optional; see [SOP-L109](SOP-L109-sorvall-centrifuge.qmd) |
 
 ### Consumables
 
-| Item                          | Notes                                        |
-|:------------------------------|:---------------------------------------------|
-| Whatman #42 filter paper      | Ashless, for filtering extracts (185 mm diameter)              |
-| Filter funnels                | To fit filter paper  ((Cat. No.: 09-855F)                        |
-| Test tubes or extraction bottles | 50 mL capacity, with caps (Cat. No.: S89476)                |
-| Specimen containers or Nalgene bottles | For collecting filtered extracts    |
-| Paper bags or aluminum weigh boats | For moisture subsamples                 |
-| Pipette                       | For dispensing precise volumes               |
+| Item                          | Cat. No.   | Notes                             |
+|:------------------------------|:-----------|:----------------------------------|
+| Whatman #42 filter paper      |            | Ashless, 185 mm diameter          |
+| Filter funnels                | 09-855F    | To fit filter paper               |
+| Test tubes or extraction bottles | S89476  | 50 mL capacity, with caps         |
+| Specimen containers or Nalgene bottles |   | For collecting filtered extracts   |
+| Aluminum weigh boats          |            | For moisture subsamples            |
+| Pipette                       |            | For dispensing precise volumes     |
 
 ### Reagents
 
-| Item                          | Notes                                        |
-|:------------------------------|:---------------------------------------------|
-| Potassium chloride (KCl)      | ACS grade; 298.2 g per 2 L for 2 M solution (Cat. No. AA11595A1) |
-| Distilled or deionized water  | For preparing KCl solution                   |
+| Item                          | Cat. No.     | Notes                            |
+|:------------------------------|:-------------|:---------------------------------|
+| Potassium chloride (KCl)      | AA11595A1    | ACS grade; 298.2 g per 2 L for 2 M solution |
+| Distilled or deionized water  |              | For preparing KCl solution       |
 
 
 ## 6. Estimated Time
@@ -116,53 +136,126 @@ Students using this SOP should be trained on:
 
 ### 7.1 Preparing 2 M KCl Solution
 
+The 2 M KCl concentration is the standard for inorganic N extraction
+[@keeney1982; @mulvaney1996]. Lower concentrations (e.g., 1 M) may
+underestimate exchangeable NH~4~^+^ in high-CEC soils
+[@maynard2008].
+
 1. Weigh out 298.2 g KCl into a 2 L volumetric flask
 2. Fill the flask approximately two-thirds full with distilled water
 3. Place the flask on a magnetic stirrer and add a magnetic stir bar
-4. Set the stirrer to low-medium speed and leave on for 4 hours until fully dissolved
+4. Set the stirrer to low-medium speed and leave on for 4 hours until
+   fully dissolved
 5. Use a stir bar retriever to remove the magnetic stir bar
 6. Fill the flask to the 2 L mark with distilled water and mix
 
 ::: {.callout-tip}
 ### Tip
-Prepare the KCl solution the day before extraction. It can be stored at room temperature in a capped container indefinitely.
+Prepare the KCl solution the day before extraction. It can be stored
+at room temperature in a capped container indefinitely. Verify the
+solution with a conductivity meter if stored for more than 6 months.
 :::
 
 ### 7.2 Moisture Subsample
 
+A companion gravimetric moisture determination is required to express
+results on an oven-dry soil basis [@keeney1982].
+
 1. Set aside 10 g of soil from each sample for moisture determination
 2. Place each 10 g subsample into a labeled aluminum weigh boat
 3. Dry at 105 C for 24 hours and record the dry weight
-4. Calculate gravimetric moisture content per [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
+4. Calculate gravimetric moisture content per
+   [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
 
 ### 7.3 KCl Extraction
 
-1. Dispense 40 mL of 2 M KCl solution into labeled test tubes or extraction bottles
-2. Add 7 g of field-moist soil to each tube (the total volume should reach approximately 50 mL)
+The standard soil-to-solution ratio is approximately 1:5 to 1:10
+(w/v) [@mulvaney1996]. This SOP uses 7 g field-moist soil in 40 mL
+KCl, yielding an effective ratio of approximately 1:6 on an oven-dry
+basis for a typical soil at 15% gravimetric moisture.
+
+1. Dispense 40 mL of 2 M KCl solution into labeled test tubes or
+   extraction bottles
+2. Add 7 g of field-moist soil to each tube (the total volume should
+   reach approximately 50 mL). Record the exact mass of soil added
+   to the nearest 0.01 g.
 3. Cap the tubes securely
 4. Place on the reciprocating shaker for 2 hours
-5. Remove from the shaker and allow soil particles to settle for approximately 10 minutes (do not exceed 1 hour) or centrifuge for 3 min at 9000 rpm (See [SOP-L109: Sorvall ST8R Centrifuge](SOP-L109-sorvall-centrifuge.qmd).)
+5. Remove from the shaker and either:
+   - Allow soil particles to settle for approximately 10 minutes (do
+     not exceed 1 hour), or
+   - Centrifuge for 3 minutes at 9,000 rpm (see
+     [SOP-L109: Sorvall ST8R Centrifuge](SOP-L109-sorvall-centrifuge.qmd))
+
+::: {.callout-important}
+Record the exact mass of field-moist soil added to each tube. This
+value, together with the gravimetric moisture content, is needed to
+calculate results on an oven-dry basis (see Appendix A).
+:::
 
 ### 7.4 Filtering
 
-1. Set up filter funnels with Whatman #42 filter paper over labeled specimen containers or clean test tubes
-2. Pour the shaken solution into the funnels; do not fill above the filter paper line
-3. Allow the solution to drain completely until only soil remains on the filter
+1. Set up filter funnels with Whatman #42 filter paper over labeled
+   specimen containers or clean test tubes
+2. Pour the settled or centrifuged solution into the funnels; do not
+   fill above the filter paper line
+3. Allow the solution to drain completely until only soil remains on
+   the filter
 4. Discard the used filter paper and soil
 
 ### 7.5 Extract Storage
 
 1. Cap the filtered extract containers
-2. If analysis will be completed within a few days, store at 4 C
-3. If analysis will be delayed, freeze the extracts until analysis
+2. If analysis will be completed within 48 hours, store at 4 C
+3. If analysis will be delayed beyond 48 hours, freeze the extracts
+   at -20 C until analysis [@keeney1982]
 
 ::: {.callout-important}
-Extracts should be analyzed as soon as possible. Prolonged storage, even frozen, can alter NH~4~^+^ and NO~3~^-^ concentrations due to microbial activity or chemical transformations.
+Extracts should be analyzed as soon as possible. Prolonged storage,
+even frozen, can alter NH~4~^+^ and NO~3~^-^ concentrations due to
+microbial activity or chemical transformations [@maynard2008].
 :::
 
-## 8. Soil Texture Correction Factor
 
-When converting extract concentrations to soil nutrient content, a soil texture correction factor may be applied:
+## 8. Calculations
+
+### 8.1 Converting Extract Concentration to Soil Concentration
+
+The colorimetric or flow-injection analyzer reports the concentration
+of NO~3~^-^-N or NH~4~^+^-N in the filtered extract (mg N/L). To
+convert this to mg N per kg oven-dry soil (ppm):
+
+$$
+C_{\text{soil}} \;(\text{mg N kg}^{-1}) \;=\;
+\frac{C_{\text{extract}} \;\times\; V_{\text{KCl}}}{m_{\text{dry}}}
+$$
+
+where:
+
+- $C_{\text{extract}}$ = concentration in the filtered extract
+  (mg N/L)
+- $V_{\text{KCl}}$ = volume of KCl extractant added (L; typically
+  0.040 L)
+- $m_{\text{dry}}$ = oven-dry equivalent mass of soil extracted (kg),
+  calculated as:
+
+$$
+m_{\text{dry}} \;=\;
+\frac{m_{\text{moist}}}{1 + \theta_g}
+$$
+
+where $m_{\text{moist}}$ is the field-moist mass added (g, converted to
+kg) and $\theta_g$ is the gravimetric moisture content expressed as a
+decimal (g water / g oven-dry soil).
+
+See Appendix A for a worked R code example.
+
+### 8.2 Soil Texture Correction Factor (Optional)
+
+When using the semi-quantitative quick test ([SOP-L404](SOP-L404-nitrate-quick-test.qmd)),
+a texture-based correction factor may be applied. For the quantitative
+KCl extraction described here, no texture correction is needed because
+the exact soil mass and moisture content are measured directly.
 
 | Texture | Moist Soil Factor | Dry Soil Factor |
 |:--------|:-----------------:|:---------------:|
@@ -170,28 +263,39 @@ When converting extract concentrations to soil nutrient content, a soil texture 
 | Loam    | 2.0               | 2.5             |
 | Clay    | 1.7               | 2.2             |
 
+These factors are retained here for reference when comparing quick-test
+results to KCl extraction results.
+
 
 ## 9. Quality Control
 
-- Include a reagent blank (KCl solution only, no soil) in each extraction batch
-- Run extraction duplicates for at least 10% of samples
-- Use a laboratory reference soil with known inorganic N content when available
-- Record the KCl solution preparation date and batch number
+- Include a reagent blank (KCl solution only, no soil) in each
+  extraction batch. The blank should read below the method detection
+  limit for both NO~3~^-^-N and NH~4~^+^-N.
+- Run extraction duplicates for at least 10% of samples. Duplicate
+  results should agree within 15% relative percent difference (RPD).
+- Include a laboratory reference soil with known inorganic N content
+  in each batch when available.
+- Record the KCl solution preparation date and batch number.
+- Verify that the analytical calibration curve for the colorimetric
+  method has an $r^2 \geq 0.995$ before reporting results.
+- Subtract the mean reagent blank concentration from all sample
+  results if the blank reads above zero [@mulvaney1996].
 
 
 ## 10. Waste Disposal
 
 | Waste Type              | Disposal Method                             |
 |:------------------------|:--------------------------------------------|
-| KCl extracts            | Aqueous waste; drain with copious water if approved, or collect for EH&S |
+| KCl extracts            | Aqueous waste; drain with copious water if approved by EH&S, or collect for pickup |
 | Used filter paper and soil | Standard trash                           |
-| Unused KCl solution     | Drain with water (non-hazardous)            |
+| Unused KCl solution     | Drain with water (non-hazardous at this concentration) |
 
 
 ## 11. References
 
-- Keeney, D.R. & Nelson, D.W. (1982). Nitrogen -- inorganic forms. In: Page, A.L. (Ed.), *Methods of Soil Analysis, Part 2: Chemical and Microbiological Properties*. 2nd ed. SSSA Book Series No. 5, pp. 643--698.
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water and Wastewater*. 22nd ed. American Public Health Association (Eds.). Washington. 1360 pp.
+::: {#refs}
+:::
 
 
 ## 12. Training Record
@@ -199,7 +303,124 @@ When converting extract concentrations to soil nutrient content, a soil texture 
 Before performing this procedure independently, personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-L400 (Soil Moisture)](SOP-L400-soil-moisture.qmd) training
+2. Complete [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
+   training
 3. Demonstrate competence preparing KCl solution
 4. Perform the extraction and filtering procedure under supervision
-5. Be signed off by the PI or lab manager
+5. Calculate results for one batch using the R code in Appendix A
+   and verify against the instructor's values
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Calculation of Soil NO~3~^-^-N and NH~4~^+^-N (R Code) {.appendix}
+
+The following R code converts extract concentrations (mg N/L from the
+colorimetric analyzer) to soil concentrations (mg N/kg oven-dry soil,
+equivalent to ppm) for a batch of samples. It corrects for the exact
+mass of field-moist soil added and the gravimetric moisture content of
+each sample.
+
+```{r}
+#| label: kcl-extraction-calc
+#| echo: true
+#| eval: false
+
+# ===========================================================================
+# SOP-L403: KCl Extraction -- Convert extract concentration to soil ppm
+# ===========================================================================
+
+# ---- 1. Enter your data ---------------------------------------------------
+# Replace the example values below with your actual data.
+# Each vector must have the same length (one entry per sample).
+
+sample_id <- c("S01", "S02", "S03", "S04", "S05")
+
+# Mass of field-moist soil added to the extraction tube (g)
+soil_moist_g <- c(7.03, 7.10, 6.98, 7.05, 7.12)
+
+# Gravimetric moisture content (proportion, g water / g oven-dry soil)
+# From SOP-L400.  Example: 0.15 means 15% moisture.
+theta_g <- c(0.152, 0.148, 0.161, 0.155, 0.143)
+
+# Volume of 2 M KCl added (mL) -- typically 40 mL for all samples
+vol_kcl_mL <- rep(40, length(sample_id))
+
+# Extract concentrations from the colorimetric analyzer (mg N / L)
+no3_extract_mg_L <- c(3.42, 5.18, 2.76, 4.01, 6.33)
+nh4_extract_mg_L <- c(1.05, 0.87, 1.22, 0.93, 0.78)
+
+# Reagent blank concentrations (mg N / L) -- mean of your blanks
+blank_no3_mg_L <- 0.02
+blank_nh4_mg_L <- 0.01
+
+# ---- 2. Calculate oven-dry soil mass (kg) ----------------------------------
+soil_dry_g  <- soil_moist_g / (1 + theta_g)
+soil_dry_kg <- soil_dry_g / 1000
+
+# ---- 3. Blank-correct extract concentrations --------------------------------
+no3_corrected <- no3_extract_mg_L - blank_no3_mg_L
+nh4_corrected <- nh4_extract_mg_L - blank_nh4_mg_L
+
+# Ensure no negative values after blank correction
+no3_corrected[no3_corrected < 0] <- 0
+nh4_corrected[nh4_corrected < 0] <- 0
+
+# ---- 4. Convert to mg N / kg oven-dry soil (ppm) ----------------------------
+vol_kcl_L <- vol_kcl_mL / 1000
+
+no3_ppm <- (no3_corrected * vol_kcl_L) / soil_dry_kg
+nh4_ppm <- (nh4_corrected * vol_kcl_L) / soil_dry_kg
+
+# ---- 5. Assemble results table -----------------------------------------------
+results <- data.frame(
+  Sample        = sample_id,
+  Moist_g       = soil_moist_g,
+  Moisture_pct  = round(theta_g * 100, 1),
+  Dry_g         = round(soil_dry_g, 3),
+  Vol_KCl_mL    = vol_kcl_mL,
+  NO3_extract   = no3_extract_mg_L,
+  NH4_extract   = nh4_extract_mg_L,
+  NO3_ppm       = round(no3_ppm, 2),
+  NH4_ppm       = round(nh4_ppm, 2),
+  Total_inorgN  = round(no3_ppm + nh4_ppm, 2)
+)
+
+# ---- 6. Print results --------------------------------------------------------
+cat("SOP-L403: KCl Extraction Results\n")
+cat("================================\n\n")
+print(results, row.names = FALSE)
+cat("\n")
+cat(sprintf("Reagent blank NO3-N: %.2f mg/L\n", blank_no3_mg_L))
+cat(sprintf("Reagent blank NH4-N: %.2f mg/L\n", blank_nh4_mg_L))
+cat("\nAll soil concentrations are mg N / kg oven-dry soil (ppm).\n")
+```
+
+### Worked Example (Sample S01)
+
+Using the example data above for sample S01:
+
+- Field-moist soil added: 7.03 g
+- Gravimetric moisture: 15.2% (0.152)
+- Oven-dry equivalent: $7.03 / (1 + 0.152) = 6.102$ g = 0.006102 kg
+- KCl volume: 40 mL = 0.040 L
+- NO~3~^-^-N in extract: 3.42 mg/L (blank-corrected: 3.40 mg/L)
+- Soil NO~3~^-^-N: $(3.40 \times 0.040) / 0.006102 = 22.29$ mg N/kg
+  (ppm)
+- NH~4~^+^-N in extract: 1.05 mg/L (blank-corrected: 1.04 mg/L)
+- Soil NH~4~^+^-N: $(1.04 \times 0.040) / 0.006102 = 6.82$ mg N/kg
+  (ppm)
+- Total inorganic N: $22.29 + 6.82 = 29.11$ mg N/kg (ppm)
+
+
+## Appendix B: Interpretation Guide {.appendix}
+
+General interpretation thresholds for extractable inorganic N in
+agricultural and wildland soils. These are approximate and vary by
+crop, climate, and soil type [@hart1994; @mulvaney1996].
+
+| Extractable Inorganic N (mg N/kg) | Interpretation      | Notes                                    |
+|:----------------------------------|:--------------------|:-----------------------------------------|
+| Less than 10                      | Low                 | Nitrogen likely limiting plant growth    |
+| 10--25                            | Moderate            | Adequate for many crops and native vegetation |
+| 25--50                            | High                | Sufficient N; fertilization generally not needed |
+| Greater than 50                   | Very high           | Excess N; potential leaching or denitrification concern |

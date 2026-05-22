@@ -1,0 +1,236 @@
+---
+# =============================================================================
+# SOP-L104: Using a Vortex Mixer
+# =============================================================================
+title: "Using a Vortex Mixer"
+sop-number: "SOP-L104"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-20"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the operation and care of vortex mixers used
+in the EA Program laboratory. Vortex mixers produce a rapid orbital
+or oscillating motion that creates a vortex inside a tube or small
+container, providing fast and thorough mixing of liquids, suspensions,
+and reagents. They are used routinely in DNA extraction
+([SOP-L700](SOP-L700-dna-extraction.qmd)), Qubit sample preparation
+([SOP-L213](SOP-L213-qubit-fluorometer.qmd)), chemical extractions,
+and general reagent mixing.
+
+
+## 2. Scope
+
+- **Applies to:** All vortex mixers in the EA Program laboratory,
+  including the Fisher Scientific vortex mixers (SGM 134, qty 3) and
+  the Vortex-Genie 2 (SGM 133)
+- **Does not apply to:** Orbital shakers (for extended, gentle
+  agitation of multiple samples); magnetic stir plates; sonicators
+  (see [SOP-L115](SOP-L115-sonicator.qmd))
+- **Location:** SGM 133 and SGM 134
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP                                 |
+| Lab Manager       | Maintain equipment, replace cup attachments |
+| Trained Personnel | Operate the vortex mixer per this SOP       |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Aerosol generation:** Vortexing uncapped or loosely capped tubes
+  can spray liquid and generate aerosols. Always cap tubes securely
+  before vortexing. If the sample contains hazardous biological or
+  chemical material, vortex inside a fume hood or biological safety
+  cabinet.
+- **Tube ejection:** At high speed, improperly held tubes can slip
+  from the cup head and be thrown from the mixer. Hold tubes firmly
+  against the cup or use the hands-free cup attachment.
+- **Breakage:** Thin-walled glass tubes may shatter under vigorous
+  vortexing. Use polypropylene or thick-walled borosilicate tubes
+  whenever possible.
+- **Entanglement:** Keep hands, hair, jewelry, and loose clothing
+  away from the spinning cup head.
+- **Electrical:** Do not operate the mixer with a damaged power cord
+  or loose components. Inspect the cord before use; report damage to
+  the lab manager.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Nitrile gloves (standard lab PPE)
+- [ ] Lab coat
+
+
+## 5. Equipment
+
+| Item                                  | Location  | Notes                          |
+|:--------------------------------------|:----------|:-------------------------------|
+| Fisher Scientific vortex mixer        | SGM 134   | Qty 3; touch or continuous mode |
+| Vortex-Genie 2 (Scientific Industries) | SGM 133  | Variable speed; touch or continuous mode |
+| Cup head (standard)                   | Attached  | For single tubes (1.5 mL to 50 mL) |
+| Flat head or platform head (optional) | SGM 134   | For microplates or multiple small tubes held in a rack |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Use Inspection
+
+1. Verify the vortex mixer is clean and free from visible damage
+2. Ensure the power cord is intact and properly connected
+3. Check that the rubber cup head or attachment is securely installed
+   and not cracked or deformed
+
+### 6.2 Setup
+
+1. Verify that the vortex mixer is on a stable, flat bench surface
+   and that the rubber feet are intact (prevents the unit from
+   walking during operation)
+2. Confirm that the appropriate head is installed:
+   - **Cup head:** for individual tubes (microcentrifuge tubes,
+     15 mL and 50 mL centrifuge tubes, glass test tubes)
+   - **Platform head:** for microplates or tube racks (if available)
+3. Set the speed dial to the desired setting. For most routine mixing,
+   a medium speed (setting 5--7 on the Vortex-Genie 2 dial) is
+   sufficient. Use lower speeds for gentle mixing and higher speeds
+   for vigorous vortexing (e.g., bead disruption steps in DNA
+   extraction).
+
+### 6.3 Operation -- Touch Mode
+
+Touch mode is the default for most applications. The mixer runs only
+while the tube is pressed against the cup head.
+
+1. Cap the tube securely
+2. Hold the tube at a slight angle (approximately 15--30 degrees from
+   vertical) and press the bottom of the tube firmly into the center
+   of the cup head
+3. The motor engages automatically. A visible vortex should form in
+   the liquid.
+4. Vortex for the duration specified in the analytical SOP (typically
+   2--5 seconds for brief mixing, 10--30 seconds for thorough
+   resuspension)
+5. Release the tube from the cup to stop
+
+### 6.4 Operation -- Continuous Mode
+
+Use continuous mode for hands-free operation or when extended vortexing
+is required.
+
+1. Switch the mode selector to **Continuous** (or **On**)
+2. Adjust the speed dial to the desired setting
+3. Place the capped tube in the cup head or in a tube holder secured
+   to the platform head
+4. The motor runs continuously at the set speed
+5. After the prescribed duration, switch back to **Touch** mode or
+   turn off the unit
+6. Remove the tube
+
+### 6.5 Vortexing Multiple Tubes
+
+For rapid sequential vortexing of many tubes (e.g., a rack of Qubit
+assay tubes):
+
+1. Set the mixer to touch mode at the desired speed
+2. Work through the rack systematically, pressing each tube against
+   the cup for 2--3 seconds
+3. Return each tube to the rack before picking up the next
+
+For simultaneous vortexing of a plate or rack, attach the platform
+head and secure the plate or rack with the provided clamp or tape. Run
+in continuous mode for the prescribed duration.
+
+### 6.6 Special Applications
+
+| Application                   | Speed Setting | Duration  | Notes                          |
+|:------------------------------|:--------------|:----------|:-------------------------------|
+| Brief reagent mixing          | Medium (5--7) | 2--5 s    | Touch mode; just to mix        |
+| Qubit assay tube mixing (L213) | Medium (5--7) | 2--3 s   | Brief vortex after adding sample to working solution |
+| DNA extraction bead disruption (L700) | Maximum (10) | Per kit protocol (often 10 min on adapter) | Use continuous mode with horizontal adapter if available |
+| Resuspending pellets after centrifugation | High (8--10) | 10--30 s | Until pellet is fully resuspended |
+| Mixing soil extracts (L403, L409) | Medium (5--7) | 5--10 s | Ensure homogeneous suspension before filtering |
+
+
+## 7. Maintenance
+
+| Task                                  | Frequency              |
+|:--------------------------------------|:-----------------------|
+| Wipe the cup head and body with 70% ethanol | After each use session |
+| For eDNA/PCR work: wipe with 10% bleach, then ethanol | After each use session |
+| Check rubber feet for wear            | Monthly                |
+| Inspect cup head for cracks or deformation | Monthly           |
+| Replace cup head                      | When cracked or deformed |
+
+::: {.callout-note}
+If liquid spills into the cup head or body of the mixer, unplug the
+unit immediately, wipe up the spill, and allow to dry completely before
+re-use. Liquid inside the motor housing can cause electrical failure.
+:::
+
+
+## 8. Waste Disposal
+
+No waste is generated by the vortex mixer itself. Dispose of sample
+waste per the relevant analytical SOP and
+[SOP-L006 Waste Disposal](SOP-L006-waste-disposal.qmd).
+
+
+## 9. References
+
+- Scientific Industries. *Vortex-Genie 2 Instruction Manual*.
+  Scientific Industries, Bohemia, NY.
+
+::: {#refs}
+:::
+
+
+## 10. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L115](SOP-L115-sonicator.qmd)         | Sonicator                | Alternative mixing/disruption     |
+| [L213](SOP-L213-qubit-fluorometer.qmd) | Qubit Fluorometer        | Sample preparation requires vortexing |
+| [L403](SOP-L403-nitrate-ammonium-kcl.qmd) | KCl Extraction        | Extract mixing                    |
+| [L700](SOP-L700-dna-extraction.qmd)    | DNA Extraction           | Bead disruption step              |
+
+
+## 11. Training Record
+
+Before using the vortex mixer independently, personnel must:
+
+1. Read this SOP in full
+2. Demonstrate proper tube holding technique in touch mode (cap
+   secured, slight angle, firm contact with cup)
+3. Demonstrate switching between touch and continuous mode
+4. Be signed off by the PI or lab manager
+
+
+## Appendix A: Troubleshooting {.appendix}
+
+| Symptom                        | Probable Cause                 | Corrective Action                          |
+|:-------------------------------|:-------------------------------|:-------------------------------------------|
+| Mixer does not start           | Power disconnected or cord damaged | Check power supply; inspect cord; try another outlet |
+| Excessive vibration or walking | Unit on uneven surface; rubber feet worn | Reposition on a flat surface; replace rubber feet |
+| Poor or incomplete mixing      | Speed too low; tube not centered on cup | Increase speed; press tube firmly into center of cup |
+| Sample leakage during vortexing | Tube cap not secured; tube overfilled | Cap tightly; reduce fill volume to leave headspace |
+| Abnormal noise or grinding     | Cup head loose or damaged; internal bearing wear | Tighten or replace cup head; report to lab manager for service |
+| Liquid entered motor housing   | Spill from uncapped tube       | Unplug immediately; wipe and dry thoroughly; do not use until fully dry |
