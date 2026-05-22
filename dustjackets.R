@@ -85,7 +85,7 @@ jackets <- list(
     name        = "dustjacket-bio-molbio",
     title       = "BIOLOGY AND MOLECULAR BIOLOGY",
     subtitle    = "Biodiversity Surveys, DNA Extraction, Sequencing, and Bioinformatics",
-    image       = "images/Hazard_sign",
+    image       = "images/dustjacket-edna",
     image_width = "5.0in",
     spine       = "BIOLOGY AND MOLECULAR BIOLOGY",
     target_pdf  = "docs/EA-SOPs-Biology-MolBio.pdf"

@@ -37,22 +37,23 @@ library(qpdf)
 # 0. Find Pandoc (Quarto bundles its own; rmarkdown needs to know where)
 # ---------------------------------------------------------------------------
 quarto_pandoc <- Sys.which("quarto")
-if (nzchar(quarto_pandoc)) {
-  quarto_bin <- tryCatch(
-    system2("quarto", "--paths", stdout = TRUE, stderr = FALSE),
-    error = function(e) character(0)
-  )
-  pandoc_candidates <- c(
-    file.path(dirname(quarto_pandoc), "tools"),
-    if (length(quarto_bin) >= 1) file.path(quarto_bin[1], "bin", "tools"),
-    dirname(quarto_pandoc)
-  )
-  for (p in pandoc_candidates) {
-    if (file.exists(file.path(p, "pandoc")) ||
-        file.exists(file.path(p, "pandoc.exe"))) {
-      Sys.setenv(RSTUDIO_PANDOC = p)
-      cat(sprintf("Using Pandoc from: %s\n", p))
-      break
+if (!nzchar(Sys.which("pandoc"))) {
+  rstudio_pandoc <- Sys.getenv("RSTUDIO_PANDOC", "")
+  if (nzchar(rstudio_pandoc) && file.exists(file.path(rstudio_pandoc, "pandoc"))) {
+    cat(sprintf("Using Pandoc from RSTUDIO_PANDOC: %s\n", rstudio_pandoc))
+  } else {
+    pandoc_candidates <- c(
+      file.path(rstudio_pandoc, "pandoc"),
+      file.path(Sys.getenv("HOME"), ".local", "bin", "pandoc"),
+      "/opt/quarto/bin/tools/x86_64/pandoc",
+      "/usr/local/bin/pandoc",
+      "/usr/bin/pandoc"
+    )
+    found <- pandoc_candidates[file.exists(pandoc_candidates)]
+    if (length(found) > 0) {
+      Sys.setenv(RSTUDIO_PANDOC = dirname(found[1]))
+    } else {
+      stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
     }
   }
 }

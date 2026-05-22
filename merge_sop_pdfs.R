@@ -13,16 +13,23 @@
 
 # --- Ensure Pandoc is available (needed by rmarkdown::yaml_front_matter) ---
 if (!nzchar(Sys.which("pandoc"))) {
-  pandoc_candidates <- c(
-    file.path(Sys.getenv("HOME"), ".local", "bin", "pandoc"),
-    "/usr/local/bin/pandoc",
-    "/usr/bin/pandoc"
-  )
-  found <- pandoc_candidates[file.exists(pandoc_candidates)]
-  if (length(found) > 0) {
-    Sys.setenv(RSTUDIO_PANDOC = dirname(found[1]))
+  rstudio_pandoc <- Sys.getenv("RSTUDIO_PANDOC", "")
+  if (nzchar(rstudio_pandoc) && file.exists(file.path(rstudio_pandoc, "pandoc"))) {
+    cat(sprintf("Using Pandoc from RSTUDIO_PANDOC: %s\n", rstudio_pandoc))
   } else {
-    stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
+    pandoc_candidates <- c(
+      file.path(rstudio_pandoc, "pandoc"),
+      file.path(Sys.getenv("HOME"), ".local", "bin", "pandoc"),
+      "/opt/quarto/bin/tools/x86_64/pandoc",
+      "/usr/local/bin/pandoc",
+      "/usr/bin/pandoc"
+    )
+    found <- pandoc_candidates[file.exists(pandoc_candidates)]
+    if (length(found) > 0) {
+      Sys.setenv(RSTUDIO_PANDOC = dirname(found[1]))
+    } else {
+      stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
+    }
   }
 }
 
