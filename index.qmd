@@ -51,7 +51,7 @@ tbl-classes: table-sm
 | [F002](field_sops/SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | 0.1 | |
 | [F003](field_sops/SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | 0.1 | |
 | [F004](field_sops/SOP-TBD.qmd) | *TBD -- Site Access and Permits* | TBD | To be developed |
-| [F005](field_sops/SOP-F005-random-sampling-design.qmd) | Random Sampling Design | 1.0 | |
+| [F005](field_sops/SOP-F005-random-sampling-design.qmd) | Random Sampling Design | 1.0 | FW |
 | [F006](field_sops/SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation | 0.1 |  |
 | [F007](field_sops/SOP-F007-field-decontamination.qmd) | Field Decontamination Protocols | 0.1 |  |
 | [F008](field_sops/SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling, Chain of Custody, and Transport | 0.1 | |
@@ -101,8 +101,8 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
 | [F400](field_sops/SOP-F400-soil-sampling.qmd) | Soil Sampling and Processing | 1.0 | |
-| [F401](field_sops/SOP-F401-soil-texture-by-feel.qmd) | Texture by Feel | 0.1 | |
-| [F402](field_sops/SOP-F402-soil-bulk-density.qmd) | Soil Bulk Density (Core Method) | 0.1 | |
+| [F401](field_sops/SOP-F401-soil-texture-by-feel.qmd) | Texture by Feel | 0.1 | DLF |
+| [F402](field_sops/SOP-F402-soil-bulk-density.qmd) | Soil Bulk Density (Core Method) | 0.1 | AC |
 | [F403](field_sops/SOP-F403-soil-infiltration-rate.qmd) | Soil Infiltration Rate | 0.1 | |
 | [F404](field_sops/SOP-F404-soil-temperature-profiles.qmd) | Soil Temperature Profiles | 0.1 | |
 | [F405](field_sops/SOP-F405-soil-color-munsell.qmd) | Soil Color (Munsell) | 0.1 |   |
@@ -116,7 +116,7 @@ tbl-classes: table-sm
 | [F501](field_sops/SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring (Sensors) | 0.1 | |
 | [F502](field_sops/SOP-F502-air-quality-portable-sensors.qmd) | Air Quality Monitoring (Portable Sensors) | 0.1 | |
 | [F503](field_sops/SOP-F503-particulate-matter-sampling.qmd) | Particulate Matter Sampling* | 0.1 |  |
-| [F504](field_sops/SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer (Field Deployment) | 1.0 | |
+| [F504](field_sops/SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer (Field Deployment) | 1.0 | AC |
 | [F505](field_sops/SOP-F505-passive-air-samplers.qmd) | Passive Air Samplers (Diffusion Tubes) | 0.1 |  |
 | [F506](field_sops/SOP-F506-noise-level-monitoring.qmd) | Noise Level Monitoring | 0.1 |  |
 
@@ -156,7 +156,7 @@ tbl-classes: table-sm
 | [L002](lab_sops/SOP-L002-laboratory-safety.qmd) | Laboratory Safety | 1.04 | |
 | [L003](lab_sops/SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 | |
 | [L004](lab_sops/SOP-L004-chemical-spill-response.qmd) | Chemical Spill Response | 0.1 | |
-| [L005](lab_sops/SOP-L005-chemical-inventory.qmd) | Chemical Inventory Management | 0.1 | |
+| [L005](lab_sops/SOP-L005-chemical-inventory.qmd) | Chemical Inventory Management | 0.1 |  |
 | [L006](lab_sops/SOP-L006-waste-disposal.qmd) | Waste Disposal and Hazardous Waste Pickup | 0.1 | |
 | [L007](lab_sops/SOP-L007-equipment-inventory.qmd) | Equipment and Instrument Inventory | 1.0 | |
 | [L010](lab_sops/SOP-L010-lab-notebook-recording.qmd) | Lab Notebook Recording | 0.1 | |
@@ -197,7 +197,7 @@ tbl-classes: table-sm
 | [L205](lab_sops/SOP-L205-xrf-sample-prep-analysis.qmd) | XRF (X-Ray Fluorescence) | 0.1 | |
 | [L206](lab_sops/SOP-TBD.qmd) | *ICP-MS* | 0.1 | |
 | [L207](lab_sops/SOP-TBD.qmd) | *LA-ICP-MS (Laser Ablation)* | 0.1 | |
-| [L208](lab_sops/SOP-L208-irms-general-instrument.qmd) | ThermoFisher Delta V IRMS | 0.2 | |
+| [L208](lab_sops/SOP-L208-irms-general-instrument.qmd) | ThermoFisher Delta V IRMS | 0.2 | DLF |
 | [L209](lab_sops/SOP-TBD.qmd) | *Radiometric Dating* | -- | |
 | [L210](lab_sops/SOP-TBD.qmd) | *Ion Chromatograph Operation* | -- | |
 | [L211](lab_sops/SOP-L211-revolve-microscope.qmd) | Echo Labs Revolve Microscope | 0.1 | |
@@ -233,21 +233,21 @@ tbl-classes: table-sm
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
 | [L400](lab_sops/SOP-L400-soil-moisture.qmd) | Soil Moisture -- Gravimetric Method | 0.2 | |
-| [L401](lab_sops/SOP-L401-texture-hydrometer.qmd) | Soil Texture (Hydrometer Method) | 0.1 | |
+| [L401](lab_sops/SOP-L401-texture-hydrometer.qmd) | Soil Texture (Hydrometer Method) | 0.1 | DLF |
 | [L402](lab_sops/SOP-L402-soil-pH-salinity.qmd) | Soil pH and Salinity | 0.1 | |
-| [L403](lab_sops/SOP-L403-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.2 | |
-| [L404](lab_sops/SOP-L404-nitrate-quick-test.qmd) | Nitrate Quick Test | 0.1 | |
+| [L403](lab_sops/SOP-L403-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium -- KCl Extraction | 0.3 | MLH |
+| [L404](lab_sops/SOP-L404-nitrate-quick-test.qmd) | Nitrate Quick Test | 0.1 | FW |
 | [L405](lab_sops/SOP-L405-extractable-phosphorus.qmd) | Extractable Phosphorus | 0.1 | |
 | [L406](lab_sops/SOP-L406-loss-on-ignition.qmd) | Loss on Ignition (SOM) | 1.0 | |
-| [L407](lab_sops/SOP-L407-total-carbon.qmd) | Total Carbon -- Soil | 1.0 | |
+| [L407](lab_sops/SOP-L407-total-carbon.qmd) | Total Carbon -- Soil | 1.0 | DLF |
 | [L408](lab_sops/SOP-L408-solvita-co2-burst.qmd) | Solvita CO~2~ Burst | 1.1 | |
-| [L409](lab_sops/SOP-L409-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 | |
+| [L409](lab_sops/SOP-L409-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | 1.0 | AC |
 | [L410](lab_sops/SOP-L410-hotplate-acid-digestion.qmd) | Hot-Plate Acid Digestion of Soils for Trace Metal Analysis | 0.2 | |
 | [L411](lab_sops/SOP-L411-mars-microwave-digestion.qmd) | Soil Lead Analysis (MARS Microwave) | 0.2 | |
 | [L412](lab_sops/SOP-L412-nitrification-potential.qmd) | Nitrification Potential | 0.1 | |
 | [L413](lab_sops/SOP-L413-solvita-compost-maturity.qmd) | Solvita Compost Maturity | 0.1 | |
-| [L414](lab_sops/SOP-L414-soil-ea-irms.qmd) | Flash EA Soil dN15 and dC13 Combustion | 0.1 | |
-| [L415](lab_sops/SOP-L415-carbonate-gasbench-irms.qmd) | Carbonate Isotope Analysis by GasBench II-IRMS | 0.1 | |
+| [L414](lab_sops/SOP-L414-soil-ea-irms.qmd) | Flash EA Soil dN15 and dC13 Combustion | 0.1 | FW |
+| [L415](lab_sops/SOP-L415-carbonate-gasbench-irms.qmd) | Carbonate Isotope Analysis by GasBench II-IRMS | 0.1 | FW |
 | [L416](lab_sops/SOP-TBD.qmd)  | *Cation Exchange Capacity (CEC)* | -- | To be developed |
 | [L417](lab_sops/SOP-L417-soil-aggregate-stability.qmd)  | Soil Aggregate Stability (Wet Sieving) | 0.1 |  |
 | [L418](lab_sops/SOP-L418-water-extractable-doc.qmd)  | Water-Extractable Dissolved Organic Carbon (Soil) | 0.1 | |
@@ -278,7 +278,7 @@ No lab air SOPs exist yet. Range is reserved. Potential future SOPs:
 
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
-| [L700](lab_sops/SOP-L700-dna-extraction.qmd) | DNA Extraction | 0.1 | |
+| [L700](lab_sops/SOP-L700-dna-extraction.qmd) | DNA Extraction | 0.1 | AC |
 | [L701](lab_sops/SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) | Primer Selection and Design for Nitrogen Cycle Genes | 0.1 | |
 | [L702](lab_sops/SOP-L702-ddpcr-data-analysis.qmd) | ddPCR Data Export and Analysis | 0.1 | |
 | [L703](lab_sops/SOP-L703-pcr-gel-electrophoresis.qmd) | PCR Amplification and Gel Electrophoresis | 0.1 |  |

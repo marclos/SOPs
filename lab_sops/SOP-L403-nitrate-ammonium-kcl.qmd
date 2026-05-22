@@ -7,7 +7,7 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.3"
 
 revision-history:
   - version: "0.1"
@@ -18,6 +18,10 @@ revision-history:
     date: "2025-06-16"
     author: "Marc Los Huertos"
     changes: "Converted to QMD format with full procedure"
+  - version: "0.3"
+    date: "2025-06-16"
+    author: "Marc Los Huertos"
+    changes: "Added centrifugation, Consumables Cat. No.'s"
 ---
 
 ## 1. Purpose
@@ -47,7 +51,6 @@ Students using this SOP should be trained on:
 - [SOP-F001 Field Safety](../field_sops/SOP-F001-field-safety.qmd)
 - [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
 - [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
-
 
 ## 4. Safety and Hazards
 
@@ -84,9 +87,9 @@ Students using this SOP should be trained on:
 
 | Item                          | Notes                                        |
 |:------------------------------|:---------------------------------------------|
-| Whatman #42 filter paper      | Ashless, for filtering extracts              |
-| Filter funnels                | To fit filter paper                          |
-| Test tubes or extraction bottles | 50 mL capacity, with caps                |
+| Whatman #42 filter paper      | Ashless, for filtering extracts (185 mm diameter)              |
+| Filter funnels                | To fit filter paper  ((Cat. No.: 09-855F)                        |
+| Test tubes or extraction bottles | 50 mL capacity, with caps (Cat. No.: S89476)                |
 | Specimen containers or Nalgene bottles | For collecting filtered extracts    |
 | Paper bags or aluminum weigh boats | For moisture subsamples                 |
 | Pipette                       | For dispensing precise volumes               |
@@ -95,7 +98,7 @@ Students using this SOP should be trained on:
 
 | Item                          | Notes                                        |
 |:------------------------------|:---------------------------------------------|
-| Potassium chloride (KCl)      | ACS grade; 298.2 g per 2 L for 2 M solution |
+| Potassium chloride (KCl)      | ACS grade; 298.2 g per 2 L for 2 M solution (Cat. No. AA11595A1) |
 | Distilled or deionized water  | For preparing KCl solution                   |
 
 
@@ -103,7 +106,7 @@ Students using this SOP should be trained on:
 
 | Task                          | Time Required                                |
 |:------------------------------|:---------------------------------------------|
-| KCl solution preparation      | 15 minutes active + 4 hours stirring         |
+| KCl solution preparation      | 10 minutes active + 2 hours stirring         |
 | Moisture subsamples           | 5 minutes active + 24 hours drying           |
 | KCl extraction (per batch)    | 15 minutes setup + 2 hours shaking + 10 minutes settling |
 | Filtering                     | 20--30 minutes per batch                     |
@@ -138,7 +141,7 @@ Prepare the KCl solution the day before extraction. It can be stored at room tem
 2. Add 7 g of field-moist soil to each tube (the total volume should reach approximately 50 mL)
 3. Cap the tubes securely
 4. Place on the reciprocating shaker for 2 hours
-5. Remove from the shaker and allow soil particles to settle for approximately 10 minutes (do not exceed 1 hour)
+5. Remove from the shaker and allow soil particles to settle for approximately 10 minutes (do not exceed 1 hour) or centrifuge for 3 min at 9000 rpm (See [SOP-L109: Sorvall ST8R Centrifuge](SOP-L109-sorvall-centrifuge.qmd).)
 
 ### 7.4 Filtering
 
@@ -156,7 +159,6 @@ Prepare the KCl solution the day before extraction. It can be stored at room tem
 ::: {.callout-important}
 Extracts should be analyzed as soon as possible. Prolonged storage, even frozen, can alter NH~4~^+^ and NO~3~^-^ concentrations due to microbial activity or chemical transformations.
 :::
-
 
 ## 8. Soil Texture Correction Factor
 
@@ -197,7 +199,7 @@ When converting extract concentrations to soil nutrient content, a soil texture 
 Before performing this procedure independently, personnel must:
 
 1. Read this SOP in full
-2. Complete SOP-L400 (Soil Moisture) training
+2. Complete [SOP-L400 (Soil Moisture)](SOP-L400-soil-moisture.qmd) training
 3. Demonstrate competence preparing KCl solution
 4. Perform the extraction and filtering procedure under supervision
 5. Be signed off by the PI or lab manager
