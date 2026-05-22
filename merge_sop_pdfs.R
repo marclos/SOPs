@@ -14,18 +14,64 @@
 #   Default pdf_directory: docs/pdfs
 # =============================================================================
 
-# --- Ensure Pandoc is available (needed by rmarkdown::yaml_front_matter) ---
-if (!nzchar(Sys.which("pandoc"))) {
-  pandoc_candidates <- c(
-    file.path(Sys.getenv("HOME"), ".local", "bin", "pandoc"),
-    "/usr/local/bin/pandoc",
-    "/usr/bin/pandoc"
-  )
-  found <- pandoc_candidates[file.exists(pandoc_candidates)]
-  if (length(found) > 0) {
-    Sys.setenv(RSTUDIO_PANDOC = dirname(found[1]))
-  } else {
-    stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
+# ---------------------------------------------------------------------------
+# 0. Find Pandoc (Quarto bundles its own; rmarkdown needs to know where)
+# ---------------------------------------------------------------------------
+# If RSTUDIO_PANDOC is already set (e.g. by the CI workflow), honour it.
+if (nzchar(Sys.getenv("RSTUDIO_PANDOC"))) {
+  cat(sprintf("Using Pandoc from RSTUDIO_PANDOC: %s\n",
+              Sys.getenv("RSTUDIO_PANDOC")))
+} else {
+  # Try to locate Pandoc via Quarto
+  quarto_pandoc <- Sys.which("quarto")
+  if (nzchar(quarto_pandoc)) {
+    quarto_bin <- tryCatch(
+      system2("quarto", "--paths", stdout = TRUE, stderr = FALSE),
+      error = function(e) character(0)
+    )
+    pandoc_candidates <- c(
+      file.path(dirname(quarto_pandoc), "tools"),
+      if (length(quarto_bin) >= 1) file.path(quarto_bin[1], "bin", "tools"),
+      dirname(quarto_pandoc)
+    )
+    for (p in pandoc_candidates) {
+      if (file.exists(file.path(p, "pandoc")) ||
+          file.exists(file.path(p, "pandoc.exe"))) {
+        Sys.setenv(RSTUDIO_PANDOC = p)
+        cat(sprintf("Using Pandoc from Quarto: %s\n", p))
+        break
+      }
+    }
+  }
+
+  # Fallback: common install locations
+  if (!rmarkdown::pandoc_available()) {
+    common_paths <- c(
+      "/opt/quarto/bin/tools",
+      "/opt/quarto/bin/tools/x86_64",
+      "/usr/local/bin",
+      file.path(Sys.getenv("HOME"), ".local", "bin"),
+      "/usr/bin",
+      "/opt/hostedtoolcache/quarto"
+    )
+    for (p in common_paths) {
+      if (file.exists(file.path(p, "pandoc"))) {
+        Sys.setenv(RSTUDIO_PANDOC = p)
+        cat(sprintf("Using Pandoc from fallback: %s\n", p))
+        break
+      }
+    }
+  }
+
+  # Last resort: system PATH
+  if (!rmarkdown::pandoc_available()) {
+    pandoc_path <- Sys.which("pandoc")
+    if (nzchar(pandoc_path)) {
+      Sys.setenv(RSTUDIO_PANDOC = dirname(pandoc_path))
+      cat(sprintf("Using Pandoc from system PATH: %s\n", dirname(pandoc_path)))
+    } else {
+      stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
+    }
   }
 }
 
