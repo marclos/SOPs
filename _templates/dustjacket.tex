@@ -1,0 +1,51 @@
+% =============================================================================
+% _templates/dustjacket.tex
+% =============================================================================
+% Parameterized dust jacket template for SOP binder covers.
+% Called by individual R scripts that define the variables before \input.
+%
+% Required variables (defined via \newcommand before \input):
+%   \djTitle       -- main title (e.g., STANDARD OPERATING PROCEDURES)
+%   \djSubtitle    -- subtitle line (e.g., Field Procedures)
+%   \djImage       -- path to cover image (e.g., images/Hazard_sign)
+%   \djImageWidth  -- width of image (e.g., 5.0in)
+%   \djSpineText   -- text for the rotated spine page
+% =============================================================================
+
+% --- Helper commands for vertical stretching ---
+\newcommand\nbvspace[1][3]{\vspace*{\stretch{#1}}}
+
+% --- Page 1: Binder Cover ---
+\clearpage
+\thispagestyle{empty}
+\begin{center}
+\bfseries
+\nbvspace[0]
+{\LARGE\djTitle}
+\nbvspace[1]
+\normalsize
+\djSubtitle\\[1em]
+Environmental Analysis Program\\
+Teaching and Research Laboratories, Seeley G Mudd\\
+Pomona College\\
+\nbvspace[1]
+\large Marc Los Huertos\\[0.5em]
+\footnotesize Environmental Analysis Program Coordinator
+\nbvspace[2]
+\includegraphics[width=\djImageWidth]{\djImage}
+\nbvspace[3]
+\normalsize
+Pomona College\\
+\large
+Claremont, California
+\nbvspace[1]
+\end{center}
+
+% --- Page 2: Binder Spine ---
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\rotatebox{90}{\Huge\textbf{\djSpineText}}
+\end{center}
+\vspace*{\fill}
