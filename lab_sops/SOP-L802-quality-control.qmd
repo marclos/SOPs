@@ -298,13 +298,13 @@ Common holding times for EA Program analyses:
 
 | Analysis                  | Holding Time              | Preservation              | Reference SOP |
 |:--------------------------|:--------------------------|:--------------------------|:--------------|
-| pH                        | 15 minutes (field); 24 h (lab) | None; analyze ASAP   | [L300](SOP-L300-pH-conductivity-bench.qmd), [L57](SOP-L57-soil-pH-salinity.qmd) |
+| pH                        | 15 minutes (field); 24 h (lab) | None; analyze ASAP   | [L300](SOP-L300-pH-conductivity-bench.qmd), [L402](SOP-L402-soil-pH-salinity.qmd) |
 | Conductivity              | 28 days                   | Refrigerate 4 C           | [L300](SOP-L300-pH-conductivity-bench.qmd) |
 | Nitrate/nitrite           | 48 hours                  | Refrigerate 4 C; H~2~SO~4~ to pH < 2 | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
 | Ammonium                  | 48 hours                  | Refrigerate 4 C; H~2~SO~4~ to pH < 2 | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
 | Total phosphorus          | 28 days                   | H~2~SO~4~ to pH < 2; 4 C | [L405](SOP-L405-extractable-phosphorus.qmd) |
 | Chlorophyll *a* (filter)  | 28 days frozen            | Freeze at --20 C in dark  | [L310](SOP-L310-chlorophyll-extraction.qmd) |
-| Metals (acid-digested)    | 6 months                  | HNO~3~ to pH < 2; 4 C    | [L410](SOP-L410-hotplate-acid-digestion.qmd), [L66](SOP-L66-mars-microwave-digestion.qmd) |
+| Metals (acid-digested)    | 6 months                  | HNO~3~ to pH < 2; 4 C    | [L410](SOP-L410-hotplate-acid-digestion.qmd), [L411](SOP-L411-mars-microwave-digestion.qmd) |
 | Coliforms (Colilert)      | 6 hours to incubation     | Refrigerate 4 C           | [L305](SOP-L305-colilert-quanti-tray.qmd) |
 | Soil KCl extracts         | 24 hours                  | Refrigerate 4 C           | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
 | Soil moisture             | Analyze immediately or freeze | Freeze if delayed > 24 h | [L400](SOP-L400-soil-moisture.qmd) |
@@ -381,7 +381,7 @@ lab_data/
 2. Never modify raw data files. All processing must be done
    programmatically in R with version-controlled scripts.
 3. Commit all analysis scripts to the lab GitHub repository per
-   [SOP-L05](SOP-L05-rstudio-github.qmd)
+   [SOP-L801](SOP-L801-rstudio-github.qmd)
 
 ### 7.3 R-Based QC Tracking System
 
