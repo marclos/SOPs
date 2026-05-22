@@ -164,7 +164,7 @@ For occupancy modeling or trend analysis, repeat the survey at each point at lea
 2. Each row represents one detection: point ID, date, time interval, species code, count, detection type, distance, flyover flag
 3. Reconcile uncertain identifications using audio recordings or field notes
 4. Archive field data sheets (scan if paper)
-5. Version-control all analysis scripts per [SOP-L05](../lab_sops/SOP-L05-rstudio-github.qmd)
+5. Version-control all analysis scripts per [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd)
 6. For analyses requiring detection probability correction, use the `unmarked` R package [@fiske2011] for distance sampling or N-mixture models
 
 

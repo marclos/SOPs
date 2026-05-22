@@ -1,17 +1,20 @@
 # =============================================================================
 # dustjackets.R
-# Generate binder dust-jacket PDFs (cover + spine) and optionally prepend
-# them to the corresponding compiled SOP PDFs.
+# =============================================================================
+# Generates standalone 2-page dust jacket PDFs (cover + spine) for each
+# SOP binder, then optionally prepends them to the corresponding compiled
+# PDF using qpdf.
 #
 # Usage:
-#   Rscript dustjackets.R              # Generate standalone jacket PDFs only
-#   Rscript dustjackets.R --prepend    # Generate and prepend to target PDFs
+#   Rscript dustjackets.R              # build all dust jackets
+#   Rscript dustjackets.R --prepend    # build and prepend to target PDFs
 #
 # The jacket list below must stay aligned with the PDFs produced by:
 #   - merge_sop_pdfs.R           -> EA-Program-SOPs-Complete.pdf
 #   - merge_sop_pdfs_by_topic.R  -> EA-SOPs-Water.pdf, EA-SOPs-Soil.pdf, etc.
 #
-# To add a new binder, just add another entry to the `jackets` list.
+# Each jacket is defined as a list entry below. To add a new binder,
+# just add another entry to the `jackets` list.
 #
 # Prerequisites:
 #   - TinyTeX or a full LaTeX distribution
@@ -25,19 +28,9 @@ library(tinytex)
 # ---------------------------------------------------------------------------
 # 1. Define the dust jackets
 # ---------------------------------------------------------------------------
-# Each entry produces one 2-page PDF.
-#
-#   name       : output filename (without .pdf)
-#   title      : large title on the cover
-#   subtitle   : line below the title (binder description)
-#   image      : path to the cover image (relative to project root)
-#   image_width: LaTeX width for the image
-#   spine      : text for the rotated spine page
-#   target_pdf : the compiled PDF to prepend this jacket to (used with --prepend)
 
 jackets <- list(
 
-  # ---- Complete collection ----
   list(
     name        = "dustjacket-complete",
     title       = "STANDARD OPERATING PROCEDURES",
@@ -48,40 +41,36 @@ jackets <- list(
     target_pdf  = "docs/EA-Program-SOPs-Complete.pdf"
   ),
 
-  # ---- Topic: Safety, Equipment, Instrumentation, and Data Management ----
   list(
     name        = "dustjacket-safety-equip-data",
     title       = "SAFETY, EQUIPMENT, AND DATA MANAGEMENT",
-    subtitle    = "General Safety, Lab and Field Equipment, Instrument Operation, and Data Workflows",
+    subtitle    = "General Safety, Equipment, Instrumentation, and Data Workflows",
     image       = "images/Hazard_sign",
     image_width = "5.0in",
     spine       = "SAFETY / EQUIPMENT / DATA MANAGEMENT",
     target_pdf  = "docs/EA-SOPs-Safety-Equipment-Data.pdf"
   ),
 
-  # ---- Topic: Water and Aquatic Methods ----
   list(
     name        = "dustjacket-water",
     title       = "WATER AND AQUATIC METHODS",
-    subtitle    = "Field Sampling and Laboratory Analysis for Water Quality and Aquatic Systems",
+    subtitle    = "Field Sampling and Laboratory Analysis for Water Quality",
     image       = "images/Hazard_sign",
     image_width = "5.0in",
     spine       = "WATER AND AQUATIC METHODS",
     target_pdf  = "docs/EA-SOPs-Water.pdf"
   ),
 
-  # ---- Topic: Soil Methods ----
   list(
     name        = "dustjacket-soil",
     title       = "SOIL METHODS",
     subtitle    = "Field Sampling and Laboratory Analysis for Soils and Sediments",
-    image       = "images/soil-cover",
+    image       = "images/Hazard_sign",
     image_width = "5.0in",
     spine       = "SOIL METHODS",
     target_pdf  = "docs/EA-SOPs-Soil.pdf"
   ),
 
-  # ---- Topic: Air and Atmospheric Methods ----
   list(
     name        = "dustjacket-air",
     title       = "AIR AND ATMOSPHERIC METHODS",
@@ -92,11 +81,10 @@ jackets <- list(
     target_pdf  = "docs/EA-SOPs-Air.pdf"
   ),
 
-  # ---- Topic: Biology, Ecology, and Molecular Biology ----
   list(
     name        = "dustjacket-bio-molbio",
     title       = "BIOLOGY AND MOLECULAR BIOLOGY",
-    subtitle    = "Biodiversity Surveys, Organism Sampling, DNA Extraction, Sequencing, and Bioinformatics",
+    subtitle    = "Biodiversity Surveys, DNA Extraction, Sequencing, and Bioinformatics",
     image       = "images/Hazard_sign",
     image_width = "5.0in",
     spine       = "BIOLOGY AND MOLECULAR BIOLOGY",
@@ -105,67 +93,115 @@ jackets <- list(
 )
 
 # ---------------------------------------------------------------------------
-# 2. Read the LaTeX template
+# 2. Check for --prepend flag
 # ---------------------------------------------------------------------------
+do_prepend <- "--prepend" %in% commandArgs(trailingOnly = TRUE)
+
+# ---------------------------------------------------------------------------
+# 3. Build each dust jacket
+# ---------------------------------------------------------------------------
+jacket_dir <- "docs/dustjackets"
+if (!dir.exists(jacket_dir)) dir.create(jacket_dir, recursive = TRUE)
+
 template_path <- "_templates/dustjacket.tex"
 if (!file.exists(template_path)) {
-  stop("Dust jacket template not found: ", template_path)
+  stop("Template not found: ", template_path,
+       "\nPlace dustjacket.tex in _templates/")
 }
-template <- paste(readLines(template_path, warn = FALSE), collapse = "\n")
 
-# ---------------------------------------------------------------------------
-# 3. Build each dust jacket PDF
-# ---------------------------------------------------------------------------
-build_dir <- file.path(tempdir(), "dustjackets")
-dir.create(build_dir, showWarnings = FALSE, recursive = TRUE)
-
-jacket_pdfs <- list()
+# Save project root -- all paths are relative to here
+project_root <- getwd()
 
 for (j in jackets) {
-  cat(sprintf("Building jacket: %s\n", j$name))
 
-  tex_content <- template
-  tex_content <- gsub("<<TITLE>>",       j$title,       tex_content, fixed = TRUE)
-  tex_content <- gsub("<<SUBTITLE>>",    j$subtitle,    tex_content, fixed = TRUE)
-  tex_content <- gsub("<<IMAGE>>",       j$image,       tex_content, fixed = TRUE)
-  tex_content <- gsub("<<IMAGE_WIDTH>>", j$image_width, tex_content, fixed = TRUE)
-  tex_content <- gsub("<<SPINE>>",       j$spine,       tex_content, fixed = TRUE)
-  tex_content <- gsub("<<DATE>>",        format(Sys.Date(), "%B %d, %Y"),
-                       tex_content, fixed = TRUE)
+  cat(sprintf("\n--- Building: %s ---\n", j$name))
 
-  tex_file <- file.path(build_dir, paste0(j$name, ".tex"))
+  escape_tex <- function(x) gsub("&", "\\\\&", x)
+
+  # Build the standalone LaTeX document.
+  # \newcommand defines the variables that _templates/dustjacket.tex uses.
+  # \input brings in the template (which uses \djTitle, \djSubtitle, etc.).
+  tex_content <- sprintf(
+'\\documentclass[11pt,letterpaper]{article}
+\\usepackage[margin=1in]{geometry}
+\\usepackage{graphicx}
+\\usepackage{rotating}
+\\pagestyle{empty}
+
+%%%% Define jacket parameters
+\\newcommand{\\djTitle}{%s}
+\\newcommand{\\djSubtitle}{%s}
+\\newcommand{\\djImage}{%s}
+\\newcommand{\\djImageWidth}{%s}
+\\newcommand{\\djSpineText}{%s}
+
+\\begin{document}
+\\input{%s}
+\\end{document}
+',
+    escape_tex(j$title),
+    escape_tex(j$subtitle),
+    j$image,
+    j$image_width,
+    escape_tex(j$spine),
+    template_path
+  )
+
+  # Write the .tex file in the PROJECT ROOT so that relative paths resolve:
+  #   - \input{_templates/dustjacket.tex}
+  #   - \includegraphics{images/Hazard_sign}
+  tex_file <- file.path(project_root, paste0(j$name, ".tex"))
   writeLines(tex_content, tex_file)
 
-  compiled <- tinytex::latexmk(tex_file, engine = "pdflatex", clean = TRUE)
+  # Ensure we compile from the project root
+  setwd(project_root)
 
-  output_path <- file.path("docs", paste0(j$name, ".pdf"))
-  file.copy(compiled, output_path, overwrite = TRUE)
-  jacket_pdfs[[j$name]] <- output_path
-
-  cat(sprintf("  -> %s\n", output_path))
-}
-
-# ---------------------------------------------------------------------------
-# 4. Optionally prepend jackets to target PDFs
-# ---------------------------------------------------------------------------
-if ("--prepend" %in% commandArgs(trailingOnly = TRUE)) {
-  cat("\n--- Prepending dust jackets ---\n")
-  for (j in jackets) {
-    jacket_file <- jacket_pdfs[[j$name]]
-    target_file <- j$target_pdf
-
-    if (!file.exists(target_file)) {
-      cat(sprintf("  SKIP: target not found: %s\n", target_file))
-      next
+  compiled <- tryCatch(
+    tinytex::latexmk(tex_file, engine = "pdflatex", clean = TRUE),
+    error = function(e) {
+      warning(sprintf("Failed to compile %s: %s", j$name, e$message))
+      return(NULL)
     }
+  )
 
-    cat(sprintf("  Prepending %s -> %s\n", basename(jacket_file), target_file))
+  # Always return to project root after compilation
+  setwd(project_root)
 
-    tmp <- tempfile(fileext = ".pdf")
-    qpdf::pdf_combine(c(jacket_file, target_file), tmp)
-    file.copy(tmp, target_file, overwrite = TRUE)
-    unlink(tmp)
+  if (is.null(compiled)) next
+
+  # Move to output directory
+  out_pdf <- file.path(jacket_dir, paste0(j$name, ".pdf"))
+  file.copy(compiled, out_pdf, overwrite = TRUE)
+
+  # Clean up temp files from project root
+  for (ext in c(".tex", ".aux", ".log", ".out")) {
+    f <- paste0(j$name, ext)
+    if (file.exists(f)) file.remove(f)
+  }
+  if (file.exists(compiled) && normalizePath(compiled) != normalizePath(out_pdf)) {
+    file.remove(compiled)
+  }
+
+  cat(sprintf("  -> %s (2 pages)\n", out_pdf))
+
+  # --- Optionally prepend to the target PDF ---
+  if (do_prepend && file.exists(j$target_pdf)) {
+    cat(sprintf("  Prepending to %s...\n", j$target_pdf))
+
+    combined_tmp <- tempfile(fileext = ".pdf")
+    qpdf::pdf_combine(
+      input  = c(out_pdf, j$target_pdf),
+      output = combined_tmp
+    )
+    file.copy(combined_tmp, j$target_pdf, overwrite = TRUE)
+    file.remove(combined_tmp)
+
+    cat(sprintf("  Done. Jacket prepended to %s\n", j$target_pdf))
+  } else if (do_prepend && !file.exists(j$target_pdf)) {
+    cat(sprintf("  SKIP: target not found: %s\n", j$target_pdf))
   }
 }
 
-cat("\nDone.\n")
+setwd(project_root)
+cat("\n=== All dust jackets built ===\n")
+if (do_prepend) cat("Jackets prepended to target PDFs where available.\n")
