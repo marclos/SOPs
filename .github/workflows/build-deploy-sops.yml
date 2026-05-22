@@ -1,0 +1,191 @@
+# =============================================================================
+# Build and Deploy Lab SOPs (v0.06)
+# =============================================================================
+# Triggers on push to master (or manual dispatch). Renders all SOPs to HTML
+# and PDF, merges PDFs into a complete set and topic-based subsets, adds dust
+# jacket covers, then deploys to GitHub Pages.
+#
+# Setup (one-time):
+#   1. In your repo: Settings > Pages > Source > GitHub Actions
+#   2. That's it. No tokens or secrets needed.
+#
+# What's new in v0.06:
+#   - Fixes Pandoc detection for R merge scripts (set RSTUDIO_PANDOC inline)
+#   - Removes broken "Add Quarto Pandoc to PATH" step
+#   - merge_sop_pdfs.R now produces only the Complete PDF
+#   - merge_sop_pdfs_by_topic.R produces topic subsets (Water, Soil, Air, etc.)
+#   - dustjackets.R targets topic-based PDFs instead of Field/Lab split
+#   - Adds merge_sop_pdfs_by_topic.R to paths trigger
+#   - Adds references.bib to paths trigger (bib changes affect rendered PDFs)
+# =============================================================================
+name: Build and Deploy SOPs
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'lab_sops/**'
+      - 'field_sops/**'
+      - 'sops/**'
+      - '_quarto.yml'
+      - '_templates/**'
+      - 'index.qmd'
+      - 'references.bib'
+      - 'merge_sop_pdfs.R'
+      - 'merge_sop_pdfs_by_topic.R'
+      - 'dustjackets.R'
+      - '.github/workflows/build-deploy-sops.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: "sop-build"
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      R_LIBS_USER: ${{ github.workspace }}/R/library
+      TZ: America/Los_Angeles
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      # ── TinyTeX (cached) ──────────────────────────────────────────────
+      - name: Cache TinyTeX
+        id: cache-tinytex
+        uses: actions/cache@v5
+        with:
+          path: |
+            ~/bin/TinyTeX
+            ~/.TinyTeX
+          key: tinytex-${{ runner.os }}-v06-${{ hashFiles('.github/workflows/build-deploy-sops.yml') }}
+
+      - name: Install TinyTeX
+        if: steps.cache-tinytex.outputs.cache-hit != 'true'
+        uses: r-lib/actions/setup-tinytex@v2
+
+      - name: Ensure TinyTeX is on PATH
+        if: steps.cache-tinytex.outputs.cache-hit == 'true'
+        run: |
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          echo "$HOME/.TinyTeX/bin/x86_64-linux" >> "$GITHUB_PATH"
+
+      - name: Install LaTeX packages
+        if: steps.cache-tinytex.outputs.cache-hit != 'true'
+        run: |
+          tlmgr install \
+            fancyhdr lastpage geometry xcolor hyperref \
+            booktabs longtable caption float lm etoolbox \
+            pdflscape multirow wrapfig colortbl tabu varwidth \
+            threeparttable threeparttablex makecell \
+            environ trimspaces \
+            pdfpages rotating \
+            || true
+
+      # ── R (pinned version) ───────────────────────────────────────────
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4.1'
+
+      # ── R packages (cached) ──────────────────────────────────────────
+      - name: Cache R packages
+        id: cache-r-packages
+        uses: actions/cache@v5
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-packages-${{ runner.os }}-4.4.1-v06-${{ hashFiles('.github/workflows/build-deploy-sops.yml') }}
+          restore-keys: |
+            r-packages-${{ runner.os }}-4.4.1-v06-
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libcurl4-openssl-dev libssl-dev libxml2-dev
+
+      - name: Install R packages
+        if: steps.cache-r-packages.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p "$R_LIBS_USER"
+          Rscript -e 'install.packages("pak", repos = "https://cloud.r-project.org", lib = Sys.getenv("R_LIBS_USER"))'
+          Rscript -e 'pak::pkg_install(c("knitr", "rmarkdown", "qpdf", "tinytex"), lib = Sys.getenv("R_LIBS_USER"))'
+
+      # ── Quarto ────────────────────────────────────────────────────────
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # ── Render ────────────────────────────────────────────────────────
+      - name: Render site
+        run: quarto render
+
+      # ── Locate Quarto's bundled Pandoc for R scripts ──────────────────
+      # rmarkdown::yaml_front_matter() needs Pandoc. Quarto bundles one
+      # but doesn't always put it on PATH. We find it once and export
+      # RSTUDIO_PANDOC for all subsequent R steps.
+      - name: Locate Pandoc
+        id: find-pandoc
+        run: |
+          QUARTO_PREFIX="$(quarto --paths | head -1)"
+          PANDOC_BIN="$(find "$QUARTO_PREFIX" -name pandoc -type f 2>/dev/null | head -1)"
+          if [ -z "$PANDOC_BIN" ]; then
+            # Fallback: maybe pandoc is already on PATH from another step
+            PANDOC_BIN="$(which pandoc 2>/dev/null || true)"
+          fi
+          if [ -z "$PANDOC_BIN" ]; then
+            echo "::error::Pandoc not found in Quarto tree or on PATH"
+            exit 1
+          fi
+          PANDOC_DIR="$(dirname "$PANDOC_BIN")"
+          echo "pandoc_dir=$PANDOC_DIR" >> "$GITHUB_OUTPUT"
+          echo "Found Pandoc at: $PANDOC_BIN"
+          "$PANDOC_BIN" --version | head -1
+
+      # ── Collect individual PDFs ───────────────────────────────────────
+      - name: Collect PDFs
+        run: |
+          mkdir -p docs/pdfs
+          find docs -name "*.pdf" -not -path "docs/pdfs/*" -exec cp {} docs/pdfs/ \;
+
+      # ── Merge: Complete PDF ───────────────────────────────────────────
+      - name: Merge SOPs into complete PDF
+        env:
+          RSTUDIO_PANDOC: ${{ steps.find-pandoc.outputs.pandoc_dir }}
+        run: Rscript merge_sop_pdfs.R docs/pdfs
+
+      # ── Merge: Topic-based subsets ────────────────────────────────────
+      - name: Merge SOPs by topic
+        env:
+          RSTUDIO_PANDOC: ${{ steps.find-pandoc.outputs.pandoc_dir }}
+        run: Rscript merge_sop_pdfs_by_topic.R docs/pdfs
+
+      # ── Add dust jacket covers ────────────────────────────────────────
+      - name: Add dust jackets to combined PDFs
+        env:
+          RSTUDIO_PANDOC: ${{ steps.find-pandoc.outputs.pandoc_dir }}
+        run: Rscript dustjackets.R --prepend
+
+      # ── Upload for Pages ──────────────────────────────────────────────
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
