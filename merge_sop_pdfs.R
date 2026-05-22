@@ -1,73 +1,26 @@
-#!/usr/bin/env Rscript
 # =============================================================================
 # merge_sop_pdfs.R
-# Merge rendered SOP PDFs into combined documents with hyperlinked TOCs.
+# Combine all individual SOP PDFs into a single "Complete" PDF with a
+# hyperlinked table of contents.
 #
-# Produces:
-#   docs/EA-Program-SOPs-Complete.pdf    -- all SOPs
-#   docs/EA-Program-Field-SOPs.pdf       -- F-series only
-#   docs/EA-Program-Lab-SOPs.pdf         -- L-series only
-#   docs/EA-Program-Safety-SOPs.pdf      -- L001--L099 (safety/admin)
-#   docs/EA-Program-Molecular-SOPs.pdf   -- L700+ and F700+ (molecular/eDNA)
+# Topic-based subsets (Water, Soil, Air, etc.) are handled by
+# merge_sop_pdfs_by_topic.R -- do NOT define them here.
 #
-# Usage (after quarto render):
-#   Rscript merge_sop_pdfs.R              # uses docs/pdfs/ by default
-#   Rscript merge_sop_pdfs.R path/to/pdfs  # custom input directory
-#
-# Requirements:
-#   install.packages(c("qpdf", "rmarkdown", "tinytex"))
-#   TinyTeX or a LaTeX distribution with: pdfpages, longtable, xcolor,
-#     geometry, hyperref
-#
+# Usage:
+#   Rscript merge_sop_pdfs.R [pdf_directory]
+#   Default pdf_directory: docs/pdfs
 # =============================================================================
 
-library(qpdf)
-
-# =============================================================================
-# 0. Find Pandoc
-# =============================================================================
-quarto_pandoc <- Sys.which("quarto")
-if (nzchar(quarto_pandoc)) {
-  quarto_bin <- tryCatch(
-    system2("quarto", "--paths", stdout = TRUE, stderr = FALSE),
-    error = function(e) character(0)
-  )
+# --- Ensure Pandoc is available (needed by rmarkdown::yaml_front_matter) ---
+if (!nzchar(Sys.which("pandoc"))) {
   pandoc_candidates <- c(
-    file.path(dirname(quarto_pandoc), "tools"),
-    if (length(quarto_bin) >= 1) file.path(quarto_bin[1], "bin", "tools"),
-    dirname(quarto_pandoc)
+    file.path(Sys.getenv("HOME"), ".local", "bin", "pandoc"),
+    "/usr/local/bin/pandoc",
+    "/usr/bin/pandoc"
   )
-  for (p in pandoc_candidates) {
-    if (file.exists(file.path(p, "pandoc")) ||
-        file.exists(file.path(p, "pandoc.exe"))) {
-      Sys.setenv(RSTUDIO_PANDOC = p)
-      cat(sprintf("Using Pandoc from: %s\n", p))
-      break
-    }
-  }
-}
-
-if (!rmarkdown::pandoc_available()) {
-  common_paths <- c(
-    "/opt/quarto/bin/tools",
-    "/usr/local/bin",
-    file.path(Sys.getenv("HOME"), ".local", "bin"),
-    "/opt/hostedtoolcache/quarto"
-  )
-  for (p in common_paths) {
-    if (file.exists(file.path(p, "pandoc"))) {
-      Sys.setenv(RSTUDIO_PANDOC = p)
-      cat(sprintf("Using Pandoc from fallback: %s\n", p))
-      break
-    }
-  }
-}
-
-if (!rmarkdown::pandoc_available()) {
-  pandoc_path <- Sys.which("pandoc")
-  if (nzchar(pandoc_path)) {
-    Sys.setenv(RSTUDIO_PANDOC = dirname(pandoc_path))
-    cat(sprintf("Using Pandoc from system PATH: %s\n", dirname(pandoc_path)))
+  found <- pandoc_candidates[file.exists(pandoc_candidates)]
+  if (length(found) > 0) {
+    Sys.setenv(RSTUDIO_PANDOC = dirname(found[1]))
   } else {
     stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
   }
@@ -164,33 +117,22 @@ make_anchor <- function(x) {
 # ---------------------------------------------------------------------------
 # build_combined_pdf()
 #   Builds a single combined PDF from a subset of SOPs.
-#
-#   entries     : data.frame with columns file, Number, SOP, Pages
-#   output_file : path for the output PDF
-#   toc_title   : title shown on the TOC page
-#   toc_subtitle: subtitle shown below the title
 # ---------------------------------------------------------------------------
-build_combined_pdf <- function(entries, output_file, toc_title, toc_subtitle) {
+build_combined_pdf <- function(entries, output_file, title, subtitle) {
+  cat(sprintf("\nBuilding: %s (%d SOPs)\n", output_file, nrow(entries)))
 
-  if (nrow(entries) == 0) {
-    cat(sprintf("  Skipping %s -- no matching SOPs.\n", basename(output_file)))
-    return(invisible(NULL))
-  }
+  numbers  <- entries$Number
+  titles   <- entries$SOP
+  pages    <- entries$Pages
+  pdf_abs  <- normalizePath(entries$file)
+  anchors  <- make_anchor(numbers)
 
-  cat(sprintf("\n=== Building: %s (%d SOPs) ===\n",
-              basename(output_file), nrow(entries)))
-
-  pdf_abs     <- normalizePath(entries$file)
-  page_counts <- entries$Pages
-  n           <- nrow(entries)
-  anchors     <- make_anchor(entries$Number)
-
-  # -- TOC table --
+  # TOC table
   toc_lines <- sprintf(
     "  \\hyperlink{%s}{%s} & %s \\\\",
     anchors,
-    escape_latex(entries$Number),
-    escape_latex(entries$SOP)
+    escape_latex(numbers),
+    escape_latex(titles)
   )
 
   toc_table <- paste(
@@ -205,22 +147,22 @@ build_combined_pdf <- function(entries, output_file, toc_title, toc_subtitle) {
     sep = "\n"
   )
 
-  # -- includepdf blocks --
-  includepdf_lines <- vapply(seq_len(n), function(i) {
-    np <- page_counts[i]
+  # includepdf blocks
+  includepdf_lines <- vapply(seq_along(pdf_abs), function(i) {
+    np <- pages[i]
     anchor_cmd <- sprintf("\\hypertarget{%s}{}", anchors[i])
     if (np == 1L) {
       sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
               anchor_cmd, pdf_abs[i])
     } else {
-      sprintf(paste0(
-        "\\includepdf[pages=1, pagecommand={%s}]{%s}\n",
-        "\\includepdf[pages=2-, pagecommand={}]{%s}"),
-        anchor_cmd, pdf_abs[i], pdf_abs[i])
+      sprintf(
+        "\\includepdf[pages=1, pagecommand={%s}]{%s}\n\\includepdf[pages=2-, pagecommand={}]{%s}",
+        anchor_cmd, pdf_abs[i], pdf_abs[i]
+      )
     }
   }, character(1))
 
-  # -- Master LaTeX --
+  # LaTeX document
   master_tex <- paste0(
 '\\documentclass[11pt,letterpaper]{article}
 
@@ -238,20 +180,21 @@ build_combined_pdf <- function(entries, output_file, toc_title, toc_subtitle) {
 ]{hyperref}
 
 \\definecolor{eablue}{HTML}{0057B8}
+
 \\pagestyle{empty}
 
 \\begin{document}
 
 \\begin{center}
-  {\\Large\\textbf{\\textcolor{eablue}{', escape_latex(toc_title), '}}}\\\\[6pt]
-  {\\large ', escape_latex(toc_subtitle), '}\\\\[4pt]
+  {\\Large\\textbf{\\textcolor{eablue}{', escape_latex(title), '}}}\\\\[6pt]
+  {\\normalsize ', escape_latex(subtitle), '}\\\\[4pt]
   {\\normalsize ', format(Sys.Date(), "%B %d, %Y"), '}
 \\end{center}
 
 \\vspace{12pt}
 
 \\section*{Table of Contents}
-\\noindent\\textit{Click any SOP number or title to jump to that procedure.}
+\\noindent\\textit{Click any SOP number to jump to that procedure.}
 
 \\vspace{6pt}
 
@@ -284,72 +227,20 @@ build_combined_pdf <- function(entries, output_file, toc_title, toc_subtitle) {
 }
 
 # =============================================================================
-# 3. Define the PDF sets
+# 3. Build ONLY the Complete PDF
 # =============================================================================
-# Each set is a list with:
-#   filter   : function(entries) -> logical vector selecting rows
-#   output   : output filename
-#   title    : TOC page title
-#   subtitle : TOC page subtitle
+# Topic-based subsets (Water, Soil, Air, Bio/MolBio, Safety/Equipment)
+# are produced by merge_sop_pdfs_by_topic.R -- not here.
 
 output_dir <- dirname(pdf_dir)  # typically "docs"
 
-sets <- list(
-
-  # Complete collection (all SOPs)
-  list(
-    filter   = function(e) rep(TRUE, nrow(e)),
-    output   = file.path(output_dir, "EA-Program-SOPs-Complete.pdf"),
-    title    = "EA Program -- Standard Operating Procedures",
-    subtitle = "Biogeochemistry Lab, Pomona College"
-  ),
-
-  # Field SOPs only (F-series)
-  list(
-    filter   = function(e) grepl("^SOP-F", e$Number),
-    output   = file.path(output_dir, "EA-Program-Field-SOPs.pdf"),
-    title    = "Field Standard Operating Procedures",
-    subtitle = "Sampling, Monitoring, and Site Work"
-  ),
-
-  # Lab SOPs only (L-series)
-  list(
-    filter   = function(e) grepl("^SOP-L", e$Number),
-    output   = file.path(output_dir, "EA-Program-Lab-SOPs.pdf"),
-    title    = "Laboratory Standard Operating Procedures",
-    subtitle = "Analysis, Instrumentation, and Quality Control"
-  ),
-
-  # Safety and admin (L001--L099)
-  list(
-    filter   = function(e) {
-      grepl("^SOP-L0[0-9]{2}$", e$Number)
-    },
-    output   = file.path(output_dir, "EA-Program-Safety-SOPs.pdf"),
-    title    = "Safety and Administration",
-    subtitle = "Laboratory Safety, Waste, and Training"
-  ),
-
-  # Molecular biology (L700--L799 and F700--F799)
-  list(
-    filter   = function(e) {
-      grepl("^SOP-[LF]7[0-9]{2}$", e$Number)
-    },
-    output   = file.path(output_dir, "EA-Program-Molecular-SOPs.pdf"),
-    title    = "Molecular Biology Procedures",
-    subtitle = "eDNA, PCR, Sequencing, and Bioinformatics"
-  )
+build_combined_pdf(
+  all_entries,
+  file.path(output_dir, "EA-Program-SOPs-Complete.pdf"),
+  "EA Program -- Standard Operating Procedures",
+  "Biogeochemistry Lab, Pomona College"
 )
 
-# =============================================================================
-# 4. Build each set
-# =============================================================================
-for (s in sets) {
-  mask    <- s$filter(all_entries)
-  subset  <- all_entries[mask, ]
-  build_combined_pdf(subset, s$output, s$title, s$subtitle)
-}
-
-cat("\n=== All combined PDFs built ===\n")
+cat("\n=== Complete combined PDF built ===\n")
 cat("Output directory:", output_dir, "\n")
-cat("Run 'Rscript dustjackets.R --prepend' to add dust jackets.\n")
+cat("Topic subsets are built by merge_sop_pdfs_by_topic.R\n")
