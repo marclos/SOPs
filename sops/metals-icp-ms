@@ -1,0 +1,54 @@
+---
+title: "Standard Operating Procedure: Metals in Water (ICP-MS Prep and Acidification)"
+subtitle: "Document ID: L313"
+author: "Environmental Analysis Lab"
+date: "2026-05-22"
+version: "1.0"
+status: "Draft"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+---
+
+## 1. Purpose & Scope
+This Standard Operating Procedure (SOP) describes the acidification, trace metal preservation, and digestion protocols for aqueous environmental samples prior to Inductively Coupled Plasma Mass Spectrometry (ICP-MS) analysis. It covers dissolved metals (filtration + acidification) and total recoverable metals (acid digestion).
+
+## 2. Safety & Hazards
+* **Chemical Burns & Corrosive Vapors:** Concentrated Nitric Acid ($\text{HNO}_3$, $67-70\%$) is an extremely corrosive oxidizing agent. Contact causes severe chemical burns. Vapors are highly damaging to respiratory tracts.
+* **Engineering Controls:** **All acid dispensing, sample acidification, and hot block heating must be executed inside an active chemical fume hood.**
+* **PPE:** Lab coat, safety glasses/face shield, and acid-resistant nitrile gloves (double-gloving recommended).
+
+## 3. Equipment & Reagents
+* Ultra-pure, trace metal grade Nitric Acid ($\text{HNO}_3$)
+* Trace metal grade Hydrochloric Acid ($\text{HCl}$, if target analytes include Ag, Sb, or high Fe)
+* Automated sample digestion block system (Hot block)
+* Certified trace metal-free DigiFILTERS ($0.45\ \mu\text{m}$) or syringe filters
+* Metal-free polypropylene autosampler tubes ($15\text{ mL}$ or $50\text{ mL}$)
+
+## 4. Operating Procedure
+
+### 4.1 Sample Preservation & Dissolved Metals Fraction
+1. **Dissolved Metals:** Filter the raw, un-acidified sample immediately upon collection or arrival through a certified $0.45\ \mu\text{m}$ metal-free membrane filter. Discard the first $5\text{ mL}$ of filtrate to rinse the filter matrix. Collect remaining filtrate into a clean polypropylene tube.
+2. **Acidification:** Add high-purity trace-metal grade $\text{HNO}_3$ dropwise to the sample container to achieve a final matrix concentration of $2\%\ (\text{v/v})$ (e.g., add $1.0\text{ mL}$ conc. $\text{HNO}_3$ per $50\text{ mL}$ sample matrix).
+3. Verify pH is $< 2$ using a narrow-range pH strip. Store acidified samples for **at least 16 hours** prior to analysis to ensure proper metal desorbtion from container walls.
+
+### 4.2 Total Recoverable Metals Digestion (Hot Block)
+1. Transfer a well-mixed $50.0\text{ mL}$ portion of un-filtered sample into a clean digestion tube.
+2. In a fume hood, add $1.0\text{ mL}$ of trace-metal grade $\text{HNO}_3$ and $0.5\text{ mL}$ of trace-metal grade $\text{HCl}$.
+3. Place the digestion tube into the hot block. Fit with a ribbed watch glass or vapor reflux cap to prevent evaporation loss.
+4. Program the block heater to $85^\circ\text{C}$ to $95^\circ\text{C}$. Heat the sample for **2 hours** without allowing the solution to boil.
+5. Remove from heat, let cool to room temperature, and adjust back to the original $50.0\text{ mL}$ volume mark using high-purity DI water. Filter if visible particulates remain to prevent ICP-MS nebulizer clogging.
+
+## 5. Quality Control Parameters
+* **Method Blank:** Process a $50\text{ mL}$ aliquot of DI water exactly like samples to quantify background reagent trace metals.
+* **Laboratory Fortified Blank (LFB):** Spike a known concentration of multi-element stock solution into DI water and carry through digestion to evaluate recovery efficiency.
+
+---
+
+## 6. Documentation Sign-off
+| Role | Name | Signature | Date |
+|------|------|-----------|------|
+| **Prepared By:** | | | |
+| **Approved By:** | | | |

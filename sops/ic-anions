@@ -1,0 +1,54 @@
+---
+title: "Standard Operating Procedure: Anion Analysis via Ion Chromatography (IC)"
+subtitle: "Document ID: L314"
+author: "Environmental Analysis Lab"
+date: "2026-05-22"
+version: "1.0"
+status: "Draft"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+---
+
+## 1. Purpose & Scope
+This Standard Operating Procedure (SOP) defines the operational guidelines for the determination of common inorganic anions (Fluoride, Chloride, Nitrite, Bromide, Nitrate, Phosphate, and Sulfate) in water matrices using an Ion Chromatography (IC) system equipped with chemical suppression and conductivity detection.
+
+## 2. Safety & Hazards
+* **Chemical Hazards:** Eluent concentrates (typically Carbonate/Bicarbonate mixtures or Potassium Hydroxide, $\text{KOH}$) are basic/caustic. Handle with standard precaution.
+* **High-Pressure Hazards:** Liquid chromatography systems operate at backpressures up to $3000\text{ psi}$. Turn off the high-pressure pump before adjusting column fittings to prevent high-velocity micro-sprays.
+* **PPE:** Standard lab coat, safety glasses, and nitrile gloves.
+
+## 3. Instrument Setup & Parameters
+* **System Componentry:** High-pressure pump, eluent generator/reservoir, autosampler, analytical guard column, anion-exchange analytical separator column, chemical suppressor unit, and conductivity cell.
+* **Standard Eluent Conditions:** Typically $4.5\text{ mM }\text{Na}_2\text{CO}_3 / 1.4\text{ mM }\text{NaHCO}_3$ or automated electrolytically generated $\text{KOH}$ gradient ($10 - 40\text{ mM}$).
+
+## 4. Operating Procedure
+
+### 4.1 Sample and Standard Preparation
+1. **Sample Filtration:** All samples **must be filtered** through a $0.45\ \mu\text{m}$ or $0.22\ \mu\text{m}$ polyethersulfone (PES) syringe filter prior to vial placement. Particulate injection will permanently fowl the analytical column bed and destroy high-pressure injector valves.
+2. **Calibration Standards:** Dilute multi-anion stock standard solutions to prepare at least a 5-point curve bounding your anticipated concentration profiles (e.g., $0.1\text{ mg/L}$ to $50.0\text{ mg/L}$).
+
+### 4.2 System Startup and Equilibration
+1. Verify eluent fluid reserves are sufficient for the sequence length. Empty waste receptacles.
+2. Turn on the high-pressure pump at a target analytical flow rate (typically $1.0\text{ mL/min}$).
+3. Engage the chemical suppressor system. *Crucial:* Ensure column eluent flow is active before turning on electronic suppression currents to prevent thermal burn-out of the suppressor membrane.
+4. Monitor the baseline conductivity. The system is equilibrated when the background conductivity is stable ($< 30\ \mu\text{S/cm}$ for carbonate eluents, or $< 2\ \mu\text{S/cm}$ for hydroxide systems with suppression).
+
+### 4.3 Running Sequences
+1. Load samples into specialized polyvials with filter caps. Press caps completely flush into the vial body using a sealing tool.
+2. Arrange vials in the autosampler tray matching the software sequence map.
+3. Establish sequence checkpoints: Include DI water blanks, analytical spikes, and an independent Continuing Calibration Verification (CCV) standard every 10 samples.
+4. Execute the sequence method injection run.
+
+## 5. System Standby
+1. Post-sequence completion, set the pump flow rate down to $0.1\text{ mL/min}$ or turn off, and **immediately drop the suppressor current to zero** to protect its membrane channels.
+
+---
+
+## 6. Documentation Sign-off
+| Role | Name | Signature | Date |
+|------|------|-----------|------|
+| **Prepared By:** | | | |
+| **Approved By:** | | | |

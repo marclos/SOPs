@@ -65,7 +65,7 @@ jackets <- list(
     name        = "dustjacket-soil",
     title       = "SOIL METHODS",
     subtitle    = "Field Sampling and Laboratory Analysis for Soils and Sediments",
-    image       = "images/Hazard_sign",
+    image       = "images/soil_cover",
     image_width = "5.0in",
     spine       = "SOIL METHODS",
     target_pdf  = "docs/EA-SOPs-Soil.pdf"
