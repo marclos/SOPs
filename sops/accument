@@ -1,0 +1,70 @@
+---
+title: "Standard Operating Procedure: Accumet pH Meter"
+subtitle: "Document ID: L202"
+author: "Environmental Analysis Lab"
+date: "2026-05-22"
+version: "0.4"
+status: "Draft"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+---
+
+## 1. Purpose & Scope
+This Standard Operating Procedure (SOP) defines the operational, multi-point calibration, and maintenance protocols for the Accumet benchtop pH meter. This instrument serves to measure the hydrogen-ion activity in aqueous solutions, critical for chemical stability determinations, soil paste assessments, and environmental water quality metrics.
+
+## 2. Safety & Hazards
+
+### 2.1 Primary Hazards
+* **Chemical Hazards:** Standard pH buffer solutions ($\text{pH } 4.00$, $7.00$, $10.00$) contain mild chemical preservatives. Target analyte samples may span volatile acidic or basic extremes.
+* **Glass Electrode Fragility:** The combination pH probe consists of a delicate glass bulb filled with electrolyte solution ($3\text{M KCl}$). Applying structural pressure or striking the beaker walls will shatter the bulb assembly.
+
+### 2.2 Personal Protective Equipment (PPE)
+* Standard laboratory coat
+* Safety glasses
+* Nitrile gloves
+
+## 3. Operating Procedure
+
+### 3.1 Pre-Operational Verification
+1. Remove the glass combination electrode carefully from its storage sleeve containing electrode storage solution. 
+2. **Never store a pH electrode in deionized water**, as this leaches internal ions and degrades the glass membrane's sensitivity.
+3. Rinse the electrode body and tip thoroughly using a stream of deionized water from a wash bottle. 
+4. Gently blot the glass bulb tip using a fresh Kimwipe to remove residual water drops. **Do not wipe or rub the glass bulb**, as this introduces an interfering static electrical charge on the membrane.
+
+### 3.2 Multi-Point Calibration Protocol
+Calibration must be executed daily prior to initiating any sample analysis. A minimum 2-point calibration is required; use a 3-point routine if the sample range is broad or unknown.
+1. Press the **Calibrate** key on the Accumet digital interface console.
+2. Immerse the clean electrode tip into the standard $\text{pH } 7.00$ yellow buffer solution. Swirl gently to clear localized air bubbles around the junction.
+3. Wait for the digital interface to display a stable indicator symbol (`STABLE`). Press **Enter** or **Accept** to store the midpoint value.
+4. Rinse the probe with deionized water and blot dry gently.
+5. Repeat the immersion procedure using a secondary reference buffer chosen to bracket the expected analyte region:
+   * **Acidic samples:** Use $\text{pH } 4.00$ pink buffer solution.
+   * **Basic samples:** Use $\text{pH } 10.00$ blue buffer solution.
+6. Once stable, accept the second point. Verify that the instrument slope calculation displayed falls within acceptable functional bounds: $95\% - 105\%$. If the slope lies outside this tolerance, clean the junction and redo the calibration.
+
+### 3.3 Sample pH Analysis
+1. Place your target liquid sample on a stable bench surface. If using a magnetic stir plate, adjust it to a low, uniform speed to avoid striking the immersion probe.
+2. Submerge the rinsed and blotted probe assembly into the sample solution ensuring that the liquid level completely covers the internal porous reference junction.
+3. Allow the reading to stabilize. Record the final pH value alongside the current solution temperature, as pH is highly temperature-dependent.
+
+### 3.4 Storage & Shutdown
+1. Rinse the electrode exhaustively with deionized water post-run to clear sample matrix tracks.
+2. Insert the probe back into its designated storage container filled with dedicated electrode storage solution or $3\text{M KCl}$ solution. Ensure the junction bulb remains fully immersed.
+3. Leave the Accumet console unit powered on or in stand-by configuration according to the specific manufacturer profile.
+
+## 4. Maintenance & Calibration Troubleshooting
+* **Electrode Rejuvenation:** If the slope drifts or responsiveness lags, soak the electrode tip in $0.1\text{M HCl}$ for 15 minutes to clear inorganic fouling, followed by a thorough rinse and an overnight soak in storage solution.
+* **Fill Hole Verification:** For refillable electrodes, ensure the top filling hole slider collar is uncovered during calibration and analysis runs to facilitate normal electrolyte flow rates.
+
+---
+
+## 5. Documentation Sign-off
+
+| Role | Name | Signature | Date |
+|------|------|-----------|------|
+| **Prepared By:** | | | |
+| **Reviewed By:** | | | |
+| **Approved By:** | | | |

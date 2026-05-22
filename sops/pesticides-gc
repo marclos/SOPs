@@ -1,0 +1,75 @@
+---
+title: "Standard Operating Procedure: Pesticide Analysis via Gas Chromatography"
+subtitle: "Document ID: L309"
+author: "Environmental Analysis Lab"
+date: "2026-05-22"
+version: "1.0"
+status: "Draft"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+---
+
+## 1. Purpose & Scope
+This Standard Operating Procedure (SOP) defines the protocols for the extraction verification, instrument parameters, operation, and safety requirements for analyzing trace pesticide residues using Gas Chromatography (GC) coupled with specialized detectors (e.g., ECD, MS). This procedure is applicable to targeted environmental matrices including water, soil extracts, and plant tissue digests.
+
+## 2. Safety & Hazards
+
+### 2.1 Primary Hazards
+* **Chemical Toxicity:** Pesticide standards, target analytes, and extraction solvents (e.g., hexane, dichloromethane, acetone) are highly toxic, carcinogenic, or neurotoxic. Inhalation of vapors or skin absorption poses a severe chronic health risk.
+* **Thermal Hazards:** The GC injection port ($200^\circ\text{C} - 250^\circ\text{C}$) and internal column oven ($50^\circ\text{C} - 320^\circ\text{C}$) operate at extreme temperatures capable of causing instant, severe thermal burns.
+* **High Pressure Gas Cylinders:** High-pressure carrier gas cylinders (Helium, Nitrogen, Hydrogen) pose mechanical risks if dropped or if regulators fail. Hydrogen carrier gas also presents an explicit explosion risk if allowed to leak into the oven chamber.
+
+### 2.2 Personal Protective Equipment (PPE)
+* Standard laboratory coat (fully fastened)
+* Chemical splash goggles
+* Nitrile or specialized solvent-resistant gloves (e.g., Viton/Silver Shield if handling bulk chlorinated solvents)
+
+## 3. Equipment & Material Specifications
+* **Gas Chromatograph:** System equipped with an autosampler, split/splitless capillary inlet, fused-silica capillary column (e.g., 30m x 0.25mm ID, 0.25µm film thickness optimized for semi-volatiles), and analytical detector.
+* **Consumables:** High-purity GC vials with PTFE-lined septa, replacement injection port liners, and low-bleed septa.
+
+## 4. Operating Procedure
+
+### 4.1 Gas Cylinder & Inlet Verification
+1. Verify that gas supply cylinders (Carrier: Helium/Nitrogen; Detector makeup: Nitrogen) have sufficient pressure ($> 500\text{ psi}$). 
+2. Confirm the delivery pressure on the secondary regulator is set precisely to manufacturer specifications (typically $60 - 80\text{ psi}$).
+3. Check the moisture, oxygen, and hydrocarbon traps inline with the gas lines. Replace if indicator dyes signal saturation.
+
+### 4.2 Injection Port Maintenance (Pre-Run Check)
+*Note: Ensure the inlet temperature drop indicates it is cool ($< 50^\circ\text{C}$) before opening.*
+1. Replace the injection port septum daily or every 50–100 injections to prevent coring fragments from dropping into the liner and causing sample degradation or carrier gas leaks.
+2. Inspect the glass inlet liner. If visible charring, particulate matter, or matrix deposits are apparent, replace the liner with a clean, deactivated split/splitless liner containing a deactivated quartz wool plug.
+
+### 4.3 Sequence Setup & Sample Loading
+1. Prepare standard calibration curves from certified pesticide reference materials spanning expected concentration intervals (e.g., $10\ \mu\text{g/L}$ to $1000\ \mu\text{g/L}$).
+2. Aliquot target sample extracts into clean $2\text{ mL}$ amber glass GC autosampler vials to minimize photodegradation of light-sensitive pesticides. Cap tightly with PTFE-faced septa crimp/screw tops.
+3. Program the injection sequence inside the software data system. Incorporate the following structural sequence controls:
+   * Solvent blanks (Hexane/Acetone matrix check)
+   * Multi-point calibration curves
+   * Mid-run continuing calibration verification (CCV) standards every 10 injections
+   * Duplicate sample matrices
+
+### 4.4 Initiating the GC Profile Run
+1. Load the targeted analytical method on the workstation software. Verify parameters:
+   * **Inlet:** Splitless mode for trace analysis; Temperature: $250^\circ\text{C}$.
+   * **Oven Temperature Program:** Initial $50^\circ\text{C}$ (hold 1 min), ramp $10^\circ\text{C/min}$ to $300^\circ\text{C}$ (hold 5 min).
+   * **Carrier Gas Flow:** Constant flow mode at $1.2\text{ mL/min}$ Helium.
+2. Allow all zones (Inlet, Oven, Detector) to reach setpoint equilibrium. The software status bar must toggle to a solid `Ready` state.
+3. Initiate the programmed sequence. Monitor the initial automated injection cycle to ensure the autosampler syringe articulates cleanly without bending the needle assembly.
+
+## 5. Post-Analysis & Standby Shutdown
+1. Review chromatogram baselines for peak symmetry, column bleed spikes, or retention time shifting. Resolve shifts by trimming $10 - 20\text{ cm}$ off the front edge of the analytical column if necessary.
+2. Upon sequence completion, load a dedicated `Standby` method. This method drops the oven temperature below $50^\circ\text{C}$ and lowers inlet/detector temperatures to prolong column life, while maintaining a reduced carrier gas purge flow to prevent column phase oxidation.
+
+---
+
+## 6. Documentation Sign-off
+
+| Role | Name | Signature | Date |
+|------|------|-----------|------|
+| **Prepared By:** | | | |
+| **Reviewed By:** | | | |
+| **Approved By:** | | | |

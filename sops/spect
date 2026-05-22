@@ -1,0 +1,69 @@
+---
+title: "Standard Operating Procedure: Spectrophotometer Operation"
+subtitle: "Document ID: L201"
+author: "Environmental Analysis Lab"
+date: "2026-05-22"
+version: "1.0"
+status: "Draft"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+---
+
+## 1. Purpose & Scope
+This Standard Operating Procedure (SOP) outlines the guidelines for the calibration, operation, and basic care of UV-Visible spectrophotometers within the laboratory. This equipment is utilized to measure the absorbance or transmittance of light through a liquid sample at specified wavelengths, commonly applied in quantifying chemical concentrations, nutrient analysis, and kinetic assays.
+
+## 2. Safety & Hazards
+
+### 2.1 Primary Hazards
+* **Chemical Exposure:** Handling hazardous liquid reagents, acids, or solvents within cuvettes poses an exposure risk via skin contact or inhalation.
+* **Optical Hazards:** High-intensity light sources (specifically Deuterium UV lamps) emit ultraviolet radiation that can cause eye strain or damage if exposed directly without protective housing.
+* **Glass Breakage:** Mishandling fragile quartz or glass cuvettes can result in puncture wounds and exposure to enclosed chemical solutions.
+
+### 2.2 Personal Protective Equipment (PPE)
+* Standard laboratory coat
+* Safety glasses (UV-blocking preferred if housing is open during diagnostics)
+* Nitrile gloves
+
+## 3. Operating Procedure
+
+### 3.1 Initial Instrument Warm-Up
+1. Verify the sample chamber is empty and close the instrument cover lid.
+2. Toggle the main power switch to the `ON` position.
+3. Allow the spectrophotometer lamps (Tungsten/Deuterium or Xenon flash) to warm up and stabilize for **at least 15–20 minutes** prior to standard calibration or data collection.
+
+### 3.2 Cuvette Management & Preparation
+1. **Material Selection:** Choose appropriate cuvettes based on the targeted wavelength range:
+   * **Plastic/Disposable:** Suitable for visible spectrum analysis ($400\text{ nm} - 700\text{ nm}$).
+   * **Quartz:** Mandatory for ultraviolet range analysis ($200\text{ nm} - 350\text{ nm}$). Standard glass/plastic absorbs UV light, yielding invalid data.
+2. Fill cuvettes to approximately 75% capacity to prevent overflow spills into the optical chamber.
+3. Wipe the exterior optical surfaces of the cuvette clean with a lint-free laboratory wipe (e.g., Kimwipe) to remove fingerprints, droplets, or smudges. Hold cuvettes exclusively by the frosted side walls.
+
+### 3.3 Calibration and Blanking
+1. Set the instrument to the designated analytical wavelength using the digital interface controls.
+2. Insert a "Blank" cuvette filled with the background matrix solvent (typically deionized water or reagent blank solution) into the sample holder slot. Align the clear polished face of the cuvette with the internal light path indicator beam.
+3. Close the sample chamber lid fully.
+4. Press the **Zero** or **Blank** button. Wait for the digital display readout to stabilize at $0.000\text{ Abs}$ (or $100.0\%\text{ Transmittance}$).
+
+### 3.5 Sample Measurement
+1. Remove the blank cuvette and insert the prepared sample cuvette, ensuring identical orientation to the internal light path.
+2. Close the sample chamber lid immediately to eliminate stray ambient light interference.
+3. Record the stable absorbance or transmittance value displayed on the digital user interface.
+4. For sequential arrays, check the blank calibration baseline every 10–15 samples to compensate for lamp intensity drift.
+
+## 4. Post-Operational Cleanup
+1. Remove the final sample cuvette from the internal chamber; never leave liquid samples stored inside the instrument.
+2. Discard sample solutions into designated chemical waste containers and rinse reusable cuvettes thoroughly with deionized water.
+3. Turn off the main instrument power switch and close the chamber lid to protect the internal optical lenses from dust settling.
+
+---
+
+## 5. Documentation Sign-off
+
+| Role | Name | Signature | Date |
+|------|------|-----------|------|
+| **Prepared By:** | | | |
+| **Reviewed By:** | | | |
+| **Approved By:** | | | |

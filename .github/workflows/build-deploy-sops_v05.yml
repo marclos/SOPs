@@ -122,6 +122,17 @@ jobs:
       # ── Render ────────────────────────────────────────────────────────
       - name: Render site
         run: quarto render
+        
+      # ── Make Quarto's Pandoc available to R scripts ───────────────────
+      - name: Add Quarto Pandoc to PATH
+        run: |
+          PANDOC_DIR="$(dirname "$(quarto pandoc --version 2>/dev/null || true)")"
+          QUARTO_PANDOC="$(dirname "$(which quarto)")/../share/pandoc"
+          if [ -d "$QUARTO_PANDOC" ]; then
+            echo "$QUARTO_PANDOC" >> "$GITHUB_PATH"
+          else
+            echo "$(quarto --paths | head -1)/bin/tools" >> "$GITHUB_PATH"
+          fi
 
       # ── Collect individual PDFs ───────────────────────────────────────
       - name: Collect PDFs

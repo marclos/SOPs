@@ -1,0 +1,75 @@
+---
+title: "Standard Operating Procedure: Clinical Centrifuge"
+subtitle: "Document ID: L108"
+author: "Environmental Analysis Lab"
+date: "2026-05-22"
+version: "0.1"
+status: "Draft"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+---
+
+## 1. Purpose & Scope
+This Standard Operating Procedure (SOP) outlines the standard operating, balancing, safety, and maintenance protocols for benchtop clinical centrifuges. This equipment is used to separate fluid components of varying densities through high-speed centrifugal forces, commonly applied to sample sedimentations, chemical phase separations, and cell pelleting.
+
+## 2. Safety & Hazards
+
+### 2.1 Primary Hazards
+* **Mechanical / Kinetic Hazards:** High rotational speeds generate immense kinetic energy. An unbalanced rotor can cause violent mechanical shifting, structural fracturing, and high-velocity projectile ejection.
+* **Aerosol Generation:** Sample tube breakage, unsecured caps, or fluid boil-over during high-speed runs can generate invisible biohazardous, toxic, or radioactive aerosols within the chamber.
+* **Physical Contact:** Attempting to force the lid open or slow down a spinning rotor by hand can cause severe lacerations or finger amputations.
+
+### 2.2 Personal Protective Equipment (PPE)
+* Standard laboratory coat
+* Safety glasses or face shield (if handling high-volume or biohazardous samples)
+* Nitrile gloves
+
+## 3. Operating Procedure
+
+### 3.1 Pre-Run Inspection
+1. Ensure the centrifuge is placed on a level, stable, vibration-resistant benchtop surface away from edge boundaries.
+2. Open the lid and inspect the rotor chamber. Verify it is clean, dry, and free of debris, residues, or broken glass from past runs.
+3. Check that the rotor is securely fastened to the spindle shaft using the integrated thumb screw or rotor wrench. Ensure bucket pivots move freely if using a swinging-bucket rotor.
+
+### 3.2 Critical Balancing Protocol
+Failure to balance the rotor is the leading cause of centrifuge damage and injury.
+1. All tubes placed opposite each other **must have equal mass** to within $\pm 0.1 \text{ g}$. Do not balance by volume alone, as different fluids have different densities.
+2. If spinning an odd number of sample tubes, prepare an explicit "balance tube" using an identical tube type filled with water or an equal-density fluid to match the mass of the single sample exactly.
+3. Load tubes symmetrically across the geometric center of the rotor. For swinging bucket rotors, all buckets must be populated in their slots even if some remain empty of sample tubes.
+
+### 3.3 Initiating the Run
+1. Firmly close the centrifuge lid. Press down until the mechanical safety lock clicks into place.
+2. Program the target velocity (expressed as revolutions per minute [RPM] or relative centrifugal force [RCF/g-force]) and run duration according to your specific assay protocol.
+3. Press the **Start** button.
+4. **Mandatory Attendance:** The operator must remain stationary at the unit until it reaches full operating speed. 
+   * If you observe excessive vibration, grinding noises, wobbling, or heavy shaking, **press the STOP button immediately** or disconnect main power if unsafe to approach. Do not attempt to open the lid.
+
+### 3.4 Post-Run Sample Retrieval
+1. Allow the rotor to come to a complete, unassisted dead stop. Never attempt to manually brake or disrupt the rotor spin.
+2. The automatic lid lock mechanism will click open once internal sensors detect zero velocity.
+3. Open the lid slowly and inspect the tubes *in situ* for signs of failure, crack lines, or fluid leakage before removal.
+
+## 4. Emergency Spill & Material Failure Response
+
+### 4.1 Standard Biohazardous/Chemical Spill Within Chamber
+1. If a tube breaks during operation, immediately press **Stop**. Leave the lid fully closed.
+2. Turn off the main power switch and unplug the machine.
+3. **Aerosol Mitigation:** Keep the centrifuge lid closed for **at least 30 minutes** to allow generated droplets and aerosols to settle onto interior surfaces.
+4. Post-evacuation, equip appropriate PPE (face shield, heavy-duty gloves), carefully remove broken glass fragments with forceps, and disinfect the rotor and chamber using a 10% bleach solution or 70% isopropanol (depending on chemical compatibility with rotor finish). Rinse thoroughly with clean water and dry.
+
+## 5. Maintenance & Care
+* **Decontamination:** Wipe down the aluminum rotor weekly to prevent salt corrosion and pitting.
+* **O-Ring Care:** Inspect and lightly lubricate rubber lid seals with silicone grease every six months to preserve structural sealing integrity.
+
+---
+
+## 6. Documentation Sign-off
+
+| Role | Name | Signature | Date |
+|------|------|-----------|------|
+| **Prepared By:** | | | |
+| **Reviewed By:** | | | |
+| **Approved By:** | | | |
