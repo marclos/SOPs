@@ -1,0 +1,374 @@
+---
+# =============================================================================
+# SOP L416 -- Cation Exchange Capacity (CEC)
+# =============================================================================
+
+title: "Cation Exchange Capacity (CEC)"
+sop-number: "SOP-L416"
+author:
+  - name: ""
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-23"
+    author: ""
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the determination of cation exchange capacity (CEC)
+and exchangeable base cations (Ca^2+^, Mg^2+^, K^+^, Na^+^) in soils
+using the ammonium acetate (NH~4~OAc) saturation and displacement
+method at pH 7.0 [@sumner1996; @chapman1965]. CEC quantifies the
+total capacity of a soil to hold exchangeable cations and is a
+fundamental indicator of soil fertility, buffering capacity, and
+nutrient retention [@sparks2003].
+
+
+## 2. Scope
+
+- **Applies to:** Air-dried, sieved (< 2 mm) mineral soils from all
+  EA Program sites. The method is also applicable to compost and organic
+  amendments, although CEC values for highly organic materials should be
+  interpreted with caution due to pH-dependent charge [@sumner1996].
+- **Does not apply to:** Soils dominated by variable-charge minerals
+  (e.g., highly weathered Oxisols, Andisols) where CEC measured at
+  pH 7.0 may overestimate field-effective CEC. For such soils, a
+  compulsive exchange method at field pH may be more appropriate
+  [@gillman1979]. Does not apply to water samples.
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Prepare extracts, record and report results |
+| New Students      | Complete training before independent use    |
+
+### Required Training
+
+Students using this SOP should be trained on:
+
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+- [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical:** 1 M ammonium acetate (NH~4~OAc) is a mild irritant.
+  Concentrated acetic acid used in reagent preparation is corrosive
+  and produces irritating vapors. Concentrated ammonium hydroxide
+  (NH~4~OH) used for pH adjustment is caustic and produces strong
+  vapors. Ethanol (95%) is flammable.
+- **Physical:** Reciprocating shaker can pinch fingers if containers
+  are not secured properly.
+:::
+
+::: {.callout-important}
+### Engineering Controls
+Prepare 1 M NH~4~OAc from concentrated reagents inside a chemical fume
+hood. Once diluted to working concentration, the solution can be used
+on the open bench.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or chemical splash goggles (goggles when preparing
+      reagents)
+- [ ] Laboratory coat
+- [ ] Nitrile gloves
+- [ ] Closed-toed shoes
+
+### Emergency Procedures
+
+For chemical spill or splash, refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) or call
+campus safety. For acetic acid or ammonium hydroxide contact with eyes,
+flush immediately with water for at least 15 minutes.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                            | Notes                                    |
+|:--------------------------------|:-----------------------------------------|
+| Reciprocating or end-over-end shaker | For batch extraction               |
+| Centrifuge                      | Capable of 2,000--3,000 x g              |
+| Vacuum filtration apparatus     | Buchner funnel, flask, and vacuum source  |
+| Analytical balance              | Readable to 0.01 g                       |
+| Drying oven                     | 105 °C for moisture subsamples           |
+| pH meter                       | For adjusting NH~4~OAc to pH 7.0         |
+| Volumetric flasks               | 1 L and 250 mL                           |
+
+### Reagents and Consumables
+
+| Item                            | Notes                                    |
+|:--------------------------------|:-----------------------------------------|
+| Ammonium acetate (NH~4~OAc)    | ACS reagent grade; or prepare from glacial acetic acid + NH~4~OH |
+| Ethanol (95%)                   | Reagent grade, to wash excess NH~4~^+^   |
+| Potassium chloride (KCl), 2 M  | Or 10% NaCl; for displacing adsorbed NH~4~^+^ |
+| Whatman #42 filter paper        | Or equivalent, for filtration            |
+| Centrifuge tubes (50 mL)        | Polypropylene                            |
+| Volumetric flasks (250 mL)      | For collecting leachates                 |
+| DI water                        |                                          |
+
+
+## 6. Procedure
+
+### 6.1 Reagent Preparation
+
+#### 1 M Ammonium Acetate (pH 7.0)
+
+1. In a fume hood, dissolve 77.08 g of ammonium acetate
+   (NH~4~C~2~H~3~O~2~, MW 77.08) in approximately 800 mL of DI water
+   in a 1 L volumetric flask.
+2. Adjust to pH 7.0 using dilute acetic acid (to lower pH) or dilute
+   ammonium hydroxide (to raise pH).
+3. Bring to 1 L with DI water and mix thoroughly.
+
+::: {.callout-tip}
+### Tip
+Prepare this solution the day before extraction. It is stable
+indefinitely at room temperature in a capped container. Verify pH
+before each use, as CO~2~ absorption can lower the pH over time.
+:::
+
+#### 2 M Potassium Chloride
+
+Prepare per [SOP-L403, Section 7.1](SOP-L403-nitrate-ammonium-kcl.qmd).
+
+### 6.2 Moisture Subsample
+
+A companion gravimetric moisture determination is required to express
+results on an oven-dry soil basis.
+
+1. Set aside approximately 10 g of soil from each sample for moisture
+   determination
+2. Dry at 105 °C for 24 hours and record the dry weight
+3. Calculate gravimetric moisture content per
+   [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
+
+### 6.3 Ammonium Acetate Saturation (Exchangeable Cations)
+
+1. Weigh 5.00 g of air-dried, sieved (< 2 mm) soil into a labeled
+   50 mL centrifuge tube. Record the exact mass to 0.01 g.
+
+2. Add 30 mL of 1 M NH~4~OAc (pH 7.0) to the tube. Cap securely.
+
+3. Place on the reciprocating shaker for 30 minutes.
+
+4. Centrifuge at 2,000--3,000 x g for 5 minutes. Decant the clear
+   supernatant into a 250 mL volumetric flask. Retain the soil pellet.
+
+5. Repeat steps 2--4 two additional times (three extractions total),
+   combining all supernatants in the same 250 mL volumetric flask.
+
+6. Bring the combined extract to 250 mL with 1 M NH~4~OAc and mix.
+   This extract is used for exchangeable cation analysis (Ca^2+^,
+   Mg^2+^, K^+^, Na^+^) by ICP-OES, AAS, or flame photometry
+   [@helmke1996].
+
+### 6.4 Ethanol Wash
+
+The ethanol wash removes excess (non-exchanged) NH~4~^+^ from the
+soil without displacing adsorbed NH~4~^+^ [@sumner1996].
+
+1. Add 30 mL of 95% ethanol to the soil pellet remaining in the
+   centrifuge tube. Cap and shake for 5 minutes.
+
+2. Centrifuge at 2,000--3,000 x g for 5 minutes. Discard the
+   supernatant ethanol wash.
+
+3. Repeat the ethanol wash two additional times (three washes total).
+
+::: {.callout-important}
+### Critical Step
+Incomplete removal of excess NH~4~OAc will cause CEC to be
+overestimated. Ensure three full ethanol washes with clear supernatant
+before proceeding.
+:::
+
+### 6.5 Displacement of Adsorbed NH~4~^+^ (CEC Determination)
+
+1. Add 30 mL of 2 M KCl to the washed soil pellet. Cap and shake for
+   30 minutes.
+
+2. Centrifuge at 2,000--3,000 x g for 5 minutes. Decant the
+   supernatant into a clean 250 mL volumetric flask.
+
+3. Repeat steps 1--2 two additional times (three displacements total),
+   combining all supernatants in the same flask.
+
+4. Bring the combined KCl extract to 250 mL with 2 M KCl and mix.
+
+5. Determine the NH~4~^+^-N concentration in this extract by
+   colorimetric analysis (indophenol blue method), flow injection, or
+   steam distillation [@mulvaney1996]. This value represents the CEC.
+
+### 6.6 Cleanup
+
+1. Discard spent soil in standard solid waste.
+2. Rinse all glassware and centrifuge tubes with DI water.
+3. Return reagents to labeled storage areas.
+
+
+## 7. Calculations
+
+### 7.1 Cation Exchange Capacity
+
+$$
+\text{CEC (cmol}_c\text{/kg)} = \frac{C_{\text{NH}_4} \times V_{\text{KCl}} \times 10^{-3}}{m_{\text{dry}} \times 14.01} \times 100
+$$
+
+where:
+
+- $C_{\text{NH}_4}$ = NH~4~^+^-N concentration in the KCl displacement
+  extract (mg N/L)
+- $V_{\text{KCl}}$ = total volume of combined KCl extract (mL; typically
+  250 mL)
+- $m_{\text{dry}}$ = oven-dry equivalent mass of soil (g), calculated as
+  $m_{\text{air\text{-}dry}} / (1 + \theta_g)$
+- 14.01 = atomic mass of nitrogen (g/mol)
+- The factor of 100 converts from mol~c~/g to cmol~c~/kg
+
+### 7.2 Exchangeable Cations
+
+Report exchangeable Ca^2+^, Mg^2+^, K^+^, and Na^+^ from the
+NH~4~OAc extract (§6.3) in cmol~c~/kg:
+
+$$
+\text{Exchangeable cation (cmol}_c\text{/kg)} =
+\frac{C_{\text{cation}} \times V_{\text{extract}} \times \text{valence}}{M_{\text{cation}} \times m_{\text{dry}}} \times \frac{1}{10}
+$$
+
+where $C_{\text{cation}}$ is in mg/L, $V_{\text{extract}}$ in mL,
+$M_{\text{cation}}$ is the atomic mass (Ca = 40.08, Mg = 24.31,
+K = 39.10, Na = 22.99), and valence is 2 for Ca and Mg and 1 for K
+and Na.
+
+### 7.3 Base Saturation
+
+$$
+\text{Base Saturation (\%)} =
+\frac{\text{Ca}^{2+} + \text{Mg}^{2+} + \text{K}^{+} + \text{Na}^{+}}{\text{CEC}} \times 100
+$$
+
+where all values are in cmol~c~/kg.
+
+### 7.4 Interpretation
+
+| CEC (cmol~c~/kg) | Classification         | Typical Soil Textures       |
+|:------------------|:-----------------------|:----------------------------|
+| < 5               | Very low               | Sands, degraded tropicals   |
+| 5--15             | Low                    | Sandy loams, kaolinitic clays |
+| 15--25            | Medium                 | Loams, silt loams           |
+| 25--40            | High                   | Clay loams, smectitic soils |
+| > 40              | Very high              | Heavy clays, organic soils  |
+
+Source: adapted from @sparks2003 and @brady2008.
+
+
+## 8. Quality Control and Acceptance Criteria
+
+- Include a reagent blank (NH~4~OAc and KCl through the full procedure
+  without soil) in each batch. NH~4~^+^-N in the blank must be below
+  the method detection limit.
+- Run extraction duplicates on at least 10% of samples. Duplicate
+  results should agree within 10% RPD.
+- Include a laboratory reference soil with known CEC when available.
+- Sum of exchangeable base cations should not exceed CEC. If the sum
+  substantially exceeds CEC, suspect incomplete ethanol washing or
+  analytical error.
+- Verify NH~4~OAc pH is 7.0 ± 0.05 before each extraction batch.
+
+
+## 9. Waste Disposal
+
+| Waste Type                 | Container              | Disposal Method            |
+|:---------------------------|:-----------------------|:---------------------------|
+| NH~4~OAc extracts          | Drain with water       | Low hazard; drain permitted |
+| Ethanol washes             | Flammable waste carboy | EH&S pickup                |
+| KCl extracts               | Drain with water       | Low hazard; drain permitted |
+| Spent soil                 | Standard solid waste   | Trash                      |
+
+
+## 10. References
+
+- @sumner1996
+- @chapman1965
+- @sparks2003
+- @helmke1996
+- @mulvaney1996
+- @gillman1979
+- @brady2008
+- @ross1995
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+- [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
+- [SOP-L403 Nitrate and Ammonium -- KCl Extraction](SOP-L403-nitrate-ammonium-kcl.qmd)
+
+::: {#refs}
+:::
+
+
+## 11. Training Record
+
+Before performing CEC analysis independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Review the SDS for ammonium acetate, acetic acid, ammonium
+   hydroxide, and ethanol
+4. Complete [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
+   training
+5. Observe a trained operator perform the full extraction sequence
+6. Perform the procedure under supervision with acceptable duplicate
+   precision (RPD < 10%)
+7. Be signed off by the PI or lab manager
+
+
+## Appendix A: Example Calculation {.appendix}
+
+```{r}
+#| label: cec-calculation-example
+#| echo: true
+#| eval: false
+
+# --- CEC Calculation Example ---
+
+# Input values
+nh4_mg_L    <- 42.5    # NH4-N in KCl displacement extract (mg/L)
+vol_KCl_mL  <- 250     # Total volume of combined KCl extract (mL)
+mass_air_g  <- 5.00    # Air-dried soil mass (g)
+moisture    <- 0.032   # Gravimetric moisture content (decimal)
+
+# Oven-dry mass
+mass_dry_g <- mass_air_g / (1 + moisture)
+
+# CEC in cmol_c/kg
+cec <- (nh4_mg_L * vol_KCl_mL * 1e-3) / (mass_dry_g * 14.01) * 100
+
+cat(sprintf("Oven-dry soil mass: %.3f g\n", mass_dry_g))
+cat(sprintf("CEC: %.1f cmol_c/kg\n", cec))
+
+# --- Exchangeable Cation Example (Ca from NH4OAc extract) ---
+ca_mg_L      <- 85.2   # Ca concentration in NH4OAc extract (mg/L)
+vol_ext_mL   <- 250    # Total volume of NH4OAc extract (mL)
+ca_mw        <- 40.08  # Atomic mass of Ca
+ca_valence   <- 2
+
+exch_ca <- (ca_mg_L * vol_ext_mL * ca_valence) / (ca_mw * mass_dry_g) / 10
+
+cat(sprintf("Exchangeable Ca: %.1f cmol_c/kg\n", exch_ca))
+```
