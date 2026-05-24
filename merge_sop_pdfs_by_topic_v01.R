@@ -5,13 +5,11 @@
 # hyperlinked TOC cover page.
 #
 # Groups (by the numeric portion of the SOP number):
-#   1. Safety and Administration                     (001--099)
-#   2. Equipment and Instrumentation                 (100--299)
-#   3. Water and Aquatic Methods                     (300--399)
-#   4. Soil Methods                                  (400--499)
-#   5. Air and Atmospheric Methods                   (500--599)
-#   6. Biology, Ecology, and Molecular Biology       (600--799)
-#   7. Data Management and Analysis                  (800--899)
+#   1. Safety, Equipment, Instrumentation, and Data  (001--299, 800--899)
+#   2. Water and Aquatic Methods                     (300--399)
+#   3. Soil Methods                                  (400--499)
+#   4. Air and Atmospheric Methods                   (500--599)
+#   5. Biology, Ecology, and Molecular Biology       (600--799)
 #
 # Field (F) and Lab (L) SOPs are combined within each group.
 # Only groups containing at least one SOP produce a PDF.
@@ -29,13 +27,11 @@
 #     geometry, hyperref
 #
 # Output:
-#   docs/EA-SOPs-Safety-Admin.pdf
-#   docs/EA-SOPs-Equipment-Instrumentation.pdf
+#   docs/EA-SOPs-Safety-Equipment-Data.pdf
 #   docs/EA-SOPs-Water.pdf
 #   docs/EA-SOPs-Soil.pdf
 #   docs/EA-SOPs-Air.pdf
 #   docs/EA-SOPs-Biology-MolBio.pdf
-#   docs/EA-SOPs-Data-Management.pdf
 # =============================================================================
 
 library(qpdf)
@@ -44,31 +40,71 @@ library(qpdf)
 # 0. Find Pandoc (Quarto bundles its own; rmarkdown needs to know where)
 # ---------------------------------------------------------------------------
 # If RSTUDIO_PANDOC is already set (e.g. by the CI workflow), honour it.
-# Otherwise, look in the typical Quarto install location.
-if (Sys.getenv("RSTUDIO_PANDOC") == "") {
+if (nzchar(Sys.getenv("RSTUDIO_PANDOC"))) {
+  cat(sprintf("Using Pandoc from RSTUDIO_PANDOC: %s\n",
+              Sys.getenv("RSTUDIO_PANDOC")))
+} else {
   quarto_pandoc <- Sys.which("quarto")
   if (nzchar(quarto_pandoc)) {
-    quarto_prefix <- system2("quarto", "--paths", stdout = TRUE)[1]
-    pandoc_candidates <- list.files(
-      quarto_prefix, pattern = "^pandoc$",
-      full.names = TRUE, recursive = TRUE
+    quarto_bin <- tryCatch(
+      system2("quarto", "--paths", stdout = TRUE, stderr = FALSE),
+      error = function(e) character(0)
     )
-    if (length(pandoc_candidates) >= 1) {
-      Sys.setenv(RSTUDIO_PANDOC = dirname(pandoc_candidates[1]))
-      cat("Set RSTUDIO_PANDOC to:", dirname(pandoc_candidates[1]), "\n")
+    pandoc_candidates <- c(
+      file.path(dirname(quarto_pandoc), "tools"),
+      if (length(quarto_bin) >= 1) file.path(quarto_bin[1], "bin", "tools"),
+      dirname(quarto_pandoc)
+    )
+    for (p in pandoc_candidates) {
+      if (file.exists(file.path(p, "pandoc")) ||
+          file.exists(file.path(p, "pandoc.exe"))) {
+        Sys.setenv(RSTUDIO_PANDOC = p)
+        cat(sprintf("Using Pandoc from Quarto: %s\n", p))
+        break
+      }
+    }
+  }
+
+  if (!rmarkdown::pandoc_available()) {
+    common_paths <- c(
+      "/opt/quarto/bin/tools",
+      "/opt/quarto/bin/tools/x86_64",
+      "/usr/local/bin",
+      file.path(Sys.getenv("HOME"), ".local", "bin"),
+      "/usr/bin",
+      "/opt/hostedtoolcache/quarto"
+    )
+    for (p in common_paths) {
+      if (file.exists(file.path(p, "pandoc"))) {
+        Sys.setenv(RSTUDIO_PANDOC = p)
+        cat(sprintf("Using Pandoc from fallback: %s\n", p))
+        break
+      }
+    }
+  }
+
+  if (!rmarkdown::pandoc_available()) {
+    pandoc_path <- Sys.which("pandoc")
+    if (nzchar(pandoc_path)) {
+      Sys.setenv(RSTUDIO_PANDOC = dirname(pandoc_path))
+      cat(sprintf("Using Pandoc from system PATH: %s\n", dirname(pandoc_path)))
+    } else {
+      stop("Pandoc not found. Install Pandoc or Quarto and ensure it is on PATH.")
     }
   }
 }
 
+cat(sprintf("Pandoc version: %s\n", rmarkdown::pandoc_version()))
+
 # ---------------------------------------------------------------------------
-# 1. Locate the individual SOP PDFs
+# 1. Locate the individual PDFs
 # ---------------------------------------------------------------------------
 args <- commandArgs(trailingOnly = TRUE)
 pdf_dir <- if (length(args) >= 1) args[1] else "docs/pdfs"
 
 if (!dir.exists(pdf_dir)) {
   stop("PDF directory not found: ", pdf_dir,
-       "\nRun 'quarto render' first, or pass the correct path.")
+       "\nRun 'quarto render' first, then try again.")
 }
 
 pdf_files <- sort(list.files(pdf_dir, pattern = "\\.pdf$", full.names = TRUE))
@@ -129,13 +165,12 @@ sop_nums_int <- vapply(sop_numbers, extract_num, integer(1))
 
 assign_group <- function(num) {
   if (is.na(num)) return("other")
-  if (num >= 1   && num <= 99)  return("safety_admin")
-  if (num >= 100 && num <= 299) return("equip_instruments")
+  if (num >= 1   && num <= 299) return("safety_equip_data")
   if (num >= 300 && num <= 399) return("water")
   if (num >= 400 && num <= 499) return("soil")
   if (num >= 500 && num <= 599) return("air")
   if (num >= 600 && num <= 799) return("bio_molbio")
-  if (num >= 800 && num <= 899) return("data_mgmt")
+  if (num >= 800 && num <= 899) return("safety_equip_data")
   "other"
 }
 
@@ -145,15 +180,10 @@ groups <- vapply(sop_nums_int, assign_group, character(1))
 # 4. Define group metadata
 # ---------------------------------------------------------------------------
 group_info <- list(
-  safety_admin = list(
-    title    = "Safety and Administration",
-    subtitle = "General safety, field safety, lab safety, and administrative protocols",
-    filename = "EA-SOPs-Safety-Admin.pdf"
-  ),
-  equip_instruments = list(
-    title    = "Equipment and Instrumentation",
-    subtitle = "Lab and field equipment operation, analytical instrument procedures, and calibration",
-    filename = "EA-SOPs-Equipment-Instrumentation.pdf"
+  safety_equip_data = list(
+    title    = "Safety, Equipment, Instrumentation, and Data Management",
+    subtitle = "General safety, lab and field equipment, instrument operation, QC, and data workflows",
+    filename = "EA-SOPs-Safety-Equipment-Data.pdf"
   ),
   water = list(
     title    = "Water and Aquatic Methods",
@@ -174,11 +204,6 @@ group_info <- list(
     title    = "Biology, Ecology, and Molecular Biology",
     subtitle = "Biodiversity surveys, organism sampling, DNA extraction, sequencing, and bioinformatics",
     filename = "EA-SOPs-Biology-MolBio.pdf"
-  ),
-  data_mgmt = list(
-    title    = "Data Management and Analysis",
-    subtitle = "RStudio, GitHub, QC/QA, GIS, statistics, and instrument data workflows",
-    filename = "EA-SOPs-Data-Management.pdf"
   )
 )
 
@@ -254,40 +279,63 @@ build_group_pdf <- function(group_key, idx) {
 
     # Pad before this SOP if the running total is odd (meaning the next
     # page, running_pages+1, would be even = back side in duplex).
-    pad <- ""
+    pad_before <- ""
     if (running_pages %% 2 == 1) {
-      pad <- "\\null\\newpage   % blank pad -- keeps next SOP on odd page\n"
-      running_pages <<- running_pages + 1
+      pad_before <- "\\null\\thispagestyle{empty}\\newpage\n"
+      running_pages <<- running_pages + 1L
     }
-    running_pages <<- running_pages + np
 
-    sprintf(
-      "%s%s\n\\includepdf[pages=-, pagecommand={%s}]{%s}",
-      pad, anchor_cmd, "", g_pdf_abs[i]
-    )
+    if (np == 1L) {
+      block <- sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
+                        anchor_cmd, g_pdf_abs[i])
+    } else {
+      block <- sprintf(
+        "\\includepdf[pages=1, pagecommand={%s}]{%s}\n\\includepdf[pages=2-, pagecommand={}]{%s}",
+        anchor_cmd, g_pdf_abs[i], g_pdf_abs[i]
+      )
+    }
+
+    running_pages <<- running_pages + np
+    paste0(pad_before, block)
   }, character(1))
 
-  # -- Assemble LaTeX master --
-  output_dir <- dirname(pdf_dir)
-  output_file <- file.path(output_dir, info$filename)
+  cat(sprintf("  Total pages (with padding): %d\n", running_pages))
 
+  # LaTeX document
   master_tex <- paste0(
-'\\documentclass[letterpaper]{article}
+'\\documentclass[11pt,letterpaper]{article}
+
 \\usepackage[margin=1in]{geometry}
 \\usepackage{pdfpages}
 \\usepackage{longtable}
-\\usepackage[table]{xcolor}
-\\usepackage{hyperref}
-\\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\\usepackage{xcolor}
+\\usepackage[
+  colorlinks=true,
+  linkcolor=eablue,
+  urlcolor=eablue,
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfstartview=FitH
+]{hyperref}
+
+\\definecolor{eablue}{HTML}{0057B8}
+
 \\pagestyle{empty}
+
 \\begin{document}
 
 \\begin{center}
-{\\LARGE\\bfseries ', escape_latex(info$title), '}\\\\[6pt]
-{\\large ', escape_latex(info$subtitle), '}\\\\[4pt]
-{\\small EA Program -- Biogeochemistry Lab, Pomona College}\\\\[2pt]
-{\\small Compiled: \\today}
+  {\\Large\\textbf{\\textcolor{eablue}{EA Program -- Standard Operating Procedures}}}\\\\[6pt]
+  {\\large\\textbf{', escape_latex(info$title), '}}\\\\[4pt]
+  {\\normalsize Biogeochemistry Lab, Pomona College}\\\\[4pt]
+  {\\small\\textit{', escape_latex(info$subtitle), '}}\\\\[4pt]
+  {\\normalsize ', format(Sys.Date(), "%B %d, %Y"), '}
 \\end{center}
+
+\\vspace{12pt}
+
+\\section*{Table of Contents}
+\\noindent\\textit{Click any SOP number or title to jump to that procedure.}
 
 \\vspace{6pt}
 
@@ -300,23 +348,25 @@ build_group_pdf <- function(group_key, idx) {
 \\end{document}
 ')
 
-  # -- Compile --
+  # Compile
   build_dir <- tempdir()
-  tex_file  <- file.path(build_dir,
-                          paste0(tools::file_path_sans_ext(
-                            basename(output_file)), ".tex"))
+  tex_file  <- file.path(build_dir, paste0(
+    tools::file_path_sans_ext(info$filename), ".tex"
+  ))
   writeLines(master_tex, tex_file)
 
-  compiled_pdf <- tinytex::latexmk(tex_file, engine = "pdflatex",
-                                    clean = TRUE)
+  cat("  Compiling...\n")
+  compiled_pdf <- tinytex::latexmk(tex_file, engine = "pdflatex", clean = TRUE)
 
+  # Move to output
+  output_file <- file.path(dirname(pdf_dir), info$filename)
   file.copy(compiled_pdf, output_file, overwrite = TRUE)
 
   total_pages <- length(qpdf::pdf_length(output_file))
-  cat(sprintf("  -> %s (%d SOPs, %d pages)\n",
-              output_file, nrow(data.frame(idx)), total_pages))
+  cat(sprintf("  Done: %s (%d SOPs, %d pages)\n",
+              output_file, n, total_pages))
 
-  invisible(output_file)
+  output_file
 }
 
 # ---------------------------------------------------------------------------
