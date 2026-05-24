@@ -116,14 +116,13 @@ tbl-classes: table-sm
 
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
-| [F510](field_sops/SOP-F510-weather-monitoring.qmd) | Weather Monitoring and Field Meteorology | 0.1 |  |
 | [F501](field_sops/SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring (Sensors) | 0.1 | |
 | [F502](field_sops/SOP-F502-air-quality-portable-sensors.qmd) | Air Quality Monitoring (Portable Sensors) | 0.1 | |
 | [F503](field_sops/SOP-F503-particulate-matter-sampling.qmd) | Particulate Matter Sampling* | 0.1 |  |
 | [F504](field_sops/SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer (Field Deployment) | 1.0 | AC |
 | [F505](field_sops/SOP-F505-passive-air-samplers.qmd) | Passive Air Samplers (Diffusion Tubes) | 0.1 |  |
 | [F506](field_sops/SOP-F506-noise-level-monitoring.qmd) | Noise Level Monitoring | 0.1 |  |
-
+| [F510](field_sops/SOP-F510-weather-monitoring.qmd) | Weather Monitoring and Field Meteorology | 0.1 |  |
 ### Microbes, Plants, and Animals (F600--F699)
 
 | SOP   | Title                          | Current Rev. | Notes |
@@ -132,14 +131,14 @@ tbl-classes: table-sm
 | [F603](field_sops/SOP-F603-vegetation-transect-surveys.qmd) | Vegetation Transect Surveys | 0.1 | |
 | [F604](field_sops/SOP-F604-tree-dbh-forest-inventory.qmd) | Tree DBH and Forest Inventory | 0.1 |   |
 | [F605](field_sops/SOP-F605-leaf-area-index.qmd) | Leaf Area Index Measurement | 0.1 | |
-| [F606](field_sops/SOP-F606-canopy-cover.qmd/) | Canopy Cover (Densiometer and Hemispherical Photography) | 0.1 |  |
+| [F606](field_sops/SOP-F606-canopy-cover.qmd/) | Canopy Cover (Densiometer & Hemispherical Photography) | 0.1 |  |
 | [F608](field_sops/SOP-F608-plant-tissue-sampling.qmd) | Plant Tissue Sampling | 0.1 | |
 | [F610](field_sops/SOP-F610-macroinvertebrate-sampling.qmd) | Macroinvertebrate Sampling | 0.1 | |
 | [F611](field_sops/SOP-F611-pollinator-observation-surveys.qmd) | Pollinator Observation Surveys | 0.1 |   |
 | [F615](field_sops/SOP-F615-bird-point-counts.qmd) | Bird Point Count Surveys | 0.1 | |
 | [F620](field_sops/SOP-F620-camera-trap.qmd) | Camera Trap (CamPark T20) | 0.1 | |
-| [F621](field_sops/SOP-TBD.qmd) | *Acoustic Monitoring (Bioacoustics)* | -- | To be developed  |
-| [F622](field_sops/SOP-TBD.qmd) | *Small Mammal Trapping (Sherman Traps)* | -- | To be developed  |
+| [F621](field_sops/SOP-TBD.qmd) | *Acoustic Monitoring (Bioacoustics)* | -- | TBD  |
+| [F622](field_sops/SOP-TBD.qmd) | *Small Mammal Trapping (Sherman Traps)* | -- | TBD  |
 | [F630](field_sops/SOP-F630-drone-operations.qmd) | Drone Operations (DJI Matrice/Mavic) | 0.1 | |
 | [F631](field_sops/SOP-TBD.qmd) | *360 Camera* | -- | |
 
@@ -224,13 +223,13 @@ tbl-classes: table-sm
 | [L306](lab_sops/SOP-L306-bod5.qmd) | BOD5 (Biochemical Oxygen Demand) | 0.3 | |
 | [L307](lab_sops/SOP-L307-elisa-bpa-bpb-pesticides.qmd) | ELISA: BPA, BPB, Pesticides | 0.3 | |
 | [L308](lab_sops/SOP-L308-microplastics-water.qmd) | Microplastics in Water | 0.2 | |
-| [L309](lab_sops/SOP-TBD.qmd) | * Pesticide Analysis  --- Gas Chromotography* | -- | |
+| [L309](lab_sops/SOP-L309-pesticide-gc.qmd) | Pesticide Analysis  --- Gas Chromotography | -- | |
 | [L310](lab_sops/SOP-L310-chlorophyll-extraction.qmd) | Chlorophyll Extraction and Analysis | 0.1 | |
 | [L311](lab_sops/SOP-L311-dissolved-organic-carbon-water.qmd)  | Dissolved (NPOC) Organic Carbon (Water) -- Shimadzu |0.1 |  |
 | [L312](lab_sops/SOP-L312-tss-tds.qmd)  | Total Suspended Solids / Total Dissolved Solids | 0.1 |  |
-| [L313](lab_sops/SOP-TBD.qmd)  | *Metals in Water (ICP-MS Prep and Acidification)* | -- | To be developed |
-| [L314](lab_sops/SOP-TBD.qmd)  | *Anion Analysis (Ion Chromatography)* | -- | To be developed |
-| [L315](lab_sops/SOP-TBD.qmd)  | *eDNA Lab Processing (Filtration, Extraction, Inhibition Testing)* | -- | To be developed |
+| [L313](lab_sops/SOP-L313-metals-icpms-prep.qmd)  | Metals in Water (ICP-MS Prep and Acidification) | 0.1 |  |
+| [L314](lab_sops/SOP-TBD.qmd)  | *Anion Analysis (Ion Chromatography)* | -- | Not Available |
+| [L315](lab_sops/SOP-TBD.qmd)  | *eDNA Lab Processing (Filtration, Extraction, Inhibition Testing)* | -- | TBD |
 
 ### Soil and Carbon Analysis (L400--L499)
 

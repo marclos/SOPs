@@ -1,0 +1,227 @@
+---
+# =============================================================================
+# SOP L309 -- Pesticide Analysis via Gas Chromatography
+# =============================================================================
+
+title: "Pesticide Analysis via Gas Chromatography"
+sop-number: "SOP-L309"
+author:
+  - name: ""
+    affiliation: "Environmental Analysis Lab"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2026-05-22"
+    author: ""
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP defines the protocols for extraction verification, instrument
+parameters, operation, and safety requirements for analyzing trace
+pesticide residues using Gas Chromatography (GC) coupled with specialized
+detectors (e.g., ECD, MS).
+
+
+## 2. Scope
+
+- **Applies to:** Targeted pesticide residue analysis in environmental
+  water, soil extracts, and plant tissue digests using GC-ECD or GC-MS.
+- **Does not apply to:** LC-amenable pesticides, non-targeted screening,
+  or preparative-scale separations.
+- **Location:** Environmental analysis laboratories.
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Follow this SOP, report deviations          |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical toxicity:** Pesticide standards, target analytes, and
+  extraction solvents (e.g., hexane, dichloromethane, acetone) are highly
+  toxic, carcinogenic, or neurotoxic. Inhalation of vapors or skin
+  absorption poses a severe chronic health risk.
+- **Thermal:** The GC injection port (200--250 °C) and internal column
+  oven (50--320 °C) operate at extreme temperatures capable of causing
+  instant, severe thermal burns.
+- **High-pressure gas cylinders:** Carrier gas cylinders (helium,
+  nitrogen, hydrogen) pose mechanical risks if dropped or if regulators
+  fail. Hydrogen carrier gas also presents an explosion risk if allowed
+  to leak into the oven chamber.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or chemical splash goggles
+- [ ] Laboratory coat (fully fastened)
+- [ ] Nitrile or specialized solvent-resistant gloves (e.g., Viton or
+      Silver Shield if handling bulk chlorinated solvents)
+
+### Emergency Procedures
+
+In case of chemical spill, gas leak, or equipment failure, refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) or call
+campus safety. For compressed gas emergencies, evacuate the area and
+contact EH&S.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                         | Notes                                       |
+|:-----------------------------|:--------------------------------------------|
+| Gas chromatograph            | With autosampler, split/splitless capillary inlet, and detector (ECD or MS) |
+| Fused-silica capillary column | e.g., 30 m x 0.25 mm ID, 0.25 µm film thickness, optimized for semi-volatiles |
+| Carrier gas cylinders        | Helium or nitrogen (carrier); nitrogen (detector makeup) |
+| Inline gas traps             | Moisture, oxygen, and hydrocarbon traps      |
+
+### Consumables
+
+| Item                            | Notes                                    |
+|:--------------------------------|:-----------------------------------------|
+| GC vials (2 mL amber glass)    | With PTFE-lined septa                    |
+| Replacement injection port liners | Deactivated split/splitless with quartz wool plug |
+| Low-bleed septa                 | Replace daily or every 50--100 injections |
+| Certified pesticide reference standards | Spanning expected concentration range |
+| Extraction solvents             | Hexane, dichloromethane, acetone (GC grade) |
+
+
+## 6. Procedure
+
+### 6.1 Gas Cylinder and Inlet Verification
+
+1. Verify that gas supply cylinders have sufficient pressure (> 500 psi).
+2. Confirm the delivery pressure on the secondary regulator is set to
+   manufacturer specifications (typically 60--80 psi).
+3. Check the moisture, oxygen, and hydrocarbon traps inline with the gas
+   lines. Replace if indicator dyes signal saturation.
+
+### 6.2 Injection Port Maintenance (Pre-Run Check)
+
+::: {.callout-important}
+### Hot Inlet
+Ensure the inlet temperature has dropped below 50 °C before opening the
+inlet assembly.
+:::
+
+1. Replace the injection port septum daily or every 50--100 injections to
+   prevent coring fragments from dropping into the liner, which can cause
+   sample degradation or carrier gas leaks.
+2. Inspect the glass inlet liner. If visible charring, particulate matter,
+   or matrix deposits are apparent, replace the liner with a clean,
+   deactivated split/splitless liner containing a deactivated quartz wool
+   plug.
+
+### 6.3 Sequence Setup and Sample Loading
+
+1. Prepare standard calibration curves from certified pesticide reference
+   materials spanning expected concentration intervals (e.g., 10 µg/L to
+   1000 µg/L).
+2. Aliquot target sample extracts into clean 2 mL amber glass GC
+   autosampler vials to minimize photodegradation of light-sensitive
+   pesticides. Cap tightly with PTFE-faced septa crimp or screw tops.
+3. Program the injection sequence in the data system software.
+   Incorporate the following structural sequence controls:
+   - Solvent blanks (hexane/acetone matrix check)
+   - Multi-point calibration curves
+   - Mid-run continuing calibration verification (CCV) standards every
+     10 injections
+   - Duplicate sample matrices
+
+### 6.4 Initiating the GC Run
+
+1. Load the targeted analytical method on the workstation software.
+   Verify parameters:
+   - **Inlet:** Splitless mode for trace analysis; temperature 250 °C.
+   - **Oven temperature program:** Initial 50 °C (hold 1 min), ramp
+     10 °C/min to 300 °C (hold 5 min).
+   - **Carrier gas flow:** Constant flow mode at 1.2 mL/min helium.
+2. Allow all zones (inlet, oven, detector) to reach setpoint equilibrium.
+   The software status bar must toggle to a solid `Ready` state.
+3. Initiate the programmed sequence. Monitor the initial automated
+   injection cycle to ensure the autosampler syringe articulates cleanly
+   without bending the needle assembly.
+
+### 6.5 Post-Analysis and Standby Shutdown
+
+1. Review chromatogram baselines for peak symmetry, column bleed spikes,
+   or retention time shifting.
+
+::: {.callout-tip}
+### Retention Time Drift
+If retention times shift significantly, trimming 10--20 cm off the front
+edge of the analytical column can restore performance. Document the trim
+in the instrument logbook.
+:::
+
+2. Upon sequence completion, load a dedicated `Standby` method. This
+   method drops the oven temperature below 50 °C and lowers
+   inlet/detector temperatures to prolong column life, while maintaining
+   a reduced carrier gas purge flow to prevent column phase oxidation.
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Initial calibration must meet a correlation coefficient of
+  $r^2 \geq 0.995$ across the calibration range.
+- CCV standards (run every 10 injections) must recover within ±15% of
+  the true value; if recovery falls outside this window, halt the
+  sequence and re-calibrate.
+- Method blanks must be free of target analyte peaks above the method
+  detection limit.
+- Duplicate RPD should not exceed 20%.
+
+
+## 8. Waste Disposal
+
+| Waste Type                 | Container                  | Disposal Method          |
+|:---------------------------|:---------------------------|:-------------------------|
+| Spent solvents and rinses  | Halogenated or non-halogenated waste jug (as appropriate) | EH&S pickup |
+| Used septa, liners, vials  | Solid chemical waste       | Standard hazardous waste |
+| Expired pesticide standards | Hazardous waste container  | EH&S pickup              |
+
+
+## 9. Maintenance
+
+- **Daily:** Replace septum if injection count exceeds 50--100. Inspect
+  liner for charring or buildup.
+- **Weekly:** Check gas trap indicators; verify carrier gas supply
+  pressure.
+- **As needed:** Trim or replace the analytical column if baseline
+  degradation or retention time shifts persist after liner replacement.
+- **Annually:** Full instrument preventive maintenance per manufacturer
+  schedule.
+
+
+## 10. References
+
+- @usepa8081b [EPA Method 8081B: Organochlorine Pesticides by GC]
+- @usepa8270e [EPA Method 8270E: Semivolatile Organic Compounds by GC/MS]
+- @mcnair2019
+- Equipment manufacturer manuals
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+
+
+## 11. Training Record
+
+Training is documented in the lab training log. Before working
+independently, personnel must:
+
+1. Read this SOP in full
+2. Observe a trained operator perform the procedure
+3. Perform the procedure under supervision
+4. Be signed off by the PI or designated trainer

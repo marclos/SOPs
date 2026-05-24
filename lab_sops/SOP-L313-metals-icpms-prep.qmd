@@ -1,0 +1,210 @@
+---
+# =============================================================================
+# SOP L313 -- Metals in Water (ICP-MS Prep and Acidification)
+# =============================================================================
+
+title: "Metals in Water (ICP-MS Prep and Acidification)"
+sop-number: "SOP-L313"
+author:
+  - name: ""
+    affiliation: "Environmental Analysis Lab"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2026-05-22"
+    author: ""
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the acidification, trace metal preservation, and
+digestion protocols for aqueous environmental samples prior to Inductively
+Coupled Plasma Mass Spectrometry (ICP-MS) analysis. It covers dissolved
+metals (filtration + acidification) and total recoverable metals (acid
+digestion).
+
+
+## 2. Scope
+
+- **Applies to:** Environmental water samples (surface water, groundwater,
+  runoff, wastewater) requiring dissolved or total recoverable metals
+  analysis by ICP-MS.
+- **Does not apply to:** Solid matrices (soils, sediments, tissues), total
+  metals by XRF, or organic analyte preparation.
+- **Location:** Environmental analysis laboratories.
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Follow this SOP, report deviations          |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Chemical burns and corrosive vapors:** Concentrated nitric acid
+  (HNO~3~, 67--70%) is an extremely corrosive oxidizing agent. Contact
+  causes severe chemical burns. Vapors are highly damaging to respiratory
+  tissue.
+- **Hydrochloric acid:** Concentrated HCl produces corrosive fumes and
+  can cause burns on contact.
+:::
+
+::: {.callout-important}
+### Engineering Controls
+All acid dispensing, sample acidification, and hot block heating must be
+performed inside an active chemical fume hood.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or face shield
+- [ ] Laboratory coat
+- [ ] Acid-resistant nitrile gloves (double-gloving recommended)
+
+### Emergency Procedures
+
+In case of acid spill or chemical burn, refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) or call
+campus safety. For acid contact with skin or eyes, flush immediately with
+water for at least 15 minutes and seek medical attention.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                              | Notes                                    |
+|:----------------------------------|:-----------------------------------------|
+| Automated sample digestion block  | Hot block, programmable to 85--95 °C     |
+| Chemical fume hood                | Required for all acid work               |
+| Analytical balance                | If gravimetric volume verification is needed |
+
+### Reagents and Consumables
+
+| Item                              | Notes                                    |
+|:----------------------------------|:-----------------------------------------|
+| Nitric acid (HNO~3~)             | Ultra-pure, trace metal grade            |
+| Hydrochloric acid (HCl)          | Trace metal grade; used when target analytes include Ag, Sb, or high Fe |
+| Certified metal-free membrane filters | 0.45 µm DigiFILTERS or syringe filters |
+| Metal-free polypropylene tubes    | 15 mL or 50 mL autosampler tubes         |
+| Ribbed watch glasses or reflux caps | To prevent evaporation loss during digestion |
+| Narrow-range pH strips            | To verify pH < 2                         |
+| High-purity DI water              | For volume adjustment and blanks         |
+| Multi-element stock solution      | Certified reference material for LFB spikes |
+
+
+## 6. Procedure
+
+### 6.1 Sample Preservation and Dissolved Metals Fraction
+
+1. **Filtration:** Filter the raw, un-acidified sample immediately upon
+   collection or arrival through a certified 0.45 µm metal-free membrane
+   filter. Discard the first 5 mL of filtrate to rinse the filter matrix.
+   Collect remaining filtrate into a clean polypropylene tube.
+
+2. **Acidification:** Add high-purity trace metal grade HNO~3~ dropwise
+   to the sample container to achieve a final matrix concentration of 2%
+   (v/v). For example, add 1.0 mL concentrated HNO~3~ per 50 mL sample
+   matrix.
+
+3. Verify pH is < 2 using a narrow-range pH strip. Store acidified
+   samples for at least 16 hours prior to analysis to ensure proper metal
+   desorption from container walls [@usepa200_8].
+
+### 6.2 Total Recoverable Metals Digestion (Hot Block)
+
+1. Transfer a well-mixed 50.0 mL portion of unfiltered sample into a
+   clean digestion tube.
+
+2. Working inside a fume hood, add 1.0 mL of trace metal grade HNO~3~
+   and 0.5 mL of trace metal grade HCl.
+
+3. Place the digestion tube into the hot block. Fit with a ribbed watch
+   glass or vapor reflux cap to prevent evaporation loss.
+
+4. Program the block heater to 85--95 °C. Heat the sample for 2 hours
+   without allowing the solution to boil.
+
+5. Remove from heat, allow to cool to room temperature, and adjust back
+   to the original 50.0 mL volume mark using high-purity DI water. If
+   visible particulates remain, filter the digestate to prevent ICP-MS
+   nebulizer clogging.
+
+::: {.callout-tip}
+### Avoiding Boil-Over
+Monitor samples during the first 15--20 minutes of heating. If the
+solution begins to bump or boil, reduce the block temperature by 5 °C.
+Loss of sample volume through boiling invalidates the digestion.
+:::
+
+### 6.3 Shutdown and Cleanup
+
+1. Allow the hot block to cool before removing tubes.
+2. Rinse all non-disposable glassware and equipment with 10% (v/v) HNO~3~
+   followed by three rinses of DI water.
+3. Dispose of acid waste per §8 below.
+
+
+## 7. Quality Control and Acceptance Criteria
+
+| QC Element                          | Requirement                            |
+|:------------------------------------|:---------------------------------------|
+| Method blank                        | Process 50 mL DI water through full procedure; analyte concentrations must be below the method detection limit |
+| Laboratory fortified blank (LFB)    | Spike multi-element stock into DI water and carry through digestion; recovery must be 85--115% |
+| Laboratory fortified matrix (LFM)   | Spike a field sample; recovery 70--130% |
+| Duplicate samples                   | RPD ≤ 20%                              |
+| Calibration verification            | Initial and continuing calibration per instrument SOP |
+
+See @usepa200_8 and @apha2012 for additional QC guidance.
+
+
+## 8. Waste Disposal
+
+| Waste Type              | Container                    | Disposal Method          |
+|:------------------------|:-----------------------------|:-------------------------|
+| Acid-preserved samples  | Acid waste carboy            | EH&S pickup              |
+| Spent acid rinses       | Acid waste carboy            | EH&S pickup              |
+| Used filters            | Solid chemical waste         | Standard hazardous waste |
+| Empty acid bottles      | Triple-rinsed, labels defaced | Glass recycling          |
+
+
+## 9. Maintenance
+
+- **Each use:** Wipe down the hot block surface and fume hood sill after
+  acid work.
+- **Monthly:** Inspect digestion tubes for etching or discoloration;
+  replace as needed.
+- **As needed:** Replace pH strips and membrane filters before expiration
+  dates.
+
+
+## 10. References
+
+- @usepa200_8
+- @usepa3015a
+- @beauchemin2017
+- @apha2012
+- Equipment manufacturer manuals
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+
+
+## 11. Training Record
+
+Training is documented in the lab training log. Before working
+independently, personnel must:
+
+1. Read this SOP in full
+2. Observe a trained operator perform the procedure
+3. Perform the procedure under supervision
+4. Be signed off by the PI or designated trainer
