@@ -55,7 +55,7 @@ jackets <- list(
     name        = "dustjacket-water",
     title       = "WATER AND AQUATIC METHODS",
     subtitle    = "Field Sampling and Laboratory Analysis for Water Quality",
-    image       = "images/Hazard_sign",
+    image       = "images/dustjacket-water",
     image_width = "5.0in",
     spine       = "WATER AND AQUATIC METHODS",
     target_pdf  = "docs/EA-SOPs-Water.pdf"
@@ -75,7 +75,7 @@ jackets <- list(
     name        = "dustjacket-air",
     title       = "AIR AND ATMOSPHERIC METHODS",
     subtitle    = "Field Monitoring and Laboratory Analysis for Air Quality",
-    image       = "images/Hazard_sign",
+    image       = "images/dustjacket-air",
     image_width = "5.0in",
     spine       = "AIR AND ATMOSPHERIC METHODS",
     target_pdf  = "docs/EA-SOPs-Air.pdf"

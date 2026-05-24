@@ -1,0 +1,204 @@
+---
+# =============================================================================
+# SOP L312 -- Total Suspended Solids (TSS) and Total Dissolved Solids (TDS)
+# =============================================================================
+
+title: "Total Suspended Solids (TSS) and Total Dissolved Solids (TDS)"
+sop-number: "SOP-L312"
+author:
+  - name: ""
+    affiliation: "Environmental Analysis Lab"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "1.0"
+
+revision-history:
+  - version: "1.0"
+    date: "2026-05-22"
+    author: ""
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This SOP describes the gravimetric determination of Total Suspended Solids
+(TSS) and Total Dissolved Solids (TDS) in environmental water samples
+(e.g., surface water, groundwater, runoff). TSS represents the portion of
+solids retained by a glass fiber filter, while TDS represents the portion
+that passes through the filter and is dried to constant weight in a vessel.
+
+
+## 2. Scope
+
+- **Applies to:** Environmental water samples analyzed for TSS and TDS by
+  gravimetric methods.
+- **Does not apply to:** Settleable solids, volatile suspended solids, or
+  non-aqueous matrices.
+- **Location:** Environmental analysis laboratories.
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Follow this SOP, report deviations          |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Thermal:** Drying ovens (103--180 °C) and muffle furnaces can cause
+  severe thermal burns. Always use heat-resistant crucible tongs and
+  thermal gloves when handling hot apparatus.
+- **Vacuum/Implosion:** Vacuum filtration assemblies operate under reduced
+  pressure. Ensure filtration flasks are borosilicate glass and free of
+  visible cracks to eliminate implosion risks.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Laboratory coat
+- [ ] Nitrile gloves
+- [ ] Heat-resistant thermal gloves (when handling hot dishes, filters,
+      or oven contents)
+
+### Emergency Procedures
+
+In case of burn or equipment failure, refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) or call
+campus safety.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                            | Notes                                      |
+|:--------------------------------|:-------------------------------------------|
+| Vacuum filtration apparatus     | Buchner funnel, flask, and vacuum pump      |
+| Analytical balance              | Capable of weighing to ±0.1 mg             |
+| Drying oven                     | Regulated at 103--105 °C (TSS) and 180 ±2 °C (TDS) |
+| Desiccator                      | With active color-indicating silica gel     |
+| Blunt forceps                   | For filter handling                         |
+| Graduated cylinder              | For measuring sample volume                 |
+
+### Consumables
+
+| Item                            | Notes                                      |
+|:--------------------------------|:-------------------------------------------|
+| Glass microfiber filter disks   | e.g., Whatman 934-AH, 1.5 µm pore size    |
+| Evaporating dishes              | Porcelain or high-silica glass             |
+| Aluminum weigh pans             | For filter drying                          |
+| Deionized (DI) water            |                                            |
+
+
+## 6. Procedure
+
+### 6.1 Filter and Dish Preparation
+
+1. **TSS filter prep:** Place a glass fiber filter on the filtration
+   apparatus. Apply vacuum and wash with three successive 20 mL volumes
+   of DI water. Continue vacuum until all trace water is removed.
+   Transfer the filter to an aluminum weigh pan and dry in an oven at
+   103--105 °C for 1 hour. Cool in a desiccator to room temperature and
+   weigh to determine the tare mass ($B_{\text{TSS}}$).
+
+2. **TDS dish prep:** Clean an evaporating dish and heat in an oven at
+   180 ±2 °C for 1 hour. Cool completely in a desiccator and record the
+   stable tare mass ($B_{\text{TDS}}$).
+
+### 6.2 Filtration and Sample Analysis
+
+1. Assemble the pre-weighed filter pad into the filtration funnel and wet
+   with a small volume of DI water to seal it against the porous plate.
+   Turn on the vacuum.
+
+2. Shake the sample bottle vigorously to achieve homogeneous particle
+   distribution. Measure a known sample volume ($V$, typically 100 mL to
+   500 mL depending on turbidity) using a graduated cylinder.
+
+3. Pour the measured sample into the filter funnel. Wash the cylinder and
+   funnel walls with three successive 10 mL aliquots of DI water,
+   allowing total drainage between washings.
+
+4. **For TSS:** Carefully remove the filter pad from the funnel using
+   blunt forceps. Place it back in its aluminum pan and dry in the oven
+   at 103--105 °C for at least 1 hour. Cool in the desiccator and weigh
+   to constant mass ($A_{\text{TSS}}$).
+
+5. **For TDS:** Transfer the entire filtrate volume from the filter flask
+   quantitatively into the pre-weighed evaporating dish. Place the dish
+   into the drying oven at 180 ±2 °C until all liquid evaporates
+   completely. Dry for at least an additional hour, cool inside the
+   desiccator, and weigh to find the final mass ($A_{\text{TDS}}$).
+
+::: {.callout-tip}
+### Constant Mass
+"Constant mass" means that successive weighings (after additional drying
+cycles of at least 1 hour) agree within ±0.5 mg.
+:::
+
+### 6.3 Shutdown and Cleanup
+
+1. Discard used filters in solid waste.
+2. Rinse filtration apparatus thoroughly with DI water.
+3. Return evaporating dishes and tongs to storage after cooling.
+4. Turn off the vacuum pump and drying oven if no other users need them.
+
+
+## 7. Calculations
+
+$$
+\text{TSS (mg/L)} = \frac{(A_{\text{TSS}} - B_{\text{TSS}}) \times 1{,}000{,}000}{V \text{ (mL)}}
+$$
+
+$$
+\text{TDS (mg/L)} = \frac{(A_{\text{TDS}} - B_{\text{TDS}}) \times 1{,}000{,}000}{V \text{ (mL)}}
+$$
+
+Where:
+
+- $A$ = weight of dry filter or dish plus residue (g)
+- $B$ = tare weight of clean filter or dish (g)
+- $V$ = sample volume (mL)
+
+
+## 8. Quality Control and Acceptance Criteria
+
+- Run a method blank (DI water through the full procedure) with each
+  batch. The blank result should be less than the method detection limit.
+- Duplicate samples should agree within ±10% relative percent difference.
+- If the measured residue mass is less than 2.5 mg, a larger sample
+  volume should be used.
+
+
+## 9. Waste Disposal
+
+| Waste Type            | Container             | Disposal Method          |
+|:----------------------|:----------------------|:-------------------------|
+| Used glass fiber filters | Solid waste bin     | Standard solid waste     |
+| Filtered water samples | Drain                | If no hazardous analytes |
+
+
+## 10. References
+
+- APHA, AWWA, WEF. *Standard Methods for the Examination of Water and
+  Wastewater.* Method 2540 D (TSS) and 2540 C (TDS).
+- Equipment manufacturer manuals.
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+
+
+## 11. Training Record
+
+Training is documented in the lab training log. Before working
+independently, personnel must:
+
+1. Read this SOP in full
+2. Observe a trained operator perform the procedure
+3. Perform the procedure under supervision
+4. Be signed off by the PI or designated trainer

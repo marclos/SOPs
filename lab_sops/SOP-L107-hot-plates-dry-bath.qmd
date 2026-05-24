@@ -1,0 +1,198 @@
+---
+# =============================================================================
+# SOP L107 -- Hot Plates and Dry Bath
+# =============================================================================
+
+title: "Hot Plates and Dry Bath"
+sop-number: "SOP-L107"
+author:
+  - name: ""
+    affiliation: "Environmental Analysis Lab"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-22"
+    author: ""
+    changes: "Initial draft"
+---
+
+## 1. Purpose
+
+This SOP describes the safe operation, maintenance, and hazard mitigation
+for laboratory hot plates, stirring hot plates, and digital dry bath heaters
+used within the environmental analysis laboratories.
+
+
+## 2. Scope
+
+- **Applies to:** Hot plates, stirring hot plates, and digital dry bath
+  (heat block) heaters used for sample heating, digestion, reagent
+  preparation, and enzymatic or thermal incubations.
+- **Does not apply to:** Muffle furnaces, water baths, autoclaves, or
+  microwave digestion systems.
+- **Location:** Environmental analysis laboratories.
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Follow this SOP, report deviations          |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Thermal:** Heating surfaces and metal blocks can exceed 300 °C and
+  remain dangerously hot long after power is disconnected. Contact causes
+  severe thermal burns.
+- **Fire and Explosion:** Heating volatile, flammable solvents on an
+  open-bench hot plate can ignite vapors. Standard hot plates are not
+  explosion-proof and may generate sparks from mechanical switches or
+  internal cycling.
+- **Electrical:** High current draw can overload circuits. Liquid
+  boil-overs or spills create immediate electrical short risks.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses or chemical splash goggles
+- [ ] Laboratory coat (fully buttoned)
+- [ ] Heat-resistant thermal gloves (when handling active or cooling
+      vessels, blocks, or glassware)
+- [ ] Nitrile gloves (underneath thermal gloves if chemical handling is
+      simultaneous)
+
+### Emergency Procedures
+
+In case of burn, spill, or equipment failure, refer to
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) or call
+campus safety.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                          | Location       | Notes                              |
+|:------------------------------|:---------------|:-----------------------------------|
+| Hot plate / stirring hot plate | Lab bench     | Ceramic, aluminum, or silicone-coated top plate |
+| Digital dry bath (heat block) | Lab bench      | Interchangeable aluminum blocks for various tube sizes |
+| PTFE-coated stir bars         | Supply drawer  | Various sizes                      |
+| External thermocouple probe   | Instrument drawer | For independent temperature verification |
+
+### Consumables
+
+| Item                        | Notes                                    |
+|:----------------------------|:-----------------------------------------|
+| Borosilicate glassware      | Pyrex or Kimax; certified for thermal stress |
+| Interchangeable aluminum blocks | Sized for 1.5 mL, 15 mL, or other tube formats |
+
+
+## 6. Procedure
+
+### 6.1 Pre-Operational Inspection
+
+1. Inspect the power cord and plug for fraying, exposed wires, or chemical
+   degradation. Do not use if damaged.
+2. Ensure the cord does not drape across or contact the heating surface.
+3. Verify that the heating surface and aluminum blocks are free of residual
+   chemical films, crusts, or signs of pitting. Clean with a damp cloth if
+   necessary (unit must be unplugged and cool).
+
+### 6.2 Sample and Vessel Preparation
+
+1. **Glassware inspection:** For hot plates, use only borosilicate
+   glassware (e.g., Pyrex, Kimax) certified for high thermal stress.
+   Inspect for star cracks, hairline fractures, or deep scratches. Discard
+   compromised glassware.
+2. **Dry bath alignment:** Ensure the interchangeable aluminum block
+   profile matches your specific sample tubes (e.g., 1.5 mL
+   microcentrifuge tubes vs. 15 mL conical tubes). Incorrect sizing
+   limits thermal contact and degrades temperature control accuracy.
+
+::: {.callout-important}
+### Sealed Containers
+Never heat completely sealed containers on a hot plate. Pressure buildup
+can cause catastrophic vessel failure.
+:::
+
+### 6.3 Operation and Parameter Adjustment
+
+1. Plug the unit directly into a grounded wall outlet. Avoid extension
+   cords or daisy-chained power strips due to high wattage requirements.
+2. Toggle the main power switch to the `ON` position.
+3. **Temperature control:** Set the target temperature via the digital
+   interface or analog dial.
+
+::: {.callout-tip}
+### External Temperature Probes
+If using an external temperature probe (thermocouple), ensure it is
+securely immersed in the solution and not resting directly against the
+bottom or side walls of the glassware.
+:::
+
+4. **Stirring control (if applicable):** Place the stir bar flat inside
+   the container. Turn the RPM dial slowly from zero to the target
+   velocity. Sudden adjustments can cause the stir bar to decouple (spin
+   erratically), requiring the dial to be reset to zero to re-engage.
+
+### 6.4 Shutdown and Post-Run Monitoring
+
+1. Turn off the heating and stirring functions by switching controls to
+   `0` or pressing `Stop`.
+2. Turn the main power switch to `OFF`.
+3. **Hot Top warning:** If the unit features a "Hot Top" indicator light,
+   leave the unit plugged into the electrical outlet until the surface
+   drops below 50 °C and the warning light turns off.
+4. Once completely cool, wipe down any condensed moisture or accidental
+   spills.
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Verify the set temperature against an independent calibrated
+  thermometer or thermocouple before use with critical samples.
+- If the measured temperature deviates by more than ±5 °C from the set
+  point, remove the unit from service and arrange calibration or repair.
+
+
+## 8. Waste Disposal
+
+| Waste Type            | Container             | Disposal Method          |
+|:----------------------|:----------------------|:-------------------------|
+| Chemical residues     | Appropriate waste jug | Per chemical-specific SDS |
+| Damaged glassware     | Sharps container      | Standard glass waste     |
+
+
+## 9. Maintenance
+
+- **Monthly:** Wipe aluminum dry blocks with a mild laboratory detergent
+  to remove oxidation or mineral buildup. Never use steel wool or
+  abrasive pads.
+- **Annually:** Calibrate temperature readouts using a calibrated surface
+  thermometer or reference thermocouple.
+
+
+## 10. References
+
+- Equipment manufacturer manuals
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+
+
+## 11. Training Record
+
+Training is documented in the lab training log. Before working
+independently, personnel must:
+
+1. Read this SOP in full
+2. Observe a trained operator perform the procedure
+3. Perform the procedure under supervision
+4. Be signed off by the PI or designated trainer
