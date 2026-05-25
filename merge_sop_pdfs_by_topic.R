@@ -60,6 +60,15 @@ if (Sys.getenv("RSTUDIO_PANDOC") == "") {
   }
 }
 
+\makeatletter
+\newcommand{\startodddpage}{%
+  \clearpage
+  \ifodd\value{page}\else
+    \null\thispagestyle{empty}\clearpage
+  \fi
+}
+\makeatother
+
 # ---------------------------------------------------------------------------
 # 1. Locate the individual SOP PDFs
 # ---------------------------------------------------------------------------
@@ -248,23 +257,23 @@ build_group_pdf <- function(group_key, idx) {
   running_pages <- toc_pages
 
   # Build includepdf lines with odd-page padding
-  includepdf_lines <- vapply(seq_len(n), function(i) {
-    np <- g_pages[i]
-    anchor_cmd <- sprintf("\\hypertarget{%s}{}", g_anchors[i])
-
-    # Pad before this SOP if the running total is odd (meaning the next
-    # page, running_pages+1, would be even = back side in duplex).
-    pad <- ""
-    if (running_pages %% 2 == 1) {
-      pad <- "\\null\\newpage   % blank pad -- keeps next SOP on odd page\n"
-      running_pages <<- running_pages + 1
+  includepdf_lines <- vapply(seq_along(pdf_abs), function(i) {
+    anchor_cmd <- sprintf("\\hypertarget{%s}{}", anchors[i])
+    
+    # Force odd page start -- LaTeX handles the actual page count
+    start_cmd <- "\\startodddpage\n"
+    
+    if (pages[i] == 1L) {
+      block <- sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
+                       anchor_cmd, pdf_abs[i])
+    } else {
+      block <- sprintf(
+        "\\includepdf[pages=1, pagecommand={%s}]{%s}\n\\includepdf[pages=2-, pagecommand={}]{%s}",
+        anchor_cmd, pdf_abs[i], pdf_abs[i]
+      )
     }
-    running_pages <<- running_pages + np
-
-    sprintf(
-      "%s%s\n\\includepdf[pages=-, pagecommand={%s}]{%s}",
-      pad, anchor_cmd, "", g_pdf_abs[i]
-    )
+    
+    paste0(start_cmd, block)
   }, character(1))
 
   # -- Assemble LaTeX master --
@@ -293,7 +302,7 @@ build_group_pdf <- function(group_key, idx) {
 
 ', toc_table, '
 
-\\newpage
+\\startodddpage
 
 ', paste(includepdf_lines, collapse = "\n\n"), '
 

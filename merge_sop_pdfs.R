@@ -75,6 +75,15 @@ if (nzchar(Sys.getenv("RSTUDIO_PANDOC"))) {
   }
 }
 
+\makeatletter
+\newcommand{\startodddpage}{%
+  \clearpage
+  \ifodd\value{page}\else
+    \null\thispagestyle{empty}\clearpage
+  \fi
+}
+\makeatother
+
 cat(sprintf("Pandoc version: %s\n", rmarkdown::pandoc_version()))
 
 # =============================================================================
@@ -224,31 +233,22 @@ build_combined_pdf <- function(entries, output_file, title, subtitle) {
 
   # Build includepdf lines with odd-page padding
   includepdf_lines <- vapply(seq_along(pdf_abs), function(i) {
-    np <- pages[i]
     anchor_cmd <- sprintf("\\hypertarget{%s}{}", anchors[i])
-
-    # Pad before this SOP if we are currently at an even running total
-    # (meaning the next page would be even = back side).
-    pad_before <- ""
-    if (running_pages %% 2 == 1) {
-      # running_pages is odd, so the next page (running_pages+1) is even.
-      # Insert a blank page to push the SOP to an odd page.
-      pad_before <- "\\null\\thispagestyle{empty}\\newpage\n"
-      running_pages <<- running_pages + 1L
-    }
-
-    if (np == 1L) {
+    
+    # Force odd page start -- LaTeX handles the actual page count
+    start_cmd <- "\\startodddpage\n"
+    
+    if (pages[i] == 1L) {
       block <- sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
-                        anchor_cmd, pdf_abs[i])
+                       anchor_cmd, pdf_abs[i])
     } else {
       block <- sprintf(
         "\\includepdf[pages=1, pagecommand={%s}]{%s}\n\\includepdf[pages=2-, pagecommand={}]{%s}",
         anchor_cmd, pdf_abs[i], pdf_abs[i]
       )
     }
-
-    running_pages <<- running_pages + np
-    paste0(pad_before, block)
+    
+    paste0(start_cmd, block)
   }, character(1))
 
   cat(sprintf("  Total pages (with padding): %d\n", running_pages))
@@ -291,7 +291,7 @@ build_combined_pdf <- function(entries, output_file, title, subtitle) {
 
 ', toc_table, '
 
-\\newpage
+\\startodddpage
 
 ', paste(includepdf_lines, collapse = "\n\n"), '
 
