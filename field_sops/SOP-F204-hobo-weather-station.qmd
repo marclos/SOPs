@@ -26,7 +26,7 @@ unattended monitoring of air temperature, relative humidity, and light
 intensity at EA Program field sites. These compact loggers provide
 continuous microclimatic data for characterizing site conditions,
 supporting ecological studies, and supplementing manual weather
-observations ([SOP-F009](SOP-F009-weather-monitoring.qmd)).
+observations.
 
 
 ## 2. Scope
@@ -223,7 +223,6 @@ HOBOware to read out data.
 |:------|:---------------------------------------|:----------------------------------|
 | [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
 | [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation  | Deployment coordinates            |
-| [F009](SOP-F009-weather-monitoring.qmd) | Weather Monitoring        | Manual weather observations       |
 | [F203](SOP-F203-hobo-water-level-transducers.qmd) | HOBO Water Level Loggers | Companion instrument SOP |
 | [F501](SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring | Related temperature SOP |
 | [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub    | Data version control              |
