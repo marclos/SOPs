@@ -75,15 +75,6 @@ if (nzchar(Sys.getenv("RSTUDIO_PANDOC"))) {
   }
 }
 
-\makeatletter
-\newcommand{\startodddpage}{%
-  \clearpage
-  \ifodd\value{page}\else
-    \null\thispagestyle{empty}\clearpage
-  \fi
-}
-\makeatother
-
 cat(sprintf("Pandoc version: %s\n", rmarkdown::pandoc_version()))
 
 # =============================================================================
@@ -175,8 +166,9 @@ make_anchor <- function(x) {
 # ---------------------------------------------------------------------------
 # build_combined_pdf()
 #   Builds a single combined PDF from a subset of SOPs.
-#   Each SOP is padded with a blank page when needed so the next SOP
-#   starts on an odd (front) page for duplex printing.
+#   Each SOP starts on an odd (front) page for duplex printing.
+#   LaTeX's own page counter handles the odd-page enforcement via
+#   \startodddpage, so no R-side page estimation is needed.
 # ---------------------------------------------------------------------------
 build_combined_pdf <- function(entries, output_file, title, subtitle) {
   cat(sprintf("\nBuilding: %s (%d SOPs)\n", output_file, nrow(entries)))
@@ -207,51 +199,25 @@ build_combined_pdf <- function(entries, output_file, title, subtitle) {
     sep = "\n"
   )
 
-  # -----------------------------------------------------------------------
-  # Compute the number of TOC pages so we can track the running total.
-  # The TOC is rendered via longtable; we estimate roughly 40 rows per
-
-  # page (each row is ~2 lines with the hline). This is only used to
-  # decide whether the TOC itself ends on an odd or even page; a small
-  # miscount is harmless because we also pad after the TOC.
-  # For safety we round up.
-  # -----------------------------------------------------------------------
-  n_sops    <- nrow(entries)
-  toc_pages <- ceiling(n_sops / 38)  # conservative estimate
-
-  # After the TOC \newpage, the running total = toc_pages.
-  # We want the first SOP to start on an odd page, so if toc_pages is
-  # already odd we need a blank page to push the first SOP to page
-  # toc_pages+2 (even+1 = odd, but the \newpage itself moves us to
-  # toc_pages+1).
-  # Actually: after the TOC the \newpage moves us to page (toc_pages+1).
-  # If (toc_pages+1) is odd, great. If even, insert a blank page.
-  # But we handle this more simply: we track a running page total in R
-  # and pad after each SOP (including a "virtual" TOC block).
-
-  running_pages <- toc_pages  # pages consumed by the TOC
-
-  # Build includepdf lines with odd-page padding
+  # Build includepdf lines -- each SOP preceded by \startodddpage
   includepdf_lines <- vapply(seq_along(pdf_abs), function(i) {
     anchor_cmd <- sprintf("\\hypertarget{%s}{}", anchors[i])
-    
+
     # Force odd page start -- LaTeX handles the actual page count
     start_cmd <- "\\startodddpage\n"
-    
+
     if (pages[i] == 1L) {
       block <- sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
-                       anchor_cmd, pdf_abs[i])
+                        anchor_cmd, pdf_abs[i])
     } else {
       block <- sprintf(
         "\\includepdf[pages=1, pagecommand={%s}]{%s}\n\\includepdf[pages=2-, pagecommand={}]{%s}",
         anchor_cmd, pdf_abs[i], pdf_abs[i]
       )
     }
-    
+
     paste0(start_cmd, block)
   }, character(1))
-
-  cat(sprintf("  Total pages (with padding): %d\n", running_pages))
 
   # LaTeX document
   master_tex <- paste0(
@@ -271,6 +237,16 @@ build_combined_pdf <- function(entries, output_file, title, subtitle) {
 ]{hyperref}
 
 \\definecolor{eablue}{HTML}{0057B8}
+
+% --- Force next content to start on an odd page (duplex front side) ---
+\\makeatletter
+\\newcommand{\\startodddpage}{%
+  \\clearpage
+  \\ifodd\\value{page}\\else
+    \\null\\thispagestyle{empty}\\clearpage
+  \\fi
+}
+\\makeatother
 
 \\pagestyle{empty}
 

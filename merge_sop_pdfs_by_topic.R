@@ -60,15 +60,6 @@ if (Sys.getenv("RSTUDIO_PANDOC") == "") {
   }
 }
 
-\makeatletter
-\newcommand{\startodddpage}{%
-  \clearpage
-  \ifodd\value{page}\else
-    \null\thispagestyle{empty}\clearpage
-  \fi
-}
-\makeatother
-
 # ---------------------------------------------------------------------------
 # 1. Locate the individual SOP PDFs
 # ---------------------------------------------------------------------------
@@ -214,8 +205,9 @@ make_anchor <- function(x) {
 
 # ---------------------------------------------------------------------------
 # 6. Build and compile one PDF per group
-#    Each SOP is padded with a blank page when needed so the next SOP
-#    starts on an odd (front) page for duplex printing.
+#    Each SOP starts on an odd (front) page for duplex printing.
+#    LaTeX's own page counter handles the odd-page enforcement via
+#    \startodddpage, so no R-side page estimation is needed.
 # ---------------------------------------------------------------------------
 build_group_pdf <- function(group_key, idx) {
   info <- group_info[[group_key]]
@@ -249,30 +241,18 @@ build_group_pdf <- function(group_key, idx) {
     sep = "\n"
   )
 
-  # Estimate the number of TOC pages (conservative: ~38 rows per page)
-  toc_pages <- ceiling(n / 38)
+  # Build includepdf lines -- each SOP preceded by \startodddpage
+  includepdf_lines <- vapply(seq_len(n), function(i) {
+    anchor_cmd <- sprintf("\\hypertarget{%s}{}", g_anchors[i])
 
-  # Track the running page total so we know when to insert blank pages.
-  # After the TOC + \newpage we have consumed toc_pages pages.
-  running_pages <- toc_pages
-
-  # Build includepdf lines with odd-page padding
-  includepdf_lines <- vapply(seq_along(pdf_abs), function(i) {
-    anchor_cmd <- sprintf("\\hypertarget{%s}{}", anchors[i])
-    
     # Force odd page start -- LaTeX handles the actual page count
     start_cmd <- "\\startodddpage\n"
-    
-    if (pages[i] == 1L) {
-      block <- sprintf("\\includepdf[pages=-, pagecommand={%s}]{%s}",
-                       anchor_cmd, pdf_abs[i])
-    } else {
-      block <- sprintf(
-        "\\includepdf[pages=1, pagecommand={%s}]{%s}\n\\includepdf[pages=2-, pagecommand={}]{%s}",
-        anchor_cmd, pdf_abs[i], pdf_abs[i]
-      )
-    }
-    
+
+    block <- sprintf(
+      "\\includepdf[pages=-, pagecommand={%s}]{%s}",
+      anchor_cmd, g_pdf_abs[i]
+    )
+
     paste0(start_cmd, block)
   }, character(1))
 
@@ -288,6 +268,17 @@ build_group_pdf <- function(group_key, idx) {
 \\usepackage[table]{xcolor}
 \\usepackage{hyperref}
 \\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+% --- Force next content to start on an odd page (duplex front side) ---
+\\makeatletter
+\\newcommand{\\startodddpage}{%
+  \\clearpage
+  \\ifodd\\value{page}\\else
+    \\null\\thispagestyle{empty}\\clearpage
+  \\fi
+}
+\\makeatother
+
 \\pagestyle{empty}
 \\begin{document}
 
@@ -323,7 +314,7 @@ build_group_pdf <- function(group_key, idx) {
 
   total_pages <- length(qpdf::pdf_length(output_file))
   cat(sprintf("  -> %s (%d SOPs, %d pages)\n",
-              output_file, nrow(data.frame(idx)), total_pages))
+              output_file, n, total_pages))
 
   invisible(output_file)
 }
