@@ -1,0 +1,355 @@
+---
+# =============================================================================
+# SOP-L216: Dissecting and Compound Microscope
+# =============================================================================
+title: "Dissecting and Compound Microscope"
+sop-number: "SOP-L216"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-24"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## 1. Purpose
+
+This procedure describes the operation, image capture, and routine
+care of the dissecting (stereo) microscopes and compound light
+microscopes used in the EA Program laboratory. Dissecting microscopes
+provide low-to-moderate magnification (typically 7--45x) with a wide
+working distance and are used for sorting biological specimens, gross
+morphology, and sample preparation. Compound microscopes provide
+higher magnification (40--1000x) with transmitted illumination and are
+used for slide-mounted specimens requiring cellular or subcellular
+resolution [@murphy2012].
+
+For the Echo Labs Revolve hybrid microscope (which combines upright
+compound and inverted configurations with an iPad display), see
+[SOP-L211 Revolve Microscope](SOP-L211-revolve-microscope.qmd). The
+Revolve has specialized procedures that differ from the conventional
+microscopes described here.
+
+
+## 2. Scope
+
+- **Applies to:** All conventional dissecting (stereo) microscopes and
+  compound light microscopes in the EA Program laboratory, including
+  units with and without attached cameras
+- **Does not apply to:** The Echo Labs Revolve microscope (see
+  [SOP-L211](SOP-L211-revolve-microscope.qmd)); electron microscopy;
+  confocal microscopy; fluorescence microscopy on non-Revolve
+  instruments
+- **Location:** EA Program laboratory, SGM 131/133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, authorize instrument access    |
+| Lab Manager       | Schedule maintenance, manage optics cleaning supplies, maintain camera software |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Optical:** Prolonged viewing through the eyepieces can cause eye
+  strain. Take breaks during extended sorting or identification
+  sessions. Adjust the diopter rings to match your vision before
+  starting work.
+- **Electrical:** Keep liquids away from the illumination base and
+  power supply. If liquid enters the base, disconnect power immediately
+  and notify the lab manager.
+- **Physical:** Compound microscope objectives (especially 40x and
+  100x) can contact and crack the slide or cover slip if the stage is
+  raised too quickly. Always use the coarse focus knob with caution
+  when changing objectives.
+- **Chemical/Biological:** Specimens may be preserved in ethanol,
+  formalin, or other fixatives. Wear appropriate PPE and handle
+  preserved material in a well-ventilated area.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses (when not viewing through eyepieces)
+- [ ] Lab coat
+- [ ] Nitrile gloves (when handling preserved specimens, stains, or
+  immersion oil)
+
+### Emergency Procedures
+
+For chemical spills (e.g., ethanol, formalin) on or near a microscope,
+clean the spill per
+[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) and
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+If liquid enters the microscope body, unplug power and contact the lab
+manager before attempting further use.
+
+
+## 5. Equipment and Materials
+
+### Dissecting (Stereo) Microscopes
+
+| Item                                  | Qty | Location | Notes                          |
+|:--------------------------------------|:----|:---------|:-------------------------------|
+| Dissecting scope with illuminated base | 7  | SGM 131/133 | 7--45x zoom; incident and transmitted light |
+| Dissecting scope with camera          | 1   | SGM 133  | Camera-equipped for image capture |
+
+### Compound Microscopes
+
+| Item                                  | Qty | Location | Notes                          |
+|:--------------------------------------|:----|:---------|:-------------------------------|
+| Compound light microscope             | *TBD* | SGM 133 | Objectives: 4x, 10x, 40x, 100x (oil) |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Microscope slides (25 x 75 mm) | Standard glass                           |
+| Cover slips (No. 1.5, 0.17 mm) | For compound microscope use              |
+| Immersion oil (Type A or NF)  | For 100x oil immersion objective only     |
+| Lens cleaning solution        | Optical-grade, for objectives and oculars |
+| Lens cleaning tissue (lint-free) | Use optical-grade tissue, not Kimwipes on coated optics |
+| Compressed gas duster         | For removing dust; use short bursts only  |
+| Depression slides             | For wet mounts of live specimens          |
+
+
+## 6. Procedure
+
+### 6.1 Choosing the Right Microscope
+
+| Task                                        | Microscope Type  | Typical Magnification |
+|:--------------------------------------------|:-----------------|:----------------------|
+| Sorting macroinvertebrates from debris       | Dissecting       | 7--20x               |
+| Gross specimen identification               | Dissecting       | 10--45x              |
+| Examining head capsules, chaetae, gill structures | Compound    | 100--400x            |
+| Counting algae or diatoms                   | Compound         | 200--400x            |
+| Identifying microplastics on filters        | Dissecting       | 10--45x              |
+| Viewing stained tissue sections             | Compound         | 40--1000x            |
+
+### 6.2 Dissecting Microscope: Setup and Use
+
+1. Plug in the microscope and turn on the illumination using the
+   switch on the base. Most units have both **incident** (top) and
+   **transmitted** (bottom) light sources. Select the mode appropriate
+   for the specimen:
+   - Incident light: opaque specimens (insects, soil, rocks)
+   - Transmitted light: translucent specimens (small organisms in
+     water, thin sections)
+   - Both: general sorting when mixed materials are present
+2. Adjust the zoom to the lowest magnification (widest field of view)
+   to locate the area of interest
+3. Place the specimen on the stage plate. Use a white plate for dark
+   specimens and a black plate for light or translucent specimens to
+   improve contrast.
+4. Adjust the interpupillary distance by sliding the eyepiece tubes
+   until you see a single merged circle of light
+5. Focus using the focus knob (single knob on most stereo scopes).
+   With both eyes open, adjust the diopter ring on one eyepiece until
+   the image is sharp in both eyes simultaneously.
+6. Increase magnification by turning the zoom dial. Refine focus as
+   needed.
+7. When finished, return the zoom to the lowest setting, remove the
+   specimen, turn off the illumination, and unplug the unit if lab
+   policy requires it
+
+### 6.3 Compound Microscope: Setup and Use
+
+1. Plug in the microscope and turn on the light source using the power
+   switch. Adjust the intensity to a comfortable level.
+2. Rotate the nosepiece to the lowest-magnification objective (4x)
+3. Place the prepared slide on the stage, securing it with the stage
+   clips. Center the specimen over the condenser aperture.
+4. Using the **coarse focus knob**, raise the stage until the specimen
+   comes into approximate focus. Watch from the side to avoid driving
+   the slide into the objective.
+5. Sharpen the image with the **fine focus knob**
+6. Adjust the condenser height and the iris diaphragm to optimize
+   contrast and resolution. For most work, the condenser should be
+   nearly fully raised (close to the slide) and the diaphragm
+   partially closed to improve contrast without sacrificing too much
+   resolution [@murphy2012].
+7. Increase magnification by rotating the nosepiece to the next
+   objective (10x, then 40x). Refocus with the fine focus knob only.
+
+::: {.callout-important}
+### Avoid Slide Damage
+When switching from the 10x to the 40x objective, watch from the side
+to confirm that the longer 40x lens does not contact the cover slip.
+If the working distance is too short, lower the stage slightly before
+rotating the objective into position.
+:::
+
+### 6.4 Using Oil Immersion (100x Objective)
+
+1. Focus the specimen at 40x first
+2. Rotate the nosepiece to an empty position (no objective in the
+   light path)
+3. Place a single small drop of immersion oil directly on the cover
+   slip at the point of illumination. Do not use excess oil.
+4. Rotate the 100x objective into position. The front element of the
+   lens should contact the oil without trapping an air bubble.
+5. Focus carefully using the **fine focus knob only**
+6. After use, immediately clean the 100x objective with lens cleaning
+   solution and lint-free tissue. Wipe gently from center to edge.
+   Never allow oil to dry on the lens.
+7. Clean the slide or dispose of it as appropriate
+
+### 6.5 Capturing Images (Camera-Equipped Units)
+
+1. Focus the specimen and center the region of interest in the field
+   of view
+2. Open the camera software on the connected computer (software varies
+   by camera model; consult the lab manager for the current setup)
+3. Adjust exposure and white balance in the software to match the
+   illumination
+4. Capture the image. Record the magnification, scale bar, and sample
+   ID in the file name or metadata.
+5. Use a consistent file-naming convention:
+   `YYYY-MM-DD_SampleID_Magnification_Mode.jpg`
+6. Export images to the project data folder
+
+### 6.6 Shutdown and Daily Maintenance
+
+1. Remove the specimen from the stage
+2. Rotate the nosepiece to the lowest-magnification objective (4x on
+   compound; lowest zoom on dissecting)
+3. If oil immersion was used, clean the 100x objective immediately
+   (see Section 6.4, step 6)
+4. Wipe any residue from the stage with a lint-free tissue
+5. Turn off the light source and unplug if required by lab policy
+6. Cover the microscope with a dust cover
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Optics Cleaning
+
+If specks or smudges appear in the field of view that do not move when
+the specimen is translated, the optics need cleaning:
+
+1. Start with a few short bursts of compressed gas duster to remove
+   loose dust from the objectives and oculars. Do not invert the can.
+2. For objective lens surfaces, apply a small amount of lens cleaning
+   solution to a piece of lint-free optical tissue and gently wipe in
+   a circular motion from center to edge. Do not use dry tissue on
+   coated optics.
+3. Clean the oculars (eyepieces) the same way. Fingerprints on the
+   eye lens are the most common source of image degradation.
+4. For persistent contamination on internal optics, contact the lab
+   manager. Do not disassemble the microscope.
+
+### 7.2 Illumination Check
+
+- Replace burned-out bulbs promptly. LED-equipped units should not
+  require bulb replacement during normal use.
+- If transmitted light appears uneven, check that the condenser is
+  properly centered and the iris diaphragm is functioning.
+
+### 7.3 Image Quality Checklist
+
+Before accepting a micrograph for publication or analysis, verify:
+
+- Focus is sharp across the region of interest
+- Illumination is even (no hot spots or vignetting)
+- A scale bar or magnification is recorded
+- The specimen is oriented consistently with project conventions
+
+
+## 8. Waste Disposal
+
+| Waste Type                            | Disposal Method                      |
+|:--------------------------------------|:-------------------------------------|
+| Used immersion oil tissues            | Standard trash                       |
+| Used microscope slides (non-hazardous) | Broken-glass box if glass           |
+| Biological specimen waste             | Biohazard bag if applicable; autoclave before disposal per [SOP-L112](SOP-L112-autoclave-sterilization.qmd) |
+| Preserved specimen waste (ethanol)    | Flammable waste container            |
+| Preserved specimen waste (formalin)   | Hazardous waste; dispose through EH&S |
+| Spent lens cleaning solution          | Standard trash (small volumes on tissues) |
+
+
+## 9. References
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before using dissecting or compound microscopes independently,
+personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Demonstrate proper setup, focusing, magnification changes, and
+   shutdown of both dissecting and compound microscopes under
+   supervision
+4. If oil immersion work is required, demonstrate proper oil
+   application, focusing, and cleanup
+5. If image capture is required, demonstrate camera operation and
+   correct file naming
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Microscope Anatomy Quick Reference {.appendix}
+
+### Dissecting (Stereo) Microscope
+
+| Component                | Function                                    |
+|:-------------------------|:--------------------------------------------|
+| Eyepieces (oculars)      | Binocular viewing; 10x magnification (typical) |
+| Zoom dial                | Continuously adjustable magnification (e.g., 0.7--4.5x objective) |
+| Focus knob               | Single knob for coarse/fine focus           |
+| Stage plate              | Removable; white and black plates for contrast |
+| Incident light           | Top illumination for opaque specimens       |
+| Transmitted light        | Bottom illumination for translucent specimens |
+| Diopter adjustment       | On one or both eyepieces; corrects for vision differences between eyes |
+
+### Compound Microscope
+
+| Component                | Function                                    |
+|:-------------------------|:--------------------------------------------|
+| Eyepieces (oculars)      | Binocular viewing; 10x magnification (typical) |
+| Nosepiece (turret)       | Holds and rotates objective lenses          |
+| Objective lenses         | 4x, 10x, 40x, 100x (oil); determine magnification |
+| Stage                    | Holds slide; translatable via X/Y controls  |
+| Condenser                | Focuses transmitted light onto the specimen |
+| Iris diaphragm           | Controls cone angle of illumination; affects contrast and resolution |
+| Coarse focus knob        | Rapid focus (large movements)               |
+| Fine focus knob          | Precise focus (small movements)             |
+| Light intensity control  | Adjusts brightness of the transmitted light source |
+
+
+## Appendix B: Total Magnification Reference {.appendix}
+
+Total magnification = eyepiece magnification $\times$ objective
+magnification. For standard 10x eyepieces:
+
+| Objective | Total Magnification | Typical Use                        |
+|:----------|:--------------------|:-----------------------------------|
+| 4x        | 40x                 | Scanning; locating regions of interest |
+| 10x       | 100x                | General observation                |
+| 40x       | 400x                | Detailed cellular structure        |
+| 100x (oil) | 1000x              | Fine detail; bacteria, diatom striae, chromosomes |
+
+
+## Appendix C: Relationship to Other SOPs {.appendix}
+
+| SOP                          | Relationship                               |
+|:-----------------------------|:-------------------------------------------|
+| [SOP-L211](SOP-L211-revolve-microscope.qmd) | Echo Labs Revolve hybrid microscope (upright/inverted, iPad display, fluorescence) |
+| [SOP-L602](SOP-L602-macroinvertebrate-sorting.qmd) | Macroinvertebrate sorting and identification (uses dissecting and compound scopes) |
+| [SOP-L308](SOP-L308-microplastics-water.qmd) | Microplastics enumeration (uses dissecting scope and Revolve) |
+| [SOP-L112](SOP-L112-autoclave-sterilization.qmd) | Autoclave / sterilization for biohazard waste |

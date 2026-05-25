@@ -1,0 +1,356 @@
+---
+# =============================================================================
+# SOP-L215: Hach DR3900 Benchtop Spectrophotometer
+# =============================================================================
+title: "Hach DR3900 Benchtop Spectrophotometer"
+sop-number: "SOP-L215"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-05-24"
+    author: "Marc Los Huertos"
+    changes: "Initial release -- instrument-focused SOP separated from SOP-L303"
+---
+
+## 1. Purpose
+
+This procedure describes the setup, operation, routine maintenance,
+and troubleshooting of the Hach DR3900 benchtop spectrophotometer as a
+laboratory instrument. The DR3900 uses a tungsten lamp (visible range)
+and a deuterium lamp (UV range) to measure absorbance and transmittance
+across 320--1100 nm, supporting both factory-stored programs for Hach
+reagent kits and user-defined wavelength methods
+[@hach_dr3900; @hach_water_analysis2024].
+
+For method-specific chemistry, reagent handling, and the analyte Method
+Registry (nutrients, metals, and general water quality parameters), see
+[SOP-L303 Hach Colorimetric Analysis](SOP-L303-hach-colorimetric.qmd).
+For field use of the portable Hach DR900 colorimeter, see
+[SOP-F208 Portable Spectrophotometer / Colorimeter (Field)](../field_sops/SOP-F208-portable-colorimeter-field.qmd).
+
+
+## 2. Scope
+
+- **Applies to:** All use of the Hach DR3900 benchtop spectrophotometer
+  in the EA Program laboratory, including stored-program colorimetric
+  analysis, user-defined single-wavelength measurements, wavelength
+  scans, and time-course (kinetic) measurements
+- **Does not apply to:** Micro-volume UV-Vis measurements (see
+  [SOP-L212 NanoDrop](SOP-L212-nanodrop-spectrophotometer.qmd));
+  fluorometric quantification (see
+  [SOP-L203 Trilogy Fluorometer](SOP-L203-trilogy-fluorometer.qmd));
+  portable field colorimetry (see
+  [SOP-F208](../field_sops/SOP-F208-portable-colorimeter-field.qmd));
+  general spectrophotometer theory (see
+  [SOP-L201](SOP-TBD.qmd))
+- **Location:** EA Program laboratory, SGM 133
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, authorize instrument access    |
+| Lab Manager       | Schedule lamp replacement and annual verification, manage firmware updates |
+| Trained Personnel | Follow this SOP, report malfunctions        |
+| New Students      | Complete training before independent use    |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Optical:** The deuterium lamp emits ultraviolet radiation. Do not
+  look directly into the sample compartment when the lid is open and the
+  lamp is on. The instrument's interlock dims the lamp when the lid is
+  raised, but UV exposure remains possible during diagnostic modes.
+- **Chemical:** Sample solutions and reagents placed in the instrument
+  may be hazardous. Refer to the relevant method SOP (e.g.,
+  [SOP-L303](SOP-L303-hach-colorimetric.qmd)) and the reagent SDS for
+  handling precautions.
+- **Electrical:** Do not operate the instrument with wet hands or near
+  standing water. If liquid enters the instrument housing, disconnect
+  power immediately and contact the lab manager.
+:::
+
+### Required PPE
+
+- [ ] Safety glasses
+- [ ] Lab coat
+- [ ] Nitrile gloves (when handling reagents or samples)
+
+### Emergency Procedures
+
+For chemical spills on or near the instrument, clean the spill per
+[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
+before resuming use. If liquid enters the instrument, unplug the power
+cord and do not attempt to power on until the lab manager has inspected
+the unit.
+
+
+## 5. Equipment and Materials
+
+### Equipment
+
+| Item                              | Location         | Notes                          |
+|:----------------------------------|:-----------------|:-------------------------------|
+| Hach DR3900 benchtop spectrophotometer | Lab bench, SGM 133 | Wavelength range 320--1100 nm |
+| Light shield / adapter            | With DR3900      | For 13 mm and 16 mm round vials (TNT plus) |
+| USB cable or Ethernet connection  | Lab bench        | For data export to PC          |
+
+### Sample Cells
+
+| Cell Type                     | Path Length | Use                                |
+|:------------------------------|:-----------|:-----------------------------------|
+| 10 mm square glass or quartz  | 10 mm      | General absorbance; user-defined methods |
+| 1-inch round glass            | 25.4 mm    | Most Hach stored-program methods   |
+| 16 mm round (TNT plus vials)  | 16 mm      | TNT plus pre-dosed vial methods    |
+
+### Consumables
+
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| Lint-free wipes (Kimwipes)    | For cleaning sample cell exteriors         |
+| Silicone oil and applicator cloth | For 1-inch round cells (reduces light scattering at the glass surface) |
+| DI water (Type II or better)  | For blanking and rinsing                   |
+
+
+## 6. Procedure
+
+### 6.1 Startup and Self-Check
+
+1. Verify that the sample compartment is empty and the lid is closed
+2. Turn on the DR3900 using the power switch on the rear panel
+3. The instrument performs an automatic self-check, including lamp
+   tests and wavelength verification. This takes approximately 30
+   seconds. Do not open the lid or insert samples until the home screen
+   appears.
+4. Allow the lamps to warm up for at least 15 minutes before making
+   measurements that require high photometric accuracy (e.g.,
+   user-defined methods at low absorbance). For routine stored-program
+   analyses, measurements may begin after the self-check completes.
+
+### 6.2 Selecting an Operating Mode
+
+From the home screen, select one of the following modes:
+
+| Mode                  | When to Use                                    |
+|:----------------------|:-----------------------------------------------|
+| **Stored Programs**   | Pre-programmed Hach reagent kit methods; see [SOP-L303](SOP-L303-hach-colorimetric.qmd) for the Method Registry |
+| **Single Wavelength** | User-defined absorbance or %T at a specific wavelength |
+| **Multi Wavelength**  | Simultaneous measurement at 2--4 wavelengths   |
+| **Wavelength Scan**   | Absorbance spectrum over a defined range       |
+| **Time Course**       | Kinetic measurement at a fixed wavelength over time |
+
+### 6.3 Preparing and Inserting Sample Cells
+
+1. **Select the correct cell type** for the method (see Section 5).
+   Square cells must be oriented so the clear optical faces align with
+   the light path (arrow on the cell pointing toward the detector).
+2. **Fill the cell** to the level required by the method. Do not
+   overfill; liquid on the outside of the cell causes erroneous
+   readings.
+3. **Clean the exterior** of the cell with a lint-free wipe. For
+   1-inch round cells, apply a thin film of silicone oil and wipe with
+   the oiling cloth to eliminate fingerprints and water droplets
+   [@hach_dr3900].
+4. **Insert the cell** into the cell holder. Close the sample
+   compartment lid fully before reading.
+
+::: {.callout-tip}
+### Cuvette Selection for UV Work
+Standard glass and plastic cells absorb UV light below approximately
+340 nm. For measurements below 340 nm in user-defined or wavelength
+scan modes, use quartz cells [@skoog2018].
+:::
+
+### 6.4 Zeroing (Blanking) the Instrument
+
+1. Fill a clean cell with the blank solution. The blank must match the
+   sample matrix: DI water for simple aqueous samples, or the reagent
+   blank specified by the Hach method.
+2. Insert the blank cell and close the lid
+3. Press **Zero** (stored-program mode) or **Zero/Blank** (single
+   wavelength mode)
+4. Verify that the display reads 0.000 Abs (or 100.0 %T)
+5. Remove the blank cell
+
+::: {.callout-note}
+Re-zero whenever you change wavelengths, switch cell types, or if the
+instrument has been idle for more than 30 minutes.
+:::
+
+### 6.5 Measuring Samples
+
+1. Insert the sample cell and close the lid
+2. Press **Read** (or **Measure** in scan/time-course modes)
+3. Record the result (absorbance, concentration, or %T depending on
+   mode)
+4. Remove the cell. Rinse and refill for the next sample, or use a
+   fresh cell.
+
+### 6.6 Wavelength Scan Mode
+
+1. From the home screen, select **Wavelength Scan**
+2. Set the start and end wavelengths and the scan increment (typically
+   1 nm)
+3. Zero the instrument with a blank across the full scan range
+4. Insert the sample and press **Start Scan**
+5. The spectrum is displayed on screen. Use the cursor to read peak
+   wavelengths and absorbance values.
+6. Export the scan data via USB (see Section 6.8)
+
+### 6.7 User-Defined Programs
+
+The DR3900 allows creation of custom calibration curves for analytes
+not covered by the factory-stored programs:
+
+1. Select **User Programs** from the home screen, then **New**
+2. Set the measurement wavelength, units, and cell type
+3. Prepare a series of standards spanning the expected concentration
+   range (minimum 5 points plus a blank)
+4. Read each standard and enter the known concentration when prompted
+5. The instrument fits a calibration curve (linear, polynomial, or
+   segmented). Review the correlation coefficient ($r^2$); accept only
+   if $r^2 \geq 0.995$ for linear methods [@harris2020].
+6. Save the program with a descriptive name and program number
+
+### 6.8 Data Export
+
+1. Connect a USB flash drive to the USB-A port on the front panel
+2. From the home screen, select **Data Log**
+3. Select the readings to export and press **Send to USB**
+4. Data are saved as `.csv` files that can be opened in R or Excel
+5. Alternatively, connect the DR3900 to a PC via USB cable and use
+   Hach's LINK2SC or Claros software for direct data transfer
+
+### 6.9 Shutdown
+
+1. Remove all cells from the sample compartment
+2. Wipe the cell holder with a dry lint-free tissue to remove any
+   spilled liquid
+3. Close the sample compartment lid
+4. Turn off the instrument using the rear power switch
+5. Cover the instrument with the dust cover if one is available
+
+
+## 7. Quality Control and Acceptance Criteria
+
+### 7.1 Daily Verification
+
+Before each analytical session:
+
+- Run a DI water blank; the reading should be 0.000 $\pm$ 0.005 Abs
+  at the working wavelength
+- Run a Hach-supplied verification standard (e.g., StablCal formazin
+  standard or NIST-traceable absorbance filter) at the working
+  wavelength. Acceptance: within $\pm$ 0.01 Abs of the certified
+  value, or $\pm$ 5%, whichever is larger.
+
+### 7.2 Lamp Monitoring
+
+The DR3900 tracks lamp hours internally. When a lamp approaches its
+rated lifetime (typically 2000 hours for deuterium, longer for
+tungsten), the instrument displays a warning.
+
+- Record lamp hours monthly in the instrument log
+- Replace lamps per the Hach service manual or contact Hach technical
+  support
+- After lamp replacement, run the full wavelength verification
+  procedure
+
+### 7.3 Annual Verification
+
+At least once per year (or after any service event):
+
+1. Run a multi-wavelength check using a NIST-traceable holmium oxide
+   filter to verify wavelength accuracy ($\pm$ 1 nm)
+2. Run a multi-point photometric accuracy check using neutral density
+   filters or potassium dichromate standards across the range
+   0.1--1.5 Abs [@skoog2018]
+3. Record results in the instrument log and retain the verification
+   report
+
+
+## 8. Troubleshooting
+
+| Symptom                              | Possible Cause                     | Action                              |
+|:-------------------------------------|:-----------------------------------|:------------------------------------|
+| Self-check fails                     | Lamp failure or firmware error     | Note the error code; contact lab manager |
+| Blank does not zero                  | Dirty cell, wrong cell type, or stale blank | Clean or replace cell; prepare fresh blank |
+| Erratic readings                     | Air bubbles in cell, condensation, or dirty optics | Degas sample; wipe cell; clean sample compartment |
+| "Lamp intensity low" warning         | Lamp nearing end of life           | Schedule lamp replacement           |
+| Readings drift over time             | Lamp not warmed up; temperature change | Allow 15 min warm-up; avoid drafts near instrument |
+| Absorbance exceeds 2.5               | Sample too concentrated            | Dilute sample and re-read           |
+
+
+## 9. Waste Disposal
+
+| Waste Type                    | Disposal Method                          |
+|:------------------------------|:-----------------------------------------|
+| Rinsate from cells (DI water) | Drain                                    |
+| Chemical samples / reagent waste | Per method SOP (see [SOP-L303](SOP-L303-hach-colorimetric.qmd)) |
+| Used lint-free wipes          | Standard trash unless contaminated       |
+| Spent lamps                   | Hazardous waste (deuterium lamps contain UV-emitting gas); dispose through EH&S |
+
+
+## 10. References
+
+::: {#refs}
+:::
+
+
+## 11. Training Record
+
+Before operating the DR3900 independently, personnel must:
+
+1. Read this SOP in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Read [SOP-L303](SOP-L303-hach-colorimetric.qmd) if performing
+   colorimetric analyses
+4. Observe a trained operator perform a complete session: startup,
+   self-check, zeroing, sample measurement, data export, and shutdown
+5. Perform a supervised session with acceptable QC results (blank
+   within specification, verification standard within tolerance)
+6. Be signed off by the PI or lab manager
+
+
+## Appendix A: Instrument Specifications {.appendix}
+
+| Parameter                    | Specification                             |
+|:-----------------------------|:------------------------------------------|
+| Wavelength range             | 320--1100 nm                              |
+| Wavelength accuracy          | $\pm$ 1 nm                                |
+| Wavelength resolution        | 1 nm                                      |
+| Photometric range            | -0.5 to 3.5 Abs                           |
+| Photometric accuracy         | $\pm$ 0.003 Abs at 0.5 Abs (typical)     |
+| Light sources                | Tungsten (visible), deuterium (UV)        |
+| Cell types                   | 10 mm square, 1-inch round, 16 mm round   |
+| Stored programs              | 200+                                      |
+| Data storage                 | 500+ measurements                         |
+| Connectivity                 | USB-A, USB-B, Ethernet                    |
+| Power                        | 100--240 V AC, 50/60 Hz                   |
+
+::: {.callout-note}
+Confirm specifications against the serial plate on the unit and the
+current Hach DR3900 product data sheet. Values above are representative
+of current production models [@hach_dr3900].
+:::
+
+
+## Appendix B: Relationship to Other SOPs {.appendix}
+
+| SOP                          | Relationship                               |
+|:-----------------------------|:-------------------------------------------|
+| [SOP-L303](SOP-L303-hach-colorimetric.qmd) | Method chemistry, reagent handling, and the analyte Method Registry for the DR3900 and DR900 |
+| [SOP-F208](../field_sops/SOP-F208-portable-colorimeter-field.qmd) | Field use of the portable DR900 colorimeter |
+| [SOP-L201](SOP-TBD.qmd)     | General spectrophotometer theory and cuvette-based UV-Vis operation |
+| [SOP-L212](SOP-L212-nanodrop-spectrophotometer.qmd) | Micro-volume UV-Vis (NanoDrop) |

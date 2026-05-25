@@ -58,7 +58,7 @@ use an **L** prefix, but both share the same numeric ranges:
 | [F006](field_sops/SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation | 0.1 | |
 | [F007](field_sops/SOP-F007-field-decontamination.qmd) | Field Decontamination Protocols | 0.1 | |
 | [F008](field_sops/SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling, Chain of Custody, and Transport | 0.1 | |
-| L001 | *Lab Orientation and Training Checklist* | 0.1 | To be developed |
+| L001 | *Lab Orientation and Training Checklist* | 0.1 | TBD |
 | [L002](lab_sops/SOP-L002-laboratory-safety.qmd) | Laboratory Safety | 1.04 | |
 | [L003](lab_sops/SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials Handling | 1.04 | |
 | [L004](lab_sops/SOP-L004-chemical-spill-response.qmd) | Chemical Spill Response | 0.1 | |
@@ -78,9 +78,9 @@ use an **L** prefix, but both share the same numeric ranges:
 |:------|:-------------------------------|:-------------|:------|
 | [F100](field_sops/SOP-F100-vehicles.qmd) | EA Program Vehicle Use | 0.1 | |
 | [F101](field_sops/SOP-F101-electrical-power-in-the-field.qmd) | Electrical Power in the Field | 0.2 | |
-| [F102](field_sops/SOP-TBD.qmd) | Waders/Wetsuit | 0.1 | |
-| [F103](field_sops/SOP-TBD.qmd) | *Canoe / Kayak / Small Watercraft* | -- | To be developed |
-| [F104](field_sops/SOP-TBD.qmd) | *Field Laptop and Tablet Use* | -- | To be developed |
+| [F102](field_sops/SOP-TBD.qmd) | Waders/Wetsuit | -- | TBD |
+| [F103](field_sops/SOP-TBD.qmd) | *Canoe / Kayak / Small Watercraft* | -- | TBD |
+| [F104](field_sops/SOP-TBD.qmd) | *Field Laptop and Tablet Use* | -- | TBD |
 
 ### Field Instrumentation (F200--F299)
 
@@ -131,14 +131,14 @@ use an **L** prefix, but both share the same numeric ranges:
 | [L206](lab_sops/SOP-TBD.qmd) | *ICP-MS* | 0.1 | |
 | [L207](lab_sops/SOP-TBD.qmd) | *LA-ICP-MS (Laser Ablation)* | 0.1 | |
 | [L208](lab_sops/SOP-L208-irms-general-instrument.qmd) | ThermoFisher Delta V IRMS | 0.2 | DLF |
-| [L209](lab_sops/SOP-TBD.qmd) | *Radiometric Dating* | -- | |
-| [L210](lab_sops/SOP-TBD.qmd) | *Ion Chromatograph Operation* | -- | |
+| [L209](lab_sops/SOP-TBD.qmd) | *Radiometric Dating* | NA | Not Available |
+| [L210](lab_sops/SOP-TBD.qmd) | *Ion Chromatograph Operation* | NA | Not Available |
 | [L211](lab_sops/SOP-L211-revolve-microscope.qmd) | Echo Labs Revolve Microscope | 0.1 | |
 | [L212](lab_sops/SOP-L212-nanodrop-spectrophotometer.qmd) | NanoDrop Spectrophotometer | 0.1 | |
 | [L213](lab_sops/SOP-L213-qubit-fluorometer.qmd) | Qubit Fluorometer | 0.1 | |
 | [L214](lab_sops/SOP-L214-biorad-qx200-ddpcr.qmd) | Bio-Rad QX200 ddPCR System (Instrument) | 0.1 | |
-| [L215](lab_sops/SOP-TBD.qmd) | *Hach DR3900 Benchtop Spectrophotometer* | -- | To be developed |
-| [L216](lab_sops/SOP-TBD.qmd) | *Dissecting and Compound Microscope* | -- | To be developed |
+| [L215](lab_sops/SOP-L215-hach-dr3900-spectrophotometer.qmd) | Hach DR3900 Benchtop Spectrophotometer | -- | TBD |
+| [L216](lab_sops/SOP-L216-dissecting-compound-microscope.qmd) | Dissecting and Compound Microscope | 0.1 |  |
 
 
 ## Water and Aquatic Methods (300--399)
@@ -156,7 +156,7 @@ use an **L** prefix, but both share the same numeric ranges:
 | [F306](field_sops/SOP-F306-wetland-hydrology-monitoring.qmd) | Wetland Hydrology Monitoring | 0.1 | |
 | [F307](field_sops/SOP-F307-lake-reservoir-profiling.qmd) | Lake and Reservoir Profiling* | 0.1 | |
 | [F308](field_sops/SOP-F308-edna-water-sample-collection.qmd) | eDNA Water Sample Collection | 0.1 | |
-| [F309](field_sops/SOP-TBD.qmd) | *Periphyton / Algae Sampling* | -- | To be developed |
+| [F309](field_sops/SOP-TBD.qmd) | *Periphyton / Algae Sampling* | -- | TBD |
 
 ### Lab -- Water Analysis (L300--L399)
 
@@ -176,7 +176,7 @@ use an **L** prefix, but both share the same numeric ranges:
 | [L311](lab_sops/SOP-L311-dissolved-organic-carbon-water.qmd) | Dissolved (NPOC) Organic Carbon (Water) | 0.1 | |
 | [L312](lab_sops/SOP-L312-tss-tds.qmd) | Total Suspended Solids / Total Dissolved Solids | 0.1 | |
 | [L313](lab_sops/SOP-L313-metals-icpms-prep.qmd) | Metals in Water (ICP-MS Prep and Acidification) | 0.1 | |
-| [L314](lab_sops/SOP-TBD.qmd) | *Anion Analysis (Ion Chromatography)* | -- | Not Available |
+| [L314](lab_sops/SOP-TBD.qmd) | *Anion Analysis (Ion Chromatography)* | NA | Not Available |
 | [L315](lab_sops/SOP-L315-edna-processing.qmd) | eDNA Lab Processing (Filtration, Extraction, Inhibition Testing) | 0.1 | |
 
 ## Soil Methods (400--499)
@@ -241,8 +241,8 @@ No lab air SOPs exist yet. Range is reserved.
 
 | SOP   | Title                          | Current Rev. | Notes |
 |:------|:-------------------------------|:-------------|:------|
-| [L500](lab_sops/SOP-TBD.qmd) | *Gravimetric PM Filter Analysis* | -- | To be developed |
-| [L501](lab_sops/SOP-TBD.qmd) | *Passive Sampler Extraction and Analysis* | -- | To be developed |
+| [L500](lab_sops/SOP-TBD.qmd) | *Gravimetric PM Filter Analysis* | -- | TBD |
+| [L501](lab_sops/SOP-TBD.qmd) | *Passive Sampler Extraction and Analysis* | -- | TBD |
 
 
 ## Biology, Ecology, and Molecular Biology (600--799)
@@ -312,7 +312,7 @@ No lab air SOPs exist yet. Range is reserved.
 
 ::: {.callout-note}
 This table is maintained manually. Italicized entries marked *TBD* are
-planned SOPs that have not yet been written. Entries marked To be developed are
+planned SOPs that have not yet been written. Entries marked TBD are
 suggested additions identified during the 2026 renumbering review. The
 sidebar navigation reflects every `.qmd` file in the repository
 automatically.
