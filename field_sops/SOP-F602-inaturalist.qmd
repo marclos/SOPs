@@ -6,7 +6,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.2"
+revision: "0.3"
 
 revision-history:
   - version: "0.1"
@@ -17,6 +17,10 @@ revision-history:
     date: "2026-05-28"
     author: "Marc Los Huertos"
     changes: "Added bibtex citations for community science data quality, GBIF, and observation best practices"
+  - version: "0.3"
+    date: "2026-05-28"
+    author: "Marc Los Huertos"
+    changes: "Added definitions section; expanded data quality discussion; added citations for large-scale monitoring and CV model limitations"
 ---
 
 ## 1. Purpose
@@ -35,9 +39,12 @@ Community science platforms like iNaturalist generate large volumes of
 occurrence data, but the scientific value of those data depends
 critically on the quality of individual observations, including
 photographic evidence, spatial accuracy, and taxonomic verification
-[@dickinson2010]. This SOP covers making high-quality observations,
-creating and managing collaborative projects for EA Program research,
-and exporting data for analysis in R.
+[@dickinson2010]. When data quality is maintained, iNaturalist records
+can support large-scale biodiversity monitoring and contribute
+meaningfully to national and international biodiversity assessments
+[@callaghan2021; @chandler2017]. This SOP covers making high-quality
+observations, creating and managing collaborative projects for EA
+Program research, and exporting data for analysis in R.
 
 
 ## 2. Scope
@@ -63,7 +70,51 @@ and exporting data for analysis in R.
 | New Students      | Create an account and complete training before using iNaturalist for research data |
 
 
-## 4. Safety and Hazards
+## 4. Definitions
+
+- **Observation:** A record of an encounter with an individual organism
+  at a specific place and time, documented with at least one photo or
+  sound recording.
+- **Research Grade:** An observation that has a date, location, photo
+  or sound, and community agreement on the identification (at least
+  two-thirds of identifiers agree at the species level). Research
+  Grade observations are shared with GBIF [@gbif2024].
+- **Needs ID:** An observation that has not yet received enough
+  community identifications to reach Research Grade. These records are
+  scientifically useful but carry higher taxonomic uncertainty.
+- **Casual:** An observation that is missing date, location, or
+  evidence (photo/sound), or that the community has voted as not
+  meeting quality standards. Casual observations are excluded from
+  most research exports.
+- **Collection Project:** A project that automatically includes all
+  observations matching defined criteria (taxa, place, users, dates,
+  quality grade). No manual curation needed.
+- **Traditional Project:** A project where observations must be added
+  manually by members. Can require custom observation fields. Requires
+  the creator to have at least 50 verifiable observations.
+- **Umbrella Project:** A project that aggregates observations from
+  multiple other projects. Useful for coordinating across sites or
+  taxa.
+- **Observation Field:** A custom data field that can be attached to
+  observations (e.g., "habitat type," "number of individuals,"
+  "flowering status"). Only Traditional Projects can require
+  observation fields.
+- **Computer Vision (CV) Model:** The machine learning model trained
+  on iNaturalist's community-verified image database that suggests
+  identifications for new observations. The model is retrained
+  periodically and performs best for taxa and regions with large
+  training datasets; accuracy declines for rare, under-photographed,
+  or morphologically cryptic taxa [@loarie2023].
+- **Taxon Geoprivacy:** An automatic system that obscures the
+  coordinates of observations for threatened, endangered, or
+  sensitive species to protect them from collection or disturbance.
+- **Coordinate Uncertainty:** The estimated spatial accuracy of the
+  GPS location, expressed as a radius in meters. High uncertainty
+  (greater than 1000 m) reduces the value of occurrence records for
+  fine-scale spatial analyses.
+
+
+## 5. Safety and Hazards
 
 Standard field safety applies when making observations in the field.
 Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). Additional
@@ -79,35 +130,6 @@ considerations specific to iNaturalist use:
 - **Disturbance:** Do not disturb, handle, or collect organisms solely
   for an iNaturalist photo. Photograph organisms in situ where
   possible.
-
-
-## 5. Definitions
-
-- **Observation:** A record of an encounter with an individual organism
-  at a specific place and time, documented with at least one photo or
-  sound recording.
-- **Research Grade:** An observation that has a date, location, photo
-  or sound, and community agreement on the identification (at least
-  two-thirds of identifiers agree). Research Grade observations are
-  shared with GBIF.
-- **Needs ID:** An observation that has not yet received enough
-  community identifications to reach Research Grade.
-- **Casual:** An observation that is missing date, location, or
-  evidence (photo/sound), or that the community has voted as not
-  meeting quality standards.
-- **Collection Project:** A project that automatically includes all
-  observations matching defined criteria (taxa, place, users, dates,
-  quality grade). No manual curation needed.
-- **Traditional Project:** A project where observations must be added
-  manually by members. Can require custom observation fields. Requires
-  the creator to have at least 50 verifiable observations.
-- **Umbrella Project:** A project that aggregates observations from
-  multiple other projects. Useful for coordinating across sites or
-  taxa.
-- **Observation Field:** A custom data field that can be attached to
-  observations (e.g., "habitat type," "number of individuals,"
-  "flowering status"). Only Traditional Projects can require
-  observation fields.
 
 
 ## 6. Required Materials
@@ -175,14 +197,19 @@ Grade.
    observation
 7. Take photos directly in the app, or select photos from your camera
    roll
-8. The app will suggest an identification using its AI model (trained
-   on the iNaturalist community's data). Accept the suggestion if it
-   looks correct, or refine the identification manually. When in doubt,
+8. The app will suggest an identification using its computer vision
+   (CV) model [@loarie2023]. Accept the suggestion if it looks
+   correct, or refine the identification manually. When in doubt,
    identify to the broadest level you are confident in (e.g., "Plants"
-   or "Oaks" rather than guessing a specific species).
+   or "Oaks" rather than guessing a specific species). The CV model
+   performs best for common, well-photographed taxa in North America
+   and Europe; for under-represented groups (e.g., lichens, mosses,
+   many invertebrate families), manual identification by the observer
+   or community identifiers is essential.
 9. Verify that the date and location are correct. The app captures
    these automatically from the photo metadata, but check that the GPS
-   pin is accurate on the map.
+   pin is accurate on the map. If coordinate uncertainty exceeds 500 m,
+   manually reposition the pin.
 10. Add any relevant notes in the "Notes" field (habitat, behavior,
     abundance, associated species)
 11. If the observation is part of a Traditional Project, add it to the
@@ -200,7 +227,7 @@ directly. Hold the phone steady and minimize background noise.
 
 Identifying other people's observations is as valuable as making your
 own. It builds community expertise, helps observations reach Research
-Grade, and improves the AI model.
+Grade, and improves the CV model.
 
 1. Go to the **Identify** tab on the website (or use the Explore page
    and filter by "Needs ID")
@@ -296,16 +323,44 @@ too small for reliable GPS-based filtering.
    number," "Number of individuals").
 
 
-## 8. Data Export and Analysis
+## 8. Data Quality Considerations
 
-### 8.1 Exporting from iNaturalist
+iNaturalist data are heterogeneous in quality because they are
+generated by observers with widely varying skill levels, equipment,
+and motivations [@dickinson2010]. For EA Program research, apply the
+following data quality filters when exporting records for analysis:
+
+- **Quality grade:** Use Research Grade observations only for
+  quantitative analyses. Needs ID observations can supplement species
+  inventories but carry higher misidentification risk.
+- **Coordinate uncertainty:** Exclude records with positional accuracy
+  greater than 1000 m unless the analysis does not require fine
+  spatial resolution.
+- **Date precision:** Exclude records without day-level date
+  precision for phenological analyses.
+- **Taxonomic verification:** For critical analyses, manually verify
+  identifications against the photographic evidence, especially for
+  taxa where the CV model is known to struggle (e.g., grasses,
+  juvenile insects, sterile plants).
+- **Spatial bias:** iNaturalist data are spatially biased toward
+  accessible, human-frequented areas (trails, roads, urban parks).
+  This bias must be acknowledged and, where possible, corrected for
+  in species distribution models [@callaghan2021].
+
+These filters should be documented in the methods section of any
+publication or report using iNaturalist-derived data.
+
+
+## 9. Data Export and Analysis
+
+### 9.1 Exporting from iNaturalist
 
 1. Go to the **Explore** page and filter to your project, place, or
    taxa of interest
 2. Click **Filters** to narrow results
 3. Click **Download** (bottom of the page) to download a CSV file
 
-### 8.2 Exporting from GBIF
+### 9.2 Exporting from GBIF
 
 For Research Grade observations that have been shared with GBIF:
 
@@ -315,7 +370,7 @@ For Research Grade observations that have been shared with GBIF:
 4. GBIF assigns a DOI to every download; cite the DOI in your
    publications
 
-### 8.3 Using `rinat` in R
+### 9.3 Using `rinat` in R
 
 The `rinat` package provides programmatic access to iNaturalist data
 [@barve2025]:
@@ -339,7 +394,7 @@ birds <- get_inat_obs(taxon_name = "Aves",
 ```
 
 
-## 9. Citing iNaturalist Data
+## 10. Citing iNaturalist Data
 
 - **Platform citation:** iNaturalist. Available at:
   <https://www.inaturalist.org>. Accessed [date].
@@ -352,10 +407,10 @@ birds <- get_inat_obs(taxon_name = "Aves",
 When using iNaturalist data in publications, describe the data
 quality filters applied (e.g., Research Grade only, coordinate
 uncertainty threshold) and acknowledge the community identifiers whose
-expertise validated the records [@dickinson2010].
+expertise validated the records [@dickinson2010; @chandler2017].
 
 
-## 10. Responsible Use
+## 11. Responsible Use
 
 - Respect copyright: each user retains ownership of their observations
   and photos. Your rights to use them are governed by the license the
@@ -383,13 +438,13 @@ better scientific outcomes and learning [@aristeidou2021].
 :::
 
 
-## 11. References
+## 12. References
 
 ::: {#refs}
 :::
 
 
-## 12. Training Record
+## 13. Training Record
 
 Before using iNaturalist for EA Program research data, personnel must:
 

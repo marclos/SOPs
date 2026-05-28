@@ -6,7 +6,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.2"
+revision: "0.3"
 
 revision-history:
   - version: "0.1"
@@ -17,6 +17,10 @@ revision-history:
     date: "2026-05-28"
     author: "Marc Los Huertos"
     changes: "Added citations for leaf economics spectrum, standardized trait protocols, and foliar nutrient interpretation"
+  - version: "0.3"
+    date: "2026-05-28"
+    author: "Marc Los Huertos"
+    changes: "Added definitions section; expanded discussion of sampling standardization, trait ecology context, and LMA interpretation"
 ---
 
 ## 1. Purpose
@@ -25,17 +29,22 @@ This SOP describes procedures for collecting, handling, and preserving
 plant tissue samples in the field for subsequent laboratory analysis.
 Plant tissue analysis provides data on nutrient concentrations (C, N,
 P, K, metals), stable isotope ratios ($\delta^{13}$C, $\delta^{15}$N),
-and other biogeochemical parameters [@kalra1998; @mills2004]. Proper
-sampling technique is essential to ensure that results represent the
-target tissue and are not contaminated or degraded during collection
-and transport.
+and structural traits such as leaf mass per area (LMA)
+[@kalra1998; @mills2004]. Proper sampling technique is essential to
+ensure that results represent the target tissue and are not
+contaminated or degraded during collection and transport.
 
-Foliar nutrient concentrations and leaf mass per area (LMA) form part
-of the "leaf economics spectrum," a global axis of plant strategy that
-links leaf structure to function across biomes [@wright2004].
-Standardized sampling protocols allow EA Program data to be compared
-with global trait databases and regional reference values
-[@cornelissen2003].
+Foliar nutrient concentrations and LMA form part of the "leaf economics
+spectrum" (LES), a global axis of plant strategy that links leaf
+structure to function across biomes: species with low LMA and high
+leaf nitrogen tend toward fast resource acquisition and short leaf
+lifespans, while species with high LMA and low nitrogen invest in
+durable, long-lived leaves [@wright2004; @reich2014]. Extending this
+framework, the "fast-slow" plant economics spectrum integrates leaf,
+stem, and root traits into a whole-plant strategy axis [@reich2014;
+@westoby2002]. Standardized sampling protocols allow EA Program data
+to be compared with global trait databases (e.g., TRY, BIEN) and
+regional reference values [@cornelissen2003; @perez-harguindeguy2013].
 
 
 ## 2. Scope
@@ -51,7 +60,45 @@ with global trait databases and regional reference values
   SGM 133/134
 
 
-## 3. Responsibilities
+## 3. Definitions
+
+- **Tissue type:** The specific plant organ sampled (e.g., fully
+  expanded mature leaves, current-year stem growth, fine roots less
+  than 2 mm diameter, seeds).
+- **Composite sample:** A sample formed by combining tissue from
+  multiple individuals of the same species within a plot to represent
+  the population average. Compositing reduces analytical cost but
+  eliminates information about individual-level variation.
+- **Voucher specimen:** A pressed and identified plant specimen
+  collected alongside tissue samples to verify species identification.
+- **Leaf mass per area (LMA):** The ratio of leaf dry mass to
+  one-sided leaf area (g m^-2^). LMA is a key functional trait that
+  reflects the trade-off between resource capture (photosynthesis per
+  unit area) and leaf durability. High-LMA leaves are thicker or
+  denser, with lower nitrogen per unit mass but greater physical
+  toughness [@wright2004; @poorter2009].
+- **Specific leaf area (SLA):** The inverse of LMA: SLA = 1/LMA,
+  expressed as m^2^ kg^-1^. SLA and LMA contain the same information
+  but are used in different contexts; report whichever is standard
+  for the analysis.
+- **Leaf economics spectrum (LES):** A global pattern relating leaf
+  traits (LMA, nitrogen, phosphorus, photosynthetic capacity, and
+  leaf lifespan) along a single axis of variation. High-nitrogen,
+  low-LMA species occupy the "fast return" end; low-nitrogen,
+  high-LMA species occupy the "slow return" end [@wright2004].
+- **Sun leaf / shade leaf:** Leaves developed in high-light (sun) or
+  low-light (shade) conditions. Sun and shade leaves from the same
+  tree can differ by 20--40% in nitrogen concentration and by a
+  factor of two or more in LMA [@cornelissen2003;
+  @perez-harguindeguy2013]. Sampling must standardize canopy position
+  to avoid confounding light environment with species-level traits.
+- **Field blank:** An empty labeled sample container opened and
+  exposed at the field site, then sealed and processed identically to
+  real samples. Blanks detect contamination introduced during
+  collection and transport.
+
+
+## 4. Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -60,7 +107,7 @@ with global trait databases and regional reference values
 | New Students      | Complete training before independent sampling |
 
 
-## 4. Safety and Hazards
+## 5. Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -89,21 +136,6 @@ as possible. Refer to
 [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
-## 5. Definitions
-
-- **Tissue type:** The specific plant organ sampled (e.g., fully
-  expanded mature leaves, current-year stem growth, fine roots less
-  than 2 mm diameter, seeds).
-- **Composite sample:** A sample formed by combining tissue from
-  multiple individuals of the same species within a plot to represent
-  the population average.
-- **Voucher specimen:** A pressed and identified plant specimen
-  collected alongside tissue samples to verify species identification.
-- **Leaf mass per area (LMA):** The ratio of leaf dry mass to
-  one-sided leaf area (g m^-2^); a key functional trait inversely
-  related to specific leaf area (SLA) [@wright2004].
-
-
 ## 6. Required Materials
 
 | Item                                     | Notes                              |
@@ -119,10 +151,11 @@ as possible. Refer to
 | Paper towels                             | For drying tools after decontamination |
 | GPS unit                                 | For recording sampling locations   |
 | Plant identification guides              | For species verification           |
-| Plant press (if collecting vouchers)     | See [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd) Section 9 |
+| Plant press (if collecting vouchers)     | See [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd) Section 10 |
 | Field data sheet                         | Pre-printed                        |
 | Liquid nitrogen dewar and cryo-vials     | Only if snap-freezing is required  |
 | Analytical balance (field-portable, optional) | For recording fresh mass        |
+| Leaf area meter or scanner (optional)    | For measuring fresh leaf area in the lab before drying (needed for LMA calculation) |
 
 
 ## 7. Estimated Time
@@ -154,20 +187,25 @@ as possible. Refer to
 
 1. Put on clean nitrile gloves. Change gloves between species to
    avoid cross-contamination.
-2. Select fully expanded, mature leaves from the upper canopy (sun
+2. Select fully expanded, mature leaves from the outer canopy (sun
    leaves) unless the project specifically targets shade leaves or
    another position. Standardizing canopy position is critical for
-   comparability; sun and shade leaves can differ by 20--40% in leaf
-   nitrogen concentration and LMA [@cornelissen2003].
+   comparability: sun and shade leaves from the same individual can
+   differ by 20--40% in nitrogen concentration and by a factor of two
+   in LMA [@cornelissen2003; @perez-harguindeguy2013]. For trees,
+   sample from the sunlit portion of the mid- to upper crown; for
+   herbs and grasses, sample the most recently fully expanded leaf.
 3. Using clean pruning shears, clip the petiole at its base. For
    grasses, clip the most recent fully expanded blade at the ligule.
-4. Collect enough tissue mass for the planned analyses. As a guideline:
+4. Collect enough tissue mass for the planned analyses. As a
+   guideline:
 
 | Analysis                          | Minimum dry mass   |
 |:----------------------------------|:-------------------|
 | C, N, S by EA-IRMS               | 2--5 mg            |
 | $\delta^{13}$C, $\delta^{15}$N   | 2--5 mg            |
 | Total P, metals (acid digestion)  | 100--500 mg        |
+| LMA (requires leaf area scan)    | 3--5 leaves per individual |
 | Multiple analyses from one sample | 2--5 g fresh weight recommended |
 
 5. For composite samples, collect an approximately equal mass of
@@ -177,7 +215,20 @@ as possible. Refer to
    fresh). For frozen samples, place bags into the cooler with ice
    packs.
 
-### 8.3 Stem, Root, and Reproductive Tissue
+### 8.3 Measuring Leaf Area (for LMA/SLA)
+
+If LMA or SLA is needed, leaf area must be measured on fresh tissue
+before drying [@perez-harguindeguy2013]:
+
+1. Transport fresh leaves to the lab within 6 hours of collection,
+   keeping them in sealed bags in the cooler to minimize wilting
+2. Scan leaves on a flatbed scanner (600 dpi) or measure with a leaf
+   area meter. Record total one-sided area (cm^2^) for each sample.
+3. Dry and weigh as described in Section 9.1
+4. Calculate LMA = dry mass (g) / area (m^2^), or
+   SLA = area (m^2^) / dry mass (kg)
+
+### 8.4 Stem, Root, and Reproductive Tissue
 
 - **Stems:** Clip current-year growth. Record the diameter and length
   of the stem segment.
@@ -188,7 +239,7 @@ as possible. Refer to
 - **Seeds/fruits:** Collect from a minimum of 5 individuals. Record
   the phenological stage (e.g., immature, mature, dehisced).
 
-### 8.4 Decontamination Between Species
+### 8.5 Decontamination Between Species
 
 1. Spray pruning shears with 70% ethanol
 2. Wipe dry with a clean paper towel
@@ -197,13 +248,13 @@ as possible. Refer to
    or painted tools) and rinse with DI water after ethanol to remove
    residual salts
 
-### 8.5 Labeling
+### 8.6 Labeling
 
 Every sample must be labeled with:
 
 - Site name and plot/transect ID
 - Species (use the 6-letter code from
-  [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd) Section 11.2)
+  [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd) Section 12.2)
 - Tissue type (leaf, stem, root, seed)
 - Individual or composite (if composite, record the number of
   individuals)
@@ -213,7 +264,7 @@ Every sample must be labeled with:
 Write on both the bag/envelope and a separate tag inside (in case
 the exterior label smudges).
 
-### 8.6 Field Data Sheet
+### 8.7 Field Data Sheet
 
 Record the following for each sample:
 
@@ -224,6 +275,7 @@ Record the following for each sample:
 | Species              |                                     |
 | Tissue type          |                                     |
 | Number of individuals| (if composite)                      |
+| Canopy position      | Sun / shade / mixed                 |
 | GPS coordinates      |                                     |
 | Fresh mass (g)       | (if field balance available)        |
 | Notes                | Condition, herbivory, phenology     |
@@ -248,7 +300,9 @@ The default preservation method for nutrient and isotope analysis
 ### Temperature Matters
 Do not exceed 60 C for tissue intended for nitrogen or carbon isotope
 analysis. Higher temperatures can volatilize nitrogen compounds and
-alter $\delta^{15}$N values [@kalra1998].
+alter $\delta^{15}$N values [@kalra1998]. For samples intended only
+for total C and N by combustion (not isotope analysis), drying at
+70 C is acceptable and reduces drying time.
 :::
 
 ### 9.2 Freezing
@@ -287,7 +341,12 @@ volatile compounds):
   contributed by each individual
 - When interpreting foliar nutrient results, compare against published
   reference ranges for the target species or functional group
-  [@reuter1997; @mills2004]
+  [@reuter1997; @mills2004]. Values outside the expected range may
+  indicate contamination, analytical error, or genuine ecological
+  signal (e.g., nutrient deficiency or toxicity).
+- For LMA, verify that leaf area was measured on fresh, fully turgid
+  tissue; wilted leaves underestimate area and inflate LMA
+  [@perez-harguindeguy2013]
 
 
 ## 11. References
@@ -303,7 +362,7 @@ Before collecting plant tissue independently, personnel must:
 1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 2. Demonstrate species identification for the target community
 3. Demonstrate proper collection technique (glove changes, tool
-   decontamination, labeling)
+   decontamination, labeling, canopy position standardization)
 4. Process one set of samples through drying and grinding under
    supervision
 5. Be signed off by the PI or field lead

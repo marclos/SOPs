@@ -7,7 +7,7 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.2"
+revision: "0.3"
 
 revision-history:
   - version: "0.1"
@@ -18,15 +18,21 @@ revision-history:
     date: "2026-05-28"
     author: "Marc Los Huertos"
     changes: "Added bibtex citations; expanded discussion of method selection and observer bias"
+  - version: "0.3"
+    date: "2026-05-28"
+    author: "Marc Los Huertos"
+    changes: "Added definitions section; expanded method comparison with quantitative bias data; added citations for point-method origin and cover estimation accuracy"
 ---
 
 ## 1. Purpose
 
 This SOP describes field procedures for conducting vegetation transect
-surveys using three common methods: line-point intercept, line
-intercept, and quadrat (cover class) sampling. These methods quantify
-plant species composition, percent cover, and community structure
-across field sites [@bonham2013; @mueller-dombois1974].
+surveys using three common methods: line-point intercept (LPI), line
+intercept (LI), and quadrat (cover class) sampling. These methods
+quantify plant species composition, percent cover, and community
+structure across field sites and form the basis for vegetation
+monitoring, ecological assessment, and restoration evaluation
+[@bonham2013; @mueller-dombois1974; @kent2012].
 
 
 ## 2. Scope
@@ -35,12 +41,55 @@ across field sites [@bonham2013; @mueller-dombois1974].
   field sites, including the Bernard Field Station, Pomona College
   Farm, the Pit, restoration sites, and photovoltaic panel study areas
 - **Does not apply to:** Aquatic or submerged vegetation surveys;
-  tree-only forest inventory (DBH-based methods); remote sensing
+  tree-only forest inventory (DBH-based methods; see
+  [SOP-F604](SOP-F604-tree-dbh-forest-inventory.qmd)); remote sensing
   vegetation analysis
 - **Location:** All EA Program field sites
 
 
-## 3. Responsibilities
+## 3. Definitions
+
+- **Percent cover:** The proportion of the ground surface covered by
+  the vertical projection of the aerial parts of a plant species,
+  expressed as a percentage. Cover is the standard metric for
+  characterizing non-woody vegetation communities because it
+  integrates plant size and density into a single measure
+  [@bonham2013].
+- **Line-point intercept (LPI):** A method that estimates cover by
+  recording what a vertically lowered pin contacts at fixed intervals
+  along a transect. Originally described by @levy1933, LPI produces
+  objective, repeatable cover estimates with minimal observer bias
+  [@herrick2005].
+- **Line intercept (LI):** A method that measures the length of
+  transect tape intercepted by the canopy of each species. Best
+  suited for shrubs and other plants with clearly defined canopy
+  boundaries.
+- **Quadrat:** A fixed-area frame (typically 1 m x 1 m) within which
+  percent cover is visually estimated for each species. Visual
+  estimation introduces more observer subjectivity than point-based
+  methods but permits rapid assessment and better detection of rare
+  species [@daubenmire1959; @godinez-alvarez2009].
+- **Daubenmire cover class:** A categorical scale for estimating cover
+  within quadrats: 1 (0--5%), 2 (5--25%), 3 (25--50%), 4 (50--75%),
+  5 (75--95%), 6 (95--100%). The midpoint of each class is used in
+  calculations [@daubenmire1959].
+- **Top hit / lower hit:** In LPI, the "top hit" is the first species
+  the pin contacts as it descends through the canopy; subsequent
+  contacts with other species or canopy layers are "lower hits."
+  Recording both allows multi-layer canopy analysis.
+- **Species richness:** The total number of species recorded in a
+  defined area. Richness is strongly influenced by plot size and
+  sampling effort [@wilson2012].
+- **Voucher specimen:** A pressed, dried, and identified plant
+  specimen archived for verification of field identifications. See
+  Section 9.
+- **Basal cover:** The proportion of ground surface occupied by the
+  base (stem or root crown) of a plant, as distinct from foliar
+  cover. Basal cover is more stable than foliar cover across seasons
+  and is sometimes used for perennial grass monitoring [@herrick2005].
+
+
+## 4. Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -50,7 +99,7 @@ across field sites [@bonham2013; @mueller-dombois1974].
 | New Students      | Complete training before independent surveying          |
 
 
-## 4. Safety and Hazards
+## 5. Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -73,14 +122,8 @@ across field sites [@bonham2013; @mueller-dombois1974].
 
 - [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 
-### Emergency Procedures
 
-Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for
-emergency response, including allergic reactions and snakebite
-protocols.
-
-
-## 5. Summary of Methods
+## 6. Summary of Methods
 
 Three survey methods are covered in this SOP. Select the method that
 best fits your vegetation type and research objectives
@@ -96,17 +139,19 @@ best fits your vegetation type and research objectives
 ### Choosing a Method
 For most EA Program projects in southern California grasslands and
 shrublands, **line-point intercept** is the default method because it
-minimizes observer bias in cover estimation [@herrick2005]. Use
-**quadrats** when rare species detection is important or when rapid
-assessment is needed. Use **line intercept** for shrub-dominated
-communities where canopy boundaries are distinct. The modified
-Daubenmire cover class system [@daubenmire1959] is widely used for
-quadrat surveys but introduces more observer subjectivity than
-point-based methods [@bonham2013].
+minimizes observer bias in cover estimation [@herrick2005;
+@godinez-alvarez2009]. Use **quadrats** when rare species detection
+is important or when rapid assessment is needed, recognizing that
+visual cover estimation varies significantly among observers even
+after training [@bonham2013]. Use **line intercept** for
+shrub-dominated communities where canopy boundaries are distinct.
+When a study spans multiple years, method consistency across years is
+more important than selecting the "best" method in any given year
+[@symstad2008].
 :::
 
 
-## 6. Required Materials
+## 7. Required Materials
 
 ### Field Equipment
 
@@ -127,7 +172,7 @@ point-based methods [@bonham2013].
 | Flagging tape                 | For temporary marking                          |
 
 
-## 7. Estimated Time
+## 8. Estimated Time
 
 | Task                        | Time                                           |
 |:----------------------------|:-----------------------------------------------|
@@ -138,9 +183,9 @@ point-based methods [@bonham2013].
 | Data entry and QC           | 30 minutes per transect (post-field)           |
 
 
-## 8. Procedure
+## 9. Procedure
 
-### 8.1 Survey Timing
+### 9.1 Survey Timing
 
 Conduct vegetation surveys during the peak growing season for the
 target community. In southern California:
@@ -150,13 +195,18 @@ target community. In southern California:
 - **Riparian:** June through August
 
 Consistency in timing across years is essential for detecting temporal
-changes [@symstad2008].
+changes [@symstad2008]. Surveys conducted outside the peak window
+will underestimate cover for deciduous and annual species.
 
-### 8.2 Transect Layout
+### 9.2 Transect Layout
 
 1. Determine transect locations using the project sampling design
    (random, stratified random, or systematic placement within habitat
-   zones)
+   zones). The choice of sampling design affects the inferences that
+   can be drawn from the data; random or stratified random designs
+   support unbiased estimation of population-level cover, while
+   systematic designs maximize spatial coverage but can coincide with
+   periodic landscape features [@kent2012].
 2. Navigate to the starting point and record GPS coordinates
 3. Establish the transect bearing using a compass (typically
    perpendicular to environmental gradients, e.g., slope, moisture,
@@ -175,11 +225,13 @@ recorded to sub-meter accuracy). Take a compass bearing and distance
 to at least two nearby permanent features for relocation.
 :::
 
-### 8.3 Method A: Line-Point Intercept
+### 9.3 Method A: Line-Point Intercept
 
 This method estimates percent cover by recording what a vertical
-sampling pin contacts at regular intervals along the transect
-[@herrick2005].
+sampling pin contacts at regular intervals along the transect. The
+method was originally developed by @levy1933 for pasture analysis
+and has since become the standard for rangeland and grassland
+monitoring [@herrick2005].
 
 1. Begin at the 0 m end of the transect; always work from the same
    side of the tape
@@ -195,15 +247,27 @@ sampling pin contacts at regular intervals along the transect
    point
 6. Advance to the next sampling point and repeat
 
+::: {.callout-important}
+### Pin Angle Matters
+The pin must be lowered vertically (plumb). Tilting the pin even
+slightly increases the probability of contacting vegetation and
+inflates cover estimates. Some protocols use a pin guide or frame
+to enforce verticality.
+:::
+
 **Calculations:**
 
 $$
 \text{Percent cover for species } i = \frac{\text{Number of hits for species } i}{\text{Total number of sampling points}} \times 100
 $$
 
-Total cover may exceed 100% when canopy layers overlap.
+Total cover may exceed 100% when canopy layers overlap. The number
+of sampling points required depends on the diversity and patchiness
+of the vegetation; 100 points per 50 m transect (0.5 m interval) is
+standard for diverse grasslands, while 50 points (1 m interval) may
+suffice in low-diversity or homogeneous stands [@elzinga1998].
 
-### 8.4 Method B: Line Intercept
+### 9.4 Method B: Line Intercept
 
 This method measures the length of transect tape intercepted by each
 plant species. Best suited for shrubs and plants with distinct canopy
@@ -225,7 +289,7 @@ $$
 \text{Percent cover for species } i = \frac{\sum \text{intercept lengths for species } i}{\text{Total transect length}} \times 100
 $$
 
-### 8.5 Method C: Quadrat (Cover Class)
+### 9.5 Method C: Quadrat (Cover Class)
 
 This method uses visual estimates of cover within fixed-area plots
 placed at intervals along the transect [@daubenmire1959].
@@ -251,8 +315,14 @@ placed at intervals along the transect [@daubenmire1959].
 6. Note the maximum vegetation height (cm) in each quadrat
 7. Photograph each quadrat from directly above
 
+Visual estimation of cover is inherently subjective and sensitive to
+observer experience, viewing angle, and vegetation height; training
+with known-cover reference images or calibration frames improves
+consistency but does not eliminate inter-observer variability
+[@godinez-alvarez2009; @bonham2013].
 
-## 9. Voucher Specimens
+
+## 10. Voucher Specimens
 
 When a plant cannot be identified in the field:
 
@@ -265,13 +335,17 @@ When a plant cannot be identified in the field:
 5. Update the data sheet with the confirmed identification
 
 
-## 10. Quality Control
+## 11. Quality Control
 
 - Two observers should independently estimate cover for at least 10%
   of quadrats to assess observer agreement. Inter-observer variability
   in cover estimation is the largest source of error in quadrat-based
   surveys; training reduces but does not eliminate this bias
   [@elzinga1998; @bonham2013].
+- For LPI surveys, duplicate readings at 10% of points should agree
+  on species identity for at least 90% of hits. Disagreements on
+  ground cover type (e.g., litter vs. bare soil) are most common and
+  should be resolved by applying consistent definitions.
 - Photograph each transect and quadrat for archival verification
 - Review data sheets in the field before leaving the site (check for
   missing entries, illegible writing, and species code consistency)
@@ -280,14 +354,14 @@ When a plant cannot be identified in the field:
   surveys
 
 
-## 11. Data Management
+## 12. Data Management
 
-### 11.1 Field Data Sheets
+### 12.1 Field Data Sheets
 
 Use the data sheets in Appendix A. Record in pencil (ink smears when
 wet). Use Rite in the Rain paper if available.
 
-### 11.2 Data Entry
+### 12.2 Data Entry
 
 Enter data into the project spreadsheet or database within 48 hours.
 Each row should represent one observation (one point, one intercept,
@@ -303,7 +377,7 @@ or one quadrat-species combination). Required fields:
 - Ground cover type (if applicable)
 
 
-## 12. Waste and Site Impact
+## 13. Waste and Site Impact
 
 - Remove all flagging tape, pin flags, and temporary markers after the
   survey
@@ -313,13 +387,13 @@ or one quadrat-species combination). Required fields:
 - Pack out all trash and supplies
 
 
-## 13. References
+## 14. References
 
 ::: {#refs}
 :::
 
 
-## 14. Training Record
+## 15. Training Record
 
 Before conducting vegetation surveys independently, personnel must:
 
@@ -372,8 +446,6 @@ Before conducting vegetation surveys independently, personnel must:
 
 | Quadrat # | Position (m) | Species | Cover Class | Max Height (cm) |
 |:----------|:-------------|:--------|:------------|:----------------|
-| | | | | |
-| | | | | |
 | | | | | |
 
 **Ground cover for each quadrat:**

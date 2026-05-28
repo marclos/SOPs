@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F604: Tree DBH and Forest Inventory
-# =============================================================================
 title: "Tree DBH and Forest Inventory"
 sop-number: "SOP-F604"
 author:
@@ -9,7 +6,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.2"
+revision: "0.3"
 
 revision-history:
   - version: "0.1"
@@ -20,6 +17,10 @@ revision-history:
     date: "2026-05-28"
     author: "Marc Los Huertos"
     changes: "Added citations for FIA field guide, mensuration methods, and large-tree carbon storage"
+  - version: "0.3"
+    date: "2026-05-28"
+    author: "Marc Los Huertos"
+    changes: "Added definitions section; expanded discussion of tree size distributions, measurement error propagation, and stand dynamics context"
 ---
 
 ## 1. Purpose
@@ -28,11 +29,19 @@ This SOP describes standardized procedures for measuring tree diameter
 at breast height (DBH), conducting fixed-area plot-based forest
 inventories, and estimating basal area using prism or angle-gauge
 sampling. These measurements are fundamental to characterizing forest
-structure, estimating stand density and biomass, monitoring tree growth,
-and providing inputs to allometric equations for carbon accounting
-[@avery2002; @westfall2020]. The measurement conventions follow the
-USDA Forest Service Forest Inventory and Analysis (FIA) national
-standards [@usfs_fia2023].
+structure, estimating stand density and biomass, monitoring tree
+growth, and providing inputs to allometric equations for carbon
+accounting [@avery2002; @westfall2020]. The measurement conventions
+follow the USDA Forest Service Forest Inventory and Analysis (FIA)
+national standards [@usfs_fia2023].
+
+Accurate DBH measurement is the single most important field variable
+in forest ecology because nearly all derived quantities (basal area,
+volume, biomass, and carbon) depend on it through nonlinear allometric
+relationships. Small systematic errors in DBH propagate
+disproportionately into biomass estimates, especially for
+large-diameter trees, which store a disproportionate fraction of
+stand-level carbon [@lutz2018; @west2009].
 
 
 ## 2. Scope
@@ -41,13 +50,52 @@ standards [@usfs_fia2023].
   riparian forests, oak woodlands, mixed conifer stands, and planted
   trees at restoration and campus sites
 - **Does not apply to:** Shrubs with DBH below 2.5 cm (use
-  [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd) for shrub cover);
-  timber cruising for commercial harvest; urban tree risk assessment
+  [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd) for shrub
+  cover); timber cruising for commercial harvest; urban tree risk
+  assessment
 - **Location:** All EA Program terrestrial field sites with woody
   vegetation
 
 
-## 3. Responsibilities
+## 3. Definitions
+
+- **Diameter at breast height (DBH):** The diameter of a tree trunk
+  measured at 1.37 m (4.5 ft) above ground level on the uphill side
+  of the tree. DBH is the standard dimension for characterizing tree
+  size [@avery2002; @usfs_fia2023].
+- **Basal area (BA):** The cross-sectional area of a tree trunk at
+  breast height, calculated as $\text{BA} = \frac{\pi}{4} \times
+  \text{DBH}^2$. Often expressed per hectare (m^2^/ha) as a measure
+  of stand density.
+- **Basal area factor (BAF):** The conversion factor for a wedge
+  prism or angle gauge that translates the number of "in" trees to
+  stand basal area (m^2^/ha).
+- **Variable-radius plot (point sampling):** A sampling method where
+  the probability of a tree being included is proportional to its
+  basal area, achieved using a BAF prism. Originally described by
+  @grosenbaugh1952.
+- **Fixed-area plot:** A plot of known area (e.g., 0.04 ha circular
+  plot, radius 11.28 m) within which all trees above a minimum DBH
+  threshold are measured [@vanLaar2007].
+- **Allometric equation:** A mathematical model relating an easily
+  measured tree dimension (usually DBH) to a harder-to-measure
+  quantity (usually biomass or volume) through a power function
+  [@chojnacky2014; @jenkins2003].
+- **Crown class:** A classification of a tree's position in the
+  canopy: dominant, co-dominant, intermediate, or suppressed. Crown
+  class reflects competitive status and light availability.
+- **Snag:** A standing dead tree. Snags provide habitat for cavity
+  nesters and are recorded separately from live trees in inventories.
+- **Stand density index (SDI):** A relative measure of stand density
+  that accounts for tree size, allowing comparison across species and
+  sites [@pretzsch2009].
+- **Size distribution:** The frequency distribution of tree diameters
+  in a stand. Reverse-J distributions characterize uneven-aged stands
+  with continuous recruitment; normal or bimodal distributions suggest
+  even-aged cohorts or past disturbance [@muller-landau2006].
+
+
+## 4. Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -56,14 +104,14 @@ standards [@usfs_fia2023].
 | New Students      | Complete training before independent measurement        |
 
 
-## 4. Safety and Hazards
+## 5. Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
 
 - **Physical:** Dead or leaning trees (snags, widow-makers) may shed
-  branches. Look up before working under any tree. Do not measure trees
-  during high winds.
+  branches. Look up before working under any tree. Do not measure
+  trees during high winds.
 - **Biological:** Poison oak, ticks, stinging insects, and snakes in
   wooded habitats. Wasp nests may be present in tree cavities.
 - **Terrain:** Steep slopes in forested areas increase fall risk. Use
@@ -84,7 +132,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). Work in
 pairs in remote forested areas.
 
 
-## 5. Equipment and Materials
+## 6. Equipment and Materials
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
@@ -102,9 +150,9 @@ pairs in remote forested areas.
 | Calculator                            | For basal area and density calculations  |
 
 
-## 6. Procedure
+## 7. Procedure
 
-### 6.1 Measuring DBH
+### 7.1 Measuring DBH
 
 DBH is measured at 1.37 m (4.5 ft) above ground level on the uphill
 side of the tree [@avery2002; @usfs_fia2023].
@@ -138,10 +186,10 @@ studies, tag each tree with a numbered aluminum tag nailed above
 breast height.
 :::
 
-### 6.2 Fixed-Area Plot Inventory
+### 7.2 Fixed-Area Plot Inventory
 
 Fixed-area plots are the standard method for forest inventory
-[@vanLaar2007]. Plot size depends on tree density.
+[@vanLaar2007; @west2009]. Plot size depends on tree density.
 
 | Tree Density      | Recommended Plot Size     | Radius (circular) |
 |:------------------|:--------------------------|:-------------------|
@@ -168,7 +216,7 @@ Fixed-area plots are the standard method for forest inventory
    - Height (optional; measured with a clinometer or rangefinder)
 5. Record the total number of stems and species per plot.
 
-### 6.3 Variable-Radius Plot Sampling (Basal Area Prism)
+### 7.3 Variable-Radius Plot Sampling (Basal Area Prism)
 
 The BAF prism provides a rapid estimate of stand basal area without
 establishing fixed plot boundaries [@avery2002; @grosenbaugh1952].
@@ -194,10 +242,10 @@ where $n$ is the number of "in" trees and BAF is the basal area factor
 of the prism (typically 1, 2, 4, or 5 m^2^/ha per tree counted;
 check the prism label).
 
-### 6.4 Tree Height Measurement (Optional)
+### 7.4 Tree Height Measurement (Optional)
 
 Use a clinometer or laser rangefinder to measure total tree height
-[@vanLaar2007]:
+[@vanLaar2007; @west2009]:
 
 1. Stand at a known horizontal distance from the tree base (e.g.,
    15--30 m; measure with a tape or rangefinder).
@@ -212,12 +260,15 @@ H = D \times (\tan\alpha - \tan\beta)
 $$
 
 where $D$ is the horizontal distance (m) and $H$ is the total height
-(m).
+(m). This formula assumes the observer's line of sight to the top
+of the tree is unobstructed and that the tree is vertical; for
+leaning trees, measure height along the leaning axis and record the
+lean angle.
 
 
-## 7. Derived Calculations
+## 8. Derived Calculations
 
-### 7.1 Basal Area per Tree
+### 8.1 Basal Area per Tree
 
 $$
 \text{BA (m}^2\text{)} = \frac{\pi}{4} \times \left(\frac{\text{DBH}}{100}\right)^2
@@ -225,7 +276,7 @@ $$
 
 where DBH is in cm.
 
-### 7.2 Stand Density and Basal Area per Hectare
+### 8.2 Stand Density and Basal Area per Hectare
 
 $$
 \text{Trees/ha} = \frac{n}{\text{plot area (ha)}}
@@ -235,7 +286,7 @@ $$
 \text{BA/ha (m}^2\text{/ha)} = \frac{\sum \text{BA}_i}{\text{plot area (ha)}}
 $$
 
-### 7.3 Biomass Estimation
+### 8.3 Biomass Estimation
 
 Above-ground biomass can be estimated using published allometric
 equations of the form:
@@ -246,15 +297,27 @@ $$
 
 where $a$ and $b$ are species-specific coefficients from published
 sources [@chojnacky2014; @jenkins2003]. Document the allometric
-equation, source, and species used in the project README.
+equation, source, and species used in the project README. Because
+the exponent $b$ typically ranges from 2 to 3, measurement errors in
+DBH are amplified in biomass estimates: a 1 cm error at DBH = 50 cm
+produces a roughly 4--6% error in biomass [@west2009]. Large-diameter
+trees store a disproportionately large fraction of aboveground carbon
+in most forest types; accurate measurement of the largest individuals
+in a stand is therefore critical for unbiased biomass and carbon stock
+estimates [@lutz2018].
 
-Large-diameter trees store a disproportionately large fraction of
-aboveground carbon in most forest types; accurate measurement of the
-largest individuals in a stand is therefore critical for unbiased
-biomass and carbon stock estimates [@lutz2018].
+### 8.4 Interpreting Size Distributions
+
+Plotting the diameter distribution (number of trees per DBH class)
+provides insight into stand history and dynamics. A reverse-J
+(negative exponential) distribution suggests continuous recruitment
+across size classes, typical of uneven-aged or mixed-species stands.
+A bell-shaped or bimodal distribution suggests one or more distinct
+cohorts established after disturbance events
+[@muller-landau2006; @pretzsch2009].
 
 
-## 8. Quality Control
+## 9. Quality Control
 
 - Measure DBH twice (wrap the tape, read, remove, re-wrap, re-read).
   The two readings should agree within 0.5 cm. Record the mean.
@@ -265,15 +328,18 @@ biomass and carbon stock estimates [@lutz2018].
   season by measuring a cylinder of known diameter.
 - For permanent plots, verify that tags are intact and measurement
   points are correctly located at each re-measurement.
+- When comparing DBH across re-measurement intervals, confirm that
+  the measurement point has not shifted due to bark ingrowth over
+  tags or paint marks [@westfall2020].
 
 
-## 9. References
+## 10. References
 
 ::: {#refs}
 :::
 
 
-## 10. Related SOPs
+## 11. Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -284,7 +350,7 @@ biomass and carbon stock estimates [@lutz2018].
 | [F606](SOP-F606-canopy-cover.qmd)      | Canopy Cover              | Densiometer and photo methods     |
 
 
-## 11. Training Record
+## 12. Training Record
 
 Before conducting tree measurements independently, personnel must:
 
