@@ -53,7 +53,11 @@ SOPs/
 - [TinyTeX](https://yihui.org/tinytex/) or a full LaTeX distribution (for PDF output)
 - R packages: `knitr`, `rmarkdown`, `qpdf`
 
-### Build the site locally
+### Clone Using Rstudio Server (Recommended)
+
+Use SOP 801 Github and R to clone on Pomona's Server. 
+
+### Build the site locally (for local computer, not recommended)
 
 ```bash
 # Clone the repository
