@@ -9,13 +9,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2025-05-16"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-05-27"
+    author: "Marc Los Huertos"
+    changes: "Added bibtex citations; expanded discussion of error sources and carbon stock implications"
 ---
 
 ## 1. Purpose
@@ -106,7 +110,7 @@ emergency response.
 
 | Item                          | Notes                                     |
 |:------------------------------|:------------------------------------------|
-| Drying oven                   | Set to 105 C; see see [SOP-L105](../lab_sops/SOP-L105-drying-ovens.qmd) |
+| Drying oven                   | Set to 105 C; see [SOP-L105](../lab_sops/SOP-L105-drying-ovens.qmd) |
 | Analytical balance            | 0.01 g resolution minimum; [SOP-L102](../lab_sops/SOP-L102-using-balances.qmd) |
 | Desiccator                    | For cooling dried samples before weighing |
 | Pre-weighed aluminum drying tins | Large enough to hold the full core volume |
@@ -155,6 +159,9 @@ The goal is to capture the soil at its natural field density.
    slightly below, the soil surface.
 7. Do not over-drive the sampler. If the ring is driven more than 1 cm
    past flush, the sample may be compacted and should be discarded.
+   Over-driving and under-driving the core introduce bias in opposite
+   directions; the magnitude of the bias depends on soil type and
+   moisture status [@grossman2002; @page-dumroese1999].
 8. Carefully excavate the soil around the sampler using the trowel,
    leaving a pedestal of soil beneath and around the core
 9. Slide the trowel or soil knife beneath the bottom of the core to
@@ -234,7 +241,10 @@ $$
 $$
 
 where $\rho_s$ is the particle density, typically assumed to be
-2.65 g/cm^3^ for mineral soils.
+2.65 g/cm^3^ for mineral soils. The assumed particle density of
+2.65 g/cm^3^ is appropriate for most mineral soils but should be
+verified for soils with high organic matter (where it may be lower)
+or heavy mineral content [@blake1986].
 
 ### 7.2 Expected Ranges
 
@@ -250,6 +260,12 @@ Typical bulk density values for mineral soils:
 
 Values outside the range of 0.5 -- 2.0 g/cm^3^ for mineral soils
 should be investigated for sampling or measurement error.
+
+Variability is typically higher in surface soils than in subsoils
+because of biological activity and tillage effects [@alshammary2004].
+For carbon stock calculations, consistent sampling depth and core
+diameter are critical because small changes in bulk density propagate
+into large errors at the landscape scale [@walter2016].
 
 ### 7.3 QC Requirements
 
@@ -275,17 +291,6 @@ should be investigated for sampling or measurement error.
 
 
 ## 9. References
-
-- Blake, G.R. & Hartge, K.H. (1986). Bulk density. In: Klute, A.
-  (Ed.), *Methods of Soil Analysis, Part 1: Physical and Mineralogical
-  Methods*. 2nd ed. SSSA Book Series No. 5. pp. 363--375.
-- Grossman, R.B. & Reinsch, T.G. (2002). Bulk density and linear
-  extensibility. In: Dane, J.H. & Topp, G.C. (Eds.), *Methods of Soil
-  Analysis, Part 4: Physical Methods*. SSSA Book Series No. 5.
-  pp. 201--228.
-- Robertson, G.P., Coleman, D.C., Bledsoe, C.S., & Sollins, P. (1999).
-  *Standard Soil Methods for Long-Term Ecological Research*. Oxford
-  University Press.
 
 ::: {#refs}
 :::
@@ -355,7 +360,9 @@ $$
 where $M_{\text{cf}}$ = mass of coarse fragments (g) and
 $V_{\text{cf}}$ = volume of coarse fragments (cm^3^), estimated by
 water displacement or by dividing $M_{\text{cf}}$ by an assumed rock
-density (typically 2.65 g/cm^3^).
+density (typically 2.65 g/cm^3^). The water-displacement method for
+estimating coarse-fragment volume is preferred when fragment shapes are
+irregular [@page-dumroese1999].
 
 Record the coarse fragment mass fraction and report whether the bulk
 density value refers to the whole soil or the fine-earth fraction.

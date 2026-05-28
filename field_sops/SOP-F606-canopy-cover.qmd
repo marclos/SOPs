@@ -9,7 +9,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
@@ -17,6 +17,10 @@ revision-history:
     author: "Marc Los Huertos"
     changes: "Initial draft; standalone version of methods previously
               embedded in SOP-F304"
+  - version: "0.2"
+    date: "2026-05-28"
+    author: "Marc Los Huertos"
+    changes: "Added citations for method comparison studies and densiometer bias quantification"
 ---
 
 ## 1. Purpose
@@ -30,6 +34,13 @@ and solar radiation modeling. Separating this SOP from
 [SOP-F304](SOP-F304-stream-physical-habitat.qmd) allows the methods
 to be applied in any habitat, not just stream reaches [@jennings1999;
 @lemmon1956].
+
+The distinction between canopy cover (the proportion of ground area
+covered by the vertical projection of the canopy) and canopy closure
+(the proportion of the sky hemisphere obscured by vegetation at a
+single point) is important for data interpretation; the two metrics
+are related but not equivalent, and values can differ by 10--20% at
+the same location depending on canopy heterogeneity [@jennings1999].
 
 
 ## 2. Scope
@@ -155,10 +166,12 @@ directions (24 per direction x 4 directions).
 
 ::: {.callout-important}
 The convex densiometer systematically overestimates canopy openness
-compared to hemispherical photography because of the wide-angle optics
-and the observer's head position [@cook1995]. Report the method used
-alongside all canopy cover values, and do not mix methods within a
-dataset.
+(and therefore underestimates canopy cover) compared to hemispherical
+photography because of the wide-angle optics and the observer's head
+position [@cook1995; @fiala2006]. The magnitude of the bias varies
+with stand density and observer experience but is typically 5--15
+percentage points [@korhonen2006]. Report the method used alongside
+all canopy cover values, and do not mix methods within a dataset.
 :::
 
 ### 6.3 Method B: Hemispherical Photography
@@ -216,16 +229,17 @@ Report canopy cover values with the following metadata:
 - **Densiometer:** Have two observers independently read the same point.
   Readings should agree within 5 percentage points. If they disagree
   by more than 10 points, re-read together to identify the source of
-  discrepancy.
+  discrepancy. Observer bias is the largest error source for
+  densiometer measurements [@korhonen2006].
 - **Hemispherical photography:** Process the same image twice using
   different threshold values (+/- 10 units). If the resulting canopy
   cover differs by more than 5 percentage points, the image may be
   poorly exposed; re-shoot if possible.
 - At a subset of sites, measure canopy cover with both methods and
   report the comparison. This allows future users to relate datasets
-  collected with different methods.
-- Record the observer's name with every densiometer measurement;
-  observer bias is the largest error source.
+  collected with different methods and to quantify the systematic
+  offset between them [@fiala2006].
+- Record the observer's name with every densiometer measurement.
 
 
 ## 8. References

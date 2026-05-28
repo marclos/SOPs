@@ -9,13 +9,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2025-05-16"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-05-27"
+    author: "Marc Los Huertos"
+    changes: "Added bibtex citations; expanded discussion of ring geometry error and urban context"
 ---
 
 ## 1. Purpose
@@ -27,7 +31,10 @@ expressed in cm/h or mm/h. It is a key parameter for evaluating
 stormwater management, irrigation efficiency, soil compaction,
 hydrologic modeling, and land use impacts on soil physical properties.
 The double-ring method follows ASTM D3385 [@astm_d3385_2018]; the
-single-ring method follows Bouwer (1986) [@bouwer1986].
+single-ring method follows @bouwer1986. Infiltration measurements are
+also essential for calibrating hydrologic models and for evaluating
+the effects of soil sealing in urban environments [@hillel1998;
+@reynolds2002].
 
 
 ## 2. Scope
@@ -159,7 +166,11 @@ from the ring wall, abandon the test location and start at a new spot.
 1. Place the single ring at the test location
 2. Drive to approximately 5 cm depth using the same technique as above
 3. For best accuracy, use the largest diameter ring available (90 cm or
-   larger reduces lateral flow error) [@bouwer1986]
+   larger reduces lateral flow error) [@bouwer1986]. Single-ring
+   measurements tend to overestimate true vertical infiltration because
+   lateral divergence below the ring cannot be eliminated; the
+   magnitude of overestimation decreases as ring diameter increases
+   [@gregory2006].
 
 ### 6.4 Initial Filling
 
@@ -262,6 +273,13 @@ structure:
 Values outside the range of 0.01--50 cm/h should be investigated for
 measurement error or unusual soil conditions.
 
+Rates measured at EA Program sites in the Pomona/Claremont area should
+be interpreted in the context of the local aridic moisture regime, where
+antecedent moisture is often very low and hydrophobicity may develop
+under prolonged dry conditions [@hillel1998]. Urban and peri-urban soils
+may show infiltration rates well below their textural expectation due to
+compaction from foot traffic and construction [@lai2010].
+
 ### 7.3 QC Requirements
 
 - Conduct a minimum of three replicate tests per plot or treatment to
@@ -272,6 +290,9 @@ measurement error or unusual soil conditions.
   test (double-ring method)
 - Inspect ring installation for gaps between the ring wall and the soil;
   if gaps are visible, the test is invalid
+- Ring insertion depth and ponded water depth both influence measured
+  infiltration rate; standardize these dimensions across replicates and
+  sites to ensure comparability [@gregory2006].
 - Plot the infiltration rate versus time curve for each test. A
   monotonically decreasing curve approaching a constant value is
   expected. Erratic increases may indicate macropore activation or ring
@@ -288,19 +309,6 @@ measurement error or unusual soil conditions.
 
 
 ## 9. References
-
-- ASTM D3385-18. (2018). *Standard Test Method for Infiltration Rate
-  of Soils in Field Using Double-Ring Infiltrometer*. ASTM
-  International, West Conshohocken, PA.
-- Bouwer, H. (1986). Intake rate: Cylinder infiltrometer. In: Klute, A.
-  (Ed.), *Methods of Soil Analysis, Part 1: Physical and Mineralogical
-  Methods*. 2nd ed. SSSA Book Series No. 5. pp. 825--844.
-- Reynolds, W.D., Elrick, D.E., Youngs, E.G., Amoozegar, A., Booltink,
-  H.W.G., & Bouma, J. (2002). Saturated and field-saturated water flow
-  parameters. In: Dane, J.H. & Topp, G.C. (Eds.), *Methods of Soil
-  Analysis, Part 4: Physical Methods*. SSSA Book Series No. 5.
-  pp. 797--878.
-- Hillel, D. (1998). *Environmental Soil Physics*. Academic Press.
 
 ::: {#refs}
 :::

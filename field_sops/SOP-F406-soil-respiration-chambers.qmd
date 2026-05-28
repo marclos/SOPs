@@ -9,13 +9,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-19"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: "2026-05-27"
+    author: "Marc Los Huertos"
+    changes: "Added bibtex citations for chamber inter-comparison, carbon cycle context, and Q10"
 ---
 
 ## 1. Purpose
@@ -31,6 +35,15 @@ headspace gas samples at timed intervals, which are analyzed for CO~2~
 concentration using a portable infrared gas analyzer (IRGA), syringe
 samples returned to the lab, or soda-lime traps
 [@hutchinson1981; @livingston1995; @parkin2012].
+
+The static chamber method remains one of the most widely used
+approaches for point-scale soil CO~2~ flux measurement because of its
+simplicity and low cost, though it is subject to known biases from
+headspace concentration buildup and pressure artifacts [@pumpanen2004;
+@rochette2005]. At a global scale, soil respiration represents one of
+the largest fluxes in the terrestrial carbon cycle, and small changes
+can have significant implications for atmospheric CO~2~ concentrations
+[@raich1992; @davidson2002].
 
 
 ## 2. Scope
@@ -73,176 +86,130 @@ samples returned to the lab, or soda-lime traps
 ### Required PPE
 
 - [ ] Closed-toed shoes or field boots
-- [ ] Nitrile gloves (required when handling soda-lime)
-- [ ] Safety glasses (required when handling soda-lime or NaOH)
+- [ ] Nitrile or leather gloves
+- [ ] Safety glasses (when handling soda-lime or driving collars)
 - [ ] Sun protection (hat, sunscreen)
-- [ ] Work gloves (when driving collars)
 
-### Emergency Procedures
+### Related SOPs
 
-For soda-lime or NaOH contact with skin or eyes, flush with clean
-water for at least 15 minutes. Refer to
-[SOP-F001 Field Safety](SOP-F001-field-safety.qmd) and
-[SOP-L003 Hazardous Materials Handling](../lab_sops/SOP-L003-hazardous-materials-handling.qmd).
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
+field safety procedures.
 
 
 ## 5. Equipment and Materials
 
-### Chamber Components
-
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| PVC soil collars (20--30 cm diameter, 10--15 cm tall) | Installed 24+ hours before first measurement |
-| PVC chamber tops (opaque, with rubber gasket) | Must seal against collar; include a sampling port and a vent tube |
-| Rubber gasket or closed-cell foam     | For airtight seal between collar and top |
-| Vent tube (small-diameter tubing, 30--50 cm) | Equilibrates internal and atmospheric pressure without mass flow |
-| Sampling port with septum             | For syringe sampling of headspace gas    |
-| Reflective tape or insulation (optional) | To minimize solar heating of the chamber headspace |
-
-### Gas Sampling (Syringe Method)
-
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| Gas-tight syringes (20 or 60 mL)      | Luer-lock with stopcock                  |
-| Pre-evacuated vials (Exetainer, 12 mL) | For storing gas samples for lab analysis |
-| Needles (22 gauge)                    | For piercing septa                       |
-| Portable IRGA (e.g., LI-COR LI-830 or PP Systems EGM-5) | Optional; provides real-time CO~2~ readings |
-
-### Soda-Lime Method (Alternative)
-
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| Soda-lime granules (indicating grade) | Weighed pre- and post-deployment         |
-| Glass jars with lids                  | For containing soda-lime during deployment |
-| Analytical balance (0.01 g)           | For pre- and post-weighing               |
-| Desiccator                            | For equilibrating soda-lime moisture     |
-
-### General
-
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| Stopwatch or timer                    | For timed gas sampling intervals         |
-| Thermometer (soil and air)            | For recording temperature during deployment |
-| Soil moisture probe or TDR (optional) | For recording volumetric moisture        |
-| Mallet or dead-blow hammer            | For driving collars into soil            |
-| Measuring tape and ruler              | For measuring collar insertion depth and headspace height |
-| Field notebook                        | For recording all metadata               |
+| Item                          | Notes                                     |
+|:------------------------------|:------------------------------------------|
+| PVC or metal collars          | Installed in the soil at least 24 hours before measurement |
+| Chamber lids                  | Opaque (dark) for total respiration; clear for net CO~2~ exchange |
+| Rubber mallet                 | For installing collars                    |
+| Sealing material              | Closed-cell foam gasket or water trough on collar rim |
+| Syringes (30--60 mL)          | For headspace gas sampling (syringe method) |
+| Evacuated vials (Exetainer)   | For storing gas samples for lab analysis  |
+| Portable IRGA (optional)      | For real-time CO~2~ concentration readings |
+| Soda-lime (optional)          | For absorption-based CO~2~ measurement    |
+| Timer or stopwatch            | For tracking deployment intervals          |
+| Thermometer or soil temp probe | For concurrent soil temperature            |
+| Soil moisture probe (optional) | TDR or capacitance sensor                 |
+| Ruler or tape measure         | For measuring headspace height             |
+| Field data sheet              | For recording deployment times and readings |
+| GPS unit or smartphone        | For recording chamber locations             |
 
 
 ## 6. Procedure
 
 ### 6.1 Collar Installation
 
-Install collars at least 24 hours before the first measurement to
-allow the soil disturbance from insertion to subside.
+1. Install PVC or metal collars into the soil to a depth of
+   approximately 5 cm at least 24 hours (preferably 48 hours) before
+   the first measurement to allow the soil to recover from
+   disturbance.
+2. Do not sever major roots during installation; if roots are
+   encountered, reposition slightly.
+3. Measure and record the collar inside diameter and the height of the
+   collar above the soil surface on at least two sides. These
+   dimensions are needed to calculate headspace volume.
 
-1. Select collar locations according to the experimental design
-   (randomized, stratified, etc.; see
-   [SOP-F005](SOP-F005-random-sampling-design.qmd)).
-2. Clear surface litter from a circular area slightly larger than the
-   collar diameter.
-3. Place the collar on the soil surface and press gently to mark the
-   insertion point.
-4. Using the mallet and a wooden block placed on top of the collar,
-   drive the collar into the soil to a depth of 3--5 cm. Avoid driving
-   deeper than 5 cm, as this severs a disproportionate fraction of
-   surface roots and alters the flux [@rochette2005].
-5. Measure and record the collar insertion depth and the height of the
-   collar rim above the soil surface (this determines the headspace
-   volume).
-6. Record the collar ID and GPS coordinates per
-   [SOP-F006](SOP-F006-gps-site-navigation.qmd).
+### 6.2 Chamber Deployment
 
-### 6.2 Syringe Sampling Method
+1. Record the start time, soil temperature (at 5 cm depth), and soil
+   moisture at each collar location.
+2. Place the chamber lid on the collar, ensuring a gas-tight seal
+   (foam gasket compressed or water trough filled).
+3. If using the syringe method, collect a headspace sample immediately
+   after sealing (time zero), then at regular intervals (e.g., 10, 20,
+   30, and 40 minutes). The choice of deployment interval (typically
+   20--45 minutes) represents a trade-off: shorter deployments reduce
+   the concentration-feedback bias that suppresses diffusion as
+   headspace CO~2~ rises, but longer deployments provide a more
+   detectable concentration change in low-flux soils [@hutchinson1981;
+   @pumpanen2004].
+4. If using a portable IRGA, connect the chamber to the analyzer and
+   record CO~2~ concentration continuously or at 1-minute intervals.
+5. If using soda-lime traps, weigh the pre-dried soda-lime, place it
+   inside the sealed chamber, and retrieve it after a fixed deployment
+   period (typically 24 hours). Re-dry and reweigh to determine CO~2~
+   absorbed.
 
-1. Record ambient air temperature and soil temperature (at 5 cm depth
-   adjacent to the collar).
-2. Place the chamber top on the collar. Ensure the gasket creates a
-   tight seal. Note the deployment time (T~0~).
-3. Immediately take a T~0~ headspace sample: insert the syringe needle
-   through the sampling septum, pump the syringe 3 times to mix the
-   headspace, then withdraw the sample volume. Close the stopcock.
-   Transfer to a pre-evacuated Exetainer vial by puncturing the vial
-   septum.
-4. Repeat sampling at regular intervals. A typical schedule is T~0~,
-   T~10~, T~20~, and T~30~ (minutes). For high-flux soils, use shorter
-   intervals (e.g., 0, 5, 10, 15 min).
-5. After the final sample, remove the chamber top and record the time.
-6. Label each Exetainer with the collar ID, date, and time point.
-7. Store vials at room temperature and analyze within 48 hours by GC
-   or IRGA.
+### 6.3 Ending the Measurement
 
-### 6.3 Portable IRGA Method (Real-Time)
-
-If a portable IRGA is available:
-
-1. Connect the IRGA inlet to the chamber sampling port via tubing.
-2. Deploy the chamber and record CO~2~ concentration continuously or
-   at 1-minute intervals for 5--10 minutes.
-3. The flux is calculated from the linear increase in CO~2~
-   concentration over time.
-
-### 6.4 Soda-Lime Method (24-Hour Deployment)
-
-1. Pre-dry soda-lime granules at 105 C for 2 hours, cool in a
-   desiccator, and weigh to 0.01 g. Record the initial mass.
-2. Place 20--30 g of soda-lime in an open glass jar inside the collar.
-3. Seal the chamber top onto the collar. Deploy for 24 hours.
-4. Include at least two "blank" chambers: sealed chambers with
-   soda-lime but placed on an impermeable surface (plastic sheeting)
-   to measure handling and atmospheric absorption artifacts.
-5. After 24 hours, remove the jar, cap it, and return to the lab.
-6. Dry the soda-lime at 105 C for 2 hours, cool, and reweigh.
-7. Calculate CO~2~ absorbed as the mass gain, correcting for the
-   blank.
-
-::: {.callout-note}
-The soda-lime method provides an integrated 24-hour flux estimate but
-is less precise than syringe or IRGA methods [@raich2000]. It is best suited for
-comparative studies (e.g., treatment vs. control) rather than absolute
-flux quantification.
-:::
+1. Remove the chamber lid at the end of the measurement period.
+2. Record the end time.
+3. Transfer syringe samples to evacuated vials (Exetainers) for
+   transport to the lab if not using IRGA.
 
 
-## 7. Flux Calculation
+## 7. Quality Control and Acceptance Criteria
 
-For the syringe or IRGA method, calculate the flux using:
+### 7.1 Flux Calculation
+
+**Linear method (syringe or IRGA):**
 
 $$
-F = \frac{\Delta C}{\Delta t} \times \frac{V}{A} \times \frac{P}{R \times T}
+F = \frac{\Delta C}{\Delta t} \times \frac{V}{A} \times \frac{P}{RT}
 $$
 
-where:
+where $F$ = CO~2~ flux (micromol m^-2^ s^-1^), $\Delta C / \Delta t$ =
+rate of change in headspace CO~2~ concentration (ppm s^-1^), $V$ =
+headspace volume (m^3^), $A$ = collar area (m^2^), $P$ = atmospheric
+pressure (Pa), $R$ = ideal gas constant (8.314 J mol^-1^ K^-1^), and
+$T$ = air temperature (K).
 
-- $F$ = CO~2~ flux (umol m^-2^ s^-1^)
-- $\Delta C / \Delta t$ = rate of change of CO~2~ concentration in the
-  headspace (ppm s^-1^), from the slope of a linear regression of
-  concentration vs. time
-- $V$ = headspace volume (m^3^) = collar area $\times$ headspace height
-- $A$ = collar area (m^2^)
-- $P$ = atmospheric pressure (Pa)
-- $R$ = universal gas constant (8.314 J mol^-1^ K^-1^)
-- $T$ = air temperature (K)
+**Soda-lime method:**
 
-If the concentration increase is nonlinear, a nonlinear (e.g.,
-Hutchinson-Mosier) model may provide a better flux estimate
-[@hutchinson1981; @pihlatie2013]. Consult the PI.
+$$
+F = \frac{(M_f - M_i) \times 1.69}{A \times t}
+$$
 
+where $M_f$ and $M_i$ are the final and initial soda-lime masses (g),
+1.69 is the stoichiometric correction factor, $A$ = collar area (m^2^),
+and $t$ = deployment time (hours).
 
-## 8. Quality Control
+### 7.2 QC Requirements
 
-- Deploy at least 3 replicate chambers per treatment or plot.
-- Include at least one "blank" chamber per sampling event (chamber
-  sealed on an impermeable surface) to assess leakage and background.
+- Deploy at least three replicate chambers per treatment or land use.
 - Inspect collar seals before each deployment. Soil settling or animal
   disturbance can break the seal.
 - Record soil temperature and moisture alongside every flux
-  measurement; these are the primary drivers of soil respiration.
+  measurement; these are the primary drivers of soil respiration. Soil
+  respiration typically increases exponentially with temperature, with
+  Q~10~ values of 2--3 [@raich1992; @bond-lamberty2010]. Reporting
+  concurrent soil temperature and moisture allows flux values to be
+  normalized or modeled across campaigns and sites.
 - Reject any measurement where the R^2^ of the linear regression
   (concentration vs. time) is below 0.90, unless the flux is near
   zero.
 - Avoid measuring during or immediately after rainfall, as water
   pooling on the collar disrupts gas exchange.
+
+
+## 8. Waste Disposal
+
+| Waste Type              | Disposal Method                             |
+|:------------------------|:--------------------------------------------|
+| Used soda-lime          | Allow to dry; dispose as solid waste (non-hazardous once fully carbonated) |
+| Syringe needles         | Sharps container                            |
+| Used gloves             | Standard trash                              |
 
 
 ## 9. References

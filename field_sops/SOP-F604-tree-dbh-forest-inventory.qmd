@@ -9,13 +9,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-20"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: "2026-05-28"
+    author: "Marc Los Huertos"
+    changes: "Added citations for FIA field guide, mensuration methods, and large-tree carbon storage"
 ---
 
 ## 1. Purpose
@@ -26,7 +30,9 @@ inventories, and estimating basal area using prism or angle-gauge
 sampling. These measurements are fundamental to characterizing forest
 structure, estimating stand density and biomass, monitoring tree growth,
 and providing inputs to allometric equations for carbon accounting
-[@avery2002; @westfall2020].
+[@avery2002; @westfall2020]. The measurement conventions follow the
+USDA Forest Service Forest Inventory and Analysis (FIA) national
+standards [@usfs_fia2023].
 
 
 ## 2. Scope
@@ -101,7 +107,7 @@ pairs in remote forested areas.
 ### 6.1 Measuring DBH
 
 DBH is measured at 1.37 m (4.5 ft) above ground level on the uphill
-side of the tree [@avery2002].
+side of the tree [@avery2002; @usfs_fia2023].
 
 1. Identify the measurement height: 1.37 m above the ground surface on
    the uphill side of the tree. If the ground is level, measure from
@@ -126,15 +132,16 @@ side of the tree [@avery2002].
 ::: {.callout-tip}
 ### Tip
 For permanent monitoring plots, mark the DBH measurement point on the
-bark with a paint marker or timber crayon so that subsequent measurements
-are taken at the exact same height. For long-term studies, tag each tree
-with a numbered aluminum tag nailed above breast height.
+bark with a paint marker or timber crayon so that subsequent
+measurements are taken at the exact same height. For long-term
+studies, tag each tree with a numbered aluminum tag nailed above
+breast height.
 :::
 
 ### 6.2 Fixed-Area Plot Inventory
 
-Fixed-area plots are the standard method for forest inventory. Plot
-size depends on tree density.
+Fixed-area plots are the standard method for forest inventory
+[@vanLaar2007]. Plot size depends on tree density.
 
 | Tree Density      | Recommended Plot Size     | Radius (circular) |
 |:------------------|:--------------------------|:-------------------|
@@ -189,7 +196,8 @@ check the prism label).
 
 ### 6.4 Tree Height Measurement (Optional)
 
-Use a clinometer or laser rangefinder to measure total tree height:
+Use a clinometer or laser rangefinder to measure total tree height
+[@vanLaar2007]:
 
 1. Stand at a known horizontal distance from the tree base (e.g.,
    15--30 m; measure with a tape or rangefinder).
@@ -240,6 +248,11 @@ where $a$ and $b$ are species-specific coefficients from published
 sources [@chojnacky2014; @jenkins2003]. Document the allometric
 equation, source, and species used in the project README.
 
+Large-diameter trees store a disproportionately large fraction of
+aboveground carbon in most forest types; accurate measurement of the
+largest individuals in a stand is therefore critical for unbiased
+biomass and carbon stock estimates [@lutz2018].
+
 
 ## 8. Quality Control
 
@@ -286,17 +299,18 @@ Before conducting tree measurements independently, personnel must:
 
 ## Appendix A: Forest Inventory Data Sheet {.appendix}
 
-**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Plot ID:** \_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_\_\_
+**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Plot ID:** \_\_\_\_\_\_\_\_\_\_
+**Date:** \_\_\_\_\_\_\_\_\_\_\_
 
-**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_ **Plot size:** \_\_\_\_\_ m^2^ **Min DBH:** \_\_\_\_ cm
+**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_ **Plot size:** \_\_\_\_\_ m^2^
+**Min DBH:** \_\_\_\_ cm
 
-**GPS:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Elevation:** \_\_\_\_\_\_ m **Slope:** \_\_\_\_ %
+**GPS:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Elevation:** \_\_\_\_\_\_ m
+**Slope:** \_\_\_\_ %
 
 | Tree # | Species | DBH (cm) | Height (m) | Condition | Crown Class | Notes |
 |:-------|:--------|:---------|:-----------|:----------|:------------|:------|
 |        |         |          |            |           |             |       |
-|        |         |          |            |           |             |       |
-|        |         |          |            |           |             |       |
-|        |         |          |            |           |             |       |
 
-**Basal area prism count (BAF = \_\_\_\_):** \_\_\_\_\_ trees in = \_\_\_\_\_ m^2^/ha
+**Basal area prism count (BAF = \_\_\_\_):** \_\_\_\_\_ trees in =
+\_\_\_\_\_ m^2^/ha

@@ -7,25 +7,50 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2025-06-16"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-05-27"
+    author: "Marc Los Huertos"
+    changes: "Added bibtex citations; expanded discussion of thermal processes and sensor equilibration"
 ---
 
 ## 1. Purpose
 
-This SOP describes procedures for measuring soil temperature at multiple depths to construct soil temperature profiles. Soil temperature influences biological activity (microbial respiration, root growth, seed germination), chemical reaction rates (nutrient mineralization, decomposition), and physical processes (evaporation, frost heave). Temperature profiles are especially relevant for photovoltaic panel studies, where shading alters the soil thermal regime.
+This SOP describes procedures for measuring soil temperature at
+multiple depths to construct soil temperature profiles. Soil
+temperature influences biological activity (microbial respiration,
+root growth, seed germination), chemical reaction rates (nutrient
+mineralization, decomposition), and physical processes (evaporation,
+frost heave) [@ham2002; @hillel1998]. Temperature profiles are
+especially relevant for photovoltaic panel studies, where shading
+alters the soil thermal regime.
+
+The amplitude and phase lag of diurnal and seasonal temperature waves
+attenuate with depth according to the thermal diffusivity of the soil
+profile, making multi-depth measurement essential for characterizing
+subsurface energy budgets [@hillel1998]. Soil temperature also governs
+rates of microbial respiration and nitrogen mineralization, with
+Q~10~ values typically ranging from 2 to 3 for the biologically active
+zone [@onwuka2018]. When continuous monitoring is not feasible,
+air-temperature-based models can be used to estimate soil temperature,
+but these require site-specific calibration [@zheng1993].
 
 
 ## 2. Scope
 
-- **Applies to:** Spot measurements using handheld probe thermometers and continuous monitoring using datalogger-based thermocouple or thermistor systems at all EA Program field sites
-- **Does not apply to:** Soil heat flux measurements (requires heat flux plates); fire-related soil heating studies
-- **Location:** All EA Program field sites, including photovoltaic panel study areas, Bernard Field Station, and restoration sites
+- **Applies to:** Spot measurements using handheld probe thermometers
+  and continuous monitoring using datalogger-based thermocouple or
+  thermistor systems at all EA Program field sites
+- **Does not apply to:** Soil heat flux measurements (requires heat
+  flux plates); fire-related soil heating studies
+- **Location:** All EA Program field sites, including photovoltaic
+  panel study areas, Bernard Field Station, and restoration sites
 
 
 ## 3. Responsibilities
@@ -43,10 +68,13 @@ This SOP describes procedures for measuring soil temperature at multiple depths 
 ::: {.callout-warning}
 ### Hazards
 
-- **Physical:** Sharp probe tips, rebar stakes, hammering pilot holes in hard soil
+- **Physical:** Sharp probe tips, rebar stakes, hammering pilot holes
+  in hard soil
 - **Biological:** Ticks, snakes, and other field hazards (see SOP-F001)
-- **Electrical:** Datalogger batteries and wiring (low voltage, minimal risk)
-- **Environmental:** Heat exposure during summer measurements in southern California
+- **Electrical:** Datalogger batteries and wiring (low voltage, minimal
+  risk)
+- **Environmental:** Heat exposure during summer measurements in
+  southern California
 :::
 
 ### Required PPE
@@ -63,7 +91,11 @@ This SOP describes procedures for measuring soil temperature at multiple depths 
 
 ## 5. Summary of Methods
 
-Two approaches are described in this SOP. Select based on your project requirements.
+Two approaches are described in this SOP. Select based on your project
+requirements. Both methods are described in the SSSA Methods of Soil
+Analysis [@ham2002]. The handheld method follows the GLOBE soil
+temperature protocol [@globe2014soil], which has been widely adopted
+for teaching and citizen-science applications.
 
 | Method | Best For | Temporal Resolution | Cost |
 |:-------|:---------|:--------------------|:-----|
@@ -82,7 +114,9 @@ Two approaches are described in this SOP. Select based on your project requireme
 
 ::: {.callout-tip}
 ### Choosing Depths
-For most EA Program projects, 5 cm and 10 cm are the minimum. Add 2 cm for surface energy balance studies and 20 cm or 50 cm for deep profile characterization.
+For most EA Program projects, 5 cm and 10 cm are the minimum. Add
+2 cm for surface energy balance studies and 20 cm or 50 cm for deep
+profile characterization.
 :::
 
 
@@ -132,7 +166,10 @@ For most EA Program projects, 5 cm and 10 cm are the minimum. Add 2 cm for surfa
 
 ### 8.1 Prepare Depth Guide Blocks
 
-Before going to the field, prepare wooden or PVC blocks with drilled holes sized to your thermometer probe. The probe sensor is approximately 2 cm from the tip, so the block must be set so the tip extends to the target depth plus 2 cm:
+Before going to the field, prepare wooden or PVC blocks with drilled
+holes sized to your thermometer probe. The probe sensor is
+approximately 2 cm from the tip, so the block must be set so the tip
+extends to the target depth plus 2 cm:
 
 | Target Depth | Probe Extension Beyond Block |
 |:-------------|:-----------------------------|
@@ -145,29 +182,43 @@ Before going to the field, prepare wooden or PVC blocks with drilled holes sized
 
 ### 8.2 Select Measurement Locations
 
-1. Navigate to the predetermined sampling location and record GPS coordinates
+1. Navigate to the predetermined sampling location and record GPS
+   coordinates
 2. Select a representative spot with undisturbed soil surface
 3. Gently brush away surface litter without disturbing the mineral soil
 
 ### 8.3 Take Measurements
 
-1. If the soil is hard, use the nail and hammer to make a pilot hole to the target depth. Make the hole the same diameter as the probe to ensure good thermal contact.
-2. Insert the thermometer through the depth guide block and gently push until the block rests on the soil surface
-3. Wait at least 2 minutes for the probe to equilibrate with the soil
-4. Read the temperature every 1 minute until two consecutive readings are within 0.5 C of each other
-5. Record the stabilized temperature, depth, time, and location on the data sheet
-6. Remove the probe and repeat at the next depth in the same hole (work from shallowest to deepest)
+1. If the soil is hard, use the nail and hammer to make a pilot hole
+   to the target depth. Make the hole the same diameter as the probe
+   to ensure good thermal contact.
+2. Insert the thermometer through the depth guide block and gently
+   push until the block rests on the soil surface
+3. Wait at least 2 minutes for the probe to equilibrate with the soil.
+   Equilibration time depends on the thermal conductivity of the soil
+   and the thermal mass of the probe; dry sandy soils may require 5
+   minutes or longer [@ham1992].
+4. Read the temperature every 1 minute until two consecutive readings
+   are within 0.5 C of each other
+5. Record the stabilized temperature, depth, time, and location on the
+   data sheet
+6. Remove the probe and repeat at the next depth in the same hole
+   (work from shallowest to deepest)
 7. Move to the next measurement location
 
 ::: {.callout-important}
 ### Equilibration Is Essential
-Do not rush readings. An un-equilibrated probe will read too warm in cool soil and too cool in warm soil. Two minutes is the minimum; 3--5 minutes may be needed in dry or very cold soil.
+Do not rush readings. An un-equilibrated probe will read too warm in
+cool soil and too cool in warm soil. Two minutes is the minimum; 3--5
+minutes may be needed in dry or very cold soil.
 :::
 
 ### 8.4 Timing
 
-- For comparable data across sites, complete all measurements within 1 hour of local solar noon (approximately 12:00--13:00 PST)
-- For diurnal profiles, measure at consistent intervals (e.g., every 2--3 hours over a 24-hour period)
+- For comparable data across sites, complete all measurements within
+  1 hour of local solar noon (approximately 12:00--13:00 PST)
+- For diurnal profiles, measure at consistent intervals (e.g., every
+  2--3 hours over a 24-hour period)
 - Record the exact time of each measurement
 
 
@@ -176,9 +227,13 @@ Do not rush readings. An un-equilibrated probe will read too warm in cool soil a
 ### 9.1 Sensor Installation
 
 1. Select a representative location and record GPS coordinates
-2. Dig a narrow trench or pit to the deepest sensor depth on one side of the measurement point (do not disturb the soil column directly above the sensors)
-3. Insert sensors horizontally into the undisturbed soil wall at each target depth, pressing firmly to ensure good thermal contact
-4. Backfill the trench carefully, maintaining the original soil layering as much as possible
+2. Dig a narrow trench or pit to the deepest sensor depth on one side
+   of the measurement point (do not disturb the soil column directly
+   above the sensors)
+3. Insert sensors horizontally into the undisturbed soil wall at each
+   target depth, pressing firmly to ensure good thermal contact
+4. Backfill the trench carefully, maintaining the original soil
+   layering as much as possible
 5. Route cables through PVC conduit to the datalogger enclosure
 6. Mark the sensor locations with discreet, flush-to-ground markers
 
@@ -187,20 +242,28 @@ Do not rush readings. An un-equilibrated probe will read too warm in cool soil a
 
 ::: {.callout-note}
 ### Settling Period
-Soil disturbed during installation needs time to return to representative thermal conditions. Allow a minimum of 48 hours before using data for analysis. One to two weeks is ideal for deep sensors.
+Soil disturbed during installation needs time to return to
+representative thermal conditions. Allow a minimum of 48 hours before
+using data for analysis. One to two weeks is ideal for deep sensors.
 :::
 
 ### 9.2 Datalogger Programming
 
-1. Connect all sensors to the datalogger following the wiring diagram for your sensor type
-2. Program the datalogger to scan sensors at the desired interval (typically every 1--5 minutes)
-3. Configure storage to record averages at 15-minute or 30-minute intervals
-4. Set the datalogger clock to local standard time (do not use daylight saving time)
-5. Verify readings against a calibrated handheld thermometer at 5 cm depth
+1. Connect all sensors to the datalogger following the wiring diagram
+   for your sensor type
+2. Program the datalogger to scan sensors at the desired interval
+   (typically every 1--5 minutes)
+3. Configure storage to record averages at 15-minute or 30-minute
+   intervals
+4. Set the datalogger clock to local standard time (do not use
+   daylight saving time)
+5. Verify readings against a calibrated handheld thermometer at 5 cm
+   depth
 
 ### 9.3 Data Download
 
-1. Visit the station at regular intervals (weekly to monthly, depending on battery and storage capacity)
+1. Visit the station at regular intervals (weekly to monthly, depending
+   on battery and storage capacity)
 2. Connect a laptop and download data using the manufacturer's software
 3. Check for gaps, sensor failures, or anomalous readings in the field
 4. Transfer data to the project database within 48 hours
@@ -210,27 +273,37 @@ Soil disturbed during installation needs time to return to representative therma
 
 ### 10.1 Handheld Probes
 
-1. Prepare an ice-water bath (crushed ice + deionized water, stirred) -- this should read 0.0 C
+1. Prepare an ice-water bath (crushed ice + deionized water, stirred);
+   this should read 0.0 C
 2. Insert the probe and allow to equilibrate for 3 minutes
 3. Record the reading; it should be within 0.5 C of 0.0 C
 4. If outside tolerance, adjust or replace the thermometer
 5. Calibrate before each field season and after any suspected damage
+
+The ice-point calibration is a single-point check; for research
+requiring higher accuracy, a two-point calibration (ice-water and
+warm-water bath at approximately 40 C) is recommended [@ham2002].
 
 ### 10.2 Datalogger Sensors
 
 1. Before installation, place all sensors in a well-stirred water bath
 2. Record readings from all sensors simultaneously
 3. All sensors should agree within 0.3 C
-4. Document any offsets and apply corrections in post-processing if needed
+4. Document any offsets and apply corrections in post-processing if
+   needed
 
 
 ## 11. Quality Control
 
 - Calibrate all thermometers and sensors before each field season
-- For handheld measurements, take readings at a minimum of 3 replicate locations per plot
-- Record the time of every measurement (soil temperature changes throughout the day)
-- For datalogger systems, inspect data weekly for drift, gaps, and anomalous values
-- Include a surface air temperature measurement alongside soil temperatures for context
+- For handheld measurements, take readings at a minimum of 3 replicate
+  locations per plot
+- Record the time of every measurement (soil temperature changes
+  throughout the day)
+- For datalogger systems, inspect data weekly for drift, gaps, and
+  anomalous values
+- Include a surface air temperature measurement alongside soil
+  temperatures for context
 - Photograph each measurement location at the start of each season
 
 
@@ -238,7 +311,8 @@ Soil disturbed during installation needs time to return to representative therma
 
 ### 12.1 Handheld Data
 
-Enter data from field sheets into the project spreadsheet within 48 hours. Required fields:
+Enter data from field sheets into the project spreadsheet within
+48 hours. Required fields:
 
 - Date, time (local standard time), site, plot ID, observer
 - Measurement depth (cm)
@@ -249,37 +323,39 @@ Enter data from field sheets into the project spreadsheet within 48 hours. Requi
 ### 12.2 Datalogger Data
 
 - Download raw files and archive unmodified copies
-- Process data into a standardized format: timestamp, site, depth, temperature
+- Process data into a standardized format: timestamp, site, depth,
+  temperature
 - Flag and document any corrections (sensor offsets, gap-filling)
 - Store processed data in the project database with metadata
 
 
 ## 13. Waste and Site Impact
 
-- Minimize soil disturbance during installation; backfill trenches carefully
+- Minimize soil disturbance during installation; backfill trenches
+  carefully
 - Remove all temporary equipment, flagging, and markers after the study
-- Leave permanent sensors in place for long-term monitoring unless the study is complete
+- Leave permanent sensors in place for long-term monitoring unless the
+  study is complete
 - Pack out all trash and supplies
 
 
 ## 14. References
 
-- GLOBE Program. (2014). *Soil Temperature Protocol*. Available at: https://www.globe.gov
-- GLOBE Program. (2014). *Digital Multi-Day Soil Temperatures Protocol*. Available at: https://www.globe.gov
-- Campbell Scientific. *TCAV-L Averaging Soil Thermocouple Probe: Product Manual*.
-- Hukseflux. *STP01 Soil Temperature Profile Sensor: User Manual*.
-- Ham, J.M. & Senock, R.S. (1992). On the measurement of soil surface temperature. *Soil Science Society of America Journal*, 56, 370--377.
-- Hillel, D. (1998). *Environmental Soil Physics*. Academic Press. (Chapter 12: Soil Temperature and Heat Flow).
+::: {#refs}
+:::
 
 
 ## 15. Training Record
 
 Before measuring soil temperature independently, personnel must:
 
-1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) in full
+1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
+   in full
 2. Calibrate a handheld probe using an ice-water bath
-3. Demonstrate proper use of depth guide blocks and equilibration timing
-4. For datalogger work: demonstrate sensor installation, datalogger programming, and data download under supervision
+3. Demonstrate proper use of depth guide blocks and equilibration
+   timing
+4. For datalogger work: demonstrate sensor installation, datalogger
+   programming, and data download under supervision
 5. Be signed off by the field lead or PI
 
 
@@ -287,13 +363,17 @@ Before measuring soil temperature independently, personnel must:
 
 Print this sheet and use it in the field.
 
-**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Plot ID:** \_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_\_\_\_
+**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Plot ID:** \_\_\_\_\_\_\_\_\_\_
+**Date:** \_\_\_\_\_\_\_\_\_\_\_\_
 
-**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Instrument ID:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+**Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Instrument ID:**
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-**Surface condition:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Weather:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+**Surface condition:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Weather:**
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-**Air temperature (C):** \_\_\_\_\_\_\_\_\_ **Time of air temp reading:** \_\_\_\_\_\_\_\_\_
+**Air temperature (C):** \_\_\_\_\_\_\_\_\_ **Time of air temp reading:**
+\_\_\_\_\_\_\_\_\_
 
 | Location # | GPS / Description | Time | 2 cm (C) | 5 cm (C) | 10 cm (C) | 20 cm (C) | 50 cm (C) | Notes |
 |:-----------|:------------------|:-----|:---------|:---------|:----------|:----------|:----------|:------|
@@ -308,4 +388,5 @@ Print this sheet and use it in the field.
 | 9 | | | | | | | | |
 | 10 | | | | | | | | |
 
-**Calibration check (ice bath reading):** \_\_\_\_\_\_\_\_ C **Time:** \_\_\_\_\_\_\_\_\_
+**Calibration check (ice bath reading):** \_\_\_\_\_\_\_\_ C **Time:**
+\_\_\_\_\_\_\_\_\_

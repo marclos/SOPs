@@ -9,13 +9,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-19"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: "2026-05-27"
+    author: "Marc Los Huertos"
+    changes: "Added bibtex citations for pedogenesis, boundary interpretation, structure, and local parent materials"
 ---
 
 ## 1. Purpose
@@ -26,7 +30,11 @@ the vertical sequence of horizons, their physical and morphological
 properties, and the relationships among them. Profile descriptions are
 fundamental to soil classification, land use assessment, understanding
 pedogenic processes, and interpreting laboratory analytical data in a
-landscape context [@schoeneberger2012; @soilsurveystaff2022].
+landscape context [@schoeneberger2012; @soilsurveystaff2022]. The
+systematic description of soil horizons is the foundation of pedology
+and provides the morphological evidence from which pedogenic processes
+(e.g., eluviation, illuviation, gleization) are inferred [@schaetzl2015;
+@buol2011].
 
 
 ## 2. Scope
@@ -141,13 +149,23 @@ attempt excavation without proper rescue training and equipment.
 | Irregular    | Pockets deeper than wide   |
 | Broken       | Discontinuous              |
 
+Boundary distinctness reflects the rate and nature of pedogenic change
+between horizons; abrupt boundaries often indicate a lithologic
+discontinuity or a strong process boundary (e.g., plowing), while
+diffuse boundaries suggest gradual, ongoing translocation
+[@schaetzl2015].
+
 ### 6.3 Describing Each Horizon
 
 For each horizon, record the following properties:
 
 **Horizon designation:** Use standard USDA master horizon symbols
 (O, A, E, B, C, R) with appropriate suffixes (t, k, w, g, etc.)
-[@soilsurveystaff2017].
+[@soilsurveystaff2017]. When assigning subordinate suffixes (e.g.,
+**t** for clay accumulation, **k** for carbonate, **g** for gleying),
+verify the morphological evidence for each suffix against the criteria
+in Keys to Soil Taxonomy [@soilsurveystaff2022] to ensure that the
+designation supports formal classification.
 
 **Color:** Determine moist and dry color using Munsell charts per
 [SOP-F405](SOP-F405-soil-color-munsell.qmd). Record matrix color
@@ -175,6 +193,13 @@ structure type; consult the *Field Book for Describing and Sampling
 Soils*).
 
 Grade: weak, moderate, strong.
+
+Soil structure type and grade influence water movement, root
+penetration, and aeration. Strongly developed angular blocky structure
+in B horizons often correlates with high clay content and shrink-swell
+behavior, while granular structure in A horizons is associated with
+biological activity and high organic matter [@soilsurveystaff2017;
+@schaetzl2015].
 
 **Consistence:** Describe the resistance to rupture at the appropriate
 moisture state:
@@ -209,7 +234,11 @@ Record the following site-level information:
 - Slope (percent) and aspect (degrees)
 - Landscape position (summit, shoulder, backslope, footslope, toeslope)
 - Parent material (if identifiable: alluvium, colluvium, residuum,
-  loess, etc.)
+  loess, etc.). At EA Program sites in the Pomona/Claremont area,
+  parent materials are commonly alluvium derived from the San Gabriel
+  Mountains or residuum from granitic bedrock, and argillic horizons
+  (Bt) are frequently developed in older geomorphic surfaces
+  [@buol2011].
 - Vegetation and land use
 - Drainage class (excessively drained to very poorly drained)
 - Depth to water table or bedrock (if encountered)

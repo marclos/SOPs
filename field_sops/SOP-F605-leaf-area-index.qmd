@@ -6,24 +6,46 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2025-05-17"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-05-28"
+    author: "Marc Los Huertos"
+    changes: "Added citations for LAI methods review, clumping correction, and error sources"
 ---
 
 ## 1. Purpose
 
-This SOP describes field methods for estimating Leaf Area Index (LAI), the total one-sided area of leaf tissue per unit ground surface area (m^2^ leaf / m^2^ ground). LAI is a key structural parameter governing light interception, transpiration, and primary productivity. It is used in the EA Program for characterizing canopy cover at photovoltaic panel sites, restoration areas, and agricultural plots.
+This SOP describes field methods for estimating Leaf Area Index (LAI),
+the total one-sided area of leaf tissue per unit ground surface area
+(m^2^ leaf / m^2^ ground). LAI is a key structural parameter governing
+light interception, transpiration, and primary productivity
+[@jonckheere2004]. It is used in the EA Program for characterizing
+canopy cover at photovoltaic panel sites, restoration areas, and
+agricultural plots.
+
+Both ceptometer and hemispherical photography methods estimate an
+"effective" LAI that assumes a random spatial distribution of foliage
+elements within the canopy. In most real canopies, foliage is clumped
+rather than random, and the effective LAI underestimates the true LAI
+by 20--50% depending on species and canopy architecture [@chen1997;
+@breda2003]. When reporting LAI values, specify whether a clumping
+correction has been applied and which correction method was used.
 
 
 ## 2. Scope
 
-- **Applies to:** Indirect optical measurement of LAI using hemispherical photography and/or a ceptometer (AccuPAR or equivalent linear PAR sensor) at all EA Program field sites
-- **Does not apply to:** Direct destructive leaf area measurement (harvest methods); satellite-derived LAI products; root area measurements
+- **Applies to:** Indirect optical measurement of LAI using
+  hemispherical photography and/or a ceptometer (AccuPAR or equivalent
+  linear PAR sensor) at all EA Program field sites
+- **Does not apply to:** Direct destructive leaf area measurement
+  (harvest methods); satellite-derived LAI products; root area
+  measurements
 - **Location:** All EA Program field sites
 
 
@@ -43,7 +65,8 @@ This SOP describes field methods for estimating Leaf Area Index (LAI), the total
 
 - **Physical:** Uneven terrain, tripping hazards from dense vegetation
 - **Biological:** Tick and insect exposure in dense canopy understories
-- **Heat:** Measurements are often taken in open or partially shaded areas during peak growing season
+- **Heat:** Measurements are often taken in open or partially shaded
+  areas during peak growing season
 :::
 
 ### Required PPE
@@ -59,10 +82,21 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 ## 5. Definitions
 
-- **Leaf Area Index (LAI):** The total one-sided area of leaf tissue per unit ground area. Dimensionless (m^2^ m^-2^). Typical values range from 0 (bare ground) to 1--3 (grasslands and crops) to 5--10 (closed-canopy forests).
+- **Leaf Area Index (LAI):** The total one-sided area of leaf tissue
+  per unit ground area. Dimensionless (m^2^ m^-2^). Typical values
+  range from 0 (bare ground) to 1--3 (grasslands and crops) to 5--10
+  (closed-canopy forests).
 - **PAR:** Photosynthetically Active Radiation (400--700 nm)
-- **Ceptometer:** A linear array of PAR sensors used to measure light transmission through a canopy. LAI is estimated from the ratio of below-canopy to above-canopy PAR using the Beer-Lambert extinction model.
-- **Hemispherical photography:** A technique using a fisheye lens pointed upward to photograph the canopy. Gap fraction analysis of the image yields LAI estimates.
+- **Ceptometer:** A linear array of PAR sensors used to measure light
+  transmission through a canopy. LAI is estimated from the ratio of
+  below-canopy to above-canopy PAR using the Beer-Lambert extinction
+  model.
+- **Hemispherical photography:** A technique using a fisheye lens
+  pointed upward to photograph the canopy. Gap fraction analysis of
+  the image yields LAI estimates.
+- **Effective LAI:** The LAI value obtained from optical methods that
+  assume random foliage distribution; typically underestimates true
+  LAI in clumped canopies [@chen1997].
 
 
 ## 6. Required Materials
@@ -93,73 +127,114 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 ### 8.1 Measurement Timing
 
-LAI measurements should be taken under uniform overcast skies or within one hour of solar noon under clear skies. Avoid measurement during patchy cloud conditions, as rapidly changing light causes inconsistent above-canopy reference readings. For hemispherical photography, early morning, late afternoon, or overcast conditions produce the best contrast between sky and foliage.
+LAI measurements should be taken under uniform overcast skies or
+within one hour of solar noon under clear skies [@weiss2004]. Avoid
+measurement during patchy cloud conditions, as rapidly changing light
+causes inconsistent above-canopy reference readings. For hemispherical
+photography, early morning, late afternoon, or overcast conditions
+produce the best contrast between sky and foliage.
 
 ### 8.2 Sampling Design
 
-1. Determine measurement locations using the project sampling design (random, stratified random, or collocated with vegetation transects from [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd))
-2. At each location, take a minimum of 5 below-canopy readings (ceptometer) or photographs (hemispherical) to capture spatial variability
+1. Determine measurement locations using the project sampling design
+   (random, stratified random, or collocated with vegetation transects
+   from [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd))
+2. At each location, take a minimum of 5 below-canopy readings
+   (ceptometer) or photographs (hemispherical) to capture spatial
+   variability [@weiss2004]
 3. Record GPS coordinates at each measurement location
 
 ### 8.3 Method A: Ceptometer (AccuPAR)
 
 1. Power on the ceptometer and set the date, time, and site ID
-2. Enter the leaf angle distribution parameter ($\chi$). Use 1.0 for a spherical distribution (default for most broadleaf canopies) unless species-specific values are available [@norman1989].
-3. Take an above-canopy PAR reading by holding the sensor bar horizontally in full sunlight (or use the external above-canopy sensor if available)
-4. Move to the first below-canopy measurement point. Hold the ceptometer horizontally at approximately 1 m height (or just above the understory layer), perpendicular to the dominant row or canopy orientation.
+2. Enter the leaf angle distribution parameter ($\chi$). Use 1.0 for
+   a spherical distribution (default for most broadleaf canopies)
+   unless species-specific values are available [@norman1989].
+3. Take an above-canopy PAR reading by holding the sensor bar
+   horizontally in full sunlight (or use the external above-canopy
+   sensor if available)
+4. Move to the first below-canopy measurement point. Hold the
+   ceptometer horizontally at approximately 1 m height (or just above
+   the understory layer), perpendicular to the dominant row or canopy
+   orientation.
 5. Record the below-canopy PAR reading
-6. Rotate the ceptometer 90 degrees and take a second reading at the same point to account for canopy anisotropy
+6. Rotate the ceptometer 90 degrees and take a second reading at the
+   same point to account for canopy anisotropy
 7. Average the two readings for that point
-8. Repeat at each of the remaining measurement points (minimum 5 per location)
-9. Take another above-canopy reading at the end of the measurement sequence to verify that light conditions have not changed substantially (within 10% of the initial reading)
-10. The instrument calculates LAI internally using the Beer-Lambert model:
+8. Repeat at each of the remaining measurement points (minimum 5 per
+   location)
+9. Take another above-canopy reading at the end of the measurement
+   sequence to verify that light conditions have not changed
+   substantially (within 10% of the initial reading)
+10. The instrument calculates LAI internally using the Beer-Lambert
+    model:
 
 $$
 \text{LAI} = \frac{-\ln(\tau)}{K}
 $$
 
-where $\tau$ is the ratio of below-canopy to above-canopy PAR and $K$ is the extinction coefficient (a function of solar zenith angle and leaf angle distribution).
+where $\tau$ is the ratio of below-canopy to above-canopy PAR and $K$
+is the extinction coefficient (a function of solar zenith angle and
+leaf angle distribution).
 
 ### 8.4 Method B: Hemispherical Photography
 
-1. Mount the camera with fisheye lens adapter on the tripod at 1 m height (or just above the understory)
+1. Mount the camera with fisheye lens adapter on the tripod at 1 m
+   height (or just above the understory)
 2. Level the camera using the tripod's bubble level
 3. Orient the top of the image toward magnetic north using a compass
-4. Set the camera to manual exposure: use the sky brightness (not the canopy) to set exposure. Bracket exposures if uncertain (one stop above and below).
+4. Set the camera to manual exposure: use the sky brightness (not the
+   canopy) to set exposure. Bracket exposures if uncertain (one stop
+   above and below). Exposure settings strongly influence the
+   sky/foliage classification threshold and can introduce systematic
+   bias in LAI estimates [@breda2003].
 5. Take the photograph pointing directly upward (zenith)
-6. Record the image number, GPS coordinates, and any notes (e.g., understory density, canopy species) on the field data sheet
+6. Record the image number, GPS coordinates, and any notes (e.g.,
+   understory density, canopy species) on the field data sheet
 7. Repeat at each measurement point
 
 #### Image Analysis
 
 8. Transfer images to the lab computer
-9. Analyze using Gap Light Analyzer (GLA) or the `hemiphot` R package [@ter-steege2018]:
+9. Analyze using Gap Light Analyzer (GLA) or the `hemiphot` R package
+   [@ter-steege2018]:
    a. Threshold the image to classify pixels as sky (gap) or foliage
    b. Calculate gap fraction at multiple zenith angle rings
-   c. Invert gap fractions to estimate LAI using a canopy model (e.g., Miller's formula or the ellipsoidal leaf angle model)
+   c. Invert gap fractions to estimate LAI using a canopy model (e.g.,
+      Miller's formula or the ellipsoidal leaf angle model)
 10. Report the mean LAI and standard error for each site
 
 
 ## 9. Quality Control
 
-- Take at least 5 below-canopy readings per measurement location to quantify within-site variability
-- Report the coefficient of variation (CV) across readings; if CV exceeds 30%, increase the number of readings
-- For ceptometer measurements, verify that above-canopy PAR did not change by more than 10% between the start and end of the measurement sequence
-- For hemispherical photography, visually inspect thresholded images to ensure correct sky/foliage classification; manually adjust the threshold if needed
-- Cross-validate: where possible, compare ceptometer and hemispherical photography estimates at the same points
+- Take at least 5 below-canopy readings per measurement location to
+  quantify within-site variability
+- Report the coefficient of variation (CV) across readings; if CV
+  exceeds 30%, increase the number of readings
+- For ceptometer measurements, verify that above-canopy PAR did not
+  change by more than 10% between the start and end of the measurement
+  sequence
+- For hemispherical photography, visually inspect thresholded images
+  to ensure correct sky/foliage classification; manually adjust the
+  threshold if needed
+- Cross-validate: where possible, compare ceptometer and hemispherical
+  photography estimates at the same points. Method agreement is
+  typically within 0.5--1.0 LAI units, but systematic offsets may
+  occur depending on canopy structure and sky conditions
+  [@jonckheere2004; @breda2003].
 
 
 ## 10. Data Management
 
 1. Download ceptometer data to the lab computer within 48 hours
-2. Organize hemispherical images by site and date: `LAI_SiteID_YYYYMMDD/`
+2. Organize hemispherical images by site and date:
+   `LAI_SiteID_YYYYMMDD/`
 3. Archive raw data and images on the lab shared drive
-4. Version-control analysis scripts per [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd)
+4. Version-control analysis scripts per
+   [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 
 ## 11. References
-
-See the project-level `references.bib` for full citations. Key references: @jonckheere2004, @norman1989, @ter-steege2018, @weiss2004.
 
 ::: {#refs}
 :::
@@ -170,7 +245,10 @@ See the project-level `references.bib` for full citations. Key references: @jonc
 Before measuring LAI independently, personnel must:
 
 1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
-2. Demonstrate correct ceptometer operation (power on, set parameters, above/below readings, data download)
-3. Demonstrate correct hemispherical photography technique (leveling, orientation, exposure settings)
-4. Process one set of images through gap fraction analysis under supervision
+2. Demonstrate correct ceptometer operation (power on, set parameters,
+   above/below readings, data download)
+3. Demonstrate correct hemispherical photography technique (leveling,
+   orientation, exposure settings)
+4. Process one set of images through gap fraction analysis under
+   supervision
 5. Be signed off by the PI or field lead
