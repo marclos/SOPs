@@ -55,7 +55,7 @@ SOPs/
 
 ### Clone Using Rstudio Server (Recommended)
 
-Use SOP 801 Github and R to clone on Pomona's Server. 
+Use SOP-L801 Github and R to clone on Pomona's Server. 
 
 ### Build the site locally (for local computer, not recommended)
 
