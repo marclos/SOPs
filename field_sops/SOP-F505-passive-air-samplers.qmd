@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F505: Passive Air Samplers (Diffusion Tubes)
-# =============================================================================
 title: "Passive Air Samplers -- Diffusion Tubes"
 sop-number: "SOP-F505"
 author:
@@ -9,13 +6,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-20"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-05-29"
+    author: "Marc Los Huertos"
+    changes: "Added definitions section; expanded discussion of tube bias factors, harmonized protocols, and regulatory applications"
 ---
 
 ## 1. Purpose
@@ -31,11 +32,18 @@ analyzed to determine the time-weighted average ambient concentration
 [@palmes1976; @cape2009].
 
 Common target analytes include nitrogen dioxide (NO~2~), ozone (O~3~),
-sulfur dioxide (SO~2~), ammonia (NH~3~), and volatile organic compounds
-(VOCs). Passive samplers are widely used in spatial surveys and
-community-based exposure studies because they are inexpensive,
+sulfur dioxide (SO~2~), ammonia (NH~3~), and volatile organic
+compounds (VOCs). Passive samplers are widely used in spatial surveys
+and community-based exposure studies because they are inexpensive,
 silent, and require no electricity, making dense network deployments
-feasible [@vardoulakis2009].
+feasible [@vardoulakis2009; @martin2014].
+
+Passive diffusion tubes are subject to known biases from wind speed,
+temperature, and tube geometry that must be understood and managed
+through quality control [@tang2001; @plaisance2004]. When operated
+according to harmonized protocols and validated against active
+reference methods, passive samplers can provide data suitable for
+regulatory screening and spatial mapping [@hafkenscheid2009].
 
 
 ## 2. Scope
@@ -59,7 +67,58 @@ feasible [@vardoulakis2009].
 | New Students      | Complete training before independent deployment |
 
 
-## 4. Safety and Hazards
+## 4. Definitions
+
+- **Passive (diffusion) sampler:** A device that collects a gaseous
+  pollutant by molecular diffusion along a concentration gradient,
+  without requiring a pump. The sampler relies on Fick's first law of
+  diffusion to relate the mass of analyte captured to the ambient
+  concentration over the exposure period [@palmes1976].
+- **Palmes tube:** A cylindrical passive sampler (typically 7.1 cm
+  long, 1.1 cm internal diameter) with a triethanolamine (TEA)-coated
+  stainless steel grid at the closed end for NO~2~ collection.
+  Originally described by @palmes1976.
+- **Ogawa badge:** A disk-shaped passive sampler with two collection
+  pads separated by a diffusion barrier. Can be configured for NO~2~,
+  O~3~, or SO~2~.
+- **Radiello cartridge:** A radial-symmetry passive sampler with a
+  cylindrical diffusive body surrounding a sorbent cartridge. Used for
+  VOCs (Carbograph sorbent), NH~3~ (acid-coated), and other gases.
+- **Uptake rate:** The rate at which the target analyte diffuses into
+  the sampler, determined by the diffusion coefficient of the gas,
+  the cross-sectional area, and the path length. Published uptake
+  rates are specific to each sampler-analyte combination and are used
+  to convert captured mass to ambient concentration.
+- **Time-weighted average (TWA):** The mean ambient concentration over
+  the exposure period, calculated from the total mass captured and the
+  exposure duration.
+- **Shortening ratio:** The effective reduction in diffusion path
+  length caused by wind-induced turbulence at the open end of a
+  Palmes tube, which increases the uptake rate and causes
+  overestimation of ambient concentration in windy conditions
+  [@tang2001].
+- **Field blank:** A sampler transported to the site, briefly opened
+  and re-sealed without exposure, then returned to the lab. Field
+  blank analyte mass quantifies contamination from handling, storage,
+  and transport.
+- **Triethanolamine (TEA):** A viscous organic amine used as the
+  absorbent medium for NO~2~ in Palmes tubes. TEA reacts with NO~2~
+  to form nitrite, which is subsequently analyzed by the Griess
+  colorimetric reaction.
+- **Fick's first law:** The principle that the flux of a gas through
+  a still-air column is proportional to the concentration gradient and
+  the diffusion coefficient:
+
+$$
+J = D \times \frac{A}{L} \times C
+$$
+
+where $J$ = flux (mass/time), $D$ = diffusion coefficient, $A$ =
+cross-sectional area, $L$ = path length, and $C$ = ambient
+concentration [@palmes1976].
+
+
+## 5. Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -82,23 +141,23 @@ feasible [@vardoulakis2009].
 - [ ] Sun protection
 
 
-## 5. Equipment and Materials
+## 6. Equipment and Materials
 
 | Item                                  | Notes                          |
 |:--------------------------------------|:-------------------------------|
-| Passive samplers (type matched to target analyte; see Section 6.1) | Pre-prepared by analytical lab or in-house |
+| Passive samplers (type matched to target analyte; see Section 7.1) | Pre-prepared by analytical lab or in-house |
 | Protective rain shelters (inverted cup or tube shelter) | Shields the open end from rain and direct sunlight while allowing airflow |
 | Mounting clips, zip ties, or cable ties | For attaching shelters and tubes to poles, posts, or structures |
 | Airtight storage containers or bags   | For transporting unexposed and exposed samplers |
-| Cooler with ice packs (for heat-sensitive sorbents) | Maintain samplers at 4 C during transport if required by the analytical lab |
+| Cooler with ice packs (for heat-sensitive sorbents) | Maintain at 4 C during transport if required |
 | GPS unit                              | Per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
 | Field notebook and deployment log     | For recording dates, times, and site conditions |
 | Permanent marker (Sharpie)            | For labeling tubes             |
 
 
-## 6. Procedure
+## 7. Procedure
 
-### 6.1 Sampler Selection
+### 7.1 Sampler Selection
 
 Select the sampler type based on the target analyte and exposure
 period:
@@ -118,7 +177,7 @@ type, handling instructions, and shipping requirements with the lab
 before each deployment.
 :::
 
-### 6.2 Pre-Deployment
+### 7.2 Pre-Deployment
 
 1. Keep sealed samplers refrigerated (4 C) until deployment day unless
    the analytical lab specifies otherwise
@@ -128,7 +187,7 @@ before each deployment.
    to the site, are briefly unsealed (less than 30 seconds), re-sealed,
    and returned to the lab with the exposed samplers
 
-### 6.3 Deployment
+### 7.3 Deployment
 
 1. At the monitoring location, mount the rain shelter at a height of
    2--3 m above ground, away from walls (at least 1 m), exhaust vents,
@@ -141,7 +200,20 @@ before each deployment.
    road, weather conditions, and any potential sources nearby
 5. Photograph the installed sampler for documentation
 
-### 6.4 Exposure Period
+::: {.callout-important}
+### Wind Exposure
+Palmes tubes are sensitive to wind speed: turbulence at the open end
+of the tube effectively shortens the diffusion path, increasing the
+uptake rate and overestimating the ambient concentration by 10--30%
+at exposed sites [@tang2001; @plaisance2004]. Rain shelters provide
+partial wind screening, but sheltered or recessed mounting locations
+should be avoided because they restrict airflow and cause
+underestimation. The harmonized EU protocol recommends mounting in
+locations with moderate, representative air exchange
+[@hafkenscheid2009].
+:::
+
+### 7.4 Exposure Period
 
 - The exposure period depends on the expected ambient concentration
   and the sampler's capacity. Follow the analytical lab's
@@ -150,7 +222,7 @@ before each deployment.
   construction, power outages affecting nearby sources) in the field
   notebook.
 
-### 6.5 Retrieval
+### 7.5 Retrieval
 
 1. Record the retrieval date and time in the field notebook
 2. Remove the sampler from the shelter, immediately cap or seal it,
@@ -160,7 +232,7 @@ before each deployment.
    required by the analytical lab)
 5. Retrieve and seal the field blanks in the same manner
 
-### 6.6 Shipping to Analytical Laboratory
+### 7.6 Shipping to Analytical Laboratory
 
 1. Pack sealed samplers securely with cushioning material in an
    insulated shipping container with ice packs (if heat-sensitive)
@@ -170,11 +242,11 @@ before each deployment.
 3. Ship via overnight courier or deliver in person to the analytical
    lab
 
-### 6.7 Concentration Calculation
+### 7.7 Concentration Calculation
 
 The analytical laboratory reports the mass of analyte captured on each
 sampler. The time-weighted average ambient concentration is calculated
-using Fick's first law of diffusion:
+using Fick's first law [@palmes1976]:
 
 $$
 C = \frac{m}{D \times A / L \times t}
@@ -182,11 +254,12 @@ $$
 
 where:
 
-- $C$ = ambient concentration (ug/m^3^ or ppb, after unit conversion)
-- $m$ = mass of analyte on the sampler (ug)
+- $C$ = ambient concentration ($\mu$g/m$^3$ or ppb, after unit
+  conversion)
+- $m$ = mass of analyte on the sampler ($\mu$g)
 - $D$ = molecular diffusion coefficient of the analyte in air
-  (cm^2^/s)
-- $A$ = cross-sectional area of the diffusion path (cm^2^)
+  (cm$^2$/s)
+- $A$ = cross-sectional area of the diffusion path (cm$^2$)
 - $L$ = length of the diffusion path (cm)
 - $t$ = exposure time (s)
 
@@ -197,7 +270,7 @@ which party is responsible for the calculation.
 :::
 
 
-## 7. Quality Control
+## 8. Quality Control
 
 - Deploy at least 2 field blanks per batch (minimum 10% of total
   samplers). Field blank analyte mass should be below the method
@@ -205,16 +278,21 @@ which party is responsible for the calculation.
   all samples.
 - Deploy co-located duplicate samplers at 10% of sites. Duplicates
   should agree within 20% for NO~2~ Palmes tubes [@cape2009].
+  Duplicate agreement worse than 25% indicates handling problems or
+  site-specific wind interference [@plaisance2004].
 - If collocating with an active reference sampler (chemiluminescence
   NO~2~ analyzer, UV O~3~ analyzer), compare the passive sampler
-  result with the reference average over the same period.
+  result with the reference average over the same period. Palmes
+  tubes for NO~2~ typically overestimate the reference by 10--30% at
+  high-wind sites and underestimate at sheltered sites due to
+  restricted airflow [@tang2001].
 - Document any site disturbances (construction, shelter damage,
   vandalism) that could affect results.
 - Archive field notebooks and chain of custody forms with the project
   data.
 
 
-## 8. Waste Disposal
+## 9. Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -223,13 +301,13 @@ which party is responsible for the calculation.
 | Rain shelters and mounting hardware | Clean and reuse                    |
 
 
-## 9. References
+## 10. References
 
 ::: {#refs}
 :::
 
 
-## 10. Related SOPs
+## 11. Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -237,9 +315,10 @@ which party is responsible for the calculation.
 | [F502](SOP-F502-air-quality-portable-sensors.qmd) | Portable PM Sensors | Companion low-cost sensor SOP     |
 | [F503](SOP-F503-particulate-matter-sampling.qmd) | PM Filter Sampling   | Active filter sampling companion  |
 | [F504](SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer | Companion field instrument        |
+| [F510](SOP-F510-weather-monitoring.qmd) | Weather Monitoring       | Wind data for interpreting bias   |
 
 
-## 11. Training Record
+## 12. Training Record
 
 Before deploying passive air samplers independently, personnel must:
 

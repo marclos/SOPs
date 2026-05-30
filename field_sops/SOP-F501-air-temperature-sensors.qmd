@@ -1,12 +1,4 @@
 ---
-# =============================================================================
-# SOP-F501: Air Temperature Monitoring (Portable Sensors)
-# =============================================================================
-# Deployment, calibration, and data processing for low-cost air
-# temperature and relative humidity sensor networks using iButton,
-# HOBO, and Raspberry Pi + BME280 platforms.
-# =============================================================================
-
 title: "Air Temperature Monitoring with Portable Sensors"
 sop-number: "SOP-F501"
 author:
@@ -14,37 +6,49 @@ author:
     affiliation: "Environmental Analysis, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "0.2"
 
 revision-history:
   - version: "1.0"
     date: "2026-05-18"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-05-29"
+    author: "Marc Los Huertos"
+    changes: "Moved definitions to Section 5; added citations for urban climatology, LCZ classification, and crowdsourced QC; expanded UHI and shielding discussion"
 ---
 
 ## 1. Purpose
 
 This SOP describes the deployment, calibration, data retrieval, and
 post-processing of low-cost portable sensor networks for ambient air
-temperature and relative humidity monitoring. Three sensor platforms are
-covered: Maxim/Analog Devices Thermochron iButton loggers, Onset HOBO
-data loggers, and Raspberry Pi single-board computers with BME280
+temperature and relative humidity monitoring. Three sensor platforms
+are covered: Maxim/Analog Devices Thermochron iButton loggers, Onset
+HOBO data loggers, and Raspberry Pi single-board computers with BME280
 environmental sensor modules.
 
 Dense networks of inexpensive air temperature sensors enable studies of
 urban heat island (UHI) effects, microclimatic gradients beneath
-photovoltaic arrays, canopy-vs.-open temperature contrasts, and diurnal
-and seasonal temperature variability at spatial resolutions not
-achievable with conventional weather stations [@muller2013;
-@chapman2017].
+photovoltaic arrays, canopy-vs.-open temperature contrasts, and
+diurnal and seasonal temperature variability at spatial resolutions
+not achievable with conventional weather stations [@muller2013;
+@chapman2017]. The UHI is one of the most thoroughly documented
+examples of inadvertent human modification of local climate, driven
+by impervious surfaces, waste heat, reduced vegetation, and altered
+radiative and convective energy exchange [@oke2017; @voogt2003].
+
+When designing a sensor network, characterizing the land cover at each
+site using the Local Climate Zone (LCZ) framework provides a
+standardized basis for comparing UHI intensities across cities and
+studies [@stewart2012].
 
 
 ## 2. Scope
 
-- **Applies to:** Outdoor ambient air temperature and relative humidity
-  monitoring at 1.5--2.0 m above ground level using portable sensor
-  networks.
+- **Applies to:** Outdoor ambient air temperature and relative
+  humidity monitoring at 1.5--2.0 m above ground level using portable
+  sensor networks.
 - **Does not apply to:** Soil temperature profiles (see
   [SOP-F404](SOP-F404-soil-temperature-profiles.qmd)), indoor
   temperature monitoring, or air quality (PM, gases; see
@@ -89,22 +93,61 @@ achievable with conventional weather stations [@muller2013;
 - [ ] Safety glasses (during mounting/drilling)
 
 
-## 5. Prerequisites
+## 5. Definitions
+
+- **Urban Heat Island (UHI):** The phenomenon whereby urban areas
+  experience higher air temperatures than surrounding rural areas due
+  to impervious surfaces, waste heat, reduced vegetation, and altered
+  energy balance. UHI intensity ($\Delta T_{\text{UHI}}$) is
+  quantified as the difference between an urban and a rural reference
+  site at a given time [@oke2017].
+- **Local Climate Zone (LCZ):** A classification system that describes
+  the physical properties of the local environment (building density,
+  height, surface cover, land use) at scales relevant to urban
+  temperature variation. LCZ types range from compact high-rise
+  (LCZ 1) to scattered trees (LCZ B), and provide a standardized
+  framework for describing monitoring sites in UHI studies
+  [@stewart2012].
+- **Radiation shield:** A louvered or ventilated housing that protects
+  a temperature sensor from direct and reflected solar radiation while
+  allowing ambient air to flow past the sensor. Without shielding,
+  sensors can read 5--15 C above true air temperature in direct sun
+  [@hubbart2005; @terando2017].
+- **BME280:** A Bosch environmental sensor measuring temperature,
+  relative humidity, and barometric pressure. Used with Raspberry Pi
+  platforms in the EA Program sensor network.
+- **iButton:** A coin-sized temperature (and optionally RH) data
+  logger manufactured by Maxim/Analog Devices (Thermochron series).
+- **HOBO:** A family of portable data loggers manufactured by Onset
+  Computer Corporation.
+- **Collocation:** The practice of placing multiple sensors at the
+  same location for a period to assess inter-sensor agreement and
+  identify systematic offsets. Collocation is the primary calibration
+  strategy for dense low-cost sensor networks [@meier2017].
+- **Calibration offset:** A systematic difference between a sensor's
+  reading and a known reference, determined during collocation and
+  applied as a correction to field data.
+- **Data completeness:** The percentage of expected readings actually
+  recorded during a deployment period. A minimum of 75% completeness
+  (18 of 24 hours per day) is required for daily summaries.
+
+
+## 6. Prerequisites
 
 - [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
-- For Raspberry Pi deployments: basic familiarity with Raspberry Pi OS,
-  SSH, and file transfer (see also
+- For Raspberry Pi deployments: basic familiarity with Raspberry Pi
+  OS, SSH, and file transfer (see also
   [SOP-F502](SOP-F502-air-quality-portable-sensors.qmd))
 
 
-## 6. Sensor Platforms
+## 7. Sensor Platforms
 
-### 6.1 Comparison
+### 7.1 Comparison
 
 | Feature              | iButton DS1921/DS1923 | HOBO U23 Pro v2       | Raspberry Pi + BME280 |
 |:---------------------|:---------------------:|:---------------------:|:---------------------:|
 | Approximate cost     | $20--60               | $130--200             | $40--80               |
-| Temperature accuracy | $\pm$0.5--1.0 °C      | $\pm$0.21 °C          | $\pm$0.5 °C (BME280) |
+| Temperature accuracy | $\pm$0.5--1.0 C       | $\pm$0.21 C           | $\pm$0.5 C (BME280)  |
 | RH measurement       | DS1923 only           | Yes                   | Yes                   |
 | Logging interval     | 1 min -- 255 min      | 1 s -- 18 h           | User-defined (script) |
 | Memory               | 2048--8192 readings   | ~42,000 readings      | SD card (unlimited)   |
@@ -112,11 +155,11 @@ achievable with conventional weather stations [@muller2013;
 | Battery life         | ~1 year               | ~1 year               | Requires continuous power |
 | Size                 | 17 mm coin            | 6 x 5 x 2 cm         | Variable (enclosure)  |
 
-### 6.2 Choosing a Platform
+### 7.2 Choosing a Platform
 
-- **iButton:** Best for dense spatial networks where low cost and small
-  size are priorities. Limited memory requires periodic retrieval.
-  Ideal for short-term (weeks to months) UHI transects.
+- **iButton:** Best for dense spatial networks where low cost and
+  small size are priorities. Limited memory requires periodic
+  retrieval. Ideal for short-term (weeks to months) UHI transects.
 - **HOBO:** Best general-purpose option with highest accuracy, long
   battery life, and large memory. Good for season-long deployments.
 - **Raspberry Pi + BME280:** Best for real-time or near-real-time
@@ -124,134 +167,92 @@ achievable with conventional weather stations [@muller2013;
   in the EA Program inventory (16 Pi Zero+ units).
 
 
-## 7. Radiation Shielding {#sec-shielding}
+## 8. Radiation Shielding {#sec-shielding}
 
 ::: {.callout-important}
 ### Radiation Shields Are Mandatory
 Unshielded sensors exposed to direct or reflected solar radiation can
-read 5--15 °C higher than true air temperature. Every deployed sensor
+read 5--15 C higher than true air temperature. Every deployed sensor
 **must** be housed in a radiation shield [@hubbart2005; @terando2017].
 :::
 
-### 7.1 Commercial Shields
+### Shield Options
 
-- **Onset RS3:** Louvered, naturally ventilated, white plastic. Fits
-  HOBO loggers. Proven performance in the literature [@hubbart2005].
-- **Onset M-RSA:** Aspirated shield (fan-ventilated). Highest accuracy
-  but requires power.
-- **Davis 7714:** Louvered shield compatible with various loggers.
+| Shield Type                | Cost  | Notes                          |
+|:---------------------------|:------|:-------------------------------|
+| 6-plate gill shield (e.g., Davis 7714) | $20--30 | Standard; good ventilation |
+| 10-plate aspirated shield  | $30--50 | Better in low-wind conditions |
+| DIY stacked-plate shield (white plastic plates) | $5--10 | Acceptable for student projects; see Appendix B for construction |
+| Naturally aspirated PVC tube (white, louvered) | $10--15 | Compact; fits iButtons |
 
-### 7.2 Custom Shields
-
-For iButton deployments where cost must be minimized, fabricate shields
-from white plastic funnels, stacked white plastic plates, or PVC
-fittings. Key design principles [@terando2017; @hubbart2005]:
-
-- Use white, UV-resistant material to reflect solar radiation.
-- Allow natural ventilation from below while blocking direct and
-  reflected shortwave radiation from above.
-- Orient the sensor opening downward to prevent rain entry.
-- Test custom shields against a commercial shield before deployment.
-
-### 7.3 Mounting
-
-Mount radiation shields at 1.5--2.0 m above ground on a pole, post, or
-structure. Avoid mounting directly against walls, fences, or dark
-surfaces that radiate heat. Secure with zip ties, hose clamps, or
-U-bolts.
+All shields must be white (high albedo) and mounted with the sensor
+opening facing downward to prevent rain intrusion.
 
 
-## 8. Calibration {#sec-calibration}
+## 9. Calibration {#sec-calibration}
 
-Calibrate all sensors before each deployment season and after any
-suspected damage.
+### 9.1 Ice-Bath Calibration (Single-Point Check)
 
-### 8.1 Ice-Water Bath Check
+1. Prepare an ice-water bath: fill an insulated container with crushed
+   ice and deionized water, stir for 2 minutes
+2. Submerge the sensor (in a waterproof sleeve for iButtons, or using
+   a sealed bag for non-waterproof units)
+3. Wait 5 minutes for equilibration
+4. The sensor should read 0.0 $\pm$ 0.5 C. Record the reading.
+5. If outside tolerance, note the offset; sensors with offsets greater
+   than 1.0 C should be replaced.
 
-1. Prepare a well-stirred ice-water bath (crushed ice + deionized water
-   in an insulated container). This produces 0.0 °C.
-2. Submerge all sensors simultaneously. Wait at least 5 minutes for
-   equilibration.
-3. Record the reading from each sensor.
-4. Sensors should read within $\pm$0.5 °C of 0.0 °C. Document offsets.
+### 9.2 Room-Temperature Inter-Comparison (Collocation)
 
-### 8.2 Room-Temperature Inter-Comparison
-
-1. Place all sensors in a well-mixed, stable indoor environment
-   (e.g., a lab bench away from HVAC vents) alongside a NIST-traceable
-   reference thermometer.
-2. Log for at least 2 hours.
-3. Calculate the mean offset of each sensor relative to the reference.
-4. Sensors with offsets >1.0 °C should be replaced or have a correction
-   applied in post-processing.
-
-### 8.3 Collocation in the Field
-
-For highest accuracy, collocate 2--3 sensors at one site for the first
-48 hours of deployment to confirm agreement under field conditions
-(including radiation shield effects). All sensors should agree within
-0.5 °C at night (when radiation bias is absent).
-
-```{r}
-#| label: calibration-offsets
-#| echo: true
-#| eval: false
-
-library(tidyverse)
-
-# Read calibration bath data
-cal <- read_csv("data/calibration/ice_bath_YYYYMMDD.csv")
-
-# Calculate offsets from 0.0 C
-cal_summary <- cal %>%
-  group_by(sensor_id) %>%
-  summarize(
-    mean_reading = mean(temp_c, na.rm = TRUE),
-    offset       = mean_reading - 0.0,
-    sd           = sd(temp_c, na.rm = TRUE),
-    .groups      = "drop"
-  )
-
-# Flag sensors outside tolerance
-cal_summary <- cal_summary %>%
-  mutate(status = if_else(abs(offset) <= 0.5, "PASS", "REVIEW"))
-
-print(cal_summary)
-write_csv(cal_summary, "data/calibration/offsets_YYYYMMDD.csv")
-```
+1. Place all sensors to be deployed together in a shaded, well-mixed
+   indoor environment for at least 24 hours
+2. Calculate the mean temperature across all sensors for each
+   timestep. Each sensor's offset is its deviation from the group
+   mean.
+3. Record offsets in a calibration log file:
+   `data/calibration/offsets_YYYYMMDD.csv`
+4. Apply these offsets as corrections during data processing
+   (Section 11). Collocation under controlled conditions is the most
+   practical calibration approach for networks of 10 or more sensors
+   [@meier2017].
 
 
-## 9. Deployment Procedure
+## 10. Deployment {#sec-deployment}
 
-### 9.1 iButton
+### 10.1 Site Selection and Documentation
 
-1. Program the iButton using OneWireViewer or equivalent software:
-   set logging interval (typically 10--15 minutes), delayed start
-   time, and enable rollover if the study will exceed memory capacity.
-2. Place the iButton in its radiation shield (see @sec-shielding).
-3. Mount the shield at the site at 1.5--2.0 m height.
-4. Record: site ID, sensor serial number, GPS coordinates, mounting
-   height, shield type, start time, land use/land cover description.
+Select monitoring sites to represent the range of land cover types
+and microclimates relevant to the research question. For UHI studies,
+sample across multiple LCZ types (e.g., compact low-rise, open
+low-rise, large low-rise, scattered trees, dense trees)
+[@stewart2012].
 
-### 9.2 HOBO U23
+At each site, record:
 
-1. Launch the logger in HOBOware: set logging interval, delayed start,
-   and file name.
-2. Attach the logger to the RS3 radiation shield.
-3. Mount the shield at the site.
-4. Record metadata as above.
+- GPS coordinates per
+  [SOP-F006](SOP-F006-gps-site-navigation.qmd)
+- Mounting height (standard: 1.5--2.0 m above ground level)
+- Shield type and orientation
+- Land cover within 50 m radius (impervious %, tree canopy %, grass %)
+- LCZ type (see @stewart2012 for classification guide)
+- Nearest road (distance and type)
+- Sky view factor (estimated or photographed)
+- Sensor serial number and platform type
 
-### 9.3 Raspberry Pi + BME280
+### 10.2 Mounting
 
-1. Verify the BME280 is reading correctly (SSH in, check the log).
-2. Mount the Pi enclosure with the BME280 sensor exposed inside the
-   radiation shield (sensor element facing downward for ventilation).
-3. Connect power (AC, solar + battery, or long USB cable).
-4. Verify data logging remotely.
+1. Mount the radiation shield on a pole, post, fence, or structure at
+   1.5--2.0 m height. Ensure the shield is not directly above a
+   paved surface, air conditioning exhaust, or heat-radiating wall.
+2. Place the sensor inside the shield, ensuring the sensing element
+   is centered within the shield stack.
+3. For Raspberry Pi units, route the power cable through the base of
+   the enclosure. Secure with cable ties.
+4. Photograph the installation and record all metadata.
 5. Record metadata as above.
 
 
-## 10. Data Retrieval
+## 11. Data Retrieval
 
 | Platform    | Retrieval Method                          | Frequency           |
 |:------------|:------------------------------------------|:--------------------|
@@ -263,9 +264,9 @@ After retrieval, archive the raw file immediately. Never modify the
 original.
 
 
-## 11. Data Processing
+## 12. Data Processing
 
-### 11.1 Import and Standardize
+### 12.1 Import and Standardize
 
 ```{r}
 #| label: import-standardize
@@ -277,7 +278,7 @@ library(lubridate)
 
 # Example: import iButton CSV
 raw <- read_csv("data/raw/site01_ibutton_ABC123.csv",
-                skip = 14) %>%     # skip header lines (varies by software)
+                skip = 14) %>%
   rename(timestamp = 1, temp_c = 2) %>%
   mutate(
     timestamp = mdy_hms(timestamp, tz = "America/Los_Angeles"),
@@ -286,7 +287,7 @@ raw <- read_csv("data/raw/site01_ibutton_ABC123.csv",
     platform  = "iButton"
   )
 
-# Apply calibration offset (from Section 8)
+# Apply calibration offset (from Section 9)
 offsets <- read_csv("data/calibration/offsets_YYYYMMDD.csv")
 
 raw <- raw %>%
@@ -294,7 +295,7 @@ raw <- raw %>%
   mutate(temp_corrected = temp_c - offset)
 ```
 
-### 11.2 Quality Control
+### 12.2 Quality Control
 
 ```{r}
 #| label: qc-flags
@@ -313,14 +314,11 @@ raw <- raw %>%
     )
   )
 
-# Summary
 count(raw, qc_flag)
-
-# Keep only valid data for analysis
 clean <- raw %>% filter(qc_flag == "valid")
 ```
 
-### 11.3 Hourly and Daily Summaries
+### 12.3 Hourly and Daily Summaries
 
 ```{r}
 #| label: summaries
@@ -337,7 +335,7 @@ hourly <- clean %>%
     n_obs     = n(),
     .groups   = "drop"
   ) %>%
-  filter(n_obs >= 3)  # at least 3 of 4 readings per hour (15-min interval)
+  filter(n_obs >= 3)
 
 daily <- hourly %>%
   mutate(date = as_date(hour)) %>%
@@ -349,13 +347,13 @@ daily <- hourly %>%
     n_hours = n(),
     .groups = "drop"
   ) %>%
-  filter(n_hours >= 18)  # 75% completeness
+  filter(n_hours >= 18)
 ```
 
-### 11.4 Urban Heat Island Intensity
+### 12.4 Urban Heat Island Intensity
 
 UHI intensity is typically calculated as the difference between an
-urban site and a rural (or least-developed) reference site:
+urban site and a rural (or least-developed) reference site [@oke2017]:
 
 $$
 \Delta T_{\text{UHI}} = T_{\text{urban}} - T_{\text{rural}}
@@ -366,7 +364,6 @@ $$
 #| echo: true
 #| eval: false
 
-# Define the reference (rural) site
 ref_site <- "site_rural01"
 
 uhi <- hourly %>%
@@ -378,52 +375,27 @@ uhi <- hourly %>%
 ```
 
 
-## 12. Quality Control Summary
+## 13. Quality Control Summary
 
 | Check                                | Criterion                        |
 |:--------------------------------------|:---------------------------------|
-| Ice-bath calibration                  | Reading within $\pm$0.5 °C of 0.0 °C |
-| Inter-sensor agreement (collocation) | Within $\pm$0.5 °C at night      |
+| Ice-bath calibration                  | Reading within $\pm$0.5 C of 0.0 C |
+| Inter-sensor agreement (collocation) | Within $\pm$0.5 C at night      |
 | Hourly data completeness             | $\geq$75% of expected readings   |
 | Daily data completeness              | $\geq$18 of 24 hours             |
 | Stuck-sensor detection               | $\geq$4 identical consecutive readings flagged |
-| Spike detection                      | $\geq$10 °C change between consecutive readings flagged |
+| Spike detection                      | $\geq$10 C change between consecutive readings flagged |
 
 
-## 13. Data Management
+## 14. Data Management
 
 - Raw files archived unmodified: `data/raw/siteID_platform_sensorID.csv`
 - Calibration records: `data/calibration/`
 - Processed files: `data/processed/`
-- Site metadata (coordinates, height, shield type, land cover, sensor
-  serial numbers, deployment/retrieval dates):
+- Site metadata (coordinates, height, shield type, land cover, LCZ
+  type, sensor serial numbers, deployment/retrieval dates):
   `data/metadata/site_metadata.csv`
 - All scripts version-controlled in the project Git repository
-
-
-## 14. Definitions
-
-BME280
-: Bosch environmental sensor measuring temperature, relative humidity,
-  and barometric pressure. Used with Raspberry Pi platforms.
-
-iButton
-: A coin-sized temperature (and optionally RH) data logger
-  manufactured by Maxim/Analog Devices (Thermochron series).
-
-HOBO
-: A family of portable data loggers manufactured by Onset Computer
-  Corporation.
-
-Radiation shield
-: A louvered or ventilated housing that protects a temperature sensor
-  from direct and reflected solar radiation while allowing ambient air
-  to flow past the sensor.
-
-Urban Heat Island (UHI)
-: The phenomenon whereby urban areas experience higher air temperatures
-  than surrounding rural areas due to impervious surfaces, waste heat,
-  reduced vegetation, and altered energy balance.
 
 
 ## 15. References
@@ -440,11 +412,13 @@ Urban Heat Island (UHI)
 | [F101](SOP-F101-electrical-power-in-the-field.qmd) | Electrical Power in the Field | Power for Pi deployments |
 | [F404](SOP-F404-soil-temperature-profiles.qmd) | Soil Temperature Profiles | Companion: soil vs. air temp |
 | [F502](SOP-F502-air-quality-portable-sensors.qmd) | Air Quality Monitoring | Companion: PM sensors on same Pi units |
+| [F510](SOP-F510-weather-monitoring.qmd) | Weather Monitoring   | Companion: full meteorological context |
 
 
 ## 17. Training Record
 
-Before deploying air temperature sensors independently, personnel must:
+Before deploying air temperature sensors independently, personnel
+must:
 
 1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
    in full

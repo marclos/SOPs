@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F503: Particulate Matter Sampling (Gravimetric Filter Method)
-# =============================================================================
 title: "Particulate Matter Sampling -- Gravimetric Filter Method"
 sop-number: "SOP-F503"
 author:
@@ -9,13 +6,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-20"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-05-29"
+    author: "Marc Los Huertos"
+    changes: "Added definitions section; expanded aerosol science context and filter chemistry discussion"
 ---
 
 ## 1. Purpose
@@ -28,6 +29,15 @@ used to validate or calibrate low-cost PM sensors (see
 [SOP-F502](SOP-F502-air-quality-portable-sensors.qmd)) and to collect
 PM for compositional analysis (metals, ions, elemental/organic carbon)
 [@usepa2017frm; @chow1995].
+
+Ambient PM is a complex mixture of solid and liquid particles
+suspended in air, originating from both primary sources (combustion,
+dust, sea spray) and secondary formation (gas-to-particle conversion
+of sulfate, nitrate, and organic compounds) [@seinfeld2016;
+@poschl2005]. Gravimetric filter sampling remains the reference
+standard for PM mass measurement because it directly weighs the
+collected material, avoiding the indirect assumptions inherent in
+optical or beta-attenuation methods [@usepa2017frm].
 
 This SOP covers medium- and low-volume filter-based samplers operated
 by EA Program personnel. It does not cover Federal Reference Method
@@ -58,7 +68,49 @@ by EA Program personnel. It does not cover Federal Reference Method
 | New Students      | Complete training before independent deployment |
 
 
-## 4. Safety and Hazards
+## 4. Definitions
+
+- **Particulate matter (PM):** A mixture of solid particles and liquid
+  droplets suspended in air, ranging in size from a few nanometers to
+  tens of micrometers [@seinfeld2016].
+- **PM~2.5~:** Particulate matter with aerodynamic diameter less than
+  2.5 $\mu$m ("fine particles"). Fine particles penetrate deep into
+  the lungs and are associated with cardiovascular and respiratory
+  health effects [@solomon2001].
+- **PM~10~:** Particulate matter with aerodynamic diameter less than
+  10 $\mu$m. Includes both fine (PM~2.5~) and coarse (2.5--10 $\mu$m)
+  fractions.
+- **Gravimetric analysis:** Determination of PM mass by weighing a
+  filter before and after exposure, under controlled temperature and
+  humidity conditions [@usepa2017frm].
+- **Size-selective inlet:** An impactor or cyclone that removes
+  particles above a defined aerodynamic diameter cutpoint (e.g., 2.5
+  or 10 $\mu$m) before they reach the filter.
+- **PTFE filter:** Polytetrafluoroethylene (Teflon) membrane filter.
+  Chemically inert, hydrophobic, and low in artifact mass; the
+  standard substrate for gravimetric PM analysis.
+- **Quartz fiber filter:** A filter made of quartz (SiO~2~) fibers,
+  used when thermal-optical analysis for elemental and organic carbon
+  is planned. Must be pre-fired at 500 C for 4 hours to remove
+  organic artifacts.
+- **Filter conditioning:** Equilibrating filters at controlled
+  temperature (20--25 C) and humidity (30--40% RH) in a desiccator
+  for at least 24 hours before weighing. Conditioning removes
+  adsorbed water that would bias the mass measurement.
+- **Field blank:** A conditioned filter transported to the field site,
+  briefly exposed to ambient conditions without running the pump, then
+  resealed and returned for weighing. Field blank mass quantifies
+  contamination introduced during handling and transport.
+- **Flow rate:** The volumetric rate at which air is drawn through the
+  sampler, typically expressed in L/min. The flow rate must match the
+  design specification of the size-selective inlet (e.g., 5 L/min for
+  a MiniVol PM~2.5~ impactor).
+- **Chemical speciation:** Analysis of the chemical composition of
+  collected PM (e.g., metals by XRF or ICP-MS, ions by IC, carbon
+  fractions by thermal-optical analysis) [@chow2015].
+
+
+## 5. Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -82,7 +134,7 @@ by EA Program personnel. It does not cover Federal Reference Method
 - [ ] Sun protection
 
 
-## 5. Equipment and Materials
+## 6. Equipment and Materials
 
 ### Sampling Equipment
 
@@ -91,25 +143,25 @@ by EA Program personnel. It does not cover Federal Reference Method
 | Medium-volume sampler (e.g., MiniVol TAS, BGI PQ200) or personal sampler (SKC, Leland Legacy) | With size-selective inlet (PM~2.5~ or PM~10~ impactor) |
 | Calibrated flow meter (rotameter or primary standard, e.g., Bios DryCal) | For verifying and adjusting flow rate |
 | Timer or elapsed-time indicator       | Built into most samplers       |
-| Tripod or mounting pole               | For positioning inlet at breathing zone height (1.5--2 m) |
+| Tripod or mounting pole               | For positioning inlet at 1.5--2 m |
 | Battery or AC power source            | Sufficient for the planned sampling duration |
 
 ### Filter Supplies
 
 | Item                                  | Notes                          |
 |:--------------------------------------|:-------------------------------|
-| Pre-weighed PTFE (Teflon) filters, 47 mm | For gravimetric analysis; inert and low artifact mass |
-| Pre-weighed quartz fiber filters, 47 mm | If elemental/organic carbon analysis is planned; pre-fire at 500 C for 4 hours |
+| Pre-weighed PTFE filters, 47 mm      | For gravimetric analysis       |
+| Pre-weighed quartz fiber filters, 47 mm | If EC/OC analysis is planned; pre-fire at 500 C for 4 h |
 | Filter cassettes or holders           | Matched to the sampler         |
 | Petri dishes or filter transport cases | For transporting conditioned filters |
-| Forceps (flat-tipped, non-serrated)   | For handling filters without touching the deposit |
-| Desiccator with active desiccant      | For pre- and post-sampling filter conditioning |
+| Forceps (flat-tipped, non-serrated)   | For handling filters           |
+| Desiccator with active desiccant      | For filter conditioning        |
 | Analytical balance (0.01 mg or better) | Per [SOP-L200](../lab_sops/SOP-L200-analytical-balance-calibration.qmd) |
 
 
-## 6. Procedure
+## 7. Procedure
 
-### 6.1 Filter Conditioning and Pre-Weighing
+### 7.1 Filter Conditioning and Pre-Weighing
 
 1. Place unused filters in a desiccator at controlled temperature
    (20--25 C) and humidity (30--40% RH) for at least 24 hours
@@ -121,12 +173,12 @@ by EA Program personnel. It does not cover Federal Reference Method
 4. Place the conditioned filter in a labeled Petri dish or cassette.
    Seal and transport in a cooler if traveling to a remote site.
 
-### 6.2 Sampler Setup and Flow Calibration
+### 7.2 Sampler Setup and Flow Calibration
 
 1. Install the appropriate size-selective inlet (PM~2.5~ or PM~10~
    impactor head) on the sampler
-2. Load a blank filter cassette (without the sample filter) and
-   connect the calibrated flow meter downstream of the filter holder
+2. Load a blank filter cassette and connect the calibrated flow meter
+   downstream of the filter holder
 3. Start the pump and adjust the flow rate to the nominal design flow
    for the inlet (e.g., 5 L/min for a MiniVol PM~2.5~ impactor)
 4. Record the calibrated flow rate, temperature, and barometric
@@ -135,35 +187,32 @@ by EA Program personnel. It does not cover Federal Reference Method
 5. Remove the blank cassette and load the pre-weighed sample filter
    using forceps. Handle the filter only by its edges.
 
-### 6.3 Deployment
+### 7.3 Deployment
 
 1. Position the sampler with the inlet at 1.5--2 m above ground level,
-   unobstructed by walls or overhangs (at least 2 m from any
-   vertical surface)
+   unobstructed by walls or overhangs (at least 2 m from any vertical
+   surface)
 2. Record the start date, start time, site ID, filter ID, GPS
    coordinates, and weather conditions
-3. Start the sampler and verify that the pump is running (check the
-   flow indicator or elapsed-time counter)
+3. Start the sampler and verify that the pump is running
 4. For 24-hour integrated samples, allow the sampler to run for
-   23--25 hours. For shorter sampling periods (e.g., 8-hour personal
-   exposure), record the exact duration.
+   23--25 hours
 
-### 6.4 Retrieval
+### 7.4 Retrieval
 
-1. Record the stop time and elapsed run time from the sampler's timer
+1. Record the stop time and elapsed run time
 2. Verify the flow rate with the calibrated flow meter before stopping
    the pump (post-sampling flow check). Record the value.
 3. Stop the pump
 4. Remove the filter cassette using gloves. Transfer the exposed
-   filter to its labeled Petri dish or transport case using forceps.
-   Do not touch the deposit surface.
-5. Seal the Petri dish and place in a cooler for transport to the
-   laboratory
+   filter to its labeled Petri dish using forceps. Do not touch the
+   deposit surface.
+5. Seal the Petri dish and place in a cooler for transport
 6. Calculate the average flow rate: $Q_{\text{avg}} = (Q_{\text{pre}}
-   + Q_{\text{post}}) / 2$. If the pre- and post-flow rates differ by
+   + Q_{\text{post}}) / 2$. If pre- and post-flow rates differ by
    more than 10%, flag the sample.
 
-### 6.5 Post-Sampling Conditioning and Weighing
+### 7.5 Post-Sampling Conditioning and Weighing
 
 1. Condition the exposed filter in the same desiccator and at the same
    temperature/humidity as the pre-weighing step for at least 24 hours
@@ -171,17 +220,17 @@ by EA Program personnel. It does not cover Federal Reference Method
 3. Repeat the weighing at least 1 hour later to confirm stability.
 4. Calculate the net PM mass:
 
-   $$
-   m_{\text{PM}} = W_{\text{post}} - W_{\text{pre}}
-   $$
+$$
+m_{\text{PM}} = W_{\text{post}} - W_{\text{pre}}
+$$
 
 5. Calculate the PM concentration:
 
-   $$
-   C_{\text{PM}} (\mu\text{g/m}^3) = \frac{m_{\text{PM}} (\mu\text{g})}{Q_{\text{avg}} (\text{L/min}) \times t (\text{min})} \times 10^3
-   $$
+$$
+C_{\text{PM}} (\mu\text{g/m}^3) = \frac{m_{\text{PM}} (\mu\text{g})}{Q_{\text{avg}} (\text{L/min}) \times t (\text{min})} \times 10^3
+$$
 
-### 6.6 Filter Archiving and Downstream Analysis
+### 7.6 Filter Archiving and Downstream Analysis
 
 1. After gravimetric analysis, archive filters in sealed Petri dishes
    at room temperature (or at -20 C if chemical analysis is planned)
@@ -190,9 +239,12 @@ by EA Program personnel. It does not cover Federal Reference Method
 3. For metals analysis by XRF or ICP-MS, submit PTFE filters per
    [SOP-L205](../lab_sops/SOP-L205-xrf-sample-prep-analysis.qmd) or
    [SOP-L410](../lab_sops/SOP-L410-hotplate-acid-digestion.qmd)
+4. Chemical speciation of collected PM provides source apportionment
+   data that complements the mass concentration measurement
+   [@chow2015]
 
 
-## 7. Quality Control
+## 8. Quality Control
 
 - Collect at least one field blank per sampling event: load a
   conditioned filter into a cassette, transport it to the site, open
@@ -206,9 +258,12 @@ by EA Program personnel. It does not cover Federal Reference Method
   difference exceeds 10%
 - Re-condition and re-weigh at least 10% of filters as laboratory
   duplicates; agreement should be within 0.015 mg
+- Negative net masses (post-weight less than pre-weight) can occur due
+  to filter handling artifacts or volatile loss; flag and investigate
+  these, but do not discard without documentation
 
 
-## 8. Waste Disposal
+## 9. Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -217,24 +272,25 @@ by EA Program personnel. It does not cover Federal Reference Method
 | Used desiccant                | Standard trash or regenerate per manufacturer |
 
 
-## 9. References
+## 10. References
 
 ::: {#refs}
 :::
 
 
-## 10. Related SOPs
+## 11. Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
 | [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
 | [F502](SOP-F502-air-quality-portable-sensors.qmd) | Portable PM Sensors | Low-cost sensor companion         |
 | [F504](SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer | Companion field instrument        |
+| [F505](SOP-F505-passive-air-samplers.qmd) | Passive Air Samplers   | Companion gas-phase sampling      |
 | [L200](../lab_sops/SOP-L200-analytical-balance-calibration.qmd) | Analytical Balance | Filter weighing                  |
 | [L205](../lab_sops/SOP-L205-xrf-sample-prep-analysis.qmd) | XRF Analysis | Filter metals analysis           |
 
 
-## 11. Training Record
+## 12. Training Record
 
 Before deploying PM samplers independently, personnel must:
 

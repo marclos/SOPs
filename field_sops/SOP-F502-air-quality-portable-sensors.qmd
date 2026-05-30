@@ -1,12 +1,4 @@
 ---
-# =============================================================================
-# SOP-F502: Air Quality Monitoring (Portable Sensors)
-# =============================================================================
-# Deployment, operation, data retrieval, and correction of Raspberry Pi
-# based low-cost particulate matter sensor networks using Plantower
-# PMS5003/PMS5004 sensors.
-# =============================================================================
-
 title: "Air Quality Monitoring with Portable PM Sensors"
 sop-number: "SOP-F502"
 author:
@@ -14,13 +6,17 @@ author:
     affiliation: "Environmental Analysis, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "0.2"
 
 revision-history:
   - version: "1.0"
     date: "2026-05-18"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-05-29"
+    author: "Marc Los Huertos"
+    changes: "Added definitions section; expanded discussion of LCS paradigm, long-term sensor drift, and regulatory context"
 ---
 
 ## 1. Purpose
@@ -34,10 +30,14 @@ counts in six size bins (>0.3, >0.5, >1.0, >2.5, >5.0, >10.0 $\mu$m).
 
 Low-cost PM sensors (LCS) provide spatial and temporal resolution that
 is not achievable with Federal Reference Method (FRM) or Federal
-Equivalent Method (FEM) monitors alone. However, LCS data require
-quality screening, relative humidity correction, and calibration
-against reference instruments to produce scientifically defensible
-results [@barkjohn2021; @ardondryer2023].
+Equivalent Method (FEM) monitors alone [@snyder2013]. However, LCS
+data require quality screening, relative humidity correction, and
+calibration against reference instruments to produce scientifically
+defensible results [@barkjohn2021; @ardondryer2023]. When properly
+corrected and quality-controlled, LCS networks can complement
+regulatory monitoring by filling spatial gaps, supporting community
+exposure studies, and providing near-real-time information during
+wildfire smoke events [@morawska2018].
 
 
 ## 2. Scope
@@ -62,7 +62,49 @@ results [@barkjohn2021; @ardondryer2023].
 | New Students      | Complete training before independent deployment         |
 
 
-## 4. Safety and Hazards
+## 4. Definitions
+
+- **PM~2.5~:** Particulate matter with aerodynamic diameter less than
+  2.5 $\mu$m. PM~2.5~ is a criteria pollutant regulated by the US EPA
+  because of its association with cardiovascular and respiratory health
+  effects.
+- **PM~10~:** Particulate matter with aerodynamic diameter less than
+  10 $\mu$m. Includes both fine (PM~2.5~) and coarse (2.5--10 $\mu$m)
+  fractions.
+- **Low-cost sensor (LCS):** A PM sensor costing less than
+  approximately $250 per unit, as distinct from regulatory-grade FRM
+  or FEM instruments costing $10,000--$50,000 [@snyder2013].
+- **Federal Reference Method (FRM):** The EPA-designated reference
+  method for measuring criteria pollutants. For PM~2.5~, the FRM is a
+  gravimetric filter-based method (see
+  [SOP-F503](SOP-F503-particulate-matter-sampling.qmd)).
+- **Federal Equivalent Method (FEM):** An air quality measurement
+  method approved by the US EPA as equivalent to the FRM (e.g., beta
+  attenuation monitors).
+- **CF=1:** "Standard particles" output from the Plantower sensor,
+  factory-calibrated against Chinese ambient aerosol. This is the
+  starting value for the EPA US-wide correction [@barkjohn2021].
+- **AQI:** Air Quality Index. A standardized index for reporting daily
+  air quality developed by the US EPA, with breakpoints tied to
+  health-based PM~2.5~ standards.
+- **Collocation:** Placing LCS units alongside a reference instrument
+  (or alongside each other) to assess accuracy, precision, and drift.
+  Pre-deployment collocation is a minimum QC requirement.
+- **Sensor drift:** Gradual degradation of sensor accuracy over months
+  to years of continuous operation, caused by fan wear, laser aging,
+  and contamination of the optical chamber [@malings2020].
+- **Hygroscopic growth:** The increase in particle size (and thus
+  light scattering) that occurs when ambient RH exceeds approximately
+  70%, causing LCS to overestimate PM mass concentration. The EPA
+  correction includes an RH term to account for this [@barkjohn2021;
+  @jayaratne2018].
+- **PMS-O / PMS-U:** Original (pre-mid-2021) and updated (post-mid-2021)
+  versions of the Plantower PMS5003, which differ in internal
+  calibration. PMS-U sensors read lower at concentrations below
+  approximately 16 $\mu$g/m$^3$ [@ardondryer2023].
+
+
+## 5. Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -88,7 +130,7 @@ results [@barkjohn2021; @ardondryer2023].
 - [ ] Sun protection (hat, sunscreen)
 
 
-## 5. Prerequisites
+## 6. Prerequisites
 
 - [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 - Basic familiarity with Raspberry Pi OS (command line, SSH, file
@@ -96,9 +138,9 @@ results [@barkjohn2021; @ardondryer2023].
 - Basic familiarity with R for data processing
 
 
-## 6. Background
+## 7. Background
 
-### 6.1 How the Sensors Work
+### 7.1 How the Sensors Work
 
 The Plantower PMS5003 and PMS5004 are optical particle counters that
 use a laser (680 $\pm$ 10 nm) and a photodiode to detect light
@@ -113,7 +155,7 @@ factory-calibrated against Chinese urban aerosol) and CF\_atm
 concentrations). For ambient monitoring in the US, the CF=1 output is
 used as the starting point for correction [@barkjohn2021].
 
-### 6.2 Known Limitations
+### 7.2 Known Limitations
 
 - **Relative humidity sensitivity:** At RH >70%, hygroscopic particle
   growth inflates readings. An RH correction term is essential
@@ -126,13 +168,15 @@ used as the starting point for correction [@barkjohn2021].
   These can be identified by their particle count ratios and corrected
   [@ardondryer2023].
 - **Sensor aging:** Fan and laser degradation over months to years of
-  continuous operation can reduce sensitivity. Periodic collocation
-  with a reference instrument is needed.
+  continuous operation can reduce sensitivity. Long-term field
+  evaluations show measurable drift after 6--12 months of continuous
+  outdoor deployment [@malings2020]. Periodic collocation with a
+  reference instrument is needed.
 
 
-## 7. Equipment and Materials
+## 8. Equipment and Materials
 
-### 7.1 Sensor Unit Components
+### 8.1 Sensor Unit Components
 
 | Item                       | Qty per Unit | Notes                          |
 |:---------------------------|:------------:|:-------------------------------|
@@ -144,7 +188,7 @@ used as the starting point for correction [@barkjohn2021].
 | microSD card (32 GB)       | 1            | Pre-loaded with sensor software|
 | Ethernet or Wi-Fi dongle   | 1            | If Pi Zero (built-in on Pi 3+/4+) |
 
-### 7.2 Field Deployment Supplies
+### 8.2 Field Deployment Supplies
 
 | Item                       | Notes                                   |
 |:---------------------------|:----------------------------------------|
@@ -155,9 +199,9 @@ used as the starting point for correction [@barkjohn2021].
 | Laptop with SSH client     | For on-site diagnostics                 |
 
 
-## 8. Procedure
+## 9. Procedure
 
-### 8.1 Sensor Assembly and Software Setup
+### 9.1 Sensor Assembly and Software Setup
 
 1. Flash the microSD card with Raspberry Pi OS Lite.
 2. Install the sensor-reading Python script (maintained in the project
@@ -172,33 +216,32 @@ used as the starting point for correction [@barkjohn2021].
 6. Allow at least 30 seconds of warm-up before trusting data
    [@plantower2016].
 
-### 8.2 Collocation (Pre-Deployment Calibration)
+### 9.2 Collocation (Pre-Deployment Calibration)
 
 Before field deployment, collocate all sensor units at a single
 location for a minimum of 48 hours:
 
 1. Place all units within 1 m of each other, at the same height, with
    inlets facing the same direction.
-2. Compare readings across units to identify outliers or malfunctioning
-   sensors.
-3. If a reference instrument (FRM, FEM, or BAM) is available, collocate
-   sensors with it to develop a site-specific correction factor
-   [@barkjohn2021].
+2. Compare readings across units to identify outliers or
+   malfunctioning sensors.
+3. If a reference instrument (FRM, FEM, or BAM) is available,
+   collocate sensors with it to develop a site-specific correction
+   factor [@barkjohn2021].
 4. Calculate inter-sensor coefficients of variation (CV). Units with
    CV >15% relative to the group median should be inspected and
    recalibrated or replaced.
 
-### 8.3 Site Selection
+### 9.3 Site Selection
 
 - Mount sensors 2--4 m above ground level, away from direct emission
   sources (exhaust vents, barbecues, construction).
-- Orient the inlet away from prevailing wind to reduce rain
-  intrusion.
+- Orient the inlet away from prevailing wind to reduce rain intrusion.
 - Ensure access to power (AC outlet, solar panel, or battery).
 - Record GPS coordinates, mounting height, distance to nearest road,
   and land use context.
 
-### 8.4 Deployment
+### 9.4 Deployment
 
 1. Secure the enclosure at the selected location using zip ties,
    brackets, or straps.
@@ -207,10 +250,9 @@ location for a minimum of 48 hours:
 4. Record the deployment date/time, site ID, sensor serial number,
    and any notes in the field notebook and project metadata file.
 
-### 8.5 Data Retrieval
+### 9.5 Data Retrieval
 
-Retrieve data at regular intervals (weekly to monthly, depending on
-SD card capacity and power reliability):
+Retrieve data at regular intervals (weekly to monthly):
 
 1. SSH into the Pi and copy the CSV log file to your laptop using
    `scp` or `rsync`.
@@ -218,17 +260,17 @@ SD card capacity and power reliability):
 3. Archive the raw file immediately; never edit the original.
 4. Check the log for gaps (power outages, sensor freezes).
 
-### 8.6 Sensor Maintenance
+### 9.6 Sensor Maintenance
 
 - Inspect the inlet for debris, spider webs, or insect nests at each
   data retrieval visit.
 - Replace sensors after approximately 2 years of continuous outdoor
-  operation, or sooner if collocation checks show degraded
-  performance.
+  operation, or sooner if collocation checks show degraded performance
+  [@malings2020].
 - Clean the exterior of the enclosure. Do not open the PMS sensor
   housing.
 
-### 8.7 Decommissioning
+### 9.7 Decommissioning
 
 1. Power off the unit.
 2. Retrieve the final data file.
@@ -236,17 +278,17 @@ SD card capacity and power reliability):
 4. Leave no trace at the site.
 
 
-## 9. Data Processing and Correction
+## 10. Data Processing and Correction
 
-### 9.1 Overview
+### 10.1 Overview
 
 Raw PM~2.5~ readings from PMS5003/5004 sensors overestimate FRM/FEM
-concentrations by approximately 40% under typical US ambient conditions
-[@barkjohn2021]. The EPA US-wide correction reduces root mean square
-error from approximately 8 $\mu$g/m$^3$ to 3 $\mu$g/m$^3$
-[@barkjohn2021].
+concentrations by approximately 40% under typical US ambient
+conditions [@barkjohn2021]. The EPA US-wide correction reduces root
+mean square error from approximately 8 $\mu$g/m$^3$ to
+3 $\mu$g/m$^3$ [@barkjohn2021].
 
-### 9.2 Data Cleaning
+### 10.2 Data Cleaning
 
 ```{r}
 #| label: data-cleaning
@@ -257,12 +299,6 @@ library(tidyverse)
 
 raw <- read_csv("data/raw/site01_20260101_20260201.csv")
 
-# Expected columns: timestamp, pm1_cf1, pm25_cf1, pm10_cf1,
-#                   pm1_atm, pm25_atm, pm10_atm,
-#                   count_03, count_05, count_10, count_25, count_50, count_100,
-#                   temp_c, rh_pct, pressure_hpa
-
-# Remove negative or implausibly high values
 raw <- raw %>%
   filter(
     pm25_cf1 >= 0,
@@ -273,8 +309,7 @@ raw <- raw %>%
     temp_c < 60
   )
 
-# Flag and remove sensor freeze periods (identical consecutive readings
-# for > 10 minutes)
+# Flag and remove sensor freeze periods
 raw <- raw %>%
   mutate(frozen = pm25_cf1 == lag(pm25_cf1) &
                   pm25_cf1 == lag(pm25_cf1, 2) &
@@ -283,33 +318,26 @@ raw <- raw %>%
   select(-frozen)
 ```
 
-### 9.3 EPA US-Wide Correction (Barkjohn et al., 2021)
-
-The US-wide correction for PM~2.5~ under typical ambient and smoke
-conditions is [@barkjohn2021]:
+### 10.3 EPA US-Wide Correction (Barkjohn et al., 2021)
 
 $$
 \text{PM}_{2.5,\text{corrected}} = 0.524 \times \text{PM}_{2.5,\text{cf1}}
   - 0.0862 \times \text{RH} + 5.75
 $$
 
-where PM~2.5,cf1~ is the CF=1 output in $\mu$g/m$^3$ and RH is
-relative humidity in percent.
+where PM~2.5,cf1~ is the CF=1 output ($\mu$g/m$^3$) and RH is
+relative humidity (%) [@barkjohn2021].
 
 ```{r}
 #| label: epa-correction
 #| echo: true
 #| eval: false
 
-# Apply the Barkjohn et al. (2021) US-wide correction
 raw <- raw %>%
   mutate(
-    pm25_corrected = 0.524 * pm25_cf1 - 0.0862 * rh_pct + 5.75
+    pm25_corrected = 0.524 * pm25_cf1 - 0.0862 * rh_pct + 5.75,
+    pm25_corrected = pmax(pm25_corrected, 0)
   )
-
-# Truncate negative corrected values to zero
-raw <- raw %>%
-  mutate(pm25_corrected = pmax(pm25_corrected, 0))
 ```
 
 ::: {.callout-important}
@@ -318,39 +346,33 @@ conditions. It underestimates PM~2.5~ during dust-dominated events.
 For dust correction, see @jaffe2023 and @ouimette2026.
 :::
 
-### 9.4 Identifying Updated (Post-2021) PMS5003 Sensors
+### 10.4 Identifying Updated (Post-2021) PMS5003 Sensors
 
-Plantower changed the PMS5003 internal calibration in mid-2021. The
-updated sensors (PMS-U) read lower than the original sensors (PMS-O)
-at concentrations below approximately 16 $\mu$g/m$^3$. PMS-U sensors
-can be identified by a ratio of count~0.3~/count~0.5~ that is
-approximately 3 times lower than PMS-O sensors [@ardondryer2023]. If
-your sensors are PMS-U, apply the additional linear correction from
-@ardondryer2023 before the EPA correction.
+If your sensors are PMS-U (post-mid-2021), apply the additional
+linear correction from @ardondryer2023 before the EPA correction.
+PMS-U sensors can be identified by a count~0.3~/count~0.5~ ratio
+approximately 3 times lower than PMS-O sensors.
 
-### 9.5 Hourly and Daily Averaging
+### 10.5 Hourly and Daily Averaging
 
 ```{r}
 #| label: averaging
 #| echo: true
 #| eval: false
 
-# Hourly averages
 hourly <- raw %>%
   mutate(hour = floor_date(timestamp, "hour")) %>%
   group_by(hour) %>%
   summarize(
-    pm25_mean   = mean(pm25_corrected, na.rm = TRUE),
-    pm25_sd     = sd(pm25_corrected, na.rm = TRUE),
-    rh_mean     = mean(rh_pct, na.rm = TRUE),
-    temp_mean   = mean(temp_c, na.rm = TRUE),
-    n_obs       = n(),
-    .groups     = "drop"
+    pm25_mean = mean(pm25_corrected, na.rm = TRUE),
+    pm25_sd   = sd(pm25_corrected, na.rm = TRUE),
+    rh_mean   = mean(rh_pct, na.rm = TRUE),
+    temp_mean = mean(temp_c, na.rm = TRUE),
+    n_obs     = n(),
+    .groups   = "drop"
   ) %>%
-  # Require at least 75% data completeness per hour
-  filter(n_obs >= 45)  # assuming 1-min logging
+  filter(n_obs >= 45)
 
-# Daily averages (24-hour, midnight to midnight)
 daily <- hourly %>%
   mutate(date = as_date(hour)) %>%
   group_by(date) %>%
@@ -359,18 +381,16 @@ daily <- hourly %>%
     n_hours    = n(),
     .groups    = "drop"
   ) %>%
-  # Require at least 75% of hours (18 of 24)
   filter(n_hours >= 18)
 ```
 
-### 9.6 AQI Calculation
+### 10.6 AQI Calculation
 
 ```{r}
 #| label: aqi-calculation
 #| echo: true
 #| eval: false
 
-# Calculate US EPA AQI for PM2.5 (24-hour average)
 calc_aqi <- function(pm25) {
   breakpoints <- tibble(
     lo_pm  = c(0.0, 9.1, 35.5, 55.5, 125.5, 225.5),
@@ -388,19 +408,19 @@ daily <- daily %>%
 ```
 
 
-## 10. Quality Control
+## 11. Quality Control
 
-### 10.1 Pre-Deployment
+### 11.1 Pre-Deployment
 
 - All sensors pass collocation check (inter-sensor CV <15%).
 - Software logging verified (valid timestamps, all columns populated).
 
-### 10.2 During Deployment
+### 11.2 During Deployment
 
 - Weekly data check (via SSH or at retrieval) for gaps and anomalies.
 - Inspect enclosure and inlet monthly.
 
-### 10.3 Post-Processing QC Flags
+### 11.3 Post-Processing QC Flags
 
 | Flag | Condition                                  | Action              |
 |:-----|:-------------------------------------------|:--------------------|
@@ -410,63 +430,34 @@ daily <- daily %>%
 | F4   | Hourly data completeness <75%              | Exclude hour        |
 | F5   | Daily data completeness <75% of hours      | Exclude day         |
 
-### 10.4 Periodic Collocation
+### 11.4 Periodic Collocation
 
 Re-collocate sensors with a reference instrument (or with each other)
 at least once per year and after any sensor replacement. Document
-drift and update correction factors if needed.
+drift and update correction factors if needed [@malings2020].
 
 
-## 11. Data Management
+## 12. Data Management
 
 - Archive raw CSV files unmodified in `data/raw/` with the naming
   convention: `siteID_YYYYMMDD_YYYYMMDD_raw.csv`
 - Processed/corrected files in `data/processed/`
-- Metadata (site coordinates, sensor serial numbers, deployment dates,
-  correction equations applied) in `data/metadata/`
-- All processing scripts version-controlled in the project Git
-  repository
+- Metadata in `data/metadata/`
+- All processing scripts version-controlled per
+  [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 
-## 12. Reporting
+## 13. Reporting
 
-When reporting LCS data in publications or reports, include:
+When reporting LCS data in publications or reports, include
+[@morawska2018]:
 
 - Sensor make and model (Plantower PMS5003 or PMS5004)
 - Platform (Raspberry Pi model)
 - Correction equation used (cite the reference)
 - Whether sensors were collocated with a reference instrument
 - Data completeness and QC criteria applied
-- Known limitations (RH sensitivity, dust underestimation)
-
-
-## 13. Definitions
-
-AQI
-: Air Quality Index. A standardized index for reporting daily air
-  quality developed by the US EPA.
-
-BAM
-: Beta Attenuation Monitor. A FEM instrument for measuring PM~2.5~.
-
-CF=1
-: "Standard particles" output from the Plantower sensor, factory
-  calibrated against Chinese ambient aerosol.
-
-FEM
-: Federal Equivalent Method. An air quality measurement method
-  approved by the US EPA as equivalent to the Federal Reference Method.
-
-FRM
-: Federal Reference Method. The EPA-designated reference method for
-  measuring criteria pollutants.
-
-LCS
-: Low-Cost Sensor. A PM sensor costing less than approximately $250
-  per unit.
-
-PM~2.5~
-: Particulate matter with aerodynamic diameter less than 2.5 $\mu$m.
+- Known limitations (RH sensitivity, dust underestimation, sensor age)
 
 
 ## 14. References
@@ -481,6 +472,8 @@ PM~2.5~
 |:------|:---------------------------------------|:----------------------------------|
 | [F001](SOP-F001-field-safety.qmd)       | Field Safety        | Required prerequisite             |
 | [F101](SOP-F101-electrical-power-in-the-field.qmd) | Electrical Power in the Field | Power supply guidance  |
+| [F501](SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring | Companion: temp sensors on same Pi |
+| [F503](SOP-F503-particulate-matter-sampling.qmd) | PM Filter Sampling | Reference-quality gravimetric companion |
 | [F504](SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer | Companion field instrument SOP |
 
 
