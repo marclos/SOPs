@@ -1,0 +1,366 @@
+---
+# =============================================================================
+# SOP-L214: QX200 Droplet Digital PCR System -- Instrument Familiarization
+#           and Standard Operation
+# =============================================================================
+title: "QX200 Droplet Digital PCR System: Instrument Familiarization and Standard Operation"
+sop-number: "SOP-L214"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+bibliography: references.bib
+link-citations: true
+
+revision-history:
+  - version: "0.1"
+    date: last-modified
+    author: "Marc Los Huertos"
+    changes: "Initial draft. Instrument operation separated out from SOP-L702."
+---
+
+## 1. Purpose
+
+This procedure orients new personnel to the Bio-Rad QX200 Droplet Digital PCR
+(ddPCR) system and describes its safe, standard operation: the components of
+the system, the consumables and reagents, the four-stage workflow (droplet
+generation, plate sealing, thermal cycling, and droplet reading), basic use of
+QuantaSoft software, routine maintenance, and common troubleshooting.
+
+It is a familiarization and operation SOP. It does not cover the science of
+assay or primer design (see
+[SOP-L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd)) or the analysis and
+interpretation of results (see
+[SOP-L702 Applications Guide](SOP-L702-ddpcr-applications-guide.qmd)). The
+workflow described here follows Bio-Rad's published guidance for the platform
+[@biorad_appsguide2018; @biorad_qx200_2024], which itself implements the
+droplet-counting principle of absolute quantification [@hindson2011].
+
+
+## 2. Scope
+
+- **Applies to:** Operation of the QX200 ddPCR system in the lab, comprising
+  the QX200 Droplet Generator, the PX1 PCR Plate Sealer, the C1000 Touch
+  Thermal Cycler with 96-deep-well reaction module, and the QX200 Droplet
+  Reader, together with QuantaSoft software.
+- **Does not apply to:** Assay/primer design (SOP-L701), data analysis and
+  interpretation (SOP-L702), or DNA extraction (SOP-L700).
+- **Prerequisite:** A prepared, validated reaction mix and plate plan from
+  SOP-L701.
+
+::: {.callout-note}
+### SOP numbering
+This instrument SOP is numbered L214, placing it ahead of the L700-series
+analysis SOPs in the lab scheme. Conceptually it precedes analysis: complete
+this familiarization before running samples for SOP-L702.
+:::
+
+
+## 3. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab PI            | Approve instrument access; oversee major maintenance    |
+| Lab Manager       | Maintain consumable stock, oil, and service records     |
+| Trained Personnel | Operate the system per this SOP; log each run           |
+| New Students      | Complete familiarization and supervised runs before independent use |
+
+
+## 4. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards and precautions
+
+- **Droplet generation oil and reader oil.** Use the oil specified for the
+  chemistry (probe vs. EvaGreen). Avoid skin and eye contact; wear gloves and
+  eye protection; consult the SDS for each oil. Clean spills promptly.
+- **Reagents.** ddPCR supermixes and any sample DNA are handled with gloves.
+  Environmental soil DNA is low biohazard risk, but treat all extracts with
+  standard lab precautions.
+- **Moving parts.** The droplet reader autosampler moves during a run. Keep
+  hands clear and the lid closed while running.
+- **Electrical and thermal.** Standard bench-instrument electrical safety. The
+  thermal cycler block reaches high temperatures; do not touch the block
+  during or immediately after a run.
+- **Sharps / glass.** None in normal operation; cartridges and plates are
+  single-use plastics.
+:::
+
+::: {.callout-important}
+### Consumables are not interchangeable
+ddPCR requires Bio-Rad's proprietary droplet-generation reagents, cartridges,
+and gaskets. Substituting non-specified consumables will produce unusable
+droplets [@biorad_appsguide2018]. Match the oil to the supermix chemistry.
+:::
+
+
+## 5. Equipment, Consumables, and Reagents
+
+### Instruments
+
+| Item                                  | Role in workflow                              |
+|:--------------------------------------|:----------------------------------------------|
+| QX200 Droplet Generator               | Partitions each 20 uL reaction into ~20,000 droplets |
+| DG8 cartridge holder                  | Holds the DG8 cartridge during generation     |
+| PX1 PCR Plate Sealer                  | Heat-seals droplets into the 96-well plate with pierceable foil |
+| C1000 Touch Thermal Cycler (96-deep-well module) | Endpoint PCR amplification within droplets |
+| QX200 Droplet Reader                  | Streams droplets single-file and reads two-color fluorescence |
+| Instrument computer (QuantaSoft)      | Plate setup, run control, thresholding, export |
+
+### Consumables and reagents
+
+| Item                                       | Notes                                   |
+|:-------------------------------------------|:----------------------------------------|
+| DG8 cartridges and gaskets                 | Single-use; one cartridge = 8 samples   |
+| Droplet generation oil (probes) **or** QX200 EvaGreen droplet oil | Match to supermix chemistry |
+| Droplet reader oil                         | Loaded in the reader                    |
+| ddPCR Supermix for Probes **or** QX200 ddPCR EvaGreen Supermix | Per assay (SOP-L701) |
+| ddPCR 96-well plates and pierceable foil heat seals | For PX1 sealing and reading      |
+| Filtered pipette tips, low-bind tubes      | Standard molecular-biology consumables  |
+
+::: {.callout-tip}
+Keep a stock log for cartridges, gaskets, oils, plates, and foil. The droplet
+generator and reader each draw oil from onboard bottles; check levels before
+every session.
+:::
+
+::: {.callout-note}
+### Ordering supermixes, oils, and assays
+Order supermixes, droplet oils, cartridges, plates, and validated PrimePCR
+ddPCR assays from the Bio-Rad digital assay catalog:
+<https://www.bio-rad.com/digital-assays>. Confirm chemistry (probe vs
+EvaGreen) before ordering so the supermix and matching oil are consistent.
+:::
+
+
+## 6. Procedure
+
+### 6.1 System Overview
+
+The QX200 system performs absolute quantification by partitioning, amplifying,
+and counting [@biorad_appsguide2018; @hindson2011]. A single 20 uL reaction is
+split into roughly 20,000 uniform water-in-oil droplets. Each droplet is a
+tiny independent PCR. After endpoint amplification, the reader passes droplets
+one at a time through a two-color optical detector (channel 1 for FAM, channel
+2 for HEX or VIC), scoring each droplet as positive or negative. QuantaSoft
+fits the positive fraction to a Poisson model to return target concentration
+in copies per microliter.
+
+The work proceeds through four instruments in sequence:
+
+1. **Droplet Generator** (Section 6.4) makes the droplets.
+2. **PX1 Plate Sealer** (Section 6.5) seals them into a plate.
+3. **C1000 Touch Thermal Cycler** (Section 6.6) amplifies.
+4. **Droplet Reader** (Section 6.7) counts.
+
+### 6.2 Daily Startup
+
+1. Power on the instrument computer and the instruments to be used.
+2. Launch QuantaSoft and confirm it connects to the droplet generator and/or
+   reader.
+3. Check oil levels in the droplet generator and the reader; top up or replace
+   bottles per the manual [@biorad_qx200_2024].
+4. Empty the reader's waste bottle if near full.
+5. Confirm consumable stock for the planned run (cartridges, gaskets, oil,
+   plate, foil).
+
+### 6.3 Consumables Orientation
+
+Before the first run, identify each consumable and where it loads:
+
+- **DG8 cartridge** seats in the cartridge holder. The middle row of wells
+  receives sample; the bottom row receives generation oil; the top row
+  collects the generated droplets.
+- **Gasket** snaps over the loaded cartridge to seal it for generation.
+- **Generation oil** is chemistry-specific. Using probe oil with EvaGreen
+  supermix (or vice versa) will fail.
+- **Pierceable foil** is the only seal type compatible with the reader's
+  autosampler; do not use hard-seal films.
+
+### 6.4 Droplet Generation
+
+1. Prepare reactions per SOP-L701 and load into the cartridge holder with a
+   DG8 cartridge.
+2. Pipette each sample into the sample wells (avoid bubbles; pipette to the
+   first stop).
+3. Pipette the matched generation oil into the oil wells.
+4. Place the gasket over the cartridge.
+5. Load the holder into the QX200 Droplet Generator and close the lid; the run
+   takes about two minutes per cartridge.
+6. After generation, slowly transfer the droplets from the top row of the
+   cartridge to the corresponding wells of a ddPCR 96-well plate using a
+   multichannel pipette. Pipette gently and at an angle; droplets are fragile
+   and shearing them lowers the usable count.
+
+::: {.callout-warning}
+Damaged or sheared droplets reduce accepted-droplet counts and can fail the QC
+threshold (see SOP-L702, Section 6.2). Pipette droplets slowly and avoid
+introducing air.
+:::
+
+### 6.5 Plate Sealing (PX1)
+
+1. Place the plate and a sheet of pierceable foil in the PX1 Plate Sealer.
+2. Seal at the manufacturer-specified temperature and time (commonly 180 C for
+   5 s; confirm against the current manual [@biorad_qx200_2024]).
+3. Inspect the seal: the foil should be uniformly bonded with no lifted edges.
+
+### 6.6 PCR Amplification
+
+1. Transfer the sealed plate to the C1000 Touch with the 96-deep-well module.
+2. Run the validated cycling program for the assay (from SOP-L701).
+3. **Set the ramp rate to about 2 C/s.** This slower ramp is important for
+   even amplification across the droplet population on this platform
+   [@biorad_appsguide2018].
+4. Include a final hold and store at 4 C if not reading immediately; read
+   within the window specified for the chemistry.
+
+A generic template program is given in Appendix B; the assay-specific anneal
+temperature and cycle number come from SOP-L701.
+
+### 6.7 Droplet Reading
+
+1. Place the amplified, sealed plate in the QX200 Droplet Reader plate holder
+   with the retaining clamp.
+2. In QuantaSoft, set up the plate layout: sample names, assay/target names,
+   fluorophores (FAM, HEX/VIC), experiment type (e.g., absolute
+   quantification), and supermix/chemistry.
+3. Start the run. The autosampler aspirates droplets well by well and the
+   detector reads two channels per droplet.
+4. Do not open the reader or disturb the plate while running.
+
+### 6.8 QuantaSoft Orientation (Reading the Output)
+
+This is orientation only; thresholding decisions and full analysis are covered
+in SOP-L702.
+
+- **1-D plot:** fluorescence amplitude vs. droplet (event) number for one
+  channel. Positive droplets sit above the threshold line; negatives below.
+- **2-D plot:** channel 1 (FAM) vs. channel 2 (HEX/VIC) amplitude. In a duplex
+  assay, droplets fall into four clusters: double-negative, FAM-only,
+  HEX-only, and double-positive [@biorad_appsguide2018].
+- **Thresholding:** the boundary between positive and negative clusters.
+  Review it for every well; adjust manually in QuantaSoft Analysis Pro where
+  the automatic call is poor.
+- **Well merging:** replicate wells of the same sample/target may be merged to
+  increase the effective partition count before concentration is calculated.
+- **Concentration:** QuantaSoft reports copies per microliter from the Poisson
+  fit. Export as described in SOP-L702, Section 6.1.
+
+### 6.9 Shutdown
+
+1. Close the experiment and export/back up data (SOP-L702).
+2. Remove and discard the plate and used cartridges/gaskets (Section 8).
+3. Check and, if needed, empty the reader waste bottle.
+4. Power down per the manual; leave the system in the state your lab specifies
+   for the reader oil lines.
+
+### 6.10 Maintenance and Care
+
+- **Each session:** check oil levels and the waste bottle; inspect for leaks.
+- **Routine:** keep the reader's fluidics maintained per the manual; do not let
+  oil bottles run dry mid-run.
+- **Do not:** force cartridges or gaskets, reuse single-use consumables, mix
+  oil chemistries, or use non-pierceable seals.
+- **Records:** log each run (date, operator, assay, plate, instrument notes)
+  and any maintenance or service in the instrument logbook.
+
+### 6.11 Troubleshooting
+
+| Symptom                          | Likely cause                                  | Action                                                        |
+|:---------------------------------|:----------------------------------------------|:--------------------------------------------------------------|
+| Low accepted-droplet count       | Sheared droplets; pipetting too fast; bubbles | Pipette droplets slowly at an angle; avoid air; re-generate   |
+| Few or no droplets generated     | Wrong/insufficient oil; cartridge/gasket seated poorly | Use matched oil; reseat cartridge and gasket           |
+| "Rain" (droplets between clusters)| Suboptimal anneal temperature; degraded sample | Optimize anneal (SOP-L701); check DNA quality (SOP-L700)     |
+| Reader error / clog              | Low oil; debris; fluidics issue               | Check oil and waste; run reader maintenance; see manual       |
+| High NTC positives               | Contamination                                 | Rerun with fresh reagents; review setup (SOP-L702, Section 6.2)|
+
+
+## 7. Quality Control and Acceptance Criteria
+
+- Each well should yield at least 10,000 accepted droplets (target ~12,000 to
+  20,000); wells below 10,000 are excluded in analysis (SOP-L702).
+- Run the controls defined in SOP-L702 (NTC, extraction blank, positive
+  control) on every plate.
+- Confirm uniform plate sealing and correct plate orientation before reading.
+- Log instrument run metadata to support digital-PCR reporting standards
+  [@dmiqe2020].
+
+
+## 8. Waste Disposal
+
+- Used DG8 cartridges, gaskets, plates, foil, and tips: dispose as standard
+  laboratory plastic/biohazard waste per the lab's waste plan.
+- Generation and reader oil and oily waste: collect and dispose per the SDS and
+  the lab's chemical-waste procedures; do not pour oil down the drain.
+- Reagent containers: rinse and dispose per local guidance.
+
+
+## 9. References
+
+::: {.callout-note}
+### Finding published methods
+For peer-reviewed studies that used ddPCR, including environmental and
+microbial applications useful when validating an assay or interpreting low
+target concentrations, search Bio-Rad's ddPCR publication database:
+<https://www.bio-rad.com/ddPCR/publications>.
+:::
+
+::: {#refs}
+:::
+
+
+## 10. Training Record
+
+Before operating the QX200 system independently, personnel must:
+
+1. Read this SOP and review the current Bio-Rad QX200 manual
+   [@biorad_qx200_2024] and Applications Guide [@biorad_appsguide2018].
+2. Read [SOP-L701 Primer Design](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) and
+   [SOP-L702 Applications Guide](SOP-L702-ddpcr-applications-guide.qmd) for
+   context on what they are running and why.
+3. Observe a full run (generation, sealing, cycling, reading) performed by
+   trained personnel.
+4. Complete at least one full run under supervision, including QuantaSoft plate
+   setup and export.
+5. Be signed off by the PI or lab manager.
+
+| Trainee | Date observed | Date supervised run | Signed off by | Date |
+|:--------|:--------------|:--------------------|:--------------|:-----|
+|         |               |                     |               |      |
+
+
+## Appendix A: Pre-Run Checklist {.appendix}
+
+- [ ] Validated reaction mix and plate plan ready (SOP-L701)
+- [ ] Instruments powered on; QuantaSoft connected
+- [ ] Generation oil matches supermix chemistry; sufficient volume
+- [ ] Reader oil level adequate; waste bottle emptied
+- [ ] DG8 cartridges, gaskets, plate, and pierceable foil on hand
+- [ ] Controls included on the plate (NTC, extraction blank, positive control)
+- [ ] PX1 sealer at correct temperature/time
+- [ ] Thermal cycler ramp rate set to ~2 C/s
+- [ ] Run logged in the instrument logbook
+
+
+## Appendix B: Generic Thermal Cycling Template {.appendix}
+
+Anneal/extension temperature and cycle number are assay-specific and come from
+SOP-L701. The structure below is a starting template for probe-based ddPCR;
+confirm against the supermix insert and current manual [@biorad_qx200_2024].
+
+| Step                | Temperature | Time    | Cycles | Ramp     |
+|:--------------------|:------------|:--------|:-------|:---------|
+| Enzyme activation   | 95 C        | 10 min  | 1      | ~2 C/s   |
+| Denaturation        | 94 C        | 30 s    | 39--40 | ~2 C/s   |
+| Anneal/extension    | (assay)     | 1 min   | 39--40 | ~2 C/s   |
+| Enzyme deactivation | 98 C        | 10 min  | 1      | ~2 C/s   |
+| Hold                | 4 C         | hold    | 1      | ~2 C/s   |
+
+::: {.callout-note}
+EvaGreen chemistry uses a different supermix, oil, and cycling profile than
+probe chemistry. If the lab runs EvaGreen assays, add a separate template here
+once the standard profile is fixed in SOP-L701.
+:::
