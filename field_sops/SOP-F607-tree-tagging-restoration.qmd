@@ -1,0 +1,340 @@
+---
+# =============================================================================
+# SOP-F607: Tree Tagging for Restoration Monitoring
+# =============================================================================
+title: "Tree Tagging for Restoration Monitoring"
+sop-number: "SOP-F607"
+author:
+  - name: "Ellena Reposa"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-06-03"
+    author: "Ellena Reposa"
+    changes: "Initial draft. Safety content consolidated into SOP-F001;
+              measurement procedures cross-referenced to SOP-F604;
+              citations added."
+---
+
+## 1. Purpose
+
+This SOP describes standardized procedures for tagging trees during
+restoration field work at EA Program field sites. Tree tagging creates a
+permanent, individual record for each tree so that management decisions
+are consistent, repeatable, and transparent across field crews and over
+time. A future student or technician should be able to revisit a tagged
+tree and understand exactly why it was flagged and how its condition has
+changed.
+
+Tree tagging is used to:
+
+- Identify which trees will be retained, removed, or monitored
+- Track individual tree condition over time
+- Create a permanent record for future groups and project documentation
+- Support consistent decision-making across crew members
+
+Recording a consistent set of fields for each individual tree allows
+data to be combined, compared, and reused across projects and seasons
+[@handley2021].
+
+
+## 2. Scope
+
+- **Applies to:** All EA Program field sites with tree cover, including
+  riparian forest, oak woodland, mixed conifer stands, and planted trees
+  at restoration and campus sites
+- **Does not apply to:** Shrubs with DBH below 2.5 cm (use
+  [SOP-F603](SOP-F603-vegetation-transect-surveys.qmd) for shrub cover);
+  diameter, height, and plot-based inventory measurement (use
+  [SOP-F604](SOP-F604-tree-dbh-forest-inventory.qmd)); timber cruising
+  for commercial harvest; formal urban tree risk assessment, which
+  requires a qualified arborist [@isa2017]
+- **Location:** All EA Program terrestrial field sites with woody
+  vegetation
+
+
+## 3. Definitions
+
+- **DBH (diameter at breast height):** The diameter of a tree trunk
+  measured at 1.37 m (4.5 ft) above ground on the uphill side of the
+  tree. The standard dimension for comparing tree sizes. Measurement
+  procedure is defined in
+  [SOP-F604](SOP-F604-tree-dbh-forest-inventory.qmd) [@avery2002;
+  @usfs_fia2023].
+- **Tag:** A numbered aluminum disk fastened to the tree. Each tag
+  number is unique within the project.
+- **Flagging:** Colored plastic tape tied loosely around a tree at eye
+  level. Color communicates the management decision for that tree.
+- **Condition rating:** A five-level score (Excellent, Good, Fair, Poor,
+  Dead) describing tree health and structure.
+- **Crown:** The upper part of a tree, including all branches and
+  foliage.
+- **Crown spread:** The average horizontal width of the crown, taken as
+  the mean of the widest spread and a second spread measured at right
+  angles to it [@americanforests2015].
+- **Retain:** Leave the tree in place. Do not remove or damage.
+- **Remove:** Tree is scheduled for cutting or restoration thinning.
+
+
+## 4. Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| PI / Field Lead   | Approve flag color codes before the season starts; review completed field forms and photo logs weekly; ensure the project meets restoration goals |
+| Trained Personnel | Tag trees per this SOP; complete all fields in the tree assessment record; take required photos; flag trees correctly the first time |
+| New Students      | Complete training before tagging independently          |
+
+Minimum crew size is two persons at all times (safety requirement; see
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd)).
+
+
+## 5. Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Overhead:** Dead branches and leaning or unstable trees (widow-makers)
+  can fall without warning. Look up before approaching any tree. Do not
+  work under or near hazard trees in high wind.
+- **Sharp tools:** Hand saws, loppers, and pruners. Keep blades sheathed
+  while walking, pass tools handle-first, and never carry open blades
+  through brush.
+- **Terrain, biota, and weather:** Uneven terrain, poison oak, ticks,
+  snakes, stinging insects, and heat are common at EA field sites and
+  are covered in [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
+:::
+
+### Required PPE
+
+- [ ] Hi-vis vest
+- [ ] Closed-toed shoes or field boots
+- [ ] Long sleeves and long pants (poison oak protection)
+- [ ] Safety glasses or goggles
+- [ ] Cut-resistant gloves (when using cutting tools)
+- [ ] Hard hat (in areas with overhead hazard trees)
+- [ ] Sun protection (hat, sunscreen)
+
+### Emergency Procedures
+
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for stop-work
+conditions, biotic and weather hazards, emergency contacts, and incident
+response. Work in pairs at all times in forested areas.
+
+
+## 6. Equipment and Materials
+
+| Item                              | Notes                                       |
+|:----------------------------------|:--------------------------------------------|
+| Numbered aluminum tags            | Pre-numbered; one per tree                  |
+| Aluminum or stainless nails       | For attaching tags; see Section 8.2 on growth allowance |
+| Flagging tape (color set)         | Per the color codes in Section 7           |
+| Diameter (DBH) tape               | Reads diameter directly in cm (pi tape)     |
+| GPS unit or smartphone            | Record coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| Camera or smartphone              | Minimum three photos per tree               |
+| Field data sheets                 | Printed from Appendix A                      |
+| Clipboard and pencils             | Pencils work better than pens in wet conditions |
+| Long measuring tape               | For crown spread                            |
+| Clinometer or laser rangefinder   | For tree height (optional); see [SOP-F604](SOP-F604-tree-dbh-forest-inventory.qmd) |
+| Lumber crayon or paint marker     | For marking the DBH measurement point       |
+| Hand saw or loppers (optional)    | For small branch clearance to access the trunk |
+
+
+## 7. Flagging Color Codes
+
+::: {.callout-important}
+Confirm color codes with the crew and PI before working. Project-specific
+changes must be documented in the field log.
+:::
+
+| Flag Color | Designation                                              |
+|:-----------|:---------------------------------------------------------|
+| ORANGE     | Confirmed removal: invasive species (primary target)     |
+| YELLOW     | Confirmed removal: dead, dying, or hazard tree           |
+| PINK       | Confirmed removal: restoration thinning                  |
+| GREEN      | Retain: do not remove                                    |
+| WHITE      | Under review: secondary evaluation required (do not remove yet) |
+| RED        | Monitoring tree: reassess next cycle                     |
+| BLUE       | Approved native for transplant or seed collection        |
+
+**Rule:** Tie flagging loosely at eye level. Do not wrap tightly;
+flagging can girdle the tree over time.
+
+
+## 8. Procedure
+
+### 8.1 Before Entering the Field (Daily Pre-Work)
+
+Complete this checklist before leaving the vehicles each day:
+
+- [ ] All PPE inspected and worn
+- [ ] GPS units charged; project boundaries pre-loaded
+- [ ] Tag number range assigned to each crew member (no duplicates)
+- [ ] Communication check complete; phones functional
+- [ ] Weather reviewed against the stop-work conditions in
+      [SOP-F001](SOP-F001-field-safety.qmd)
+- [ ] Crew briefed: target species, flag color codes, today's objectives
+- [ ] Cutting tools sharpened, sheathed, and inspected
+
+### 8.2 Tree Tagging Step-by-Step
+
+| Step | Action | Why it matters |
+|:-----|:-------|:---------------|
+| 1. Approach and evaluate | Assess tree form, lean, root zone, crown condition, and nearby hazards from more than one side before tagging | A tree that looks sound from one side may have rot, lean, or deadwood visible from another angle [@isa2017] |
+| 2. Identify species | Confirm common and scientific name; cross-check against the project Invasive Priority List and Retain Species List. Use [SOP-F602 iNaturalist](SOP-F602-inaturalist.qmd) for ID support where needed | Tagging the wrong species leads to the wrong management decision |
+| 3. Measure DBH | Measure at 1.37 m on the uphill side per [SOP-F604](SOP-F604-tree-dbh-forest-inventory.qmd) | DBH drives removal priority, allometric calculations, and monitoring frequency |
+| 4. Assign flag color | Select the color per Section 7 and tie loosely at eye level | Color communicates the decision to every future crew member |
+| 5. Install tag | Fasten the numbered tag on the uphill side at DBH height with a single aluminum or stainless nail. Leave the nail head protruding about 2 to 3 cm so the tree can grow without engulfing the tag | A consistent, accessible tag is easy to relocate and read in later seasons; leaving the nail proud accommodates radial growth and bark ingrowth [@usfs_fia2023] |
+| 6. Photograph | Take at least three photos: (a) full tree form, (b) tag number close-up, (c) notable defects or hazards | Photos resolve disputes and provide evidence if a tag is lost |
+| 7. Record data | Complete all fields in the tree assessment record (Appendix A) before moving to the next tree | If it is not written down, it did not happen |
+
+::: {.callout-note}
+### Crown spread (optional field)
+If crown spread is recorded, measure the widest spread across the crown,
+then measure a second spread at right angles to the first, and average
+the two: (A + B) / 2 [@americanforests2015]. Tree height, if recorded,
+is measured with a clinometer or laser rangefinder per
+[SOP-F604](SOP-F604-tree-dbh-forest-inventory.qmd).
+:::
+
+### 8.3 Tree Condition Ratings
+
+Use a consistent five-level scale. Note structural defects (lean,
+cracks, cavities, deadwood, included bark) that influence the rating and
+any hazard flag [@isa2017].
+
+| Condition | Field indicators |
+|:----------|:-----------------|
+| EXCELLENT | No significant defects; vigorous, full crown; normal growth |
+| GOOD      | Minor defects; healthy overall; normal growth               |
+| FAIR      | Moderate defects; reduced vigor; some dieback               |
+| POOR      | Major defects; significant dieback; structural risk         |
+| DEAD      | No live tissue; standing snag or fallen log                 |
+
+
+## 9. Quality Control
+
+Perform these checks every tagging day:
+
+1. **Tag uniqueness:** Confirm no tag number was used twice. Reconcile
+   the day's tags against the assigned number ranges.
+2. **Species cross-check:** Verify each species identification against
+   the Invasive Priority and Retain Species lists. Flag uncertain IDs
+   for review rather than guessing.
+3. **Data completeness:** Confirm every tagged tree has a fully completed
+   assessment record (Appendix A) with no blank required fields.
+4. **Photo completeness (end of day):** Before leaving the site, scroll
+   through the day's photos and confirm that every tag number has the
+   three required photos (full form, tag close-up, defects). Re-photograph
+   any tree that is missing photos before leaving.
+5. **Second-observer check:** On a subset of trees (for example, 10%),
+   have a second crew member independently confirm species, condition
+   rating, and flag color. Resolve any disagreements with the field lead.
+
+
+## 10. References
+
+::: {#refs}
+:::
+
+
+## 11. Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety            | Required prerequisite; hazards, stop-work, emergencies |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation | Recording tree coordinates       |
+| [F602](SOP-F602-inaturalist.qmd)       | iNaturalist             | Species identification support    |
+| [F603](SOP-F603-vegetation-transect-surveys.qmd) | Vegetation Transects | Understory and shrub cover     |
+| [F604](SOP-F604-tree-dbh-forest-inventory.qmd) | Tree DBH and Forest Inventory | DBH, height, and crown measurement |
+| [F606](SOP-F606-canopy-cover.qmd)      | Canopy Cover            | Stand structure companion         |
+
+
+## 12. Training Record
+
+Before tagging trees independently, each student or new technician must:
+
+1. Read this SOP in full
+2. Read [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) and pass a
+   field safety check (PPE, stop-work conditions, emergency contacts)
+3. Know the correct flag color codes
+4. Demonstrate correct DBH measurement technique (per
+   [SOP-F604](SOP-F604-tree-dbh-forest-inventory.qmd))
+5. Correctly tag and flag three practice trees with the crew lead
+   observing
+6. Complete a tree assessment record without errors
+7. Take an acceptable three-photo set (full tree, tag close-up, defects)
+8. Be signed off by the PI or field lead
+
+| Trainee | Date read SOP | Date practice trees | Signed off by | Date |
+|:--------|:--------------|:--------------------|:--------------|:-----|
+|         |               |                     |               |      |
+
+
+## Appendix A: Individual Tree Assessment Record {.appendix}
+
+Print one copy per tree (or one per plot) before going to the field.
+Circle the appropriate option where choices are given.
+
+**Tag number:** \_\_\_\_\_\_\_\_\_\_\_\_\_
+**GPS coordinates:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Species (common):** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Species (scientific):** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**DBH:** \_\_\_\_\_\_\_ (circle: in / cm)
+**Est. height (ft):** \_\_\_\_\_\_\_ (clinometer or rangefinder; see SOP-F604)
+
+**Crown spread (ft):** \_\_\_\_\_\_\_ (average of two perpendicular axes:
+(A + B) / 2)
+
+**Condition rating:** EXCELLENT / GOOD / FAIR / POOR / DEAD (circle one)
+
+**Flag color:** ORANGE / YELLOW / PINK / GREEN / WHITE / RED / BLUE
+(circle one)
+
+**Proximity hazards** (e.g., lean toward trail, overhanging deadwood,
+near utility): \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Adjacent utilities?** YES / NO (if yes, note type and distance):
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Removal rationale** (e.g., invasive species, hazard, restoration
+thinning, dead): \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Photo file references** (e.g., TAG042_full, TAG042_tag, TAG042_defect):
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Assessor initials:** \_\_\_\_\_\_\_\_  **Date and time:** \_\_\_\_\_\_\_\_\_\_\_
+
+**Additional notes / sketch** (trunk abnormalities, lean direction,
+nearby landmarks):
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+## Appendix B: Daily Photo Log {.appendix}
+
+Minimum three photos per tree. Store photos with the tag number in the
+filename (for example, `TAG042_full_form.jpg`).
+
+| Photo # | Tag # | Subject              | Direction facing | Notes |
+|:--------|:------|:---------------------|:-----------------|:------|
+| 1       |       | Full tree form       |                  |       |
+| 2       |       | Tag number close-up  |                  |       |
+| 3       |       | Defects / hazards    |                  |       |
+| 4       |       |                      |                  |       |
+| 5       |       |                      |                  |       |
+
+
+## Appendix C: Field Note {.appendix}
+
+This SOP is a field guide. It does not replace project permits or crew
+lead direction. Review this SOP with your crew lead at the start of each
+project season.
