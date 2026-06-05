@@ -30,8 +30,10 @@
 \newcommand{\sopauthor}{}
 \newcommand{\sopdate}{}
 
-% Append a period to section, subsection, and subsubsection numbers
-\titlelabel{\thetitle.\quad}
+% Add period after section numbers without titlesec
+\makeatletter
+\def\@seccntformat#1{\csname the#1\endcsname.\quad}
+\makeatother
 
 % ---------------------------------------------------------------------------
 % Custom title page command
