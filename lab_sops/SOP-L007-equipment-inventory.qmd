@@ -23,7 +23,7 @@ revision-history:
     changes: "Converted to Quarto; consolidated analytical instruments into tables; added Related SOP column"
 ---
 
-## 1. Purpose
+## Purpose
 
 This document is a living inventory of instruments, equipment, and
 major supplies maintained by the EA Program. It serves as the central
@@ -33,7 +33,7 @@ inventory before purchasing duplicate items and should update it
 whenever equipment is acquired, moved, or decommissioned.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All EA Program equipment in SGM 105, 106, 131, 132,
   133, 134, and associated field storage
@@ -44,7 +44,7 @@ whenever equipment is acquired, moved, or decommissioned.
   personnel
 
 
-## 3. How to Use This Inventory
+## How to Use This Inventory
 
 - Items marked *TBD* in the ID# column need to be assigned an
   inventory number during the next audit
@@ -56,7 +56,7 @@ whenever equipment is acquired, moved, or decommissioned.
   manager immediately
 
 
-## 4. Vehicles
+## Vehicles
 
 | Item                          | ID#   | Qty | Location          | Related SOP |
 |:------------------------------|:------|:----|:------------------|:------------|
@@ -64,7 +64,7 @@ whenever equipment is acquired, moved, or decommissioned.
 | 2016 Ford Explorer #2        | *TBD* | 1   | Garage, EA Slot   | [F100](../field_sops/SOP-F100-vehicles.qmd) |
 
 
-## 5. Field Equipment
+## Field Equipment
 
 | Item                                        | ID#   | Qty | Location  | Related SOP |
 |:--------------------------------------------|:------|:----|:----------|:------------|
@@ -88,7 +88,7 @@ whenever equipment is acquired, moved, or decommissioned.
 | Alkalinity Test Kit                         | *TBD* | 3   | *TBD*     | [L301](SOP-L301-alkalinity-titration.qmd) |
 
 
-## 6. Remote Sensing and Drones
+## Remote Sensing and Drones
 
 | Item                          | ID#   | Qty | Location  | Related SOP |
 |:------------------------------|:------|:----|:----------|:------------|
@@ -98,7 +98,7 @@ whenever equipment is acquired, moved, or decommissioned.
 | DJI Matrice 100 Batteries     | *TBD* | 6   | SGM 210   | --          |
 
 
-## 7. Raspberry Pi and Air Quality Sensors
+## Raspberry Pi and Air Quality Sensors
 
 | Item                          | ID#   | Qty | Location  | Related SOP |
 |:------------------------------|:------|:----|:----------|:------------|
@@ -108,7 +108,7 @@ whenever equipment is acquired, moved, or decommissioned.
 | PMS5004 PM Sensor             | NA    | 16  | SGM *TBD* | --          |
 
 
-## 8. Analytical Instruments
+## Analytical Instruments
 
 | Item                                         | ID# / Serial         | Qty | Location  | Related SOP |
 |:---------------------------------------------|:----------------------|:----|:----------|:------------|
@@ -131,7 +131,7 @@ whenever equipment is acquired, moved, or decommissioned.
 | Eosense eosMX-P Multiplexer                 | *TBD*                 | 1   | *TBD*     | [F504](../field_sops/SOP-F504-picarro-field-deployment.qmd) |
 
 
-## 9. Balances and Measurement
+## Balances and Measurement
 
 | Item                                         | ID# / Serial   | Qty | Location  | Related SOP |
 |:---------------------------------------------|:----------------|:----|:----------|:------------|
@@ -142,7 +142,7 @@ whenever equipment is acquired, moved, or decommissioned.
 | Hydrometer                                  | *TBD*           | 5   | *TBD*     | [L401](SOP-L401-texture-hydrometer.qmd) |
 
 
-## 10. Laboratory Equipment
+## Laboratory Equipment
 
 | Item                                         | ID# / Serial         | Qty | Location  | Related SOP |
 |:---------------------------------------------|:----------------------|:----|:----------|:------------|
@@ -166,7 +166,7 @@ whenever equipment is acquired, moved, or decommissioned.
 | Vortex-Genie 2                               | *TBD*                 | 1   | SGM 133   | --          |
 
 
-## 11. Computers
+## Computers
 
 | Item                          | ID#   | Qty | Location  | Primary Use |
 |:------------------------------|:------|:----|:----------|:------------|
@@ -175,7 +175,7 @@ whenever equipment is acquired, moved, or decommissioned.
 | GIS Lab Computers             | *TBD* | 16  | *TBD*     | GIS analysis and remote sensing |
 
 
-## 12. Sieves
+## Sieves
 
 | Item                                                 | Qty | Location |
 |:-----------------------------------------------------|:----|:---------|
@@ -203,7 +203,7 @@ original inventory) needs to be confirmed during the next audit.
 :::
 
 
-## 13. Glassware and Pipettes
+## Glassware and Pipettes
 
 | Item                                     | Qty | Location  |
 |:-----------------------------------------|:----|:----------|
@@ -224,7 +224,7 @@ original inventory) needs to be confirmed during the next audit.
 | Funnels                                  | 20  | SGM 134   |
 
 
-## 14. Digital Media Resources
+## Digital Media Resources
 
 | Item                          | ID#   | Qty | Location  |
 |:------------------------------|:------|:----|:----------|
@@ -234,9 +234,9 @@ original inventory) needs to be confirmed during the next audit.
 | Blackmagic HDR 12G Video      | *TBD* | 1   | SGM 106   |
 
 
-## 15. Inventory Audit Procedures
+## Inventory Audit Procedures
 
-### 15.1 Annual Audit
+### Annual Audit
 
 At the start of each academic year (or during the summer), a student
 employee should:
@@ -251,13 +251,13 @@ employee should:
 6. Commit the updated file to the GitHub repository with a descriptive
    commit message
 
-### 15.2 ID Numbering Convention
+### ID Numbering Convention
 
 *TBD -- define a standard numbering scheme (e.g.,
 EA-[CATEGORY]-[SEQUENTIAL], such as EA-FLD-001 for field equipment,
 EA-LAB-001 for lab equipment, EA-INS-001 for analytical instruments).*
 
-### 15.3 Acknowledgements
+### Acknowledgements
 
 Student employees assisting with the inventory audit (planned for
 Summer 2020; update with actual completion date and names):
@@ -265,6 +265,6 @@ Summer 2020; update with actual completion date and names):
 - *TBD*
 
 
-## 16. References
+## References
 
 - Internal document. No external references.

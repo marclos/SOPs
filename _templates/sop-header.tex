@@ -15,6 +15,7 @@
 \usepackage{colortbl}
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage{titlesec}
 
 % Define EA Program colors
 \definecolor{eablue}{HTML}{0057B8}
@@ -28,6 +29,9 @@
 \newcommand{\soptitle}{}
 \newcommand{\sopauthor}{}
 \newcommand{\sopdate}{}
+
+% Append a period to section, subsection, and subsubsection numbers
+\titlelabel{\thetitle.\quad}
 
 % ---------------------------------------------------------------------------
 % Custom title page command
