@@ -14,6 +14,11 @@
   line-height: 1.1;
 }
 
+/* Add period after section numbers */
+.header-section-number::after {
+  content: ".";
+}
+
 /* -------------------------------------------------------------------------
    Colored sidebar links for highlighted navigation items
    Used in _quarto.yml sidebar text entries via <span> classes
