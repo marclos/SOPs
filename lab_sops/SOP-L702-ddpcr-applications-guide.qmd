@@ -28,7 +28,7 @@ revision-history:
       and a bibliography file. Corrected internal references to SOP-L700.
 ---
 
-## 1. Purpose
+## Purpose
 
 This document is an applications guide, not a step-by-step bench protocol. It
 explains *why* and *how* droplet digital PCR (ddPCR) on the Bio-Rad QX200
@@ -53,7 +53,7 @@ specific case of soil functional-gene quantification.
 :::
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Interpretation and analysis of QX200 ddPCR data
   (QuantaSoft or QuantaSoft Analysis Pro output) for nitrogen-cycle functional
@@ -68,7 +68,7 @@ specific case of soil functional-gene quantification.
   (see [SOP-L801 RStudio and GitHub](SOP-L801-rstudio-github.qmd)).
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                |
 |:------------------|:----------------------------------------------|
@@ -77,7 +77,7 @@ specific case of soil functional-gene quantification.
 | New Students      | Complete training before independent analysis |
 
 
-## 4. Why ddPCR for This Application
+## Why ddPCR for This Application
 
 Quantitative PCR (qPCR) infers target abundance from amplification kinetics
 against a standard curve, so its accuracy depends on amplification efficiency
@@ -109,7 +109,7 @@ reported in absolute units when relating microbial communities to nitrogen
 cycling processes [@levybooth2014].
 
 
-## 5. The Soil Nitrogen Cycle and Functional Gene Markers
+## The Soil Nitrogen Cycle and Functional Gene Markers
 
 Soil nitrogen transformations are carried out by distinct microbial guilds,
 each defined by the enzymes (and therefore the genes) it carries. Quantifying
@@ -145,9 +145,9 @@ is rarely informative; the ratios and combinations in Section 7 are usually
 more meaningful.
 
 
-## 6. From Instrument Output to Quality-Controlled Data
+## From Instrument Output to Quality-Controlled Data
 
-### 6.1 Reviewing and Exporting Data
+### Reviewing and Exporting Data
 
 Instrument operation and the QuantaSoft interface are covered in SOP-L214. For
 analysis, the entry point is the exported well-level data.
@@ -167,7 +167,7 @@ analysis, the entry point is the exported well-level data.
    under `ddPCR_raw_data/` before any analysis begins.
 
 ::: {.callout-warning}
-### Data Integrity
+#### Data Integrity
 
 - Never overwrite raw exported data files. Work only with copies.
 - Back up raw `.qlp` files immediately after each run.
@@ -175,7 +175,7 @@ analysis, the entry point is the exported well-level data.
   repository.
 :::
 
-### 6.2 Quality Control and Acceptance Criteria
+### Quality Control and Acceptance Criteria
 
 Apply these checks (ideally scripted in R, see Appendix A) before any analysis.
 They follow the data-quality expectations set out for digital PCR reporting
@@ -203,9 +203,9 @@ criterion, so batch QC is consistent and nothing is missed.
 :::
 
 
-## 7. Turning Counts into Ecological Quantities
+## Turning Counts into Ecological Quantities
 
-### 7.1 Normalizing Copies per Microliter
+### Normalizing Copies per Microliter
 
 The QuantaSoft `Concentration` is in copies per microliter of the ddPCR
 reaction. To express results per gram of dry soil:
@@ -259,7 +259,7 @@ cat(sprintf("Gene copies per g dry soil: %.0f\n", copies_per_g))
 cat(sprintf("Gene copies per g dry soil (log10): %.2f\n", log10(copies_per_g)))
 ```
 
-### 7.2 Organizing the Analysis-Ready Dataset
+### Organizing the Analysis-Ready Dataset
 
 1. Merge QC-filtered results with sample metadata (site, treatment, depth,
    date, soil moisture, DNA concentration) on a shared sample ID.
@@ -271,7 +271,7 @@ cat(sprintf("Gene copies per g dry soil (log10): %.2f\n", log10(copies_per_g)))
    datasets (e.g., `sample_id`, `gene`, `copies_per_g_dry`,
    `copies_per_ng_dna`, `site`, `treatment`, `depth_cm`, `date`).*
 
-### 7.3 Interpreting Gene Abundance for Nitrogen-Cycle Questions
+### Interpreting Gene Abundance for Nitrogen-Cycle Questions
 
 Functional-gene abundance is genetic *potential*, not measured process rate;
 interpret it as such, and relate it to environmental and rate data where
@@ -307,7 +307,7 @@ similar rates are measured, gene abundance can be related to them, but the
 analytical framework (and its limits) should be agreed with the PI first.
 
 
-## 8. Statistical Analysis
+## Statistical Analysis
 
 ::: {.callout-note}
 The appropriate approach depends on design (paired vs. independent sites,
@@ -331,7 +331,7 @@ factorial treatments, time series). Consult the PI before finalizing.
    them silently [@helsel2011].
 
 
-## 9. Reporting
+## Reporting
 
 - Report abundance as copies per g dry soil (mean +/- standard error) and/or
   copies per ng DNA.
@@ -345,7 +345,7 @@ factorial treatments, time series). Consult the PI before finalizing.
 - *TBD: build a standardized Quarto reporting template for ddPCR results.*
 
 
-## 10. References
+## References
 
 ::: {.callout-note}
 ### External resources
@@ -362,7 +362,7 @@ factorial treatments, time series). Consult the PI before finalizing.
 :::
 
 
-## 11. Training Record
+## Training Record
 
 Before analyzing data independently, personnel must:
 
