@@ -20,58 +20,58 @@ revision-history:
       and QC criteria; added waste disposal, related SOPs, and
       calculation sections; updated cross-references to current
       SOP numbering"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the measurement of soil microbial respiration using
-the Solvita CO~2~ burst test. The method quantifies CO~2~ evolution
-from rewetted, air-dried soil as an index of microbial activity and
-labile carbon availability [@haney2008comparison; @haney2008estimating].
+the Solvita CO~2~ burst test. The method quantifies CO~2~ evolution from
+rewetted, air-dried soil as an index of microbial activity and labile
+carbon availability [@haney2008comparison; @haney2008estimating].
 
 The CO~2~ burst exploits the "Birch effect," the well-documented pulse
 of microbial respiration that occurs when dry soil is rapidly rewetted
 [@birch1958; @fierer2003]. Drying and rewetting disrupts soil
 aggregates, lyses a fraction of the microbial biomass, and releases
 intracellular osmolytes, all of which provide readily mineralizable
-substrate that surviving microbes respire as CO~2~
-[@fierer2002; @xiang2008]. The magnitude of the burst integrates
-microbial biomass size, community physiological status, and the pool
-of labile organic carbon, making it a useful single-number indicator
-of biological soil fertility [@haney2008estimating].
+substrate that surviving microbes respire as CO~2~ [@fierer2002;
+@xiang2008]. The magnitude of the burst integrates microbial biomass
+size, community physiological status, and the pool of labile organic
+carbon, making it a useful single-number indicator of biological soil
+fertility [@haney2008estimating].
 
-
-## 2. Scope
+## Scope
 
 - **Applies to:** Air-dried, sieved soil samples collected per
   [SOP-F400](../field_sops/SOP-F400-soil-sampling.qmd) for microbial
   activity assessment
 - **Does not apply to:** Compost maturity testing (see
-  [SOP-L413](SOP-L413-solvita-compost-maturity.qmd)); field-moist
-  basal respiration; long-term (7--28 day) incubation-based
-  respirometry; or chamber-based field CO~2~ flux measurements (see
+  [SOP-L413](SOP-L413-solvita-compost-maturity.qmd)); field-moist basal
+  respiration; long-term (7--28 day) incubation-based respirometry; or
+  chamber-based field CO~2~ flux measurements (see
   [SOP-F406](../field_sops/SOP-F406-soil-respiration-chambers.qmd))
 - **Location:** EA Program laboratory, SGM 133
 
+## Responsibilities
 
-## 3. Responsibilities
+| Role | Responsibility |
+|:----------------------|:------------------------------------------------|
+| Lab PI | Approve protocol, ensure training compliance |
+| Lab Manager | Maintain Solvita kit inventory, verify probe expiration dates |
+| Trained Personnel | Perform assay, record and report results |
+| New Students | Complete training before independent use |
 
-| Role              | Responsibility                                          |
-|:------------------|:--------------------------------------------------------|
-| Lab PI            | Approve protocol, ensure training compliance            |
-| Lab Manager       | Maintain Solvita kit inventory, verify paddle expiration dates |
-| Trained Personnel | Perform assay, record and report results                |
-| New Students      | Complete training before independent use                |
+## Safety and Hazards
 
-
-## 4. Safety and Hazards
-
-::: {.callout-warning}
+::: callout-warning
 ### Hazards
 
 - **Physical:** Minor risk of glass breakage from incubation jars.
-  Handle jars carefully; clean up broken glass with a brush and
-  dustpan, not bare hands.
+  Handle jars carefully; clean up broken glass with a brush and dustpan,
+  not bare hands.
 - **Biological:** Soil samples may contain soil-borne pathogens. Wash
   hands thoroughly after handling soil. Do not touch your face during
   the procedure.
@@ -83,118 +83,119 @@ of biological soil fertility [@haney2008estimating].
 - [ ] Safety glasses
 - [ ] Lab coat
 
+## Equipment and Materials
 
-## 5. Equipment and Materials
-
-| Item                          | Notes                                        |
-|:------------------------------|:---------------------------------------------|
-| Solvita CO~2~ burst test kit  | Includes gel paddles and incubation jars     |
+| Item | Notes |
+|:----------------------------|:------------------------------------------|
+| Solvita CO~2~ burst test kit | Should include enough probes for all samples, duplicates and controls. |
 | Solvita Digital Color Reader (DCR) | For quantifying gel color change; calibrate before each batch |
-| Incubation jars (475 mL)     | Provided with kit; glass with screw-top lids |
-| 30 cc soil scoop              | Provided with kit                            |
-| Analytical balance            | Capable of 0.1 g resolution                 |
-| Graduated cylinder (50 mL) or pipette | For adding deionized water            |
-| Deionized water               | From Milli-Q system or equivalent            |
-| Incubator or controlled room  | Set to 25 +/- 1 C                            |
-| Timer                         | 24-hour countdown                            |
-| Lab notebook or data sheet    | For recording results                        |
+| Incubation jars (475 mL) | Glass jars with screw-top lids |
+| 30 cc soil scoop | Provided with kit |
+| Small beakers | Can be plastic or glass. Must fit inside incubation jar |
+| Analytical balance | Capable of 0.1 g resolution |
+| Graduated cylinder (50 mL) or pipette | For adding deionized water |
+| Deionized water | From Milli-Q system or equivalent |
+| Incubator or controlled room | Set to 25 +/- 1 C |
+| Timer | 24-hour countdown |
+| Lab notebook or data sheet | For recording results |
 
+## Procedure
 
-## 6. Procedure
+### Sample Preparation
 
-### 6.1 Sample Preparation
+1.  Use soil that has been collected per
+    [SOP-F400](../field_sops/SOP-F400-soil-sampling.qmd).
+2.  If samples were stored at 4 C after sieving, allow them to
+    equilibrate to room temperature (20--25 C) for at least 30 minutes
+    before beginning the assay.
+3.  Sieve soils through a 2mm sieve. Use a mortar and pestle to break up
+    soil clumps that did not pass through the sieve initially and
+    resieve it. Discard any rocks or other materials that do not pass
+    through the sieve.
 
-1. Use soil that has been air-dried and sieved through a 2 mm sieve per
-   [SOP-F400](../field_sops/SOP-F400-soil-sampling.qmd)
-2. If samples were stored at 4 C after sieving, allow them to
-   equilibrate to room temperature (20--25 C) for at least 30 minutes
-   before beginning the assay
-3. Gently mix the sample to ensure homogeneity before scooping
-
-::: {.callout-note}
+::: callout-note
 The CO~2~ burst test is designed for air-dried soil. Drying standardizes
 the starting moisture across samples and maximizes the rewetting
 response. Results from field-moist soil are not comparable to published
 Solvita norms [@solvita2019].
 :::
 
-### 6.2 Incubation Setup
+### Incubation Setup
 
-1. Weigh approximately 40 g of air-dried soil into a clean, dry
-   incubation jar. Record the exact mass to 0.1 g.
-2. Add the volume of deionized water specified by the Solvita protocol
-   (typically 20 mL for most mineral soils; consult the kit manual for
-   high-organic soils). The rewetting triggers the microbial CO~2~
-   burst [@fierer2003].
-3. Remove a fresh CO~2~-sensitive gel paddle from its sealed foil
-   packet. Inspect the gel: it should be uniform in color with no
-   cracks, discoloration, or signs of prior exposure. Discard
-   compromised paddles.
-4. Insert the paddle into the jar so that the gel face is exposed to
-   the headspace above the soil surface. Do not bury the paddle in
-   soil.
-5. Seal the jar immediately and securely.
-6. Record the jar number, sample ID, soil mass, water volume added,
-   and start time.
+1.  Measure 30ccs of the dried and sieved soils using a 30cc volume
+    scoop and add it to a small beaker. Weight the soil (do not include
+    weight of beaker) and record the exact mass to 0.1 g. Shake it
+    gently to level the surface.
+2.  Gently sprinkle 9ccs of deionized water onto the surface of the soil
+    using a pipette. The rewetting triggers the microbial CO~2~ burst
+    [@fierer2003].
+3.  Remove a fresh CO~2~-sensitive gel probe from its sealed foil
+    packet. Inspect the gel: it should be attached to the probe, uniform
+    in color with no cracks, discoloration, or signs of prior exposure.
+    Discard compromised probes. Make sure not to touch the gel while
+    handling the probe.
+4.  Insert the probe into the jar so that the gel face is exposed to the
+    headspace above the soil surface. Do not bury the probe in soil.
+5.  Seal the jar immediately and securely.
+6.  Record the jar number, sample ID, soil mass, water volume added, and
+    start time.
 
-### 6.3 Incubation
+### Incubation
 
-1. Place sealed jars in the incubator set to 25 +/- 1 C
-2. Incubate undisturbed for 24 hours
-3. Do not open or move jars during incubation
+1.  Place sealed jars in the incubator set to 25 +/- 1 C
+2.  Incubate undisturbed for 24 hours
+3.  Do not open or move jars during incubation
 
-### 6.4 Reading Results
+### Reading Results
 
-1. After exactly 24 hours (+/- 15 minutes), remove the gel paddle from
-   the jar
-2. Immediately insert the paddle into the Solvita Digital Color Reader
-   (DCR) and record the numerical reading
-3. Record the color number and the corresponding CO~2~-C concentration
-   (mg CO~2~-C kg^-1^ soil) from the DCR or the Solvita conversion
-   table
+1.  After exactly 24 hours (+/- 15 minutes), remove the gel probe from
+    the jar
+2.  Immediately insert the probe into the Solvita Digital Color Reader
+    (DCR) and record the numerical reading
+3.  Record the color number and the corresponding CO~2~-C concentration
+    (mg CO~2~-C kg^-1^ soil) from the DCR or the Solvita conversion
+    table
 
-::: {.callout-tip}
+::: callout-tip
 ### Tip
-Read paddles promptly after removing them from the jar. Prolonged
+
+Read probes promptly after removing them from the jar. Prolonged
 exposure to ambient air will alter the gel color and compromise the
-reading. The manufacturer recommends reading within 2 minutes of
-opening the jar.
+reading. The manufacturer recommends reading within 2 minutes of opening
+the jar.
 :::
 
-### 6.5 Calculating Results
+### Calculating Results
 
 Express results on a dry-soil basis:
 
-$$
-\text{CO}_2\text{-C (mg kg}^{-1}\text{)} = \frac{\text{DCR reading (mg CO}_2\text{-C)}}{\text{oven-dry soil mass (kg)}}
-$$
+$$\text{CO}_2\text{-C (mg kg}^{-1}\text{)} = \frac{\text{DCR reading (mg CO}_2\text{-C)}}{\text{oven-dry soil mass (kg)}}$$
 
 If the oven-dry mass is not known, calculate it from the air-dried mass
 and the gravimetric moisture content of a companion subsample determined
 by [SOP-L400](SOP-L400-soil-moisture.qmd).
 
-### 6.6 Cleanup
+### Cleanup
 
-1. Dispose of used soil in the designated waste container (return to
-   field site if uncontaminated, or standard trash)
-2. Wash incubation jars thoroughly with soap and water; rinse with
-   deionized water; dry completely before reuse
-3. Dispose of used gel paddles in standard trash
+1.  Dispose of used soil in the designated waste container (return to
+    field site if uncontaminated, or standard trash)
+2.  Wash incubation jars thoroughly with soap and water; rinse with
+    deionized water; dry completely before reuse
+3.  Dispose of used gel probes in standard trash
 
+## Quality Control
 
-## 7. Quality Control
+### Routine QC
 
-### 7.1 Routine QC
+| QC Element | Requirement |
+|:--------------------------------|:--------------------------------------|
+| Duplicates | At least 1 per 10 samples; duplicates should agree within 15% relative percent difference (RPD) |
+| Control | One empty, sealed jar with gel probe per batch; probe should read at or near baseline |
+| Incubator temperature | Verify and record at start and end of each 24 h period; must be 25 +/- 1 C |
+| DCR calibration | Calibrate per manufacturer instructions before each batch |
+| Gel probe storage | Store sealed in foil packets at room temperature, away from light; check expiration dates before use |
 
-| QC Element                        | Requirement                              |
-|:----------------------------------|:-----------------------------------------|
-| Duplicates                        | At least 1 per 10 samples; duplicates should agree within 15% relative percent difference (RPD) |
-| Blank                             | One empty, sealed jar with gel paddle per batch; paddle should read at or near baseline |
-| Incubator temperature             | Verify and record at start and end of each 24 h period; must be 25 +/- 1 C |
-| DCR calibration                   | Calibrate per manufacturer instructions before each batch |
-| Gel paddle storage                | Store sealed in foil packets at room temperature, away from light; check expiration dates before use |
-
-### 7.2 Corrective Actions
+### Corrective Actions
 
 - If the blank reading exceeds the baseline by more than one color
   increment, check for CO~2~ contamination sources (e.g., proximity to
@@ -203,8 +204,7 @@ by [SOP-L400](SOP-L400-soil-moisture.qmd).
   precision may indicate sample heterogeneity; increase the number of
   subsamples
 
-
-## 8. Data Interpretation
+## Data Interpretation
 
 The CO~2~ burst is proportional to microbial biomass and labile carbon
 and is correlated with potential carbon, nitrogen, and phosphorus
@@ -213,63 +213,60 @@ CO~2~ burst test on agricultural and wildland soils are given below,
 adapted from @haney2008comparison and the Solvita technical literature
 [@solvita2019]:
 
-| CO~2~-C (mg kg^-1^) | Interpretation      | Implication                              |
-|:---------------------|:--------------------|:-----------------------------------------|
-| < 20                 | Very low            | Severely depleted microbial activity; very low labile C |
-| 20--50               | Low                 | Limited biological activity; management intervention may be needed |
-| 50--100              | Moderate            | Adequate microbial activity for many soils |
-| 100--150             | High                | Active microbial community; good labile C supply |
-| > 150                | Very high           | Highly active soil; common in recently amended or high-organic soils |
+| CO~2~-C (mg kg^-1^) | Interpretation | Implication |
+|:-------------------|:------------------|:--------------------------------|
+| \< 20 | Very low | Severely depleted microbial activity; very low labile C |
+| 20--50 | Low | Limited biological activity; management intervention may be needed |
+| 50--100 | Moderate | Adequate microbial activity for many soils |
+| 100--150 | High | Active microbial community; good labile C supply |
+| \> 150 | Very high | Highly active soil; common in recently amended or high-organic soils |
 
-::: {.callout-important}
+::: callout-important
 These thresholds are general guidelines. Interpret results in the
 context of soil type, land use, climate, and management history.
 Comparisons are most meaningful when made across treatments within a
 single study using the same sampling and analytical protocol.
 :::
 
+## Waste Disposal
 
-## 9. Waste Disposal
+| Waste Type            | Disposal Method                        |
+|:----------------------|:---------------------------------------|
+| Used soil             | Return to field site or standard trash |
+| Used gel probes       | Standard trash                         |
+| Deionized water rinse | Drain                                  |
+| Incubation jars       | Wash, rinse, and reuse                 |
 
-| Waste Type                    | Disposal Method                          |
-|:------------------------------|:-----------------------------------------|
-| Used soil                     | Return to field site or standard trash   |
-| Used gel paddles              | Standard trash                           |
-| Deionized water rinse         | Drain                                    |
-| Incubation jars               | Wash, rinse, and reuse                   |
-
-
-## 10. References
+## References
 
 ::: {#refs}
 :::
 
+## Related SOPs
 
-## 11. Related SOPs
-
-| SOP   | Title                                  | Relationship                      |
-|:------|:---------------------------------------|:----------------------------------|
+| SOP | Title | Relationship |
+|:-----------------|:---------------------------|:-------------------------|
 | [F400](../field_sops/SOP-F400-soil-sampling.qmd) | Soil Sampling and Processing | Sample collection and preparation |
 | [F406](../field_sops/SOP-F406-soil-respiration-chambers.qmd) | Soil Respiration Chambers | Field respiration complement |
-| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety          | Required safety training          |
-| [L400](SOP-L400-soil-moisture.qmd)     | Soil Moisture (Gravimetric) | Moisture correction for dry-mass basis |
-| [L406](SOP-L406-loss-on-ignition.qmd)  | Loss on Ignition (SOM)      | Complementary organic matter index |
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety | Required safety training |
+| [L400](SOP-L400-soil-moisture.qmd) | Soil Moisture (Gravimetric) | Moisture correction for dry-mass basis |
+| [L406](SOP-L406-loss-on-ignition.qmd) | Loss on Ignition (SOM) | Complementary organic matter index |
 | [L409](SOP-L409-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon (CFE) | Direct biomass measurement |
 | [L413](SOP-L413-solvita-compost-maturity.qmd) | Solvita Compost Maturity | Related Solvita protocol for compost |
 
-
-## 12. Training Record
+## Training Record
 
 Before performing this assay independently, personnel must:
 
-1. Read this SOP in full
-2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
-   training
-3. Complete [SOP-F400 Soil Sampling](../field_sops/SOP-F400-soil-sampling.qmd)
-   training (for sample preparation context)
-4. Review the Solvita CO~2~ Burst protocol sheet included in the kit
-5. Observe a trained operator perform the full procedure (setup through
-   DCR reading)
-6. Perform the assay under supervision with acceptable QC results
-   (duplicate RPD within 15%; blank within acceptable range)
-7. Be signed off by the PI or lab manager
+1.  Read this SOP in full
+2.  Complete [SOP-L002 Laboratory
+    Safety](SOP-L002-laboratory-safety.qmd) training
+3.  Complete [SOP-F400 Soil
+    Sampling](../field_sops/SOP-F400-soil-sampling.qmd) training (for
+    sample preparation context)
+4.  Review the Solvita CO~2~ Burst protocol sheet included in the kit
+5.  Observe a trained operator perform the full procedure (setup through
+    DCR reading)
+6.  Perform the assay under supervision with acceptable QC results
+    (duplicate RPD within 15%; blank within acceptable range)
+7.  Be signed off by the PI or lab manager
