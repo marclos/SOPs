@@ -256,7 +256,7 @@ revision-history:
      ================================================================ -->
 
 
-## 1. Purpose
+## Purpose
 
 <!-- DIRECTIONS: State the objective of this SOP in 2--4 sentences.
      What does this procedure accomplish? Why does it matter for the
@@ -272,7 +272,7 @@ revision-history:
 and why does it matter? Cite at least one key reference.]
 
 
-## 2. Scope
+## Scope
 
 <!-- DIRECTIONS: Be specific about what this SOP covers and what it
      does not. Include cross-references to related SOPs for excluded
@@ -287,7 +287,7 @@ and why does it matter? Cite at least one key reference.]
   field sites"]
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -296,7 +296,7 @@ and why does it matter? Cite at least one key reference.]
 | New Students      | Complete training before independent use    |
 
 
-## 4. Definitions
+## Definitions
 
 <!-- DIRECTIONS: This section is REQUIRED. Define every technical term
      that a new EA Program student might not know. Include units,
@@ -314,7 +314,7 @@ and why does it matter? Cite at least one key reference.]
 - **[Term 3]:** [Definition]
 
 
-## 5. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -351,7 +351,7 @@ Refer to [SOP-F001](SOP-F001-field-safety.qmd) or
 appropriate.
 
 
-## 6. Equipment and Materials
+## Equipment and Materials
 
 <!-- DIRECTIONS: List everything needed. Include storage locations,
      model numbers, and catalog numbers where relevant. Separate into
@@ -362,7 +362,7 @@ appropriate.
 | [Equipment name]    | [Room / bench]   | [Model number, if relevant] |
 
 
-## 7. Estimated Time
+## Estimated Time
 
 <!-- DIRECTIONS: Help users plan their day. Break down by task. -->
 
@@ -373,7 +373,7 @@ appropriate.
 | [Cleanup / data entry]            | [XX minutes]                 |
 
 
-## 8. Procedure
+## Procedure
 
 <!-- DIRECTIONS:
      - Use numbered steps within each subsection
@@ -384,12 +384,12 @@ appropriate.
      - Include decision points and branching logic
 -->
 
-### 8.1 Preparation
+### Preparation
 
 1. [First preparatory step]
 2. [Second preparatory step]
 
-### 8.2 Main Procedure
+### Main Procedure
 
 <!-- DIRECTIONS: Include photos at key steps to show correct
      technique, equipment setup, or expected appearance. Save images
@@ -420,13 +420,13 @@ Include practical tips or common mistakes here. These callout boxes
 render nicely in both HTML and PDF.
 :::
 
-### 8.3 Shutdown and Cleanup
+### Shutdown and Cleanup
 
 1. [Post-procedure steps]
 2. [Equipment shutdown sequence]
 
 
-## 9. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 <!-- DIRECTIONS: Describe how to verify that the procedure was
      performed correctly. Include expected ranges, replicate
@@ -439,7 +439,7 @@ render nicely in both HTML and PDF.
 - [What to do if results are outside the acceptable range]
 
 
-## 10. Data Management
+## Data Management
 
 <!-- DIRECTIONS: Specify where and how data should be recorded,
      entered, and archived. Reference SOP-L801 for GitHub workflow
@@ -452,7 +452,7 @@ render nicely in both HTML and PDF.
    [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 
-## 11. Waste Disposal
+## Waste Disposal
 
 <!-- DIRECTIONS: If no waste is generated, write "Not applicable."
      Otherwise, list every waste stream. -->
@@ -462,7 +462,7 @@ render nicely in both HTML and PDF.
 | [e.g., solvent]     | [e.g., red jug]   | [EH&S pickup schedule] |
 
 
-## 12. References
+## References
 
 <!-- DIRECTIONS: Do NOT write a plain-text reference list here. All
      citations must be BibTeX @key entries from references.bib. The
@@ -473,7 +473,7 @@ render nicely in both HTML and PDF.
 :::
 
 
-## 13. Related SOPs
+## Related SOPs
 
 <!-- DIRECTIONS: List every SOP that is related to this one. Use
      working Quarto cross-reference links. Include the relationship
@@ -485,7 +485,7 @@ render nicely in both HTML and PDF.
 | [XXXX](SOP-XXXX-name.qmd)             | [Title]                   | [Relationship]                    |
 
 
-## 14. Training Record
+## Training Record
 
 <!-- DIRECTIONS: Specify the concrete skills a trainee must
      demonstrate before working independently. Be specific enough
@@ -504,12 +504,11 @@ Before performing this procedure independently, personnel must:
      OPTIONAL SECTIONS -- Uncomment and fill in if needed.
      ================================================================= -->
 
-<!-- ## Appendix A: Troubleshooting {.appendix}
+## Appendix A: Troubleshooting {.appendix}
 
 | Symptom             | Probable Cause    | Corrective Action      |
 |:--------------------|:------------------|:-----------------------|
 | [Symptom]           | [Cause]           | [Fix]                  |
--->
 
 <!-- ## Appendix B: Field Data Sheet {.appendix}
 
