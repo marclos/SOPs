@@ -65,7 +65,7 @@ format:
       dark: [darkly, custom.scss]
     toc: true
     toc-depth: 3
-    number-sections: false
+    number-sections: true
     code-fold: true
     anchor-sections: true
     smooth-scroll: true
@@ -86,7 +86,7 @@ format:
       - right=1in
     fontsize: 11pt
     toc: true
-    number-sections: false
+    number-sections: true
     colorlinks: true
     linkcolor: eablue
     urlcolor: eablue
