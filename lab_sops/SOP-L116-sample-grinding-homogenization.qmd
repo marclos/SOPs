@@ -23,26 +23,28 @@ revision-history:
               with BibTeX entries; added definitions section; expanded
               rationale for drying temperature limits; corrected typo in 6.2
               ('fibite' -> 'fibrous')"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 ## Purpose
 
 This procedure describes the grinding and homogenization of dried soil,
-sediment, plant tissue, and other solid environmental samples to
-produce a fine, uniform powder suitable for chemical, elemental, and
-isotopic analysis. Many analytical methods require a homogeneous
-subsample of 0.5--20 mg (e.g., EA-IRMS capsules,
+sediment, plant tissue, and other solid environmental samples to produce
+a fine, uniform powder suitable for chemical, elemental, and isotopic
+analysis. Many analytical methods require a homogeneous subsample of
+0.5--20 mg (e.g., EA-IRMS capsules,
 [SOP-L414](SOP-L414-soil-ea-irms.qmd)) or 0.5--1.0 g (e.g., acid
 digestion, [SOP-L410](SOP-L410-hotplate-acid-digestion.qmd),
 [SOP-L411](SOP-L411-mars-microwave-digestion.qmd)). Without thorough
-grinding and homogenization, small subsamples drawn from an
-incompletely mixed bulk sample may not represent the true composition
-of that sample, introducing analytical error unrelated to the
-instrument or method [@Nelson1996; @Bremner1996]. Particle-size
-reduction to $\leq$ 150 $\mu$m also improves combustion completeness
-in high-temperature elemental analyzers and reduces between-capsule
-mass variance in EA-IRMS work [@Sollins1999; @thermo_flashea].
-
+grinding and homogenization, small subsamples drawn from an incompletely
+mixed bulk sample may not represent the true composition of that sample,
+introducing analytical error unrelated to the instrument or method
+[@Nelson1996; @Bremner1996]. Particle-size reduction to $\leq$ 150
+$\mu$m also improves combustion completeness in high-temperature
+elemental analyzers and reduces between-capsule mass variance in EA-IRMS
+work [@Sollins1999; @thermo_flashea].
 
 ## Scope
 
@@ -51,61 +53,61 @@ mass variance in EA-IRMS work [@Sollins1999; @thermo_flashea].
   organic soils, sediments, dried plant tissue, compost, and biochar,
   using agate or steel mortar and pestle, ball mill, or mechanical
   grinder.
-- **Does not apply to:** Wet grinding or homogenization of fresh
-  tissue (cryogenic grinding for molecular biology applications);
-  sieving-only sample preparation (see
+- **Does not apply to:** Wet grinding or homogenization of fresh tissue
+  (cryogenic grinding for molecular biology applications); sieving-only
+  sample preparation (see
   [SOP-F400](../field_sops/SOP-F400-soil-sampling.qmd) for 2 mm
   sieving); bead beating for DNA extraction (integral to
   [SOP-L700](SOP-L700-dna-extraction.qmd)); ball milling specifically
   for TC and EA-IRMS (see [SOP-L117](SOP-L117-ball-mill-soil-prep.qmd)).
-- **Location:** EA Program laboratory, SGM 134.
-
+- **Location:** EA Program laboratory, SGM 134, Edmunds 017 - Rock
+  Grinding
 
 ## Responsibilities
 
-| Role              | Responsibility |
-|:------------------|:---------------|
-| Lab PI            | Approve SOP |
+| Role              | Responsibility                                       |
+|:------------------|:-----------------------------------------------------|
+| Lab PI            | Approve SOP                                          |
 | Lab Manager       | Maintain grinding equipment, replace worn components |
-| Trained Personnel | Grind and homogenize samples per this SOP |
-| New Students      | Complete training before independent use |
-
+| Trained Personnel | Grind and homogenize samples per this SOP            |
+| New Students      | Complete training before independent use             |
 
 ## Definitions
 
 | Term | Definition |
-|:-----|:-----------|
+|:---|:---|
 | **Grinding** | Mechanical size reduction of solid particles by impact, compression, or abrasion [@Bernhardt1994]. |
 | **Homogenization** | Mixing and size reduction to produce a sample in which any subsample of a given mass has the same composition as any other subsample of that mass [@Nelson1996]. |
-| **Particle size ($d_{50}$)** | Median particle diameter by mass; the most common target for soil analysis is 150 $\mu$m (U.S. No. 100 mesh sieve) [@Nelson1996]. |
+| **Particle size (**$d_{50}$) | Median particle diameter by mass; the most common target for soil analysis is 150 $\mu$m (U.S. No. 100 mesh sieve) [@Nelson1996]. |
 | **Cross-contamination** | Transfer of material from a previously processed sample to a subsequent one via residue retained on grinding equipment surfaces [@Boutton1991]. |
 | **Sacrificial subsample** | A small amount of the upcoming sample ground and discarded before collecting the analytical aliquot, to purge residual material from equipment surfaces [@Boutton1991]. |
 | **Respirable crystalline silica (RCS)** | Quartz and cristobalite particles $\leq$ 10 $\mu$m aerodynamic diameter released during grinding of mineral soils; an IARC Group 1 carcinogen [@IARC1997]. |
 | **Air-dried** | Dried at ambient temperature ($\leq$ 40 °C) until mass is constant; the standard pre-treatment for 2 mm sieving [@Nelson1996]. |
 
-
 ## Safety and Hazards
 
-::: {.callout-warning}
+::: callout-warning
 ### Hazards
 
 - **Respirable dust and silica:** Grinding dry soil and plant tissue
   generates fine respirable dust including crystalline silica (quartz),
-  which is an IARC Group 1 carcinogen at particle sizes $\leq$ 10
-  $\mu$m [@IARC1997]. Always perform grinding inside a fume hood or
-  wear a NIOSH-approved N95 respirator.
-- **Contaminated soils:** Soils from legacy-contaminated sites (Pb,
-  As, Hg, pesticides, PAHs) pose additional inhalation and dermal
-  hazards during grinding. Consult the Lab PI before processing
-  [@USEPA3051A].
-- **Noise:** Ball mills and mechanical grinders can exceed 85 dB.
-  Wear hearing protection for runs $>$ 1 min [@NIOSH1998].
-- **Pinch/crush hazards:** Ball mill jars and clamps are heavy.
-  Secure jars before starting the mill and keep hands clear during
+  which is an IARC Group 1 carcinogen at particle sizes $\leq$ 10 $\mu$m
+  [@IARC1997]. Always perform grinding inside a fume hood or wear a
+  NIOSH-approved N95 respirator.
+- **Contaminated soils:** Soils from legacy-contaminated sites (Pb, As,
+  Hg, pesticides, PAHs) pose additional inhalation and dermal hazards
+  during grinding. Consult the Lab PI before processing [@USEPA3051A].
+- **Noise:** Ball mills and mechanical grinders can exceed 85 dB. Wear
+  hearing protection for runs $>$ 1 min [@NIOSH1998].
+- **Pinch/crush hazards:** Milling cups and clamps are heavy. Secure
+  milling cups before starting the mill and keep hands clear during
   operation.
-- **Cross-contamination:** Residual sample in grinding equipment is
-  the primary quality risk in sequential grinding. Thorough cleaning
-  between samples is essential (Section 6.5).
+- **Heat**: Milling cups may get hot if samples are run for extended
+  periods of time. Use protective gloves to handle hot items, or wait
+  until they have cooled down enough to avoid burns.
+- **Cross-contamination:** Residual sample in grinding equipment is the
+  primary quality risk in sequential grinding. Thorough cleaning between
+  samples is essential (Section 6.5).
 :::
 
 ### Required PPE
@@ -118,81 +120,80 @@ mass variance in EA-IRMS work [@Sollins1999; @thermo_flashea].
 
 ### Emergency Procedures
 
-For dust inhalation, move to fresh air immediately. For cuts from
-broken equipment, apply first aid per
-[SOP-L002](SOP-L002-laboratory-safety.qmd). Report all incidents to
-the Lab Manager.
-
+For dust inhalation, move to fresh air immediately. For cuts from broken
+equipment, apply first aid per
+[SOP-L002](SOP-L002-laboratory-safety.qmd). Report all incidents to the
+Lab Manager.
 
 ## Equipment and Materials
 
 ### Grinding Equipment
 
 | Item | Location | Best For |
-|:-----|:---------|:---------|
+|:---|:---|:---|
 | Agate mortar and pestle (various sizes) | SGM 134 | Small batches ($<$ 50 g); trace metal work (low contamination) |
 | Ceramic (porcelain) mortar and pestle | SGM 134 | General purpose; not for trace metals (contributes Al, Si) |
-| Ball mill (planetary or mixer mill) | SGM 134 | Large batches; consistent particle size; high throughput; see [SOP-L117](SOP-L117-ball-mill-soil-prep.qmd) for TC/EA-IRMS-specific protocol |
+| Ball mill (planetary or mixer mill) | Edmunds 017 - Rock Grinding | Small batches (\< 5g); estimated particle size |
 | Mechanical grinder (Wiley mill, Thomas mill) | TBD | Plant tissue; coarse initial grinding |
 
 ### Accessories
 
 | Item | Notes |
-|:-----|:------|
+|:---|:---|
 | Stainless steel spatula | Transferring sample |
-| Brush (soft bristle, nylon) | Cleaning mortar and mill jars |
+| Brush (soft bristle, nylon) | Cleaning mortar and milling cups |
 | Lint-free wipes (Kimtech) | Wiping surfaces |
 | 70% ethanol spray bottle | Decontamination |
 | Compressed air (can or line) | Blowing dust from crevices |
 | Test sieves (No. 60 = 250 $\mu$m; No. 100 = 150 $\mu$m; No. 200 = 75 $\mu$m) | Verifying particle size |
 | Labeled sample vials or coin envelopes | Storing ground samples |
 | Analytical balance | Per [SOP-L200](SOP-L200-analytical-balance-calibration.qmd) |
-
+| Weighing boat/paper | Used for weighing samples |
 
 ## Procedure
 
 ### Sample Selection and Drying
 
-Samples must be thoroughly dry before grinding. Residual moisture
-causes particles to clump, impedes size reduction, and can promote
-microbial activity that alters sample chemistry during storage
-[@Nelson1996].
+Samples must be thoroughly dry before grinding. Residual moisture causes
+particles to clump, impedes size reduction, and can promote microbial
+activity that alters sample chemistry during storage [@Nelson1996].
 
-1. Use air-dried samples sieved to 2 mm
-   ([SOP-F400](../field_sops/SOP-F400-soil-sampling.qmd)), or
-   oven-dry per the drying requirements in the table below:
+1.  Use air-dried samples sieved to 2 mm
+    ([SOP-F400](../field_sops/SOP-F400-soil-sampling.qmd)), or oven-dry
+    per the drying requirements in the table below:
 
-   | Analytical Pathway | Drying Temperature | Rationale |
-   |:-------------------|:------------------:|:----------|
-   | TC, LOI, metals, or general chemistry | 105 °C to constant mass | Standard gravimetric drying; isotope fractionation not a concern [@Nelson1996] |
-   | $\delta^{15}$N, $\delta^{13}$C (EA-IRMS) | 40--60 °C to constant mass | Temperatures $>$ 60 °C volatilize $^{14}$N-enriched NH$_4^+$, artificially elevating $\delta^{15}$N [@Kool2011; @Guntiñas2012] |
-   | Plant tissue (any analysis) | 60 °C to constant mass | Higher temperatures degrade labile N compounds and alter tissue $\delta^{15}$N [@Kalra1998] |
+    | Analytical Pathway | Drying Temperature | Rationale |
+    |:---|:--:|:---|
+    | TC, LOI, metals, or general chemistry | 105 °C to constant mass | Standard gravimetric drying; isotope fractionation not a concern [@Nelson1996] |
+    | $\delta^{15}$N, $\delta^{13}$C (EA-IRMS) | 40--60 °C to constant mass | Temperatures $>$ 60 °C volatilize $^{14}$N-enriched NH$_4^+$, artificially elevating $\delta^{15}$N [@Kool2011; @Guntiñas2012] |
+    | Plant tissue (any analysis) | 60 °C to constant mass | Higher temperatures degrade labile N compounds and alter tissue $\delta^{15}$N [@Kalra1998] |
 
-2. Cool samples to room temperature in a desiccator before grinding.
-3. Record drying temperature, start and end times, and initial and
-   final mass in the lab notebook.
+2.  Cool samples to room temperature in a desiccator before grinding.
+
+3.  Record drying temperature, start and end times, and initial and
+    final mass in the lab notebook.
 
 ### Mortar and Pestle (Manual Grinding)
 
-Manual grinding with mortar and pestle is appropriate for small
-batches ($<$ 50 g), hard materials requiring careful size control,
-and laboratories where a ball mill is unavailable [@Nelson1996].
+Manual grinding with mortar and pestle is appropriate for small batches
+($<$ 50 g), hard materials requiring careful size control, and
+laboratories where a ball mill is unavailable [@Nelson1996].
 
-1. Place a clean, dry mortar on a stable bench surface. If working
-   with contaminated soil or generating visible dust, work inside a
-   fume hood.
-2. Add a small amount of dried sample (5--20 g) to the mortar.
-3. Grind with a circular and pressing motion, periodically scraping
-   material from the sides back to the center.
-4. Continue grinding until the sample passes through the target sieve
-   (No. 60 [250 $\mu$m] for general chemistry; No. 100 [150 $\mu$m]
-   for EA-IRMS [@thermo_flashea]). For plant tissue, grind to a
-   uniform fine powder.
-5. Transfer the ground sample to a labeled vial or coin envelope with
-   a clean spatula.
-6. Record the sample ID and particle size achieved.
+1.  Place a clean, dry mortar on a stable bench surface. If working with
+    contaminated soil or generating visible dust, work inside a fume
+    hood.
+2.  Add a small amount of dried sample (5--20 g) to the mortar.
+3.  Grind with a circular and pressing motion, periodically scraping
+    material from the sides back to the center.
+4.  Continue grinding until the sample passes through the target sieve
+    (No. 60 \[250 $\mu$m\] for general chemistry; No. 100 \[150 $\mu$m\]
+    for EA-IRMS [@thermo_flashea]). For plant tissue, grind to a uniform
+    fine powder.
+5.  Transfer the ground sample to a labeled vial or coin envelope with a
+    clean spatula.
+6.  Record the sample ID and particle size achieved.
 
-::: {.callout-tip}
+::: callout-tip
 For hard or fibrous samples (e.g., woody roots, calcium carbonate
 nodules), pre-crush coarsely with a hammer inside a thick plastic bag
 before transferring to the mortar. This reduces grinding time and wear
@@ -202,89 +203,117 @@ on the mortar.
 ### Ball Mill (Mechanical Grinding)
 
 Ball milling provides more reproducible particle size reduction and
-higher throughput than manual grinding, and is preferred for batches
-$>$ 20 samples or where particle size uniformity is critical
-[@Bernhardt1994]. For samples destined for TC (Shimadzu SSM-5000A)
-or EA-IRMS ($\delta^{15}$N, $\delta^{13}$C), follow the
-instrument-specific protocol in
-[SOP-L117](SOP-L117-ball-mill-soil-prep.qmd) instead.
+higher throughput than manual grinding, and is preferred for batches $>$
+20 samples or where particle size uniformity is critical
+[@Bernhardt1994].
 
-1. Select the appropriate grinding jar and ball material:
+1.  Select the appropriate milling cup and ball material (*confirm which
+    materials we have for balls/jars*):
 
-   | Material | Best Use Case | Notes |
-   |:---------|:--------------|:------|
-   | Agate | Trace metal work | Low contamination; chips if used with coarse hard samples |
-   | Stainless steel | General chemistry (non-metal) | Faster; may contribute Fe, Cr, Ni, Mn |
-   | Zirconia (ZrO$_2$) | C/N/isotopes | Hard, chemically inert; preferred for EA-IRMS [@harris2001] |
-   | Tungsten carbide | Hard minerals | Avoid for carbon analysis; W contributes to combustion gas |
+    | Material | Best Use Case | Notes |
+    |:---|:---|:---|
+    | Stainless steel | General chemistry (non-metal) | Faster; may contribute Fe, Cr, Ni, Mn |
+    | Ceramic | TBD | TBD |
 
-2. Load the sample into the jar (no more than one-third of jar volume
-   to allow ball movement).
-3. Add grinding balls per the manufacturer's recommendation (typically
-   1:10 ball-to-sample mass ratio for a planetary mill
-   [@Bernhardt1994]).
-4. Secure the jar in the mill clamp and close the lid.
-5. Set speed and duration per the table below or per the analytical
-   SOP:
+2.  Load the sample and milling balls into the milling cup. The milling
+    cup's volume should be occupied roughly by 1/3 sample, 1/3 grinding
+    ball(s) and 1/3 air.
 
-   | Sample Type | Speed (rpm) | Duration | Target Size |
-   |:------------|:-----------:|:--------:|:-----------:|
-   | Mineral soil | 300--400 | 5--10 min | $\leq$ 150 $\mu$m |
-   | Organic soil | 200--300 | 3--5 min | $\leq$ 250 $\mu$m |
-   | Dried plant tissue | 200--300 | 2--5 min | fine powder |
-   | Sediment | 300--400 | 5--10 min | $\leq$ 150 $\mu$m |
+::: callout-tip
+### Safe Running
 
-6. Run the mill. If the jar becomes warm to the touch, alternate
-   2-minute grinding intervals with 1-minute rest periods to prevent
-   thermal alteration of labile organic matter and N compounds
-   [@Kool2011].
-7. Wait 30 seconds after stopping before opening the jar (dust
-   settles). Open inside the fume hood or with N95 protection.
-8. Transfer the ground sample to a labeled container.
-9. If required, verify particle size by passing a subsample through
-   the target sieve.
+- **Filling:** Sample quantity should not be below 25% of the milling
+  cup's holding capacity.
+- **Material** Milling ball and milling cup material must always be the
+  same.
+- **Single Running** Do not run machine with only one milling cup
+  loaded. If you only need to use one milling cup, still load the second
+  one completely empty (no sample nor milling balls)
+:::
+
+3.  Tightly seal milling cup and load it into the milling cup holder.
+    Make sure to insert cups in the correct orientation, as shown below:
+
+![*Orientation of milling cup for left hand side holder. Cup should be
+mirrored for the right hand side
+holder.*](../images/L116_PositionOfCup.JPG){width="419"}
+
+4.  Turn locking pin into the locked position as shown in the image
+    below and turn the handwheel until maximum clamping range is
+    reached. Close hood.
+
+![*Locked and unlocked pin
+positions*](../images/L116_OpenVsClosedPin.png)
+
+5.  Set speed and duration per the table below or per the analytical
+    SOP:
+
+    | Sample Type  | Frequency (Hz) | Duration |   Target Size    |
+    |:-------------|:--------------:|:--------:|:----------------:|
+    | Organic soil |       30       |  2 min   | $\leq$ 75 $\mu$m |
+    | Quartz Sand  |       30       |  1 min   |       N/A        |
+
+6.  Run the mill. If the milling cup becomes warm to the touch,
+    alternate 2-minute grinding intervals with 1-minute rest periods to
+    prevent thermal alteration of labile organic matter and N compounds
+    [@Kool2011].
+
+7.  After run ends, open the hood and unlock the locking pin before
+    removing milling cups. Wait 30 seconds after stopping before opening
+    the milling cup (dust settles). Open inside the fume hood or with
+    N95 protection.
+
+8.  Transfer the ground sample to a labeled container.
+
+9.  If required, verify particle size by passing a subsample through the
+    target sieve.
+
+10. Perform cleaning run with quartz sand in between sample runs. Add
+    the same volume of quartz sand as the samples you are running, and
+    the milling balls you are using. The quartz run will help clean the
+    cups and remove any sample that might have gotten stuck to the cup.
+    After the quartz run, clean cup thoroughly according to the
+    "Cleaning Between Samples" section.
 
 ### Mechanical Grinder (Plant Tissue)
 
-A Wiley-type or Thomas-type cutting mill provides rapid coarse
-grinding of dried plant tissue and is generally faster than mortar
-and pestle for batch processing [@Kalra1998].
+A Wiley-type or Thomas-type cutting mill provides rapid coarse grinding
+of dried plant tissue and is generally faster than mortar and pestle for
+batch processing [@Kalra1998].
 
-1. Set the screen mesh to the target particle size (1 mm [No. 18]
-   or 0.5 mm [No. 35]).
-2. Feed dried tissue into the hopper slowly; do not overload.
-3. Collect ground material from the output chamber.
-4. For analyses requiring finer particle size (e.g., EA-IRMS), follow
-   with mortar and pestle or ball mill to reduce further
-   [@thermo_flashea].
+1.  Set the screen mesh to the target particle size (1 mm \[No. 18\] or
+    0.5 mm \[No. 35\]).
+2.  Feed dried tissue into the hopper slowly; do not overload.
+3.  Collect ground material from the output chamber.
+4.  For analyses requiring finer particle size (e.g., EA-IRMS), follow
+    with mortar and pestle or ball mill to reduce further
+    [@thermo_flashea].
 
 ### Cleaning Between Samples
 
 Cross-contamination is the primary quality risk in sequential grinding.
 For isotope work, residues as small as 0.05 mg C from a high-carbon
 sample can produce measurable $\delta^{13}$C bias in a subsequent
-low-carbon sample [@Boutton1991]. Clean thoroughly between every
-sample:
+low-carbon sample [@Boutton1991]. Clean thoroughly between every sample:
 
-1. Disassemble the mortar/pestle or mill jar and balls.
-2. Brush out all visible residue with a soft-bristle brush.
-3. Wipe all surfaces with a lint-free tissue dampened with 70%
-   ethanol.
-4. **Trace metal work:** rinse with 10% HNO$_3$ (trace-metal grade),
-   then triple-rinse with Type I deionized water (18.2 M$\Omega$), and
-   air-dry [@USEPA3051A].
-5. **Isotope work:** rinse with Type I deionized water, wipe with
-   ethanol, and blow dry with clean compressed air.
-6. **Wiley mill:** run a small amount of clean quartz sand through the
-   mill between samples to abrade residues from the cutting chamber,
-   then brush and wipe.
-7. Allow all equipment to dry completely before grinding the next
-   sample.
+1.  Disassemble the mortar/pestle or milling cup and balls.
+2.  Brush out all visible residue with a soft-bristle brush.
+3.  Wipe all surfaces with a lint-free tissue dampened with 70% ethanol.
+4.  **Trace metal work:** rinse with 10% HNO$_3$ (trace-metal grade),
+    then triple-rinse with Type I deionized water (18.2 M$\Omega$), and
+    air-dry [@USEPA3051A].
+5.  **Isotope work:** rinse with Type I deionized water, wipe with
+    ethanol, and blow dry with clean compressed air.
+6.  **Wiley mill:** run a small amount of clean quartz sand through the
+    mill between samples to abrade residues from the cutting chamber,
+    then brush and wipe.
+7.  Allow all equipment to dry completely before grinding the next
+    sample.
 
-::: {.callout-important}
+::: callout-important
 When transitioning between samples with very different compositions
-(e.g., high-carbon compost followed by low-carbon mineral soil),
-grind a sacrificial subsample of the next sample and discard it before
+(e.g., high-carbon compost followed by low-carbon mineral soil), grind a
+sacrificial subsample of the next sample and discard it before
 collecting the analytical aliquot. This purges micro-residues that
 ethanol-wiping alone may not remove [@Boutton1991]. This step is
 mandatory for EA-IRMS work.
@@ -292,59 +321,55 @@ mandatory for EA-IRMS work.
 
 ### Storage
 
-1. Transfer ground powder to a labeled vial (glass or polypropylene
-   with a polyethylene-lined cap). Avoid foam-gasketed caps, which
-   can off-gas organic vapors.
-2. Label with: sample ID, date ground, equipment and jar material,
-   and target particle size.
-3. Store in a desiccator at room temperature. Ground samples have
-   large surface area and are hygroscopic; even brief exposure to
-   humid air can add 0.5--2% mass as adsorbed water [@Nelson1996].
-4. For long-term storage ($>$ 2 weeks), seal with Parafilm and store
-   at $-$20 °C.
-5. Record grinding date, equipment, jar material, speed, and duration
-   in the lab notebook and sample tracking spreadsheet.
-
+1.  Transfer ground powder to a labeled vial (glass or polypropylene
+    with a polyethylene-lined cap). Avoid foam-gasketed caps, which can
+    off-gas organic vapors.
+2.  Label with: sample ID, date ground, equipment and milling cup
+    material, and target particle size.
+3.  Store in a desiccator at room temperature. Ground samples have large
+    surface area and are hygroscopic; even brief exposure to humid air
+    can add 0.5--2% mass as adsorbed water [@Nelson1996].
+4.  For long-term storage ($>$ 2 weeks), seal with Parafilm and store at
+    \$-\$20 °C.
+5.  Record grinding date, equipment, milling cup material, speed, and
+    duration in the lab notebook and sample tracking spreadsheet.
 
 ## Quality Control
 
 | QC Check | Frequency | Acceptance Criterion |
-|:---------|:---------:|:---------------------|
+|:---|:--:|:---|
 | Particle size verification (sieve) | $\geq$ 10% of samples per batch | $\geq$ 90% by mass passes target sieve; re-grind failures |
-| Equipment blank (clean jar milled 2 min) | Once per batch and after new jar | No visible powder; TC blank $<$ 0.05 mg C if applicable |
+| Equipment blank (clean milling cup 2 min) | Once per batch and after new milling cup | No visible powder; TC blank $<$ 0.05 mg C if applicable |
 | Certified reference material (CRM) -- trace metals | 1 per batch (trace metal work) | Recovered elemental concentration within 10% of certified value [@USEPA3051A] |
 | Reference standard -- isotopes (USGS40, USGS41a) | 1 per batch (isotope work) | $\delta^{13}$C within $\pm$ 0.5 \textperthousand{}; $\delta^{15}$N within $\pm$ 0.5 \textperthousand{} of certified value [@brand2014] |
 | Sample replicate (duplicate grind) | 1 per 10 samples | %C or %N: CV $\leq$ 5%; isotopes: SD $\leq$ 0.3 \textperthousand{} |
 | Sacrificial subsample log | Every inter-sample cleaning (isotope work) | Recorded in lab notebook |
 
-Document grinding equipment and jar material for every batch; different
-materials introduce different trace elements and the record is
+Document grinding equipment and milling cup material for every batch;
+different materials introduce different trace elements and the record is
 essential for troubleshooting contamination [@Bernhardt1994].
-
 
 ## Waste Disposal
 
 | Waste Type | Disposal Method |
-|:-----------|:----------------|
+|:---|:---|
 | Grinding residue (non-hazardous soil/plant) | Standard solid waste or return to sample stock |
 | Grinding residue (contaminated soil) | Hazardous solid waste per [SOP-L006](SOP-L006-waste-disposal.qmd) |
 | Quartz sand (cleaning aid) | Standard solid waste |
 | Used ethanol wipes | Standard solid waste (non-halogenated) |
-| Worn grinding balls or jars (agate, ceramic) | Standard solid waste |
+| Worn grinding balls or milling cups (agate, ceramic) | Standard solid waste |
 | Worn grinding components (stainless steel) | Metal recycling |
 | HNO$_3$ rinse waste | Acid waste per [SOP-L006](SOP-L006-waste-disposal.qmd) |
-
 
 ## References
 
 ::: {#refs}
 :::
 
-
 ## Related SOPs
 
 | SOP | Title | Relationship |
-|:----|:------|:-------------|
+|:---|:---|:---|
 | [F400](../field_sops/SOP-F400-soil-sampling.qmd) | Soil Sampling and Processing | 2 mm sieving before grinding |
 | [F608](../field_sops/SOP-F608-plant-tissue-sampling.qmd) | Plant Tissue Sampling | Dried tissue requiring grinding |
 | [L105](SOP-L105-drying-ovens.qmd) | Drying Ovens | Pre-grinding drying |
@@ -356,34 +381,36 @@ essential for troubleshooting contamination [@Bernhardt1994].
 | [L414](SOP-L414-soil-ea-irms.qmd) | EA-IRMS Combustion | Requires finely ground sample |
 | [L415](SOP-L415-carbonate-gasbench-irms.qmd) | Carbonate GasBench-IRMS | Requires ground carbonate sample |
 
-
 ## Training Record
 
 Before grinding samples independently, personnel must:
 
-1. Read this SOP in full and sign the SOP acknowledgment form.
-2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
-   training.
-3. Demonstrate proper mortar-and-pestle technique including grinding
-   motion and inter-sample cleaning.
-4. If using the ball mill, demonstrate proper jar loading, speed/time
-   selection, and jar cleaning per Section 7.5.
-5. Grind at least 5 samples under supervision with acceptable particle
-   size verification (all material passes the target sieve).
-6. Be signed off by the PI or Lab Manager.
+1.  Read this SOP in full and sign the SOP acknowledgment form.
+2.  Complete [SOP-L002 Laboratory
+    Safety](SOP-L002-laboratory-safety.qmd) training.
+3.  Demonstrate proper mortar-and-pestle technique including grinding
+    motion and inter-sample cleaning.
+4.  If using the ball mill, demonstrate proper milling cup loading,
+    speed/time selection, and milling cup cleaning per Section 7.5.
+5.  Grind at least 5 samples under supervision with acceptable particle
+    size verification (all material passes the target sieve).
+6.  Be signed off by the PI or Lab Manager.
 
 | Trainee | Trainer | Date | Initials |
 |:--------|:--------|:----:|:--------:|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-
+|         |         |      |          |
+|         |         |      |          |
+|         |         |      |          |
 
 <!-- ============================================================ -->
+
 <!-- BibTeX entries -- append to references.bib                   -->
+
 <!-- Check for duplicate keys before appending.                   -->
+
 <!-- ============================================================ -->
 
+```{=html}
 <!--
 @book{Bernhardt1994,
   author    = {Bernhardt, C.},
@@ -515,3 +542,4 @@ Before grinding samples independently, personnel must:
 %   brand2014   -- Brand et al. 2014, IUPAC reference materials
 %   thermo_flashea -- Thermo Fisher Flash IRMS EA manual
 -->
+```
