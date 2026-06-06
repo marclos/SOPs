@@ -62,7 +62,40 @@ but these require site-specific calibration [@zheng1993].
 | Trained Personnel | Install sensors, collect data, maintain equipment       |
 | New Students      | Complete training before independent measurement       |
 
+<!-- ============================================================
+     SOP-F404: Soil Temperature Profiles
+     Insert before ## Safety and Hazards
+     ============================================================ -->
 
+## Definitions
+
+- **Diurnal temperature variation:** The cycle of soil temperature
+  change over a 24-hour period driven by solar radiation and radiative
+  cooling; amplitude decreases with depth and is nearly zero below
+  about 50 cm in most soils.
+- **Horizon temperature:** The temperature measured at a defined soil
+  depth corresponding to a specific genetic horizon (e.g., A, B, C);
+  used to characterize the thermal environment of the root zone and
+  microbial communities.
+- **Soil temperature:** The thermal energy state of the soil, expressed
+  in °C; controls rates of microbial activity, organic matter
+  decomposition, plant root growth, and soil gas fluxes.
+- **Temperature gradient:** The rate of change in temperature with
+  depth (°C cm^-1^); drives heat flux between soil layers and between
+  the soil surface and the atmosphere.
+- **Temperature profile:** A set of soil temperature measurements taken
+  at multiple depths simultaneously or sequentially at a single
+  location; used to characterize heat storage, heat flux, and seasonal
+  thermal dynamics.
+- **Thermistor:** A temperature sensor whose electrical resistance
+  changes predictably with temperature; commonly used in data loggers
+  for continuous soil temperature monitoring; requires calibration
+  against a traceable reference thermometer.
+- **Thermocouple:** A temperature sensor composed of two dissimilar
+  metals joined at a measuring junction; produces a small voltage
+  proportional to the temperature difference between the junction and
+  a reference; used in handheld soil thermometers.
+  
 ## Safety and Hazards
 
 ::: {.callout-warning}

@@ -58,7 +58,56 @@ hydrological settings [@goldberg2016; @deiner2017].
 | Trained Personnel | Collect eDNA water samples per this SOP and SOP-F700 |
 | New Students      | Complete SOP-F700 contamination training before participating |
 
+<!-- ============================================================
+     SOP-F308: eDNA Water Sample Collection
+     Insert before ## Safety and Hazards
+     ============================================================ -->
 
+## Definitions
+
+- **Capture efficiency:** The proportion of target eDNA in the water
+  column that is retained on a filter during collection; influenced by
+  filter pore size, clogging, sample volume, and the physical state
+  (dissolved vs. particulate) of the eDNA.
+- **Closed-system filtration:** An eDNA collection method in which
+  water passes through a filter enclosed in a sterile capsule (e.g.,
+  Sterivex) without contact with the external environment; minimizes
+  contamination risk compared to open filtration.
+- **Decontamination:** The removal or inactivation of exogenous DNA
+  from sampling equipment and surfaces using bleach (10% sodium
+  hypochlorite), UV irradiation, or other validated methods; essential
+  between sites to prevent cross-contamination.
+- **eDNA (environmental DNA):** Genetic material shed into the
+  environment by organisms through mucus, feces, gametes, skin cells,
+  and other biological material; collected from water without direct
+  capture of the target organism.
+- **Field blank:** A bottle of laboratory-grade water opened and
+  handled at the field site under identical conditions to real samples;
+  processed through the full filtration and extraction workflow to
+  detect field contamination; must yield no target amplification.
+- **Filter pore size:** The nominal diameter of pores in the filter
+  membrane; 0.45 µm is the standard for eDNA capture from surface
+  water, retaining bacteria, cells, and particulate-bound DNA while
+  allowing water to pass.
+- **Longmire's buffer:** A non-freezing preservation solution
+  (containing EDTA, Tris, NaCl, SDS, and sucrose) used to preserve
+  eDNA on filters in the field when immediate freezing is not possible;
+  inactivates nucleases and inhibits microbial degradation.
+- **Peristaltic pump:** A battery-operated pump used to draw large
+  volumes of water through a filter in the field without the water
+  contacting the pump mechanism; preferred for high-volume eDNA
+  filtration because it reduces contamination risk.
+- **Sterivex filter:** A commercially available enclosed 0.22 µm
+  polysulfone cartridge filter; widely used in eDNA studies because the
+  sealed design minimizes contamination, allows direct addition of
+  preservation buffer, and is compatible with standard DNA extraction
+  kits.
+- **Target species detection:** The determination of presence or absence
+  of a specific taxon in a water sample based on amplification of
+  taxon-specific eDNA; sensitivity depends on eDNA shedding rate, water
+  volume filtered, detection method (PCR, ddPCR, metabarcoding), and
+  inhibitor load in the extract.
+  
 ## Safety and Hazards
 
 All safety requirements from

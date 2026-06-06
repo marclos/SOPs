@@ -9,44 +9,52 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-21"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: last-modified
+    author: "Marc Los Huertos"
+    changes: "Replaced plain-text reference list with BibTeX {#refs} div;
+              added BibTeX inline citations throughout; added
+              moore2019predicting citation in Interpretation Guide"
+editor:
+  markdown:
+    wrap: 72
 ---
 
 ## Purpose
 
-This procedure describes the determination of soil labile
-amino-nitrogen (amino-N) using the Solvita SLAN test (Woods End
-Laboratories). The SLAN test measures a chemically labile fraction of
-organic nitrogen present in soil humus as amino-sugars and related
+This procedure describes the determination of soil labile amino-nitrogen
+(amino-N) using the Solvita SLAN test (Woods End Laboratories)
+[@brinton2016slan]. The SLAN test measures a chemically labile fraction
+of organic nitrogen present in soil humus as amino-sugars and related
 amino compounds. These forms represent a "potentially available"
 nitrogen pool that lies between the immediately available mineral
 nitrogen (NH~4~^+^ and NO~3~^-^) measured by conventional extraction
 and the total nitrogen pool measured by combustion or Kjeldahl
 digestion.
 
-The test uses alkali hydrolysis with 2 mol L^-1^ NaOH to release
-NH~3~ from amino-N compounds in soil. The liberated NH~3~ diffuses
-into a Solvita gel probe during a 24-hour room-temperature
-incubation. The color change of the gel is proportional to the
-quantity of labile amino-N and is quantified using the Solvita Digital
-Color Reader (DCR) in NH~3~ mode, yielding results in mg kg^-1^
-amino-N.
+The test uses alkali hydrolysis with 2 mol L^-1^ NaOH to release NH~3~
+from amino-N compounds in soil [@mulvaney2001]. The liberated NH~3~
+diffuses into a Solvita gel probe during a 24-hour room-temperature
+incubation. The color change of the gel is proportional to the quantity
+of labile amino-N and is quantified using the Solvita Digital Color
+Reader (DCR) in NH~3~ mode, yielding results in mg kg^-1^ amino-N.
 
-The SLAN procedure is chemically analogous to the Illinois Soil
-Nitrogen Test (ISNT), which uses the same 2 mol L^-1^ NaOH reagent
-but requires heating. The SLAN test offers two practical advantages
-over the ISNT: heating is not needed, and fewer reagents are required
+The SLAN procedure is chemically analogous to the Illinois Soil Nitrogen
+Test (ISNT), which uses the same 2 mol L^-1^ NaOH reagent but requires
+heating. The SLAN test offers two practical advantages over the ISNT:
+heating is not needed, and fewer reagents are required
 [@moore2019correlations]. In combination with the Solvita CO~2~ Burst
 test ([SOP-L408](SOP-L408-solvita-co2-burst.qmd)), SLAN provides a
 complementary assessment of biological soil fertility by pairing a
 measure of microbial activity (CO~2~ respiration) with a measure of
-organic nitrogen reserves.
+organic nitrogen reserves [@brinton2016proficiency].
 
 This SOP is distinct from [SOP-L408](SOP-L408-solvita-co2-burst.qmd),
 which measures microbial CO~2~ respiration from rewetted soil, and from
@@ -63,30 +71,51 @@ immediately available mineral nitrogen by KCl extraction.
   nitrogen (NH~4~^+^ or NO~3~^-^; see
   [SOP-L403](SOP-L403-nitrate-ammonium-kcl.qmd) or
   [SOP-L404](SOP-L404-nitrate-quick-test.qmd)); total soil nitrogen
-  determination (see [SOP-L407](SOP-L407-total-carbon.qmd) and
-  elemental analysis); compost maturity testing (see
-  [SOP-L413](SOP-L413-solvita-compost-maturity.qmd)); field-moist
-  soils (samples must be air-dried before testing)
+  determination (see [SOP-L407](SOP-L407-total-carbon.qmd) and elemental
+  analysis); compost maturity testing (see
+  [SOP-L413](SOP-L413-solvita-compost-maturity.qmd)); field-moist soils
+  (samples must be air-dried before testing)
 - **Location:** EA Program laboratory, SGM 133
 
 
 ## Responsibilities
 
-| Role              | Responsibility                              |
-|:------------------|:--------------------------------------------|
-| Lab PI            | Approve SOP, ensure training compliance     |
-| Lab Manager       | Maintain SLAN kit inventory, prepare and store NaOH solution, verify probe expiration dates |
-| Trained Personnel | Perform assay, record and report results    |
-| New Students      | Complete training before independent use    |
+| Role              | Responsibility                                                   |
+|:------------------|:-----------------------------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance                          |
+| Lab Manager       | Maintain SLAN kit inventory, prepare and store NaOH solution,
+                      verify probe expiration dates                              |
+| Trained Personnel | Perform assay, record and report results                         |
+| New Students      | Complete training before independent use                         |
+
 
 ## Definitions
 
-- **Alkali-hydrolyzable nitrogen (AHN):** The fraction of organic nitrogen released by hydrolysis in sodium hydroxide solution at elevated temperature; operationally defined by the extraction conditions; highly correlated with amino acid nitrogen and microbially available N.
-- **Amino acid nitrogen:** Organic nitrogen in the form of free amino acids and simple peptides; the most labile fraction of soil organic nitrogen; the primary substrate measured by the Solvita SLAN test.
-- **Diffusion cell:** The sealed incubation container used in the Solvita SLAN test in which NaOH releases NH~3~ from hydrolyzed soil nitrogen into the headspace where it is captured and measured by a gel probe.
-- **Gel probe (SLAN):** The colorimetric sensor in the Solvita SLAN test that changes color in proportion to accumulated NH~3~; read with the Digital Color Reader (DCR) after incubation.
-- **Labile amino nitrogen (LAN):** The nitrogen fraction estimated by the Solvita SLAN test; a proxy for readily mineralizable organic nitrogen; expressed as mg N kg^-1^ dry soil.
-- **Nitrogen mineralization:** The biological conversion of organic nitrogen to inorganic forms (NH~4~^+^ and eventually NO~3~^-^) by soil microorganisms; the primary process by which plant-available N is replenished from organic matter; correlates with LAN.
+- **Alkali-hydrolyzable nitrogen (AHN):** The fraction of organic
+  nitrogen released by hydrolysis in sodium hydroxide solution;
+  operationally defined by the extraction conditions; highly correlated
+  with amino acid nitrogen and microbially available N [@mulvaney2001].
+- **Amino acid nitrogen:** Organic nitrogen in the form of free amino
+  acids and simple peptides; the most labile fraction of soil organic
+  nitrogen; the primary substrate measured by the Solvita SLAN test.
+- **Diffusion cell:** The sealed incubation jar used in the Solvita SLAN
+  test in which NaOH releases NH~3~ from hydrolyzed soil nitrogen into
+  the headspace, where it is captured and measured by a gel probe.
+- **Digital Color Reader (DCR):** The Solvita handheld device that reads
+  gel probe color and converts it to a numerical amino-N concentration
+  (mg kg^-1^); set to NH~3~ mode for SLAN measurements.
+- **Gel probe (SLAN):** The colorimetric sensor in the Solvita SLAN test
+  that changes color in proportion to accumulated NH~3~; read with the
+  DCR after exactly 24 hours of incubation.
+- **Labile amino nitrogen (LAN):** The nitrogen fraction estimated by
+  the Solvita SLAN test; a proxy for readily mineralizable organic
+  nitrogen; expressed as mg N kg^-1^ dry soil [@moore2019labile].
+- **Nitrogen mineralization:** The biological conversion of organic
+  nitrogen to inorganic forms (NH~4~^+^ and eventually NO~3~^-^) by soil
+  microorganisms; the primary process by which plant-available N is
+  replenished from organic matter; positively correlated with LAN
+  [@moore2019correlations].
+
 
 ## Safety and Hazards
 
@@ -95,9 +124,9 @@ immediately available mineral nitrogen by KCl extraction.
 
 - **Chemical:** Sodium hydroxide (NaOH) at 2 mol L^-1^ is strongly
   corrosive and can cause severe burns to skin, eyes, and mucous
-  membranes. Handle with care; refer to the NaOH Safety Data Sheet
-  (SDS) posted in the lab. The SLAN test requires use of a strong
-  reagent and is not intended for casual or unsupervised use.
+  membranes. Handle with care; refer to the NaOH Safety Data Sheet (SDS)
+  posted in the lab. The SLAN test requires use of a strong reagent and
+  is not intended for casual or unsupervised use.
 - **Biological:** Soil samples may contain soil-borne pathogens. Wash
   hands thoroughly after handling soil.
 - **Physical:** Minor risk of glass breakage from incubation jars.
@@ -119,132 +148,129 @@ immediately available mineral nitrogen by KCl extraction.
 - For spills, neutralize with dilute acid (e.g., 0.1 M HCl or vinegar)
   or contain with absorbent material, then clean up and dispose per
   institutional guidelines.
-- Refer to
-  [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd) for
-  general emergency procedures.
+- Refer to [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+  for general emergency procedures.
 
 
 ## Equipment and Materials
 
 ### Equipment
 
-| Item                              | Notes                                     |
-|:----------------------------------|:------------------------------------------|
-| Solvita SLAN test kit             | Includes NH~3~ gel probes, incubation jars with silicone-gasketed lids, 50 mL plastic beakers, color chart, and manual |
-| Solvita Digital Color Reader (DCR) | Set to NH~3~ mode for SLAN readings; calibrate per manufacturer instructions |
-| Incubation jars (approx. 250 mL) | Glass with silicone-gasketed screw-top lids; provided with kit |
-| Analytical balance                | Capable of 0.01 g resolution              |
-| Graduated cylinder (25 or 50 mL)  | For dispensing NaOH solution               |
-| Timer                             | 24-hour countdown                         |
-| Lab notebook or data sheet        | For recording results                     |
+| Item                                  | Notes                                      |
+|:--------------------------------------|:-------------------------------------------|
+| Solvita SLAN test kit                 | Includes NH~3~ gel probes, incubation jars with silicone-gasketed lids, 50 mL plastic beakers, color chart, and manual |
+| Solvita Digital Color Reader (DCR)    | Set to NH~3~ mode; calibrate per manufacturer instructions |
+| Incubation jars (~250 mL)            | Glass with silicone-gasketed screw-top lids; provided with kit |
+| Analytical balance (0.01 g)           | See [SOP-L102](SOP-L102-using-balances.qmd) |
+| Graduated cylinder (25 or 50 mL)     | For dispensing NaOH solution               |
+| Timer                                 | 24-hour countdown                          |
+| Lab notebook or data sheet            | For recording results                      |
 
 ### Consumables and Reagents
 
-| Item                              | Notes                                     |
-|:----------------------------------|:------------------------------------------|
-| Solvita NH~3~ gel probes          | One per test; store sealed at room temperature in the dark; check expiration dates |
-| 50 mL plastic beakers (cups)      | Provided with kit; one per test           |
-| Sodium hydroxide (NaOH), 2 mol L^-1^ | Prepare from ACS-grade NaOH pellets or use pre-made solution; see Section 5.1 |
+| Item                                  | Notes                                      |
+|:--------------------------------------|:-------------------------------------------|
+| Solvita NH~3~ gel probes              | One per test; store sealed at room temperature in the dark; check expiration dates |
+| 50 mL plastic beakers (cups)          | Provided with kit; one per test            |
+| Sodium hydroxide (NaOH), 2 mol L^-1^ | Prepare from ACS-grade NaOH pellets; see Section 5.1 |
 
 ### Reagent Preparation
 
 **2 mol L^-1^ NaOH solution:**
 
-1. Weigh 80.0 g of ACS-grade NaOH pellets
+1. Weigh 80.0 g of ACS-grade NaOH pellets.
 2. Dissolve in approximately 800 mL of deionized water in a 1 L
-   volumetric flask or beaker. The dissolution is exothermic; add
-   pellets slowly and stir.
+   volumetric flask or heat-resistant beaker. The dissolution is
+   exothermic; add pellets slowly and stir.
 
 ::: {.callout-warning}
-Adding NaOH to water generates significant heat. Always add NaOH
-to water (never water to NaOH). Use a heat-resistant container and
-allow the solution to cool before bringing to final volume.
+Always add NaOH to water, never water to NaOH. Use a heat-resistant
+container and allow the solution to cool to room temperature before
+bringing to final volume.
 :::
 
-3. Allow the solution to cool to room temperature
-4. Bring to a final volume of 1000 mL with deionized water
-5. Transfer to a labeled, tightly sealed polyethylene bottle. NaOH
-   solutions absorb CO~2~ from the atmosphere and should be kept
-   sealed when not in use.
-6. Label with: reagent name, concentration, date prepared, preparer's
-   initials, and expiration date (6 months from preparation or per
-   lab policy)
+3. Bring to a final volume of 1000 mL with deionized water.
+4. Transfer to a labeled, tightly sealed polyethylene bottle. NaOH
+   solutions absorb CO~2~ from the atmosphere; keep sealed when not in
+   use.
+5. Label with: reagent name, concentration, date prepared, preparer's
+   initials, and expiration date (6 months from preparation).
 
 
 ## Procedure
 
 ### Sample Preparation
 
-1. Use soil that has been air-dried and sieved through a 2 mm sieve
-   per [SOP-F400](../field_sops/SOP-F400-soil-sampling.qmd). Do not
-   grind the soil.
-2. If samples were stored at 4 C after sieving, allow them to
-   equilibrate to room temperature (20--25 C) for at least 30 minutes
+1. Use soil that has been air-dried and sieved through a 2 mm sieve per
+   [SOP-F400](../field_sops/SOP-F400-soil-sampling.qmd). Do not grind
+   the soil.
+2. If samples were stored at 4 °C after sieving, allow them to
+   equilibrate to room temperature (20--25 °C) for at least 30 minutes
    before beginning the assay.
 3. Gently mix each sample to ensure homogeneity before weighing.
 
 ::: {.callout-note}
 The SLAN test is designed for air-dried soil. Results from field-moist
 soil are not comparable to published SLAN norms or the manufacturer's
-interpretation guidelines.
+interpretation guidelines [@brinton2016slan].
 :::
 
 ### Incubation Setup
 
 1. Weigh 4.0 g of air-dried, sieved soil into a clean 50 mL plastic
-   beaker (cup). Record the exact mass to 0.01 g.
+   beaker. Record the exact mass to 0.01 g.
 2. Place the beaker containing soil inside a clean, dry 250 mL
    incubation jar.
-3. Using the graduated cylinder, add 20 mL of 2 mol L^-1^ NaOH
-   directly to the soil in the beaker.
-4. Remove a fresh NH~3~-sensitive gel probe from its sealed foil
-   packet. Inspect the gel: it should be uniform in color with no
-   cracks, discoloration, or signs of prior exposure. Discard any
-   compromised probes.
-5. Place the gel probe in the incubation jar in the air space
-   surrounding the plastic beaker. The gel face must be exposed to the
-   headspace and must not contact the NaOH solution or the soil.
-6. Seal the jar immediately and securely with the silicone-gasketed
-   lid.
+3. Using the graduated cylinder, add 20 mL of 2 mol L^-1^ NaOH directly
+   to the soil in the beaker.
+4. Remove a fresh NH~3~-sensitive gel probe from its sealed foil packet.
+   Inspect the gel: it should be uniform in color with no cracks,
+   discoloration, or signs of prior exposure. Discard any compromised
+   probes.
+5. Place the gel probe in the air space surrounding the plastic beaker.
+   The gel face must be exposed to the headspace and must not contact
+   the NaOH solution or the soil.
+6. Seal the jar immediately and securely with the silicone-gasketed lid.
 7. Record the jar number, sample ID, soil mass, and start time.
 
 ::: {.callout-important}
 Work efficiently once the NaOH is added. NH~3~ begins volatilizing
-immediately upon contact with the soil, and the jar should be sealed
-as quickly as possible to capture the full emission.
+immediately upon contact with the soil; seal the jar as quickly as
+possible to capture the full emission.
 :::
 
 ### Incubation
 
-1. Place sealed jars at room temperature (20--25 C) in a location
-   shielded from direct sunlight and drafts
-2. Incubate undisturbed for 24 hours
-3. Do not open, move, or disturb jars during incubation
+1. Place sealed jars at room temperature (20--25 °C), shielded from
+   direct sunlight and drafts.
+2. Incubate undisturbed for 24 hours.
+3. Do not open, move, or disturb jars during incubation.
 
 ### Reading Results
 
-1. After exactly 24 hours (+/- 30 minutes), open the jar and
-   immediately remove the gel probe
-2. Read the probe promptly. Prolonged exposure to ambient air will
-   alter the gel color.
+1. After exactly 24 hours (±30 minutes), open the jar and immediately
+   remove the gel probe.
+2. Read the probe promptly; prolonged exposure to ambient air will alter
+   the gel color.
 
-**Using the Solvita Digital Color Reader (DCR, recommended):**
+**Using the Solvita Digital Color Reader (DCR -- recommended):**
 
-3. Set the DCR to NH~3~ mode
-4. Insert the gel probe into the DCR and record the numerical reading
+3. Set the DCR to NH~3~ mode.
+4. Insert the gel probe into the DCR and record the numerical reading.
 5. The DCR reading corresponds to amino-N concentration in mg kg^-1^
-   per the manufacturer's calibration
+   per the manufacturer's calibration [@brinton2016slan].
 
-**Using the Solvita Color Chart (visual method):**
+**Using the Solvita Color Chart (visual -- semi-quantitative only):**
 
-3. Compare the gel probe to the Solvita NH~3~ color chart
-4. Record the color number
+3. Compare the gel probe to the Solvita NH~3~ color chart.
+4. Record the color number.
 
 ::: {.callout-tip}
 ### Tip
-Read probes within 2 minutes of opening the jar. The manufacturer
-recommends using the DCR for quantitative work; the color chart
-provides semi-quantitative screening only.
+
+Read probes within 2 minutes of opening the jar. The DCR is strongly
+recommended for all quantitative work; the color chart provides
+semi-quantitative screening only.
 :::
 
 ### Recording Results
@@ -257,15 +283,15 @@ Record the following for each test:
 - NaOH volume added (mL)
 - DCR reading (NH~3~ mode) or color chart number
 - Amino-N concentration (mg kg^-1^)
-- Any anomalies (e.g., unusual soil color or odor, probe defects)
+- Any anomalies (unusual soil color or odor, probe defects)
 
 ### Cleanup
 
-1. Carefully pour the NaOH-soil slurry from each beaker into a
-   designated waste container. Do not pour corrosive solutions down
-   the drain without neutralization (see Section 8).
-2. Rinse the plastic beakers and incubation jars with deionized water.
-   Dry completely before reuse.
+1. Carefully pour the NaOH-soil slurry into the designated waste
+   container. Do not pour corrosive solutions down the drain without
+   neutralization (see Section 8).
+2. Rinse plastic beakers and incubation jars with deionized water. Dry
+   completely before reuse.
 3. Dispose of used gel probes in standard trash.
 
 
@@ -273,104 +299,79 @@ Record the following for each test:
 
 ### QC Requirements
 
-| QC Element                        | Requirement                              |
-|:----------------------------------|:-----------------------------------------|
-| Duplicates                        | At least 1 per 10 samples; duplicates should agree within 15% relative percent difference (RPD) |
-| Blank                             | One jar with 20 mL NaOH in an empty beaker (no soil) and a gel probe per batch; probe should show no color change or minimal baseline reading |
-| DCR calibration                   | Calibrate per manufacturer instructions before each batch; set to NH~3~ mode |
-| Gel probe storage                 | Store sealed in foil packets at room temperature, away from light; check expiration dates before use; do not use expired probes |
-| NaOH solution                     | Verify concentration is 2 mol L^-1^; check expiration date; keep tightly sealed to prevent CO~2~ absorption |
+| QC Element         | Requirement                                             |
+|:-------------------|:--------------------------------------------------------|
+| Duplicates         | At least 1 per 10 samples; RPD within 15%              |
+| Blank              | One jar with 20 mL NaOH, no soil, and a gel probe per batch; probe should show no or minimal color change |
+| DCR calibration    | Calibrate per manufacturer instructions before each batch; set to NH~3~ mode |
+| Gel probe storage  | Store sealed in foil at room temperature, away from light; check expiration dates; never use expired probes |
+| NaOH solution      | Verify 2 mol L^-1^; check expiration; keep tightly sealed |
 
 ### Corrective Actions
 
 - If the blank reading exceeds baseline by more than one color
-  increment, check for ammonia contamination sources in the lab
-  (e.g., nearby ammonium reagents, compost samples, inadequate
-  ventilation) and repeat the batch
-- If duplicate RPD exceeds 15%, re-run the sample pair. Persistent
-  poor precision may indicate sample heterogeneity; increase
-  homogenization effort before weighing
-- If NaOH solution appears cloudy or shows precipitate, prepare a
-  fresh solution
+  increment, check for NH~3~ contamination sources (nearby ammonium
+  reagents, compost, inadequate ventilation) and repeat the batch.
+- If duplicate RPD exceeds 15%, re-run the sample pair. Persistent poor
+  precision may indicate sample heterogeneity; increase homogenization
+  effort before weighing.
+- If NaOH solution appears cloudy or shows precipitate, prepare a fresh
+  solution.
 
 ### Limitations
 
-The SLAN test does not detect nitrate or urea, and normal rates of
-ammonium fertilizer do not interfere with the measurement. However,
-the test has known limitations:
+The SLAN test does not detect nitrate or urea, and normal ammonium
+fertilizer rates do not interfere with the measurement. Known
+limitations include:
 
-- SLAN may not be sensitive enough in very low-organic-matter soils
-  (e.g., sandy soils with less than 1% SOM), where many samples may
-  fall below the detection limit
-- Color matching by visual chart is subjective; the DCR is strongly
-  recommended for quantitative reporting
-- The test measures a chemically defined pool of labile N, not the
-  biologically available fraction directly; interpretation should be
-  made in context with other soil health indicators
+- The test may not be sensitive in very low-organic-matter soils
+  (e.g., sandy soils with less than 1% SOM), where results may fall
+  below the detection limit.
+- Color matching by visual chart is subjective; the DCR is required for
+  quantitative reporting.
+- SLAN measures a chemically defined labile N pool, not the
+  biologically available fraction directly; interpret alongside other
+  soil health indicators.
 
 ### Interpretation Guide
 
-| SLAN Amino-N (mg kg^-1^) | Interpretation        | Implication                              |
-|:--------------------------|:----------------------|:-----------------------------------------|
-| Less than 30              | Very low              | Severely depleted organic N reserves; management intervention warranted |
-| 30--60                    | Low                   | Limited labile N pool; consider cover crops, organic amendments |
-| 60--120                   | Moderate              | Adequate organic N reserves for many soils |
-| 120--200                  | High                  | Good labile N pool; indicative of healthy humus |
-| Greater than 200          | Very high             | Abundant organic N reserves; common in high-SOM, no-till, or prairie soils |
+| SLAN Amino-N (mg kg^-1^) | Interpretation | Implication                    |
+|:--------------------------|:---------------|:-------------------------------|
+| Less than 30              | Very low       | Severely depleted organic N reserves; management intervention warranted |
+| 30--60                    | Low            | Limited labile N pool; consider cover crops or organic amendments |
+| 60--120                   | Moderate       | Adequate organic N reserves for many soils |
+| 120--200                  | High           | Good labile N pool; indicative of healthy humus |
+| Greater than 200          | Very high      | Abundant organic N reserves; common in high-SOM, no-till, or prairie soils |
 
-*These thresholds are approximate guidelines adapted from Woods End
-Laboratories and published field studies [@moore2019predicting]. Consult
-the Solvita SLAN manual and site-specific data for refined
-interpretation. SLAN values should be interpreted in the context of
-soil organic matter content, soil texture, and management history.*
+*Thresholds are approximate guidelines adapted from Woods End
+Laboratories and published field studies [@moore2019predicting; @moore2019labile].
+Interpret SLAN values in the context of soil organic matter content,
+soil texture, and management history.*
 
 ### Complementary Tests
 
-For a comprehensive soil nitrogen and health assessment, consider
-pairing the SLAN test with:
-
-| Parameter                     | SOP / Method                              |
-|:------------------------------|:------------------------------------------|
-| Microbial respiration (CO~2~ Burst) | [SOP-L408](SOP-L408-solvita-co2-burst.qmd) |
-| Mineral nitrogen (NO~3~^-^ and NH~4~^+^) | [SOP-L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
-| Nitrate quick test            | [SOP-L404](SOP-L404-nitrate-quick-test.qmd) |
-| Soil organic matter (LOI)     | [SOP-L406](SOP-L406-loss-on-ignition.qmd)  |
-| Total C and N                 | [SOP-L407](SOP-L407-total-carbon.qmd) and elemental analysis |
-| pH and electrical conductivity | [SOP-L402](SOP-L402-soil-pH-salinity.qmd) |
+| Parameter                             | SOP / Method                              |
+|:--------------------------------------|:------------------------------------------|
+| Microbial respiration (CO~2~ Burst)   | [SOP-L408](SOP-L408-solvita-co2-burst.qmd) |
+| Mineral nitrogen (NO~3~^-^, NH~4~^+^) | [SOP-L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
+| Nitrate quick test                    | [SOP-L404](SOP-L404-nitrate-quick-test.qmd) |
+| Soil organic matter (LOI)             | [SOP-L406](SOP-L406-loss-on-ignition.qmd) |
+| Total C and N                         | [SOP-L407](SOP-L407-total-carbon.qmd) and elemental analysis |
+| pH and electrical conductivity        | [SOP-L402](SOP-L402-soil-pH-salinity.qmd) |
 
 
 ## Waste Disposal
 
-| Waste Type                    | Disposal Method                          |
-|:------------------------------|:-----------------------------------------|
-| NaOH-soil slurry              | Neutralize with dilute HCl (e.g., 1 M) to approximately pH 7 before draining, or collect in labeled corrosive waste container per institutional policy |
-| Used gel probes               | Standard trash                           |
-| Deionized water rinses        | Drain                                    |
-| Incubation jars and beakers   | Wash, rinse with DI water, and reuse     |
-| Unused NaOH solution (expired) | Neutralize before disposal or dispose per institutional chemical waste procedures |
+| Waste Type                     | Disposal Method                                    |
+|:-------------------------------|:---------------------------------------------------|
+| NaOH-soil slurry               | Neutralize with dilute HCl to ~pH 7 before draining, or collect in labeled corrosive waste container per [SOP-L006](SOP-L006-waste-disposal.qmd) |
+| Used gel probes                | Standard trash                                     |
+| Deionized water rinses         | Drain                                              |
+| Incubation jars and beakers    | Wash, rinse with DI water, and reuse               |
+| Unused NaOH solution (expired) | Neutralize before disposal per [SOP-L006](SOP-L006-waste-disposal.qmd) |
 
 
 ## References
-
-- Brinton, W.F. (2016). *Solvita SLAN: Solvita Labile Amino Nitrogen
-  -- Lab Method*. Version 2016/N. Woods End Laboratories, Mount Vernon,
-  ME.
-- Moore, K.J., Bhatt, A., Guillard, K., & McIntosh, A. (2019).
-  Predicting cool-season turfgrass response with Solvita soil tests,
-  Part 1: Labile amino-nitrogen concentrations. *Crop Science*, 59(4),
-  1752--1764.
-- Moore, K.J., Bhatt, A., Guillard, K., & McIntosh, A. (2019).
-  Correlations between two alkali extractable amino-nitrogen tests and
-  response to organic fertilizer in turfgrass soils. *Soil Science
-  Society of America Journal*, 83(3), 793--802.
-- Mulvaney, R.L. & Khan, S.A. (2001). Diffusion methods to determine
-  different forms of nitrogen in soil hydrolysates. *Soil Science
-  Society of America Journal*, 65(4), 1284--1292.
-- Brinton, W.F. (2016). Proficiency of Solvita CO~2~-Burst and Solvita
-  SLAN in soil testing laboratories. *Journal of the Woods End Soil
-  Laboratory*, 1(2).
-- Woods End Laboratories. *Solvita SLAN Test: Official Instructions*.
-  Woods End Laboratories, Mount Vernon, ME. Available from solvita.com.
 
 ::: {#refs}
 :::
@@ -378,16 +379,16 @@ pairing the SLAN test with:
 
 ## Related SOPs
 
-| SOP   | Title                                  | Relationship                      |
-|:------|:---------------------------------------|:----------------------------------|
+| SOP   | Title                                       | Relationship                      |
+|:------|:--------------------------------------------|:----------------------------------|
 | [F400](../field_sops/SOP-F400-soil-sampling.qmd) | Soil Sampling and Processing | Sample collection and preparation |
-| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety          | Required safety training          |
-| [L400](SOP-L400-soil-moisture.qmd)     | Soil Moisture (Gravimetric) | Moisture correction for dry-mass basis |
-| [L403](SOP-L403-nitrate-ammonium-kcl.qmd) | Nitrate and Ammonium (KCl) | Complementary mineral N test      |
-| [L404](SOP-L404-nitrate-quick-test.qmd) | Nitrate Quick Test         | Complementary field N screening   |
-| [L406](SOP-L406-loss-on-ignition.qmd)  | Loss on Ignition (SOM)      | Complementary organic matter index |
-| [L407](SOP-L407-total-carbon.qmd)      | Total Carbon               | Complementary total C and N       |
-| [L408](SOP-L408-solvita-co2-burst.qmd) | Solvita CO~2~ Burst        | Paired biological activity test   |
+| [L002](SOP-L002-laboratory-safety.qmd)       | Laboratory Safety           | Required safety training          |
+| [L400](SOP-L400-soil-moisture.qmd)           | Soil Moisture (Gravimetric) | Moisture correction for dry-mass basis |
+| [L403](SOP-L403-nitrate-ammonium-kcl.qmd)   | Nitrate and Ammonium (KCl)  | Complementary mineral N test      |
+| [L404](SOP-L404-nitrate-quick-test.qmd)      | Nitrate Quick Test          | Complementary field N screening   |
+| [L406](SOP-L406-loss-on-ignition.qmd)        | Loss on Ignition (SOM)      | Complementary organic matter index |
+| [L407](SOP-L407-total-carbon.qmd)            | Total Carbon                | Complementary total C and N       |
+| [L408](SOP-L408-solvita-co2-burst.qmd)       | Solvita CO~2~ Burst         | Paired biological activity test   |
 
 
 ## Training Record
