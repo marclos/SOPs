@@ -20,19 +20,19 @@ revision-history:
     changes: "Converted to QMD format; added datasheet appendix"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the gravimetric determination of soil moisture content. Gravimetric moisture is a fundamental soil property required for expressing analytical results on a dry-weight basis (e.g., microbial biomass carbon, nutrient concentrations) and for characterizing site conditions.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All soil samples collected per [SOP-F400 Soil Sampling and Processing](../field_sops/SOP-F400-soil-sampling.qmd) that require moisture correction or moisture characterization
 - **Does not apply to:** Volumetric soil moisture measured with in-situ probes (TDR, capacitance sensors); soil water potential measurements
 - **Location:** EA Program laboratory
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -41,7 +41,7 @@ This SOP describes the gravimetric determination of soil moisture content. Gravi
 | New Students      | Complete training before independent use                |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -65,7 +65,7 @@ Students using this SOP should be trained on:
 - [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
 
 
-## 5. Required Materials
+## Required Materials
 
 ### Equipment
 
@@ -88,7 +88,7 @@ Students using this SOP should be trained on:
 None required.
 
 
-## 6. Estimated Time
+## Estimated Time
 
 | Task                          | Time Required                                |
 |:------------------------------|:---------------------------------------------|
@@ -98,9 +98,9 @@ None required.
 | Total per batch               | Approximately 25 hours (mostly unattended)   |
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Preparation
+### Preparation
 
 1. Print copies of the Soil Moisture Datasheet (Appendix A) for recording measurements
 2. Label aluminum tins or ceramic crucibles with a permanent marker or engraving tool
@@ -108,7 +108,7 @@ None required.
 4. Cool the containers in a desiccator to room temperature
 5. Weigh each empty container to the nearest 0.01 g and record as Tin Weight on the datasheet
 
-### 7.2 Sample Weighing
+### Sample Weighing
 
 1. Using a spatula, transfer approximately 10--20 g of field-moist soil into a pre-weighed container
 2. Record the mass of the container plus moist soil to the nearest 0.01 g as Wet Weight on the datasheet
@@ -119,20 +119,20 @@ None required.
 Process moisture subsamples at the same time as other subsamples (e.g., for microbial biomass or respiration) to ensure the moisture value accurately reflects the condition of the soil used in those analyses.
 :::
 
-### 7.3 Drying
+### Drying
 
 1. Place the uncovered containers in the drying oven set to 105 C
 2. Dry for a minimum of 24 hours
 3. After 24 hours, remove one or two containers, cool in the desiccator, and re-weigh. If the mass has decreased by more than 0.01 g compared to a check 2 hours earlier, return all samples to the oven for an additional 4 hours and re-check
 4. Drying is complete when the mass is constant (change of less than 0.01 g between successive weighings)
 
-### 7.4 Cooling and Final Weighing
+### Cooling and Final Weighing
 
 1. Transfer all containers from the oven to a desiccator
 2. Allow to cool to room temperature (approximately 20--30 minutes)
 3. Weigh each container plus dry soil to the nearest 0.01 g and record as Dry Weight on the datasheet
 
-### 7.5 Calculations
+### Calculations
 
 **Gravimetric soil moisture content (%):**
 
@@ -155,7 +155,7 @@ $$
 To convert a result expressed per gram of moist soil to per gram of dry soil, multiply by $f$.
 
 
-## 8. Quality Control
+## Quality Control
 
 - Run analytical duplicates for at least 10% of samples; the coefficient of variation between duplicates should be less than 5%
 - Verify oven temperature with a calibrated thermometer at the start of each drying cycle
@@ -163,7 +163,7 @@ To convert a result expressed per gram of moist soil to per gram of dry soil, mu
 - Re-weigh a subset of samples after an additional 2 hours of drying to confirm mass constancy
 
 
-## 9. Waste Disposal
+## Waste Disposal
 
 | Waste Type              | Disposal Method                             |
 |:------------------------|:--------------------------------------------|
@@ -171,13 +171,13 @@ To convert a result expressed per gram of moist soil to per gram of dry soil, mu
 | Aluminum tins           | Clean and reuse, or recycle                 |
 
 
-## 10. References
+## References
 
 - Gardner, W.H. (1986). Water content. In: Klute, A. (Ed.), *Methods of Soil Analysis, Part 1: Physical and Mineralogical Methods*. 2nd ed. SSSA Book Series No. 5, pp. 493--544.
 - Robertson, G.P., Coleman, D.C., Bledsoe, C.S., & Sollins, P. (1999). *Standard Soil Methods for Long-Term Ecological Research*. Oxford University Press.
 
 
-## 11. Training Record
+## Training Record
 
 Before performing this procedure independently, personnel must:
 

@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the laboratory procedures for sorting, subsampling,
 and identifying benthic macroinvertebrates (BMI) collected from wadeable
@@ -31,7 +31,7 @@ metrics, including the California Stream Condition Index (CSCI)
 [@mazor2016].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Laboratory processing of ethanol-preserved BMI
   samples from wadeable streams, including subsampling, sorting,
@@ -45,7 +45,7 @@ metrics, including the California Stream Condition Index (CSCI)
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -54,7 +54,7 @@ metrics, including the California Stream Condition Index (CSCI)
 | New Students      | Complete training before independent sorting            |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -81,7 +81,7 @@ dispose in flammable waste. Refer to
 [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -105,9 +105,9 @@ dispose in flammable waste. Refer to
 | Depression slides                 | For compound microscope work       |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Sample Receiving and Logging
+### Sample Receiving and Logging
 
 1. Verify that the sample jar label matches the chain-of-custody or
    field data sheet: site ID, date, collector, preservative.
@@ -117,7 +117,7 @@ dispose in flammable waste. Refer to
    approximately 50%, decant carefully and replace with fresh 70%
    ethanol before proceeding.
 
-### 6.2 Subsampling
+### Subsampling
 
 The SWAMP standard requires identification of a minimum of 500
 organisms per sample. A fixed-count random subsampling procedure is
@@ -145,7 +145,7 @@ The residue is needed for the re-sort QC check and may be required if
 additional identifications are needed later.
 :::
 
-### 6.3 Identification
+### Identification
 
 1. Separate sorted organisms into major taxonomic groups (e.g.,
    Ephemeroptera, Plecoptera, Trichoptera, Diptera, Coleoptera,
@@ -161,7 +161,7 @@ additional identifications are needed later.
 4. Record counts by taxon on the laboratory data sheet or directly
    into the data entry spreadsheet.
 
-### 6.4 Voucher Specimens
+### Voucher Specimens
 
 1. Retain at least one representative specimen of each taxon as a
    voucher in a labeled scintillation vial with 70% ethanol.
@@ -169,7 +169,7 @@ additional identifications are needed later.
    initials, identification date.
 3. Store voucher vials in the BMI reference collection.
 
-### 6.5 Data Entry and Metric Calculation
+### Data Entry and Metric Calculation
 
 1. Enter identification data into the standardized spreadsheet or
    database.
@@ -202,7 +202,7 @@ cat(sprintf("EPT richness: count EPT genera from full dataset\n"))
 ```
 
 
-## 7. Quality Control
+## Quality Control
 
 - **Sorting efficiency:** Re-sort 10% of processed samples (randomly
   selected). The re-sort technician examines all residue material from
@@ -217,7 +217,7 @@ cat(sprintf("EPT richness: count EPT genera from full dataset\n"))
 - Record all QC results in the QC log.
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -226,13 +226,13 @@ cat(sprintf("EPT richness: count EPT genera from full dataset\n"))
 | Used gloves and paper towels  | Standard trash                           |
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -241,7 +241,7 @@ cat(sprintf("EPT richness: count EPT genera from full dataset\n"))
 | [L601](SOP-L601-wet-mount-microscopy.qmd) | Wet Mount for Microscopy | Slide preparation for ID   |
 
 
-## 11. Training Record
+## Training Record
 
 Before sorting and identifying BMI independently, personnel must:
 

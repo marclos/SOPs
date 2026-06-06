@@ -22,7 +22,7 @@ revision-history:
     changes: "Converted to Quarto format; reorganized to match EA Program template; added QC criteria and BibTeX references"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the use of competitive enzyme-linked immunosorbent
 assay (ELISA) kits to screen water samples for bisphenol A (BPA),
@@ -37,7 +37,7 @@ LC-MS/MS or GC-MS) when data will be used for regulatory reporting
 [@usepa_immunoassay1996].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Screening of surface water, groundwater, treated
   effluent, and drinking water source water for BPA, BPB, atrazine,
@@ -50,7 +50,7 @@ LC-MS/MS or GC-MS) when data will be used for regulatory reporting
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -59,7 +59,7 @@ LC-MS/MS or GC-MS) when data will be used for regulatory reporting
 | New Students      | Complete training before independent use                |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -88,7 +88,7 @@ with copious water for at least 15 minutes. Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -113,7 +113,7 @@ with copious water for at least 15 minutes. Refer to
 | Aluminum foil                     | For covering plates during incubation |
 
 
-## 6. ELISA Kit Selection
+## ELISA Kit Selection
 
 The EA Program uses commercial competitive ELISA kits. The table below
 lists the kits currently validated for use. All kits follow the same
@@ -139,9 +139,9 @@ may be substituted after validation.
 :::
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 General Competitive ELISA Workflow
+### General Competitive ELISA Workflow
 
 All competitive ELISA kits in this SOP share the same principle: the
 analyte in the sample competes with an enzyme-labeled analyte conjugate
@@ -151,7 +151,7 @@ conjugate binding and therefore lower color development after substrate
 addition. The relationship between absorbance and concentration is
 inversely proportional [@voller1978; @goda2000].
 
-### 7.2 Preparation
+### Preparation
 
 1. Remove the ELISA kit from the refrigerator and allow all reagents
    to equilibrate to room temperature (20--25 °C) for at least
@@ -165,7 +165,7 @@ inversely proportional [@voller1978; @goda2000].
    standards, controls, blanks, and samples. Each standard and sample
    should be run in duplicate.
 
-### 7.3 Assay Procedure
+### Assay Procedure
 
 Follow the specific kit insert for exact volumes and incubation times.
 The general sequence is:
@@ -204,7 +204,7 @@ the first and last wells. Stagger plates if running more than one
 analyte simultaneously.
 :::
 
-### 7.4 Plate Washing Details
+### Plate Washing Details
 
 Inadequate washing is the most frequent source of assay failure in
 ELISA. Follow these guidelines:
@@ -220,9 +220,9 @@ ELISA. Follow these guidelines:
    of clean paper towels 3--4 times to remove residual buffer
 
 
-## 8. Data Analysis and Calculations
+## Data Analysis and Calculations
 
-### 8.1 Standard Curve Construction
+### Standard Curve Construction
 
 1. Calculate the mean absorbance of the duplicate wells for each
    standard concentration.
@@ -274,7 +274,7 @@ pred_conc <- ED(model_4pl, sample_pct, type = "absolute", display = FALSE)
 cat(sprintf("Sample concentration: %.3f ug/L\n", pred_conc[1]))
 ```
 
-### 8.2 Dilution Correction
+### Dilution Correction
 
 If samples were diluted before analysis, multiply the interpolated
 concentration by the dilution factor:
@@ -283,7 +283,7 @@ $$
 C_{\text{original}} = C_{\text{interpolated}} \times DF
 $$
 
-### 8.3 Reporting
+### Reporting
 
 Report results as $\mu$g/L (ppb) for water samples. Indicate whether
 the result is a screening (ELISA) value and whether it exceeds any
@@ -293,9 +293,9 @@ the highest standard) and re-run with appropriate dilution if above
 range.
 
 
-## 9. Quality Control
+## Quality Control
 
-### 9.1 Within-Assay QC
+###  Within-Assay QC
 
 - Run all standards and samples in duplicate. The coefficient of
   variation (CV) between duplicates should be less than 15%. If a
@@ -307,7 +307,7 @@ range.
   0.8 (consult kit insert for acceptable range). Low B~0~ values
   indicate degraded antibody or conjugate.
 
-### 9.2 Between-Assay QC
+### Between-Assay QC
 
 - Run a laboratory-prepared quality control sample (spiked DI water
   at a known concentration within the linear range) with each batch.
@@ -316,7 +316,7 @@ range.
 - Record kit lot numbers and expiration dates. Do not mix reagents
   from different kit lots.
 
-### 9.3 Method Detection Limits
+### Method Detection Limits
 
 The method detection limit (MDL) for each analyte is kit-specific and
 is defined as the concentration producing a %B/B~0~ response
@@ -324,7 +324,7 @@ statistically distinguishable from the zero standard at the 95%
 confidence level. MDLs are typically provided in the kit insert.
 Report results below the MDL as "less than MDL."
 
-### 9.4 Cross-Reactivity
+### Cross-Reactivity
 
 Competitive ELISA antibodies may cross-react with structurally related
 compounds. For example, BPA antibodies may exhibit partial
@@ -335,7 +335,7 @@ results accordingly (e.g., "total triazines" rather than "atrazine"
 if significant cross-reactivity is known) [@aga2013].
 
 
-## 10. Troubleshooting
+## Troubleshooting
 
 | Problem                              | Possible Cause                        | Corrective Action                     |
 |:-------------------------------------|:--------------------------------------|:--------------------------------------|
@@ -348,7 +348,7 @@ if significant cross-reactivity is known) [@aga2013].
 | Edge effects (outer wells differ)    | Temperature gradient across plate     | Use plate shaker; avoid outer wells for critical samples |
 
 
-## 11. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -360,13 +360,13 @@ if significant cross-reactivity is known) [@aga2013].
 | Pipette tips                  | Standard trash                           |
 
 
-## 12. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 13. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -378,7 +378,7 @@ if significant cross-reactivity is known) [@aga2013].
 | [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection context |
 
 
-## 14. Training Record
+## Training Record
 
 Before performing ELISA analyses independently, personnel must:
 

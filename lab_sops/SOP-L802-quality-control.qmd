@@ -18,7 +18,7 @@ revision-history:
     changes: "Converted from LaTeX to Quarto; comprehensive revision"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP establishes the overarching quality assurance (QA) and quality
 control (QC) framework for all analytical work in the EA Program
@@ -36,7 +36,7 @@ duplicates, spikes) embedded in each analytical batch to measure and
 control that quality in real time [@taylor1987].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All quantitative chemical, physical, and biological
   analyses performed in the EA Program laboratory, including those
@@ -48,7 +48,7 @@ control that quality in real time [@taylor1987].
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -58,7 +58,7 @@ control that quality in real time [@taylor1987].
 | Data Reviewer     | Verify QC compliance before data are reported or published |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 QA/QC activities use the same reagents and equipment as the parent
 analytical method. Refer to the method-specific SOP for safety
@@ -67,7 +67,7 @@ all PPE and fume hood requirements specified in
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Definitions
+## Definitions
 
 **Accuracy:** The closeness of a measured value to the true or accepted
 reference value. Assessed using certified reference materials (CRMs),
@@ -110,11 +110,11 @@ analyte concentrations traceable to a national or international standard
 (e.g., NIST SRM).
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Calibration
+### Calibration
 
-#### 6.1.1 Initial Calibration
+#### Initial Calibration
 
 1. Prepare a minimum of five calibration standards spanning the expected
    concentration range of the samples, plus a calibration blank
@@ -132,7 +132,7 @@ analyte concentrations traceable to a national or international standard
    standard, instrument drift, incorrect dilution) and recalibrate
    before proceeding
 
-#### 6.1.2 Continuing Calibration Verification
+#### Continuing Calibration Verification
 
 1. Analyze a CVS (mid-range standard) at the start of each batch,
    after every 10 samples, and at the end of the batch
@@ -141,7 +141,7 @@ analyte concentrations traceable to a national or international standard
    - Re-analyze the CVS. If it fails again, recalibrate.
    - All samples analyzed after the last passing CVS must be re-analyzed.
 
-#### 6.1.3 Calibration Documentation
+#### Calibration Documentation
 
 Record the following for every calibration:
 
@@ -151,7 +151,7 @@ Record the following for every calibration:
 - Back-calculated concentrations for each standard
 - Pass/fail determination
 
-### 6.2 Blanks
+### Blanks
 
 Blanks identify contamination introduced at each stage of the
 analytical process:
@@ -171,7 +171,7 @@ If a blank exceeds the MDL:
 3. If blank contamination cannot be resolved, report the blank value
    alongside the sample results and flag the affected data
 
-### 6.3 Duplicates and Precision
+### Duplicates and Precision
 
 1. Analyze at least one duplicate per batch or 10% of samples,
    whichever is greater
@@ -196,7 +196,7 @@ where $A$ and $B$ are the duplicate results.
    instrument drift, operator error). Re-analyze if possible. Document
    the cause and corrective action.
 
-### 6.4 Accuracy: Laboratory Fortified Blanks and Matrix Spikes
+### Accuracy: Laboratory Fortified Blanks and Matrix Spikes
 
 #### Laboratory Fortified Blank (LFB)
 
@@ -238,9 +238,9 @@ $$
 3. Maintain a control chart (Section 6.8) to track CRM performance
    over time
 
-### 6.5 Detection Limits
+### Detection Limits
 
-#### 6.5.1 Method Detection Limit (MDL)
+#### Method Detection Limit (MDL)
 
 The MDL is determined per the EPA procedure [@usepa_mdl_2016]:
 
@@ -265,7 +265,7 @@ level for $n - 1$ degrees of freedom (for $n = 7$, $t = 3.143$).
    change in method or instrument, or when ongoing blank data suggest
    the MDL has changed.
 
-#### 6.5.2 Limit of Quantitation (LOQ)
+#### Limit of Quantitation (LOQ)
 
 $$
 \text{LOQ} = 10 \times s
@@ -275,7 +275,7 @@ where $s$ is the same standard deviation used for the MDL calculation.
 The LOQ is the lowest concentration that can be reliably quantified
 with acceptable precision and accuracy.
 
-#### 6.5.3 Reporting Values Below the MDL
+#### Reporting Values Below the MDL
 
 - Results below the MDL are reported as "less than MDL" (e.g.,
   "< 0.05 mg/L")
@@ -287,7 +287,7 @@ with acceptable precision and accuracy.
   regression on order statistics (ROS), or maximum likelihood estimation
   rather than simple substitution [@helsel2012]
 
-### 6.6 Holding Times and Sample Integrity
+### Holding Times and Sample Integrity
 
 Samples have finite stability. Analyses must be completed within the
 method-specified holding time. Record the collection date/time and the
@@ -309,7 +309,7 @@ Common holding times for EA Program analyses:
 | Soil KCl extracts         | 24 hours                  | Refrigerate 4 C           | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
 | Soil moisture             | Analyze immediately or freeze | Freeze if delayed > 24 h | [L400](SOP-L400-soil-moisture.qmd) |
 
-### 6.7 Corrective Actions
+### Corrective Actions
 
 When a QC criterion is not met:
 
@@ -324,7 +324,7 @@ When a QC criterion is not met:
 6. Document the failure, root cause, corrective action, and re-analysis
    results in the QC log and lab notebook.
 
-### 6.8 Control Charts
+### Control Charts
 
 Maintain control charts for each analyte/method combination to track
 long-term analytical performance:
@@ -344,9 +344,9 @@ long-term analytical performance:
    if individual points are within limits
 
 
-## 7. Metadata Documentation and Reproducibility
+## Metadata Documentation and Reproducibility
 
-### 7.1 Laboratory Notebook Requirements
+### Laboratory Notebook Requirements
 
 Every analytical session must be documented in the lab notebook (paper
 or electronic) with the following minimum information:
@@ -363,7 +363,7 @@ or electronic) with the following minimum information:
 - Any deviations from the SOP, with justification
 - Corrective actions taken for QC failures
 
-### 7.2 Electronic Data Management
+### Electronic Data Management
 
 1. Store all raw instrument data files on the lab shared drive in a
    folder structure organized by project, year, and instrument:
@@ -383,7 +383,7 @@ lab_data/
 3. Commit all analysis scripts to the lab GitHub repository per
    [SOP-L801](SOP-L801-rstudio-github.qmd)
 
-### 7.3 R-Based QC Tracking System
+### R-Based QC Tracking System
 
 The following R package and script framework is the EA Program standard
 for QC documentation and reproducibility. All analysts must use this
@@ -699,7 +699,7 @@ ggplot(qc_history, aes(x = date, y = crm_recovery)) +
   theme_minimal()
 ```
 
-### 7.4 Quarto Report Templates
+### Quarto Report Templates
 
 For each analytical method, create a Quarto (`.qmd`) report template
 that:
@@ -714,7 +714,7 @@ that:
 Store templates in the project GitHub repository under `analysis/templates/`. An analyst runs the template with their batch-specific data file as input, producing a self-contained, reproducible QC report for every batch [@gandrud2015; @xie2015].
 
 
-## 8. QC Requirements by Method Category
+## QC Requirements by Method Category
 
 The table below summarizes the minimum QC sample frequencies for
 each method category. Individual SOPs may specify additional
@@ -732,14 +732,14 @@ requirements.
 | CVS                | Every 10 samples | Every 10     | Every 10           | N/A                  | Every 10              |
 
 
-## 9. Waste Disposal
+## Waste Disposal
 
 QC samples generate the same waste streams as routine samples. Dispose
 of QC waste (blanks, standards, spikes) according to the parent
 method's waste disposal procedure.
 
 
-## 10. References
+## References
 
 - APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
   and Wastewater*. 22nd ed. American Public Health Association (Eds.).
@@ -766,7 +766,7 @@ method's waste disposal procedure.
 :::
 
 
-## 11. Training Record
+## Training Record
 
 Before performing analytical work independently, personnel must:
 

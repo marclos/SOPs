@@ -30,24 +30,24 @@ revision-history:
     changes: "Integrated branching workflow section; filled in Rmd/Qmd section; added .gitignore guidance and commit message conventions"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP provides instructions for setting up RStudio, connecting it to GitHub, and managing collaborative research projects using version control. R, RStudio, and GitHub together enable collaborative, transparent, reproducible, and accessible data analysis.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All EA Program researchers using R for data analysis and collaborative projects
 - **Does not apply to:** Local-only R scripts with no version control; Python or other language workflows
 - **Location:** RStudio Server at Pomona College; local installations
 
 
-## 3. Acknowledgements
+## Acknowledgements
 
 Substantial contributions: Aparna Chintapalli and Isaac Medina. We acknowledge all students who have followed these instructions and suggested improvements.
 
 
-## 4. Definitions
+## Definitions
 
 **R:** A free, open-source programming environment for statistical computing, maintained by a global community of statisticians and programmers.
 
@@ -76,7 +76,7 @@ Substantial contributions: Aparna Chintapalli and Isaac Medina. We acknowledge a
 **Merge Conflict:** Occurs when two people edit the same section of a file and Git cannot automatically reconcile the differences.
 
 
-## 5. Why R + RStudio + GitHub?
+## Why R + RStudio + GitHub?
 
 | Principle | What It Means |
 |:----------|:--------------|
@@ -91,20 +91,20 @@ Becoming comfortable with these tools takes time. Some people experience weeks o
 :::
 
 
-## 6. Interferences
+## Interferences
 
 - R updates approximately every six months. New versions occasionally break older code, but this almost never affects new users.
 - RStudio Server requires a network connection. If the network is down, the server is inaccessible.
 - Large binary files (`.RData`, `.rds`, PDFs, images) slow down Git operations. Keep repositories lean by using `.gitignore` to exclude generated files (see Section 14.4).
 
 
-## 7. Health and Safety
+## Health and Safety
 
 - Maintain good posture and a well-designed workstation to prevent repetitive strain injuries.
 - Take regular breaks to reduce eye strain and frustration.
 
 
-## 8. Required Materials
+## Required Materials
 
 | Item | Notes |
 |:-----|:------|
@@ -114,7 +114,7 @@ Becoming comfortable with these tools takes time. Some people experience weeks o
 | Patience | Seriously |
 
 
-## 9. Estimated Time
+## Estimated Time
 
 | Task | Time |
 |:-----|:-----|
@@ -122,9 +122,9 @@ Becoming comfortable with these tools takes time. Some people experience weeks o
 | Daily workflow (pull, edit, commit, push) | 2--5 minutes overhead |
 
 
-## 10. Part 1: Accessing RStudio Server
+## Part 1: Accessing RStudio Server
 
-### 10.1 Login
+### Login
 
 Open a web browser and go to:
 
@@ -134,7 +134,7 @@ Log in with your Pomona College username and password.
 
 ![RStudio Server login page](../images/rstudio_server_login.png){width=50% fig-align="center"}
 
-### 10.2 The Four RStudio Panels
+### The Four RStudio Panels
 
 When RStudio opens, you see up to four panels. To see all four, create a file: File > New File > R Script, then save it.
 
@@ -147,7 +147,7 @@ When RStudio opens, you see up to four panels. To see all four, create a file: F
 | **Environment / History / Git** | Upper right | View loaded data objects, command history, and Git status |
 | **Files / Plots / Packages / Help** | Lower right | Browse files, view plots, manage packages, read help docs |
 
-### 10.3 Configure knitr
+### Configure knitr
 
 Before your first project, change one setting:
 
@@ -156,14 +156,14 @@ Before your first project, change one setting:
 3. Click Apply, then OK
 
 
-## 11. Part 2: Setting Up GitHub
+## Part 2: Setting Up GitHub
 
-### 11.1 Create a GitHub Account
+### Create a GitHub Account
 
 1. Go to [github.com](https://github.com) and create a free account
 2. Use your Claremont email address (this qualifies you for free private repositories via [education.github.com](https://education.github.com/discount_requests/new))
 
-### 11.2 Create an SSH Key in RStudio
+### Create an SSH Key in RStudio
 
 This creates a secure connection so RStudio and GitHub can communicate.
 
@@ -177,7 +177,7 @@ This creates a secure connection so RStudio and GitHub can communicate.
 
 ![Git/SVN menu showing Create SSH Key](../images/create_ssh_key.png){width=50% fig-align="center"}
 
-### 11.3 Add the SSH Key to GitHub
+### Add the SSH Key to GitHub
 
 1. On GitHub, click your profile icon (upper right) > **Settings**
 2. In the left menu, click **SSH and GPG keys**
@@ -191,13 +191,13 @@ RStudio and GitHub can now communicate securely.
 ![GitHub SSH key settings page](../images/github_SSH_settings.jpg){width=60% fig-align="center"}
 
 
-## 12. Part 3: Cloning Your First Repository
+## Part 3: Cloning Your First Repository
 
-### 12.1 Find the Repository on GitHub
+### Find the Repository on GitHub
 
 We will practice with a repository called `beginnersluck`. Search GitHub for it under the username `marclos`. Click on the repository to open it.
 
-### 12.2 Copy the SSH Clone URL
+### Copy the SSH Clone URL
 
 1. Click the green **Code** button
 
@@ -214,7 +214,7 @@ If you clone with HTTPS instead of SSH, pushing will fail and the project is dif
 
 3. Click the clipboard icon to copy the URL
 
-### 12.3 Create the RStudio Project
+### Create the RStudio Project
 
 1. In RStudio: File > **New Project**
 2. Select **Version Control**
@@ -235,7 +235,7 @@ If you clone with HTTPS instead of SSH, pushing will fail and the project is dif
 You should now see the repository files in RStudio's Files panel (lower right).
 
 
-## 13. Part 4: The Daily Workflow
+## Part 4: The Daily Workflow
 
 This is the routine you follow every time you work on a project.
 
@@ -281,19 +281,19 @@ Click the green **upward arrow** labeled "Push" in the Git tab.
 :::
 
 
-## 14. Part 5: Collaboration and Best Practices
+## Part 5: Collaboration and Best Practices
 
-### 14.1 Being Added as a Collaborator
+### Being Added as a Collaborator
 
 To push changes to someone else's repository, the owner must add you as a collaborator. Send them your GitHub username.
 
-### 14.2 Adding Collaborators to Your Repository
+### Adding Collaborators to Your Repository
 
 1. Go to your repository on GitHub
 2. Click **Settings** > **Collaborators**
 3. Add collaborators by their GitHub username
 
-### 14.3 Creating a New Repository
+### Creating a New Repository
 
 1. On GitHub, click the green **New** button (or the "+" icon, then "New repository")
 2. Enter a repository name (use lowercase with hyphens, e.g., `soil-carbon-2025`)
@@ -304,7 +304,7 @@ To push changes to someone else's repository, the owner must add you as a collab
 7. Click **Create repository**
 8. Clone the new repository into RStudio following Section 12
 
-### 14.4 The .gitignore File
+### The .gitignore File
 
 The `.gitignore` file tells Git which files to exclude from version control. When you select the R template during repository creation, GitHub automatically creates a `.gitignore` that excludes common R temporary files. You should also add project-specific exclusions.
 
@@ -336,7 +336,7 @@ Thumbs.db
 Small data files (under 10 MB) that are essential to reproducing the analysis can be tracked in Git. Large datasets should be stored on the lab shared drive or a data repository (e.g., Dryad, Zenodo) and referenced in the README.
 :::
 
-### 14.5 Commit Message Conventions
+### Commit Message Conventions
 
 Good commit messages make it possible to understand the project history at a glance. Follow these conventions:
 
@@ -363,11 +363,11 @@ changes
 ```
 
 
-## 15. Part 6: Branching Workflows
+## Part 6: Branching Workflows
 
 Branches let you work on a new feature, analysis, or fix without affecting the main codebase. When the work is complete and reviewed, you merge it back into `main` (or `master`). This is especially useful when multiple people are working in the same repository.
 
-### 15.1 When to Use Branches
+### When to Use Branches
 
 For EA Program projects, use branches when:
 
@@ -378,7 +378,7 @@ For EA Program projects, use branches when:
 
 For small projects with one or two people, working directly on `main` with the daily Pull-Edit-Commit-Push workflow (Section 13) is fine.
 
-### 15.2 Branch Naming Conventions
+### Branch Naming Conventions
 
 Use a prefix system to communicate the branch's purpose at a glance:
 
@@ -391,7 +391,7 @@ Use a prefix system to communicate the branch's purpose at a glance:
 
 Keep branch names short, lowercase, and hyphenated. Each branch should focus on one task.
 
-### 15.3 Creating a Branch in RStudio
+### Creating a Branch in RStudio
 
 1. Open the **Git** tab in the upper-right panel
 2. Click the **New Branch** button (the purple icon with two connected squares in the Git toolbar)
@@ -401,11 +401,11 @@ Keep branch names short, lowercase, and hyphenated. Each branch should focus on 
 
 RStudio automatically switches you to the new branch. You can confirm which branch you are on by looking at the branch name displayed in the Git tab.
 
-### 15.4 Working on a Branch
+### Working on a Branch
 
 The daily workflow is the same as Section 13 (Pull, Edit, Commit, Push), except your changes only affect the branch you are on. Other collaborators working on `main` will not see your changes until you merge.
 
-### 15.5 Merging via Pull Request (Recommended)
+### Merging via Pull Request (Recommended)
 
 When your branch work is complete:
 
@@ -423,7 +423,7 @@ git checkout main
 git pull
 ```
 
-### 15.6 Merging Locally (Simple Projects)
+### Merging Locally (Simple Projects)
 
 For small projects where a Pull Request review is not needed:
 
@@ -436,7 +436,7 @@ git push
 
 If there are no conflicts, the merge completes automatically. If conflicts arise, see Section 16.2.
 
-### 15.7 Deleting a Branch After Merging
+### Deleting a Branch After Merging
 
 After a branch has been merged, delete it to keep the repository clean:
 
@@ -451,9 +451,9 @@ git push origin --delete feature/your-branch-name
 In RStudio, you may need to restart the R session or close and reopen the project to refresh the branch list in the Git tab.
 
 
-## 16. Troubleshooting
+## Troubleshooting
 
-### 16.1 Identity Error
+### Identity Error
 
 **You see:** An error about missing user identity.
 
@@ -466,7 +466,7 @@ git config user.email "your.email@claremont.edu"
 git config user.name "Your Name"
 ```
 
-### 16.2 Merge Conflicts
+### Merge Conflicts
 
 **You see:** Files with a "U" (unmerged) status in the Git tab, and markers like `<<<<<<< HEAD` inside the file.
 
@@ -506,7 +506,7 @@ git checkout --theirs path/to/file.RData
 Then stage, commit, and push.
 :::
 
-### 16.3 "fatal: Not possible to fast-forward, aborting."
+### "fatal: Not possible to fast-forward, aborting."
 
 **Fix:** In the Git shell:
 
@@ -514,7 +514,7 @@ Then stage, commit, and push.
 git pull --rebase
 ```
 
-### 16.4 Pull Rejected (Unmerged Files)
+### Pull Rejected (Unmerged Files)
 
 **You see:** "Pull is not possible because you have unmerged files."
 
@@ -522,7 +522,7 @@ git pull --rebase
 
 **Fix:** Resolve the merge conflicts first (Section 16.2), commit, then pull again.
 
-### 16.5 Divergent Branches
+### Divergent Branches
 
 **You see:** "You have divergent branches and need to specify how to reconcile them."
 
@@ -539,7 +539,7 @@ If this happens frequently, set the preference globally so you do not have to re
 git config --global pull.rebase false
 ```
 
-### 16.6 Non-Fast-Forward Errors
+### Non-Fast-Forward Errors
 
 **You see:** Push is rejected because someone else pushed to the same branch.
 
@@ -551,7 +551,7 @@ git pull
 
 This fetches and merges the remote changes. Resolve any conflicts (Section 16.2), then push again.
 
-### 16.7 Push Rejected After Branch Merge
+### Push Rejected After Branch Merge
 
 **You see:** Push is rejected on a branch that was already merged and deleted on GitHub.
 
@@ -563,7 +563,7 @@ git pull
 git branch -d feature/old-branch-name
 ```
 
-### 16.8 Last Resort: Delete and Re-Clone
+### Last Resort: Delete and Re-Clone
 
 If nothing else works and you are willing to lose your uncommitted local changes (or have saved them elsewhere):
 
@@ -576,22 +576,22 @@ This discards all local changes that were not pushed to GitHub. Make sure you ha
 :::
 
 
-## 17. Part 7: Creating and Rendering Rmd/Qmd Files
+## Part 7: Creating and Rendering Rmd/Qmd Files
 
-### 17.1 What Are Rmd and Qmd Files?
+###  What Are Rmd and Qmd Files?
 
 R Markdown (`.Rmd`) and Quarto (`.qmd`) files combine narrative text with executable R code in a single document. When you "knit" (Rmd) or "render" (Qmd) the file, R runs all the code chunks and produces a formatted output document (HTML, PDF, or Word).
 
 This is the foundation of reproducible research in the EA Program: your methods, code, results, and interpretation all live in one file that anyone can re-run.
 
-### 17.2 Creating a New File
+### Creating a New File
 
 1. File > New File > **R Markdown** (for `.Rmd`) or **Quarto Document** (for `.qmd`)
 2. Enter a title and author
 3. Choose an output format (HTML is the easiest to start with)
 4. Click **Create**
 
-### 17.3 File Structure
+### File Structure
 
 Both formats use the same basic structure:
 
@@ -634,14 +634,16 @@ plot(data$site, data$pH)
 
 The YAML header (between `---` lines) controls the document metadata and output format. Code chunks (between `` ```{r} `` and `` ``` ``) contain R code that is executed when the document is rendered.
 
-### 17.4 Rendering
+```
+
+### Rendering
 
 - **Rmd files:** Click the **Knit** button (or Ctrl+Shift+K)
 - **Qmd files:** Click the **Render** button (or Ctrl+Shift+K)
 
 The output appears in the Viewer panel or opens in a new window.
 
-### 17.5 Rmd vs. Qmd
+### Rmd vs. Qmd
 
 | Feature | Rmd | Qmd |
 |:--------|:----|:----|
@@ -664,7 +666,7 @@ For new EA Program documents, use `.qmd`. Existing `.Rmd` files will continue to
 :::
 
 
-## 18. Recommended Resources
+## Recommended Resources
 
 - [RStudio YouTube Introduction](https://www.youtube.com/watch?v=uHYcDQDbMY8)
 - [GitHub YouTube Introduction](https://www.youtube.com/watch?v=0fKg7e37bQE)
@@ -674,9 +676,9 @@ For new EA Program documents, use `.qmd`. Existing `.Rmd` files will continue to
 - [Quarto Documentation](https://quarto.org/docs/get-started/)
 
 
-## 19. Advanced Topics
+## Advanced Topics
 
-### 19.1 Installing R and RStudio Locally
+### Installing R and RStudio Locally
 
 Start with the server. When ready for a local installation, install in this order:
 
@@ -684,11 +686,11 @@ Start with the server. When ready for a local installation, install in this orde
 2. RStudio Desktop: [posit.co/download/rstudio-desktop](https://posit.co/download/rstudio-desktop/)
 3. Git: [git-scm.com](https://git-scm.com/) (needed for version control on local installs)
 
-### 19.2 GitHub Issues for Task Tracking
+### GitHub Issues for Task Tracking
 
 GitHub Issues can be used as a lightweight task tracker for research projects. Create an issue for each task ("Run soil texture analysis for sites 4--6"), assign it to a team member, and close it when the work is merged. This creates a record of who did what and when.
 
-### 19.3 Protecting the Main Branch
+### Protecting the Main Branch
 
 For repositories with multiple active contributors, the repository owner can enable branch protection rules on GitHub:
 
@@ -700,7 +702,7 @@ For repositories with multiple active contributors, the repository owner can ena
 This prevents anyone from pushing directly to `main` and ensures all changes go through a Pull Request review.
 
 
-## 20. References
+## References
 
 - R Core Team. *R: A Language and Environment for Statistical Computing*. Available at: <https://www.r-project.org/>
 - Posit. *RStudio IDE*. Available at: <https://posit.co/products/open-source/rstudio/>
@@ -708,7 +710,7 @@ This prevents anyone from pushing directly to `main` and ensures all changes go 
 - Bryan, J. *Happy Git and GitHub for the useR*. Available at: <https://happygitwithr.com/>
 
 
-## 21. Training Record
+## Training Record
 
 Before using R/RStudio/GitHub independently for EA Program research, personnel must:
 

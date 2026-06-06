@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the determination of dissolved organic carbon
 (DOC) in natural water samples (surface water, groundwater,
@@ -40,7 +40,7 @@ water-extractable DOC from soils, see
 [SOP-L418](SOP-L418-water-extractable-doc.qmd).
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Filtered (0.45 um) water samples from surface water,
   groundwater, stormwater, effluent, and precipitation, analyzed for
@@ -54,7 +54,7 @@ water-extractable DOC from soils, see
 - **Location:** EA Program analytical laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role               | Responsibility                                         |
 |:-------------------|:-------------------------------------------------------|
@@ -64,7 +64,7 @@ water-extractable DOC from soils, see
 | New Students       | Complete training before independent use               |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 All safety requirements from
 [SOP-L204](SOP-L204-shimadzu-toc-l.qmd) Section 4 apply.
@@ -86,7 +86,7 @@ Additional hazards specific to this method:
 - [ ] Nitrile gloves
 
 
-## 5. Required Materials
+## Required Materials
 
 ### Equipment
 
@@ -122,7 +122,7 @@ stock causes a systematic low bias across the calibration.
 :::
 
 
-## 6. Sample Collection and Preservation
+## Sample Collection and Preservation
 
 Proper sample handling is critical for DOC; contamination from fingers,
 plastic containers, and atmospheric CO~2~ can bias results
@@ -144,9 +144,9 @@ CO~2~ exchange.
 :::
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Preparing Calibration Standards
+### Preparing Calibration Standards
 
 1. From the 1,000 mg C/L KHP stock, prepare a working calibration
    series by serial dilution with deionized water. A typical series
@@ -176,7 +176,7 @@ and groundwater), use only the 0--10 mg/L range and omit the 25 and
 concentrations.
 :::
 
-### 7.2 Preparing Samples
+### Preparing Samples
 
 1. If samples were not filtered in the field, filter through 0.45 um
    PVDF syringe filters into pre-combusted glass vials. Discard the
@@ -192,7 +192,7 @@ concentrations.
    manual (typically at least 10 mL for a 40 mL vial position, or
    5 mL for an 8 mL position).
 
-### 7.3 Instrument Setup
+### Instrument Setup
 
 1. Start the TOC-L per [SOP-L204](SOP-L204-shimadzu-toc-l.qmd)
    Section 7.1 or 7.2 (cold start or from standby)
@@ -209,7 +209,7 @@ concentrations.
 3. If TN is also being measured, confirm TN is enabled in the Method
    Editor
 
-### 7.4 Sample Table and Run Sequence
+### Sample Table and Run Sequence
 
 Enter the following sequence in the Sample Table:
 
@@ -227,7 +227,7 @@ Enter the following sequence in the Sample Table:
 | 38       | CCV                         | End-of-run verification         |
 | 39--41   | Deionized water blanks      | Final system flush              |
 
-### 7.5 Running the Analysis
+### Running the Analysis
 
 1. Load all vials into the autosampler, verifying that rack positions
    match the Sample Table
@@ -237,7 +237,7 @@ Enter the following sequence in the Sample Table:
    baseline stability
 5. The run proceeds unattended; the autosampler advances automatically
 
-### 7.6 Data Review and Export
+### Data Review and Export
 
 1. After the run, open the Data Browser
 2. Check each result:
@@ -251,7 +251,7 @@ Enter the following sequence in the Sample Table:
 5. Record the run in the instrument logbook
 
 
-## 8. Calculations
+## Calculations
 
 The TOC-L software reports NPOC concentration directly in mg C/L,
 corrected for dilution factor if entered in the Sample Table. For
@@ -317,9 +317,9 @@ print(samples[, c("SampleID", "NPOC_mg_L", "Dilution",
 ```
 
 
-## 9. Quality Control
+## Quality Control
 
-### 9.1 Instrument QC
+### Instrument QC
 
 Per [SOP-L204](SOP-L204-shimadzu-toc-l.qmd) Section 8:
 
@@ -328,7 +328,7 @@ Per [SOP-L204](SOP-L204-shimadzu-toc-l.qmd) Section 8:
 - Replicate injection CV less than 2%
 - CCV recovery 90--110%
 
-### 9.2 Method QC
+### Method QC
 
 | QC Element                    | Frequency            | Acceptance Criteria            |
 |:------------------------------|:---------------------|:-------------------------------|
@@ -338,7 +338,7 @@ Per [SOP-L204](SOP-L204-shimadzu-toc-l.qmd) Section 8:
 | Certified reference material  | 1 per batch (when available) | Recovery 90--110%       |
 | Matrix spike                  | 1 per 20 samples     | Recovery 80--120%              |
 
-### 9.3 Common Contamination Sources
+### Common Contamination Sources
 
 DOC is easily contaminated. The most common sources and their
 prevention [@kaplan1994; @sharp1993]:
@@ -353,7 +353,7 @@ prevention [@kaplan1994; @sharp1993]:
 | Old or degraded KHP stock     | Prepare fresh monthly; refrigerate        |
 
 
-## 10. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -363,13 +363,13 @@ prevention [@kaplan1994; @sharp1993]:
 | Pre-combusted glass vials     | Rinse and reuse, or glass recycling      |
 
 
-## 11. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 12. Related SOPs
+## Related SOPs
 
 | SOP    | Title                                       | Relationship                              |
 |:-------|:--------------------------------------------|:------------------------------------------|
@@ -384,7 +384,7 @@ prevention [@kaplan1994; @sharp1993]:
 | [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection and preservation |
 
 
-## 13. Training Record
+## Training Record
 
 Before performing this analysis independently, personnel must:
 

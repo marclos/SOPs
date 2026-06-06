@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the workflow for exporting raw data from the
 Bio-Rad QX200 ddPCR system, performing quality control checks,
@@ -29,7 +29,7 @@ abundance data. The SOP links the instrument output from
 analysis scripts written in R [@rcoreteam2024].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Processing and analysis of ddPCR data (QuantaSoft or
   QuantaSoft Analysis Pro output) for nitrogen cycle functional genes
@@ -41,7 +41,7 @@ analysis scripts written in R [@rcoreteam2024].
   (see [SOP-L801 RStudio and GitHub](SOP-L801-rstudio-github.qmd))
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -50,7 +50,7 @@ analysis scripts written in R [@rcoreteam2024].
 | New Students      | Complete training before independent analysis|
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 No physical or chemical hazards are associated with this procedure. Data
 integrity and reproducibility are the primary concerns.
@@ -66,7 +66,7 @@ integrity and reproducibility are the primary concerns.
 :::
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -88,9 +88,9 @@ integrity and reproducibility are the primary concerns.
 | *TBD -- identify additional R packages for ddPCR analysis (e.g., `ddpcr`, `twoddpcr`)* | | |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Data Export from QuantaSoft
+### Data Export from QuantaSoft
 
 1. Open the completed experiment file (`.qlp`) in QuantaSoft
 2. Review the droplet plots for each well. Confirm that the
@@ -120,7 +120,7 @@ integrity and reproducibility are the primary concerns.
 7. Copy the `.qlp` file and the exported `.csv` to the lab shared drive
    under `ddPCR_raw_data/`
 
-### 6.2 Quality Control Checks
+### Quality Control Checks
 
 Perform the following checks on the exported data before proceeding to
 analysis. These can be scripted in R for reproducibility.
@@ -154,7 +154,7 @@ flags wells failing any of the criteria above. This makes batch QC
 efficient and ensures nothing is missed.
 :::
 
-### 6.3 Calculating Gene Copy Numbers
+### Calculating Gene Copy Numbers
 
 The QuantaSoft `Concentration` output is in copies per uL of the ddPCR
 reaction mixture. To express results per gram of dry soil (or per unit
@@ -208,7 +208,7 @@ cat(sprintf("Gene copies per g dry soil: %.0f\n", copies_per_g))
 cat(sprintf("Gene copies per g dry soil (log10): %.2f\n", log10(copies_per_g)))
 ```
 
-### 6.4 Data Organization and Merging
+### Data Organization and Merging
 
 1. Merge the QC-filtered ddPCR results with the sample metadata (site,
    treatment, depth, date, soil moisture, DNA concentration) using a
@@ -221,7 +221,7 @@ cat(sprintf("Gene copies per g dry soil (log10): %.2f\n", log10(copies_per_g)))
    ddPCR datasets (e.g., `sample_id`, `gene`, `copies_per_g_dry`,
    `copies_per_ng_dna`, `site`, `treatment`, `depth_cm`, `date`)*
 
-### 6.5 Statistical Analysis
+### Statistical Analysis
 
 ::: {.callout-note}
 The choice of statistical approach depends on the experimental design
@@ -230,7 +230,7 @@ The guidance below covers common analyses for nitrogen cycle gene
 abundance. Consult the PI before selecting a final analytical approach.
 :::
 
-#### 6.5.1 Data Exploration and Visualization
+#### Data Exploration and Visualization
 
 1. Plot gene copy numbers (log~10~-transformed) by treatment, site, or
    depth using boxplots or dot plots
@@ -239,7 +239,7 @@ abundance. Consult the PI before selecting a final analytical approach.
 3. Check for outliers and investigate whether they represent true
    biological variation or analytical artifacts
 
-#### 6.5.2 Comparing Gene Abundance Across Treatments
+#### Comparing Gene Abundance Across Treatments
 
 - For two-group comparisons (e.g., amended vs. control): use Welch's
   t-test on log~10~-transformed copies per g dry soil, or the
@@ -252,7 +252,7 @@ abundance. Consult the PI before selecting a final analytical approach.
   linear mixed-effects models with site as a random effect
   [@pinheiro2000]
 
-#### 6.5.3 Gene Ratios
+#### Gene Ratios
 
 Ratios of functional gene abundances can provide insight into the
 balance of nitrogen cycling processes [@hallin2009]:
@@ -269,7 +269,7 @@ balance of nitrogen cycling processes [@hallin2009]:
 *TBD -- determine which gene ratios are most relevant for the lab's
 current research questions and establish standard visualization formats.*
 
-#### 6.5.4 Correlations with Environmental Variables
+#### Correlations with Environmental Variables
 
 - Correlate gene abundances with soil physicochemical data (pH, moisture,
   total C, total N, nitrate, ammonium) using Pearson or Spearman
@@ -281,7 +281,7 @@ current research questions and establish standard visualization formats.*
   process rate measurements (e.g., N~2~O flux, nitrification potential)
   and define the analytical framework for doing so*
 
-#### 6.5.5 Reporting
+#### Reporting
 
 - Report gene abundance as copies per g dry soil (mean +/- standard
   error) and/or copies per ng DNA
@@ -294,7 +294,7 @@ current research questions and establish standard visualization formats.*
   for ddPCR results that the lab can reuse across projects*
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Raw `.qlp` files must be archived on the lab shared drive before any
   analysis proceeds
@@ -310,19 +310,19 @@ current research questions and establish standard visualization formats.*
   Tobit models) [@helsel2011]*
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 No physical waste is generated by this procedure. Data management
 practices are described in Section 6.4.
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Before performing this procedure independently, personnel must:
 

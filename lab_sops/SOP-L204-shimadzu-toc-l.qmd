@@ -26,7 +26,7 @@ revision-history:
     changes: "Added literature citations; expanded startup, sleep/standby, and maintenance; added L311 cross-reference"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the general operation, calibration, maintenance,
 and shutdown of the Shimadzu TOC-L total organic carbon analyzer and
@@ -51,7 +51,7 @@ relevant analytical SOPs:
 - [SOP-L418 Water-Extractable DOC](SOP-L418-water-extractable-doc.qmd) (soil extracts)
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All use of the Shimadzu TOC-L analyzer, TNM-L
   module, SSM-5000A module, and ASI-L autosampler in the EA Program
@@ -63,7 +63,7 @@ relevant analytical SOPs:
 - **Location:** EA Program analytical laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role               | Responsibility                                         |
 |:-------------------|:-------------------------------------------------------|
@@ -73,7 +73,7 @@ relevant analytical SOPs:
 | New Students       | Complete training before independent use               |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -114,9 +114,9 @@ windows, and leave the room until the odor dissipates. Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Instrument Description
+## Instrument Description
 
-### 5.1 System Overview
+### System Overview
 
 The Shimadzu TOC-L is a combustion catalytic oxidation analyzer that
 quantifies carbon (and, with the TNM-L, nitrogen) in liquid samples
@@ -141,7 +141,7 @@ four main components:
   for unattended sequential analysis of liquid samples. Includes an
   automated rinse function between injections.
 
-### 5.2 Measurement Modes (Liquid Samples)
+### Measurement Modes (Liquid Samples)
 
 | Mode | Full Name                            | What It Measures                                                    |
 |:-----|:-------------------------------------|:--------------------------------------------------------------------|
@@ -152,7 +152,7 @@ four main components:
 | POC  | Purgeable Organic Carbon             | Volatile organic carbon recovered during the sparging step; POC = TC - (NPOC + IC) |
 | TN   | Total Nitrogen (TNM-L)               | All nitrogen species measured simultaneously with any carbon mode   |
 
-### 5.3 Detection Principles
+### Detection Principles
 
 The TOC-L and TNM-L rely on two detectors operating in series on the
 same combustion gas stream:
@@ -167,7 +167,7 @@ same combustion gas stream:
   [@walsh1989].
 
 
-## 6. Required Materials
+## Required Materials
 
 ### Instrument Components
 
@@ -204,7 +204,7 @@ same combustion gas stream:
 | Deionized water (18.2 MOhm)           | Blanks, dilutions, and standard preparation | From Milli-Q; verify TOC less than 0.05 mg/L |
 
 
-## 7. Procedure
+## Procedure
 
 ::: {.callout-important}
 ### Computer Control Only
@@ -214,7 +214,7 @@ the instrument front panel unless directed by the instrument manager
 during troubleshooting.
 :::
 
-### 7.1 Instrument Startup (Cold Start)
+### Instrument Startup (Cold Start)
 
 A cold start applies when the instrument has been fully powered down
 (furnace off, gas closed). Allow approximately 60 minutes from power-on
@@ -252,7 +252,7 @@ to running samples.
     stability: TC blank values should be below 0.1 mg/L C; TN blank
     values should be below 0.1 mg/L N
 
-### 7.2 Instrument Startup (From Standby/Sleep)
+### Instrument Startup (From Standby/Sleep)
 
 When the instrument is in standby mode (furnace at temperature, gas
 flowing, software idle), startup is faster:
@@ -265,7 +265,7 @@ flowing, software idle), startup is faster:
 5. Run 3 deionized water conditioning blanks. If blanks are below
    0.1 mg/L C and 0.1 mg/L N, proceed to calibration.
 
-### 7.3 Standby and Sleep Modes
+### Standby and Sleep Modes
 
 Choose the appropriate idle mode based on how soon the instrument will
 be used again:
@@ -320,7 +320,7 @@ Follow the Sleep Mode steps, then:
 4. Empty the ASI-L rinse reservoir to prevent microbial growth
 5. Cover the instrument with a dust cover
 
-### 7.4 Software Navigation
+### Software Navigation
 
 LabSolutions TOC organizes work into the following areas:
 
@@ -338,7 +338,7 @@ LabSolutions TOC organizes work into the following areas:
 - **Data Browser:** Review completed runs, view peak integrations,
   export results to CSV, and reprocess data
 
-### 7.5 Calibration
+### Calibration
 
 Calibrate at the start of each analytical session or whenever the
 method, measurement mode, or concentration range changes. Carbon and
@@ -380,7 +380,7 @@ simultaneously if both detectors are active.
 5. Verify that r^2^ $\geq$ 0.999 for the nitrogen curve
 6. Save the calibration curve
 
-### 7.6 Setting Up an Analytical Run (Liquid Samples)
+### Setting Up an Analytical Run (Liquid Samples)
 
 1. In the Method Editor, confirm the measurement mode, injection
    volume, number of replicate injections, and (for NPOC mode) sparge
@@ -410,7 +410,7 @@ can be configured to add up to 2 additional injections automatically
 replicate is excluded from the reported mean.
 :::
 
-### 7.7 Setting Up a Solid Sample Run (SSM-5000A)
+### Setting Up a Solid Sample Run (SSM-5000A)
 
 1. In LabSolutions TOC, switch to SSM mode
 2. Pre-combust ceramic boats at 900 C in a muffle furnace
@@ -435,7 +435,7 @@ instrument (e.g., the Flash EA; see
 [SOP-L208](SOP-L208-irms-general-instrument.qmd)).
 :::
 
-### 7.8 Monitoring a Run in Progress
+### Monitoring a Run in Progress
 
 1. Use the Instrument Monitor to watch real-time peak shapes and
    detector baselines
@@ -448,7 +448,7 @@ instrument (e.g., the Flash EA; see
    run, the combustion tube or catalyst may need replacement. Complete
    the current run, note affected samples, and consult Section 9.
 
-### 7.9 Data Export
+### Data Export
 
 1. After the run, open the Data Browser and review all results
 2. Check that calibration verification standards recovered within
@@ -461,7 +461,7 @@ instrument (e.g., the Flash EA; see
    instrument logbook
 
 
-## 8. Quality Control
+## Quality Control
 
 QC procedures are tailored to each analytical method and are specified
 in the relevant method SOP. The following instrument-level QC applies
@@ -480,9 +480,9 @@ to all runs [@usepa2009method]:
   [SOP-L802 Quality Control](SOP-L802-quality-control.qmd)
 
 
-## 9. Maintenance
+## Maintenance
 
-### 9.1 Routine Maintenance Schedule
+### Routine Maintenance Schedule
 
 | Task                               | Frequency                                    | Notes                          |
 |:-----------------------------------|:---------------------------------------------|:-------------------------------|
@@ -499,7 +499,7 @@ to all runs [@usepa2009method]:
 | Carrier gas cylinder replacement   | As needed                                    | Monitor regulator pressure; order when below 500 psi |
 | Software and firmware updates      | As released by Shimadzu                      | Coordinate with instrument manager |
 
-### 9.2 Catalyst Replacement Procedure
+### Catalyst Replacement Procedure
 
 1. Allow the furnace to cool to room temperature (power off the TOC-L
    and wait at least 3 hours, or use the forced-air cooling function
@@ -522,7 +522,7 @@ to all runs [@usepa2009method]:
 10. Record the replacement date, catalyst lot number, and conditioning
     results in the instrument logbook
 
-### 9.3 Combustion Tube Inspection and Replacement
+### Combustion Tube Inspection and Replacement
 
 1. Remove the combustion tube as described in Section 9.2, step 2
 2. Inspect for cracks, discoloration, or accumulation of non-volatile
@@ -530,7 +530,7 @@ to all runs [@usepa2009method]:
 3. If the tube is damaged, replace with a new quartz combustion tube
 4. Repack with catalyst and condition as in Section 9.2
 
-### 9.4 Syringe and Needle Maintenance
+### Syringe and Needle Maintenance
 
 1. Remove the syringe from the autosampler or manual injection port
 2. Inspect the needle for bends, burrs, or corrosion
@@ -542,7 +542,7 @@ to all runs [@usepa2009method]:
    function
 
 
-## 10. Troubleshooting
+## Troubleshooting
 
 | Symptom                                  | Probable Cause                         | Corrective Action                                  |
 |:-----------------------------------------|:---------------------------------------|:---------------------------------------------------|
@@ -558,7 +558,7 @@ to all runs [@usepa2009method]:
 | IC reagent not dispensing                | Reagent bottle empty; tubing kinked or clogged | Refill bottle; inspect and replace tubing          |
 
 
-## 11. Waste Disposal
+## Waste Disposal
 
 | Waste Type                        | Disposal Method                              |
 |:----------------------------------|:---------------------------------------------|
@@ -570,13 +570,13 @@ to all runs [@usepa2009method]:
 | Calibration standard waste        | Aqueous waste; drain if dilute               |
 
 
-## 12. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 13. Related SOPs
+## Related SOPs
 
 | SOP    | Title                                       | Relationship                              |
 |:-------|:--------------------------------------------|:------------------------------------------|
@@ -591,7 +591,7 @@ to all runs [@usepa2009method]:
 | [L802](SOP-L802-quality-control.qmd)   | Quality Control                 | QC requirements for all runs      |
 
 
-## 14. Training Record
+## Training Record
 
 Before operating this instrument independently, personnel must:
 

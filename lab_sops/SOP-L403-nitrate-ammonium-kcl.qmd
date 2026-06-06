@@ -28,7 +28,7 @@ revision-history:
     changes: "Added literature citations, R calculation code (Appendix A), expanded QC"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the extraction of inorganic nitrogen (nitrate,
 NO~3~^-^, and ammonium, NH~4~^+^) from soil using 2 M potassium
@@ -41,7 +41,7 @@ colorimetric, flow-injection, or ion chromatographic analysis
 [@maynard2008].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Field-moist or air-dried soil samples collected per
   [SOP-F400 Soil Sampling and Processing](../field_sops/SOP-F400-soil-sampling.qmd)
@@ -52,7 +52,7 @@ colorimetric, flow-injection, or ion chromatographic analysis
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -69,7 +69,7 @@ Students using this SOP should be trained on:
 - [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -88,7 +88,7 @@ Students using this SOP should be trained on:
 - [ ] Closed-toed shoes
 
 
-## 5. Required Materials
+## Required Materials
 
 ### Equipment
 
@@ -122,7 +122,7 @@ Students using this SOP should be trained on:
 | Distilled or deionized water  |              | For preparing KCl solution       |
 
 
-## 6. Estimated Time
+## Estimated Time
 
 | Task                          | Time Required                                |
 |:------------------------------|:---------------------------------------------|
@@ -132,9 +132,9 @@ Students using this SOP should be trained on:
 | Filtering                     | 20--30 minutes per batch                     |
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Preparing 2 M KCl Solution
+### Preparing 2 M KCl Solution
 
 The 2 M KCl concentration is the standard for inorganic N extraction
 [@keeney1982; @mulvaney1996]. Lower concentrations (e.g., 1 M) may
@@ -156,7 +156,7 @@ at room temperature in a capped container indefinitely. Verify the
 solution with a conductivity meter if stored for more than 6 months.
 :::
 
-### 7.2 Moisture Subsample
+### Moisture Subsample
 
 A companion gravimetric moisture determination is required to express
 results on an oven-dry soil basis [@keeney1982].
@@ -167,7 +167,7 @@ results on an oven-dry soil basis [@keeney1982].
 4. Calculate gravimetric moisture content per
    [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
 
-### 7.3 KCl Extraction
+### KCl Extraction
 
 The standard soil-to-solution ratio is approximately 1:5 to 1:10
 (w/v) [@mulvaney1996]. This SOP uses 7 g field-moist soil in 40 mL
@@ -193,7 +193,7 @@ value, together with the gravimetric moisture content, is needed to
 calculate results on an oven-dry basis (see Appendix A).
 :::
 
-### 7.4 Filtering
+### Filtering
 
 1. Set up filter funnels with Whatman #42 filter paper over labeled
    specimen containers or clean test tubes
@@ -203,7 +203,7 @@ calculate results on an oven-dry basis (see Appendix A).
    the filter
 4. Discard the used filter paper and soil
 
-### 7.5 Extract Storage
+### Extract Storage
 
 1. Cap the filtered extract containers
 2. If analysis will be completed within 48 hours, store at 4 C
@@ -217,9 +217,9 @@ microbial activity or chemical transformations [@maynard2008].
 :::
 
 
-## 8. Calculations
+## Calculations
 
-### 8.1 Converting Extract Concentration to Soil Concentration
+### Converting Extract Concentration to Soil Concentration
 
 The colorimetric or flow-injection analyzer reports the concentration
 of NO~3~^-^-N or NH~4~^+^-N in the filtered extract (mg N/L). To
@@ -250,7 +250,7 @@ decimal (g water / g oven-dry soil).
 
 See Appendix A for a worked R code example.
 
-### 8.2 Soil Texture Correction Factor (Optional)
+### Soil Texture Correction Factor (Optional)
 
 When using the semi-quantitative quick test ([SOP-L404](SOP-L404-nitrate-quick-test.qmd)),
 a texture-based correction factor may be applied. For the quantitative
@@ -267,7 +267,7 @@ These factors are retained here for reference when comparing quick-test
 results to KCl extraction results.
 
 
-## 9. Quality Control
+## Quality Control
 
 - Include a reagent blank (KCl solution only, no soil) in each
   extraction batch. The blank should read below the method detection
@@ -283,7 +283,7 @@ results to KCl extraction results.
   results if the blank reads above zero [@mulvaney1996].
 
 
-## 10. Waste Disposal
+## Waste Disposal
 
 | Waste Type              | Disposal Method                             |
 |:------------------------|:--------------------------------------------|
@@ -292,13 +292,13 @@ results to KCl extraction results.
 | Unused KCl solution     | Drain with water (non-hazardous at this concentration) |
 
 
-## 11. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 12. Training Record
+## Training Record
 
 Before performing this procedure independently, personnel must:
 
