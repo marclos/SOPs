@@ -19,7 +19,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the determination of cation exchange capacity (CEC)
 and exchangeable base cations (Ca^2+^, Mg^2+^, K^+^, Na^+^) in soils
@@ -30,7 +30,7 @@ fundamental indicator of soil fertility, buffering capacity, and
 nutrient retention [@sparks2003].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Air-dried, sieved (< 2 mm) mineral soils from all
   EA Program sites. The method is also applicable to compost and organic
@@ -44,7 +44,7 @@ nutrient retention [@sparks2003].
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -60,7 +60,7 @@ Students using this SOP should be trained on:
 - [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -97,7 +97,7 @@ campus safety. For acetic acid or ammonium hydroxide contact with eyes,
 flush immediately with water for at least 15 minutes.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -124,9 +124,9 @@ flush immediately with water for at least 15 minutes.
 | DI water                        |                                          |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Reagent Preparation
+### Reagent Preparation
 
 #### 1 M Ammonium Acetate (pH 7.0)
 
@@ -148,7 +148,7 @@ before each use, as CO~2~ absorption can lower the pH over time.
 
 Prepare per [SOP-L403, Section 7.1](SOP-L403-nitrate-ammonium-kcl.qmd).
 
-### 6.2 Moisture Subsample
+### Moisture Subsample
 
 A companion gravimetric moisture determination is required to express
 results on an oven-dry soil basis.
@@ -159,7 +159,7 @@ results on an oven-dry soil basis.
 3. Calculate gravimetric moisture content per
    [SOP-L400 Soil Moisture](SOP-L400-soil-moisture.qmd)
 
-### 6.3 Ammonium Acetate Saturation (Exchangeable Cations)
+### Ammonium Acetate Saturation (Exchangeable Cations)
 
 1. Weigh 5.00 g of air-dried, sieved (< 2 mm) soil into a labeled
    50 mL centrifuge tube. Record the exact mass to 0.01 g.
@@ -179,7 +179,7 @@ results on an oven-dry soil basis.
    Mg^2+^, K^+^, Na^+^) by ICP-OES, AAS, or flame photometry
    [@helmke1996].
 
-### 6.4 Ethanol Wash
+### Ethanol Wash
 
 The ethanol wash removes excess (non-exchanged) NH~4~^+^ from the
 soil without displacing adsorbed NH~4~^+^ [@sumner1996].
@@ -199,7 +199,7 @@ overestimated. Ensure three full ethanol washes with clear supernatant
 before proceeding.
 :::
 
-### 6.5 Displacement of Adsorbed NH~4~^+^ (CEC Determination)
+### Displacement of Adsorbed NH~4~^+^ (CEC Determination)
 
 1. Add 30 mL of 2 M KCl to the washed soil pellet. Cap and shake for
    30 minutes.
@@ -216,16 +216,16 @@ before proceeding.
    colorimetric analysis (indophenol blue method), flow injection, or
    steam distillation [@mulvaney1996]. This value represents the CEC.
 
-### 6.6 Cleanup
+### Cleanup
 
 1. Discard spent soil in standard solid waste.
 2. Rinse all glassware and centrifuge tubes with DI water.
 3. Return reagents to labeled storage areas.
 
 
-## 7. Calculations
+## Calculations
 
-### 7.1 Cation Exchange Capacity
+### Cation Exchange Capacity
 
 $$
 \text{CEC (cmol}_c\text{/kg)} = \frac{C_{\text{NH}_4} \times V_{\text{KCl}} \times 10^{-3}}{m_{\text{dry}} \times 14.01} \times 100
@@ -242,7 +242,7 @@ where:
 - 14.01 = atomic mass of nitrogen (g/mol)
 - The factor of 100 converts from mol~c~/g to cmol~c~/kg
 
-### 7.2 Exchangeable Cations
+### Exchangeable Cations
 
 Report exchangeable Ca^2+^, Mg^2+^, K^+^, and Na^+^ from the
 NH~4~OAc extract (§6.3) in cmol~c~/kg:
@@ -257,7 +257,7 @@ $M_{\text{cation}}$ is the atomic mass (Ca = 40.08, Mg = 24.31,
 K = 39.10, Na = 22.99), and valence is 2 for Ca and Mg and 1 for K
 and Na.
 
-### 7.3 Base Saturation
+### Base Saturation
 
 $$
 \text{Base Saturation (\%)} =
@@ -266,7 +266,7 @@ $$
 
 where all values are in cmol~c~/kg.
 
-### 7.4 Interpretation
+### Interpretation
 
 | CEC (cmol~c~/kg) | Classification         | Typical Soil Textures       |
 |:------------------|:-----------------------|:----------------------------|
@@ -279,7 +279,7 @@ where all values are in cmol~c~/kg.
 Source: adapted from @sparks2003 and @brady2008.
 
 
-## 8. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Include a reagent blank (NH~4~OAc and KCl through the full procedure
   without soil) in each batch. NH~4~^+^-N in the blank must be below
@@ -293,7 +293,7 @@ Source: adapted from @sparks2003 and @brady2008.
 - Verify NH~4~OAc pH is 7.0 ± 0.05 before each extraction batch.
 
 
-## 9. Waste Disposal
+## Waste Disposal
 
 | Waste Type                 | Container              | Disposal Method            |
 |:---------------------------|:-----------------------|:---------------------------|
@@ -303,7 +303,7 @@ Source: adapted from @sparks2003 and @brady2008.
 | Spent soil                 | Standard solid waste   | Trash                      |
 
 
-## 10. References
+## References
 
 - @sumner1996
 - @chapman1965
@@ -321,7 +321,7 @@ Source: adapted from @sparks2003 and @brady2008.
 :::
 
 
-## 11. Training Record
+## Training Record
 
 Before performing CEC analysis independently, personnel must:
 

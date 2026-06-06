@@ -19,7 +19,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes contamination-controlled processing protocols for
 environmental DNA (eDNA) from aquatic collection matrices. It outlines
@@ -27,7 +27,7 @@ vacuum membrane filtration, total genomic extraction, and subsequent PCR
 inhibition testing steps.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Laboratory processing of aquatic eDNA samples,
   including filtration, DNA extraction, and inhibition screening prior
@@ -39,7 +39,7 @@ inhibition testing steps.
   post-amplification facilities.
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -48,7 +48,7 @@ inhibition testing steps.
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -78,7 +78,7 @@ campus safety. For bleach or lysis buffer contact with eyes, flush
 immediately with water for at least 15 minutes.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -111,9 +111,9 @@ immediately with water for at least 15 minutes.
 | Silica gel desiccant              | If filters are stored dry before extraction |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Contamination Control and Spatial Separation
+### Contamination Control and Spatial Separation
 
 ::: {.callout-important}
 ### Contamination Prevention
@@ -136,7 +136,7 @@ separation and decontamination protocols are mandatory
    gloves and replace them frequently (e.g., between processing separate
    filtration manifolds or extraction groups).
 
-### 6.2 Phase A: Membrane Vacuum Filtration
+### Phase A: Membrane Vacuum Filtration
 
 1. Sanitize the filter manifold station completely using 10% bleach
    solution and rinse as described in §6.1.
@@ -155,7 +155,7 @@ separation and decontamination protocols are mandatory
    buffer or silica gel desiccant. Freeze at --20 °C if extraction is
    deferred.
 
-### 6.3 Phase B: Genomic eDNA Extraction
+### Phase B: Genomic eDNA Extraction
 
 This phase uses standard commercial spin-column kits (e.g., DNeasy Blood
 & Tissue or PowerWater kits).
@@ -178,7 +178,7 @@ but may reduce total yield. Choose based on downstream assay sensitivity
 requirements.
 :::
 
-### 6.4 Phase C: Internal Control Inhibition Testing
+### Phase C: Internal Control Inhibition Testing
 
 Environmental matrices contain co-extracted PCR inhibitors (humic acids,
 fulvic acids, tannic compounds) that can produce false negative results
@@ -198,7 +198,7 @@ fulvic acids, tannic compounds) that can produce false negative results
    molecular-grade water before final target gene amplification. Re-test
    IPC performance after remediation.
 
-### 6.5 Cleanup and Storage
+### Cleanup and Storage
 
 1. Dispose of used lysis buffer, wash buffer, and flow-through in the
    appropriate chemical waste stream (§8).
@@ -208,7 +208,7 @@ fulvic acids, tannic compounds) that can produce false negative results
    archival).
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 | QC Element             | Requirement                                    |
 |:-----------------------|:-----------------------------------------------|
@@ -219,7 +219,7 @@ fulvic acids, tannic compounds) that can produce false negative results
 | No-template control (NTC) | Molecular-grade water in place of template during qPCR; must show no amplification |
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Container                  | Disposal Method          |
 |:------------------------------|:---------------------------|:-------------------------|
@@ -229,7 +229,7 @@ fulvic acids, tannic compounds) that can produce false negative results
 | Ethanol wash waste            | Flammable waste container  | EH&S pickup              |
 
 
-## 9. Maintenance
+## Maintenance
 
 - **Each use:** Decontaminate manifold, benchtops, and pipettes per §6.1.
 - **Weekly:** Check vacuum pump oil level and integrity of tubing
@@ -240,7 +240,7 @@ fulvic acids, tannic compounds) that can produce false negative results
   decontamination is used).
 
 
-## 10. References
+## References
 
 - @goldberg2016
 - @turner2015
@@ -253,7 +253,7 @@ fulvic acids, tannic compounds) that can produce false negative results
 - [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
 
 
-## 11. Training Record
+## Training Record
 
 Training is documented in the lab training log. Before working
 independently, personnel must:

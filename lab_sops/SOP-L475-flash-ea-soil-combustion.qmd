@@ -25,17 +25,17 @@ revision-history:
     changes: "Initial release; migrated from LaTeX SOP 75B v0.2"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the complete workflow for analyzing soil and sediment samples for $\delta^{15}$N, $\delta^{13}$C, and elemental C and N content using the Thermo Scientific Flash IRMS Elemental Analyzer (EA) coupled to the Delta V Isotope Ratio Mass Spectrometer (IRMS) through the ConFlo IV continuous-flow interface. It covers sample preparation, instrument warm-up, sequence creation, running the analysis, shutdown, and data reduction.
 
-## 2. Scope
+## Scope
 
 -   **Applies to:** Soil, sediment, and plant tissue samples analyzed for carbon and nitrogen isotopic composition ($\delta^{13}$C, $\delta^{15}$N) and elemental concentrations (%C, %N) by combustion EA-IRMS.
 -   **Does not apply to:** Sulfur isotope analysis (NCS mode requires a dedicated reactor and column; see separate SOP), GasBench carbonate analysis, TC/EA hydrogen and oxygen isotope analysis, or liquid samples.
 -   **Location:** David W. and Claire B. Oxtoby Environmental Isotope Lab, SGM Rm 135, Pomona College. Sample preparation takes place in the wet lab, SGM Rm 133.
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role | Responsibility |
 |:---|:---|
@@ -45,7 +45,7 @@ This SOP describes the complete workflow for analyzing soil and sediment samples
 | Certified User | Prepare samples, build sequences, run analyses |
 | Student Researcher | Sample weighing, data reduction (no unsupervised runs) |
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: callout-warning
 ### Hazards
@@ -66,7 +66,7 @@ This SOP describes the complete workflow for analyzing soil and sediment samples
 
 In case of gas leak, fire, or injury, follow the procedures in [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd). Contact the lab manager or Dr. Marc Los Huertos immediately.
 
-## 5. Prerequisites and Required Reading
+## Prerequisites and Required Reading
 
 Before using this SOP, you must be a certified IRMS user (see SOP-L75A, "Becoming an IRMS User"). In addition, review the following:
 
@@ -78,9 +78,9 @@ Before using this SOP, you must be a certified IRMS user (see SOP-L75A, "Becomin
 The Oxtoby Lab is **not** a service lab. The manager will ensure methods are working properly, but users are responsible for preparing their own samples, creating run sequences, overseeing runs, and conducting data reduction.
 :::
 
-## 6. Required Materials
+## Required Materials
 
-### 6.1 Consumables and Reagents (NC Dual Reactor)
+### Consumables and Reagents (NC Dual Reactor)
 
 The table below lists the items needed for the NC dual-reactor configuration. You can save money by ordering from [EA Consumables](https://eaconsumables.com/) instead of going through Thermo directly.
 
@@ -94,7 +94,7 @@ The table below lists the items needed for the NC dual-reactor configuration. Yo
 | Quartz wool                       | 338 22200        | ---                |
 | Magnesium perchlorate (Anhydrone) | 281 13102        | ---                |
 
-### 6.2 Capsules and Weighing Supplies
+### Capsules and Weighing Supplies
 
 -   Tin capsules (appropriate size for your sample mass)
 -   Tungsten oxide (WO~3~) -- approximately 2 parts per sample for combustion aid (if required by your method)
@@ -102,7 +102,7 @@ The table below lists the items needed for the NC dual-reactor configuration. Yo
 -   Weighing paper, cell wells, tweezers, spatulas
 -   Kimwipes, gloves
 
-### 6.3 Standard Reference Materials {#sec-standards}
+### Standard Reference Materials {#sec-standards}
 
 Prepare calibrated internal standards for every batch. Confirm which standards you need **before** approaching the lab. Standards on hand (certified values):
 
@@ -121,19 +121,19 @@ Prepare calibrated internal standards for every batch. Confirm which standards y
 Lab standards are shared resources. Do not use them without approval from a super-user, the lab technician, or the PI. You are expected to replace what you use.
 :::
 
-## 7. Sample Preparation
+## Sample Preparation
 
-### 7.1 Drying and Grinding
+### Drying and Grinding
 
 1.  Weigh soil or sediment cores into aluminum crucibles.
 2.  Oven-dry at 105 °C until constant mass.
 3.  Grind dried samples to a fine, homogeneous powder.
 
-### 7.2 Elemental Pre-screening
+### Elemental Pre-screening
 
 Submit a subset of samples to elemental analysis (EA) to determine %C and %N. Use these results to calculate the target mass for isotopic analysis. An online calculator is available at <http://stableisotopefacility.ucdavis.edu/sample-weight-calculator.html>.
 
-### 7.3 Capsule Weighing
+### Capsule Weighing
 
 1.  Tare the microbalance with an empty tin capsule.
 2.  Weigh the target mass of sample into the capsule (typically 0.5--20 mg, depending on %C and %N).
@@ -146,9 +146,9 @@ Submit a subset of samples to elemental analysis (EA) to determine %C and %N. Us
 Keep a detailed log of sample IDs, target masses, and actual masses. You will need this for data reduction.
 :::
 
-## 8. Instrument Warm-Up and Pre-Analysis Checks
+## Instrument Warm-Up and Pre-Analysis Checks
 
-### 8.1 Starting a Cold Instrument
+### Starting a Cold Instrument
 
 If the instrument has been powered down:
 
@@ -161,7 +161,7 @@ If the instrument has been powered down:
 7.  In the Accessories toolbar of Isodat, access the ion source settings.
 8.  Allow 24--48 hours for the instrument to stabilize.
 
-### 8.2 Gas Checks
+### Gas Checks
 
 Verify pressures at both tank farms:
 
@@ -170,19 +170,19 @@ Verify pressures at both tank farms:
 
 Confirm gas flows are within specification for the CN method.
 
-### 8.3 Instrument Status
+### Instrument Status
 
 -   No red or yellow warning lights on the IRMS front panel.
 -   Vacuum within acceptable range.
 -   High voltage (HV), box, and trap values reading back normally in Isodat.
 
-### 8.4 Purge, Bake-Out, and Temperature Ramp
+### Purge, Bake-Out, and Temperature Ramp
 
 1.  Purge atmospheric gases from the system.
 2.  Perform a column bake-out if the instrument has been idle.
 3.  Initialize the temperature ramp for the combustion reactor.
 
-### 8.5 Background Checks
+### Background Checks
 
 Check residual gas backgrounds in the ion source. Elevated backgrounds can indicate leaks or contamination:
 
@@ -194,7 +194,7 @@ Check residual gas backgrounds in the ion source. Elevated backgrounds can indic
 | 40  | Ar$^{+}$    | Air leak                                |
 | 44  | CO~2~$^{+}$ | Residual CO~2~ or combustion byproduct  |
 
-### 8.6 Zero-Enrichment (On/Off) Tests
+### Zero-Enrichment (On/Off) Tests
 
 Perform reference gas on/off tests to verify the instrument is within specification. Each on/off cycle takes approximately 10 minutes. You will almost always need multiple cycles before the instrument stabilizes.
 
@@ -202,11 +202,11 @@ Perform reference gas on/off tests to verify the instrument is within specificat
 The instrument can drift out of specification even after initially meeting it, especially if it has been idle. Do not skip this step, and do not rush it.
 :::
 
-### 8.7 Tuning
+### Tuning
 
 For continuous-flow analysis, tune the IRMS for **linearity** (consistent ion ratios across a range of signal intensities) rather than maximum sensitivity. This minimizes the dependence of measured $\delta$ values on peak amplitude.
 
-## 9. Sequence Preparation in Isodat
+## Sequence Preparation in Isodat
 
 1.  Open the Acquisition module in Isodat and create a new sequence file.
 2.  Define the total number of positions (samples + standards + blanks). Each autosampler carousel holds 32 wells; up to three carousels can be stacked for 94 positions total.
@@ -215,7 +215,7 @@ For continuous-flow analysis, tune the IRMS for **linearity** (consistent ion ra
 5.  Enter sample identifiers in the "Identifier 1" column.
 6.  Use the autofill function to assign the method to all rows.
 
-## 10. Running the Sequence
+## Running the Sequence
 
 1.  Load the autosampler carousel(s) into the Flash EA.
 
@@ -227,7 +227,7 @@ For continuous-flow analysis, tune the IRMS for **linearity** (consistent ion ra
 
     `YYYYMMDD_Project_SequenceID_Username.seq`
 
-### 10.1 Approximate Run Times
+### Approximate Run Times
 
 | Analysis            | Time per Sample (approx.) |
 |:--------------------|:-------------------------:|
@@ -242,7 +242,7 @@ Times include an additional minute for peak centering and magnet switching.
 **Plan your time carefully.** A full 94-sample run on the NC dual method takes roughly 12 hours. Make sure you have enough gas, enough time, and a plan for monitoring the run. Do not start a run you cannot finish.
 :::
 
-## 11. End-of-Run Shutdown and Cleanup
+## End-of-Run Shutdown and Cleanup
 
 1.  Confirm the sequence completed successfully in Isodat.
 2.  Follow the instrument-specific shutdown procedure (contact the lab manager if unsure).
@@ -251,7 +251,7 @@ Times include an additional minute for peak centering and magnet switching.
 5.  **Clean up after yourself.** Dispose of Kimwipes, weighing papers, and other waste. Wipe down the balance and work surfaces.
 6.  **Push in your chair.** Keep the lab tidy and free of obstructions.
 
-## 12. Data Reduction
+## Data Reduction
 
 ```{r}
 #| label: data-reduction-placeholder
@@ -321,14 +321,14 @@ write_csv(raw, "data/processed/YYYYMMDD_Project_SeqID_calibrated.csv")
 The R code above is a starting template. Adapt it to your specific standards, correction scheme, and column names from Isodat. Consult the lab manager or your PI if you are unsure about the calibration approach.
 :::
 
-## 13. QC/QA Criteria
+## QC/QA Criteria
 
 -   **Blanks:** Peak areas for blanks should be negligible relative to sample peaks. If blank areas exceed 5% of the smallest sample peak, investigate contamination.
 -   **Standard reproducibility:** Replicate standards within a run should agree within 0.2 per mil for $\delta^{13}$C and $\delta^{15}$N.
 -   **Linearity:** The slope of $\delta$ vs. amplitude from on/off tests should be small (instrument-specific threshold; consult the lab manager).
 -   **Drift:** Compare early and late standards in the sequence. If drift exceeds 0.3 per mil, apply a drift correction or re-run.
 
-## 14. Troubleshooting
+## Troubleshooting
 
 | Symptom | Possible Cause / Action |
 |:---|:---|
@@ -340,7 +340,7 @@ The R code above is a starting template. Adapt it to your specific standards, co
 
 If you cannot resolve an issue, **stop the run** and contact the lab manager. Do not attempt reactor replacement or major maintenance unless you are a certified super-user.
 
-## 15. Time Management Reminders
+## Time Management Reminders
 
 Running the IRMS takes a lot of time. Set aside multiple, relatively uninterrupted days. Key time sinks to plan for:
 
@@ -352,7 +352,7 @@ Running the IRMS takes a lot of time. Set aside multiple, relatively uninterrupt
 
 Instrument time is first-come, first-serve, with priority given to PIs. Schedule time with the lab technician ([kyle.mccarty\@pomona.edu](mailto:kyle.mccarty@pomona.edu)) in advance. Expect delays if you are scheduled immediately after another user.
 
-## 16. Definitions
+## Definitions
 
 -   **ConFlo IV:** The interface hub connecting all peripherals, reference gases, and the IRMS. It also handles dilution of sample and reference gases to keep signals within the working range.
 -   **Delta V IRMS:** The ThermoFisher Delta V Isotope Ratio Mass Spectrometer in the Oxtoby Lab.
@@ -362,7 +362,7 @@ Instrument time is first-come, first-serve, with priority given to PIs. Schedule
 -   **User:** A student, staff, or faculty member certified to prepare samples and run the IRMS without supervision.
 -   **Zero-Enrichment Test:** Reference gas on/off pulses used to verify that the IRMS is measuring consistent $\delta$ values before analysis.
 
-## 17. References
+## References
 
 APHA, AWWA, & WEF. (2012). *Standard Methods for Examination of Water and Wastewater* (22nd ed.). American Public Health Association.
 

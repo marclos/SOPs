@@ -19,7 +19,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP defines the protocols for extraction verification, instrument
 parameters, operation, and safety requirements for analyzing trace
@@ -27,7 +27,7 @@ pesticide residues using Gas Chromatography (GC) coupled with specialized
 detectors (e.g., ECD, MS).
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Targeted pesticide residue analysis in environmental
   water, soil extracts, and plant tissue digests using GC-ECD or GC-MS.
@@ -36,7 +36,7 @@ detectors (e.g., ECD, MS).
 - **Location:** Environmental analysis laboratories.
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -45,7 +45,7 @@ detectors (e.g., ECD, MS).
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -78,7 +78,7 @@ campus safety. For compressed gas emergencies, evacuate the area and
 contact EH&S.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -100,9 +100,9 @@ contact EH&S.
 | Extraction solvents             | Hexane, dichloromethane, acetone (GC grade) |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Gas Cylinder and Inlet Verification
+### Gas Cylinder and Inlet Verification
 
 1. Verify that gas supply cylinders have sufficient pressure (> 500 psi).
 2. Confirm the delivery pressure on the secondary regulator is set to
@@ -110,7 +110,7 @@ contact EH&S.
 3. Check the moisture, oxygen, and hydrocarbon traps inline with the gas
    lines. Replace if indicator dyes signal saturation.
 
-### 6.2 Injection Port Maintenance (Pre-Run Check)
+### Injection Port Maintenance (Pre-Run Check)
 
 ::: {.callout-important}
 ### Hot Inlet
@@ -126,7 +126,7 @@ inlet assembly.
    deactivated split/splitless liner containing a deactivated quartz wool
    plug.
 
-### 6.3 Sequence Setup and Sample Loading
+### Sequence Setup and Sample Loading
 
 1. Prepare standard calibration curves from certified pesticide reference
    materials spanning expected concentration intervals (e.g., 10 µg/L to
@@ -142,7 +142,7 @@ inlet assembly.
      10 injections
    - Duplicate sample matrices
 
-### 6.4 Initiating the GC Run
+### Initiating the GC Run
 
 1. Load the targeted analytical method on the workstation software.
    Verify parameters:
@@ -155,8 +155,8 @@ inlet assembly.
 3. Initiate the programmed sequence. Monitor the initial automated
    injection cycle to ensure the autosampler syringe articulates cleanly
    without bending the needle assembly.
-
-### 6.5 Post-Analysis and Standby Shutdown
+   
+### Post-Analysis and Standby Shutdown
 
 1. Review chromatogram baselines for peak symmetry, column bleed spikes,
    or retention time shifting.
@@ -174,7 +174,7 @@ in the instrument logbook.
    a reduced carrier gas purge flow to prevent column phase oxidation.
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Initial calibration must meet a correlation coefficient of
   $r^2 \geq 0.995$ across the calibration range.
@@ -186,7 +186,7 @@ in the instrument logbook.
 - Duplicate RPD should not exceed 20%.
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                 | Container                  | Disposal Method          |
 |:---------------------------|:---------------------------|:-------------------------|
@@ -195,7 +195,7 @@ in the instrument logbook.
 | Expired pesticide standards | Hazardous waste container  | EH&S pickup              |
 
 
-## 9. Maintenance
+## Maintenance
 
 - **Daily:** Replace septum if injection count exceeds 50--100. Inspect
   liner for charring or buildup.
@@ -207,7 +207,7 @@ in the instrument logbook.
   schedule.
 
 
-## 10. References
+## References
 
 - @usepa8081b [EPA Method 8081B: Organochlorine Pesticides by GC]
 - @usepa8270e [EPA Method 8270E: Semivolatile Organic Compounds by GC/MS]
@@ -216,7 +216,7 @@ in the instrument logbook.
 - [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
 
 
-## 11. Training Record
+## Training Record
 
 Training is documented in the lab training log. Before working
 independently, personnel must:

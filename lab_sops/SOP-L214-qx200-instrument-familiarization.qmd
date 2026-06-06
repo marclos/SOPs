@@ -20,7 +20,7 @@ revision-history:
     changes: "Initial draft. Instrument operation separated out from SOP-L702."
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure orients new personnel to the Bio-Rad QX200 Droplet Digital PCR
 (ddPCR) system and describes its safe, standard operation: the components of
@@ -38,7 +38,7 @@ workflow described here follows Bio-Rad's published guidance for the platform
 droplet-counting principle of absolute quantification [@hindson2011].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Operation of the QX200 ddPCR system in the lab, comprising
   the QX200 Droplet Generator, the PX1 PCR Plate Sealer, the C1000 Touch
@@ -57,7 +57,7 @@ this familiarization before running samples for SOP-L702.
 :::
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -67,7 +67,7 @@ this familiarization before running samples for SOP-L702.
 | New Students      | Complete familiarization and supervised runs before independent use |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards and precautions
@@ -95,7 +95,7 @@ droplets [@biorad_appsguide2018]. Match the oil to the supermix chemistry.
 :::
 
 
-## 5. Equipment, Consumables, and Reagents
+## Equipment, Consumables, and Reagents
 
 ### Instruments
 
@@ -134,9 +134,9 @@ EvaGreen) before ordering so the supermix and matching oil are consistent.
 :::
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 System Overview
+### System Overview
 
 The QX200 system performs absolute quantification by partitioning, amplifying,
 and counting [@biorad_appsguide2018; @hindson2011]. A single 20 uL reaction is
@@ -154,7 +154,7 @@ The work proceeds through four instruments in sequence:
 3. **C1000 Touch Thermal Cycler** (Section 6.6) amplifies.
 4. **Droplet Reader** (Section 6.7) counts.
 
-### 6.2 Daily Startup
+### Daily Startup
 
 1. Power on the instrument computer and the instruments to be used.
 2. Launch QuantaSoft and confirm it connects to the droplet generator and/or
@@ -165,7 +165,7 @@ The work proceeds through four instruments in sequence:
 5. Confirm consumable stock for the planned run (cartridges, gaskets, oil,
    plate, foil).
 
-### 6.3 Consumables Orientation
+### Consumables Orientation
 
 Before the first run, identify each consumable and where it loads:
 
@@ -178,7 +178,7 @@ Before the first run, identify each consumable and where it loads:
 - **Pierceable foil** is the only seal type compatible with the reader's
   autosampler; do not use hard-seal films.
 
-### 6.4 Droplet Generation
+### Droplet Generation
 
 1. Prepare reactions per SOP-L701 and load into the cartridge holder with a
    DG8 cartridge.
@@ -199,14 +199,14 @@ threshold (see SOP-L702, Section 6.2). Pipette droplets slowly and avoid
 introducing air.
 :::
 
-### 6.5 Plate Sealing (PX1)
+### Plate Sealing (PX1)
 
 1. Place the plate and a sheet of pierceable foil in the PX1 Plate Sealer.
 2. Seal at the manufacturer-specified temperature and time (commonly 180 C for
    5 s; confirm against the current manual [@biorad_qx200_2024]).
 3. Inspect the seal: the foil should be uniformly bonded with no lifted edges.
 
-### 6.6 PCR Amplification
+### PCR Amplification
 
 1. Transfer the sealed plate to the C1000 Touch with the 96-deep-well module.
 2. Run the validated cycling program for the assay (from SOP-L701).
@@ -219,7 +219,7 @@ introducing air.
 A generic template program is given in Appendix B; the assay-specific anneal
 temperature and cycle number come from SOP-L701.
 
-### 6.7 Droplet Reading
+### Droplet Reading
 
 1. Place the amplified, sealed plate in the QX200 Droplet Reader plate holder
    with the retaining clamp.
@@ -230,7 +230,7 @@ temperature and cycle number come from SOP-L701.
    detector reads two channels per droplet.
 4. Do not open the reader or disturb the plate while running.
 
-### 6.8 QuantaSoft Orientation (Reading the Output)
+### QuantaSoft Orientation (Reading the Output)
 
 This is orientation only; thresholding decisions and full analysis are covered
 in SOP-L702.
@@ -248,7 +248,7 @@ in SOP-L702.
 - **Concentration:** QuantaSoft reports copies per microliter from the Poisson
   fit. Export as described in SOP-L702, Section 6.1.
 
-### 6.9 Shutdown
+### Shutdown
 
 1. Close the experiment and export/back up data (SOP-L702).
 2. Remove and discard the plate and used cartridges/gaskets (Section 8).
@@ -256,7 +256,7 @@ in SOP-L702.
 4. Power down per the manual; leave the system in the state your lab specifies
    for the reader oil lines.
 
-### 6.10 Maintenance and Care
+### Maintenance and Care
 
 - **Each session:** check oil levels and the waste bottle; inspect for leaks.
 - **Routine:** keep the reader's fluidics maintained per the manual; do not let
@@ -266,7 +266,7 @@ in SOP-L702.
 - **Records:** log each run (date, operator, assay, plate, instrument notes)
   and any maintenance or service in the instrument logbook.
 
-### 6.11 Troubleshooting
+### Troubleshooting
 
 | Symptom                          | Likely cause                                  | Action                                                        |
 |:---------------------------------|:----------------------------------------------|:--------------------------------------------------------------|
@@ -277,7 +277,7 @@ in SOP-L702.
 | High NTC positives               | Contamination                                 | Rerun with fresh reagents; review setup (SOP-L702, Section 6.2)|
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Each well should yield at least 10,000 accepted droplets (target ~12,000 to
   20,000); wells below 10,000 are excluded in analysis (SOP-L702).
@@ -288,7 +288,7 @@ in SOP-L702.
   [@dmiqe2020].
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 - Used DG8 cartridges, gaskets, plates, foil, and tips: dispose as standard
   laboratory plastic/biohazard waste per the lab's waste plan.
@@ -297,7 +297,7 @@ in SOP-L702.
 - Reagent containers: rinse and dispose per local guidance.
 
 
-## 9. References
+## References
 
 ::: {.callout-note}
 ### Finding published methods
@@ -311,7 +311,7 @@ target concentrations, search Bio-Rad's ddPCR publication database:
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Before operating the QX200 system independently, personnel must:
 

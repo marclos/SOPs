@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release -- instrument-focused SOP separated from SOP-L303"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the setup, operation, routine maintenance,
 and troubleshooting of the Hach DR3900 benchtop spectrophotometer as a
@@ -35,7 +35,7 @@ For field use of the portable Hach DR900 colorimeter, see
 [SOP-F208 Portable Spectrophotometer / Colorimeter (Field)](../field_sops/SOP-F208-portable-colorimeter-field.qmd).
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All use of the Hach DR3900 benchtop spectrophotometer
   in the EA Program laboratory, including stored-program colorimetric
@@ -52,7 +52,7 @@ For field use of the portable Hach DR900 colorimeter, see
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -62,7 +62,7 @@ For field use of the portable Hach DR900 colorimeter, see
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -95,7 +95,7 @@ cord and do not attempt to power on until the lab manager has inspected
 the unit.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -122,9 +122,9 @@ the unit.
 | DI water (Type II or better)  | For blanking and rinsing                   |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Startup and Self-Check
+### Startup and Self-Check
 
 1. Verify that the sample compartment is empty and the lid is closed
 2. Turn on the DR3900 using the power switch on the rear panel
@@ -137,7 +137,7 @@ the unit.
    user-defined methods at low absorbance). For routine stored-program
    analyses, measurements may begin after the self-check completes.
 
-### 6.2 Selecting an Operating Mode
+### Selecting an Operating Mode
 
 From the home screen, select one of the following modes:
 
@@ -149,7 +149,7 @@ From the home screen, select one of the following modes:
 | **Wavelength Scan**   | Absorbance spectrum over a defined range       |
 | **Time Course**       | Kinetic measurement at a fixed wavelength over time |
 
-### 6.3 Preparing and Inserting Sample Cells
+### Preparing and Inserting Sample Cells
 
 1. **Select the correct cell type** for the method (see Section 5).
    Square cells must be oriented so the clear optical faces align with
@@ -171,7 +171,7 @@ Standard glass and plastic cells absorb UV light below approximately
 scan modes, use quartz cells [@skoog2018].
 :::
 
-### 6.4 Zeroing (Blanking) the Instrument
+### Zeroing (Blanking) the Instrument
 
 1. Fill a clean cell with the blank solution. The blank must match the
    sample matrix: DI water for simple aqueous samples, or the reagent
@@ -187,7 +187,7 @@ Re-zero whenever you change wavelengths, switch cell types, or if the
 instrument has been idle for more than 30 minutes.
 :::
 
-### 6.5 Measuring Samples
+### Measuring Samples
 
 1. Insert the sample cell and close the lid
 2. Press **Read** (or **Measure** in scan/time-course modes)
@@ -196,7 +196,7 @@ instrument has been idle for more than 30 minutes.
 4. Remove the cell. Rinse and refill for the next sample, or use a
    fresh cell.
 
-### 6.6 Wavelength Scan Mode
+### Wavelength Scan Mode
 
 1. From the home screen, select **Wavelength Scan**
 2. Set the start and end wavelengths and the scan increment (typically
@@ -207,7 +207,7 @@ instrument has been idle for more than 30 minutes.
    wavelengths and absorbance values.
 6. Export the scan data via USB (see Section 6.8)
 
-### 6.7 User-Defined Programs
+### User-Defined Programs
 
 The DR3900 allows creation of custom calibration curves for analytes
 not covered by the factory-stored programs:
@@ -222,7 +222,7 @@ not covered by the factory-stored programs:
    if $r^2 \geq 0.995$ for linear methods [@harris2020].
 6. Save the program with a descriptive name and program number
 
-### 6.8 Data Export
+### Data Export
 
 1. Connect a USB flash drive to the USB-A port on the front panel
 2. From the home screen, select **Data Log**
@@ -231,7 +231,7 @@ not covered by the factory-stored programs:
 5. Alternatively, connect the DR3900 to a PC via USB cable and use
    Hach's LINK2SC or Claros software for direct data transfer
 
-### 6.9 Shutdown
+### Shutdown
 
 1. Remove all cells from the sample compartment
 2. Wipe the cell holder with a dry lint-free tissue to remove any
@@ -241,9 +241,9 @@ not covered by the factory-stored programs:
 5. Cover the instrument with the dust cover if one is available
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
-### 7.1 Daily Verification
+### Daily Verification
 
 Before each analytical session:
 
@@ -254,7 +254,7 @@ Before each analytical session:
   wavelength. Acceptance: within $\pm$ 0.01 Abs of the certified
   value, or $\pm$ 5%, whichever is larger.
 
-### 7.2 Lamp Monitoring
+### Lamp Monitoring
 
 The DR3900 tracks lamp hours internally. When a lamp approaches its
 rated lifetime (typically 2000 hours for deuterium, longer for
@@ -266,7 +266,7 @@ tungsten), the instrument displays a warning.
 - After lamp replacement, run the full wavelength verification
   procedure
 
-### 7.3 Annual Verification
+### Annual Verification
 
 At least once per year (or after any service event):
 
@@ -279,7 +279,7 @@ At least once per year (or after any service event):
    report
 
 
-## 8. Troubleshooting
+## Troubleshooting
 
 | Symptom                              | Possible Cause                     | Action                              |
 |:-------------------------------------|:-----------------------------------|:------------------------------------|
@@ -291,7 +291,7 @@ At least once per year (or after any service event):
 | Absorbance exceeds 2.5               | Sample too concentrated            | Dilute sample and re-read           |
 
 
-## 9. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -301,13 +301,13 @@ At least once per year (or after any service event):
 | Spent lamps                   | Hazardous waste (deuterium lamps contain UV-emitting gas); dispose through EH&S |
 
 
-## 10. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 11. Training Record
+## Training Record
 
 Before operating the DR3900 independently, personnel must:
 
