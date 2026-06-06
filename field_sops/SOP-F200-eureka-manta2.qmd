@@ -54,6 +54,47 @@ This SOP describes the procedures for calibrating, operating, and maintaining th
 
 Researchers using this SOP should be trained on [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
+## Definitions
+
+- **Amphibian 2:** The ruggedized handheld field computer (portable PC)
+  manufactured by Eureka that controls the Manta2 probe, displays real-
+  time readings, stores data snapshots, and connects to the probe via
+  the underwater cable.
+- **Barometric pressure:** Atmospheric pressure at the measurement
+  location, expressed in mm Hg; required as an input for dissolved
+  oxygen calibration because oxygen solubility decreases with decreasing
+  pressure (increasing altitude).
+- **Calibration:** The process of adjusting sensor readings to match
+  known reference standards before field use; required before every
+  field outing to ensure data accuracy.
+- **Conductivity (specific conductance, spCond):** A measure of a
+  water sample's ability to conduct electrical current, expressed in
+  µS/cm or mS/cm; proportional to the concentration of dissolved ions;
+  temperature-corrected to 25 °C for comparability across sites and seasons.
+- **Dissolved oxygen (DO):** The concentration of oxygen dissolved in
+  water, expressed as mg/L or percent saturation (%sat); measured by
+  the HDO sensor using luminescent optical technology; decreases with
+  increasing temperature, salinity, and altitude.
+- **HDO (Handheld Dissolved Oxygen):** The luminescent optical dissolved
+  oxygen sensor on the Manta2; measures both %sat and mg/L; calibrated
+  separately for each unit.
+- **PDOP (Position Dilution of Precision):** A dimensionless measure of
+  GPS accuracy based on satellite geometry; lower values indicate better
+  positional accuracy; values below 3 are acceptable for most field
+  applications.
+- **Reference electrode:** The electrochemical half-cell that provides
+  a stable reference potential for pH measurement; requires periodic
+  refilling with reference electrolyte to maintain accurate pH readings.
+- **Sensor Response Factor (SRF):** A calibration diagnostic value
+  indicating how the sensor responded to the reference standard;
+  acceptable ranges are sensor-specific and indicate whether calibration
+  was successful.
+- **Snapshot:** A single instantaneous record of all sensor readings
+  captured and stored by the Amphibian at a specific date, time, and
+  GPS location.
+- **Sonde (probe):** The cylindrical instrument body of the Manta2 that
+  houses all sensors (temperature, pH, conductivity, dissolved oxygen,
+  and reference electrode) and is submerged during measurements.
 
 ## Safety and Hazards
 

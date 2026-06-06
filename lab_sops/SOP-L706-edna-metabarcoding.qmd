@@ -62,7 +62,53 @@ soil or tissue samples.
 | Trained Personnel | Process samples per this SOP; maintain contamination controls |
 | New Students      | Complete eDNA-specific contamination training before participating |
 
+<!-- ============================================================
+     SOP-L706: eDNA Metabarcoding Lab Workflow
+     Insert before ## Safety and Hazards
+     ============================================================ -->
 
+## Definitions
+
+- **Amplification blank (no-template control, NTC):** A PCR reaction
+  containing all reagents except sample DNA; run with every PCR plate;
+  any amplification in the NTC indicates contamination and invalidates
+  the entire plate.
+- **Blocking primer:** A modified oligonucleotide added to a PCR
+  reaction to selectively suppress amplification of abundant non-target
+  DNA (e.g., host DNA in gut or tissue eDNA samples); allows rare target
+  sequences to be amplified competitively.
+- **eDNA metabarcoding:** A method that uses universal or group-specific
+  primers to amplify and sequence a short, taxonomically informative
+  DNA region (barcode) from environmental DNA, yielding a community-
+  level inventory of taxa present in a sample.
+- **Environmental DNA (eDNA):** Genetic material shed into the
+  environment by organisms through mucus, feces, skin cells, eggs, and
+  other biological material; collected non-invasively from water,
+  sediment, or air.
+- **Extraction blank:** A tube containing only extraction reagents and
+  no biological material, processed through the full extraction
+  procedure; detects reagent or handling contamination; must yield no
+  target amplification.
+- **Field blank:** A filter or collection vessel processed through all
+  field collection steps but with no environmental sample; detects
+  airborne or handling contamination during field work.
+- **Metabarcode locus:** The specific genomic region amplified for
+  community identification; common loci include 12S rRNA (fish), 16S
+  rRNA (bacteria, invertebrates), 18S rRNA (eukaryotes), COI
+  (invertebrates, fish), and ITS2 (fungi, plants).
+- **Occupancy model:** A statistical model that accounts for imperfect
+  detection in eDNA surveys by estimating the probability that a species
+  is truly present given detection/non-detection across replicate samples
+  or PCR replicates.
+- **PCR replicate:** One of multiple independent PCR reactions run from
+  the same DNA extract; increases detection sensitivity for rare targets
+  and allows estimation of false-negative rates; standard eDNA practice
+  is 3--8 replicates per sample.
+- **Sequence read depth (coverage):** The total number of sequencing
+  reads assigned to a sample; directly affects the number of rare taxa
+  detected; EA Program target is a minimum of 10,000 reads per sample
+  after quality filtering.
+  
 ## Safety and Hazards
 
 ::: {.callout-warning}

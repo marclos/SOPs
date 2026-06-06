@@ -52,7 +52,46 @@ Sequencing Library Preparation guide and the Earth Microbiome Project
 | Trained Personnel | Prepare libraries per this SOP; submit to sequencing facility |
 | New Students      | Complete training before independent use    |
 
+<!-- ============================================================
+     SOP-L704: Amplicon Library Preparation for Sequencing
+     Insert before ## Safety and Hazards
+     ============================================================ -->
 
+## Definitions
+
+- **Adapter:** A short double-stranded DNA sequence ligated to both ends
+  of a library fragment; contains the sequencing primer binding site, an
+  index sequence, and the flow cell binding sequence required for
+  Illumina cluster generation.
+- **Amplicon library:** A sequencing library prepared by PCR
+  amplification of a target region (e.g., 16S rRNA gene V4 region or
+  ITS2) using primers that incorporate Illumina adapter sequences;
+  represents the diversity of that locus in a community sample.
+- **Index (barcode):** A unique 6--12 bp sequence incorporated into the
+  adapter of each sample's library; allows multiple samples to be pooled
+  and sequenced together (multiplexed) and computationally separated
+  (demultiplexed) after sequencing.
+- **Library normalization:** Adjustment of each sample's library to the
+  same molar concentration before pooling; ensures approximately equal
+  sequencing depth across samples; performed by quantification (Qubit or
+  qPCR) followed by dilution.
+- **Library pooling:** Combining equimolar amounts of individually
+  indexed libraries from multiple samples into a single tube for
+  multiplexed sequencing; the total library pool is loaded onto the
+  sequencer.
+- **Paired-end sequencing:** A sequencing strategy in which both ends of
+  a DNA insert are sequenced, producing two reads (R1 and R2) per
+  cluster; paired reads overlap for amplicons shorter than twice the
+  read length, enabling error correction by merging.
+- **PCR inhibitor:** A substance carried over from DNA extraction that
+  suppresses amplification efficiency (e.g., humic acids, tannins,
+  residual ethanol); detected by inhibition testing and remedied by
+  further purification or dilution of the template.
+- **Size selection:** A step in library preparation that removes
+  off-target fragments (primer dimers, non-specific products) using
+  bead-based cleanup (e.g., AMPure XP beads) or gel excision; improves
+  sequencing quality and reduces wasted reads.
+  
 ## Safety and Hazards
 
 ::: {.callout-warning}

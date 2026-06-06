@@ -51,7 +51,49 @@ produced the expected product.
 | Trained Personnel | Set up PCR reactions and run gels per this SOP |
 | New Students      | Complete training before independent use    |
 
+<!-- ============================================================
+     SOP-L703: PCR Amplification and Gel Electrophoresis
+     Insert before ## Safety and Hazards
+     ============================================================ -->
 
+## Definitions
+
+- **Agarose gel:** A porous polymer matrix cast from dissolved agarose
+  in TAE or TBE buffer; DNA fragments migrate through the gel under an
+  electric field and are separated by size; typical concentrations are
+  1--2% (w/v).
+- **Amplicon:** The specific DNA fragment produced by PCR between a
+  defined pair of primers; its length (in base pairs) is determined by
+  the primer binding positions and is used to verify PCR specificity on
+  a gel.
+- **Annealing temperature ($T_a$):** The temperature during the PCR
+  extension cycle at which primers bind to the template; typically
+  3--5 °C below the calculated primer melting temperature ($T_m$);
+  incorrect $T_a$ causes non-specific amplification or failed reactions.
+- **DNA ladder (size standard):** A mixture of DNA fragments of known
+  sizes run alongside samples on a gel; used to estimate the size of
+  amplified products.
+- **Ethidium bromide (EtBr) / SYBR Safe:** Fluorescent intercalating
+  dyes added to agarose gels or post-staining baths to visualize DNA
+  under UV light; EtBr is a potent mutagen requiring dedicated waste
+  disposal; SYBR Safe is a lower-hazard alternative.
+- **Master mix:** A pre-mixed reagent solution containing DNA polymerase,
+  dNTPs, buffer, and MgCl~2~ in optimized concentrations; reduces
+  pipetting error and variability between replicate reactions.
+- **Melting temperature ($T_m$):** The temperature at which 50% of a
+  primer-template duplex is dissociated; calculated from primer sequence
+  and salt concentration; the basis for selecting annealing temperature.
+- **Non-specific amplification:** PCR products of unexpected size caused
+  by primer mis-binding; detected as extra bands on a gel; remedied by
+  increasing annealing temperature or redesigning primers.
+- **Primer:** A short (18--25 bp) single-stranded oligonucleotide that
+  binds to a complementary sequence on the template DNA and defines the
+  start point for DNA polymerase extension.
+- **TAE / TBE buffer:** Running buffers for agarose gel electrophoresis;
+  TAE (Tris-acetate-EDTA) gives sharper bands for larger fragments; TBE
+  (Tris-borate-EDTA) provides better resolution for smaller fragments
+  and is more resistant to overheating.
+  
 ## Safety and Hazards
 
 ::: {.callout-warning}

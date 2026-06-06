@@ -50,7 +50,49 @@ approach with a more reproducible and sensitive method [@callahan2017].
 | Trained Personnel | Run the pipeline per this SOP; document all parameters |
 | New Students      | Complete training before independent analysis |
 
+<!-- ============================================================
+     SOP-L705: Bioinformatics Pipeline (QIIME 2 / DADA2)
+     Insert before ## Safety and Hazards
+     ============================================================ -->
 
+## Definitions
+
+- **ASV (Amplicon Sequence Variant):** An exact DNA sequence resolved
+  from amplicon sequencing data by denoising algorithms (DADA2, Deblur);
+  a higher-resolution alternative to OTUs that retains single-nucleotide
+  differences between sequences.
+- **DADA2:** A denoising algorithm that models sequencing error rates to
+  distinguish true biological sequences from sequencing errors; produces
+  ASVs directly from paired-end reads without clustering.
+- **Demultiplexing:** The computational step of assigning reads to their
+  source sample based on index sequences; produces per-sample FASTQ
+  files from a multiplexed sequencing run.
+- **Feature table (OTU/ASV table):** A matrix of counts where rows are
+  samples, columns are ASVs or OTUs, and each cell contains the number
+  of reads from that sample assigned to that sequence variant; the
+  primary data object in QIIME 2.
+- **FASTQ:** A text-based file format storing DNA sequences and their
+  per-base quality scores (Phred scores); the standard output format
+  from Illumina sequencers; paired-end data produces R1 and R2 FASTQ
+  files per sample.
+- **OTU (Operational Taxonomic Unit):** A cluster of sequences grouped
+  by a similarity threshold (typically 97% identity); a coarser
+  representation of diversity than ASVs; largely superseded by ASV-based
+  approaches.
+- **Phred quality score (Q score):** A logarithmic measure of base-call
+  accuracy: $Q = -10 \log_{10}(P_{error})$; Q20 = 99% accuracy; Q30 =
+  99.9% accuracy; used to set quality-trimming thresholds in DADA2.
+- **QIIME 2:** An open-source bioinformatics platform for microbiome
+  analysis; manages data as typed artifacts (.qza) with embedded
+  provenance records; wraps DADA2, taxonomic classifiers, diversity
+  analyses, and visualization tools.
+- **Rarefaction:** Subsampling each sample to the same number of reads
+  to correct for unequal sequencing depth before diversity comparisons;
+  samples below the rarefaction depth are excluded.
+- **Taxonomic classifier:** A trained machine-learning model (e.g.,
+  naive Bayes classifier trained on SILVA or UNITE) that assigns
+  taxonomy to ASV sequences by comparing them to a reference database.
+  
 ## Software Requirements
 
 | Software              | Version (minimum) | Notes                          |
