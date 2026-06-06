@@ -16,6 +16,9 @@ revision-history:
     date: "2026-05-19"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 ## Purpose
@@ -28,7 +31,6 @@ the transfer of invasive species, pathogens, and nuisance organisms
 between water bodies and field sites. These procedures apply to all
 equipment that contacts environmental media (water, soil, sediment,
 biological tissue) or that is transported between sites.
-
 
 ## Scope
 
@@ -44,29 +46,27 @@ biological tissue) or that is transported between sites.
 - **Location:** Performed at field sites (between-site decontamination)
   and in the lab (post-field cleaning in SGM 131--134)
 
-
 ## Responsibilities
 
-| Role              | Responsibility                                          |
-|:------------------|:--------------------------------------------------------|
-| PI / Field Lead   | Ensure decontamination supplies are included on the
-                      equipment checklist; verify compliance              |
-| Trained Personnel | Decontaminate equipment per this SOP before and after
-                      each site visit                                     |
-| New Students      | Complete training before independent fieldwork          |
-
+| Role | Responsibility |
+|:------------------|:----------------------------------------------------|
+| PI / Field Lead | Ensure decontamination supplies are included on the |
+| equipment checklist; verify compliance |  |
+| Trained Personnel | Decontaminate equipment per this SOP before and after |
+| each site visit |  |
+| New Students | Complete training before independent fieldwork |
 
 ## Safety and Hazards
 
-::: {.callout-warning}
+::: callout-warning
 ### Hazards
 
 - **Chemical:** Dilute bleach (sodium hypochlorite) is a skin and eye
   irritant and can damage clothing. Handle with gloves and avoid
   splashing.
 - **Physical:** Hot water (60 C or above) used for thermal
-  decontamination poses a scald risk. Use insulated containers and
-  pour carefully.
+  decontamination poses a scald risk. Use insulated containers and pour
+  carefully.
 - **Biological:** Equipment that has contacted contaminated water or
   soil may carry pathogens. Wear gloves during decontamination.
 :::
@@ -79,26 +79,25 @@ biological tissue) or that is transported between sites.
 
 ### Emergency Procedures
 
-For bleach splashes to skin or eyes, flush with clean water for at
-least 15 minutes. Refer to
-[SOP-F001 Field Safety](SOP-F001-field-safety.qmd) and
-[SOP-L003 Hazardous Materials Handling](../lab_sops/SOP-L003-hazardous-materials-handling.qmd).
-
+For bleach splashes to skin or eyes, flush with clean water for at least
+15 minutes. Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
+and [SOP-L003 Hazardous Materials
+Handling](../lab_sops/SOP-L003-hazardous-materials-handling.qmd).
 
 ## Equipment and Materials
 
 ### Decontamination Supplies
 
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
+| Item | Notes |
+|:----------------------------------|:------------------------------------|
 | Household bleach (sodium hypochlorite, 5--8%) | For preparing dilute decontamination solution |
 | Spray bottle (labeled "Decon -- Bleach 2%") | For applying solution in the field |
-| Stiff-bristle scrub brush             | For removing visible debris              |
-| Bucket (5-gallon, dedicated)          | For soaking equipment                    |
-| Deionized or distilled water          | For final rinse of sampling equipment    |
-| Tap water (carboy or jug)             | For initial rinse in the field           |
-| Paper towels or clean rags            | For drying                               |
-| Garbage bags                          | For isolating contaminated gear during transport |
+| Stiff-bristle scrub brush | For removing visible debris |
+| Bucket (5-gallon, dedicated) | For soaking equipment |
+| Deionized or distilled water | For final rinse of sampling equipment |
+| Tap water (carboy or jug) | For initial rinse in the field |
+| Paper towels or clean rags | For drying |
+| Garbage bags | For isolating contaminated gear during transport |
 
 ### Solution Preparation
 
@@ -110,105 +109,103 @@ For **thermal decontamination** (an alternative to bleach), heat water
 to at least 60 C. This method is preferred for equipment that may be
 damaged by bleach (e.g., rubber gaskets, certain sensor membranes).
 
-
 ## Procedure
 
 ### Between-Site Decontamination (Field)
 
-Perform the following steps before moving to the next sampling site.
-The goal is to remove all visible material and kill or remove organisms
-that could be transferred.
+Perform the following steps before moving to the next sampling site. The
+goal is to remove all visible material and kill or remove organisms that
+could be transferred.
 
 **Wading Gear (boots, waders, chest packs):**
 
-1. Remove from the water body and inspect for visible organisms (snails,
-   plant fragments, mud).
-2. Use the scrub brush and tap water to remove all visible debris,
-   paying special attention to boot soles, lace eyelets, and wader
-   seams.
-3. Spray all surfaces with 2% bleach solution or immerse boot soles in
-   the bleach bucket for at least one minute.
-4. Rinse with tap water to remove bleach residue before entering the
-   next water body.
+1.  Remove from the water body and inspect for visible organisms
+    (snails, plant fragments, mud).
+2.  Use the scrub brush and tap water to remove all visible debris,
+    paying special attention to boot soles, lace eyelets, and wader
+    seams.
+3.  Spray all surfaces with 2% bleach solution or immerse boot soles in
+    the bleach bucket for at least one minute.
+4.  Rinse with tap water to remove bleach residue before entering the
+    next water body.
 
 **Nets, sieves, and kick screens:**
 
-1. Remove all visible organisms and debris by hand and with the scrub
-   brush.
-2. Soak in 2% bleach solution for at least one minute, or pour hot
-   water (60 C or above) over all mesh surfaces.
-3. Rinse with tap water.
+1.  Remove all visible organisms and debris by hand and with the scrub
+    brush.
+2.  Soak in 2% bleach solution for at least one minute, or pour hot
+    water (60 C or above) over all mesh surfaces.
+3.  Rinse with tap water.
 
 **Sampling instruments (sondes, meters, tubing):**
 
-1. Rinse the sensor housing and cable with tap water.
-2. Wipe external surfaces with a cloth dampened with DI water.
-3. Do not immerse sensitive electronics in bleach. If the instrument
-   manufacturer recommends a specific decontamination procedure,
-   follow it instead.
+1.  Rinse the sensor housing and cable with tap water.
+2.  Wipe external surfaces with a cloth dampened with DI water.
+3.  Do not immerse sensitive electronics in bleach. If the instrument
+    manufacturer recommends a specific decontamination procedure, follow
+    it instead.
 
 **Hand tools (trowels, augers, calipers, measuring tapes):**
 
-1. Scrub off visible soil or sediment with tap water and the brush.
-2. Spray with 2% bleach solution or rinse with DI water.
-3. Dry with paper towels before packing.
+1.  Scrub off visible soil or sediment with tap water and the brush.
+2.  Spray with 2% bleach solution or rinse with DI water.
+3.  Dry with paper towels before packing.
 
 ### Post-Field Decontamination (Laboratory)
 
 Perform the following steps upon return to the lab, before storing
 equipment.
 
-1. Unpack all field equipment in the designated cleaning area (SGM 134
-   sink or outdoor wash area).
-2. Repeat the cleaning steps from Section 6.1, using DI water for the
-   final rinse of any equipment that contacts samples.
-3. Allow all equipment to air-dry completely before storing.
-   Incompletely dried equipment promotes mold and bacterial growth.
-4. Inspect nets and mesh for tears; report damage to the lab manager.
-5. Return all equipment to designated storage locations per
-   [SOP-L007](../lab_sops/SOP-L007-equipment-inventory.qmd).
+1.  Unpack all field equipment in the designated cleaning area (SGM 134
+    sink or outdoor wash area).
+2.  Repeat the cleaning steps from Section 6.1, using DI water for the
+    final rinse of any equipment that contacts samples.
+3.  Allow all equipment to air-dry completely before storing.
+    Incompletely dried equipment promotes mold and bacterial growth.
+4.  Inspect nets and mesh for tears; report damage to the lab manager.
+5.  Return all equipment to designated storage locations per
+    [SOP-L007](../lab_sops/SOP-L007-equipment-inventory.qmd).
 
 ### Invasive Species of Concern
 
-The following organisms are of particular concern in Southern
-California watersheds. Their presence or potential presence should
-increase vigilance during decontamination:
+The following organisms are of particular concern in Southern California
+watersheds. Their presence or potential presence should increase
+vigilance during decontamination:
 
-| Organism                          | Concern                              |
-|:----------------------------------|:-------------------------------------|
-| New Zealand mudsnail (*Potamopyrgus antipodarum*) | Tiny (< 5 mm); survives transit on wet gear |
+| Organism | Concern |
+|:----------------------------------|:------------------------------------|
+| New Zealand mudsnail (*Potamopyrgus antipodarum*) | Tiny (\< 5 mm); survives transit on wet gear |
 | Quagga/zebra mussel (*Dreissena* spp.) | Veligers invisible to the naked eye |
-| Didymo (*Didymosphenia geminata*)  | Algal cells survive on damp felt soles |
+| Didymo (*Didymosphenia geminata*) | Algal cells survive on damp felt soles |
 | Chytrid fungus (*Batrachochytrium dendrobatidis*) | Lethal to amphibians; transmitted via water and mud |
 | Invasive aquatic plants (e.g., *Arundo donax* fragments) | Fragments root easily at new sites |
 
-::: {.callout-important}
+::: callout-important
 If sampling in a watershed known to harbor New Zealand mudsnails or
 quagga mussels, use the thermal decontamination method (60 C water)
 rather than bleach, as hot water is more reliably lethal to these
-organisms. Allow gear to dry completely (at least 48 hours) before
-using it at another site.
+organisms. Allow gear to dry completely (at least 48 hours) before using
+it at another site.
 :::
-
 
 ## Quality Control
 
 - The field lead verifies that decontamination supplies are packed
-  before departure (include on the
-  [SOP-F002 Field Equipment Checklist](SOP-F002-field-equipment-checklist.qmd)).
+  before departure (include on the [SOP-F002 Field Equipment
+  Checklist](SOP-F002-field-equipment-checklist.qmd)).
 - At the start of each semester, inspect decontamination supplies
   (bleach expiration, brush condition, spray bottle function) and
   replace as needed.
 - For chemical sampling, submit one equipment blank per sampling event:
-  rinse decontaminated equipment with DI water and collect the rinse
-  as a sample. Analyze alongside field samples to verify that
+  rinse decontaminated equipment with DI water and collect the rinse as
+  a sample. Analyze alongside field samples to verify that
   decontamination removes analytes to below detection limits.
-
 
 ## References
 
 - California Department of Fish and Wildlife. (2016). *Aquatic Invasive
-  Species Decontamination Protocol*. Available at: <https://wildlife.ca.gov>
+  Species Decontamination Protocol*. Available at:
+  <https://wildlife.ca.gov>
 - Hosea, R.C. and Finlayson, B. (2005). Controlling the spread of New
   Zealand mudsnails on wading gear. *California Department of Fish and
   Game, Office of Spill Prevention and Response*, Administrative Report
@@ -216,24 +213,22 @@ using it at another site.
 - US EPA. (2004). *Guidance on Choosing a Sampling Design for
   Environmental Data Collection* (EPA QA/G-5S).
 
-
 ## Related SOPs
 
-| SOP   | Title                                  | Relationship                      |
-|:------|:---------------------------------------|:----------------------------------|
-| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| SOP | Title | Relationship |
+|:--------------|:------------------------------|:--------------------------|
+| [F001](SOP-F001-field-safety.qmd) | Field Safety | Required prerequisite |
 | [F002](SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | Decon supplies on checklist |
-| [F304](SOP-F304-stream-physical-habitat.qmd) | Stream Physical Habitat  | References invasive species prevention |
+| [F304](SOP-F304-stream-physical-habitat.qmd) | Stream Physical Habitat | References invasive species prevention |
 | [F610](SOP-F610-macroinvertebrate-sampling.qmd) | Macroinvertebrate Sampling | Gear decon between streams |
-| [L101](../lab_sops/SOP-L101-glassware-cleaning.qmd) | Glassware Cleaning      | Lab-side cleaning protocols |
-
+| [L101](../lab_sops/SOP-L101-glassware-cleaning.qmd) | Glassware Cleaning | Lab-side cleaning protocols |
 
 ## Training Record
 
 Before performing field decontamination independently, personnel must:
 
-1. Read this SOP in full
-2. Demonstrate proper preparation of 2% bleach solution
-3. Demonstrate between-site decontamination of wading gear and
-   sampling equipment during a supervised field visit
-4. Be signed off by the PI or field lead
+1.  Read this SOP in full
+2.  Demonstrate proper preparation of 2% bleach solution
+3.  Demonstrate between-site decontamination of wading gear and sampling
+    equipment during a supervised field visit
+4.  Be signed off by the PI or field lead
