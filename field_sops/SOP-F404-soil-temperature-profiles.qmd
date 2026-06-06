@@ -20,7 +20,7 @@ revision-history:
     changes: "Added bibtex citations; expanded discussion of thermal processes and sensor equilibration"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes procedures for measuring soil temperature at
 multiple depths to construct soil temperature profiles. Soil
@@ -42,7 +42,7 @@ air-temperature-based models can be used to estimate soil temperature,
 but these require site-specific calibration [@zheng1993].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Spot measurements using handheld probe thermometers
   and continuous monitoring using datalogger-based thermocouple or
@@ -53,7 +53,7 @@ but these require site-specific calibration [@zheng1993].
   panel study areas, Bernard Field Station, and restoration sites
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -63,7 +63,7 @@ but these require site-specific calibration [@zheng1993].
 | New Students      | Complete training before independent measurement       |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -89,7 +89,7 @@ but these require site-specific calibration [@zheng1993].
 - [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 
 
-## 5. Summary of Methods
+## Summary of Methods
 
 Two approaches are described in this SOP. Select based on your project
 requirements. Both methods are described in the SSSA Methods of Soil
@@ -120,7 +120,7 @@ profile characterization.
 :::
 
 
-## 6. Required Materials
+## Required Materials
 
 ### Method A: Handheld Probe
 
@@ -152,7 +152,7 @@ profile characterization.
 | Laptop with datalogger software | For programming and data download |
 
 
-## 7. Estimated Time
+## Estimated Time
 
 | Task                          | Time                                           |
 |:------------------------------|:-----------------------------------------------|
@@ -162,9 +162,9 @@ profile characterization.
 | Datalogger: sensor replacement | 30--60 minutes |
 
 
-## 8. Procedure: Method A -- Handheld Probe
+## Procedure: Method A -- Handheld Probe
 
-### 8.1 Prepare Depth Guide Blocks
+### Prepare Depth Guide Blocks
 
 Before going to the field, prepare wooden or PVC blocks with drilled
 holes sized to your thermometer probe. The probe sensor is
@@ -180,14 +180,14 @@ extends to the target depth plus 2 cm:
 <!-- IMAGE SUGGESTION: Photo of a wooden depth guide block with a thermometer inserted -->
 <!-- Save as: images/soil_temp_depth_block.jpg -->
 
-### 8.2 Select Measurement Locations
+### Select Measurement Locations
 
 1. Navigate to the predetermined sampling location and record GPS
    coordinates
 2. Select a representative spot with undisturbed soil surface
 3. Gently brush away surface litter without disturbing the mineral soil
 
-### 8.3 Take Measurements
+### Take Measurements
 
 1. If the soil is hard, use the nail and hammer to make a pilot hole
    to the target depth. Make the hole the same diameter as the probe
@@ -213,7 +213,7 @@ cool soil and too cool in warm soil. Two minutes is the minimum; 3--5
 minutes may be needed in dry or very cold soil.
 :::
 
-### 8.4 Timing
+### Timing
 
 - For comparable data across sites, complete all measurements within
   1 hour of local solar noon (approximately 12:00--13:00 PST)
@@ -222,9 +222,9 @@ minutes may be needed in dry or very cold soil.
 - Record the exact time of each measurement
 
 
-## 9. Procedure: Method B -- Datalogger System
+## Procedure: Method B -- Datalogger System
 
-### 9.1 Sensor Installation
+### Sensor Installation
 
 1. Select a representative location and record GPS coordinates
 2. Dig a narrow trench or pit to the deepest sensor depth on one side
@@ -247,7 +247,7 @@ representative thermal conditions. Allow a minimum of 48 hours before
 using data for analysis. One to two weeks is ideal for deep sensors.
 :::
 
-### 9.2 Datalogger Programming
+### Datalogger Programming
 
 1. Connect all sensors to the datalogger following the wiring diagram
    for your sensor type
@@ -260,7 +260,7 @@ using data for analysis. One to two weeks is ideal for deep sensors.
 5. Verify readings against a calibrated handheld thermometer at 5 cm
    depth
 
-### 9.3 Data Download
+### Data Download
 
 1. Visit the station at regular intervals (weekly to monthly, depending
    on battery and storage capacity)
@@ -269,9 +269,9 @@ using data for analysis. One to two weeks is ideal for deep sensors.
 4. Transfer data to the project database within 48 hours
 
 
-## 10. Calibration
+## Calibration
 
-### 10.1 Handheld Probes
+### Handheld Probes
 
 1. Prepare an ice-water bath (crushed ice + deionized water, stirred);
    this should read 0.0 C
@@ -284,7 +284,7 @@ The ice-point calibration is a single-point check; for research
 requiring higher accuracy, a two-point calibration (ice-water and
 warm-water bath at approximately 40 C) is recommended [@ham2002].
 
-### 10.2 Datalogger Sensors
+### Datalogger Sensors
 
 1. Before installation, place all sensors in a well-stirred water bath
 2. Record readings from all sensors simultaneously
@@ -293,7 +293,7 @@ warm-water bath at approximately 40 C) is recommended [@ham2002].
    needed
 
 
-## 11. Quality Control
+## Quality Control
 
 - Calibrate all thermometers and sensors before each field season
 - For handheld measurements, take readings at a minimum of 3 replicate
@@ -307,9 +307,9 @@ warm-water bath at approximately 40 C) is recommended [@ham2002].
 - Photograph each measurement location at the start of each season
 
 
-## 12. Data Management
+## Data Management
 
-### 12.1 Handheld Data
+### Handheld Data
 
 Enter data from field sheets into the project spreadsheet within
 48 hours. Required fields:
@@ -320,7 +320,7 @@ Enter data from field sheets into the project spreadsheet within
 - Surface condition (bare soil, litter, vegetated, shaded)
 - Notes (e.g., soil was saturated, recent rain)
 
-### 12.2 Datalogger Data
+### Datalogger Data
 
 - Download raw files and archive unmodified copies
 - Process data into a standardized format: timestamp, site, depth,
@@ -329,7 +329,7 @@ Enter data from field sheets into the project spreadsheet within
 - Store processed data in the project database with metadata
 
 
-## 13. Waste and Site Impact
+## Waste and Site Impact
 
 - Minimize soil disturbance during installation; backfill trenches
   carefully
@@ -339,13 +339,13 @@ Enter data from field sheets into the project spreadsheet within
 - Pack out all trash and supplies
 
 
-## 14. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 15. Training Record
+## Training Record
 
 Before measuring soil temperature independently, personnel must:
 

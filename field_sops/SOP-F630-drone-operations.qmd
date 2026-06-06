@@ -28,7 +28,7 @@ revision-history:
     changes: "Combined Mavic and Matrice into single SOP; converted to Quarto; added FAA regulatory section"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP details the procedures for safely operating the EA Program's
 DJI unmanned aerial vehicles (UAVs/drones) for research image
@@ -38,7 +38,7 @@ from these aircraft are used for photogrammetry (3D modeling), site
 monitoring, vegetation mapping, and other remote sensing applications.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All flights of EA Program drones, including the DJI
   Mavic 3 Pro and DJI Matrice 100, for research and instructional
@@ -49,7 +49,7 @@ monitoring, vegetation mapping, and other remote sensing applications.
 - **Location:** All EA Program field sites and approved flying areas
 
 
-## 3. Definitions
+## Definitions
 
 - **UAV:** Unmanned Aerial Vehicle; commonly called a drone
 - **UAS:** Unmanned Aircraft System; the drone, remote controller,
@@ -66,7 +66,7 @@ monitoring, vegetation mapping, and other remote sensing applications.
   drone at all times without visual aids
 
 
-## 4. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                   |
 |:------------------|:-------------------------------------------------|
@@ -76,7 +76,7 @@ monitoring, vegetation mapping, and other remote sensing applications.
 | New Students      | Complete training before any drone operation      |
 
 
-## 5. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-danger}
 ### Critical Safety Rules
@@ -119,7 +119,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
 field emergency procedures.
 
 
-## 6. FAA Regulations
+## FAA Regulations
 
 ::: {.callout-important}
 ### Legal Requirement
@@ -128,7 +128,7 @@ is personally responsible for compliance. Ignorance of airspace rules
 is not a defense.
 :::
 
-### 6.1 Pilot Certification
+### Pilot Certification
 
 Flights for research purposes (not purely recreational) require FAA
 Part 107 Remote Pilot certification. The certified pilot must be
@@ -137,7 +137,7 @@ recreational exemption (44809), flights must follow community-based
 safety guidelines and the pilot must pass TRUST (The Recreational UAS
 Safety Test).
 
-### 6.2 Airspace Authorization
+### Airspace Authorization
 
 - Flights below 400 feet AGL in uncontrolled (Class G) airspace do
   not require airspace authorization
@@ -150,13 +150,13 @@ Safety Test).
   International Airport (KONT) Class C airspace; LAANC authorization
   is required for on-campus or near-campus flights
 
-### 6.3 Registration
+### Registration
 
 Both EA Program drones are registered with the FAA. The registration
 number must be displayed on the aircraft at all times. Registration
 numbers are on file with the PI.
 
-### 6.4 Flight Restrictions
+### Flight Restrictions
 
 The following restrictions apply to all EA Program flights under
 Part 107 unless a waiver has been obtained:
@@ -170,7 +170,7 @@ Part 107 unless a waiver has been obtained:
 - Yield right of way to manned aircraft at all times
 
 
-## 7. EA Program Fleet
+## EA Program Fleet
 
 | Aircraft           | Serial Number          | Storage   | Notes                    |
 |:-------------------|:-----------------------|:----------|:-------------------------|
@@ -180,7 +180,7 @@ Part 107 unless a waiver has been obtained:
 | DJI Matrice 100 batteries | *TBD*            | SGM 210   | 6 batteries              |
 
 
-## 8. Required Materials
+## Required Materials
 
 ### Pre-Flight Checklist
 
@@ -210,7 +210,7 @@ Part 107 unless a waiver has been obtained:
 | Reality Capture or Pix4D | Photogrammetry post-processing (Windows)  |
 
 
-## 9. Estimated Time
+## Estimated Time
 
 | Task                                     | Time                |
 |:-----------------------------------------|:--------------------|
@@ -221,9 +221,9 @@ Part 107 unless a waiver has been obtained:
 | Post-flight data download                | 10--15 minutes      |
 
 
-## 10. Procedure
+## Procedure
 
-### 10.1 Pre-Flight Inspection
+### Pre-Flight Inspection
 
 1. Inspect the airframe for visible damage (cracks, loose components)
 2. Inspect propellers for nicks, cracks, or deformation. Replace any
@@ -232,7 +232,7 @@ Part 107 unless a waiver has been obtained:
 4. Confirm all batteries (drone and remote controller) are fully
    charged
 
-### 10.2 Propeller Installation (Mavic 3 Pro)
+### Propeller Installation (Mavic 3 Pro)
 
 1. Unfold the two front arms, then the two rear arms
 2. Two propellers are marked (white ring on the center hub); two are
@@ -244,13 +244,13 @@ Part 107 unless a waiver has been obtained:
 5. Verify each propeller is secure by gently pulling upward and
    wiggling
 
-### 10.3 Camera Preparation
+### Camera Preparation
 
 1. Remove the gimbal cover (plastic camera protector) and any gimbal
    clamp
 2. Store the cover in the carrying case so it is not lost in the field
 
-### 10.4 Power On and Controller Connection
+### Power On and Controller Connection
 
 1. Place the drone on a flat, level surface (or landing pad)
 2. Power on the drone: press the battery button once, then press and
@@ -262,7 +262,7 @@ Part 107 unless a waiver has been obtained:
 5. Launch the DJI app. Confirm that the app shows a live camera feed
    and connects to the drone.
 
-### 10.5 Sensor Calibration
+### Sensor Calibration
 
 Calibrate the compass and IMU sensors when:
 
@@ -275,7 +275,7 @@ typically involves rotating the drone 360 degrees horizontally, then
 360 degrees vertically. Repeat each rotation until the app confirms
 calibration is complete.
 
-### 10.6 Set Return to Home (RTH)
+### Set Return to Home (RTH)
 
 1. Confirm the RTH point is set to the current takeoff location (the
    DJI app sets this automatically on GPS lock)
@@ -285,7 +285,7 @@ calibration is complete.
 3. The RTH button is located in the upper-left corner of the remote
    controller (marked with an H)
 
-### 10.7 Weather and Airspace Check
+### Weather and Airspace Check
 
 1. Open UAV Forecast and verify:
    - Wind speed below 25 mph (below 15 mph preferred for survey work)
@@ -304,7 +304,7 @@ survey the flight area for potential interference sources before
 takeoff.
 :::
 
-### 10.8 Flight Operations
+### Flight Operations
 
 1. Announce "Taking off" to all personnel in the area
 2. Initiate takeoff via the DJI app or the controller's takeoff
@@ -322,7 +322,7 @@ takeoff.
 6. Announce "Landing" to all personnel before descent
 7. Land on the landing pad or flat surface
 
-### 10.9 Battery Management
+### Battery Management
 
 - One fully charged battery provides approximately 20 minutes of
   flight time (varies with wind, temperature, and payload)
@@ -334,7 +334,7 @@ takeoff.
 - Store batteries at 40--60% charge if not flying for more than 10
   days
 
-### 10.10 Image Collection Settings
+### Image Collection Settings
 
 | Setting               | Recommended Value                    |
 |:----------------------|:-------------------------------------|
@@ -346,7 +346,7 @@ takeoff.
 | Gimbal angle          | Nadir (-90 degrees) for mapping; oblique (-45 degrees) for 3D models |
 
 
-## 11. Post-Flight Procedures
+## Post-Flight Procedures
 
 1. Power off the drone and remote controller
 2. Replace the gimbal cover on the camera
@@ -365,7 +365,7 @@ takeoff.
    SGM 106; Matrice to SGM 210)
 8. Complete the flight log entry
 
-### 11.1 Flight Log
+### Flight Log
 
 Record the following for every flight:
 
@@ -387,7 +387,7 @@ Record the following for every flight:
 | Incidents or notes   |                                     |
 
 
-## 12. Photogrammetry Processing
+## Photogrammetry Processing
 
 ::: {.callout-note}
 ### Software
@@ -412,7 +412,7 @@ For best results, use 100--1000+ overlapping images per site with
 consistent lighting conditions.
 
 
-## 13. Quality Control
+## Quality Control
 
 - Complete the pre-flight checklist (Section 8) before every flight
 - Verify GPS lock (minimum 8 satellites) before takeoff
@@ -426,7 +426,7 @@ consistent lighting conditions.
   involving injury or property damage exceeding $500.
 
 
-## 14. Maintenance
+## Maintenance
 
 | Task                          | Frequency                               |
 |:------------------------------|:----------------------------------------|
@@ -438,7 +438,7 @@ consistent lighting conditions.
 | Sensor calibration            | At each new site; after impact          |
 
 
-## 15. Troubleshooting
+## Troubleshooting
 
 | Problem                             | Probable Cause                     | Corrective Action                      |
 |:------------------------------------|:-----------------------------------|:---------------------------------------|
@@ -451,7 +451,7 @@ consistent lighting conditions.
 | "Restricted zone" warning           | Flying in controlled airspace      | Obtain LAANC authorization; move to an approved area |
 
 
-## 16. References
+## References
 
 - DJI. *Mavic 3 Pro User Manual*. Available at:
   <https://www.dji.com/mavic-3-pro/downloads>
@@ -466,7 +466,7 @@ consistent lighting conditions.
   <https://www.capturingreality.com/realitycapture>
 
 
-## 17. Training Record
+## Training Record
 
 Before operating any EA Program drone independently, personnel must:
 

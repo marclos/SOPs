@@ -27,7 +27,7 @@ revision-history:
     changes: "Converted to Quarto; expanded contamination controls and QC sections"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP provides methods for extracting, staining, and enumerating
 microplastics (particles less than 5 mm) from water samples.
@@ -45,7 +45,7 @@ consult the emerging standardized methods described in Appendix B
 procedures accordingly.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Extraction and enumeration of microplastics from
   drinking water, surface water, stormwater, and other aqueous samples
@@ -65,7 +65,7 @@ procedures accordingly.
 - **Location:** EA Program laboratory, SGM 133 and SGM 134
 
 
-## 3. Acknowledgements
+## Acknowledgements
 
 This document builds on the work of Kyle Wees (PO '20), Baile
 (PO '22), and Jon Gunasti (PO '20), who researched and wrote the
@@ -75,7 +75,7 @@ Huertos and Sidarth (PO '23). We look forward to continued
 contributions from EA students to refine and expand this procedure.
 
 
-## 4. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -84,7 +84,7 @@ contributions from EA students to refine and expand this procedure.
 | New Students      | Complete training before independent use    |
 
 
-## 5. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -119,7 +119,7 @@ flush eyes with water and seek medical attention. Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 6. Definitions
+## Definitions
 
 - **Microplastic:** A synthetic polymer particle less than 5 mm in its
   longest dimension. Includes fragments, fibers, films, beads, and
@@ -134,7 +134,7 @@ flush eyes with water and seek medical attention. Refer to
   organics.
 
 
-## 7. Biases and Interferences
+## Biases and Interferences
 
 Microplastic contamination from laboratory sources is a well-documented
 problem. Blanks frequently contain elevated particle counts, making
@@ -162,7 +162,7 @@ interpreted.
 :::
 
 
-## 8. Required Materials
+## Required Materials
 
 ### Equipment
 
@@ -198,23 +198,23 @@ specific to microplastics work.*
 :::
 
 
-## 9. Reagent Preparation
+## Reagent Preparation
 
-### 9.1 Nile Red Stock Solution
+### Nile Red Stock Solution
 
 1. Working in a fume hood, dissolve Nile Red in acetone to a
    concentration of 1 mg/mL
 2. Store in a dark amber glass bottle at room temperature
 3. Label with concentration, preparation date, and analyst
 
-### 9.2 Working Concentration
+### Working Concentration
 
 The working concentration in the sample is 10 ug/mL, achieved by a
 100:1 dilution of the stock solution. For a 500 mL water sample, add
 0.5 mL of the 1 mg/mL stock solution (Maes et al., 2017).
 
 
-## 10. Estimated Time
+## Estimated Time
 
 | Task                                    | Time                         |
 |:----------------------------------------|:-----------------------------|
@@ -225,9 +225,9 @@ The working concentration in the sample is 10 ug/mL, achieved by a
 | Total per sample (excluding wait times) | Approximately 90--150 minutes |
 
 
-## 11. Procedure
+## Procedure
 
-### 11.1 Sample Preparation and Staining
+### Sample Preparation and Staining
 
 1. Reduce contamination in all glassware using the lab's
    decontamination protocol (*TBD -- see Section 8 note*)
@@ -240,7 +240,7 @@ The working concentration in the sample is 10 ug/mL, achieved by a
 5. Incubate bottles with the injected dye for at least 30 minutes at
    room temperature
 
-### 11.2 Vacuum Filtration
+### Vacuum Filtration
 
 6. Place a Whatman 934-AH glass-fiber filter (42.5 mm, 1.5 um pore) on
    the fritted base of the vacuum filtration apparatus
@@ -248,7 +248,7 @@ The working concentration in the sample is 10 ug/mL, achieved by a
 8. Incubate the filter on a watch glass in the oven at 60 C for 10
    minutes to dry
 
-### 11.3 Enumeration Option A: Crime-Lite with Goggles or Dissecting Scope
+### Enumeration Option A: Crime-Lite with Goggles or Dissecting Scope
 
 ::: {.callout-warning}
 ### Laser Safety
@@ -265,7 +265,7 @@ illuminated samples without the orange filter goggles.
 13. Record particle counts and any notes on particle morphology (fiber,
     fragment, bead, film)
 
-### 11.4 Enumeration Option B: Echo Revolve Microscope (Fluorescence)
+### Enumeration Option B: Echo Revolve Microscope (Fluorescence)
 
 This method provides higher magnification and allows overlay imaging
 for documentation. For general Revolve operation, see
@@ -312,7 +312,7 @@ for documentation. For general Revolve operation, see
 29. Tap each fluorescing particle to record the count. Use the undo
     button (top left) to correct mistakes. Save the annotated image.
 
-### 11.5 Procedural Blanks
+### Procedural Blanks
 
 30. Process at least one procedural blank per batch: run 500 mL of
     deionized water through the entire procedure (staining, filtering,
@@ -320,7 +320,7 @@ for documentation. For general Revolve operation, see
 31. Record blank particle counts separately
 
 
-## 12. Data Analysis and Calculations
+## Data Analysis and Calculations
 
 1. Calculate the average number of particles per field of view for each
    sample filter
@@ -351,15 +351,15 @@ implications for data interpretation.
 :::
 
 
-## 13. Quality Control
+## Quality Control
 
-### 13.1 Procedural Blanks
+### Procedural Blanks
 
 - At least one blank per batch, processed identically to samples
 - If blank counts exceed 10% of sample counts, investigate
   contamination sources before continuing
 
-### 13.2 Spike Recovery
+### Spike Recovery
 
 Spike recovery tests verify that the staining and filtration procedure
 captures a known quantity of plastic particles.
@@ -378,14 +378,14 @@ For PET and PP, cut and file or grind the material, then sieve through
 a 1 mm sieve. Confirm polymer identity by FTIR spectrophotometry if
 available.
 
-### 13.3 Replicate Fields of View
+### Replicate Fields of View
 
 - Analyze at least 3 (preferably 10) randomly selected fields of view
   per filter
 - Report the mean, standard deviation, and coefficient of variation
   across fields
 
-### 13.4 Organic Matter Interference Check
+### Organic Matter Interference Check
 
 *TBD -- develop a protocol to assess whether Nile Red is producing
 false positives with natural organic matter in sample matrices typical
@@ -393,7 +393,7 @@ of the lab's study sites. Consider a hydrogen peroxide digestion step
 for high-organic samples.*
 
 
-## 14. Troubleshooting
+## Troubleshooting
 
 | Problem                            | Probable Cause                     | Corrective Action                          |
 |:-----------------------------------|:-----------------------------------|:-------------------------------------------|
@@ -405,7 +405,7 @@ for high-organic samples.*
 | Revolve app unresponsive           | Wi-Fi disconnected                 | Shut down iPad, unplug microscope, replug, restart |
 
 
-## 15. Waste Disposal
+## Waste Disposal
 
 | Waste Type                        | Disposal Method                          |
 |:----------------------------------|:-----------------------------------------|
@@ -415,7 +415,7 @@ for high-organic samples.*
 | Spike material waste              | Standard trash                           |
 
 
-## 16. References
+## References
 
 - APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
   and Wastewater*. 22nd ed. American Public Health Association (Eds.).
@@ -455,7 +455,7 @@ for high-organic samples.*
   <https://www.sfei.org/projects/statewide-plastics-monitoring-strategy-planning-framework>
 
 
-## 17. Training Record
+## Training Record
 
 Before performing microplastics analysis independently, personnel must:
 

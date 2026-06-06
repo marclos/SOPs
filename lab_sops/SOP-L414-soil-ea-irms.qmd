@@ -26,7 +26,7 @@ revision-history:
     changes: "Initial release; migrated from LaTeX SOPs 75A/75B and SOP 75 v0.1"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the complete workflow for determining
 $\delta^{13}$C, $\delta^{15}$N, and elemental concentrations (%C, %N)
@@ -42,7 +42,7 @@ and pre-analysis tests, see
 [SOP-L208](SOP-L208-irms-general-instrument.qmd).
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Soil, sediment, and plant tissue samples analyzed for
   $\delta^{13}$C, $\delta^{15}$N, %C, and %N by combustion EA-IRMS in
@@ -55,7 +55,7 @@ and pre-analysis tests, see
   Oxtoby Isotope Lab, SGM Rm 135.
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                           |
 |:------------------|:---------------------------------------------------------|
@@ -65,7 +65,7 @@ and pre-analysis tests, see
 | Student Researcher| May perform sample prep and data reduction under supervision |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 See [SOP-L208, Section 4](SOP-L208-irms-general-instrument.qmd) for the
 full hazard list. Hazards specific to this application:
@@ -83,7 +83,7 @@ full hazard list. Hazards specific to this application:
 - [ ] Nitrile gloves
 
 
-## 5. Prerequisites
+## Prerequisites
 
 - Certification as an IRMS User per
   [SOP-L208](SOP-L208-irms-general-instrument.qmd)
@@ -91,23 +91,23 @@ full hazard list. Hazards specific to this application:
 - Familiarity with the Isodat software (see SOP-L208, Section 15)
 
 
-## 6. Sample Preparation
+## Sample Preparation
 
-### 6.1 Drying and Grinding
+### Drying and Grinding
 
 1. Weigh soil or sediment into an aluminum crucible.
 2. Oven-dry at 105 °C until constant mass.
 3. Grind dried samples to a fine, homogeneous powder using a mortar and
    pestle or ball mill.
 
-### 6.2 Elemental Pre-screening
+### Elemental Pre-screening
 
 Submit a subset of samples to elemental analysis (EA only, no IRMS) to
 determine %C and %N. Use these results to calculate the target mass for
 isotopic analysis. An online calculator is available at
 <http://stableisotopefacility.ucdavis.edu/sample-weight-calculator.html>.
 
-### 6.3 Capsule Weighing
+### Capsule Weighing
 
 1. Tare the microbalance with an empty tin capsule.
 2. Weigh the target mass of sample (typically 0.5--20 mg, depending on
@@ -126,7 +126,7 @@ masses. This log is essential for data reduction.
 :::
 
 
-## 7. Sequence Design
+## Sequence Design
 
 A well-designed sequence is critical for data quality. A typical layout:
 
@@ -151,7 +151,7 @@ roughly 12 hours.
 :::
 
 
-## 8. Running the Analysis
+## Running the Analysis
 
 1. Complete all pre-analysis checks per
    [SOP-L208, Section 13](SOP-L208-irms-general-instrument.qmd#sec-pre-analysis):
@@ -164,7 +164,7 @@ roughly 12 hours.
 5. Monitor the first several samples to confirm chromatographic
    separation and peak shapes are normal.
 
-### 8.1 Approximate Run Times
+### Approximate Run Times
 
 | Analysis              | Time per Sample (approx.) |
 |:----------------------|:-------------------------:|
@@ -175,7 +175,7 @@ roughly 12 hours.
 Times include ~1 minute for peak centering and magnet switching.
 
 
-## 9. End-of-Run Shutdown and Cleanup
+## End-of-Run Shutdown and Cleanup
 
 1. Confirm the sequence completed successfully.
 2. Follow the shutdown procedure in SOP-L208, Section 11.3.
@@ -183,9 +183,9 @@ Times include ~1 minute for peak centering and magnet switching.
 4. Remove samples and personal items. Clean up. Push in your chair.
 
 
-## 10. Post-Analysis Data Correction
+## Post-Analysis Data Correction
 
-### 10.1 Overview
+### Overview
 
 Corrections are applied in the following order:
 
@@ -203,7 +203,7 @@ Apply corrections in this order. Skipping or reordering steps can
 introduce systematic error.
 :::
 
-### 10.2 Export Raw Data
+### Export Raw Data
 
 Export completed results from Isodat as CSV. Include: sample identifier,
 peak areas (Area 28, Area 44), raw $\delta$ values vs. reference gas,
@@ -211,7 +211,7 @@ and signal amplitudes (Ampl 28, Ampl 44). Save as:
 
 `YYYYMMDD_Project_SeqID_User_raw.csv`
 
-### 10.3 Import and Classify
+### Import and Classify
 
 ```{r}
 #| label: import-classify
@@ -235,7 +235,7 @@ raw <- raw %>%
 count(raw, type)
 ```
 
-### 10.4 Blank Correction
+### Blank Correction
 
 Empty tin capsules contribute a small amount of N~2~ and CO~2~. Subtract
 the mean blank peak area from all samples.
@@ -267,7 +267,7 @@ If blank areas exceed 5% of the smallest sample peak area, investigate
 contamination (leaky capsules, dirty carousel) before proceeding.
 :::
 
-### 10.5 Linearity Correction
+### Linearity Correction
 
 Use the slope from the pre-analysis on/off tests to adjust $\delta$
 values for signal-size dependence.
@@ -297,7 +297,7 @@ raw <- raw %>%
 # Repeat for d13C using Ampl44 and the corresponding on/off data
 ```
 
-### 10.6 Scale Normalization (Two-Point)
+### Scale Normalization (Two-Point)
 
 Map measured $\delta$ values onto the international scale using two
 reference materials with certified values.
@@ -346,7 +346,7 @@ USGS41a, USGS61), include all of them. This improves robustness and
 provides a check on calibration linearity through the residuals.
 :::
 
-### 10.7 Drift Correction
+### Drift Correction
 
 If check standards (e.g., LOCSS) show a systematic shift over the
 course of the run, apply a time-based correction.
@@ -392,7 +392,7 @@ if (summary(drift_N)$coefficients["Row", "Pr(>|t|)"] < 0.05) {
 ```
 
 
-## 11. Elemental Concentrations (%C, %N)
+## Elemental Concentrations (%C, %N)
 
 Elemental concentrations are determined from blank-corrected peak areas
 using a calibration curve built from standards of known %C and %N.
@@ -445,31 +445,31 @@ with the Isodat export before running this step.
 :::
 
 
-## 12. QC/QA Criteria
+## QC/QA Criteria
 
-### 12.1 Blanks
+### Blanks
 
 Blank peak areas must be negligible (<5% of the smallest sample peak).
 
-### 12.2 Standard Reproducibility
+### Standard Reproducibility
 
 | Parameter        | Maximum 1$\sigma$ (per mil) |
 |:-----------------|:---------------------------:|
 | $\delta^{13}$C   | 0.10                        |
 | $\delta^{15}$N   | 0.15                        |
 
-### 12.3 Calibration Accuracy
+### Calibration Accuracy
 
 After normalization, the mean calibrated value of each reference
 material should fall within 0.2 per mil of its certified value.
 
-### 12.4 Drift
+### Drift
 
 If the difference between first and last check standards exceeds
 0.3 per mil, apply a drift correction. If drift exceeds 0.5 per mil
 after correction, re-analyze the affected portion.
 
-### 12.5 QC Summary Report
+### QC Summary Report
 
 ```{r}
 #| label: qc-summary
@@ -502,7 +502,7 @@ write_csv(qc,
 ```
 
 
-## 13. Reporting
+## Reporting
 
 Report final values as:
 
@@ -517,7 +517,7 @@ Include in any data table or publication:
 - The calibration equation (slope and intercept)
 
 
-## 14. Troubleshooting
+## Troubleshooting
 
 See [SOP-L208, Section 18](SOP-L208-irms-general-instrument.qmd) for the
 full troubleshooting table. Issues specific to soil CN analysis:
@@ -531,7 +531,7 @@ full troubleshooting table. Issues specific to soil CN analysis:
 | Standards acceptable, samples erratic | Sample heterogeneity; grind finer or increase mass |
 
 
-## 15. References
+## References
 
 Coplen, T. B. (2011). Guidelines and recommended terms for expression
 of stable-isotope-ratio and gas-ratio measurement results. *Rapid
@@ -546,7 +546,7 @@ techniques in stable isotope ratio analysis. *Rapid Communications in
 Mass Spectrometry*, 15(7), 501--519.
 
 
-## 16. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                       | Relationship                      |
 |:------|:--------------------------------------------|:----------------------------------|
@@ -556,7 +556,7 @@ Mass Spectrometry*, 15(7), 501--519.
 | [L415](SOP-L415-carbonate-gasbench-irms.qmd) | Carbonate Isotopes by GasBench-IRMS | Companion application SOP |
 
 
-## 17. Training Record
+## Training Record
 
 Before performing soil CN analysis independently, personnel must:
 

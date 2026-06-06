@@ -19,7 +19,7 @@ revision-history:
     changes: "Moved definitions to Section 5; added citations for urban climatology, LCZ classification, and crowdsourced QC; expanded UHI and shielding discussion"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the deployment, calibration, data retrieval, and
 post-processing of low-cost portable sensor networks for ambient air
@@ -44,7 +44,7 @@ standardized basis for comparing UHI intensities across cities and
 studies [@stewart2012].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Outdoor ambient air temperature and relative
   humidity monitoring at 1.5--2.0 m above ground level using portable
@@ -58,7 +58,7 @@ studies [@stewart2012].
   surrounding Inland Empire communities.
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -68,7 +68,7 @@ studies [@stewart2012].
 | New Students      | Complete training before independent deployment         |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -93,7 +93,7 @@ studies [@stewart2012].
 - [ ] Safety glasses (during mounting/drilling)
 
 
-## 5. Definitions
+## Definitions
 
 - **Urban Heat Island (UHI):** The phenomenon whereby urban areas
   experience higher air temperatures than surrounding rural areas due
@@ -132,7 +132,7 @@ studies [@stewart2012].
   (18 of 24 hours per day) is required for daily summaries.
 
 
-## 6. Prerequisites
+## Prerequisites
 
 - [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 - For Raspberry Pi deployments: basic familiarity with Raspberry Pi
@@ -140,9 +140,9 @@ studies [@stewart2012].
   [SOP-F502](SOP-F502-air-quality-portable-sensors.qmd))
 
 
-## 7. Sensor Platforms
+## Sensor Platforms
 
-### 7.1 Comparison
+### Comparison
 
 | Feature              | iButton DS1921/DS1923 | HOBO U23 Pro v2       | Raspberry Pi + BME280 |
 |:---------------------|:---------------------:|:---------------------:|:---------------------:|
@@ -155,7 +155,7 @@ studies [@stewart2012].
 | Battery life         | ~1 year               | ~1 year               | Requires continuous power |
 | Size                 | 17 mm coin            | 6 x 5 x 2 cm         | Variable (enclosure)  |
 
-### 7.2 Choosing a Platform
+### Choosing a Platform
 
 - **iButton:** Best for dense spatial networks where low cost and
   small size are priorities. Limited memory requires periodic
@@ -167,7 +167,7 @@ studies [@stewart2012].
   in the EA Program inventory (16 Pi Zero+ units).
 
 
-## 8. Radiation Shielding {#sec-shielding}
+## Radiation Shielding {#sec-shielding}
 
 ::: {.callout-important}
 ### Radiation Shields Are Mandatory
@@ -189,9 +189,9 @@ All shields must be white (high albedo) and mounted with the sensor
 opening facing downward to prevent rain intrusion.
 
 
-## 9. Calibration {#sec-calibration}
+## Calibration {#sec-calibration}
 
-### 9.1 Ice-Bath Calibration (Single-Point Check)
+### Ice-Bath Calibration (Single-Point Check)
 
 1. Prepare an ice-water bath: fill an insulated container with crushed
    ice and deionized water, stir for 2 minutes
@@ -202,7 +202,7 @@ opening facing downward to prevent rain intrusion.
 5. If outside tolerance, note the offset; sensors with offsets greater
    than 1.0 C should be replaced.
 
-### 9.2 Room-Temperature Inter-Comparison (Collocation)
+### Room-Temperature Inter-Comparison (Collocation)
 
 1. Place all sensors to be deployed together in a shaded, well-mixed
    indoor environment for at least 24 hours
@@ -217,9 +217,9 @@ opening facing downward to prevent rain intrusion.
    [@meier2017].
 
 
-## 10. Deployment {#sec-deployment}
+## Deployment {#sec-deployment}
 
-### 10.1 Site Selection and Documentation
+### Site Selection and Documentation
 
 Select monitoring sites to represent the range of land cover types
 and microclimates relevant to the research question. For UHI studies,
@@ -239,7 +239,7 @@ At each site, record:
 - Sky view factor (estimated or photographed)
 - Sensor serial number and platform type
 
-### 10.2 Mounting
+### Mounting
 
 1. Mount the radiation shield on a pole, post, fence, or structure at
    1.5--2.0 m height. Ensure the shield is not directly above a
@@ -252,7 +252,7 @@ At each site, record:
 5. Record metadata as above.
 
 
-## 11. Data Retrieval
+## Data Retrieval
 
 | Platform    | Retrieval Method                          | Frequency           |
 |:------------|:------------------------------------------|:--------------------|
@@ -264,9 +264,9 @@ After retrieval, archive the raw file immediately. Never modify the
 original.
 
 
-## 12. Data Processing
+## Data Processing
 
-### 12.1 Import and Standardize
+### Import and Standardize
 
 ```{r}
 #| label: import-standardize
@@ -295,7 +295,7 @@ raw <- raw %>%
   mutate(temp_corrected = temp_c - offset)
 ```
 
-### 12.2 Quality Control
+### Quality Control
 
 ```{r}
 #| label: qc-flags
@@ -318,7 +318,7 @@ count(raw, qc_flag)
 clean <- raw %>% filter(qc_flag == "valid")
 ```
 
-### 12.3 Hourly and Daily Summaries
+### Hourly and Daily Summaries
 
 ```{r}
 #| label: summaries
@@ -350,7 +350,7 @@ daily <- hourly %>%
   filter(n_hours >= 18)
 ```
 
-### 12.4 Urban Heat Island Intensity
+### Urban Heat Island Intensity
 
 UHI intensity is typically calculated as the difference between an
 urban site and a rural (or least-developed) reference site [@oke2017]:
@@ -375,7 +375,7 @@ uhi <- hourly %>%
 ```
 
 
-## 13. Quality Control Summary
+## Quality Control Summary
 
 | Check                                | Criterion                        |
 |:--------------------------------------|:---------------------------------|
@@ -387,7 +387,7 @@ uhi <- hourly %>%
 | Spike detection                      | $\geq$10 C change between consecutive readings flagged |
 
 
-## 14. Data Management
+## Data Management
 
 - Raw files archived unmodified: `data/raw/siteID_platform_sensorID.csv`
 - Calibration records: `data/calibration/`
@@ -398,13 +398,13 @@ uhi <- hourly %>%
 - All scripts version-controlled in the project Git repository
 
 
-## 15. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 16. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -415,7 +415,7 @@ uhi <- hourly %>%
 | [F510](SOP-F510-weather-monitoring.qmd) | Weather Monitoring   | Companion: full meteorological context |
 
 
-## 17. Training Record
+## Training Record
 
 Before deploying air temperature sensors independently, personnel
 must:

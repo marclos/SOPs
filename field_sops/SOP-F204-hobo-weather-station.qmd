@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the deployment, programming, data retrieval, and
 maintenance of Onset HOBO pendant and MX-series data loggers used for
@@ -29,7 +29,7 @@ supporting ecological studies, and supplementing manual weather
 observations.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** HOBO Pendant MX2201, MX2202 (temperature/light),
   HOBO MX2301 (temperature/RH), HOBO Pendant UA-002 (temperature/
@@ -43,7 +43,7 @@ observations.
 - **Location:** All EA Program field sites
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -52,7 +52,7 @@ observations.
 | New Students      | Complete training before independent use                |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -76,7 +76,7 @@ observations.
 Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
-## 5. Instrument Specifications
+## Instrument Specifications
 
 | Model         | Parameters          | Range                   | Accuracy            | Logging Memory | Communication |
 |:--------------|:--------------------|:------------------------|:--------------------|:---------------|:--------------|
@@ -88,7 +88,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 *TBD -- confirm which models the EA Program currently owns.*
 
 
-## 6. Equipment and Materials
+## Equipment and Materials
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
@@ -104,9 +104,9 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 | Spare batteries                       | CR2032 (MX pendant) or 3V lithium (varies by model) |
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Pre-Deployment Programming
+### Pre-Deployment Programming
 
 **MX-series (Bluetooth):**
 
@@ -128,7 +128,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 3. Configure the same parameters as above.
 4. Click **Start**.
 
-### 7.2 Deployment
+### Deployment
 
 **Temperature and RH loggers (MX2301 or equivalent):**
 
@@ -162,7 +162,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 3. Verify the logger is recording by checking the LED indicator
    (MX models) or connecting briefly via Bluetooth.
 
-### 7.3 Data Retrieval
+### Data Retrieval
 
 Download data at regular intervals (monthly for most projects;
 quarterly for long-term sites). The logger continues recording during
@@ -179,7 +179,7 @@ download.
 For UA-series loggers, connect via optical USB coupler and use
 HOBOware to read out data.
 
-### 7.4 Logger Retrieval (End of Deployment)
+### Logger Retrieval (End of Deployment)
 
 1. Download all remaining data.
 2. Remove the logger and mounting hardware.
@@ -190,7 +190,7 @@ HOBOware to read out data.
 5. Store loggers in a dry, room-temperature location.
 
 
-## 8. Quality Control
+## Quality Control
 
 - At each download visit, compare the logger temperature reading
   against a handheld thermometer or sling psychrometer. Discrepancies
@@ -207,7 +207,7 @@ HOBOware to read out data.
   position.
 
 
-## 9. References
+## References
 
 - Onset Computer Corporation. *HOBO MX2301 Temperature/RH Logger User
   Manual*. <https://www.onsetcomp.com>
@@ -217,7 +217,7 @@ HOBOware to read out data.
   Meteorological Instruments and Methods of Observation* (WMO-No. 8).
 
 
-## 10. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -228,7 +228,7 @@ HOBOware to read out data.
 | [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub    | Data version control              |
 
 
-## 11. Training Record
+## Training Record
 
 Before deploying HOBO loggers independently, personnel must:
 

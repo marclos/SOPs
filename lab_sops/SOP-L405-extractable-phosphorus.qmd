@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the extraction and colorimetric determination
 of plant-available (extractable) phosphorus in soils. Two extraction
@@ -35,7 +35,7 @@ fertilizer management and helps assess the environmental risk of P loss
 from agricultural and urban soils [@sharpley2003].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Air-dried, sieved (less than 2 mm) mineral soils from
   all EA Program field sites. The Olsen method is the default for
@@ -48,7 +48,7 @@ from agricultural and urban soils [@sharpley2003].
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -58,7 +58,7 @@ from agricultural and urban soils [@sharpley2003].
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -87,7 +87,7 @@ gluconate gel if available. Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -137,9 +137,9 @@ gluconate gel if available. Refer to
 | Deionized water (Type I or II) | From [*SOP-L11*](SOP-L11-milli-q-water.qmd) |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Sample Preparation
+### Sample Preparation
 
 1. Air-dry the soil at room temperature until constant mass
 2. Pass through a 2 mm sieve per
@@ -148,7 +148,7 @@ gluconate gel if available. Refer to
    [SOP-L400](SOP-L400-soil-moisture.qmd) to express results on a
    dry-weight basis
 
-### 6.2 Selecting the Extraction Method
+### Selecting the Extraction Method
 
 | Soil pH    | Recommended Extractant | Reference             |
 |:-----------|:-----------------------|:----------------------|
@@ -169,7 +169,7 @@ it underestimates P in calcareous soils because the acid is neutralized
 by free CaCO~3~ [@kuo1996].
 :::
 
-### 6.3 Olsen Extraction
+### Olsen Extraction
 
 1. Weigh 2.50 g of air-dried, sieved soil into a 125 mL Erlenmeyer
    flask
@@ -184,7 +184,7 @@ by free CaCO~3~ [@kuo1996].
 6. Proceed to colorimetric analysis (Section 6.5) within 24 hours.
    Store extracts at 4 C if analysis is delayed.
 
-### 6.4 Bray-1 Extraction
+### Bray-1 Extraction
 
 1. Weigh 2.00 g of air-dried, sieved soil into a 125 mL Erlenmeyer
    flask
@@ -202,7 +202,7 @@ available P due to re-sorption, while under-extraction will miss
 slowly dissolving forms.
 :::
 
-### 6.5 Colorimetric Determination (Ascorbic Acid/Molybdate Blue)
+### Colorimetric Determination (Ascorbic Acid/Molybdate Blue)
 
 This procedure follows @murphy1962 as adapted by @kuo1996.
 
@@ -227,7 +227,7 @@ spectrophotometer, follow the PhosVer 3 (ascorbic acid) method per
 [SOP-L303](SOP-L303-hach-colorimetric.qmd), Program 490. Prepare
 standards in the same extractant matrix as the samples.
 
-### 6.6 Calibration
+### Calibration
 
 1. Prepare a minimum of five working standards (e.g., 0, 0.1, 0.5,
    1.0, 2.0, 5.0 mg/L P) by diluting the stock standard with the
@@ -238,7 +238,7 @@ standards in the same extractant matrix as the samples.
 4. Plot absorbance versus concentration and fit a linear regression.
    Acceptable $r^2$ is 0.995 or higher.
 
-### 6.7 Calculations
+### Calculations
 
 **Extractable P in soil (mg P / kg dry soil):**
 
@@ -267,9 +267,9 @@ P_{\text{soil}} \; (\text{mg/kg}) = C \times \frac{20}{2.00} \times \frac{100 + 
 $$
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
-### 7.1 Interpretation of Olsen P
+### Interpretation of Olsen P
 
 | Olsen P (mg/kg) | Classification | Agronomic Interpretation               |
 |:-----------------|:---------------|:---------------------------------------|
@@ -282,7 +282,7 @@ $$
 *Thresholds are approximate and crop-dependent [@olsen1954;
 @sharpley2003]. Consult local extension guidelines.*
 
-### 7.2 Interpretation of Bray-1 P
+### Interpretation of Bray-1 P
 
 | Bray-1 P (mg/kg) | Classification | Agronomic Interpretation              |
 |:------------------|:---------------|:--------------------------------------|
@@ -292,7 +292,7 @@ $$
 | 40 -- 80          | High           | No additional P needed                |
 | Greater than 80   | Very high      | Environmental risk                    |
 
-### 7.3 QC Requirements
+### QC Requirements
 
 - Prepare all standards in the same extractant matrix as the samples
   (matrix-matched calibration) to account for background color and
@@ -310,7 +310,7 @@ $$
   each batch; pH drift changes extraction efficiency substantially.
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -329,7 +329,7 @@ polyethylene carboy for EH&S hazardous waste pickup.
 :::
 
 
-## 9. References
+## References
 
 - Bray, R.H. & Kurtz, L.T. (1945). Determination of total, organic,
   and available forms of phosphorus in soils. *Soil Science*, 59(1),
@@ -355,7 +355,7 @@ polyethylene carboy for EH&S hazardous waste pickup.
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Before performing soil extractable P analyses independently, personnel
 must:

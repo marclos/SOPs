@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the bioinformatics workflow for processing amplicon
 sequencing data (16S rRNA, ITS, 18S rRNA) from raw demultiplexed FASTQ
@@ -30,7 +30,7 @@ QIIME 2 as the primary framework with DADA2 as the denoising algorithm
 approach with a more reproducible and sensitive method [@callahan2017].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Processing of Illumina paired-end amplicon sequencing
   data (MiSeq, NextSeq) for 16S, ITS, and 18S marker genes generated
@@ -42,7 +42,7 @@ approach with a more reproducible and sensitive method [@callahan2017].
   QIIME 2 installed; high-performance computing cluster if available
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -51,7 +51,7 @@ approach with a more reproducible and sensitive method [@callahan2017].
 | New Students      | Complete training before independent analysis |
 
 
-## 4. Software Requirements
+## Software Requirements
 
 | Software              | Version (minimum) | Notes                          |
 |:----------------------|:------------------|:-------------------------------|
@@ -72,9 +72,9 @@ conda activate qiime2-2024.2
 ```
 
 
-## 5. Procedure
+## Procedure
 
-### 5.1 Data Organization
+### Data Organization
 
 1. Create a project directory with the following structure:
 
@@ -93,7 +93,7 @@ project_name/
    depth, replicate). Validate the file at
    <https://keemei.qiime2.org/> [@rideout2016].
 
-### 5.2 Import Raw Reads
+### Import Raw Reads
 
 Import demultiplexed paired-end FASTQ files into a QIIME 2 artifact:
 
@@ -117,7 +117,7 @@ Open `demux-summary.qzv` at <https://view.qiime2.org> to inspect
 quality score profiles. Use these plots to determine truncation
 parameters for DADA2 (Section 5.3).
 
-### 5.3 Denoising with DADA2
+### Denoising with DADA2
 
 DADA2 performs quality filtering, chimera removal, and denoising in a
 single step, producing an ASV feature table and representative sequences
@@ -159,7 +159,7 @@ Check the percentage of reads passing each filter step (input, filtered,
 denoised, merged, non-chimeric). A healthy run retains > 60% of input
 reads through the full pipeline.
 
-### 5.4 Taxonomic Classification
+### Taxonomic Classification
 
 Assign taxonomy to ASVs using a pre-trained Naive Bayes classifier.
 Download the appropriate classifier from the QIIME 2 Data Resources
@@ -193,7 +193,7 @@ qiime taxa barplot \
   --o-visualization qiime2/taxa-barplot.qzv
 ```
 
-### 5.5 Phylogenetic Tree Construction
+### Phylogenetic Tree Construction
 
 Build a rooted phylogenetic tree for diversity analyses:
 
@@ -206,7 +206,7 @@ qiime phylogeny align-to-tree-mafft-fasttree \
   --o-rooted-tree qiime2/rooted-tree.qza
 ```
 
-### 5.6 Filtering
+### Filtering
 
 Remove contaminant ASVs identified in negative controls, mitochondrial
 and chloroplast sequences, and low-frequency ASVs:
@@ -229,7 +229,7 @@ qiime feature-table filter-features \
 For decontamination using negative control data, export the feature
 table to R and use the `decontam` package [@davis2018].
 
-### 5.7 Export for R Analysis
+### Export for R Analysis
 
 Export QIIME 2 artifacts for downstream analysis in R with phyloseq
 [@mcmurdie2013]:
@@ -252,7 +252,7 @@ Alternatively, import QIIME 2 artifacts directly into R using the
 `qiime2R` package.
 
 
-## 6. Quality Control
+## Quality Control
 
 - Inspect the DADA2 denoising stats for every run. Flag samples with
   fewer than 1,000 reads after denoising.
@@ -269,13 +269,13 @@ Alternatively, import QIIME 2 artifacts directly into R using the
   [SOP-L801](SOP-L801-rstudio-github.qmd).
 
 
-## 7. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 8. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -287,7 +287,7 @@ Alternatively, import QIIME 2 artifacts directly into R using the
 | [L802](SOP-L802-quality-control.qmd)  | Quality Control and QA    | General QA/QC framework           |
 
 
-## 9. Training Record
+## Training Record
 
 Before running the bioinformatics pipeline independently, personnel
 must:

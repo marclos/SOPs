@@ -19,7 +19,7 @@ revision-history:
     changes: "Added definitions section; expanded discussion of LCS paradigm, long-term sensor drift, and regulatory context"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the assembly, deployment, data retrieval, and
 post-processing of low-cost particulate matter (PM) sensor networks
@@ -40,7 +40,7 @@ exposure studies, and providing near-real-time information during
 wildfire smoke events [@morawska2018].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Outdoor ambient air quality monitoring using EA
   Program Raspberry Pi + PMS5003/PMS5004 sensor units for PM~1~,
@@ -52,7 +52,7 @@ wildfire smoke events [@morawska2018].
   surrounding Inland Empire communities.
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -62,7 +62,7 @@ wildfire smoke events [@morawska2018].
 | New Students      | Complete training before independent deployment         |
 
 
-## 4. Definitions
+## Definitions
 
 - **PM~2.5~:** Particulate matter with aerodynamic diameter less than
   2.5 $\mu$m. PM~2.5~ is a criteria pollutant regulated by the US EPA
@@ -104,7 +104,7 @@ wildfire smoke events [@morawska2018].
   approximately 16 $\mu$g/m$^3$ [@ardondryer2023].
 
 
-## 5. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -130,7 +130,7 @@ wildfire smoke events [@morawska2018].
 - [ ] Sun protection (hat, sunscreen)
 
 
-## 6. Prerequisites
+## Prerequisites
 
 - [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 - Basic familiarity with Raspberry Pi OS (command line, SSH, file
@@ -138,9 +138,9 @@ wildfire smoke events [@morawska2018].
 - Basic familiarity with R for data processing
 
 
-## 7. Background
+## Background
 
-### 7.1 How the Sensors Work
+### How the Sensors Work
 
 The Plantower PMS5003 and PMS5004 are optical particle counters that
 use a laser (680 $\pm$ 10 nm) and a photodiode to detect light
@@ -155,7 +155,7 @@ factory-calibrated against Chinese urban aerosol) and CF\_atm
 concentrations). For ambient monitoring in the US, the CF=1 output is
 used as the starting point for correction [@barkjohn2021].
 
-### 7.2 Known Limitations
+### Known Limitations
 
 - **Relative humidity sensitivity:** At RH >70%, hygroscopic particle
   growth inflates readings. An RH correction term is essential
@@ -174,9 +174,9 @@ used as the starting point for correction [@barkjohn2021].
   reference instrument is needed.
 
 
-## 8. Equipment and Materials
+## Equipment and Materials
 
-### 8.1 Sensor Unit Components
+### Sensor Unit Components
 
 | Item                       | Qty per Unit | Notes                          |
 |:---------------------------|:------------:|:-------------------------------|
@@ -188,7 +188,7 @@ used as the starting point for correction [@barkjohn2021].
 | microSD card (32 GB)       | 1            | Pre-loaded with sensor software|
 | Ethernet or Wi-Fi dongle   | 1            | If Pi Zero (built-in on Pi 3+/4+) |
 
-### 8.2 Field Deployment Supplies
+### Field Deployment Supplies
 
 | Item                       | Notes                                   |
 |:---------------------------|:----------------------------------------|
@@ -199,9 +199,9 @@ used as the starting point for correction [@barkjohn2021].
 | Laptop with SSH client     | For on-site diagnostics                 |
 
 
-## 9. Procedure
+## Procedure
 
-### 9.1 Sensor Assembly and Software Setup
+### Sensor Assembly and Software Setup
 
 1. Flash the microSD card with Raspberry Pi OS Lite.
 2. Install the sensor-reading Python script (maintained in the project
@@ -216,7 +216,7 @@ used as the starting point for correction [@barkjohn2021].
 6. Allow at least 30 seconds of warm-up before trusting data
    [@plantower2016].
 
-### 9.2 Collocation (Pre-Deployment Calibration)
+### Collocation (Pre-Deployment Calibration)
 
 Before field deployment, collocate all sensor units at a single
 location for a minimum of 48 hours:
@@ -232,7 +232,7 @@ location for a minimum of 48 hours:
    CV >15% relative to the group median should be inspected and
    recalibrated or replaced.
 
-### 9.3 Site Selection
+### Site Selection
 
 - Mount sensors 2--4 m above ground level, away from direct emission
   sources (exhaust vents, barbecues, construction).
@@ -241,7 +241,7 @@ location for a minimum of 48 hours:
 - Record GPS coordinates, mounting height, distance to nearest road,
   and land use context.
 
-### 9.4 Deployment
+### Deployment
 
 1. Secure the enclosure at the selected location using zip ties,
    brackets, or straps.
@@ -250,7 +250,7 @@ location for a minimum of 48 hours:
 4. Record the deployment date/time, site ID, sensor serial number,
    and any notes in the field notebook and project metadata file.
 
-### 9.5 Data Retrieval
+### Data Retrieval
 
 Retrieve data at regular intervals (weekly to monthly):
 
@@ -260,7 +260,7 @@ Retrieve data at regular intervals (weekly to monthly):
 3. Archive the raw file immediately; never edit the original.
 4. Check the log for gaps (power outages, sensor freezes).
 
-### 9.6 Sensor Maintenance
+### Sensor Maintenance
 
 - Inspect the inlet for debris, spider webs, or insect nests at each
   data retrieval visit.
@@ -270,7 +270,7 @@ Retrieve data at regular intervals (weekly to monthly):
 - Clean the exterior of the enclosure. Do not open the PMS sensor
   housing.
 
-### 9.7 Decommissioning
+### Decommissioning
 
 1. Power off the unit.
 2. Retrieve the final data file.
@@ -278,9 +278,9 @@ Retrieve data at regular intervals (weekly to monthly):
 4. Leave no trace at the site.
 
 
-## 10. Data Processing and Correction
+## Data Processing and Correction
 
-### 10.1 Overview
+### Overview
 
 Raw PM~2.5~ readings from PMS5003/5004 sensors overestimate FRM/FEM
 concentrations by approximately 40% under typical US ambient
@@ -288,7 +288,7 @@ conditions [@barkjohn2021]. The EPA US-wide correction reduces root
 mean square error from approximately 8 $\mu$g/m$^3$ to
 3 $\mu$g/m$^3$ [@barkjohn2021].
 
-### 10.2 Data Cleaning
+### Data Cleaning
 
 ```{r}
 #| label: data-cleaning
@@ -318,7 +318,7 @@ raw <- raw %>%
   select(-frozen)
 ```
 
-### 10.3 EPA US-Wide Correction (Barkjohn et al., 2021)
+### EPA US-Wide Correction (Barkjohn et al., 2021)
 
 $$
 \text{PM}_{2.5,\text{corrected}} = 0.524 \times \text{PM}_{2.5,\text{cf1}}
@@ -346,14 +346,14 @@ conditions. It underestimates PM~2.5~ during dust-dominated events.
 For dust correction, see @jaffe2023 and @ouimette2026.
 :::
 
-### 10.4 Identifying Updated (Post-2021) PMS5003 Sensors
+### Identifying Updated (Post-2021) PMS5003 Sensors
 
 If your sensors are PMS-U (post-mid-2021), apply the additional
 linear correction from @ardondryer2023 before the EPA correction.
 PMS-U sensors can be identified by a count~0.3~/count~0.5~ ratio
 approximately 3 times lower than PMS-O sensors.
 
-### 10.5 Hourly and Daily Averaging
+### Hourly and Daily Averaging
 
 ```{r}
 #| label: averaging
@@ -384,7 +384,7 @@ daily <- hourly %>%
   filter(n_hours >= 18)
 ```
 
-### 10.6 AQI Calculation
+### AQI Calculation
 
 ```{r}
 #| label: aqi-calculation
@@ -408,19 +408,19 @@ daily <- daily %>%
 ```
 
 
-## 11. Quality Control
+## Quality Control
 
-### 11.1 Pre-Deployment
+### Pre-Deployment
 
 - All sensors pass collocation check (inter-sensor CV <15%).
 - Software logging verified (valid timestamps, all columns populated).
 
-### 11.2 During Deployment
+### During Deployment
 
 - Weekly data check (via SSH or at retrieval) for gaps and anomalies.
 - Inspect enclosure and inlet monthly.
 
-### 11.3 Post-Processing QC Flags
+### Post-Processing QC Flags
 
 | Flag | Condition                                  | Action              |
 |:-----|:-------------------------------------------|:--------------------|
@@ -430,14 +430,14 @@ daily <- daily %>%
 | F4   | Hourly data completeness <75%              | Exclude hour        |
 | F5   | Daily data completeness <75% of hours      | Exclude day         |
 
-### 11.4 Periodic Collocation
+### Periodic Collocation
 
 Re-collocate sensors with a reference instrument (or with each other)
 at least once per year and after any sensor replacement. Document
 drift and update correction factors if needed [@malings2020].
 
 
-## 12. Data Management
+## Data Management
 
 - Archive raw CSV files unmodified in `data/raw/` with the naming
   convention: `siteID_YYYYMMDD_YYYYMMDD_raw.csv`
@@ -447,7 +447,7 @@ drift and update correction factors if needed [@malings2020].
   [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 
-## 13. Reporting
+## Reporting
 
 When reporting LCS data in publications or reports, include
 [@morawska2018]:
@@ -460,13 +460,13 @@ When reporting LCS data in publications or reports, include
 - Known limitations (RH sensitivity, dust underestimation, sensor age)
 
 
-## 14. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 15. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -477,7 +477,7 @@ When reporting LCS data in publications or reports, include
 | [F504](SOP-F504-picarro-field-deployment.qmd) | Picarro GHG Analyzer | Companion field instrument SOP |
 
 
-## 16. Training Record
+## Training Record
 
 Before deploying air quality sensors independently, personnel must:
 

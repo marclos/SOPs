@@ -15,19 +15,19 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes procedures for conducting standardized bird point count surveys. Point counts are the most widely used method for monitoring bird populations and community composition in terrestrial habitats. An observer stands at a fixed point for a defined time period and records all birds detected by sight or sound within a specified radius. This SOP follows protocols compatible with the North American Breeding Bird Survey (BBS) and Partners in Flight (PIF) guidelines to enable comparison with regional and national datasets [@ralph1993; @ralph1995].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Fixed-radius and unlimited-radius bird point count surveys at all EA Program field sites, including the Bernard Field Station, Pomona College campus, restoration areas, and agricultural study sites
 - **Does not apply to:** Area searches, nest monitoring, mist-netting, raptor surveys, nocturnal surveys, or aquatic bird surveys (these require separate protocols)
 - **Location:** All EA Program terrestrial field sites
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                   |
 |:------------------|:-------------------------------------------------|
@@ -37,7 +37,7 @@ This SOP describes procedures for conducting standardized bird point count surve
 | New Students      | Complete training (Section 13) before recording data independently |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -63,7 +63,7 @@ Bird surveys do not typically require a Scientific Collecting Permit as long as 
 A minimum of two people is recommended for early morning surveys. Carry a cell phone and a first aid kit. Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
-## 5. Definitions
+## Definitions
 
 - **Point count:** A survey method in which an observer records all birds detected from a single fixed point during a standardized time period.
 - **Fixed-radius point count:** Detections are recorded only within a specified distance from the observer (e.g., 50 m). Provides density estimates without distance estimation models.
@@ -72,7 +72,7 @@ A minimum of two people is recommended for early morning surveys. Carry a cell p
 - **Breeding Bird Survey (BBS):** A long-running North American monitoring program using roadside point counts; the EA Program protocol is designed to be compatible with BBS methods.
 
 
-## 6. Required Materials
+## Required Materials
 
 | Item                                     | Notes                              |
 |:-----------------------------------------|:-----------------------------------|
@@ -88,7 +88,7 @@ A minimum of two people is recommended for early morning surveys. Carry a cell p
 | Compass                                  | For recording bearing to detections (optional, for distance sampling) |
 
 
-## 7. Estimated Time
+## Estimated Time
 
 | Task                                    | Time                          |
 |:----------------------------------------|:------------------------------|
@@ -98,9 +98,9 @@ A minimum of two people is recommended for early morning surveys. Carry a cell p
 | Full survey (10 points)                 | 2--3 hours (must finish within 4 hours of sunrise) |
 
 
-## 8. Procedure
+## Procedure
 
-### 8.1 Survey Design
+### Survey Design
 
 1. Establish point count locations before the first survey:
    - Points must be at least 150 m apart (250 m preferred) to minimize double-counting of the same individuals [@ralph1995]
@@ -109,14 +109,14 @@ A minimum of two people is recommended for early morning surveys. Carry a cell p
 2. Record the habitat type at each point (e.g., coastal sage scrub, riparian woodland, grassland, developed)
 3. Determine whether fixed-radius (50 m) or unlimited-radius counts will be used. Fixed-radius counts are simpler and require less observer experience. Unlimited-radius counts with distance estimation allow more sophisticated density modeling.
 
-### 8.2 Survey Timing
+### Survey Timing
 
 - Conduct surveys during the breeding season (mid-March through mid-June in southern California) when singing activity is highest
 - Begin surveys at local sunrise and complete all counts within 4 hours of sunrise. Detection rates decline substantially after this window.
 - Avoid surveying during rain, sustained wind above 20 mph, or dense fog, as these conditions reduce detectability and violate the assumption of constant detection probability across surveys
 - Record weather conditions (wind speed on the Beaufort scale, cloud cover, temperature, precipitation) at the start and end of each survey
 
-### 8.3 Conducting a Point Count
+### Conducting a Point Count
 
 1. Arrive at the point quietly. Wait 1--2 minutes for birds disturbed by your approach to resume normal activity.
 2. Start the timer. The standard count duration is:
@@ -139,17 +139,17 @@ A minimum of two people is recommended for early morning surveys. Carry a cell p
 The majority of detections during breeding season are auditory (songs and calls). Invest time learning bird songs before the survey season. The Merlin Bird ID app (Cornell Lab of Ornithology) can assist with real-time song identification in the field, but do not rely on it exclusively.
 :::
 
-### 8.4 Between Points
+### Between Points
 
 1. Walk to the next point. Record any notable observations along the way as incidental sightings (separate from point count data).
 2. Allow a 1--2 minute settling period before starting the next count.
 
-### 8.5 Repeat Visits
+### Repeat Visits
 
 For occupancy modeling or trend analysis, repeat the survey at each point at least 2--3 times during the breeding season, spaced at least 10 days apart. Record the date of each visit.
 
 
-## 9. Quality Control
+## Quality Control
 
 - Each observer should demonstrate proficiency by passing a field identification test (greater than 90% correct identification of common species by sound and sight) before conducting surveys independently
 - On 10% of surveys, a second observer independently records detections at the same point to assess inter-observer agreement
@@ -158,7 +158,7 @@ For occupancy modeling or trend analysis, repeat the survey at each point at lea
 - If an audio recorder is used, archive recordings for at least one season to allow verification
 
 
-## 10. Data Management
+## Data Management
 
 1. Enter field data into the project spreadsheet or database within 48 hours
 2. Each row represents one detection: point ID, date, time interval, species code, count, detection type, distance, flyover flag
@@ -168,7 +168,7 @@ For occupancy modeling or trend analysis, repeat the survey at each point at lea
 6. For analyses requiring detection probability correction, use the `unmarked` R package [@fiske2011] for distance sampling or N-mixture models
 
 
-## 11. References
+## References
 
 See the project-level `references.bib` for full citations. Key references: @ralph1993, @ralph1995, @bibby2000, @fiske2011.
 
@@ -176,7 +176,7 @@ See the project-level `references.bib` for full citations. Key references: @ralp
 :::
 
 
-## 12. Training Record
+## Training Record
 
 Before conducting bird point counts independently, personnel must:
 

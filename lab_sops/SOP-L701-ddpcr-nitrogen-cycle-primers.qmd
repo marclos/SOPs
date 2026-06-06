@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the selection, design, and validation of
 primers and probes targeting functional genes of the nitrogen cycle for
@@ -31,7 +31,7 @@ in silico evaluation, and bench validation on the Bio-Rad QX200 ddPCR
 system [@hindson2011; @biorad_qx200_2024].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Design and selection of primers and hydrolysis probes
   (TaqMan) or EvaGreen-based assays for quantifying nitrogen cycle
@@ -43,7 +43,7 @@ system [@hindson2011; @biorad_qx200_2024].
   Lab
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -52,7 +52,7 @@ system [@hindson2011; @biorad_qx200_2024].
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -79,7 +79,7 @@ For chemical splash, flush with water for 15 minutes. Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -108,9 +108,9 @@ For chemical splash, flush with water for 15 minutes. Refer to
 | Positive control DNA (gBlock or plasmid)  | IDT or equivalent | --20 C           |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Target Gene Selection
+### Target Gene Selection
 
 The nitrogen cycle encompasses multiple functional transformations. The
 table below lists the primary target genes, the enzymatic step they
@@ -127,7 +127,7 @@ represent, and key references for established primer sets
 | *nifH*  | Nitrogenase reductase         | Nitrogen fixation (N~2~ to NH~3~)      | Diazotrophs         |
 | *nrfA*  | Cytochrome c nitrite reductase| DNRA (NO~2~^-^ to NH~4~^+^)           | DNRA organisms      |
 
-### 6.2 Literature-Based Primer Selection
+### Literature-Based Primer Selection
 
 1. Search the published literature for validated primer sets targeting
    each gene of interest. Prioritized references include
@@ -154,7 +154,7 @@ alternatives optimized for ddPCR. Consult @biorad_qx200_2024 for
 amplicon length recommendations.
 :::
 
-### 6.3 In Silico Primer Evaluation
+### In Silico Primer Evaluation
 
 1. Check primer specificity using NCBI Primer-BLAST
    (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) against the nr/nt
@@ -175,7 +175,7 @@ amplicon length recommendations.
    (quenches FAM fluorescence), and a length of 15--30 bases
    [@biorad_qx200_2024]
 
-### 6.4 Recommended Primer Sets
+### Recommended Primer Sets
 
 The following table summarizes commonly used primer sets for nitrogen
 cycle genes. Confirm suitability for your specific sample type and ddPCR
@@ -204,7 +204,7 @@ redesign.
 validated in the lab. Short-amplicon redesigns for amoA, nirS, nosZ
 Clade II, and nifH are in progress.*
 
-### 6.5 Primer and Probe Ordering
+### Primer and Probe Ordering
 
 1. Order desalted primers at 25 nmol scale from IDT (Integrated DNA
    Technologies) or equivalent supplier
@@ -218,7 +218,7 @@ Clade II, and nifH are in progress.*
 5. Prepare 10 uM working stocks by diluting 1:10 in nuclease-free water.
    Store at --20 C.
 
-### 6.6 ddPCR Thermal Cycling Optimization
+### ddPCR Thermal Cycling Optimization
 
 1. Set up a temperature gradient experiment on the Bio-Rad C1000 Touch
    to determine the optimal annealing temperature for each primer set
@@ -250,7 +250,7 @@ concentration from 900 nM to 450 nM. Excessive rain suggests non-specific
 amplification or suboptimal primer binding [@lievens2016].
 :::
 
-### 6.7 Assay Validation
+### Assay Validation
 
 1. **Specificity:** Run no-template controls (NTC) and extraction blanks
    from [SOP-L700](SOP-L700-dna-extraction.qmd) to confirm the absence of
@@ -269,7 +269,7 @@ amplification or suboptimal primer binding [@lievens2016].
 5. *TBD -- establish acceptance criteria for each gene target based on
    validation results*
 
-### 6.8 Primer and Probe Storage
+### Primer and Probe Storage
 
 1. Store primer and probe stocks at --20 C in the designated "Primers"
    cryobox
@@ -282,7 +282,7 @@ amplification or suboptimal primer binding [@lievens2016].
    and date resuspended
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Every ddPCR run must include: NTC (minimum 2 wells), extraction blank
   (from SOP-L700), and positive control gBlock at a known concentration
@@ -298,7 +298,7 @@ amplification or suboptimal primer binding [@lievens2016].
   after validation*
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                          | Container                 | Disposal Method                     |
 |:------------------------------------|:--------------------------|:------------------------------------|
@@ -308,13 +308,13 @@ amplification or suboptimal primer binding [@lievens2016].
 | Pipette tips (pre- and post-PCR)    | Standard trash            | Non-hazardous                       |
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Before performing this procedure independently, personnel must:
 

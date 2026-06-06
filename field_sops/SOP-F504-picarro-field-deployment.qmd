@@ -23,7 +23,7 @@ revision-history:
     changes: "Converted from LaTeX to QMD format; added citations"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes how to install Eosense eosAC soil gas flux
 chambers, connect them to the eosMX-P multiplexer, and operate the
@@ -38,7 +38,7 @@ measurements from strawberry fields in Northern California and has been
 modified as new projects have come on line.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Field deployment of the Picarro G2508 CRDS analyzer
   coupled with Eosense eosAC dynamic soil flux chambers and the eosMX-P
@@ -51,7 +51,7 @@ modified as new projects have come on line.
   power source
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -66,7 +66,7 @@ the instrument early on and developed early versions of this SOP.
 Improvements were made by Allison Joseph and Virginia Paschal.
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -103,7 +103,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
 field emergency response.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Instruments
 
@@ -154,9 +154,9 @@ field emergency response.
 | Eosense      | 888-352-8313 (toll-free); support@eosense.com (Eastern Time Zone) |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Sampling Design
+### Sampling Design
 
 1. Locate the Picarro analyzer, multiplexer, and pump at the base
    station. Choose a level, shaded location if possible.
@@ -167,7 +167,7 @@ field emergency response.
 4. If a generator is used, place it at least 100 feet downwind of the
    chambers to avoid contaminating flux measurements with exhaust
 
-### 6.2 Hardware Setup
+### Hardware Setup
 
 1. Connect the recirculation pump to the analyzer VACUUM port using the
    corrugated metal hose. Use new Swagelok washers each time.
@@ -200,14 +200,14 @@ the vacuum while the analyzer is operating. Doing so can damage the
 instrument.
 :::
 
-### 6.3 Installing Chamber Rings
+### Installing Chamber Rings
 
 Chamber ring installation varies based on experimental design.
 Install rings in advance of the measurement day to minimize soil
 disturbance during data collection. *TBD -- add project-specific ring
 installation protocols as needed.*
 
-### 6.4 Picarro Startup
+### Picarro Startup
 
 1. Ensure all instruments are off and turn on the power strip
 2. Turn on the recirculation pump first (no wait time required)
@@ -220,7 +220,7 @@ installation protocols as needed.*
    approaches 45 C, shut down or use a fan to cool the air around the
    Picarro.
 
-### 6.5 Placing Chambers
+### Placing Chambers
 
 1. While the Picarro is warming up, connect all tubing and cables.
    Route tubing along the bed surface; do not let tubes fall into
@@ -230,7 +230,7 @@ installation protocols as needed.*
 3. After all chambers have opened, perform a second check for foliage
    or debris that might obstruct the chamber seal.
 
-### 6.6 Data Collection
+### Data Collection
 
 Once the Picarro alarm indicator is green, the system is ready.
 
@@ -261,7 +261,7 @@ Once the Picarro alarm indicator is green, the system is ready.
 8. Aim for at least 3 complete measurement cycles. For irrigation
    studies, target 2 cycles before irrigation, 2 during, and 2 after.
 
-### 6.7 Shutdown
+### Shutdown
 
 1. After at least two post-irrigation cycles (or at the end of the
    measurement period), begin retrieving chambers after each one
@@ -287,14 +287,14 @@ Once the Picarro alarm indicator is green, the system is ready.
    d. Power strip
 
 
-## 7. Calibration
+## Calibration
 
 The Picarro G2508 analyzer calibration is intended to be performed
 infrequently [@picarro_g2508]. The procedure requires three calibration
 standards per gas species (two points define the calibration line and a
 third intermediate point is used for verification).
 
-### 7.1 Calibration Procedure
+### Calibration Procedure
 
 1. Select calibration standards that span the representative range of
    concentrations the analyzer will typically measure. A concentration
@@ -318,9 +318,9 @@ calibration workflow. Contact Karrin Alstad at Picarro
 :::
 
 
-## 8. Data Export and Analysis
+## Data Export and Analysis
 
-### 8.1 Using eosAnalyze-AC
+### Using eosAnalyze-AC
 
 1. On the Picarro desktop, open the "eosAnalyze-AC" program. If it is
    not on the desktop, navigate to Start Menu and search
@@ -343,7 +343,7 @@ calibration workflow. Contact Karrin Alstad at Picarro
    analysis on another computer. The files are compatible with Excel or
    R [@rcoreteam2024].
 
-### 8.2 Troubleshooting Data Export
+### Troubleshooting Data Export
 
 If data does not load or you see a "No measurements detected" message:
 
@@ -358,7 +358,7 @@ If data does not load or you see a "No measurements detected" message:
    where JFAADS2048 is the instrument serial number, followed by the
    date and time the file was created in 24-hour format.
 
-### 8.3 Flux Calculation
+### Flux Calculation
 
 Soil gas fluxes are calculated from the rate of change of gas
 concentration within the chamber headspace over the closure period. The
@@ -386,7 +386,7 @@ whether "dead band range" and "chamber offset" in the data processor
 options need to be set for each deployment.*
 
 
-## 9. Quality Control
+## Quality Control
 
 - Verify atmospheric background concentrations before starting each
   measurement cycle (see table in Section 6.6)
@@ -415,7 +415,7 @@ options need to be set for each deployment.*
   thresholds, maximum allowable dead band)*
 
 
-## 10. Waste Disposal
+## Waste Disposal
 
 | Waste Type                | Disposal Method                          |
 |:--------------------------|:-----------------------------------------|
@@ -424,7 +424,7 @@ options need to be set for each deployment.*
 | Damaged Teflon tubing     | Standard trash (non-hazardous)           |
 
 
-## 11. Training Record
+## Training Record
 
 Before deploying this instrument independently, personnel must:
 

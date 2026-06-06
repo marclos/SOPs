@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release -- instrument-focused SOP separated from SOP-L700"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the operation, calibration, and maintenance
 of the Invitrogen Qubit 4 Fluorometer. The Qubit uses fluorescent dyes
@@ -30,7 +30,7 @@ workflow, see
 [SOP-L700 DNA Extraction](SOP-L700-dna-extraction.qmd).
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All use of the Qubit 4 Fluorometer in the EA Program
   laboratory, including dsDNA Broad Range (BR), dsDNA High Sensitivity
@@ -42,7 +42,7 @@ workflow, see
 - **Location:** Instrument bench, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -52,7 +52,7 @@ workflow, see
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -76,7 +76,7 @@ consult the SDS. For biological spills, clean per
 [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -101,9 +101,9 @@ inaccurate readings.
 :::
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Selecting the Assay
+### Selecting the Assay
 
 Choose the assay based on expected concentration:
 
@@ -114,7 +114,7 @@ Choose the assay based on expected concentration:
 | RNA BR / HS   | See kit documentation    | RNA quantification              |
 | Protein       | See kit documentation    | Protein quantification          |
 
-### 6.2 Preparing the Working Solution
+### Preparing the Working Solution
 
 1. Calculate the volume of working solution needed: 200 uL per assay
    tube (all samples plus 2 standards)
@@ -128,7 +128,7 @@ Prepare the working solution fresh for each session. Do not store
 diluted working solution.
 :::
 
-### 6.3 Preparing Standards
+### Preparing Standards
 
 1. Label two Qubit assay tubes: **Std 1** and **Std 2**
 2. Add 190 uL of working solution to each tube
@@ -136,7 +136,7 @@ diluted working solution.
    to the second tube
 4. Vortex each tube briefly (2--3 seconds)
 
-### 6.4 Preparing Samples
+### Preparing Samples
 
 1. Label one Qubit assay tube per sample
 2. Add 198 uL of working solution to each tube
@@ -151,14 +151,14 @@ accordingly). Using 2 uL of sample minimizes consumption of precious
 extracts.
 :::
 
-### 6.5 Incubation
+### Incubation
 
 1. Incubate all tubes (standards and samples) at room temperature for
    2 minutes
 2. Do not incubate for longer than 30 minutes; fluorescence signal
    decays over time
 
-### 6.6 Calibration
+### Calibration
 
 1. On the Qubit home screen, select the appropriate assay (e.g.,
    **dsDNA Broad Range**)
@@ -168,7 +168,7 @@ extracts.
 5. Verify that the calibration is accepted (green checkmark). If it
    fails, prepare fresh standards and repeat.
 
-### 6.7 Reading Samples
+### Reading Samples
 
 1. Tap **Run Samples**
 2. Set the sample volume to match the volume of sample added (e.g.,
@@ -179,14 +179,14 @@ extracts.
    instrument)
 6. Repeat for all samples
 
-### 6.8 Data Export
+### Data Export
 
 1. Export results via USB or Wi-Fi to the designated project folder
 2. Use a consistent file-naming convention:
    `YYYY-MM-DD_Qubit_ProjectName.csv`
 3. Record results in the lab notebook and/or project data sheet
 
-### 6.9 Shutdown and Daily Maintenance
+### Shutdown and Daily Maintenance
 
 1. Remove all tubes from the instrument
 2. Wipe the sample chamber with a lint-free tissue if any liquid was
@@ -195,7 +195,7 @@ extracts.
 4. Dispose of used assay tubes (see Section 8)
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Run fresh standards at the beginning of each session; do not rely on
   a previous calibration
@@ -213,7 +213,7 @@ extracts.
 of known concentration.*
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -222,7 +222,7 @@ of known concentration.*
 | Pipette tips                  | Standard trash (or biohazard if samples are hazardous) |
 
 
-## 9. References
+## References
 
 - Invitrogen. *Qubit 4 Fluorometer User Guide*. Thermo Fisher
   Scientific, Waltham, MA.
@@ -233,7 +233,7 @@ of known concentration.*
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Before using the Qubit independently, personnel must:
 

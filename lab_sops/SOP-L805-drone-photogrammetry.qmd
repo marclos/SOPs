@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the post-processing workflow for aerial imagery
 collected by uncrewed aerial systems (UAS/drones). It covers image
@@ -27,7 +27,7 @@ surface models, and point clouds), ground control point integration,
 accuracy assessment, and data archiving [@anderson2019; @iglhaut2019].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Photogrammetric processing of RGB, multispectral,
   and thermal drone imagery collected for EA Program research
@@ -39,7 +39,7 @@ accuracy assessment, and data archiving [@anderson2019; @iglhaut2019].
   workstations
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -49,7 +49,7 @@ accuracy assessment, and data archiving [@anderson2019; @iglhaut2019].
 | Data Reviewer     | Verify accuracy metrics before outputs are used in analysis |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -64,7 +64,7 @@ For field-related hazards during drone operations and GCP placement,
 refer to [SOP-F001 Field Safety](../field_sops/SOP-F001-field-safety.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Software
 
@@ -93,9 +93,9 @@ refer to [SOP-F001 Field Safety](../field_sops/SOP-F001-field-safety.qmd).
 | Custom multispectral rig    | MicaSense RedEdge-P  | 5-band multispectral     |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Image Organization
+### Image Organization
 
 Before processing, organize raw imagery following a consistent
 directory structure:
@@ -153,7 +153,7 @@ cat(sprintf("Date range: %s to %s\n",
             max(exif_data$DateTimeOriginal)))
 ```
 
-### 6.2 Ground Control Points (GCPs)
+### Ground Control Points (GCPs)
 
 GCPs are surveyed reference points used to improve the geometric
 accuracy of photogrammetric outputs.
@@ -175,7 +175,7 @@ GCP02,-117.7118,34.0971,401.5,EPSG:4326
    Reserve 2 or more as independent check points for accuracy
    assessment
 
-### 6.3 Photogrammetric Processing (Agisoft Metashape)
+### Photogrammetric Processing (Agisoft Metashape)
 
 The following workflow applies to Agisoft Metashape Professional.
 Adapt parameters for your specific project needs.
@@ -228,7 +228,7 @@ lab workstation rather than a laptop. Expect processing times of
 several hours for dense cloud generation at High quality.
 :::
 
-### 6.4 OpenDroneMap (Alternative Workflow)
+### OpenDroneMap (Alternative Workflow)
 
 For projects using the open-source pipeline:
 
@@ -247,7 +247,7 @@ docker run -ti --rm \
   --gcp /datasets/gcp/gcp_list.txt
 ```
 
-### 6.5 Accuracy Assessment
+### Accuracy Assessment
 
 Evaluate positional accuracy using the reserved check points:
 
@@ -287,7 +287,7 @@ Typical targets for environmental applications: horizontal RMSE
 less than 2 times the ground sampling distance (GSD); vertical RMSE
 less than 3 times the GSD [@james2017].
 
-### 6.6 Multispectral Processing
+### Multispectral Processing
 
 For multispectral imagery (e.g., MicaSense RedEdge):
 
@@ -318,7 +318,7 @@ writeRaster(ndvi, "drone/processed/orthomosaic/ndvi_2026-05-21.tif",
 ```
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Photo alignment: at least 90% of images must align successfully
 - Reprojection error: mean below 1.0 pixel after GCP optimization
@@ -329,18 +329,18 @@ writeRaster(ndvi, "drone/processed/orthomosaic/ndvi_2026-05-21.tif",
   headers and correct extent
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 Not applicable (computational procedure).
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Training is documented in the EA Program training log. Before
 processing drone imagery independently, personnel must:

@@ -15,19 +15,19 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the determination of soil microbial biomass carbon (MBC) using the chloroform fumigation-extraction (CFE) method. Chloroform vapor lyses microbial cells, releasing intracellular carbon that is then extracted with 0.5 M K~2~SO~4~ and quantified as dissolved organic carbon (DOC).
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Field-moist soil samples collected per SOP-F02 for microbial biomass assessment
 - **Does not apply to:** Air-dried or frozen soils (unless pre-validated for this method); microbial biomass nitrogen (requires additional analytical steps)
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -36,7 +36,7 @@ This SOP describes the determination of soil microbial biomass carbon (MBC) usin
 | New Students      | Complete training and safety orientation before use     |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-danger}
 ### Critical Safety Warning
@@ -61,7 +61,7 @@ Chloroform (CHCl~3~) is a volatile, toxic solvent and a suspected carcinogen. Al
 In case of chloroform spill, refer to the SDS and [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd). Evacuate the area if spill is large; ventilate the space and notify the supervisor.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -90,15 +90,15 @@ In case of chloroform spill, refer to the SDS and [SOP-L003 Hazardous Materials 
 | Sample vials                  | For filtered extracts, acid-washed          |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Preparation
+### Preparation
 
 1. Prepare 0.5 M K~2~SO~4~ by dissolving 87.1 g K~2~SO~4~ per liter of deionized water
 2. Pre-combust glass fiber filters at 450 C for 4 hours and store in a clean container
 3. Determine the gravimetric moisture content of a separate subsample (dry at 105 C for 24 hours) so results can be expressed on a dry-weight basis
 
-### 6.2 Fumigation
+### Fumigation
 
 1. Weigh two paired subsamples of 15 g field-moist soil into labeled extraction bottles
 2. Place one set (fumigated) into the vacuum desiccator inside the fume hood
@@ -107,7 +107,7 @@ In case of chloroform spill, refer to the SDS and [SOP-L003 Hazardous Materials 
 5. Close the stopcock and incubate in the dark at room temperature (approximately 25 C) for 24 hours
 6. The second set (unfumigated controls) is extracted immediately (proceed to 6.3)
 
-### 6.3 Extraction
+### Extraction
 
 1. After 24 hours, release the vacuum in the fume hood and remove the chloroform beaker
 2. Evacuate the desiccator repeatedly (3--5 times) to remove residual chloroform vapor from the soil
@@ -117,12 +117,12 @@ In case of chloroform spill, refer to the SDS and [SOP-L003 Hazardous Materials 
 6. Filter the supernatant through a pre-combusted 0.45 um glass fiber filter into a clean sample vial
 7. Store filtered extracts at 4 C if not analyzed immediately (analyze within 48 hours)
 
-### 6.4 DOC Analysis
+### DOC Analysis
 
 1. Analyze filtered extracts for dissolved organic carbon using the Shimadzu TOC-L (see SOP-L06) or equivalent TOC analyzer
 2. Run 0.5 M K~2~SO~4~ blanks alongside samples
 
-### 6.5 Calculation
+### Calculation
 
 Microbial biomass carbon is calculated as:
 
@@ -141,7 +141,7 @@ The unfumigated extract DOC value represents the background dissolved organic ca
 :::
 
 
-## 7. Quality Control
+## Quality Control
 
 - Run analytical triplicates for at least 10% of samples
 - Include a reagent blank (0.5 M K~2~SO~4~ only, no soil) in each batch
@@ -149,7 +149,7 @@ The unfumigated extract DOC value represents the background dissolved organic ca
 - Verify that the coefficient of variation among replicates is less than 15%
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                   | Container              | Disposal Method               |
 |:-----------------------------|:-----------------------|:------------------------------|
@@ -159,14 +159,14 @@ The unfumigated extract DOC value represents the background dissolved organic ca
 | Used glass fiber filters     | Standard trash         | Standard trash                |
 
 
-## 9. References
+## References
 
 - Vance, E.D., Brookes, P.C., & Jenkinson, D.S. (1987). An extraction method for measuring soil microbial biomass C. *Soil Biology and Biochemistry*, 19(6), 703--707.
 - Joergensen, R.G. (1996). The fumigation-extraction method to estimate soil microbial biomass: calibration of the k~C~ value. *Soil Biology and Biochemistry*, 28(1), 25--31.
 - FAO. (2024). *Standard operating procedure for soil microbial biomass (carbon): chloroform fumigation-extraction method*. Rome.
 
 
-## 10. Training Record
+## Training Record
 
 Before performing this procedure independently, personnel must:
 

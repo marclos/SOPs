@@ -15,19 +15,19 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes procedures for collecting benthic macroinvertebrate (BMI) samples from wadeable streams. BMI communities are widely used indicators of water quality and biological integrity because different taxa have varying tolerances to pollution, habitat degradation, and hydrologic alteration. This SOP follows the California Surface Water Ambient Monitoring Program (SWAMP) protocols to enable comparison with statewide bioassessment datasets [@ode2016].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** BMI sampling in wadeable streams (depth less than 1 m, velocity allowing safe wading) at all EA Program study sites
 - **Does not apply to:** Non-wadeable rivers or lakes (require different sampling gear); estuarine or marine macroinvertebrates; terrestrial invertebrates; meiofauna (organisms passing through a 500 um sieve)
 - **Location:** All EA Program stream sites
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                   |
 |:------------------|:-------------------------------------------------|
@@ -36,7 +36,7 @@ This SOP describes procedures for collecting benthic macroinvertebrate (BMI) sam
 | New Students      | Complete training before independent sampling    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -67,7 +67,7 @@ Decontaminate all equipment (nets, waders, buckets) between sites to prevent tra
 A minimum of two people must be present for in-stream work. Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
-## 5. Definitions
+## Definitions
 
 - **Benthic macroinvertebrate (BMI):** An invertebrate organism living on or in the stream bottom substrate that is retained by a 500 um mesh sieve. Includes aquatic insects, crustaceans, mollusks, worms, and other taxa.
 - **Riffle:** A shallow stream section with fast, turbulent flow over coarse substrate. The primary habitat sampled for BMI in wadeable streams.
@@ -76,7 +76,7 @@ A minimum of two people must be present for in-stream work. Refer to [SOP-F001 F
 - **D-frame kick net:** A D-shaped net with 500 um mesh mounted on a frame, used for dislodging and capturing BMI from the streambed.
 
 
-## 6. Required Materials
+## Required Materials
 
 | Item                                     | Notes                              |
 |:-----------------------------------------|:-----------------------------------|
@@ -96,7 +96,7 @@ A minimum of two people must be present for in-stream work. Refer to [SOP-F001 F
 | Cooler                                   | For transporting preserved samples |
 
 
-## 7. Estimated Time
+## Estimated Time
 
 | Task                                    | Time                          |
 |:----------------------------------------|:------------------------------|
@@ -106,20 +106,20 @@ A minimum of two people must be present for in-stream work. Refer to [SOP-F001 F
 | Decontamination                         | 10--15 minutes                |
 
 
-## 8. Procedure
+## Procedure
 
-### 8.1 Reach Delineation
+### Reach Delineation
 
 1. Identify the downstream boundary of the reach at the most downstream riffle or pool tail
 2. Lay out the measuring tape upstream for 150 m (SWAMP standard reach length; adjust proportionally for streams narrower than 2 m or wider than 10 m per SWAMP guidance)
 3. Record GPS coordinates at the downstream and upstream boundaries
 4. Photograph the reach from the downstream end looking upstream
 
-### 8.2 Habitat Assessment
+### Habitat Assessment
 
 Before disturbing the streambed for BMI collection, complete the physical habitat assessment per [SOP-F304](SOP-F304-stream-physical-habitat.qmd) if required by the project design. If habitat and BMI are collected on the same visit, always complete habitat measurements first (working upstream) before BMI sampling.
 
-### 8.3 Targeted Riffle Composite Collection (SWAMP Method)
+### Targeted Riffle Composite Collection (SWAMP Method)
 
 The SWAMP TRC method collects BMI from riffle habitats throughout the reach, compositing all kicks into a single sample.
 
@@ -138,7 +138,7 @@ The SWAMP TRC method collects BMI from riffle habitats throughout the reach, com
 Sampling must proceed from downstream to upstream to avoid disturbing habitats before they are sampled. Never walk through a riffle before sampling it.
 :::
 
-### 8.4 Field Processing
+### Field Processing
 
 1. Pour the composite sample through the 500 um sieve
 2. Rinse the net and bucket thoroughly into the sieve to recover all organisms
@@ -147,11 +147,11 @@ Sampling must proceed from downstream to upstream to avoid disturbing habitats b
 5. Seal the jar tightly. Invert gently to mix.
 6. Label the jar with: site ID, date, "BMI-TRC," collector initials. Place a second label (pencil on waterproof paper) inside the jar.
 
-### 8.5 Non-Riffle Habitats (Optional)
+### Non-Riffle Habitats (Optional)
 
 If the project requires sampling pools, runs, or other habitats in addition to riffles, collect these as separate samples (not composited with the TRC). Label accordingly (e.g., "BMI-POOL").
 
-### 8.6 Field Data Sheet
+### Field Data Sheet
 
 Record the following:
 
@@ -171,7 +171,7 @@ Record the following:
 | Notes                    | Unusual conditions, disturbances    |
 
 
-## 9. Laboratory Processing
+## Laboratory Processing
 
 Laboratory identification and enumeration of BMI are typically performed by a contracted taxonomic laboratory or by trained students under PI supervision. The general workflow:
 
@@ -188,26 +188,26 @@ If data will be submitted to the California Environmental Data Exchange Network 
 :::
 
 
-## 10. Quality Control
+## Quality Control
 
-### 10.1 Field QC
+### Field QC
 
 - Record the number of kicks and their distribution across riffles on the data sheet
 - If fewer than 8 kicks are possible (limited riffle habitat), record the actual number and the reason
 - Take one field blank per sampling event: rinse the net into a clean jar with ethanol; this documents any organisms retained in the net from the decontamination process
 
-### 10.2 Lab QC
+### Lab QC
 
 - Re-sort 10% of processed samples to estimate sorting efficiency (target: greater than 90% removal of organisms from the sample)
 - Have a second taxonomist verify identification of 10% of specimens
 - Report QC results with the final dataset
 
-### 10.3 Metric Calculation
+### Metric Calculation
 
 Calculate the California Stream Condition Index (CSCI) if sufficient data are available. CSCI integrates observed vs. expected taxa composition (O/E) and a predictive multi-metric index (pMMI) into a single biological condition score [@mazor2016].
 
 
-## 11. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -216,7 +216,7 @@ Calculate the California Stream Condition Index (CSCI) if sufficient data are av
 | Used gloves and paper towels  | Regular trash                            |
 
 
-## 12. References
+## References
 
 See the project-level `references.bib` for full citations. Key references: @ode2016, @barbour1999, @mazor2016, @merritt2019, @thorp2015.
 
@@ -224,7 +224,7 @@ See the project-level `references.bib` for full citations. Key references: @ode2
 :::
 
 
-## 13. Training Record
+## Training Record
 
 Before collecting BMI samples independently, personnel must:
 

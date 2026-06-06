@@ -24,7 +24,7 @@ revision-history:
     changes: "Converted from LaTeX to Quarto"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the determination of soil particle size
 distribution using the hydrometer method (ASTM D422). Soil texture
@@ -39,7 +39,7 @@ For a rapid field estimate of texture without laboratory equipment, see
 [SOP-F401 Texture by Feel](../field_sops/SOP-F401-soil-texture-by-feel.qmd).
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Mineral soils with less than approximately 20% coarse
   fragments (greater than 2 mm). Soils with high organic matter or
@@ -50,7 +50,7 @@ For a rapid field estimate of texture without laboratory equipment, see
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -60,7 +60,7 @@ For a rapid field estimate of texture without laboratory equipment, see
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -88,7 +88,7 @@ For HMP powder inhalation, move to fresh air. Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -119,7 +119,7 @@ For HMP powder inhalation, move to fresh air. Refer to
 | Distilled or deionized water  | From [*SOP-L11*](SOP-L11-milli-q-water.qmd) |
 
 
-## 6. Procedure
+## Procedure
 
 The analysis spans multiple lab sessions. Plan accordingly:
 
@@ -131,7 +131,7 @@ The analysis spans multiple lab sessions. Plan accordingly:
 | 4       | Conduct hydrometer readings                       | 24+ hours (intermittent) |
 | 5       | Recover sand on No. 200 sieve; complete data entry | 1--2 hours   |
 
-### 6.1 Air-Drying the Soil
+### Air-Drying the Soil
 
 1. Spread approximately 200 g of field-moist soil in a labeled tin or
    beaker
@@ -139,7 +139,7 @@ The analysis spans multiple lab sessions. Plan accordingly:
    wet soils may require several days.
 3. Break up large clods periodically to promote even drying
 
-### 6.2 Sieving Through the No. 10 Sieve
+### Sieving Through the No. 10 Sieve
 
 Soil is defined as particles less than 2 mm. Gravel must be removed
 before analysis but quantified.
@@ -158,7 +158,7 @@ $$
 \text{Percent passing No. 10} = \frac{M_{\text{passed}}}{M_{\text{total}}} \times 100
 $$
 
-### 6.3 Determining Hygroscopic Moisture Content
+### Determining Hygroscopic Moisture Content
 
 Air-dried soil still contains hygroscopic water adsorbed to clay
 surfaces, salts, and organic matter. This must be measured and corrected
@@ -182,7 +182,7 @@ components also release volatiles over a range of temperatures. The key
 is to specify and consistently use the same temperature.
 :::
 
-### 6.4 Calculating Oven-Dry Equivalent Mass ($DW_e$)
+### Calculating Oven-Dry Equivalent Mass ($DW_e$)
 
 The target oven-dry equivalent mass for the hydrometer test is 50 g
 for fine-textured soils or 100 g for coarse-textured soils (greater
@@ -197,7 +197,7 @@ $$
 
 where $DW_e$ = 50 g or 100 g.
 
-### 6.5 Pre-Treatment (If Required)
+### Pre-Treatment (If Required)
 
 Pre-treatment is necessary for soils high in organic matter, carbonates,
 iron oxides, or soluble salts. If the soil is low in all of these,
@@ -231,7 +231,7 @@ Handle 30% H~2~O~2~ in the fume hood. It is a strong oxidizer that
 causes skin burns on contact. Add it slowly to avoid violent frothing.
 :::
 
-### 6.6 Dispersing the Soil Sample
+### Dispersing the Soil Sample
 
 1. Weigh $DW_{\text{air}}$ g of pre-treated (or untreated) soil into
    the dispersion cup and record the mass to 0.1 g
@@ -243,7 +243,7 @@ causes skin burns on contact. Add it slowly to avoid violent frothing.
 6. Attach the cup to the milkshake mixer and mix for 5 minutes (sandy
    soils) or 15 minutes (fine-textured soils)
 
-### 6.7 Conducting the Hydrometer Test
+### Conducting the Hydrometer Test
 
 **Blank preparation:**
 
@@ -296,7 +296,7 @@ bias subsequent readings if not cleaned.
 
 9. Place the cylinder in a stable, undisturbed location between readings
 
-### 6.8 Recovering Sand on the No. 200 Sieve
+### Recovering Sand on the No. 200 Sieve
 
 The hydrometer method does not resolve sand subfractions well. Sieve
 analysis of the sand fraction provides this detail.
@@ -319,9 +319,9 @@ gentle water stream or squeeze bottle.
 :::
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
-### 7.1 Calculations
+### Calculations
 
 The key calculated quantities for each hydrometer reading are:
 
@@ -347,7 +347,7 @@ particles (typically 2.65 for mineral soils).
 **Textural class** is determined by plotting the calculated percent
 sand, silt, and clay on the USDA textural triangle.
 
-### 7.2 Bias and Interference Sources
+### Bias and Interference Sources
 
 | Source                        | Effect                  | Correction              |
 |:------------------------------|:------------------------|:------------------------|
@@ -358,7 +358,7 @@ sand, silt, and clay on the USDA textural triangle.
 | Meniscus reading              | Opaque suspension prevents reading at bottom of meniscus | Read at top of meniscus; apply meniscus correction |
 | Flocculation                  | Ca^2+^ and Al^3+^ bridge clay particles | HMP displaces polyvalent cations; Na^+^ hydrates clay surfaces |
 
-### 7.3 QC Requirements
+### QC Requirements
 
 - Run a duplicate analysis on at least 10% of samples
 - Duplicate results should agree within one textural class
@@ -369,7 +369,7 @@ sand, silt, and clay on the USDA textural triangle.
   feel estimates ([SOP-F401](../field_sops/SOP-F401-soil-texture-by-feel.qmd))
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -380,7 +380,7 @@ sand, silt, and clay on the USDA textural triangle.
 | Sieve washings                | Use a sediment trap; dispose of trapped soil in standard trash |
 
 
-## 9. References
+## References
 
 - ASTM D422-63(2007)e2. *Standard Test Method for Particle-Size
   Analysis of Soils*. ASTM International, West Conshohocken, PA.
@@ -402,7 +402,7 @@ sand, silt, and clay on the USDA textural triangle.
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Before performing hydrometer analysis independently, personnel must:
 

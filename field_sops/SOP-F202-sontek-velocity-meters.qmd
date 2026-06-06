@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the operation, calibration verification, and
 maintenance of SonTek acoustic Doppler velocity meters used for point
@@ -31,7 +31,7 @@ meters have no moving parts, respond faster to turbulent fluctuations,
 and can measure very low velocities.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** SonTek FlowTracker2 and FlowTracker (original model)
   handheld acoustic Doppler velocimeters (ADVs) used for wading
@@ -43,7 +43,7 @@ and can measure very low velocities.
 - **Location:** All EA Program wadeable stream sites
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -52,7 +52,7 @@ and can measure very low velocities.
 | New Students      | Complete training before independent use                |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -79,9 +79,9 @@ to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
 emergency procedures.
 
 
-## 5. Instrument Specifications
+## Instrument Specifications
 
-### 5.1 FlowTracker2
+### FlowTracker2
 
 | Parameter              | Value                                      |
 |:-----------------------|:-------------------------------------------|
@@ -95,7 +95,7 @@ emergency procedures.
 | Battery                | Rechargeable lithium-ion; approximately 12 hours continuous use |
 | QC diagnostics         | Built-in automated QA/QC (SNR, boundary, flow angle, spike detection) |
 
-### 5.2 FlowTracker (Original)
+### FlowTracker (Original)
 
 | Parameter              | Value                                      |
 |:-----------------------|:-------------------------------------------|
@@ -110,7 +110,7 @@ emergency procedures.
 this section accordingly.*
 
 
-## 6. Equipment and Materials
+## Equipment and Materials
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
@@ -126,9 +126,9 @@ this section accordingly.*
 | Spare batteries                       | C-cells for original model               |
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Pre-Field Setup
+### Pre-Field Setup
 
 1. Charge the FlowTracker2 battery fully before each field day. For
    the original model, install fresh batteries.
@@ -145,7 +145,7 @@ this section accordingly.*
    - Number of measurements per vertical: 1 (six-tenths method) or 2
      (two-point method at 0.2 and 0.8 depth)
 
-### 7.2 Beam Check
+### Beam Check
 
 Perform a beam check before each measurement to verify that the
 acoustic transducers are functioning properly.
@@ -160,14 +160,14 @@ acoustic transducers are functioning properly.
    proceed with the measurement.
 5. Record the beam check result in the field notebook
 
-### 7.3 Site Selection and Tag Line
+### Site Selection and Tag Line
 
 Follow the site selection and tag line procedures described in
 [SOP-F301 Stream Discharge Measurement](SOP-F301-stream-discharge-measurement.qmd),
 Sections 7.1--7.3. The same cross-section criteria apply to acoustic
 and mechanical meters.
 
-### 7.4 Making the Measurement
+### Making the Measurement
 
 1. Mount the FlowTracker probe on the wading rod at the correct depth
    setting:
@@ -192,7 +192,7 @@ and mechanical meters.
    discharge automatically using the mid-section method.
 5. Review the on-screen discharge summary before leaving the site.
 
-### 7.5 Post-Measurement
+### Post-Measurement
 
 1. Save the measurement file on the instrument.
 2. Record a backup note in the field notebook: site, date, total
@@ -202,7 +202,7 @@ and mechanical meters.
 4. Decontaminate per [SOP-F007](SOP-F007-field-decontamination.qmd)
    before moving to the next site.
 
-### 7.6 Data Download
+### Data Download
 
 1. Connect the FlowTracker2 to a laptop via USB.
 2. Open the SonTek desktop software and download all measurement files.
@@ -215,9 +215,9 @@ and mechanical meters.
 6. Archive the raw `.mmt` file to the lab shared drive.
 
 
-## 8. Maintenance
+## Maintenance
 
-### 8.1 After Each Field Day
+### After Each Field Day
 
 1. Rinse the entire probe head and cable with clean fresh water
 2. Dry with a lint-free cloth
@@ -226,7 +226,7 @@ and mechanical meters.
 4. Charge the battery (FlowTracker2) or remove batteries (original
    model) if storing for more than one week
 
-### 8.2 Periodic Maintenance
+### Periodic Maintenance
 
 - **Monthly (during active use):** Inspect the wading rod mounting
   bracket for wear. Verify firmware version.
@@ -237,7 +237,7 @@ and mechanical meters.
 EA Program research applications or whether beam checks are sufficient.*
 
 
-## 9. Quality Control
+## Quality Control
 
 - Beam check before every measurement (Section 7.2)
 - If two measurements are made at the same cross-section, they should
@@ -251,7 +251,7 @@ EA Program research applications or whether beam checks are sufficient.*
   documentation.
 
 
-## 10. References
+## References
 
 - SonTek/Xylem. *FlowTracker2 Handheld ADV Technical Manual*.
   <https://www.sontek.com>
@@ -263,7 +263,7 @@ EA Program research applications or whether beam checks are sufficient.*
   2007-5091.
 
 
-## 11. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -273,7 +273,7 @@ EA Program research applications or whether beam checks are sufficient.*
 | [F301](SOP-F301-stream-discharge-measurement.qmd) | Stream Discharge Measurement | Cross-section procedures |
 
 
-## 12. Training Record
+## Training Record
 
 Before using SonTek velocity meters independently, personnel must:
 

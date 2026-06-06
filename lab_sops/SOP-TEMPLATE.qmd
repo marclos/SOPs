@@ -18,19 +18,19 @@
 #
 # ── BEFORE YOU START ──────────────────────────────────────────────────
 #
-#   1. CONFIRM THE SOP NUMBER AND SCOPE WITH PROFESSOR MARC LOS HUERTOS
+#   CONFIRM THE SOP NUMBER AND SCOPE WITH PROFESSOR MARC LOS HUERTOS
 #      before doing any writing. Send him a short description (2--3
 #      sentences) of what the SOP will cover, the proposed SOP number,
 #      and the proposed title. Do not proceed until he approves.
 #
-#   2. Pull the latest changes from the repository:
+#   Pull the latest changes from the repository:
 #
 #         git pull origin master
 #
 #      This ensures you are working from the most current files and
 #      avoids merge conflicts.
 #
-#   3. Copy this template into the correct directory:
+#   Copy this template into the correct directory:
 #
 #      Field SOPs:  cp field_sops/SOP-TEMPLATE.qmd field_sops/SOP-FXXX-short-name.qmd
 #      Lab SOPs:    cp lab_sops/SOP-TEMPLATE.qmd lab_sops/SOP-LXXX-short-name.qmd
@@ -70,13 +70,13 @@
 #
 # ── GIT WORKFLOW ─────────────────────────────────────────────────────
 #
-#   1. git pull origin master          # ALWAYS pull first
-#   2. [create or edit your .qmd file]
-#   3. quarto preview                  # verify it renders
-#   4. git add field_sops/SOP-FXXX-short-name.qmd references.bib images/SOP-FXXX_*.png
-#   5. git commit -m "F401: added soil texture SOP with bibtex refs"
-#   6. git pull origin master          # pull again before pushing
-#   7. git push origin master          #   (or open a Pull Request)
+#   git pull origin master          # ALWAYS pull first
+#   [create or edit your .qmd file]
+#   quarto preview                  # verify it renders
+#   git add field_sops/SOP-FXXX-short-name.qmd references.bib images/SOP-FXXX_*.png
+#   git commit -m "F401: added soil texture SOP with bibtex refs"
+#   git pull origin master          # pull again before pushing
+#   git push origin master          #   (or open a Pull Request)
 #
 #   If step 6 reveals conflicts, resolve them before pushing.
 #   NEVER force-push to master.
@@ -102,16 +102,16 @@
 #     :::
 #
 #   To add a new reference:
-#     1. Search Google Scholar (scholar.google.com) for the work
-#     2. Click the "Cite" link (quotation mark icon) below the result
-#     3. At the bottom of the citation popup, click "BibTeX"
-#     4. Copy the entire entry that appears
-#     5. Paste it into references.bib (at the end of the file, or
+#     Search Google Scholar (scholar.google.com) for the work
+#     Click the "Cite" link (quotation mark icon) below the result
+#     At the bottom of the citation popup, click "BibTeX"
+#     Copy the entire entry that appears
+#     Paste it into references.bib (at the end of the file, or
 #        grouped near other entries for the same SOP)
-#     6. Clean up the entry using the guidelines below
-#     7. Check references.bib for duplicates (search for the author
+#     Clean up the entry using the guidelines below
+#     Check references.bib for duplicates (search for the author
 #        surname and year) before saving
-#     8. Commit references.bib alongside your SOP file
+#     Commit references.bib alongside your SOP file
 #
 #   KEY STYLE: Keep the citation key that Google Scholar generates.
 #   Google Scholar keys follow the pattern LastnameYYYY (e.g.,

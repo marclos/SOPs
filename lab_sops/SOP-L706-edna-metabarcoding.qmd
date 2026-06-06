@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the end-to-end laboratory workflow for environmental
 DNA (eDNA) metabarcoding, from receipt of field-collected water filter
@@ -38,7 +38,7 @@ distinguish eDNA metabarcoding from standard amplicon sequencing of
 soil or tissue samples.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Laboratory processing of eDNA water samples for
   multi-species detection via amplicon sequencing on Illumina
@@ -54,7 +54,7 @@ soil or tissue samples.
 - **Location:** Molecular biology bench, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -63,7 +63,7 @@ soil or tissue samples.
 | New Students      | Complete eDNA-specific contamination training before participating |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -87,7 +87,7 @@ Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Workflow Overview
+## Workflow Overview
 
 The eDNA metabarcoding workflow consists of six stages. Each stage
 references a detailed SOP.
@@ -102,9 +102,9 @@ references a detailed SOP.
 | 6     | Taxonomic interpretation and reporting | This SOP, Section 6.6 |
 
 
-## 6. Procedure: eDNA-Specific Modifications
+## Procedure: eDNA-Specific Modifications
 
-### 6.1 Sample Receipt and Logging
+### Sample Receipt and Logging
 
 1. Upon receipt from the field, verify that all samples match the chain
    of custody form per
@@ -116,7 +116,7 @@ references a detailed SOP.
 4. Store preserved filters at -20 C (short-term) or -80 C (long-term)
    until extraction.
 
-### 6.2 DNA Extraction from Filters
+### DNA Extraction from Filters
 
 Follow [SOP-L700](SOP-L700-dna-extraction.qmd) with the following
 eDNA-specific modifications:
@@ -134,7 +134,7 @@ eDNA-specific modifications:
   extracted alongside samples and serves as the primary contamination
   control for the entire field-to-lab chain.
 
-### 6.3 Inhibition Testing
+### Inhibition Testing
 
 eDNA extracts from natural waters frequently contain PCR inhibitors
 (humic acids, tannins, metal ions) [@mckee2015]. Test for inhibition
@@ -150,7 +150,7 @@ before committing to full library preparation:
    nuclease-free water and retest. Alternatively, clean the extract
    using a OneStep PCR Inhibitor Removal Kit (Zymo Research).
 
-### 6.4 Primer Selection for eDNA Metabarcoding
+### Primer Selection for eDNA Metabarcoding
 
 | Target Taxa          | Marker   | Primers              | Amplicon | Reference         |
 |:---------------------|:---------|:---------------------|:---------|:------------------|
@@ -168,7 +168,7 @@ coverage but require separate library preparations and sequencing runs
 [@deiner2017].
 :::
 
-### 6.5 PCR and Library Preparation
+### PCR and Library Preparation
 
 Follow [SOP-L703](SOP-L703-pcr-gel-electrophoresis.qmd) for initial PCR
 screening and [SOP-L704](SOP-L704-amplicon-library-prep.qmd) for library
@@ -190,7 +190,7 @@ preparation, with these eDNA-specific considerations:
   consisting of a mock community of known species at known
   concentrations.
 
-### 6.6 Bioinformatics and Taxonomic Assignment
+### Bioinformatics and Taxonomic Assignment
 
 Follow [SOP-L705](SOP-L705-bioinformatics-pipeline.qmd) for denoising
 and taxonomic classification, with these modifications:
@@ -218,7 +218,7 @@ and taxonomic classification, with these modifications:
   3. It is detected in at least 2 of 3 PCR replicates (if replicates
      were sequenced independently) [@ficetola2015]
 
-### 6.7 Reporting
+### Reporting
 
 eDNA metabarcoding results are reported as a species detection list per
 site with the following metadata:
@@ -237,7 +237,7 @@ affinity, and DNA shedding rates vary among taxa [@kelly2019].
 :::
 
 
-## 7. Quality Control
+## Quality Control
 
 - **Field blanks:** Must be negative for all target taxa. Any target
   taxon detected in a field blank compromises the detection claim for
@@ -254,7 +254,7 @@ affinity, and DNA shedding rates vary among taxa [@kelly2019].
   alongside species detections.
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 Refer to waste disposal tables in
 [SOP-L700](SOP-L700-dna-extraction.qmd),
@@ -262,13 +262,13 @@ Refer to waste disposal tables in
 [SOP-L704](SOP-L704-amplicon-library-prep.qmd).
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -281,7 +281,7 @@ Refer to waste disposal tables in
 | [L801](SOP-L801-rstudio-github.qmd)   | RStudio and GitHub        | Data management                   |
 
 
-## 11. Training Record
+## Training Record
 
 Before processing eDNA samples independently, personnel must:
 

@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the measurement of soil pH and electrical
 conductivity (EC, as a proxy for salinity) on soil-water and
@@ -34,7 +34,7 @@ For meter operation, calibration, and electrode maintenance, see
 [SOP-L300 pH and Conductivity -- Bench-Top Measurements](SOP-L300-pH-conductivity-bench.qmd).
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Air-dried, sieved (less than 2 mm) mineral soils from
   all EA Program sites; compost and potting media (with appropriate
@@ -47,7 +47,7 @@ For meter operation, calibration, and electrode maintenance, see
 - **Location:** EA Program laboratory, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -57,7 +57,7 @@ For meter operation, calibration, and electrode maintenance, see
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -80,7 +80,7 @@ For buffer or chemical splashes, flush with water. Refer to
 [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -105,9 +105,9 @@ For buffer or chemical splashes, flush with water. Refer to
 | Conductivity standard (1413 uS/cm) | For conductivity meter calibration  |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Sample Preparation
+### Sample Preparation
 
 1. Air-dry the soil at room temperature until constant mass (typically
    24--48 hours)
@@ -117,7 +117,7 @@ For buffer or chemical splashes, flush with water. Refer to
 3. Store the sieved soil in a labeled bag or container at room
    temperature
 
-### 6.2 Selecting the Extraction Ratio
+### Selecting the Extraction Ratio
 
 Two standard soil-to-solution ratios are used. The choice depends on
 the project objectives and the need for comparability with published
@@ -137,7 +137,7 @@ where consistency over time matters [@thomas1996]. Record the extraction
 medium (water or CaCl~2~) and ratio with every result.
 :::
 
-### 6.3 Preparing the Soil Slurry (1:1 Method)
+### Preparing the Soil Slurry (1:1 Method)
 
 1. Weigh 10.0 g of air-dried, sieved soil into a clean beaker
 2. Add 10 mL of DI water (for pH~water~ and EC) or 10 mL of 0.01 M
@@ -146,7 +146,7 @@ medium (water or CaCl~2~) and ratio with every result.
 4. Allow to stand for 10 minutes
 5. Stir briefly again before measurement
 
-### 6.4 Preparing the Soil Extract (1:5 Method)
+### Preparing the Soil Extract (1:5 Method)
 
 1. Weigh 10.0 g of air-dried, sieved soil into a clean beaker
 2. Add 50 mL of DI water (or 50 mL of 0.01 M CaCl~2~)
@@ -156,7 +156,7 @@ medium (water or CaCl~2~) and ratio with every result.
    insert the conductivity cell into the clear supernatant. For pH,
    insert the electrode into the slurry while still partially suspended.
 
-### 6.5 Measuring Electrical Conductivity
+### Measuring Electrical Conductivity
 
 ::: {.callout-important}
 Always measure EC before pH on the same aliquot. The pH electrode's KCl
@@ -176,7 +176,7 @@ artificially elevate the EC reading [@apha2012].
    extraction ratio
 6. Rinse the cell with DI water between samples
 
-### 6.6 Measuring Soil pH
+### Measuring Soil pH
 
 1. Calibrate the pH meter with a three-point calibration per
    [SOP-L300](SOP-L300-pH-conductivity-bench.qmd), Section 6.2
@@ -190,7 +190,7 @@ artificially elevate the EC reading [@apha2012].
    and sample ID
 6. Rinse the electrode with DI water between samples
 
-### 6.7 Converting 1:5 EC to Estimated Saturated Paste EC (EC~e~)
+### Converting 1:5 EC to Estimated Saturated Paste EC (EC~e~)
 
 The saturated paste extract (EC~e~) is the standard for soil salinity
 classification, but the 1:5 extract is quicker to prepare. An
@@ -217,9 +217,9 @@ Handbook 60.
 :::
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
-### 7.1 Interpretation of Soil pH
+### Interpretation of Soil pH
 
 | pH Range     | Classification      | Agronomic Significance            |
 |:-------------|:--------------------|:----------------------------------|
@@ -230,7 +230,7 @@ Handbook 60.
 | 7.5 -- 8.5   | Moderately alkaline | Common in arid soils; Fe, Mn, Zn may be limiting |
 | Greater than 8.5 | Strongly alkaline | Possible sodicity; Na toxicity    |
 
-### 7.2 Interpretation of Soil Salinity (EC~e~)
+### Interpretation of Soil Salinity (EC~e~)
 
 | EC~e~ (dS/m)   | Classification      | Plant Response                   |
 |:----------------|:--------------------|:---------------------------------|
@@ -240,7 +240,7 @@ Handbook 60.
 | 8 -- 16         | Strongly saline     | Only tolerant crops survive       |
 | Greater than 16 | Very strongly saline | Few plants survive               |
 
-### 7.3 Saline, Sodic, and Saline-Sodic Classification
+### Saline, Sodic, and Saline-Sodic Classification
 
 | Class         | EC~e~ (dS/m) | SAR / ESP               | pH     |
 |:--------------|:-------------|:------------------------|:-------|
@@ -253,7 +253,7 @@ SAR = sodium adsorption ratio; ESP = exchangeable sodium percentage.
 Full SAR/ESP determination requires cation analysis beyond the scope of
 this SOP.
 
-### 7.4 QC Requirements
+### QC Requirements
 
 - Calibrate the pH meter before each measurement session (three-point).
   Acceptable slope: 90--102% of theoretical.
@@ -271,7 +271,7 @@ this SOP.
   in the lab notebook
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -282,7 +282,7 @@ this SOP.
 | DI water rinses               | Drain                                    |
 
 
-## 9. References
+## References
 
 - Thomas, G.W. (1996). Soil pH and soil acidity. In: Sparks, D.L.
   et al. (Eds.), *Methods of Soil Analysis, Part 3: Chemical Methods*.
@@ -302,7 +302,7 @@ this SOP.
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Before measuring soil pH and EC independently, personnel must:
 
@@ -365,7 +365,7 @@ print(soil_data %>% select(sample_id, pH_water_1_1, pH_CaCl2_1_1,
 
 ## Appendix B: Reagent Preparation {.appendix}
 
-### 0.01 M CaCl~2~ Solution
+### M CaCl~2~ Solution
 
 1. Weigh 1.47 g of CaCl~2~-2H~2~O (MW 147.01) on the analytical
    balance

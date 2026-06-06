@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes standard polymerase chain reaction (PCR) amplification
 of target DNA fragments and visualization of PCR products by agarose gel
@@ -30,7 +30,7 @@ fragments by size, providing a visual confirmation that amplification
 produced the expected product.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Standard endpoint PCR amplification of environmental
   DNA extracts (soil, water, tissue) and visualization of products on
@@ -43,7 +43,7 @@ produced the expected product.
 - **Location:** Molecular biology bench, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -52,7 +52,7 @@ produced the expected product.
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -86,7 +86,7 @@ UV exposure, flush eyes with water and seek medical attention. Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -118,9 +118,9 @@ UV exposure, flush eyes with water and seek medical attention. Refer to
 | Filter pipette tips (10, 100, 1000 uL) | Barrier tips mandatory to prevent cross-contamination |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 PCR Workspace Preparation
+### PCR Workspace Preparation
 
 ::: {.callout-important}
 ### Contamination Prevention
@@ -138,7 +138,7 @@ PCR is extremely sensitive to contamination. Follow these rules:
   outside the pre-PCR area.
 :::
 
-### 6.2 Master Mix Preparation
+### Master Mix Preparation
 
 Prepare all components on ice. Calculate volumes for the number of
 reactions plus 10% overage to account for pipetting losses.
@@ -168,7 +168,7 @@ reactions plus 10% overage to account for pipetting losses.
      [SOP-L700](SOP-L700-dna-extraction.qmd) extraction blank
 5. Cap tubes, vortex briefly, and spin down.
 
-### 6.3 Thermal Cycling
+### Thermal Cycling
 
 Program the thermal cycler with the following general protocol. Adjust
 the annealing temperature for your specific primer set.
@@ -189,7 +189,7 @@ Optimize by running a gradient if needed [@lorenz2012].
 Record the cycling parameters, primer names, and annealing temperature
 in the lab notebook.
 
-### 6.4 Agarose Gel Preparation
+### Agarose Gel Preparation
 
 1. Weigh agarose for a 1--2% gel (w/v), depending on the expected
    amplicon size:
@@ -209,7 +209,7 @@ in the lab notebook.
 6. Pour into the casting tray with the comb in place. Allow to solidify
    (approximately 20--30 minutes at room temperature).
 
-### 6.5 Loading and Running the Gel
+### Loading and Running the Gel
 
 1. Remove the comb carefully. Place the gel in the electrophoresis tank
    and fill with 1x TAE (or TBE) buffer until the gel is submerged by
@@ -225,7 +225,7 @@ in the lab notebook.
 7. Turn off the power supply and disconnect the leads before removing
    the gel.
 
-### 6.6 Gel Imaging
+### Gel Imaging
 
 1. Place the gel on the transilluminator (blue light for SYBR Safe;
    UV for EtBr).
@@ -241,7 +241,7 @@ in the lab notebook.
    `results/gels/`.
 
 
-## 7. Troubleshooting
+## Troubleshooting
 
 | Symptom                    | Probable Cause                     | Corrective Action                     |
 |:---------------------------|:-----------------------------------|:--------------------------------------|
@@ -253,7 +253,7 @@ in the lab notebook.
 | Bands in samples but not positive control | Positive control degraded | Prepare fresh positive control DNA |
 
 
-## 8. Quality Control
+## Quality Control
 
 - Every PCR run must include: positive control, NTC, and extraction blank
 - No bands should appear in the NTC or extraction blank. Any
@@ -264,7 +264,7 @@ in the lab notebook.
   confirm band intensity is roughly uniform across samples
 
 
-## 9. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Container                 | Disposal Method                     |
 |:------------------------------|:--------------------------|:------------------------------------|
@@ -274,13 +274,13 @@ in the lab notebook.
 | Unused EtBr stock solution    | Chemical waste            | EH&S hazardous waste pickup         |
 
 
-## 10. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 11. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -291,7 +291,7 @@ in the lab notebook.
 | [L106](SOP-L106-refrigerators-freezers.qmd) | Freezers           | Reagent and DNA storage           |
 
 
-## 12. Training Record
+## Training Record
 
 Before performing PCR and gel electrophoresis independently, personnel
 must:

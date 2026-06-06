@@ -20,19 +20,19 @@ revision-history:
     changes: "Converted to QMD format"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the procedures for calibrating, operating, and maintaining the Eureka Manta2 Sub2 Multiprobe for water quality measurements including temperature, pH, depth, conductivity, and dissolved oxygen (mg/L and % saturation).
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Water quality measurements in lakes, streams, rivers, and other surface water bodies
 - **Does not apply to:** Groundwater monitoring wells (requires different deployment procedures); laboratory bench-top water analysis
 - **Location:** All EA Program field water sampling sites
 
 
-## 3. Definitions
+## Definitions
 
 **Probe (Sonde):** The entire Manta2 apparatus that includes the five sensors.
 
@@ -41,7 +41,7 @@ This SOP describes the procedures for calibrating, operating, and maintaining th
 **SRF (Sensor Response Factor):** A calibration diagnostic value indicating how the sensor responded to the standard. Acceptable ranges are specific to each sensor (see calibration sections below).
 
 
-## 4. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -55,7 +55,7 @@ This SOP describes the procedures for calibrating, operating, and maintaining th
 Researchers using this SOP should be trained on [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
-## 5. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -77,7 +77,7 @@ Researchers using this SOP should be trained on [SOP-F001 Field Safety](SOP-F001
 Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general field safety, transportation, and emergency response.
 
 
-## 6. Required Materials
+## Required Materials
 
 | Item                                  | Notes                                          |
 |:--------------------------------------|:-----------------------------------------------|
@@ -95,7 +95,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general field sa
 | Field notebook                        | For recording site notes                       |
 
 
-## 7. Estimated Time
+## Estimated Time
 
 | Task                     | Time Required                                   |
 |:-------------------------|:------------------------------------------------|
@@ -106,20 +106,20 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general field sa
 | Post-field cleaning      | Less than 5 minutes                             |
 
 
-## 8. Interferences
+## Interferences
 
 - Calibration is essential for obtaining meaningful data. Always calibrate before each field outing.
 - The reference electrode must be maintained by refilling the reference electrolyte once every few months. Failure to do so causes unreliable pH readings.
 - When sampling in streams or rivers, take downstream measurements first to avoid your movements and presence affecting the readings. Stand on the bank or downstream of the measurement point while the probe is in the water.
 
 
-## 9. Pre-Field Preparation
+## Pre-Field Preparation
 
-### 9.1 Charging
+### Charging
 
 Charge the Amphibian 2 portable PC before going into the field. The charger plugs into the round hole on the bottom edge of the Amphibian. Allow several hours or charge overnight.
 
-### 9.2 Probe Setup for Calibration
+### Probe Setup for Calibration
 
 1. Remove the blue storage plug from the probe and cover the plug with a plastic protector
 2. Insert the underwater cable to connect the Amphibian and the Manta2
@@ -127,7 +127,7 @@ Charge the Amphibian 2 portable PC before going into the field. The charger plug
 4. Press the Windows icon (lower left), then select Amp_2_2_6 (or use shortcut button **P1**)
 5. Once the interface loads, press "Manta2" on the lower left bar and select "Calibrate"
 
-### 9.3 pH Calibration (Three-Point)
+### pH Calibration (Three-Point)
 
 1. Select "pH units" from the Manta2 calibration menu
 2. Input the value of your first standard (e.g., 7.00) in the unshaded box
@@ -139,7 +139,7 @@ Charge the Amphibian 2 portable PC before going into the field. The charger plug
 8. Select the option for three-point calibration and repeat with the third standard
 9. Accept the calibration when the SRF falls within the acceptable range (consult Prof. Los Huertos if uncertain)
 
-### 9.4 Conductivity Calibration (One-Point)
+### Conductivity Calibration (One-Point)
 
 1. Rinse the probe twice with DI water to remove any residual pH standard
 2. Tap "Manta2" > "Calibrate" > "spCond mS/cm"
@@ -152,7 +152,7 @@ Charge the Amphibian 2 portable PC before going into the field. The charger plug
 Conductivity standard can be disposed of down the drain. pH standards must go in a waste container.
 :::
 
-### 9.5 Dissolved Oxygen Calibration
+### Dissolved Oxygen Calibration
 
 **Prepare air-saturated water:**
 
@@ -181,15 +181,15 @@ Conductivity standard can be disposed of down the drain. pH standards must go in
 6. If the value changes significantly, exit, re-read %sat, and use the new value to recalibrate mg/L
 
 
-## 10. Field Procedure
+## Field Procedure
 
-### 10.1 Connecting and Powering On
+### Connecting and Powering On
 
 1. Connect the Manta2 to the Amphibian via the underwater cable
 2. Power on the Amphibian and launch Amp_2_2_6 (shortcut: **P1**)
 3. Adjust screen brightness using **arrow up + P3** (dimmer) and **arrow up + P4** (brighter)
 
-### 10.2 Enabling GPS
+### Enabling GPS
 
 1. Tap on the GPS/GNSS status gadget
 2. A satellite icon will appear on the top bar while searching
@@ -197,7 +197,7 @@ Conductivity standard can be disposed of down the drain. pH standards must go in
 4. Wait until satellites are found (check: 5 SV = 5 satellites; 3Diff/4 satellites for 3D fix; lower PDOP = better accuracy)
 5. Enable GPS at least 5 minutes before taking readings
 
-### 10.3 Taking Measurements
+### Taking Measurements
 
 1. Place the weighted protective cap over the sensors
 2. Lower the probe into the water at the measurement point
@@ -210,7 +210,7 @@ Conductivity standard can be disposed of down the drain. pH standards must go in
 In flowing water, always measure downstream sites first, then work upstream to avoid disturbing the water at your measurement locations.
 :::
 
-### 10.4 Disconnecting
+### Disconnecting
 
 1. Remove the probe from the water
 2. Disconnect the underwater cable from the probe
@@ -218,16 +218,16 @@ In flowing water, always measure downstream sites first, then work upstream to a
 4. Cover the cable end with the plastic protector
 
 
-## 11. Post-Field Procedures
+## Post-Field Procedures
 
-### 11.1 Cleaning the Probe
+### Cleaning the Probe
 
 1. Clean the probe with warm soapy water (liquid dish soap or mild household cleaner)
 2. Clean sensor stems with a soft brush
 3. Rinse thoroughly with tap water
 4. Store sensors with tap water inside the cup
 
-### 11.2 Downloading Data
+### Downloading Data
 
 1. Connect the Amphibian to your PC using a USB cable
 2. A green window will appear with four options; select "File Management"
@@ -235,12 +235,12 @@ In flowing water, always measure downstream sites first, then work upstream to a
 4. Locate the Excel document with your data
 5. Copy the file to your project data folder
 
-### 11.3 Charging
+### Charging
 
 Return the Amphibian to its charging station after each field outing.
 
 
-## 12. Troubleshooting
+## Troubleshooting
 
 | Problem                        | Solution                                         |
 |:-------------------------------|:-------------------------------------------------|
@@ -251,12 +251,12 @@ Return the Amphibian to its charging station after each field outing.
 | GPS not acquiring satellites   | Ensure the top cap (antenna) is uncovered; move to an open area away from overhead obstructions. |
 
 
-## 13. Advanced Use
+## Advanced Use
 
 **Autonomous data logging:** In addition to snapshots, the Manta2 supports automatic logging at customized time intervals. See page 48 of the Manta2 Manual for setup instructions.
 
 
-## 14. Shortcut Buttons Reference
+## Shortcut Buttons Reference
 
 | Button              | Function                        |
 |:--------------------|:--------------------------------|
@@ -267,13 +267,13 @@ Return the Amphibian to its charging station after each field outing.
 | **Camera icon**     | Camera                          |
 
 
-## 15. References
+## References
 
 - Eureka Environmental Engineering. *Manta2 Water Quality Multiprobe: User Manual*. Available at: https://www.rshydro.co.uk/PDFs/Eureka/Manta2-manual.pdf
 - APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water and Wastewater*. 22nd ed. American Public Health Association (Eds.). Washington. 1360 pp.
 
 
-## 16. Training Record
+## Training Record
 
 Before using this instrument independently, personnel must:
 

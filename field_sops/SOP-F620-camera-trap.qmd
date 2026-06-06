@@ -22,7 +22,7 @@ revision-history:
     changes: "Converted to Quarto; added AI-assisted analysis workflow"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the deployment, retrieval, data management,
 and AI-assisted image analysis of camera traps (motion-triggered
@@ -41,7 +41,7 @@ deployment and analysis procedures are applicable to other camera trap
 models with minor adaptations.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Deployment and image analysis of all EA Program camera
   traps at field sites, including the Bernard Field Station, Pomona
@@ -53,7 +53,7 @@ models with minor adaptations.
   laboratory (data analysis)
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -63,7 +63,7 @@ models with minor adaptations.
 | New Students      | Complete training before independent deployment |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -98,7 +98,7 @@ identifiable individuals. Images of people should be deleted during
 the initial screening step and never uploaded to public platforms.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Camera Equipment
 
@@ -131,9 +131,9 @@ the initial screening step and never uploaded to public platforms.
 | External hard drive or cloud storage | For archiving raw images           |
 
 
-## 6. Procedure -- Field Deployment
+## Procedure -- Field Deployment
 
-### 6.1 Camera Setup
+### Camera Setup
 
 1. Install 8 AA batteries in the battery compartment
 2. Insert a formatted SD card (Class 10, up to 32 GB)
@@ -154,7 +154,7 @@ the initial screening step and never uploaded to public platforms.
 5. Take a test photo to verify the camera is functioning and the
    timestamp is correct
 
-### 6.2 Site Selection and Mounting
+### Site Selection and Mounting
 
 1. Select a location based on the study objectives (game trails,
    water sources, habitat edges, or random/systematic grid points)
@@ -174,7 +174,7 @@ the initial screening step and never uploaded to public platforms.
 9. Record the deployment date, time, site ID, camera serial number,
    and SD card number on the field data sheet
 
-### 6.3 Retrieval and Redeployment
+### Retrieval and Redeployment
 
 1. Navigate to the camera location using recorded GPS coordinates
 2. Power off the camera before removing the SD card
@@ -188,9 +188,9 @@ the initial screening step and never uploaded to public platforms.
    the lab
 
 
-## 7. Procedure -- Data Management and AI Analysis
+## Procedure -- Data Management and AI Analysis
 
-### 7.1 Image Download and Organization
+### Image Download and Organization
 
 1. Insert the SD card into a card reader connected to the lab computer
 2. Create a folder following the naming convention:
@@ -202,7 +202,7 @@ the initial screening step and never uploaded to public platforms.
 6. Format the SD card in the camera (not on the computer) before
    redeployment
 
-### 7.2 AI-Assisted Analysis Pipeline
+### AI-Assisted Analysis Pipeline
 
 The EA Program uses a two-stage AI pipeline for camera trap image
 processing, following the approach used by the Wildlife Insights
@@ -220,7 +220,7 @@ classification model identifies detected animals to the lowest possible
 taxonomic level. The model is trained on over 65 million labeled camera
 trap images spanning more than 2,000 categories.
 
-### 7.3 Option A: Wildlife Insights (Cloud-Based)
+### Option A: Wildlife Insights (Cloud-Based)
 
 Wildlife Insights is a free, cloud-based platform developed by Google,
 WWF, Conservation International, the Wildlife Conservation Society, and
@@ -246,7 +246,7 @@ platform) and on species known to be rare or absent from the training
 data.
 :::
 
-### 7.4 Option B: Local Pipeline (Python)
+### Option B: Local Pipeline (Python)
 
 For projects that require offline processing, greater control, or
 cannot upload images to a cloud platform, use the open-source
@@ -278,7 +278,7 @@ python run_classifier.py \
 4. Review and correct classifications in R or a spreadsheet editor
    (Section 7.6)
 
-### 7.5 Option C: AddaxAI or EcoAssist (Desktop GUI)
+### Option C: AddaxAI or EcoAssist (Desktop GUI)
 
 For users who prefer a graphical interface over the command line:
 
@@ -292,7 +292,7 @@ For users who prefer a graphical interface over the command line:
 Both tools produce output CSVs compatible with the R analysis workflow
 below.
 
-### 7.6 Human-in-the-Loop Verification
+### Human-in-the-Loop Verification
 
 AI predictions must be verified by a trained observer before use in
 analyses or publications:
@@ -310,7 +310,7 @@ backgrounds. Never use unverified AI output for occupancy modeling,
 population estimates, or species occurrence records.
 :::
 
-### 7.7 Data Analysis in R
+### Data Analysis in R
 
 ```{r}
 #| label: camera-trap-analysis
@@ -398,9 +398,9 @@ print(det_rate)
 ```
 
 
-## 8. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
-### 8.1 Field QC
+### Field QC
 
 - Test-fire each camera before leaving the deployment site
 - Record all deployment metadata (coordinates, bearing, height, date,
@@ -409,7 +409,7 @@ print(det_rate)
   batteries and SD cards
 - Log any camera failures, theft, or displacement events
 
-### 8.2 AI Classification QC
+### AI Classification QC
 
 - Report the AI model version (e.g., MegaDetector v5b, SpeciesNet v1)
   and confidence threshold used
@@ -420,7 +420,7 @@ print(det_rate)
 - If the correction rate exceeds 10% for a particular species, that
   species' classifications should be fully manually reviewed
 
-### 8.3 Data Reporting
+### Data Reporting
 
 Report the following in any publication or analysis:
 
@@ -433,7 +433,7 @@ Report the following in any publication or analysis:
 - Definition of independent detection events (e.g., 30-minute threshold)
 
 
-## 9. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -442,7 +442,7 @@ Report the following in any publication or analysis:
 | Damaged cameras               | E-waste recycling                        |
 
 
-## 10. References
+## References
 
 - CamPark. *T20 Mini Trail Camera: User's Manual*.
 - Google. (2026). SpeciesNet: AI species classification for camera
@@ -467,7 +467,7 @@ Report the following in any publication or analysis:
 :::
 
 
-## 11. Training Record
+## Training Record
 
 Before deploying camera traps independently, personnel must:
 

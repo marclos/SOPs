@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP standardizes the procedures for exporting raw data from
 laboratory instruments, transferring files to the data management
@@ -28,7 +28,7 @@ properly documented, and accessible for reproducible analysis
 [@gandrud2015].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All analytical instruments in the EA Program
   laboratory that produce digital data files, including
@@ -43,7 +43,7 @@ properly documented, and accessible for reproducible analysis
 - **Location:** EA Program laboratory (SGM 133)
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -53,7 +53,7 @@ properly documented, and accessible for reproducible analysis
 | Data Reviewer     | Confirm that raw files match lab notebook entries and are properly archived |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 Data export is a computational activity with no physical hazards.
 When interacting with instruments (connecting USB drives, accessing
@@ -61,7 +61,7 @@ instrument PCs), follow the safety protocols in the relevant
 instrument SOP.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Instruments and Export Formats
 
@@ -86,9 +86,9 @@ instrument SOP.
 | RStudio Server upload   | Upload to analysis environment | Via Files pane or `scp` |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 General Export Workflow
+### General Export Workflow
 
 The same sequence applies to all instruments:
 
@@ -116,7 +116,7 @@ changes in your processing script. The raw file is your permanent
 record.
 :::
 
-### 6.2 Instrument-Specific Export Instructions
+### Instrument-Specific Export Instructions
 
 #### Shimadzu UV-Vis (UV-1900i / UVProbe)
 
@@ -160,7 +160,7 @@ record.
 4. Save as `ddpcr_[target]_[YYYY-MM-DD].csv`
 5. Also export the amplitude data for gating verification
 
-### 6.3 File Transfer to RStudio Server
+### File Transfer to RStudio Server
 
 After exporting to USB or local machine:
 
@@ -176,7 +176,7 @@ scp icpoes_metals_2026-05-21_batch01.csv \
 # Click Upload > Browse > select file > OK
 ```
 
-### 6.4 Automated Import Scripts in R
+### Automated Import Scripts in R
 
 Create a standardized import script for each instrument type. This
 ensures consistent parsing across analysts and batches:
@@ -234,7 +234,7 @@ import_toc <- function(file_path) {
 }
 ```
 
-### 6.5 Data Integrity Checks
+### Data Integrity Checks
 
 After importing, run basic integrity checks:
 
@@ -264,7 +264,7 @@ icp_data %>%
   print()
 ```
 
-### 6.6 Archival and Backup
+### Archival and Backup
 
 All raw instrument files must be archived in three locations:
 
@@ -282,7 +282,7 @@ backup drive and the network share, not in Git. Only the exported CSV
 goes into the repository.
 :::
 
-### 6.7 Instrument Log Cross-Reference
+### Instrument Log Cross-Reference
 
 Every data export event must be recorded in the instrument log
 (see [SOP-L007](SOP-L007-equipment-inventory.qmd)). The log entry
@@ -296,7 +296,7 @@ should include:
 6. Cross-reference to the lab notebook page number
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Raw files must be unmodified after export (verify with file hash
   if needed: `md5sum filename.csv`)
@@ -309,18 +309,18 @@ should include:
   QC criteria (blanks, duplicates, recoveries)
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 Not applicable (computational procedure).
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Training is documented in the EA Program training log. Before
 exporting instrument data independently, personnel must:

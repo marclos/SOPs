@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes standardized procedures for entering, organizing,
 validating, and managing research data in the EA Program. It covers
@@ -27,7 +27,7 @@ ensuring that all datasets are consistent, traceable, and reproducible
 [@broman2018; @wickham2014].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All tabular data generated in the EA Program
   laboratory and field campaigns, including instrument outputs, field
@@ -40,7 +40,7 @@ ensuring that all datasets are consistent, traceable, and reproducible
 - **Location:** EA Program laboratory (SGM 133) and RStudio Server
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -50,14 +50,14 @@ ensuring that all datasets are consistent, traceable, and reproducible
 | Data Reviewer     | Verify data entries against lab notebooks before analysis |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 Data entry is a computational activity with no physical hazards.
 Ergonomic best practices (regular breaks, proper screen height) are
 encouraged for extended data entry sessions.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Software
 
@@ -78,9 +78,9 @@ encouraged for extended data entry sessions.
 | External hard drive (lab)   | Physical backup       | Semester end                 |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 File Naming Conventions
+### File Naming Conventions
 
 All data files must follow this naming pattern:
 
@@ -105,7 +105,7 @@ These cause problems across operating systems and with R's file-reading
 functions.
 :::
 
-### 6.2 Directory Structure
+### Directory Structure
 
 Organize project data using a consistent directory tree:
 
@@ -125,7 +125,7 @@ Raw data files in `data/raw/` must never be modified. All cleaning and
 transformation steps should produce new files in `data/processed/` with
 scripts that document every change [@wilson2017].
 
-### 6.3 Data Entry from Lab Notebooks
+### Data Entry from Lab Notebooks
 
 1. Open the lab notebook to the relevant page
 2. Create a new CSV file (or open the project template) in `data/raw/`
@@ -136,7 +136,7 @@ scripts that document every change [@wilson2017].
    metadata file
 6. Save and commit to Git with a descriptive message
 
-### 6.4 Variable Naming Conventions
+### Variable Naming Conventions
 
 Column headers (variable names) must be:
 
@@ -149,7 +149,7 @@ Use consistent naming across related datasets. For example, always use
 `site_id` (not `Site`, `site`, `SiteID`, or `location`) when referring
 to the same sampling locations.
 
-### 6.5 Data Types and Formatting
+### Data Types and Formatting
 
 | Data Type       | Convention                  | Example               |
 |:----------------|:----------------------------|:----------------------|
@@ -169,7 +169,7 @@ spreadsheet, and never use color coding as the sole carrier of
 information [@broman2018].
 :::
 
-### 6.6 Data Validation in R
+### Data Validation in R
 
 After entry, run the validation script to check for common errors.
 A minimal validation template:
@@ -214,7 +214,7 @@ dat %>% count(site_id, sort = TRUE)
 # Look for typos (e.g., "upstrream" vs "upstream")
 ```
 
-### 6.7 Data Dictionaries (Metadata)
+### Data Dictionaries (Metadata)
 
 Every dataset must have a companion data dictionary saved as
 `data/metadata/[project]_datadictionary.csv` with the following
@@ -229,7 +229,7 @@ columns:
 | `range`        | Expected range or valid categories            |
 | `source_sop`   | SOP number for the method that generated the data |
 
-### 6.8 Version Control with Git
+### Version Control with Git
 
 All data files and scripts must be tracked in a Git repository
 hosted on GitHub. Follow the procedures in
@@ -245,7 +245,7 @@ changes. Key rules:
 4. Use branches for experimental analyses; merge to `main` when
    finalized
 
-### 6.9 Database Management for Multi-Year Projects
+### Database Management for Multi-Year Projects
 
 For projects spanning multiple semesters or involving multiple
 analysts, maintain a relational data structure:
@@ -275,7 +275,7 @@ full_data <- results %>%
 ```
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - All data entries must be verified against the original lab notebook
   by a second person (or by the analyst after a 24-hour waiting period)
@@ -287,18 +287,18 @@ full_data <- results %>%
   QC requirements that apply to the underlying measurements
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 Not applicable (computational procedure).
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Training is documented in the EA Program training log. Before working
 independently with project data, personnel must:

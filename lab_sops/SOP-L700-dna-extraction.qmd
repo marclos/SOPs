@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the extraction of genomic DNA from environmental
 samples (soil, sediment, water filters, and plant tissue), followed by
@@ -29,7 +29,7 @@ applications including PCR amplification, qPCR, and amplicon sequencing
 [@dneasy2024; @qiagen_powersoil2024].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Genomic DNA extraction from soil, sediment, water filter
   membranes, and plant tissue using the DNeasy PowerSoil Pro Kit (Qiagen)
@@ -40,7 +40,7 @@ applications including PCR amplification, qPCR, and amplicon sequencing
 - **Location:** Molecular biology bench, Pomona College Biogeochemistry Lab
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -49,7 +49,7 @@ applications including PCR amplification, qPCR, and amplicon sequencing
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -81,7 +81,7 @@ chemical waste. Refer to
 for general chemical spill response.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -110,9 +110,9 @@ for general chemical spill response.
 | Filter pipette tips (10, 100, 1000 uL)| Various          | Room temperature |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Sample Preparation
+### Sample Preparation
 
 1. Record sample identity, collection date, and mass/volume in the lab
    notebook and in the
@@ -132,7 +132,7 @@ endogenous nucleases. Process all samples within a single batch if
 possible to reduce extraction variability [@frostegard1999].
 :::
 
-### 6.2 Cell Lysis and DNA Extraction
+### Cell Lysis and DNA Extraction
 
 Follow the DNeasy PowerSoil Pro Kit protocol [@qiagen_powersoil2024]:
 
@@ -168,7 +168,7 @@ needed for downstream applications. A second elution with an additional
 [@qiagen_powersoil2024].
 :::
 
-### 6.3 DNA Quantification -- NanoDrop Spectrophotometry
+### DNA Quantification -- NanoDrop Spectrophotometry
 
 The NanoDrop measures DNA concentration and provides absorbance ratios
 used to assess purity [@desjardins2010]:
@@ -181,7 +181,7 @@ used to assess purity [@desjardins2010]:
 4. Record the concentration (ng/uL), A~260~/A~280~ ratio, and
    A~260~/A~230~ ratio for each sample
 
-### 6.4 DNA Quantification -- Qubit Fluorometry
+### DNA Quantification -- Qubit Fluorometry
 
 The Qubit fluorometer uses fluorescent dyes that bind selectively to
 dsDNA, providing more accurate quantification than spectrophotometry,
@@ -202,7 +202,7 @@ especially at low concentrations or in the presence of contaminants
 6. Record the concentration (ng/uL, corrected for dilution by the
    instrument)
 
-### 6.5 DNA Purity Assessment
+### DNA Purity Assessment
 
 Evaluate DNA purity using the NanoDrop absorbance ratios
 [@wilfinger1997; @desjardins2010]:
@@ -219,7 +219,7 @@ A~260~/A~230~ ratios are frequently below 2.0. If downstream applications
 OneStep PCR Inhibitor Removal Kit or gel purification [@young2014].
 :::
 
-### 6.6 Storage and Freezer Inventory
+### Storage and Freezer Inventory
 
 1. Label each tube with: sample ID, extraction date, elution volume, and
    concentration (in ng/uL)
@@ -245,7 +245,7 @@ OneStep PCR Inhibitor Removal Kit or gel purification [@young2014].
 :::
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Include one extraction blank (empty PowerBead Pro tube processed through
   the full protocol) per extraction batch to detect contamination
@@ -263,7 +263,7 @@ OneStep PCR Inhibitor Removal Kit or gel purification [@young2014].
   Qubit value for planning downstream reactions [@nakayama2016].
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Container                 | Disposal Method                     |
 |:------------------------------|:--------------------------|:------------------------------------|
@@ -274,13 +274,13 @@ OneStep PCR Inhibitor Removal Kit or gel purification [@young2014].
 | Empty reagent bottles         | Rinse and recycle          | Check SDS for specific instructions |
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Before performing this procedure independently, personnel must:
 

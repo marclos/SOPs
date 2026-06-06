@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the preparation of amplicon sequencing libraries for
 Illumina platforms, following a two-step PCR approach. The first PCR
@@ -31,7 +31,7 @@ Sequencing Library Preparation guide and the Earth Microbiome Project
 (EMP) standards [@caporaso2012; @illumina_16s_2013; @thompson2017].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Preparation of amplicon libraries targeting 16S rRNA
   (V4 or V3--V4 region), ITS (ITS1 or ITS2 region), 18S rRNA, or other
@@ -44,7 +44,7 @@ Sequencing Library Preparation guide and the Earth Microbiome Project
 - **Location:** Molecular biology bench, SGM 133
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -53,7 +53,7 @@ Sequencing Library Preparation guide and the Earth Microbiome Project
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -77,7 +77,7 @@ Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -109,9 +109,9 @@ Refer to
 | Filter pipette tips                   | Barrier tips mandatory             |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Primer Design (PCR1: Gene-Specific Amplification)
+### Primer Design (PCR1: Gene-Specific Amplification)
 
 Primers for the first PCR consist of the gene-specific sequence plus
 the Illumina adapter overhang. The overhang sequences are:
@@ -138,7 +138,7 @@ which include degeneracies for improved archaeal coverage
 requires a different region.
 :::
 
-### 6.2 PCR1: Target Amplification
+### PCR1: Target Amplification
 
 1. Prepare the master mix on ice. Use a high-fidelity polymerase.
 
@@ -172,7 +172,7 @@ sequencing data.
 4. Verify amplification by running 2 uL on a 1.5% agarose gel per
    [SOP-L703](SOP-L703-pcr-gel-electrophoresis.qmd).
 
-### 6.3 PCR1 Cleanup (SPRI Beads)
+### PCR1 Cleanup (SPRI Beads)
 
 1. Allow AMPure XP beads to reach room temperature (approximately
    30 minutes). Vortex well before use.
@@ -190,7 +190,7 @@ sequencing data.
 9. Return to the magnetic stand. Transfer 25 uL of the clear eluate to
    a new tube.
 
-### 6.4 PCR2: Index PCR (Barcoding)
+### PCR2: Index PCR (Barcoding)
 
 1. Assign a unique dual-index combination (i7 + i5) to each sample.
    Record the plate map in the lab notebook and in the sample sheet.
@@ -219,7 +219,7 @@ sequencing data.
 4. Clean the indexed PCR product with AMPure XP beads (0.8x ratio)
    as in Section 6.3. Elute in 27.5 uL.
 
-### 6.5 Library Quantification and QC
+### Library Quantification and QC
 
 1. Quantify each library using the Qubit dsDNA HS Assay
    ([SOP-L700](SOP-L700-dna-extraction.qmd), Section 6.4).
@@ -229,7 +229,7 @@ sequencing data.
 3. Libraries with concentrations below 1 nM may not sequence well.
    Re-amplify or exclude them.
 
-### 6.6 Library Pooling and Submission
+### Library Pooling and Submission
 
 1. Normalize each library to an equimolar concentration (typically
    4 nM) by diluting with nuclease-free water.
@@ -244,7 +244,7 @@ sequencing data.
    or 2x300), and expected turnaround in the lab notebook.
 
 
-## 7. Quality Control
+## Quality Control
 
 - Every library prep run must include: positive control (mock
   community, if available), NTC, and extraction blank carried through
@@ -258,7 +258,7 @@ sequencing data.
   sample; these are required for data analysis and troubleshooting
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Container                 | Disposal Method                     |
 |:------------------------------|:--------------------------|:------------------------------------|
@@ -268,13 +268,13 @@ sequencing data.
 | Gel waste                     | Per [SOP-L703](SOP-L703-pcr-gel-electrophoresis.qmd) | Depends on stain used |
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -285,7 +285,7 @@ sequencing data.
 | [F701](../field_sops/SOP-F701-soil-microbial-field-sampling.qmd) | Soil Microbial Sampling | Field collection |
 
 
-## 11. Training Record
+## Training Record
 
 Before preparing amplicon libraries independently, personnel must:
 

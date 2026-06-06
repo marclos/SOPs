@@ -261,14 +261,14 @@ Times include an additional minute for peak centering and magnet switching.
 # =============================================================================
 # Data reduction workflow (placeholder)
 # =============================================================================
-# 1. Export raw results from Isodat as a CSV.
-# 2. Read into R and merge with your sample log (masses, IDs).
-# 3. Apply blank correction (if applicable).
-# 4. Apply linearity correction using the on/off test slope.
-# 5. Normalize delta values to the international scale using your
+# Export raw results from Isodat as a CSV.
+# Read into R and merge with your sample log (masses, IDs).
+# Apply blank correction (if applicable).
+# Apply linearity correction using the on/off test slope.
+# Normalize delta values to the international scale using your
 #    bracketing standards (two-point or multi-point calibration).
-# 6. Calculate %C and %N from peak areas using standard curves.
-# 7. Flag any QC failures (see Section 13).
+# Calculate %C and %N from peak areas using standard curves.
+# Flag any QC failures (see Section 13).
 # =============================================================================
 
 library(tidyverse)

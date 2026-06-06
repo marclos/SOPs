@@ -24,7 +24,7 @@ revision-history:
     changes: "Added definitions section; expanded canopy cover vs closure distinction; added method intercomparison context"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes two methods for estimating canopy cover: the convex
 spherical densiometer and hemispherical (fisheye) photography. Canopy
@@ -45,7 +45,7 @@ same location depending on canopy heterogeneity and the method used
 [@jennings1999; @paletto2009].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Measurement of overhead canopy cover in forests,
   riparian corridors, oak woodlands, restoration sites, and any
@@ -60,7 +60,7 @@ same location depending on canopy heterogeneity and the method used
   cover
 
 
-## 3. Definitions
+## Definitions
 
 - **Canopy cover:** The proportion of the forest floor covered by the
   vertical projection of tree crowns, expressed as a percentage.
@@ -89,7 +89,7 @@ same location depending on canopy heterogeneity and the method used
   canopy cover as part of physical habitat assessment.
 
 
-## 4. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -98,7 +98,7 @@ same location depending on canopy heterogeneity and the method used
 | New Students      | Complete training before independent measurement        |
 
 
-## 5. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -124,7 +124,7 @@ same location depending on canopy heterogeneity and the method used
 Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
-## 6. Equipment and Materials
+## Equipment and Materials
 
 ### Method A: Spherical Densiometer
 
@@ -147,9 +147,9 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 | GPS unit                              | Per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Measurement Point Selection
+### Measurement Point Selection
 
 Canopy cover measurements are typically taken at systematic intervals
 along a transect or at the center and edges of fixed-area plots.
@@ -166,7 +166,7 @@ along a transect or at the center and edges of fixed-area plots.
 Record the GPS coordinates of each measurement point or its position
 along the transect.
 
-### 7.2 Method A: Convex Spherical Densiometer
+### Method A: Convex Spherical Densiometer
 
 The densiometer has a convex mirror with an etched grid. The observer
 counts the number of grid intersections that are open to the sky
@@ -208,7 +208,7 @@ Report the method used alongside all canopy cover values, and do not
 mix methods within a dataset or monitoring program.
 :::
 
-### 7.3 Method B: Hemispherical Photography
+### Method B: Hemispherical Photography
 
 Hemispherical photographs capture a 180-degree view of the canopy and
 are analyzed digitally to classify sky vs. canopy pixels [@frazer2001].
@@ -246,7 +246,7 @@ are analyzed digitally to classify sky vs. canopy pixels [@frazer2001].
 5. Export results as a `.csv` file. Save to the project repository
    under `data/canopy/`.
 
-### 7.4 Reporting
+### Reporting
 
 Report canopy cover values with the following metadata:
 
@@ -260,7 +260,7 @@ Report canopy cover values with the following metadata:
   or canopy closure (hemispherical view); see Section 3 definitions
 
 
-## 8. Quality Control
+## Quality Control
 
 - **Densiometer:** Have two observers independently read the same
   point. Readings should agree within 5 percentage points. If they
@@ -278,13 +278,13 @@ Report canopy cover values with the following metadata:
 - Record the observer's name with every densiometer measurement.
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -295,7 +295,7 @@ Report canopy cover values with the following metadata:
 | [F605](SOP-F605-leaf-area-index.qmd)   | Leaf Area Index           | Related canopy metric             |
 
 
-## 11. Training Record
+## Training Record
 
 Before measuring canopy cover independently, personnel must:
 

@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the deployment, data retrieval, and barometric
 compensation of Onset HOBO water level loggers for continuous
@@ -28,7 +28,7 @@ developing stage-discharge rating curves, characterizing hydrologic
 response to storms, and documenting seasonal water table fluctuations.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Onset HOBO U20, U20L, and MX2001 water level loggers
   deployed at EA Program surface water and groundwater monitoring sites
@@ -38,7 +38,7 @@ response to storms, and documenting seasonal water table fluctuations.
 - **Location:** All EA Program hydrologic monitoring sites
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -47,7 +47,7 @@ response to storms, and documenting seasonal water table fluctuations.
 | New Students      | Complete training before independent use                |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -74,9 +74,9 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). A minimum
 of two people must be present for all in-stream deployments.
 
 
-## 5. Instrument Specifications
+## Instrument Specifications
 
-### 5.1 HOBO U20L Water Level Logger
+### HOBO U20L Water Level Logger
 
 | Parameter              | Value                                      |
 |:-----------------------|:-------------------------------------------|
@@ -91,7 +91,7 @@ of two people must be present for all in-stream deployments.
 | Battery                | 3V lithium; approximately 5-year life at 1-minute logging |
 | Communication          | Optical USB coupler (U20L) or Bluetooth (MX2001) |
 
-### 5.2 HOBO MX2001 Water Level Logger
+### HOBO MX2001 Water Level Logger
 
 | Parameter              | Value                                      |
 |:-----------------------|:-------------------------------------------|
@@ -99,7 +99,7 @@ of two people must be present for all in-stream deployments.
 | Pressure range         | 0--9 m (30 ft) or 0--4 m (13 ft) models   |
 | Other specifications   | Similar to U20L                            |
 
-### 5.3 Barometric Reference Logger
+### Barometric Reference Logger
 
 Because the water level loggers measure absolute pressure (water column
 plus atmosphere), a companion barometric pressure logger must be
@@ -107,7 +107,7 @@ deployed above the water surface at or near the site. Onset HOBO U20L-04
 (barometric model) or a HOBO MX barometric logger serves this purpose.
 
 
-## 6. Equipment and Materials
+## Equipment and Materials
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
@@ -125,9 +125,9 @@ deployed above the water surface at or near the site. Onset HOBO U20L-04
 | GPS unit                               | For recording deployment coordinates    |
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Pre-Deployment Setup
+### Pre-Deployment Setup
 
 1. **Launch the logger** using HOBOware (U20L) or HOBOconnect (MX2001):
    - Set the logging interval: 15 minutes is standard for most
@@ -142,7 +142,7 @@ deployed above the water surface at or near the site. Onset HOBO U20L-04
 3. Record in the field notebook: logger serial number, model, logging
    interval, start time, and battery status.
 
-### 7.2 Stream Deployment
+### Stream Deployment
 
 1. Select a deployment location in a pool or low-velocity area where
    the logger will remain submerged during low-flow conditions.
@@ -169,7 +169,7 @@ deployed above the water surface at or near the site. Onset HOBO U20L-04
    an airtight container.
 6. Take a photograph of the deployment.
 
-### 7.3 Well Deployment
+### Well Deployment
 
 1. Remove the well cap and measure the depth to water using an
    electronic water level indicator (e-tape). Record the measurement.
@@ -183,7 +183,7 @@ deployed above the water surface at or near the site. Onset HOBO U20L-04
 6. Deploy the barometric reference logger at the wellhead or at a
    nearby location above ground.
 
-### 7.4 Data Retrieval
+### Data Retrieval
 
 Retrieve data at intervals appropriate for the project (typically
 monthly or quarterly). The logger continues recording during download.
@@ -203,7 +203,7 @@ monthly or quarterly). The logger continues recording during download.
 2. Select the logger and tap **Readout**.
 3. The logger does not need to be removed from the water for download.
 
-### 7.5 Barometric Compensation
+### Barometric Compensation
 
 Raw data from the water level logger must be compensated for
 atmospheric pressure changes before the readings represent true water
@@ -222,7 +222,7 @@ level.
    `YYYY-MM-DD_SiteID_waterlevel_compensated.csv`
 7. Upload to the project GitHub repository under `data/stage/`.
 
-### 7.6 Logger Retrieval (End of Deployment)
+### Logger Retrieval (End of Deployment)
 
 1. Download all remaining data.
 2. Remove the logger and stilling well hardware.
@@ -232,7 +232,7 @@ level.
 5. Store the logger in a dry location.
 
 
-## 8. Quality Control
+## Quality Control
 
 - At every site visit, read the staff gauge (or measure depth to water
   in wells) and record the time. Use these manual readings to verify
@@ -248,7 +248,7 @@ level.
   battery failure).
 
 
-## 9. References
+## References
 
 - Onset Computer Corporation. *HOBO U20L Water Level Logger User
   Manual*. <https://www.onsetcomp.com>
@@ -259,7 +259,7 @@ level.
   Water-Resources Investigations, Book 8, Chapter A3.
 
 
-## 10. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -271,7 +271,7 @@ level.
 | [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub    | Data version control              |
 
 
-## 11. Training Record
+## Training Record
 
 Before deploying water level loggers independently, personnel must:
 

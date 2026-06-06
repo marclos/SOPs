@@ -15,19 +15,19 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the operation of the Shimadzu TOC-L total organic carbon analyzer and the SSM-5000A Solid Sample Module for quantifying dissolved organic carbon (DOC) in soil extracts and total carbon (TC) or total organic carbon (TOC) in solid soil samples.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** K~2~SO~4~ extracts from the chloroform fumigation-extraction method (SOP-L04); water samples; and dried, ground solid soil samples
 - **Does not apply to:** Samples with extremely high salt concentrations that exceed the instrument's tolerance (consult the instrument manual); sea water or marine sediments with high salt content
 - **Location:** EA Program analytical laboratory
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -37,7 +37,7 @@ This SOP describes the operation of the Shimadzu TOC-L total organic carbon anal
 | New Students      | Complete training before independent use                |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -55,7 +55,7 @@ This SOP describes the operation of the Shimadzu TOC-L total organic carbon anal
 - [ ] Heat-resistant gloves (when handling ceramic boats from SSM)
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Instrument
 
@@ -82,16 +82,16 @@ This SOP describes the operation of the Shimadzu TOC-L total organic carbon anal
 | Autosampler vials              | Clean, acid-washed                          |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Instrument Startup
+### Instrument Startup
 
 1. Verify carrier gas supply pressure (typically 200 kPa or per instrument manual)
 2. Turn on the TOC-L main unit and allow the furnace to reach operating temperature (680 C for liquid mode)
 3. Launch LabSolutions TOC software on the connected computer
 4. Run a system blank check using deionized water to verify baseline stability; the blank value should be below 0.1 mg/L C
 
-### 6.2 Calibration
+### Calibration
 
 1. Prepare a multi-point calibration curve using potassium hydrogen phthalate (KHP) dissolved in deionized water
 2. Typical calibration range: 0, 1, 5, 10, 25, 50, 100 mg/L C (adjust to expected sample range)
@@ -99,7 +99,7 @@ This SOP describes the operation of the Shimadzu TOC-L total organic carbon anal
 4. Run calibration standards and verify that the correlation coefficient (r^2^) is at least 0.999
 5. Save the calibration curve in the software
 
-### 6.3 Liquid Sample Analysis (DOC in Soil Extracts)
+### Liquid Sample Analysis (DOC in Soil Extracts)
 
 1. Filter all liquid samples through 0.45 um syringe filters or pre-combusted glass fiber filters into clean autosampler vials
 2. For K~2~SO~4~ extracts, include 0.5 M K~2~SO~4~ blanks in the run
@@ -114,7 +114,7 @@ This SOP describes the operation of the Shimadzu TOC-L total organic carbon anal
 If K~2~SO~4~ extracts have high salt content, use the instrument's automatic dilution function to extend catalyst and combustion tube life. Dilution factors are applied automatically to the reported concentrations.
 :::
 
-### 6.4 Solid Sample Analysis (SSM-5000A)
+### Solid Sample Analysis (SSM-5000A)
 
 1. Switch the instrument to SSM mode in the LabSolutions software
 2. Pre-combust ceramic boats at 900 C to remove any residual carbon
@@ -125,7 +125,7 @@ If K~2~SO~4~ extracts have high salt content, use the instrument's automatic dil
 7. The SSM combusts the sample in an oxygen-rich environment at high temperature; the evolved CO~2~ is carried to the NDIR detector
 8. The software reports total carbon content in mg C or as a percentage of sample mass
 
-### 6.5 Instrument Shutdown
+### Instrument Shutdown
 
 1. After the final sample, run 3--5 deionized water blanks to flush the system
 2. Review all data in the software for outliers or failed injections
@@ -133,7 +133,7 @@ If K~2~SO~4~ extracts have high salt content, use the instrument's automatic dil
 4. If the instrument will not be used for several days, turn off the furnace and carrier gas per the instrument manual
 
 
-## 7. Quality Control
+## Quality Control
 
 - Run a calibration verification standard (mid-range) every 10--15 samples; acceptance criterion is within 10% of the known value
 - Include instrument blanks (deionized water) at the beginning, middle, and end of each run
@@ -143,7 +143,7 @@ If K~2~SO~4~ extracts have high salt content, use the instrument's automatic dil
 - Log catalyst replacement, combustion tube changes, and calibration dates in the instrument logbook
 
 
-## 8. Maintenance
+## Maintenance
 
 | Task                             | Frequency                                |
 |:---------------------------------|:-----------------------------------------|
@@ -155,7 +155,7 @@ If K~2~SO~4~ extracts have high salt content, use the instrument's automatic dil
 | Carrier gas cylinder replacement | As needed (monitor pressure gauge)       |
 
 
-## 9. Waste Disposal
+## Waste Disposal
 
 | Waste Type                   | Disposal Method                              |
 |:-----------------------------|:---------------------------------------------|
@@ -165,14 +165,14 @@ If K~2~SO~4~ extracts have high salt content, use the instrument's automatic dil
 | K~2~SO~4~ extract waste      | Aqueous waste; drain if approved, or collect |
 
 
-## 10. References
+## References
 
 - Shimadzu Corporation. *TOC-L Series Total Organic Carbon Analyzer: User Manual*.
 - Shimadzu Corporation. *SSM-5000A Solid Sample Combustion Unit: User Manual*.
 - Nelson, D.W. & Sommers, L.E. (1996). Total carbon, organic carbon, and organic matter. In: Sparks, D.L. (Ed.), *Methods of Soil Analysis, Part 3: Chemical Methods*. SSSA Book Series No. 5.
 
 
-## 11. Training Record
+## Training Record
 
 Before operating this instrument independently, personnel must:
 

@@ -19,7 +19,7 @@ revision-history:
     changes: "Added definitions section; expanded aerosol science context and filter chemistry discussion"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the collection of ambient particulate matter
 (PM) on pre-weighed filters using active (pump-based) samplers for
@@ -44,7 +44,7 @@ by EA Program personnel. It does not cover Federal Reference Method
 (FRM) high-volume samplers operated by regulatory agencies.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Collection of PM~2.5~ and PM~10~ on filters using
   portable or semi-permanent medium-volume or personal air samplers
@@ -58,7 +58,7 @@ by EA Program personnel. It does not cover Federal Reference Method
   College area and surrounding Inland Empire communities
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -68,7 +68,7 @@ by EA Program personnel. It does not cover Federal Reference Method
 | New Students      | Complete training before independent deployment |
 
 
-## 4. Definitions
+## Definitions
 
 - **Particulate matter (PM):** A mixture of solid particles and liquid
   droplets suspended in air, ranging in size from a few nanometers to
@@ -110,7 +110,7 @@ by EA Program personnel. It does not cover Federal Reference Method
   fractions by thermal-optical analysis) [@chow2015].
 
 
-## 5. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -134,7 +134,7 @@ by EA Program personnel. It does not cover Federal Reference Method
 - [ ] Sun protection
 
 
-## 6. Equipment and Materials
+## Equipment and Materials
 
 ### Sampling Equipment
 
@@ -159,9 +159,9 @@ by EA Program personnel. It does not cover Federal Reference Method
 | Analytical balance (0.01 mg or better) | Per [SOP-L200](../lab_sops/SOP-L200-analytical-balance-calibration.qmd) |
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Filter Conditioning and Pre-Weighing
+### Filter Conditioning and Pre-Weighing
 
 1. Place unused filters in a desiccator at controlled temperature
    (20--25 C) and humidity (30--40% RH) for at least 24 hours
@@ -173,7 +173,7 @@ by EA Program personnel. It does not cover Federal Reference Method
 4. Place the conditioned filter in a labeled Petri dish or cassette.
    Seal and transport in a cooler if traveling to a remote site.
 
-### 7.2 Sampler Setup and Flow Calibration
+### Sampler Setup and Flow Calibration
 
 1. Install the appropriate size-selective inlet (PM~2.5~ or PM~10~
    impactor head) on the sampler
@@ -187,7 +187,7 @@ by EA Program personnel. It does not cover Federal Reference Method
 5. Remove the blank cassette and load the pre-weighed sample filter
    using forceps. Handle the filter only by its edges.
 
-### 7.3 Deployment
+### Deployment
 
 1. Position the sampler with the inlet at 1.5--2 m above ground level,
    unobstructed by walls or overhangs (at least 2 m from any vertical
@@ -198,7 +198,7 @@ by EA Program personnel. It does not cover Federal Reference Method
 4. For 24-hour integrated samples, allow the sampler to run for
    23--25 hours
 
-### 7.4 Retrieval
+### Retrieval
 
 1. Record the stop time and elapsed run time
 2. Verify the flow rate with the calibrated flow meter before stopping
@@ -212,7 +212,7 @@ by EA Program personnel. It does not cover Federal Reference Method
    + Q_{\text{post}}) / 2$. If pre- and post-flow rates differ by
    more than 10%, flag the sample.
 
-### 7.5 Post-Sampling Conditioning and Weighing
+### Post-Sampling Conditioning and Weighing
 
 1. Condition the exposed filter in the same desiccator and at the same
    temperature/humidity as the pre-weighing step for at least 24 hours
@@ -230,7 +230,7 @@ $$
 C_{\text{PM}} (\mu\text{g/m}^3) = \frac{m_{\text{PM}} (\mu\text{g})}{Q_{\text{avg}} (\text{L/min}) \times t (\text{min})} \times 10^3
 $$
 
-### 7.6 Filter Archiving and Downstream Analysis
+### Filter Archiving and Downstream Analysis
 
 1. After gravimetric analysis, archive filters in sealed Petri dishes
    at room temperature (or at -20 C if chemical analysis is planned)
@@ -244,7 +244,7 @@ $$
    [@chow2015]
 
 
-## 8. Quality Control
+## Quality Control
 
 - Collect at least one field blank per sampling event: load a
   conditioned filter into a cassette, transport it to the site, open
@@ -263,7 +263,7 @@ $$
   these, but do not discard without documentation
 
 
-## 9. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -272,13 +272,13 @@ $$
 | Used desiccant                | Standard trash or regenerate per manufacturer |
 
 
-## 10. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 11. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -290,7 +290,7 @@ $$
 | [L205](../lab_sops/SOP-L205-xrf-sample-prep-analysis.qmd) | XRF Analysis | Filter metals analysis           |
 
 
-## 12. Training Record
+## Training Record
 
 Before deploying PM samplers independently, personnel must:
 

@@ -22,7 +22,7 @@ revision-history:
     changes: "Converted to Quarto; expanded procedure sections for simple random, grid-based, and stratified random sampling"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP provides standardized procedures for designing and executing
 random sampling in field and laboratory settings. Random sampling
@@ -31,7 +31,7 @@ independent probability of selection, eliminating researcher bias and
 supporting valid statistical inference.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Any EA Program study where population estimates are
   the goal, including vegetation surveys, soil sampling, water quality
@@ -43,7 +43,7 @@ supporting valid statistical inference.
   sampling, and stratified random sampling
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -52,7 +52,7 @@ supporting valid statistical inference.
 | New Students      | Complete training before independent fieldwork |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -74,7 +74,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). Carry a
 first aid kit and charged cell phone to all field sites.
 
 
-## 5. Definitions
+## Definitions
 
 - **Sampling universe (population):** The complete set of units from
   which a sample will be drawn.
@@ -88,7 +88,7 @@ first aid kit and charged cell phone to all field sites.
   moisture gradient).
 
 
-## 6. Required Materials
+## Required Materials
 
 | Item                                          | Notes                              |
 |:----------------------------------------------|:-----------------------------------|
@@ -102,7 +102,7 @@ first aid kit and charged cell phone to all field sites.
 | Field identification guides                   | If sampling vegetation or organisms |
 
 
-## 7. Biases and Interferences
+## Biases and Interferences
 
 Representative sampling requires strict adherence to randomized
 procedures. Common sources of bias include:
@@ -120,9 +120,9 @@ procedures. Common sources of bias include:
   counting organisms in quadrats (Section 8.3).
 
 
-## 8. Procedure
+## Procedure
 
-### 8.1 Generating Random Numbers
+### Generating Random Numbers
 
 Use a software-based random number generator to produce unbiased
 selections. Never rely on manual or mental number selection.
@@ -156,7 +156,7 @@ colnames(rand_mat) <- 1:10
 knitr::kable(rand_mat)
 ```
 
-### 8.2 Simple Random Sampling
+### Simple Random Sampling
 
 Use this approach when the population can be enumerated as a list
 (e.g., lab samples, batch numbers, individual organisms in a database).
@@ -171,7 +171,7 @@ Use this approach when the population can be enumerated as a list
    selected unit IDs, and the date of selection
 5. Collect the data or specimens from the selected units
 
-### 8.3 Grid-Based Random Sampling (Field)
+### Grid-Based Random Sampling (Field)
 
 Use this approach when the sampling universe is a spatially defined
 area (e.g., a meadow, forest plot, intertidal zone). This is the
@@ -246,7 +246,7 @@ $$
 \frac{\text{Total site area}}{\text{Area of one quadrat}}
 $$
 
-### 8.4 Stratified Random Sampling
+### Stratified Random Sampling
 
 Use this approach when the study area contains distinct environmental
 gradients or habitat types that would increase variance under simple
@@ -263,7 +263,7 @@ random sampling.
 5. Weight stratum means by the proportion of total area each stratum
    represents when calculating site-level estimates
 
-### 8.5 Map-Based Sampling with Exclusion Zones
+### Map-Based Sampling with Exclusion Zones
 
 For sites where portions of the area are inaccessible or must be
 excluded (buildings, water bodies, restricted zones):
@@ -286,7 +286,7 @@ built using the `sf` package. Generate random points with
 :::
 
 
-## 9. Data Management
+## Data Management
 
 1. Record all sampling metadata (date, site, grid dimensions, random
    seed or table starting position, personnel) on the field data sheet
@@ -296,7 +296,7 @@ built using the `sf` package. Generate random points with
    [SOP-L801 RStudio and GitHub](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 
-## 10. References
+## References
 
 - APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
   and Wastewater*. 22nd ed. American Public Health Association (Eds.).
@@ -308,7 +308,7 @@ built using the `sf` package. Generate random points with
   Technical Reference 1730-1.
 
 
-## 11. Training Record
+## Training Record
 
 Training is documented in EA Program files. Before designing or
 executing random sampling independently, personnel must:

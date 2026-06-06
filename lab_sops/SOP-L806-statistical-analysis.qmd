@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP provides standardized R analysis templates for common
 statistical procedures used in EA Program research. It establishes
@@ -28,7 +28,7 @@ analyses are transparent, well-documented, and consistent across
 projects [@zuur2010; @wickham2023].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All quantitative statistical analyses performed
   for EA Program research, coursework, and publications
@@ -39,7 +39,7 @@ projects [@zuur2010; @wickham2023].
 - **Location:** RStudio Server (rstudio.pomona.edu)
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -49,13 +49,13 @@ projects [@zuur2010; @wickham2023].
 | Statistical Advisor | Consult on complex designs (mixed models, multivariate methods) |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 Statistical analysis is a computational activity with no physical
 hazards.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Software
 
@@ -83,9 +83,9 @@ hazards.
 | `knitr` / `kableExtra` | Formatted tables                      |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Analysis Workflow Overview
+### Analysis Workflow Overview
 
 Every statistical analysis should follow this sequence:
 
@@ -99,7 +99,7 @@ Every statistical analysis should follow this sequence:
 8. Write up methods and results in a Quarto document
 9. Commit the complete analysis to Git
 
-### 6.2 Quarto Document Header
+### Quarto Document Header
 
 Begin every analysis with a standard Quarto header:
 
@@ -117,7 +117,7 @@ bibliography: references.bib
 ---
 ```
 
-### 6.3 Exploratory Data Analysis Template
+### Exploratory Data Analysis Template
 
 ```{r}
 #| label: eda-template
@@ -163,7 +163,7 @@ dat %>%
   filter(n_missing > 0)
 ```
 
-### 6.4 Two-Sample Comparisons
+### Two-Sample Comparisons
 
 ```{r}
 #| label: two-sample
@@ -192,7 +192,7 @@ library(effectsize)
 cohens_d(response ~ treatment, data = dat)
 ```
 
-### 6.5 One-Way ANOVA Template
+### One-Way ANOVA Template
 
 ```{r}
 #| label: anova-template
@@ -233,7 +233,7 @@ are non-normal or variances are unequal, consider a transformation
 reasoning in your analysis script [@zuur2010].
 :::
 
-### 6.6 Linear Regression Template
+### Linear Regression Template
 
 ```{r}
 #| label: regression-template
@@ -274,7 +274,7 @@ ggplot(dat, aes(x = predictor1, y = response)) +
   theme_minimal()
 ```
 
-### 6.7 Mixed-Effects Model Template
+### Mixed-Effects Model Template
 
 For data with nested or repeated-measures structure:
 
@@ -307,7 +307,7 @@ plot(mixed_model)
 qqnorm(resid(mixed_model)); qqline(resid(mixed_model))
 ```
 
-### 6.8 Multivariate / Community Analysis Template
+### Multivariate / Community Analysis Template
 
 ```{r}
 #| label: multivariate
@@ -344,7 +344,7 @@ adonis2(comm_matrix ~ treatment, data = env_data,
         method = "bray", permutations = 999)
 ```
 
-### 6.9 Figure Formatting Standards
+### Figure Formatting Standards
 
 All figures for reports and publications must follow these conventions:
 
@@ -366,7 +366,7 @@ ggsave("analysis/output/fig_treatment_response.png",
        width = 6, height = 4, units = "in", dpi = 300)
 ```
 
-### 6.10 Reporting Statistical Results
+### Reporting Statistical Results
 
 When writing results in a Quarto document, follow APA conventions:
 
@@ -392,7 +392,7 @@ tidy(aov_model) %>%
 ```
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Every analysis must include explicit assumption checks (normality,
   homoscedasticity, independence) documented in the script
@@ -404,18 +404,18 @@ tidy(aov_model) %>%
   before results are included in publications
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 Not applicable (computational procedure).
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Training is documented in the EA Program training log. Before
 conducting statistical analyses independently, personnel must:

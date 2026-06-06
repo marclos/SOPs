@@ -23,7 +23,7 @@ revision-history:
     changes: "Added definitions section; expanded discussion of effective vs true LAI, remote sensing validation, and method intercomparison"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes field methods for estimating Leaf Area Index (LAI),
 the total one-sided area of leaf tissue per unit ground surface area
@@ -45,7 +45,7 @@ for validating satellite-derived LAI products [@garrigues2008;
 @zheng2009].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Indirect optical measurement of LAI using
   hemispherical photography and/or a ceptometer (AccuPAR or equivalent
@@ -56,7 +56,7 @@ for validating satellite-derived LAI products [@garrigues2008;
 - **Location:** All EA Program field sites
 
 
-## 3. Definitions
+## Definitions
 
 - **Leaf Area Index (LAI):** The total one-sided area of leaf tissue
   per unit ground area. Dimensionless (m^2^ m^-2^). Typical values
@@ -93,7 +93,7 @@ for validating satellite-derived LAI products [@garrigues2008;
   the image yields LAI estimates [@frazer2001].
 
 
-## 4. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -102,7 +102,7 @@ for validating satellite-derived LAI products [@garrigues2008;
 | New Students      | Complete training before independent use    |
 
 
-## 5. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -124,7 +124,7 @@ for validating satellite-derived LAI products [@garrigues2008;
 Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
-## 6. Required Materials
+## Required Materials
 
 | Item                                     | Notes                              |
 |:-----------------------------------------|:-----------------------------------|
@@ -138,7 +138,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 | Measuring tape (50 m)                    | For locating measurement points    |
 
 
-## 7. Estimated Time
+## Estimated Time
 
 | Task                                 | Time                          |
 |:-------------------------------------|:------------------------------|
@@ -148,9 +148,9 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 | Data download and QC                 | 15 minutes                    |
 
 
-## 8. Procedure
+## Procedure
 
-### 8.1 Measurement Timing
+### Measurement Timing
 
 LAI measurements should be taken under uniform overcast skies or
 within one hour of solar noon under clear skies [@weiss2004]. Avoid
@@ -159,7 +159,7 @@ causes inconsistent above-canopy reference readings. For hemispherical
 photography, early morning, late afternoon, or overcast conditions
 produce the best contrast between sky and foliage [@breda2003].
 
-### 8.2 Sampling Design
+### Sampling Design
 
 1. Determine measurement locations using the project sampling design
    (random, stratified random, or collocated with vegetation transects
@@ -169,7 +169,7 @@ produce the best contrast between sky and foliage [@breda2003].
    variability [@weiss2004]
 3. Record GPS coordinates at each measurement location
 
-### 8.3 Method A: Ceptometer (AccuPAR)
+### Method A: Ceptometer (AccuPAR)
 
 1. Power on the ceptometer and set the date, time, and site ID
 2. Enter the leaf angle distribution parameter ($\chi$). Use 1.0 for
@@ -203,7 +203,7 @@ is the extinction coefficient (a function of solar zenith angle and
 leaf angle distribution). This value is the effective LAI ($L_e$)
 and does not include a clumping correction.
 
-### 8.4 Method B: Hemispherical Photography
+### Method B: Hemispherical Photography
 
 1. Mount the camera with fisheye lens adapter on the tripod at 1 m
    height (or just above the understory)
@@ -246,7 +246,7 @@ sites allows cross-validation and helps quantify method-specific bias.
 :::
 
 
-## 9. Quality Control
+## Quality Control
 
 - Take at least 5 below-canopy readings per measurement location to
   quantify within-site variability
@@ -265,7 +265,7 @@ sites allows cross-validation and helps quantify method-specific bias.
   the timing relative to the satellite overpass [@garrigues2008]
 
 
-## 10. Data Management
+## Data Management
 
 1. Download ceptometer data to the lab computer within 48 hours
 2. Organize hemispherical images by site and date:
@@ -275,13 +275,13 @@ sites allows cross-validation and helps quantify method-specific bias.
    [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd)
 
 
-## 11. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 12. Training Record
+## Training Record
 
 Before measuring LAI independently, personnel must:
 

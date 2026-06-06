@@ -16,9 +16,12 @@ revision-history:
     date: "2025-05-15"
     author: "Marc Los Huertos"
     changes: "Initial release"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the determination of alkalinity in water
 samples by potentiometric titration with standardized sulfuric acid,
@@ -29,11 +32,10 @@ parameter for characterizing water chemistry, assessing buffering
 capacity, and interpreting corrosivity, hardness, and suitability for
 irrigation or aquatic life.
 
+## Scope
 
-## 2. Scope
-
-- **Applies to:** Surface water, groundwater, stormwater, and
-  wastewater samples collected per
+- **Applies to:** Surface water, groundwater, stormwater, and wastewater
+  samples collected per
   [SOP-F300](../field_sops/SOP-F300-surface-water-sampling.qmd)
 - **Does not apply to:** Soil alkalinity, industrial process water
   requiring specialized titration protocols, or samples with alkalinity
@@ -41,25 +43,23 @@ irrigation or aquatic life.
   Section 6.4)
 - **Location:** EA Program laboratory, SGM 133
 
+## Responsibilities
 
-## 3. Responsibilities
-
-| Role              | Responsibility                              |
-|:------------------|:--------------------------------------------|
-| Lab PI            | Approve SOP, ensure training compliance     |
+| Role              | Responsibility                                     |
+|:------------------|:---------------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance            |
 | Lab Manager       | Prepare and standardize titrant, maintain pH meter |
-| Trained Personnel | Perform titrations, record and report results |
-| New Students      | Complete training before independent use    |
+| Trained Personnel | Perform titrations, record and report results      |
+| New Students      | Complete training before independent use           |
 
+## Safety and Hazards
 
-## 4. Safety and Hazards
-
-::: {.callout-warning}
+::: callout-warning
 ### Hazards
 
 - **Chemical:** Sulfuric acid (0.02 N) is a dilute acid but can cause
-  skin and eye irritation. Concentrated H~2~SO~4~ used to prepare
-  stock solutions is severely corrosive.
+  skin and eye irritation. Concentrated H~2~SO~4~ used to prepare stock
+  solutions is severely corrosive.
 - **Physical:** Glassware (burets, beakers) poses a breakage and
   laceration risk.
 :::
@@ -74,32 +74,31 @@ irrigation or aquatic life.
 
 For acid splashes to skin or eyes, flush immediately with water at the
 eyewash station for at least 15 minutes. For concentrated acid spills,
-neutralize with sodium bicarbonate and refer to
-[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+neutralize with sodium bicarbonate and refer to [SOP-L003 Hazardous
+Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
-
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
-| Item                          | Notes                                     |
-|:------------------------------|:------------------------------------------|
+| Item | Notes |
+|:-----------------------------|:-----------------------------------------|
 | pH meter with combination electrode | Calibrated per [SOP-L300](SOP-L300-pH-conductivity-bench.qmd) |
-| Magnetic stir plate and stir bar | For continuous mixing during titration  |
-| Buret, 50 mL (Class A)       | For samples with alkalinity above 20 mg/L as CaCO~3~ |
+| Magnetic stir plate and stir bar | For continuous mixing during titration |
+| Buret, 50 mL (Class A) | For samples with alkalinity above 20 mg/L as CaCO~3~ |
 | Buret, 10 mL (Class A, microburet) | For low-alkalinity samples (below 20 mg/L) |
-| Buret stand and clamp         | --                                       |
-| Volumetric flasks (100 mL, 1 L) | For standard preparation               |
-| Graduated cylinder (100 mL)  | For measuring sample volumes              |
-| Beakers (150 -- 250 mL)       | For titration                            |
-| Analytical balance            | 0.1 mg readability; see [SOP-L200](SOP-L200-analytical-balance-calibration.qmd) |
+| Buret stand and clamp | -- |
+| Volumetric flasks (100 mL, 1 L) | For standard preparation |
+| Graduated cylinder (100 mL) | For measuring sample volumes |
+| Beakers (150 -- 250 mL) | For titration |
+| Analytical balance | 0.1 mg readability; see [SOP-L200](SOP-L200-analytical-balance-calibration.qmd) |
 
 ### Reagents
 
-| Item                          | Notes                                     |
-|:------------------------------|:------------------------------------------|
-| Standard H~2~SO~4~, 0.1 N    | Prepare from concentrated H~2~SO~4~ or purchase pre-made; standardize against Na~2~CO~3~ (see Section 6.1) |
-| Standard H~2~SO~4~, 0.02 N   | Dilute from 0.1 N stock (see Section 6.2) |
+| Item | Notes |
+|:-----------------------------|:-----------------------------------------|
+| Standard H~2~SO~4~, 0.1 N | Prepare from concentrated H~2~SO~4~ or purchase pre-made; standardize against Na~2~CO~3~ (see Section 6.1) |
+| Standard H~2~SO~4~, 0.02 N | Dilute from 0.1 N stock (see Section 6.2) |
 | Sodium carbonate (Na~2~CO~3~), primary standard grade | For standardizing the acid titrant |
 | pH buffer solutions (pH 4.01, 7.00, 10.01) | For pH meter calibration |
 | Deionized water (Type I or II) | For reagent preparation, blanks, and rinsing |
@@ -110,118 +109,116 @@ Color indicators may be used for preliminary or routine titrations when
 the sample is free of interfering color and turbidity. Potentiometric
 (pH meter) titration is preferred for accuracy.
 
-| Indicator                     | Endpoint pH | Application             |
-|:------------------------------|:------------|:------------------------|
-| Phenolphthalein               | 8.3         | Phenolphthalein (P) alkalinity |
-| Bromcresol green              | 4.5         | Total (T) alkalinity    |
-| Mixed bromcresol green -- methyl red | 4.5  | Total (T) alkalinity    |
+| Indicator | Endpoint pH | Application |
+|:------------------------------|:----------------|:------------------------|
+| Phenolphthalein | 8.3 | Phenolphthalein (P) alkalinity |
+| Bromcresol green | 4.5 | Total (T) alkalinity |
+| Mixed bromcresol green -- methyl red | 4.5 | Total (T) alkalinity |
 
+## Procedure
 
-## 6. Procedure
+### Standardizing the 0.1 N H~2~SO~4~
 
-### 6.1 Standardizing the 0.1 N H~2~SO~4~
+1.  Dry 3--5 g of primary standard Na~2~CO~3~ at 250 C for 4 hours and
+    cool in a desiccator
+2.  Weigh 2.500 +/- 0.200 g (to the nearest 0.001 g) into a 1 L
+    volumetric flask. Dissolve in DI water and bring to volume. This
+    produces an approximately 0.05 N Na~2~CO~3~ solution.
+3.  Pipette 40.00 mL of the Na~2~CO~3~ solution into a 250 mL beaker.
+    Add approximately 60 mL of DI water.
+4.  Titrate potentiometrically with the approximately 0.1 N H~2~SO~4~ to
+    a pH of about 5
+5.  Remove the electrodes, rinse into the beaker, and gently boil the
+    solution for 3--5 minutes under a watch glass to expel CO~2~
+6.  Cool to room temperature, rinse the watch glass into the beaker, and
+    continue titrating to the pH inflection point
+7.  Calculate the normality of the acid:
 
-1. Dry 3--5 g of primary standard Na~2~CO~3~ at 250 C for 4 hours and
-   cool in a desiccator
-2. Weigh 2.500 +/- 0.200 g (to the nearest 0.001 g) into a 1 L
-   volumetric flask. Dissolve in DI water and bring to volume.
-   This produces an approximately 0.05 N Na~2~CO~3~ solution.
-3. Pipette 40.00 mL of the Na~2~CO~3~ solution into a 250 mL beaker.
-   Add approximately 60 mL of DI water.
-4. Titrate potentiometrically with the approximately 0.1 N H~2~SO~4~
-   to a pH of about 5
-5. Remove the electrodes, rinse into the beaker, and gently boil the
-   solution for 3--5 minutes under a watch glass to expel CO~2~
-6. Cool to room temperature, rinse the watch glass into the beaker,
-   and continue titrating to the pH inflection point
-7. Calculate the normality of the acid:
+$$N_{\text{acid}} = \frac{A \times B}{53.00 \times C}$$
 
-$$
-N_{\text{acid}} = \frac{A \times B}{53.00 \times C}
-$$
+where $A$ = g Na~2~CO~3~ weighed into the 1 L flask, $B$ = mL Na~2~CO~3~
+solution taken for titration, and $C$ = mL acid used.
 
-where $A$ = g Na~2~CO~3~ weighed into the 1 L flask, $B$ = mL
-Na~2~CO~3~ solution taken for titration, and $C$ = mL acid used.
+8.  Adjust to 0.1000 N or use the measured normality in all subsequent
+    calculations. At 0.1000 N, 1.00 mL = 5.00 mg CaCO~3~.
 
-8. Adjust to 0.1000 N or use the measured normality in all subsequent
-   calculations. At 0.1000 N, 1.00 mL = 5.00 mg CaCO~3~.
+### Preparing the 0.02 N H~2~SO~4~ Working Titrant
 
-### 6.2 Preparing the 0.02 N H~2~SO~4~ Working Titrant
+1.  Dilute 200.00 mL of standardized 0.1000 N H~2~SO~4~ to 1000 mL with
+    DI water in a volumetric flask
+2.  Mix thoroughly
+3.  Verify the normality by titrating 15.00 mL of 0.05 N Na~2~CO~3~ as
+    described in Section 6.1
+4.  At 0.02 N, 1.00 mL = 1.00 mg CaCO~3~
+5.  Store in a tightly capped borosilicate glass or polyethylene bottle.
+    Do not keep for longer than 1 week without re-standardization.
 
-1. Dilute 200.00 mL of standardized 0.1000 N H~2~SO~4~ to 1000 mL
-   with DI water in a volumetric flask
-2. Mix thoroughly
-3. Verify the normality by titrating 15.00 mL of 0.05 N Na~2~CO~3~
-   as described in Section 6.1
-4. At 0.02 N, 1.00 mL = 1.00 mg CaCO~3~
-5. Store in a tightly capped borosilicate glass or polyethylene bottle.
-   Do not keep for longer than 1 week without re-standardization.
+### Sample Collection and Handling
 
-### 6.3 Sample Collection and Handling
+1.  Collect samples in polyethylene or borosilicate glass bottles per
+    [SOP-F300](../field_sops/SOP-F300-surface-water-sampling.qmd)
+2.  Fill sample bottles completely with no headspace; CO~2~ exchange
+    with air will alter the alkalinity
+3.  Analyze samples as soon as possible after collection, ideally within
+    24 hours. Refrigerate at 4 C if analysis must be delayed.
+4.  Do not filter, dilute, concentrate, or otherwise alter the sample
+    before titration
 
-1. Collect samples in polyethylene or borosilicate glass bottles per
-   [SOP-F300](../field_sops/SOP-F300-surface-water-sampling.qmd)
-2. Fill sample bottles completely with no headspace; CO~2~ exchange with
-   air will alter the alkalinity
-3. Analyze samples as soon as possible after collection, ideally within
-   24 hours. Refrigerate at 4 C if analysis must be delayed.
-4. Do not filter, dilute, concentrate, or otherwise alter the sample
-   before titration
-
-### 6.4 Selecting Sample Size and Titrant
+### Selecting Sample Size and Titrant
 
 Choose the sample volume and titrant normality to use a reasonable
 volume of titrant (ideally 20 mL or more from a 50 mL buret) for good
 volumetric precision:
 
 | Expected Alkalinity (mg/L as CaCO~3~) | Sample Volume | Titrant Normality |
-|:---------------------------------------|:--------------|:------------------|
-| Less than 20                           | 200 mL        | 0.02 N (10 mL microburet) |
-| 20 -- 100                              | 100 mL        | 0.02 N            |
-| 100 -- 500                             | 100 mL        | 0.1 N             |
+|:------------------------------------|:----------------|:-----------------|
+| Less than 20 | 200 mL | 0.02 N (10 mL microburet) |
+| 20 -- 100 | 100 mL | 0.02 N |
+| 100 -- 500 | 100 mL | 0.1 N |
 
 If the expected alkalinity is unknown, perform a preliminary titration
 with indicator to estimate the range before running the potentiometric
 titration.
 
-### 6.5 pH Meter Calibration
+### pH Meter Calibration
 
 Calibrate the pH meter with a three-point calibration (pH 4.01, 7.00,
 10.01) per [SOP-L300](SOP-L300-pH-conductivity-bench.qmd) before each
-titration session. Verify that the calibration slope is between 90%
-and 102% of theoretical.
+titration session. Verify that the calibration slope is between 90% and
+102% of theoretical.
 
-### 6.6 Potentiometric Titration
+### Potentiometric Titration
 
-1. Measure the selected sample volume (e.g., 100 mL) into a clean
-   beaker using a graduated cylinder
-2. Place the beaker on the magnetic stir plate and add a clean stir bar.
-   Set the stirrer to a speed that produces a gentle vortex without
-   splashing or entraining air.
-3. Immerse the pH electrode in the sample. Record the initial pH.
-4. Fill the buret with standardized H~2~SO~4~ (0.02 N or 0.1 N as
-   selected in Section 6.4). Record the initial buret reading.
-5. **Phenolphthalein alkalinity (P):** If the initial pH is above 8.3,
-   titrate to pH 8.3, recording the volume of acid used. This is the
-   P alkalinity endpoint.
-6. **Total alkalinity (T):** Continue titrating to the total alkalinity
-   endpoint. Select the endpoint pH from the table below based on the
-   expected alkalinity concentration:
+1.  Measure the selected sample volume (e.g., 100 mL) into a clean
+    beaker using a graduated cylinder
+2.  Place the beaker on the magnetic stir plate and add a clean stir
+    bar. Set the stirrer to a speed that produces a gentle vortex
+    without splashing or entraining air.
+3.  Immerse the pH electrode in the sample. Record the initial pH.
+4.  Fill the buret with standardized H~2~SO~4~ (0.02 N or 0.1 N as
+    selected in Section 6.4). Record the initial buret reading.
+5.  **Phenolphthalein alkalinity (P):** If the initial pH is above 8.3,
+    titrate to pH 8.3, recording the volume of acid used. This is the P
+    alkalinity endpoint.
+6.  **Total alkalinity (T):** Continue titrating to the total alkalinity
+    endpoint. Select the endpoint pH from the table below based on the
+    expected alkalinity concentration:
 
 | Total Alkalinity (mg/L as CaCO~3~) | Endpoint pH |
-|:------------------------------------|:------------|
-| Approximately 30                    | 4.9         |
-| Approximately 150                   | 4.6         |
-| Approximately 500                   | 4.3         |
-| Routine or automated analyses       | 4.5         |
+|:-----------------------------------|:------------|
+| Approximately 30                   | 4.9         |
+| Approximately 150                  | 4.6         |
+| Approximately 500                  | 4.3         |
+| Routine or automated analyses      | 4.5         |
 
-7. As the endpoint is approached, add acid in smaller increments
-   (0.1--0.2 mL) and allow pH equilibrium to be reached before adding
-   more titrant
-8. Record the final buret reading
+7.  As the endpoint is approached, add acid in smaller increments
+    (0.1--0.2 mL) and allow pH equilibrium to be reached before adding
+    more titrant
+8.  Record the final buret reading
 
-::: {.callout-tip}
+::: callout-tip
 ### Tip
+
 For best results, record the pH after each addition of acid and
 construct a full titration curve. The inflection point (steepest slope)
 on the curve confirms the endpoint pH. This is especially important for
@@ -230,7 +227,7 @@ content) where the standard endpoint pH may not correspond to the true
 equivalence point.
 :::
 
-### 6.7 Low-Alkalinity Method (Below 20 mg/L as CaCO~3~)
+### Low-Alkalinity Method (Below 20 mg/L as CaCO~3~)
 
 For samples with alkalinity below 20 mg/L, use a 200 mL sample volume
 and titrate with 0.02 N H~2~SO~4~ from a 10 mL microburet. Record
@@ -238,39 +235,36 @@ intermediate pH values to construct a titration curve and determine the
 endpoint from the inflection point. Report only low-alkalinity values
 determined by this method.
 
+## Quality Control and Acceptance Criteria
 
-## 7. Quality Control and Acceptance Criteria
-
-### 7.1 Calculations
+### Calculations
 
 **Total alkalinity** (mg/L as CaCO~3~):
 
-$$
-\text{Alkalinity} = \frac{A \times N \times 50{,}000}{V}
-$$
+$$\text{Alkalinity} = \frac{A \times N \times 50{,}000}{V}$$
 
-where $A$ = mL of standard acid used, $N$ = normality of the acid,
-and $V$ = mL of sample.
+where $A$ = mL of standard acid used, $N$ = normality of the acid, and
+$V$ = mL of sample.
 
 **Phenolphthalein alkalinity** uses the same formula but substitutes the
 volume of acid titrated to pH 8.3.
 
-### 7.2 Alkalinity Species
+### Alkalinity Species
 
 Once P and T alkalinity are determined, the individual carbonate species
 can be calculated:
 
-| Condition      | Hydroxide (OH^-^) | Carbonate (CO~3~^2-^) | Bicarbonate (HCO~3~^-^) |
-|:---------------|:-------------------|:-----------------------|:--------------------------|
-| P = 0          | 0                  | 0                      | T                         |
-| P < T/2        | 0                  | 2P                     | T -- 2P                   |
-| P = T/2        | 0                  | 2P                     | 0                         |
-| P > T/2        | 2P -- T            | 2(T -- P)              | 0                         |
-| P = T          | T                  | 0                      | 0                         |
+| Condition | Hydroxide (OH^-^) | Carbonate (CO~3~^2-^) | Bicarbonate (HCO~3~^-^) |
+|:----------------|:----------------|:------------------|:--------------------|
+| P = 0     | 0                 | 0                     | T                       |
+| P \< T/2  | 0                 | 2P                    | T -- 2P                 |
+| P = T/2   | 0                 | 2P                    | 0                       |
+| P \> T/2  | 2P -- T           | 2(T -- P)             | 0                       |
+| P = T     | T                 | 0                     | 0                       |
 
 All values are expressed as mg/L CaCO~3~.
 
-### 7.3 QC Requirements
+### QC Requirements
 
 - Standardize titrant before each batch and at least weekly
 - Run a DI water blank at the start of each session; the blank should
@@ -279,22 +273,20 @@ All values are expressed as mg/L CaCO~3~.
   concentration of Na~2~CO~3~ at least once per batch of 20 samples.
   Recovery should be 90--110%.
 - Run duplicate titrations on at least 10% of samples. Acceptable
-  precision: +/- 5% relative percent difference for samples above
-  20 mg/L as CaCO~3~.
+  precision: +/- 5% relative percent difference for samples above 20
+  mg/L as CaCO~3~.
 - Record all QC results in the laboratory notebook
 
+## Waste Disposal
 
-## 8. Waste Disposal
+| Waste Type | Disposal Method |
+|:------------------------------|:----------------------------------------|
+| Titrated samples (no hazardous additions) | Drain with copious water |
+| Spent acid titrant | Neutralize with sodium bicarbonate to pH 6--8, then drain |
+| Na~2~CO~3~ standardization waste | Drain with copious water |
+| Used pH buffer solutions | Collect in waste container per [SOP-L300](SOP-L300-pH-conductivity-bench.qmd) |
 
-| Waste Type                    | Disposal Method                          |
-|:------------------------------|:-----------------------------------------|
-| Titrated samples (no hazardous additions) | Drain with copious water   |
-| Spent acid titrant            | Neutralize with sodium bicarbonate to pH 6--8, then drain |
-| Na~2~CO~3~ standardization waste | Drain with copious water             |
-| Used pH buffer solutions      | Collect in waste container per [SOP-L300](SOP-L300-pH-conductivity-bench.qmd) |
-
-
-## 9. References
+## References
 
 - APHA, AWWA, WEF. (2012). Standard Methods 2320 B: Alkalinity --
   Titration Method. In: *Standard Methods for Examination of Water and
@@ -305,41 +297,38 @@ All values are expressed as mg/L CaCO~3~.
 ::: {#refs}
 :::
 
-
-## 10. Training Record
+## Training Record
 
 Before performing alkalinity titrations independently, personnel must:
 
-1. Read this SOP in full
-2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
-   and [SOP-L300 pH and Conductivity](SOP-L300-pH-conductivity-bench.qmd)
-   training
-3. Demonstrate pH meter calibration with acceptable slope
-4. Prepare and standardize a batch of H~2~SO~4~ titrant under
-   supervision with normality within 2% of the target value
-5. Perform at least three practice titrations on known standards with
-   acceptable recovery (90--110%)
-6. Be signed off by the PI or lab manager
-
+1.  Read this SOP in full
+2.  Complete [SOP-L002 Laboratory
+    Safety](SOP-L002-laboratory-safety.qmd) and [SOP-L300 pH and
+    Conductivity](SOP-L300-pH-conductivity-bench.qmd) training
+3.  Demonstrate pH meter calibration with acceptable slope
+4.  Prepare and standardize a batch of H~2~SO~4~ titrant under
+    supervision with normality within 2% of the target value
+5.  Perform at least three practice titrations on known standards with
+    acceptable recovery (90--110%)
+6.  Be signed off by the PI or lab manager
 
 ## Appendix A: Titrant Preparation Quick Reference {.appendix}
 
-### 0.1 N H~2~SO~4~ from Concentrated H~2~SO~4~
+### N H~2~SO~4~ from Concentrated H~2~SO~4~
 
 Concentrated H~2~SO~4~ is approximately 36 N.
 
-1. Add approximately 900 mL of DI water to a 1 L volumetric flask
-2. Slowly add 2.8 mL of concentrated H~2~SO~4~ to the water
-   (**always add acid to water**)
-3. Mix, cool to room temperature, and bring to volume with DI water
-4. Standardize against primary standard Na~2~CO~3~ (Section 6.1)
+1.  Add approximately 900 mL of DI water to a 1 L volumetric flask
+2.  Slowly add 2.8 mL of concentrated H~2~SO~4~ to the water (**always
+    add acid to water**)
+3.  Mix, cool to room temperature, and bring to volume with DI water
+4.  Standardize against primary standard Na~2~CO~3~ (Section 6.1)
 
-### 0.02 N H~2~SO~4~ from 0.1 N Stock
+### N H~2~SO~4~ from 0.1 N Stock
 
-1. Transfer 200.00 mL of standardized 0.1000 N H~2~SO~4~ to a 1 L
-   volumetric flask
-2. Bring to volume with DI water and mix thoroughly
-
+1.  Transfer 200.00 mL of standardized 0.1000 N H~2~SO~4~ to a 1 L
+    volumetric flask
+2.  Bring to volume with DI water and mix thoroughly
 
 ## Appendix B: Example Calculation {.appendix}
 
@@ -358,11 +347,10 @@ alkalinity_mg_L <- (acid_mL * acid_N * 50000) / sample_mL
 cat(sprintf("Total alkalinity: %.1f mg/L as CaCO3\n", alkalinity_mg_L))
 ```
 
-
 ## Appendix C: Troubleshooting {.appendix}
 
-| Symptom                       | Probable Cause                  | Corrective Action              |
-|:------------------------------|:--------------------------------|:-------------------------------|
+| Symptom | Probable Cause | Corrective Action |
+|:----------------------|:------------------------|:-----------------------|
 | Endpoint difficult to identify | Low alkalinity; flat titration curve | Use 200 mL sample, 0.02 N acid, microburet; construct full titration curve |
 | Blank consumes excessive acid | CO~2~ absorbed into DI water; contaminated glassware | Use freshly boiled and cooled DI water; acid-wash glassware |
 | Duplicate precision exceeds 5% RPD | Inconsistent titrant delivery; pH meter drift | Check buret for air bubbles; recalibrate pH meter; ensure pH equilibrium at endpoint |

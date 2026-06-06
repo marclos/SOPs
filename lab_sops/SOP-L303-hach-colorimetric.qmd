@@ -19,7 +19,7 @@ revision-history:
     changes: "Initial release; consolidated from former L25, L27, and L28"
 ---
 
-## 1. Purpose
+## Purpose
 
 This procedure describes the general operation, calibration, and
 quality control framework for colorimetric water analysis using the
@@ -33,7 +33,7 @@ registry as the lab's needs evolve, without rewriting the core SOP
 [@hach_dr3900; @hach_dr900; @apha2012].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Colorimetric determination of nutrients (phosphorus,
   nitrate, nitrite, ammonia), metals (iron, manganese, copper, zinc,
@@ -50,7 +50,7 @@ registry as the lab's needs evolve, without rewriting the core SOP
   (DR900)
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -60,7 +60,7 @@ registry as the lab's needs evolve, without rewriting the core SOP
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -92,7 +92,7 @@ Refer to
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Instruments
 
@@ -117,9 +117,9 @@ Refer to
 | Waste containers                      | Labeled by waste stream            |
 
 
-## 6. Procedure -- Instrument Operation
+## Procedure -- Instrument Operation
 
-### 6.1 DR3900 Startup and Program Selection
+### DR3900 Startup and Program Selection
 
 1. Turn on the DR3900 using the power switch on the back panel
 2. Allow the instrument to complete its self-check (approximately 30
@@ -130,14 +130,14 @@ Refer to
 5. Select the correct program. The display will show the method
    wavelength, sample cell type, and measurement units.
 
-### 6.2 DR900 Startup and Program Selection
+### DR900 Startup and Program Selection
 
 1. Press the power button on the DR900
 2. Select **Stored Programs** from the menu
 3. Enter the program number or scroll to the analyte name
 4. The display will confirm the method, wavelength, and sample cell type
 
-### 6.3 Zeroing the Instrument (Blank)
+### Zeroing the Instrument (Blank)
 
 Every Hach method requires a blank (zero) reading before measuring
 samples.
@@ -154,7 +154,7 @@ samples.
 4. Close the light shield and press **Zero**. The display should read
    0.000 mg/L (or the appropriate unit).
 
-### 6.4 General Measurement Workflow
+### General Measurement Workflow
 
 The following workflow applies to all Hach methods. Chemistry-specific
 details (reagent addition, reaction time, interferences) are in the
@@ -184,7 +184,7 @@ reference for reagent handling, timing, and interferences for each
 chemistry.
 :::
 
-### 6.5 Using TNT Plus Vials (DR3900 Only)
+### Using TNT Plus Vials (DR3900 Only)
 
 Many newer Hach methods use pre-dosed TNT plus vials, which reduce
 reagent handling and waste [@hach_dr3900]:
@@ -200,7 +200,7 @@ reagent handling and waste [@hach_dr3900]:
 6. Press **Zero** with the blank vial (included in the TNT kit), then
    read the sample
 
-### 6.6 Using the DRB200 Reactor (Digestion Methods)
+### Using the DRB200 Reactor (Digestion Methods)
 
 Some methods (total phosphorus, total nitrogen, COD) require a
 high-temperature digestion step:
@@ -223,7 +223,7 @@ temperature specified by the method before opening or reading.
 :::
 
 
-## 7. Method Registry
+## Method Registry
 
 The table below lists the Hach methods currently used or planned for use
 in the EA Program laboratory. Each row contains all the
@@ -237,7 +237,7 @@ number, reagent catalog number, range, reaction time, key interferences,
 and the date the method was validated in the lab.
 :::
 
-### 7.1 Nutrients
+### Nutrients
 
 | Analyte | Hach Method | Program No. | Reagent / Cat. No. | Instrument | Range | Sample Vol. | Reaction Time | Key Interferences | Status |
 |:--------|:------------|:------------|:-------------------|:-----------|:------|:------------|:--------------|:------------------|:-------|
@@ -250,7 +250,7 @@ and the date the method was validated in the lab.
 | Ammonia HR | Salicylate HR | 343 | TNT832 | DR3900 | 0.4--50.0 mg/L NH~3~-N | 0.2 mL | 15 min | Same as LR | *TBD* |
 | Total Nitrogen | Persulfate dig. + chromotropic acid | 350 | TNT826/TNT827 | DR3900 + DRB200 | 1--25 mg/L N | 0.5 mL | 30 min dig. + 15 min | -- | *TBD* |
 
-### 7.2 Metals
+### Metals
 
 | Analyte | Hach Method | Program No. | Reagent / Cat. No. | Instrument | Range | Sample Vol. | Reaction Time | Key Interferences | Status |
 |:--------|:------------|:------------|:-------------------|:-----------|:------|:------------|:--------------|:------------------|:-------|
@@ -262,7 +262,7 @@ and the date the method was validated in the lab.
 | Lead | LeadTrak (dithizone) | 277 | 2877200 (AccuVac) | DR3900 | 5--150 ug/L Pb | 25 mL | 1 min | Cu, Hg, Bi, Sn | *TBD* |
 | Chromium (Cr^6+^) | DPC | 090 | Check specific kit | DR3900, DR900 | 0.010--0.700 mg/L Cr | 10 mL | 5 min | Fe above 1 mg/L | *TBD* |
 
-### 7.3 Other Parameters
+### Other Parameters
 
 | Analyte | Hach Method | Program No. | Reagent / Cat. No. | Instrument | Range | Sample Vol. | Reaction Time | Key Interferences | Status |
 |:--------|:------------|:------------|:-------------------|:-----------|:------|:------------|:--------------|:------------------|:-------|
@@ -270,7 +270,7 @@ and the date the method was validated in the lab.
 | Sulfate | SulfaVer 4 | 680 | 2106769 (pillows) | DR3900, DR900 | 2--70 mg/L SO~4~ | 10 mL | 5 min | Silica | *TBD* |
 | COD | Dichromate reactor | 430 | TNT821/822/823 | DR3900 + DRB200 | 3--1500 mg/L | 2 mL | 2 hr dig. | Cl^-^ above 2000 mg/L | *TBD* |
 
-### 7.4 Adding a New Method to the Registry
+### Adding a New Method to the Registry
 
 When the lab acquires a new Hach reagent kit or needs to analyze a new
 parameter:
@@ -289,9 +289,9 @@ parameter:
 7. Record the validation data, date, and analyst in the QC log
 
 
-## 8. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
-### 8.1 Every Analytical Session
+### Every Analytical Session
 
 - **Blank:** Run a DI water blank at the start of each session. The
   blank must read within the method's stated detection limit of zero.
@@ -301,7 +301,7 @@ parameter:
   Acceptable RPD: less than 20% for concentrations above 5 times the
   detection limit.
 
-### 8.2 Calibration Verification
+### Calibration Verification
 
 The DR3900 and DR900 use factory-programmed calibration curves that do
 not require user calibration under normal conditions [@hach_dr3900;
@@ -315,7 +315,7 @@ not require user calibration under normal conditions [@hach_dr3900;
 - *TBD -- establish a schedule for annual verification and record in
   the instrument log*
 
-### 8.3 Reagent Management
+### Reagent Management
 
 - Record the lot number and expiration date of each reagent kit when
   opened
@@ -326,9 +326,9 @@ not require user calibration under normal conditions [@hach_dr3900;
   active method
 
 
-## 9. Data Recording and Calculations
+## Data Recording and Calculations
 
-### 9.1 Dilution Corrections
+### Dilution Corrections
 
 $$
 C_{\text{original}} = C_{\text{measured}} \times DF
@@ -337,7 +337,7 @@ $$
 where $DF$ is the dilution factor (e.g., 10 mL sample diluted to
 100 mL total = $DF$ of 10).
 
-### 9.2 Unit Conversions
+### Unit Conversions
 
 | From                   | To                     | Multiply by |
 |:-----------------------|:-----------------------|:------------|
@@ -362,7 +362,7 @@ cat(sprintf("0.42 mg/L PO4-P = %.2f mg/L PO4\n", convert_p_po4(0.42)))
 ```
 
 
-## 10. Waste Disposal
+## Waste Disposal
 
 | Waste Type                        | Disposal Method                          |
 |:----------------------------------|:-----------------------------------------|
@@ -382,13 +382,13 @@ analyses.
 :::
 
 
-## 11. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 12. Training Record
+## Training Record
 
 Before performing Hach colorimetric analyses independently, personnel
 must:

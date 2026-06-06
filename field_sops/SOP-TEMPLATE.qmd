@@ -3,11 +3,11 @@
 # SOP TEMPLATE -- Copy this file to create a new SOP
 # =============================================================================
 # Instructions:
-#   1. Copy this file to sops/SOP-XXX-short-name.qmd
-#   2. Fill in the YAML header below
-#   3. Replace the placeholder content in each section
-#   4. Delete any sections that do not apply
-#   5. Commit to a new branch and open a Pull Request for review
+#   Copy this file to sops/SOP-XXX-short-name.qmd
+#   Fill in the YAML header below
+#   Replace the placeholder content in each section
+#   Delete any sections that do not apply
+#   Commit to a new branch and open a Pull Request for review
 #
 # Naming convention: SOP-[number]-[short-description].qmd
 #   Examples: SOP-012-rotary-evaporator.qmd
@@ -36,7 +36,7 @@ revision-history:
 #   changes: "Updated step 3 to reflect new equipment"
 ---
 
-## 1. Purpose
+## Purpose
 
 State the objective of this SOP in one or two sentences. What does this
 procedure accomplish, and why does it matter?
@@ -45,7 +45,7 @@ procedure accomplish, and why does it matter?
 > autoclave for sterilization of media, glassware, and biohazardous waste.
 
 
-## 2. Scope
+## Scope
 
 Define what this SOP covers and what it does not.
 
@@ -54,7 +54,7 @@ Define what this SOP covers and what it does not.
 - **Location:** [room number, building, or area]
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -63,7 +63,7 @@ Define what this SOP covers and what it does not.
 | New Students      | Complete training before independent use    |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -89,7 +89,7 @@ In case of [spill / injury / equipment failure], refer to
 [emergency contact / campus safety number].
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -104,14 +104,14 @@ In case of [spill / injury / equipment failure], refer to
 | [Reagent name]      | [Cat. no.]       | [Fridge / shelf] |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Preparation
+### Preparation
 
 1. [First preparatory step]
 2. [Second preparatory step]
 
-### 6.2 Main Procedure
+### Main Procedure
 
 1. [Step-by-step instructions]
 2. [Be specific: settings, volumes, durations]
@@ -123,14 +123,14 @@ Include practical tips or common mistakes here. These callout boxes
 render nicely in both HTML and PDF.
 :::
 
-### 6.3 Shutdown and Cleanup
+### Shutdown and Cleanup
 
 1. [Post-procedure steps]
 2. [Waste disposal instructions]
 3. [Equipment shutdown sequence]
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 Describe how to verify that the procedure was performed correctly:
 
@@ -139,21 +139,21 @@ Describe how to verify that the procedure was performed correctly:
 - [What to do if results are outside the acceptable range]
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 | Waste Type          | Container         | Disposal Method        |
 |:--------------------|:------------------|:-----------------------|
 | [e.g., solvent]     | [e.g., red jug]   | [EH&S pickup schedule] |
 
 
-## 9. References
+## References
 
 - [Manufacturer manual, if applicable]
 - [Related SOPs: link with `[SOP-XXX](SOP-XXX-name.qmd)`]
 - [Regulatory standards, if applicable]
 
 
-## 10. Training Record
+## Training Record
 
 Training is documented in [your tracking system]. Before working
 independently, personnel must:

@@ -23,7 +23,7 @@ revision-history:
     changes: "Added definitions section; expanded discussion of tree size distributions, measurement error propagation, and stand dynamics context"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes standardized procedures for measuring tree diameter
 at breast height (DBH), conducting fixed-area plot-based forest
@@ -44,7 +44,7 @@ large-diameter trees, which store a disproportionate fraction of
 stand-level carbon [@lutz2018; @west2009].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All EA Program field sites with tree cover, including
   riparian forests, oak woodlands, mixed conifer stands, and planted
@@ -57,7 +57,7 @@ stand-level carbon [@lutz2018; @west2009].
   vegetation
 
 
-## 3. Definitions
+## Definitions
 
 - **Diameter at breast height (DBH):** The diameter of a tree trunk
   measured at 1.37 m (4.5 ft) above ground level on the uphill side
@@ -95,7 +95,7 @@ stand-level carbon [@lutz2018; @west2009].
   even-aged cohorts or past disturbance [@muller-landau2006].
 
 
-## 4. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -104,7 +104,7 @@ stand-level carbon [@lutz2018; @west2009].
 | New Students      | Complete training before independent measurement        |
 
 
-## 5. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -132,7 +132,7 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). Work in
 pairs in remote forested areas.
 
 
-## 6. Equipment and Materials
+## Equipment and Materials
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
@@ -150,9 +150,9 @@ pairs in remote forested areas.
 | Calculator                            | For basal area and density calculations  |
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Measuring DBH
+### Measuring DBH
 
 DBH is measured at 1.37 m (4.5 ft) above ground level on the uphill
 side of the tree [@avery2002; @usfs_fia2023].
@@ -186,7 +186,7 @@ studies, tag each tree with a numbered aluminum tag nailed above
 breast height.
 :::
 
-### 7.2 Fixed-Area Plot Inventory
+### Fixed-Area Plot Inventory
 
 Fixed-area plots are the standard method for forest inventory
 [@vanLaar2007; @west2009]. Plot size depends on tree density.
@@ -216,7 +216,7 @@ Fixed-area plots are the standard method for forest inventory
    - Height (optional; measured with a clinometer or rangefinder)
 5. Record the total number of stems and species per plot.
 
-### 7.3 Variable-Radius Plot Sampling (Basal Area Prism)
+### Variable-Radius Plot Sampling (Basal Area Prism)
 
 The BAF prism provides a rapid estimate of stand basal area without
 establishing fixed plot boundaries [@avery2002; @grosenbaugh1952].
@@ -242,7 +242,7 @@ where $n$ is the number of "in" trees and BAF is the basal area factor
 of the prism (typically 1, 2, 4, or 5 m^2^/ha per tree counted;
 check the prism label).
 
-### 7.4 Tree Height Measurement (Optional)
+### Tree Height Measurement (Optional)
 
 Use a clinometer or laser rangefinder to measure total tree height
 [@vanLaar2007; @west2009]:
@@ -266,9 +266,9 @@ leaning trees, measure height along the leaning axis and record the
 lean angle.
 
 
-## 8. Derived Calculations
+## Derived Calculations
 
-### 8.1 Basal Area per Tree
+### Basal Area per Tree
 
 $$
 \text{BA (m}^2\text{)} = \frac{\pi}{4} \times \left(\frac{\text{DBH}}{100}\right)^2
@@ -276,7 +276,7 @@ $$
 
 where DBH is in cm.
 
-### 8.2 Stand Density and Basal Area per Hectare
+### Stand Density and Basal Area per Hectare
 
 $$
 \text{Trees/ha} = \frac{n}{\text{plot area (ha)}}
@@ -286,7 +286,7 @@ $$
 \text{BA/ha (m}^2\text{/ha)} = \frac{\sum \text{BA}_i}{\text{plot area (ha)}}
 $$
 
-### 8.3 Biomass Estimation
+### Biomass Estimation
 
 Above-ground biomass can be estimated using published allometric
 equations of the form:
@@ -306,7 +306,7 @@ in most forest types; accurate measurement of the largest individuals
 in a stand is therefore critical for unbiased biomass and carbon stock
 estimates [@lutz2018].
 
-### 8.4 Interpreting Size Distributions
+### Interpreting Size Distributions
 
 Plotting the diameter distribution (number of trees per DBH class)
 provides insight into stand history and dynamics. A reverse-J
@@ -317,7 +317,7 @@ cohorts established after disturbance events
 [@muller-landau2006; @pretzsch2009].
 
 
-## 9. Quality Control
+## Quality Control
 
 - Measure DBH twice (wrap the tape, read, remove, re-wrap, re-read).
   The two readings should agree within 0.5 cm. Record the mean.
@@ -333,13 +333,13 @@ cohorts established after disturbance events
   tags or paint marks [@westfall2020].
 
 
-## 10. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 11. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -350,7 +350,7 @@ cohorts established after disturbance events
 | [F606](SOP-F606-canopy-cover.qmd)      | Canopy Cover              | Densiometer and photo methods     |
 
 
-## 12. Training Record
+## Training Record
 
 Before conducting tree measurements independently, personnel must:
 

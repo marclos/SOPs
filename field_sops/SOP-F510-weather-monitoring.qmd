@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial draft"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes procedures for recording weather and meteorological
 conditions during field activities. Documenting weather conditions at
@@ -29,7 +29,7 @@ observations, use of portable weather instruments, and deployment of
 unattended data loggers for continuous monitoring.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All EA Program field activities where weather
   conditions may affect data interpretation, sample quality, or
@@ -42,7 +42,7 @@ unattended data loggers for continuous monitoring.
 - **Location:** All EA Program field sites
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -53,7 +53,7 @@ unattended data loggers for continuous monitoring.
 | New Students      | Complete training before independent use                |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -87,7 +87,7 @@ and thunder is 30 seconds or less, seek shelter; remain sheltered for
 30 minutes after the last flash.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Manual Observation Equipment
 
@@ -114,9 +114,9 @@ and thunder is 30 seconds or less, seek shelter; remain sheltered for
 | Cable ties and ground stakes          | For securing equipment against wind      |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Manual Weather Observations
+### Manual Weather Observations
 
 Record the following observations at the start and end of every field
 visit, and at the time of each sample collection. Enter all
@@ -142,7 +142,7 @@ Note the source of any weather data you look up online (e.g., "NWS
 Ontario station, 08:00 reading").
 :::
 
-### 6.2 Beaufort Wind Scale (Quick Reference)
+### Beaufort Wind Scale (Quick Reference)
 
 | Beaufort | Description     | Speed (m/s) | Visual Indicator                |
 |:---------|:----------------|:------------|:--------------------------------|
@@ -154,7 +154,7 @@ Ontario station, 08:00 reading").
 | 5        | Fresh breeze    | 8.0--10.7   | Small trees sway                |
 | 6        | Strong breeze   | 10.8--13.8  | Large branches in motion        |
 
-### 6.3 Deploying Portable Data Loggers
+### Deploying Portable Data Loggers
 
 1. Select a deployment location that is representative of the site
    conditions and will not be disturbed by people, animals, or
@@ -181,7 +181,7 @@ Ontario station, 08:00 reading").
 6. Take a photograph of the deployed logger with surrounding context
    visible.
 
-### 6.4 Retrieving Data from Loggers
+### Retrieving Data from Loggers
 
 1. Connect to the logger via Bluetooth (HOBOconnect) or USB cable
    (HOBOware).
@@ -195,7 +195,7 @@ Ontario station, 08:00 reading").
 5. Upload the raw data file to the project GitHub repository under
    `data/weather/` within 48 hours.
 
-### 6.5 Using Online Weather Data
+### Using Online Weather Data
 
 When on-site instruments are not available, supplement field
 observations with data from nearby weather stations. Preferred sources
@@ -212,7 +212,7 @@ Record the station name, distance from field site, and retrieval date
 in the field notebook and data file metadata.
 
 
-## 7. Quality Control
+## Quality Control
 
 - Cross-check manually recorded air temperature against the nearest
   reliable weather station (NWS or CIMIS). Discrepancies greater than
@@ -228,7 +228,7 @@ in the field notebook and data file metadata.
   the project data log.
 
 
-## 8. References
+## References
 
 - Onset Computer Corporation. *HOBO MX Series Data Logger User
   Manual*. <https://www.onsetcomp.com>
@@ -238,7 +238,7 @@ in the field notebook and data file metadata.
   Meteorological Instruments and Methods of Observation* (WMO-No. 8).
 
 
-## 9. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -250,7 +250,7 @@ in the field notebook and data file metadata.
 | [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub      | Data file version control |
 
 
-## 10. Training Record
+## Training Record
 
 Before recording weather observations or deploying loggers
 independently, personnel must:

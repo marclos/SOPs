@@ -22,7 +22,7 @@ revision-history:
     changes: "Converted to Quarto format; reorganized to match EA Program template; expanded QC and procedure sections"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP describes the determination of five-day biochemical oxygen
 demand (BOD~5~) in water and wastewater samples using the manometric
@@ -32,7 +32,7 @@ organic matter over a five-day incubation period at 20 °C and serves
 as a standard indicator of the organic pollution load in water.
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** Surface water, wastewater, and effluent samples
   analyzed for BOD~5~ using the WTW OxiTop manometric method in the
@@ -43,7 +43,7 @@ as a standard indicator of the organic pollution load in water.
 - **Location:** Biogeochemistry Laboratory, Pomona College
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
@@ -52,7 +52,7 @@ as a standard indicator of the organic pollution load in water.
 | New Students      | Complete training before independent use                |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
@@ -81,7 +81,7 @@ immediately with copious water for at least 15 minutes and seek
 medical attention.
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Equipment
 
@@ -111,9 +111,9 @@ medical attention.
 | Seed inoculum (if needed)     | Fresh            | Settled domestic wastewater or commercial seed |
 
 
-## 6. Reagents and Standards
+## Reagents and Standards
 
-### 6.1 Dilution Water Nutrient Solutions
+### Dilution Water Nutrient Solutions
 
 Prepare the following stock solutions. Add 1 mL of each per liter of
 dilution water.
@@ -129,7 +129,7 @@ dilution water.
 4. **Ferric chloride:** Dissolve 0.25 g FeCl~3~·6H~2~O in deionized
    water and dilute to 1 L.
 
-### 6.2 Dilution Water Preparation
+### Dilution Water Preparation
 
 1. Fill a clean 1 L vessel with deionized water.
 2. Add 1 mL of each nutrient stock solution (Section 6.1).
@@ -139,7 +139,7 @@ dilution water.
    if necessary.
 5. Allow the water to equilibrate to 20 °C before use.
 
-### 6.3 Measuring Range and Volume Selection
+### Measuring Range and Volume Selection
 
 The volume of sample placed in the BOD bottle depends on the expected
 BOD~5~ concentration. Use the table below to select the appropriate
@@ -163,9 +163,9 @@ point. If the expected concentration is unknown, run samples at two
 different dilutions.
 
 
-## 7. Procedure
+## Procedure
 
-### 7.1 Preparation (Day 0)
+### Preparation (Day 0)
 
 1. Calibrate the pH meter per
    [SOP-L300](SOP-L300-pH-conductivity-bench.qmd).
@@ -178,7 +178,7 @@ different dilutions.
 4. Verify that all OxiTop manometers are functional (battery check,
    reset previous readings).
 
-### 7.2 Bottle Setup
+### Bottle Setup
 
 1. Place a clean magnetic stir bar in each BOD~5~ incubation bottle.
 2. Using the graduated cylinder, measure the appropriate volume of
@@ -202,7 +202,7 @@ both the bottle and the manometer. Record the bottle assignments in
 your lab notebook before starting incubation.
 :::
 
-### 7.3 Incubation
+### Incubation
 
 1. Place all bottles on the magnetic stirrer platform inside the
    incubator set to 20.0 +/- 1.0 °C.
@@ -212,7 +212,7 @@ your lab notebook before starting incubation.
 4. Verify incubator temperature at least once daily and record in the
    instrument logbook.
 
-### 7.4 Reading Results (Day 5)
+### Reading Results (Day 5)
 
 1. After five days, read the BOD~5~ value displayed on each OxiTop
    manometer. The instrument converts the measured pressure decrease
@@ -227,16 +227,16 @@ your lab notebook before starting incubation.
    and laboratory detergent; rinse with deionized water.
 
 
-## 8. Data Analysis and Calculations
+## Data Analysis and Calculations
 
-### 8.1 OxiTop Direct Reading
+### OxiTop Direct Reading
 
 The OxiTop system calculates BOD~5~ internally from the pressure
 decrease in the bottle headspace. The displayed value in mg/L already
 accounts for the measuring range selected during setup. Record this
 value directly.
 
-### 8.2 Blank Correction
+### Blank Correction
 
 Subtract the blank BOD~5~ reading from each sample reading:
 
@@ -248,7 +248,7 @@ The blank value should be less than 0.2 mg/L for unseeded dilution
 water. If the blank exceeds 0.2 mg/L, investigate the dilution water
 quality and consider re-running the analysis.
 
-### 8.3 Dilution Factor
+### Dilution Factor
 
 If the sample was diluted beyond the standard OxiTop protocol (e.g.,
 for highly concentrated wastewater), apply the appropriate dilution
@@ -262,7 +262,7 @@ For standard OxiTop runs where the measuring range was set correctly,
 the dilution factor is already incorporated into the displayed result.
 
 
-## 9. Quality Control
+## Quality Control
 
 - Run at least one blank per analytical batch.
 - Run duplicate sample bottles for each sample; the relative percent
@@ -279,7 +279,7 @@ the dilution factor is already incorporated into the displayed result.
   consult the PI before reporting.
 
 
-## 10. Troubleshooting
+## Troubleshooting
 
 | Problem                              | Possible Cause                        | Corrective Action                     |
 |:-------------------------------------|:--------------------------------------|:--------------------------------------|
@@ -290,7 +290,7 @@ the dilution factor is already incorporated into the displayed result.
 | Negative BOD~5~ reading              | Leak in bottle seal; NaOH saturated   | Inspect seal; use fresh NaOH pellets  |
 
 
-## 11. Waste Disposal
+## Waste Disposal
 
 | Waste Type                    | Disposal Method                          |
 |:------------------------------|:-----------------------------------------|
@@ -300,7 +300,7 @@ the dilution factor is already incorporated into the displayed result.
 | Broken glass                  | Sharps container                         |
 
 
-## 12. References
+## References
 
 - APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
   and Wastewater*. 22nd ed. Method 5210 B: 5-Day BOD Test. American
@@ -309,7 +309,7 @@ the dilution factor is already incorporated into the displayed result.
 - US EPA. Method 405.1: Biochemical Oxygen Demand (5 days, 20 °C).
 
 
-## 13. Related SOPs
+## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
@@ -319,7 +319,7 @@ the dilution factor is already incorporated into the displayed result.
 | [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection context |
 
 
-## 14. Training Record
+## Training Record
 
 Before performing BOD~5~ analysis independently, personnel must:
 

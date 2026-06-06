@@ -18,7 +18,7 @@ revision-history:
     changes: "Initial release"
 ---
 
-## 1. Purpose
+## Purpose
 
 This SOP establishes procedures for acquiring, organizing, projecting,
 and archiving geospatial data used in EA Program research. It covers
@@ -27,7 +27,7 @@ reproducible mapping workflows in R, ensuring that spatial data are
 interoperable across projects and analysts [@pebesma2023; @lovelace2019].
 
 
-## 2. Scope
+## Scope
 
 - **Applies to:** All vector (point, line, polygon) and raster
   (satellite imagery, DEMs, interpolated surfaces) data used in EA
@@ -38,7 +38,7 @@ interoperable across projects and analysts [@pebesma2023; @lovelace2019].
 - **Location:** EA Program laboratory (SGM 133) and RStudio Server
 
 
-## 3. Responsibilities
+## Responsibilities
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
@@ -48,14 +48,14 @@ interoperable across projects and analysts [@pebesma2023; @lovelace2019].
 | Data Reviewer     | Verify spatial metadata completeness before publication |
 
 
-## 4. Safety and Hazards
+## Safety and Hazards
 
 GIS work is a computational activity with no physical hazards.
 When using GPS receivers or conducting ground-truth fieldwork, follow
 [SOP-F001 Field Safety](../field_sops/SOP-F001-field-safety.qmd).
 
 
-## 5. Equipment and Materials
+## Equipment and Materials
 
 ### Software
 
@@ -76,9 +76,9 @@ When using GPS receivers or conducting ground-truth fieldwork, follow
 | High-resolution monitor | SGM 133               | For digitizing and map review |
 
 
-## 6. Procedure
+## Procedure
 
-### 6.1 Coordinate Reference Systems
+### Coordinate Reference Systems
 
 All EA Program spatial data must use one of the following coordinate
 reference systems (CRS). Document the CRS in every file, script, and
@@ -116,7 +116,7 @@ st_crs(sites)
 sites_utm <- st_transform(sites, crs = 26911)
 ```
 
-### 6.2 File Formats
+### File Formats
 
 | Format        | Extension    | Use Case                          | Notes                      |
 |:--------------|:-------------|:----------------------------------|:---------------------------|
@@ -131,7 +131,7 @@ it stores geometry, attributes, and CRS in a single file without the
 limitations of shapefiles (10-character field names, 2 GB size limit)
 [@pebesma2023].
 
-### 6.3 File Naming and Directory Structure
+### File Naming and Directory Structure
 
 Follow the conventions in [SOP-L803](SOP-L803-data-entry-database.qmd)
 with the addition of a `data/spatial/` subdirectory:
@@ -152,7 +152,7 @@ project_name/
 └── README.md
 ```
 
-### 6.4 Spatial Data Acquisition
+### Spatial Data Acquisition
 
 Common data sources for EA Program research:
 
@@ -168,7 +168,7 @@ Common data sources for EA Program research:
 When downloading external data, record the source URL, download date,
 and any subsetting parameters in the metadata file.
 
-### 6.5 Spatial Data Processing in R
+### Spatial Data Processing in R
 
 A standard workflow for processing spatial data:
 
@@ -206,7 +206,7 @@ st_write(sites_in_watershed,
          delete_dsn = TRUE)
 ```
 
-### 6.6 Map Production
+### Map Production
 
 All maps for reports and publications must include:
 
@@ -239,7 +239,7 @@ tm_shape(watershed) +
   )
 ```
 
-### 6.7 Metadata Documentation
+### Metadata Documentation
 
 Each spatial dataset must have a metadata record. At minimum, include:
 
@@ -258,7 +258,7 @@ For formal publications, use FGDC or ISO 19115 metadata standards.
 For internal projects, the table above saved as a text file alongside
 the data is sufficient.
 
-### 6.8 GPS Data Import
+### GPS Data Import
 
 When importing GPS waypoints or tracks:
 
@@ -269,7 +269,7 @@ When importing GPS waypoints or tracks:
 5. Document the GPS model, estimated accuracy, and collection conditions
 
 
-## 7. Quality Control and Acceptance Criteria
+## Quality Control and Acceptance Criteria
 
 - Verify CRS for every imported dataset before analysis
 - Check that point locations fall within expected geographic bounds
@@ -280,18 +280,18 @@ When importing GPS waypoints or tracks:
 - Document the spatial accuracy and precision of each data source
 
 
-## 8. Waste Disposal
+## Waste Disposal
 
 Not applicable (computational procedure).
 
 
-## 9. References
+## References
 
 ::: {#refs}
 :::
 
 
-## 10. Training Record
+## Training Record
 
 Training is documented in the EA Program training log. Before working
 independently with spatial data, personnel must:
