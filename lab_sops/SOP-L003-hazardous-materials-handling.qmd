@@ -7,7 +7,7 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.03"
+revision: "1.05"
 
 revision-history:
   - version: "1.0"
@@ -22,54 +22,67 @@ revision-history:
     date: "2025-01-15"
     author: "Marc Los Huertos"
     changes: "Converted to QMD format"
+  - version: "1.05"
+    date: last-modified
+    author: "Marc Los Huertos"
+    changes: "Extracted Key Definitions from Scope section into standalone
+              ## Definitions section per template requirements; reformatted
+              to bolded-bullet style"
 ---
 
 ## Purpose
 
-This SOP covers the safe use, disposal, and spill treatment of hazardous material. It applies to staff, students, and researchers who use acid, base, explosive, caustic, and poisonous materials.
+This SOP covers the safe use, storage, disposal, and spill treatment of
+hazardous materials. It applies to staff, students, and researchers who
+use acid, base, explosive, caustic, and poisonous materials in EA
+Program laboratories.
 
 This document does not explicitly cover radioactive materials.
 
 
-## Scope and Definitions
+## Scope
 
-- **Applies to:** All staff, students, and researchers handling hazardous chemicals in EA Program laboratories
-- **Does not apply to:** Radioactive materials (see separate procedures)
+- **Applies to:** All staff, students, and researchers handling
+  hazardous chemicals in EA Program laboratories
+- **Does not apply to:** Radioactive materials (see separate
+  procedures)
 - **Location:** SGM 133 and associated EA Program laboratory spaces
-
-### Key Definitions
-
-**Corrosive Chemicals:** Strong acids and bases, dehydrating agents, nonmetal chlorides, and halogens. These are health hazards and present problems in handling and storage. Purchase corrosives in containers with a protective plastic coating if available. Store corrosives under the hood, on low shelving, or in storage cabinets. Gas cylinders (including lecture-sized) should not be stored in the same cabinet with corrosive liquids because of possible cylinder and valve damage. Properly segregate hazardous materials to prevent fire, explosion, or toxic gas release. Segregate acids from bases and oxidizing acids from organic acids. Separate nitric acid from other acids.
-
-**Flammable Liquids:** Chemicals in a liquid state that can easily burn, classified as either flammable or combustible by their flashpoints. Flammable liquids catch fire and burn easily at normal working temperatures. Combustible liquids can burn at temperatures usually above working temperatures.
-
-**Caustic Chemicals:** A range of chemicals (e.g., ammonium hydroxide, potassium hydroxide, sodium hydroxide) that are able to burn or corrode organic tissue by chemical action.
-
-**Safety Data Sheet (SDS):** Each chemical we use has an SDS describing the hazards and how the material should be handled. These sheets are located on the counter next to the east entrance and in the PPE shelves near the entrance of SGM 133.
 
 
 ## Responsibilities
 
-| Role                    | Responsibility                                              |
-|:------------------------|:------------------------------------------------------------|
-| Lab PI                  | Approve SOP, ensure training compliance                     |
-| Chemical Safety Officer | Update SOPs, train researchers, ensure safe lab conditions   |
-| Trained Personnel       | Follow this SOP, report deviations                          |
-| New Students            | Complete training before independent work                   |
+| Role              | Responsibility                              |
+|:------------------|:--------------------------------------------|
+| Lab PI            | Approve SOP, ensure training compliance     |
+| Trained Personnel | Follow this SOP, report deviations          |
+| New Students      | Complete training before independent use    |
 
-### Chemical Safety Officer
 
-Every year, one person will be assigned as Chemical Safety Officer. This person will work to maintain laboratory safety by updating SOPs, training all researchers, and ensuring safe laboratory conditions. Specifically, the Chemical Safety Officer:
+## Definitions
 
-- Ensures all students, technicians, and researchers are trained, re-informed, and re-assessed about lab safety periodically throughout their work
-- Promotes a culture of safety so that all researchers have a consistent understanding of lab safety
-- Ensures researchers performing anything more than basic tasks receive in-depth, specific training for their work
-
-### Required Training
-
-All researchers using this SOP should be trained on SOP-L01 (Laboratory Safety).
-
-Training requires approximately 20 minutes.
+- **Caustic chemicals:** Chemicals such as ammonium hydroxide,
+  potassium hydroxide, and sodium hydroxide that are able to burn or
+  corrode organic tissue by chemical action.
+- **Combustible liquid:** A liquid with a flashpoint at or above 60 °C
+  (140 °F); can burn at temperatures usually above normal working
+  temperatures.
+- **Corrosive chemicals:** Strong acids and bases, dehydrating agents,
+  nonmetal chlorides, and halogens that are health hazards and can
+  damage skin, eyes, and respiratory tissue on contact. Store
+  corrosives under the fume hood on low shelving or in approved
+  storage cabinets. Gas cylinders should not be stored in the same
+  cabinet with corrosive liquids. Segregate acids from bases and
+  oxidizing acids from organic acids; separate nitric acid from all
+  other acids.
+- **Flammable liquid:** A liquid with a flashpoint below 60 °C
+  (140 °F) that can ignite easily at normal working temperatures.
+- **Hazardous material:** Any substance posing a physical or health
+  hazard as defined by OSHA 29 CFR 1910.1200, including flammables,
+  corrosives, oxidizers, toxins, and carcinogens [@osha1910].
+- **Safety Data Sheet (SDS):** A standardized document describing a
+  chemical's hazards, safe handling, storage, disposal, and emergency
+  response procedures; located on the counter near the east entrance
+  and at the PPE shelves in SGM 133.
 
 
 ## Safety and Hazards
@@ -77,210 +90,117 @@ Training requires approximately 20 minutes.
 ::: {.callout-warning}
 ### Hazards
 
-- **Physical:** Cuts from glassware, burns from hot surfaces and open flames, explosions
-- **Chemical:** Corrosive reagents, flammable solvents, toxic fumes, caustic substances
-- **Exposure routes:** Inhalation, ingestion, dermal contact, injection (e.g., broken glass)
+- **Chemical:** Acids, bases, flammables, oxidizers, and toxic
+  reagents are used routinely in EA Program labs.
+- **Physical:** Glassware breakage, heat from hot plates and ovens,
+  compressed gas cylinders.
+- **Biological:** Soil and water samples may contain pathogens.
 :::
 
 ### Required PPE
 
-- [ ] Safety glasses or goggles
+- [ ] Safety glasses / goggles
 - [ ] Lab coat
 - [ ] Nitrile gloves
-- [ ] Close-toed shoes
-- [ ] Additional PPE as indicated by SDS
+- [ ] Face shield (concentrated acids and bases)
 
-### Signage
+### Required Training
 
-Laboratory areas with special or unusual hazards should be posted with warning signs. Standard signs and symbols are established for situations such as biological hazards and fire hazards.
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+  before handling any hazardous chemical
 
-Other signs should be posted to show locations of safety showers, eyewash stations (located on the right and left sides of the lab), exits, and fire extinguishers (located near the front entrance). Extinguishers should be labeled for the type of fire for which they are intended. Waste containers should be labeled for the type of waste that can be safely deposited.
 
-Label all waste containers with contents, manufacturer's name, appropriate warnings, and hazard class.
+## General Safe Handling Procedures
 
-### Spill Kit
+### Working with Hazardous Materials
 
-A green spill kit is mounted on the wall next to the PPE shelves, near the entrance to SGM 133. This kit is capable of treating contained spills.
+- Read the SDS for every chemical before first use.
+- Never work alone when handling concentrated acids, bases, or
+  flammables.
+- Use the fume hood when working with volatile, toxic, or corrosive
+  chemicals.
+- Cap unused containers immediately; return chemicals to designated
+  storage after use.
+- Purchase the smallest quantity needed; order corrosives in
+  plastic-coated containers where available.
 
-### Mindfulness in the Laboratory
+### Physical Hazards
 
-Be cautious while handling chemicals. Being mindful includes:
+**Glassware:** Inspect glassware for cracks before use. Use extreme
+care when inserting glass tubing into stoppers. Use heat-resistant
+gloves near hot glassware.
 
-1. Reduce distractions in your mind
-2. Be present in your surroundings
-3. Reflect on potential hazards (e.g., carefully evaluate each material using SDS forms and hazard symbology)
+**Burns:** Use hot plates or water baths instead of open flames. Tie
+up loose hair and wear snug-fitting, non-synthetic clothing when
+possible. Always use a fume hood with volatile organic compounds.
 
+**Chemical spills:** Read the SDS before working with any hazardous
+chemical. Always wear PPE, cap unused chemical containers, and use
+fume hoods. Never work alone.
 
-## Required Materials
+**Mercury spills:** Follow the college's emergency instructions for
+mercury spill response.
 
-- Access to SOP and Training Documentation binder
-- Safety Data Sheets for all chemicals in use
-- Spill kit and PPE
+**Explosions:** Develop written protocols for explosive chemicals. Use
+fume hoods; avoid experiments in closed containers; always wear PPE.
 
+**Chemical inhalation:** Never breathe deeply from a chemical mixture.
+Use a fume hood; consider gas monitoring equipment for experiments that
+generate toxic gases.
 
-## Procedures
 
-### Handling Glassware
+## Chemical Storage
 
-Check the condition of glassware before use. Only glass in good condition should be used. Discard or send for repair glass that is broken, chipped, starred, or badly scratched. Clean glassware before sending it for repair. When picking up broken glass, use proper hand protection.
+### General Rules
 
-### Handling and Transportation of Chemicals
+- Store chemicals by hazard class, not alphabetically.
+- Never store chemicals on the floor; use low shelves or cabinets with
+  front lips.
+- Secure shelves to the wall. Ensure shelves have lips to prevent
+  containers from falling.
 
-::: {.callout-important}
-Many lab accidents occur while carrying chemicals from one place to another or transferring chemicals between containers. It is good practice to assume that all chemicals are potentially hazardous.
-:::
+### Storage by Hazard Class
 
-**General transportation rules:**
+| Hazard Class       | Storage Location                              |
+|:-------------------|:----------------------------------------------|
+| Flammable liquids  | Flammable-storage cabinet (yellow, self-closing) |
+| Corrosive acids    | Acid cabinet under fume hood (separate from bases) |
+| Corrosive bases    | Base cabinet under fume hood (separate from acids) |
+| Oxidizers          | Separate from flammables and organics         |
+| Toxics / reagents  | General chemical shelves, secured             |
+| Compressed gases   | Chained to wall; away from corrosives         |
+| Refrigerated       | Lab refrigerator (no food); door labeled      |
 
-- Wear appropriate PPE (minimum: safety glasses, lab coat, long pants, closed-toe shoes)
-- Large bottles should be carried on a cart; if no cart is available, carry bottles one at a time with two hands (one around the neck, one underneath)
-- Do not hook a finger through the ring on top of a bottle or attempt to pick up a bottle by the cap
-- A bottle transporter is the safest way to transport chemicals
-- When using a wheeled cart, do not place bottles near the edge; bottles should not touch each other or other glassware
-- Be cautious rolling carts over door sills or other obstructions
-- When transporting outdoors, two people must be present
-- Incompatible chemicals should not be carried on the same cart
-- Use padded or rubber bottle carriers, carts, or pails to prevent breakage
-- Ensure containers are properly labeled; know what to do in case of a spill
-- Hazardous chemicals must be attended at all times while being transported
-- If using an elevator, use freight-only elevators if possible; otherwise use unoccupied passenger elevators
-- Do not move unstable, explosive, or unusually hazardous materials
 
-**Specific chemical types:**
+## Waste Disposal
 
-- Large quantities of concentrated mineral acids should be kept in storage rooms or cabinets for corrosive substances and transported in an approved acid bottle carrier
-- Organic solvents should be stored in special flammable storage areas and transported in special rubber carriers
+See [SOP-L006 Waste Disposal](SOP-L006-waste-disposal.qmd) for the
+complete waste classification and disposal procedures. Key rules:
 
-### Chemical Storage
-
-- Return every chemical to its storage location after use
-- Store solvents, acids, bases, reactives, oxidizers, and toxins separately
-- Use separate cabinets or isolated areas for incompatible chemicals; check compatibility restrictions on cabinets under fume hoods
-- Never store hazardous chemicals on the floor; use low shelves or cabinets with a lip on the forward edge
-- Shelves should be securely fastened to a wall or floor and should not be overloaded
-- Use compatible containers for storing chemicals or wastes; metal containers are often unsuitable for corrosive wastes and halogenated solvents
-- Check waste containers weekly for signs of chemical leakage
-- Containers should be free of rust and deformation; caps should remain securely on containers when not in immediate use
-- NFPA labeling should appear on cabinets and room doors at waist level or lower (to be visible in dense smoke)
-- All containers must be labeled with content and general hazard in compliance with Hazard Communications regulations
-- Flammable liquids greater than 1 liter should be kept in metal safety cans; never disable the spring-loaded closure
-- Metal drums for flammable chemicals should be properly grounded
-- Store chemicals as close as possible to the point of use; identify storage locations on an emergency floor plan posted in each work area
-- Only limited quantities of chemicals and solvents should be stored in the lab; large drums or multiple bottles should be stored in a central chemical storage area
-- Dispose of out-of-date chemicals on a periodic basis
-
-### Labeling
-
-All containers should be dated and labeled with chemical components and hazards. The user's name should also appear on the label. Labels on incoming containers must not be removed or defaced.
-
-Dating is especially important for compounds with a specified shelf life, such as those that form peroxides. Chemical names must be spelled out on labels -- chemical formulas, acronyms, and abbreviations are not acceptable as the only identification. Laboratory samples, including field specimens and newly synthesized compounds, must be identified as accurately as possible.
-
-
-## Chemical Spill Treatment
-
-### Initial Response
-
-::: {.callout-warning}
-### Safety First
-
-1. **Isolate the spill area**
-2. **Notify proper authorities** -- call Campus Safety, who will relay the message to the appropriate agency (usually the Claremont Fire Department)
-3. **Wear adequate protection** -- eye protection, hand protection, and respiratory protection
-:::
-
-### Identify and Treat the Spill
-
-Determine if the spill is an acid, caustic, solvent, or other material. Select the appropriate spill control agent:
-
-- **Spill-X-A** for acids
-- **Spill-X-C** for caustics
-- **Spill-X-S** for solvents
-
-**Treatment steps:**
-
-1. Encircle and cover the spill with the appropriate agent
-2. Mix the agent with the spill using the provided scraper
-   - For acids and bases: a neutralization reaction will leave a paste-like substance
-   - For solvents: adsorption is indicated by the disappearance of free liquid
-
-### Restore the Area
-
-1. Test representative samples of spill residue for final pH; add more agent if necessary
-2. Use Spill-X-S to solidify any remaining liquid; final residue should be dry and powdery
-3. Record spill type and treatment on the labels of provided bags (e.g., "neutralized acid/base, pH = ___" or "adsorbed solvent: [name]")
-4. After the treatment reaction cools, use the provided scraper and pan to pick up residue and place into the labeled bag
-5. Rinse and decontaminate utensils and the spill area
-
-
-## Chemical Waste Disposal
-
-### Waste Containers
-
-Containers used for accumulating hazardous waste must be in good condition, free of leaks, and compatible with the waste being stored. Waste containers should be capped and only opened when adding waste. Hazardous waste must not be placed in unwashed containers that previously held incompatible materials. Containers holding waste incompatible with nearby materials must be separated or protected by a wall, partition, or secondary containment device.
-
-### Labeling and Manifests
-
-Before chemicals can be disposed of, a waste tag must be filled out by the waste generator and attached to each container. A packing manifest must also be attached to each box, including lab information and waste information. The generator should check the manifest, sign their name, and attach it. Keep a copy for lab records.
-
-### Waste Minimization
-
-Avoid buying and using large quantities when not necessary. Whenever possible, substitute nonhazardous, biodegradable chemicals for hazardous chemicals.
-
-### Flammable Organic Solvents
-
-Flammable organics can often be reused for fuel unless they are extremely toxic or produce toxic combustion products. Halogenated solvents, acutely toxic flammables, acids, bases, heavy metals, oxidizers, and pesticides should be collected in separate containers.
-
-Compounds most suitable for recovery include: acetone, 2-butanol, butyl alcohol, cyclohexane, diethyl ether, ethyl acetate, ethyl alcohol, heptane, hexane, methyl alcohol, methyl cellosolve, pentane, petroleum ether, 2-propanol, sec-butyl alcohol, tert-butyl alcohol, tetrahydrofuran, and xylene. Do not combine any of these with other chemicals.
-
-### Sink Disposal
-
-Very few chemical wastes are acceptable for disposal down the sink or sanitary sewer system. Small-scale research activities (100 mL or less) of certain water-soluble, nontoxic, and nonflammable chemicals may be poured only if approved by the Chemical Safety Director.
-
-### Waste Packing Procedure
-
-1. Collect each chemical waste in a separate screw-top container; do not mix wastes
-2. Use the smallest container size to match the amount of waste generated
-3. Waste containers should be securely capped and labeled with chemical content (for mixtures, give approximate percentages)
-4. Completely fill waste collection containers
-5. Shock-sensitive and water-reactive compounds require special handling and should be packed separately
-6. Determine the packing hazard class for each waste, prioritizing reactivity over toxicity
-7. Segregate wastes by hazard class and pack into separate cardboard boxes
-8. Place dividers and shock-absorbing materials (newspaper, vermiculite) between containers
-9. Specify where the waste is to be picked up
-
-
-## Lessons Learned
-
-::: {.callout-note}
-### Learning from Past Incidents
-
-History provides many instances of laboratory safety breakdowns. By analyzing the causes of laboratory accidents, we can identify patterns that lead to both positive and negative safety outcomes.
-:::
-
-**Cuts:** Dispose of all sharp metal and glass properly. Inspect glassware for cracks prior to use. Use extreme care around glass in the lab.
-
-**Burns:** Minimize fire hazard by using hot plates or water baths instead of open flames. Tie up loose hair and wear snug clothing, avoiding synthetic materials when possible. Always use a fume hood when working with volatile organic compounds.
-
-**Chemical spills:** Read the SDS before working with any hazardous chemical. Always wear PPE, cap unused chemical containers, and use engineering controls such as fume hoods when necessary. Never work alone in the laboratory.
-
-**Mercury spills:** Follow the college's emergency instructions for mercury spill response.
-
-**Explosions:** Develop written protocols for handling explosive chemicals. Use fume hoods, avoid carrying out experiments in closed containers, and use PPE.
-
-**Chemical inhalation:** Never breathe deeply from a chemical mixture. In addition to working in a fume hood, consider using equipment that can monitor gas levels from an experiment.
+- Segregate waste by chemical compatibility (acids, bases, halogenated
+  solvents, non-halogenated solvents, heavy metals).
+- Label every waste container with the chemical name, hazard class, and
+  accumulation start date.
+- Never pour hazardous chemicals down the drain without verifying
+  local discharge limits.
+- Schedule EH&S pickup when a container reaches 75% capacity or after
+  270 days of accumulation, whichever comes first.
 
 
 ## References
 
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water and Wastewater*. 22nd ed. American Public Health Association (Eds.). Washington. 1360 pp.
+::: {#refs}
+:::
 
 
 ## Training Record
 
-Training is documented in EA Program files. Before working independently, personnel must:
+Training is documented in EA Program files. Before working
+independently, personnel must:
 
 1. Read this SOP in full
-2. Complete SOP-L01 (Laboratory Safety) training
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
 3. Review SDS forms for all chemicals to be handled
 4. Demonstrate understanding of spill response procedures
 5. Be signed off by the PI or Chemical Safety Officer

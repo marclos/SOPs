@@ -2,16 +2,6 @@
 # =============================================================================
 # SOP-L208: ThermoFisher Delta V IRMS -- General Instrument Use
 # =============================================================================
-# Instrument-level SOP covering the Delta V IRMS and all four front-end
-# peripherals (ConFlo IV, Flash EA, TC/EA, GasBench II).  Covers user
-# certification, lab policies, gas systems, instrument startup/shutdown,
-# tuning, pre-analysis checks, Isodat software basics, and standard
-# reference materials.
-#
-# Application-specific SOPs (L75 Soil EA, L76 Carbonate GasBench, etc.)
-# reference this SOP for instrument-level procedures.
-# =============================================================================
-
 title: "ThermoFisher Delta V IRMS -- General Instrument Use"
 sop-number: "SOP-L208"
 author:
@@ -21,25 +11,31 @@ author:
     affiliation: "Oxtoby Isotope Lab, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "1.0"
     date: "2026-05-18"
     author: "Marc Los Huertos"
     changes: "Initial release; consolidated from LaTeX SOPs 75A and 75B"
+  - version: "1.1"
+    date: last-modified
+    author: "Marc Los Huertos"
+    changes: "Reformatted Definitions from definition-list to bolded-bullet
+              style per template; replaced plain-text reference list with
+              BibTeX {#refs} div; added inline citations"
 ---
 
 ## Purpose
 
 This SOP describes the general operation, care, and policies governing
 the ThermoFisher Delta V Isotope Ratio Mass Spectrometer (IRMS) and its
-four front-end peripherals in the Oxtoby Environmental Isotope Lab. It
-is the single instrument-level reference for all IRMS work. Individual
-application SOPs (e.g., [SOP-L414](SOP-L414-soil-ea-irms.qmd) for soil
-CN analysis, [SOP-L415](SOP-L415-carbonate-gasbench-irms.qmd) for
-carbonate isotopes) build on this SOP and should be read in conjunction
-with it.
+four front-end peripherals in the Oxtoby Environmental Isotope Lab
+[@werner2001; @coplen2011]. It is the single instrument-level reference
+for all IRMS work. Individual application SOPs (e.g.,
+[SOP-L414](SOP-L414-soil-ea-irms.qmd) for soil CN analysis,
+[SOP-L415](SOP-L415-carbonate-gasbench-irms.qmd) for carbonate
+isotopes) build on this SOP and should be read in conjunction with it.
 
 
 ## Scope
@@ -55,13 +51,45 @@ with it.
 
 ## Responsibilities
 
-| Role               | Responsibility                                           |
-|:-------------------|:---------------------------------------------------------|
-| Lab PI             | Approve methods, authorize access, oversee training      |
-| Lab Manager (0.5 FTE) | Prepare/verify instrument methods; train users; maintain reactors and columns |
-| Super-User         | Supervise trainees; perform minor maintenance (gas replacement, reactor exchange, needle exchange, PAL programming) |
-| Certified User     | Prepare samples, build sequences, run analyses independently |
-| Student Researcher | Sample weighing, data reduction, sequence creation (no unsupervised runs) |
+| Role              | Responsibility                                           |
+|:------------------|:---------------------------------------------------------|
+| Lab PI            | Approve SOP; authorize new users                         |
+| Lab Manager / Super-User | Certify new users; maintain reactors and gas supply |
+| Certified User    | Operate instrument per this SOP; log all sessions       |
+| Student Researcher| Operate only under supervision until certified           |
+
+
+## Definitions
+
+- **ConFlo IV:** Interface hub connecting peripherals, reference gases,
+  and the IRMS; handles reference-gas dilution and peak-center
+  switching.
+- **Delta V IRMS:** The ThermoFisher Delta V Isotope Ratio Mass
+  Spectrometer housed in the Oxtoby Isotope Lab, SGM Rm 135.
+- **Flash IRMS EA:** Elemental analyzer peripheral that combusts
+  samples at 1020 °C to produce N~2~, CO~2~, and (optionally) SO~2~
+  for simultaneous $\delta^{15}$N and $\delta^{13}$C analysis.
+- **GasBench II:** Low-flow peripheral for headspace gas sampling from
+  sealed vials; used for carbonate CO~2~, DIC, and water
+  $\delta^{18}$O.
+- **H~3~$^{+}$ Factor:** Correction applied to $\delta^{2}$H data for
+  H~3~$^{+}$ ions formed in the source that interfere with HD$^{+}$
+  at m/z 3.
+- **Isodat:** ThermoFisher software used to design analytical
+  sequences, control the instrument, and export raw isotope data.
+- **Linearity:** The dependence of measured $\delta$ on signal
+  amplitude; a well-tuned instrument shows minimal linearity offset
+  across the working signal range [@werner2001].
+- **Super-User:** Staff or faculty member certified for IRMS operation
+  and minor maintenance (gas replacement, reactor exchange).
+- **TC/EA:** Thermal Conversion/Elemental Analyzer peripheral;
+  pyrolyzes samples at ~1450 °C to produce H~2~ and CO for
+  $\delta^{2}$H and $\delta^{18}$O analysis.
+- **User:** Student, staff, or faculty member certified to prepare
+  samples and operate the IRMS without direct supervision.
+- **Zero-Enrichment Test:** Series of reference-gas on/off pulses run
+  before analysis to verify the IRMS produces consistent $\delta$
+  values independent of signal amplitude [@coplen2011].
 
 
 ## Safety and Hazards
@@ -69,495 +97,92 @@ with it.
 ::: {.callout-warning}
 ### Hazards
 
-- **Pressurized gases:** H~2~, O~2~, CO, CO~2~, SO~2~, He, N~2~.
-  Several are reactive or toxic. Always verify cylinder pressures before
-  starting work.
-- **Hot surfaces:** Flash EA reactors, TC/EA pyrolysis tube (~1450 °C),
-  and ash fingers. Risk of burns during handling.
-- **Chemical reagents:** 100% phosphoric acid (GasBench carbonate
-  method), chromium oxide, silvered cobaltous/cobaltic oxide, tungsten
-  oxide, vanadium pentoxide, quartz wool, and other oxidants/reductants
-  used in reactor packing.
-- **Sharps:** Syringes, needles, and other pointed tools (GasBench,
-  TC/EA).
+- **Compressed gases:** He, O~2~, CO~2~, N~2~, SO~2~ (where used).
+  Cylinders must be chained; O~2~ must be stored away from flammables.
+- **High-voltage electronics:** The IRMS source operates at high
+  voltage. Do not open the source housing without authorization.
+- **High temperatures:** Flash EA reactor operates at 1020 °C; TC/EA
+  at ~1450 °C. Allow to cool before maintenance.
+- **Chemical:** Tin capsules contain sample material; some samples may
+  be hazardous. Handle per the sample-specific SOP.
 :::
 
 ### Required PPE
 
 - [ ] Safety glasses
-- [ ] Lab coat (bring your own; limited loaners available)
-- [ ] Nitrile gloves (various sizes in the lab; donations welcome)
-
-### Emergency Procedures
-
-Follow the procedures in
-[SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd). Contact the
-lab manager or Dr. Marc Los Huertos immediately for gas leaks, spills,
-injuries, or instrument malfunctions.
-
-
-## Acknowledgements
-
-The Oxtoby Isotope Laboratory was funded by the Moore Foundation and
-dedicated by the college on February 26, 2018. Martina Ebert
-spearheaded the proposal. Laboratory construction was approved by Dean
-Audrey Bilger, President Oxtoby, and Treasurer Karen Sission, developed
-and managed by Brian Faber, and overseen by Bob Robertson.
-
-
-## User Certification
-
-### User Categories
-
-Student Researcher
-: May conduct sample weighing, sequence creation, and data reduction.
-  May not operate the IRMS without direct supervision.
-
-User
-: A student, staff, or faculty member certified to prepare samples and
-  run the IRMS without supervision.
-
-Super-User
-: A staff or faculty member qualified to run the IRMS and perform minor
-  maintenance.
-
-### Training Pathway
-
-Since the lab is managed by a half-time manager, users must be able to
-operate the instruments independently. Training ensures users are both
-qualified and *confident*.
-
-**Estimated time:** Approximately 6 hours of observation, supervised
-practice, and minimally supervised runs (not including reading time).
-Training for a single peripheral is shorter than training across all
-peripherals.
-
-**Steps to certification:**
-
-1. Complete the required reading (this SOP plus the relevant application
-   SOP).
-2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
-3. Observe one or more experienced users operate the IRMS and the
-   peripheral(s) you will use.
-4. Conduct supervised practice runs.
-5. Complete a start-to-finish analysis. The lab technician or a
-   designated Super-User will determine whether the trainee is ready
-   for independent use.
-
-
-## Laboratory Policies
-
-### Not a Service Lab
-
-The Oxtoby Laboratory is not a service lab. The manager ensures methods
-are working properly but will not prepare samples, create sequences,
-oversee runs, or conduct data reduction. Users are responsible for all
-of these tasks.
-
-### Scheduling and Access
-
-Instrument time is first-come, first-served, with PI priority. **Expect
-delays** if you are scheduled immediately after another user; unforeseen
-events happen. Lab access is generally 8:00 AM to 5:00 PM unless the
-technician or Dr. Los Huertos is in the department. Contact the
-technician
-([kyle.mccarty@pomona.edu](mailto:kyle.mccarty@pomona.edu)) to schedule
-time or arrange access.
-
-### Consumables (In-Kind Payment Model)
-
-There is no per-sample cost, but users are expected to replenish
-consumables and gases relative to their use. You are welcome to bring
-your own consumables (capsules, cell wells, weighing paper, gloves,
-standards, reagents, vials, caps, septa, needles, syringes, reactor
-tubes, etc.).
-
-### Housekeeping
-
-- Clean up after yourself: Kimwipes, weighing papers, waste.
-- Organize your samples and personal items whether you are in or out of
-  the lab.
-- Push in your chairs. Keep the lab tidy and free of obstructions.
-
-
-## Instrument Overview
-
-### How Gas Source IRMS Works
-
-Isotope ratio mass spectrometers measure small differences in the
-abundances of isotopes, usually of the lighter elements. The Delta V can
-measure $^{2}$H/$^{1}$H, $^{13}$C/$^{12}$C, $^{15}$N/$^{14}$N,
-$^{18}$O/$^{16}$O, and $^{34}$S/$^{32}$S.
-
-Before isotope ratios can be determined, samples are converted into
-simple gases: H~2~, CO, N~2~, CO~2~, or SO~2~. The IRMS separates
-ions by their mass-to-charge ratio (m/z). It cannot distinguish
-between molecular species of the same m/z (e.g., N~2~ and CO both
-appear at m/z 28), so proper sample conversion and chromatographic
-separation are essential. Measured ratios are compared to reference
-gases and verified against certified standards to produce delta
-($\delta$) values.
-
-### Continuous Flow vs. Dual Inlet
-
-The Oxtoby Lab uses a continuous-flow (CF-IRMS) configuration. One or
-more peripherals are coupled to the IRMS through the ConFlo IV
-interface. Dual-inlet IRMS (DI-IRMS) is roughly 10 times more precise
-but requires more sample preparation, larger sample sizes, and has lower
-throughput. The lab does not currently have a dual-inlet system.
-
-### The Four Peripherals
-
-#### ConFlo IV
-
-The hub connecting all peripherals, reference gases, and the IRMS. It
-dilutes sample and reference gas streams so that signal intensities fall
-within the working range of the mass spectrometer. All gas lines
-(carrier, reference, and sample) pass through the ConFlo.
-
-#### Flash IRMS EA (Elemental Analyzer)
-
-Combusts solid samples in an oxygen-enriched helium stream to produce
-N~2~, CO~2~, and (optionally) SO~2~. Gases are separated on a packed
-chromatographic column and carried to the IRMS via the ConFlo IV.
-Available configurations:
-
-- **NC dual reactor:** For $\delta^{13}$C and $\delta^{15}$N.
-- **NCS single reactor:** Adds $\delta^{34}$S using a dedicated reactor,
-  Sulfinert column, and SO~2~ reference gas with heated regulator/foil.
-
-The autosampler holds three carousels of 32 wells each (94 positions
-total).
-
-#### TC/EA (Thermal Conversion/Elemental Analyzer)
-
-Uses high-temperature pyrolysis (~1450 °C) instead of combustion to
-convert samples into H~2~ and CO for $\delta^{2}$H and $\delta^{18}$O
-analysis. Accepts solid samples in silver capsules (up to 6 mm diameter)
-or liquid injections. Consumes substantially more helium than the
-Flash EA (no helium-saving feature).
-
-#### GasBench II
-
-A low-flow peripheral that samples headspace gas from sealed vials
-(usually via a PAL autosampler), conditions it (water removal, gas
-chromatographic separation), and transports it to the IRMS. Applications
-include:
-
-- Carbonate $\delta^{13}$C and $\delta^{18}$O (phosphoric acid
-  digestion)
-- Dissolved inorganic carbon (DIC)
-- Breath gas analysis
-- CO~2~ at atmospheric concentrations
-- Water equilibration for $\delta^{18}$O and $\delta^{2}$H
-
-Each vial is sampled multiple times (typically 11 injections), so
-per-sample analysis times are longer than you might initially expect.
-The GasBench has the added complexity of PAL autosampler programming
-for vial flushing, which cannot run simultaneously with IRMS analysis.
-
-
-## Reference and Carrier Gases
-
-### Tank Farm 1 (West Wall, North)
-
-| Gas                    | Role              | Pressure Requirements                |
-|:-----------------------|:------------------|:--------------------------------------|
-| Helium (He)            | Carrier gas       | Tank >500 psi, regulated at 50 psi   |
-| Nitrogen (N~2~)        | Reference gas     | Per method specification             |
-| Carbon dioxide (CO~2~) | Reference gas     | Per method specification             |
-| Oxygen (O~2~)          | Combustion gas    | Flash EA only                        |
-
-### Tank Farm 2 (West Wall, South)
-
-| Gas                         | Role / Notes          |
-|:----------------------------|:----------------------|
-| Hydrogen (H~2~)             | Reference gas         |
-| Carbon monoxide (CO)        | Reference gas         |
-| H~2~/He mix                 | TC/EA carrier         |
-| H~2~/CO~2~ mix              | GasBench              |
-| Sulfur dioxide (SO~2~)      | Reference gas (NCS)   |
-
-::: {.callout-important}
-Always verify that you have enough carrier and reference gas for the
-full duration of your run **before** starting. Running out of gas
-mid-sequence can damage the source and waste an entire batch of samples.
-:::
-
-
-## Standard Reference Materials {#sec-standards}
-
-The laboratory maintains the standards listed below. **Do not use them
-without approval from a Super-User, the lab technician, or the PI.**
-Determine which standards you need *before* approaching the lab, and
-replace what you use.
-
-| Standard | $\delta^{2}$H (VSMOW-SLAP) | $\delta^{13}$C (VPDB-LSVEC) | $\delta^{15}$N (Air-N~2~) |
-|:---------|:---------------------------:|:----------------------------:|:--------------------------:|
-| LOCSS    | ---                         | --26.66                      | 7.30                       |
-| HOCSS    | ---                         | --26.27                      | 4.42                       |
-| Urea     | ---                         | --43.26                      | --0.56                     |
-| USGS24   | ---                         | --16.05                      | ---                        |
-| USGS40   | ---                         | --26.39                      | --4.52                     |
-| USGS41a  | ---                         | 36.55                        | 47.6                       |
-| USGS57   | --91.5                      | ---                          | ---                        |
-| USGS58   | --28.4                      | ---                          | ---                        |
-| USGS61   | 96.9                        | --35.05                      | --2.87                     |
-| USGS62   | --156.1                     | --14.79                      | 20.2                       |
-
-
-## Instrument Startup and Shutdown
-
-### Starting from a Cold State
-
-If the IRMS has been completely powered down:
-
-1. Verify all gas valves are open and compressed air is connected.
-2. Confirm the needle valve is closed.
-3. Turn on the system with the MAIN SWITCH.
-4. Power on the computer and launch Isodat.
-5. Switch on pumps at the Control Panel.
-6. In the MS State panel, switch on all heaters required for your
-   analysis.
-7. In the Accessories toolbar of Isodat, access the ion source
-   settings.
-8. Allow 24--48 hours for the instrument to stabilize before running
-   analyses.
-
-### Starting from Standby
-
-If the IRMS has been in standby (source on, peripherals off):
-
-1. Verify gas pressures (see @sec-gas-checks).
-2. Power on the peripheral you will use (Flash EA, TC/EA, or
-   GasBench II).
-3. Initialize the peripheral's temperature ramp and purge cycle.
-4. Proceed to pre-analysis checks (@sec-pre-analysis).
+- [ ] Lab coat
+- [ ] Nitrile gloves (during sample loading and reactor maintenance)
+
+### Required Training
+
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+- This SOP (Section on User Certification) before any independent use
+
+
+## Equipment and Materials
+
+| Item                      | Location      | Notes                             |
+|:--------------------------|:--------------|:----------------------------------|
+| Delta V IRMS              | SGM Rm 135    | Do not power off without authorization |
+| ConFlo IV interface       | SGM Rm 135    | Always on when IRMS is on         |
+| Flash IRMS EA             | SGM Rm 135    | Application-specific reactor config |
+| GasBench II               | SGM Rm 135    | Requires dedicated Isodat method  |
+| TC/EA                     | SGM Rm 135    | High-temperature; Super-User only for maintenance |
+| He supply (cylinder)      | SGM Rm 135    | Check pressure before each session |
+| Reference gas cylinders   | SGM Rm 135    | CO~2~, N~2~, H~2~, SO~2~ as needed |
+| Tin capsules (5 x 9 mm)   | SGM Rm 133    | Sample prep area                  |
+| Lab logbook               | SGM Rm 135    | Sign in/out for every session     |
+
+
+## Procedure
+
+### User Certification
+
+Before operating the IRMS independently, personnel must complete the
+Training Record (Section 13). Contact the lab manager to schedule
+certification.
+
+### Pre-Analysis Checklist
+
+1. Sign in to the lab logbook.
+2. Verify He carrier gas pressure (minimum 1500 psi on the regulator).
+3. Check reference gas pressures (CO~2~, N~2~ as applicable).
+4. Confirm Isodat is running and the instrument status screen shows
+   no error flags.
+5. Verify the correct peripheral is selected in Isodat.
+6. Run a Zero-Enrichment Test (3 on/off pulses) and confirm
+   $\delta$ values are stable within ±0.1‰.
+7. Run an on/off linearity check if not done within the past 48 h.
+
+### Analytical Sequence Design
+
+1. Open the Isodat Sequence Editor.
+2. Load the appropriate method file for the peripheral and analyte.
+3. Build the sequence: blank(s), conditioning samples, reference
+   materials, unknowns, check standards, blanks.
+4. Reference material placement: minimum 1 RM per 10 unknowns;
+   two-point normalization requires at least 2 different RMs.
+5. Save the sequence file using the naming convention:
+   `YYYYMMDD_Project_SeqID_User.seq`
+
+### Starting and Monitoring a Run
+
+1. Load samples into the autosampler or carousel per the
+   application SOP.
+2. Press **Start** in the Isodat Sequence Editor.
+3. Monitor the first 3--5 injections on-screen to confirm peaks are
+   present, within expected amplitude, and baseline-resolved.
+4. Do not leave the instrument unattended during the first 30 min.
 
 ### Shutdown
 
-1. Confirm the sequence has completed successfully in Isodat.
-2. Follow the peripheral-specific shutdown procedure (contact the lab
-   manager if unsure).
-3. If the instrument will be idle for more than a few days, consult the
-   lab manager about placing it in standby or full shutdown.
-4. Log your gas usage and any issues in the lab logbook.
-
-
-## Gas Checks {#sec-gas-checks}
-
-Before every session, verify:
-
-- He tank pressure >500 psi, regulated at 50 psi.
-- Sufficient reference gas for the planned run duration.
-- O~2~ supply (Flash EA sessions).
-- Gas flows within specification for your method (check Isodat
-  Instrument Monitor).
-
-
-## Pre-Analysis Checks {#sec-pre-analysis}
-
-### Instrument Status
-
-- No red or yellow warning lights on the IRMS front panel.
-- Vacuum gauge within acceptable range.
-- High voltage (HV), box, and trap values reading back normally in
-  Isodat.
-
-### Purge, Bake-Out, and Temperature Ramp
-
-1. Purge atmospheric gases from the system.
-2. Perform a column bake-out if the instrument has been idle.
-3. Initialize the temperature ramp for the relevant reactor (Flash EA
-   combustion reactor, TC/EA pyrolysis tube, or GasBench transfer
-   line).
-
-### Background Checks
-
-Verify residual gas backgrounds in the ion source. Elevated backgrounds
-indicate leaks or contamination:
-
-| m/z | Species        | Possible Cause                         |
-|:---:|:---------------|:---------------------------------------|
-| 2   | He$^{2+}$      | High He pressure or source tuning      |
-| 18  | H~2~O$^{+}$    | Moisture leak or insufficient bake-out |
-| 28  | N~2~$^{+}$     | Air leak                               |
-| 40  | Ar$^{+}$       | Air leak                               |
-| 44  | CO~2~$^{+}$    | Residual CO~2~ or combustion byproduct |
-
-### Zero-Enrichment (On/Off) Tests
-
-Perform reference gas on/off tests to verify the IRMS is within
-specification. Each cycle takes approximately 10 minutes. You will
-almost always need multiple cycles, and the instrument can drift out of
-specification if it has been idle.
-
-::: {.callout-caution}
-Do not skip or rush this step. Proceeding with out-of-spec on/off tests
-produces unreliable data.
-:::
-
-### H~3~$^{+}$ Factor ($\delta^{2}$H Only)
-
-If your analysis includes $\delta^{2}$H, determine the H~3~$^{+}$
-factor before proceeding (~8 minutes).
-
-### Blank Determination (Solid Samples)
-
-Run several blank capsules (empty, crimped) to quantify background
-contribution. Blank peak areas should be negligible relative to sample
-peaks.
-
-
-## Tuning
-
-For continuous-flow analysis, tune the IRMS for **linearity** (consistent
-ion ratios across a range of signal intensities), not maximum
-sensitivity. Tuning for linearity minimizes the dependence of measured
-$\delta$ values on peak amplitude, which is critical because sample
-sizes (and therefore peak sizes) vary.
-
-
-## Isodat Software Basics
-
-### Creating a Sequence
-
-1. Open the Acquisition module and create a new sequence (click the
-   sequence icon).
-2. Define the number of sample positions.
-3. Select the appropriate method. If no suitable method exists, contact
-   the lab manager.
-4. Verify that **Peak Center** has a green check mark.
-5. Enter identifiers in the "Identifier 1" column.
-6. Use the autofill function to assign the method to all rows.
-
-### File Naming Convention
-
-Save sequences and data files as:
-
-`YYYYMMDD_Project_SequenceID_Username.seq`
-
-### Running a Sequence
-
-1. Load samples into the autosampler.
-2. Verify that physical positions match the Isodat sequence.
-3. Click **Start** and enter the file name.
-
-### Exporting Data
-
-Export completed results as CSV for data reduction. Include at minimum:
-sample identifier, peak areas for each mass channel, raw $\delta$ values
-vs. the reference gas, and signal amplitudes.
-
-
-## Time Management
-
-Using the IRMS takes a great deal of time. Set aside multiple,
-relatively uninterrupted days.
-
-### Common Time Sinks
-
-- Bake-out and stabilization (hours to overnight).
-- Background and on/off checks (budget at least 1--2 hours; variable).
-- Sample weighing (~1--2 minutes per capsule for beginners).
-- The analytical run itself (see approximate times below).
-- Data reduction (budget a full session).
-
-### Approximate Per-Sample Run Times
-
-#### Flash EA
-
-| Analysis              | Time per Sample (approx.) |
-|:----------------------|:-------------------------:|
-| $\delta^{15}$N only   | ~4--5 min                 |
-| $\delta^{13}$C only   | ~5--6 min                 |
-| NC dual method        | ~7--8 min                 |
-| NCS triple analysis   | ~11--12 min               |
-
-#### GasBench II
-
-| Analysis                        | Time per Sample (approx.) |
-|:--------------------------------|:-------------------------:|
-| Carbonates (CO~2~\_630 method)  | ~11--12 min               |
-
-The GasBench samples each vial 11 times, which extends per-sample time.
-The PAL autosampler flushing stage cannot run concurrently with IRMS
-analysis, so plan accordingly.
-
-#### TC/EA
-
-| Analysis                   | Time per Sample (approx.) |
-|:---------------------------|:-------------------------:|
-| $\delta^{2}$H only         | ~4--5 min                 |
-| $\delta^{18}$O only        | TBD                       |
-| Dual ($^{2}$H + $^{18}$O) | ~7 min                    |
-
-All times include approximately one additional minute for peak centering
-and magnet switching.
-
-
-## Consumables by Peripheral
-
-### Flash EA -- NC Dual Reactor
-
-| Item                              | ThermoFisher P/N | EA Consumables P/N |
-|:----------------------------------|:-----------------|:-------------------|
-| Quartz reactor (set of 2)        | 468 20070        | C1069              |
-| Ash finger (quartz insert)       | N/A              | C1098              |
-| Silvered cobaltous/cobaltic oxide| 338 24500        | B1120              |
-| Chromium oxide                   | 338 22900        | B1099              |
-| Reduced copper wires             | 338 35300        | B1016              |
-| Quartz wool                      | 338 22200        | ---                |
-| Magnesium perchlorate (Anhydrone)| 281 13102        | ---                |
-
-### Flash EA -- NCS/Sulfur Reactor
-
-| Item                        | ThermoFisher P/N |
-|:----------------------------|:-----------------|
-| Tungsten oxide              | 338 24600        |
-| Electrolytic copper         | 338 35314        |
-| Vanadium pentoxide          | 338 37510        |
-| Sulfinert separation column (2 m) | 128 9970  |
-
-### TC/EA -- H/O Analysis (Silver Capsule $\leq$ 3 mm)
-
-| Item                          | ThermoFisher P/N |
-|:------------------------------|:-----------------|
-| Ceramic tube                  | 1121320          |
-| Graphite tube                 | 1121351          |
-| Graphite crucible             | 1117332          |
-| Glassy carbon reactor         | 1121310          |
-| Glassy carbon granulate       | 1117400          |
-| Silver wool                   | 1117430          |
-| Quartz wool                   | 1087770          |
-| (Optional) Reactor ready for use | 1127500       |
-
-### TC/EA -- H/O Analysis (Silver Capsule 3--6 mm)
-
-| Item                          | ThermoFisher P/N |
-|:------------------------------|:-----------------|
-| Ceramic tube                  | 1121320          |
-| Graphite crucible             | 1117332          |
-| Glassy carbon reactor         | 1121310          |
-| Glassy carbon granulate       | 1117400          |
-| Silver wool                   | 1117430          |
-| Quartz wool                   | 1087770          |
-
-### TC/EA -- H/O Analysis (Liquid Injection)
-
-| Item                          | ThermoFisher P/N |
-|:------------------------------|:-----------------|
-| Ceramic tube                  | 1121320          |
-| Graphite tube                 | 1132080          |
-| Glassy carbon reactor         | 1121310          |
-| Glassy carbon granulate       | 1117400          |
-| Quartz wool                   | 1087770          |
-
-::: {.callout-tip}
-You can often save money by ordering from
-[EA Consumables](https://eaconsumables.com/) instead of going directly
-through ThermoFisher.
-:::
+1. After the sequence completes, export raw data per the application
+   SOP.
+2. Remove all samples and consumables from the autosampler.
+3. Log gas usage and any issues in the lab logbook.
+4. Leave the instrument in standby per the lab manager's current
+   instructions (the Delta V and ConFlo IV are typically left powered
+   on continuously).
 
 
 ## Troubleshooting
@@ -568,9 +193,9 @@ through ThermoFisher.
 | High m/z 18 background               | Moisture; extend bake-out time                |
 | High m/z 40 background               | Air leak (Ar); check fittings                 |
 | Poor standard reproducibility        | Capsule sealing; exhausted reactor            |
-| No peaks in chromatogram            | Gas flow interrupted; check He supply          |
-| Sequence stops mid-run              | Autosampler jam; check carousel alignment      |
-| On/off tests fail repeatedly         | Source needs tuning or maintenance             |
+| No peaks in chromatogram             | Gas flow interrupted; check He supply         |
+| Sequence stops mid-run               | Autosampler jam; check carousel alignment     |
+| On/off tests fail repeatedly         | Source needs tuning or maintenance            |
 | Red/yellow lights on IRMS panel      | Check Isodat error log; contact lab manager   |
 
 If you cannot resolve an issue, **stop the run** and contact the lab
@@ -578,53 +203,22 @@ manager. Do not attempt reactor replacement or major maintenance unless
 you are a certified Super-User.
 
 
-## Definitions
+## Quality Control
 
-ConFlo IV
-: Interface hub connecting peripherals, reference gases, and the IRMS.
-  Handles gas dilution.
-
-Delta V IRMS
-: The ThermoFisher Delta V Isotope Ratio Mass Spectrometer.
-
-Flash IRMS EA
-: Elemental analyzer peripheral. Combusts samples to produce N~2~,
-  CO~2~, and (optionally) SO~2~.
-
-GasBench II
-: Low-flow peripheral for headspace gas sampling from sealed vials.
-
-H~3~$^{+}$ Factor
-: Correction for H~3~$^{+}$ ions formed in the source, which interfere
-  with HD$^{+}$ at m/z 3 during $\delta^{2}$H analysis.
-
-Linearity
-: The relationship between measured $\delta$ and signal amplitude. A
-  well-tuned instrument shows minimal dependence.
-
-Super-User
-: Staff or faculty certified for operation and minor maintenance.
-
-TC/EA
-: Thermal Conversion/Elemental Analyzer. Pyrolysis at ~1450 °C produces
-  H~2~ and CO.
-
-User
-: Certified individual who may operate the IRMS independently.
-
-Zero-Enrichment Test
-: Reference gas on/off pulses verifying the IRMS produces consistent
-  $\delta$ values.
+- Run at least two certified reference materials per analytical
+  sequence for two-point scale normalization [@paul2007].
+- Reference material $\delta$ values must recover within ±0.2‰ of
+  certified values; flag sequences that exceed this threshold.
+- Blanks (empty tin capsules) must produce no detectable N~2~ or CO~2~
+  peak above the noise baseline.
+- Archive all raw Isodat sequence files per
+  [SOP-L801](SOP-L801-rstudio-github.qmd).
 
 
 ## References
 
-APHA, AWWA, & WEF. (2012). *Standard Methods for Examination of Water
-and Wastewater* (22nd ed.). American Public Health Association.
-
-Werner, R. A., & Brand, W. A. (2001). Referencing strategies and
-techniques in stable isotope ratio analysis. *Rapid Communications in
-Mass Spectrometry*, 15(7), 501--519.
+::: {#refs}
+:::
 
 
 ## Related SOPs

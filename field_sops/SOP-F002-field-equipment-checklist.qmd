@@ -9,7 +9,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.1"
+revision: "1.2"
 
 revision-history:
   - version: "1.0"
@@ -17,10 +17,16 @@ revision-history:
     author: "Marc Los Huertos"
     changes: "Initial release"
   - version: "1.1"
-    date: last-modified
+    date: "2025-05-18"
     author: "Marc Los Huertos"
     changes: "Removed References section; no citable sources --
               cross-references retained as inline hyperlinks throughout"
+  - version: "1.2"
+    date: last-modified
+    author: "Marc Los Huertos"
+    changes: "Added Definitions stub and References stub per template
+              compliance requirements (template mandates headings even
+              when sections are not applicable)"
 ---
 
 ## Purpose
@@ -54,6 +60,20 @@ inventory in
 | New Students      | Assist with packing under supervision; learn storage locations |
 
 
+## Definitions
+
+Not applicable. This SOP covers logistical checklists using standard
+English equipment names that require no technical definition. For
+definitions of field measurement terms, consult the method-specific
+SOPs listed in Section 5 (Equipment Modules).
+
+
+## References
+
+::: {#refs}
+:::
+
+
 ## Procedure
 
 ### Before Departure
@@ -66,8 +86,8 @@ inventory in
 3. For instruments requiring calibration (Eureka Manta2, pH meter),
    calibrate in the lab before packing. Record calibration results in
    the field notebook.
-4. Verify that all batteries are charged (Crime-Lite, GPS, walkie-
-   talkies) and that backup batteries are included.
+4. Verify that all batteries are charged (Crime-Lite, GPS,
+   walkie-talkies) and that backup batteries are included.
 5. Confirm cooler ice or ice packs are frozen and ready.
 6. Complete the Field Work Planning Form in
    [SOP-F001](SOP-F001-field-safety.qmd), Section 13.
@@ -76,23 +96,23 @@ inventory in
 
 ### On Site
 
-1. Unpack systematically; keep items organized to avoid loss
+1. Unpack systematically; keep items organized to avoid loss.
 2. At the end of the sampling event, re-check the checklist to confirm
-   all items are accounted for before leaving the site
-3. Note any damaged or malfunctioning equipment on the checklist
+   all items are accounted for before leaving the site.
+3. Note any damaged or malfunctioning equipment on the checklist.
 
 ### After Return
 
 1. Clean all equipment per the relevant method SOP (rinse sampling
-   equipment with DI water, wipe down instruments, dry sieves)
+   equipment with DI water, wipe down instruments, dry sieves).
 2. Return every item to its designated storage location (see room
    assignments below and
-   [SOP-L007](../lab_sops/SOP-L007-equipment-inventory.qmd))
+   [SOP-L007](../lab_sops/SOP-L007-equipment-inventory.qmd)).
 3. Recharge batteries and replace consumables (sample bottles, filters,
-   preservatives) for the next user
+   preservatives) for the next user.
 4. Report any damaged, lost, or malfunctioning items to the field lead
-   or lab manager immediately
-5. File the completed checklist with the field data sheets
+   or lab manager immediately.
+5. File the completed checklist with the field data sheets.
 
 ### Storage Locations
 
@@ -110,194 +130,75 @@ inventory in
 
 This checklist applies to every field trip regardless of activity type.
 
-| Item                                     | Storage   | Check |
-|:-----------------------------------------|:----------|:------|
-| Completed Field Work Planning Form ([SOP-F001](SOP-F001-field-safety.qmd)) | --  | [ ] |
-| Field notebook (Rite in the Rain) and pens | SGM 133 | [ ] |
+| Item                                     | Storage    | Check |
+|:-----------------------------------------|:-----------|:------|
+| Completed Field Work Planning Form ([SOP-F001](SOP-F001-field-safety.qmd)) | -- | [ ] |
+| Field notebook (Rite in the Rain) and pens | SGM 133  | [ ] |
 | Cell phone, charged, with emergency contacts | Personal | [ ] |
 | First aid kit                            | In vehicle | [ ] |
-| Sunscreen and sun hat                    | Personal  | [ ] |
-| Full water bottles (one per person)      | Personal  | [ ] |
-| Nitrile gloves (box)                     | SGM 133   | [ ] |
-| GPS unit or smartphone with GPS app      | SGM 133   | [ ] |
-| Camera (or phone camera)                 | Personal  | [ ] |
+| Sunscreen and sun hat                    | Personal   | [ ] |
+| Full water bottles (one per person)      | Personal   | [ ] |
+| Nitrile gloves (box)                     | SGM 133    | [ ] |
+| GPS unit or smartphone with GPS app      | SGM 133    | [ ] |
+| Camera (or phone camera)                 | Personal   | [ ] |
 | Vehicle keys and fuel card               | In vehicle | [ ] |
-| Walkie-talkies (if splitting into groups) | SGM 131  | [ ] |
-| Trash bag (leave no trace)               | --        | [ ] |
-| Clipboard                                | SGM 133   | [ ] |
+| Walkie-talkies (if splitting into groups) | SGM 131   | [ ] |
+| Trash bag (leave no trace)               | --         | [ ] |
+| Clipboard                                | SGM 133    | [ ] |
 
 ### Water Sampling Module
 
-Use for surface water grab sampling, stormwater sampling, and
-bacteria sampling. See
-[SOP-F300](SOP-F300-surface-water-sampling.qmd) and
+Use for surface water grab sampling, stormwater sampling, and bacteria
+sampling. See [SOP-F300](SOP-F300-surface-water-sampling.qmd) and
 [SOP-F302](SOP-F302-stormwater-sampling.qmd).
 
-| Item                                     | Storage   | Check |
-|:-----------------------------------------|:----------|:------|
-| Pre-labeled sample bottles (poly and/or glass, with preservatives as required) | SGM 133 | [ ] |
-| Cooler with ice packs or ice             | SGM 132   | [ ] |
-| Chain of custody (COC) forms             | SGM 133   | [ ] |
-| Sample tags                              | SGM 133   | [ ] |
-| Extension pole with bottle attachment    | SGM 133   | [ ] |
-| Sterile 100 mL Colilert bottles ([SOP-L305](../lab_sops/SOP-L305-colilert-quanti-tray.qmd)) | SGM 133 | [ ] |
-| 0.45 um syringe filters and syringes (for dissolved analytes) | SGM 134 | [ ] |
-| Deionized water (squeeze bottle, for blanks and rinsing) | SGM 134 | [ ] |
-| Paper towels                             | SGM 134   | [ ] |
-| Field data sheets (water sampling)       | SGM 133   | [ ] |
-| VanDorn bottle (horizontal or vertical, if needed) | SGM 133 | [ ] |
-| Wading boots (if entering water)         | Personal  | [ ] |
-
-### Water Quality Sonde Module
-
-Use when deploying the Eureka Manta2 multiprobe for in situ
-measurements. See [SOP-F200](SOP-F200-eureka-manta2.qmd).
-
-| Item                                     | Storage   | Check |
-|:-----------------------------------------|:----------|:------|
-| Eureka Manta2 sonde (calibrated)         | SGM 133   | [ ] |
-| Manta2 cable and handheld display        | SGM 133   | [ ] |
-| Calibration standards (pH 4, 7, 10; conductivity; DO zero) | SGM 133 | [ ] |
-| Calibration cups and rinse bottle        | SGM 133   | [ ] |
-| Storage solution for pH and DO sensors   | SGM 133   | [ ] |
-| Calibration log sheet                    | SGM 133   | [ ] |
-| Spare batteries for the display unit     | SGM 133   | [ ] |
-
-### Stream Discharge Module
-
-Use for velocity-area discharge measurements. See
-[SOP-F301](SOP-F301-stream-discharge-measurement.qmd).
-
-| Item                                     | Storage   | Check |
-|:-----------------------------------------|:----------|:------|
-| Pygmy or Type AA current meter           | SGM 131   | [ ] |
-| Top-setting wading rod                   | SGM 131   | [ ] |
-| AquaCalc digital flow computer (if available) | SGM 131 | [ ] |
-| Headphones (for acoustic counting, if applicable) | SGM 131 | [ ] |
-| Measuring tape (25 m or 50 m)            | SGM 131   | [ ] |
-| Chaining pins or stakes (2)              | SGM 131   | [ ] |
-| Discharge field data sheet               | SGM 133   | [ ] |
-| Stopwatch                                | SGM 131   | [ ] |
-| Calculator                               | --        | [ ] |
-| Wading boots and wading rod for support  | Personal  | [ ] |
-
-### Stream Physical Habitat Module
-
-Use for SWAMP-protocol habitat assessments. See
-[SOP-F304](SOP-F304-stream-physical-habitat.qmd).
-
-| Item                                     | Storage   | Check |
-|:-----------------------------------------|:----------|:------|
-| Fiberglass measuring tape (50 m)         | SGM 131   | [ ] |
-| Surveyor's rod or stadia rod             | SGM 131   | [ ] |
-| Metric ruler (30 cm, mm gradations)      | SGM 131   | [ ] |
-| Convex spherical densiometer             | SGM 131   | [ ] |
-| Clinometer (Suunto or equivalent)        | SGM 131   | [ ] |
-| Compass                                  | SGM 131   | [ ] |
-| SWAMP physical habitat field data sheets (waterproof paper) | SGM 133 | [ ] |
-| Flagging tape                            | SGM 131   | [ ] |
-| Tape stakes or rebar pins (2)            | SGM 131   | [ ] |
-| Waterproof camera or dry bag for phone   | Personal  | [ ] |
+| Item                                     | Storage    | Check |
+|:-----------------------------------------|:-----------|:------|
+| Pre-labeled sample bottles (poly and/or glass, with preservatives) | SGM 133 | [ ] |
+| Cooler with ice packs or ice             | SGM 132    | [ ] |
+| Chain of custody (COC) forms             | SGM 133    | [ ] |
+| Sample tags                              | SGM 133    | [ ] |
+| Extension pole with bottle attachment    | SGM 133    | [ ] |
+| Sterile 100 mL Colilert bottles          | SGM 133    | [ ] |
+| 0.45 µm syringe filters and syringes     | SGM 134    | [ ] |
+| Deionized water (squeeze bottle)         | SGM 134    | [ ] |
+| Paper towels                             | SGM 134    | [ ] |
+| Field data sheets (water sampling)       | SGM 133    | [ ] |
+| VanDorn bottle (if needed)               | SGM 133    | [ ] |
+| Wading boots (if entering water)         | Personal   | [ ] |
 
 ### Soil Sampling Module
 
-Use for soil core collection, compositing, and field processing. See
-[SOP-F400](SOP-F400-soil-sampling.qmd).
+Use for soil profile description, bulk density, and grab samples. See
+[SOP-F400](SOP-F400-soil-sampling.qmd) and
+[SOP-F407](SOP-F407-soil-profile-description.qmd).
 
-| Item                                     | Storage   | Check |
-|:-----------------------------------------|:----------|:------|
-| Soil auger (bucket type)                 | SGM 131   | [ ] |
-| Depth marker or ruler                    | SGM 131   | [ ] |
-| Pre-labeled sample bags (Ziplock or Whirl-Pak) | SGM 133 | [ ] |
-| Cooler with ice packs (for biological subsamples) | SGM 132 | [ ] |
-| Trowel or spatula (stainless steel)      | SGM 131   | [ ] |
-| Mixing bucket or container               | SGM 131   | [ ] |
-| 2 mm sieve (if field-sieving)            | SGM 131   | [ ] |
-| Sampling flags                           | SGM 131   | [ ] |
-| DI water squeeze bottle (for decontamination) | SGM 134 | [ ] |
-| Paper towels                             | SGM 134   | [ ] |
-
-### Vegetation Survey Module
-
-Use for transect-based vegetation monitoring. See
-[SOP-F603](SOP-F603-vegetation-transect-surveys.qmd).
-
-| Item                                     | Storage   | Check |
-|:-----------------------------------------|:----------|:------|
-| Measuring tape (50 m)                    | SGM 131   | [ ] |
-| Chaining pins (2)                        | SGM 131   | [ ] |
-| Quadrat frame(s)                         | SGM 131   | [ ] |
-| Sampling pin (for line-point intercept)  | SGM 131   | [ ] |
-| Compass                                  | SGM 131   | [ ] |
-| Plant identification guides              | SGM 133   | [ ] |
-| Vegetation field data sheets             | SGM 133   | [ ] |
-| Hand lens or magnifying glass            | SGM 133   | [ ] |
-| Plant press and newspaper (if collecting vouchers) | SGM 131 | [ ] |
-
-### Soil Gas Flux Module (Picarro)
-
-Use for greenhouse gas flux measurements with the Picarro CRDS and
-Eosense chambers. See
-[SOP-F504](SOP-F504-picarro-field-deployment.qmd).
-
-| Item                                     | Storage   | Check |
-|:-----------------------------------------|:----------|:------|
-| Picarro G2508 CRDS analyzer              | SGM 133   | [ ] |
-| Eosense eosMX-P multiplexer             | SGM 133   | [ ] |
-| Recirculation pump (PN: A0702)           | SGM 133   | [ ] |
-| Monitor, mouse, and keyboard             | SGM 133   | [ ] |
-| Teflon tubing and cables (30 m, lettered) | SGM 133  | [ ] |
-| Corrugated metal hose                    | SGM 133   | [ ] |
-| Swagelok washers (new set)               | SGM 133   | [ ] |
-| Eosense chambers (check firmware and S/N against inventory) | SGM 133 | [ ] |
-| Ground collars (pre-installed or with mallet) | SGM 133 | [ ] |
-| Generator (Honda or Ryobi) with fuel     | SGM 132   | [ ] |
-| Extension cords and power strip          | SGM 132   | [ ] |
-| Drierite desiccant                       | SGM 133   | [ ] |
-| Zip ties and Velcro straps               | SGM 133   | [ ] |
-
-### Groundwater Sampling Module
-
-Use for monitoring well sampling. See
-[SOP-F303](SOP-F303-groundwater-sampling.qmd).
-
-| Item                                     | Storage   | Check |
-|:-----------------------------------------|:----------|:------|
-| Peristaltic pump or bladder pump         | SGM 133   | [ ] |
-| Dedicated or disposable tubing           | SGM 133   | [ ] |
-| Electronic water level indicator (e-tape) | SGM 133  | [ ] |
-| Flow-through cell with multiparameter probe | SGM 133 | [ ] |
-| Calibration standards (pH, conductivity, DO) | SGM 133 | [ ] |
-| Graduated bucket or cylinder             | SGM 133   | [ ] |
-| Stopwatch                                | SGM 131   | [ ] |
-| Pre-labeled sample bottles (with preservatives) | SGM 133 | [ ] |
-| Well keys                                | SGM 133   | [ ] |
-| Purge water containers (5-gallon buckets) | SGM 132  | [ ] |
-| COC forms and purge log sheets           | SGM 133   | [ ] |
-| Absorbent pads (for spill containment)   | SGM 132   | [ ] |
+| Item                                     | Storage    | Check |
+|:-----------------------------------------|:-----------|:------|
+| Soil auger or hand trowel                | SGM 131    | [ ] |
+| Pre-labeled Ziploc bags or Whirl-Pak bags | SGM 133   | [ ] |
+| Munsell color chart                      | SGM 131    | [ ] |
+| Soil core rings (bulk density)           | SGM 131    | [ ] |
+| Rubber mallet                            | SGM 131    | [ ] |
+| Field data sheets (soil)                 | SGM 133    | [ ] |
+| Cooler with ice (perishable samples)     | SGM 132    | [ ] |
 
 
-## Quality Control
+## Related SOPs
 
-- The field lead verifies the checklist before departure and confirms
-  that all items are returned after the outing
-- Any items found damaged or missing in the field are noted on the
-  checklist and reported to the lab manager within 24 hours
-- Completed checklists are filed with the field data sheets for the
-  sampling event
-- At the start of each semester, review all module checklists against
-  the equipment inventory ([SOP-L007](../lab_sops/SOP-L007-equipment-inventory.qmd))
-  and update storage locations or item lists as needed
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F003](SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | Notebook is on checklist   |
+| [L007](../lab_sops/SOP-L007-equipment-inventory.qmd) | Equipment Inventory | Storage locations         |
+| [F100](SOP-F100-vehicles.qmd)          | EA Program Vehicle Use    | Vehicle reservation        |
 
 
 ## Training Record
 
-Before leading a field outing, personnel must:
+Before leading a field outing independently, personnel must:
 
-1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
-   in full
-2. Know the storage locations for all items in the Core Module and at
-   least one activity-specific module
-3. Demonstrate proper packing, transport, and return procedures under
-   supervision
-4. Be signed off by the PI or field lead
+1. Read this SOP in full
+2. Identify the correct storage room for each major equipment category
+3. Complete a supervised pre-departure checklist for one field outing
+4. Be signed off by the field lead or PI

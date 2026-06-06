@@ -9,23 +9,30 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-19"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: last-modified
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; replaced plain-text reference list
+              with BibTeX {#refs} div; added inline citations; added
+              BibTeX entries for onset_u20l, onset_hoboware, freeman2004"
 ---
 
 ## Purpose
 
 This SOP describes the deployment, data retrieval, and barometric
 compensation of Onset HOBO water level loggers for continuous
-monitoring of water surface elevation in streams, lakes, wetlands,
-and groundwater wells. Continuous stage records are essential for
-developing stage-discharge rating curves, characterizing hydrologic
-response to storms, and documenting seasonal water table fluctuations.
+monitoring of water surface elevation in streams, lakes, wetlands, and
+groundwater wells [@onset_u20l; @freeman2004]. Continuous stage records
+are essential for developing stage-discharge rating curves,
+characterizing hydrologic response to storms, and documenting seasonal
+water table fluctuations.
 
 
 ## Scope
@@ -45,6 +52,41 @@ response to storms, and documenting seasonal water table fluctuations.
 | PI / Field Lead   | Approve deployment locations and logging intervals      |
 | Trained Personnel | Deploy, retrieve, and download loggers per this SOP     |
 | New Students      | Complete training before independent use                |
+
+
+## Definitions
+
+- **Absolute pressure:** Pressure measured relative to a perfect
+  vacuum; the HOBO U20L measures absolute pressure (water column plus
+  atmospheric), which must be compensated to isolate water-column
+  pressure [@freeman2004].
+- **Barometric compensation:** Post-processing step in HOBOware that
+  subtracts a concurrent barometric pressure record (from a reference
+  logger deployed in air) from the absolute pressure record to yield
+  true water depth [@onset_hoboware].
+- **Datum:** A fixed reference elevation (e.g., NAVD88, local
+  benchmark) to which stage measurements are referenced.
+- **Deployment depth:** The vertical distance from the water surface
+  to the sensor face at the time of deployment; used as the initial
+  reference for water-level calculations.
+- **HOBO U20L:** Onset Computer Corporation submersible water-level
+  logger recording absolute pressure and temperature at user-defined
+  intervals; rated to a maximum depth of 9 m (model U20L-01) or 4 m
+  (model U20L-04 barometric) [@onset_u20l].
+- **HOBOconnect / HOBOware:** Onset software (mobile app and desktop,
+  respectively) used to program loggers, download data, apply
+  barometric compensation, and export time-series data
+  [@onset_hoboware].
+- **Stage:** Water-surface elevation at a monitoring location,
+  expressed relative to a datum; the primary hydrologic quantity
+  derived from pressure transducer records.
+- **Stage-discharge rating curve:** An empirical relationship between
+  stream stage and discharge (Q) at a gauging cross-section; enables
+  conversion of continuous stage records into continuous discharge
+  records [@freeman2004].
+- **Stilling well:** A perforated pipe anchored in the stream or lake
+  bed that protects the logger from direct current, debris, and
+  disturbance while allowing free water exchange.
 
 
 ## Safety and Hazards
@@ -68,146 +110,135 @@ response to storms, and documenting seasonal water table fluctuations.
 - [ ] Nitrile gloves
 - [ ] Sun protection (hat, sunscreen)
 
-### Emergency Procedures
+### Required Training
 
-Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). A minimum
-of two people must be present for all in-stream deployments.
+- [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
+- Work with a trained partner for all in-stream deployments
 
 
 ## Instrument Specifications
 
 ### HOBO U20L Water Level Logger
 
-| Parameter              | Value                                      |
-|:-----------------------|:-------------------------------------------|
-| Measurement principle  | Absolute pressure (water + atmosphere)     |
-| Pressure range         | 0--9 m (30 ft) or 0--4 m (13 ft) depth models |
-| Accuracy               | +/- 0.1% full scale (typical 0.5 cm water) |
-| Resolution             | 0.02% full scale                           |
-| Temperature range      | -20 to 50 C                                |
-| Temperature accuracy   | +/- 0.44 C from 0 to 40 C                 |
-| Logging interval       | 1 second to 18 hours (user-configurable)   |
-| Memory                 | 64 KB (approximately 21,700 combined pressure and temperature readings) |
-| Battery                | 3V lithium; approximately 5-year life at 1-minute logging |
-| Communication          | Optical USB coupler (U20L) or Bluetooth (MX2001) |
+| Parameter              | Value                                            |
+|:-----------------------|:-------------------------------------------------|
+| Measurement principle  | Absolute pressure (water + atmosphere)           |
+| Pressure range         | 0--9 m (U20L-01) or 0--4 m barometric (U20L-04) |
+| Accuracy               | +/- 0.1% full scale (~0.5 cm water)             |
+| Logging interval       | 1 second to 18 hours (user-configurable)         |
+| Memory                 | ~21,700 combined readings                        |
+| Battery life           | ~5 years at 1-minute logging                     |
+| Communication          | Optical USB coupler (U20L)                       |
 
 ### HOBO MX2001 Water Level Logger
 
-| Parameter              | Value                                      |
-|:-----------------------|:-------------------------------------------|
-| Communication          | Bluetooth Low Energy (BLE); download via HOBOconnect app |
-| Pressure range         | 0--9 m (30 ft) or 0--4 m (13 ft) models   |
-| Other specifications   | Similar to U20L                            |
+| Parameter       | Value                                                   |
+|:----------------|:--------------------------------------------------------|
+| Communication   | Bluetooth Low Energy; download via HOBOconnect app      |
+| Pressure range  | 0--9 m or 0--4 m models                                |
+| Other specs     | Similar to U20L                                         |
 
 ### Barometric Reference Logger
 
-Because the water level loggers measure absolute pressure (water column
-plus atmosphere), a companion barometric pressure logger must be
-deployed above the water surface at or near the site. Onset HOBO U20L-04
-(barometric model) or a HOBO MX barometric logger serves this purpose.
+Because the water level loggers measure absolute pressure, a companion
+barometric pressure logger must be deployed above the water surface at
+or near the site. An Onset HOBO U20L-04 barometric model or HOBO MX
+barometric logger serves this purpose.
 
 
 ## Equipment and Materials
 
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| HOBO U20L or MX2001 water level logger | Confirm depth range matches site        |
-| HOBO barometric reference logger       | One per site or cluster of nearby sites |
-| Optical USB coupler (BASE-U-4) for U20L | For launching and downloading          |
-| HOBOware Pro software (laptop)         | For U20L launch, download, and compensation |
-| HOBOconnect app (smartphone)           | For MX2001 launch and download          |
-| Stilling well or PVC housing           | Perforated PVC pipe (2--4 inch diameter); protects logger from debris |
-| Cable tie or stainless steel wire      | For securing logger inside stilling well |
-| Rebar stake or concrete anchor         | For anchoring the stilling well to the streambed |
-| Staff gauge or graduated tape          | For reference stage readings            |
-| Measuring tape and level               | For surveying the logger elevation      |
-| Field notebook                         | For recording deployment metadata       |
-| GPS unit                               | For recording deployment coordinates    |
+| Item                         | Storage      | Notes                         |
+|:-----------------------------|:-------------|:------------------------------|
+| HOBO U20L or MX2001 loggers  | SGM 133      | Check battery before deployment |
+| Optical USB coupler (U20L)   | SGM 133      | For HOBOware download         |
+| HOBOconnect app (MX2001)     | Phone        | Requires Bluetooth pairing    |
+| Stilling well (PVC, 2 in)    | SGM 132      | With end cap and perforations |
+| Stainless steel cable / line | SGM 131      | For securing logger in well   |
+| Staff gauge (if not installed) | SGM 131    | Painted, graduated to 0.01 m  |
+| HOBOware laptop              | SGM 133      | Pre-loaded with HOBOware Pro  |
+| GPS unit                     | SGM 133      | See SOP-F006                  |
+| Field data sheet             | SGM 133      |                               |
+
+
+## Estimated Time
+
+| Task                               | Time             |
+|:-----------------------------------|:-----------------|
+| Logger programming (HOBOware)      | 10--15 min       |
+| Stilling well installation (new)   | 30--90 min       |
+| Logger deployment (existing site)  | 15--30 min       |
+| Data retrieval and export          | 15--30 min       |
+| Barometric compensation (HOBOware) | 15--30 min       |
 
 
 ## Procedure
 
-### Pre-Deployment Setup
+### Logger Programming
 
-1. **Launch the logger** using HOBOware (U20L) or HOBOconnect (MX2001):
-   - Set the logging interval: 15 minutes is standard for most
-     hydrologic monitoring; use 5 minutes for flashy urban streams or
-     1 minute for storm event capture.
-   - Set a delayed start time so all loggers at a site begin recording
-     simultaneously.
-   - Verify the logger clock is synchronized to the correct time zone
-     (Pacific Time).
-2. **Launch the barometric reference logger** with the same logging
-   interval and start time.
-3. Record in the field notebook: logger serial number, model, logging
-   interval, start time, and battery status.
+1. Connect the logger to HOBOware using the optical USB coupler or
+   open HOBOconnect via Bluetooth.
+2. Select **Launch** (HOBOware) or **Configure** (HOBOconnect).
+3. Set the logging interval appropriate to the project (5 min is
+   typical for hydrologic studies; 15 min for long-term deployment).
+4. Enable a delayed start if synchronizing with another logger at the
+   site.
+5. Record the logger serial number, launch time, and interval in the
+   field notebook and in the deployment spreadsheet.
 
-### Stream Deployment
+### Stream Deployment (Stilling Well)
 
-1. Select a deployment location in a pool or low-velocity area where
-   the logger will remain submerged during low-flow conditions.
-   Avoid locations subject to scour, heavy debris, or vandalism.
-2. Install the stilling well:
-   - Drive a rebar stake into the streambed in a stable location.
-   - Attach the perforated PVC housing to the stake with cable ties
-     or hose clamps. The housing should be vertical with the bottom
-     anchored and the top above the expected high-water level.
-   - Ensure the perforations face upstream and downstream to allow
-     free water exchange.
-3. Lower the logger into the stilling well and secure it with a
-   stainless steel wire or cable tie. The logger should hang freely
-   and not rest on the bottom.
+1. Choose a stable bank location away from direct turbulence but
+   representative of the cross-section stage.
+2. Install the stilling well (2-inch PVC with perforations) vertically
+   with the bottom anchored and the top above expected high-water level.
+   Ensure the perforations face upstream and downstream.
+3. Lower the logger into the stilling well and secure it with stainless
+   steel wire or cable tie. The logger should hang freely.
 4. Record the deployment elevation:
-   - Measure the distance from the top of the stilling well to the
-     water surface and to the logger sensor.
-   - If a staff gauge is installed, read and record the current stage.
-   - Record GPS coordinates per
-     [SOP-F006](SOP-F006-gps-site-navigation.qmd).
+   - Distance from the top of the stilling well to the water surface
+     and to the logger sensor
+   - Staff gauge reading (if installed)
+   - GPS coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd)
 5. Deploy the barometric reference logger nearby, above the high-water
-   line, in a shaded and ventilated location (e.g., inside a
-   radiation shield attached to a tree or post). Do not seal it in
-   an airtight container.
-6. Take a photograph of the deployment.
+   line, in a shaded and ventilated location (e.g., inside a radiation
+   shield attached to a tree or post). Do not seal it in an airtight
+   container.
+6. Photograph the deployment.
 
 ### Well Deployment
 
-1. Remove the well cap and measure the depth to water using an
-   electronic water level indicator (e-tape). Record the measurement.
-2. Lower the logger into the well on a stainless steel cable or
-   braided fishing line. Position the logger below the lowest expected
-   water level but above the well screen bottom.
+1. Remove the well cap and measure depth to water using an e-tape.
+   Record the measurement.
+2. Lower the logger into the well on stainless steel cable or braided
+   fishing line. Position below the lowest expected water level but
+   above the well screen bottom.
 3. Secure the suspension cable to the well cap or casing.
-4. Record the logger depth below the top of casing (TOC) and the
-   TOC elevation if surveyed.
+4. Record the logger depth below the top of casing (TOC) and the TOC
+   elevation if surveyed.
 5. Replace the well cap.
-6. Deploy the barometric reference logger at the wellhead or at a
-   nearby location above ground.
+6. Deploy the barometric reference logger at the wellhead or nearby.
 
 ### Data Retrieval
 
 Retrieve data at intervals appropriate for the project (typically
-monthly or quarterly). The logger continues recording during download.
+monthly or quarterly).
 
 **U20L (optical coupler):**
 
-1. Remove the logger from the stilling well or well.
+1. Remove the logger from the stilling well.
 2. Attach the optical USB coupler and connect to the laptop.
-3. In HOBOware, select **Readout** to download data. The logger
-   continues recording after readout.
+3. In HOBOware, select **Readout**. The logger continues recording
+   after readout.
 4. Return the logger to its deployment position.
 
 **MX2001 (Bluetooth):**
 
-1. Open the HOBOconnect app on a smartphone within Bluetooth range
-   (approximately 30 m line of sight).
+1. Open the HOBOconnect app on a smartphone within ~30 m line of sight.
 2. Select the logger and tap **Readout**.
-3. The logger does not need to be removed from the water for download.
+3. The logger does not need to be removed from the water.
 
 ### Barometric Compensation
-
-Raw data from the water level logger must be compensated for
-atmospheric pressure changes before the readings represent true water
-level.
 
 1. In HOBOware, open the water level logger file and the barometric
    reference logger file.
@@ -215,48 +246,37 @@ level.
 3. Specify the reference water level: enter a staff gauge reading or
    a known water surface elevation at a specific date and time.
 4. HOBOware subtracts the barometric pressure from the absolute
-   pressure to yield the water column height and converts to the
-   reference datum.
+   pressure to yield the water column height.
 5. Export the compensated data as `.csv`.
-6. Save using the naming convention:
-   `YYYY-MM-DD_SiteID_waterlevel_compensated.csv`
-7. Upload to the project GitHub repository under `data/stage/`.
-
-### Logger Retrieval (End of Deployment)
-
-1. Download all remaining data.
-2. Remove the logger and stilling well hardware.
-3. Rinse the logger with clean water and dry.
-4. Remove any biofouling (algae, mineral deposits) from the pressure
-   port using a soft brush. Do not insert anything into the port.
-5. Store the logger in a dry location.
+6. Save using the convention: `YYYY-MM-DD_SiteID_waterlevel_compensated.csv`.
+7. Commit data to the project repository per
+   [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd).
 
 
 ## Quality Control
 
-- At every site visit, read the staff gauge (or measure depth to water
-  in wells) and record the time. Use these manual readings to verify
-  the logger data during post-processing.
-- Compare the barometric logger against a nearby weather station
-  (NWS or CIMIS) to confirm the reference pressure is reasonable.
-- If two loggers are deployed at the same site, compare their records.
-  Readings should agree within 1 cm.
-- Inspect loggers for biofouling and sediment accumulation at every
-  download visit. Heavy fouling can dampen pressure response.
+- Verify that the barometric logger file overlaps the full duration of
+  the water level record. Gaps in barometric data prevent compensation.
+- Compare the compensated stage at the download visit against a
+  simultaneous staff gauge reading. Acceptable agreement is within
+  1 cm.
 - Flag and investigate any sudden offsets or drift in the compensated
-  water level record (may indicate logger movement, sedimentation, or
-  battery failure).
+  record (may indicate logger movement, sedimentation, or battery
+  failure).
+
+
+## Data Management
+
+1. Save all raw logger files (`.hobo`) to `data/raw/loggers/` in the
+   project repository.
+2. Save compensated `.csv` files to `data/processed/stage/`.
+3. Commit all files per [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd).
 
 
 ## References
 
-- Onset Computer Corporation. *HOBO U20L Water Level Logger User
-  Manual*. <https://www.onsetcomp.com>
-- Onset Computer Corporation. *HOBOware Pro User Guide*.
-- Freeman, L.A., Carpenter, M.C., Rosenberry, D.O., Rousseau, J.P.,
-  Unger, R., and McLean, J.S. (2004). *Use of Submersible Pressure
-  Transducers in Water-Resources Investigations.* USGS Techniques of
-  Water-Resources Investigations, Book 8, Chapter A3.
+::: {#refs}
+:::
 
 
 ## Related SOPs
@@ -268,7 +288,7 @@ level.
 | [F007](SOP-F007-field-decontamination.qmd) | Field Decontamination | Between-site cleaning             |
 | [F301](SOP-F301-stream-discharge-measurement.qmd) | Stream Discharge Measurement | Stage-discharge rating curves |
 | [F303](SOP-F303-groundwater-sampling.qmd) | Groundwater Sampling   | Well deployment context           |
-| [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub    | Data version control              |
+| [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub | Data version control              |
 
 
 ## Training Record
