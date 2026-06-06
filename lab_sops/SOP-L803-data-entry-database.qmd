@@ -49,6 +49,17 @@ ensuring that all datasets are consistent, traceable, and reproducible
 | Analyst / Student | Enter data following this SOP; run validation checks; document metadata |
 | Data Reviewer     | Verify data entries against lab notebooks before analysis |
 
+<!-- Definitions snippet for SOP-L803: Data Entry and Database Management -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **Data dictionary:** A companion metadata file that describes each variable in a dataset, including the column name, description, units, data type, expected range, and source SOP; required for every EA Program dataset.
+- **ISO 8601:** An international standard for representing dates and times as YYYY-MM-DD; the required date format for all EA Program data files because it sorts chronologically and is unambiguous across locales.
+- **Missing value:** A data cell for which no measurement was made or the measurement was invalid; represented as blank or NA in EA Program datasets; never coded as 0 (which is a valid measurement).
+- **Primary key:** A unique identifier for each row in a data table (e.g., sample_id); enables unambiguous linking between related tables and detection of duplicate entries.
+- **Tidy data:** A data structure in which each variable has its own column, each observation has its own row, and each type of observational unit forms its own table [@wickham2014]; the standard format for EA Program analytical datasets.
+- **Version control:** A system that records changes to files over time so that specific versions can be recalled; GitHub/Git is the EA Program version control platform for all data, scripts, and SOPs.
 
 ## Safety and Hazards
 

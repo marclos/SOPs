@@ -48,6 +48,19 @@ projects [@zuur2010; @wickham2023].
 | Data Reviewer     | Verify that assumptions are checked and reported |
 | Statistical Advisor | Consult on complex designs (mixed models, multivariate methods) |
 
+<!-- Definitions snippet for SOP-L806: Statistical Analysis Templates R -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **ANOVA (Analysis of Variance):** A statistical test that partitions total variance in a response variable into components attributable to one or more categorical factors; tests whether group means differ significantly; assumes normality and homogeneity of variance.
+- **Confidence interval:** A range of values computed from sample data that, under repeated sampling, contains the true population parameter with a stated probability (e.g., 95%); wider intervals reflect greater uncertainty.
+- **Effect size:** A standardized measure of the magnitude of a difference or relationship, independent of sample size; examples include Cohen's d (mean differences), $r^2$ (explained variance), and Hedge's g; should always accompany p-values.
+- **Mixed model:** A statistical model containing both fixed effects (factors whose levels are deliberately chosen) and random effects (factors whose levels represent a random sample from a larger population); appropriate when data have hierarchical or repeated-measures structure.
+- **p-value:** The probability of observing a test statistic as extreme as the one obtained (or more extreme) if the null hypothesis is true; does not measure the probability that the null hypothesis is true; must be interpreted with effect size.
+- **Power:** The probability of correctly rejecting the null hypothesis when it is false; increases with sample size, effect size, and significance level; should be considered in study design to ensure adequate sample sizes.
+- **Residual:** The difference between an observed value and the value predicted by a statistical model; examination of residuals is the primary diagnostic for checking model assumptions.
+
 
 ## Safety and Hazards
 

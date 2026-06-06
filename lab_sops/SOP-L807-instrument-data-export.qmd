@@ -52,6 +52,18 @@ properly documented, and accessible for reproducible analysis
 | Analyst / Student | Export data following this SOP; verify file integrity; commit to version control |
 | Data Reviewer     | Confirm that raw files match lab notebook entries and are properly archived |
 
+<!-- Definitions snippet for SOP-L807: Instrument Data Export and File Management -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **Comma-separated values (CSV):** A plain-text file format in which values are separated by commas and rows by line breaks; universally readable; the preferred format for sharing tabular data between instruments and analysis software.
+- **Data provenance:** The documented history of how data were collected, processed, transformed, and stored; enables reproduction of results and detection of errors; captured through lab notebooks, metadata files, and Git commit history.
+- **File naming convention:** A standardized pattern for naming files that encodes date, instrument, project, and analyst information without spaces or special characters (e.g., `YYYY-MM-DD_InstrumentID_ProjectCode_UserInitials_raw.csv`); required for all EA Program instrument export files.
+- **Instrument export file:** The raw data file generated directly by instrument software (e.g., Shimadzu LabSolutions .lcd or .txt export, Isodat .dxf export, HOBOware .csv export); must be saved unmodified as the archival primary record.
+- **Metadata:** Data describing other data; includes instrument settings, calibration records, sample identifiers, units, processing steps, and analyst notes; stored alongside raw data in a companion metadata file.
+- **Raw data:** The unprocessed data as produced by the instrument or analyst at the time of measurement; must never be altered; all subsequent processing produces derived data files that preserve the original.
+
 
 ## Safety and Hazards
 

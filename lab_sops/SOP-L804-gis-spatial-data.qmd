@@ -47,6 +47,19 @@ interoperable across projects and analysts [@pebesma2023; @lovelace2019].
 | Analyst / Student | Follow naming conventions; document coordinate systems; archive final layers |
 | Data Reviewer     | Verify spatial metadata completeness before publication |
 
+<!-- Definitions snippet for SOP-L804: GIS and Spatial Data Management -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **Coordinate reference system (CRS):** A framework that associates coordinates with locations on Earth; consists of a datum (reference ellipsoid), a projection (for 2D maps), and a coordinate system (e.g., latitude/longitude or meters); data layers must share the same CRS for spatial operations.
+- **Geodatabase:** A structured container for storing multiple spatial datasets, attribute tables, and topological rules in a single file; the preferred format for complex GIS projects with many related layers.
+- **GeoTIFF:** A TIFF image file with embedded geospatial metadata (CRS, extent, resolution); the standard raster format for spatial data exchange in remote sensing and GIS.
+- **Raster:** A spatial data model representing continuous surfaces as a grid of equally sized cells (pixels), each with one or more attribute values; used for elevation, imagery, and interpolated surfaces.
+- **Shapefile (.shp):** A common vector spatial data format introduced by Esri; stores geometry (points, lines, polygons) and attribute data in multiple associated files (.shp, .dbf, .shx, .prj minimum); widely supported but limited by 2 GB file size and 10-character field name constraints.
+- **Vector:** A spatial data model representing discrete features as points, lines, or polygons defined by coordinate pairs; used for sample locations, stream networks, and land parcel boundaries.
+- **WGS84 (World Geodetic System 1984):** The global geodetic datum used by GPS; EPSG code 4326; the required CRS for all EA Program GPS-collected point data before projection into a local coordinate system.
+
 
 ## Safety and Hazards
 

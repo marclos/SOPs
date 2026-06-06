@@ -57,6 +57,8 @@ this familiarization before running samples for SOP-L702.
 :::
 
 
+
+
 ## Responsibilities
 
 | Role              | Responsibility                                          |
@@ -66,6 +68,18 @@ this familiarization before running samples for SOP-L702.
 | Trained Personnel | Operate the system per this SOP; log each run           |
 | New Students      | Complete familiarization and supervised runs before independent use |
 
+<!-- Definitions snippet for SOP-L214: Bio-Rad QX200 Droplet Digital PCR -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **Amplitude:** The fluorescence signal intensity of a droplet; positive droplets (containing target DNA) have high amplitude; negative droplets have low amplitude; a clear separation between positive and negative populations is required for accurate quantification.
+- **Droplet digital PCR (ddPCR):** A method of absolute quantification of nucleic acids in which the sample is partitioned into ~20,000 nanoliter-sized water-in-oil droplets, each containing zero or one target molecule; after PCR amplification, the fraction of fluorescent positive droplets is used to calculate target concentration using Poisson statistics.
+- **FAM:** A green fluorescent dye (fluorescein amidite) used to label one probe or primer in a duplex ddPCR assay; detected in the FAM channel (channel 1) by the QX200.
+- **HEX:** A yellow-orange fluorescent dye used to label a second probe in a duplex ddPCR assay, or as an alternative to VIC; detected in channel 2 by the QX200.
+- **Poisson correction:** A statistical adjustment applied by the DropletQuant software to account for the probability that some droplets contain more than one target molecule; necessary when target concentrations are high.
+- **Copies per microliter (copies/µL):** The absolute concentration of the target DNA in the final ddPCR reaction, as reported by DropletQuant; must be back-calculated to the original sample concentration using the appropriate dilution factor.
+- **Threshold:** The fluorescence amplitude boundary separating positive from negative droplets; set manually or automatically in the analysis software; incorrect threshold setting is the most common source of ddPCR quantification error.
 
 ## Safety and Hazards
 

@@ -60,6 +60,18 @@ For non-microwave hot-plate acid digestion, see *SOP-L65*.
 | Trained Personnel | Perform digestion and filtration per this SOP |
 | New Students      | Complete training before independent use; must be supervised for first digestion run |
 
+<!-- Definitions snippet for SOP-L411: Soil Lead MARS Microwave Digestion -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **Closed-vessel digestion:** Digestion performed in sealed vessels under pressure; higher temperatures are achievable (up to 240 °C) compared to open-vessel hot-plate digestion; reduces loss of volatile elements and acid consumption.
+- **EPA Method 3051A:** The US EPA microwave-assisted acid digestion method for soils, sediments, and sludges; uses HNO~3~ (with optional HCl) in closed PTFE vessels at controlled temperature and pressure; the reference method for this SOP.
+- **MARS system (Microwave Accelerated Reaction System):** The CEM Corporation microwave digestion system used in the EA Program lab; controls temperature and pressure in each vessel during digestion.
+- **Maximum allowable working pressure (MAWP):** The pressure limit of the digestion vessel specified by the manufacturer; exceeding this limit risks vessel rupture; monitored by the MARS control software.
+- **PTFE (polytetrafluoroethylene):** A chemically inert fluoropolymer used to fabricate digestion vessels; resistant to concentrated acids and temperatures up to ~260 °C; must be pre-cleaned with HNO~3~ before use to remove trace metal contamination.
+- **Ramp time:** The programmed time over which the microwave system increases temperature from ambient to the target; too-rapid ramping can generate excessive pressure and risk vessel failure.
+
 
 ## Safety and Hazards
 

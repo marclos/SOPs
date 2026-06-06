@@ -48,6 +48,19 @@ applications including PCR amplification, qPCR, and amplicon sequencing
 | Trained Personnel | Follow this SOP, report deviations          |
 | New Students      | Complete training before independent use    |
 
+<!-- Definitions snippet for SOP-L700: DNA Extraction -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **A~260~/A~280~ ratio:** The ratio of absorbance at 260 nm to 280 nm; pure dsDNA yields ~1.8; values below 1.7 indicate protein or phenol contamination that may inhibit PCR amplification.
+- **A~260~/A~230~ ratio:** The ratio of absorbance at 260 nm to 230 nm; values of 2.0--2.2 indicate pure nucleic acids; low values indicate contamination with chaotropic salts, humic acids, or carbohydrates.
+- **Bead beating:** Mechanical cell lysis in which sample is agitated at high speed with ceramic or glass beads in a tube; disrupts cell walls and membranes including the tough walls of fungal spores and gram-positive bacteria.
+- **Chaotropic salt:** A salt (e.g., guanidinium isothiocyanate, guanidinium hydrochloride) that disrupts hydrogen bonds and hydrophobic interactions; used in DNA extraction to denature proteins and facilitate binding of DNA to silica membranes.
+- **Environmental DNA (eDNA):** Genetic material shed into the environment by organisms through mucus, feces, skin cells, and gametes; collected from soil, water, or air without organism capture.
+- **Inhibitor:** A substance co-extracted with DNA that reduces PCR amplification efficiency; common inhibitors in soil and water eDNA include humic acids, tannins, heavy metals, and residual ethanol.
+- **Silica column (spin column):** A miniaturized chromatography column containing a silica membrane that selectively binds DNA in the presence of chaotropic salts; DNA is washed and then eluted with low-salt buffer or water.
+
 
 ## Safety and Hazards
 

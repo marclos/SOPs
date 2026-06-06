@@ -61,6 +61,19 @@ For field use of the portable Hach DR900 colorimeter, see
 | Trained Personnel | Follow this SOP, report malfunctions        |
 | New Students      | Complete training before independent use    |
 
+<!-- Definitions snippet for SOP-L215: Hach DR3900 Benchtop Spectrophotometer -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **Absorbance (A):** The negative base-10 logarithm of transmittance: $A = -\log_{10}(T)$; directly proportional to analyte concentration (Beer-Lambert law) within the linear range of the instrument.
+- **Beer-Lambert law:** The relationship between absorbance, path length, and concentration: $A = \varepsilon \cdot c \cdot l$, where $\varepsilon$ is the molar absorptivity, $c$ is concentration, and $l$ is the optical path length (cell width); the basis for all colorimetric quantification.
+- **Blank (reagent blank):** A sample containing all reagents except the analyte; used to zero the instrument and correct for absorbance contributed by the reagent matrix.
+- **Colorimetric method:** An analytical technique in which a chemical reagent reacts with the analyte to produce a colored complex whose absorbance is proportional to analyte concentration.
+- **TNT plus vial:** A Hach proprietary pre-dosed reagent vial for the DR3900; contains all required reagents sealed in a glass vial; provides consistent results without manual reagent preparation.
+- **Transmittance (T):** The fraction of incident light that passes through the sample: $T = I/I_0$; related to absorbance by $A = -\log_{10}(T)$.
+- **Wavelength scan:** A measurement mode in which the instrument records absorbance across a range of wavelengths to identify the absorption maximum of an unknown compound.
+
 
 ## Safety and Hazards
 

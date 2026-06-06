@@ -40,6 +40,8 @@ EA Program [@apha2012; @eaton2005].
   continuous monitoring or in-situ deployments
 - **Location:** EA Program laboratory, SGM 133
 
+<!-- Definitions snippet for SOP-L300: pH and Conductivity Bench -->
+<!-- Insert immediately before ## Safety and Hazards -->
 
 ## Responsibilities
 
@@ -50,6 +52,15 @@ EA Program [@apha2012; @eaton2005].
 | Trained Personnel | Calibrate meter before each session, measure and record results |
 | New Students      | Complete training before independent use    |
 
+## Definitions
+
+- **Buffer solution:** A solution that resists changes in pH upon addition of small amounts of acid or base; used to calibrate pH electrodes; standard buffers are pH 4.00, 7.00, and 10.01 at 25 °C.
+- **Calibration slope:** The millivolt change per pH unit measured during two-point calibration; theoretical value is -59.16 mV/pH at 25 °C (Nernst equation); acceptable range is 90--102% of theoretical.
+- **Conductivity:** A measure of a solution's ability to conduct electrical current, expressed in µS/cm or mS/cm; proportional to the concentration of dissolved ions; temperature-dependent.
+- **Junction potential:** A small voltage that develops at the reference electrode junction where two solutions of different composition meet; a source of measurement error that is minimized by proper electrode storage and frequent replacement of the reference filling solution.
+- **pH:** The negative base-10 logarithm of the hydrogen ion activity: $pH = -\log_{10}[H^+]$; measured potentiometrically using a glass electrode and a reference electrode.
+- **Specific conductance:** Conductivity corrected to a reference temperature of 25 °C; allows comparison of measurements made at different temperatures.
+- **Temperature compensation:** Automatic adjustment of conductivity readings to 25 °C using a built-in thermistor; essential for accurate comparisons because conductivity changes approximately 2% per °C.
 
 ## Safety and Hazards
 

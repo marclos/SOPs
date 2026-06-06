@@ -57,6 +57,21 @@ control that quality in real time [@taylor1987].
 | Analyst           | Implement all QC requirements for each batch; flag QC failures; document corrective actions |
 | Data Reviewer     | Verify QC compliance before data are reported or published |
 
+<!-- Definitions snippet for SOP-L802: Quality Control and Quality Assurance -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **Accuracy:** The closeness of a measured value to the true or accepted reference value; assessed using certified reference materials (CRMs) and laboratory-fortified blanks (LFBs).
+- **Calibration verification standard (CVS):** An independently prepared standard of known concentration run periodically during an analytical sequence to confirm that the calibration curve remains valid.
+- **Certified reference material (CRM):** A substance with certified values for one or more properties, traceable to national or international standards; used to verify analytical accuracy; distinguished from in-house laboratory reference materials.
+- **Control chart:** A time-series plot of QC metric values (e.g., blank absorbance, CRM recovery) with warning limits (±2 SD) and action limits (±3 SD) drawn from historical performance; used to detect systematic drift or random errors.
+- **Laboratory fortified blank (LFB):** A reagent water sample spiked with a known concentration of analyte and processed through the entire analytical procedure; used to verify method accuracy and recovery in the absence of sample matrix.
+- **Matrix spike:** A field sample spiked with a known concentration of analyte before analysis; used to assess matrix-specific recovery and interferences.
+- **Method detection limit (MDL):** The minimum concentration statistically distinguishable from a blank at a defined level of confidence (typically 99%); determined experimentally from replicate low-level spike analyses.
+- **Precision:** The degree of agreement among replicate measurements of the same sample; expressed as relative percent difference (RPD) for duplicates or as coefficient of variation (CV) for multiple replicates.
+- **Relative percent difference (RPD):** $RPD = |A - B| / [(A + B)/2] \times 100$; used to assess agreement between field or laboratory duplicate analyses; acceptable RPD varies by method, typically 10--20% for environmental analyses.
+
 
 ## Safety and Hazards
 

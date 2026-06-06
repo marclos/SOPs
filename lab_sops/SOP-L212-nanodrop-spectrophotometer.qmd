@@ -40,7 +40,7 @@ extraction workflow, see
   quantification (see [SOP-L213](SOP-L213-qubit-fluorometer.qmd)), or
   Hach benchtop spectrophotometry (see
   [SOP-L303](SOP-L303-hach-colorimetric.qmd))
-- **Location:** Instrument bench, SGM 133
+- **Location:** Instrument bench, Seaver ??
 
 
 ## Responsibilities
@@ -51,6 +51,19 @@ extraction workflow, see
 | Lab Manager       | Schedule maintenance, manage software updates |
 | Trained Personnel | Follow this SOP, report malfunctions        |
 | New Students      | Complete training before independent use    |
+<!-- Definitions snippet for SOP-L212: NanoDrop Spectrophotometer -->
+<!-- Insert immediately before ## Safety and Hazards -->
+
+## Definitions
+
+- **A~260~:** Absorbance at 260 nm; the wavelength at which double-stranded DNA and RNA absorb most strongly; used to quantify nucleic acid concentration.
+- **A~280~:** Absorbance at 280 nm; absorbed primarily by aromatic amino acids (tyrosine, tryptophan) and by phenolic contaminants; used to assess protein contamination in nucleic acid preparations.
+- **A~260~/A~280~ ratio:** The ratio of absorbance at 260 nm to 280 nm; pure dsDNA gives ~1.8; pure RNA gives ~2.0; values below 1.7 indicate protein or phenol contamination.
+- **A~260~/A~230~ ratio:** The ratio of absorbance at 260 nm to 230 nm; values of 2.0--2.2 are expected for pure nucleic acids; low values indicate contamination with chaotropic salts (guanidinium), carbohydrates, or humic acids.
+- **Micro-volume spectrophotometry:** Absorbance measurement using 1--2 µL of sample held by surface tension between a pedestal and an optical fiber arm; eliminates the need for cuvettes and allows measurement of very small volumes.
+- **Pedestal:** The fixed lower optic of the NanoDrop on which the sample droplet is placed; must be cleaned with a lint-free wipe between measurements to prevent carryover.
+- **Pathlength normalization:** Automatic adjustment of the measured absorbance to a standardized 10 mm pathlength equivalent; allows direct comparison with traditional cuvette measurements.
+
 
 
 ## Safety and Hazards
