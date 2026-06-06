@@ -9,13 +9,18 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "1.0"
     date: "2025-05-17"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "1.1"
+    date: last-modified
+    author: "Marc Los Huertos"
+    changes: "Removed References section; no citable sources --
+              cross-references retained as inline hyperlinks throughout"
 ---
 
 ## Purpose
@@ -283,14 +288,6 @@ Use for monitoring well sampling. See
 - At the start of each semester, review all module checklists against
   the equipment inventory ([SOP-L007](../lab_sops/SOP-L007-equipment-inventory.qmd))
   and update storage locations or item lists as needed
-
-
-## References
-
-- Internal document. Cross-references:
-  [SOP-F001 Field Safety](SOP-F001-field-safety.qmd),
-  [SOP-F100 Vehicles](SOP-F100-vehicles.qmd),
-  [SOP-L007 Equipment Inventory](../lab_sops/SOP-L007-equipment-inventory.qmd)
 
 
 ## Training Record
