@@ -43,7 +43,36 @@ analytical work [@harris2020; @mettler_basic2023].
   procedures
 - **Location:** EA Program laboratory, SGM 133
 
+## Definitions
 
+- **Accuracy:** The closeness of a measurement to the true (reference)
+  value; assessed by weighing a certified reference weight and comparing
+  the result to the certified mass.
+- **Calibration:** Comparison of a balance's readings against reference
+  weights of known mass to establish a correction curve or verify
+  performance within tolerance.
+- **Certified reference weight:** A weight whose mass is traceable to
+  national or international measurement standards (NIST or equivalent);
+  classified by tolerance class (OIML E1 through M3 or ASTM 0 through
+  7).
+- **Drift:** Slow, systematic change in balance readings over time,
+  caused by temperature fluctuation, vibration, or electronic aging.
+- **External calibration:** Calibration using calibrated weights placed
+  manually on the pan; required on balances without internal weights.
+- **Internal calibration (AutoCal):** Automatic calibration using a
+  built-in reference weight that is mechanically engaged by the
+  balance; the Mettler Toledo XPE205 performs internal calibration
+  automatically in response to temperature changes.
+- **Linearity:** The degree to which balance readings are proportional
+  to applied mass across the full weighing range; assessed by weighing
+  multiple reference weights spanning the range.
+- **Repeatability:** The standard deviation of repeated measurements of
+  the same weight under identical conditions; a key indicator of
+  short-term balance precision.
+- **Tare:** The function that zeroes the displayed mass with a
+  container on the pan, so that subsequent readings show only the mass
+  of material added.
+  
 ## Responsibilities
 
 | Role              | Responsibility                              |

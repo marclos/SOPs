@@ -26,6 +26,30 @@ This SOP describes the estimation of soil organic matter (SOM) content using the
 - **Does not apply to:** Soils with high calcium carbonate content (CaCO~3~ decomposes above 450 C and may inflate LOI values; consider an alternative method such as Walkley-Black or elemental analysis for calcareous soils)
 - **Location:** EA Program laboratory, SGM 133
 
+## Definitions
+
+- **Ash-free dry mass (AFDM):** The mass remaining after removing
+  water (drying at 105 °C) and organic matter (igniting at 550 °C);
+  equivalent to the inorganic mineral mass of the sample.
+- **Crucible:** A heat-resistant porcelain or ceramic container used
+  to hold soil samples during furnace ignition; must be pre-ignited
+  and weighed to constant mass before use.
+- **Inorganic carbon (IC):** Carbon associated with carbonates (CaCO~3~,
+  MgCO~3~); released as CO~2~ during ignition above ~550 °C; can
+  inflate LOI values in calcareous soils if a lower ignition temperature
+  is not used, or can be corrected by acid pre-treatment.
+- **Loss on ignition (LOI):** The percentage mass loss when an oven-
+  dried soil is ignited at 550 °C for 4 hours: $LOI = (M_{105} -
+  M_{550}) / M_{105} \times 100$; used as a proxy for soil organic
+  matter (SOM) content.
+- **Soil organic matter (SOM):** The organic fraction of soil,
+  including plant and animal residues at various stages of
+  decomposition, microbial biomass, and stabilized humus; estimated
+  by LOI as approximately $SOM \approx 1.72 \times LOI$ (the Van
+  Bemmelen factor) when organic carbon is the target.
+- **Tare mass:** The pre-weighed mass of the empty, pre-ignited
+  crucible; subtracted from all subsequent measurements to obtain
+  sample mass.
 
 ## Responsibilities
 
