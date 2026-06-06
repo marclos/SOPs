@@ -34,48 +34,86 @@ sand, silt, and clay content without laboratory analysis.
 
 ## Scope
 
--   **Applies to:** Field characterization of mineral soils at all EA
-    Program sites; preliminary texture assessment for soil sampling
-    campaigns
--   **Does not apply to:** Soils with very high organic matter content
-    (\>20%, e.g., peat); quantitative particle size analysis (use the
-    hydrometer method, SOP-L401); soils with large gravel or rock
-    fragment content (assess the fine fraction only)
--   **Location:** All EA Program field sites; can also be performed on
-    samples brought back to the lab
+- **Applies to:** Field characterization of mineral soils at all EA
+  Program sites; preliminary texture assessment for soil sampling
+  campaigns
+- **Does not apply to:** Soils with very high organic matter content
+  (\>20%, e.g., peat); quantitative particle size analysis (use the
+  hydrometer method, SOP-L401); soils with large gravel or rock fragment
+  content (assess the fine fraction only)
+- **Location:** All EA Program field sites; can also be performed on
+  samples brought back to the lab
 
 ## Responsibilities
 
 | Role | Responsibility |
-|:------------------|:----------------------------------------------------|
+|:-------------------|:---------------------------------------------------|
 | Lab PI | Approve protocol, ensure training compliance |
 | Field Lead | Coordinate sampling, verify observer calibration |
 | Trained Personnel | Perform texture assessments, record results |
 | New Students | Complete training and calibration exercise before independent use |
 
+<!-- ============================================================
+     SOP-F401: Soil Texture by Feel
+     Insert before ## Safety and Hazards
+     ============================================================ -->
+
+## Definitions
+
+- **Clay:** The finest soil particle size class, with equivalent
+  spherical diameter less than 0.002 mm; imparts stickiness,
+  plasticity, and cohesion to the moist soil; forms a long, flexible
+  ribbon when extruded between thumb and forefinger.
+- **Loam:** A textural class with roughly balanced proportions of sand,
+  silt, and clay; exhibits moderate ribbon length (25--50 mm), moderate
+  grittiness, and moderate stickiness; the most common agricultural
+  soil texture.
+- **Plasticity:** The ability of moist soil to be molded and deformed
+  without cracking or crumbling; highest in clay-rich soils; assessed
+  by rolling soil into a thread between the palms.
+- **Ribbon:** The flat, continuous strip extruded when moist soil is
+  pushed between the thumb and forefinger; ribbon length is the primary
+  diagnostic criterion in the field texture-by-feel method; longer
+  ribbons indicate higher clay content.
+- **Sand:** Soil mineral particles with equivalent spherical diameter
+  0.05--2.0 mm; feels gritty between the fingers; does not form a
+  ribbon; individual grains are visible to the naked eye.
+- **Silt:** Soil mineral particles with equivalent spherical diameter
+  0.002--0.05 mm; feels smooth and floury when dry; slippery and
+  slightly plastic when moist; imparts a silky texture to the soil.
+- **Texture class:** A USDA classification category (e.g., sandy loam,
+  silt clay loam, clay) based on the relative percentages of sand, silt,
+  and clay; determined from the USDA textural triangle and confirmed by
+  laboratory hydrometer analysis (see
+  [SOP-L401](../lab_sops/SOP-L401-texture-hydrometer.qmd)).
+- **Water content (field):** The moisture status of the soil at the
+  time of testing; texture-by-feel must be performed on soil adjusted
+  to a defined moist or wet state to produce consistent results across
+  operators.
+  
 ## Safety and Hazards
 
 ::: callout-warning
 ### Hazards
 
--   **Biological:** Soil-borne pathogens; wash hands thoroughly after
-    handling soil
--   **Chemical:** At contaminated sites, soil may contain heavy metals
-    or other hazardous materials; wear gloves
--   **Physical:** Standard field hazards (ticks, snakes, heat exposure)
+- **Biological:** Soil-borne pathogens; wash hands thoroughly after
+  handling soil
+- **Chemical:** At contaminated sites, soil may contain heavy metals or
+  other hazardous materials; wear gloves
+- **Physical:** Standard field hazards (ticks, snakes, heat exposure)
 :::
 
 ### Required PPE
 
--   [ ] Closed-toed shoes or field boots
--   [ ] Nitrile gloves (recommended, especially at unknown or
-    contaminated sites)
--   [ ] Sun protection (hat, sunscreen)
--   [ ] Hand sanitizer or soap and water for post-handling cleanup
+- [ ] Closed-toed shoes or field boots
+- [ ] Nitrile gloves (recommended, especially at unknown or contaminated
+  sites)
+- [ ] Sun protection (hat, sunscreen)
+- [ ] Hand sanitizer or soap and water for post-handling cleanup
 
 ### Required Training
 
--   [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
+- [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
 
 ## Background
 
@@ -104,18 +142,18 @@ belongs to without measuring exact percentages.
 
 ### Why Field Texture Matters
 
--   Determines water-holding capacity, drainage, and aeration
--   Guides sampling strategy (e.g., different sample weights for carbon
-    analysis; see SOP-L406)
--   Informs the soil texture correction factor for nutrient extractions
-    (see [SOP-L403](../lab_sops/SOP-L403-nitrate-ammonium-kcl.qmd))
--   Rapid enough to characterize many points across a landscape in a
-    single field day
+- Determines water-holding capacity, drainage, and aeration
+- Guides sampling strategy (e.g., different sample weights for carbon
+  analysis; see SOP-L406)
+- Informs the soil texture correction factor for nutrient extractions
+  (see [SOP-L403](../lab_sops/SOP-L403-nitrate-ammonium-kcl.qmd))
+- Rapid enough to characterize many points across a landscape in a
+  single field day
 
 ## Required Materials
 
 | Item                          | Notes                                     |
-|:---------------------------|:------------------------------------------|
+|:----------------------------|:------------------------------------------|
 | Water bottle with squeeze top | For wetting soil incrementally            |
 | Small ruler (cm)              | For measuring ribbon length               |
 | Field data sheet              | Printed from Appendix A                   |
@@ -130,7 +168,7 @@ No specialized laboratory equipment is required.
 ## Estimated Time
 
 | Task | Time |
-|:---------------------------|:------------------------------------------|
+|:----------------------------|:------------------------------------------|
 | Per sample (experienced observer) | 2--5 minutes |
 | Per sample (new observer) | 5--10 minutes |
 | Calibration exercise (training) | 30--45 minutes with known-texture standards |
@@ -213,7 +251,7 @@ kneading.
 4.  Classify the dominant feel:
 
 | Feel | Sensation | Dominant Fraction |
-|:----------------|:-------------------|:----------------------------------|
+|:-----------------|:-------------------|:---------------------------------|
 | **Gritty** | Like rubbing sugar or fine sand between fingers; individual grains felt and possibly heard | Sand-dominated |
 | **Smooth** | Like rubbing flour or talc; silky, no grains felt | Silt-dominated |
 | **Neither** | Neither gritty nor silky dominates; sticky | Sand and silt balanced |
@@ -224,7 +262,7 @@ Combine the ribbon length and feel test results using the following
 decision matrix [@thien1979]:
 
 |               | Gritty Feel     | Smooth Feel     | Neither Gritty nor Smooth |
-|:--------------|:----------------|:----------------|:--------------------------|
+|:---------------|:---------------|:---------------|:-----------------------|
 | **No ribbon** | Sand            | Silt            | Loam                      |
 | **\< 2.5 cm** | Sandy loam      | Silt loam       | Loam                      |
 | **2.5--5 cm** | Sandy clay loam | Silty clay loam | Clay loam                 |
@@ -233,12 +271,12 @@ decision matrix [@thien1979]:
 ::: callout-tip
 ### Additional Clues
 
--   **Loamy sand** falls between sand and sandy loam: barely forms a
-    ball, very gritty, ribbon \<1 cm
--   **Silt** (pure): very smooth, almost soapy when wet, forms a weak
-    ball but no ribbon
--   When in doubt between two classes, record both (e.g., "sandy loam /
-    loam") and note the uncertainty
+- **Loamy sand** falls between sand and sandy loam: barely forms a ball,
+  very gritty, ribbon \<1 cm
+- **Silt** (pure): very smooth, almost soapy when wet, forms a weak ball
+  but no ribbon
+- When in doubt between two classes, record both (e.g., "sandy loam /
+  loam") and note the uncertainty
 :::
 
 ### Record Results
@@ -276,21 +314,21 @@ size distribution, use the hydrometer method (SOP-L401).
 
 ## Quality Control
 
--   **Calibration:** Before independent fieldwork, each observer must
-    practice on at least 5 soils of known texture (confirmed by
-    hydrometer analysis). Results should match the confirmed texture
-    class for at least 4 of 5 samples.
--   **Inter-observer agreement:** When multiple observers are surveying,
-    have each observer independently classify at least 10% of the same
-    samples. Agreement should be within one textural class.
-    Inter-observer variability is a well-documented limitation of
-    texture-by-feel; training and calibration reduce but do not
-    eliminate systematic differences among observers [@salley2018].
--   **Documentation:** Record ribbon length to the nearest 0.5 cm, not
-    just the textural class, so results can be reviewed later.
--   **Confirmation:** For critical projects, bring duplicate samples
-    back to the lab for hydrometer analysis on at least 10% of
-    field-textured samples.
+- **Calibration:** Before independent fieldwork, each observer must
+  practice on at least 5 soils of known texture (confirmed by hydrometer
+  analysis). Results should match the confirmed texture class for at
+  least 4 of 5 samples.
+- **Inter-observer agreement:** When multiple observers are surveying,
+  have each observer independently classify at least 10% of the same
+  samples. Agreement should be within one textural class. Inter-observer
+  variability is a well-documented limitation of texture-by-feel;
+  training and calibration reduce but do not eliminate systematic
+  differences among observers [@salley2018].
+- **Documentation:** Record ribbon length to the nearest 0.5 cm, not
+  just the textural class, so results can be reviewed later.
+- **Confirmation:** For critical projects, bring duplicate samples back
+  to the lab for hydrometer analysis on at least 10% of field-textured
+  samples.
 
 When texture-by-feel results will inform quantitative analyses (e.g.,
 pedotransfer functions for water-holding capacity), confirm at least 10%
@@ -305,13 +343,13 @@ more often [@salley2018].
 Enter results from field sheets into the project spreadsheet within 48
 hours. Required fields:
 
--   Date, site, plot ID, observer
--   GPS coordinates
--   Sample depth (cm)
--   Ribbon length (cm)
--   Feel (gritty, smooth, or neither)
--   Textural class
--   Notes (e.g., high gravel content, high organic matter, very dry)
+- Date, site, plot ID, observer
+- GPS coordinates
+- Sample depth (cm)
+- Ribbon length (cm)
+- Feel (gritty, smooth, or neither)
+- Textural class
+- Notes (e.g., high gravel content, high organic matter, very dry)
 
 ## References
 

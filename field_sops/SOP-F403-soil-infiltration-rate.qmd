@@ -58,6 +58,49 @@ the effects of soil sealing in urban environments [@hillel1998;
 | Trained Personnel | Conduct infiltration tests per this SOP      |
 | New Students      | Complete training before independent testing |
 
+<!-- ============================================================
+     SOP-F403: Soil Infiltration Rate
+     Insert before ## Safety and Hazards
+     ============================================================ -->
+
+## Definitions
+
+- **Double-ring infiltrometer:** A measurement apparatus consisting of
+  two concentric steel rings driven into the soil surface; the inner
+  ring provides the measurement zone; the outer ring creates a buffer
+  that minimizes lateral flow from the inner ring, enforcing
+  predominantly vertical infiltration.
+- **Final infiltration rate (steady-state rate):** The constant rate at
+  which water enters the soil after the soil profile is saturated and
+  the infiltration rate has stabilized; approximates the saturated
+  hydraulic conductivity ($K_{sat}$) of the surface soil.
+- **Green-Ampt model:** A physically based infiltration model that
+  describes the rate of water entry into soil as a function of
+  saturated hydraulic conductivity, matric suction at the wetting
+  front, and soil moisture deficit; used to interpret falling-head
+  infiltration data.
+- **Infiltration rate:** The volumetric flux of water entering the soil
+  surface per unit area per unit time, expressed in mm h^-1^ or
+  cm h^-1^; decreases from an initially high rate in dry soil to a
+  lower, stable final rate as the soil wets.
+- **Macropore flow:** Preferential movement of water through large
+  continuous pores (earthworm burrows, root channels, structural
+  cracks); produces non-uniform wetting and anomalously high initial
+  infiltration rates that do not reflect bulk soil hydraulic
+  conductivity.
+- **Matric potential:** The energy status of soil water due to capillary
+  and adsorptive forces; expressed in kPa or cm H~2~O; drives water
+  movement from wet to dry zones during infiltration.
+- **Saturated hydraulic conductivity ($K_{sat}$):** The proportionality
+  constant in Darcy's law relating water flux to hydraulic gradient
+  under saturated conditions; the primary soil hydraulic property
+  controlling drainage, runoff, and deep percolation; approximated by
+  the steady-state infiltration rate.
+- **Single-ring infiltrometer:** A simplified apparatus using one ring
+  driven into the soil; easier to deploy than double-ring but subject
+  to lateral flow error; appropriate for screening or comparative
+  measurements when absolute $K_{sat}$ is not required.
+  
 
 ## Safety and Hazards
 

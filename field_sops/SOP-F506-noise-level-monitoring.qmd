@@ -53,7 +53,53 @@ affects disadvantaged communities.
 | Trained Personnel | Calibrate instruments, collect and document measurements |
 | New Students      | Complete training before independent monitoring |
 
+<!-- ============================================================
+     SOP-F506: Noise Level Monitoring
+     Insert before ## Safety and Hazards
+     ============================================================ -->
 
+## Definitions
+
+- **A-weighting (dBA):** A frequency-weighting filter applied to sound
+  level measurements that approximates the frequency-dependent
+  sensitivity of the human ear; attenuates low and very high
+  frequencies; the standard weighting for environmental and community
+  noise assessments.
+- **Calibrator:** A portable acoustic device that produces a reference
+  tone of known sound pressure level (typically 94 dB or 114 dB at
+  1,000 Hz) used to verify sound level meter accuracy before and after
+  each measurement session.
+- **Day-night average sound level (L~dn~):** A 24-hour energy-averaged
+  sound level with a 10 dB penalty added to nighttime (10 pm--7 am)
+  levels to account for increased sensitivity to noise during sleep;
+  the primary US EPA regulatory descriptor for community noise
+  exposure.
+- **Equivalent continuous sound level (L~eq~):** The steady-state sound
+  level that would contain the same acoustic energy as the actual
+  time-varying sound over a defined measurement period; the primary
+  descriptor for environmental noise measurements; expressed in dB or
+  dBA.
+- **L~max~ / L~min~:** The maximum and minimum instantaneous
+  A-weighted sound levels measured during a monitoring period; used to
+  characterize the range of noise events and identify peak exposures.
+- **Percentile level (L~N~):** The sound level exceeded for N% of the
+  measurement period (e.g., L~90~ is the level exceeded 90% of the
+  time); L~90~ approximates background noise; L~10~ approximates peak
+  intrusive noise events.
+- **Sound level meter:** An instrument that measures sound pressure
+  level in decibels; classified as Type 1 (precision, laboratory and
+  field) or Type 2 (general purpose); Type 1 meters are required for
+  regulatory compliance measurements; both types are acceptable for
+  research.
+- **Sound pressure level (SPL):** A logarithmic measure of the
+  effective pressure of a sound wave relative to a reference pressure
+  of 20 µPa (the threshold of human hearing): $SPL = 20\log_{10}(p /
+  p_0)$; expressed in decibels (dB).
+- **Windscreen:** A porous foam or fur cover placed over the microphone
+  to reduce turbulent airflow noise caused by wind; required for all
+  outdoor measurements to prevent wind-induced artifacts from
+  contaminating sound level data.
+  
 ## Safety and Hazards
 
 ::: {.callout-warning}

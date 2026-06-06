@@ -65,7 +65,49 @@ We thank Isaac Medina, Neha Vaingankar, and Bailey Lai, who worked with
 the instrument early on and developed early versions of this SOP.
 Improvements were made by Allison Joseph and Virginia Paschal.
 
+<!-- ============================================================
+     SOP-F504: Picarro GHG Analyzer -- Definitions
+     Insert before ## Safety and Hazards
+     ============================================================ -->
 
+## Definitions
+
+- **Cavity ring-down spectroscopy (CRDS):** The laser-based optical
+  detection technique used by the Picarro G2508; a laser pulse is
+  injected into a high-finesse optical cavity and the rate of light
+  decay is measured; the decay rate is proportional to the
+  concentration of absorbing gas molecules, enabling parts-per-billion
+  sensitivity.
+- **Chamber closure period:** The time interval during which the eosAC
+  chamber lid is sealed over the soil surface; CO~2~, N~2~O, CH~4~,
+  and NH~3~ accumulate in the chamber headspace during this period;
+  flux is calculated from the rate of concentration change.
+- **Dead volume:** The total volume of gas in the measurement system
+  (chamber headspace, tubing, and instrument internal volume) that
+  dilutes gas emitted from the soil; must be accurately characterized
+  to calculate flux.
+- **Drierite:** Anhydrous calcium sulfate desiccant used to remove
+  water vapor from the gas stream before it enters the Picarro analyzer;
+  must be regenerated or replaced when exhausted (color change from
+  blue to pink for indicating Drierite).
+- **eosMX-P multiplexer:** The Eosense controller that cycles
+  sequentially through up to 16 chamber ports, directing flow from each
+  chamber to the Picarro analyzer in turn; automates multi-chamber
+  deployments without manual valve switching.
+- **eosAC chamber:** An automated, transparent polycarbonate flux
+  chamber manufactured by Eosense; opens and closes on a programmable
+  schedule; connected to the eosMX-P multiplexer and Picarro analyzer
+  via Teflon tubing.
+- **Flux calculation:** Derivation of the gas flux (µmol m^-2^ s^-1^
+  or nmol m^-2^ s^-1^) from the linear or non-linear rate of
+  concentration increase in the chamber headspace, chamber volume, soil
+  surface area enclosed, and air temperature and pressure.
+- **N~2~O (nitrous oxide):** A potent greenhouse gas (298x CO~2~
+  warming potential over 100 years) produced in soil by nitrification
+  and denitrification; the primary target of many EA Program field
+  campaigns; measured simultaneously with CH~4~, CO~2~, NH~3~, and
+  H~2~O by the Picarro G2508.
+  
 ## Safety and Hazards
 
 ::: {.callout-warning}
@@ -423,6 +465,10 @@ options need to be set for each deployment.*
 | Generator fuel spills     | Absorb with spill kit materials; dispose per EH&S |
 | Damaged Teflon tubing     | Standard trash (non-hazardous)           |
 
+## References
+
+::: {#refs}
+:::
 
 ## Training Record
 

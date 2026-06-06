@@ -58,7 +58,41 @@ in the SSSA Methods of Soil Analysis [@blake1986; @grossman2002].
 | Trained Personnel | Collect cores and process samples per this SOP |
 | New Students      | Complete training before independent sampling |
 
+<!-- ============================================================
+     SOP-F402: Soil Bulk Density (Core Method)
+     Insert before ## Safety and Hazards
+     ============================================================ -->
 
+## Definitions
+
+- **Bulk density ($\rho_b$):** The mass of oven-dry soil per unit
+  volume of field-moist soil, including pore space; expressed in
+  g cm^-3^ or Mg m^-3^; typically ranges from 1.0--1.8 g cm^-3^ for
+  mineral soils and 0.1--0.5 g cm^-3^ for organic soils.
+- **Coarse fragment correction:** An adjustment to bulk density
+  calculations that removes the volume and mass of rock fragments
+  (greater than 2 mm) from the core sample; required in stony or
+  gravelly soils where coarse fragments occupy significant core volume.
+- **Core sampler:** A thin-walled, beveled steel cylinder of known
+  volume pushed into the soil to extract an intact sample for bulk
+  density determination; internal dimensions must be measured and
+  recorded for each sampler.
+- **Dry bulk density:** The mass of oven-dry soil divided by the total
+  volume of the sample including pore space; the standard reported
+  value for bulk density; calculated after drying at 105 °C to constant
+  mass.
+- **Porosity ($\phi$):** The fraction of total soil volume occupied by
+  pores (air + water): $\phi = 1 - \rho_b / \rho_p$ where $\rho_p$ is
+  particle density (assumed 2.65 g cm^-3^ for mineral soils); porosity
+  decreases as bulk density increases.
+- **Soil carbon stock:** The mass of organic carbon per unit land area
+  (Mg C ha^-1^) calculated from bulk density, sampling depth, and
+  organic carbon concentration; bulk density measurement is the primary
+  source of uncertainty in carbon stock estimates.
+- **Soil compaction:** An increase in bulk density caused by mechanical
+  pressure (tillage, vehicle traffic, trampling); reduces porosity,
+  impedes root growth, and decreases infiltration rates.
+  
 ## Safety and Hazards
 
 ::: {.callout-warning}
