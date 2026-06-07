@@ -52,6 +52,18 @@ function Pandoc(doc)
 ]], num_str, rev_str)
 
   local badge_block = pandoc.RawBlock("html", badge)
-  table.insert(doc.blocks, 1, badge_block)
+
+  -- Find the first non-Header block and insert the badge before it.
+  -- This places the badge after the title (which Quarto renders from
+  -- the YAML, not as a Header block) and before the first body content.
+  local insert_pos = 1
+  for i, block in ipairs(doc.blocks) do
+    if block.t ~= "Header" then
+      insert_pos = i
+      break
+    end
+  end
+
+  table.insert(doc.blocks, insert_pos, badge_block)
   return doc
 end
