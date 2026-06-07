@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F204: HOBO Weather Station Deployment
-# =============================================================================
 title: "HOBO Weather Station Deployment"
 sop-number: "SOP-F204"
 author:
@@ -9,13 +6,18 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-19"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; converted plain-text references
+              to BibTeX; added {#refs} div; added inline citations"
 ---
 
 ## Purpose
@@ -26,7 +28,7 @@ unattended monitoring of air temperature, relative humidity, and light
 intensity at EA Program field sites. These compact loggers provide
 continuous microclimatic data for characterizing site conditions,
 supporting ecological studies, and supplementing manual weather
-observations.
+observations [@onset_hobou23; @wmo_guide2018].
 
 
 ## Scope
@@ -50,6 +52,46 @@ observations.
 | PI / Field Lead   | Approve deployment plan and logging interval            |
 | Trained Personnel | Deploy, retrieve, and download loggers per this SOP     |
 | New Students      | Complete training before independent use                |
+
+
+## Definitions
+
+- **Bluetooth logging:** A wireless communication protocol used by
+  MX-series HOBO loggers; enables programming and data download via
+  the HOBOconnect smartphone app without cables; requires proximity
+  (typically within 15 m of the logger) [@onset_hobou23].
+- **Data gap:** A period within a logger deployment during which no
+  data were recorded; caused by battery failure, logger reset, or
+  memory overflow; must be documented in the project data log.
+- **HOBOconnect:** The Onset smartphone app (iOS and Android) used to
+  program, launch, and download data from Bluetooth-enabled MX-series
+  HOBO loggers; requires the logger to be within Bluetooth range
+  [@onset_hoboware].
+- **HOBOware:** The Onset desktop software used to program and download
+  data from legacy UA-series HOBO loggers via optical USB coupler;
+  also supports barometric compensation for water level loggers
+  [@onset_hoboware].
+- **Logging interval:** The time between successive measurements
+  stored to the logger memory; typical intervals for EA Program
+  deployments are 5 minutes (microclimatic studies) or 15 minutes
+  (long-term monitoring); shorter intervals fill memory faster and
+  require more frequent downloads [@onset_hobou23].
+- **MX2301:** The Onset HOBO MX temperature and relative humidity
+  logger; Bluetooth-enabled; ±0.2 °C temperature accuracy and ±2.5%
+  RH accuracy; internal memory stores 500,000 readings [@onset_hobou23].
+- **Radiation shield:** A ventilated, white polypropylene housing that
+  surrounds a temperature or RH logger and prevents direct solar
+  radiation from inflating the measured air temperature; a radiation
+  shield is mandatory for any logger exposed to sunlight
+  [@wmo_guide2018].
+- **Relative humidity (RH):** The ratio of the partial pressure of
+  water vapor in air to the saturation vapor pressure at the same
+  temperature, expressed as a percentage; values above approximately
+  70% promote sensor drift in some sensor types [@wmo_guide2018].
+- **Sensor drift:** A gradual, systematic change in sensor readings
+  over time not attributable to true environmental change; detected by
+  co-deployment with a reference sensor or comparison with a nearby
+  weather station.
 
 
 ## Safety and Hazards
@@ -78,14 +120,14 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 ## Instrument Specifications
 
-| Model         | Parameters          | Range                   | Accuracy            | Logging Memory | Communication |
-|:--------------|:--------------------|:------------------------|:--------------------|:---------------|:--------------|
-| MX2201        | Temp, light         | -20 to 70 C; 0--320,000 lux | +/- 0.5 C; N/A | 96,000 readings | Bluetooth     |
-| MX2202        | Temp, light (waterproof) | -20 to 70 C; 0--320,000 lux | +/- 0.5 C | 96,000 readings | Bluetooth     |
-| MX2301        | Temp, RH            | -40 to 70 C; 0--100% RH | +/- 0.2 C; +/- 2.5% RH | 500,000 readings | Bluetooth |
-| UA-002-64     | Temp, light (legacy) | -20 to 70 C; 0--320,000 lux | +/- 0.53 C | 64,000 readings | Optical USB   |
+| Model     | Parameters       | Range                        | Accuracy               | Memory          | Communication |
+|:----------|:-----------------|:-----------------------------|:-----------------------|:----------------|:--------------|
+| MX2201    | Temp, light      | -20 to 70 °C; 0--320,000 lux | ±0.5 °C               | 96,000 readings | Bluetooth     |
+| MX2202    | Temp, light (waterproof) | -20 to 70 °C          | ±0.5 °C               | 96,000 readings | Bluetooth     |
+| MX2301    | Temp, RH         | -40 to 70 °C; 0--100% RH    | ±0.2 °C; ±2.5% RH     | 500,000 readings | Bluetooth    |
+| UA-002-64 | Temp, light (legacy) | -20 to 70 °C           | ±0.53 °C              | 64,000 readings | Optical USB   |
 
-*TBD -- confirm which models the EA Program currently owns.*
+[@onset_hobou23]
 
 
 ## Equipment and Materials
@@ -93,14 +135,14 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
 | HOBO logger(s)                        | Confirm model and battery status         |
-| Radiation shield (RS3 or similar)     | Required for temperature loggers exposed to direct sunlight |
+| Radiation shield (RS3 or similar)     | Required for temperature loggers exposed to direct sunlight [@wmo_guide2018] |
 | Mounting hardware (cable ties, U-bolts, brackets) | For securing shield/logger to posts, trees, or tripods |
-| Tripod or mounting post               | If no suitable tree or structure is available |
-| Smartphone with HOBOconnect app       | For Bluetooth-enabled MX loggers         |
-| Laptop with HOBOware software         | For legacy UA-series loggers             |
+| Tripod or mounting post               | If no suitable tree or structure available |
+| Smartphone with HOBOconnect app       | For Bluetooth-enabled MX loggers [@onset_hoboware] |
+| Laptop with HOBOware software         | For legacy UA-series loggers [@onset_hoboware] |
 | Optical USB coupler (for UA loggers)  | For launching and downloading            |
 | Field notebook                        | For recording deployment metadata        |
-| GPS unit or smartphone                | For recording coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| GPS unit or smartphone                | Per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
 | Spare batteries                       | CR2032 (MX pendant) or 3V lithium (varies by model) |
 
 
@@ -110,74 +152,56 @@ Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 **MX-series (Bluetooth):**
 
-1. Open the HOBOconnect app and connect to the logger via Bluetooth.
+1. Open the HOBOconnect app and connect to the logger via Bluetooth
+   [@onset_hoboware].
 2. Configure:
-   - Logging interval: 5 or 15 minutes (5 min for microclimate
-     studies; 15 min for long-term monitoring)
+   - Logging interval: 5 or 15 minutes
    - Start mode: delayed start (set to a round time, e.g., top of the
      next hour)
    - Logger name: use the convention `SiteID_Parameter_LoggerSN`
      (e.g., `BFS_TempRH_20456789`)
 3. Verify the battery level. Replace if below 20%.
-4. Tap **Configure and Start**.
 
-**UA-series (legacy, optical USB):**
+**UA-series (legacy):**
 
-1. Connect the logger to the laptop via the optical USB coupler.
-2. In HOBOware, select **Launch Logger**.
-3. Configure the same parameters as above.
-4. Click **Start**.
+1. Connect the logger via the optical USB coupler and open HOBOware.
+2. Select **Launch** and configure the logging interval and start time
+   [@onset_hoboware].
+3. Click **Start** to begin logging.
 
 ### Deployment
 
-**Temperature and RH loggers (MX2301 or equivalent):**
-
-1. Mount the logger inside a radiation shield. The shield prevents
-   direct solar heating and rain from affecting readings.
-2. Attach the shield to a post, tripod, or tree at 1.5 m above
-   ground level with the vents oriented horizontally.
-3. Position the shield in an open area representative of the site
-   microclimate. Avoid placing directly above pavement, bare rock,
-   or irrigated surfaces.
-
-**Temperature/light pendant loggers (MX2201, MX2202):**
-
-1. For light measurements, orient the sensor face toward the light
-   source of interest (e.g., upward for total incoming light, toward
-   the canopy for understory light).
-2. Secure the logger with cable ties so it cannot shift orientation.
-3. For underwater deployments (MX2202 waterproof model), place inside
-   a weighted housing or attach to a submerged stake.
-
-**All deployments:**
-
-1. Record in the field notebook:
-   - Logger serial number and model
-   - GPS coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd)
-   - Mounting height above ground (or depth below water)
+1. Mount the radiation shield at 1.5 m above ground on a post, tree,
+   or tripod in a location representative of the site. Avoid positions
+   within 3 m of heat-absorbing surfaces (pavement, metal walls)
+   [@wmo_guide2018].
+2. Insert the logger into the shield. Ensure the sensor faces are
+   unobstructed and the shield ventilation holes are unblocked.
+3. Secure the shield to the mounting structure with cable ties.
+4. Record in the field notebook:
+   - Logger serial number
+   - Deployment coordinates per [SOP-F006](SOP-F006-gps-site-navigation.qmd)
    - Date and time of deployment
-   - Logging interval
-   - Orientation of the sensor
-2. Take a photograph of the deployed logger with surrounding context.
-3. Verify the logger is recording by checking the LED indicator
-   (MX models) or connecting briefly via Bluetooth.
+   - Logging interval and start time
+   - Sensor height above ground
+5. Photograph the deployed logger with surrounding context visible.
 
-### Data Retrieval
+### Downloading Data at Regular Intervals
 
-Download data at regular intervals (monthly for most projects;
-quarterly for long-term sites). The logger continues recording during
-download.
+**MX-series (Bluetooth):**
 
-1. Open HOBOconnect and connect to the logger via Bluetooth.
-2. Tap **Readout**. The data file downloads to the smartphone.
-3. Export the file as `.csv` and transfer to the project computer.
+1. Open HOBOconnect app and connect to the logger.
+2. Select **Download** to transfer all stored data to the smartphone
+   [@onset_hoboware].
+3. Export the data as a CSV file.
 4. Save using the naming convention:
    `YYYY-MM-DD_SiteID_Parameter_LoggerSN.csv`
 5. Upload to the project GitHub repository under `data/microclimate/`
    within 48 hours.
 
-For UA-series loggers, connect via optical USB coupler and use
-HOBOware to read out data.
+**UA-series (legacy):**
+
+Connect via optical USB coupler and use HOBOware to read out data.
 
 ### Logger Retrieval (End of Deployment)
 
@@ -193,11 +217,11 @@ HOBOware to read out data.
 ## Quality Control
 
 - At each download visit, compare the logger temperature reading
-  against a handheld thermometer or sling psychrometer. Discrepancies
-  greater than 1 C should be investigated.
+  against a handheld thermometer. Discrepancies greater than 1 °C
+  should be investigated [@wmo_guide2018].
 - At least once per year, co-deploy two loggers of the same model at
   the same location for a minimum of 48 hours to check inter-unit
-  agreement. Temperature should agree within 0.5 C; RH within 5%.
+  agreement. Temperature should agree within 0.5 °C; RH within 5%.
 - Inspect data for signs of sensor failure: constant readings, sudden
   offsets, or readings pegged at the sensor limit.
 - Check battery level at every download. Replace batteries
@@ -209,12 +233,12 @@ HOBOware to read out data.
 
 ## References
 
-- Onset Computer Corporation. *HOBO MX2301 Temperature/RH Logger User
-  Manual*. <https://www.onsetcomp.com>
-- Onset Computer Corporation. *HOBO Pendant MX2201 Logger User Manual*.
-- Onset Computer Corporation. *HOBOconnect App User Guide*.
-- WMO (World Meteorological Organization). (2018). *Guide to
-  Meteorological Instruments and Methods of Observation* (WMO-No. 8).
+- @onset_hobou23
+- @onset_hoboware
+- @wmo_guide2018
+
+::: {#refs}
+:::
 
 
 ## Related SOPs
@@ -222,10 +246,10 @@ HOBOware to read out data.
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
 | [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
-| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation  | Deployment coordinates            |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation | Deployment coordinates            |
 | [F203](SOP-F203-hobo-water-level-transducers.qmd) | HOBO Water Level Loggers | Companion instrument SOP |
-| [F501](SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring | Related temperature SOP |
-| [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub    | Data version control              |
+| [F510](SOP-F510-weather-monitoring.qmd) | Weather Monitoring        | Full meteorological context       |
+| [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub | Data version control             |
 
 
 ## Training Record

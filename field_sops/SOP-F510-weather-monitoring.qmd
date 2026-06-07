@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F510: Weather Monitoring and Field Meteorology
-# =============================================================================
 title: "Weather Monitoring and Field Meteorology"
 sop-number: "SOP-F510"
 author:
@@ -9,13 +6,18 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-19"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; converted plain-text references
+              to BibTeX; added {#refs} div; added inline citations"
 ---
 
 ## Purpose
@@ -26,7 +28,7 @@ the time of sampling is essential for interpreting environmental data,
 identifying storm-driven events, establishing baseline climate
 conditions, and ensuring field safety. This SOP covers manual weather
 observations, use of portable weather instruments, and deployment of
-unattended data loggers for continuous monitoring.
+unattended data loggers for continuous monitoring [@wmo_guide2018].
 
 
 ## Scope
@@ -47,10 +49,56 @@ unattended data loggers for continuous monitoring.
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
 | PI / Field Lead   | Identify which weather variables are required for the
-                      project; approve deployment of data loggers           |
+                      project; approve deployment of data loggers          |
 | Trained Personnel | Record weather observations, deploy and retrieve
                       loggers, download data                               |
 | New Students      | Complete training before independent use                |
+
+
+## Definitions
+
+- **Beaufort scale:** A standardized scale (0--12) relating wind
+  speed to observable effects on land or water; allows wind speed
+  estimation without instruments; developed by Admiral Beaufort
+  in 1805 and adopted as the international standard by the WMO
+  [@wmo_guide2018].
+- **Cloud cover:** The fraction of the sky obscured by clouds,
+  expressed in tenths (0--10) or oktas (0--8); recorded with each
+  manual weather observation [@wmo_guide2018].
+- **Dew point:** The temperature to which air must be cooled at
+  constant pressure for condensation to occur; a direct measure of
+  absolute humidity; can be derived from wet-bulb temperature
+  measurements [@wmo_guide2018].
+- **HOBOconnect:** The Onset smartphone app used to program and
+  download data from Bluetooth-enabled MX-series HOBO loggers
+  [@onset_hoboware].
+- **Kestrel meter:** A handheld weather meter (Kestrel 3000 or
+  similar) that simultaneously measures air temperature, relative
+  humidity, wind speed, barometric pressure, and derived quantities
+  (dew point, wet-bulb temperature, heat index); the standard
+  portable weather instrument for EA Program field use.
+- **Radiation shield:** A ventilated white housing that surrounds a
+  temperature or humidity sensor to prevent direct solar radiation
+  from inflating measured air temperatures; mandatory for any sensor
+  exposed to sunlight [@wmo_guide2018].
+- **Relative humidity (RH):** The ratio of actual water vapor
+  pressure to saturation vapor pressure at the same temperature,
+  expressed as a percentage; affects evapotranspiration, dew
+  deposition, and physical and biological processes at field sites
+  [@wmo_guide2018].
+- **Screen height:** The standard height of 1.5 m above ground level
+  for air temperature and humidity measurements; specified by the WMO
+  to ensure comparability between stations and with published
+  meteorological data [@wmo_guide2018].
+- **Sling psychrometer:** A pair of wet-bulb and dry-bulb thermometers
+  mounted on a frame that is swung to ventilate the sensors; used to
+  determine relative humidity from the wet-bulb depression; a reliable
+  low-cost alternative to electronic sensors.
+- **WMO (World Meteorological Organization):** The United Nations
+  agency responsible for international meteorological and hydrological
+  standards; its Guide to Meteorological Instruments and Methods of
+  Observation (WMO-No. 8) is the authoritative reference for field
+  measurement practice [@wmo_guide2018].
 
 
 ## Safety and Hazards
@@ -61,7 +109,7 @@ unattended data loggers for continuous monitoring.
 - **Lightning:** Cease all field activities and seek shelter in a
   vehicle or enclosed structure when lightning is observed. Wait at
   least 30 minutes after the last lightning strike before resuming.
-- **Heat:** Southern California field sites can exceed 40 C. Carry
+- **Heat:** Southern California field sites can exceed 40 °C. Carry
   adequate water, take shade breaks, and monitor for heat-related
   illness.
 - **Wind:** High winds can topple tripod-mounted instruments and
@@ -74,72 +122,52 @@ unattended data loggers for continuous monitoring.
 ### Required PPE
 
 - [ ] Closed-toed shoes or field boots
-- [ ] Sun protection (hat, sunscreen, long sleeves)
-- [ ] Rain gear (if sampling during wet weather)
-- [ ] Adequate water (minimum 1 L per person per 2 hours in hot
-      conditions)
+- [ ] Sun protection (hat, sunscreen)
 
 ### Emergency Procedures
 
-Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). For
-lightning safety, follow the 30-30 rule: if the time between a flash
-and thunder is 30 seconds or less, seek shelter; remain sheltered for
-30 minutes after the last flash.
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
 ## Equipment and Materials
 
-### Manual Observation Equipment
-
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
-| Sling psychrometer or digital hygrometer | For air temperature and relative humidity |
-| Handheld anemometer (Kestrel or equivalent) | For wind speed and direction       |
-| Manual rain gauge (graduated cylinder type) | For on-site precipitation measurement |
-| Compass                               | For determining wind direction           |
-| Cloud identification chart            | Laminated card for consistent sky observations |
-| Field notebook                        | For recording all observations           |
-
-### Portable Weather Stations and Data Loggers
-
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| HOBO MX series data logger (Onset)    | Temperature, relative humidity, light intensity |
-| HOBO rain gauge (tipping bucket)      | For automated precipitation logging      |
-| Tripod or mounting hardware           | For securing instruments at consistent height |
-| Radiation shield (for temperature sensors) | Prevents direct solar heating of the sensor |
-| Laptop or smartphone with HOBOconnect app | For programming loggers and downloading data |
-| USB cable or Bluetooth adapter        | For data transfer                        |
-| Spare batteries                       | Matched to logger model                  |
-| Cable ties and ground stakes          | For securing equipment against wind      |
+| Kestrel 3000 or equivalent meter      | For air temperature, RH, wind speed      |
+| Sling psychrometer                    | Backup for RH measurement                |
+| Rain gauge (manual graduated cylinder) | For precipitation measurement           |
+| HOBO MX-series data logger            | For unattended monitoring per [SOP-F204](SOP-F204-hobo-weather-station.qmd) |
+| Radiation shield (RS3 or similar)     | Required for any temperature sensor exposed to sunlight [@wmo_guide2018] |
+| Compass                               | For wind direction measurement           |
+| Field notebook                        | Per [SOP-F003](SOP-F003-field-notebook-protocols.qmd) |
 
 
 ## Procedure
 
 ### Manual Weather Observations
 
-Record the following observations at the start and end of every field
-visit, and at the time of each sample collection. Enter all
-observations in the field notebook per
-[SOP-F003](SOP-F003-field-notebook-protocols.qmd).
+Record weather conditions at the start and end of each field session,
+and at any time conditions change notably. Enter all observations in
+the field notebook per
+[SOP-F003](SOP-F003-field-notebook-protocols.qmd) [@wmo_guide2018].
 
 | Variable                | Method                          | Units       |
 |:------------------------|:--------------------------------|:------------|
-| Air temperature         | Sling psychrometer, Kestrel, or digital thermometer | C |
-| Relative humidity       | Sling psychrometer or Kestrel   | %           |
+| Air temperature         | Kestrel, sling psychrometer, or digital thermometer at 1.5 m in shade | °C |
+| Relative humidity       | Kestrel or sling psychrometer   | %           |
 | Wind speed              | Kestrel or Beaufort scale estimate | m/s or Beaufort number |
 | Wind direction          | Compass bearing from which wind blows | degrees or cardinal direction |
-| Cloud cover             | Visual estimate                 | Tenths (0--10) or oktas (0--8) |
-| Cloud type              | Identify dominant type using chart | Name (e.g., cumulus, cirrus) |
-| Precipitation           | Observation and rain gauge      | mm; also note type (rain, drizzle, none) |
-| Barometric pressure (if available) | Kestrel or smartphone app | hPa or mbar |
+| Cloud cover             | Visual estimate                 | Tenths (0--10) |
+| Cloud type              | Identify dominant type          | Name (cumulus, cirrus, etc.) |
+| Precipitation           | Observation and rain gauge      | mm; note type (rain, drizzle, none) |
+| Barometric pressure     | Kestrel or smartphone app       | hPa         |
 
 ::: {.callout-tip}
 ### Tip
 If you do not have a weather instrument, still record qualitative
-observations: "clear sky, calm winds, warm" is far better than nothing.
-Note the source of any weather data you look up online (e.g., "NWS
-Ontario station, 08:00 reading").
+observations. A note such as "clear sky, calm winds, warm" is far
+better than no record. Note the source of any online weather data
+(e.g., "NWS Ontario station, 08:00 reading").
 :::
 
 ### Beaufort Wind Scale (Quick Reference)
@@ -154,59 +182,49 @@ Ontario station, 08:00 reading").
 | 5        | Fresh breeze    | 8.0--10.7   | Small trees sway                |
 | 6        | Strong breeze   | 10.8--13.8  | Large branches in motion        |
 
+[@wmo_guide2018]
+
 ### Deploying Portable Data Loggers
 
-1. Select a deployment location that is representative of the site
-   conditions and will not be disturbed by people, animals, or
-   flooding.
-2. Mount temperature and humidity loggers inside a radiation shield at
-   a height of 1.5 m above ground level. Secure the shield to a
-   tripod, post, or tree using cable ties.
-3. Mount rain gauges on a level surface with no overhead obstructions
-   (tree canopy, buildings). The gauge orifice should be
-   approximately 1 m above ground.
-4. Program the logger using the HOBOconnect app or HOBOware software:
-   - Set the logging interval (typically 5 or 15 minutes for weather
-     variables).
-   - Set the start time (delayed start or immediate).
-   - Confirm that the clock is synchronized to the correct time zone
-     (Pacific Time).
-5. Record the following in the field notebook:
-   - Logger serial number
-   - Deployment location (GPS coordinates per
-     [SOP-F006](SOP-F006-gps-site-navigation.qmd))
-   - Date and time of deployment
-   - Logging interval
-   - Sensor height above ground
-6. Take a photograph of the deployed logger with surrounding context
-   visible.
+1. Select a deployment location representative of site conditions and
+   unlikely to be disturbed by people, animals, or flooding.
+2. Mount temperature and humidity loggers inside a radiation shield
+   at 1.5 m above ground per WMO screen height standards
+   [@wmo_guide2018]. Secure to a tripod, post, or tree.
+3. Mount rain gauges on a level surface with no overhead obstructions.
+   The gauge orifice should be approximately 1 m above ground.
+4. Program the logger using the HOBOconnect app or HOBOware software
+   per [SOP-F204](SOP-F204-hobo-weather-station.qmd) [@onset_hoboware]:
+   - Logging interval: typically 5 or 15 minutes
+   - Start mode: delayed start
+   - Time zone: Pacific Time
+5. Record in the field notebook: logger serial number, GPS coordinates,
+   deployment date and time, logging interval, sensor height.
+6. Photograph the deployed logger with surrounding context.
 
 ### Retrieving Data from Loggers
 
 1. Connect to the logger via Bluetooth (HOBOconnect) or USB cable
-   (HOBOware).
-2. Download the data and save the raw file using the naming convention:
+   [@onset_hoboware].
+2. Download the data and save using the naming convention:
    `YYYY-MM-DD_SiteID_LoggerSN_weather.csv`
-3. Do not clear the logger memory until you have verified the
-   downloaded file opens correctly and contains the expected date
-   range.
-4. If the logger is being left in the field, check the battery level
-   and confirm the logging interval is still correct.
-5. Upload the raw data file to the project GitHub repository under
+3. Do not clear the logger memory until you have verified the file
+   contains the expected date range.
+4. Upload the raw data file to the project GitHub repository under
    `data/weather/` within 48 hours.
 
 ### Using Online Weather Data
 
-When on-site instruments are not available, supplement field
-observations with data from nearby weather stations. Preferred sources
-for Southern California:
+When on-site instruments are unavailable, supplement field observations
+with data from nearby weather stations. Preferred sources for
+Southern California:
 
-| Source                            | URL                                      |
-|:----------------------------------|:-----------------------------------------|
-| NWS (National Weather Service)    | <https://www.weather.gov>                |
-| MesoWest / SynopticData          | <https://synopticdata.com/mesowest>      |
-| CIMIS (California Irrigation Management Information System) | <https://cimis.water.ca.gov> |
-| Weather Underground (personal stations) | <https://www.wunderground.com>     |
+| Source                | URL                                        |
+|:----------------------|:-------------------------------------------|
+| NWS                   | <https://www.weather.gov>                  |
+| MesoWest / SynopticData | <https://synopticdata.com/mesowest>      |
+| CIMIS                 | <https://cimis.water.ca.gov>               |
+| Weather Underground   | <https://www.wunderground.com>             |
 
 Record the station name, distance from field site, and retrieval date
 in the field notebook and data file metadata.
@@ -216,10 +234,11 @@ in the field notebook and data file metadata.
 
 - Cross-check manually recorded air temperature against the nearest
   reliable weather station (NWS or CIMIS). Discrepancies greater than
-  3 C at similar elevation and time should be investigated.
+  3 °C at similar elevation and time should be investigated
+  [@wmo_guide2018].
 - Inspect data loggers for drift by deploying two loggers side by side
   for at least 24 hours once per year. Temperature readings should
-  agree within 0.5 C; humidity within 5%.
+  agree within 0.5 °C; humidity within 5%.
 - Check rain gauge calibration at least once per year by pouring a
   known volume of water through the gauge and comparing the logged
   total to the expected value.
@@ -230,12 +249,12 @@ in the field notebook and data file metadata.
 
 ## References
 
-- Onset Computer Corporation. *HOBO MX Series Data Logger User
-  Manual*. <https://www.onsetcomp.com>
-- National Weather Service. *Observing Handbook No. 1: Marine Surface
-  Weather Observations*. (Beaufort scale reference.)
-- WMO (World Meteorological Organization). (2018). *Guide to
-  Meteorological Instruments and Methods of Observation* (WMO-No. 8).
+- @wmo_guide2018
+- @onset_hobou23
+- @onset_hoboware
+
+::: {#refs}
+:::
 
 
 ## Related SOPs
@@ -245,9 +264,9 @@ in the field notebook and data file metadata.
 | [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Lightning and heat safety         |
 | [F003](SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | Weather recorded in notebook |
 | [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation  | Logger deployment coordinates |
-| [F501](SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring | Dedicated temperature sensor SOP |
-| [F502](SOP-F502-air-quality-portable-sensors.qmd) | Air Quality Monitoring | Related atmospheric measurements |
-| [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub      | Data file version control |
+| [F204](SOP-F204-hobo-weather-station.qmd) | HOBO Weather Station Deployment | Detailed logger procedures |
+| [F501](SOP-F501-air-temperature-sensors.qmd) | Air Temperature Monitoring | Dense sensor network SOP |
+| [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub | Data file version control       |
 
 
 ## Training Record

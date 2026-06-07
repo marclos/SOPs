@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F43: Stormwater Sampling
-# =============================================================================
 title: "Stormwater Sampling"
 sop-number: "SOP-F302"
 author:
@@ -9,13 +6,18 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2025-05-17"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; converted plain-text references
+              to BibTeX; added inline citations"
 ---
 
 ## Purpose
@@ -28,7 +30,7 @@ stormwater quality is essential for assessing nonpoint source pollution,
 evaluating the effectiveness of best management practices (BMPs), and
 supporting compliance with National Pollutant Discharge Elimination
 System (NPDES) Municipal Separate Storm Sewer System (MS4) permit
-requirements.
+requirements [@swrcb_storm_guidance; @apha2012].
 
 The procedures described here are consistent with the California State
 Water Resources Control Board's Surface Water Ambient Monitoring
@@ -47,8 +49,7 @@ permits.
   [SOP-F300 Surface Water Sampling](SOP-F300-surface-water-sampling.qmd));
   automated composite sampling with programmed autosamplers (requires a
   separate instrument-specific SOP); industrial facility compliance
-  sampling governed by site-specific Stormwater Pollution Prevention
-  Plans (SWPPPs)
+  sampling governed by site-specific SWPPPs
 - **Location:** All EA Program stormwater monitoring sites in the
   greater Los Angeles basin and Inland Empire watersheds
 
@@ -63,6 +64,51 @@ permits.
 | New Students      | Complete training before participating in storm sampling |
 
 
+## Definitions
+
+- **Antecedent dry period:** The number of consecutive dry days before
+  a storm event; typically a minimum of 72 hours is required for a
+  storm to qualify as an independent event that will produce a
+  representative first flush; shorter antecedent periods may indicate
+  ongoing, non-independent runoff [@swrcb_storm_guidance].
+- **BMP (best management practice):** A structural or operational
+  practice designed to reduce the volume or concentration of pollutants
+  in stormwater runoff; includes detention basins, bioswales, permeable
+  pavement, inlet filters, and street sweeping.
+- **Event mean concentration (EMC):** The flow-weighted average
+  concentration of an analyte across the entire storm event; calculated
+  as total analyte load divided by total event runoff volume; the
+  standard metric for characterizing stormwater quality and comparing
+  across sites and storms [@usepa_bmp2002].
+- **First flush:** The initial pulse of stormwater runoff, which
+  typically carries a disproportionately high load of accumulated
+  pollutants relative to later portions of the storm; occurs most
+  prominently in highly impervious urban catchments.
+- **Flow-weighted composite sample:** A sample assembled by combining
+  aliquots that are proportional to instantaneous flow rate at each
+  collection interval; produces a sample whose concentration
+  approximates the event mean concentration [@swrcb_storm_guidance].
+- **MS4 (Municipal Separate Storm Sewer System):** A conveyance system
+  owned and operated by a municipality that is designed to collect and
+  convey stormwater separately from sanitary sewage; regulated under
+  NPDES permits.
+- **NPDES (National Pollutant Discharge Elimination System):** The
+  federal permit program under the Clean Water Act that regulates
+  point-source discharges of pollutants, including stormwater from
+  MS4s, construction sites, and industrial facilities.
+- **Outfall:** A pipe, channel, or other structure through which
+  stormwater is discharged to a receiving water body; a standard
+  sampling location for MS4 compliance monitoring.
+- **SWPPP (Stormwater Pollution Prevention Plan):** A site-specific
+  plan required for construction sites and certain industrial
+  facilities under NPDES permits; documents BMPs, monitoring
+  requirements, and inspection schedules.
+- **Time-composite sample:** A sample assembled by combining equal
+  aliquots collected at fixed time intervals throughout the storm
+  event; simpler than flow-weighted compositing but does not account
+  for flow variability.
+
+
 ## Safety and Hazards
 
 ::: {.callout-warning}
@@ -73,35 +119,12 @@ permits.
   warning. Never enter a storm drain, culvert, or engineered channel
   during active flow.
 - **Slippery surfaces:** Wet concrete, asphalt, and channel banks are
-  extremely slippery. Wear non-slip footwear.
-- **Traffic:** Many outfalls are located near roadways. Wear high-
-  visibility clothing and use traffic cones.
-- **Electrical:** Lightning is a hazard during thunderstorms. Suspend
-  sampling and seek shelter if lightning is observed or thunder is
-  heard.
-- **Biological/Chemical:** Urban runoff may contain pathogens, trash,
-  petroleum products, and other contaminants. Avoid skin contact and
-  ingestion.
-- **Reduced visibility:** Storm sampling frequently occurs at night or
-  in low-visibility conditions. Carry headlamps and flashlights.
-:::
-
-### Required PPE
-
-- [ ] Waterproof rain gear (jacket and pants)
-- [ ] Non-slip waterproof boots or wading boots
-- [ ] Nitrile gloves (double-glove recommended)
-- [ ] High-visibility vest or jacket
-- [ ] Headlamp and backup flashlight
-- [ ] Personal flotation device (PFD) if sampling near deep or swift
-      channels
-
-### Safety Rules
-
-- **Never sample alone.** A minimum of two people must be present.
-- **Never enter a storm drain or culvert** during active flow.
-- **Never wade into a channel** if water is above knee height or
-  velocity makes footing uncertain.
+  extremely slippery.
+- **Electrical hazard:** Avoid sampling near downed power lines during
+  storms.
+- **Traffic:** Storm sampling often occurs at night or in low
+  visibility. Wear high-visibility vests and use traffic cones. Park
+  away from traffic lanes.
 - **Establish an escape route** before approaching any sampling
   location.
 - **Monitor upstream conditions.** If water is rising, retreat
@@ -109,6 +132,7 @@ permits.
 - If lightning is observed, cease sampling and move to a vehicle or
   enclosed structure. Wait 30 minutes after the last observed
   lightning before resuming.
+:::
 
 ### Emergency Procedures
 
@@ -124,16 +148,16 @@ have swift-water rescue training and equipment.
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
-| Pre-labeled sample bottles            | Provided by analytical lab; type and preservative per analyte (see Section 8) |
-| Polypropylene grab-sample bottles (1 L) | For general chemistry and nutrients    |
-| Sterile 100 mL Colilert bottles       | With sodium thiosulfate for bacteria; see [SOP-L305](../lab_sops/SOP-L305-colilert-quanti-tray.qmd) |
+| Pre-labeled sample bottles            | Type and preservative per analyte (see §9) |
+| Polypropylene grab-sample bottles (1 L) | For general chemistry and nutrients   |
+| Sterile 100 mL Colilert bottles       | With sodium thiosulfate for bacteria     |
 | Extension pole with bottle clamp      | For sampling from bridges, banks, or above outfalls |
 | Stainless steel or HDPE bucket        | For flow-weighted composites             |
 | Graduated cylinder or measuring cup   | For volumetric aliquots into composites  |
 | Deionized water                       | For equipment blanks and rinsing         |
-| Syringe and 0.45 um filters           | For dissolved analyte samples            |
+| Syringe and 0.45 µm filters           | For dissolved analyte samples            |
 
-### Field Documentation
+### Field Documentation and Transport
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
@@ -141,235 +165,161 @@ have swift-water rescue training and equipment.
 | Chain of custody (COC) forms          | Required for lab submission              |
 | Camera (waterproof)                   | Photo-document site conditions           |
 | Rain gauge (manual or tipping bucket) | For recording on-site precipitation      |
-
-### Transport and Storage
-
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| Coolers with ice                      | Maintain samples at 4 C during transport |
+| Coolers with ice                      | Maintain samples at 4 °C during transport |
 | Custody seals                         | For sealing coolers before shipment      |
-| Ziploc bags                           | For protecting field sheets and labels   |
 
 
 ## Storm Event Criteria
 
 ### Qualifying Storm Events
 
-A qualifying storm event for stormwater sampling must meet all of the
-following criteria unless the project sampling plan specifies
-otherwise:
+A qualifying storm event must meet all of the following criteria
+unless the project sampling plan specifies otherwise
+[@swrcb_storm_guidance]:
 
 - **Antecedent dry period:** At least 72 hours (3 days) of dry weather
-  (no measurable precipitation) preceding the storm
+  preceding the storm
 - **Minimum rainfall:** At least 2.5 mm (0.1 inches) of total
   precipitation predicted or observed
 - **Duration:** Sufficient to produce runoff at the sampling location
 
 ### Storm Tracking and Mobilization
 
-1. Begin monitoring weather forecasts 3--5 days in advance using the
-   National Weather Service (weather.gov) and local radar
-2. When a qualifying event is forecast, alert the sampling crew and
-   confirm availability
-3. Pre-stage equipment and coolers at least 12 hours before the
-   predicted onset of rain
-4. Deploy to sampling locations when precipitation begins or when
-   runoff is observed at the outfall
-5. Record the date and time that rainfall began (from weather station
-   data or field observation)
+1. Monitor the 3--7 day National Weather Service (NWS) forecast and
+   local radar (e.g., Weather.gov, NWS Doppler) during the October--
+   March wet season.
+2. When a qualifying storm is forecast, notify the team at least
+   24 hours in advance if possible.
+3. Pre-position coolers, ice, and sampling supplies in vehicles.
+   Confirm all sample bottles are correct and labeled.
+4. Confirm sampling site access (locked gates, private property) before
+   departure.
 
 
-## Procedure
+## Sample Collection Procedures
 
-### First-Flush Grab Sampling
+### Sampling Time
 
-The first flush is the initial period of stormwater discharge, which
-typically carries the highest pollutant concentrations. For most
-NPDES and research applications, first-flush samples should be
-collected within the first one to two hours of discharge.
+Attempt to collect at least three samples per event when possible
+[@swrcb_storm_guidance; @apha2012]:
 
-1. Arrive at the sampling location before or shortly after the onset
-   of runoff
-2. Record the time, weather conditions (rainfall intensity, wind,
-   temperature), and visual observations (color, turbidity, odor,
-   floating debris, oil sheen) on the field data sheet
-3. Put on clean nitrile gloves. Do not touch your face, hair, or any
-   non-sampling surfaces.
-4. If sampling from an outfall pipe or channel bank, attach the sample
-   bottle to the extension pole
-5. Collect the grab sample by submerging the bottle directly in the
-   flowing runoff, mouth facing upstream (or into the flow), at
-   approximately mid-depth. Avoid disturbing sediment at the bottom.
-6. Fill the bottle to the appropriate level for the analyte. Leave
-   headspace for samples that require mixing but not for volatile
-   analytes.
-7. Cap immediately. Wipe the exterior with a clean paper towel.
-8. Label the bottle with: site ID, date, time, sample type (grab),
-   sampler initials
-9. Place immediately in a cooler with ice
-10. If bacteria samples are being collected, collect them first to
-    minimize holding time. Fill sterile Colilert bottles to the 100 mL
-    line per [SOP-L305](../lab_sops/SOP-L305-colilert-quanti-tray.qmd).
+1. **First flush:** As early as practical after runoff reaches the
+   sampling point; ideally within 30 minutes of runoff initiation
+2. **Mid-storm:** Approximately at peak flow
+3. **Recession:** During the falling limb, at least 2 hours after
+   peak flow
 
-::: {.callout-important}
-### First-Flush Timing
+Record the time, rainfall amount (if a gauge is present), and an
+estimate of flow conditions (trickle, moderate, high) at each
+sampling time.
 
-To qualify as a first-flush sample under most California general
-permits, the sample must be collected during the first two hours of
-discharge from a storm event that follows at least 72 hours of dry
-weather.
-:::
+### Outfall and Stormwater Channel Sampling
 
-### Time-Composite Sampling (Manual)
+1. Approach the outfall or channel sampling point from upstream or from
+   above. Never stand downstream of an active outfall.
+2. Using the extension pole, position the bottle mouth facing
+   upstream at mid-depth (or as close to mid-depth as safely possible).
+3. Fill to the appropriate volume for the analytes being collected.
+4. Cap immediately, label, and place in the cooler with ice.
 
-Time-composite samples characterize the event-mean concentration
-(EMC) of pollutants over the duration of a storm. Composites are
-assembled from individual grab aliquots collected at regular time
-intervals.
-
-1. Determine the composite interval based on the expected storm
-   duration. For a 4-hour storm, collect aliquots every 15--30
-   minutes.
-2. At each interval, collect a 200--500 mL grab aliquot using a
-   clean polypropylene bottle or HDPE bucket
-3. Measure and record the volume of each aliquot
-4. Pour each aliquot into a single, pre-cleaned composite container
-   (typically a 4 L HDPE bottle). Keep the composite container on ice
-   between aliquots.
-5. After the final aliquot, mix the composite thoroughly and
-   distribute into the appropriate sample bottles for each analyte
-6. Preserve, label, and store as described in Section 8
-
-### Flow-Weighted Composite Sampling (Manual)
-
-Flow-weighted composites provide a more accurate estimate of EMC than
-time composites because the volume of each aliquot is proportional to
-the flow rate at the time of collection.
-
-1. Estimate or measure discharge at each sampling interval using a
-   bucket-and-stopwatch method, staff gauge, or flow meter
-2. Calculate the aliquot volume for each interval as:
-
-$$
-V_i = V_{\text{total}} \times \frac{Q_i}{\sum Q_i}
-$$
-
-where $V_i$ is the aliquot volume, $Q_i$ is the flow rate at
-interval $i$, and $V_{\text{total}}$ is the target composite volume
-
-3. Collect and combine aliquots into the composite container as in
-   Section 7.2
-4. Record flow estimates and aliquot volumes on the field data sheet
-
-### Sheet-Flow Sampling
-
-For diffuse overland flow (e.g., from parking lots, lawns, or
-agricultural fields) where no defined outfall exists:
+### Sheet Flow Sampling
 
 1. Identify a low point or convergence zone where sheet flow
-   concentrates
+   concentrates.
 2. Place a clean stainless steel or HDPE tray or shallow pan at ground
-   level to intercept the flow
+   level to intercept the flow.
 3. Transfer collected water to sample bottles using a clean syringe or
-   by pouring directly
-4. Record the contributing area and surface type (impervious,
-   pervious, mixed)
+   by pouring directly.
+4. Record the contributing area and surface type (impervious, pervious,
+   mixed).
+
+### Time-Composite Sampling
+
+1. At each time interval (e.g., every 30 minutes), collect a grab
+   sample per §6.1 or §6.2.
+2. Measure a fixed aliquot volume (e.g., 50--100 mL) using a graduated
+   cylinder.
+3. Add the aliquot to the composite bottle. Mix gently.
+4. Record the time, flow estimate, and aliquot volume in the field
+   notebook.
+5. At the end of the event, transfer the composite to appropriately
+   preserved bottles for each analyte.
 
 
 ## Sample Preservation and Holding Times
 
 Follow [SOP-F300 Surface Water Sampling](SOP-F300-surface-water-sampling.qmd)
-Section 9 for general preservation and handling procedures. The table
-below lists common stormwater analytes:
+§9 for general preservation [@apha2012]. Common stormwater analytes:
 
 | Analyte              | Container          | Preservative           | Holding Time    |
 |:---------------------|:-------------------|:-----------------------|:----------------|
 | pH                   | Poly, 250 mL       | None; analyze in field | 15 minutes      |
-| Conductivity         | Poly, 250 mL       | Refrigerate 4 C        | 28 days         |
-| TSS / SSC            | Poly, 1 L          | Refrigerate 4 C        | 7 days          |
-| Turbidity            | Poly, 250 mL       | Refrigerate 4 C        | 48 hours        |
-| Nitrate + nitrite    | Poly, 250 mL       | H~2~SO~4~ to pH < 2; 4 C | 28 days      |
-| Ammonia              | Poly, 250 mL       | H~2~SO~4~ to pH < 2; 4 C | 28 days      |
-| Total phosphorus     | Poly, 250 mL       | H~2~SO~4~ to pH < 2; 4 C | 28 days      |
-| Ortho-phosphate      | Poly, 250 mL       | Filter 0.45 um; 4 C   | 48 hours        |
-| Total metals         | Poly, 500 mL       | HNO~3~ to pH < 2; 4 C | 6 months        |
-| Dissolved metals     | Poly, 500 mL       | Filter 0.45 um; HNO~3~ to pH < 2; 4 C | 6 months |
-| Total coliforms / *E. coli* | Sterile, 100 mL | Na~2~S~2~O~3~ (if chlorinated); 4 C | 6 hours |
-| Oil and grease       | Glass, 1 L         | HCl to pH < 2; 4 C    | 28 days         |
-
-::: {.callout-note}
-Confirm specific container types, preservatives, and holding times
-with your analytical laboratory before each sampling event, as
-requirements vary by method.
-:::
+| Conductivity         | Poly, 250 mL       | Refrigerate 4 °C       | 28 days         |
+| TSS / SSC            | Poly, 1 L          | Refrigerate 4 °C       | 7 days          |
+| Turbidity            | Poly, 250 mL       | Refrigerate 4 °C       | 48 hours        |
+| Nitrate + nitrite    | Poly, 250 mL       | H~2~SO~4~ to pH < 2; 4 °C | 28 days   |
+| Ammonia              | Poly, 250 mL       | H~2~SO~4~ to pH < 2; 4 °C | 28 days   |
+| Total phosphorus     | Poly, 250 mL       | H~2~SO~4~ to pH < 2; 4 °C | 28 days   |
+| Ortho-phosphate      | Poly, 250 mL       | Filter 0.45 µm; 4 °C  | 48 hours        |
+| Total metals         | Poly, 500 mL       | HNO~3~ to pH < 2; 4 °C | 6 months       |
+| Dissolved metals     | Poly, 500 mL       | Filter 0.45 µm; HNO~3~ to pH < 2; 4 °C | 6 months |
+| Total coliforms / *E. coli* | Sterile, 100 mL | Na~2~S~2~O~3~; 4 °C | 6 hours    |
+| Oil and grease       | Glass, 1 L         | HCl to pH < 2; 4 °C   | 28 days         |
 
 
 ## Quality Control
 
-### Field Blanks
-
-At least one field blank per sampling event: fill a sample bottle with
-deionized water at the field site, preserve and handle identically to
-field samples, and submit to the laboratory.
-
-### Field Duplicates
-
-Collect one field duplicate per 10 samples (or at least one per
-event). Duplicates are collected at the same time and location as the
-primary sample.
-
-### Equipment Blanks
-
-If non-dedicated sampling equipment is used (e.g., shared extension
-poles, buckets), rinse the equipment with deionized water and collect
-the rinse as an equipment blank.
-
-### Documentation
-
-- Complete the chain of custody form before samples leave the field
-- Record all deviations from this SOP in the field notebook
-- Photograph site conditions at each sampling location
+- **Field blank:** At least one per event -- fill a sample bottle with
+  deionized water at the site and handle identically to field samples
+  [@apha2012].
+- **Field duplicates:** Collect one per 10 samples (or at least one
+  per event).
+- **Equipment blanks:** If non-dedicated equipment is used, collect a
+  deionized water rinse blank.
+- **Documentation:** Complete the COC form before samples leave the
+  field; photograph site conditions at each sampling location.
 
 
 ## Data Management
 
 1. Enter field data (times, conditions, flow estimates, sample IDs)
-   into the project database within 48 hours
+   into the project database within 48 hours.
 2. When laboratory results are received, merge with field data and
    apply QC flags per
-   [SOP-L802 Quality Control](../lab_sops/SOP-L802-quality-control.qmd)
-3. Archive original field data sheets (scan if paper)
+   [SOP-L802 Quality Control](../lab_sops/SOP-L802-quality-control.qmd).
+3. Archive original field data sheets (scan if paper).
 4. Version-control all analysis scripts per
-   [SOP-L801 RStudio and GitHub](../lab_sops/SOP-L801-rstudio-github.qmd)
+   [SOP-L801 RStudio and GitHub](../lab_sops/SOP-L801-rstudio-github.qmd).
 
 
 ## References
 
-- California State Water Resources Control Board. Storm Water Sampling
-  Guidance Document for Compliance with California Construction and
-  Industrial General Permits. Available at:
-  <https://www.waterboards.ca.gov/water_issues/programs/stormwater/docs/draft_cnst_sample_guidance.pdf>
-- California State Water Resources Control Board. SWAMP Monitoring
-  Monday: Stormwater Monitoring (2022). Available at:
-  <https://www.waterboards.ca.gov/water_issues/programs/swamp/>
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
-  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
-  Washington. 1360 pp.
-- U.S. EPA. (2002). *Urban Stormwater BMP Performance Monitoring*.
-  EPA-821-B-02-001.
+- @swrcb_storm_guidance
+- @swamp2017
+- @apha2012
+- @usepa_bmp2002
 
 ::: {#refs}
 :::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection and preservation|
+| [F008](SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling and COC | Chain of custody          |
+| [L802](../lab_sops/SOP-L802-quality-control.qmd) | Quality Control and QA | QC flags and data review   |
 
 
 ## Training Record
 
 Before collecting stormwater samples independently, personnel must:
 
-1. Read this SOP, [SOP-F001 Field Safety](SOP-F001-field-safety.qmd),
-   and [SOP-F300 Surface Water Sampling](SOP-F300-surface-water-sampling.qmd)
-   in full
-2. Review the safety rules in Section 4.2 with the field lead
+1. Read this SOP, [SOP-F001](SOP-F001-field-safety.qmd), and
+   [SOP-F300](SOP-F300-surface-water-sampling.qmd) in full
+2. Review the safety rules in §4 with the field lead
 3. Participate in at least one supervised storm sampling event,
    including mobilization, sample collection, preservation, and COC
    completion

@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F304: Stream Physical Habitat Assessment
-# =============================================================================
 title: "Stream Physical Habitat Assessment -- SWAMP Protocol"
 sop-number: "SOP-F304"
 author:
@@ -9,13 +6,19 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2025-05-17"
     author: "Marc Los Huertos"
-    changes: "Initial release; adapted from SWAMP Bioassessment SOP 004 (Ode et al. 2016, updated 2025)"
+    changes: "Initial release; adapted from SWAMP Bioassessment SOP 004
+              (Ode et al. 2016, updated 2025)"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; converted plain-text references
+              to BibTeX; added inline citations"
 ---
 
 ## Purpose
@@ -23,26 +26,24 @@ revision-history:
 This SOP describes procedures for characterizing the physical habitat
 of wadeable streams using the quantitative transect-based protocol
 developed by the California State Water Resources Control Board's
-Surface Water Ambient Monitoring Program (SWAMP). Physical habitat
-data document the structural condition of streams -- channel
-dimensions, substrate composition, bank stability, riparian
-vegetation, instream cover, and human influence -- and are essential
-for interpreting bioassessment results and diagnosing the causes of
-biological impairment.
+Surface Water Ambient Monitoring Program (SWAMP). Physical habitat data
+document the structural condition of streams -- channel dimensions,
+substrate composition, bank stability, riparian vegetation, instream
+cover, and human influence -- and are essential for interpreting
+bioassessment results and diagnosing the causes of biological
+impairment [@ode2016; @barbour1999].
 
 The protocol produces data compatible with the California Index of
 Physical-habitat Integrity (IPI), the California Stream Condition
 Index (CSCI), and the Algal Stream Condition Index (ASCI), enabling
-direct comparison with statewide reference data maintained by SWAMP
-and the Southern California Coastal Water Research Project (SCCWRP).
+direct comparison with statewide reference data [@rehn2017; @mazor2016].
 
 
 ## Scope
 
 - **Applies to:** Wadeable perennial and intermittent streams and
-  rivers where personnel can safely wade to make measurements
-  (generally depths less than approximately 1 m and velocities less
-  than approximately 1.2 m/s at the time of sampling)
+  rivers where personnel can safely wade (generally depths less than
+  approximately 1 m and velocities less than approximately 1.2 m/s)
 - **Does not apply to:** Non-wadeable rivers requiring boat-based
   protocols; estuarine or tidal reaches; depressional wetlands (use
   CRAM instead); lake or reservoir shorelines
@@ -61,25 +62,93 @@ and the Southern California Coastal Water Research Project (SCCWRP).
 | New Students      | Complete training before participating in field crews   |
 
 
+## Definitions
+
+- **b-axis (intermediate axis):** The intermediate dimension of a
+  sediment particle (not the longest or shortest axis); the standard
+  measurement used to classify particle size in pebble counts; measured
+  with a metric ruler to the nearest mm [@ode2016].
+- **Bankfull channel:** The stage at which water just begins to
+  overflow the channel banks into the floodplain; the reference
+  condition for channel geometry measurements in SWAMP; typically
+  evidenced by a change in bank slope, a break in vegetation, or the
+  top of the point bar [@ode2016; @peck2006].
+- **Cobble embeddedness:** The percentage of the surface area of
+  gravel, cobble, and boulder particles that is surrounded and buried
+  by fine sediment (sand, silt, clay); an indicator of fine sediment
+  loading and hyporheic connectivity [@ode2016].
+- **CPOM (coarse particulate organic matter):** Organic material
+  (leaves, needles, twigs, bark) with a largest dimension between 1 mm
+  and 10 cm; recorded at substrate measurement points as an indicator
+  of allochthonous organic input to the stream.
+- **D16, D50, D84:** Percentile statistics of the particle-size
+  distribution from a pebble count; the particle size at which 16%,
+  50%, or 84% of particles are smaller; used to characterize substrate
+  texture; D50 is the median particle diameter.
+- **Embeddedness:** See cobble embeddedness.
+- **IPI (Index of Physical-habitat Integrity):** The California
+  statewide index of stream physical condition calculated from SWAMP
+  physical habitat data; scores from 0 (most disturbed) to 1 (least
+  disturbed); used alongside the CSCI for reach-level condition
+  assessment [@rehn2017].
+- **Inter-transect:** A transect located halfway between two main
+  transects; used for substrate, embeddedness, and organic matter
+  measurements but not for cross-section geometry; see Appendix B for
+  inter-transect locations [@ode2016].
+- **Main transect:** One of 11 equally spaced transects (A through K)
+  across the full sampling reach; the primary sampling unit for all
+  SWAMP physical habitat modules including cross-section geometry,
+  bankfull identification, substrate, canopy cover, bank stability,
+  human influence, and riparian vegetation.
+- **OHW (ordinary high-water mark):** The line on the bank formed by
+  the action of water in its ordinary course; used as an alternative
+  bankfull indicator where clear geomorphic evidence is absent.
+- **Pebble count:** A randomized survey of substrate particle sizes
+  at systematically distributed points along transects; each particle
+  is measured at the toe of the measurer's boot or wading rod tip to
+  ensure objectivity; produces the particle-size distribution used to
+  calculate IPI substrate metrics [@ode2016; @peck2006].
+- **Reach:** A representative stream segment typically 150 m in length
+  (or 37.5× the mean wetted width for wider streams), within which
+  all SWAMP physical habitat measurements are collected; selected to
+  encompass representative channel features and minimize confounding
+  influences of point sources or major confluences [@ode2016].
+- **Riparian zone:** The terrestrial area adjacent to the stream
+  channel that is influenced by periodic flooding and that contributes
+  organic material, shade, and bank stability to the aquatic system;
+  assessed in SWAMP modules I (riparian vegetation) and G (bank
+  stability).
+- **Sinuosity:** The ratio of the actual stream channel length to
+  the straight-line valley length over the reach; values greater than
+  1.5 indicate a meandering channel; a component of the SWAMP reach
+  characterization.
+- **Thalweg:** The line of deepest flow along the channel axis;
+  followed during the longitudinal profile module to characterize
+  channel bed elevation changes.
+- **Wetted width:** The horizontal distance across the stream from
+  water's edge to water's edge at a transect; used to determine reach
+  length (37.5× mean wetted width) and to scale substrate sampling
+  interval.
+
+
 ## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
 
 - **Drowning and swift water:** Do not wade in flows deeper than
-  approximately waist height or where footing is unstable. Always face
-  upstream. Use a wading rod for support.
+  approximately waist height or where footing is unstable. Always
+  face upstream. Use a wading rod for support.
 - **Slippery substrates:** Algae-covered cobble and bedrock are
   extremely slippery. Wear felt-soled or studded wading boots.
-- **Biological:** Waterborne pathogens, poison oak along riparian
-  corridors, ticks, snakes, and stinging insects. Check for ticks
-  after every field day.
-- **Heat:** Southern California field sites can exceed 40 C during
+- **Biological:** Waterborne pathogens, poison oak, ticks, snakes,
+  and stinging insects. Check for ticks after every field day.
+- **Heat:** Southern California field sites can exceed 40 °C during
   summer. Carry adequate water and take shade breaks.
 - **Sensitive species:** California red-legged frog, arroyo toad,
-  least Bell's vireo, southwestern willow flycatcher, and steelhead
-  may be present at some sites. Consult permit requirements before
-  sampling (Section 4.2).
+  southwestern willow flycatcher, and steelhead may be present at
+  some sites. Consult permit requirements before sampling (see
+  [SOP-F004](SOP-F004-site-access-permits.qmd)).
 :::
 
 ### Required PPE
@@ -87,33 +156,23 @@ and the Southern California Coastal Water Research Project (SCCWRP).
 - [ ] Chest or hip waders (neoprene or breathable)
 - [ ] Wading boots with felt or studded soles
 - [ ] Sun protection (hat, sunscreen, long sleeves)
-- [ ] Closed-toed shoes
-- [ ] Nitrile gloves (when handling samples or in contact with
-      potentially contaminated water)
+- [ ] Nitrile gloves (when handling samples)
 
 ### Permits
 
-Sampling in or near habitat for listed species may require a
-Scientific Collecting Permit (CDFW) and/or a Section 10/Section 7
-consultation (USFWS). The PI must confirm permit status before
-fieldwork at any new site. At some sites, a permitted biologist
-escort may be required.
+Sampling in or near habitat for listed species may require a CDFW
+Scientific Collecting Permit and/or a USFWS Section 10 permit. The PI
+must confirm permit status before fieldwork at any new site.
 
 ### Invasive Species Prevention
 
-Decontaminate all equipment (waders, nets, measuring tapes, wading
-rods) between sites to prevent transfer of invasive species and
-pathogens (e.g., *Didymosphenia geminata*, New Zealand mudsnails).
-Inspect, scrub, and dry all gear, or treat with a dilute bleach
-solution or 60 C hot water.
+Decontaminate all wading gear between sites per
+[SOP-F007](SOP-F007-field-decontamination.qmd).
 
 ### Emergency Procedures
 
-A minimum of two people must be present for any in-stream work. If a
-team member loses footing, release equipment and float feet-first
-downstream to a recovery point. Refer to
-[SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
-emergen0cy procedures.
+A minimum of two people must be present for any in-stream work. Refer
+to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
 ## Equipment and Materials
@@ -122,27 +181,16 @@ emergen0cy procedures.
 |:--------------------------------------|:-----------------------------------------|
 | Fiberglass measuring tape (50 m)      | For establishing transect tag lines      |
 | Surveyor's rod or stadia rod          | For measuring depth at cross-sections    |
-| Metric ruler (30 cm, mm gradations)   | For measuring individual substrate particles (pebble count) |
+| Metric ruler (30 cm, mm gradations)   | For pebble count (b-axis measurement)    |
 | Convex spherical densiometer          | For canopy cover measurements            |
 | Clinometer (Suunto or equivalent)     | For channel slope                        |
-| Autolevel with stadia rod (optional)  | For precise slope measurement            |
 | Compass                               | For bearing and sinuosity                |
 | GPS unit or smartphone                | For recording coordinates at each transect |
 | Wading rod                            | For support and depth reference          |
-| SWAMP Physical Habitat Field Data Sheets | Printed on waterproof paper (Rite in the Rain); see Appendix A |
-| Clipboard and mechanical pencils      | Waterproof pencils preferred             |
-| Camera (waterproof or in dry bag)     | For photo-documenting each transect      |
+| SWAMP Physical Habitat Field Data Sheets | See Appendix A; print on waterproof paper |
+| Clipboard and mechanical pencils      |                                          |
+| Camera (waterproof or in dry bag)     | Photo-document each transect             |
 | Flagging tape                         | For marking transect locations           |
-| Tape stakes or rebar pins (2)         | For anchoring tag line ends              |
-| Calculator                            | For checking field measurements          |
-
-### Optional Equipment
-
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| Current meter and top-setting wading rod | If discharge is collected concurrently; see [SOP-F301](SOP-F301-stream-discharge-measurement.qmd) |
-| Eureka Manta2 multiprobe              | If water chemistry is collected concurrently; see [SOP-F200](SOP-F200-eureka-manta2.qmd) |
-| Water sampling bottles and preservatives | If water quality samples are collected; see [SOP-F300](SOP-F300-surface-water-sampling.qmd) |
 
 
 ## Estimated Time
@@ -152,7 +200,7 @@ emergen0cy procedures.
 | Reach delineation and transect setup  | 20--30 minutes                           |
 | Full physical habitat assessment (Modules C--M) | 1.5--2.5 hours                |
 | Slope and sinuosity (Module L)        | 20--40 minutes                           |
-| Photographs (Module M)               | 10--15 minutes                           |
+| Photographs (Module M)                | 10--15 minutes                           |
 | Total                                 | 2--3.5 hours per reach                   |
 
 
@@ -161,398 +209,235 @@ emergen0cy procedures.
 ### Reach Delineation
 
 The sampling reach defines the stream segment over which all
-measurements are collected. Reach length depends on stream size:
+measurements are collected [@ode2016].
 
-| Average Wetted Width | Reach Length | Number of Main Transects |
-|:---------------------|:-------------|:-------------------------|
-| 10 m or less         | 150 m        | 11 (A--K)                |
-| Greater than 10 m    | 250 m        | 11 (A--K)                |
-
-1. Identify the downstream boundary of the reach. This is Transect A
-   (station 0 m).
-2. Measure upstream to establish the reach length (150 m or 250 m).
-   The upstream boundary is Transect K.
-3. Space the 11 main transects (A through K) equally along the reach.
-   For a 150 m reach, transects are 15 m apart; for a 250 m reach,
-   they are 25 m apart.
-4. Mark 10 inter-transects (AB, BC, CD, ... JK) at the midpoint
-   between each pair of main transects.
-5. Flag each transect with flagging tape on both banks.
-6. Record GPS coordinates at Transect A and Transect K.
+1. Select a representative reach of appropriate length (150 m for
+   streams with mean wetted width ≤ 10 m; 250 m for wider streams).
+2. Walk the reach before beginning measurements to identify the
+   thalweg, bankfull indicators, and any safety hazards.
+3. Mark the downstream boundary (Transect A) and record GPS
+   coordinates.
+4. Stretch the measuring tape upstream along the thalweg (not the
+   bank) to the upstream boundary (Transect K).
+5. Set transect locations at equal intervals (e.g., every 15 m for a
+   150 m reach), placing chaining pins or flagging at each transect.
 
 ::: {.callout-tip}
-### Working Direction
-Always work in an upstream direction (A to K) to minimize disturbance
-of the substrate and water column at transects you have not yet
-measured.
+Select reaches that are representative of the stream segment. Avoid
+reaches with immediate upstream or downstream disturbances (bridges,
+dam tailwaters, outfalls) unless those features are the sampling
+target [@ode2016].
 :::
 
-### Notable Field Conditions
+### Module A: Reach-Level Information
 
-Before beginning measurements, record the following on the field
-form:
+Record at the start of each visit:
 
+- GPS coordinates at Transects A (downstream) and K (upstream)
 - Date, time, crew members
-- Recent precipitation (last 48 hours)
-- Evidence of recent scour (displaced cobble, fresh sediment deposits,
-  debris lines, lack of periphyton on substrates)
-- Whether the reach lies within an engineered channel (concrete-lined,
-  rip-rap, gabions)
-- General flow conditions (baseflow, elevated, or declining)
+- General weather and flow conditions (normal, high, low, dry)
+- Any unusual conditions (algal blooms, trash accumulation, visible
+  pollutants, recent disturbance)
 
-If recent scour is suspected, mark "Yes" on the field form so the
-data can be flagged in the database.
+### Module B: Bankfull Identification Calibration
 
+Before beginning measurements, the full crew must agree on bankfull
+indicators [@ode2016]:
 
-### Module C: Wetted Width and Bankfull Dimensions
+1. Identify at least two independent lines of evidence for bankfull
+   (e.g., break in bank slope, top of point bar, change in vegetation,
+   flood debris line).
+2. Walk the first 2--3 transects together and calibrate agreement on
+   bankfull height.
+3. Differences in bankfull identification between crew members are the
+   largest source of inter-observer variability in SWAMP physical
+   habitat data.
 
-At each main transect (A--K) and each inter-transect (AB--JK):
+### Module C: Cross-Section Geometry (Main Transects)
 
-1. Stretch the measuring tape perpendicular to flow across the
-   wetted channel
-2. Measure and record **wetted width** to the nearest 0.1 m (for
-   widths up to 3 m) or to the nearest 5% of the width (for
-   widths greater than 3 m)
-3. At main transects only, also measure **bankfull width** and
-   **bankfull height** (the vertical distance from the water
-   surface to the bankfull stage indicator)
-4. Bankfull indicators include the top of point bars, changes in
-   vegetation from aquatic to terrestrial, changes in bank slope,
-   stain lines, and the lower boundary of lichens on rocks
+At each main transect (A through K) [@ode2016; @peck2006]:
 
-### Module D: Substrate Size, Depth, and CPOM
+1. Stretch the measuring tape across the channel from left to right
+   bank at the bankfull boundary (looking downstream).
+2. Record the total bankfull width to the nearest 0.1 m.
+3. Record the wetted width to the nearest 0.1 m.
+4. At 5 equally spaced points across the wetted channel, measure water
+   depth to the nearest cm using the surveyor's rod.
+5. Record the thalweg depth (deepest point).
+6. Estimate the dominant bank angle (undercut, vertical, steep,
+   gradual, flat) for left and right banks.
 
-At each transect (main and inter), measure substrate at five equally
-spaced points across the wetted channel (at the 1/5, 2/5, thalweg,
-3/5, and 4/5 positions from right bank to left bank):
+### Module D: Substrate (Pebble Count)
 
-1. At each point, measure **water depth** to the nearest cm using
-   the surveyor's rod or wading rod
+At each of the 21 transects (main and inter-transects), at 5 equally
+spaced points across the wetted channel [@ode2016]:
+
+1. Measure **water depth** to the nearest cm.
 2. Pick up the particle at the toe of your boot (or wading rod tip)
-   and measure its intermediate axis (b-axis) to the nearest mm
-   using the metric ruler. Record the measurement on the field form.
-3. If the particle cannot be picked up (bedrock, hardpan), record
-   the appropriate size class code.
-4. Record the presence or absence of **coarse particulate organic
-   matter (CPOM)** at each point. CPOM includes leaves, needles,
-   twigs, bark, and other organic material greater than 1 mm but no
-   larger than 10 cm.
+   and measure the **b-axis** to the nearest mm. Record on the field
+   form.
+3. If the particle cannot be picked up (bedrock, hardpan), record the
+   appropriate size class code (see Appendix C).
+4. Record presence or absence of **CPOM** at each point.
 
-Substrate size classes for reference:
-
-| Code | Class         | Size Range (mm)     |
-|:-----|:--------------|:--------------------|
-| RS   | Bedrock       | Smooth, continuous   |
-| RR   | Bedrock       | Rough, irregular     |
-| HP   | Hardpan       | Hardite /ite soil  |
-| BL   | Boulder       | > 250                |
-| CB   | Cobble        | 64--250              |
-| GC   | Coarse gravel | 16--64               |
-| GF   | Fine gravel   | 2--16                |
-| SA   | Sand          | 0.06--2              |
-| FN   | Fines         | < 0.06 (silt/clay)  |
-| WD   | Wood          | --                   |
-| OT   | Other         | Concrete, metal, etc.|
-
-This produces 105 substrate measurements per reach (5 points at 21
-transects), providing robust characterization of the streambed.
+This produces 105 substrate measurements per reach.
 
 ### Module E: Cobble Embeddedness
 
-At each of the five substrate measurement points (main transects
-only), if the particle is gravel, cobble, or boulder:
+At each substrate measurement point on main transects, if the particle
+is gravel, cobble, or boulder:
 
-1. Estimate the percentage of the particle surface that is
-   surrounded (embedded) by fine sediment (sand, silt, clay)
-2. Record to the nearest 5% or 10%
-3. Sand and finer substrates are defined as 100% embedded by
-   convention
-4. Bedrock is not assessed for embeddedness
+1. Estimate the **percentage of the particle surface buried** by fine
+   sediment to the nearest 5% or 10%.
+2. Record sand and finer substrate as 100% embedded by convention.
+3. Do not assess embeddedness for bedrock.
 
 ### Module F: Algal and Macrophyte Cover
 
 At each of the five substrate measurement points (main and
 inter-transects):
 
-1. Record presence or absence of **macroalgae** (filamentous green
-   algae, *Cladophora*, etc.) on the substrate particle
-2. Record presence or absence of **macrophytes** (rooted vascular
-   aquatic plants). Mosses are explicitly excluded from macrophytes.
-3. At main transects, estimate and record percent cover of
-   macroalgae and macrophytes within a 1 m radius of the point
+1. Record presence/absence of **macroalgae** on the substrate particle.
+2. Record presence/absence of **macrophytes** (rooted vascular aquatic
+   plants; mosses excluded).
+3. At main transects, estimate percent cover within a 1 m radius.
 
 ### Module G: Bank Stability
 
-At each main transect, assess bank stability for both left and right
-banks along the imaginary line from the wetted margin to the bankfull
-boundary:
+At each main transect, for both left and right banks [@ode2016]:
 
-1. Estimate the **percent of the bank covered by erosion** (exposed
-   bare soil, slumping, undercutting). Record to the nearest 5%.
+1. Estimate the **percent of bank covered by erosion** (exposed bare
+   soil, slumping, undercutting) to the nearest 5%.
 2. Estimate the **angle of the bank** (undercut, vertical, steep,
-   gradual, flat)
+   gradual, flat).
 
 ### Module H: Human Influence
 
-At each main transect, looking 5 m upstream and 5 m downstream from
-the transect and extending 10 m shoreward from each bank, record the
-proximity of the following human influences for both left and right
-banks:
-
-| Category                      | Record as           |
-|:------------------------------|:--------------------|
-| Walls, rip-rap, dams          | 0 = absent, P = present > 10 m, C = present within 10 m, B = present on bank |
-| Buildings                     | 0, P, C, or B       |
-| Pavement or cleared lot       | 0, P, C, or B       |
-| Road or railroad              | 0, P, C, or B       |
-| Pipes (inlet/outlet)          | 0, P, C, or B       |
-| Landfill or trash             | 0, P, C, or B       |
-| Park or lawn                  | 0, P, C, or B       |
-| Row crops                     | 0, P, C, or B       |
-| Pasture, range, or hay field  | 0, P, C, or B       |
-| Logging operations            | 0, P, C, or B       |
-| Mining activity               | 0, P, C, or B       |
+At each main transect, record the proximity of human influences within
+a 5 m upstream/downstream window and 10 m from each bank. Record each
+feature as 0 (absent), P (present > 10 m), C (within 10 m), or B (on
+bank). Features include: walls/rip-rap/dams, buildings, pavement,
+roads/railroads, pipes, landfill/trash, park/lawn, row crops,
+pasture/hay, logging, and mining.
 
 ### Module I: Riparian Vegetation
 
-At each main transect, looking 5 m upstream and 5 m downstream from
-the transect and extending 10 m shoreward from each bank, estimate
-the areal cover of riparian vegetation in three layers for both left
-and right banks:
+At each main transect, for both left and right banks, estimate areal
+cover (0--4 scale: 0 absent, 1 < 10%, 2 = 10--40%, 3 = 40--75%,
+4 > 75%) in three layers:
 
-| Layer              | Description                                    |
-|:-------------------|:-----------------------------------------------|
-| Canopy (> 5 m)     | Trees and tall shrubs forming the upper canopy |
-| Understory (0.5--5 m) | Shrubs, saplings, and tall herbaceous plants |
-| Ground cover (< 0.5 m) | Grasses, forbs, mosses, leaf litter          |
+- Canopy (> 5 m)
+- Understory (0.5--5 m)
+- Ground cover (< 0.5 m)
 
-For each layer, estimate cover as: 0 = absent, 1 = sparse
-(< 10%), 2 = moderate (10--40%), 3 = heavy (40--75%),
-4 = very heavy (> 75%). Also record the dominant vegetation type
-(deciduous, coniferous, mixed, herbaceous, or absent).
+Record the dominant vegetation type for each layer.
 
-### Module J: Instream Habitat Complexity
+### Module J: Instream Cover
 
-At each main transect, estimate the areal cover of the following
-instream habitat features within the wetted channel, looking 5 m
-upstream and 5 m downstream:
+At each main transect, estimate percent cover of instream features
+within one channel width upstream and downstream of the transect line:
 
-| Feature                       | Record cover class (0--4) |
-|:------------------------------|:--------------------------|
-| Large woody debris (> 10 cm diameter, > 1 m length) | 0--4 |
-| Overhanging vegetation        | 0--4                      |
-| Undercut banks                | 0--4                      |
-| Boulders (> 25 cm)            | 0--4                      |
-| Submergent macrophytes        | 0--4                      |
-| Emergent macrophytes          | 0--4                      |
-| Other (specify)               | 0--4                      |
+| Feature | Definition |
+|:--------|:-----------|
+| Boulder (> 25 cm) | Visual estimate of surface coverage |
+| Cobble (6.4--25 cm) | Visual estimate |
+| Wood (snag, rootwad) | Visual estimate |
+| Overhanging vegetation | Bank overhang within 0.5 m of water surface |
+| Undercut bank | Bank extending over water |
+| Macroalgae | Attached filamentous or mat-forming algae |
+| Macrophytes | Rooted vascular aquatic plants |
 
-Cover classes: 0 = absent, 1 = sparse (< 10%), 2 = moderate
-(10--40%), 3 = heavy (40--75%), 4 = very heavy (> 75%).
+### Module L: Channel Slope and Sinuosity
 
-Estimates should include only features within the wetted margin of
-the stream.
+Measure channel slope using a clinometer at a minimum of three
+measurement intervals along the reach (between Transects A--C, E--G,
+and I--K) or more frequently if slope is variable.
 
-### Module K: Stream Shading (Densiometer Readings)
-
-At each main transect, measure canopy cover with the convex spherical
-densiometer:
-
-1. Stand at the center of the stream facing each of the four cardinal
-   directions (upstream, downstream, left bank, right bank)
-2. Hold the densiometer level at elbow height and count the number
-   of grid intersections covered by reflected canopy
-3. Record each of the four readings on the field form
-4. For streams wider than 10 m, also take one reading at each bank
-   (left and right), for a total of six readings per transect
-
-### Module L: Slope and Sinuosity
-
-**Slope (clinometer method):**
-
-1. Two crew members stand at adjacent main transects (e.g., A and B)
-2. Each person holds the clinometer (or autolevel stadia rod) at the
-   same height above the water surface
-3. Sight to the other person's eye level and record the angle
-4. Repeat for all adjacent transect pairs from A to K
-5. Calculate overall reach slope from the cumulative elevation change
-   divided by the reach length
-
-**Sinuosity:**
-
-1. At each main transect, record a compass bearing looking upstream
-   to the next transect
-2. Calculate sinuosity as: reach length divided by the straight-line
-   distance from Transect A to Transect K (measured from GPS
-   coordinates)
+Measure sinuosity by comparing total thalweg length (measured with the
+tape along the thalweg) to the straight-line valley distance (measured
+with a compass and tape) [@ode2016].
 
 ### Module M: Photographs
 
-At a minimum, take the following photographs:
+At each main transect, take the following photographs:
 
-1. Upstream view from Transect A
-2. Downstream view from Transect K
-3. Representative view at each main transect (upstream or
-   cross-channel)
-4. Close-up of any unusual features (engineered structures, large
-   woody debris jams, erosion, invasive species, pollution sources)
+1. Looking upstream along the thalweg
+2. Looking downstream along the thalweg
+3. Left bank at the transect line
+4. Right bank at the transect line
 
-Use a consistent naming convention:
-`YYYY-MM-DD_SiteID_TransectID_Direction.jpg`
+At Transects A and K, also photograph the downstream and upstream reach
+boundaries. All photographs should include the transect label (flagging
+or field data sheet) in the frame for orientation.
 
-### Module N: Flow Habitat Types (Inter-Transect)
-
-Between each pair of main transects, visually classify the dominant
-flow habitat type:
-
-| Code | Habitat Type  | Description                                |
-|:-----|:--------------|:-------------------------------------------|
-| GL   | Glide         | Slow, smooth, laminar flow; moderate depth |
-| PO   | Pool          | Deep, negligible current                   |
-| RI   | Riffle        | Shallow, fast, turbulent, broken surface   |
-| RU   | Run           | Moderate depth, moderate current, unbroken surface |
-| CA   | Cascade       | Steep, fast flow over boulders/bedrock     |
-| RA   | Rapids        | Fast, deep, turbulent                      |
-| FA   | Falls         | Vertical or near-vertical drop             |
-| DR   | Dry           | No surface water                           |
-
-Record the dominant flow habitat type and estimate its percentage of
-the inter-transect distance.
-
-### Module O: Stream Discharge (Optional)
-
-If discharge is measured concurrently, follow
-[SOP-F301 Stream Discharge Measurement](SOP-F301-stream-discharge-measurement.qmd).
-Select a cross-section near the downstream end of the reach (at or
-near Transect A) that meets discharge measurement criteria. If a
-current meter is not available, the neutrally buoyant object (NBO)
-method may be used as a rough estimate (see SWAMP SOP Section 8.1.2).
-
-### Module P: Post-Sampling Qualitative Observations
-
-After completing all transect measurements, walk the full reach and
-record qualitative observations on the field form:
-
-- Channel constraint (confined, moderately confined, unconfined)
-- Dominant channel type (riffle-pool, step-pool, plane-bed, dune-
-  ripple, cascade, braided)
-- Evidence of channelization or channel modification
-- Dominant riparian land use (natural, agriculture, urban/suburban,
-  mixed)
-- Aquatic and riparian invasive species observed (e.g., *Arundo
-  donax*, *Tamarix* spp., New Zealand mudsnails)
-- Wildlife observations relevant to site characterization
-
-
-## Data Management
-
-### Field Data Entry
-
-- Complete all field data sheets before leaving the site
-- Have a second crew member review the sheets for completeness and
-  legibility
-- Scan or photograph field sheets at the end of each field day as a
-  backup
-
-### Electronic Data Entry
-
-1. Enter data into the project database or spreadsheet within 48
-   hours of collection
-2. Use the SWAMP-compatible data format if data will be submitted to
-   the California Environmental Data Exchange Network (CEDEN)
-3. All data entry scripts should be version-controlled per
-   [SOP-L801 RStudio and GitHub](../lab_sops/SOP-L801-rstudio-github.qmd)
-
-### Calculating the Index of Physical-habitat Integrity (IPI)
-
-The IPI is a multimetric index that integrates physical habitat
-metrics into a single score of habitat condition. IPI scores range
-from 0 (highly degraded) to 1 (reference condition). Calculation
-requires the full set of SWAMP physical habitat modules (C through
-M) and is performed in R using the SWAMP bioassessment tools. See
-@rehn2017 for methodology and interpretation guidance.
+Record photo file names in the field data sheet.
 
 
 ## Quality Control
 
-### Measurement Quality Objectives
+### Inter-Observer Variability
 
-| Measurement             | Precision Target                         |
-|:------------------------|:-----------------------------------------|
-| Wetted width            | Replicate measurements within 5%         |
-| Substrate particle size | Replicate measurements within one size class |
-| Depth                   | Replicate measurements within 2 cm       |
-| Densiometer readings    | Replicate within 5 grid intersections    |
-| Embeddedness            | Replicate within 10%                     |
+For substrate measurements, the precision targets are [@ode2016]:
 
-### Duplicate Sampling
+- Median substrate size class (D50): agreement within one Wentworth
+  size class between independent observers
+- Embeddedness: agreement within 15 percentage points
 
-For SWAMP-comparable data, duplicate physical habitat assessments
-are required at 10% of study sites. A second crew independently
-measures the same reach within the same day or (ideally) within 48
-hours.
+### Repeat Measurements
+
+For periodic quality assurance, conduct a repeat measurement by an
+independent crew within 48 hours. Both crews must achieve agreement
+within the precision targets above.
 
 ### Common Errors to Avoid
 
 - Measuring transects out of sequence (always work upstream)
-- Inconsistent bankfull identification between crew members
-  (calibrate as a group at the first transect)
+- Inconsistent bankfull identification between crew members (calibrate
+  at the first transect)
 - Forgetting to record GPS coordinates at Transects A and K
-- Omitting inter-transect measurements (they are required for full
-  IPI calculation)
-- Failing to record the measurement units (mm vs. size class code)
-  for substrate
+- Omitting inter-transect measurements (required for full IPI
+  calculation)
+- Failing to record the measurement units (mm vs. size class code) for
+  substrate
 
 
 ## References
 
-- Ode, P.R., A.E. Fetscher, and L.B. Busse. 2016 (updated 2025).
-  Standard Operating Procedures for the Collection of Field Data for
-  Bioassessments of California Wadeable Streams: Benthic
-  Macroinvertebrates, Algae, and Physical Habitat. California State
-  Water Resources Control Board, SWAMP Bioassessment SOP 004.
-  Available at:
-  <https://www.waterboards.ca.gov/water_issues/programs/swamp/bioassessment/sops.html>
-- Rehn, A.C., R.D. Mazor, and P.R. Ode. 2017. An index to measure
-  the quality of physical habitat in California wadeable streams.
-  SWAMP Technical Memorandum SWAMP-TM-2018-0005. Available at:
-  <https://www.waterboards.ca.gov/water_issues/programs/swamp/bioassessment/docs/physical_habitat_index_technical_memo.pdf>
-- Peck, D.V., A.T. Herlihy, B.H. Hill, R.M. Hughes, P.R. Kaufmann,
-  D.J. Klemm, J.M. Lazorchak, F.H. McCormick, S.A. Peterson,
-  P.L. Ringold, T. Magee, and M. Cappaert. 2006. Environmental
-  Monitoring and Assessment Program -- Surface Waters: Western Pilot
-  Study Field Operations Manual for Wadeable Streams. U.S. EPA,
-  EPA/620/R-06/003.
-- Barbour, M.T., J. Gerritsen, B.D. Snyder, and J.B. Stribling.
-  1999. Rapid Bioassessment Protocols for Use in Streams and Wadeable
-  Rivers: Periphyton, Benthic Macroinvertebrates, and Fish. 2nd ed.
-  U.S. EPA, EPA 841-B-99-002. Available at:
-  <https://www.epa.gov/cwa-methods/rapid-bioassessment>
-- Ode, P.R., A.C. Rehn, R.D. Mazor, K.C. Schiff, E.D. Stein,
-  J.T. May, L.R. Brown, D.B. Herbst, D. Gillett, K. Lunde, and
-  C.P. Hawkins. 2016. Evaluating the adequacy of a reference-site
-  pool for ecological assessments in environmentally complex regions.
-  *Freshwater Science* 35(1): 237--248.
+- @ode2016
+- @rehn2017
+- @peck2006
+- @barbour1999
+- @mazor2016
 
 ::: {#refs}
 :::
 
 
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F004](SOP-F004-site-access-permits.qmd) | Site Access and Permits | Permits for listed species         |
+| [F007](SOP-F007-field-decontamination.qmd) | Field Decontamination | Between-site decontamination      |
+| [F301](SOP-F301-stream-discharge-measurement.qmd) | Stream Discharge | Concurrent discharge measurement   |
+| [F606](SOP-F606-canopy-cover.qmd)      | Canopy Cover              | Densiometer technique              |
+| [F610](SOP-F610-macroinvertebrate-sampling.qmd) | BMI Sampling   | Co-collected bioassessment data    |
+
+
 ## Training Record
 
-Before conducting physical habitat assessments independently,
-personnel must:
+Before conducting physical habitat assessments independently, personnel
+must:
 
-1. Read this SOP, [SOP-F001 Field Safety](SOP-F001-field-safety.qmd),
-   and the SWAMP Supplemental Guidance Document in full
-2. Review the SWAMP physical habitat field data sheets and understand
-   all fields
+1. Read this SOP, [SOP-F001](SOP-F001-field-safety.qmd), and the SWAMP
+   Supplemental Guidance Document [@ode2016] in full
+2. Review the SWAMP physical habitat field data sheets (Appendix A)
 3. Participate in a calibration exercise for bankfull identification
    and substrate measurement with an experienced crew leader
-4. Complete at least one full reach assessment under the supervision
-   of a trained operator, with substrate and embeddedness estimates
-   that agree with the trainer within the precision targets in
-   Section 9.1
+4. Complete at least one full reach assessment under supervision, with
+   substrate and embeddedness estimates agreeing with the trainer
+   within the precision targets in §9
 5. Demonstrate proper densiometer technique and slope measurement
 6. Be signed off by the PI or field lead
 
@@ -560,15 +445,12 @@ personnel must:
 ## Appendix A: Field Data Sheets {.appendix}
 
 SWAMP Bioassessment Field Data Sheets (including physical habitat
-forms) are available by request from
-[SWAMP\@waterboards.ca.gov](mailto:SWAMP@waterboards.ca.gov) or can
-be downloaded from:
+forms) are available from
+[SWAMP\@waterboards.ca.gov](mailto:SWAMP@waterboards.ca.gov) or at:
 <https://www.waterboards.ca.gov/water_issues/programs/swamp/bioassessment/sops.html>
 
-Print on waterproof paper (e.g., Rite in the Rain) for field use.
-
-The following forms are needed for a complete physical habitat
-assessment:
+Print on waterproof paper (Rite in the Rain) for field use. Forms
+needed:
 
 1. Station Information and Notable Field Conditions
 2. Channel/Riparian Cross-Section and Thalweg Profile (one per
@@ -580,51 +462,35 @@ assessment:
 
 ## Appendix B: Quick Reference -- Transect Layout {.appendix}
 
-For a 150 m reach (average wetted width 10 m or less):
+For a 150 m reach (average wetted width ≤ 10 m):
 
-| Transect | Station (m) | Type          |
-|:---------|:------------|:--------------|
-| A        | 0           | Main          |
-| AB       | 7.5         | Inter         |
-| B        | 15          | Main          |
-| BC       | 22.5        | Inter         |
-| C        | 30          | Main          |
-| CD       | 37.5        | Inter         |
-| D        | 45          | Main          |
-| DE       | 52.5        | Inter         |
-| E        | 60          | Main          |
-| EF       | 67.5        | Inter         |
-| F        | 75          | Main          |
-| FG       | 82.5        | Inter         |
-| G        | 90          | Main          |
-| GH       | 97.5        | Inter         |
-| H        | 105         | Main          |
-| HI       | 112.5       | Inter         |
-| I        | 120         | Main          |
-| IJ       | 127.5       | Inter         |
-| J        | 135         | Main          |
-| JK       | 142.5       | Inter         |
-| K        | 150         | Main          |
+| Transect | Station (m) | Type  |
+|:---------|:------------|:------|
+| A        | 0           | Main  |
+| AB       | 7.5         | Inter |
+| B        | 15          | Main  |
+| BC       | 22.5        | Inter |
+| C        | 30          | Main  |
+| ... | ... | ... |
+| K        | 150         | Main  |
 
-For a 250 m reach (average wetted width greater than 10 m), multiply
-all station distances by 250/150 (transects are 25 m apart;
-inter-transects at 12.5 m intervals).
+For a 250 m reach, multiply all station distances by 250/150.
 
 
 ## Appendix C: Substrate Size Class Quick Reference {.appendix}
 
-| Code | Class          | Size Range (mm)         | Field ID                      |
-|:-----|:---------------|:------------------------|:------------------------------|
-| RS   | Bedrock smooth | Continuous              | Cannot be moved               |
-| RR   | Bedrock rough  | Continuous              | Cannot be moved; irregular surface |
-| HP   | Hardpan        | Continuous              | Compacted clay/ite layer     |
-| BL   | Boulder        | > 250                   | Cannot be lifted with one hand |
-| CB   | Cobble         | 64--250                 | Tennis ball to basketball     |
-| GC   | Coarse gravel  | 16--64                  | Marble to tennis ball         |
-| GF   | Fine gravel    | 2--16                   | Ladybug to marble             |
-| SA   | Sand           | 0.06--2                 | Gritty; individual grains visible |
-| FN   | Fines          | < 0.06                  | Smooth; no individual grains felt |
-| WD   | Wood           | --                      | Any size                      |
-| OT   | Other          | --                      | Concrete, metal, trash, etc.  |
+| Code | Class          | Size Range (mm)    |
+|:-----|:---------------|:-------------------|
+| RS   | Bedrock smooth | Continuous         |
+| RR   | Bedrock rough  | Continuous         |
+| HP   | Hardpan        | Continuous         |
+| BL   | Boulder        | > 250              |
+| CB   | Cobble         | 64--250            |
+| GC   | Coarse gravel  | 16--64             |
+| GF   | Fine gravel    | 2--16              |
+| SA   | Sand           | 0.06--2            |
+| FN   | Fines          | < 0.06             |
+| WD   | Wood           | --                 |
+| OT   | Other          | --                 |
 
-Always measure the intermediate axis (b-axis) of the particle.
+Always measure the **b-axis** (intermediate axis) of the particle.

@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-L007: EA Program Equipment and Instrument Inventory
-# =============================================================================
 title: "EA Program Equipment and Instrument Inventory"
 sop-number: "SOP-L007"
 author:
@@ -10,7 +7,7 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "0.1"
@@ -20,7 +17,13 @@ revision-history:
   - version: "1.0"
     date: "2025-05-17"
     author: "Marc Los Huertos"
-    changes: "Converted to Quarto; consolidated analytical instruments into tables; added Related SOP column"
+    changes: "Converted to Quarto; consolidated analytical instruments
+              into tables; added Related SOP column"
+  - version: "1.1"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; added {#refs} div; replaced
+              plain-text 'Internal document' reference statement"
 ---
 
 ## Purpose
@@ -42,52 +45,85 @@ whenever equipment is acquired, moved, or decommissioned.
   other departments
 - **Maintained by:** Lab manager, with updates from all trained
   personnel
-  
-  
+
+
+## Definitions
+
+- **Asset tag:** A numbered label affixed to a piece of equipment to
+  uniquely identify it within the EA Program inventory; the number
+  should match the ID# field in this document.
+- **Decommissioned:** Status assigned to equipment that has been
+  permanently removed from service (broken beyond repair, surplused,
+  or disposed of); must be logged with the date and reason in the
+  inventory and reported to the lab manager.
+- **Equipment:** In this SOP, a durable item with a replacement value
+  above approximately $50 and an expected service life of more than
+  one year; includes vehicles, instruments, balances, power tools,
+  pumps, and major field gear.
+- **ID# (inventory number):** A unique alphanumeric code assigned to
+  each piece of equipment; the EA Program convention is
+  `EA-[CATEGORY]-[NNN]` (e.g., EA-FLD-001 for field equipment,
+  EA-LAB-001 for laboratory equipment, EA-INS-001 for analytical
+  instruments); items marked *TBD* need numbers assigned at the next
+  audit.
+- **Related SOP:** The primary operating procedure associated with a
+  piece of equipment; a dash (--) indicates no dedicated SOP exists yet.
+- **TBD (to be determined):** Placeholder in the ID# or Location
+  column indicating that the information needs to be confirmed during
+  the next physical audit.
+
+
+## Responsibilities
+
+| Role              | Responsibility                                          |
+|:------------------|:--------------------------------------------------------|
+| Lab Manager       | Maintain this document; conduct annual audits; assign ID numbers |
+| PI                | Approve major equipment purchases; authorize surplus or disposal |
+| All Lab Personnel | Report new acquisitions, moves, or damage to the lab manager promptly |
 
 
 ## How to Use This Inventory
 
 - Items marked *TBD* in the ID# column need to be assigned an
-  inventory number during the next audit
+  inventory number during the next audit.
 - Items marked *TBD* in the Location column need to be physically
-  located and recorded
+  located and recorded.
 - The Related SOP column links to the operating procedure for that
-  item; a dash indicates no dedicated SOP exists yet
+  item; a dash indicates no dedicated SOP exists yet.
 - Report discrepancies (missing items, wrong locations) to the lab
-  manager immediately
+  manager immediately.
 
 
 ## Vehicles
 
 | Item                          | ID#   | Qty | Location          | Related SOP |
 |:------------------------------|:------|:----|:------------------|:------------|
-| 2016 Ford Explorer #1        | *TBD* | 1   | Garage, EA Slot   | [F100](../field_sops/SOP-F100-vehicles.qmd) |
-| 2016 Ford Explorer #2        | *TBD* | 1   | Garage, EA Slot   | [F100](../field_sops/SOP-F100-vehicles.qmd) |
+| 2016 Ford Explorer #1         | *TBD* | 1   | Garage, EA Slot   | [F100](../field_sops/SOP-F100-vehicles.qmd) |
+| 2016 Ford Explorer #2         | *TBD* | 1   | Garage, EA Slot   | [F100](../field_sops/SOP-F100-vehicles.qmd) |
 
 
 ## Field Equipment
 
-| Item                                        | ID#   | Qty | Location  | Related SOP |
-|:--------------------------------------------|:------|:----|:----------|:------------|
-| Cooler #1                                   | *TBD* | 1   | SGM 132   | --          |
-| Cooler #2                                   | *TBD* | 1   | SGM 132   | --          |
-| TopCon AT-G4 Survey Scope w/ Tripod & Stadia | *TBD* | 3  | SGM 131   | --          |
-| Meter Tape (10 m)                           | *TBD* | 2   | SGM 131   | --          |
-| Meter Tape (25 m)                           | *TBD* | 1   | SGM 131   | --          |
-| Meter Tape (100 m)                          | *TBD* | 1   | SGM 131   | --          |
-| Infiltrometer                               | *TBD* | 3   | SGM 131   | --          |
-| VanDorn Bottle (Horizontal)                 | *TBD* | 1   | SGM 133   | [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) |
-| VanDorn Bottle (Vertical)                   | *TBD* | 1   | SGM 133   | [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) |
-| LiCor Underwater PAR Sensor                 | *TBD* | 1   | SGM 133   | --          |
-| Walkie Talkies                              | *TBD* | 3   | SGM 131   | --          |
-| Honda Field Generator                       | *TBD* | 1   | SGM 132   | [F101](../field_sops/SOP-F101-electrical-power-in-the-field.qmd) |
-| Ryobi Field Generator                       | *TBD* | 1   | SGM 132   | [F101](../field_sops/SOP-F101-electrical-power-in-the-field.qmd) |
-| Eureka Manta2 WQ Sonde                      | *TBD* | 2   | *TBD*     | [F200](../field_sops/SOP-F200-eureka-manta2.qmd) |
-| Pygmy Velocity Meter                        | *TBD* | 1   | *TBD*     | [F201](../field_sops/SOP-F201-pygmy-type-aa-velocity-meters.qmd) |
-| Type AA Velocity Meter                      | *TBD* | 1   | *TBD*     | [F201](../field_sops/SOP-F201-pygmy-type-aa-velocity-meters.qmd) |
-| Stop Watches                                | *TBD* | 10  | *TBD*     | --          |
-| Alkalinity Test Kit                         | *TBD* | 3   | *TBD*     | [L301](SOP-L301-alkalinity-titration.qmd) |
+| Item                                         | ID#   | Qty | Location  | Related SOP |
+|:---------------------------------------------|:------|:----|:----------|:------------|
+| Cooler #1                                    | *TBD* | 1   | SGM 132   | --          |
+| Cooler #2                                    | *TBD* | 1   | SGM 132   | --          |
+| TopCon AT-G4 Survey Scope w/ Tripod & Stadia | *TBD* | 3   | SGM 131   | --          |
+| Meter Tape (10 m)                            | *TBD* | 2   | SGM 131   | --          |
+| Meter Tape (25 m)                            | *TBD* | 1   | SGM 131   | --          |
+| Meter Tape (100 m)                           | *TBD* | 1   | SGM 131   | --          |
+| Infiltrometer                                | *TBD* | 3   | SGM 131   | --          |
+| VanDorn Bottle (Horizontal)                  | *TBD* | 1   | SGM 133   | [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) |
+| VanDorn Bottle (Vertical)                    | *TBD* | 1   | SGM 133   | [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) |
+| LiCor Underwater PAR Sensor                  | *TBD* | 1   | SGM 133   | --          |
+| Walkie Talkies                               | *TBD* | 3   | SGM 131   | --          |
+| Honda Field Generator                        | *TBD* | 1   | SGM 132   | [F101](../field_sops/SOP-F101-electrical-power-in-the-field.qmd) |
+| Ryobi Field Generator                        | *TBD* | 1   | SGM 132   | [F101](../field_sops/SOP-F101-electrical-power-in-the-field.qmd) |
+| Eureka Manta2 WQ Sonde                       | *TBD* | 2   | *TBD*     | [F200](../field_sops/SOP-F200-eureka-manta2.qmd) |
+| Pygmy Velocity Meter                         | *TBD* | 1   | *TBD*     | [F201](../field_sops/SOP-F201-pygmy-type-aa-velocity-meters.qmd) |
+| Type AA Velocity Meter                       | *TBD* | 1   | *TBD*     | [F201](../field_sops/SOP-F201-pygmy-type-aa-velocity-meters.qmd) |
+| Stop Watches                                 | *TBD* | 10  | *TBD*     | --          |
+| Alkalinity Test Kit                          | *TBD* | 3   | *TBD*     | [L301](SOP-L301-alkalinity-titration.qmd) |
 
 
 ## Remote Sensing and Drones
@@ -107,166 +143,86 @@ whenever equipment is acquired, moved, or decommissioned.
 | Raspberry Pi Zero+            | NA    | 16  | SGM *TBD* | --          |
 | Raspberry Pi 3+               | NA    | 2   | SGM *TBD* | --          |
 | Raspberry Pi 4+               | NA    | 2   | SGM *TBD* | --          |
-| PMS5004 PM Sensor             | NA    | 16  | SGM *TBD* | --          |
 
 
 ## Analytical Instruments
 
-| Item                                         | ID# / Serial         | Qty | Location  | Related SOP |
+| Item                                         | ID# / Serial          | Qty | Location  | Related SOP |
 |:---------------------------------------------|:----------------------|:----|:----------|:------------|
-| Shimadzu TOC-L Analyzer (with TNM-L and SSM-5000A) | *TBD*          | 1   | SGM 133   | [L204](SOP-L204-shimadzu-toc-l.qmd), [L407](SOP-L407-total-carbon.qmd) |
-| Agilent 8900 ICP-MS                          | *TBD*                 | 1   | *TBD*     | --          |
-| Delta V IRMS (Isotope Ratio Mass Spectrometer) | *TBD*              | 1   | *TBD*     | --          |
-| Turner Designs Fluorometer                   | *TBD*                 | 1   | *TBD*     | [L203](SOP-L203-trilogy-fluorometer.qmd) |
-| Hach DR3900 Benchtop Spectrophotometer       | *TBD*                 | 1   | SGM 133   | [L303](SOP-L303-hach-colorimetric.qmd) |
-| Hach DR900 Portable Colorimeter              | *TBD*                 | 3   | *TBD*     | [L303](SOP-L303-hach-colorimetric.qmd) |
-| Hach DRB 200 Digital Reactor Block           | *TBD*                 | 1   | SGM 134   | [L303](SOP-L303-hach-colorimetric.qmd) |
-| Hach Digital Reactor Block                   | *TBD*                 | 1   | SGM 133   | [L303](SOP-L303-hach-colorimetric.qmd) |
-| Fisher Scientific Accumet pH Meter           | *TBD*                 | 1   | *TBD*     | [L300](SOP-L300-pH-conductivity-bench.qmd) |
-| Echo Labs Revolve Microscope                 | *TBD*                 | 1   | SGM 133   | [L211](SOP-L211-revolve-microscope.qmd) |
-| Dissecting Scopes w/ lights                  | *TBD*                 | 7   | *TBD*     | --          |
-| Dissecting Scope w/ lights and camera        | *TBD*                 | 1   | *TBD*     | --          |
-| NanoDrop One Spectrophotometer               | *TBD*                 | 1   | SGM 133   | [L700](SOP-L700-dna-extraction.qmd) |
-| Qubit 4 Fluorometer                         | *TBD*                 | 1   | SGM 133   | [L700](SOP-L700-dna-extraction.qmd) |
-| Bio-Rad QX200 ddPCR System                  | *TBD*                 | 1   | *TBD*     | [L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) |
+| Thermo Scientific Delta V IRMS               | *TBD*                 | 1   | SGM 135   | [L208](SOP-L208-irms-general-instrument.qmd) |
+| Thermo Scientific Flash IRMS EA              | *TBD*                 | 1   | SGM 135   | [L475](SOP-L475-flash-ea-soil-combustion.qmd) |
+| Thermo Scientific GasBench II                | *TBD*                 | 1   | SGM 135   | [L415](SOP-L415-carbonate-gasbench-irms.qmd) |
+| PANalytical Axios XRF Spectrometer           | *TBD*                 | 1   | SGM 135   | [L205](SOP-L205-xrf-sample-prep-analysis.qmd) |
+| Shimadzu TOC-L w/ ASI-L Autosampler          | *TBD*                 | 1   | SGM 133   | [L204](SOP-L204-shimadzu-toc-l.qmd), [L407](SOP-L407-total-carbon.qmd) |
+| Shimadzu TNM-L TN Module                     | *TBD*                 | 1   | SGM 133   | [L204](SOP-L204-shimadzu-toc-l.qmd) |
+| Hach DR3900 Spectrophotometer                | *TBD*                 | 1   | SGM 133   | [L303](SOP-L303-hach-colorimetric.qmd) |
+| Hach DR900 Portable Colorimeter              | *TBD*                 | 1   | SGM 133   | [L303](SOP-L303-hach-colorimetric.qmd) |
+| Turner Designs Trilogy Fluorometer           | *TBD*                 | 1   | SGM 133   | [L203](SOP-L203-trilogy-fluorometer.qmd) |
+| Bio-Rad QX200 ddPCR System                   | *TBD*                 | 1   | *TBD*     | [L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) |
 | Picarro G2508 CRDS Analyzer                  | S/N 2143-JFAADS2048   | 1   | *TBD*     | [F504](../field_sops/SOP-F504-picarro-field-deployment.qmd) |
-| Eosense eosMX-P Multiplexer                 | *TBD*                 | 1   | *TBD*     | [F504](../field_sops/SOP-F504-picarro-field-deployment.qmd) |
+| Eosense eosMX-P Multiplexer                  | *TBD*                 | 1   | *TBD*     | [F504](../field_sops/SOP-F504-picarro-field-deployment.qmd) |
 
 
 ## Balances and Measurement
 
-| Item                                         | ID# / Serial   | Qty | Location  | Related SOP |
-|:---------------------------------------------|:----------------|:----|:----------|:------------|
+| Item                                          | ID# / Serial  | Qty | Location  | Related SOP |
+|:----------------------------------------------|:--------------|:----|:----------|:------------|
 | Mettler Toledo XPE205 Delta Range Microbalance | *TBD*         | 1   | *TBD*     | [L102](SOP-L102-using-balances.qmd), [L200](SOP-L200-analytical-balance-calibration.qmd) |
-| Mettler Toledo Balance                       | *TBD*           | 3   | *TBD*     | [L102](SOP-L102-using-balances.qmd) |
-| High Capacity Portable Scale (24 x 24 in)   | *TBD*           | 1   | *TBD*     | --          |
-| Digital Calipers                             | *TBD*           | 7   | *TBD*     | --          |
-| Hydrometer                                  | *TBD*           | 5   | *TBD*     | [L401](SOP-L401-texture-hydrometer.qmd) |
+| Mettler Toledo Balance                         | *TBD*         | 3   | *TBD*     | [L102](SOP-L102-using-balances.qmd) |
+| High Capacity Portable Scale (24 x 24 in)      | *TBD*         | 1   | *TBD*     | --          |
+| Digital Calipers                               | *TBD*         | 7   | *TBD*     | --          |
+| Hydrometer                                     | *TBD*         | 5   | *TBD*     | [L401](SOP-L401-texture-hydrometer.qmd) |
 
 
 ## Laboratory Equipment
 
-| Item                                         | ID# / Serial         | Qty | Location  | Related SOP |
-|:---------------------------------------------|:----------------------|:----|:----------|:------------|
-| MilliQ Elix Water Purification System        | *TBD*                 | 1   | SGM 134   | --          |
-| ESCO Laminar Flow Cabinet                    | *TBD*                 | 1   | SGM 134   | --          |
-| Drying Oven                                  | *TBD*                 | 1   | SGM 134   | [L105](SOP-L105-drying-ovens.qmd) |
-| Thermo Fisher Sorvall ST 8R Centrifuge       | *TBD*                 | 1   | SGM 133   | [L109](SOP-L109-sorvall-centrifuge.qmd) |
-| Thermo Fisher Legend Micro 21 Centrifuge     | SN41972616            | 1   | SGM 133   | --          |
-| Fisher Scientific accuSpin 8C Clinical Centrifuge | *TBD*           | 1   | SGM 133   | --          |
-| Thermo Scientific mySPIN 12 Micro Centrifuge | *TBD*                | 1   | SGM 133   | --          |
-| Thermo Fisher -80 C Freezer                  | *TBD*                 | 1   | SGM 133   | [L106](SOP-L106-refrigerators-freezers.qmd) |
-| Thermo Fisher -30 C Freezer                  | *TBD*                 | 1   | SGM 133   | [L106](SOP-L106-refrigerators-freezers.qmd) |
-| Thermo Fisher 4 C Double Wide Refrigerator   | *TBD*                 | 1   | SGM 134   | [L106](SOP-L106-refrigerators-freezers.qmd) |
-| Fisher Scientific Isotemp Tube               | SN GFBF60022010       | 1   | SGM 133   | --          |
-| Thermo Scientific Cimarec Hot Plate          | *TBD*                 | 4   | SGM 134   | --          |
-| Lab Armor Dry Bath                           | *TBD*                 | 1   | SGM 134   | --          |
-| Fisher Scientific Sonicator                  | *TBD*                 | 1   | SGM 134   | --          |
-| Fisher Scientific Maxidry Vacuum Pump        | *TBD*                 | 4   | SGM 134   | --          |
-| Hamilton Beach Commercial Mixer              | *TBD*                 | 1   | SGM 134   | --          |
-| Fisher Scientific Vortex Mixer               | *TBD*                 | 3   | SGM 134   | --          |
-| Vortex-Genie 2                               | *TBD*                 | 1   | SGM 133   | --          |
+| Item                                          | ID# / Serial         | Qty | Location  | Related SOP |
+|:----------------------------------------------|:---------------------|:----|:----------|:------------|
+| MilliQ Elix Water Purification System         | *TBD*                | 1   | SGM 134   | --          |
+| ESCO Laminar Flow Cabinet                     | *TBD*                | 1   | SGM 134   | [L113](SOP-L113-laminar-flow-cabinet.qmd) |
+| Drying Oven                                   | *TBD*                | 1   | SGM 134   | [L105](SOP-L105-drying-ovens.qmd) |
+| Thermo Fisher Sorvall ST 8R Centrifuge        | *TBD*                | 1   | SGM 133   | [L109](SOP-L109-sorvall-centrifuge.qmd) |
+| Thermo Fisher Legend Micro 21 Centrifuge      | SN41972616           | 1   | SGM 133   | --          |
+| Fisher Isotemp Muffle Furnace                 | *TBD*                | 1   | SGM 133   | [L111](SOP-L111-muffle-furnace.qmd) |
+| WTW OxiTop BOD System                        | *TBD*                | 8   | SGM 133   | [L306](SOP-L306-bod5.qmd) |
+| Echo Labs Revolve Microscope                  | *TBD*                | 1   | SGM 133   | [L211](SOP-L211-revolve-microscope.qmd) |
 
 
-## Computers
-
-| Item                          | ID#   | Qty | Location  | Primary Use |
-|:------------------------------|:------|:----|:----------|:------------|
-| Lab Computer #1               | *TBD* | 1   | SGM 133   | Instrument control (Shimadzu LabSolutions) |
-| Lab Computer #2               | *TBD* | 1   | SGM 133   | Instrument control / data analysis |
-| GIS Lab Computers             | *TBD* | 16  | *TBD*     | GIS analysis and remote sensing |
-
-
-## Sieves
-
-| Item                                                 | Qty | Location |
-|:-----------------------------------------------------|:----|:---------|
-| SS Test Sieve, 8 in (ASTM E11), No. 10 (2 mm)       | 3   | SGM 131  |
-| SS Test Sieve, 8 in (ASTM E11), No. 35 (500 um)     | 1   | SGM 131  |
-| SS Test Sieve, 8 in (ASTM E11), No. 60 (250 um)     | 1   | SGM 131  |
-| SS Test Sieve, 8 in (ASTM E11), No. 140 (106 um)    | 3   | SGM 131  |
-| SS Test Sieve, 8 in (ASTM E11), No. 200 (75 um)     | 7   | SGM 131  |
-| SS Test Sieve, 8 in (ASTM E11), No. 270 (53 um)     | 1   | SGM 131  |
-| SS Test Sieve, 8 in, Receiver w/ recessed ring       | 3   | SGM 131  |
-| SS Test Sieve, 8 in, Top                             | 3   | SGM 131  |
-| Brass Test Sieve, 8 in (ASTM E11), No. 230 (63 um)  | 1   | SGM 131  |
-| Brass Test Sieve, 8 in, Receiver                     | 1   | SGM 131  |
-| Aluminum(?) Soil Sieve, 7.75 in, No. 5 (4 mm)       | 1   | SGM 131  |
-| Aluminum(?) Soil Sieve, 7.75 in, No. 10 (2 mm)      | 1   | SGM 131  |
-| Aluminum(?) Soil Sieve, 7.75 in, No. 35 (500 um)    | 1   | SGM 131  |
-| Aluminum(?) Soil Sieve, 7.75 in, No. 60 (250 um)    | 1   | SGM 131  |
-| Aluminum(?) Soil Sieve, 7.75 in, No. 120 (125 um)   | 1   | SGM 131  |
-| Aluminum(?) Soil Sieve, 7.75 in, No. 230 (63 um)    | 1   | SGM 131  |
-| Aluminum(?) Soil Sieve, 7.75 in, Receiver            | 1   | SGM 131  |
-
-::: {.callout-note}
-The material of the 7.75-inch sieves (marked "Aluminum?" in the
-original inventory) needs to be confirmed during the next audit.
-:::
-
-
-## Glassware and Pipettes
-
-| Item                                     | Qty | Location  |
-|:-----------------------------------------|:----|:----------|
-| Mortars and Pestles                      | 8   | SGM 133   |
-| 1 L Soil Texture Cylinders              | 8   | SGM 133   |
-| Various Graduated Cylinders              | 5   | SGM 134   |
-| 1000 mL Erlenmeyer Flasks               | 10  | SGM 134   |
-| 250 mL Erlenmeyer Flasks                | 50  | SGM 134   |
-| 250 mL Side-Arm Erlenmeyer Flasks       | 6   | SGM 134   |
-| 400 mL Beakers                           | 30  | SGM 134   |
-| 250 mL Beakers                           | 30  | SGM 134   |
-| 100 mL Beakers                           | 30  | SGM 134   |
-| Soil Tins                                | 36  | SGM 134   |
-| 1000 uL Pipetteman                      | 1   | SGM 133   |
-| 250 uL Pipetteman                       | 1   | SGM 133   |
-| 100 uL Pipetteman                       | 1   | SGM 133   |
-| Millipore Vacuum/Filter Flasks           | 4   | SGM 134   |
-| Funnels                                  | 20  | SGM 134   |
-
-
-## Digital Media Resources
-
-| Item                          | ID#   | Qty | Location  |
-|:------------------------------|:------|:----|:----------|
-| Canon Camcorder w/ Tripod     | *TBD* | 4   | SGM 105   |
-| Stream Deck Mini              | *TBD* | 1   | SGM 106   |
-| Blackmagic ATEM Mini Pro      | *TBD* | 1   | SGM 106   |
-| Blackmagic HDR 12G Video      | *TBD* | 1   | SGM 106   |
-
-
-## Inventory Audit Procedures
-
-### Annual Audit
-
-At the start of each academic year (or during the summer), a student
-employee should:
+## Annual Audit Procedure
 
 1. Walk through every room listed in this inventory (SGM 105, 106,
    131, 132, 133, 134, 210) and physically verify the presence and
-   condition of each item
-2. Assign an inventory ID number to any item currently marked *TBD*
-3. Update the Location column if any item has been moved
-4. Note any items that are missing, damaged, or decommissioned
-5. Add any newly acquired equipment
+   condition of each item.
+2. Assign an inventory ID number to any item currently marked *TBD*.
+3. Update the Location column if any item has been moved.
+4. Note any items that are missing, damaged, or decommissioned.
+5. Add any newly acquired equipment.
 6. Commit the updated file to the GitHub repository with a descriptive
-   commit message
-
-### ID Numbering Convention
-
-*TBD -- define a standard numbering scheme (e.g.,
-EA-[CATEGORY]-[SEQUENTIAL], such as EA-FLD-001 for field equipment,
-EA-LAB-001 for lab equipment, EA-INS-001 for analytical instruments).*
-
-### Acknowledgements
-
-Student employees assisting with the inventory audit (planned for
-Summer 2020; update with actual completion date and names):
-
-- *TBD*
+   commit message.
 
 
 ## References
 
-- Internal document. No external references.
+This SOP is an internal administrative document. No peer-reviewed
+external references apply. For related guidance on laboratory
+inventory and chemical tracking, see
+[SOP-L005 Chemical Inventory](SOP-L005-chemical-inventory.qmd).
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L005](SOP-L005-chemical-inventory.qmd) | Chemical Inventory     | Companion inventory for reagents  |
+| [F002](../field_sops/SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | Uses this inventory for storage locations |
+| [L801](SOP-L801-rstudio-github.qmd)    | RStudio and GitHub        | Version control for this document |
+
+
+## Training Record
+
+All lab personnel should review this inventory document when joining
+the EA Program and whenever they are assigned responsibility for a new
+class of equipment. No formal sign-off is required for this SOP.

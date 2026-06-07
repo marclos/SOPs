@@ -7,7 +7,7 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.6"
+revision: "0.8"
 
 revision-history:
   - version: "0.6"
@@ -18,27 +18,30 @@ revision-history:
     date: "2025-01-15"
     author: "Marc Los Huertos"
     changes: "Converted to QMD format"
+  - version: "0.8"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Removed duplicate Definitions section; converted plain-text
+              references to BibTeX; added {#refs} div; added inline
+              citations throughout"
 ---
 
 ## Purpose
 
-This SOP describes the procedures for calibrating, operating, and maintaining the Eureka Manta2 Sub2 Multiprobe for water quality measurements including temperature, pH, depth, conductivity, and dissolved oxygen (mg/L and % saturation).
+This SOP describes the procedures for calibrating, operating, and
+maintaining the Eureka Manta2 Sub2 Multiprobe for water quality
+measurements including temperature, pH, depth, conductivity, and
+dissolved oxygen (mg/L and % saturation) [@eureka_manta2; @apha2012].
 
 
 ## Scope
 
-- **Applies to:** Water quality measurements in lakes, streams, rivers, and other surface water bodies
-- **Does not apply to:** Groundwater monitoring wells (requires different deployment procedures); laboratory bench-top water analysis
+- **Applies to:** Water quality measurements in lakes, streams,
+  rivers, and other surface water bodies
+- **Does not apply to:** Groundwater monitoring wells (requires
+  different deployment procedures); laboratory bench-top water
+  analysis
 - **Location:** All EA Program field water sampling sites
-
-
-## Definitions
-
-**Probe (Sonde):** The entire Manta2 apparatus that includes the five sensors.
-
-**Sensor:** One of the individual detectors on the probe, including temperature, pH, conductivity, dissolved oxygen, and the reference electrode.
-
-**SRF (Sensor Response Factor):** A calibration diagnostic value indicating how the sensor responded to the standard. Acceptable ranges are specific to each sensor (see calibration sections below).
 
 
 ## Responsibilities
@@ -46,64 +49,75 @@ This SOP describes the procedures for calibrating, operating, and maintaining th
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
 | Lab PI            | Approve protocol, ensure training compliance            |
-| Field Lead        | Verify calibration before deployment, coordinate logistics |
+| Field Lead        | Verify calibration before deployment, coordinate
+                      logistics                                            |
 | Trained Personnel | Calibrate, operate, and clean the probe per this SOP    |
 | New Students      | Complete training before independent use                |
 
 ### Required Training
 
-Researchers using this SOP should be trained on [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
+Researchers using this SOP should be trained on
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
+
 
 ## Definitions
 
 - **Amphibian 2:** The ruggedized handheld field computer (portable PC)
-  manufactured by Eureka that controls the Manta2 probe, displays real-
-  time readings, stores data snapshots, and connects to the probe via
-  the underwater cable.
+  manufactured by Eureka that controls the Manta2 probe, displays
+  real-time readings, stores data snapshots, and connects to the probe
+  via the underwater cable [@eureka_manta2].
 - **Barometric pressure:** Atmospheric pressure at the measurement
   location, expressed in mm Hg; required as an input for dissolved
-  oxygen calibration because oxygen solubility decreases with decreasing
-  pressure (increasing altitude).
+  oxygen calibration because oxygen solubility decreases with
+  decreasing pressure (increasing altitude) [@apha2012].
 - **Calibration:** The process of adjusting sensor readings to match
   known reference standards before field use; required before every
-  field outing to ensure data accuracy.
+  field outing to ensure data accuracy [@eureka_manta2].
 - **Conductivity (specific conductance, spCond):** A measure of a
   water sample's ability to conduct electrical current, expressed in
   µS/cm or mS/cm; proportional to the concentration of dissolved ions;
-  temperature-corrected to 25 °C for comparability across sites and seasons.
+  temperature-corrected to 25 °C for comparability across sites and
+  seasons [@apha2012].
 - **Dissolved oxygen (DO):** The concentration of oxygen dissolved in
   water, expressed as mg/L or percent saturation (%sat); measured by
   the HDO sensor using luminescent optical technology; decreases with
-  increasing temperature, salinity, and altitude.
-- **HDO (Handheld Dissolved Oxygen):** The luminescent optical dissolved
-  oxygen sensor on the Manta2; measures both %sat and mg/L; calibrated
-  separately for each unit.
-- **PDOP (Position Dilution of Precision):** A dimensionless measure of
-  GPS accuracy based on satellite geometry; lower values indicate better
-  positional accuracy; values below 3 are acceptable for most field
-  applications.
+  increasing temperature, salinity, and altitude [@apha2012].
+- **HDO (Handheld Dissolved Oxygen):** The luminescent optical
+  dissolved oxygen sensor on the Manta2; measures both %sat and mg/L;
+  calibrated in water-saturated air or with an air-saturated water
+  standard [@eureka_manta2].
+- **PDOP (Position Dilution of Precision):** A dimensionless measure
+  of GPS accuracy based on satellite geometry; lower values indicate
+  better positional accuracy; values below 3 are acceptable for most
+  field applications.
 - **Reference electrode:** The electrochemical half-cell that provides
   a stable reference potential for pH measurement; requires periodic
-  refilling with reference electrolyte to maintain accurate pH readings.
+  refilling with reference electrolyte to maintain accurate pH
+  readings [@eureka_manta2].
 - **Sensor Response Factor (SRF):** A calibration diagnostic value
   indicating how the sensor responded to the reference standard;
-  acceptable ranges are sensor-specific and indicate whether calibration
-  was successful.
+  acceptable ranges are sensor-specific and indicate whether
+  calibration was successful [@eureka_manta2].
 - **Snapshot:** A single instantaneous record of all sensor readings
   captured and stored by the Amphibian at a specific date, time, and
   GPS location.
-- **Sonde (probe):** The cylindrical instrument body of the Manta2 that
-  houses all sensors (temperature, pH, conductivity, dissolved oxygen,
-  and reference electrode) and is submerged during measurements.
+- **Sonde (probe):** The cylindrical instrument body of the Manta2
+  that houses all sensors (temperature, pH, conductivity, dissolved
+  oxygen, and reference electrode) and is submerged during
+  measurements [@eureka_manta2].
+
 
 ## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
 
-- **Biological/Chemical:** Water bodies may be contaminated; avoid ingestion and direct skin contact
-- **Physical:** Slippery surfaces near water; risk of submersion; electrical components near water
-- **Chemical:** pH standards (pH 4, 7, 10) and conductivity standard are mild irritants
+- **Biological/Chemical:** Water bodies may be contaminated; avoid
+  ingestion and direct skin contact.
+- **Physical:** Slippery surfaces near water; risk of submersion;
+  electrical components near water.
+- **Chemical:** pH standards (pH 4, 7, 10) and conductivity standard
+  are mild irritants.
 :::
 
 ### Required PPE
@@ -113,172 +127,120 @@ Researchers using this SOP should be trained on [SOP-F001 Field Safety](SOP-F001
 - [ ] Safety glasses (during calibration with standards)
 - [ ] Sun protection (hat, sunscreen)
 
-### Related SOPs
-
-Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general field safety, transportation, and emergency response.
-
-
-## Required Materials
-
-| Item                                  | Notes                                          |
-|:--------------------------------------|:-----------------------------------------------|
-| Eureka Manta2 Sub2 probe              | With weighted protective cap                   |
-| Amphibian 2 portable PC               | Fully charged                                  |
-| Amphibian 2 charging cable            | Round connector on bottom edge of Amphibian    |
-| Manta2 underwater cable               | Connects probe to Amphibian                    |
-| Blue storage plug and plastic protector | For sealing the probe when not connected      |
-| pH standards (4.00, 7.00, 10.00)      | For three-point pH calibration                 |
-| Conductivity standard                 | 2765 umho/cm (2.765 mS/cm), LabChem Inc       |
-| Dissolved oxygen standard supplies    | Half-liter tap water in a liter jar            |
-| DI water wash bottle                  | For rinsing between standards                  |
-| Waste beaker                          | For collecting used standards                  |
-| USB cable                             | For downloading data to a PC                   |
-| Field notebook                        | For recording site notes                       |
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for
+general field safety, transportation, and emergency response.
 
 
-## Estimated Time
+## Equipment and Materials
 
-| Task                     | Time Required                                   |
-|:-------------------------|:------------------------------------------------|
-| Charging the Amphibian   | Several hours (charge overnight)                |
-| Full calibration         | Approximately 20 minutes                        |
-| GPS acquisition          | Enable 5 minutes before taking readings         |
-| Per-site measurement     | Allow 2 minutes in water before reading         |
-| Post-field cleaning      | Less than 5 minutes                             |
-
-
-## Interferences
-
-- Calibration is essential for obtaining meaningful data. Always calibrate before each field outing.
-- The reference electrode must be maintained by refilling the reference electrolyte once every few months. Failure to do so causes unreliable pH readings.
-- When sampling in streams or rivers, take downstream measurements first to avoid your movements and presence affecting the readings. Stand on the bank or downstream of the measurement point while the probe is in the water.
+| Item                                  | Notes                                    |
+|:--------------------------------------|:-----------------------------------------|
+| Eureka Manta2 Sub2 Sonde              | Inspect sensors before each use          |
+| Amphibian 2 field computer            | Ensure fully charged [@eureka_manta2]    |
+| Underwater cable                      | Inspect for damage before use            |
+| pH 4, 7, and 10 standard solutions   | For pH calibration; check expiration dates |
+| Conductivity standard                 | Appropriate concentration for expected range |
+| Deionized water                       | For rinsing sensors between calibration steps |
+| Storage/calibration cup               | Filled with tap water for storage        |
+| Field notebook                        | Per [SOP-F003](SOP-F003-field-notebook-protocols.qmd) |
 
 
-## Pre-Field Preparation
+## Procedure
 
-### Charging
+### Startup
 
-Charge the Amphibian 2 portable PC before going into the field. The charger plugs into the round hole on the bottom edge of the Amphibian. Allow several hours or charge overnight.
+1. Connect the underwater cable to both the sonde and the Amphibian.
+2. Power on the Amphibian.
+3. Open the **Amp_2_2_6** app (or press **P1** shortcut).
+4. Allow sensors to stabilize for 5--10 minutes before calibration.
 
-### Probe Setup for Calibration
+### Calibration
 
-1. Remove the blue storage plug from the probe and cover the plug with a plastic protector
-2. Insert the underwater cable to connect the Amphibian and the Manta2
-3. Turn on the Amphibian by pressing the power button (bottom right corner)
-4. Press the Windows icon (lower left), then select Amp_2_2_6 (or use shortcut button **P1**)
-5. Once the interface loads, press "Manta2" on the lower left bar and select "Calibrate"
+Calibrate before every field outing [@eureka_manta2; @apha2012].
+Record all calibration data (SRF values, standard concentrations,
+date, operator) in the field notebook.
 
-### pH Calibration (Three-Point)
+#### pH
 
-1. Select "pH units" from the Manta2 calibration menu
-2. Input the value of your first standard (e.g., 7.00) in the unshaded box
-3. Unscrew the blue cap from the larger cap, leaving the clear plastic cup around the sensors in place
-4. Pour a small amount of the first standard into the cup (probe facing upward), cap it, and shake to rinse the sensors. Repeat twice, pouring used standard into a waste beaker each time
-5. Fill the cup with approximately 1 inch of the standard
-6. Wait for the red line on the Amphibian chart to stabilize (flatten), then press "Ok"
-7. When prompted for the second standard, rinse twice with DI water, then twice with the second standard, fill to 1 inch, and repeat
-8. Select the option for three-point calibration and repeat with the third standard
-9. Accept the calibration when the SRF falls within the acceptable range (consult Prof. Los Huertos if uncertain)
+1. Remove the storage cup. Rinse sensors with DI water.
+2. Submerge the sonde in pH 7 standard. Select **Calibrate > pH**
+   and follow the on-screen prompts.
+3. Rinse with DI water. Submerge in pH 4 standard.
+   Accept the second calibration point.
+4. (Optional) Verify with pH 10 standard. Record the SRF
+   (acceptable range: 95--105).
 
-### Conductivity Calibration (One-Point)
+#### Conductivity
 
-1. Rinse the probe twice with DI water to remove any residual pH standard
-2. Tap "Manta2" > "Calibrate" > "spCond mS/cm"
-3. Input 2.765 in the unshaded box
-4. Rinse twice with conductivity standard, then fill the cup to 1 inch
-5. Wait for the red line to stabilize, then press "Ok"
-6. The SRF should be approximately 110--120. If outside this range, recalibrate. If still outside the range after recalibration, contact Prof. Los Huertos
+1. Rinse sensors with DI water.
+2. Submerge in the appropriate conductivity standard.
+3. Select **Calibrate > Conductivity**. Enter the standard value and
+   accept [@eureka_manta2].
+4. Record the SRF (acceptable range: 110--120).
 
-::: {.callout-note}
-Conductivity standard can be disposed of down the drain. pH standards must go in a waste container.
-:::
+#### Dissolved Oxygen (HDO)
 
-### Dissolved Oxygen Calibration
+1. Remove the sonde from the calibration cup. Allow the HDO sensor
+   to equilibrate in water-saturated air for 2 minutes (sensor face
+   moist but not submerged).
+2. Enter the current barometric pressure in mm Hg.
+3. Select **Calibrate > DO** and accept the 100% saturation
+   calibration [@eureka_manta2].
+4. Record the SRF (should equal 100%).
 
-**Prepare air-saturated water:**
+### Field Measurement
 
-1. Put approximately half a liter of tap water in a liter jar
-2. Shake the jar vigorously for one minute with the lid on
-3. Remove the lid and let the water stand for about five minutes to allow air bubbles to escape
-
-**Calibrate HDO %sat:**
-
-1. Rinse the probe twice with DI water
-2. If the circulator is on (check next to "Manta2"), set it to "CircOff"
-3. Tap "Manta2" > "Calibrate" > "HDO %sat"
-4. Input the barometric pressure for your location in mm Hg (find on an online weather station; convert units if needed; round to 3 significant figures)
-5. When prompted to reset HDO to factory settings, select "No"
-6. Fill the calibration cup with aerated water until it covers the sensors by approximately 1 cm
-7. Wait a few minutes for temperature to equilibrate; the reading must be stable for 3 minutes
-8. Press "Ok" to accept. The SRF should be 100. If it differs, redo the calibration. If still not 100, contact Prof. Los Huertos.
-
-**Calibrate HDO mg/L:**
-
-1. Immediately after %sat calibration, note the temperature on the snapshot screen
-2. Tap "Manta2" > "Calibrate" > "HDO mg/L"
-3. Use a DO saturation calculator (e.g., waterontheweb.org) to convert %sat to mg/L using the temperature and pressure values
-4. Input the mg/L value as your calibration standard
-5. Wait 20 seconds for the readout to stabilize. If stable, press "Ok"
-6. If the value changes significantly, exit, re-read %sat, and use the new value to recalibrate mg/L
-
-
-## Field Procedure
-
-### Connecting and Powering On
-
-1. Connect the Manta2 to the Amphibian via the underwater cable
-2. Power on the Amphibian and launch Amp_2_2_6 (shortcut: **P1**)
-3. Adjust screen brightness using **arrow up + P3** (dimmer) and **arrow up + P4** (brighter)
-
-### Enabling GPS
-
-1. Tap on the GPS/GNSS status gadget
-2. A satellite icon will appear on the top bar while searching
-3. Do not cover the top cap (antenna) during satellite acquisition
-4. Wait until satellites are found (check: 5 SV = 5 satellites; 3Diff/4 satellites for 3D fix; lower PDOP = better accuracy)
-5. Enable GPS at least 5 minutes before taking readings
-
-### Taking Measurements
-
-1. Place the weighted protective cap over the sensors
-2. Lower the probe into the water at the measurement point
-3. Allow the probe to equilibrate for at least 2 minutes before reading
-4. Take a snapshot using the top-left button on the Main screen
-5. Annotate the file using the format: `Year.Month.Day.Project` (e.g., `2026.05.13.StreampH`)
-
-::: {.callout-tip}
-### Tip
-In flowing water, always measure downstream sites first, then work upstream to avoid disturbing the water at your measurement locations.
-:::
+1. Lower the sonde to the desired depth. Allow 1--2 minutes for
+   readings to stabilize before recording.
+2. Press **Snapshot** on the Amphibian to save readings. Record the
+   snapshot ID, location, and notes in the field notebook.
+3. For depth profiles, lower the sonde in 0.5 or 1 m increments,
+   pausing 30--60 s at each depth [@eureka_manta2].
 
 ### Disconnecting
 
-1. Remove the probe from the water
-2. Disconnect the underwater cable from the probe
-3. Insert the blue storage plug
-4. Cover the cable end with the plastic protector
+1. Remove the probe from the water.
+2. Disconnect the underwater cable from the probe.
+3. Insert the blue storage plug.
+4. Cover the cable end with the plastic protector.
 
 
 ## Post-Field Procedures
 
 ### Cleaning the Probe
 
-1. Clean the probe with warm soapy water (liquid dish soap or mild household cleaner)
-2. Clean sensor stems with a soft brush
-3. Rinse thoroughly with tap water
-4. Store sensors with tap water inside the cup
+1. Clean the probe with warm soapy water (liquid dish soap or mild
+   household cleaner).
+2. Clean sensor stems with a soft brush.
+3. Rinse thoroughly with tap water.
+4. Store sensors with tap water inside the cup.
 
 ### Downloading Data
 
-1. Connect the Amphibian to your PC using a USB cable
-2. A green window will appear with four options; select "File Management"
-3. In the next window, navigate to the hard drive, then select "My Documents"
-4. Locate the Excel document with your data
-5. Copy the file to your project data folder
+1. Connect the Amphibian to your PC using a USB cable.
+2. A green window will appear with four options; select
+   **File Management**.
+3. In the next window, navigate to the hard drive, then select
+   **My Documents**.
+4. Locate the Excel document with your data.
+5. Copy the file to your project data folder.
 
 ### Charging
 
 Return the Amphibian to its charging station after each field outing.
+
+
+## Quality Control
+
+- Calibrate all sensors before every field outing [@apha2012;
+  @eureka_manta2].
+- Verify SRF values are within acceptable ranges; do not proceed if
+  any sensor fails calibration.
+- Record a post-deployment calibration check on return to the lab;
+  if any sensor has drifted beyond acceptable limits, flag the data.
+- Compare spot readings against an independent DO meter or
+  multiprobe where possible; readings should agree within ±0.3 mg/L
+  for DO and ±0.1 units for pH [@apha2012].
 
 
 ## Troubleshooting
@@ -286,32 +248,29 @@ Return the Amphibian to its charging station after each field outing.
 | Problem                        | Solution                                         |
 |:-------------------------------|:-------------------------------------------------|
 | No power                       | Check the green LED on the Manta2; if off, the voltage is insufficient. Try another cable. |
-| pH SRF out of range            | Recalibrate with fresh standards. If still out of range, refill the reference electrolyte and contact Prof. Los Huertos. |
-| Conductivity SRF outside 110--120 | Recalibrate. If still out of range, contact Prof. Los Huertos. |
-| HDO %sat SRF not 100           | Redo the calibration with freshly aerated water. |
-| GPS not acquiring satellites   | Ensure the top cap (antenna) is uncovered; move to an open area away from overhead obstructions. |
-
-
-## Advanced Use
-
-**Autonomous data logging:** In addition to snapshots, the Manta2 supports automatic logging at customized time intervals. See page 48 of the Manta2 Manual for setup instructions.
-
-
-## Shortcut Buttons Reference
-
-| Button              | Function                        |
-|:--------------------|:--------------------------------|
-| **P1**              | Opens Amp_2_2_6 app             |
-| **P2**              | Opens shortcut buttons menu     |
-| **Arrow up + P3**   | Brightness down                 |
-| **Arrow up + P4**   | Brightness up                   |
-| **Camera icon**     | Camera                          |
+| pH SRF out of range            | Recalibrate with fresh standards. If still out of range, refill the reference electrolyte and contact the PI. |
+| Conductivity SRF outside 110--120 | Recalibrate. If still out of range, contact the PI. |
+| HDO %sat SRF ≠ 100             | Redo the calibration with freshly aerated water. |
+| GPS not acquiring satellites   | Ensure the top cap (antenna) is uncovered; move to an open area. |
 
 
 ## References
 
-- Eureka Environmental Engineering. *Manta2 Water Quality Multiprobe: User Manual*. Available at: https://www.rshydro.co.uk/PDFs/Eureka/Manta2-manual.pdf
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water and Wastewater*. 22nd ed. American Public Health Association (Eds.). Washington. 1360 pp.
+- @eureka_manta2
+- @apha2012
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F003](SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | Data recording                |
+| [F209](SOP-F209-dissolved-oxygen-meter.qmd) | Dissolved Oxygen Meter  | Standalone DO companion         |
+| [F307](SOP-F307-lake-reservoir-profiling.qmd) | Lake Profiling       | Depth profile application       |
 
 
 ## Training Record
@@ -319,7 +278,7 @@ Return the Amphibian to its charging station after each field outing.
 Before using this instrument independently, personnel must:
 
 1. Read this SOP in full
-2. Complete SOP-F01 (Field Safety) training
+2. Complete [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) training
 3. Observe a trained operator perform calibration and field deployment
 4. Perform a supervised calibration of all sensors
 5. Perform a supervised field deployment with data collection

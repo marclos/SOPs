@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-L102: Using Balances
-# =============================================================================
 title: "Using Balances"
 sop-number: "SOP-L102"
 author:
@@ -9,7 +6,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.2"
+revision: "0.3"
 
 revision-history:
   - version: "0.1"
@@ -20,6 +17,10 @@ revision-history:
     date: "2023-05-10"
     author: "Marc Los Huertos"
     changes: "Converted from LaTeX to Quarto"
+  - version: "0.3"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; added inline citations"
 ---
 
 ## Purpose
@@ -35,7 +36,8 @@ laboratory procedure. For calibration and verification protocols, see
 
 - **Applies to:** All Mettler Toledo balances in the EA Program
   laboratory, including the basic balances (MS1602TS/00) and the
-  precision balance (XPE205 DeltaRange)
+  precision balance (XPE205 DeltaRange) [@mettler_ms1602ts;
+  @mettler_xpe205]
 - **Does not apply to:** Portable field balances or calibration
   procedures (see [SOP-L200](SOP-L200-analytical-balance-calibration.qmd))
 - **Location:** EA Program laboratory, SGM 133
@@ -50,17 +52,64 @@ laboratory procedure. For calibration and verification protocols, see
 | New Students      | Complete training before independent use    |
 
 
+## Definitions
+
+- **Capacity (maximum load):** The maximum mass that can be placed on
+  the weighing pan without risking damage to the weighing cell;
+  exceeding the rated capacity will damage the load cell and require
+  expensive repair; the MS1602TS capacity is 1620 g and the XPE205
+  capacity is 220 g / 81 g (DeltaRange) [@mettler_ms1602ts;
+  @mettler_xpe205].
+- **Draft shield:** The glass or acrylic enclosure surrounding the
+  weighing pan on the XPE205 precision balance; reduces air current
+  disturbances that cause reading instability; always keep closed
+  except when placing or removing items.
+- **Drift:** Gradual, directional change in the balance reading under
+  constant load; caused by temperature changes, vibration, or
+  electronic instability; the balance should be allowed to warm up for
+  at least 30 minutes before critical weighing.
+- **Linearity:** The degree to which balance readings are proportional
+  to applied mass across the full weighing range; verified during
+  calibration per [SOP-L200](SOP-L200-analytical-balance-calibration.qmd).
+- **Net weight:** The mass of sample only, after the tare weight of
+  the container has been subtracted; what is displayed after pressing
+  the Tare key with the container on the pan.
+- **Readability (resolution):** The smallest increment the balance
+  can display; the MS1602TS reads to 0.01 g and the XPE205 reads to
+  0.1 mg (0.0001 g) [@mettler_ms1602ts; @mettler_xpe205].
+- **Repeatability:** The standard deviation of repeated measurements
+  of the same weight under identical conditions; a key short-term
+  precision indicator; affected by vibration, draft, and sample
+  placement position.
+- **Spirit level (bubble level):** A small bubble vial mounted on the
+  balance base; the bubble must be centered in the target circle
+  before weighing; off-level readings can introduce systematic errors.
+- **Tare:** The function that zeroes the displayed mass when a
+  container is on the pan, so subsequent readings show only the mass
+  of material added [@mettler_basic2023].
+- **Weighing cell:** The internal transducer (typically an
+  electromagnetic force compensation cell) that converts the mechanical
+  load on the pan to an electrical signal; the most sensitive and
+  expensive component of the balance; protect it from impact,
+  overloading, and corrosive chemicals.
+- **Zeroing:** Setting the balance display to exactly zero with an
+  empty pan and no load; performed at the start of each session and
+  whenever the balance is moved; distinct from taring, which zeroes
+  the balance with a container already on the pan.
+
+
 ## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
 
-- **Physical:** Dropping heavy items onto the balance pan can damage the
-  weighing cell. Handle objects carefully and never exceed the rated
-  capacity.
+- **Physical:** Dropping heavy items onto the balance pan can damage
+  the weighing cell. Handle objects carefully and never exceed the
+  rated capacity.
 - **Chemical:** Some materials weighed on the balance may be hazardous.
-  Refer to the relevant SOP for the material being weighed. Never place
-  chemicals directly on the weighing pan; always use a sample vessel.
+  Refer to the relevant SOP for the material being weighed. Never
+  place chemicals directly on the weighing pan; always use a sample
+  vessel.
 :::
 
 ### Required PPE
@@ -78,87 +127,86 @@ before resuming use.
 
 ## Equipment and Materials
 
-### Equipment
+### EA Program Balances
 
-| Item                          | Specifications                            |
-|:------------------------------|:------------------------------------------|
-| Basic Balance (3 units)       | Mettler Toledo MS1602TS/00; 1620 g max, d = 0.1 g |
-| Precision Balance (1 unit)    | Mettler Toledo XPE205 DeltaRange; 81 g / 220 g max, d = 0.01 mg / 0.1 mg |
+| Balance               | Model      | Capacity     | Readability   | Location  |
+|:----------------------|:-----------|:-------------|:--------------|:----------|
+| Precision balance (1) | XPE205     | 220 g / 81 g | 0.1 mg        | SGM 133   |
+| Basic balance (1--3)  | MS1602TS   | 1620 g       | 0.01 g        | SGM 133   |
 
-### Consumables
+[@mettler_xpe205; @mettler_ms1602ts]
 
-| Item                          | Notes                                     |
-|:------------------------------|:------------------------------------------|
-| Weighing vessels (boats, beakers, etc.) | Appropriate to the material being weighed |
-| Lint-free wipes (Kimwipes)    | For cleaning the weighing pan             |
-| Forceps                       | For handling calibration weights (see [SOP-L200](SOP-L200-analytical-balance-calibration.qmd)) |
+### Weighing Supplies
+
+| Item                          | Notes                                    |
+|:------------------------------|:-----------------------------------------|
+| Weighing paper                | Single use; keeps chemicals off the pan  |
+| Sample vessels                | Weighing boats, crucibles, or tared containers |
+| Forceps or tweezers           | For handling calibration weights or small containers without contamination |
+| Lint-free wipes (Kimwipes)    | For cleaning the pan and draft shield    |
+| Anti-static brush             | For removing powder adhering to the draft shield interior |
 
 
 ## Procedure
 
-### Switching On and Warm-Up
+### Startup and Warm-Up
 
-1. The balance switches on automatically when connected to the power
-   supply
-2. Before the balance gives reliable results, it must acclimatize to
-   room temperature and warm up while connected to power. Refer to the
-   instrument manual for the recommended warm-up time for each model.
-3. To exit standby mode, press the power/standby key. The display turns
-   on and the balance is ready immediately.
+Allow the balance to warm up for at least 30 minutes before making
+critical weighings (< 0.001 g significance) [@mettler_xpe205]. This
+allows the internal components to reach thermal equilibrium.
 
-::: {.callout-note}
-If the balance was completely disconnected from power for an extended
-period, allow it to warm up for at least 30 minutes before use
-[@mettler_xpe205].
-:::
+### Leveling the Balance {#sec-leveling}
 
-### Zeroing the Balance {#sec-zeroing}
+1. Check the spirit level before each use session.
+2. If the bubble is not centered, adjust the leveling feet at the base
+   of the balance.
+3. For the XPE205, use the built-in leveling aid: **Balance menu >
+   Leveling aid** [@mettler_xpe205].
 
-1. Open the draft shield (precision balance only)
-2. Ensure the weighing pan is clear
-3. Close the draft shield
-4. Press the **Zero** key. The display reads 0.0000 g (precision) or
-   0.0 g (basic)
+### Zeroing {#sec-zeroing}
+
+1. Verify the balance is empty and the draft shield is closed.
+2. Press **Zero** (or **On/Zero**). The display should read 0.000 g
+   (for the MS1602TS) or 0.0000 g (for the XPE205).
+3. If the display does not settle, check that the balance is level,
+   no air currents are present, and the pan is clean and dry.
 
 ### Taring
 
-If a sample vessel is used, tare the balance before adding sample
-material:
-
-1. Zero the balance ([Section -@sec-zeroing]).
-2. Open the draft shield
-3. Place the sample vessel on the center of the weighing pan
-4. Close the draft shield
+1. Zero the balance (§[sec-zeroing]).
+2. Open the draft shield.
+3. Place the sample vessel on the center of the weighing pan.
+4. Close the draft shield.
 5. Press the **Tare** key. The display reads zero and the **Net**
-   indicator appears
+   indicator appears.
 
 ### Performing a Weighing
 
-1. Open the draft shield (if applicable)
-2. Place the weighing object into the tared sample vessel
-3. Close the draft shield and wait for the stability indicator
-4. Record the displayed mass in the lab notebook
+1. Open the draft shield (if applicable).
+2. Place the weighing object into the tared sample vessel.
+3. Close the draft shield and wait for the stability indicator.
+4. Record the displayed mass in the lab notebook.
 5. If using the XPE205 electronic results feature, tap **Add result**
-   to append the value to the results list
+   to append the value to the results list.
 
 ### Completing and Saving Results (XPE205)
 
-1. Tap **Complete** to open the task completion dialog
-2. Select an option to save or print the results list
-3. Follow the on-screen instructions
+1. Tap **Complete** to open the task completion dialog.
+2. Select an option to save or print the results list.
+3. Follow the on-screen instructions.
 4. Tap **Complete** to finalize; the results list is saved or printed
-   and then cleared
+   and then cleared.
 
 ### Shutdown
 
-1. Remove all samples and vessels from the weighing pan
-2. Clean the pan and draft shield interior with a lint-free wipe
-3. Close the draft shield
-4. To enter standby mode, hold the power/standby key. The display goes
-   dark but the balance remains powered on and thermally stable.
+1. Remove all samples and vessels from the weighing pan.
+2. Clean the pan and draft shield interior with a lint-free wipe.
+3. Close the draft shield.
+4. To enter standby mode, hold the power/standby key. The display
+   goes dark but the balance remains powered on and thermally stable.
 5. To switch the balance off completely, disconnect from the power
-   supply. Note that the balance will require a full warm-up before its
-   next use.
+   supply. Note that the balance will require a full warm-up before
+   its next use.
 
 
 ## Quality Control and Acceptance Criteria
@@ -166,29 +214,28 @@ material:
 ### Leveling the Balance
 
 Exact horizontal positioning is essential for repeatable and accurate
-results:
+results [@mettler_xpe205]:
 
-1. Check the spirit level before each use session
-2. If the message "Balance is out of level" appears, tap **Level the
-   balance** to open the leveling aid
+1. Check the spirit level before each use session.
+2. If the message "Balance is out of level" appears, tap
+   **Level the balance** to open the leveling aid.
 3. Adjust the leveling feet following the on-screen instructions until
-   the bubble is centered
-4. The leveling aid can also be accessed via **Balance menu > Leveling
-   aid**
+   the bubble is centered.
 
 ### Internal Adjustment (XPE205)
 
-1. Navigate to **Methods > Adjustments**
-2. Verify that the adjustment strategy is set to **Internal adjustment**
-3. Open the Methods section, tap **Adjustments**, select the adjustment,
-   and tap **Start** (or from the main weighing screen, tap **More >
-   Start adjustment**)
-4. Do not touch the balance during the adjustment
-5. When complete, review the adjustment results
+1. Navigate to **Methods > Adjustments**.
+2. Verify that the adjustment strategy is set to **Internal
+   adjustment**.
+3. Select the adjustment and tap **Start**.
+4. Do not touch the balance during the adjustment.
+5. When complete, review the adjustment results.
 6. Tap **Print** if a record is needed, then tap **Finish adjustment**
+   [@mettler_xpe205].
 
-For external calibration verification using traceable reference weights,
-see [SOP-L200](SOP-L200-analytical-balance-calibration.qmd).
+For external calibration verification using traceable reference
+weights, see
+[SOP-L200](SOP-L200-analytical-balance-calibration.qmd).
 
 
 ## Waste Disposal
@@ -203,6 +250,17 @@ chemicals, in which case follow
 
 ::: {#refs}
 :::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | Required prerequisite             |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials | Chemical spills on/near balance |
+| [L200](SOP-L200-analytical-balance-calibration.qmd) | Balance Calibration | Calibration and external verification |
+| [L400](SOP-L400-soil-moisture.qmd)    | Soil Moisture            | Weighing application              |
+| [L406](SOP-L406-loss-on-ignition.qmd) | Loss on Ignition         | Weighing application              |
 
 
 ## Training Record
