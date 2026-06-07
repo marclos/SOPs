@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F701: Soil Microbial Field Sampling for Molecular Analysis
-# =============================================================================
 title: "Soil Microbial Field Sampling for Molecular Analysis"
 sop-number: "SOP-F701"
 author:
@@ -9,13 +6,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-19"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section"
 ---
 
 ## Purpose
@@ -59,18 +60,72 @@ specific to molecular work.
                       before participating in molecular sampling           |
 
 
+## Definitions
+
+- **Contamination (molecular soil sampling):** Introduction of
+  exogenous DNA from other samples, the environment, or the
+  researcher's own microbiome into a soil sample; prevented by sterile
+  tool sterilization between samples, frequent glove changes, and use
+  of field blanks [@frostegard1999].
+- **Cryogenic freezing (flash-freezing):** Rapid cooling of a soil
+  sample in liquid nitrogen (-196 °C) or on dry ice (-78 °C)
+  immediately after collection; arrests microbial metabolism and
+  nuclease activity; required for RNA work and recommended for optimal
+  DNA preservation [@knight2018].
+- **Dry ice (solid CO~2~):** Used for field flash-freezing at -78 °C;
+  causes frostbite on direct skin contact; must be handled with
+  insulated cryogenic gloves and transported in a vented or insulated
+  container.
+- **Field blank:** An empty sterile tube or bag opened and closed at
+  the field site during sampling; processed through the full
+  extraction and PCR workflow in the lab; detects airborne or handling
+  contamination; any positive amplification in a field blank
+  invalidates the associated samples unless concentrations fall below a
+  pre-established threshold [@frostegard1999].
+- **Flash-freezing:** See cryogenic freezing.
+- **LifeGuard Soil Preservation Solution (Qiagen):** A commercially
+  prepared stabilization reagent that arrests nucleic acid degradation
+  at ambient temperature for up to 7 days; an alternative to
+  cryogenic preservation when dry ice is unavailable; add to the
+  sample immediately after collection, invert gently, and store at
+  room temperature or on ice.
+- **Microbial community composition:** The relative abundances of
+  different microbial taxa (bacteria, archaea, fungi) in a soil
+  sample; highly sensitive to sample handling time, temperature, and
+  oxygen exposure; shifts within minutes of soil disturbance
+  [@knight2018; @frostegard1999].
+- **Nuclease:** An enzyme that degrades DNA or RNA; active in soil
+  samples at ambient temperatures; inactivated by low temperature
+  (< 4 °C), chemical preservatives (LifeGuard buffer, ethanol), or
+  rapid freezing.
+- **Rhizosphere:** The narrow zone of soil immediately surrounding
+  plant roots; has a distinct microbial community influenced by root
+  exudates; sampled by collecting soil adhering directly to roots
+  after gentle removal from the surrounding bulk soil.
+- **Sterile technique:** A set of aseptic practices that prevent
+  contamination of molecular samples; in soil microbial sampling,
+  these include autoclaving or 70% ethanol sterilization of all metal
+  tools, use of single-use sterile tubes and gloves, and minimizing
+  exposure time to air [@frostegard1999].
+- **Time from extraction to preservation:** A critical metric for
+  molecular soil samples; ideally less than 2 minutes from the moment
+  soil is removed from the ground to placement in ice, dry ice, or
+  preservative; longer times cause measurable shifts in microbial
+  community composition [@knight2018].
+
+
 ## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
 
 - **Biological:** Soil may contain pathogens. Wash hands thoroughly
-  after handling soil. Treat all samples as potentially infectious.
+  after handling. Treat all samples as potentially infectious.
 - **Physical:** Repetitive strain from augering; standard field
   hazards (heat, ticks, uneven terrain).
-- **Chemical:** Liquid nitrogen (if used for flash-freezing) causes
-  severe cryogenic burns. Dry ice causes frostbite on direct skin
-  contact. Handle with insulated gloves.
+- **Chemical:** Liquid nitrogen causes severe cryogenic burns. Dry ice
+  causes frostbite on direct skin contact. Handle with insulated
+  gloves.
 :::
 
 ### Required PPE
@@ -94,9 +149,9 @@ lukewarm water. Do not rub.
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
-| Soil auger (bucket-type, stainless steel) | Cleaned and autoclaved or ethanol-sterilized before each sampling event |
+| Soil auger (bucket-type, stainless steel) | Autoclaved or ethanol-sterilized before each event |
 | Stainless steel trowel or spatula     | Autoclaved or flame-sterilized           |
-| Ethanol (70%) in spray bottle         | For field sterilization of tools between samples |
+| Ethanol (70%) in spray bottle         | For field sterilization between samples  |
 | Lighter or butane torch               | For flame-sterilizing metal tools        |
 | DI water squeeze bottle               | For rinsing tools after ethanol sterilization |
 
@@ -104,141 +159,90 @@ lukewarm water. Do not rub.
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
-| Sterile 50 mL Falcon tubes or sterile Whirl-Pak bags | Pre-labeled; one per sample |
-| Cooler with ice packs (4 C)           | Minimum preservation for DNA samples     |
-| Dry ice (solid CO~2~)                 | For flash-freezing in the field (-78 C); preferred for RNA work |
+| Sterile 50 mL Falcon tubes or Whirl-Pak bags | Pre-labeled; one per sample       |
+| Cooler with ice packs (4 °C)          | Minimum preservation for DNA samples     |
+| Dry ice (solid CO~2~)                 | For flash-freezing at -78 °C; preferred for RNA work |
 | Insulated container for dry ice       | Styrofoam cooler or dewar                |
-| LifeGuard Soil Preservation Solution (Qiagen) | Optional; stabilizes DNA and RNA at ambient temperature for up to 7 days |
+| LifeGuard Soil Preservation Solution  | Optional; stabilizes DNA and RNA at ambient temperature for up to 7 days |
 | Ziplock bags (gallon size)            | For double-bagging frozen samples        |
-
-### Field Documentation
-
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| Field notebook (Rite in the Rain)      | For recording sample metadata            |
-| Permanent marker (Sharpie)            | For labeling tubes and bags              |
-| GPS unit or smartphone                | Per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
-| Soil temperature probe                | Record temperature at sampling depth     |
 
 
 ## Procedure
 
 ### Pre-Field Preparation
 
-1. Autoclave or ethanol-sterilize all metal sampling tools (auger,
-   trowels, spatulas). Wrap in aluminum foil after sterilization.
-2. Pre-label all sample tubes or bags with: project ID, site, sample
-   number, date, and depth. Use the ID scheme from
-   [SOP-F008](SOP-F008-sample-labeling-coc-transport.qmd).
-3. If using LifeGuard solution, pre-aliquot the required volume
-   (approximately 5 mL per tube for a 2--5 g soil sample) into labeled
-   tubes.
-4. Pack the cooler with ice packs. If using dry ice, load the
-   insulated container. Ensure adequate dry ice for the expected
-   number of samples and field time.
-5. Include blank tubes: at least one "field blank" (an empty sterile
-   tube opened and closed at the sampling site) per sampling event.
+1. Autoclave or ethanol-sterilize all metal sampling tools. Wrap in
+   aluminum foil after sterilization.
+2. Pre-label all sample tubes or bags: project ID, site, sample
+   number, date, depth.
+3. If using LifeGuard, pre-aliquot approximately 5 mL per tube.
+4. Pack the cooler. If using dry ice, load the insulated container.
+5. Include at least one field blank tube per sampling event.
 
 ### Sampling Procedure
 
-1. Navigate to the sampling location and record GPS coordinates.
-2. Put on a fresh pair of nitrile gloves.
-3. Sterilize the auger or trowel: spray with 70% ethanol, allow to
-   air-dry for 30 seconds, then optionally flame the metal surface
-   with a lighter. Rinse with DI water.
-4. Clear surface litter from the sampling point without disturbing the
-   mineral soil surface.
-5. Collect the soil sample from the target depth (typically 0--15 cm).
-   Avoid including large roots and rocks.
+1. Navigate to the sampling location; record GPS coordinates.
+2. Put on fresh nitrile gloves.
+3. Sterilize the auger or trowel: spray with 70% ethanol, allow
+   30 seconds air-dry, optionally flame. Rinse with DI water.
+4. Clear surface litter without disturbing mineral soil.
+5. Collect soil from the target depth (typically 0--15 cm). Avoid
+   large roots and rocks.
 6. Using the sterilized trowel, transfer approximately 2--5 g of soil
-   (or the volume specified by the analysis protocol) directly into
-   the sterile tube or bag. Minimize handling time; do not homogenize
-   in a bucket as for chemical analysis, because prolonged exposure
-   to air alters the microbial community.
+   directly into the sterile tube. Minimize handling time; do not
+   homogenize in a bucket.
 
 ::: {.callout-important}
 ### Speed Matters
-
-For molecular samples, minimize the time between coring and
-preservation. Ideally, the soil should be in the tube and on ice (or
-in preservative) within 2 minutes of extraction from the ground.
-Prolonged exposure to air and ambient temperature causes shifts in
-microbial community composition and DNA degradation
+Minimize the time between coring and preservation. The soil should be
+in the tube and on ice within 2 minutes of extraction. Prolonged
+exposure to air and ambient temperature causes shifts in microbial
+community composition and DNA degradation
 [@frostegard1999; @knight2018].
 :::
 
 7. Immediately preserve:
-   - **For DNA only:** Place the capped tube in the cooler on ice
-     (4 C). Transport to the lab within 6 hours. Alternatively, bury
-     the tube in dry ice for flash-freezing.
-   - **For DNA and RNA:** Flash-freeze by placing the tube directly in
-     dry ice or liquid nitrogen. This is critical for RNA integrity.
-   - **For LifeGuard preservation:** Add LifeGuard solution to cover
-     the soil, cap, invert gently 3 times, and store at ambient
-     temperature (up to 7 days) or on ice for longer preservation.
-8. Record in the field notebook:
-   - Sample ID
-   - GPS coordinates
-   - Sampling depth
-   - Soil temperature at sampling depth
-   - Preservation method (ice, dry ice, LifeGuard)
-   - Time of collection
-   - Any deviations from this SOP
-
-### Compositing (When Required)
-
-If the study design calls for composite molecular samples:
-
-1. Collect subsamples from each point using sterilized tools.
-2. Combine subsamples in a sterilized mixing tray or large Whirl-Pak
-   bag.
-3. Homogenize briefly (< 1 minute) by hand-mixing with a sterilized
-   spatula.
-4. Transfer an aliquot to the sterile sample tube and preserve
-   immediately.
-5. Be aware that compositing introduces additional handling time and
-   air exposure. Note the total elapsed time from first core to
-   preservation.
+   - **DNA only:** Place capped tube on ice (4 °C). Transport to
+     lab within 6 hours or freeze at -20 °C.
+   - **DNA and RNA:** Flash-freeze on dry ice or liquid nitrogen.
+     Transfer to -80 °C freezer on return.
+   - **LifeGuard:** Add 5 mL LifeGuard to the soil, cap, invert
+     3 times, store at ambient temperature up to 7 days.
+8. Record in the field notebook: sample ID, GPS, depth, soil
+   temperature, preservation method, time of collection, and
+   any deviations.
 
 ### Decontamination Between Samples
 
-1. Spray the auger, trowel, and any other tools that contacted soil
-   with 70% ethanol.
-2. Allow to air-dry for 30 seconds. Optionally flame-sterilize.
-3. Rinse with DI water.
-4. Change nitrile gloves.
-5. If moving between sites, also decontaminate boots and waders per
+1. Spray tools with 70% ethanol; allow 30 seconds air-dry; optionally
+   flame. Rinse with DI water.
+2. Change nitrile gloves.
+3. Between sites, decontaminate boots and waders per
    [SOP-F007](SOP-F007-field-decontamination.qmd).
 
 
 ## Sample Transport and Storage
 
-| Preservation Method      | Field Storage          | Transport            | Lab Storage          |
-|:-------------------------|:-----------------------|:---------------------|:---------------------|
-| Ice (4 C)                | Cooler with ice packs  | Same-day delivery    | Process within 24 hours or freeze at -20 C |
-| Dry ice (-78 C)          | Insulated cooler       | Same-day delivery    | Transfer to -80 C freezer immediately |
-| Liquid nitrogen (-196 C) | Dewar                  | Same-day delivery    | Transfer to -80 C freezer immediately |
-| LifeGuard buffer         | Ambient (up to 7 days) | Standard transport   | Extract within 7 days; or freeze at -20 C |
+| Preservation Method      | Field Storage        | Lab Storage                |
+|:-------------------------|:---------------------|:---------------------------|
+| Ice (4 °C)               | Cooler, ice packs    | Process within 24 h or freeze at -20 °C |
+| Dry ice (-78 °C)         | Insulated cooler     | Transfer to -80 °C freezer immediately |
+| Liquid nitrogen (-196 °C) | Dewar               | Transfer to -80 °C freezer immediately |
+| LifeGuard buffer         | Ambient, up to 7 days | Extract within 7 days; or freeze at -20 °C |
 
-Record sample storage location in the
-[Freezer Inventory Google Sheet](<!-- LINK_PLACEHOLDER -->) and in the
-lab notebook per
-[SOP-L106](../lab_sops/SOP-L106-refrigerators-freezers.qmd).
+Record storage location in the Freezer Inventory and in the lab
+notebook per [SOP-L106](../lab_sops/SOP-L106-refrigerators-freezers.qmd).
 
 
 ## Quality Control
 
-- Include at least one field blank (empty sterile tube opened and
-  closed at the site) per sampling event.
+- Include at least one field blank per sampling event.
 - Change gloves and sterilize tools between every sample.
-- Record the time elapsed between soil extraction and preservation for
-  each sample. Flag any sample with elapsed time > 5 minutes.
-- Field blanks are processed through the full extraction and PCR
-  workflow. Any positive amplification in a field blank invalidates
-  the batch unless concentrations are below the established threshold.
-- Avoid sampling immediately after rainfall when soils are saturated,
-  as waterlogged conditions alter microbial activity and complicate
-  extraction.
+- Record the time elapsed between soil extraction and preservation.
+  Flag any sample with elapsed time > 5 minutes.
+- Field blanks positive for target DNA invalidate the batch unless
+  concentrations fall below the established threshold.
+- Avoid sampling immediately after rainfall when soils are saturated.
 
 
 ## References
@@ -258,7 +262,6 @@ lab notebook per
 | [F700](SOP-F700-edna-field-sampling.qmd) | eDNA Field Sampling     | Water eDNA companion protocol     |
 | [L700](../lab_sops/SOP-L700-dna-extraction.qmd) | DNA Extraction        | Lab-side extraction               |
 | [L701](../lab_sops/SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) | ddPCR Primers | Downstream analysis      |
-| [L106](../lab_sops/SOP-L106-refrigerators-freezers.qmd) | Freezers           | Sample storage protocols          |
 
 
 ## Training Record

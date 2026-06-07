@@ -14,13 +14,19 @@ author:
     affiliation: "Environmental Analysis, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "1.0"
     date: "2026-05-18"
     author: "Marc Los Huertos"
     changes: "Initial release; expands L02 Section 7"
+  - version: "1.1"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Expanded Definitions section; converted plain-text
+              references to BibTeX; added {#refs} div; added inline
+              citations"
 ---
 
 ## Purpose
@@ -31,7 +37,7 @@ when to clean it up yourself vs. when to evacuate, how to clean up
 minor spills by chemical class, and how to document and report the
 incident. This SOP is designed to be a quick reference during an
 emergency; read it in advance so the procedures are familiar before
-you need them.
+you need them [@osha_labsafety2012; @nrc_prudent2011].
 
 For general chemical safety, storage, and waste disposal, see
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
@@ -42,12 +48,12 @@ For general lab emergency procedures (fire, earthquake, medical), see
 ## Scope
 
 - **Applies to:** All chemical spills in EA Program laboratories
-  (SGM 133, 134, 135).
-- **Does not apply to:** Radioactive material spills, biological spills
-  (BSL-2 organisms), or field spills (handle per
+  (SGM 133, 134, 135)
+- **Does not apply to:** Radioactive material spills; biological spills
+  (BSL-2 organisms); field spills (handle per
   [SOP-F001](../field_sops/SOP-F001-field-safety.qmd) and local
-  regulations).
-- **Location:** All EA Program laboratory spaces.
+  regulations)
+- **Location:** All EA Program laboratory spaces
 
 
 ## Responsibilities
@@ -64,20 +70,79 @@ For general lab emergency procedures (fire, earthquake, medical), see
 
 Post this information near every laboratory phone and exit.
 
-| Contact                | Number / Method                           |
-|:-----------------------|:------------------------------------------|
-| Campus Safety          | x72000 (from campus phone) or 909-621-8170 |
-| Pomona College Facilities | x18383                                 |
-| Poison Control         | 1-800-222-1222                            |
-| 911                    | For life-threatening emergencies          |
-| Lab Manager            | *TBD -- post current contact*             |
-| Lab PI (Marc Los Huertos) | *TBD -- post current contact*          |
+| Contact                      | Number / Method                           |
+|:-----------------------------|:------------------------------------------|
+| Campus Safety                | x72000 (from campus phone) or 909-621-8170 |
+| Pomona College Facilities    | x18383                                    |
+| Poison Control               | 1-800-222-1222                            |
+| 911                          | For life-threatening emergencies          |
+| Lab Manager                  | *TBD -- post current contact*             |
+| Lab PI (Marc Los Huertos)    | *TBD -- post current contact*             |
+
+Refer also to [@pomona_emergency].
+
+
+## Definitions
+
+- **Carcinogen:** A substance capable of causing cancer with repeated
+  or prolonged exposure; minor spills of carcinogens (e.g., acrylamide,
+  formaldehyde, chloroform, benzene) require extra precautions including
+  respiratory protection and disposal as hazardous waste regardless of
+  volume [@nrc_prudent2011].
+- **Corrosive:** A chemical that causes visible destruction or
+  irreversible alteration of skin, eye, or mucous membrane tissue on
+  contact, or that corrodes steel or aluminum; includes strong acids
+  (pH < 2) and strong bases (pH > 12); neutralized before disposal
+  with appropriate Spill-X material [@osha_labsafety2012].
+- **Emergency eyewash station:** A plumbed or pressurized portable
+  fixture that delivers a continuous flow of clean water to both eyes
+  simultaneously; required to be within 10 seconds of unobstructed
+  travel from any hazardous chemical work area; must be activated
+  for at least 15 minutes for any eye chemical contact
+  [@osha_labsafety2012].
+- **Flammable liquid:** A liquid with a flash point below 60 °C
+  (140 °F); includes common laboratory solvents such as ethanol,
+  methanol, acetone, hexane, and isopropanol; minor spills of
+  flammables must be cleaned up with absorbent pads, not paper
+  towels, and all ignition sources must be extinguished immediately
+  [@nrc_prudent2011].
+- **Flash point:** The minimum temperature at which a liquid produces
+  sufficient vapor to ignite momentarily in the presence of a flame or
+  spark; the key property for classifying a spilled liquid as a
+  flammable hazard.
+- **Major spill:** A spill that cannot be safely managed by lab
+  personnel; any spill meeting the criteria in §5.2 -- including
+  spills involving injury, unknown chemicals, large volumes, or highly
+  toxic/reactive materials -- requires evacuation and a call to Campus
+  Safety; do not attempt to clean up a major spill.
+- **Minor spill:** A small spill of a known chemical with known hazards
+  that trained lab personnel can safely clean up using available PPE
+  and spill control materials; all criteria in §5.1 must be met before
+  treating a spill as minor.
+- **Safety Data Sheet (SDS):** A standardized 16-section document
+  describing a chemical's identity, hazards, safe handling, first aid,
+  spill response, and disposal; Section 6 (Accidental Release Measures)
+  is the primary reference for spill response; must be accessible in
+  the laboratory at all times [@osha_labsafety2012].
+- **Secondary containment:** A tray, cabinet, or other physical barrier
+  that holds spilled or leaked chemical if the primary container fails;
+  required under all liquid chemical containers in storage; prevents
+  spills from spreading and simplifies cleanup.
+- **Spill-X-A / Spill-X-C / Spill-X-S:** Commercial spill control
+  kits manufactured by Ansul (Johnson Controls): A = acid neutralizer
+  (for strong acids), C = caustic/base neutralizer (for strong bases),
+  S = solvent absorbent (for flammable organic solvents); each kit
+  changes color when neutralization is complete.
+- **Universal absorbent:** An inert granular or pad material (e.g.,
+  diatomaceous earth, Zorb-All pads) that absorbs chemical spills
+  without reacting; suitable for a wide range of chemicals but does not
+  neutralize acids or bases.
 
 
 ## Spill Classification
 
-Before doing anything else, classify the spill. Your response depends
-on the classification.
+Before responding, classify the spill. Your response depends on the
+classification [@osha_labsafety2012].
 
 ### Minor Spill
 
@@ -122,221 +187,141 @@ Your safety is more important than preventing property damage.
 1. **Protect yourself and others.**
    - Alert everyone in the lab. Help anyone who is injured or
      contaminated only if you can do so without endangering yourself.
-   - If chemicals are on someone's skin, begin flushing with water
-     immediately (safety shower for body, eyewash for eyes). Continue
-     flushing for at least 15 minutes.
+   - If chemicals are on someone's skin or in their eyes, begin flushing
+     with water immediately (safety shower for body, eyewash for eyes).
+     Continue flushing for at least 15 minutes [@osha_labsafety2012].
    - Remove contaminated clothing while flushing.
 
-2. **Evacuate the area.**
-   - Close the lab door behind you (do not lock it).
-   - Move to a safe location (hallway or outside the building).
-   - Prevent others from entering the area.
+2. **Evacuate.**
+   - Clear all personnel from the room and close (do not lock) doors.
+   - Activate the building fire alarm if there is a fire risk or if
+     toxic vapors require building evacuation.
 
-3. **Call Campus Safety** at x72000 or 909-621-8170.
-   - State: your name, location, chemical name and approximate
-     quantity, whether anyone is injured, and whether the spill is
-     spreading.
-   - Campus Safety will contact the Claremont Fire Department
-     HazMat team if needed.
+3. **Call for help.**
+   - Call Campus Safety: x72000 or 909-621-8170.
+   - For life-threatening emergencies: 911.
+   - Notify the lab manager and PI.
 
-4. **Do not re-enter** the area until Campus Safety or the HazMat team
-   clears it.
-
-5. **Provide information.** Stay available to give responders the SDS,
-   describe what happened, and identify anyone who was exposed.
+4. **Stay available.**
+   - Wait near the lab entrance (not inside) to brief first responders.
+   - Bring the SDS for the spilled chemical to the responders.
 
 
-## Minor Spill Cleanup Procedures
+## Minor Spill Response
 
-### General Steps (All Chemical Classes)
+### General Procedure
 
-1. **Put on PPE** before approaching the spill: safety glasses or
-   goggles, nitrile gloves (double-glove for corrosives), lab coat.
-   If the chemical is volatile, work in or near the fume hood and
-   consider a respirator.
-2. **Confine the spill.** Use absorbent material, paper towels, or a
-   dike of spill pillows to prevent spreading, especially toward
-   drains.
-3. **Ventilate.** If the chemical is volatile, increase ventilation
-   (open the fume hood sash, turn on room ventilation). Do not use
-   fans that could spread the chemical.
-4. **Clean up** using the appropriate method for the chemical class
-   (see below).
-5. **Decontaminate.** Wipe the area with soap and water or an
-   appropriate solvent after cleanup.
-6. **Dispose of waste.** Place all contaminated materials (absorbent,
-   gloves, paper towels) in a labeled hazardous waste bag. Label with
-   the chemical name, date, and "spill cleanup residue." Dispose per
-   [SOP-L003, Section 8](SOP-L003-hazardous-materials-handling.qmd).
+1. Put on appropriate PPE before approaching the spill: gloves, safety
+   glasses, lab coat at minimum; add face shield for large acid/base
+   spills [@nrc_prudent2011].
+2. Inform others in the lab that you are cleaning up a spill.
+3. Select the correct cleanup material (Section 7.2--7.4).
+4. Apply cleanup material from the outside edge of the spill toward the
+   center to prevent spreading.
+5. Allow sufficient time for neutralization (Spill-X-A and Spill-X-C
+   change color when complete).
+6. Scoop up the spent absorbent and place in a labeled waste container
+   (hazardous waste).
+7. Wipe the area with a damp paper towel; dispose of used paper towels
+   as hazardous waste.
+8. Remove PPE carefully; wash hands.
+9. Document the spill (Section 9).
 
-### Acids
+### Acid Spills
 
-1. Neutralize with the **Spill-X-A** kit (sodium bicarbonate-based
-   agent) or, if unavailable, with dry sodium bicarbonate.
-2. Encircle the spill, then cover and mix with the neutralizing agent
-   using the scraper provided in the kit.
-3. The reaction will produce CO~2~ gas and heat. Wait for
-   effervescence to stop.
-4. Test pH of the residue with pH paper. Continue adding neutralizer
-   until pH is between 6 and 8.
-5. Scoop the paste-like residue into a labeled waste bag.
+Use **Spill-X-A** (acid neutralizer). Apply the powder to the spill
+and mix gently with a spatula. When the color indicator shows
+neutralization is complete, sweep or scoop into a waste container.
+For spills involving HF (hydrofluoric acid): treat as a major spill
+regardless of volume; HF causes deep, potentially lethal burns with
+delayed onset.
 
-### Bases (Caustics)
+### Base Spills
 
-1. Neutralize with the **Spill-X-C** kit (citric acid-based agent) or,
-   if unavailable, with dilute acetic acid or citric acid solution.
-2. Encircle, cover, and mix.
-3. Test pH. Continue until pH is between 6 and 8.
-4. Scoop residue into a labeled waste bag.
+Use **Spill-X-C** (caustic neutralizer). Apply and mix as for acid
+spills. Monitor for heat generation; some base reactions with
+neutralizer can be exothermic.
 
-### Organic Solvents
+### Flammable Organic Solvent Spills
 
-1. Eliminate ignition sources (turn off hot plates, Bunsen burners,
-   electrical equipment near the spill).
-2. Absorb with the **Spill-X-S** kit or, if unavailable, with
-   vermiculite, dry sand, or commercial sorbent pads.
-3. Do not use paper towels for large solvent spills (fire risk).
-4. Scoop the absorbed material into a labeled waste bag.
+1. Extinguish all ignition sources immediately (no open flames, turn
+   off hot plates, do not use electrical switches).
+2. Increase ventilation (open sash of fume hood, turn on exhaust fan).
+3. Use **Spill-X-S** absorbent pads or granular universal absorbent.
+   Do not use paper towels (can generate static or wick the solvent).
+4. Collect all absorbent material in a waste container.
+5. If vapors persist, evacuate and call Campus Safety
+   [@nrc_prudent2011].
 
-### Mercury
+### Toxic or Unknown Chemicals
 
-Mercury spills require special procedures due to the toxicity of
-mercury vapor.
-
-1. Do not touch mercury with bare hands.
-2. Use the mercury spill kit (located *TBD -- confirm location*):
-   aspirator bulb, specialized mercury sorbent powder, and sealable
-   container.
-3. Collect visible droplets with the aspirator bulb.
-4. Sprinkle mercury sorbent powder over the area and sweep into the
-   sealable container.
-5. Contact Campus Safety for proper disposal.
-6. Ventilate the area thoroughly.
-
-### Dry Chemical Powders
-
-1. Avoid generating dust: do not sweep vigorously.
-2. Dampen the powder lightly with water (unless the chemical is water
-   reactive -- check the SDS first).
-3. Scoop into a labeled waste bag.
-4. Wipe the surface with a damp paper towel.
+If the chemical is toxic (acutely hazardous, carcinogenic, or unknown):
+treat as a major spill and call Campus Safety. Do not attempt to clean
+up acutely toxic or carcinogenic spills without specific training and
+proper respiratory protection.
 
 
-## Personal Contamination
+## Spill Kits
+
+The following spill kits are maintained in each laboratory. Inspect
+each kit at the start of every semester and after any use. Verify that
+all items are present and not expired. Replenish as needed and record
+the check date on the spill kit inspection log.
+
+| Kit Type        | Location         | Contents                              |
+|:----------------|:-----------------|:--------------------------------------|
+| Spill-X-A (acid) | SGM 133, fume hood | Neutralizing powder, scoop, bag, PPE |
+| Spill-X-C (base) | SGM 133, fume hood | Neutralizing powder, scoop, bag, PPE |
+| Spill-X-S (solvents) | SGM 133, bench shelf | Absorbent pads, bag, PPE         |
+| Universal absorbent | SGM 134       | Granular absorbent, scoop, bags       |
+
+
+## Body and Eye Exposure Response
 
 ### Skin Contact
 
 1. Remove contaminated clothing immediately.
-2. Flush the affected skin with water for at least 15 minutes (use the
-   safety shower for large areas).
-3. Do not use chemical neutralizers on skin.
-4. Seek medical attention if irritation, burns, or symptoms develop.
+2. Flush the affected area with large volumes of water for at least
+   15 minutes [@osha_labsafety2012].
+3. Do not apply neutralizing agents directly to skin.
+4. Seek medical attention.
 
 ### Eye Contact
 
-1. Go to the eyewash station immediately.
-2. Hold eyelids open and flush both eyes for at least 15 minutes,
-   even if only one eye was affected.
-3. Remove contact lenses during flushing if possible.
-4. Seek medical attention.
-
-### Inhalation
-
-1. Move to fresh air immediately.
-2. If symptoms develop (dizziness, coughing, difficulty breathing),
-   call Campus Safety and seek medical attention.
-3. Inform responders of the chemical involved.
+1. Immediately go to the eyewash station.
+2. Hold eyelids open and flush both eyes continuously for at least
+   15 minutes.
+3. Call Campus Safety or 911; all chemical eye exposures require
+   medical evaluation.
 
 
-## Incident Reporting and Documentation
+## Documentation and Reporting
 
-**Every spill, regardless of size, must be documented.**
+After every spill, including minor ones that were cleaned up
+successfully:
 
-### Immediate Notification
-
-- **Minor spills:** Notify the lab manager and PI by email within
-  24 hours.
-- **Major spills:** Campus Safety is notified in real time (Section 6).
-  The lab manager and PI must also be informed immediately.
-- **Injuries or exposures:** Report to Campus Safety and the PI
-  immediately. Complete a Pomona College Incident/Injury Report.
-
-### Spill Incident Report
-
-Complete the following form (available in the lab or electronically)
-and submit to the lab manager within 48 hours:
-
-| Field                 | Information to Record                          |
-|:----------------------|:-----------------------------------------------|
-| Date and time         | When the spill occurred                        |
-| Location              | Room, bench, fume hood number                  |
-| Reporter name         | Who discovered the spill                       |
-| Chemical(s) involved  | Name, concentration, approximate quantity      |
-| Cause                 | How the spill happened                         |
-| Classification        | Minor or major                                 |
-| Injuries/exposures    | Names, symptoms, treatment provided            |
-| Cleanup method        | Agent used, pH of residue, waste disposal      |
-| Corrective actions    | Steps taken to prevent recurrence              |
-| Witnesses             | Names of anyone present                        |
-
-### Post-Incident Review
-
-For major spills or any spill involving injury, the PI will convene a
-brief review within one week to identify root causes and update
-procedures if needed.
-
-
-## Spill Kit Inventory and Maintenance
-
-### Kit Contents
-
-Each EA Program lab should have the following spill materials
-accessible:
-
-| Item                          | Location       | Check Frequency |
-|:------------------------------|:---------------|:----------------|
-| Spill-X-A (acid neutralizer)  | Under fume hood| Monthly         |
-| Spill-X-C (caustic neutralizer)| Under fume hood| Monthly        |
-| Spill-X-S (solvent absorbent) | Under fume hood| Monthly         |
-| Mercury spill kit             | *TBD*          | Monthly         |
-| pH paper (wide range)         | With spill kits| Monthly         |
-| Absorbent pads / pillows      | Under bench    | Monthly         |
-| Scraper and dustpan           | With spill kits| Monthly         |
-| Labeled waste bags            | With spill kits| Monthly         |
-| Nitrile gloves (extra pairs)  | With spill kits| Monthly         |
-
-### Monthly Check
-
-The lab manager (or designated student) inspects spill kits on the
-first Monday of each month. Verify that all items are present and not
-expired. Replenish as needed. Record the check date on the spill kit
-inspection log posted on the kit.
-
-
-## Definitions
-
-SDS
-: Safety Data Sheet. A document describing a chemical's hazards,
-  properties, safe handling, and emergency procedures. Located on the
-  counter near the east entrance and in the PPE shelves near the
-  entrance of SGM 133.
-
-Spill-X-A / Spill-X-C / Spill-X-S
-: Commercial spill control kits manufactured by Ansul (now Johnson
-  Controls). A = acid neutralizer, C = caustic neutralizer,
-  S = solvent absorbent.
+1. Complete the EA Program Spill/Incident Report Form (posted on the
+   lab shared drive).
+2. Record: date, time, location, chemical name and CAS number, volume
+   spilled, who was involved, any exposures or injuries, actions taken,
+   waste disposal method.
+3. Submit the form to the PI within 24 hours.
+4. The PI submits a report to Pomona College EH&S for any spill that
+   resulted in an exposure or injury, required evacuation, or involved
+   a reportable quantity of a regulated chemical
+   [@pomona_emergency].
+5. Review the incident with the lab group within one week to identify
+   how to prevent recurrence.
 
 
 ## References
 
-OSHA. (2012). *Laboratory Safety Guidance*. OSHA 3404-11R.
+- @osha_labsafety2012
+- @nrc_prudent2011
+- @pomona_emergency
 
-National Research Council. (2011). *Prudent Practices in the
-Laboratory: Handling and Management of Chemical Hazards* (updated ed.).
-National Academies Press.
-
-Pomona College. *Emergency Instructions*. Available at:
-<http://www.pomona.edu/sites/default/files/emergency-instructions.pdf>
+::: {#refs}
+:::
 
 
 ## Related SOPs
