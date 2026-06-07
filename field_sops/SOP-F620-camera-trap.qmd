@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F620: Camera Trap Deployment and AI-Assisted Image Analysis
-# =============================================================================
 title: "Camera Trap Deployment and AI-Assisted Image Analysis"
 sop-number: "SOP-F620"
 author:
@@ -9,7 +6,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.01"
@@ -20,6 +17,11 @@ revision-history:
     date: "2025-05-16"
     author: "Marc Los Huertos"
     changes: "Converted to Quarto; added AI-assisted analysis workflow"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; converted plain-text references
+              to BibTeX; added inline citations"
 ---
 
 ## Purpose
@@ -28,13 +30,14 @@ This procedure describes the deployment, retrieval, data management,
 and AI-assisted image analysis of camera traps (motion-triggered
 wildlife cameras) used in the EA Program. Camera traps provide a
 non-invasive method for documenting wildlife presence, activity
-patterns, and species richness at field sites. The volume of images
-produced by even a small number of cameras (thousands to tens of
-thousands per deployment) makes manual review a major bottleneck.
-This SOP integrates open-source and cloud-based AI tools to automate
-blank-image filtering and species identification, reducing processing
-time by an order of magnitude while maintaining scientific rigor
-through human-in-the-loop verification.
+patterns, and species richness at field sites [@thornton2026]. The
+volume of images produced by even a small number of cameras
+(thousands to tens of thousands per deployment) makes manual review
+a major bottleneck. This SOP integrates open-source and cloud-based
+AI tools to automate blank-image filtering and species identification,
+reducing processing time by an order of magnitude while maintaining
+scientific rigor through human-in-the-loop verification
+[@beery2019megadetector; @wildlifeinsights].
 
 The EA Program currently uses the CamPark T20 trail camera, but the
 deployment and analysis procedures are applicable to other camera trap
@@ -43,12 +46,12 @@ models with minor adaptations.
 
 ## Scope
 
-- **Applies to:** Deployment and image analysis of all EA Program camera
-  traps at field sites, including the Bernard Field Station, Pomona
-  College Farm, the Pit, and restoration areas
+- **Applies to:** Deployment and image analysis of all EA Program
+  camera traps at field sites, including the Bernard Field Station,
+  Pomona College Farm, the Pit, and restoration areas
 - **Does not apply to:** Live-view video surveillance systems; drone
-  imagery (see *SOP-F630*); 360-degree cameras (see *SOP-F6XX*); aquatic
-  camera systems
+  imagery (see [SOP-F630](SOP-F630-drone-operations.qmd)); 360-degree
+  cameras; aquatic camera systems
 - **Location:** All EA Program field sites (deployment); EA Program
   laboratory (data analysis)
 
@@ -57,10 +60,66 @@ models with minor adaptations.
 
 | Role              | Responsibility                              |
 |:------------------|:--------------------------------------------|
-| Lab PI            | Approve deployment plan, oversee data management |
-| Field Lead        | Select camera locations, coordinate deployment and retrieval |
+| Lab PI            | Approve deployment plan, oversee data
+                      management                                          |
+| Field Lead        | Select camera locations, coordinate
+                      deployment and retrieval                            |
 | Trained Personnel | Deploy/retrieve cameras, process images     |
-| New Students      | Complete training before independent deployment |
+| New Students      | Complete training before independent
+                      deployment                                          |
+
+
+## Definitions
+
+- **AI confidence score:** A numerical value (0--1 or 0--100%) output
+  by a classification model indicating the model's certainty in its
+  predicted species identification; predictions below 90% confidence
+  must be manually verified in the EA Program workflow
+  [@beery2019megadetector].
+- **Blank image:** A camera trap image with no animal, person, or
+  vehicle visible, typically triggered by vegetation movement or
+  lighting changes; MegaDetector removes these automatically,
+  eliminating the largest portion of review burden.
+- **CamPark T20:** The EA Program's primary trail camera; a 16 MP
+  passive infrared (PIR) triggered camera with infrared night flash;
+  detection range approximately 20 m; 8 AA batteries per deployment
+  [@campark_t20].
+- **Detection rate:** The number of independent detections of a
+  species per 100 camera-trap-nights; the standard metric for
+  comparing wildlife activity across sites or seasons; depends on both
+  actual animal abundance and camera placement [@obrien2010].
+- **Human-in-the-loop verification:** A quality control protocol in
+  which a human reviewer examines AI predictions, particularly
+  low-confidence ones, to correct errors before results are used for
+  analysis; essential because AI models fail on rare species, unusual
+  poses, and taxa underrepresented in training data
+  [@thornton2026].
+- **Independent detection event:** A single occurrence of a species at
+  a camera during a defined time window (typically 30 minutes); used
+  to prevent over-counting multiple images of the same individual;
+  defined a priori and reported with any analysis [@obrien2010].
+- **MegaDetector:** An open-source object detection model
+  (Microsoft/Google) that classifies each camera trap image as
+  containing an animal, a human, a vehicle, or being blank; runs as a
+  pre-processing step before species classification; the current
+  version is MegaDetector v5 [@beery2019megadetector].
+- **PIR (passive infrared) sensor:** The motion and heat detection
+  sensor in a trail camera; triggers image capture when it detects a
+  warm moving object within the detection zone; sensitivity and
+  detection range vary with temperature, wind, and vegetation.
+- **SpeciesNet:** A deep-learning species classification model
+  developed by Google; trained on over 65 million labeled camera trap
+  images from more than 2,000 species and blank categories; used in
+  both the Wildlife Insights platform and the local CameraTrapAI
+  pipeline [@wildlifeinsights; @speciesnet2026].
+- **Trap night (camera trap night):** One camera deployed at one
+  location for one 24-hour period; the standard unit of sampling
+  effort; total trap nights = number of cameras × number of days
+  deployed [@obrien2010].
+- **Wildlife Insights:** A free cloud-based platform for camera trap
+  data management and AI classification, developed by Google, WWF,
+  Conservation International, the Wildlife Conservation Society, and
+  the Smithsonian [@wildlifeinsights].
 
 
 ## Safety and Hazards
@@ -68,13 +127,12 @@ models with minor adaptations.
 ::: {.callout-warning}
 ### Hazards
 
-- **Biological:** Tick and insect exposure, poison oak, snakes at field
-  sites. Wildlife encounters when checking cameras in remote locations.
+- **Biological:** Tick and insect exposure, poison oak, snakes.
+  Wildlife encounters when checking cameras in remote locations.
 - **Physical:** Uneven terrain, climbing to mount cameras on trees or
-  posts. Potential for falls.
-- **Security:** Cameras left unattended in public or semi-public areas
-  may be stolen or vandalized. Cameras may inadvertently photograph
-  people.
+  posts.
+- **Security:** Cameras left unattended in public areas may be stolen
+  or vandalized.
 :::
 
 ### Required PPE
@@ -84,231 +142,112 @@ models with minor adaptations.
 - [ ] Sun protection (hat, sunscreen)
 - [ ] Tick repellent
 
-### Related SOPs
-
-Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
-field safety procedures.
-
-### Privacy Considerations
-
-Camera traps deployed at sites accessible to the public may capture
-images of people. Consult the PI regarding institutional requirements
-for signage, data handling, and deletion of images containing
-identifiable individuals. Images of people should be deleted during
-the initial screening step and never uploaded to public platforms.
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd). Cameras
+may inadvertently photograph people; consult the PI regarding
+institutional requirements for signage and data handling, and delete
+identifiable images immediately during initial screening.
 
 
 ## Equipment and Materials
 
-### Camera Equipment
-
 | Item                          | Specifications                            |
 |:------------------------------|:------------------------------------------|
-| CamPark T20 trail camera      | 16 MP CMOS sensor; detection range 20 m (65 ft); infrared night flash |
-| SD card (Class 10, up to 32 GB) | Not included with camera; one per camera |
-| AA batteries (8 per camera)  | Lithium recommended for extended deployment in cold or heat |
-| Mounting strap or bracket    | Included with camera; bungee cord as backup |
-| Cable lock (optional)        | Theft deterrent for public-access sites   |
-
-### Field Supplies
-
-| Item                          | Notes                                     |
-|:------------------------------|:------------------------------------------|
-| GPS unit or smartphone        | For recording camera coordinates           |
-| Field data sheet              | Printed from Appendix A                   |
-| Clipboard and pencil          | For field notes                            |
-| Spare SD cards and batteries  | Carry extras on retrieval trips            |
-| Pruning shears                | For clearing vegetation from detection zone |
-| Compass                       | For recording camera bearing               |
-
-### Data Analysis (Computer)
-
-| Item                          | Notes                                     |
-|:------------------------------|:------------------------------------------|
-| Computer with Python 3.9+ or R 4.0+ | For running AI pipelines           |
-| Internet connection           | For Wildlife Insights upload or SpeciesNet download |
-| SD card reader                | USB adapter for downloading images         |
-| External hard drive or cloud storage | For archiving raw images           |
+| CamPark T20 trail camera      | 16 MP; detection range 20 m; IR night flash [@campark_t20] |
+| SD card (Class 10, up to 32 GB) | One per camera                          |
+| AA batteries (8 per camera)   | Lithium recommended for extremes         |
+| Mounting strap or bracket     | Included with camera                     |
+| Cable lock (optional)         | Theft deterrent for public-access sites  |
+| GPS unit or smartphone        | Per [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| Field data sheet              | Printed from Appendix A                  |
+| Pruning shears                | For clearing detection zone              |
+| Compass                       | For recording camera bearing             |
+| SD card reader (USB)          | For lab image download                   |
+| External hard drive or cloud  | For archiving raw images                 |
 
 
 ## Procedure -- Field Deployment
 
 ### Camera Setup
 
-1. Install 8 AA batteries in the battery compartment
-2. Insert a formatted SD card (Class 10, up to 32 GB)
-3. Power on the camera and enter the settings menu
-4. Configure the following parameters and record them on the field data
-   sheet:
+1. Install 8 AA batteries and insert a formatted SD card
+   [@campark_t20].
+2. Power on and enter the settings menu. Configure:
 
 | Setting            | Recommended Value       | Notes                  |
 |:-------------------|:------------------------|:-----------------------|
 | Photo resolution   | 16 MP                   | Highest available      |
-| Video resolution   | 1920 x 1080             | If video is desired; otherwise, photo-only saves battery |
-| Trigger mode       | Photo (or Photo + Video) | --                    |
-| Photos per trigger | 3 (burst mode)          | Increases detection probability |
-| Trigger interval   | 5 seconds               | Balance between captures and battery life |
-| Time stamp         | ON                       | Essential for activity pattern analysis |
-| Date/time          | Set to current local time | Verify at each deployment |
+| Trigger mode       | Photo (burst × 3)       | Burst increases detection probability |
+| Trigger interval   | 5 seconds               | Balance captures and battery |
+| Time stamp         | ON                      | Required for activity analysis |
+| Date/time          | Current local time      | Verify at each deployment |
 
-5. Take a test photo to verify the camera is functioning and the
-   timestamp is correct
+3. Take a test photo to verify function and timestamp.
 
 ### Site Selection and Mounting
 
-1. Select a location based on the study objectives (game trails,
-   water sources, habitat edges, or random/systematic grid points)
-2. Record GPS coordinates and camera bearing (compass direction the
-   camera faces)
-3. Clear vegetation and branches within the camera's detection zone
-   (approximately 20 m cone in front of the lens) that could trigger
-   false detections
-4. Mount the camera at approximately 30--50 cm above ground for
-   small-to-medium mammals, or 75--100 cm for larger species
-5. Angle the camera slightly downward (approximately 5--10 degrees)
-6. Avoid facing the camera directly into the rising or setting sun,
-   which causes washed-out images and excessive false triggers
-7. Secure with the mounting strap. Apply a cable lock if at a
-   public-access site.
-8. Walk through the detection zone to verify the trigger is functioning
-9. Record the deployment date, time, site ID, camera serial number,
-   and SD card number on the field data sheet
+1. Select a location based on study objectives (game trails, water
+   sources, habitat edges, or systematic grid points).
+2. Record GPS coordinates and camera bearing (compass direction camera
+   faces) [@obrien2010].
+3. Clear vegetation within the detection zone (approximately 20 m cone
+   in front of the lens) to reduce false triggers.
+4. Mount at 30--50 cm above ground for small-to-medium mammals, or
+   75--100 cm for larger species; angle slightly downward (5--10°).
+5. Secure with mounting strap. Apply a cable lock if at a public site.
+6. Walk through the detection zone to verify the trigger functions.
+7. Record deployment metadata on the field data sheet (Appendix A).
 
 ### Retrieval and Redeployment
 
-1. Navigate to the camera location using recorded GPS coordinates
-2. Power off the camera before removing the SD card
-3. Remove the SD card and replace with a fresh, formatted card
-4. Check battery level; replace batteries if below 50%
-5. Power on, verify settings, and take a test photo
-6. Record retrieval date, time, and any observations (camera
-   displacement, animal damage, vegetation encroachment) on the field
-   data sheet
-7. Store the retrieved SD card in a labeled case for transport to
-   the lab
+1. Power off before removing the SD card.
+2. Replace with a fresh, formatted card; check battery level; replace
+   batteries if below 50%.
+3. Power on, verify settings, and take a test photo.
+4. Record retrieval date, time, and observations on the field data
+   sheet.
 
 
 ## Procedure -- Data Management and AI Analysis
 
 ### Image Download and Organization
 
-1. Insert the SD card into a card reader connected to the lab computer
-2. Create a folder following the naming convention:
-   `CamTrap_SiteID_CameraID_YYYYMMDD-YYYYMMDD`
-3. Copy all images from the SD card to this folder
-4. Back up the folder to the external hard drive or cloud storage
-   immediately
-5. Do not delete images from the SD card until the backup is verified
-6. Format the SD card in the camera (not on the computer) before
-   redeployment
+1. Create a folder: `CamTrap_SiteID_CameraID_YYYYMMDD-YYYYMMDD`.
+2. Copy all images from the SD card.
+3. Back up immediately to external hard drive or cloud storage.
+4. Do not delete images from the SD card until the backup is verified.
 
 ### AI-Assisted Analysis Pipeline
 
-The EA Program uses a two-stage AI pipeline for camera trap image
-processing, following the approach used by the Wildlife Insights
-platform and the Google CameraTrapAI project [@wildlifeinsights;
-@speciesnet2026]:
+The EA Program uses a two-stage AI pipeline following the approach
+used by Wildlife Insights and the Google CameraTrapAI project
+[@wildlifeinsights; @speciesnet2026]:
 
-**Stage 1: Detection (MegaDetector).** An object detection model
-identifies whether each image contains an animal, a human, a vehicle,
-or is blank (no object of interest). This eliminates the majority of
-false triggers and empty frames, which typically constitute 50--90% of
-camera trap images.
+**Stage 1: Detection (MegaDetector).** Identifies whether each image
+contains an animal, human, vehicle, or is blank; eliminates 50--90%
+of false-trigger images [@beery2019megadetector].
 
-**Stage 2: Classification (SpeciesNet or similar).** A species
-classification model identifies detected animals to the lowest possible
-taxonomic level. The model is trained on over 65 million labeled camera
-trap images spanning more than 2,000 categories.
+**Stage 2: Classification (SpeciesNet or similar).** Identifies
+detected animals to the lowest possible taxonomic level, trained on
+over 65 million labeled camera trap images.
 
-### Option A: Wildlife Insights (Cloud-Based)
+**Option A: Wildlife Insights (cloud-based).**
+Upload images to [wildlifeinsights.org](https://www.wildlifeinsights.org),
+which runs both stages automatically [@wildlifeinsights]. Review AI
+predictions and export verified data as CSV.
 
-Wildlife Insights is a free, cloud-based platform developed by Google,
-WWF, Conservation International, the Wildlife Conservation Society, and
-the Smithsonian. It runs both MegaDetector and SpeciesNet automatically
-on uploaded images.
+**Option B: Local pipeline (Python).** For offline or large-volume
+processing, use the open-source CameraTrapAI package from
+[github.com/google/cameratrapai](https://github.com/google/cameratrapai)
+[@speciesnet2026; @beery2019megadetector].
 
-1. Create a project at
-   [wildlifeinsights.org](https://www.wildlifeinsights.org)
-2. Upload images following the platform's batch upload format (images +
-   metadata CSV)
-3. The platform automatically classifies each image, identifying
-   species, count, and confidence score
-4. Review AI predictions in the web interface; correct misclassifications
-   using the built-in review tools
-5. Export the verified dataset as a CSV for analysis in R
+### Human Verification
 
-::: {.callout-tip}
-### Tip
-Wildlife Insights filters blank images automatically and achieves
-greater than 95% accuracy on well-represented species. Focus manual
-review on low-confidence predictions (typically flagged by the
-platform) and on species known to be rare or absent from the training
-data.
-:::
-
-### Option B: Local Pipeline (Python)
-
-For projects that require offline processing, greater control, or
-cannot upload images to a cloud platform, use the open-source
-CameraTrapAI pipeline from Google:
-
-1. Install the CameraTrapAI package from
-   [github.com/google/cameratrapai](https://github.com/google/cameratrapai)
-2. Run MegaDetector to detect animals and filter blanks:
-
-```bash
-# MegaDetector: detect animals, humans, vehicles
-python run_detector.py \
-  --model_file md_v5b.0.0.pt \
-  --image_dir /path/to/CamTrap_SiteID/ \
-  --output_file detections.json \
-  --threshold 0.2
-```
-
-3. Run SpeciesNet on detected animal crops:
-
-```bash
-# SpeciesNet: classify species
-python run_classifier.py \
-  --detections detections.json \
-  --model_file speciesnet_v1.pt \
-  --output_file classifications.csv
-```
-
-4. Review and correct classifications in R or a spreadsheet editor
-   (Section 7.6)
-
-### Option C: AddaxAI or EcoAssist (Desktop GUI)
-
-For users who prefer a graphical interface over the command line:
-
-- **AddaxAI** ([addaxdatascience.com/addaxai](https://addaxdatascience.com/addaxai/)):
-  Desktop application that wraps MegaDetector and SpeciesNet with a
-  drag-and-drop interface. Free for researchers.
-- **EcoAssist** ([github.com/PetervanLunworX/EcoAssist](https://github.com/PetervanLunworX/EcoAssist)):
-  Open-source desktop tool with built-in MegaDetector and optional
-  species classifiers. Cross-platform.
-
-Both tools produce output CSVs compatible with the R analysis workflow
-below.
-
-### Human-in-the-Loop Verification
-
-AI predictions must be verified by a trained observer before use in
-analyses or publications:
-
-1. Sort the AI output by confidence score (ascending)
+1. Sort AI output by confidence score (ascending).
 2. Manually verify all predictions below 90% confidence
-3. Spot-check a random 10% of predictions above 90% confidence
-4. Correct any misclassifications in the output CSV
-5. Record the reviewer's name, date, and total number of corrections
-
-::: {.callout-important}
-AI models can misidentify rare species, confuse similar-looking species
-(e.g., domestic vs. feral cats), or miss cryptic animals in cluttered
-backgrounds. Never use unverified AI output for occupancy modeling,
-population estimates, or species occurrence records.
-:::
+   [@thornton2026].
+3. Spot-check a random 10% of predictions above 90% confidence.
+4. Correct misclassifications and record reviewer name, date, and
+   total corrections.
 
 ### Data Analysis in R
 
@@ -319,64 +258,20 @@ population estimates, or species occurrence records.
 
 library(tidyverse)
 library(lubridate)
-library(camtrapR)  # CRAN package for camera trap data management
+library(camtrapR)   # Niedballa et al. 2016
 
-# --- Import verified classification data ---
 detections <- read_csv("classifications_verified.csv") %>%
-  mutate(
-    datetime = ymd_hms(timestamp),
-    date = as_date(datetime),
-    hour = hour(datetime)
-  )
+  mutate(datetime = ymd_hms(timestamp),
+         date = as_date(datetime),
+         hour = hour(datetime))
 
-# --- Summary statistics ---
-cat(sprintf("Total images: %d\n", nrow(detections)))
-cat(sprintf("Images with animals: %d\n",
-            sum(detections$category == "animal")))
-cat(sprintf("Unique species detected: %d\n",
-            n_distinct(detections$species[detections$category == "animal"])))
-
-# --- Species accumulation ---
-species_by_date <- detections %>%
-  filter(category == "animal") %>%
-  arrange(datetime) %>%
-  distinct(species, .keep_all = TRUE) %>%
-  mutate(cumulative_species = row_number())
-
-ggplot(species_by_date, aes(x = date, y = cumulative_species)) +
-  geom_step() +
-  labs(
-    x = "Date",
-    y = "Cumulative species detected",
-    title = "Species Accumulation Curve"
-  ) +
-  theme_minimal()
-
-# --- Activity patterns (diel) ---
-activity <- detections %>%
-  filter(category == "animal") %>%
-  count(species, hour)
-
-ggplot(activity, aes(x = hour, y = n)) +
-  geom_col() +
-  facet_wrap(~species, scales = "free_y") +
-  labs(
-    x = "Hour of day",
-    y = "Number of detections",
-    title = "Diel Activity Patterns"
-  ) +
-  theme_minimal()
-
-# --- Detection rate (independent events) ---
-# Define independent events as detections of the same species at the
-# same camera separated by at least 30 minutes
+# Independent events (30-min threshold)
 independent <- detections %>%
   filter(category == "animal") %>%
   arrange(camera_id, species, datetime) %>%
   group_by(camera_id, species) %>%
   mutate(
-    time_diff_min = as.numeric(difftime(datetime,
-                                         lag(datetime),
+    time_diff_min = as.numeric(difftime(datetime, lag(datetime),
                                          units = "mins")),
     independent = is.na(time_diff_min) | time_diff_min >= 30
   ) %>%
@@ -397,84 +292,49 @@ det_rate <- independent %>%
 print(det_rate)
 ```
 
-
-## Quality Control and Acceptance Criteria
-
-### Field QC
-
-- Test-fire each camera before leaving the deployment site
-- Record all deployment metadata (coordinates, bearing, height, date,
-  time, settings) on the field data sheet
-- Check cameras at regular intervals (every 2--4 weeks) to replace
-  batteries and SD cards
-- Log any camera failures, theft, or displacement events
-
-### AI Classification QC
-
-- Report the AI model version (e.g., MegaDetector v5b, SpeciesNet v1)
-  and confidence threshold used
-- Manually verify all predictions below 90% confidence
-- Spot-check 10% of high-confidence predictions
-- Record the total number and percentage of AI predictions that were
-  corrected during verification
-- If the correction rate exceeds 10% for a particular species, that
-  species' classifications should be fully manually reviewed
-
-### Data Reporting
-
-Report the following in any publication or analysis:
-
-- Camera model, settings, and deployment dates
-- Number of trap-nights per camera
-- AI pipeline used (Wildlife Insights, CameraTrapAI, etc.) with version
-  numbers
-- Confidence threshold applied
-- Verification protocol and correction rate
-- Definition of independent detection events (e.g., 30-minute threshold)
+[@niedballa2016camtrapr]
 
 
-## Waste Disposal
+## Quality Control
 
-| Waste Type                    | Disposal Method                          |
-|:------------------------------|:-----------------------------------------|
-| Spent batteries               | Battery recycling bin (do not put in regular trash) |
-| Failed SD cards               | E-waste recycling                        |
-| Damaged cameras               | E-waste recycling                        |
+- Test-fire each camera before leaving the deployment site.
+- Record all deployment metadata on the field data sheet.
+- Check cameras every 2--4 weeks to replace batteries and SD cards.
+- Report the AI model version, confidence threshold, verification
+  protocol, and correction rate in any publication [@thornton2026].
 
 
 ## References
 
-- CamPark. *T20 Mini Trail Camera: User's Manual*.
-- Google. (2026). SpeciesNet: AI species classification for camera
-  traps. Available at:
-  [github.com/google/cameratrapai](https://github.com/google/cameratrapai).
-- Beery, S., Morris, D., & Yang, S. (2019). Efficient pipeline for
-  camera trap image review. *arXiv preprint* arXiv:1907.06772.
-  (MegaDetector).
-- Wildlife Insights. (2026). About Wildlife Insights AI.
-  [wildlifeinsights.org](https://www.wildlifeinsights.org/about-wildlife-insights-ai).
-- Thornton, S.A. et al. (2026). Identification of camera trap images
-  by artificial intelligence and human experts produces similar
-  multi-species occupancy models. *Journal of Applied Ecology*.
-- Niedballa, J., Sollmann, R., Courtiol, A., & Wilting, A. (2016).
-  camtrapR: an R package for efficient camera trap data management.
-  *Methods in Ecology and Evolution*, 7(12), 1457--1462.
-- O'Brien, T.G., Baillie, J.E.M., Krueger, L., & Cuke, M. (2010).
-  The Wildlife Picture Index: monitoring top trophic levels.
-  *Animal Conservation*, 13, 335--343.
+- @campark_t20
+- @beery2019megadetector
+- @wildlifeinsights
+- @speciesnet2026
+- @thornton2026
+- @niedballa2016camtrapr
+- @obrien2010
 
 ::: {#refs}
 :::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation  | Camera deployment coordinates     |
+| [F602](SOP-F602-inaturalist.qmd)       | iNaturalist               | Photo-based species documentation |
+| [F630](SOP-F630-drone-operations.qmd)  | Drone Operations          | Complementary remote sensing      |
+| [L801](../lab_sops/SOP-L801-rstudio-github.qmd) | RStudio and GitHub | Data version control             |
 
 
 ## Training Record
 
 Before deploying camera traps independently, personnel must:
 
-1. Read this SOP and [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
-   in full
-2. Demonstrate camera setup (batteries, SD card, settings
-   configuration, test photo) under supervision
+1. Read this SOP and [SOP-F001](SOP-F001-field-safety.qmd) in full
+2. Demonstrate camera setup under supervision
 3. Deploy and retrieve at least one camera with proper metadata
    recording
 4. Process one SD card through the full AI pipeline (download,
@@ -485,45 +345,16 @@ Before deploying camera traps independently, personnel must:
 
 ## Appendix A: Field Data Sheet {.appendix}
 
-Print this sheet and carry it during deployment and retrieval.
-
-**Project:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 | Field                   | Deployment              | Retrieval               |
 |:------------------------|:------------------------|:------------------------|
-| Date                    | \_\_\_\_\_\_\_\_\_\_     | \_\_\_\_\_\_\_\_\_\_     |
-| Time                    | \_\_\_\_\_\_\_\_\_\_     | \_\_\_\_\_\_\_\_\_\_     |
-| Site ID                 | \_\_\_\_\_\_\_\_\_\_     | --                      |
-| Camera serial no.       | \_\_\_\_\_\_\_\_\_\_     | --                      |
-| SD card no.             | \_\_\_\_\_\_\_\_\_\_     | \_\_\_\_\_\_\_\_\_\_     |
-| GPS coordinates         | \_\_\_\_\_\_\_\_\_\_\_\_ | --                      |
-| Camera bearing          | \_\_\_\_\_\_\_\_ degrees | --                      |
-| Camera height           | \_\_\_\_\_\_\_\_ cm      | --                      |
-| Photo resolution        | \_\_\_\_\_\_\_\_ MP      | --                      |
-| Trigger interval        | \_\_\_\_\_\_\_\_ sec     | --                      |
-| Battery status          | Fresh / \_\_\_\_\_ %     | \_\_\_\_\_ %            |
-| Habitat description     | \_\_\_\_\_\_\_\_\_\_\_\_ | --                      |
-| Vegetation cleared?     | Y / N                   | Regrowth? Y / N         |
-| Cable lock installed?   | Y / N                   | Intact? Y / N           |
-| Test photo taken?       | Y / N                   | --                      |
-| Notes                   | \_\_\_\_\_\_\_\_\_\_\_\_ | \_\_\_\_\_\_\_\_\_\_\_\_ |
-
-
-## Appendix B: AI Tool Comparison {.appendix}
-
-| Feature                 | Wildlife Insights       | CameraTrapAI (Local)    | AddaxAI / EcoAssist     |
-|:------------------------|:------------------------|:------------------------|:------------------------|
-| Interface               | Web browser             | Python command line      | Desktop GUI             |
-| Internet required       | Yes (upload)            | No (after model download) | No (after install)    |
-| Cost                    | Free                    | Free (open source)      | Free                    |
-| Detection model         | MegaDetector            | MegaDetector            | MegaDetector            |
-| Classification model    | SpeciesNet              | SpeciesNet              | SpeciesNet + others     |
-| Species categories      | 2,000+                  | 2,000+                  | Varies by model         |
-| Batch processing        | Yes (bulk upload)       | Yes (command line)      | Yes (folder selection)  |
-| Output format           | Web dashboard + CSV     | JSON + CSV              | CSV                     |
-| Human review tools      | Built-in web interface  | External (R, spreadsheet) | Built-in viewer       |
-| Data privacy            | Images stored on Google Cloud | Images stay local | Images stay local       |
-| Best for                | Standard projects; collaboration | Large datasets; custom pipelines | Users who prefer GUI |
- 
-
-
+| Date                    |                         |                         |
+| Time                    |                         |                         |
+| Site ID                 |                         | --                      |
+| Camera serial no.       |                         | --                      |
+| SD card no.             |                         |                         |
+| GPS coordinates         |                         | --                      |
+| Camera bearing (°)      |                         | --                      |
+| Camera height (cm)      |                         | --                      |
+| Batteries               | Fresh                   | \_\_\_ %                |
+| Test photo taken        | Y / N                   | --                      |
+| Notes                   |                         |                         |

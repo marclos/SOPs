@@ -9,13 +9,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-20"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section"
 ---
 
 ## Purpose
@@ -52,6 +56,58 @@ services [@potts2010; @lebuhn2013].
 | New Students      | Complete training (insect identification and sting safety) before independent work |
 
 
+## Definitions
+
+- **Diel activity pattern:** The temporal distribution of an
+  organism's activity across a 24-hour period; most bee species are
+  diurnal with peak activity between 09:00 and 15:00 under sunny,
+  warm conditions; surveys outside peak activity hours systematically
+  underestimate community richness [@lebuhn2013].
+- **Floral density:** The number of open flowers per unit area at a
+  survey location; a key covariate for pollinator abundance because
+  visitation scales with resource availability; estimated visually as
+  flowers per m^2^ or as qualitative categories (low, medium, high)
+  at each survey event.
+- **Focal flower observation:** A survey method in which a single
+  flowering plant or patch is observed for a fixed duration (typically
+  10 minutes) and all pollinators visiting any flower during that
+  period are recorded; useful for comparing visitation rates between
+  plant species or treatments [@westphal2008].
+- **Functional group:** A coarse taxon category used when species-level
+  identification is not possible in the field; the EA Program uses
+  10 groups: honey bee (HB), bumble bee (BB), small native bee (SB),
+  large native bee (LB), butterfly (BF), syrphid fly (SF), other fly
+  (OF), beetle (BT), wasp (WA), and other (OT).
+- **Independent detection event:** A single detection of a pollinator
+  at a flower, counted only once per survey period regardless of how
+  long the individual remains; used to standardize counts across
+  surveys of different duration.
+- **Pan trap:** A colored bowl (white, fluorescent yellow, fluorescent
+  blue) filled with soapy water; passively captures flying insects
+  attracted by color resemblance to flowers; effective for small- to
+  medium-sized bees but under-represents large-bodied bees and
+  butterflies [@lebuhn2013; @westphal2008].
+- **Pollinator:** Any animal that moves pollen from the anther to the
+  stigma of a flower, facilitating plant reproduction; includes bees,
+  flies, butterflies and moths, beetles, and hummingbirds; bees are
+  the dominant pollinators at most EA Program field sites [@potts2010].
+- **Pollination service:** An ecosystem service provided by
+  flower-visiting animals; essential for reproduction of approximately
+  75% of flowering plant species and 35% of global food crop production
+  [@potts2010].
+- **Timed observation transect:** A standardized survey in which the
+  observer walks a fixed route (typically 50 m x 2 m) at a
+  standardized pace (approximately 10 m per minute) and records all
+  pollinators observed on flowers within the survey corridor; produces
+  a count-based estimate of relative pollinator activity
+  [@dicks2016; @lebuhn2013].
+- **Voucher specimen:** A preserved insect specimen deposited in a
+  reference collection to document the occurrence of a species at a
+  site; required for any first records and difficult identifications;
+  pinned through the right mesopleuron following standard entomological
+  practice.
+
+
 ## Safety and Hazards
 
 ::: {.callout-warning}
@@ -78,18 +134,15 @@ services [@potts2010; @lebuhn2013].
 
 ### Permits
 
-Insect collection may require a Scientific Collecting Permit from the
-California Department of Fish and Wildlife (CDFW) depending on the site
-and target taxa. The PI must confirm permit status before fieldwork. No
-permit is needed for observation-only surveys.
+Insect collection may require a Scientific Collecting Permit from CDFW
+depending on the site and target taxa. No permit is needed for
+observation-only surveys.
 
 ### Emergency Procedures
 
-For anaphylactic reactions to stings: administer EpiPen, call 911,
-begin CPR if needed. Refer to
-[SOP-F001 Field Safety](SOP-F001-field-safety.qmd). If encountering
-an aggressive swarm, walk calmly and quickly away from the area; do
-not swat or run erratically.
+For anaphylactic reactions: administer EpiPen, call 911. Refer to
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd). If encountering an
+aggressive swarm, walk calmly away; do not swat or run erratically.
 
 
 ## Equipment and Materials
@@ -99,12 +152,12 @@ not swat or run erratically.
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
 | Stopwatch or phone timer              | For standardizing observation periods    |
-| Hand lens or magnifying glass         | For in situ identification              |
-| Camera (macro-capable or phone)       | For photo-documenting pollinators on flowers |
-| Field notebook or data sheet          | Pre-printed observation form (Appendix A) |
-| Insect field guide                    | e.g., *California Bees and Blooms* (Frankie et al.) |
+| Hand lens or magnifying glass         | For in situ identification               |
+| Camera (macro-capable or phone)       | For photo-documenting pollinators        |
+| Field data sheet                      | Pre-printed from Appendix A             |
+| Insect field guide                    | e.g., *California Bees and Blooms*      |
 | iNaturalist app (smartphone)          | For photo-based identification; see [SOP-F602](SOP-F602-inaturalist.qmd) |
-| Compass and GPS                       | For recording transect or plot locations  |
+| Compass and GPS                       | For recording transect or plot locations |
 
 ### Pan Traps
 
@@ -115,8 +168,8 @@ not swat or run erratically.
 | Unscented liquid dish soap            | 2--3 drops per bowl (breaks surface tension) |
 | Water                                 | To fill bowls approximately 2/3 full     |
 | Wooden stakes or wire stands          | For elevating bowls to canopy height in tall vegetation |
-| Fine mesh strainer                    | For removing insects from bowls           |
-| Whirl-Pak bags or vials               | For storing collected specimens           |
+| Fine mesh strainer                    | For removing insects from bowls          |
+| Whirl-Pak bags or vials               | For storing collected specimens          |
 | 70% ethanol                           | For preserving specimens                 |
 | Forceps (soft-tipped)                 | For handling specimens                   |
 | Labels (waterproof, internal)         | For vial and bag identification          |
@@ -292,7 +345,7 @@ Before conducting pollinator surveys independently, personnel must:
 
 ## Appendix A: Pollinator Observation Data Sheet {.appendix}
 
-**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Transect ID:** \_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_\_\_
+**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Transect ID:** \_\_\_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_\_\_
 
 **Observer:** \_\_\_\_\_\_\_\_\_\_\_\_\_ **Start time:** \_\_\_\_\_\_ **End time:** \_\_\_\_\_\_
 

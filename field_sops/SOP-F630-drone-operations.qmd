@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F630: Drone Operations (DJI Mavic and Matrice)
-# =============================================================================
 title: "Drone Operations (DJI Mavic and Matrice UAVs)"
 sop-number: "SOP-F630"
 author:
@@ -11,7 +8,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "0.1"
@@ -25,17 +22,25 @@ revision-history:
   - version: "1.0"
     date: "2025-05-17"
     author: "Marc Los Huertos"
-    changes: "Combined Mavic and Matrice into single SOP; converted to Quarto; added FAA regulatory section"
+    changes: "Combined Mavic and Matrice into single SOP; converted to
+              Quarto; added FAA regulatory section"
+  - version: "1.1"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Expanded Definitions section; converted plain-text
+              references to BibTeX; added {#refs} div; added inline
+              citations"
 ---
 
 ## Purpose
 
 This SOP details the procedures for safely operating the EA Program's
 DJI unmanned aerial vehicles (UAVs/drones) for research image
-collection. It covers pre-flight setup, flight operations, image
-collection, post-flight procedures, and data transfer. Images obtained
-from these aircraft are used for photogrammetry (3D modeling), site
-monitoring, vegetation mapping, and other remote sensing applications.
+collection [@dji_mavic3pro; @dji_matrice100]. It covers pre-flight
+setup, flight operations, image collection, post-flight procedures,
+and data transfer. Images obtained from these aircraft are used for
+photogrammetry (3D modeling), site monitoring, vegetation mapping,
+and other remote sensing applications.
 
 
 ## Scope
@@ -44,26 +49,74 @@ monitoring, vegetation mapping, and other remote sensing applications.
   Mavic 3 Pro and DJI Matrice 100, for research and instructional
   purposes
 - **Does not apply to:** Indoor flights; flights conducted by
-  contracted third-party operators; processing of drone imagery
-  (photogrammetry, orthomosaic generation) beyond data transfer
+  contracted third-party operators; processing of drone imagery beyond
+  data transfer (see future SOP-L805)
 - **Location:** All EA Program field sites and approved flying areas
 
 
 ## Definitions
 
-- **UAV:** Unmanned Aerial Vehicle; commonly called a drone
-- **UAS:** Unmanned Aircraft System; the drone, remote controller,
-  and associated software as a complete system
-- **RTH:** Return to Home; an automated function that returns the
-  drone to its launch point
-- **Gimbal:** The stabilized mount holding the camera, allowing smooth
-  image capture during flight
-- **Photogrammetry:** The process of creating 3D models or
-  georeferenced maps from overlapping aerial photographs
-- **AGL:** Above Ground Level; flight altitude measured from the
-  ground surface, not sea level
-- **VLOS:** Visual Line of Sight; the pilot must be able to see the
-  drone at all times without visual aids
+- **AGL (Above Ground Level):** Flight altitude measured from the
+  ground surface directly below the aircraft, not from mean sea level;
+  FAA Part 107 limits sUAS to 400 feet AGL (approximately 122 m) in
+  uncontrolled airspace [@faa_part107].
+- **Compass calibration:** A pre-flight procedure that orients the
+  drone's internal compass to the local magnetic field; required at
+  each new site or after transporting the aircraft; performed by
+  rotating the aircraft in specific orientations per the DJI app
+  prompts [@dji_mavic3pro].
+- **DJI Mavic 3 Pro:** A compact foldable quadcopter with a
+  three-camera Hasselblad system; the EA Program's primary survey
+  aircraft stored in SGM 106; flight time approximately 43 minutes;
+  maximum wind resistance 12 m/s (Beaufort 6) [@dji_mavic3pro].
+- **DJI Matrice 100:** A legacy quadcopter platform capable of
+  carrying a research payload of up to 1 kg; stored in SGM 210;
+  suited for multi-sensor work; requires the DJI Pilot app for
+  operation [@dji_matrice100].
+- **Gimbal:** The motorized, stabilized mount that holds the camera;
+  compensates for drone movement to produce level, stable imagery;
+  always reinstall the gimbal guard during transport.
+- **LAANC (Low Altitude Authorization and Notification Capability):**
+  An FAA system that provides near-real-time airspace authorization
+  for UAS operations in controlled airspace (Classes B, C, D, and E
+  surface areas); authorization is obtained through the B4UFLY or
+  Aloft apps before each flight in controlled airspace
+  [@faa_b4ufly; @faa_part107].
+- **LiPo battery (lithium polymer battery):** The rechargeable battery
+  used in DJI drones; stores significant energy and poses a fire
+  hazard if punctured, short-circuited, or charged incorrectly; must
+  be stored at 40--60% charge for long-term storage and kept away from
+  flammable materials.
+- **Nadir angle:** A camera gimbal angle of -90°, pointing the camera
+  directly downward toward the ground surface; the standard angle for
+  photogrammetric mapping and orthomosaic generation.
+- **Part 107:** Title 14 CFR Part 107 of the Code of Federal
+  Regulations, governing Small Unmanned Aircraft Systems; requires a
+  Remote Pilot Certificate for commercial and research operations;
+  specifies operating limitations including maximum altitude, VLOS
+  requirement, and prohibited airspace [@faa_part107].
+- **Photogrammetry:** The science of making measurements from
+  photographs; in the drone context, software such as Reality Capture
+  or Pix4D processes overlapping aerial images to produce 3D models,
+  dense point clouds, digital surface models (DSMs), and georeferenced
+  orthomosaics [@realitycapture_docs].
+- **RTH (Return to Home):** An automated failsafe function that
+  returns the drone to its recorded home point (takeoff location) if
+  the controller signal is lost or the battery reaches the RTH
+  threshold; the home point must be set before each flight.
+- **sUAS (small Unmanned Aircraft System):** FAA classification for
+  unmanned aircraft weighing less than 55 pounds (25 kg); both EA
+  Program drones qualify as sUAS [@faa_part107].
+- **TRUST (The Recreational UAS Safety Test):** An FAA-mandated online
+  safety test for recreational flyers; required when operating under
+  the Exception for Limited Recreational Operations (44809) rather
+  than Part 107.
+- **UAS (Unmanned Aircraft System):** The complete system including
+  the drone, remote controller, and associated software.
+- **VLOS (Visual Line of Sight):** FAA requirement that the Remote
+  Pilot maintain unaided visual contact with the aircraft at all times
+  during flight; flight beyond VLOS requires a Part 107 waiver
+  [@faa_part107].
 
 
 ## Responsibilities
@@ -71,9 +124,10 @@ monitoring, vegetation mapping, and other remote sensing applications.
 | Role              | Responsibility                                   |
 |:------------------|:-------------------------------------------------|
 | PI                | Approve flight plans; ensure FAA compliance      |
-| Certified Pilot   | Hold FAA Part 107 certificate (or operate under the Exception for Limited Recreational Operations); conduct flights |
-| Visual Observer   | Maintain visual contact with the drone; alert pilot to hazards |
-| New Students      | Complete training before any drone operation      |
+| Certified Pilot   | Hold FAA Part 107 certificate; conduct flights   |
+| Visual Observer   | Maintain visual contact with the drone; alert
+                      pilot to hazards                                    |
+| New Students      | Complete training before any drone operation     |
 
 
 ## Safety and Hazards
@@ -93,12 +147,12 @@ monitoring, vegetation mapping, and other remote sensing applications.
 ### Hazards
 
 - **Physical:** Spinning propellers can cause lacerations. A drone
-  falling from altitude can cause blunt force injury. Batteries may
-  be hot after flight.
+  falling from altitude can cause blunt force injury. LiPo batteries
+  may be hot after flight.
 - **Regulatory:** Unauthorized flights can result in FAA fines and
-  criminal penalties. See Section 6.
-- **Property:** Crashes can damage the drone (replacement cost
-  several thousand dollars) and property below.
+  criminal penalties [@faa_part107].
+- **Property:** Crashes can damage the drone (replacement cost several
+  thousand dollars) and property below.
 - **Environmental:** Drones can disturb nesting birds and wildlife.
   Avoid flying near known nesting sites during breeding season.
 
@@ -110,13 +164,9 @@ monitoring, vegetation mapping, and other remote sensing applications.
 
 ### Emergency Procedures
 
-If the drone loses connection or behaves erratically, activate the
-RTH function immediately. If RTH fails, allow the drone to execute
-its failsafe (automatic landing or hover). Do not attempt to catch a
-falling drone. If a crash occurs, document the location and any
-property damage, recover the drone, and report the incident to the PI.
-Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for general
-field emergency procedures.
+If the drone loses connection, activate RTH immediately. If RTH fails,
+allow the drone to execute its failsafe. Do not attempt to catch a
+falling drone. Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
 
 
 ## FAA Regulations
@@ -124,60 +174,36 @@ field emergency procedures.
 ::: {.callout-important}
 ### Legal Requirement
 All drone flights must comply with current FAA regulations. The pilot
-is personally responsible for compliance. Ignorance of airspace rules
-is not a defense.
+is personally responsible for compliance [@faa_part107].
 :::
 
-### Pilot Certification
+Research operations require FAA Part 107 Remote Pilot certification.
+Flights in controlled airspace (near airports) require prior LAANC
+authorization via the B4UFLY or Aloft apps [@faa_b4ufly]. Pomona
+College campus is within Ontario International Airport (KONT) Class C
+airspace; LAANC authorization is required for on-campus flights.
+Both EA Program drones are registered with the FAA; registration
+numbers are on file with the PI and must be displayed on the aircraft
+at all times.
 
-Flights for research purposes (not purely recreational) require FAA
-Part 107 Remote Pilot certification. The certified pilot must be
-present and in command for every flight. If operating under the
-recreational exemption (44809), flights must follow community-based
-safety guidelines and the pilot must pass TRUST (The Recreational UAS
-Safety Test).
+### Flight Restrictions under Part 107
 
-### Airspace Authorization
-
-- Flights below 400 feet AGL in uncontrolled (Class G) airspace do
-  not require airspace authorization
-- Flights in controlled airspace (near airports, in Class B, C, D, or
-  E surface areas) require prior LAANC (Low Altitude Authorization and
-  Notification Capability) authorization or a Part 107 waiver
-- Use the FAA B4UFLY app or Aloft (formerly Kittyhawk) to check
-  airspace restrictions before every flight
-- Pomona College campus is within the surface area of Ontario
-  International Airport (KONT) Class C airspace; LAANC authorization
-  is required for on-campus or near-campus flights
-
-### Registration
-
-Both EA Program drones are registered with the FAA. The registration
-number must be displayed on the aircraft at all times. Registration
-numbers are on file with the PI.
-
-### Flight Restrictions
-
-The following restrictions apply to all EA Program flights under
-Part 107 unless a waiver has been obtained:
-
-- Maximum altitude: 400 feet AGL (or within 400 feet of a structure)
-- Daylight operations only (civil twilight with anti-collision lighting
-  is permissible with appropriate equipment)
+- Maximum altitude: 400 feet AGL [@faa_part107]
+- Daylight operations only (civil twilight with anti-collision
+  lighting permissible with appropriate equipment)
 - Visual line of sight at all times
-- Maximum ground speed: 100 mph (rarely relevant for survey work)
 - No flights over non-participating persons
 - Yield right of way to manned aircraft at all times
 
 
 ## EA Program Fleet
 
-| Aircraft           | Serial Number          | Storage   | Notes                    |
-|:-------------------|:-----------------------|:----------|:-------------------------|
-| DJI Mavic 3 Pro    | *TBD*                  | SGM 106   | Primary survey aircraft  |
-| DJI Matrice 100    | M02DF 19020136         | SGM 210   | Legacy platform; multi-sensor capable |
-| DJI Mavic 3 batteries | *TBD*               | SGM 106   | 3 batteries              |
-| DJI Matrice 100 batteries | *TBD*            | SGM 210   | 6 batteries              |
+| Aircraft            | Serial Number    | Storage   | Notes                   |
+|:--------------------|:-----------------|:----------|:------------------------|
+| DJI Mavic 3 Pro     | *TBD*            | SGM 106   | Primary survey aircraft |
+| DJI Matrice 100     | M02DF 19020136   | SGM 210   | Legacy; multi-sensor    |
+| Mavic 3 batteries   | *TBD*            | SGM 106   | 3 batteries             |
+| Matrice 100 batteries | *TBD*          | SGM 210   | 6 batteries             |
 
 
 ## Required Materials
@@ -187,299 +213,127 @@ Part 107 unless a waiver has been obtained:
 | Item                                     | Check |
 |:-----------------------------------------|:------|
 | Drone (inspected, propellers attached)   | [ ]   |
-| Remote controller (charged)             | [ ]   |
-| Batteries (charged, minimum 3)          | [ ]   |
-| Mobile device with DJI app (charged)    | [ ]   |
-| MicroSD card (formatted, > 2 GB free)   | [ ]   |
-| Spare MicroSD card                      | [ ]   |
-| FAA Part 107 certificate (pilot)        | [ ]   |
-| FAA registration number on aircraft     | [ ]   |
-| LAANC authorization (if in controlled airspace) | [ ] |
+| Remote controller (charged)              | [ ]   |
+| Batteries (charged, minimum 3)           | [ ]   |
+| Mobile device with DJI app (charged)     | [ ]   |
+| MicroSD card (formatted, > 2 GB free)    | [ ]   |
+| FAA Part 107 certificate (pilot)         | [ ]   |
+| FAA registration number on aircraft      | [ ]   |
+| LAANC authorization (if controlled airspace) | [ ] |
 | UAV Forecast app check (weather, KP index) | [ ] |
-| Flight plan (mapped, altitude determined) | [ ] |
-| Landing pad (optional but recommended)  | [ ]   |
-| Notebook and pen (for flight log)       | [ ]   |
+| Flight plan (altitude determined)        | [ ]   |
+| Notebook and pen (for flight log)        | [ ]   |
+
+[@dji_mavic3pro; @faa_part107]
 
 ### Software
 
 | Application            | Purpose                                    |
 |:-----------------------|:-------------------------------------------|
-| DJI Fly or DJI Pilot   | Flight control, camera settings, flight planning |
+| DJI Fly or DJI Pilot   | Flight control, camera settings, flight planning [@dji_mavic3pro; @dji_matrice100] |
 | UAV Forecast           | Weather, wind, KP index, GPS satellite count |
-| B4UFLY or Aloft        | Airspace authorization (LAANC)             |
-| Reality Capture or Pix4D | Photogrammetry post-processing (Windows)  |
-
-
-## Estimated Time
-
-| Task                                     | Time                |
-|:-----------------------------------------|:--------------------|
-| Pre-flight setup (inspection, calibration) | 10--20 minutes    |
-| Flight (per battery)                     | 15--20 minutes      |
-| Battery exchange                         | 5 minutes           |
-| Multiple flight elevations (2--3 passes) | 45--60 minutes total |
-| Post-flight data download                | 10--15 minutes      |
+| B4UFLY or Aloft        | Airspace authorization (LAANC) [@faa_b4ufly] |
+| Reality Capture or Pix4D | Photogrammetry post-processing [@realitycapture_docs] |
 
 
 ## Procedure
 
 ### Pre-Flight Inspection
 
-1. Inspect the airframe for visible damage (cracks, loose components)
-2. Inspect propellers for nicks, cracks, or deformation. Replace any
-   damaged propellers before flight.
-3. Confirm the MicroSD card is inserted and has sufficient free space
-4. Confirm all batteries (drone and remote controller) are fully
-   charged
+1. Inspect the airframe: no cracks, loose propellers, or debris in
+   motors.
+2. Charge all batteries to 100% before departure.
+3. Check the DJI app for firmware updates; update if prompted
+   [@dji_mavic3pro].
 
-### Propeller Installation (Mavic 3 Pro)
+### Pre-Flight Checks at the Site
 
-1. Unfold the two front arms, then the two rear arms
-2. Two propellers are marked (white ring on the center hub); two are
-   unmarked
-3. Match marked propellers to marked motor joints (white ring);
-   unmarked propellers to unmarked joints
-4. Press down and twist to lock (clockwise for marked, counter-
-   clockwise for unmarked)
-5. Verify each propeller is secure by gently pulling upward and
-   wiggling
-
-### Camera Preparation
-
-1. Remove the gimbal cover (plastic camera protector) and any gimbal
-   clamp
-2. Store the cover in the carrying case so it is not lost in the field
-
-### Power On and Controller Connection
-
-1. Place the drone on a flat, level surface (or landing pad)
-2. Power on the drone: press the battery button once, then press and
-   hold for 2 seconds. The battery indicator LEDs should illuminate.
-3. Power on the remote controller using the same press-then-hold
-   sequence
-4. Unfold the mobile device clamps on the controller; insert your
-   mobile device and connect via USB
-5. Launch the DJI app. Confirm that the app shows a live camera feed
-   and connects to the drone.
-
-### Sensor Calibration
-
-Calibrate the compass and IMU sensors when:
-
-- Flying at a new location for the first time
-- The DJI app displays a calibration warning
-- The drone has experienced a hard impact
-
-To calibrate, follow the on-screen instructions in the DJI app. This
-typically involves rotating the drone 360 degrees horizontally, then
-360 degrees vertically. Repeat each rotation until the app confirms
-calibration is complete.
-
-### Set Return to Home (RTH)
-
-1. Confirm the RTH point is set to the current takeoff location (the
-   DJI app sets this automatically on GPS lock)
-2. Set the RTH altitude to at least 150 feet AGL (or higher if tall
-   trees or power lines are present). Verify that no obstacles exist
-   at the RTH altitude along the return path.
-3. The RTH button is located in the upper-left corner of the remote
-   controller (marked with an H)
-
-### Weather and Airspace Check
-
-1. Open UAV Forecast and verify:
-   - Wind speed below 25 mph (below 15 mph preferred for survey work)
-   - No precipitation
-   - KP index below 5 (high KP can degrade GPS accuracy)
-   - Adequate GPS satellite count (minimum 8)
-2. Open B4UFLY or Aloft and verify airspace authorization if in
-   controlled airspace
-3. Record weather conditions in the flight log
-
-::: {.callout-warning}
-### Electromagnetic Interference
-UAV Forecast does not detect all sources of electromagnetic
-interference (power lines, cell towers, metal structures). Visually
-survey the flight area for potential interference sources before
-takeoff.
-:::
+1. Perform compass calibration per the DJI app [@dji_mavic3pro].
+2. Check airspace: open B4UFLY or Aloft and verify authorization
+   [@faa_b4ufly].
+3. Record weather conditions in the flight log.
 
 ### Flight Operations
 
-1. Announce "Taking off" to all personnel in the area
-2. Initiate takeoff via the DJI app or the controller's takeoff
-   sequence
-3. Hover at 3--5 meters to verify stable flight, proper GPS lock, and
-   camera orientation
-4. Execute the flight plan:
-   - For photogrammetry: use the DJI app's automated waypoint or grid
-     flight mode with 70--80% front overlap and 60--70% side overlap
-   - For manual survey: fly in a systematic pattern (lawnmower or
-     orbital) at the planned altitude
-5. Monitor battery level throughout the flight. Begin the return
-   sequence when battery reaches 30%. Land immediately if it reaches
-   20%.
-6. Announce "Landing" to all personnel before descent
-7. Land on the landing pad or flat surface
-
-### Battery Management
-
-- One fully charged battery provides approximately 20 minutes of
-  flight time (varies with wind, temperature, and payload)
-- Carry at least 3 charged batteries per session
-- Exchange batteries after each flight; do not drain below 20%
-- To remove: power off the drone, press the side release buttons on
-  the battery, and slide it out. Handle with care; batteries may be
-  warm.
-- Store batteries at 40--60% charge if not flying for more than 10
-  days
+1. Announce "Taking off" to all personnel.
+2. Hover at 3--5 m to verify stable flight, GPS lock, and camera
+   orientation.
+3. Execute the flight plan:
+   - For photogrammetry: use automated waypoint or grid mode with
+     70--80% front overlap and 60--70% side overlap [@realitycapture_docs].
+   - For manual survey: fly in a systematic pattern at the planned
+     altitude.
+4. Monitor battery: begin return at 30%; land immediately at 20%.
+5. Announce "Landing" before descent.
 
 ### Image Collection Settings
 
 | Setting               | Recommended Value                    |
 |:----------------------|:-------------------------------------|
 | Image format          | JPEG + RAW (DNG) for photogrammetry  |
-| Photo interval        | 2 seconds (timed shot for grid plans) |
+| Photo interval        | 2 seconds (timed shot for grid plans)|
 | Resolution            | Maximum available                     |
-| White balance         | Sunny (or match conditions)          |
-| ISO                   | Auto (100--400 preferred)            |
-| Gimbal angle          | Nadir (-90 degrees) for mapping; oblique (-45 degrees) for 3D models |
+| Gimbal angle          | Nadir (-90°) for mapping; oblique (-45°) for 3D models |
 
+### Post-Flight Procedures
 
-## Post-Flight Procedures
-
-1. Power off the drone and remote controller
-2. Replace the gimbal cover on the camera
-3. Fold the arms (rear arms first, then front arms)
-4. Remove the MicroSD card: on the Mavic 3, open the small hatch on
-   the underside or side of the aircraft and eject the card
-5. Transfer images to the lab computer:
-   - Insert the MicroSD card into a card reader
+1. Power off the drone and remote controller.
+2. Replace the gimbal cover.
+3. Remove the MicroSD card and transfer images:
    - Create a folder: `Drone_SiteID_YYYYMMDD_AltitudeAGL`
-   - Copy all images to the folder
-   - Verify the file count matches the number of images taken during
-     the flight
-6. Format the MicroSD card for the next flight (after confirming the
-   backup is complete)
-7. Return all equipment to the designated storage location (Mavic to
-   SGM 106; Matrice to SGM 210)
-8. Complete the flight log entry
-
-### Flight Log
-
-Record the following for every flight:
-
-| Field                | Entry                               |
-|:---------------------|:------------------------------------|
-| Date                 | YYYY-MM-DD                          |
-| Pilot name           |                                     |
-| Visual observer name |                                     |
-| Aircraft             | Mavic 3 Pro or Matrice 100          |
-| Site name            |                                     |
-| GPS coordinates      | Launch point                        |
-| Airspace class       | G, C, etc.                          |
-| LAANC authorization  | Number, or "N/A" for Class G        |
-| Flight altitude (AGL)|                                     |
-| Number of flights    |                                     |
-| Total flight time    |                                     |
-| Number of images     |                                     |
-| Weather conditions   | Wind, temp, cloud cover             |
-| Incidents or notes   |                                     |
-
-
-## Photogrammetry Processing
-
-::: {.callout-note}
-### Software
-The EA Program uses [Reality Capture](https://www.capturingreality.com/realitycapture)
-(Windows only) or [Pix4D](https://www.pix4d.com/) for generating 3D
-models and orthomosaics from drone imagery. Detailed processing
-instructions are outside the scope of this SOP. Consult the software
-documentation and the PI.
-:::
-
-The general workflow:
-
-1. Import all images from a flight session into the photogrammetry
-   software
-2. Align images (the software matches features across overlapping
-   photos)
-3. Generate a dense point cloud
-4. Build a 3D mesh or digital surface model
-5. Export the model or orthomosaic for analysis
-
-For best results, use 100--1000+ overlapping images per site with
-consistent lighting conditions.
+   - Copy all images; verify file count
+4. Format the MicroSD card after confirming backup.
+5. Return all equipment to storage (Mavic to SGM 106; Matrice to
+   SGM 210).
+6. Complete the flight log: aircraft, date, location, pilot, duration,
+   battery cycles used, any incidents.
 
 
 ## Quality Control
 
-- Complete the pre-flight checklist (Section 8) before every flight
-- Verify GPS lock (minimum 8 satellites) before takeoff
-- After each flight, review a sample of images on the mobile device
-  to confirm coverage, focus, and exposure
-- Check for gaps in coverage; re-fly any missed areas before leaving
-  the site
-- Log all flights in the flight log
-- Report any incidents (crashes, near-misses, equipment damage) to the
+- Complete the pre-flight checklist before every flight.
+- Verify GPS lock (minimum 8 satellites) before takeoff.
+- After each flight, review a sample of images to confirm coverage,
+  focus, and exposure.
+- Report any incidents (crashes, near-misses, property damage) to the
   PI within 24 hours. FAA reporting may be required for incidents
-  involving injury or property damage exceeding $500.
-
-
-## Maintenance
-
-| Task                          | Frequency                               |
-|:------------------------------|:----------------------------------------|
-| Visual inspection (airframe, propellers) | Before every flight         |
-| Firmware update               | When notified by DJI app                |
-| Propeller replacement         | After any damage or every 200 flights   |
-| Battery health check          | Monthly (via DJI app diagnostics)       |
-| Gimbal inspection             | After any hard landing                  |
-| Sensor calibration            | At each new site; after impact          |
-
-
-## Troubleshooting
-
-| Problem                             | Probable Cause                     | Corrective Action                      |
-|:------------------------------------|:-----------------------------------|:---------------------------------------|
-| DJI app does not connect to drone   | USB cable loose; app needs update  | Reseat cable; update app and firmware  |
-| Compass calibration fails           | Metal or EM interference nearby    | Move to an open area away from vehicles, buildings, and power lines |
-| Drone drifts in hover               | GPS signal weak; high winds        | Wait for more satellites; reduce altitude; land if unsafe |
-| Camera images blurry                | Gimbal vibration; dirty lens       | Check propeller balance; clean lens    |
-| Battery drains rapidly              | Cold temperatures; aged battery    | Warm battery before flight; check battery health in DJI app |
-| RTH activates unexpectedly          | Signal lost; low battery failsafe  | Check controller antenna orientation; keep within range |
-| "Restricted zone" warning           | Flying in controlled airspace      | Obtain LAANC authorization; move to an approved area |
+  involving injury or property damage exceeding $500 [@faa_part107].
 
 
 ## References
 
-- DJI. *Mavic 3 Pro User Manual*. Available at:
-  <https://www.dji.com/mavic-3-pro/downloads>
-- DJI. *Matrice 100 User Manual*. Available at:
-  <https://www.dji.com/matrice100/downloads>
-- Federal Aviation Administration. *Part 107 -- Small Unmanned
-  Aircraft Systems*. 14 CFR Part 107. Available at:
-  <https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107>
-- Federal Aviation Administration. *B4UFLY App*.
-  <https://www.faa.gov/uas/getting_started/b4ufly>
-- Capturing Reality. *Reality Capture Documentation*.
-  <https://www.capturingreality.com/realitycapture>
+- @dji_mavic3pro
+- @dji_matrice100
+- @faa_part107
+- @faa_b4ufly
+- @realitycapture_docs
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation  | Flight site coordinates           |
+| [F620](SOP-F620-camera-trap.qmd)       | Camera Traps              | Complementary wildlife monitoring |
+| [L805](../lab_sops/SOP-L805-drone-photogrammetry.qmd) | Drone Photogrammetry | Post-processing workflow |
 
 
 ## Training Record
 
 Before operating any EA Program drone independently, personnel must:
 
-1. Read this SOP and
-   [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) in full
+1. Read this SOP and [SOP-F001](SOP-F001-field-safety.qmd) in full
 2. Hold a current FAA Part 107 Remote Pilot certificate, or have
-   passed the TRUST exam (for recreational-only operations under
-   direct PI supervision)
+   passed TRUST (for recreational operations under direct PI
+   supervision) [@faa_part107]
 3. Complete the DJI app tutorial and demonstrate proficiency with
-   simulator mode
+   simulator mode [@dji_mavic3pro]
 4. Demonstrate pre-flight inspection, calibration, takeoff, hover,
-   controlled flight pattern, and landing under the supervision of a
-   certified pilot
+   controlled flight pattern, and landing under supervision
 5. Complete at least one supervised photogrammetry data collection
-   flight with acceptable image quality and coverage
+   flight with acceptable image quality
 6. Be signed off by the PI
