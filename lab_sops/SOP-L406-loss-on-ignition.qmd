@@ -6,50 +6,68 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "1.0"
     date: "2025-01-15"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "1.1"
+    date: "2026-06-06"
+    author: "Marc Los Huertos"
+    changes: "Converted plain-text references to BibTeX; added {#refs} div;
+              added inline citations throughout; expanded Definitions"
 ---
 
 ## Purpose
 
-This SOP describes the estimation of soil organic matter (SOM) content using the loss-on-ignition (LOI) method. SOM is quantified by measuring the mass lost when oven-dried soil is combusted at 550 C in a muffle furnace.
+This SOP describes the estimation of soil organic matter (SOM) content
+using the loss-on-ignition (LOI) method. SOM is quantified by measuring
+the mass lost when oven-dried soil is combusted at 550 °C in a muffle
+furnace [@heiri2001; @Nelson1996].
 
 
 ## Scope
 
-- **Applies to:** Air-dried, sieved soil samples collected per SOP-F02
-- **Does not apply to:** Soils with high calcium carbonate content (CaCO~3~ decomposes above 450 C and may inflate LOI values; consider an alternative method such as Walkley-Black or elemental analysis for calcareous soils)
-- **Location:** EA Program laboratory, SGM 133
+- **Applies to:** Air-dried, sieved soil samples collected per
+  [SOP-F400 Soil Sampling and Processing](../field_sops/SOP-F400-soil-sampling.qmd).
+- **Does not apply to:** Soils with high calcium carbonate content
+  (CaCO~3~ decomposes above ~450 °C and may inflate LOI values; consider
+  an alternative method such as elemental analysis for calcareous soils
+  [@heiri2001]).
+- **Location:** EA Program laboratory, SGM 133.
+
 
 ## Definitions
 
-- **Ash-free dry mass (AFDM):** The mass remaining after removing
-  water (drying at 105 °C) and organic matter (igniting at 550 °C);
-  equivalent to the inorganic mineral mass of the sample.
-- **Crucible:** A heat-resistant porcelain or ceramic container used
-  to hold soil samples during furnace ignition; must be pre-ignited
-  and weighed to constant mass before use.
-- **Inorganic carbon (IC):** Carbon associated with carbonates (CaCO~3~,
-  MgCO~3~); released as CO~2~ during ignition above ~550 °C; can
-  inflate LOI values in calcareous soils if a lower ignition temperature
-  is not used, or can be corrected by acid pre-treatment.
-- **Loss on ignition (LOI):** The percentage mass loss when an oven-
-  dried soil is ignited at 550 °C for 4 hours: $LOI = (M_{105} -
-  M_{550}) / M_{105} \times 100$; used as a proxy for soil organic
-  matter (SOM) content.
+- **Ash-free dry mass (AFDM):** The mass remaining after removing water
+  (drying at 105 °C) and organic matter (igniting at 550 °C); equivalent
+  to the inorganic mineral mass of the sample.
+- **Crucible:** A heat-resistant porcelain or ceramic container used to
+  hold soil samples during furnace ignition; must be pre-ignited and
+  weighed to constant mass before use.
+- **Inorganic carbon (IC):** Carbon associated with carbonates
+  (CaCO~3~, MgCO~3~); released as CO~2~ during ignition above ~550 °C;
+  can inflate LOI values in calcareous soils if ignition temperature is
+  not controlled or if acid pre-treatment is omitted [@heiri2001].
+- **Loss on ignition (LOI):** The percentage mass loss when an
+  oven-dried soil is ignited at 550 °C for 4 hours:
+  $LOI = (M_{105} - M_{550}) / M_{105} \times 100$; used as a proxy
+  for SOM content [@heiri2001].
 - **Soil organic matter (SOM):** The organic fraction of soil,
-  including plant and animal residues at various stages of
-  decomposition, microbial biomass, and stabilized humus; estimated
-  by LOI as approximately $SOM \approx 1.72 \times LOI$ (the Van
-  Bemmelen factor) when organic carbon is the target.
+  including plant and animal residues at various stages of decomposition,
+  microbial biomass, and stabilized humus; estimated by LOI as
+  approximately $\text{SOM} \approx 1.72 \times \text{LOI}$ (the Van
+  Bemmelen factor) when organic carbon is the target [@Nelson1996].
 - **Tare mass:** The pre-weighed mass of the empty, pre-ignited
   crucible; subtracted from all subsequent measurements to obtain
   sample mass.
+- **Van Bemmelen factor:** The empirical conversion factor (1.724)
+  relating organic carbon content to SOM by assuming that SOM contains
+  58% carbon by mass; use with caution for soils with unusual organic
+  matter composition [@Nelson1996].
+
 
 ## Responsibilities
 
@@ -65,65 +83,88 @@ This SOP describes the estimation of soil organic matter (SOM) content using the
 ::: {.callout-warning}
 ### Hazards
 
-- **Physical:** Muffle furnace operates at 550 C; severe burn risk. Drying oven at 105 C. Ceramic crucibles remain extremely hot after removal.
-- **Chemical:** None (no reagents used)
+- **Thermal:** Muffle furnace operates at 550 °C; severe burn risk.
+  Drying oven operates at 105 °C. Ceramic crucibles remain extremely
+  hot for many minutes after removal from the furnace.
+- **Physical:** Crucible tongs can slip; always use two hands when
+  moving hot crucibles.
 :::
 
 ### Required PPE
 
-- [ ] Heat-resistant gloves (when handling crucibles from furnace or oven)
 - [ ] Safety glasses
-- [ ] Lab coat
-- [ ] Closed-toed shoes
+- [ ] Laboratory coat
+- [ ] Heat-resistant gloves (mandatory when handling furnace-hot
+      crucibles)
+
+### Emergency Procedures
+
+Refer to [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+and [SOP-L111 Muffle Furnace](SOP-L111-muffle-furnace.qmd). For burns,
+cool with running water for at least 10 minutes and seek medical
+attention.
 
 
 ## Equipment and Materials
 
-| Item                          | Notes                                        |
-|:------------------------------|:---------------------------------------------|
-| Muffle furnace                | Capable of sustained 550 C                   |
-| Drying oven                   | Set to 105 C                                 |
-| Ceramic crucibles             | Pre-combusted; labeled or numbered           |
-| Analytical balance            | 0.0001 g (0.1 mg) resolution                |
-| Desiccator with desiccant     | For cooling crucibles before weighing        |
-| Metal tongs or crucible tongs | Heat-resistant, for handling hot crucibles    |
-| Spatula                       | For transferring soil to crucibles           |
+### Equipment
+
+| Item               | Notes                                              |
+|:-------------------|:---------------------------------------------------|
+| Muffle furnace     | Capable of 550 ±10 °C; programmable ramp preferred |
+| Drying oven        | Regulated at 105 ±2 °C                            |
+| Analytical balance | Resolution ≥ 0.0001 g (0.1 mg)                    |
+| Desiccator         | With active color-indicating silica gel            |
+| Crucible tongs     | Heat-resistant; long-handled                       |
+
+### Consumables
+
+| Item                    | Notes                                       |
+|:------------------------|:--------------------------------------------|
+| Porcelain or ceramic crucibles | Pre-ignited to constant mass        |
+| Weighing paper or spatulas | For soil transfer                         |
 
 
 ## Procedure
 
 ### Crucible Preparation
 
-1. Pre-combust all ceramic crucibles in the muffle furnace at 550 C for 1 hour to remove any residual organic material
-2. Cool crucibles in a desiccator to room temperature
-3. Weigh each empty crucible to the nearest 0.0001 g and record as $W_{\text{crucible}}$
+1. Pre-ignite crucibles in the muffle furnace at 550 °C for at least
+   1 hour to remove any residual organic matter.
+2. Transfer to a desiccator and cool to room temperature.
+3. Weigh each crucible to the nearest 0.0001 g and record as the tare
+   mass ($W_{\text{crucible}}$).
 
-### Drying at 105 C
+### Oven Drying at 105 °C
 
-1. Add approximately 5 g of air-dried, sieved (2 mm) soil to a pre-weighed crucible
-2. Record the exact mass of crucible + soil
-3. Place crucibles in the drying oven at 105 C for 24 hours
-4. Remove crucibles, cool in a desiccator, and weigh to the nearest 0.0001 g
-5. Record as $W_{105}$ (mass of oven-dried soil, excluding crucible)
+1. Using a spatula, transfer 5--10 g of air-dried, sieved soil into a
+   pre-weighed crucible.
+2. Record the mass of crucible plus moist or air-dry soil.
+3. Place uncovered crucibles in the drying oven at 105 °C for at least
+   24 hours.
+4. Transfer crucibles to a desiccator and cool to room temperature
+   (approximately 20--30 minutes).
+5. Weigh to the nearest 0.0001 g and record as $W_{\text{105}}$ (mass
+   of oven-dried soil only, i.e., crucible + dry soil mass minus crucible
+   tare).
 
-::: {.callout-tip}
-### Tip
-If the mass has not stabilized (i.e., decreases by more than 0.001 g on re-weighing), return the sample to the oven for an additional 2--4 hours and re-weigh.
-:::
+### Combustion at 550 °C
 
-### Combustion at 550 C
-
-1. Transfer the crucibles containing oven-dried soil directly into the muffle furnace
-2. Ramp the furnace to 550 C (if programmable, use a ramp rate of approximately 10 C per minute)
-3. Hold at 550 C for 4 hours
-4. Turn off the furnace and allow crucibles to cool inside the furnace until they can be safely transferred (below approximately 200 C)
-5. Transfer crucibles to a desiccator and cool to room temperature
-6. Weigh to the nearest 0.0001 g
-7. Record as $W_{550}$ (mass of combusted soil, excluding crucible)
+1. Transfer the crucibles containing oven-dried soil directly into the
+   muffle furnace [@heiri2001].
+2. Ramp the furnace to 550 °C (if programmable, use a ramp rate of
+   approximately 10 °C per minute to prevent crucible cracking and
+   reduce convective loss of fine particles).
+3. Hold at 550 °C for 4 hours [@heiri2001].
+4. Turn off the furnace and allow crucibles to cool inside the furnace
+   until they can be safely transferred (below approximately 200 °C).
+5. Transfer crucibles to a desiccator and cool to room temperature.
+6. Weigh to the nearest 0.0001 g and record as $W_{\text{550}}$ (mass
+   of combusted soil, excluding crucible).
 
 ### Calculation
 
-Soil organic matter content is calculated as:
+Soil organic matter content is calculated as [@heiri2001]:
 
 $$
 \text{SOM (\%)} = \left( \frac{W_{105} - W_{550}}{W_{105}} \right) \times 100
@@ -132,15 +173,25 @@ $$
 where:
 
 - $W_{105}$ = mass of oven-dried soil (g)
-- $W_{550}$ = mass of soil after combustion at 550 C (g)
+- $W_{550}$ = mass of soil after combustion at 550 °C (g)
+
+To convert LOI (%) to approximate organic carbon (%OC), divide by
+1.724 (the Van Bemmelen factor); note that this conversion assumes
+constant elemental composition and is less accurate for samples with
+unusual organic matter [@Nelson1996].
 
 
 ## Quality Control
 
-- Run analytical duplicates for at least 10% of samples; coefficient of variation should be less than 5%
-- Include an empty crucible blank in each furnace run to verify no mass gain from ambient contamination
-- Include a laboratory reference soil with known SOM in each batch
-- Verify oven (105 C) and furnace (550 C) temperatures using a calibrated thermometer or thermocouple at regular intervals
+- Run analytical duplicates for at least 10% of samples; coefficient
+  of variation between duplicates should be less than 5%
+  [@heiri2001].
+- Include an empty crucible blank in each furnace run to verify no
+  mass gain from ambient contamination.
+- Include a laboratory reference soil with known SOM content in each
+  batch.
+- Verify oven (105 °C) and furnace (550 °C) temperatures using a
+  calibrated thermocouple at regular intervals.
 
 
 ## Waste Disposal
@@ -153,8 +204,23 @@ where:
 
 ## References
 
-- Nelson, D.W. & Sommers, L.E. (1996). Total carbon, organic carbon, and organic matter. In: Sparks, D.L. (Ed.), *Methods of Soil Analysis, Part 3: Chemical Methods*. SSSA Book Series No. 5, pp. 961--1010.
-- Heiri, O., Lotter, A.F., & Lemcke, G. (2001). Loss on ignition as a method for estimating organic and carbonate content in sediments: reproducibility and comparability of results. *Journal of Paleolimnology*, 25, 101--110.
+- @heiri2001
+- @Nelson1996
+- [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+- [SOP-L111 Muffle Furnace](SOP-L111-muffle-furnace.qmd)
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | General safety framework          |
+| [L111](SOP-L111-muffle-furnace.qmd)    | Muffle Furnace           | Instrument operation              |
+| [L400](SOP-L400-soil-moisture.qmd)     | Soil Moisture            | Companion moisture determination  |
+| [L407](SOP-L407-total-carbon.qmd)      | Total Carbon             | Direct combustion alternative     |
 
 
 ## Training Record
@@ -162,7 +228,10 @@ where:
 Before performing this procedure independently, personnel must:
 
 1. Read this SOP in full
-2. Demonstrate safe operation of the muffle furnace and drying oven
-3. Demonstrate proper use of the analytical balance and desiccator
-4. Perform the procedure under supervision with acceptable duplicate precision
-5. Be signed off by the PI or lab manager
+2. Complete [SOP-L111 Muffle Furnace](SOP-L111-muffle-furnace.qmd)
+   training
+3. Demonstrate safe operation of the muffle furnace and drying oven
+4. Demonstrate proper use of the analytical balance and desiccator
+5. Perform the procedure under supervision with acceptable duplicate
+   precision
+6. Be signed off by the PI or lab manager
