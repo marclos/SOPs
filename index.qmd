@@ -87,9 +87,9 @@ use an **L** prefix, but both share the same numeric ranges:
 |:------------|:-------------------------------|:------------|:------------|
 | [F100](field_sops/SOP-F100-vehicles.qmd) | EA Program Vehicle Use | 0.1 |  |
 | [F101](field_sops/SOP-F101-electrical-power-in-the-field.qmd) | Electrical Power in the Field | 0.2 |  |
-| [F102](field_sops/SOP-TBD.qmd) | Waders/Wetsuit | -- | TBD |
-| [F103](field_sops/SOP-TBD.qmd) | *Canoe / Kayak / Small Watercraft* | -- | TBD |
-| [F104](field_sops/SOP-TBD.qmd) | *Field Laptop and Tablet Use* | -- | TBD |
+| [F102](sops/SOP-TBD.qmd) | Waders/Wetsuit | -- | TBD |
+| [F103](sops/SOP-TBD.qmd) | *Canoe / Kayak / Small Watercraft* | -- | TBD |
+| [F104](sops/SOP-TBD.qmd) | *Field Laptop and Tablet Use* | -- | TBD |
 
 ### Field Instrumentation (F200--F299)
 
@@ -109,7 +109,7 @@ use an **L** prefix, but both share the same numeric ranges:
 
 | SOP | Title | Current Rev. | Notes |
 |:------------|:-------------------------------|:------------|:------------|
-| [L100](lab_sops/SOP-TBD.qmd) | *Milli-Q Water System* | 0.2 | Broken |
+| [L100](sops/SOP-TBD.qmd) | *Milli-Q Water System* | 0.2 | Broken |
 | [L101](lab_sops/SOP-L101-glassware-cleaning.qmd) | Glassware Cleaning and Preparation | 0.1 |  |
 | [L102](lab_sops/SOP-L102-using-balances.qmd) | Using Balances | 0.2 |  |
 | [L103](lab_sops/SOP-L103-micropipettes.qmd) | Micropipettes | 0.3 |  |
@@ -117,9 +117,9 @@ use an **L** prefix, but both share the same numeric ranges:
 | [L105](lab_sops/SOP-L105-drying-ovens.qmd) | Drying Ovens | 0.1 |  |
 | [L106](lab_sops/SOP-L106-refrigerators-freezers.qmd) | Refrigerators and Freezers | 0.1 |  |
 | [L107](lab_sops/SOP-L107-hot-plates-dry-bath.qmd) | Hot Plates and Dry Bath | 0.12 |  |
-| [L108](lab_sops/SOP-TBD.qmd) | *Clinical Centrifuge* | 0.1 |  |
+| [L108](sops/SOP-TBD.qmd) | *Clinical Centrifuge* | 0.1 |  |
 | [L109](lab_sops/SOP-L109-sorvall-centrifuge.qmd) | Sorvall ST8R Centrifuge | 0.1 |  |
-| [L110](lab_sops/SOP-TBD.qmd) | *Ozone Generator Operation* | 0.1 |  |
+| [L110](sops/SOP-TBD.qmd) | *Ozone Generator Operation* | 0.1 |  |
 | [L111](lab_sops/SOP-L111-muffle-furnace.qmd) | Muffle Furnace | 0.1 |  |
 | [L112](lab_sops/SOP-L112-autoclave-sterilization.qmd) | Autoclave / Sterilization | 0.1 |  |
 | [L113](lab_sops/SOP-L113-laminar-flow-cabinet.qmd) | Laminar Flow Cabinet | 0.1 |  |
@@ -132,20 +132,20 @@ use an **L** prefix, but both share the same numeric ranges:
 | SOP | Title | Current Rev. | Notes |
 |:------------|:-------------------------------|:------------|:------------|
 | [L200](lab_sops/SOP-L200-analytical-balance-calibration.qmd) | Analytical Balance Calibration | 1.0 |  |
-| [L201](lab_sops/SOP-TBD.qmd) | *Spectrophotometer Operation* | -- |  |
-| [L202](lab_sops/SOP-TBD.qmd) | Accumet pH Meter | 0.4 |  |
+| [L201](sops/SOP-TBD.qmd) | *Spectrophotometer Operation* | -- |  |
+| [L202](sops/SOP-TBD.qmd) | Accumet pH Meter | 0.4 |  |
 | [L203](lab_sops/SOP-L203-trilogy-fluorometer.qmd) | Trilogy Laboratory Fluorometer | 0.4 |  |
 | [L204](lab_sops/SOP-L204-shimadzu-toc-l.qmd) | Shimadzu TOC/TON Analyzer | 1.0 |  |
 | [L205](lab_sops/SOP-L205-xrf-sample-prep-analysis.qmd) | XRF (X-Ray Fluorescence) | 0.1 |  |
-| [L206](lab_sops/SOP-TBD.qmd) | *ICP-MS* | 0.1 |  |
-| [L207](lab_sops/SOP-TBD.qmd) | *LA-ICP-MS (Laser Ablation)* | 0.1 |  |
+| [L206](sops/SOP-TBD.qmd) | *ICP-MS* | 0.1 |  |
+| [L207](sops/SOP-TBD.qmd) | *LA-ICP-MS (Laser Ablation)* | 0.1 |  |
 | [L208](lab_sops/SOP-L208-irms-general-instrument.qmd) | ThermoFisher Delta V IRMS | 0.2 |  |
-| [L209](lab_sops/SOP-TBD.qmd) | *Radiometric Dating* | NA | TBD |
-| [L210](lab_sops/SOP-TBD.qmd) | *Ion Chromatograph Operation* | NA | TBD |
+| [L209](sops/SOP-TBD.qmd) | *Radiometric Dating* | NA | TBD |
+| [L210](sops/SOP-TBD.qmd) | *Ion Chromatograph Operation* | NA | TBD |
 | [L211](lab_sops/SOP-L211-revolve-microscope.qmd) | Echo Labs Revolve Microscope | 0.1 |  |
 | [L212](lab_sops/SOP-L212-nanodrop-spectrophotometer.qmd) | NanoDrop Spectrophotometer | 0.1 |  |
 | [L213](lab_sops/SOP-L213-qubit-fluorometer.qmd) | Qubit Fluorometer | 0.1 |  |
-| [L214](lab_sops/SOP-L214-qx200-instrument-familiarization.qmd) | Bio-Rad QX200 Droplet Digital PCR System -- Instrument Familiarization System | 0.1 |  |
+| [L214](lab_sops/SOP-L214-qx200-instrument-familiarization.qmd) | QX200 Droplet Digital PCR System -- Instrument Familiarization | 0.1 |  |
 | [L215](lab_sops/SOP-L215-hach-dr3900-spectrophotometer.qmd) | Hach DR3900 Benchtop Spectrophotometer | -- | TBD |
 | [L216](lab_sops/SOP-L216-dissecting-compound-microscope.qmd) | Dissecting and Compound Microscope | 0.1 |  |
 
@@ -164,7 +164,7 @@ use an **L** prefix, but both share the same numeric ranges:
 | [F306](field_sops/SOP-F306-wetland-hydrology-monitoring.qmd) | Wetland Hydrology Monitoring | 0.1 |  |
 | [F307](field_sops/SOP-F307-lake-reservoir-profiling.qmd) | Lake and Reservoir Profiling\* | 0.1 |  |
 | [F308](field_sops/SOP-F308-edna-water-sample-collection.qmd) | eDNA Water Sample Collection | 0.1 |  |
-| [F309](field_sops/SOP-TBD.qmd) | *Periphyton / Algae Sampling* | -- | TBD |
+| [F309](sops/SOP-TBD.qmd) | *Periphyton / Algae Sampling* | -- | TBD |
 
 ### Lab -- Water Analysis (L300--L399)
 
@@ -172,9 +172,9 @@ use an **L** prefix, but both share the same numeric ranges:
 |:------------|:-------------------------------|:------------|:------------|
 | [L300](lab_sops/SOP-L300-pH-conductivity-bench.qmd) | pH and Conductivity (Bench) | 1.0 |  |
 | [L301](lab_sops/SOP-L301-alkalinity-titration.qmd) | Alkalinity Titration | 0.1 |  |
-| [L302](lab_sops/SOP-TBD.qmd) | *Turbidity Measurement* | -- | TBD |
+| [L302](sops/SOP-TBD.qmd) | *Turbidity Measurement* | -- | TBD |
 | [L303](lab_sops/SOP-L303-hach-colorimetric.qmd) | Hach Colorimetric Analysis | 1.0 |  |
-| [L304](lab_sops/SOP-TBD.qmd) | *Nutrient Analysis (Water Samples)* | -- | TBD |
+| [L304](sops/SOP-TBD.qmd) | *Nutrient Analysis (Water Samples)* | -- | TBD |
 | [L305](lab_sops/SOP-L305-colilert-quanti-tray.qmd) | Bacteria Screening (Colilert Quanti-Tray) | 4.3 |  |
 | [L306](lab_sops/SOP-L306-bod5.qmd) | BOD5 (Biochemical Oxygen Demand) | 0.3 |  |
 | [L307](lab_sops/SOP-L307-elisa-bpa-bpb-pesticides.qmd) | ELISA: BPA, BPB, Pesticides | 0.3 |  |
@@ -184,7 +184,7 @@ use an **L** prefix, but both share the same numeric ranges:
 | [L311](lab_sops/SOP-L311-dissolved-organic-carbon-water.qmd) | Dissolved (NPOC) Organic Carbon (Water) | 0.1 |  |
 | [L312](lab_sops/SOP-L312-tss-tds.qmd) | Total Suspended Solids / Total Dissolved Solids | 0.1 |  |
 | [L313](lab_sops/SOP-L313-metals-icpms-prep.qmd) | Metals in Water (ICP-MS Prep and Acidification) | 0.1 |  |
-| [L314](lab_sops/SOP-TBD.qmd) | *Anion Analysis (Ion Chromatography)* | -- | NA |
+| [L314](sops/SOP-TBD.qmd) | *Anion Analysis (Ion Chromatography)* | -- | NA |
 | [L315](lab_sops/SOP-L315-edna-processing.qmd) | eDNA Lab Processing (Filtration, Extraction, Inhibition Testing) | 0.1 |  |
 
 ## Soil Methods (400--499)
@@ -248,8 +248,8 @@ No lab air SOPs exist yet. Range is reserved.
 
 | SOP | Title | Current Rev. | Notes |
 |:------------|:-------------------------------|:------------|:------------|
-| [L500](lab_sops/SOP-TBD.qmd) | *Gravimetric PM Filter Analysis* | -- | TBD |
-| [L501](lab_sops/SOP-TBD.qmd) | *Passive Sampler Extraction and Analysis* | -- | TBD |
+| [L500](sops/SOP-TBD.qmd) | *Gravimetric PM Filter Analysis* | -- | TBD |
+| [L501](sops/SOP-TBD.qmd) | *Passive Sampler Extraction and Analysis* | -- | TBD |
 
 ## Biology, Ecology, and Molecular Biology (600--799)
 
@@ -268,10 +268,10 @@ No lab air SOPs exist yet. Range is reserved.
 | [F611](field_sops/SOP-F611-pollinator-observation-surveys.qmd) | Pollinator Observation Surveys | 0.1 |  |
 | [F615](field_sops/SOP-F615-bird-point-counts.qmd) | Bird Point Count Surveys | 0.1 |  |
 | [F620](field_sops/SOP-F620-camera-trap.qmd) | Camera Trap (CamPark T20) | 0.1 |  |
-| [F621](field_sops/SOP-TBD.qmd) | *Acoustic Monitoring (Bioacoustics)* | -- | TBD |
-| [F622](field_sops/SOP-TBD.qmd) | *Small Mammal Trapping (Sherman Traps)* | -- | TBD |
+| [F621](sops/SOP-TBD.qmd) | *Acoustic Monitoring (Bioacoustics)* | -- | TBD |
+| [F622](sops/SOP-TBD.qmd) | *Small Mammal Trapping (Sherman Traps)* | -- | TBD |
 | [F630](field_sops/SOP-F630-drone-operations.qmd) | Drone Operations (DJI Matrice/Mavic) | 0.1 |  |
-| [F631](field_sops/SOP-TBD.qmd) | *360 Camera* | -- |  |
+| [F631](sops/SOP-TBD.qmd) | *360 Camera* | -- |  |
 
 ### Field -- Molecular Biology and DNA (F700--F799)
 
@@ -284,7 +284,7 @@ No lab air SOPs exist yet. Range is reserved.
 
 | SOP | Title | Current Rev. | Notes |
 |:------------|:-------------------------------|:------------|:------------|
-| [L600](lab_sops/SOP-TBD.qmd) | *TBD* | -- |  |
+| [L600](sops/SOP-TBD.qmd) | *TBD* | -- |  |
 | [L601](lab_sops/SOP-L601-wet-mount-microscopy.qmd) | Wet Mount for Microscopy | 0.1 |  |
 | [L602](lab_sops/SOP-L602-macroinvertebrate-sorting.qmd) | Macroinvertebrate Sorting, Subsampling, and Identification | 0.1 |  |
 | [L603](lab_sops/SOP-L603-plant-tissue-preparation.qmd) | Plant Tissue Drying, Grinding, and Preparation for Analysis | 0.1 |  |
