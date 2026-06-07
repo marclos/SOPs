@@ -340,13 +340,13 @@ and why does it matter? Cite at least one key reference.]
 <!-- DIRECTIONS: Link to prerequisite SOPs. Every field SOP should
      reference SOP-F001; every lab SOP should reference SOP-L002. -->
 
-- [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) *(field SOPs)*
+- [SOP-F001 Field Safety](../field_sops/SOP-F001-field-safety.qmd) *(field SOPs)*
 - [SOP-L002 Laboratory Safety](../lab_sops/SOP-L002-laboratory-safety.qmd)
   *(lab SOPs)*
 
 ### Emergency Procedures
 
-Refer to [SOP-F001](SOP-F001-field-safety.qmd) or
+Refer to [SOP-F001](../field_sops/SOP-F001-field-safety.qmd) or
 [SOP-L004](../lab_sops/SOP-L004-chemical-spill-response.qmd) as
 appropriate.
 
@@ -481,7 +481,7 @@ render nicely in both HTML and PDF.
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
-| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F001](../field_sops/SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
 | [XXXX](SOP-XXXX-name.qmd)             | [Title]                   | [Relationship]                    |
 
 
