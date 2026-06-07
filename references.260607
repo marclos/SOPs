@@ -1,10 +1,10 @@
-@Manual{aac-guide2019,
-  title        = {Guidance on the Use of Balances},
-  author       = {{Accreditation Advisory Committee}},
-  note         = {NISTIR 6969, Chapter 7},
+@manual{aac_guide2019,
+  title     = {Guidance on the Use of Balances},
+  author    = {{Accreditation Advisory Committee}},
+  year      = {2019},
   organization = {National Institute of Standards and Technology},
-  year         = {2019},
-  url          = {https://www.nist.gov/system/files/documents/2019/07/09/Guidance-on-the-Use-of-Balances.pdf},
+  url       = {https://www.nist.gov/system/files/documents/2019/07/09/Guidance-on-the-Use-of-Balances.pdf},
+  note      = {NISTIR 6969, Chapter 7}
 }
 
 @book{aga2013,
@@ -592,16 +592,22 @@
   note      = {Foundational reference on soil DOC leaching}
 }
 
-@Article{callaghan2021,
-  author  = {Callaghan, Corey T. and Poore, Alistair G. B. and Mesaglio, Thomas and Moles, Angela T. and Nakagawa, Shinichi and Roberts, Clint and Rowley, Jodi J. L. and Verg{'e}s, Adriana and Wilshire, John H. and Cornwell, Will K.},
-  journal = {Trends in Ecology \& Evolution},
-  title   = {Large-scale monitoring of species diversity with community science data},
-  year    = {2021},
-  note    = {Framework for using iNaturalist data to track species diversity at continental and global scales},
-  number  = {12},
-  pages   = {1124--1135},
-  volume  = {36},
-  doi     = {10.1016/j.tree.2021.08.009},
+@article{callaghan2021,
+  title     = {Large-scale monitoring of species diversity with
+               community science data},
+  author    = {Callaghan, Corey T. and Poore, Alistair G. B. and
+               Mesaglio, Thomas and Moles, Angela T. and Nakagawa,
+               Shinichi and Roberts, Clint and Rowley, Jodi J. L. and
+               Verg{'e}s, Adriana and Wilshire, John H. and
+               Cornwell, Will K.},
+  journal   = {Trends in Ecology \\& Evolution},
+  volume    = {36},
+  number    = {12},
+  pages     = {1124--1135},
+  year      = {2021},
+  doi       = {10.1016/j.tree.2021.08.009},
+  note      = {Framework for using iNaturalist data to track species
+               diversity at continental and global scales}
 }
 
 @article{callahan2016,
@@ -1682,14 +1688,15 @@
   doi       = {10.1002/9781118162729}
 }
 
-@Book{helsel2012,
+@book{helsel2012,
+  title     = {Statistics for Censored Environmental Data Using
+               {Minitab} and {R}},
   author    = {Helsel, Dennis R.},
-  publisher = {John Wiley \& Sons},
-  title     = {Statistics for Censored Environmental Data Using {Minitab} and {R}},
-  year      = {2012},
-  address   = {Hoboken, NJ},
   edition   = {2nd},
-  doi       = {10.1002/9781118162729},
+  year      = {2012},
+  publisher = {John Wiley \\& Sons},
+  address   = {Hoboken, NJ},
+  doi       = {10.1002/9781118162729}
 }
 
 @article{henry2006,
@@ -1724,13 +1731,14 @@
   note      = {Chapters 8--9: infiltration theory and measurement}
 }
 
-@Book{hinds1999,
+@book{hinds1999,
+  title     = {Aerosol Technology: Properties, Behavior, and
+               Measurement of Airborne Particles},
   author    = {Hinds, William C.},
-  publisher = {John Wiley \& Sons},
-  title     = {Aerosol Technology: Properties, Behavior, and Measurement of Airborne Particles},
-  year      = {1999},
-  address   = {New York},
   edition   = {2nd},
+  year      = {1999},
+  publisher = {John Wiley \\& Sons},
+  address   = {New York}
 }
 
 @article{hindson2011,
@@ -2580,13 +2588,13 @@
   address   = {Athens, GA}
 }
 
-@Book{mitsch2015,
-  author    = {Mitsch, William J. and Gosselink, James G.},
-  publisher = {John Wiley \& Sons},
+@book{mitsch2015,
   title     = {Wetlands},
-  year      = {2015},
-  address   = {Hoboken, NJ},
+  author    = {Mitsch, William J. and Gosselink, James G.},
   edition   = {5th},
+  year      = {2015},
+  publisher = {John Wiley \\& Sons},
+  address   = {Hoboken, NJ}
 }
 
 @article{miya2015,
@@ -3675,14 +3683,16 @@
   note      = {Mechanistic link between Fe mineralogy and hue/chroma}
 }
 
-@Book{seinfeld2016,
+@book{seinfeld2016,
+  title     = {Atmospheric Chemistry and Physics: From Air Pollution to
+               Climate Change},
   author    = {Seinfeld, John H. and Pandis, Spyros N.},
-  publisher = {John Wiley \& Sons},
-  title     = {Atmospheric Chemistry and Physics: From Air Pollution to Climate Change},
-  year      = {2016},
-  address   = {Hoboken, NJ},
   edition   = {3rd},
-  note      = {Textbook covering aerosol physics, size distributions, and measurement methods},
+  year      = {2016},
+  publisher = {John Wiley \\& Sons},
+  address   = {Hoboken, NJ},
+  note      = {Textbook covering aerosol physics, size distributions,
+               and measurement methods}
 }
 
 @article{sessions2001,
@@ -3868,16 +3878,20 @@
   doi       = {10.1371/journal.pone.0090234}
 }
 
-@Article{snyder2013,
-  author  = {Snyder, Emily G. and Watkins, Timothy H. and Solomon, Paul A. and Thoma, Eben D. and Williams, Ronald W. and Hagler, Gayle S. W. and Shelow, David and Hindin, David A. and Kilaru, Vasu J. and Preuss, Peter W.},
-  journal = {Environmental Science \& Technology},
-  title   = {The changing paradigm of air pollution monitoring},
-  year    = {2013},
-  note    = {EPA perspective on low-cost sensor integration with regulatory monitoring},
-  number  = {20},
-  pages   = {11369--11377},
-  volume  = {47},
-  doi     = {10.1021/es4022602},
+@article{snyder2013,
+  title     = {The changing paradigm of air pollution monitoring},
+  author    = {Snyder, Emily G. and Watkins, Timothy H. and Solomon,
+               Paul A. and Thoma, Eben D. and Williams, Ronald W. and
+               Hagler, Gayle S. W. and Shelow, David and Hindin,
+               David A. and Kilaru, Vasu J. and Preuss, Peter W.},
+  journal   = {Environmental Science \\& Technology},
+  volume    = {47},
+  number    = {20},
+  pages     = {11369--11377},
+  year      = {2013},
+  doi       = {10.1021/es4022602},
+  note      = {EPA perspective on low-cost sensor integration with
+               regulatory monitoring}
 }
 
 @book{soilsurveystaff2017,
@@ -4967,7 +4981,6 @@
   url          = {https://wildlife.ca.gov/Licensing/Scientific-Collecting},
   note         = {Accessed 2026-06-06}
 }
-
  
 % --- SOP-F004: California Department of Parks and Recreation ----------------
 @misc{caparks_research,
@@ -4977,7 +4990,6 @@
   url          = {https://www.parks.ca.gov/?page_id=21557},
   note         = {Accessed 2026-06-06}
 }
-
  
 % --- SOP-F004: Robert J. Bernard Biological Field Station -------------------
 @misc{bfs_userequest,
@@ -4987,7 +4999,6 @@
   url          = {https://bfs.sites.pomona.edu/using-the-bfs/},
   note         = {Accessed 2026-06-06}
 }
-
  
 % --- SOP-F004: UC Natural Reserve System ------------------------------------
 @misc{ucnrs_guidelines,
@@ -4997,7 +5008,6 @@
   url          = {https://ucnrs.org/reserve-research-guidelines/},
   note         = {Accessed 2026-06-06}
 }
-
  
 % --- SOP-F004: USFWS ESA Section 10 ----------------------------------------
 @misc{usfws_esa_s10,
@@ -5007,7 +5017,6 @@
   url          = {https://www.fws.gov/service/apply-permit},
   note         = {Accessed 2026-06-06}
 }
-
  
 % --- SOP-F004: Bureau of Land Management ------------------------------------
 @misc{blm_science,
@@ -5017,7 +5026,6 @@
   url          = {https://www.blm.gov/learn/science-in-the-blm/conducting-science},
   note         = {Accessed 2026-06-06}
 }
-
  
 % --- SOP-F004: National Park Service RPRS ----------------------------------
 @misc{nps_rprs,
@@ -5027,7 +5035,6 @@
   url          = {https://www.nps.gov/subjects/science/research-and-collecting-permit-overview.htm},
   note         = {Accessed 2026-06-06}
 }
-
  
 % --- SOP-F004: USDA Forest Service research permits ------------------------
 @misc{usfs_permits,
@@ -5168,7 +5175,8 @@
   url       = {https://www.waterboards.ca.gov/drinking_water/certlic/drinkingwater/microplastics.html}
 }
 
- (Thornton 2026 journal article),
+% --- SOP-L308: Thornton Hampton et al. 2025 SCCWRP report ------------------
+% NOTE: Do not confuse with @thornton2026 (Thornton 2026 journal article),
 % which is already in references.bib. This is a different techreport.
 @techreport{thornton2025,
   title     = {Standard Operating Procedures for the Collection of Samples
@@ -5247,7 +5255,14 @@
   address   = {Sacramento, CA}
 }
 
-  -- F201, F202 (USGS TM 3-A8)
+% =============================================================================
+% BibTeX additions for SOP-F201, SOP-F202
+% Append to references.bib after verifying no duplicates with check_bib.R
+% =============================================================================
+%
+% Keys already present in references.bib -- DO NOT re-add:
+%   @rantz1982       -- F201 (USGS Water-Supply Paper 2175)
+%   @turnipseed2010  -- F201, F202 (USGS TM 3-A8)
 %
 % New keys:
 % =============================================================================
@@ -5312,8 +5327,9 @@
                schedule, and emergency procedures; consult the version
                shipped with your instrument}
 }
-
- already in references.bib is the WHO Environmental Noise
+ 
+% --- SOP-L109: WHO Laboratory Biosafety Manual 4th ed. ----------------------
+% NOTE: @who2018 already in references.bib is the WHO Environmental Noise
 % Guidelines (a different document). This entry covers the WHO Biosafety Manual.
 @book{who_biosafety2020,
   title     = {Laboratory Biosafety Manual},
@@ -5335,7 +5351,6 @@
                   controlled import permit (PPQ Form 588), and compliance
                   agreement requirements}
 }
-
  
 % --- SOP-L015: USDA APHIS ePermits system -----------------------------------
 @misc{aphis_epermits,
@@ -5359,7 +5374,6 @@
                   criteria, grab and composite sampling procedures, and
                   field blank requirements}
 }
-
  
 % --- SOP-F302: US EPA Urban Stormwater BMP Performance Monitoring -----------
 @techreport{usepa_bmp2002,
@@ -5373,7 +5387,6 @@
   address      = {Washington, DC},
   url          = {https://www.epa.gov/sites/default/files/2015-10/documents/2002_10_24_npdes_swbmp_bmpguide.pdf}
 }
-
  
 % --- SOP-F303: Puls & Barcelona 1996 low-flow groundwater sampling ----------
 @techreport{puls_barcelona1996,
@@ -5387,7 +5400,6 @@
   address      = {Ada, OK},
   url          = {https://www.epa.gov/sites/default/files/2015-06/documents/lwflw2a.pdf}
 }
-
  
 % --- SOP-F303: ASTM D6771 low-flow groundwater sampling standard ------------
 @standard{astm_d6771,
@@ -5401,7 +5413,6 @@
   address      = {West Conshohocken, PA},
   doi          = {10.1520/D6771-21}
 }
-
  
 % --- SOP-F303: US EPA Region 4 groundwater sampling SOP -------------------
 @techreport{usepa_sesd301,
@@ -5414,7 +5425,6 @@
   address      = {Athens, GA},
   url          = {https://www.epa.gov/sites/default/files/2017-07/documents/groundwater_sampling301_af.r4.pdf}
 }
-
  
 % --- SOP-F304: Rehn et al. 2017 IPI index ----------------------------------
 @techreport{rehn2017,
@@ -5428,7 +5438,6 @@
   address      = {Sacramento, CA},
   url          = {https://www.waterboards.ca.gov/water_issues/programs/swamp/bioassessment/docs/physical_habitat_index_technical_memo.pdf}
 }
-
  
 % --- SOP-F304: Peck et al. 2006 EMAP western streams -----------------------
 @techreport{peck2006,
@@ -5460,7 +5469,6 @@
                maintenance; consult the version shipped with your
                instrument}
 }
-
  
 % --- SOP-F204 / F510: WMO Guide to Meteorological Instruments (No. 8) -------
 @book{wmo_guide2018,
@@ -5487,7 +5495,6 @@
                SD card formatting, and battery management; consult the
                manual version shipped with your unit}
 }
-
  
 
 % --- SOP-F620: O'Brien et al. 2010 Wildlife Picture Index ------------------
@@ -5503,7 +5510,6 @@
   year      = {2010},
   doi       = {10.1111/j.1469-1795.2010.00357.x}
 }
-
  
 % --- SOP-F630: DJI Mavic 3 Pro user manual ----------------------------------
 @manual{dji_mavic3pro,
@@ -5515,7 +5521,6 @@
                flight modes, battery management, and firmware updates;
                consult the version matching your firmware}
 }
-
  
 % --- SOP-F630: DJI Matrice 100 user manual ----------------------------------
 @manual{dji_matrice100,
@@ -5527,7 +5532,6 @@
                setup, and maintenance for the Matrice 100 research
                platform}
 }
-
  
 % --- SOP-F630: FAA Part 107 regulation --------------------------------------
 @techreport{faa_part107,
@@ -5542,7 +5546,6 @@
                drone operations in the United States; requires Remote
                Pilot Certificate (Part 107 exam); updated periodically}
 }
-
  
 % --- SOP-F630: FAA B4UFLY app reference -------------------------------------
 @misc{faa_b4ufly,
@@ -5554,10 +5557,9 @@
                and obtaining LAANC authorization before drone flights;
                superseded in part by the Aloft platform for LAANC}
 }
-
-@Comment{jabref-meta: databaseType:bibtex;}
-
-{realitycapture_docs,
+ 
+% --- SOP-F630: Reality Capture photogrammetry documentation -----------------
+@misc{realitycapture_docs,
   title     = {{RealityCapture} Documentation},
   author    = {{Capturing Reality}},
   year      = {2024},
