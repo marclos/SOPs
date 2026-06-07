@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F005: Random Sampling Design
-# =============================================================================
 title: "Random Sampling Design"
 sop-number: "SOP-F005"
 author:
@@ -9,7 +6,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "0.1"
@@ -19,7 +16,13 @@ revision-history:
   - version: "1.0"
     date: "2025-05-17"
     author: "Marc Los Huertos"
-    changes: "Converted to Quarto; expanded procedure sections for simple random, grid-based, and stratified random sampling"
+    changes: "Converted to Quarto; expanded procedure sections for simple
+              random, grid-based, and stratified random sampling"
+  - version: "1.1"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Converted plain-text references to BibTeX; added {#refs} div;
+              added inline citations; expanded Definitions"
 ---
 
 ## Purpose
@@ -28,7 +31,7 @@ This SOP provides standardized procedures for designing and executing
 random sampling in field and laboratory settings. Random sampling
 ensures that every unit in the target population has an equal and
 independent probability of selection, eliminating researcher bias and
-supporting valid statistical inference.
+supporting valid statistical inference [@krebs1999; @elzinga1998].
 
 
 ## Scope
@@ -76,30 +79,56 @@ first aid kit and charged cell phone to all field sites.
 
 ## Definitions
 
-- **Sampling universe (population):** The complete set of units from
-  which a sample will be drawn.
-- **Sampling frame:** A numbered list or spatial grid that enumerates
-  every unit in the population. Missing units have zero probability of
-  selection and introduce bias.
+- **Border rule:** A convention for counting organisms that overlap a
+  quadrat edge; the standard rule is to count organisms touching the
+  top and right edges and exclude those touching the bottom and left
+  edges; must be applied consistently within a study to avoid
+  double-counting [@elzinga1998].
+- **Grid-based random sampling:** A method in which a coordinate grid
+  is laid over the study area and quadrat locations are selected using
+  randomly generated X and Y coordinates; the standard approach for
+  quadrat-based ecological surveys [@elzinga1998].
+- **Power analysis:** A calculation to determine the minimum sample
+  size ($n$) needed to detect a biologically meaningful effect with
+  acceptable Type I error ($\alpha$) and Type II error ($\beta$)
+  probability; should be completed before fieldwork begins [@krebs1999].
 - **Quadrat:** A square frame of known area (typically 0.25, 0.5, or
-  1.0 m^2^) used to delineate sampling units in the field.
-- **Stratum:** A subdivision of the sampling universe into internally
-  homogeneous zones (e.g., by elevation, vegetation type, or soil
-  moisture gradient).
+  1.0 m^2^) used to delineate sampling units in the field
+  [@elzinga1998].
+- **Sampling frame:** A numbered list or spatial grid that enumerates
+  every unit in the population; units missing from the frame have zero
+  probability of selection and introduce bias [@krebs1999].
+- **Sampling universe (population):** The complete set of units from
+  which a sample will be drawn; must be explicitly defined before
+  generating a sampling frame [@krebs1999].
+- **Simple random sampling:** A design in which $n$ units are selected
+  at random from a numbered list (sampling frame) such that every
+  possible combination of $n$ units has an equal probability of
+  selection; appropriate when the population is homogeneous
+  [@krebs1999].
+- **Stratified random sampling:** A design in which the population is
+  divided into internally homogeneous subgroups (strata) and random
+  samples are drawn independently from each stratum; reduces variance
+  compared to simple random sampling when strata differ from each
+  other [@krebs1999; @elzinga1998].
+- **Stratum:** A subdivision of the sampling universe into zones that
+  are internally homogeneous (e.g., by elevation band, vegetation
+  type, or soil moisture class); the basis for stratified random
+  sampling.
 
 
 ## Required Materials
 
-| Item                                          | Notes                              |
-|:----------------------------------------------|:-----------------------------------|
-| Two survey tape measures (20--50 m)           | For establishing coordinate grids  |
-| Ground pins or stakes                         | To anchor tape measures            |
-| Quadrat frame(s)                              | Size appropriate to target organisms |
-| Random number table or generator app          | See Section 8.1                    |
-| GPS unit                                      | To record sampling locations       |
-| Field data sheets and waterproof markers      | Pre-printed with site and date fields |
-| Compass                                       | For establishing grid orientation  |
-| Field identification guides                   | If sampling vegetation or organisms |
+| Item                                      | Notes                              |
+|:------------------------------------------|:-----------------------------------|
+| Two survey tape measures (20--50 m)       | For establishing coordinate grids  |
+| Ground pins or stakes                     | To anchor tape measures            |
+| Quadrat frame(s)                          | Size appropriate to target organisms |
+| Random number generator app or R          | See §8.1                           |
+| GPS unit                                  | To record sampling locations       |
+| Field data sheets and waterproof markers  | Pre-printed with site and date fields |
+| Compass                                   | For establishing grid orientation  |
+| Field identification guides               | If sampling vegetation or organisms |
 
 
 ## Biases and Interferences
@@ -108,16 +137,15 @@ Representative sampling requires strict adherence to randomized
 procedures. Common sources of bias include:
 
 - **Incomplete sampling frames.** Any unit missing from the frame has
-  zero probability of selection.
+  zero probability of selection [@krebs1999].
 - **Haphazard placement.** Never "throw" a quadrat to choose a
-  location. Human throws cluster toward the center of the study area,
-  violating equal probability assumptions.
+  location; human throws cluster toward the center of the area,
+  violating equal probability assumptions [@elzinga1998].
 - **Environmental heterogeneity.** If the study area contains distinct
-  gradients (e.g., wet to dry, shaded to open), simple random sampling
-  may under-represent one end of the gradient. Use stratified random
-  sampling instead (Section 8.4).
+  gradients, simple random sampling may under-represent one end. Use
+  stratified random sampling instead (§8.4).
 - **Edge effects.** Establish and apply a consistent border rule when
-  counting organisms in quadrats (Section 8.3).
+  counting organisms in quadrats (§8.3).
 
 
 ## Procedure
@@ -125,7 +153,8 @@ procedures. Common sources of bias include:
 ### Generating Random Numbers
 
 Use a software-based random number generator to produce unbiased
-selections. Never rely on manual or mental number selection.
+selections. Never rely on manual or mental number selection
+[@krebs1999].
 
 In R, generate a set of random integers within a defined range:
 
@@ -159,86 +188,65 @@ knitr::kable(rand_mat)
 ### Simple Random Sampling
 
 Use this approach when the population can be enumerated as a list
-(e.g., lab samples, batch numbers, individual organisms in a database).
+(e.g., lab samples, batch numbers, individual organisms in a database)
+[@krebs1999].
 
 1. Define the target population and compile a complete, numbered
-   sampling frame
-2. Determine the required sample size ($n$) using a power analysis or
-   standard formula
-3. Use `sample()` in R (or an equivalent tool) to draw $n$ unit numbers
-   from the frame without replacement
+   sampling frame.
+2. Determine the required sample size ($n$) using a power analysis.
+3. Use `sample()` in R to draw $n$ unit numbers without replacement.
 4. Document the random seed (if reproducibility is desired), the
-   selected unit IDs, and the date of selection
-5. Collect the data or specimens from the selected units
+   selected unit IDs, and the date of selection.
+5. Collect the data or specimens from the selected units.
 
 ### Grid-Based Random Sampling (Field)
 
 Use this approach when the sampling universe is a spatially defined
-area (e.g., a meadow, forest plot, intertidal zone). This is the
-standard method for quadrat-based ecological sampling.
+area [@elzinga1998].
 
 #### Establishing the Baseline Grid
 
-1. Locate the boundaries of the study site and select a level,
-   representative area
+1. Locate the boundaries of the study site.
 2. Drive a stake at the origin point and lay two tape measures at 90
-   degrees to create X and Y axes
-3. Secure the tapes with ground pins to define a coordinate grid (e.g.,
-   20 m $\times$ 20 m)
+   degrees to create X and Y axes.
+3. Secure the tapes with ground pins to define a coordinate grid
+   (e.g., 20 m × 20 m).
 
 #### Generating Coordinates and Placing Quadrats
 
-4. Generate pairs of random integers within the range of each axis. In
-   R:
+4. Generate pairs of random integers within the range of each axis:
 
 ```{r}
 #| label: xy-random
 #| echo: true
 
-# Grid dimensions
-x_max <- 20
-y_max <- 20
-n_quadrats <- 15
-
-# Generate random coordinates
+x_max <- 20; y_max <- 20; n_quadrats <- 15
 coords <- data.frame(
   X = sample(0:x_max, size = n_quadrats, replace = TRUE),
   Y = sample(0:y_max, size = n_quadrats, replace = TRUE)
 )
-
-# Sort by X to create an efficient walking order
 coords <- coords[order(coords$X), ]
 coords$QuadratID <- seq_len(nrow(coords))
 knitr::kable(coords, row.names = FALSE)
 ```
 
 5. Walk along the axes to each coordinate intersection and place the
-   bottom-left corner of the quadrat at that point
-6. Never reposition a quadrat after placement; if a coordinate falls on
-   an obstruction, record the obstruction and sample as-is
+   bottom-left corner of the quadrat at that point.
+6. Never reposition a quadrat after placement; if a coordinate falls
+   on an obstruction, record the obstruction and sample as-is
+   [@elzinga1998].
 
 #### Recording Data Within Quadrats
 
 7. Quantify the target variable using one of three standardized
    metrics:
-
-   - **Density:** Count every individual of the target species within
-     the frame
-   - **Percent cover:** Estimate the percentage of ground area covered
-     by the target species (suited for colonial plants, mosses, or
-     ground cover)
-   - **Frequency:** Score presence (1) or absence (0) of the species
-
-8. Apply a consistent **border rule** to avoid double-counting:
-   count organisms touching the top and right edges of the quadrat;
-   exclude those touching the bottom and left edges.
-
-#### Replication and Extrapolation
-
-9. Aim to sample at least 5--10% of the total grid area, or a minimum
-   of 30 quadrat placements, to achieve adequate statistical power
-10. Calculate the mean count (or cover) per quadrat and extrapolate to
-    the full site:
+   - **Density:** Count every individual within the frame
+   - **Percent cover:** Estimate the fraction of ground area covered
+   - **Frequency:** Score presence (1) or absence (0)
+8. Apply the border rule consistently (§4).
+9. Aim to sample at least 5--10% of total grid area, or a minimum of
+   30 quadrat placements, for adequate statistical power [@krebs1999].
+10. Calculate the mean count (or cover) per quadrat and extrapolate:
 
 $$
 \text{Estimated population} =
@@ -249,38 +257,34 @@ $$
 ### Stratified Random Sampling
 
 Use this approach when the study area contains distinct environmental
-gradients or habitat types that would increase variance under simple
-random sampling.
+gradients that would increase variance under simple random sampling
+[@krebs1999; @elzinga1998].
 
 1. Divide the study area into homogeneous strata based on a relevant
-   environmental variable (e.g., elevation bands, vegetation type, soil
-   moisture class, distance from a water source)
+   environmental variable.
 2. Within each stratum, establish an independent coordinate grid
-   following the procedure in Section 8.3
-3. Generate random coordinates separately for each stratum
+   following §8.3.
+3. Generate random coordinates separately for each stratum.
 4. Sample each stratum independently; do not pool random selections
-   across strata
+   across strata.
 5. Weight stratum means by the proportion of total area each stratum
-   represents when calculating site-level estimates
+   represents when calculating site-level estimates.
 
 ### Map-Based Sampling with Exclusion Zones
 
-For sites where portions of the area are inaccessible or must be
-excluded (buildings, water bodies, restricted zones):
-
-1. Obtain or create a georeferenced map of the study area
+1. Obtain or create a georeferenced map of the study area.
 2. Delineate exclusion zones and calculate the remaining accessible
-   area
-3. Generate random coordinates across the full extent, then discard any
-   that fall within exclusion zones
-4. Continue generating coordinates until the target sample size is met
-   within the accessible area
-5. Record discarded coordinates in the sampling log for documentation
+   area.
+3. Generate random coordinates across the full extent, then discard
+   any that fall within exclusion zones.
+4. Continue generating coordinates until the target sample size is
+   met within the accessible area.
+5. Record discarded coordinates in the sampling log.
 
 ::: {.callout-tip}
 ### R Implementation
-An R script for map-based random sampling with exclusion polygons can be
-built using the `sf` package. Generate random points with
+An R script for map-based random sampling with exclusion polygons can
+be built using the `sf` package. Generate random points with
 `sf::st_sample()`, then filter against exclusion polygons with
 `sf::st_difference()`.
 :::
@@ -289,29 +293,36 @@ built using the `sf` package. Generate random points with
 ## Data Management
 
 1. Record all sampling metadata (date, site, grid dimensions, random
-   seed or table starting position, personnel) on the field data sheet
-2. Enter field data into the project database within 48 hours
-3. Archive original data sheets (scan if paper)
+   seed or table starting position, personnel) on the field data sheet.
+2. Enter field data into the project database within 48 hours.
+3. Archive original data sheets (scan if paper).
 4. Version-control all analysis scripts per
-   [SOP-L801 RStudio and GitHub](../lab_sops/SOP-L801-rstudio-github.qmd)
+   [SOP-L801 RStudio and GitHub](../lab_sops/SOP-L801-rstudio-github.qmd).
 
 
 ## References
 
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
-  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
-  Washington. 1360 pp.
-- Krebs, C.J. (1999). *Ecological Methodology*. 2nd ed. Benjamin
-  Cummings, Menlo Park, CA.
-- Elzinga, C.L., Salzer, D.W., & Willoughby, J.W. (1998). *Measuring
-  and Monitoring Plant Populations*. U.S. Bureau of Land Management
-  Technical Reference 1730-1.
+- @krebs1999
+- @elzinga1998
+- @apha2012
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation | Navigate to random points         |
+| [F603](SOP-F603-vegetation-transect-surveys.qmd) | Vegetation Transect Surveys | Applies this sampling design |
 
 
 ## Training Record
 
-Training is documented in EA Program files. Before designing or
-executing random sampling independently, personnel must:
+Before designing or executing random sampling independently, personnel
+must:
 
 1. Read this SOP in full
 2. Complete [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) training

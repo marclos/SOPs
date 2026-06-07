@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F006: GPS and Site Navigation
-# =============================================================================
 title: "GPS and Site Navigation"
 sop-number: "SOP-F006"
 author:
@@ -9,13 +6,18 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-19"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; converted plain-text references
+              to BibTeX; added {#refs} div; added inline citations"
 ---
 
 ## Purpose
@@ -26,7 +28,7 @@ Accurate and consistent location data are essential for linking field
 observations to spatial analyses, returning to the same sampling points
 across seasons, and sharing site information among researchers. This
 SOP covers handheld GPS receivers, smartphone GPS applications, and
-post-field data management.
+post-field data management [@usfs_gps2012].
 
 
 ## Scope
@@ -49,6 +51,50 @@ post-field data management.
 | PI / Field Lead   | Approve coordinate system and datum for each project    |
 | Trained Personnel | Record waypoints per this SOP, upload data after fieldwork |
 | New Students      | Complete training before independent use                |
+
+
+## Definitions
+
+- **Datum:** A mathematical model of the Earth's surface used as the
+  reference for geographic coordinates; the EA Program default is
+  **WGS 84** (World Geodetic System 1984), the datum used by
+  consumer GPS and Google Maps; NAD 83 is nearly identical for most
+  field purposes but must be specified explicitly if used
+  [@usfs_gps2012].
+- **Decimal degrees (DD):** A coordinate format expressing latitude
+  and longitude as a single decimal number (e.g., 34.0975 N,
+  117.7125 W); the EA Program default format; preferred for data entry
+  in spreadsheets and GIS.
+- **GNSS (Global Navigation Satellite System):** The general term for
+  satellite-based positioning systems; includes the US GPS, Russian
+  GLONASS, European Galileo, and Chinese BeiDou constellations; modern
+  receivers use multiple constellations simultaneously to improve
+  accuracy.
+- **GPS (Global Positioning System):** The US-operated GNSS
+  constellation of 31+ satellites; provides horizontal accuracy of
+  3--5 m under open sky with a modern consumer receiver [@usfs_gps2012].
+- **GPX file:** A standard XML-based file format for exchanging GPS
+  waypoints, tracks, and routes between devices and software;
+  the preferred export format for EA Program waypoints.
+- **HDOP (Horizontal Dilution of Precision):** A dimensionless number
+  indicating GPS positional uncertainty due to satellite geometry;
+  values below 2 indicate excellent geometry; values above 5 indicate
+  poor geometry and reduced accuracy [@usfs_gps2012].
+- **Offline map:** A map tile set downloaded to a smartphone or
+  device before the field visit, enabling navigation without cellular
+  data; required for EA Program field sites with unreliable coverage.
+- **UTM (Universal Transverse Mercator):** A projected coordinate
+  system that divides the world into 60 zones and expresses positions
+  in meters east (easting) and north (northing) of a zone origin;
+  useful for measuring distances directly but requires specifying the
+  UTM zone.
+- **Waypoint:** A named, saved geographic location stored in a GPS
+  receiver or smartphone app; defined by coordinates (latitude,
+  longitude, and optionally elevation), a name, and often a
+  description or icon.
+- **WGS 84 (World Geodetic System 1984):** The global coordinate
+  datum used by GPS satellites, Google Maps, and most modern
+  consumer GPS devices; the EA Program default [@usfs_gps2012].
 
 
 ## Safety and Hazards
@@ -78,14 +124,14 @@ the field lead by phone or walkie-talkie.
 
 ## Equipment and Materials
 
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| Handheld GPS receiver (Garmin or equivalent) | Check battery level before departure; carry spare batteries |
-| Smartphone with GPS app              | Avenza Maps, Gaia GPS, or similar app with offline map capability |
-| Backup paper map or site sketch       | Annotated with known landmarks and access roads |
-| Field notebook                        | For recording waypoint IDs and descriptions |
-| USB cable or Bluetooth adapter        | For downloading waypoints to a computer  |
-| Spare batteries (AA or rechargeable)  | Matched to the GPS unit model            |
+| Item                                      | Notes                                    |
+|:------------------------------------------|:-----------------------------------------|
+| Handheld GPS receiver (Garmin or equivalent) | Check battery level; carry spare batteries [@garmin_gpsmap66] |
+| Smartphone with GPS app                   | Avenza Maps, Gaia GPS, or similar app with offline map capability [@avenza_guide] |
+| Backup paper map or site sketch           | Annotated with known landmarks and access roads |
+| Field notebook                            | For recording waypoint IDs and descriptions |
+| USB cable or Bluetooth adapter            | For downloading waypoints to a computer  |
+| Spare batteries (AA or rechargeable)      | Matched to the GPS unit model            |
 
 
 ## Procedure
@@ -93,26 +139,27 @@ the field lead by phone or walkie-talkie.
 ### Pre-Field Setup
 
 1. Confirm the coordinate system and datum for the project. The EA
-   Program default is **WGS 84, latitude/longitude in decimal
-   degrees**. If a project requires UTM or NAD 83, configure the
+   Program default is **WGS 84, latitude/longitude in decimal degrees**
+   [@usfs_gps2012]. If a project requires UTM or NAD 83, configure the
    device accordingly and note the setting in the field notebook.
 2. On a handheld GPS, verify the datum setting: navigate to
-   Setup > Position Format and confirm WGS 84.
+   Setup > Position Format and confirm WGS 84 [@garmin_gpsmap66].
 3. On a smartphone app, enable offline maps for the study area. Do
-   not rely on cellular data for map tiles in the field.
-4. Clear or archive old waypoints from the device so that the day's
-   data are easy to identify.
+   not rely on cellular data for map tiles in the field [@avenza_guide].
+4. Clear or archive old waypoints from the device so the day's data
+   are easy to identify.
 5. Pre-load target waypoints if revisiting known sites. Use the naming
-   convention described in Section 6.3.
+   convention described in §6.3.
 
 ### Recording Waypoints in the Field
 
-1. At the sampling location, hold the GPS receiver at chest height
-   in an open area away from dense canopy, cliff faces, and vehicles.
-2. Wait until the GPS reports an accuracy of 5 m or better. If
-   accuracy remains above 5 m after two minutes, record the waypoint
-   and note the reported accuracy in the field notebook.
-3. Save the waypoint using the naming convention in Section 6.3.
+1. At the sampling location, hold the GPS receiver at chest height in
+   an open area away from dense canopy, cliff faces, and vehicles.
+2. Wait until the GPS reports an accuracy of 5 m or better (HDOP < 2
+   preferred). If accuracy remains above 5 m after two minutes, record
+   the waypoint and note the reported accuracy in the field notebook
+   [@usfs_gps2012].
+3. Save the waypoint using the naming convention in §6.3.
 4. In the field notebook, record:
    - Waypoint name
    - Date and time
@@ -124,14 +171,9 @@ the field lead by phone or walkie-talkie.
 
 ### Waypoint Naming Convention
 
-Use the following format for waypoint names:
+Use the following format: `SITE_TYPE_NN`
 
-`SITE_TYPE_NN`
-
-where:
-
-- `SITE` = three- or four-letter site abbreviation (e.g., BFS, THW,
-  MRW)
+- `SITE` = three- or four-letter site abbreviation (e.g., BFS, THW, MRW)
 - `TYPE` = two-letter code for the point type (see table below)
 - `NN` = sequential two-digit number
 
@@ -153,8 +195,8 @@ project README and field notebook.
 2. Use the "Navigate" or "Go To" function. Follow the bearing
    indicator, checking your surroundings periodically.
 3. When the GPS indicates you are within the reported accuracy of the
-   waypoint, look for physical markers (flagging, rebar, painted
-   rocks) to confirm the exact location.
+   waypoint, look for physical markers (flagging, rebar, painted rocks)
+   to confirm the exact location.
 4. If the physical marker cannot be found, record a new waypoint at
    the location you judge to be correct and note the discrepancy in
    the field notebook.
@@ -163,10 +205,9 @@ project README and field notebook.
 
 1. Download waypoints from the GPS receiver to the project computer
    within 48 hours of returning from the field.
-2. Export waypoints as a `.gpx` or `.csv` file and save to the
-   project GitHub repository under `data/gps/`.
-3. Use the file naming convention:
-   `YYYY-MM-DD_SiteID_waypoints.gpx`
+2. Export waypoints as a `.gpx` or `.csv` file and save to the project
+   GitHub repository under `data/gps/`.
+3. Use the file naming convention: `YYYY-MM-DD_SiteID_waypoints.gpx`
 4. Verify that waypoint names match the field notebook entries.
    Correct any discrepancies before committing the file.
 5. Back up the raw GPS file to the lab shared drive.
@@ -175,22 +216,22 @@ project README and field notebook.
 ## Quality Control
 
 - Compare GPS coordinates against known benchmarks or previously
-  recorded waypoints when revisiting sites. Discrepancies greater
-  than 10 m should be investigated and noted.
-- At least once per semester, verify the GPS receiver against a
-  known benchmark (e.g., a USGS survey marker or a campus reference
-  point) to confirm the device is functioning properly.
+  recorded waypoints when revisiting sites. Discrepancies greater than
+  10 m should be investigated and noted [@usfs_gps2012].
+- At least once per semester, verify the GPS receiver against a known
+  benchmark (e.g., a USGS survey marker or campus reference point).
 - Record the GPS model, serial number, and firmware version in the
   field notebook at the start of each project.
 
 
 ## References
 
-- Garmin International. *GPSMAP 66 Series Owner's Manual*.
-- Avenza Systems. *Avenza Maps User Guide*.
-  <https://support.avenzamaps.com>
-- US Forest Service. (2012). *Field Data Collection with GPS: A Best
-  Practices Guide*. Gen. Tech. Rep. RMRS-GTR-289.
+- @garmin_gpsmap66
+- @avenza_guide
+- @usfs_gps2012
+
+::: {#refs}
+:::
 
 
 ## Related SOPs
@@ -199,7 +240,7 @@ project README and field notebook.
 |:------|:---------------------------------------|:----------------------------------|
 | [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
 | [F003](SOP-F003-field-notebook-protocols.qmd) | Field Notebook Protocols | Waypoint data recorded in notebook |
-| [F005](SOP-F005-random-sampling-design.qmd) | Random Sampling Design   | GPS used to navigate to random points |
+| [F005](SOP-F005-random-sampling-design.qmd) | Random Sampling Design | GPS used to navigate to random points |
 
 
 ## Training Record
@@ -209,6 +250,5 @@ Before using GPS equipment independently, personnel must:
 1. Read this SOP in full
 2. Demonstrate proper waypoint recording (datum check, accuracy
    verification, naming convention) during a supervised field visit
-3. Successfully download and export waypoints to the project
-   repository
+3. Successfully download and export waypoints to the project repository
 4. Be signed off by the PI or field lead

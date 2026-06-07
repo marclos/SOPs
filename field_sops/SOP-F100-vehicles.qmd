@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F100: EA Program Vehicle Use
-# =============================================================================
 title: "EA Program Vehicle Use"
 sop-number: "SOP-F100"
 author:
@@ -9,13 +6,18 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2025-05-17"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; replaced plain-text references
+              with cross-references; added {#refs} div"
 ---
 
 ## Purpose
@@ -45,17 +47,45 @@ research and teaching activities.
 | New Students      | Submit insurance form and complete training before driving |
 
 
+## Definitions
+
+- **Authorized driver:** A person who holds a valid driver's license
+  and has a completed, approved Pomona College driver insurance form
+  on file with the EA Coordinator; the only persons permitted to
+  operate EA Program vehicles.
+- **Drowsy driving:** Operating a motor vehicle while significantly
+  impaired by fatigue; a leading cause of serious crashes on long
+  drives to remote field sites; if any crew member feels impaired by
+  fatigue, pull over safely and rest before continuing.
+- **Fuel card:** A fleet credit card stored in the center console of
+  each EA vehicle; used to purchase regular unleaded gasoline (87
+  octane) at participating stations; if declined, pay out of pocket
+  and submit the receipt to the EA Coordinator for reimbursement.
+- **Pre-trip inspection:** A walk-around check of the vehicle before
+  departure to identify safety issues (warning lights, tire damage,
+  fluid leaks) that would make the vehicle unsafe to drive; required
+  before every trip.
+- **Post-trip return standard:** The condition in which the vehicle
+  must be returned after every use -- clean interior, at least 3/4
+  tank of fuel, fuel card in the center console, no warning lights,
+  parked in the designated garage spot.
+- **Pomona College driver authorization:** The college insurance form
+  required before driving any Pomona College-owned or -leased vehicle;
+  submitted to the EA Coordinator with a copy of a valid driver's
+  license; must be approved before the first trip.
+
+
 ## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
 
 - **Physical:** Motor vehicle operation on public roads and unpaved
-  field-site access roads; loading and unloading heavy field equipment
+  field-site access roads; loading and unloading heavy field equipment.
 - **Environmental:** Driving in adverse weather, reduced visibility, or
-  on unfamiliar roads near field sites
+  on unfamiliar roads near field sites.
 - **Fatigue:** Long drives to remote field sites increase the risk of
-  drowsy driving
+  drowsy driving.
 :::
 
 ### Requirements
@@ -72,7 +102,7 @@ In the event of an accident or breakdown:
 
 1. Ensure all occupants are safe; move to a safe location if possible
 2. Call 911 if anyone is injured
-3. Contact Pomona College Campus Safety
+3. Contact Pomona College Campus Safety: (909) 621-8170
 4. Notify the EA Coordinator and PI
 5. Document the incident (photos, written description, other party
    information if applicable)
@@ -88,8 +118,8 @@ emergency response procedures.
 
 | Vehicle | Make / Model    | Seats | Notes                              |
 |:--------|:----------------|:------|:-----------------------------------|
-| EA-1    | Ford Explorer   | 7     | Garage card in center console        |
-| EA-2    | Ford Explorer   | 7     | Garage card in center console        |
+| EA-1    | Ford Explorer   | 7     | Garage card in center console      |
+| EA-2    | Ford Explorer   | 7     | Garage card in center console      |
 
 Both vehicles are parked in the campus garage when not in use. Keys and
 fuel cards are stored in each vehicle's center console.
@@ -101,36 +131,35 @@ fuel cards are stored in each vehicle's center console.
 
 Before driving any EA vehicle for the first time, you must:
 
-1. Obtain the Pomona College driver authorization / insurance form from
-   the EA Coordinator
+1. Obtain the Pomona College driver authorization and insurance form
+   from the EA Coordinator.
 2. Complete and submit the form with a copy of your valid driver's
-   license
-3. Wait for written approval before operating any EA vehicle
+   license.
+3. Wait for written approval before operating any EA vehicle.
 
 ::: {.callout-important}
 ### No Exceptions
-
 You may not drive an EA vehicle until your insurance form has been
-approved and is on file. This is a college requirement, not a
-suggestion. Driving without approval puts you and the program at
-serious liability risk.
+approved and is on file with the EA Coordinator. This is a college
+requirement, not a suggestion. Driving without approval puts you and
+the program at serious liability risk.
 :::
 
 ### Reserving a Vehicle
 
-1. Contact the EA Coordinator to check availability
-2. Provide the following information: date(s) and times needed,
-   destination, number of passengers, and the name of the PI or
-   instructor authorizing the trip
+1. Contact the EA Coordinator to check availability.
+2. Provide: date(s) and times needed, destination, number of
+   passengers, and the name of the PI or instructor authorizing the
+   trip.
 3. Confirm the reservation before your trip; cancellations should be
-   communicated as early as possible so others can use the vehicle
+   communicated as early as possible so others can use the vehicle.
 
 ### Pre-Trip Inspection
 
 Before departing, walk around the vehicle and verify:
 
 - [ ] Fuel gauge reads at least 3/4 full (refuel before departing if
-      below 3/4; see Section 6.5)
+      below 3/4; see §6.5)
 - [ ] Fuel card is present in the center console
 - [ ] Tires appear properly inflated with no visible damage
 - [ ] All lights (headlights, brake lights, turn signals) are
@@ -149,34 +178,33 @@ immediately.
 
 ### During the Trip
 
-- Obey all state and local traffic laws at all times
-- All occupants must wear seatbelts
+- Obey all state and local traffic laws at all times.
+- All occupants must wear seatbelts (California law).
 - The driver must not use a handheld cell phone while driving
-  (California law)
-- Do not exceed the vehicle's passenger capacity
-- Secure all field equipment so it cannot shift during transport
-- On unpaved roads, reduce speed and increase following distance
+  (California Vehicle Code §23123).
+- Do not exceed the vehicle's passenger capacity.
+- Secure all field equipment so it cannot shift during transport.
+- On unpaved roads, reduce speed and increase following distance.
 - If conditions become unsafe (severe weather, road hazards, driver
-  fatigue), pull over and reassess before continuing
+  fatigue), pull over and reassess before continuing.
 
 ### Refueling
 
-1. Use the fuel card located in the center console
-2. Select regular unleaded gasoline (87 octane)
+1. Use the fuel card located in the center console.
+2. Select regular unleaded gasoline (87 octane).
 3. If the fuel card is declined or missing, pay out of pocket and
-   submit the receipt to the EA Coordinator for reimbursement
-4. Replace the fuel card in the center console after refueling
+   submit the receipt to the EA Coordinator for reimbursement.
+4. Replace the fuel card in the center console after refueling.
 
 ### Returning the Vehicle
 
 After every trip, complete the following before leaving the vehicle:
 
-1. **Refuel:** Return the vehicle with at least a 3/4 tank of gas. If
-   you used the vehicle, you are responsible for refueling -- do not
-   leave this for the next user.
+1. **Refuel:** Return with at least a 3/4 tank of gas. If you used
+   the vehicle, you are responsible for refueling.
 2. **Clean:** Remove all personal items, trash, and field equipment.
-   Brush or vacuum out dirt and mud from field work. Wipe down surfaces
-   if visibly soiled.
+   Brush or vacuum out dirt and mud. Wipe down surfaces if visibly
+   soiled.
 3. **Fuel card:** Confirm the fuel card is back in the center console.
 4. **Park:** Return the vehicle to its designated spot in the campus
    garage.
@@ -186,11 +214,9 @@ After every trip, complete the following before leaving the vehicle:
 
 ::: {.callout-warning}
 ### Return It Ready
-
 The next person to use the vehicle should find it clean, fueled to at
-least 3/4 tank, with the fuel card in the center console, parked in the
-garage, and free of warning lights. Treat the vehicle as if you are
-handing it to a colleague, not abandoning it.
+least 3/4 tank, with the fuel card in the center console, parked in
+the garage, and free of warning lights.
 :::
 
 
@@ -207,8 +233,23 @@ handing it to a colleague, not abandoning it.
 
 ## References
 
-- Pomona College Risk Management: Driver Authorization Policy
+For driver authorization requirements, consult the EA Coordinator or
+the Pomona College Office of Risk Management directly. There is no
+publicly accessible bib entry for this internal policy; confirm current
+requirements with the EA Coordinator before each field season.
+
 - [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required reading; emergency procedures |
+| [F002](SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | Vehicle pre-trip checklist |
 
 
 ## Training Record

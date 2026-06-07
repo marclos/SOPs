@@ -5122,25 +5122,6 @@
 }
 
 % =============================================================================
-% BibTeX additions for SOP-L306, SOP-L308, SOP-L309, SOP-L311
-% Append to references.bib after verifying no duplicates with check_bib.R
-% =============================================================================
-%
-% Keys already present in references.bib -- DO NOT re-add:
-%   @apha2012           -- L306, L308, L311
-%   @usepa8081b         -- L309
-%   @usepa8270e         -- L309
-%   @mcnair2019         -- L309
-%   @thurman1985        -- L311
-%   @wetzel2001         -- L311
-%   @kaplan1994         -- L311
-%   @sharp1993          -- L311
-%   @thornton2026       -- NOTE: existing key is thornton2026 (2026 paper).
-%                          L308 cites thornton2025 which is a different
-%                          techreport. See new entry below.
-%
-% New keys:
-% =============================================================================
 
 % --- SOP-L306: WTW OxiTop operating manual ----------------------------------
 @manual{wtw_oxitop,
@@ -5217,4 +5198,116 @@
                  (SCCWRP)},
   address   = {Costa Mesa, CA},
   url       = {https://www.sccwrp.org/}
+}
+
+% --- SOP-F005: Krebs 1999 Ecological Methodology ----------------------------
+@book{krebs1999,
+  title     = {Ecological Methodology},
+  author    = {Krebs, Charles J.},
+  edition   = {2nd},
+  year      = {1999},
+  publisher = {Benjamin Cummings},
+  address   = {Menlo Park, CA}
+}
+
+% --- SOP-F006: Garmin GPSMAP 66 owner's manual ------------------------------
+@manual{garmin_gpsmap66,
+  title     = {{GPSMAP} 66 Series Owner's Manual},
+  author    = {{Garmin International}},
+  year      = {2019},
+  address   = {Olathe, KS},
+  url       = {https://www8.garmin.com/manuals/webhelp/gpsmap66st/EN-US/GUID-BF2E4F90-EB9F-4A7D-A94E-52614D3B9D05-homepage.htm},
+  note      = {Consult the manual for your specific Garmin model; user
+               interface and menu paths vary by firmware version}
+}
+
+% --- SOP-F006: Avenza Maps user guide ----------------------------------------
+@manual{avenza_guide,
+  title     = {Avenza Maps User Guide},
+  author    = {{Avenza Systems}},
+  year      = {2024},
+  url       = {https://support.avenzamaps.com},
+  note      = {Online support documentation; version current as of 2024}
+}
+
+% --- SOP-F006: USFS GPS field data collection guide -------------------------
+@techreport{usfs_gps2012,
+  title     = {Field Data Collection with {GPS}: A Best Practices Guide},
+  author    = {{U.S. Forest Service}},
+  year      = {2012},
+  number    = {Gen. Tech. Rep. RMRS-GTR-289},
+  institution = {USDA Forest Service, Rocky Mountain Research Station},
+  address   = {Fort Collins, CO},
+  url       = {https://www.fs.usda.gov/research/treesearch/43085}
+}
+
+% --- SOP-F007: CDFW aquatic invasive species decontamination protocol --------
+@techreport{cdfw_ais2016,
+  title     = {Aquatic Invasive Species Decontamination Protocol},
+  author    = {{California Department of Fish and Wildlife}},
+  year      = {2016},
+  institution = {California Department of Fish and Wildlife},
+  address   = {Sacramento, CA},
+  url       = {https://wildlife.ca.gov/Conservation/Invasives/Aquatic}
+}
+
+% --- SOP-F007: Hosea & Finlayson 2005 New Zealand mudsnail decontamination --
+@techreport{hosea2005,
+  title     = {Controlling the spread of {New Zealand} mudsnails on
+               wading gear},
+  author    = {Hosea, Robert C. and Finlayson, Brian},
+  year      = {2005},
+  number    = {Administrative Report 2005-02},
+  institution = {California Department of Fish and Game, Office of
+                 Spill Prevention and Response},
+  address   = {Sacramento, CA}
+}
+
+% =============================================================================
+% BibTeX additions for SOP-F201, SOP-F202
+% Append to references.bib after verifying no duplicates with check_bib.R
+% =============================================================================
+%
+% Keys already present in references.bib -- DO NOT re-add:
+%   @rantz1982       -- F201 (USGS Water-Supply Paper 2175)
+%   @turnipseed2010  -- F201, F202 (USGS TM 3-A8)
+%
+% New keys:
+% =============================================================================
+
+% --- SOP-F201: USGS current meter maintenance guide -------------------------
+@techreport{usgs_meterma,
+  title     = {Maintenance of {Price} Type {AA} Current Meters},
+  author    = {{U.S. Geological Survey, Office of Surface Water}},
+  year      = {2002},
+  institution = {U.S. Geological Survey},
+  address   = {Reston, VA},
+  url       = {https://water.usgs.gov/osw/pubs/9906attachments.pdf},
+  note      = {Pivot adjustment, spin test criteria, and parts ordering
+               guidance}
+}
+
+% --- SOP-F202: SonTek FlowTracker2 technical manual -------------------------
+@manual{sontek_ft2,
+  title     = {{FlowTracker2} Handheld {ADV} Technical Manual},
+  author    = {{SonTek/Xylem}},
+  year      = {2019},
+  address   = {San Diego, CA},
+  url       = {https://www.sontek.com/flowtracker2},
+  note      = {Covers FlowTracker2 operation, beam check, QA/QC flags,
+               firmware updates, and data download; consult the version
+               shipped with your instrument}
+}
+
+% --- SOP-F202: Rehmel 2007 acoustic Doppler velocimeters --------------------
+@techreport{rehmel2007,
+  title     = {Application of Acoustic {Doppler} Velocimeters for
+               Streamflow Measurements},
+  author    = {Rehmel, Michael S.},
+  year      = {2007},
+  number    = {Scientific Investigations Report 2007-5091},
+  institution = {U.S. Geological Survey},
+  address   = {Reston, VA},
+  doi       = {10.3133/sir20075091},
+  url       = {https://pubs.usgs.gov/sir/2007/5091/}
 }
