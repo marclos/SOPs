@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-L601: Preparing a Wet Mount for Microscopy
-# =============================================================================
 title: "Preparing a Wet Mount for Microscopy"
 sop-number: "SOP-L601"
 author:
@@ -11,7 +8,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "0.1"
@@ -22,27 +19,33 @@ revision-history:
     date: "2025-05-17"
     author: "Marc Los Huertos"
     changes: "Converted to Quarto; expanded procedure and materials sections"
+  - version: "1.1"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Removed duplicate Definitions section; converted plain-text
+              references to BibTeX; added {#refs} div; added inline
+              citations throughout"
 ---
 
 ## Purpose
 
 This procedure describes how to prepare a wet mount slide for light
 microscopy. A wet mount suspends a specimen in a thin layer of water
-(or other mounting medium) beneath a cover slip, preserving the
-natural shape and motility of living cells and small organisms. It is
-the standard preparation method for examining fresh biological
-samples under bright field or phase contrast illumination.
+(or other mounting medium) beneath a cover slip, preserving the natural
+shape and motility of living cells and small organisms. It is the
+standard preparation method for examining fresh biological samples
+under bright field or phase contrast illumination [@murphy2012].
 
 
 ## Scope
 
 - **Applies to:** Preparation of temporary wet mount slides for
   examination of algae, protozoa, bacteria, fungi, plant cells, soil
-  microorganisms, and other small specimens in the EA Program
-  laboratory
+  microorganisms, and other small specimens in the EA Program laboratory
 - **Does not apply to:** Permanent slide preparation (fixed, stained,
   and sealed mounts); dry mounts; hanging-drop preparations for
-  motility studies; fluorescence specimen preparation
+  motility studies; fluorescence specimen preparation (see
+  [SOP-L211](SOP-L211-revolve-microscope.qmd))
 - **Location:** EA Program laboratory, SGM 133
 
 
@@ -54,17 +57,35 @@ samples under bright field or phase contrast illumination.
 | Trained Personnel | Prepare slides following this procedure     |
 | New Students      | Complete training before independent use    |
 
-<!-- Definitions snippet for SOP-L601: Wet Mount for Microscopy -->
-<!-- Insert immediately before ## Safety and Hazards -->
 
 ## Definitions
 
-- **Cover slip (coverslip):** A thin (0.13--0.17 mm) square or circular piece of optical glass placed over the specimen on a microscope slide; standardizes the optical path length and protects the objective from liquid samples.
-- **Immersion medium:** Liquid placed between the specimen and the coverslip to improve optical contact, reduce refraction artifacts, and support live organisms during observation; options include water, glycerol, or immersion oil depending on the application.
-- **Live mount:** A wet mount prepared without fixation or staining; allows observation of living organisms and motile behavior; must be examined quickly before evaporation or oxygen depletion affects the specimen.
-- **Mounting medium:** A substance used to seal and preserve a wet mount for longer-term storage; examples include glycerol, polyvinyl alcohol, or commercial mounting media; some media harden and become permanent.
-- **Refraction artifact:** Optical distortion caused by differences in refractive index between the sample, mounting medium, coverslip, and objective; minimized by matching refractive indices and maintaining thin, uniform wet mounts.
-- **Wet mount:** A microscopy preparation method in which the specimen is suspended in a drop of liquid (usually water) on a glass slide and covered with a coverslip; the standard preparation for aquatic microorganisms, algae, macroinvertebrates, and other specimens examined under transmitted light.
+- **Cover slip (coverslip):** A thin (0.13--0.17 mm) square or circular
+  piece of optical glass placed over the specimen on a microscope slide;
+  standardizes the optical path length and protects the objective from
+  liquid samples; the EA Program standard is No. 1.5 (0.17 mm),
+  matched to the objectives on the Echo Revolve microscope [@murphy2012].
+- **Immersion medium:** Liquid placed between the specimen and the
+  coverslip to improve optical contact, reduce refraction artifacts,
+  and support live organisms during observation; options include water,
+  glycerol, or immersion oil depending on the application.
+- **Live mount:** A wet mount prepared without fixation or staining;
+  allows observation of living organisms and motile behavior; must be
+  examined quickly before evaporation or oxygen depletion affects the
+  specimen.
+- **Mounting medium:** The liquid in which the specimen is suspended;
+  distilled or deionized water is standard; saline, glycerol, or
+  specific staining solutions may be used depending on the application
+  [@murphy2012].
+- **Refraction artifact:** Optical distortion caused by differences in
+  refractive index between the sample, mounting medium, coverslip, and
+  objective; minimized by matching refractive indices and maintaining
+  thin, uniform wet mounts.
+- **Wet mount:** A temporary microscopy preparation method in which a
+  specimen is suspended in a drop of liquid (usually water) on a glass
+  slide and covered with a coverslip; the standard preparation for
+  aquatic microorganisms, algae, macroinvertebrates, and other specimens
+  examined under transmitted light [@murphy2012].
 
 
 ## Safety and Hazards
@@ -93,30 +114,17 @@ Seek first aid if bleeding is significant. Refer to
 [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd).
 
 
-## Definitions
-
-- **Wet mount:** A temporary microscope preparation in which a specimen
-  is suspended in liquid (typically water) between a glass slide and a
-  cover slip.
-- **Cover slip (cover glass):** A thin, flat piece of glass placed over
-  the specimen to create a uniform optical surface and protect the
-  microscope objective from contact with the sample.
-- **Mounting medium:** The liquid in which the specimen is suspended.
-  Distilled or deionized water is standard; saline, glycerol, or
-  specific staining solutions may be used depending on the application.
-
-
 ## Required Materials
 
-| Item                          | Catalog No. | Notes                          |
-|:------------------------------|:------------|:-------------------------------|
-| Microscope slides (75 x 25 mm) | TBD       | Standard glass, pre-cleaned    |
-| Cover slips (No. 1.5, 22 x 22 mm) | TBD   | 0.17 mm thickness; matched to objectives on the Revolve microscope |
-| Squeeze bottle with DI water  |             | Or distilled water             |
-| Disposable transfer pipettes or eyedroppers |  | For placing water drops   |
-| Forceps (fine-tipped)         |             | For handling specimens and cover slips |
-| Toothpicks                    |             | For lowering cover slips       |
-| Lint-free wipes (Kimwipes)    |             | For blotting excess water      |
+| Item                               | Catalog No. | Notes                          |
+|:-----------------------------------|:------------|:-------------------------------|
+| Microscope slides (75 × 25 mm)    | TBD         | Standard glass, pre-cleaned    |
+| Cover slips (No. 1.5, 22 × 22 mm) | TBD         | 0.17 mm thickness; matched to objectives on the Revolve microscope [@murphy2012] |
+| Squeeze bottle with DI water       |             | Or distilled water             |
+| Disposable transfer pipettes or eyedroppers | | For placing water drops    |
+| Forceps (fine-tipped)              |             | For handling specimens and cover slips |
+| Toothpicks                         |             | For lowering cover slips       |
+| Lint-free wipes (Kimwipes)         |             | For blotting excess water      |
 
 ::: {.callout-note}
 ### Catalog Numbers Needed
@@ -136,7 +144,7 @@ This procedure requires approximately 5 minutes per slide.
 ### Placing the Specimen
 
 1. Clean a microscope slide with a lint-free wipe to remove dust and
-   fingerprints
+   fingerprints.
 2. Using forceps, place the specimen in the center of the slide. For
    liquid samples (pond water, culture broth), skip to Step 3 and
    pipette the sample directly.
@@ -156,7 +164,8 @@ This procedure requires approximately 5 minutes per slide.
    specimen, holding it at approximately a 45-degree angle.
 6. Slowly lower the cover slip using the tip of a toothpick or forceps,
    allowing the water to spread gradually beneath the glass. Lowering
-   at an angle lets air escape and minimizes bubble formation.
+   at an angle lets air escape and minimizes bubble formation
+   [@murphy2012].
 
 ::: {.callout-tip}
 ### Avoiding Air Bubbles
@@ -175,15 +184,14 @@ again.
    the edge of the cover slip and let capillary action draw off excess
    water until the cover slip sits flat.
 8. **Too little water:** If dry areas are visible beneath the cover
-   slip, place a small drop of water at the edge of the cover slip and
-   let capillary action draw it underneath. Do not lift the cover slip.
+   slip, place a small drop of water at the edge and let capillary
+   action draw it underneath. Do not lift the cover slip.
 
 ### Examining the Slide
 
 9. Place the prepared slide on the microscope stage and examine
-   following
-   [SOP-L211 Echo Labs Revolve Microscope](SOP-L211-revolve-microscope.qmd).
-   Start at low magnification (4x or 10x) and increase as needed.
+   following [SOP-L211 Echo Labs Revolve Microscope](SOP-L211-revolve-microscope.qmd).
+   Start at low magnification (4× or 10×) and increase as needed.
 10. For unstained, transparent specimens, phase contrast mode typically
     provides better visibility than bright field (see SOP-L211,
     Section 6.5).
@@ -192,12 +200,12 @@ again.
 ## Quality Control
 
 - Verify that the cover slip lies flat and is not tilted by air bubbles
-  or excess sample material
-- Confirm that the water layer is thin enough for the specimen to
-  remain in a single focal plane at high magnification
+  or excess sample material.
+- Confirm that the water layer is thin enough for the specimen to remain
+  in a single focal plane at high magnification.
 - If examining motile organisms, note that excessive pressure from the
   cover slip can restrict movement; use slightly more water to provide
-  adequate space
+  adequate space.
 
 
 ## Waste Disposal
@@ -213,7 +221,7 @@ again.
 
 | Problem                         | Probable Cause                  | Corrective Action                    |
 |:--------------------------------|:--------------------------------|:-------------------------------------|
-| Air bubbles under cover slip    | Cover slip lowered too quickly  | Remove cover slip, re-wet, lower at 45 degrees slowly |
+| Air bubbles under cover slip    | Cover slip lowered too quickly  | Remove cover slip, re-wet, lower at 45° slowly |
 | Cover slip slides around        | Too much water                  | Blot excess with lint-free wipe      |
 | Dry patches under cover slip    | Too little water                | Add a drop at the edge; capillary action fills the gap |
 | Specimen drifts out of view     | Water current under cover slip  | Wait for flow to stop; blot if excess water is present |
@@ -222,10 +230,20 @@ again.
 
 ## References
 
-- Museum of Science, Boston. *Preparing a Wet Mount*.
-  <http://legacy.mos.org/sln/sem/wetmount.html>
-- Murphy, D.B. & Davidson, M.W. (2012). *Fundamentals of Light
-  Microscopy and Electronic Imaging*. 2nd ed. Wiley.
+- @murphy2012
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | Required safety training          |
+| [L211](SOP-L211-revolve-microscope.qmd) | Revolve Microscope      | Instrument used to examine slides |
+| [L602](SOP-L602-macroinvertebrate-sorting.qmd) | Macroinvertebrate Sorting | Uses wet mounts for ID         |
+| [L604](SOP-L604-algae-periphyton-identification.qmd) | Algae Identification | Uses wet mounts for ID         |
 
 
 ## Training Record

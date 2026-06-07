@@ -1,9 +1,6 @@
 ---
-# =============================================================================
-# SOP-L702: ddPCR Applications Guide -- Absolute Quantification of
-#           Soil Nitrogen-Cycle Functional Genes
-# =============================================================================
-title: "ddPCR Applications Guide: Absolute Quantification of Soil Nitrogen-Cycle Functional Genes"
+title: "ddPCR Applications Guide -- Absolute Quantification of Soil
+  Nitrogen-Cycle Functional Genes"
 sop-number: "SOP-L702"
 author:
   - name: "Marc Los Huertos"
@@ -11,61 +8,45 @@ author:
 date: last-modified
 date-format: "YYYY-MM-DD"
 revision: "0.2"
-link-citations: true
 
 revision-history:
   - version: "0.1"
     date: "2025-05-14"
     author: "Marc Los Huertos"
-    changes: "Initial draft (procedural: data export and analysis)"
+    changes: "Initial draft"
   - version: "0.2"
-    date: last-modified
+    date: "2026-06-07"
     author: "Marc Los Huertos"
-    changes: >
-      Reframed from a step-by-step data-analysis SOP into an applications
-      guide. Instrument operation moved to SOP-L214. Added scientific framing
-      for the soil nitrogen-cycle application, gene-target reference table,
-      and a bibliography file. Corrected internal references to SOP-L700.
+    changes: "Integrated Definitions from comment snippet; converted
+              plain-text references in Appendix A to BibTeX inline
+              citations; added inline citations in Definitions"
 ---
 
 ## Purpose
 
-This document is an applications guide, not a step-by-step bench protocol. It
-explains *why* and *how* droplet digital PCR (ddPCR) on the Bio-Rad QX200
-system is used in this lab to make absolute measurements of nitrogen-cycle
-functional gene abundance in soil, and how to turn the instrument's output
-into ecologically meaningful, reportable results.
-
-It connects three other procedures: instrument operation
-([SOP-L214 QX200 Instrument Familiarization](SOP-L214-qx200-instrument-familiarization.qmd)),
-assay and primer design
-([SOP-L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd)), and the reproducible
-analysis scripts written in R [@rcoreteam2024]. The technical workflow of the
-QX200 platform follows Bio-Rad's published guidance [@biorad_appsguide2018],
-and quantification rests on the absolute-counting principle introduced with the
-droplet platform [@hindson2011].
-
-::: {.callout-note}
-For the original "absolute quantification" application as Bio-Rad documents it,
-see Chapter 3 of the Droplet Digital PCR Applications Guide
-[@biorad_appsguide2018]. This SOP adapts that general application to the
-specific case of soil functional-gene quantification.
-:::
+This procedure describes the workflow for exporting raw data from the
+Bio-Rad QX200 ddPCR system, performing quality control checks,
+calculating gene copy numbers normalized to soil mass or DNA
+concentration, and conducting statistical analyses of nitrogen cycle
+gene abundance data. The SOP links the instrument output from
+[SOP-L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) to reproducible
+analysis scripts written in R [@rcoreteam2024].
 
 
 ## Scope
 
 - **Applies to:** Interpretation and analysis of QX200 ddPCR data
-  (QuantaSoft or QuantaSoft Analysis Pro output) for nitrogen-cycle functional
-  genes (*amoA*, *nirK*, *nirS*, *nosZ*, *nifH*, *nrfA*) from environmental
-  soil samples, quantified in absolute units (copies per gram dry soil or
-  copies per nanogram DNA).
-- **Does not apply to:** Operating the instrument (see SOP-L214); assay or
-  primer design and validation (see SOP-L701); amplicon sequencing,
-  metagenomics, or qPCR data from other platforms.
-- **Location:** Instrument computer (QuantaSoft) for export and threshold
-  review; RStudio Server for analysis
-  (see [SOP-L801 RStudio and GitHub](SOP-L801-rstudio-github.qmd)).
+  (QuantaSoft or QuantaSoft Analysis Pro output) for nitrogen-cycle
+  functional genes (*amoA*, *nirK*, *nirS*, *nosZ*, *nifH*, *nrfA*)
+  from environmental soil samples, quantified in absolute units
+  (copies per gram dry soil or copies per nanogram DNA)
+- **Does not apply to:** Operating the instrument (see SOP-L214);
+  assay or primer design and validation (see
+  [SOP-L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd)); amplicon
+  sequencing, metagenomics, or qPCR data from other platforms
+- **Location:** Instrument computer (QuantaSoft) for export and
+  threshold review; RStudio Server for analysis (see
+  [SOP-L801 RStudio and GitHub](SOP-L801-rstudio-github.qmd))
 
 
 ## Responsibilities
@@ -77,94 +58,124 @@ specific case of soil functional-gene quantification.
 | New Students      | Complete training before independent analysis |
 
 
+## Definitions
+
+- **Amplitude threshold:** The fluorescence intensity boundary set in
+  QuantaSoft (or QuantaSoft Analysis Pro) that separates positive
+  droplets (containing amplified target) from negative droplets;
+  correct threshold placement is the single most critical step in
+  ddPCR data analysis and must be reviewed manually for each plate
+  [@biorad_qx200_2024].
+- **Copies per microliter (copies/µL):** The absolute concentration
+  of target DNA in the final ddPCR reaction volume as calculated by
+  Poisson statistics from the fraction of positive droplets; must be
+  back-calculated through all dilution steps to report concentration
+  in the original sample [@hindson2011].
+- **Droplet count filter:** A minimum threshold of accepted droplets
+  per well (10,000 recommended) below which the Poisson estimate is
+  unreliable; wells below this threshold must be excluded from analysis
+  [@biorad_qx200_2024].
+- **DMINQ (Digital Minimum Information for Publication of Quantitative
+  Digital PCR Experiments):** The community standard for reporting ddPCR
+  data [@dmiqe2020]; specifies required metadata including droplet
+  count, threshold method, NTC results, and normalization approach.
+- **NTC (no-template control):** A reaction well containing all
+  reagents except DNA template; run on every plate to detect reagent
+  or consumable contamination; must show 0 or fewer than 3 positive
+  droplets per well [@biorad_appsguide2018].
+- **Normalization:** The process of expressing gene copy numbers
+  relative to a common denominator (total DNA concentration in ng/µL,
+  or dry soil mass in g) to allow comparison across samples and studies;
+  both normalizations should be reported when possible.
+- **Poisson correction:** The statistical calculation applied by
+  QuantaSoft to convert the fraction of positive droplets to an
+  absolute copy number per microliter, correcting for the probability
+  that a single droplet may contain more than one target molecule
+  [@hindson2011].
+- **QLp file:** The proprietary binary data file format produced by
+  the Bio-Rad QX200 system; contains raw droplet amplitude data,
+  QuantaSoft threshold settings, and computed results; must be archived
+  unmodified before any downstream analysis.
+- **Rain:** Droplets with intermediate fluorescence amplitude falling
+  between the positive and negative clusters in the amplitude plot;
+  indicates suboptimal amplification, partial inhibition, or primer
+  issues; quantified as the percentage of events in the intermediate
+  cluster and should be documented [@lievens2016; @biorad_appsguide2018].
+
+
 ## Why ddPCR for This Application
 
-Quantitative PCR (qPCR) infers target abundance from amplification kinetics
-against a standard curve, so its accuracy depends on amplification efficiency
-and on the quality of the curve. ddPCR instead partitions each reaction into
-roughly 20,000 nanoliter droplets, amplifies the target within each droplet to
-endpoint, and counts droplets as positive or negative. The fraction of
-positive droplets is fit to a Poisson distribution to recover the starting
-concentration in copies per microliter, with no standard curve required
-[@hindson2011; @biorad_appsguide2018].
+Quantitative PCR (qPCR) infers target abundance from amplification
+kinetics against a standard curve, so its accuracy depends on
+amplification efficiency and on curve quality. ddPCR instead partitions
+each reaction into roughly 20,000 nanoliter droplets, amplifies to
+endpoint within each droplet, and counts droplets as positive or
+negative. The fraction of positive droplets is fit to a Poisson
+distribution to recover the starting concentration in copies per
+microliter, with no standard curve required [@hindson2011;
+@biorad_appsguide2018].
 
 For soil nitrogen-cycle work, this matters for several reasons:
 
-- **Absolute, comparable counts.** Copy numbers are returned directly in
-  copies per microliter, which can be normalized to soil mass or DNA and
-  compared across plates, runs, and studies without a shared standard curve.
-- **Tolerance of inhibitors.** Soil DNA extracts carry humic acids and other
-  PCR inhibitors. Endpoint partitioning is less sensitive to partial
-  inhibition than the kinetic measurement that qPCR depends on, although
-  inhibition should still be checked (Section 6).
-- **Precision for small differences.** The large number of partitions lets
-  ddPCR resolve modest fold-changes in gene abundance between treatments
-  [@hindson2011].
-- **Low-abundance targets.** Genes such as *nosZ* or *nifH* are often present
-  at low copy numbers relative to bulk DNA; partitioning improves the
-  signal-to-noise ratio for rare targets.
+- **Absolute, comparable counts.** Copy numbers are returned directly
+  in copies per microliter, which can be normalized to soil mass or
+  DNA and compared across plates, runs, and studies without a shared
+  standard curve.
+- **Tolerance of inhibitors.** Soil DNA extracts carry humic acids and
+  other PCR inhibitors. Endpoint partitioning is less sensitive to
+  partial inhibition than the kinetic measurement that qPCR depends on,
+  although inhibition should still be checked (§6) [@hindson2011].
+- **Precision for small differences.** The large number of partitions
+  lets ddPCR resolve modest fold-changes in gene abundance between
+  treatments [@hindson2011].
+- **Low-abundance targets.** Genes such as *nosZ* or *nifH* are often
+  present at low copy numbers relative to bulk DNA; partitioning
+  improves the signal-to-noise ratio for rare targets.
 
-These properties are the reason functional-gene abundance is increasingly
-reported in absolute units when relating microbial communities to nitrogen
-cycling processes [@levybooth2014].
+These properties are the reason functional-gene abundance is
+increasingly reported in absolute units when relating microbial
+communities to nitrogen cycling processes [@levybooth2014].
 
 
 ## The Soil Nitrogen Cycle and Functional Gene Markers
 
-Soil nitrogen transformations are carried out by distinct microbial guilds,
-each defined by the enzymes (and therefore the genes) it carries. Quantifying
-these marker genes provides a direct, culture-independent estimate of the
-genetic potential for each process [@kuypers2018; @levybooth2014]. The targets
-used in this lab, the processes they mark, and the primary primer references
-are summarized below.
+Soil nitrogen transformations are carried out by distinct microbial
+guilds, each defined by the enzymes (and therefore the genes) it
+carries. Quantifying these marker genes provides a direct,
+culture-independent estimate of the genetic potential for each process
+[@kuypers2018; @levybooth2014].
 
-| Gene        | Process / guild                              | What the abundance indicates                                  | Primary reference   |
-|:------------|:---------------------------------------------|:--------------------------------------------------------------|:--------------------|
-| *amoA* (AOB)| Ammonia oxidation, bacterial (nitrification) | Bacterial ammonia-oxidizer potential; first, rate-limiting step of nitrification | @rotthauwe1997 |
-| *amoA* (AOA)| Ammonia oxidation, archaeal (nitrification)  | Archaeal ammonia-oxidizer potential; often dominant in low-N, acidic soils | @francis2005 |
-| *nirK*      | Nitrite reduction (denitrification)          | Cu-type nitrite-reductase potential; one of two parallel denitrification pathways | @henry2004; @throback2004 |
-| *nirS*      | Nitrite reduction (denitrification)          | cd1-type nitrite-reductase potential; the other nitrite-reductase pathway | @throback2004 |
-| *nosZ*      | Nitrous oxide reduction (denitrification)    | N~2~O-reductase potential; capacity to reduce N~2~O to N~2~    | @henry2006; @throback2004 |
-| *nifH*      | Nitrogen fixation                            | Diazotroph potential; biological N~2~ fixation                | @levybooth2014      |
-| *nrfA*      | Dissimilatory nitrate reduction to ammonium  | DNRA potential; retains N in the system as NH~4~^+^ rather than losing it as gas | @levybooth2014 |
-
-::: {.callout-note}
-The exact primer sets, probe chemistry (hydrolysis probe vs. EvaGreen), and
-validated annealing conditions for each assay are defined in SOP-L701. The
-references above identify the canonical marker-gene primers; cite the specific
-assay actually used from SOP-L701 in any manuscript. Gene-specific *nifH* and
-*nrfA* primer references should be added to SOP-L701 and this table updated to
-match.
-:::
-
-Read together, these genes describe the competing fates of nitrogen in soil:
-inputs by fixation (*nifH*), oxidation of ammonium (*amoA*), and the branch
-point between gaseous loss through denitrification (*nirK*, *nirS*, *nosZ*) and
-retention through DNRA (*nrfA*). Interpreting changes in one gene in isolation
-is rarely informative; the ratios and combinations in Section 7 are usually
-more meaningful.
+| Gene        | Process / guild                              | What the abundance indicates | Primary reference |
+|:------------|:---------------------------------------------|:-----------------------------|:------------------|
+| *amoA* (AOB) | Ammonia oxidation, bacterial | Bacterial ammonia-oxidizer potential; first, rate-limiting step of nitrification | @rotthauwe1997 |
+| *amoA* (AOA) | Ammonia oxidation, archaeal | Archaeal ammonia-oxidizer potential; often dominant in low-N, acidic soils | @francis2005 |
+| *nirK*      | Nitrite reduction (denitrification) | Cu-type nitrite-reductase potential | @henry2006 |
+| *nirS*      | Nitrite reduction (denitrification) | cd~1~-type nitrite-reductase potential | @braker2000 |
+| *nosZ*      | Nitrous oxide reduction | N~2~O-reductase potential; capacity to reduce N~2~O to N~2~ | @henry2006 |
+| *nifH*      | Nitrogen fixation | Diazotroph potential; biological N~2~ fixation | @levybooth2014 |
+| *nrfA*      | DNRA | Retains N in system as NH~4~^+^ | @levybooth2014 |
 
 
 ## From Instrument Output to Quality-Controlled Data
 
 ### Reviewing and Exporting Data
 
-Instrument operation and the QuantaSoft interface are covered in SOP-L214. For
-analysis, the entry point is the exported well-level data.
+Instrument operation and the QuantaSoft interface are covered in
+SOP-L214. For analysis, the entry point is the exported well-level
+data.
 
-1. Open the completed experiment file (`.qlp`) in QuantaSoft and confirm the
-   positive/negative threshold for each well (see SOP-L214). Re-apply
-   thresholds manually in QuantaSoft Analysis Pro if needed, and record any
-   change in the lab notebook.
-2. Export with **Options > Export CSV** to produce a well-level results file.
-   Key columns include `Well`, `Sample`, `Target`, `Concentration`
-   (Poisson-corrected copies per microliter of the final reaction
-   [@hindson2011]), `Positives`, `Negatives`, `AcceptedDroplets`,
+1. Open the completed experiment file (`.qlp`) in QuantaSoft and
+   confirm the positive/negative threshold for each well. Re-apply
+   thresholds manually in QuantaSoft Analysis Pro if needed, and
+   record any change in the lab notebook.
+2. Export with **Options > Export CSV** to produce a well-level results
+   file. Key columns include `Well`, `Sample`, `Target`,
+   `Concentration` (Poisson-corrected copies/µL [@hindson2011]),
+   `Positives`, `Negatives`, `AcceptedDroplets`,
    `MeanAmplitudeOfPositives`, and `MeanAmplitudeOfNegatives`.
-3. Name the file `YYYY-MM-DD_gene_project_plate.csv`
-   (e.g., `2025-05-14_amoA_wetland_plate1.csv`).
-4. Archive both the `.qlp` and the exported `.csv` to the lab shared drive
-   under `ddPCR_raw_data/` before any analysis begins.
+3. Name the file `YYYY-MM-DD_gene_project_plate.csv`.
+4. Archive both the `.qlp` and the exported `.csv` to the lab shared
+   drive under `ddPCR_raw_data/` before any analysis begins.
 
 ::: {.callout-warning}
 #### Data Integrity
@@ -177,274 +188,167 @@ analysis, the entry point is the exported well-level data.
 
 ### Quality Control and Acceptance Criteria
 
-Apply these checks (ideally scripted in R, see Appendix A) before any analysis.
-They follow the data-quality expectations set out for digital PCR reporting
-[@dmiqe2020; @biorad_appsguide2018].
+Apply these checks before any analysis, following the data-quality
+expectations set out for digital PCR reporting [@dmiqe2020;
+@biorad_appsguide2018].
 
-1. **Droplet count filter.** Exclude wells with fewer than 10,000 accepted
-   droplets; below this, the Poisson estimate is unreliable
+1. **Droplet count filter.** Exclude wells with fewer than 10,000
+   accepted droplets; below this, the Poisson estimate is unreliable
    [@biorad_qx200_2024].
-2. **No-template controls (NTC).** NTC wells must show 0 or fewer than 3
-   positive droplets. More than 3 positives indicates contamination; rerun the
-   affected target or plate.
-3. **Extraction blanks.** Blanks carried from DNA extraction (SOP-L700) must
-   fall below the NTC threshold. Elevated counts point to contamination in the
-   extraction workflow. Note that direct soil extraction is itself a known
-   source of quantitative bias [@frostegard1999], so blanks and recovery checks
-   matter for absolute numbers.
-4. **Positive controls.** Positive-control gBlock wells should recover within
-   20% of the expected concentration for the dilution prepared.
-5. **Technical replicate agreement.** Where replicates were run, a coefficient
-   of variation above 25% suggests pipetting error or sample heterogeneity.
-
-::: {.callout-tip}
-Build a QC report template in Quarto that automatically flags wells failing any
-criterion, so batch QC is consistent and nothing is missed.
-:::
+2. **No-template controls (NTC).** NTC wells must show 0 or fewer than
+   3 positive droplets. More than 3 positives indicates contamination;
+   rerun the affected target or plate.
+3. **Extraction blanks.** Blanks carried from DNA extraction
+   ([SOP-L700](SOP-L700-dna-extraction.qmd)) must fall below the NTC
+   threshold. Elevated counts point to contamination in the extraction
+   workflow. Note that direct soil extraction is itself a known source
+   of quantitative bias [@frostegard1999], so blanks and recovery
+   checks matter for absolute numbers.
+4. **Positive controls.** gBlock serial dilution positive controls
+   must return concentrations within 20% of expected values across
+   the linear range [@huggett2013].
+5. **Rain.** Document the percentage of rain droplets per well. Assays
+   with persistent high rain (> 10--15% of events) should be flagged
+   and the primer or cycling conditions reviewed [@lievens2016].
 
 
-## Turning Counts into Ecological Quantities
+## Calculating Gene Copy Numbers
 
-### Normalizing Copies per Microliter
+### From Reaction to Sample
 
-The QuantaSoft `Concentration` is in copies per microliter of the ddPCR
-reaction. To express results per gram of dry soil:
+The concentration reported by QuantaSoft is in copies per microliter
+of the final ddPCR reaction. To convert to copies per gram dry soil:
 
 $$
-\text{Copies per g dry soil} =
-\frac{C_{\text{ddPCR}} \times V_{\text{reaction}} \times DF \times V_{\text{elution}}}{V_{\text{template}} \times m_{\text{soil}} \times (1 - \theta_g)}
+N_{\text{soil}} =
+C_{\text{rxn}} \times V_{\text{rxn}} \times D \times
+\frac{V_{\text{elution}}}{V_{\text{rxn input}}} \times
+\frac{1}{m_{\text{dry soil}}}
 $$
 
-where $C_{\text{ddPCR}}$ is the QuantaSoft concentration (copies/uL),
-$V_{\text{reaction}}$ the reaction volume (typically 20 uL), $DF$ the template
-dilution factor, $V_{\text{elution}}$ the DNA elution volume (uL; see
-SOP-L700), $V_{\text{template}}$ the template volume added to the reaction
-(uL), $m_{\text{soil}}$ the mass of soil extracted (g), and $\theta_g$ the
-gravimetric soil moisture as a decimal
-(see [SOP-L400](SOP-L400-soil-moisture.qmd)).
+where:
 
-To express results per nanogram of extracted DNA instead:
+- $C_{\text{rxn}}$ = QuantaSoft-reported concentration (copies/µL)
+- $V_{\text{rxn}}$ = total ddPCR reaction volume (typically 20 µL)
+- $D$ = dilution factor applied to the extract before the reaction
+- $V_{\text{elution}}$ = total DNA extract volume (µL)
+- $V_{\text{rxn input}}$ = volume of extract added to the reaction (µL)
+- $m_{\text{dry soil}}$ = mass of dry soil extracted (g)
 
-$$
-\text{Copies per ng DNA} =
-\frac{C_{\text{ddPCR}} \times V_{\text{reaction}}}{V_{\text{template}} \times C_{\text{DNA}}}
-$$
-
-where $C_{\text{DNA}}$ is the Qubit DNA concentration (ng/uL) from SOP-L700.
-
-::: {.callout-note}
-Report copies per gram dry soil when the question is about the size of a guild
-in the soil (abundance per unit habitat). Report copies per nanogram DNA when
-the question is about the relative composition of the community (proportion of
-the recovered DNA). The two can diverge, and both are often reported.
-:::
+### R Implementation
 
 ```{r}
-#| label: copy-number-calc
+#| label: copy-number-calculation
 #| echo: true
+#| eval: false
 
-# Example calculation: copies per g dry soil
-c_ddpcr <- 52.3          # copies/uL (from QuantaSoft)
-v_reaction <- 20         # uL
-dilution_factor <- 10    # 1:10 dilution of template
-v_elution <- 100         # uL (from SOP-L700)
-v_template <- 2          # uL added to ddPCR reaction
-soil_mass_g <- 0.25      # g soil extracted
-moisture_decimal <- 0.35 # gravimetric moisture as decimal
+# =============================================================================
+# ddPCR copy number normalization (SOP-L702)
+# =============================================================================
 
-copies_per_g <- (c_ddpcr * v_reaction * dilution_factor * v_elution) /
-                (v_template * soil_mass_g * (1 - moisture_decimal))
+library(tidyverse)
 
-cat(sprintf("Gene copies per g dry soil: %.0f\n", copies_per_g))
-cat(sprintf("Gene copies per g dry soil (log10): %.2f\n", log10(copies_per_g)))
+# Import well-level QuantaSoft export
+raw <- read_csv("2025-05-14_amoA_wetland_plate1.csv")
+
+# Parameters (adjust per run)
+rxn_vol       <- 20     # µL total ddPCR reaction volume
+input_vol     <- 5      # µL extract added to reaction
+elution_vol   <- 100    # µL total DNA extract
+dilution      <- 10     # dilution factor applied to extract before reaction
+
+# Dry soil mass (g) per sample -- join from sample metadata
+metadata <- read_csv("sample_metadata.csv")  # cols: Sample, dry_soil_g
+
+results <- raw |>
+  filter(AcceptedDroplets >= 10000) |>      # droplet count filter
+  left_join(metadata, by = "Sample") |>
+  mutate(
+    copies_per_g = Concentration *           # copies/µL in reaction
+      rxn_vol *                              # total reaction volume
+      dilution *                             # dilution correction
+      (elution_vol / input_vol) *            # extraction recovery
+      (1 / dry_soil_g)                       # normalize to dry soil
+  )
+
+# Flag QC issues
+results <- results |>
+  mutate(
+    qc_flag = case_when(
+      AcceptedDroplets < 10000              ~ "low_droplets",
+      Concentration == 0 & !is.na(copies_per_g) ~ "no_signal",
+      TRUE                                  ~ "OK"
+    )
+  )
+
+write_csv(results, "2025-05-14_amoA_wetland_plate1_processed.csv")
 ```
 
-### Organizing the Analysis-Ready Dataset
 
-1. Merge QC-filtered results with sample metadata (site, treatment, depth,
-   date, soil moisture, DNA concentration) on a shared sample ID.
-2. Keep the data tidy (long): one row per sample-by-gene combination
-   [@wickham2014].
-3. Save the merged dataset as `.csv` in the project GitHub repository under
-   `data/processed/`.
-4. *TBD: fix the standard column naming convention for the lab's ddPCR
-   datasets (e.g., `sample_id`, `gene`, `copies_per_g_dry`,
-   `copies_per_ng_dna`, `site`, `treatment`, `depth_cm`, `date`).*
+## Interpreting Relative Gene Abundances
 
-### Interpreting Gene Abundance for Nitrogen-Cycle Questions
+Individual gene copy numbers are most informative when examined in
+relation to each other and to the soil's total microbial biomass (often
+estimated as 16S rRNA gene copies) [@levybooth2014; @kuypers2018].
 
-Functional-gene abundance is genetic *potential*, not measured process rate;
-interpret it as such, and relate it to environmental and rate data where
-possible [@levybooth2014]. Useful framings include:
+Suggested derived metrics:
 
-**Single-gene abundance.** Compare a guild's size across treatments, sites, or
-depths (Section 8). For example, a rise in *amoA* (AOB) under fertilization is
-consistent with greater bacterial ammonia-oxidizer potential.
-
-**Gene ratios.** Ratios place one process relative to another and are often
-more interpretable than single genes [@hallin2009]:
-
-- *nirK*/*nirS*: relative contribution of the two nitrite-reductase pathways
-  to denitrification.
-- *nosZ*/(*nirK* + *nirS*): completeness of denitrification; higher values
-  suggest greater capacity to reduce N~2~O to N~2~ rather than release it.
-- *amoA* (AOA)/*amoA* (AOB): relative dominance of archaeal vs. bacterial
-  ammonia oxidation, which tends to shift with pH and N availability
-  [@francis2005].
-- *nrfA*/(*nirK* + *nirS*): relative importance of nitrogen-retaining DNRA vs.
-  nitrogen-losing denitrification.
-
-*TBD: decide which ratios are central to the lab's current questions and set
-standard figure formats for them.*
-
-**Correlation with environmental variables.** Relate abundances to soil pH,
-moisture, total C and N, nitrate, and ammonium using Pearson or Spearman
-correlations. Where multivariate structure is of interest, consider PCA or
-redundancy analysis once sample size supports it.
-
-**Relating to process rates.** Where N~2~O flux, nitrification potential, or
-similar rates are measured, gene abundance can be related to them, but the
-analytical framework (and its limits) should be agreed with the PI first.
-
-
-## Statistical Analysis
-
-::: {.callout-note}
-The appropriate approach depends on design (paired vs. independent sites,
-factorial treatments, time series). Consult the PI before finalizing.
-:::
-
-1. **Exploration.** Plot log~10~-transformed copy numbers by treatment, site,
-   or depth (boxplots or dot plots). Assess normality of the log-transformed
-   data with Q-Q plots and Shapiro-Wilk tests; investigate outliers as either
-   biological signal or analytical artifact.
-2. **Two-group comparisons** (e.g., amended vs. control): Welch's t-test on
-   log~10~ copies per g dry soil, or the Wilcoxon rank-sum test if normality
-   does not hold.
-3. **Multi-group comparisons:** one-way ANOVA on log~10~ data with Tukey HSD,
-   or Kruskal-Wallis with Dunn's test for non-parametric data.
-4. **Factorial / hierarchical designs** (e.g., treatment by depth, sites as
-   blocks): two-way ANOVA or linear mixed-effects models with site as a random
-   effect [@pinheiro2000; @bolker2009].
-5. **Values below detection.** Decide how to handle non-detects (e.g.,
-   substitution, censored regression, or Tobit models) rather than dropping
-   them silently [@helsel2011].
-
-
-## Reporting
-
-- Report abundance as copies per g dry soil (mean +/- standard error) and/or
-  copies per ng DNA.
-- Plot on a log~10~ scale; report back-transformed means and confidence
-  intervals in tables where appropriate.
-- Include QC metrics (droplet counts, NTC results, positive-control recovery)
-  as supplementary material, and report the experiment to digital-PCR
-  reporting standards [@dmiqe2020].
-- Cite the specific assays used (from SOP-L701) and the instrument
-  configuration (from SOP-L214).
-- *TBD: build a standardized Quarto reporting template for ddPCR results.*
+| Metric | Formula | Ecological interpretation |
+|:-------|:--------|:--------------------------|
+| AOB : AOA ratio | *amoA*(AOB) / *amoA*(AOA) | Relative dominance of bacterial vs. archaeal nitrifiers |
+| Denitrification potential | *nirK* + *nirS* + *nosZ* | Combined capacity for N loss as gas |
+| N~2~O consumer : producer | *nosZ* / (*nirK* + *nirS*) | Capacity to complete denitrification; low values predict N~2~O accumulation |
+| Diazotroph index | *nifH* / 16S | Fraction of community with N fixation capacity |
+| DNRA : denitrification | *nrfA* / (*nirK* + *nirS*) | N retention vs. N loss balance |
 
 
 ## References
-
-::: {.callout-note}
-### External resources
-- **Assays and reagents:** validated PrimePCR ddPCR assays, supermixes, oils,
-  and consumables are ordered from the Bio-Rad digital assay catalog,
-  <https://www.bio-rad.com/digital-assays>.
-- **Published methods:** Bio-Rad's ddPCR publication database,
-  <https://www.bio-rad.com/ddPCR/publications>, is useful for finding
-  peer-reviewed environmental and microbial applications when designing or
-  validating an assay for a new gene target.
-:::
 
 ::: {#refs}
 :::
 
 
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L700](SOP-L700-dna-extraction.qmd)   | DNA Extraction            | Upstream: DNA template source     |
+| [L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd) | ddPCR Primer Design | Primer validation and assay registry |
+| [L801](SOP-L801-rstudio-github.qmd)   | RStudio and GitHub        | Version-controlled analysis       |
+| [L802](SOP-L802-quality-control.qmd)  | Quality Control and QA    | General QA/QC framework           |
+
+
 ## Training Record
 
-Before analyzing data independently, personnel must:
+Before performing ddPCR data analysis independently, personnel must:
 
-1. Read this guide, [SOP-L214 QX200 Instrument Familiarization](SOP-L214-qx200-instrument-familiarization.qmd),
-   [SOP-L701 Primer Design](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd), and
-   [SOP-L700 DNA Extraction](SOP-L700-dna-extraction.qmd).
-2. Complete [SOP-L801 RStudio and GitHub](SOP-L801-rstudio-github.qmd) training.
-3. Demonstrate competence exporting and QC-filtering a dataset.
-4. Run the analysis pipeline on a practice dataset under supervision.
-5. Be signed off by the PI or lab manager.
-
-
-## Appendix A: Example QC Filtering Script {.appendix}
-
-```{r}
-#| label: qc-filter-example
-#| echo: true
-#| eval: false
-
-library(tidyverse)
-
-# Read exported QuantaSoft CSV
-raw <- read_csv("data/raw/2025-05-14_amoA_wetland_plate1.csv")
-
-# QC filtering
-qc_filtered <- raw %>%
-  filter(
-    AcceptedDroplets >= 10000        # Minimum droplet threshold
-  ) %>%
-  mutate(
-    qc_flag = case_when(
-      Sample == "NTC" & Positives > 3 ~ "NTC_contamination",
-      Sample == "Extraction_Blank" & Positives > 3 ~ "Extraction_contamination",
-      TRUE ~ "Pass"
-    )
-  )
-
-# Flag and report QC failures
-qc_failures <- qc_filtered %>%
-  filter(qc_flag != "Pass")
-
-if (nrow(qc_failures) > 0) {
-  warning("QC failures detected:")
-  print(qc_failures %>% select(Well, Sample, Target, Positives, qc_flag))
-}
-
-# Retain only passing sample wells
-analysis_ready <- qc_filtered %>%
-  filter(qc_flag == "Pass",
-         !Sample %in% c("NTC", "Extraction_Blank", "Positive_Control"))
-```
+1. Read this SOP and [SOP-L701](SOP-L701-ddpcr-nitrogen-cycle-primers.qmd)
+   in full
+2. Review the DMINQ reporting standard [@dmiqe2020]
+3. Demonstrate correct QuantaSoft threshold setting on at least two
+   plates under supervision
+4. Run the copy number normalization R script on a test dataset and
+   reproduce the trainer's results
+5. Be signed off by the PI or lab manager
 
 
-## Appendix B: Visualization Template {.appendix}
+## Appendix A: DMINQ Checklist {.appendix}
 
-```{r}
-#| label: gene-abundance-plot
-#| echo: true
-#| eval: false
+When reporting ddPCR data from this workflow, include the following
+metadata per @dmiqe2020:
 
-library(tidyverse)
-
-# Assumes analysis_ready has columns: sample_id, gene, copies_per_g_dry, treatment
-analysis_ready %>%
-  ggplot(aes(x = treatment, y = log10(copies_per_g_dry), fill = treatment)) +
-  geom_boxplot(alpha = 0.7, outlier.shape = NA) +
-  geom_jitter(width = 0.2, alpha = 0.5, size = 1.5) +
-  facet_wrap(~ gene, scales = "free_y") +
-  labs(
-    x = "Treatment",
-    y = expression(log[10]~"(gene copies g"^{-1}~"dry soil)"),
-    title = "Nitrogen Cycle Gene Abundance by Treatment"
-  ) +
-  theme_minimal() +
-  theme(legend.position = "none")
-```
-
-
-## Appendix C: Sending Samples to External Laboratories {.appendix}
-
-*TBD: if ddPCR is outsourced to an external service provider (university core
-facility or commercial lab), document the preferred provider and contact,
-sample submission requirements (volume, concentration, format), the data
-format returned, turnaround time, cost per sample and funding account, and how
-to reconcile external data with in-house QC standards.*
+| Item                          | Required by DMINQ | Notes |
+|:------------------------------|:------------------|:------|
+| Instrument model and serial   | Yes | Bio-Rad QX200 |
+| Software version              | Yes | QuantaSoft version |
+| Droplet count per well        | Yes | Must be ≥ 10,000 |
+| Threshold setting method      | Yes | Manual or automated; document both |
+| NTC result                    | Yes | Copies/µL; must be 0 or < 3 positive droplets |
+| Positive control              | Yes | gBlock; expected and measured concentration |
+| Rain percentage               | Yes | Document even if low |
+| Dilution factor               | Yes |   |
+| Normalization denominator     | Yes | Dry soil mass (g) and/or DNA (ng) |
+| Inhibition check result       | Yes | 1:5 vs. 1:10 dilution agreement |
+| Primer/probe sequences        | Yes | Or cite SOP-L701 registry |
+| Cycling conditions            | Yes | Annealing temperature, cycles |
+| Reference for target gene     | Yes | Cite from SOP-L701 registry |

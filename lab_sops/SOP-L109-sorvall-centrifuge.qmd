@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-L109: Thermo Scientific Sorvall ST8R Centrifuge
-# =============================================================================
 title: "Thermo Scientific Sorvall ST8R Centrifuge"
 sop-number: "SOP-L109"
 author:
@@ -9,13 +6,18 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2025-05-15"
     author: "Micah Maglasang"
     changes: "Initial release -- converted from LaTeX"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Converted plain-text references to BibTeX; added {#refs}
+              div; added inline citations"
 ---
 
 ## Purpose
@@ -23,38 +25,43 @@ revision-history:
 This procedure describes the safe setup, operation, and maintenance of
 the Thermo Scientific Sorvall ST8R centrifuge. The centrifuge is used
 to separate substance mixtures of different densities and is integral
-to sample preparation workflows across multiple laboratory SOPs.
+to sample preparation workflows across multiple laboratory SOPs
+[@sorvall_st8].
 
 
 ## Scope
 
 - **Applies to:** Thermo Scientific Sorvall ST8/8R centrifuge in the
   EA Program laboratory
-- **Does not apply to:** Clinical centrifuges (see *SOP-L25*),
+- **Does not apply to:** Clinical centrifuges (see *SOP-L108*),
   microcentrifuges (see *SOP-L26*), or field-portable centrifuges
 - **Location:** EA Program laboratory, Pomona College
+
 
 ## Definitions
 
 - **Balancing:** The process of pairing tubes of equal mass (within
   0.1 g) in opposite rotor positions; required to prevent rotor
-  imbalance, vibration, and bearing damage.
+  imbalance, vibration, and bearing damage; failure to balance is the
+  leading cause of centrifuge damage and injury [@sorvall_st8].
 - **Fixed-angle rotor:** A rotor that holds tubes at a fixed angle
   (typically 20--45° from vertical); particles pellet against the side
   and bottom of the tube.
 - **g-force (relative centrifugal force, RCF):** The centrifugal
   acceleration expressed as a multiple of gravitational acceleration
-  (9.81 m s^-2^); calculated as $RCF = 1.118 \times 10^{-5} \times r
-  \times N^2$ where $r$ is the rotor radius in cm and $N$ is speed in
-  rpm.
-- **Pellet:** The solid material sedimented to the bottom (or side-
-  bottom) of a centrifuge tube after centrifugation.
+  (9.81 m s^-2^); calculated as
+  $\text{RCF} = 1.118 \times 10^{-5} \times r \times N^2$
+  where $r$ is the rotor radius in cm and $N$ is speed in rpm
+  [@sorvall_st8].
+- **Pellet:** The solid material sedimented to the bottom (or
+  side-bottom) of a centrifuge tube after centrifugation.
 - **Supernatant:** The liquid layer remaining above the pellet after
   centrifugation; the fraction of interest in many extraction
   procedures.
 - **Swinging-bucket rotor:** A rotor whose buckets pivot to a
   horizontal position during spinning; particles pellet at the base of
   the tube, producing a well-defined pellet and cleaner supernatant.
+
 
 ## Responsibilities
 
@@ -71,15 +78,16 @@ to sample preparation workflows across multiple laboratory SOPs.
 ::: {.callout-warning}
 ### Hazards
 
-- **Physical:** Rotating rotor stores significant kinetic energy; rotor
-  or bucket failure can eject debris. Maintain a 30 cm clear zone
-  around the centrifuge during operation. Never open the door until the
-  rotor has come to a complete stop and the display confirms it.
-- **Chemical:** Corrosive samples (salt solutions, acids, bases) can
-  damage rotors and accessories if not cleaned promptly after use.
+- **Physical:** Rotating rotor stores significant kinetic energy;
+  rotor or bucket failure can eject debris. Maintain a 30 cm clear
+  zone around the centrifuge during operation. Never open the door
+  until the rotor has completely stopped and the display confirms it
+  [@sorvall_st8].
+- **Chemical:** Corrosive samples can damage rotors and accessories if
+  not cleaned promptly after use.
 - **Biological:** Pathogenic or biohazardous samples require sealed
-  tubes or biosafety rotor lids. The centrifuge is not aerosol-tight in
-  the event of mechanical failure.
+  tubes or biosafety rotor lids. The centrifuge is not aerosol-tight
+  in the event of mechanical failure [@who_biosafety2020].
 :::
 
 ### Required PPE
@@ -93,28 +101,22 @@ to sample preparation workflows across multiple laboratory SOPs.
 In the event of a hazardous spill or rotor failure:
 
 1. Turn off the power supply immediately; pull the power plug if
-   necessary
-2. Leave the area and do not attempt to open the centrifuge
+   necessary.
+2. Leave the area and do not attempt to open the centrifuge.
 3. Contact the lab manager and refer to
-   [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
+   [SOP-L003 Hazardous Materials
+   Handling](SOP-L003-hazardous-materials-handling.qmd).
 4. The emergency door release may be used only to recover samples
-   during a power failure, not during mechanical failure
+   during a power failure, not during mechanical failure [@sorvall_st8].
 
 
 ## Equipment and Materials
 
-### Equipment
-
 | Item                          | Notes                                     |
 |:------------------------------|:------------------------------------------|
-| Thermo Scientific Sorvall ST8/8R centrifuge | Catalog number TBD |
+| Thermo Scientific Sorvall ST8/8R centrifuge | [@sorvall_st8]              |
 | Power supply cable            | Grounded outlet required                  |
 | Rotors and buckets            | Must be approved for this centrifuge      |
-
-### Supporting Materials
-
-| Item                          | Notes                                     |
-|:------------------------------|:------------------------------------------|
 | Instruction manual            | Keep accessible near the instrument       |
 | Balance tubes                 | For balancing samples before runs         |
 
@@ -123,90 +125,97 @@ In the event of a hazardous spill or rotor failure:
 
 ### Site Selection and Setup
 
-1. Operate the centrifuge indoors only
+1. Operate the centrifuge indoors only.
 2. Place on a horizontally leveled, rigid surface with adequate
-   load-bearing capacity
-3. Maintain a safety zone of at least 30 cm around the centrifuge; do
-   not place any hazardous substances within this zone
-4. Ensure the setup location is well-ventilated and not exposed to heat
-   or direct sunlight
-5. Plug the centrifuge only into properly grounded sockets
-6. Keep the main plug freely accessible at all times
+   load-bearing capacity.
+3. Maintain a safety zone of at least 30 cm around the centrifuge;
+   do not place any hazardous substances within this zone
+   [@sorvall_st8].
+4. Ensure the setup location is well-ventilated and not exposed to
+   heat or direct sunlight.
+5. Plug only into properly grounded sockets.
+6. Keep the main plug freely accessible at all times.
 
 ### Preparation
 
-1. Inspect the rotor, buckets, and accessories for signs of corrosion,
-   cracks, or removed protective coating; do not use damaged components
+1. Inspect the rotor, buckets, and accessories for signs of
+   corrosion, cracks, or removed protective coating; do not use
+   damaged components [@sorvall_st8].
 2. Do not modify the mechanical components of the rotor or alter any
-   electronic components of the centrifuge
-3. Load the rotor properly: always balance samples symmetrically
-4. Never overload the rotor beyond its rated capacity
+   electronic components of the centrifuge.
+3. Load the rotor properly: always balance samples symmetrically.
+4. Never overload the rotor beyond its rated capacity.
 5. Verify that the rotor is locked securely into place before closing
-   the door
-6. When working with corrosive samples, ensure tubes are fully sealed
+   the door.
+6. When working with corrosive samples, ensure tubes are fully sealed.
 
 ::: {.callout-important}
 ### Hazardous Substances
 
-- Do not centrifuge explosive or flammable materials
-- Do not centrifuge toxic, radioactive, or pathogenic materials without
-  appropriate safety precautions and sealed rotor lids
+- Do not centrifuge explosive or flammable materials.
+- Do not centrifuge toxic, radioactive, or pathogenic materials
+  without appropriate safety precautions and sealed rotor lids
+  [@who_biosafety2020].
 - The centrifuge is neither inert nor explosion-protected; never
-  operate in an explosion-prone environment
+  operate in an explosion-prone environment.
 - Use fully sealed tubes for highly corrosive substances that could
-  impair rotor mechanical stability
+  impair rotor mechanical stability.
 :::
 
 ### Operation
 
-1. Close the centrifuge door before starting a run
+1. Close the centrifuge door before starting a run.
 2. Set the desired speed, temperature (8R model), and time using the
-   control panel
-3. Press START to begin the run
+   control panel.
+3. Press START to begin the run.
 4. Do not move, lean on, or place anything on top of the centrifuge
-   while it is running
-5. Implement measures to ensure that personnel do not remain near the
-   centrifuge longer than necessary during operation
+   while it is running.
+5. Minimize time spent near the centrifuge during operation
+   [@sorvall_st8].
 6. Wait until the rotor has come to a complete stop and the display
-   confirms it before opening the door
-7. Never open the centrifuge while the rotor is spinning
+   confirms it before opening the door.
+7. Never open the centrifuge while the rotor is spinning.
 
 ::: {.callout-tip}
-### Tip
+### Emergency Stop
 Press the STOP key to shut down the centrifuge at any time. In an
-emergency, pull the power supply plug to disconnect power immediately.
+emergency, pull the power supply plug to disconnect power immediately
+[@sorvall_st8].
 :::
 
 ### Shutdown and Cleanup
 
-1. Remove samples promptly after the run is complete
-2. Inspect the rotor and chamber for spills or condensation
-3. If corrosive samples were centrifuged, clean the rotor, buckets, and
-   chamber thoroughly with deionized water and dry before storage
+1. Remove samples promptly after the run is complete.
+2. Inspect the rotor and chamber for spills or condensation.
+3. If corrosive samples were centrifuged, clean the rotor, buckets,
+   and chamber thoroughly with deionized water and dry before storage
+   [@sorvall_st8].
 4. If toxins or pathogenic substances have contaminated the centrifuge,
    carry out appropriate disinfection before further use
-5. Wipe down the exterior of the centrifuge
+   [@who_biosafety2020].
+5. Wipe down the exterior of the centrifuge.
 6. Leave the door slightly ajar to allow the chamber to dry (if no
-   hazardous residues are present)
+   hazardous residues are present).
 
 ### Cover Panel and Door Safety
 
-1. Never operate the centrifuge if cover panels are damaged or missing
-2. Do not attempt to bypass the door interlock mechanism
-3. If mechanical failure occurs (rotor or bucket crash), the centrifuge
-   is not aerosol-tight; leave the room and contact the lab manager
+1. Never operate the centrifuge if cover panels are damaged or missing.
+2. Do not attempt to bypass the door interlock mechanism.
+3. If mechanical failure occurs (rotor or bucket crash), the
+   centrifuge is not aerosol-tight; leave the room and contact the
+   lab manager [@who_biosafety2020].
 
 
 ## Quality Control and Acceptance Criteria
 
 - Visually inspect the rotor and accessories before each use for
-  cracks, corrosion, or wear
-- Verify that samples are properly balanced before every run
-- Confirm the door closes and latches securely
+  cracks, corrosion, or wear [@sorvall_st8].
+- Verify that samples are properly balanced before every run.
+- Confirm the door closes and latches securely.
 - Report any unusual vibrations, noises, or error messages to the lab
-  manager immediately
+  manager immediately.
 - Follow the manufacturer's maintenance schedule in the instruction
-  manual
+  manual [@sorvall_st8].
 
 
 ## Waste Disposal
@@ -220,13 +229,22 @@ emergency, pull the power supply plug to disconnect power immediately.
 
 ## References
 
-- Thermo Fisher Scientific. *Sorvall ST8/8R Centrifuge Instruction
-  Manual*.
-- World Health Organization. *Laboratory Biosafety Manual*. 4th ed.
-  Geneva: WHO, 2020.
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
-  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
-  Washington. 1360 pp.
+- @sorvall_st8
+- @who_biosafety2020
+- @apha2012
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | Required prerequisite             |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials | Chemical and biological spills |
+| [L403](SOP-L403-nitrate-ammonium-kcl.qmd) | KCl Extraction       | Uses centrifuge for soil extraction |
+| [L409](SOP-L409-microbial-biomass-carbon.qmd) | Microbial Biomass Carbon | Uses centrifuge for extract clarification |
 
 
 ## Training Record
@@ -237,7 +255,7 @@ must:
 1. Read this SOP in full
 2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
    training
-3. Review the manufacturer's instruction manual
+3. Review the manufacturer's instruction manual [@sorvall_st8]
 4. Observe a trained operator perform rotor loading, a centrifuge run,
    and post-run cleanup
 5. Demonstrate proper sample balancing, rotor installation, and

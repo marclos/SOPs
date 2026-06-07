@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-L08: Quality Control and Quality Assurance
-# =============================================================================
 title: "Quality Control and Quality Assurance"
 sop-number: "SOP-L802"
 author:
@@ -9,13 +6,18 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "1.0"
     date: "2025-05-16"
     author: "Marc Los Huertos"
     changes: "Converted from LaTeX to Quarto; comprehensive revision"
+  - version: "1.1"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Converted plain-text references to BibTeX; added inline
+              citations throughout"
 ---
 
 ## Purpose
@@ -57,321 +59,201 @@ control that quality in real time [@taylor1987].
 | Analyst           | Implement all QC requirements for each batch; flag QC failures; document corrective actions |
 | Data Reviewer     | Verify QC compliance before data are reported or published |
 
-<!-- Definitions snippet for SOP-L802: Quality Control and Quality Assurance -->
-<!-- Insert immediately before ## Safety and Hazards -->
 
 ## Definitions
 
-- **Accuracy:** The closeness of a measured value to the true or accepted reference value; assessed using certified reference materials (CRMs) and laboratory-fortified blanks (LFBs).
-- **Calibration verification standard (CVS):** An independently prepared standard of known concentration run periodically during an analytical sequence to confirm that the calibration curve remains valid.
-- **Certified reference material (CRM):** A substance with certified values for one or more properties, traceable to national or international standards; used to verify analytical accuracy; distinguished from in-house laboratory reference materials.
-- **Control chart:** A time-series plot of QC metric values (e.g., blank absorbance, CRM recovery) with warning limits (±2 SD) and action limits (±3 SD) drawn from historical performance; used to detect systematic drift or random errors.
-- **Laboratory fortified blank (LFB):** A reagent water sample spiked with a known concentration of analyte and processed through the entire analytical procedure; used to verify method accuracy and recovery in the absence of sample matrix.
-- **Matrix spike:** A field sample spiked with a known concentration of analyte before analysis; used to assess matrix-specific recovery and interferences.
-- **Method detection limit (MDL):** The minimum concentration statistically distinguishable from a blank at a defined level of confidence (typically 99%); determined experimentally from replicate low-level spike analyses.
-- **Precision:** The degree of agreement among replicate measurements of the same sample; expressed as relative percent difference (RPD) for duplicates or as coefficient of variation (CV) for multiple replicates.
-- **Relative percent difference (RPD):** $RPD = |A - B| / [(A + B)/2] \times 100$; used to assess agreement between field or laboratory duplicate analyses; acceptable RPD varies by method, typically 10--20% for environmental analyses.
+- **Accuracy:** The closeness of a measured value to the true or
+  accepted reference value; assessed using certified reference
+  materials (CRMs) and laboratory-fortified blanks (LFBs)
+  [@taylor1987].
+- **Calibration blank:** A solution containing only the analytical
+  solvent or reagent matrix (no analyte); used to establish the
+  instrument baseline (zero) for each calibration sequence.
+- **Certified reference material (CRM):** A material with certified
+  analyte concentrations traceable to a national or international
+  metrology institute (NIST, USGS, IRMM); used to verify analytical
+  accuracy across instruments and over time [@apha2012].
+- **Control chart (Shewhart chart):** A time-series plot of QC sample
+  results with control limits (typically ±2σ warning limits and ±3σ
+  action limits); used to distinguish random analytical variation from
+  systematic drift or instrument malfunction.
+- **Continuing calibration verification (CVS):** A mid-range
+  calibration standard analyzed at regular intervals (typically every
+  10 samples) during an analytical run; must recover within ±10% of
+  the stated value; failure requires re-calibration and re-analysis of
+  affected samples [@apha2012].
+- **Detection limit -- Method Detection Limit (MDL):** The minimum
+  concentration of an analyte that can be detected with 99% confidence
+  under stated method conditions; determined from at least 7 replicate
+  analyses of a low-level spike following 40 CFR Part 136 Appendix B
+  [@usepa_mdl_2016].
+- **Detection limit -- Limit of Blank (LOB):** The highest signal
+  expected from a blank sample; LOB = mean~blank~ + 1.645 × SD~blank~
+  [@armbruster2008].
+- **Detection limit -- Limit of Detection (LOD):** The lowest analyte
+  concentration that can be reliably distinguished from the LOB;
+  LOD = LOB + 1.645 × SD~low-concentration~; represents 95% detection
+  probability [@armbruster2008].
+- **Detection limit -- Limit of Quantitation (LOQ):** The lowest
+  concentration at which the analyte can be measured with acceptable
+  precision and accuracy, typically defined as 10 × SD at the LOD
+  spike concentration; also known as the practical quantitation limit
+  (PQL) [@armbruster2008].
+- **Field blank:** A sample of reagent-grade water processed through
+  the entire field collection and preservation procedure; detects
+  contamination introduced during sampling and transport.
+- **Laboratory-fortified blank (LFB):** A reagent water blank spiked
+  with a known concentration of target analytes and processed through
+  the full analytical procedure; monitors ongoing accuracy and
+  extraction efficiency.
+- **Laboratory-fortified matrix (LFM):** A field sample spiked with a
+  known concentration of target analytes; detects matrix-specific
+  suppression or enhancement of the analytical signal.
+- **Method blank:** A reagent water sample carried through the full
+  analytical procedure alongside field samples; detects contamination
+  introduced by reagents, equipment, or laboratory environment
+  [@apha2012].
+- **Precision:** The reproducibility of repeated measurements of the
+  same sample; expressed as relative percent difference (RPD) for
+  duplicates or relative standard deviation (RSD) for replicate
+  analyses [@taylor1987].
+- **Relative percent difference (RPD):** |A - B| / ((A + B) / 2)
+  × 100; the standard measure of duplicate precision; typical
+  acceptance criteria are RPD ≤ 10--20% depending on method and
+  matrix.
+- **Spike recovery (%):** (Measured spiked concentration --
+  Unspiked concentration) / Added concentration × 100; typical
+  acceptance range is 80--120% for most environmental matrices
+  [@apha2012].
 
 
 ## Safety and Hazards
 
-QA/QC activities use the same reagents and equipment as the parent
-analytical method. Refer to the method-specific SOP for safety
-information. When preparing standards from stock solutions, observe
-all PPE and fume hood requirements specified in
-[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+QC samples contain the same analytes as field samples and are subject
+to the same hazard considerations as the parent analytical method.
+Consult the relevant analytical SOP for safety information.
 
 
-## Definitions
+## General QC Requirements
 
-**Accuracy:** The closeness of a measured value to the true or accepted
-reference value. Assessed using certified reference materials (CRMs),
-laboratory fortified blanks (LFBs), and matrix spikes.
+### Every Analytical Batch
 
-**Precision:** The closeness of replicated measurements to each other.
-Assessed using duplicates, triplicates, and expressed as relative
-percent difference (RPD), relative standard deviation (RSD), or
-coefficient of variation (CV).
+Every analytical batch must include at minimum [@apha2012; @usepa2007]:
 
-**Bias:** A systematic error that causes measured values to deviate
-consistently from the true value in one direction.
+| QC Element            | Minimum Frequency | Purpose                         |
+|:----------------------|:------------------|:--------------------------------|
+| Method blank          | 1 per batch       | Detect laboratory contamination |
+| Calibration blank     | Start of each calibration | Instrument baseline       |
+| CVS (check standard)  | Every 10 samples  | Detect calibration drift        |
+| Duplicate             | 10% of samples    | Assess precision                |
+| LFB                   | 1 per batch       | Assess accuracy                 |
 
-**Analytical batch:** A group of samples processed together using the
-same calibration, reagents, and instrument settings during a single
-analytical session.
+### Additional Elements (as applicable)
 
-**Method Detection Limit (MDL):** The minimum concentration that can be
-measured and reported with 99% confidence that the value is greater
-than zero [@usepa_mdl_2016].
+| QC Element            | When Required                              |
+|:----------------------|:-------------------------------------------|
+| Field blank           | Each sampling event                        |
+| Matrix spike (LFM)    | 5% of samples or 1 per batch               |
+| CRM                   | 1 per batch (where certified material is available) |
+| Equipment blank       | When non-dedicated sampling equipment is used |
 
-**Limit of Quantitation (LOQ):** The lowest concentration at which a
-measurement meets predefined accuracy and precision criteria, typically
-defined as 10 times the standard deviation of replicate blank
-measurements (approximately 3.3 times the MDL) [@armbruster2008].
 
-**Calibration verification standard (CVS):** A mid-range standard
-analyzed during a run to check that the calibration remains valid.
+## Acceptance Criteria
 
-**Laboratory Fortified Blank (LFB):** A blank matrix spiked with a
-known concentration of analyte, processed through the entire method.
-Assesses accuracy independent of matrix effects.
+| QC Element  | Typical Acceptance Criteria                              | Action if Failed |
+|:------------|:---------------------------------------------------------|:-----------------|
+| Method blank | < MDL (analyte absent)                                  | Investigate contamination; do not report affected samples |
+| CVS         | ±10% of stated value                                    | Re-calibrate; re-analyze affected samples |
+| Duplicate RPD | ≤ 10--20% (method-specific)                          | Flag results; investigate and re-analyze if warranted |
+| LFB recovery | 80--120%                                               | Flag results; check reagents and instrument |
+| LFM recovery | 70--130%                                               | Suspect matrix interference; consult PI |
+| CRM recovery | Within certified uncertainty interval                   | Recalibrate; re-analyze |
 
-**Matrix Spike (MS):** A sample aliquot spiked with a known
-concentration of analyte, processed through the entire method. Assesses
-the effect of the sample matrix on analyte recovery.
+Acceptance criteria in individual analytical SOPs take precedence over
+these general values when they are stricter or when regulatory
+requirements apply.
 
-**Certified Reference Material (CRM):** A material with certified
-analyte concentrations traceable to a national or international standard
-(e.g., NIST SRM).
 
+## Detection Limit Determination
 
-## Procedure
+### Method Detection Limit (MDL)
 
-### Calibration
+The MDL is determined following 40 CFR Part 136 Appendix B
+[@usepa_mdl_2016]:
 
-#### Initial Calibration
+1. Select a spike concentration at 1--5× the estimated MDL.
+2. Prepare and analyze at least 7 replicates of the spiked solution
+   through the full analytical method.
+3. Calculate the standard deviation ($s$) of the replicates.
+4. Multiply by the one-tailed $t$-value at 99% confidence
+   ($t_{n-1, 0.99}$; for $n=7$: $t = 3.143$):
 
-1. Prepare a minimum of five calibration standards spanning the expected
-   concentration range of the samples, plus a calibration blank
-   (zero-concentration standard prepared in the same matrix as the
-   standards)
-2. Run the standards from lowest to highest concentration
-3. Fit a calibration model (linear, weighted linear, or quadratic as
-   appropriate for the method)
-4. Acceptance criteria:
-   - Linear calibration: $r^2 \geq 0.995$
-   - Each standard must back-calculate to within +/- 10% of its true
-     value (or +/- 15% at the lowest standard)
+$$\text{MDL} = t_{(n-1,\, 0.99)} \times s$$
 
-5. If calibration fails, identify and correct the problem (contaminated
-   standard, instrument drift, incorrect dilution) and recalibrate
-   before proceeding
+5. If the spike concentration is outside the range of 0.5--20× the
+   computed MDL, repeat with an adjusted spike concentration
+   [@usepa_mdl_2016].
 
-#### Continuing Calibration Verification
+### Limit of Detection and Limit of Quantitation
 
-1. Analyze a CVS (mid-range standard) at the start of each batch,
-   after every 10 samples, and at the end of the batch
-2. Acceptance: CVS recovery within 90--110% of the known value
-3. If the CVS fails:
-   - Re-analyze the CVS. If it fails again, recalibrate.
-   - All samples analyzed after the last passing CVS must be re-analyzed.
+The LOB, LOD, and LOQ hierarchy follows @armbruster2008:
 
-#### Calibration Documentation
+$$\text{LOB} = \mu_{\text{blank}} + 1.645\,\sigma_{\text{blank}}$$
 
-Record the following for every calibration:
+$$\text{LOD} = \text{LOB} + 1.645\,\sigma_{\text{low}}$$
 
-- Date, analyst, instrument ID
-- Standard concentrations and source (lot number, preparation date)
-- Calibration equation and $r^2$
-- Back-calculated concentrations for each standard
-- Pass/fail determination
+$$\text{LOQ} = 10\,\sigma_{\text{low}}$$
 
-### Blanks
+where $\sigma_{\text{low}}$ is the standard deviation of replicate
+analyses at the low-level spike concentration. For right-censored
+environmental data, apply the non-parametric methods described in
+@helsel2012.
 
-Blanks identify contamination introduced at each stage of the
-analytical process:
 
-| Blank Type           | Composition                       | Frequency              | Acceptance Criterion |
-|:---------------------|:----------------------------------|:-----------------------|:---------------------|
-| Calibration blank    | Same matrix as standards, no analyte | Every calibration   | Reading less than MDL |
-| Method blank         | Reagent water processed through the entire method | 1 per batch (or 1 per 20 samples) | Less than MDL |
-| Field blank          | Clean matrix (e.g., DI water) taken to the field and back | 1 per field event | Less than MDL |
-| Equipment blank      | Reagent water rinsed through sampling equipment | 1 per equipment set per event | Less than MDL |
-| Bottle blank         | DI water in a sample container, preserved identically to samples | 1 per 10 bottles per type ([SOP-F300](../field_sops/SOP-F300-surface-water-sampling.qmd)) | Less than MDL |
-
-If a blank exceeds the MDL:
-
-1. Identify the contamination source (reagent, glassware, environment)
-2. Correct and re-analyze the blank
-3. If blank contamination cannot be resolved, report the blank value
-   alongside the sample results and flag the affected data
-
-### Duplicates and Precision
-
-1. Analyze at least one duplicate per batch or 10% of samples,
-   whichever is greater
-2. Calculate the relative percent difference (RPD):
-
-$$
-\text{RPD} = \frac{|A - B|}{(A + B)/2} \times 100
-$$
-
-where $A$ and $B$ are the duplicate results.
-
-3. Acceptance criteria (default; individual SOPs may specify tighter
-   limits):
-
-| Concentration Range         | Maximum RPD |
-|:----------------------------|:------------|
-| Greater than 10 times the MDL | 20%       |
-| 5 to 10 times the MDL       | 30%        |
-| Less than 5 times the MDL   | Not applicable; report both values |
-
-4. If RPD exceeds the criterion, investigate (sample heterogeneity,
-   instrument drift, operator error). Re-analyze if possible. Document
-   the cause and corrective action.
-
-### Accuracy: Laboratory Fortified Blanks and Matrix Spikes
-
-#### Laboratory Fortified Blank (LFB)
-
-1. Prepare an LFB at a mid-range concentration in the method matrix
-   (e.g., DI water, extractant solution)
-2. Process through the entire analytical method alongside samples
-3. Calculate percent recovery:
-
-$$
-\text{Recovery (\%)} = \frac{C_{\text{measured}}}{C_{\text{expected}}} \times 100
-$$
-
-4. Acceptance: 80--120% (default; method-specific SOPs may specify
-   different windows)
-
-#### Matrix Spike (MS)
-
-1. Select a representative sample and divide into two aliquots
-2. Spike one aliquot with a known concentration of the target analyte
-   (typically at 1--5 times the expected sample concentration or at the
-   mid-range calibration level)
-3. Process both aliquots through the entire method
-4. Calculate percent recovery:
-
-$$
-\text{Spike Recovery (\%)} = \frac{C_{\text{spiked}} - C_{\text{unspiked}}}{C_{\text{added}}} \times 100
-$$
-
-5. Acceptance: 75--125% (default)
-6. Low or high recovery indicates matrix interference. Document and
-   consider dilution, matrix-matched calibration, or standard addition
-   as corrective measures.
-
-#### Certified Reference Materials (CRMs)
-
-1. Analyze a CRM with each batch when available for the target analyte
-2. Recovery should fall within the certified confidence interval, or
-   within 80--120% of the certified value if no interval is provided
-3. Maintain a control chart (Section 6.8) to track CRM performance
-   over time
-
-### Detection Limits
-
-#### Method Detection Limit (MDL)
-
-The MDL is determined per the EPA procedure [@usepa_mdl_2016]:
-
-1. Prepare at least seven replicate samples spiked at 1--5 times the
-   estimated detection limit in the method matrix
-2. Process all replicates through the entire method
-3. Calculate the standard deviation ($s$) of the replicate
-   measurements
-4. Compute:
-
-$$
-\text{MDL} = t_{(n-1, \alpha=0.01)} \times s
-$$
-
-where $t$ is the one-sided Student's $t$-value at the 99% confidence
-level for $n - 1$ degrees of freedom (for $n = 7$, $t = 3.143$).
-
-5. Verify the MDL by confirming that the spike concentration is within
-   1--10 times the calculated MDL. If not, adjust the spike level and
-   repeat.
-6. Re-determine the MDL annually, whenever there is a significant
-   change in method or instrument, or when ongoing blank data suggest
-   the MDL has changed.
-
-#### Limit of Quantitation (LOQ)
-
-$$
-\text{LOQ} = 10 \times s
-$$
-
-where $s$ is the same standard deviation used for the MDL calculation.
-The LOQ is the lowest concentration that can be reliably quantified
-with acceptable precision and accuracy.
-
-#### Reporting Values Below the MDL
-
-- Results below the MDL are reported as "less than MDL" (e.g.,
-  "< 0.05 mg/L")
-- Results between the MDL and LOQ are reported with a qualifier flag
-  (e.g., "J" flag) indicating estimated value
-- Results above the LOQ are reported without qualification
-- For statistical analyses of datasets containing censored values
-  (below MDL), use appropriate methods such as Kaplan-Meier estimation,
-  regression on order statistics (ROS), or maximum likelihood estimation
-  rather than simple substitution [@helsel2012]
-
-### Holding Times and Sample Integrity
-
-Samples have finite stability. Analyses must be completed within the
-method-specified holding time. Record the collection date/time and the
-analysis date/time for every sample. If a holding time is exceeded,
-flag the result with an "H" qualifier.
-
-Common holding times for EA Program analyses:
-
-| Analysis                  | Holding Time              | Preservation              | Reference SOP |
-|:--------------------------|:--------------------------|:--------------------------|:--------------|
-| pH                        | 15 minutes (field); 24 h (lab) | None; analyze ASAP   | [L300](SOP-L300-pH-conductivity-bench.qmd), [L402](SOP-L402-soil-pH-salinity.qmd) |
-| Conductivity              | 28 days                   | Refrigerate 4 C           | [L300](SOP-L300-pH-conductivity-bench.qmd) |
-| Nitrate/nitrite           | 48 hours                  | Refrigerate 4 C; H~2~SO~4~ to pH < 2 | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
-| Ammonium                  | 48 hours                  | Refrigerate 4 C; H~2~SO~4~ to pH < 2 | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
-| Total phosphorus          | 28 days                   | H~2~SO~4~ to pH < 2; 4 C | [L405](SOP-L405-extractable-phosphorus.qmd) |
-| Chlorophyll *a* (filter)  | 28 days frozen            | Freeze at --20 C in dark  | [L310](SOP-L310-chlorophyll-extraction.qmd) |
-| Metals (acid-digested)    | 6 months                  | HNO~3~ to pH < 2; 4 C    | [L410](SOP-L410-hotplate-acid-digestion.qmd), [L411](SOP-L411-mars-microwave-digestion.qmd) |
-| Coliforms (Colilert)      | 6 hours to incubation     | Refrigerate 4 C           | [L305](SOP-L305-colilert-quanti-tray.qmd) |
-| Soil KCl extracts         | 24 hours                  | Refrigerate 4 C           | [L403](SOP-L403-nitrate-ammonium-kcl.qmd) |
-| Soil moisture             | Analyze immediately or freeze | Freeze if delayed > 24 h | [L400](SOP-L400-soil-moisture.qmd) |
-
-### Corrective Actions
-
-When a QC criterion is not met:
-
-1. Stop analysis. Do not proceed with samples until the problem is
-   resolved.
-2. Investigate the root cause (contamination, calibration drift,
-   reagent degradation, instrument malfunction, operator error)
-3. Implement a corrective action (re-prepare reagents, recalibrate,
-   clean equipment, re-train analyst)
-4. Re-analyze the affected QC sample. If it passes, resume analysis.
-5. Re-analyze all samples analyzed after the last passing QC check.
-6. Document the failure, root cause, corrective action, and re-analysis
-   results in the QC log and lab notebook.
-
-### Control Charts
+## Control Charts
 
 Maintain control charts for each analyte/method combination to track
 long-term analytical performance:
 
-1. Plot CRM, LFB, or CVS recovery for each batch on a time-series
-   chart
+1. Plot CRM, LFB, or CVS recovery for each batch on a time-series chart.
 2. Calculate and draw lines for:
    - **Center line:** Mean recovery over the last 20+ batches
-   - **Warning limits:** +/- 2 standard deviations from the mean
-   - **Action limits:** +/- 3 standard deviations from the mean
+   - **Warning limits:** ±2 standard deviations from the mean
+   - **Action limits:** ±3 standard deviations from the mean
 3. A result between warning and action limits is a warning; investigate
-   but do not necessarily re-analyze
+   but do not necessarily re-analyze.
 4. A result beyond the action limits requires corrective action and
-   re-analysis
+   re-analysis.
 5. Systematic trends (7+ consecutive results on one side of the center
-   line, or a steady upward/downward drift) require investigation even
-   if individual points are within limits
+   line, or a steady drift) require investigation even if individual
+   points are within limits [@taylor1987].
+
+
+## Corrective Actions
+
+When a QC failure occurs:
+
+1. Stop the analytical run; do not report affected samples.
+2. Identify the probable cause (contaminated blank, degraded standard,
+   instrument malfunction, matrix interference).
+3. Correct the problem (replace reagents, recalibrate, perform
+   maintenance).
+4. Re-run the affected samples with fresh QC elements.
+5. Verify that the repeated run passes all QC criteria.
+6. Document the failure, root cause, corrective action, and re-analysis
+   results in the QC log and lab notebook.
 
 
 ## Metadata Documentation and Reproducibility
 
 ### Laboratory Notebook Requirements
 
-Every analytical session must be documented in the lab notebook (paper
-or electronic) with the following minimum information:
+Every analytical session must be documented with at minimum:
 
-- Date, analyst name
-- SOP number and revision used
+- Date, analyst name, SOP number and revision
 - Instrument ID and calibration status
 - Reagent lot numbers and preparation dates
 - Sample IDs, matrix type, and collection dates
-- Extraction/digestion batch identifiers
 - Calibration data (standards, equation, $r^2$)
 - QC results (blanks, duplicates, LFBs, spikes, CRMs) with pass/fail
 - Raw data file names and storage location
@@ -381,60 +263,38 @@ or electronic) with the following minimum information:
 ### Electronic Data Management
 
 1. Store all raw instrument data files on the lab shared drive in a
-   folder structure organized by project, year, and instrument:
-
-```
-lab_data/
-  project_name/
-    YYYY/
-      instrument_name/
-        raw/          # Unmodified instrument output files
-        processed/    # R-generated output (cleaned data, QC reports)
-        scripts/      # R scripts used for processing
-```
-
+   folder structure organized by project, year, and instrument.
 2. Never modify raw data files. All processing must be done
    programmatically in R with version-controlled scripts.
 3. Commit all analysis scripts to the lab GitHub repository per
-   [SOP-L801](SOP-L801-rstudio-github.qmd)
+   [SOP-L801](SOP-L801-rstudio-github.qmd) [@gandrud2015; @xie2015].
 
 ### R-Based QC Tracking System
 
-The following R package and script framework is the EA Program standard
-for QC documentation and reproducibility. All analysts must use this
-workflow or an equivalent that produces the same outputs.
+The following R framework is the EA Program standard for QC
+documentation and reproducibility [@gandrud2015; @xie2015]:
 
 ```{r}
 #| label: qc-tracking-setup
 #| echo: true
 #| eval: false
 
-# =============================================================================
-# EA Program QA/QC Tracking Framework
-# Source this script at the start of every analytical R session
-# =============================================================================
-
 library(tidyverse)
 library(lubridate)
 library(knitr)
 
-# --- Session metadata (fill in for each batch) ---
 session_meta <- list(
-  analyst = "Your Name",
-  date = Sys.Date(),
-  sop = "SOP-L06 v1.0",
-  method_sop = "SOP-LXX vX.X",    # The specific analytical SOP
-
+  analyst    = "Your Name",
+  date       = Sys.Date(),
+  sop        = "SOP-L802 v1.1",
+  method_sop = "SOP-LXX vX.X",
   instrument = "Instrument ID",
-  project = "Project Name",
-  notes = ""
+  project    = "Project Name"
 )
 
-cat("QC session initialized:\n")
-cat(sprintf("  Analyst:    %s\n", session_meta$analyst))
-cat(sprintf("  Date:       %s\n", session_meta$date))
-cat(sprintf("  Method SOP: %s\n", session_meta$method_sop))
-cat(sprintf("  Instrument: %s\n", session_meta$instrument))
+cat(sprintf("QC session: %s | Analyst: %s | Instrument: %s\n",
+            session_meta$date, session_meta$analyst,
+            session_meta$instrument))
 ```
 
 ```{r}
@@ -442,298 +302,32 @@ cat(sprintf("  Instrument: %s\n", session_meta$instrument))
 #| echo: true
 #| eval: false
 
-# =============================================================================
-# QC calculation functions
-# =============================================================================
-
-#' Calculate Method Detection Limit (EPA procedure)
-#' @param reps Numeric vector of replicate measurements at the spike level
-#' @param alpha Significance level (default 0.01 for 99% confidence)
-#' @return Named list with MDL, LOQ, n, sd, t-value
 calc_mdl <- function(reps, alpha = 0.01) {
-  n <- length(reps)
-  s <- sd(reps)
+  n <- length(reps); s <- sd(reps)
   t_val <- qt(1 - alpha, df = n - 1)
-  mdl <- t_val * s
-  loq <- 10 * s
-
-  list(
-    n = n,
-    mean = mean(reps),
-    sd = s,
-    t_value = round(t_val, 3),
-    MDL = round(mdl, 4),
-    LOQ = round(loq, 4),
-    spike_to_mdl_ratio = round(mean(reps) / mdl, 1)
-  )
+  list(n = n, sd = s, t_value = round(t_val, 3),
+       MDL = round(t_val * s, 4), LOQ = round(10 * s, 4))
 }
 
-#' Calculate Relative Percent Difference for duplicates
-#' @param a First measurement
-#' @param b Second measurement
-#' @return RPD as a percentage
-calc_rpd <- function(a, b) {
-  abs(a - b) / ((a + b) / 2) * 100
-}
+calc_rpd <- function(a, b) abs(a - b) / ((a + b) / 2) * 100
 
-#' Calculate percent recovery
-#' @param measured Measured concentration
-#' @param expected Expected (true) concentration
-#' @return Recovery as a percentage
-calc_recovery <- function(measured, expected) {
-  (measured / expected) * 100
-}
-
-#' Calculate spike recovery
-#' @param spiked Concentration of spiked sample
-#' @param unspiked Concentration of unspiked sample
-#' @param added Concentration of spike added
-#' @return Spike recovery as a percentage
-calc_spike_recovery <- function(spiked, unspiked, added) {
-  ((spiked - unspiked) / added) * 100
-}
-
-#' Evaluate QC pass/fail against criteria
-#' @param qc_data Tibble with columns: qc_type, value
-#' @param criteria Named list of acceptance criteria
-#' @return Tibble with pass/fail flags
-evaluate_qc <- function(qc_data, criteria) {
-  qc_data %>%
-    mutate(
-      criterion = map_chr(qc_type, ~ criteria[[.x]] %||% "Not specified"),
-      pass = case_when(
-        qc_type == "blank" ~ value < criteria$mdl,
-        qc_type == "rpd" ~ value <= criteria$max_rpd,
-        qc_type == "recovery" ~ value >= criteria$min_recovery &
-                                 value <= criteria$max_recovery,
-        qc_type == "spike" ~ value >= criteria$min_spike &
-                              value <= criteria$max_spike,
-        TRUE ~ NA
-      ),
-      status = if_else(pass, "PASS", "FAIL")
-    )
-}
+calc_recovery <- function(measured, expected) (measured / expected) * 100
 ```
 
-```{r}
-#| label: qc-batch-report
-#| echo: true
-#| eval: false
+Each analytical R script should:
 
-# =============================================================================
-# Example: Complete QC batch report
-# =============================================================================
+1. Read the raw data file
+2. Run all QC checks programmatically
+3. Produce a formatted QC summary table
+4. Generate calibration plots and control charts
+5. Export a clean, QC-verified dataset as CSV
+6. Render to HTML or PDF for archiving
 
-# --- 1. Read raw data ---
-raw <- read_csv("data/raw/2025-05-16_phosphorus_batch1.csv")
-
-# --- 2. Define QC acceptance criteria for this method ---
-criteria <- list(
-  mdl = 0.02,             # mg/L (from MDL study)
-  loq = 0.07,             # mg/L
-  max_rpd = 20,           # percent
-  min_recovery = 80,      # percent (LFB)
-  max_recovery = 120,     # percent (LFB)
-  min_spike = 75,         # percent (MS)
-  max_spike = 125,        # percent (MS)
-  r_squared_min = 0.995,  # calibration
-  cvs_min = 90,           # percent
-  cvs_max = 110           # percent
-)
-
-# --- 3. Check calibration ---
-cal_data <- raw %>% filter(sample_type == "standard")
-cal_model <- lm(response ~ concentration, data = cal_data)
-r_sq <- summary(cal_model)$r.squared
-
-cal_check <- tibble(
-  check = "Calibration r-squared",
-  value = round(r_sq, 5),
-  criterion = sprintf(">= %.3f", criteria$r_squared_min),
-  status = if_else(r_sq >= criteria$r_squared_min, "PASS", "FAIL")
-)
-
-# --- 4. Check blanks ---
-blanks <- raw %>%
-  filter(sample_type == "method_blank") %>%
-  summarize(max_blank = max(concentration, na.rm = TRUE))
-
-blank_check <- tibble(
-  check = "Method blank",
-  value = blanks$max_blank,
-  criterion = sprintf("< %.3f mg/L (MDL)", criteria$mdl),
-  status = if_else(blanks$max_blank < criteria$mdl, "PASS", "FAIL")
-)
-
-# --- 5. Check duplicates ---
-dups <- raw %>%
-  filter(sample_type == "duplicate") %>%
-  group_by(sample_id) %>%
-  summarize(
-    a = first(concentration),
-    b = last(concentration),
-    rpd = calc_rpd(a, b),
-    .groups = "drop"
-  )
-
-dup_check <- dups %>%
-  summarize(
-    check = "Duplicate RPD (max)",
-    value = round(max(rpd), 1),
-    criterion = sprintf("<= %d%%", criteria$max_rpd),
-    status = if_else(max(rpd) <= criteria$max_rpd, "PASS", "FAIL")
-  )
-
-# --- 6. Check LFB recovery ---
-lfb <- raw %>%
-  filter(sample_type == "LFB") %>%
-  mutate(recovery = calc_recovery(concentration, expected_concentration))
-
-lfb_check <- tibble(
-  check = "LFB recovery",
-  value = round(mean(lfb$recovery), 1),
-  criterion = sprintf("%d--%d%%", criteria$min_recovery, criteria$max_recovery),
-  status = if_else(
-    all(lfb$recovery >= criteria$min_recovery &
-        lfb$recovery <= criteria$max_recovery),
-    "PASS", "FAIL"
-  )
-)
-
-# --- 7. Check CVS ---
-cvs <- raw %>%
-  filter(sample_type == "CVS") %>%
-  mutate(recovery = calc_recovery(concentration, expected_concentration))
-
-cvs_check <- tibble(
-  check = "CVS recovery (all)",
-  value = sprintf("%.1f--%.1f%%", min(cvs$recovery), max(cvs$recovery)),
-  criterion = sprintf("%d--%d%%", criteria$cvs_min, criteria$cvs_max),
-  status = if_else(
-    all(cvs$recovery >= criteria$cvs_min &
-        cvs$recovery <= criteria$cvs_max),
-    "PASS", "FAIL"
-  )
-)
-
-# --- 8. Compile and print QC summary ---
-qc_summary <- bind_rows(cal_check, blank_check, dup_check,
-                         lfb_check, cvs_check)
-
-cat("\n========== QC BATCH REPORT ==========\n")
-cat(sprintf("Date:       %s\n", session_meta$date))
-cat(sprintf("Analyst:    %s\n", session_meta$analyst))
-cat(sprintf("Method:     %s\n", session_meta$method_sop))
-cat(sprintf("Instrument: %s\n", session_meta$instrument))
-cat("=====================================\n\n")
-
-print(kable(qc_summary, format = "pipe"))
-
-# Flag overall batch status
-if (any(qc_summary$status == "FAIL")) {
-  warning("\n*** QC FAILURE DETECTED -- review and take corrective action ***\n")
-} else {
-  cat("\nAll QC checks PASSED.\n")
-}
-
-# --- 9. Save QC report ---
-write_csv(qc_summary,
-          sprintf("data/processed/qc_report_%s_%s.csv",
-                  session_meta$method_sop,
-                  session_meta$date))
-```
-
-```{r}
-#| label: mdl-study
-#| echo: true
-#| eval: false
-
-# =============================================================================
-# MDL Determination Study
-# Run once per method, or when method/instrument changes significantly
-# =============================================================================
-
-# Seven replicate measurements at the spike level (1-5x estimated DL)
-mdl_reps <- c(0.032, 0.028, 0.035, 0.031, 0.029, 0.033, 0.030)
-
-mdl_result <- calc_mdl(mdl_reps)
-
-cat("MDL Study Results:\n")
-cat(sprintf("  n replicates:        %d\n", mdl_result$n))
-cat(sprintf("  Mean:                %.4f mg/L\n", mdl_result$mean))
-cat(sprintf("  Std dev:             %.4f mg/L\n", mdl_result$sd))
-cat(sprintf("  t-value (99%%):       %.3f\n", mdl_result$t_value))
-cat(sprintf("  MDL:                 %.4f mg/L\n", mdl_result$MDL))
-cat(sprintf("  LOQ:                 %.4f mg/L\n", mdl_result$LOQ))
-cat(sprintf("  Spike/MDL ratio:     %.1f (should be 1-10)\n",
-            mdl_result$spike_to_mdl_ratio))
-```
-
-```{r}
-#| label: control-chart
-#| echo: true
-#| eval: false
-
-# =============================================================================
-# Control chart for long-term QC tracking
-# =============================================================================
-
-library(tidyverse)
-
-# Read historical QC data (one row per batch)
-qc_history <- read_csv("data/processed/qc_history_phosphorus.csv") %>%
-  mutate(date = as_date(date))
-
-# Calculate control limits
-center <- mean(qc_history$crm_recovery)
-sd_qc <- sd(qc_history$crm_recovery)
-warning_upper <- center + 2 * sd_qc
-warning_lower <- center - 2 * sd_qc
-action_upper <- center + 3 * sd_qc
-action_lower <- center - 3 * sd_qc
-
-ggplot(qc_history, aes(x = date, y = crm_recovery)) +
-  geom_point(size = 2) +
-  geom_line(alpha = 0.3) +
-  geom_hline(yintercept = center, color = "darkgreen", linewidth = 1) +
-  geom_hline(yintercept = c(warning_upper, warning_lower),
-             color = "orange", linetype = "dashed") +
-  geom_hline(yintercept = c(action_upper, action_lower),
-             color = "red", linetype = "dotted") +
-  annotate("text", x = min(qc_history$date), y = center + 1,
-           label = "Center", color = "darkgreen", hjust = 0) +
-  annotate("text", x = min(qc_history$date), y = warning_upper + 1,
-           label = "+/- 2 SD (Warning)", color = "orange", hjust = 0) +
-  annotate("text", x = min(qc_history$date), y = action_upper + 1,
-           label = "+/- 3 SD (Action)", color = "red", hjust = 0) +
-  labs(
-    x = "Date",
-    y = "CRM Recovery (%)",
-    title = "Phosphorus CRM Control Chart"
-  ) +
-  theme_minimal()
-```
-
-### Quarto Report Templates
-
-For each analytical method, create a Quarto (`.qmd`) report template
-that:
-
-1. Reads the raw data file
-2. Runs all QC checks programmatically using the functions above
-3. Produces a formatted QC summary table
-4. Generates calibration plots, control charts, and diagnostic figures
-5. Exports a clean, QC-verified dataset as a CSV
-6. Renders to HTML or PDF for archiving
-
-Store templates in the project GitHub repository under `analysis/templates/`. An analyst runs the template with their batch-specific data file as input, producing a self-contained, reproducible QC report for every batch [@gandrud2015; @xie2015].
+Store templates in the project GitHub repository under
+`analysis/templates/` [@gandrud2015; @xie2015].
 
 
 ## QC Requirements by Method Category
-
-The table below summarizes the minimum QC sample frequencies for
-each method category. Individual SOPs may specify additional
-requirements.
 
 | QC Element         | Water Chemistry | Soil Extraction | Digestion (Metals) | Biological (Colilert) | Instrumental (TOC, ICP) |
 |:-------------------|:---------------|:---------------|:-------------------|:---------------------|:----------------------|
@@ -756,78 +350,38 @@ method's waste disposal procedure.
 
 ## References
 
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
-  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
-  Washington. 1360 pp.
-- Armbruster, D.A. & Pry, T. (2008). Limit of blank, limit of
-  detection and limit of quantitation. *Clinical Biochemistry Reviews*,
-  29(Suppl 1), S49--S52.
-- Gandrud, C. (2015). *Reproducible Research with R and RStudio*. 2nd
-  ed. CRC Press, Boca Raton, FL.
-- Helsel, D.R. (2012). *Statistics for Censored Environmental Data
-  Using Minitab and R*. 2nd ed. John Wiley & Sons, Hoboken, NJ.
-- Taylor, J.K. (1987). *Quality Assurance of Chemical Measurements*.
-  Lewis Publishers, Chelsea, MI.
-- U.S. Environmental Protection Agency. (2007). *Guidance for Quality
-  Assurance Project Plans*. EPA/240/R-02/009. Office of Environmental
-  Information, Washington, DC.
-- U.S. Environmental Protection Agency. (2016). *Definition and
-  procedure for the determination of the Method Detection Limit*.
-  Revision 2. 40 CFR Part 136, Appendix B.
-- Xie, Y. (2015). *Dynamic Documents with R and knitr*. 2nd ed. CRC
-  Press, Boca Raton, FL.
+- @apha2012
+- @taylor1987
+- @usepa2007
+- @usepa_mdl_2016
+- @armbruster2008
+- @helsel2012
+- @gandrud2015
+- @xie2015
 
 ::: {#refs}
 :::
 
 
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L801](SOP-L801-rstudio-github.qmd)   | RStudio and GitHub        | Version control for analysis scripts |
+| [L803](SOP-L803-data-entry-database.qmd) | Data Entry and Database  | Data recording standards          |
+| [F300](../field_sops/SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Field blank requirements  |
+| [F008](../field_sops/SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling and COC | Chain of custody          |
+
+
 ## Training Record
 
-Before performing analytical work independently, personnel must:
+Before applying QC frameworks independently, personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
-   and [SOP-L801 RStudio and GitHub](SOP-L801-rstudio-github.qmd)
-   training
-3. Complete training on the specific analytical SOP(s) they will use
-4. Demonstrate ability to prepare calibration standards, blanks, and
-   QC samples
-5. Run at least one complete batch with all required QC elements under
+2. Demonstrate correct MDL calculation using the calc_mdl() function
+   on a test dataset
+3. Prepare a complete QC summary table for one analytical batch under
    supervision
-6. Produce a QC batch report using the R framework (Section 7.3) with
-   all checks passing
-7. Be signed off by the PI or lab manager
-
-
-## Appendix A: QC Decision Flowchart {.appendix}
-
-For each QC check that fails during an analytical batch:
-
-1. **Stop.** Do not analyze additional samples.
-2. **Identify.** Which QC element failed? (blank, CVS, duplicate, LFB,
-   spike, CRM)
-3. **Investigate.** Check reagents, standards, instrument, and
-   technique.
-4. **Correct.** Fix the identified problem.
-5. **Re-analyze.** Re-run the failed QC sample.
-6. **Pass?** If yes, re-analyze all samples after the last passing QC
-   and resume. If no, escalate to the lab manager.
-7. **Document.** Record the failure, investigation, corrective action,
-   and resolution in the QC log and lab notebook.
-
-
-## Appendix B: Data Qualifier Flags {.appendix}
-
-| Flag | Meaning                                              |
-|:-----|:-----------------------------------------------------|
-| U    | Analyte not detected; result reported at the MDL     |
-| J    | Estimated value; detected between MDL and LOQ        |
-| B    | Analyte detected in the method blank                 |
-| H    | Holding time exceeded                                |
-| R    | Result rejected due to QC failure                    |
-| E    | Estimated value; result exceeds the calibration range |
-| D    | Diluted sample; reported value corrected for dilution |
-| MS   | Matrix spike recovery outside acceptance limits      |
-
-
-
+4. Set up and interpret a control chart for one analyte/method
+   combination
+5. Be signed off by the PI or lab manager
