@@ -44,3 +44,28 @@
 .sidebar-navigation .sidebar-item a:hover .sidebar-green strong {
   color: #1B5E20 !important;
 }
+
+// -----------------------------------------------------------------------------
+// SOP metadata badge (injected by _templates/sop-badge.lua for HTML output)
+// -----------------------------------------------------------------------------
+.sop-meta-badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #E6F0FA;
+  border-left: 4px solid #0057B8;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.875rem;
+
+  .sop-number {
+    font-weight: 700;
+    color: #0057B8;
+    font-size: 1rem;
+  }
+
+  .sop-revision {
+    color: #444;
+  }
+}
