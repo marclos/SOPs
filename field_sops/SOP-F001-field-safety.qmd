@@ -6,7 +6,7 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.2"
+revision: "1.3"
 
 revision-history:
   - version: "1.0"
@@ -22,18 +22,29 @@ revision-history:
     author: "Ellena Reposa"
     changes: "Added overhead-hazard subsection, hard-hat PPE, sharp-tool
               handling, and a consolidated stop-work list (consolidated
-              from SOP-F607)."
+              from SOP-F607)"
+  - version: "1.3"
+    date: "2026-06-06"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; converted plain-text references
+              to BibTeX; added {#refs} div"
 ---
 
 ## Purpose
 
-This SOP covers field-based research activities and class field trips, addressing transportation, weather-based, and biotic hazards. Although we cannot predict all risks and hazards, it is everyone's responsibility to identify and mitigate potential risks associated with field work.
+This SOP covers field-based research activities and class field trips,
+addressing transportation, weather-based, and biotic hazards. Although
+we cannot predict all risks and hazards, it is everyone's responsibility
+to identify and mitigate potential risks associated with field work
+[@osha_labsafety2012].
 
 
 ## Scope
 
-- **Applies to:** All field-based research activities, class field trips, and off-campus data collection
-- **Does not apply to:** Laboratory-only procedures (see relevant Lab SOPs)
+- **Applies to:** All field-based research activities, class field
+  trips, and off-campus data collection
+- **Does not apply to:** Laboratory-only procedures (see relevant Lab
+  SOPs)
 - **Location:** All field sites used by the EA Program
 
 
@@ -45,7 +56,50 @@ This SOP covers field-based research activities and class field trips, addressin
 | Trained Personnel | Follow this SOP, report deviations and hazards          |
 | New Students      | Complete training and document review before field work |
 
-Anyone conducting research in the field is required to have documented training before commencing field work. Learning about risks and taking the precautions described here is the first step to reducing the risks associated with field work. Anyone working in the field should identify potential risks and attempt to mitigate them.
+Anyone conducting research in the field is required to have documented
+training before commencing field work. Learning about risks and taking
+the precautions described here is the first step to reducing the risks
+associated with field work. Anyone working in the field should identify
+potential risks and attempt to mitigate them.
+
+
+## Definitions
+
+- **Field lead:** The trained, designated person responsible for
+  safety decisions during a field outing; authorizes resumption of
+  work after a stop-work condition, maintains communication with the
+  PI, and is the first point of contact in an emergency.
+- **Heat illness:** A spectrum of conditions caused by overheating,
+  ranging from heat cramps and heat exhaustion to heat stroke; heat
+  stroke (core temperature above 40 °C, altered mental status) is a
+  life-threatening emergency requiring immediate 911 activation
+  [@osha_labsafety2012].
+- **Incident report:** A written record of any injury, illness,
+  near-miss, or property damage occurring during field work; submitted
+  to the PI and the college risk management office within 24 hours of
+  the event [@pomona_emergency].
+- **Minimum crew size:** Two persons at all times during field work;
+  one person must be capable of summoning help if the other is
+  incapacitated. Solo field work is prohibited unless explicitly
+  waived in writing by the PI for low-hazard, high-visibility
+  situations.
+- **PPE (personal protective equipment):** Equipment worn to minimize
+  exposure to field hazards, including closed-toed shoes, long pants,
+  safety glasses, sun protection, and task-specific items such as hard
+  hats and cut-resistant gloves [@nrc_prudent2011].
+- **Risk assessment:** A structured evaluation of the hazards at a
+  field site and the probability and severity of resulting harm; used
+  to select appropriate control measures and documented on the Field
+  Work Planning Form (Appendix A).
+- **Stop-work authority:** The right -- and duty -- of any crew member
+  to stop field operations without prior approval when they observe an
+  imminent safety hazard. No crew member may be penalized for
+  exercising stop-work authority in good faith [@osha_labsafety2012].
+- **Two-person rule:** See "Minimum crew size" above.
+- **Widow-maker:** A dead branch, dead tree, or tree with structural
+  defects that may fall without warning; a leading cause of fatalities
+  in forest work; avoid working beneath or near hazard trees,
+  especially in high wind.
 
 
 ## Safety and Hazards
@@ -53,307 +107,296 @@ Anyone conducting research in the field is required to have documented training 
 ::: {.callout-warning}
 ### General Field Hazards
 
-Reducing risks is one of our main priorities. Like many endeavors in life, field work has certain risks. However, we can reduce these risks dramatically by understanding our physical limits and how these can be tested by uncontrolled environmental factors.
+Reducing risks is one of our main priorities. Like many endeavors in
+life, field work has certain risks. We can reduce these risks
+dramatically by understanding our physical limits and how these can be
+tested by uncontrolled environmental factors.
 
-We rely on each individual to be mindful of their own limitations and to advocate for themselves and others to reduce risk exposure.
+We rely on each individual to be mindful of their own limitations and
+to advocate for themselves and others to reduce risk exposure.
 :::
 
 ### Required Materials
 
-- First Aid Kit (kits are located in EA vehicles; see EA vehicle checklist to document their presence)
-- Cell phone(s)
-- Walkie-talkies (optional)
-- Personal Protective Equipment (PPE)
-
-
-### Estimated Time
-
-Preparing to go in the field can take a few minutes to several hours of planning and gathering resources. A good rule of thumb is to double the time you think it will take to get ready.
-
-
-### Campus Emergency Contact to the Emergency Information
-| Contact            | Number          |
-|:-------------------|:----------------|
-| Emergency / 911    | 911             |
-| Campus Security    | (909) 607-2000  |
-
-
-
-## Transportation Safety
-
-### Vehicle Requirements
-
-- Drivers must have valid driver's licenses and insurance
-- Drivers using EA vehicles must be approved by the college; forms can be found in the EA Department
-
-### Planning
-
-- Identify meet-up and departure times and locations
-- Designate a driver
-- All state and local laws must be obeyed
-
-### Responding to Vehicle Emergencies
-
-Refer to the college's vehicle emergency procedures. Ensure all occupants are safe, call emergency services if needed, and report the incident to the EA Department.
-
-
-## Weather-Related Hazards
-
-### Heat Exhaustion and Stroke
-
-::: {.callout-warning}
-### Risk Factors
-
-- Working outside of shade in desert or arid climates, especially during hot times of day
-- Lack of shade coverage or proper sun protection
-- Dehydration
-:::
-
-**Prevention:**
-
-- Use and reapply sunscreen
-- Drink plenty of water
-- Wear hats and other protective clothing
-
-**Response:**
-
-- Hydrate the affected person
-- Place ice packs on neck, armpits, etc.
-- If conditions worsen, leave the field and find air-conditioned conditions
-
-
-### Cold Conditions
-
-**Risk factors:** Lack of sun, time of year, wind chill
-
-**Prevention:** Proper layering and clothing; stay hydrated
-
-**Response:** Eat, evacuate to warmth, get a professional evaluation
-
-
-### Lightning
-
-**Prevention:** Check weather forecast; learn to identify cumulonimbus clouds
-
-**Response:** Assume lightning position and seek shelter immediately; avoid open areas, tall isolated trees, and bodies of water
-
-
-### Air Quality and Pollution
-
-Working outside when ozone levels or other pollutants are elevated has a detrimental effect on health, particularly for individuals with asthma or other respiratory conditions. Hot, dry days worsen pollution, and nearby forest fires degrade air quality.
-
-Students with any respiratory disease should be cautious and report the condition to their instructor or laboratory supervisor.
-
-**Prevention:** Check air quality index (AQI) before field work; postpone if AQI is unhealthy
-
-**Response:** Leave the field if symptoms develop; seek medical attention if needed
-
-
-## Geological and Environmental Hazards
-
-### Earthquake
-
-Tectonic movement may occur anywhere in California.
-
-**Prevention:** Be aware of surroundings at all times
-
-**Response:** Remain low to the ground; stay away from external building frames; avoid sinkholes, gas lines, and utility wires
-
-
-### Flooding
-
-**Risk factors:** Proximity to bodies of water, excessive rainfall
-
-**Prevention:** Check the forecast for rainfall; be aware of surroundings
-
-**Response:** Find the highest point in the area; do not attempt to cross rushing water
-
-
-### Altitude Illness (HAPE/HACE)
-
-**Risk factors:** High altitudes to which students have not had time to acclimate; reduced oxygen
-
-**Symptoms:** Headache, nausea, irritability
-
-**Response:** If mild symptoms, acclimate and take it easy; hydrate. If persistent vomiting and severe headache, evacuate to lower altitude immediately.
-
-
-### Human Debris and Waste
-
-Illegal dumping of waste and leftover construction materials (sharp metallic objects, etc.) bring risk of injury and exposure to long-term illnesses like tetanus.
-
-**Prevention:** Avoid and report; be aware of surroundings; think before interacting with unusual objects
-
-**Response:** Students should be aware of their vaccination history and how to proceed if they require a tetanus shot due to injury
-
-
-### Toxic Waste Exposure
-
-Exposure may occur via ingestion, inhalation, or dermal contact and can be unpredictable.
-
-**Prevention:** Wear appropriate PPE; avoid contact with unknown substances
-
-**Response:** Remove from exposure; decontaminate; seek medical attention
-
-### Overhead Hazards (Falling Limbs and Trees)
-
-Dead branches, broken hanging limbs (widow-makers), and leaning or
-unstable trees can fall without warning, especially in wind.
-
-**Risk factors:** Dead or declining trees, recent storms, standing snags,
-wind.
-
-**Prevention:**
-
-- Look up and scan the whole tree before approaching or working beneath it
-- Do not work under or near hazard trees when wind is sustained above
-  20 mph
-- Wear a hard hat in any area with overhead hazard trees
-- When using hand saws, loppers, or pruners, keep blades sheathed while
-  walking, pass tools handle-first, and never carry open blades through
-  brush
-
-**Response:** If a limb falls or a tree shifts, move clear of the drop
-zone immediately and account for all crew members. Report the hazard to
-the field lead and flag the tree so others avoid it.
-
-## Biotic Hazards
-
-The field is home to a vast diversity of organisms. Being respectful of their environment is crucial to their safety and our own.
-
-### Allergies
-
-::: {.callout-important}
-All allergies must be recorded in medical files before the start of field work. Researchers with life-threatening allergies must bring their Epi-pen to the field and keep it accessible at all times.
-:::
-
-**Mild allergic reaction:** Administer 25--50 mg of Diphenhydramine (Benadryl)
-
-**Severe allergic reaction** (swelling of face/throat, respiratory distress): Administer 0.3 mg of Epinephrine; may re-administer after 5 minutes. Follow with 25--50 mg of Diphenhydramine and 20--40 mg of Prednisone. Evacuate from field site immediately.
-
-
-### Biotic Risk Summary
-
-| Organism | Habitats | Risks | Prevention and Response |
-|:---------|:---------|:------|:------------------------|
-| Mosquitos | Near stagnant water | Vectors for disease (e.g., Malaria) | Use mosquito repellent (e.g., DEET products) |
-| Rodents | Debris, dense underbrush, burrow holes | Disease, infection | Do not touch rodents; if bitten, clean and disinfect |
-| Mountain Lions | Native to North/South America; active early and late in the day | Severe injury | Make yourself look larger; do not run; throw rocks or sticks; avoid being alone |
-| Snakes (Rattlesnakes, Cottonmouth) | Various | Snakebite | Walk in open areas; wear heavy boots; listen for rattle; back away slowly; if bitten, seek immediate medical attention |
-| Spiders (Black Widow, Brown Recluse) | Dark sheltered areas | Spider bite, nausea | Wear gloves while working; shake out clothing and bedding; go to hospital if bitten |
-| Bees and Wasps | Various | Swelling, pain, allergic reaction, anaphylactic shock | Avoid disturbing nests; stay calm when pursued; administer epinephrine for severe reactions; take to hospital |
-| Fleas and Ticks | Underbrush, wooded areas | Lyme disease | Tick check after fieldwork; use insect repellent; wear long clothing; suffocate tick with petroleum jelly before removing with tweezers |
-| Poison Oak | Riparian habitats | Itchy rash; red, swollen skin | Learn to identify; apply Tecnu beforehand; wash affected areas with dish soap |
-| Stinging Nettle | Riparian habitats, meadows | Stinging sensation | Learn to identify and avoid; use anti-itch cream if needed |
-
-
-## Other Illness and Injury
-
-### Fractures and Breaks
-
-Stabilize the injured area and avoid movement. Go to the nearest medical facility for further care.
-
-### Injury from Equipment
-
-Handle all equipment with caution. Carefully read operating procedures. Seek help from fellow students or your instructor if you have questions or doubts. Do not use any equipment if you are unsure of how to handle it.
-
-### Chronic Conditions (Epilepsy, Diabetes, Heart Conditions)
-
-Refer to emergency procedures. Report any chronic conditions to your supervisor. Be aware of your surroundings and be prepared to react in an emergency. Know where the first aid kit is and how to get to the nearest medical facility.
+- First Aid Kit (kits are located in EA vehicles; see EA vehicle
+  checklist to document their presence)
+- Cell phone(s) with emergency contacts programmed
+- Walkie-talkies (optional but recommended for sites with poor cell
+  service)
+- Personal Protective Equipment (PPE) appropriate for the site and
+  task
+
+
+## Estimated Time
+
+Preparing to go in the field can take a few minutes to several hours
+of planning and gathering resources. A good rule of thumb is to double
+the time you think it will take to get ready.
 
 
 ## Field Preparation Checklist
 
 ### Before Departure
 
-- [ ] Check weather report and air quality
-- [ ] Read and understand emergency procedures
-- [ ] Know locations of emergency equipment
+- [ ] Check weather report and air quality index
+- [ ] Read and understand emergency procedures for the specific site
+- [ ] Know locations of emergency equipment (first aid kit, fire
+      extinguisher if applicable)
 - [ ] Be aware of any special medical conditions of team members
-- [ ] Report to supervisor
-- [ ] Identify hospital closest to the field site
-- [ ] Develop a transportation plan with designated driver
-- [ ] Create a safety plan (itinerary, emergency contacts, risk assessment)
+- [ ] Report departure time and expected return to supervisor
+- [ ] Identify the hospital or urgent care facility closest to the
+      field site
+- [ ] Develop a transportation plan with a designated driver
+- [ ] Complete a risk assessment and safety plan (Appendix A)
 
 ### Supply Checklist
 
-- [ ] Personal protective equipment
-- [ ] Rain gear (if necessary)
-- [ ] No excessively loose clothing; no sandals or open-toed shoes
-- [ ] Additional clothing/gear for environmental conditions (e.g., poison oak areas)
-- [ ] Sunscreen and sun hat (if necessary)
-- [ ] Full water bottle(s)
-- [ ] Rite in the Rain lab notebook and writing utensil
-- [ ] Watch
+- [ ] PPE appropriate for the task (see §8 for task-specific items)
+- [ ] Rain gear (if precipitation is forecast)
+- [ ] Closed-toed shoes or field boots (no sandals or open-toed shoes)
+- [ ] Additional clothing/gear for site conditions (e.g., long
+      sleeves and gaiters for poison oak areas)
+- [ ] Sunscreen and sun hat
+- [ ] Adequate water (minimum 1 L per person per 2 hours in warm
+      conditions)
+- [ ] Rite in the Rain field notebook and waterproof pen
+- [ ] Watch or phone for time-stamping field records
 - [ ] First aid kit
 - [ ] Cell phone with the following numbers programmed:
-  - Emergency personnel
+  - 911 (emergency)
+  - Campus safety: (909) 621-8170 (Pomona College)
   - Lab supervisor and/or instructor
-  - Lab teammates
+  - Field team members
 
 ### On Site
 
-- Identify a time to meet up and depart (if splitting up)
-- Leave no trace: ensure that the environment remains undisturbed
-- Supervisor ensures that safety procedures are followed
-- Report any potential field hazards to supervisor
+- Identify a meeting time and departure plan if the team splits up
+- Leave no trace: ensure the environment remains undisturbed
+- Field lead ensures that safety procedures are followed
+- Report any potential field hazards to the field lead immediately
+
+
+## Hazard-Specific Procedures
+
+### Transportation
+
+- All passengers must wear seatbelts at all times
+- Designated driver is identified before departure; no impaired
+  driving
+- Allow extra time on unpaved or unfamiliar access roads
+- Do not drive into flooded washes or roads
+
+### Weather Hazards
+
+#### Lightning
+
+Follow the 30-30 rule: if the time between a lightning flash and
+thunder is 30 seconds or less, the storm is within 10 miles -- seek
+shelter immediately. Remain sheltered for 30 minutes after the last
+flash or thunder [@osha_labsafety2012].
+
+When lightning threatens:
+
+1. Move away from tall isolated objects (trees, towers, open hilltops)
+2. Avoid open fields and water bodies
+3. Seek a low-lying area away from individual trees
+4. Do not hold metal equipment
+5. If no shelter is available, spread the team out (at least 30 m
+   apart) to reduce the risk of multiple casualties
+
+#### Heat
+
+Southern California field sites can exceed 40 °C. Carry adequate
+water, take shade breaks, and monitor for heat-related illness.
+Symptoms of heat exhaustion include heavy sweating, weakness, cold or
+clammy skin, weak pulse, nausea, and fainting. Heat stroke
+(hot/dry/red skin, rapid strong pulse, unconsciousness) is a medical
+emergency: call 911 immediately and cool the person rapidly
+[@osha_labsafety2012].
+
+#### High Wind
+
+Sustained winds above 25 mph (above 20 mph when working near trees
+or overhead hazards) require stopping work. High winds increase the
+risk of widow-makers and can topple equipment.
+
+### Overhead Hazards (Widow-Makers)
+
+Before working under or near any tree:
+
+1. Look up and assess the crown for dead branches, leaning limbs, or
+   structural failure
+2. Do not work beneath or near hazard trees in high wind
+3. Wear a hard hat when working in forested areas with overhead
+   hazard potential
+4. If a hazard tree is identified, flag it and report it to the field
+   lead; do not attempt to remove it
+
+### Sharp Tools
+
+When using hand saws, loppers, pruners, or other cutting tools:
+
+- Keep blades sheathed while walking
+- Pass tools handle-first; never toss tools
+- Never carry open blades through brush
+- Wear cut-resistant gloves when operating cutting tools
+
+### Biotic Hazards
+
+#### Poison Oak
+
+Wear long sleeves, long pants, and gloves when working in potential
+poison oak habitat. Learn to identify the plant. Wash exposed skin
+with soap and water as soon as possible after potential contact. Do
+not burn plant material that may contain poison oak.
+
+#### Ticks
+
+Wear long pants tucked into socks and long sleeves. Use permethrin-
+treated clothing or DEET-based repellent in tick habitat. Perform a
+full-body tick check at the end of every field day. Remove attached
+ticks promptly with fine-tipped tweezers.
+
+#### Stinging Insects
+
+Know whether any team member has a history of anaphylaxis. Ensure
+that at least one team member knows the location of any prescribed
+epinephrine auto-injectors (EpiPens) in the group. Call 911
+immediately if anaphylaxis is suspected.
+
+#### Wildlife
+
+Do not approach, feed, or attempt to handle wildlife. Report unusual
+wildlife behavior (particularly in mammals that could indicate rabies)
+to the field lead.
 
 
 ## Emergency Response Procedure
 
 ### Responding to a Medical Emergency
 
-1. Survey the scene
-2. Identify any potential risks that could affect other team members
-3. Do not move the injured person unless necessary
-4. Summon medical help and share the following information:
+1. Survey the scene; identify any risks to other team members
+2. Do not move the injured person unless they are in immediate danger
+3. Call 911; provide the following information:
    - Suspected type of injury or illness
-   - Location
+   - Location (GPS coordinates if known; nearest landmark otherwise)
    - Type of assistance required
-5. Identify a location for entry if an emergency vehicle is being summoned
+   - Number of persons injured
+4. Identify a location for emergency vehicle access and send someone
+   to meet the vehicle
+5. Notify the PI or instructor as soon as possible [@pomona_emergency]
+
+### Chronic Conditions
+
+Personnel with chronic conditions (epilepsy, diabetes, heart
+conditions, severe allergies) must inform the field lead before each
+field outing. The field lead will ensure the team knows relevant
+first aid steps and the location of any required medications.
+
+### Injury from Equipment
+
+Handle all equipment with caution. Read operating procedures before
+use. Do not use any equipment you are unsure of how to handle --
+ask a trained team member first.
 
 ### Documenting the Incident
 
-- Identify what happened and how the injury or illness occurred
-- This information will be used to eliminate hazards and prevent future incidents
-- Report the injury or illness to the lab supervisor
+- Record what happened and how the injury or illness occurred in the
+  field notebook
+- Complete a formal incident report and submit it to the PI and the
+  college risk management office within 24 hours
+- This information is used to eliminate hazards and prevent future
+  incidents [@pomona_emergency]
+
 
 ## Stop-Work Conditions
 
 Stop all field operations immediately if any of the following occur:
 
 - Lightning is detected within about 10 miles, or thunder is audible
-  (follow the lightning guidance in Section 6.3)
-- Wind is sustained above 25 mph (above 20 mph when working near trees or
-  other overhead hazards)
-- A crew member shows signs of heat illness, injury, or allergic reaction
+- Wind is sustained above 25 mph (above 20 mph when working near
+  trees or other overhead hazards)
+- A crew member shows signs of heat illness, injury, or allergic
+  reaction
 - An unexpected utility or buried line is found within the work zone
 - Crew size drops below the two-person minimum
 
-Resume only when the field lead confirms conditions are safe.
+Resume only when the field lead confirms conditions are safe
+[@osha_labsafety2012].
 
 
 ## References
 
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water and Wastewater*. 22nd ed. American Public Health Association (Eds.). Washington. 1360 pp.
+- @osha_labsafety2012
+- @nrc_prudent2011
+- @pomona_emergency
+
+::: {#refs}
+:::
 
 
-## Field Work Planning Form
+## Related SOPs
 
-Complete this form before each field outing:
-
-- **Phone Numbers:** _______________
-- **Location:** _______________
-- **Risk Assessment:** _______________
-- **Risk Mitigation Plan:** _______________
-- **Emergency Services:** _______________
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F002](SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | Supplies required for safe field work |
+| [F003](SOP-F003-field-notebook-protocols.qmd)  | Field Notebook Protocols  | Incident documentation            |
+| [F004](SOP-F004-site-access-permits.qmd)       | Site Access and Permits   | Site-specific hazard requirements |
+| [F100](SOP-F100-vehicles.qmd)                  | EA Program Vehicle Use    | Transportation safety             |
 
 
 ## Training Record
 
-Training is documented in EA Program files. Before working independently, personnel must:
+Training is documented in EA Program files. Before conducting
+independent field work, personnel must:
 
 1. Read this SOP in full
-2. Attend a field safety orientation
-3. Demonstrate understanding of emergency procedures
+2. Attend a field safety orientation with the PI or field lead
+3. Demonstrate understanding of the stop-work conditions and emergency
+   response procedure
 4. Be signed off by the instructor or designated trainer
+
+
+## Appendix A: Field Work Planning Form {.appendix}
+
+Complete this form before each field outing and retain it in the
+project file.
+
+**Project / Site Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Date:** \_\_\_\_\_\_\_\_\_\_  **Departure time:** \_\_\_\_\_\_\_\_\_\_  **Expected return:** \_\_\_\_\_\_\_\_\_\_
+
+**Field Lead:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Team Members:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Emergency Contacts:**
+
+| Name              | Role              | Phone              |
+|:------------------|:------------------|:-------------------|
+| 911               | Emergency         | 911                |
+| Campus Safety     | Pomona College    | (909) 621-8170     |
+| PI / Instructor   |                   |                    |
+|                   |                   |                    |
+
+**Nearest Hospital / Urgent Care:**
+
+Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  Address: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  Phone: \_\_\_\_\_\_\_\_\_\_
+
+**Location / GPS of field site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Hazards identified at this site:**
+
+- [ ] Lightning / thunderstorm risk
+- [ ] Extreme heat
+- [ ] High wind / overhead hazard trees
+- [ ] Poison oak
+- [ ] Ticks
+- [ ] Stinging insects / known anaphylaxis in team
+- [ ] Swift water / drowning risk
+- [ ] Wildlife
+- [ ] Other: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Risk Mitigation Plan:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**PI / Supervisor Approval:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_\_

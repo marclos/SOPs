@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F004: Site Access and Permits
-# =============================================================================
 title: "Site Access and Permits"
 sop-number: "SOP-F004"
 author:
@@ -10,13 +7,18 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-24"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-06-06"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section; converted plain-text references
+              to BibTeX; added {#refs} div"
 ---
 
 ## Purpose
@@ -24,11 +26,11 @@ revision-history:
 This SOP describes the procedures for obtaining site access and
 research permits for field work conducted by the EA Program. Field
 research on public or institutional lands almost always requires
-advance authorization, and working without proper permits can result
-in fines, confiscation of samples, invalidation of data, and
-jeopardized relationships with land managers. This document provides
-an agency-by-agency guide covering the landowners and managers most
-commonly encountered by EA Program researchers.
+advance authorization [@usfws_edna2019]. Working without proper permits
+can result in fines, confiscation of samples, invalidation of data,
+and jeopardized relationships with land managers. This document
+provides an agency-by-agency guide covering the landowners and managers
+most commonly encountered by EA Program researchers.
 
 
 ## Scope
@@ -52,20 +54,78 @@ commonly encountered by EA Program researchers.
 
 | Role              | Responsibility                                          |
 |:------------------|:--------------------------------------------------------|
-| PI / Faculty      | Identify required permits, submit applications, maintain permit files, ensure compliance with all conditions |
+| PI / Faculty      | Identify required permits, submit applications, maintain permit files, ensure compliance with all permit conditions |
 | Field Lead        | Carry copies of active permits in the field; confirm permit status before each outing |
 | Students          | Verify that permits are in place before field work; follow all permit conditions; report any compliance issues to the PI |
+
+
+## Definitions
+
+- **BFS (Bernard Field Station):** An 86-acre biological reserve of
+  The Claremont Colleges located at 1400 N. Amherst Avenue, Claremont,
+  CA; administered by the BFS Director; all organized access requires
+  an approved Use Request [@bfs_userequest].
+- **CESA (California Endangered Species Act):** California state law
+  (Fish and Game Code §2050 et seq.) that protects state-listed
+  threatened and endangered species; take of CESA-listed species
+  requires a separate Memorandum of Understanding from CDFW in
+  addition to a Scientific Collecting Permit [@cdfw_scp].
+- **CDFW Scientific Collecting Permit (SCP):** A permit issued by the
+  California Department of Fish and Wildlife authorizing the take or
+  possession of wildlife for scientific, educational, or propagation
+  purposes; required whenever research involves capturing, handling,
+  marking, or collecting wildlife, or when take of sensitive species
+  may occur incidentally [@cdfw_scp].
+- **ESA Section 10 permit:** A federal incidental take permit issued
+  by the U.S. Fish and Wildlife Service under Section 10(a)(1)(A)
+  of the Endangered Species Act; required for non-federal activities
+  that involve take of federally listed threatened or endangered
+  species [@usfws_esa_s10].
+- **ESA Section 7 consultation:** The formal interagency process under
+  Section 7 of the Endangered Species Act through which a federal
+  agency (e.g., USFS, BLM) consults with USFWS or NMFS to ensure
+  that its authorized activities do not jeopardize listed species or
+  destroy critical habitat.
+- **Incidental take:** The unintentional, but not unexpected, harm to
+  a listed species that results from an otherwise lawful activity;
+  must be authorized through a Section 10 permit (private activities)
+  or Section 7 consultation (federal activities).
+- **NEPA (National Environmental Policy Act):** Federal law requiring
+  federal agencies to assess the environmental impacts of their
+  proposed actions; complex research proposals on federal lands may
+  trigger NEPA review, substantially extending the permit processing
+  timeline.
+- **RAMS (Reserve Application Management System):** The online portal
+  through which researchers and instructors apply for access to
+  University of California Natural Reserve System reserves
+  [@ucnrs_guidelines].
+- **RPRS (Research Permit and Reporting System):** The National Park
+  Service's online system for submitting research permit applications,
+  reporting annual activities, and communicating with park research
+  coordinators [@nps_rprs].
+- **Special Use Permit (SUP):** A general-purpose permit issued by
+  federal land management agencies (BLM, USFS) authorizing a
+  specific research project or activity on public lands; may take
+  60--120 days or more to process [@blm_science; @usfs_permits].
+- **Take:** Under California Fish and Game Code §86, to hunt, pursue,
+  catch, capture, or kill, or attempt to do so; under the federal
+  ESA, to harass, harm, pursue, hunt, shoot, wound, kill, trap,
+  capture, or collect, or attempt to do so.
+- **UC Natural Reserve System (UCNRS):** A network of 41+ reserves
+  managed by the University of California for research, teaching, and
+  public service; access requires an approved RAMS application
+  [@ucnrs_guidelines].
 
 
 ## General Principles
 
 ### Planning Timeline
 
-Permit processing times vary widely. As a general rule, submit
-applications at least 60--90 days before the planned start of field
-work. Some agencies (particularly federal ones involving NEPA review
-or listed species) may require 6 months or more. The table below
-provides typical lead times; always confirm with the specific office.
+Permit processing times vary widely. Submit applications at least
+60--90 days before the planned start of field work. Some agencies
+(particularly federal ones involving NEPA review or listed species)
+may require 6 months or more. Always confirm the current timeline
+with the specific office.
 
 | Agency / Institution       | Typical Lead Time      |
 |:---------------------------|:-----------------------|
@@ -84,10 +144,9 @@ provides typical lead times; always confirm with the specific office.
 A single field project can require permits from multiple agencies. For
 example, sampling macroinvertebrates in a stream within a National
 Forest may require a USFS Special Use Permit, a CDFW Scientific
-Collecting Permit, and (if listed species are present) a USFWS
-Section 10 permit. The land management agency will typically not
-finalize its own permit until copies of all other required permits are
-submitted.
+Collecting Permit, and (if listed species are present) a USFWS Section
+10 permit. The land management agency will typically not finalize its
+own permit until copies of all other required permits are submitted.
 
 ### Permit Files
 
@@ -118,7 +177,7 @@ insured party.
 
 The BFS is an 86-acre facility of The Claremont Colleges located at
 1400 N. Amherst Avenue, Claremont, CA. Access requires advance
-approval from the BFS Director.
+approval from the BFS Director [@bfs_userequest].
 
 **When a permit is needed:** All research projects, class field trips,
 and organized activities on the BFS require a Use Request, even for
@@ -130,43 +189,57 @@ pedestrian access also requires prior authorization.
 1. Contact the BFS Director (Dr. Wallace M. Meyer III,
    wallace.meyer\@pomona.edu, 909-621-8577) to discuss the proposed
    project
-2. Submit the appropriate online Use Request Form at
-   <https://bfs.sites.pomona.edu/using-the-bfs/apply-to-use/>:
-   - **Research Request Form** -- for all research projects
-     (including independent study and thesis research)
-   - **Course Request Form** -- for class field trips
-   - **Other Use Request Form** -- for community groups, outreach,
-     and non-research activities
-3. Await approval from the BFS Director before beginning any work
+2. Complete the online "Apply to Use" form at
+   <https://bfs.sites.pomona.edu/using-the-bfs/>
+3. Allow 1--2 weeks for approval; more complex projects may require
+   additional review
 
-**Special conditions:**
+**Website:** <https://bfs.sites.pomona.edu/using-the-bfs/>
 
-- The BFS is not a recreational park. All users must follow the BFS
-  Rules for Use, including staying on designated paths except when
-  conducting approved research
-- Multiple ongoing research projects may overlap spatially; coordinate
-  with the BFS Director to avoid conflicts
-- If your research involves listed or sensitive species (e.g., coastal
-  California gnatcatcher habitat in the sage scrub), you may also need
-  a CDFW Scientific Collecting Permit and/or USFWS authorization (see
-  Sections 5.4 and 5.5)
-- Provide a summary of findings to the BFS Director upon project
-  completion
+---
 
-**Website:** <https://bfs.sites.pomona.edu/>
+### California Department of Fish and Wildlife (CDFW)
+
+CDFW issues Scientific Collecting Permits (SCPs) for the take or
+possession of wildlife (mammals, birds, reptiles, amphibians, fish,
+certain plants, and invertebrates) for scientific, educational, and
+propagation purposes [@cdfw_scp].
+
+**When a permit is needed:** Any time your research involves
+capturing, handling, marking, or collecting wildlife -- or when there
+is potential for incidental take of sensitive species.
+
+**Permit types:**
+
+- **General Use SCP** -- for more common species, non-invasive
+  methods, and areas outside Marine Protected Areas
+- **Specific Use SCP** -- for focused studies involving prohibited
+  wildlife, more invasive methods, or sensitive locations including
+  MPAs
+
+**How to apply:**
+
+1. Review the SCP regulations (Title 14, Section 650, CCR) and
+   Standard Conditions at <https://wildlife.ca.gov/Licensing/Scientific-Collecting>
+2. Apply online through the Scientific Collecting Permit Portal (SCPP)
+3. Pay the required permit fee before issuance
+
+**CESA-listed species:** Requires a separate CESA Memorandum of
+Understanding from CDFW in addition to the SCP.
+
+**Reporting:** Each permitholder must submit a Mandatory Wildlife
+Report (form DFW 1379a) annually.
+
+**Website:** <https://wildlife.ca.gov/Licensing/Scientific-Collecting>
 
 ---
 
 ### California Department of Parks and Recreation (State Parks)
 
-California State Parks requires a Scientific Research and Collecting
-Permit (form DPR 65) for most scientific activities conducted within
-the State Park System, including field work, specimen collection, and
-systematic data collection intended for publication.
-
-**When a permit is needed:** If you intend to collect specimens or
-data and/or produce a written document of your findings (thesis,
-paper, report), a permit is required.
+**When a permit is needed:** Any scientific research, data collection,
+specimen collection, or installation of monitoring equipment in
+California State Park System lands requires written authorization
+[@caparks_research].
 
 **How to apply:**
 
@@ -176,22 +249,14 @@ paper, report), a permit is required.
    Guidelines for Research in California State Parks
 3. Submit the application, study proposal, proof of insurance, and
    copies of any other required permits (CDFW, USFWS, etc.) to the
-   appropriate State Parks district office or, for multi-district
-   projects, to the Natural Resources Division in Sacramento at
+   appropriate State Parks district office; for multi-district
+   projects, submit to the Natural Resources Division in Sacramento at
    nrd.research\@parks.ca.gov
-4. Allow 60--90 days for processing. Projects involving soil
-   disturbance, sensitive resources, or sensitive areas may take
-   longer
+4. Allow 60--90 days for processing
 
-**Conditions and reporting:**
-
-- Collecting is limited to what is necessary for the approved project;
-  collected materials may not be used for commercial profit
-- The PI must submit a summary report of activities and findings to
-  State Parks, and renewal is contingent on receipt of this report
-- All work must be conducted in a manner that minimizes impact on park
-  resources, away from roads, trails, and developed areas when
-  feasible
+**Reporting:** A summary report of activities and findings must be
+submitted to State Parks; renewal is contingent on receipt of this
+report.
 
 **Website:** <https://www.parks.ca.gov/?page_id=21557>
 
@@ -199,10 +264,8 @@ paper, report), a permit is required.
 
 ### University of California Natural Reserve System (UCNRS)
 
-The UCNRS manages 41+ reserves across California representing most
-major state ecosystems. Unlike state and national parks, the reserves
-are not open to recreational use; they exist specifically for
-research, teaching, and public service.
+The UCNRS manages 41+ reserves across California for research,
+teaching, and public service [@ucnrs_guidelines].
 
 **When a permit is needed:** All research projects and class visits
 require an approved application through the Reserve Application
@@ -210,76 +273,22 @@ Management System (RAMS).
 
 **How to apply:**
 
-1. Contact the reserve director(s) of the site(s) you wish to use to
-   discuss project requirements and suitability
+1. Contact the reserve director(s) to discuss project requirements
 2. Review the NRS Use Guidelines at
    <https://ucnrs.org/reserve-research-guidelines/>
 3. Submit a research application through RAMS at
    <https://rams.ucnrs.org>
-4. Once the application is approved by the reserve director, submit a
-   Reservation for each planned visit through RAMS
-5. Download and submit reserve waivers of liability as required
+4. Once approved, submit a Reservation for each planned visit through
+   RAMS
 
 **Special conditions:**
 
-- IACUC approval is required if the project involves vertebrate
-  animals; copies must be submitted before work begins
-- Additional agency permits (CDFW, USFWS) may be required depending
-  on the species and activities involved
-- The NRS prohibits activities that translocate non-native genotypes
-  to or from NRS sites
-- Facility rates vary by reserve; day use is free at most reserves
-- All equipment and infrastructure must be removed and sites restored
-  at the conclusion of each project
+- IACUC approval required if the project involves vertebrate animals
+- Additional agency permits (CDFW, USFWS) may be required
+- All equipment must be removed and sites restored at project
+  conclusion
 
 **Website:** <https://ucnrs.org/>
-
----
-
-### California Department of Fish and Wildlife (CDFW)
-
-CDFW issues Scientific Collecting Permits (SCPs) for the take or
-possession of wildlife (mammals, birds, reptiles, amphibians, fish,
-certain plants, and invertebrates) for scientific, educational, and
-propagation purposes.
-
-**When a permit is needed:** Any time your research involves
-capturing, handling, marking, or collecting wildlife -- or when there
-is potential for incidental take of sensitive species. "Take" under
-California Fish and Game Code Section 86 means to hunt, pursue, catch,
-capture, or kill, or attempt to do so.
-
-**Permit types:**
-
-- **General Use SCP** -- for more common species, non-invasive
-  methods, and areas outside Marine Protected Areas. Issued for inland
-  fisheries (DFW 1379GF), marine (DFW 1379GM), or terrestrial
-  wildlife (DFW 1379GW)
-- **Specific Use SCP** -- for focused studies involving prohibited
-  wildlife, more invasive methods, or sensitive locations including
-  MPAs (form DFW 1379S)
-
-**How to apply:**
-
-1. Review the SCP regulations (Title 14, Section 650, CCR) and
-   Standard Conditions at
-   <https://wildlife.ca.gov/Licensing/Scientific-Collecting>
-2. Apply online through the Scientific Collecting Permit Portal (SCPP)
-3. Pay the required permit fee before issuance
-
-**Additional authorizations that may be needed:**
-
-- **CESA-listed species** (threatened, endangered, or candidate under
-  the California Endangered Species Act): requires a separate CESA
-  Memorandum of Understanding from the appropriate CDFW review program
-- **Fully Protected species**: requires a Fully Protected MOU
-- **Federally listed species**: requires a federal ESA authorization
-  (see Section 5.5)
-
-**Reporting:** Each permitholder must submit a Mandatory Wildlife
-Report (form DFW 1379a) annually.
-
-**Website:** <https://wildlife.ca.gov/Licensing/Scientific-Collecting>
 
 ---
 
@@ -287,37 +296,29 @@ Report (form DFW 1379a) annually.
 
 USFWS administers permits for activities involving species listed
 under the federal Endangered Species Act (ESA), migratory birds
-(Migratory Bird Treaty Act), and wildlife on National Wildlife
-Refuges.
+(Migratory Bird Treaty Act), and wildlife on National Wildlife Refuges
+[@usfws_esa_s10].
 
 **When a permit is needed:**
 
-- Any research involving take (including capture, handling, or
-  harassment) of federally listed threatened or endangered species
-  requires a Section 10(a)(1)(A) recovery permit
-- Research involving migratory birds (banding, capture, nest
-  monitoring) requires a federal Bird Banding Permit and/or Scientific
-  Collecting Permit
-- Research conducted on National Wildlife Refuge lands requires a
-  Special Use Permit from the refuge manager
+- Take of federally listed threatened or endangered species requires
+  a Section 10(a)(1)(A) recovery permit
+- Research involving migratory birds requires a federal Bird Banding
+  Permit and/or Scientific Collecting Permit
+- Research on National Wildlife Refuge lands requires a Special Use
+  Permit from the refuge manager
 
 **How to apply:**
 
-1. For ESA-listed species: submit form 3-200-55 (Scientific Purposes,
-   Enhancement of Propagation or Survival) through the USFWS
+1. For ESA-listed species: submit form 3-200-55 through the USFWS
    Endangered Species permits portal
 2. For migratory birds: apply through the USFWS Bird Banding
    Laboratory or the federal permits portal
-3. For refuge access: contact the specific refuge manager to discuss
-   the project and obtain a Special Use Permit
+3. For refuge access: contact the specific refuge manager
 
-**Key considerations:**
-
-- Section 10 permit applications are subject to Federal Register
-  notice and a 30-day public comment period
-- Processing times are long (3--12 months); plan well ahead
-- Under federal law, specimens collected remain federal property
-- Annual reports are required for all active permits
+**Key considerations:** Section 10 applications are subject to a
+30-day Federal Register public comment period; processing times are
+3--12 months. Annual reports are required for all active permits.
 
 **Website:** <https://www.fws.gov/service/apply-permit>
 
@@ -326,34 +327,22 @@ Refuges.
 ### Bureau of Land Management (BLM)
 
 BLM manages extensive public lands in California, including desert,
-grassland, and mountain areas where EA Program research may occur.
+grassland, and mountain areas where EA Program research may occur
+[@blm_science].
 
 **When a permit is needed:** Any organized research activity on
 BLM-managed lands, including specimen collection, installation of
-monitoring equipment, and systematic surveys, requires coordination
-with the local BLM Field Office.
+monitoring equipment, and systematic surveys.
 
 **How to apply:**
 
-1. Contact the nearest BLM Field Office to discuss the proposed
-   research. A directory is available at <https://www.blm.gov/office/directory>
-2. BLM staff will determine whether a formal Special Recreation
-   Permit, a research authorization, or another type of approval is
-   needed
-3. Submit the required application materials, including maps, project
-   descriptions, and copies of any other agency permits (CDFW, USFWS)
-4. Allow 60--120 days for processing; complex projects requiring NEPA
-   analysis may take longer
-
-**Special conditions:**
-
-- Casual collecting of common invertebrate and plant fossils is
-  allowed without a permit under the Paleontological Resources
-  Preservation Act, but vertebrate fossil collection always requires a
-  permit
-- Research on BLM lands involving listed species will require
-  coordination with USFWS or NMFS under ESA Section 7
-- Researchers are encouraged to share findings with BLM staff
+1. Contact the nearest BLM Field Office at
+   <https://www.blm.gov/office/directory>
+2. BLM staff will determine whether a Special Recreation Permit,
+   research authorization, or another approval type is needed
+3. Submit required application materials (maps, project description,
+   copies of other agency permits)
+4. Allow 60--120 days; complex NEPA projects may take longer
 
 **Website:** <https://www.blm.gov/learn/science-in-the-blm/conducting-science>
 
@@ -362,79 +351,56 @@ with the local BLM Field Office.
 ### National Park Service (NPS)
 
 NPS requires a Scientific Research and Collecting Permit for most
-scientific activities related to natural or social science resources
-in any unit of the National Park System.
+scientific activities in any unit of the National Park System
+[@nps_rprs].
 
-**When a permit is needed:** If you propose any study in the natural
-sciences (biology, geology, physics) or social sciences (visitor
-surveys, education research) within a national park, monument,
-seashore, or other NPS unit, you need a permit.
+**When a permit is needed:** Any study in the natural or social
+sciences within a national park, monument, seashore, or other NPS
+unit.
 
 **How to apply:**
 
-1. Create an investigator account in the Research Permit and Reporting
-   System (RPRS) at <https://irma.nps.gov/rprs/>
-2. Locate the park profile in RPRS (Search > Parks) to find the
-   research coordinator's contact information and any park-specific
-   conditions
-3. Submit a complete application and research proposal through RPRS
-4. The park's research coordinator will review the application, and a
-   draft permit will be prepared for your review. The final permit
-   must be signed by both the investigator and a park official
+1. Create an investigator account in the Research Permit and
+   Reporting System (RPRS) at <https://irma.nps.gov/rprs/>
+2. Locate the park profile in RPRS and contact the research
+   coordinator for park-specific conditions
+3. Submit the application through RPRS; allow 60--120 days
+4. Annual reports are submitted through RPRS
 
-**Conditions and reporting:**
-
-- A printed copy of the signed permit must be carried during all field
-  work inside the park
-- Investigator Annual Reports (IARs) must be submitted through RPRS
-  every year the permit is active
-- Copies of final reports, publications, and other products must be
-  provided to the park
-- Specimens collected remain federal property under NPS authority;
-  repository arrangements must be specified in the permit application
-- Failure to submit IARs may result in denial of future permits
-
-**Website:** <https://www.nps.gov/subjects/science/research-permit.htm>
+**Website:** <https://www.nps.gov/subjects/science/research-and-collecting-permit-overview.htm>
 
 ---
 
 ### USDA Forest Service (USFS)
 
-National Forests are managed for multiple use, and a permit is
-required to conduct research on Forest Service-managed lands.
+USFS manages National Forest System (NFS) lands through local Ranger
+District offices [@usfs_permits].
 
-**When a permit is needed:** Any research activity on National Forest
-System (NFS) lands, including collection of plants or animals,
-installation of equipment, and systematic surveys. Some low-impact
-observational studies may qualify for a Research Permit Waiver at the
-discretion of the local forest staff.
+**When a permit is needed:** Any organized research activity on NFS
+lands, including specimen collection, installation of monitoring
+equipment, and systematic surveys.
 
 **How to apply:**
 
-1. Contact the Ranger District office for the National Forest where
-   you plan to work. For Southern California, relevant forests include
-   the San Bernardino, Angeles, Cleveland, and Los Padres National
-   Forests
+1. Contact the Ranger District office for the relevant National
+   Forest (for Southern California: San Bernardino, Angeles,
+   Cleveland, or Los Padres)
 2. Download and complete a Research Special-Use Operating
-   Plan/Itinerary from the forest's website and email it to the
+   Plan/Itinerary from the forest's website and submit it to the
    district permit coordinator
 3. Forest staff will determine whether a full Special Use Permit or a
    Research Permit Waiver is appropriate
-4. Applications undergo initial screening and may require NEPA
-   analysis; allow 60--120 days for processing
+4. Allow 60--120 days; projects requiring NEPA analysis may take
+   longer
 
 **Special conditions:**
 
 - Projects involving wildlife or threatened/endangered plants may
-  require additional authorization from CDFW and/or USFWS (ESA
-  Section 7 consultation)
-- A summary of findings (theses, papers, reports) must be provided to
-  the Forest Service upon completion
-- Equipment left on NFS lands must be authorized under the permit and
-  removed at project conclusion
+  require additional CDFW and/or USFWS authorization
+- A summary of findings must be provided to the Forest Service upon
+  completion
 
-**Website:** <https://www.fs.usda.gov/> (navigate to the specific
-National Forest's permits page)
+**Website:** <https://www.fs.usda.gov/>
 
 
 ## Permit Decision Flowchart
@@ -442,63 +408,54 @@ National Forest's permits page)
 Use the following steps to determine what permits you need:
 
 1. **Identify the land manager.** Who owns or manages the land where
-   you will work? (BFS, State Parks, UCNRS, BLM, NPS, USFS, private,
-   etc.)
+   you will work?
 2. **Obtain the land access permit** from the land manager (Sections
    5.1--5.8 above).
 3. **Will you handle, capture, collect, or disturb wildlife?** If yes,
-   you likely need a CDFW Scientific Collecting Permit (Section 5.4).
-4. **Are any federally listed species present at your site, or could
-   they be incidentally encountered?** If yes, you likely need a
-   USFWS Section 10 permit or ESA Section 7 consultation through the
-   land management agency (Section 5.5).
-5. **Are any state-listed species (CESA) present?** If yes, you need a
-   CESA MOU from CDFW in addition to your SCP (Section 5.4).
-6. **Does the land manager require proof of other agency permits
-   before issuing its own?** If yes, obtain the other permits first
-   and submit copies with your land access application.
+   you likely need a CDFW Scientific Collecting Permit (§5.2).
+4. **Are any federally listed species present, or could they be
+   incidentally encountered?** If yes, you likely need a USFWS Section
+   10 permit or ESA Section 7 consultation (§5.5).
+5. **Are any state-listed species (CESA) present?** If yes, you need
+   a CESA MOU from CDFW in addition to the SCP (§5.2).
+6. **Does the land manager require other agency permits before issuing
+   its own?** If yes, obtain those permits first and submit copies
+   with your land access application.
 
 ::: {.callout-tip}
 ### When in doubt, ask
-
-If you are unsure whether a permit is required, contact the agency.
-It is always better to ask in advance than to be stopped in the field
-or to have your data and specimens invalidated.
+If you are unsure whether a permit is required, contact the agency
+before beginning field work. It is always better to ask in advance
+than to be stopped in the field or have your data and specimens
+invalidated.
 :::
 
 
 ## References
 
-- California Department of Fish and Wildlife. Scientific Collecting
-  Permits. <https://wildlife.ca.gov/Licensing/Scientific-Collecting>
-- California Department of Parks and Recreation. Scientific Research
-  and Collecting on State Park System Lands.
-  <https://www.parks.ca.gov/?page_id=21557>
-- Robert J. Bernard Biological Field Station. Rules for Use and Apply
-  to Use. <https://bfs.sites.pomona.edu/using-the-bfs/>
-- U.S. Bureau of Land Management. Conducting Science on BLM Lands.
-  <https://www.blm.gov/learn/science-in-the-blm/conducting-science>
-- U.S. Fish and Wildlife Service. Endangered Species Act Section 10.
-  <https://www.fws.gov/laws/endangered-species-act/section-10>
-- U.S. Forest Service, San Bernardino National Forest. Research and
-  Collection Permits.
-  <https://www.fs.usda.gov/r05/sanbernardino/permits/research-and-collection-permits>
-- U.S. National Park Service. Research and Collecting Permit Overview.
-  <https://www.nps.gov/subjects/science/research-and-collecting-permit-overview.htm>
-- University of California Natural Reserve System. Reserve Research
-  Guidelines. <https://ucnrs.org/reserve-research-guidelines/>
+- @cdfw_scp
+- @caparks_research
+- @bfs_userequest
+- @ucnrs_guidelines
+- @usfws_esa_s10
+- @blm_science
+- @nps_rprs
+- @usfs_permits
+- @usfws_edna2019
+
+::: {#refs}
+:::
 
 
 ## Related SOPs
 
 | SOP   | Title                                  | Relationship                      |
 |:------|:---------------------------------------|:----------------------------------|
-| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required reading before any field work |
-| [F002](SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | Carry permit copies in field kit |
-| [F007](SOP-F007-field-decontamination.qmd) | Field Decontamination     | Required by many agency permits   |
-| [F610](SOP-F610-macroinvertebrate-sampling.qmd) | Macroinvertebrate Sampling | Typically requires CDFW SCP |
-| [F611](SOP-F611-pollinator-observation-surveys.qmd) | Pollinator Surveys   | May require CDFW SCP             |
-| [F700](SOP-F700-edna-field-sampling.qmd) | eDNA Field Sampling       | May require CDFW SCP for target taxa |
+| [F001](SOP-F001-field-safety.qmd)              | Field Safety              | Required reading before any field work |
+| [F002](SOP-F002-field-equipment-checklist.qmd) | Field Equipment Checklist | Carry permit copies in field kit  |
+| [F007](SOP-F007-field-decontamination.qmd)     | Field Decontamination     | Required by many agency permits   |
+| [F610](SOP-F610-macroinvertebrate-sampling.qmd) | Macroinvertebrate Sampling | Typically requires CDFW SCP      |
+| [F700](SOP-F700-edna-field-sampling.qmd)       | eDNA Field Sampling       | May require CDFW SCP for target taxa |
 
 
 ## Training Record
@@ -508,6 +465,7 @@ Before leading field work on any permitted site, personnel must:
 1. Read this SOP in full
 2. Identify all permits required for their specific project and site
 3. Confirm with the PI that all permits are active and in hand
-4. Know where to find copies of active permits (digital and/or printed)
+4. Know where to find copies of active permits (digital and/or
+   printed)
 5. Understand the reporting requirements for each active permit
 6. Be signed off by the PI or designated field lead
