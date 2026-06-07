@@ -59,6 +59,8 @@ website:
           - lab_sops/SOP-L400-soil-moisture.qmd
 format:
   html:
+    filters:
+      - _templates/sop-badge.lua
     format-links: [pdf]
     theme:
       light: [flatly, custom.scss]
