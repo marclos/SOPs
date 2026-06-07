@@ -4,48 +4,38 @@ sop-number: "SOP-F300"
 author:
   - name: "Marc Los Huertos"
     affiliation: "EA Program, Pomona College"
-approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.8"
+revision: "0.2"
 
 revision-history:
-  - version: "0.8"
-    date: "2022-02-02"
+  - version: "0.1"
+    date: "2025-05-15"
     author: "Marc Los Huertos"
-    changes: "Initial draft"
-  - version: "0.9"
-    date: "2025-01-15"
+    changes: "Initial release"
+  - version: "0.2"
+    date: "2026-06-07"
     author: "Marc Los Huertos"
-    changes: "Converted to QMD format"
+    changes: "Added Definitions; converted plain-text references to
+              BibTeX; added {#refs} div"
 ---
 
 ## Purpose
 
-This SOP describes procedures for manually collecting surface water samples from lotic and lentic water bodies, wastewater treatment plant access points, outfalls, pipes, and drains. It also covers sampling while wading on beaches and from boats and bridges.
-
-The scope of this SOP is to train researchers to sample surface waters using protocols consistent with those approved by the EPA and California's State Water Ambient Water Monitoring Program (SWAMP), ensuring that data meet specified quality assurance and quality control standards.
-
-This SOP does not cover operation of unattended automated sampling devices, pelagic marine sampling, or groundwater sampling.
+This SOP describes procedures for the manual collection, preservation,
+and handling of surface water samples. Representative samples are
+required for defensible water quality data [@apha2012;
+@usepa2014fieldsampling].
 
 
 ## Scope
 
-- **Applies to:** Manual collection of surface water samples from streams, rivers, lakes, ponds, lagoons, surface impoundments, wastewater access points, and outfalls
-- **Does not apply to:** Automated sampling devices, pelagic marine sampling, groundwater sampling
+- **Applies to:** Manual collection of surface water samples from
+  streams, rivers, lakes, ponds, lagoons, surface impoundments,
+  wastewater access points, and outfalls
+- **Does not apply to:** Automated sampling devices, pelagic marine
+  sampling, or groundwater sampling
 - **Location:** All EA Program surface water field sites
-
-
-## Summary of Method
-
-Sampling situations vary widely, and no universal procedure can be recommended. However, representative samples from most surface waters can be collected using one or more of the following techniques:
-
-- Bailers
-- Dip samplers
-- Direct method (hand collection)
-- Discrete depth samplers (e.g., Kemmerer or Van Dorn bottles)
-- Peristaltic pumps
-- Stormwater collection devices
 
 
 ## Responsibilities
@@ -59,10 +49,55 @@ Sampling situations vary widely, and no universal procedure can be recommended. 
 
 ### Required Training
 
-Researchers using this SOP should be trained on:
-
 - [SOP-F001 Field Safety](SOP-F001-field-safety.qmd)
-- [SOP-L003 Hazardous Materials Handling](../lab_sops/SOP-L003-hazardous-materials-handling.qmd) (for sample preservation chemicals)
+- [SOP-L003 Hazardous Materials Handling](../lab_sops/SOP-L003-hazardous-materials-handling.qmd)
+  (for sample preservation chemicals)
+
+
+## Definitions
+
+- **Bailer:** A cylindrical sampling device lowered on a line to
+  collect water at a specific depth; commonly used in wells and deep
+  water; can be disposable (polyethylene) or reusable (stainless
+  steel).
+- **Bottle blank:** A sample container filled with laboratory-pure
+  water, preserved identically to field samples, and submitted to the
+  laboratory as a QC sample to detect contamination from the container
+  or washing process [@apha2012].
+- **Chain of custody (COC):** A legal record of sample possession at
+  every transfer point from collection to analysis; must accompany all
+  samples; see [SOP-F008](SOP-F008-sample-labeling-coc-transport.qmd)
+  for the full procedure [@usepa2014fieldsampling].
+- **Discrete-depth sampler:** A device (Van Dorn, Kemmerer bottle) that
+  collects a water sample from a specific depth without mixing with
+  overlying or underlying water; tripped by a messenger weight.
+- **Equipment blank:** Laboratory-pure water poured through or into
+  sampling equipment in the field, collected and analyzed as a QC
+  sample to verify equipment cleanliness.
+- **Field duplicate:** A second sample collected at the same time and
+  location as a primary sample and submitted blind to the laboratory;
+  used to assess field and laboratory precision.
+- **Grab sample:** A single-point, instantaneous water sample collected
+  at one time and place; represents conditions at that moment only; the
+  simplest and most common field collection method [@apha2012].
+- **Holding time:** The maximum elapsed time between sample collection
+  and analysis within which the sample remains analytically valid;
+  analyte- and preservative-specific (e.g., 6 h for E. coli, 28 d for
+  nitrate preserved with H~2~SO~4~) [@apha2012].
+- **Peristaltic pump:** A battery-operated field sampling pump that
+  moves sample water through disposable tubing by compressing the tube
+  with rollers; used to collect samples from depths or locations
+  inaccessible by hand.
+- **Preservative:** A chemical added to a sample container to retard
+  biological or chemical degradation of target analytes during
+  transport and storage (e.g., H~2~SO~4~ for nutrients, HNO~3~ for
+  metals, Na~2~S~2~O~3~ for chlorine) [@apha2012].
+- **Sampler blank:** Laboratory-pure water passed through or into a
+  sampling device (bailer, peristaltic pump) and submitted as a QC
+  sample to verify the device is clean.
+- **Zero headspace:** A sample container filled completely with no air
+  gap; required for volatile organic compound (VOC) samples to prevent
+  analyte loss to the headspace.
 
 
 ## Safety and Hazards
@@ -70,175 +105,225 @@ Researchers using this SOP should be trained on:
 ::: {.callout-warning}
 ### Hazards
 
-- **Biological/Chemical:** Water bodies may be contaminated; avoid ingestion and direct skin contact
-- **Physical:** Drowning risk, slippery surfaces, swift currents, unstable banks, bridge traffic
-- **Chemical:** Sample preservatives (acids, bases) used in pre-preserved bottles
+- **Biological/Chemical:** Water bodies may be contaminated; avoid
+  ingestion and direct skin contact.
+- **Physical:** Drowning risk, slippery surfaces, swift currents,
+  unstable banks, and bridge traffic.
+- **Chemical:** Sample preservatives (H~2~SO~4~, HNO~3~, NaOH) in
+  pre-preserved bottles are corrosive.
 :::
 
 ### Required PPE
 
-- [ ] Latex or nitrile gloves (for hygienic protection)
+- [ ] Latex or nitrile gloves
 - [ ] Leather gloves (for handling ropes and cables)
-- [ ] Anti-bacterial hand sanitizer or soap
-- [ ] Personal flotation device (PFD) when sampling from boats or in deep/swift water
+- [ ] Antibacterial hand sanitizer or soap
+- [ ] Personal flotation device (PFD) when sampling from boats or in
+      deep/swift water
 - [ ] Safety vest and lines (as appropriate for the site)
 - [ ] Traffic control signs and cones (for bridge sampling)
 
 ### Emergency Procedures
 
-Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for emergency response procedures, including medical emergencies near water.
+Refer to [SOP-F001 Field Safety](SOP-F001-field-safety.qmd) for
+emergency response procedures, including medical emergencies near
+water.
+
+
+## Summary of Collection Methods
+
+Sampling situations vary widely and no universal procedure applies.
+Representative samples from most surface waters can be collected by
+one or more of the following:
+
+- Bailers
+- Dip samplers
+- Direct method (hand collection)
+- Discrete depth samplers (Kemmerer or Van Dorn bottles)
+- Peristaltic pumps
+- Stormwater collection devices
+
+[@apha2012; @usepa2014fieldsampling]
 
 
 ## Required Materials
 
 ### Field Documentation
 
-- Field notebook and pens
-- Chain of custody forms
+- Field notebook and pens (per
+  [SOP-F003](SOP-F003-field-notebook-protocols.qmd))
+- Chain of custody forms (per
+  [SOP-F008](SOP-F008-sample-labeling-coc-transport.qmd))
 - Sample tags with assigned sample numbers
 - Field data sheets
 
 ### Sampling Equipment
 
-| Item                                    | Notes                                      |
-|:----------------------------------------|:-------------------------------------------|
-| 500 or 1000 mL sampling bottles        | Polypropylene or glass, as required        |
-| Syringe and filters for field filtering | For dissolved analyte samples              |
-| Stainless or Teflon dipper             | For surface grab samples                   |
+| Item                                   | Notes                                      |
+|:---------------------------------------|:-------------------------------------------|
+| 500 or 1000 mL sampling bottles        | Polypropylene or glass, as required by the analyte |
+| Syringe filters (0.45 µm)              | For dissolved analyte samples              |
+| Stainless steel or Teflon dipper       | For surface grab samples                   |
 | Depth-integrated sampler               | For vertically integrated samples          |
 | Van Dorn or Kemmerer sampler           | For discrete depth samples                 |
-| Extension pole with container attachment | For sampling from piers, docks, or banks |
-| Ropes, cables, rods                    | As needed for deployment                   |
-| Deionized/ultrapure distilled water    | For blanks and rinsing                     |
-| Disinfection supplies                  | Brushes, solutions to prevent invasive species transfer |
+| Extension pole with container holder   | For sampling from piers, docks, or banks   |
+| Deionized / ultrapure distilled water  | For blanks and equipment rinsing           |
+| Decontamination supplies               | To prevent invasive species transfer       |
 
 ### Transport and Storage
 
 | Item                          | Notes                                        |
 |:------------------------------|:---------------------------------------------|
-| Coolers with ice              | Regular, blue, or dry ice depending on shipping method |
-| Pre-labeled sampling containers | From the analytical lab, with preservatives if needed |
-| Custody seals                 | For sealing coolers prior to shipment        |
+| Coolers with ice              | Pre-chilled to 4 °C                          |
+| Pre-labeled sample containers | From the analytical lab, with preservatives  |
+| Custody seals                 | For sealing coolers before shipment          |
 
 
-## Interferences
+## Interferences and Contamination Prevention
 
 ::: {.callout-important}
-### Critical Contamination Prevention
-
-The inner surfaces of sample bottles and caps must not be touched with bare hands, gloves, or any other material. Sample bottles must be kept in a clean environment away from dust, dirt, fumes, and grime.
+### Critical
+The inner surfaces of sample bottles and caps must not be touched
+with bare hands, gloves, or any other material. Keep sample bottles
+in a clean environment away from dust, dirt, fumes, and vehicle
+exhaust [@apha2012].
 :::
 
-- All sampling equipment must be clean and free of contaminants before use
-- Use only the recommended type of sample bottle for each parameter
-- Water sample bottles must be used for water samples only; never reuse bottles that have held concentrated reagents
-- Before field use, all preservatives must be tested and glassware spot-tested for cleanliness
-- The sample collector should keep hands clean and refrain from smoking while handling samples
-- Petroleum products (gasoline, oil, exhaust fumes) are prime sources of contamination; remove spills immediately
-- Exhaust fumes and cigarette smoke can contaminate samples with lead and other heavy metals
-- Air conditioning units are also a source of trace metal contamination
-- Solvent-rinsed Teflon or aluminum foil liners can prevent contamination from bottle caps for samples analyzed for organic compounds
-- Filter units must be kept clean (acid-washed, soaked in special solutions) and wrapped in solvent-rinsed aluminum foil
-- Sterilized bottles must remain sterile until sample collection; discard if the seal has been broken
-- All foreign and especially metal objects must be kept away from acids and water samples
-- Specific conductance should never be measured on water first used for pH measurements (KCl from the pH probe alters conductivity)
+- Collect samples upstream of your position and upstream of any
+  sampling-related disturbance.
+- Sample away from areas influenced by tributaries, outfalls, or other
+  point sources unless those features are the target.
+- Change gloves between sample sites to prevent cross-contamination.
 
 
-## Procedures
+## Procedure
 
-### Preparation
+### Field Collection -- Direct Method (Grab Sample)
 
-Before sampling, the field investigator must:
-
-1. Ensure sampling station locations and frequency are defined in the project design
-2. Prepare accurate station location descriptions on the first visit to each site and follow them consistently on subsequent visits (temporal changes in water quality can only be interpreted with confidence if the same location is sampled each time)
-3. Determine the hydrology and morphometrics (volume, depth, etc.) of the water body prior to sampling to identify phases, layers, flow patterns, and appropriate sample locations and depths
-4. In impoundments, collect water quality profiles (dissolved oxygen, pH, temperature, conductivity, and ORP) at 1-meter intervals from substrate to surface to identify stratification
-
-The selection of a sampling device depends on:
-
-- Whether the sample will be collected from shore or from a boat
-- The desired sampling depth
-- The overall depth and flow direction of the water body
-- The chemical nature of the analytes (floating vs. dissolved)
-
-### Field Collection -- Direct Method
-
-1. Remove the stopper or lid from the container just before sampling
-2. Avoid contaminating the cap, neck, or inside of the bottle with fingers, wind-blown particles, or dripping water
-3. **If no preservative is present in the container:** face upstream in flowing water and upwind in still water, hold the container near its base, reach out in front of your body, and plunge it mouth-down below the surface to approximately mid-water column
-4. If the water is too shallow for this technique (risk of disturbing sediment), collect a surface water sample and note the change of method in the field notebook
-5. Fill the bottle to the appropriate level for the analyte being tested
-6. Pour out a small volume to create headspace for mixing in the lab, except for volatile organics and alkalinity samples (no headspace)
+1. Remove the stopper or lid from the container just before sampling.
+2. Do not contaminate the cap, neck, or inside of the bottle.
+3. **If no preservative is present:** Face upstream in flowing water
+   (or upwind in still water). Hold the container near its base,
+   reach out in front of your body, and plunge it mouth-down below the
+   surface to approximately mid-water column.
+4. If the water is too shallow for this technique (risk of disturbing
+   sediment), collect a surface water sample and note the change of
+   method in the field notebook.
+5. Fill the bottle to the appropriate level for the target analyte.
+6. Leave a small headspace for mixing, **except** for volatile organics
+   and alkalinity samples (no headspace).
 
 ### Field Collection -- Extension Pole
 
-1. Securely attach the sample container (with lid in place) to the pole holder using clamps or bands
-2. Remove the container lid carefully to avoid contamination
-3. Follow the direct method procedure above
-4. Do not use this method for containers with preservative already present; use intermediate devices instead (Section 8.4)
+1. Securely attach the sample container (lid in place) to the pole
+   holder using clamps.
+2. Remove the lid carefully to avoid contamination.
+3. Follow the direct method procedure above.
+4. Do not use this method for pre-preserved containers; use
+   intermediate devices instead.
 
 ### Field Collection -- Pre-Preserved Containers
 
-1. Hold the container upright
-2. Place the lid over the mouth so that only a small area forms an opening
-3. Submerge and fill carefully to avoid loss of preservative
+1. Hold the container upright.
+2. Place the lid over the mouth to create a small opening.
+3. Submerge and fill carefully to avoid spilling or diluting the
+   preservative.
 
 ### Field Collection -- Intermediate Devices
 
-For samples collected using Van Dorn, Kemmerer, bailers, or peristaltic pumps, follow the specific device operating instructions. Transfer collected water to the appropriate labeled sample containers promptly.
+For samples collected via Van Dorn, Kemmerer, bailer, or peristaltic
+pump, follow the device operating instructions (see
+[SOP-F202](SOP-F202-sontek-velocity-meters.qmd) for pump procedures).
+Transfer collected water to appropriate labeled sample containers
+promptly [@usepa2014fieldsampling].
 
 ::: {.callout-tip}
-### Tip
-Periodic "sampler blanks" consisting of ultrapure distilled water poured into or passed through the sampler should be prepared and submitted for laboratory analysis to verify sampler cleanliness.
+### Sampler Blanks
+Prepare periodic sampler blanks by pouring ultrapure distilled water
+through or into the sampler and submitting for laboratory analysis to
+verify cleanliness [@apha2012].
 :::
 
 
 ## Sample Preservation, Handling, and Storage {#sec-preservation}
 
-Once samples have been collected:
+Once samples are collected:
 
-1. Transfer the sample(s) into suitable labeled sample containers
-2. Preserve the sample if appropriate, or verify that pre-preserved bottles were used
-3. Record all pertinent data in the site logbook and on a field data sheet
-4. Complete the chain of custody form
-5. Attach custody seals to the cooler prior to shipment
-6. Decontaminate all sampling equipment before collecting additional samples
+1. Transfer samples to correctly labeled containers.
+2. Preserve immediately, or verify that pre-preserved bottles were
+   used (see holding-time requirements, Table 9.1 in @apha2012).
+3. Record all pertinent data in the field notebook and on the COC form.
+4. Attach custody seals to the cooler before transport.
+5. Decontaminate all sampling equipment before collecting additional
+   samples (see [SOP-F007](SOP-F007-field-decontamination.qmd)).
 
 ::: {.callout-important}
-Samples must never be permitted to stand in the sun. Store samples on ice in coolers immediately after collection and ship to the laboratory without delay.
+Samples must never stand in the sun. Store on ice in coolers
+immediately after collection and ship to the laboratory without delay
+[@usepa2014fieldsampling].
 :::
 
 
-## Quality Control and Quality Assurance
+## Quality Control
 
 ### Bottle Blanks
 
-Prior to each field sampling trip, select one sample bottle per ten of each type being used, fill with ultrapure distilled water, preserve in the same manner as field samples, and submit with field samples for analysis as "bottle blanks." This detects contamination from the bottle washing process.
+Before each field trip, select one sample bottle per ten of each
+container type, fill with ultrapure distilled water, preserve
+identically to field samples, and submit for analysis as a "bottle
+blank" [@apha2012].
 
-### Field Measurement Sub-Samples
+### Field Duplicates
 
-Field measurements (pH, conductivity, temperature, DO) should always be made on a separate sub-sample, which is then discarded. Never make field measurements on the same water sample that will be returned to the laboratory for chemical analysis.
+Collect one field duplicate per 10 samples (minimum one per event).
+Duplicates are collected from the same location at the same time and
+submitted blind to the laboratory.
 
-### General Precautions
+### Equipment Blanks
 
-- On the occasion that any procedure in this SOP is inappropriate, inadequate, or impractical and a variant procedure must be used, document the variant procedure and the circumstances requiring its use in the field logbook
-- Vehicle cleanliness is important for eliminating contamination; inspect and clean vehicles before transporting samples
+When non-dedicated sampling equipment is used, collect an equipment
+blank (ultrapure distilled water through the equipment) and submit
+for analysis.
+
+### Documentation
+
+- Complete the COC form before samples leave the field.
+- Record all deviations from this SOP in the field notebook.
+- Photograph site conditions at each sampling location.
 
 
 ## References
 
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water and Wastewater*. 22nd ed. American Public Health Association (Eds.). Washington. 1360 pp.
-- California State Water Resources Control Board. Surface Water Ambient Monitoring Program (SWAMP) protocols. Available at: https://www.waterboards.ca.gov/water_issues/programs/swamp/
+- @apha2012
+- @usepa2014fieldsampling
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
+| [F007](SOP-F007-field-decontamination.qmd) | Field Decontamination | Equipment cleaning between sites |
+| [F008](SOP-F008-sample-labeling-coc-transport.qmd) | Sample Labeling and COC | Chain of custody      |
+| [F205](SOP-F205-handheld-turbidity-meter.qmd) | Handheld Turbidity Meter | Field turbidity      |
+| [F208](SOP-F208-portable-colorimeter-field.qmd)   | Portable Colorimeter     | Field nutrients/metals |
+| [F209](SOP-F209-dissolved-oxygen-meter.qmd)       | Dissolved Oxygen Meter   | Field DO measurement |
 
 
 ## Training Record
 
 Before collecting surface water samples independently, personnel must:
 
-1. Read this SOP in full
-2. Complete SOP-F001 (Field Safety) training
-3. Demonstrate familiarity with sampling equipment and bottle types
-4. Participate in a supervised field sampling event
-5. Demonstrate proper sample handling, preservation, and chain of custody procedures
-6. Be signed off by the field lead or PI
+1. Read this SOP, [SOP-F001](SOP-F001-field-safety.qmd), and
+   [SOP-L003](../lab_sops/SOP-L003-hazardous-materials-handling.qmd)
+   in full
+2. Demonstrate correct grab sampling technique (contamination
+   prevention, bottle handling)
+3. Demonstrate proper use of pre-preserved containers and at least one
+   intermediate device (bailer, Van Dorn, or pump)
+4. Complete at least one supervised sampling event including COC
+   completion and sample cooler packaging
+5. Be signed off by the PI or field lead

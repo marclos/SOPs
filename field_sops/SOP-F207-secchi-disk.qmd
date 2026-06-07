@@ -1,7 +1,4 @@
 ---
-# =============================================================================
-# SOP-F207: Secchi Disk and Secchi Disk Tube
-# =============================================================================
 title: "Secchi Disk and Secchi Disk Tube"
 sop-number: "SOP-F207"
 author:
@@ -9,13 +6,18 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-19"
     author: "Marc Los Huertos"
     changes: "Initial draft"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions; converted plain-text references to
+              BibTeX; added {#refs} div"
 ---
 
 ## Purpose
@@ -24,19 +26,18 @@ This SOP describes the use of the standard Secchi disk and the Secchi
 disk tube (transparency tube) for measuring water transparency in
 lakes, reservoirs, and streams. Secchi depth is one of the oldest and
 simplest limnological measurements, providing a rapid estimate of the
-photic zone depth and an index of suspended particle concentration. The
-Secchi tube adapts the same principle for shallow or wadeable waters
-where a standard disk cannot be deployed vertically.
+photic zone depth and an index of suspended particle concentration
+[@wetzel2001; @carlson1977].
 
 
 ## Scope
 
 - **Applies to:** Visual transparency measurements in lakes, ponds,
-  reservoirs (standard Secchi disk) and streams, shallow wetlands, and
-  stormwater basins (Secchi tube)
+  and reservoirs (standard Secchi disk) and in streams, shallow
+  wetlands, and stormwater basins (Secchi tube)
 - **Does not apply to:** Quantitative turbidity measurements (see
   [SOP-F205](SOP-F205-handheld-turbidity-meter.qmd)); laboratory
-  transmissometry; PAR light profiles (requires underwater quantum
+  transmissometry; PAR light profiles (requires an underwater quantum
   sensor)
 - **Location:** All EA Program surface water field sites
 
@@ -50,6 +51,36 @@ where a standard disk cannot be deployed vertically.
 | New Students      | Complete training before independent use                |
 
 
+## Definitions
+
+- **Euphotic zone depth ($z_{eu}$):** The depth receiving at least 1%
+  of surface irradiance; approximately 2--3 times the Secchi depth in
+  most lakes; defines the lower boundary of net photosynthesis
+  [@wetzel2001].
+- **Photic zone:** The surface layer of a water body receiving
+  sufficient light to support photosynthesis; its depth is inversely
+  related to turbidity and Secchi depth.
+- **Secchi depth ($z_{SD}$):** The depth at which a standard Secchi
+  disk becomes just invisible when lowered, averaged with the depth at
+  which it becomes visible again when raised;
+  $z_{SD} = (D_1 + D_2) / 2$; an index of water transparency
+  inversely related to suspended particle concentration and dissolved
+  color [@carlson1977].
+- **Secchi tube (transparency tube):** A clear acrylic tube, typically
+  60 or 120 cm long, with a Secchi disk pattern printed at the bottom
+  and a drain valve at the base; filled with sample water and drained
+  until the pattern disappears; used in shallow or turbid waters where
+  a standard disk cannot be deployed vertically.
+- **Trophic state index (TSI):** A numerical scale relating Secchi
+  depth, chlorophyll a, and total phosphorus to lake trophic status;
+  Carlson's TSI for Secchi depth:
+  $\text{TSI}(SD) = 60 - 14.41 \ln(z_{SD})$ [@carlson1977].
+- **Viewscope:** A tube, box, or bucket with a transparent bottom used
+  to eliminate surface glare when reading Secchi depth; improves
+  consistency between observers but must be noted and applied
+  consistently within a dataset.
+
+
 ## Safety and Hazards
 
 ::: {.callout-warning}
@@ -58,18 +89,18 @@ where a standard disk cannot be deployed vertically.
 - **Physical:** Secchi disk measurements from boats, docks, or bridges
   require caution to prevent falls. Wear a personal flotation device
   (PFD) when sampling from boats.
-- **Biological:** Surface water may contain pathogens. Avoid
-  ingestion; wear gloves if hands contact water.
+- **Biological:** Surface water may contain pathogens. Avoid ingestion;
+  wear gloves if hands contact water.
 - **Sun glare:** Measuring Secchi depth requires looking directly into
-  water; wear polarized sunglasses to reduce glare and improve
-  accuracy (but note this in the field notebook for consistency).
+  the water; use polarized sunglasses or a viewscope to reduce glare
+  (note use in the field notebook for consistency).
 :::
 
 ### Required PPE
 
 - [ ] Closed-toed shoes or wading boots
 - [ ] Personal flotation device (boat sampling)
-- [ ] Nitrile gloves (optional; recommended for impaired waters)
+- [ ] Nitrile gloves (recommended for impaired waters)
 - [ ] Sun protection (hat, sunglasses)
 
 ### Emergency Procedures
@@ -87,122 +118,110 @@ and throwable flotation devices.
 |:--------------------------------------|:-----------------------------------------|
 | Standard Secchi disk (20 cm diameter) | Alternating black and white quadrants; weighted to sink horizontally |
 | Graduated line (marked every 0.1 m)   | Non-stretch braided cord or chain        |
-| Viewscope (optional)                  | Eliminates surface glare; a section of PVC pipe with a clear bottom works well |
+| Viewscope (optional)                  | Eliminates surface glare; a capped PVC section with a clear bottom works well |
 
 ### Secchi Tube (Transparency Tube)
 
 | Item                                  | Notes                                    |
 |:--------------------------------------|:-----------------------------------------|
-| Secchi tube (60 or 120 cm)            | Clear acrylic tube with a Secchi disk pattern at the bottom and a cm/inch scale printed on the side; drain valve at the base |
-| Sample bucket or wide-mouth bottle    | For collecting water to pour into the tube |
+| Secchi tube (60 or 120 cm)            | Clear acrylic tube; Secchi disk pattern at bottom; cm scale on side; drain valve at base |
+| Sample bucket or wide-mouth bottle    | For collecting water to fill the tube    |
 
 ### General
 
-| Item                                  | Notes                                    |
-|:--------------------------------------|:-----------------------------------------|
-| Field notebook                        | For recording measurements               |
-| Stopwatch or watch                    | For recording time of measurement        |
-| Camera                                | For photo-documenting site conditions    |
+| Item            | Notes                                              |
+|:----------------|:---------------------------------------------------|
+| Field notebook  | Per [SOP-F003](SOP-F003-field-notebook-protocols.qmd) |
+| Watch           | For recording time of measurement                  |
+| Camera          | For documenting site conditions                    |
 
 
 ## Procedure
 
 ### Standard Secchi Disk (Lakes, Reservoirs, Deep Pools)
 
-Secchi disk measurements should be taken on the shaded side of the
-boat or dock between 10:00 and 14:00 local time for consistency. Avoid
-measurements during heavy cloud cover, rain, or high wind (waves
-disturb the reading).
+Take measurements on the shaded side of the boat or dock, between
+10:00 and 14:00 local time for consistency. Avoid measurements during
+heavy cloud cover, rain, or high wind [@wetzel2001].
 
-1. Lower the Secchi disk on the shaded side of the boat until it just
-   disappears from view. Record this depth as **D1** (disappearance
-   depth).
+1. Lower the Secchi disk on the shaded side until it just disappears
+   from view. Record this depth as **D1** (disappearance depth).
 2. Slowly raise the disk until it just reappears. Record this depth as
    **D2** (reappearance depth).
 3. Calculate Secchi depth:
-
-   $$
-   \text{Secchi depth} = \frac{D1 + D2}{2}
-   $$
-
+   $$\text{Secchi depth} = \frac{D_1 + D_2}{2}$$
 4. Record in the field notebook:
-   - Secchi depth (m)
+   - Secchi depth (m) and D1, D2 individually
    - Date and time
    - Sky conditions (clear, partly cloudy, overcast)
-   - Wind conditions (calm, light, moderate)
+   - Wind and water surface conditions
    - Whether a viewscope was used
-   - Water surface conditions (calm, rippled, choppy)
-   - Observer name (Secchi readings vary between observers)
-5. If the disk is visible on the bottom, record "Secchi depth >
-   [bottom depth]" and note the bottom depth.
-6. Repeat the measurement a second time. The two readings should agree
+   - Observer name (readings vary between observers)
+5. If the disk is visible on the bottom, record
+   "Secchi depth > [bottom depth]" and note the bottom depth.
+6. Repeat the measurement a second time; the two readings should agree
    within 0.5 m. Record both and report the mean.
 
 ### Secchi Tube (Streams, Shallow Waters)
 
-Use the Secchi tube when the water body is too shallow for a standard
-disk or when sampling from shore.
-
-1. Collect a water sample from the site using a bucket or wide-mouth
-   bottle. Sample from mid-depth if possible; avoid collecting from
-   the surface film or disturbing sediment.
-2. Pour the sample into the Secchi tube until the tube is full.
+1. Collect a water sample from mid-depth using a bucket or wide-mouth
+   bottle; avoid disturbing sediment.
+2. Pour the sample into the Secchi tube until full.
 3. Hold the tube vertically and look down through the water column at
    the Secchi pattern on the bottom.
-4. Open the drain valve slowly, allowing water to drain from the
-   bottom. Watch the Secchi pattern.
-5. When the Secchi pattern just disappears, close the valve and read
-   the water level on the graduated scale. Record this as the
-   **Secchi tube depth** (cm).
-6. Refill the tube and repeat the measurement. The two readings should
-   agree within 2 cm. Record both and report the mean.
-7. Rinse the tube with DI water between sites to prevent cross-
-   contamination.
+4. Open the drain valve slowly. Watch the Secchi pattern.
+5. When the pattern just disappears, close the valve and read the
+   water level on the graduated scale. Record as **Secchi tube depth**
+   (cm).
+6. Refill the tube and repeat; the two readings should agree within
+   2 cm. Record both and report the mean.
+7. Rinse the tube with DI water between sites to prevent
+   cross-contamination.
 
 
 ## Data Interpretation
 
 Secchi depth is inversely related to turbidity and suspended particle
-concentration. Approximate relationships (lake conditions):
+concentration [@carlson1977; @wetzel2001]. Approximate trophic-state
+guidelines for lakes:
 
-| Secchi Depth (m) | General Water Clarity       |
-|:-----------------|:----------------------------|
-| > 5              | Very clear (oligotrophic)   |
-| 2--5             | Moderately clear (mesotrophic) |
-| 1--2             | Turbid (eutrophic)          |
-| < 1              | Very turbid (hypereutrophic) |
+| Secchi Depth (m) | Trophic Class        |
+|:-----------------|:---------------------|
+| > 5              | Oligotrophic         |
+| 2--5             | Mesotrophic          |
+| 1--2             | Eutrophic            |
+| < 1              | Hypereutrophic       |
 
 ::: {.callout-note}
 These categories are approximate and vary with dissolved color, algal
 species, and suspended sediment type. Do not use Secchi depth alone to
-classify trophic state; combine with nutrient and chlorophyll data.
+classify trophic state; combine with nutrient and chlorophyll data
+[@carlson1977].
 :::
 
 
 ## Quality Control
 
 - Use the same observer for repeated measurements at a monitoring site
-  whenever possible. Inter-observer variability is the largest source
-  of error.
+  whenever possible; inter-observer variability is the largest source
+  of error [@wetzel2001].
 - Always take duplicate measurements and report the mean.
-- Record whether sunglasses or a viewscope were used; these
-  systematically affect readings and must be consistent within a
-  dataset.
-- For Secchi tubes, verify the graduation markings against a ruler at
-  least once per year.
+- Record consistently whether sunglasses or a viewscope were used.
+- Verify Secchi tube graduation markings against a ruler at least once
+  per year.
 - When both a Secchi disk and a turbidity meter are available, pair
   the measurements to develop a site-specific Secchi-turbidity
-  regression for future use.
+  regression.
 
 
 ## References
 
-- Wetzel, R.G. and Likens, G.E. (2000). *Limnological Analyses*.
-  3rd ed. Springer. Chapter 3: Light.
-- Carlson, R.E. (1977). A trophic state index for lakes. *Limnology
-  and Oceanography*, 22(2), 361--369.
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
-  and Wastewater*. 22nd ed. Section 2130: Turbidity.
+- @wetzel2001
+- @carlson1977
+- @apha2012
+
+::: {#refs}
+:::
 
 
 ## Related SOPs
@@ -211,7 +230,7 @@ classify trophic state; combine with nutrient and chlorophyll data.
 |:------|:---------------------------------------|:----------------------------------|
 | [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite             |
 | [F205](SOP-F205-handheld-turbidity-meter.qmd) | Handheld Turbidity Meter | Quantitative turbidity companion |
-| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection context         |
+| [F300](SOP-F300-surface-water-sampling.qmd) | Surface Water Sampling | Sample collection context        |
 | [L310](../lab_sops/SOP-L310-chlorophyll-extraction.qmd) | Chlorophyll Extraction | Trophic state companion |
 
 
@@ -220,8 +239,8 @@ classify trophic state; combine with nutrient and chlorophyll data.
 Before performing Secchi measurements independently, personnel must:
 
 1. Read this SOP in full
-2. Perform supervised duplicate Secchi disk or Secchi tube measurements
-   at one site
-3. Demonstrate agreement within the QC criteria (0.5 m for disk, 2 cm
-   for tube)
+2. Perform supervised duplicate Secchi disk or Secchi tube
+   measurements at one site
+3. Demonstrate agreement within the QC criteria (0.5 m for disk,
+   2 cm for tube)
 4. Be signed off by the PI or field lead
