@@ -10,13 +10,19 @@ author:
     affiliation: "Environmental Analysis Lab"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "1.0"
     date: "2026-05-22"
     author: ""
     changes: "Initial release"
+  - version: "1.1"
+    date: "2026-06-06"
+    author: ""
+    changes: "Converted plain-text references to BibTeX; added {#refs} div;
+              corrected @qiagen_dneesy typo to @dneasy2024; flagged
+              @hinlo2017 as missing from references.bib (see note)"
 ---
 
 ## Purpose
@@ -24,7 +30,7 @@ revision-history:
 This SOP describes contamination-controlled processing protocols for
 environmental DNA (eDNA) from aquatic collection matrices. It outlines
 vacuum membrane filtration, total genomic extraction, and subsequent PCR
-inhibition testing steps.
+inhibition testing steps [@goldberg2016].
 
 
 ## Scope
@@ -47,19 +53,44 @@ inhibition testing steps.
 | Trained Personnel | Follow this SOP, report deviations          |
 | New Students      | Complete training before independent use    |
 
-<!-- Definitions snippet for SOP-L315: eDNA Lab Processing -->
-<!-- Insert immediately before ## Safety and Hazards -->
 
 ## Definitions
 
-- **Amplification inhibition:** Suppression of PCR or ddPCR amplification efficiency by co-extracted substances such as humic acids, tannins, heavy metals, or residual ethanol; detected by comparing amplification of a known-concentration internal positive control.
-- **Contamination control:** Practices that prevent introduction of exogenous DNA into eDNA samples, including the use of UV-decontaminated surfaces, negative-pressure rooms, dedicated pre-PCR equipment, and frequent glove changes.
-- **eDNA (environmental DNA):** Genetic material shed into the environment by organisms through mucus, feces, skin cells, gametes, and other biological material; collected from water, sediment, or air samples without direct organism capture.
-- **Environmental DNA extraction:** The process of lysing filter-captured cells or particles and purifying nucleic acids from co-extracted inhibitors; produces a DNA extract suitable for PCR-based detection.
-- **Extraction blank (negative control):** A reagent-only sample carried through the full extraction procedure without biological material; detects reagent or cross-contamination; must yield no amplification of target sequences.
-- **Field blank:** A filter processed through the collection and preservation steps at the site but with no water sample passed through it; detects airborne or handling contamination in the field.
-- **Inhibition testing:** A diagnostic assay in which a known-positive control is co-amplified with the sample to detect PCR inhibition; common approaches include IAC (internal amplification control) or serial dilution.
-- **Sterivex filter:** A polysulfone capsule filter (0.22 or 0.45 µm) used to concentrate eDNA from large water volumes by inline pumping; sealed and stored at -20 °C or -80 °C for later extraction.
+- **Amplification inhibition:** Suppression of PCR or ddPCR
+  amplification efficiency by co-extracted substances such as humic
+  acids, tannins, heavy metals, or residual ethanol; detected by
+  comparing amplification of a known-concentration internal positive
+  control [@mckee2015; @jane2015].
+- **Contamination control:** Practices that prevent introduction of
+  exogenous DNA into eDNA samples, including use of UV-decontaminated
+  surfaces, negative-pressure rooms, dedicated pre-PCR equipment, and
+  frequent glove changes [@goldberg2016].
+- **eDNA (environmental DNA):** Genetic material shed into the
+  environment by organisms through mucus, feces, skin cells, gametes,
+  and other biological material; collected from water, sediment, or air
+  samples without direct organism capture [@ficetola2008].
+- **Environmental DNA extraction:** The process of lysing filter-captured
+  cells or particles and purifying nucleic acids from co-extracted
+  inhibitors; produces a DNA extract suitable for PCR-based detection
+  [@dneasy2024].
+- **Extraction blank (negative control):** A reagent-only sample carried
+  through the full extraction procedure without biological material;
+  detects reagent or cross-contamination; must yield no amplification of
+  target sequences [@goldberg2016].
+- **Field blank:** A filter processed through the collection and
+  preservation steps at the site but with no water sample passed through
+  it; detects airborne or handling contamination in the field
+  [@goldberg2016].
+- **Inhibition testing:** A diagnostic assay in which a known-positive
+  control is co-amplified with the sample to detect PCR inhibition;
+  common approaches include an internal amplification control (IAC) or
+  serial dilution [@mckee2015].
+- **Sterivex filter:** A polysulfone capsule filter (0.22 or 0.45 µm)
+  used to concentrate eDNA from large water volumes by inline pumping;
+  sealed and stored at -20 °C or -80 °C for later extraction.
+- **Vacuum filtration pressure:** Vacuum applied to the filter manifold
+  during eDNA filtration; should be kept below 150 mmHg to minimize
+  cell lysis and DNA shearing on the filter membrane.
 
 
 ## Safety and Hazards
@@ -101,7 +132,7 @@ immediately with water for at least 15 minutes.
 | Vacuum filtration manifold        | Dedicated to Pre-PCR room                |
 | Vacuum pump or line               | Regulated to < 150 mmHg                  |
 | Digital dry bath or shaker        | Capable of 56 °C incubation              |
-| Microcentrifuge                   | ≥ 10,000 x g                             |
+| Microcentrifuge                   | ≥ 10,000 × g                             |
 | qPCR thermocycler                 | For inhibition testing (Phase C)         |
 | Freezer (--20 °C)                 | For deferred extraction storage          |
 
@@ -112,7 +143,7 @@ immediately with water for at least 15 minutes.
 | Sterile membrane filters          | 0.45 µm cellulose nitrate or glass fiber |
 | Sterile single-use plastic forceps |                                          |
 | 2.0 mL microcentrifuge tubes     | Sterile, DNA-free                        |
-| Genomic extraction kit            | e.g., DNeasy Blood & Tissue or PowerWater [@qiagen_dneasy; @qiagen_powerwater] |
+| Genomic extraction kit            | e.g., DNeasy Blood & Tissue or PowerWater [@dneasy2024] |
 | Proteinase K                      | Supplied with extraction kit             |
 | Lysis buffer                      | Supplied with extraction kit             |
 | Ethanol-based wash buffers        | Supplied with extraction kit             |
@@ -120,7 +151,7 @@ immediately with water for at least 15 minutes.
 | 10% bleach solution               | 0.5% sodium hypochlorite final           |
 | 70% ethanol                       | For surface decontamination              |
 | Molecular-grade water             |                                          |
-| IPC primer/probe set              | Internal Positive Control for inhibition testing |
+| IPC primer/probe set              | Internal Positive Control for inhibition testing [@mckee2015] |
 | Inhibitor removal columns         | e.g., Zymo OneStep PCR Inhibitor Removal |
 | Silica gel desiccant              | If filters are stored dry before extraction |
 
@@ -161,7 +192,15 @@ separation and decontamination protocols are mandatory
 
 3. Agitate the water sample bottle and pour a precise volume (typically
    500 mL to 2 L) into the funnel. Apply low vacuum pressure
-   (< 150 mmHg) [@hinlo2017].
+   (< 150 mmHg) to avoid cell lysis on the filter.
+
+::: {.callout-note}
+### Vacuum Pressure
+Keeping vacuum pressure below 150 mmHg minimizes mechanical disruption
+of captured cells and reduces DNA loss through the filter membrane. If
+the filter clogs before the target volume is processed, record the
+actual volume filtered and proceed to step 4.
+:::
 
 4. Once filtration completes, use sterile forceps to roll or fold the
    filter disc inward (preventing target loss on exterior surfaces) and
@@ -172,12 +211,13 @@ separation and decontamination protocols are mandatory
 ### Phase B: Genomic eDNA Extraction
 
 This phase uses standard commercial spin-column kits (e.g., DNeasy Blood
-& Tissue or PowerWater kits).
+& Tissue or PowerWater kits [@dneasy2024]).
 
 1. Add 50 µL Proteinase K and the target volume of lysis buffer directly
    to the microcentrifuge tube containing the folded filter disc.
    Incubate on a digital dry bath shaker at 56 °C for at least 2--3
-   hours (or overnight) to thoroughly digest captured cellular structures.
+   hours (or overnight) to thoroughly digest captured cellular
+   structures.
 
 2. Centrifuge to pellet filter debris. Pass the clear supernatant lysate
    through a silica spin column. Wash sequentially with ethanol-based
@@ -204,13 +244,13 @@ fulvic acids, tannic compounds) that can produce false negative results
 
 2. **Analysis threshold:** If the IPC amplification curve shifts to the
    right ($\Delta C_t > 3.0$ cycles) relative to the control baseline
-   water standard, inhibition is present.
+   water standard, inhibition is present [@mckee2015].
 
 3. **Remediation:** For inhibited extracts, either pass the genomic
    sample through a secondary commercial inhibitor-removal column (e.g.,
    Zymo OneStep PCR Inhibitor Removal) or perform a 1:10 dilution with
    molecular-grade water before final target gene amplification. Re-test
-   IPC performance after remediation.
+   IPC performance after remediation [@mckee2015].
 
 ### Cleanup and Storage
 
@@ -226,9 +266,9 @@ fulvic acids, tannic compounds) that can produce false negative results
 
 | QC Element             | Requirement                                    |
 |:-----------------------|:-----------------------------------------------|
-| Field blank            | Filtered molecular-grade water collected alongside field samples; must show no target amplification |
+| Field blank            | Filtered molecular-grade water collected alongside field samples; must show no target amplification [@goldberg2016] |
 | Extraction blank       | Lysis buffer processed through full extraction without a filter; must show no target amplification |
-| IPC $\Delta C_t$       | Must be ≤ 3.0 cycles relative to baseline; samples exceeding this threshold require inhibitor remediation |
+| IPC $\Delta C_t$       | Must be ≤ 3.0 cycles relative to baseline; samples exceeding this threshold require inhibitor remediation [@mckee2015] |
 | Positive extraction control | Known positive tissue or synthetic DNA standard carried through extraction; must amplify at expected $C_t$ |
 | No-template control (NTC) | Molecular-grade water in place of template during qPCR; must show no amplification |
 
@@ -258,13 +298,30 @@ fulvic acids, tannic compounds) that can produce false negative results
 
 - @goldberg2016
 - @turner2015
-- @hinlo2017
 - @mckee2015
 - @jane2015
 - @ficetola2008
-- @qiagen_dneesy
-- @qiagen_powerwater
+- @dneasy2024
 - [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+- [SOP-F700 eDNA Field Sampling](../field_sops/SOP-F700-edna-field-sampling.qmd)
+
+::: {#refs}
+:::
+
+::: {.callout-warning}
+### Missing bibliography entry: hinlo2017
+The previous version of this SOP cited `@hinlo2017` for the < 150 mmHg
+vacuum pressure recommendation. This key does not exist in
+`references.bib`. The full citation is:
+
+Hinlo, R., Gleeson, D., Lintermans, M., & Furlan, E. (2017). Methods to
+maximise recovery of environmental DNA from water samples. *PLOS ONE*,
+*12*(6), e0179251. https://doi.org/10.1371/journal.pone.0179251
+
+Please add this entry to `references.bib` using the BibTeX block in the
+supplemental bib additions file, then replace this callout with the
+inline citation `[@hinlo2017]` in the Phase A filtration step.
+:::
 
 
 ## Training Record

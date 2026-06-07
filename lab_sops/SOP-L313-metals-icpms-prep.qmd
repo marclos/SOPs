@@ -10,13 +10,19 @@ author:
     affiliation: "Environmental Analysis Lab"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "1.0"
     date: "2026-05-22"
     author: ""
     changes: "Initial release"
+  - version: "1.1"
+    date: "2026-06-06"
+    author: ""
+    changes: "Converted plain-text references to BibTeX; added {#refs} div;
+              added @beauchemin2017 citation; corrected inline citations
+              throughout"
 ---
 
 ## Purpose
@@ -25,7 +31,7 @@ This SOP describes the acidification, trace metal preservation, and
 digestion protocols for aqueous environmental samples prior to Inductively
 Coupled Plasma Mass Spectrometry (ICP-MS) analysis. It covers dissolved
 metals (filtration + acidification) and total recoverable metals (acid
-digestion).
+digestion) [@usepa200_8].
 
 
 ## Scope
@@ -46,18 +52,44 @@ digestion).
 | Trained Personnel | Follow this SOP, report deviations          |
 | New Students      | Complete training before independent use    |
 
-<!-- Definitions snippet for SOP-L313: Metals in Water ICP-MS Prep -->
-<!-- Insert immediately before ## Safety and Hazards -->
 
 ## Definitions
 
-- **Acid digestion (water samples):** The addition of concentrated HNO~3~ (typically 0.5--2% v/v final) to preserved water samples to dissolve any particulate metal and stabilize dissolved metals; a prerequisite for ICP-MS analysis.
-- **Blank (method blank):** A reagent water sample carried through the entire preparation procedure; used to assess and correct for metal contamination introduced during sample processing.
-- **Certified reference material (CRM):** A water sample with certified metal concentrations from an accredited producer (e.g., NIST, USGS); used to verify ICP-MS accuracy.
-- **Digestion blank:** A solution containing only the acid reagents (no sample) processed through the digestion procedure; detects contamination from reagents and vessels.
-- **ICP-MS (Inductively Coupled Plasma Mass Spectrometry):** An analytical technique that vaporizes and ionizes a sample in an argon plasma and separates ions by mass-to-charge ratio to identify and quantify elements at parts-per-trillion concentrations.
-- **Preservation (acidification):** Addition of HNO~3~ to a water sample at the time of collection to prevent metal adsorption to container walls and to maintain dissolved metals in solution; required for regulatory compliance samples.
-- **Spike recovery:** The percentage of a known added concentration of a metal that is measured by the instrument; acceptable range is typically 85--115%; used to check for matrix interferences.
+- **Acid digestion (water samples):** The addition of concentrated
+  HNO~3~ (typically 0.5--2% v/v final) to preserved water samples to
+  dissolve any particulate metal and stabilize dissolved metals; a
+  prerequisite for ICP-MS analysis [@usepa200_8].
+- **Blank (method blank):** A reagent water sample carried through the
+  entire preparation procedure; used to assess and correct for metal
+  contamination introduced during sample processing [@apha2012].
+- **Certified reference material (CRM):** A water sample with certified
+  metal concentrations from an accredited producer (e.g., NIST, USGS);
+  used to verify ICP-MS accuracy [@beauchemin2017].
+- **Digestion blank:** A solution containing only the acid reagents (no
+  sample) processed through the digestion procedure; detects
+  contamination from reagents and vessels.
+- **ICP-MS (Inductively Coupled Plasma Mass Spectrometry):** An
+  analytical technique that vaporizes and ionizes a sample in an argon
+  plasma and separates ions by mass-to-charge ratio to identify and
+  quantify elements at parts-per-trillion concentrations
+  [@beauchemin2017].
+- **Method detection limit (MDL):** The minimum concentration of an
+  analyte that can be detected with 99% confidence that the true
+  concentration is greater than zero; determined from replicate blank
+  analyses per 40 CFR Part 136 [@usepa200_8].
+- **Preservation (acidification):** Addition of HNO~3~ to a water
+  sample at the time of collection to prevent metal adsorption to
+  container walls and to maintain dissolved metals in solution; required
+  for regulatory compliance samples [@usepa200_8].
+- **Relative percent difference (RPD):** |A - B| / ((A + B) / 2) × 100;
+  used to assess duplicate precision; acceptance criterion is RPD ≤ 20%
+  for environmental matrices [@usepa200_8].
+- **Spike recovery:** The percentage of a known added concentration of a
+  metal that is measured by the instrument; acceptable range is typically
+  85--115%; used to check for matrix interferences [@usepa200_8].
+- **Total recoverable metals:** Metals determined in an unfiltered sample
+  after acid digestion; includes both dissolved and particulate-bound
+  fractions [@usepa200_8].
 
 
 ## Safety and Hazards
@@ -108,20 +140,20 @@ water for at least 15 minutes and seek medical attention.
 | Item                              | Notes                                    |
 |:----------------------------------|:-----------------------------------------|
 | Nitric acid (HNO~3~)             | Ultra-pure, trace metal grade            |
-| Hydrochloric acid (HCl)          | Trace metal grade; used when target analytes include Ag, Sb, or high Fe |
+| Hydrochloric acid (HCl)          | Trace metal grade; used when target analytes include Ag, Sb, or high Fe [@usepa200_8] |
 | Certified metal-free membrane filters | 0.45 µm DigiFILTERS or syringe filters |
 | Metal-free polypropylene tubes    | 15 mL or 50 mL autosampler tubes         |
 | Ribbed watch glasses or reflux caps | To prevent evaporation loss during digestion |
 | Narrow-range pH strips            | To verify pH < 2                         |
 | High-purity DI water              | For volume adjustment and blanks         |
-| Multi-element stock solution      | Certified reference material for LFB spikes |
+| Multi-element stock solution      | Certified reference material for LFB spikes [@beauchemin2017] |
 
 
 ## Procedure
 
 ### Sample Preservation and Dissolved Metals Fraction
 
-1. **Filtration:** Filter the raw, un-acidified sample immediately upon
+1. **Filtration:** Filter the raw, unacidified sample immediately upon
    collection or arrival through a certified 0.45 µm metal-free membrane
    filter. Discard the first 5 mL of filtrate to rinse the filter matrix.
    Collect remaining filtrate into a clean polypropylene tube.
@@ -129,7 +161,7 @@ water for at least 15 minutes and seek medical attention.
 2. **Acidification:** Add high-purity trace metal grade HNO~3~ dropwise
    to the sample container to achieve a final matrix concentration of 2%
    (v/v). For example, add 1.0 mL concentrated HNO~3~ per 50 mL sample
-   matrix.
+   matrix [@usepa200_8].
 
 3. Verify pH is < 2 using a narrow-range pH strip. Store acidified
    samples for at least 16 hours prior to analysis to ensure proper metal
@@ -141,13 +173,13 @@ water for at least 15 minutes and seek medical attention.
    clean digestion tube.
 
 2. Working inside a fume hood, add 1.0 mL of trace metal grade HNO~3~
-   and 0.5 mL of trace metal grade HCl.
+   and 0.5 mL of trace metal grade HCl [@usepa200_8].
 
 3. Place the digestion tube into the hot block. Fit with a ribbed watch
    glass or vapor reflux cap to prevent evaporation loss.
 
 4. Program the block heater to 85--95 °C. Heat the sample for 2 hours
-   without allowing the solution to boil.
+   without allowing the solution to boil [@usepa3015a].
 
 5. Remove from heat, allow to cool to room temperature, and adjust back
    to the original 50.0 mL volume mark using high-purity DI water. If
@@ -158,14 +190,15 @@ water for at least 15 minutes and seek medical attention.
 ### Avoiding Boil-Over
 Monitor samples during the first 15--20 minutes of heating. If the
 solution begins to bump or boil, reduce the block temperature by 5 °C.
-Loss of sample volume through boiling invalidates the digestion.
+Loss of sample volume through boiling invalidates the digestion
+[@usepa3015a].
 :::
 
 ### Shutdown and Cleanup
 
 1. Allow the hot block to cool before removing tubes.
-2. Rinse all non-disposable glassware and equipment with 10% (v/v) HNO~3~
-   followed by three rinses of DI water.
+2. Rinse all non-disposable glassware and equipment with 10% (v/v)
+   HNO~3~ followed by three rinses of DI water.
 3. Dispose of acid waste per §8 below.
 
 
@@ -173,10 +206,10 @@ Loss of sample volume through boiling invalidates the digestion.
 
 | QC Element                          | Requirement                            |
 |:------------------------------------|:---------------------------------------|
-| Method blank                        | Process 50 mL DI water through full procedure; analyte concentrations must be below the method detection limit |
-| Laboratory fortified blank (LFB)    | Spike multi-element stock into DI water and carry through digestion; recovery must be 85--115% |
-| Laboratory fortified matrix (LFM)   | Spike a field sample; recovery 70--130% |
-| Duplicate samples                   | RPD ≤ 20%                              |
+| Method blank                        | Process 50 mL DI water through full procedure; analyte concentrations must be below the MDL [@usepa200_8] |
+| Laboratory fortified blank (LFB)    | Spike multi-element stock into DI water and carry through digestion; recovery must be 85--115% [@usepa200_8] |
+| Laboratory fortified matrix (LFM)   | Spike a field sample; recovery 70--130% [@apha2012] |
+| Duplicate samples                   | RPD ≤ 20% [@usepa200_8]               |
 | Calibration verification            | Initial and continuing calibration per instrument SOP |
 
 See @usepa200_8 and @apha2012 for additional QC guidance.
@@ -208,8 +241,10 @@ See @usepa200_8 and @apha2012 for additional QC guidance.
 - @usepa3015a
 - @beauchemin2017
 - @apha2012
-- Equipment manufacturer manuals
 - [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+
+::: {#refs}
+:::
 
 
 ## Training Record

@@ -2167,7 +2167,7 @@
 
 @article{kim2007,
   title     = {Phosphoric acid fractionation factors for calcite and
-               aragonite between 25 and 75~{$^\\circ$C}: Revisited},
+               aragonite between 25 and $75~^{\circ}\text{C}$: Revisited},
   author    = {Kim, Sang-Tae and Mucci, Alfonso and Taylor, Barry E.},
   journal   = {Chemical Geology},
   volume    = {246},
@@ -4918,3 +4918,101 @@
   year      = {2010},
   doi       = {10.1111/j.2041-210X.2009.00001.x}
 }
+
+% =============================================================================
+% BibTeX additions for SOP-L312, SOP-L313, SOP-L315, SOP-L400
+% Paste these entries into references.bib
+% =============================================================================
+
+% -----------------------------------------------------------------------------
+% Used in SOP-L313: Metals in Water (ICP-MS Prep)
+% @beauchemin2017 -- cited for CRM verification and ICP-MS method context
+% -----------------------------------------------------------------------------
+@book{beauchemin2017,
+  title     = {Inductively Coupled Plasma Mass Spectrometry Handbook},
+  editor    = {Beauchemin, Diane and Mermet, Jean-Michel},
+  year      = {2017},
+  edition   = {2nd},
+  publisher = {Wiley-Blackwell},
+  address   = {Hoboken, NJ},
+  doi       = {10.1002/9781119437451}
+}
+
+% -----------------------------------------------------------------------------
+% Used in SOP-L315: eDNA Lab Processing
+% @hinlo2017 -- cited for < 150 mmHg vacuum pressure recommendation
+% Note: previously cited as @hinlo2017 but was absent from references.bib
+% -----------------------------------------------------------------------------
+@article{hinlo2017,
+  title     = {Methods to maximise recovery of environmental {DNA} from
+               water samples},
+  author    = {Hinlo, Rheyda and Gleeson, Dianne and Lintermans, Mark and
+               Furlan, Elise},
+  journal   = {PLOS ONE},
+  volume    = {12},
+  number    = {6},
+  pages     = {e0179251},
+  year      = {2017},
+  doi       = {10.1371/journal.pone.0179251}
+}
+
+% -----------------------------------------------------------------------------
+% Used in SOP-L400: Soil Moisture -- Gravimetric Method
+% @gardner1986 -- primary method reference for gravimetric moisture
+% -----------------------------------------------------------------------------
+@incollection{gardner1986,
+  title     = {Water content},
+  author    = {Gardner, W. H.},
+  booktitle = {Methods of Soil Analysis, Part 1: Physical and Mineralogical
+               Methods},
+  editor    = {Klute, A.},
+  edition   = {2nd},
+  series    = {Agronomy Monograph No. 9},
+  pages     = {493--544},
+  year      = {1986},
+  publisher = {American Society of Agronomy / Soil Science Society of America},
+  address   = {Madison, WI},
+  doi       = {10.2136/sssabookser5.1.2ed.c21}
+}
+
+% -----------------------------------------------------------------------------
+% Used in SOP-L400: Soil Moisture -- Gravimetric Method
+% @robertson1999 -- standard soil methods reference for LTER protocols
+% -----------------------------------------------------------------------------
+@book{robertson1999,
+  title     = {Standard Soil Methods for Long-Term Ecological Research},
+  editor    = {Robertson, G. Philip and Coleman, David C. and Bledsoe,
+               Caroline S. and Sollins, Phillip},
+  year      = {1999},
+  publisher = {Oxford University Press},
+  address   = {New York, NY}
+}
+
+% =============================================================================
+% NOTES ON EXISTING KEYS
+% =============================================================================
+% The following keys cited in these SOPs are already present in references.bib
+% and do NOT need to be added:
+%
+%   @apha2012         -- Standard Methods 22nd ed. (L312, L313)
+%   @usepa200_8       -- EPA Method 200.8 ICP-MS (L313)
+%   @usepa3015a       -- EPA Method 3015A microwave digestion (L313)
+%   @goldberg2016     -- eDNA critical considerations (L315)
+%   @turner2015       -- fish eDNA in sediments (L315)
+%   @mckee2015        -- eDNA dilution and inhibition (L315)
+%   @jane2015         -- eDNA distance/flow/inhibition (L315)
+%   @ficetola2008     -- species detection from water eDNA (L315)
+%   @dneasy2024       -- DNeasy kit handbook (L315); replaces misspelled
+%                        @qiagen_dneesy in earlier SOP drafts
+%
+% The keys @qiagen_dneesy and @qiagen_powerwater do NOT exist in
+% references.bib. @dneasy2024 covers the DNeasy kit. If a separate
+% PowerWater kit citation is needed, add it using the template below:
+%
+% @manual{powerwater2024,
+%   title  = {{PowerWater} DNA Isolation Kit Quick-Start Protocol},
+%   author = {{Qiagen}},
+%   year   = {2024},
+%   url    = {https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/microbial-dna/powerwater-dna-kit/}
+% }
+% =============================================================================

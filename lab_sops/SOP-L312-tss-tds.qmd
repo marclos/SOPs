@@ -10,13 +10,18 @@ author:
     affiliation: "Environmental Analysis Lab"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "1.0"
     date: "2026-05-22"
     author: ""
     changes: "Initial release"
+  - version: "1.1"
+    date: "2026-06-06"
+    author: ""
+    changes: "Converted plain-text references to BibTeX; added {#refs} div;
+              expanded Definitions; added inline citations throughout"
 ---
 
 ## Purpose
@@ -25,7 +30,8 @@ This SOP describes the gravimetric determination of Total Suspended Solids
 (TSS) and Total Dissolved Solids (TDS) in environmental water samples
 (e.g., surface water, groundwater, runoff). TSS represents the portion of
 solids retained by a glass fiber filter, while TDS represents the portion
-that passes through the filter and is dried to constant weight in a vessel.
+that passes through the filter and is dried to constant weight in a vessel
+[@apha2012].
 
 
 ## Scope
@@ -37,7 +43,6 @@ that passes through the filter and is dried to constant weight in a vessel.
 - **Location:** Environmental analysis laboratories.
 
 
-
 ## Responsibilities
 
 | Role              | Responsibility                              |
@@ -46,25 +51,34 @@ that passes through the filter and is dried to constant weight in a vessel.
 | Trained Personnel | Follow this SOP, report deviations          |
 | New Students      | Complete training before independent use    |
 
+
 ## Definitions
 
+- **Constant mass:** Successive weighings (after additional drying cycles
+  of at least 1 hour) agree within ±0.5 mg; the criterion confirming
+  complete desiccation.
 - **Detection limit (MDL):** The minimum concentration that can be
   reliably distinguished from a blank; for gravimetric TSS/TDS, the
   practical lower limit is approximately 5 mg/L, set by the precision
-  of the analytical balance and filter tare variability.
+  of the analytical balance and filter tare variability [@apha2012].
 - **Fixed residue:** The fraction of total solids remaining after
   ignition at 550 °C; equivalent to inorganic (mineral) solids.
+- **Relative percent difference (RPD):** A measure of duplicate
+  precision: RPD (%) = |A - B| / ((A + B) / 2) × 100; acceptance
+  criterion for TSS/TDS duplicates is ≤ 10%.
 - **Total dissolved solids (TDS):** The mass of material passing
   through a 0.45 µm filter per unit volume of sample, determined
-  gravimetrically after evaporation at 180 °C; expressed in mg/L.
-- **Total suspended solids (TSS):** The mass of material retained on a
-  pre-weighed 0.45 µm glass fiber filter per unit volume of sample;
-  expressed in mg/L [@apha2012].
+  gravimetrically after evaporation at 180 °C; expressed in mg/L
+  [@apha2012, Method 2540 C].
 - **Total solids (TS):** The residue remaining after evaporation of a
   sample at 103--105 °C; TS = TSS + TDS.
+- **Total suspended solids (TSS):** The mass of material retained on a
+  pre-weighed glass fiber filter per unit volume of sample; expressed
+  in mg/L [@apha2012, Method 2540 D].
 - **Volatile suspended solids (VSS):** The fraction of TSS lost on
   ignition at 550 °C; approximates the organic content of suspended
-  solids.
+  solids [@apha2012].
+
 
 ## Safety and Hazards
 
@@ -111,10 +125,10 @@ campus safety.
 
 | Item                            | Notes                                      |
 |:--------------------------------|:-------------------------------------------|
-| Glass microfiber filter disks   | e.g., Whatman 934-AH, 1.5 µm pore size    |
+| Glass microfiber filter disks   | e.g., Whatman 934-AH, 1.5 µm nominal pore size [@apha2012] |
 | Evaporating dishes              | Porcelain or high-silica glass             |
 | Aluminum weigh pans             | For filter drying                          |
-| Deionized (DI) water            |                                            |
+| Deionized (DI) water            | For filter washing and volume adjustment   |
 
 
 ## Procedure
@@ -126,7 +140,7 @@ campus safety.
    of DI water. Continue vacuum until all trace water is removed.
    Transfer the filter to an aluminum weigh pan and dry in an oven at
    103--105 °C for 1 hour. Cool in a desiccator to room temperature and
-   weigh to determine the tare mass ($B_{\text{TSS}}$).
+   weigh to determine the tare mass ($B_{\text{TSS}}$) [@apha2012].
 
 2. **TDS dish prep:** Clean an evaporating dish and heat in an oven at
    180 ±2 °C for 1 hour. Cool completely in a desiccator and record the
@@ -160,7 +174,7 @@ campus safety.
 ::: {.callout-tip}
 ### Constant Mass
 "Constant mass" means that successive weighings (after additional drying
-cycles of at least 1 hour) agree within ±0.5 mg.
+cycles of at least 1 hour) agree within ±0.5 mg [@apha2012].
 :::
 
 ### Shutdown and Cleanup
@@ -187,30 +201,44 @@ Where:
 - $B$ = tare weight of clean filter or dish (g)
 - $V$ = sample volume (mL)
 
+If the calculated TSS residue mass is less than 2.5 mg, increase the
+sample volume and repeat [@apha2012].
+
 
 ## Quality Control and Acceptance Criteria
 
 - Run a method blank (DI water through the full procedure) with each
-  batch. The blank result should be less than the method detection limit.
-- Duplicate samples should agree within ±10% relative percent difference.
-- If the measured residue mass is less than 2.5 mg, a larger sample
-  volume should be used.
+  batch. The blank result must be less than the method detection limit
+  [@apha2012].
+- Duplicate samples should agree within ±10% RPD.
+- If the measured residue mass is less than 2.5 mg, use a larger sample
+  volume.
 
 
 ## Waste Disposal
 
-| Waste Type            | Container             | Disposal Method          |
-|:----------------------|:----------------------|:-------------------------|
-| Used glass fiber filters | Solid waste bin     | Standard solid waste     |
-| Filtered water samples | Drain                | If no hazardous analytes |
+| Waste Type               | Container             | Disposal Method          |
+|:-------------------------|:----------------------|:-------------------------|
+| Used glass fiber filters | Solid waste bin       | Standard solid waste     |
+| Filtered water samples   | Drain                 | If no hazardous analytes |
 
 
 ## References
 
-- APHA, AWWA, WEF. *Standard Methods for the Examination of Water and
-  Wastewater.* Method 2540 D (TSS) and 2540 C (TDS).
-- Equipment manufacturer manuals.
+- @apha2012
 - [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+- [SOP-L114 Vacuum Filtration](SOP-L114-vacuum-filtration.qmd)
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety     | Emergency procedures              |
+| [L114](SOP-L114-vacuum-filtration.qmd) | Vacuum Filtration     | Filtration system operation       |
 
 
 ## Training Record
