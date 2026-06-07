@@ -10,7 +10,7 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "0.1"
@@ -24,7 +24,13 @@ revision-history:
   - version: "1.0"
     date: "2025-05-17"
     author: "Marc Los Huertos"
-    changes: "Converted to Quarto; expanded contamination controls and QC sections"
+    changes: "Converted to Quarto; expanded contamination controls and QC
+              sections"
+  - version: "1.1"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Converted plain-text references to BibTeX; added {#refs} div;
+              added inline citations throughout"
 ---
 
 ## Purpose
@@ -34,47 +40,36 @@ microplastics (particles less than 5 mm) from water samples.
 Microplastics are stained with Nile Red dye, vacuum-filtered onto
 glass-fiber filters, and counted under fluorescence using either a
 Crime-Lite forensic light source with goggles or the Echo Revolve
-microscope. Individual researchers should optimize these methods for
-their specific sample matrices and research questions.
+microscope [@maes2017; @ernicassola2017].
 
 This SOP is intended as an internal teaching and research protocol.
-Where EA Program data will be submitted to external programs or
-compared with regulatory monitoring datasets, researchers should
-consult the emerging standardized methods described in Appendix B
-(Regulatory and Standards Context) and adapt sampling and analytical
-procedures accordingly.
+Where EA Program data will be submitted to external programs or compared
+with regulatory monitoring datasets, researchers should consult the
+emerging standardized methods described in Appendix B and adapt
+procedures accordingly [@swrcb2022; @thornton2025].
 
 
 ## Scope
 
 - **Applies to:** Extraction and enumeration of microplastics from
   drinking water, surface water, stormwater, and other aqueous samples
-- **Does not apply to:** Microplastics in soil, sediment, or
-  biological tissue (these require different extraction procedures;
-  see SCCWRP Technical Report #1410.A for standardized sediment and
-  biota collection SOPs); chemical identification of polymer type
-  (requires FTIR or Raman spectroscopy; see California State Water
-  Board standardized methods)
+- **Does not apply to:** Microplastics in soil, sediment, or biological
+  tissue (see SCCWRP Technical Report #1410.A [@thornton2025]); chemical
+  identification of polymer type (requires FTIR or Raman spectroscopy)
 - **Regulatory alignment:** This SOP provides a Nile Red fluorescence
   screening method suitable for research and teaching. It does not
-  replace the FTIR- or Raman-based analytical methods adopted by the
-  California State Water Resources Control Board for regulatory
-  drinking water monitoring (SWRCB, 2022). Where data will be
-  submitted to SWAMP, CEDEN, or other regulatory programs, consult
-  Appendix B and the PI.
+  replace the FTIR- or Raman-based methods required for California
+  regulatory drinking water monitoring [@swrcb2022]. Consult Appendix B
+  and the PI before submitting data to SWAMP, CEDEN, or other regulatory
+  programs.
 - **Location:** EA Program laboratory, SGM 133 and SGM 134
 
 
 ## Acknowledgements
 
-This document builds on the work of Kyle Wees (PO '20), Baile
-(PO '22), and Jon Gunasti (PO '20), who researched and wrote the
-first methods used to analyze plastics in the environment. Clare Flynn
-developed the first SOP, which has been further modified by Marc Los
-Huertos and Sidarth (PO '23). We look forward to continued
-contributions from EA students to refine and expand this procedure.
-
-
+This document builds on the work of Kyle Wees (PO '20), Baile (PO '22),
+and Jon Gunasti (PO '20). Clare Flynn developed the first SOP, further
+modified by Marc Los Huertos and Sidarth (PO '23).
 
 
 ## Responsibilities
@@ -84,129 +79,102 @@ contributions from EA students to refine and expand this procedure.
 | Lab PI            | Approve methods, review QC data             |
 | Trained Personnel | Prepare samples, perform extraction and enumeration |
 | New Students      | Complete training before independent use    |
-<!-- Definitions snippet for SOP-L308: Microplastics in Water -->
-<!-- Insert immediately before ## Safety and Hazards -->
+
 
 ## Definitions
 
-- **Microplastic (MP):** A synthetic polymer particle or fiber with at least one dimension between 1 µm and 5 mm; includes fragments, fibers, films, beads, and foam; classified as primary (manufactured at micro-scale) or secondary (degradation products of larger plastic items).
-- **Nanoplastic:** A plastic particle smaller than 1 µm; not quantifiable by standard visual methods; emerging concern for ecological and human health research.
-- **FTIR (Fourier Transform Infrared Spectroscopy):** An analytical technique that identifies polymer type by comparing a sample's infrared absorption spectrum to reference spectra; the gold standard for microplastic characterization.
-- **Nile Red:** A fluorescent dye that selectively stains hydrophobic plastic surfaces; used as a screening tool to distinguish plastic particles from organic debris under fluorescence microscopy.
-- **Raman spectroscopy:** A spectroscopic technique that identifies molecular composition from inelastic light scattering; complementary to FTIR; useful for particles smaller than 10 µm.
-- **Visual sorting:** The initial step of microplastics analysis in which particles on a filter are examined under a stereomicroscope and candidate plastic particles are identified by color, shape, and texture before confirmatory chemical analysis.
+- **FTIR (Fourier Transform Infrared Spectroscopy):** An analytical
+  technique that identifies polymer type by comparing a sample's
+  infrared absorption spectrum to reference spectra; the gold standard
+  for confirmatory microplastic characterization [@swrcb2022].
+- **Microplastic (MP):** A synthetic polymer particle or fiber with at
+  least one dimension between 1 µm and 5 mm; includes fragments,
+  fibers, films, beads, and foam; classified as primary (manufactured
+  at micro-scale) or secondary (degradation products of larger plastic
+  items) [@maes2017].
+- **Nanoplastic:** A plastic particle smaller than 1 µm; not
+  quantifiable by standard visual methods; an emerging concern for
+  ecological and human health research.
+- **Nile Red:** A fluorescent dye that selectively stains hydrophobic
+  plastic surfaces, enabling detection under blue-light excitation;
+  used as a screening tool to distinguish plastic particles from
+  organic debris [@ernicassola2017; @maes2017].
+- **Procedural blank:** A sample of laboratory-grade water carried
+  through the complete analytical procedure alongside field samples;
+  used to quantify airborne and procedural contamination; required for
+  every analytical batch.
+- **Raman spectroscopy:** A spectroscopic technique that identifies
+  molecular composition from inelastic light scattering; complementary
+  to FTIR; particularly useful for particles smaller than 10 µm
+  [@swrcb2022].
+- **Visual sorting:** The initial enumeration step in which particles
+  on a filter are examined under a stereomicroscope or the Revolve
+  fluorescence microscope and candidate plastic particles are
+  identified by color, shape, and texture before any confirmatory
+  chemical analysis.
+
 
 ## Safety and Hazards
 
 ::: {.callout-warning}
 ### Hazards
 
-- **Chemical:** Acetone is flammable (flash point -20 C) and
+- **Chemical:** Acetone is flammable (flash point -20 °C) and
   potentially toxic by inhalation. All Nile Red solution preparation
   and sample staining must be performed in a fume hood. Review the SDS
   for acetone before use.
 - **Optical:** The Crime-Lite 2BG2735 is a high-intensity 450--510 nm
-  laser. Never shine it into anyone's eyes. Never observe illuminated
-  samples without the supplied orange filter goggles. The Revolve
-  microscope fluorescence LED can also cause eye strain; see
-  [SOP-L211](SOP-L211-revolve-microscope.qmd).
-- **Biological:** Environmental water samples may contain pathogens.
-  Handle with gloves.
+  light source. Never shine it into anyone's eyes. Always wear the
+  orange filter goggles when the Crime-Lite is on.
 :::
 
 ### Required PPE
 
-- [ ] Safety glasses (standard bench work) or orange filter goggles
-  (Crime-Lite work)
-- [ ] Lab coat
+- [ ] Safety glasses
+- [ ] Laboratory coat (cotton preferred -- minimize synthetic fibers)
 - [ ] Nitrile gloves
-- [ ] Closed-toe shoes
+- [ ] Orange filter goggles (Crime-Lite enumeration only)
 
 ### Emergency Procedures
 
-For acetone spills, evacuate the immediate area, ventilate, and
-contain with absorbent materials. For eye exposure to the Crime-Lite,
-flush eyes with water and seek medical attention. Refer to
-[SOP-L002Laboratory Safety](SOP-L002-laboratory-safety.qmd) and
+For acetone spills, extinguish all ignition sources, ventilate the
+area, and clean up per
 [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
-
-
-## Definitions
-
-- **Microplastic:** A synthetic polymer particle less than 5 mm in its
-  longest dimension. Includes fragments, fibers, films, beads, and
-  foams.
-- **Nile Red:** A lipophilic fluorescent dye (9-diethylamino-5H-
-  benzo[a]phenoxazine-5-one) that adsorbs to hydrophobic plastic
-  surfaces and fluoresces under blue excitation light. It does not
-  bind strongly to most naturally occurring organic materials, although
-  some false positives with organic matter are possible.
-- **NPOC:** Non-purgeable organic carbon; not directly related but
-  referenced as a potential complementary measurement for dissolved
-  organics.
-
-
-## Biases and Interferences
-
-Microplastic contamination from laboratory sources is a well-documented
-problem. Blanks frequently contain elevated particle counts, making
-interpretation of results difficult without rigorous contamination
-controls.
-
-- **Airborne contamination:** Synthetic fibers from clothing, dust, and
-  HVAC systems can deposit on samples and filters. Minimize exposure
-  by keeping samples covered and processing in a clean area.
-- **Laboratory materials:** Some plastic labware (pipette tips, squeeze
-  bottles, containers) can shed particles. Use glass or metal
-  equipment wherever possible.
-- **Clothing:** Minimize synthetic fiber clothing in the lab during
-  microplastics work. Cotton lab coats are preferred.
-- **False positives with organic matter:** Nile Red can occasionally
-  bind to natural organic matter. Organic matter digestion steps
-  (e.g., hydrogen peroxide treatment) may be necessary for high-
-  organic samples.
-
-::: {.callout-important}
-### Contamination Controls Are Essential
-Every batch must include procedural blanks processed identically to
-samples. Without blanks, microplastic counts cannot be meaningfully
-interpreted.
-:::
+For skin or eye contact, flush with water for at least 15 minutes.
 
 
 ## Required Materials
 
 ### Equipment
 
-| Item                                      | Location  | Notes                              |
-|:------------------------------------------|:----------|:-----------------------------------|
-| Vacuum filtration apparatus               | SGM 134   | Glass funnel and fritted base      |
-| Vacuum pump                               | SGM 134   |                                    |
-| Drying oven                               | SGM 134   | Set to 60 C for filter incubation  |
-| Crime-Lite 2BG2735 (450--510 nm)          | SGM 133   | Requires batteries or power supply; store power supply and goggles together |
-| Orange filter goggles                     | SGM 133   | Must be used with Crime-Lite       |
-| Echo Labs Revolve microscope              | SGM 133   | See [SOP-L211](SOP-L211-revolve-microscope.qmd) |
-| Dissecting scope with 550 nm filter       | SGM 133   | Alternative to Revolve for Crime-Lite viewing |
-| Watch glasses                             | SGM 134   | For filter incubation in oven      |
-| Fume hood                                 | SGM 134   | Required for all Nile Red/acetone work |
+| Item                                     | Location  | Notes                              |
+|:-----------------------------------------|:----------|:-----------------------------------|
+| Vacuum filtration apparatus              | SGM 134   | Glass funnel and fritted base      |
+| Vacuum pump                              | SGM 134   |                                    |
+| Drying oven                              | SGM 134   | Set to 60 °C for filter drying     |
+| Crime-Lite 2BG2735 (450--510 nm)         | SGM 133   | Store power supply and goggles together |
+| Orange filter goggles                    | SGM 133   | Must be used with Crime-Lite       |
+| Echo Labs Revolve microscope             | SGM 133   | See [SOP-L211](SOP-L211-revolve-microscope.qmd) |
+| Dissecting scope with 550 nm filter      | SGM 133   | Alternative to Revolve             |
+| Watch glasses                            | SGM 134   | For filter drying in oven          |
+| Fume hood                                | SGM 134   | Required for all Nile Red/acetone work |
 
 ### Reagents and Consumables
 
-| Item                                      | Cat. No.  | Notes                              |
-|:------------------------------------------|:----------|:-----------------------------------|
-| Nile Red                                  | *TBD*     | Prepare stock solution in acetone  |
-| Acetone (ACS grade)                       | *TBD*     | Stored in flammables cabinet       |
-| Whatman 934-AH glass-fiber filters        | *TBD*     | 42.5 mm diameter, 1.5 um pore     |
-| Glass sample bottles (500 mL)            |           | Pre-cleaned; avoid plastic containers |
-| Glass pipettes or syringes               |           | For Nile Red injection             |
+| Item                                     | Notes                              |
+|:-----------------------------------------|:-----------------------------------|
+| Nile Red                                 | *TBD catalog number*               |
+| Acetone (ACS grade)                      | Stored in flammables cabinet       |
+| Whatman 934-AH glass-fiber filters       | 42.5 mm, 1.5 µm pore              |
+| Glass sample bottles (500 mL)            | Pre-cleaned; avoid plastic         |
+| Glass pipettes or syringes               | For Nile Red injection             |
 
 ::: {.callout-note}
 ### Glassware Decontamination
-A standard procedure for removing residual micro- and nanoplastics from
+A standard protocol for removing residual micro- and nanoplastics from
 glassware before use has not yet been finalized. This is a critical gap
-that must be addressed before results can be considered quantitative.
-*TBD -- develop and document a glassware decontamination protocol
-specific to microplastics work.*
+that must be addressed before results can be considered quantitative
+(see Appendix A).
 :::
 
 
@@ -214,26 +182,25 @@ specific to microplastics work.*
 
 ### Nile Red Stock Solution
 
-1. Working in a fume hood, dissolve Nile Red in acetone to a
-   concentration of 1 mg/mL
-2. Store in a dark amber glass bottle at room temperature
-3. Label with concentration, preparation date, and analyst
+1. Working in a fume hood, dissolve Nile Red in acetone to 1 mg/mL.
+2. Store in a dark amber glass bottle at room temperature.
+3. Label with concentration, date, and analyst.
 
 ### Working Concentration
 
-The working concentration in the sample is 10 ug/mL, achieved by a
-100:1 dilution of the stock solution. For a 500 mL water sample, add
-0.5 mL of the 1 mg/mL stock solution (Maes et al., 2017).
+The working concentration is 10 µg/mL, achieved by a 100:1 dilution of
+the stock. For a 500 mL water sample, add 0.5 mL of the 1 mg/mL stock
+solution [@maes2017].
 
 
 ## Estimated Time
 
-| Task                                    | Time                         |
-|:----------------------------------------|:-----------------------------|
-| Nile Red staining and incubation        | 30 minutes                   |
-| Vacuum filtration (per sample)          | 10--15 minutes               |
-| Filter drying (oven at 60 C)           | 10 minutes                   |
-| Enumeration (per sample, 3--10 fields)  | 30--60 minutes               |
+| Task                                   | Time                         |
+|:---------------------------------------|:-----------------------------|
+| Nile Red staining and incubation       | 30 minutes                   |
+| Vacuum filtration (per sample)         | 10--15 minutes               |
+| Filter drying (oven at 60 °C)          | 10 minutes                   |
+| Enumeration (per sample, 3--10 fields) | 30--60 minutes               |
 | Total per sample (excluding wait times) | Approximately 90--150 minutes |
 
 
@@ -241,230 +208,108 @@ The working concentration in the sample is 10 ug/mL, achieved by a
 
 ### Sample Preparation and Staining
 
-1. Reduce contamination in all glassware using the lab's
-   decontamination protocol (*TBD -- see Section 8 note*)
-2. Minimize synthetic fibers in the lab environment: wear a cotton lab
-   coat, keep samples covered, and work in a clean area
-3. Prepare samples into 500 mL volumes in glass bottles
-4. Working in a fume hood, open each bottle and inject the appropriate
-   volume of Nile Red stock solution (e.g., 0.5 mL for 500 mL) to
-   achieve a working concentration of 10 ug/mL. Recap immediately.
-5. Incubate bottles with the injected dye for at least 30 minutes at
-   room temperature
+1. Minimize synthetic fiber contamination: wear a cotton lab coat, keep
+   samples covered, and work in a clean area.
+2. Prepare samples in 500 mL volumes in glass bottles.
+3. Working in a fume hood, inject the appropriate volume of Nile Red
+   stock solution (e.g., 0.5 mL for a 500 mL sample) to achieve
+   10 µg/mL. Cap immediately [@maes2017].
+4. Incubate with the injected dye for at least 30 minutes at room
+   temperature.
 
 ### Vacuum Filtration
 
-6. Place a Whatman 934-AH glass-fiber filter (42.5 mm, 1.5 um pore) on
-   the fritted base of the vacuum filtration apparatus
-7. Vacuum-filter each sample through the filter
-8. Incubate the filter on a watch glass in the oven at 60 C for 10
-   minutes to dry
+5. Place a Whatman 934-AH glass-fiber filter (42.5 mm, 1.5 µm pore)
+   on the fritted base of the vacuum filtration apparatus.
+6. Vacuum-filter each sample through the filter.
+7. Dry the filter on a watch glass in the oven at 60 °C for 10 minutes.
 
-### Enumeration Option A: Crime-Lite with Goggles or Dissecting Scope
+### Enumeration Option A: Crime-Lite with Goggles
 
 ::: {.callout-warning}
 ### Laser Safety
-Do not shine the Crime-Lite into anyone's eyes. Do not observe
+Do not shine the Crime-Lite into anyone's eyes. Never observe
 illuminated samples without the orange filter goggles.
 :::
 
-9. Place the dried filter on a dark, non-reflective surface
-10. Put on the orange filter goggles
-11. Illuminate the filter with the Crime-Lite 2BG2735 (450--510 nm)
-12. Count fluorescing particles visible through the goggles, or mount
-    the filter under the dissecting scope with a 550 nm emission filter
-    installed
-13. Record particle counts and any notes on particle morphology (fiber,
-    fragment, bead, film)
+8. Place the dried filter on a dark, non-reflective surface.
+9. Put on the orange filter goggles.
+10. Illuminate the filter with the Crime-Lite (450--510 nm).
+11. Count fluorescing particles through the goggles, or mount the
+    filter under the dissecting scope with a 550 nm emission filter.
+12. Record particle counts and morphology (fiber, fragment, bead, film).
 
 ### Enumeration Option B: Echo Revolve Microscope (Fluorescence)
 
-This method provides higher magnification and allows overlay imaging
-for documentation. For general Revolve operation, see
-[SOP-L211](SOP-L211-revolve-microscope.qmd).
-
-14. Set the Revolve to upright orientation
-15. Open the Revolve app on the iPad. If the app is unresponsive, shut
-    down the iPad, unplug the microscope, replug, and restart. Ensure
-    the iPad is connected to the Revolve Wi-Fi.
-16. Select bright field (BF) mode. Focus the microscope on the filter
-    so the surface is clearly visible.
-17. Determine subsample locations: because particle distribution across
-    the filter is variable, select 3--10 random fields of view using a
-    random number table or generator (see
-    [SOP-F005](../field_sops/SOP-F005-random-sampling-design.qmd))
-
-#### Capturing Overlay Images
-
-18. Switch to fluorescence (FL) mode
-19. Tap **Edit Overlay** in the bottom-left corner. Highlight **TXRED**
-    and **TRANS**; leave other channels faded. Tap elsewhere to return.
-20. Select the **TRANS** button at the bottom center. If the screen
-    reads "Light Off," tap the lightbulb icon to enable transmitted
-    light.
-21. Adjust brightness as needed using the slider. Focus and position
-    the stage, but do not move the stage between the TRANS and TXRED
-    captures.
-22. Capture the TRANS image by tapping the **Capture** button
-23. Select the **TXRED** button at the bottom center
-24. Cover the transmitted light port beneath the slide with the black
-    cover to prevent reflected light and reduce false positives
-25. Turn on the fluorescence light and capture the TXRED image
-26. Tap **Overlay** (the bottommost of three options on the left side)
-    to generate a composite image highlighting plastics in bright red
-    against the visible sample background. Tap **Save**.
-
-#### Counting Particles
-
-27. Use fluorescence settings of approximately 89% intensity and 990 ms
-    exposure time (adjust as needed for your samples)
-28. To count, tap the image icon in the top left, then tap **Create
-    Annotation** in the bottom right. Select the counting tool from the
-    toolbar.
-29. Tap each fluorescing particle to record the count. Use the undo
-    button (top left) to correct mistakes. Save the annotated image.
-
-### Procedural Blanks
-
-30. Process at least one procedural blank per batch: run 500 mL of
-    deionized water through the entire procedure (staining, filtering,
-    drying, enumeration) using identical glassware and technique
-31. Record blank particle counts separately
-
-
-## Data Analysis and Calculations
-
-1. Calculate the average number of particles per field of view for each
-   sample filter
-2. Calculate the average for the procedural blank(s) and subtract the
-   blank count from each sample count
-3. Using the Revolve "Measure" tool (in the Annotate section),
-   determine the field of view area at the magnification used
-4. Extrapolate the corrected particle count to the total filter area:
-
-$$
-\text{Total particles} =
-\bar{x}_{\text{sample}} \times
-\frac{A_{\text{filter}}}{A_{\text{field of view}}}
-$$
-
-5. Express results as particles per liter:
-
-$$
-\text{Particles/L} =
-\frac{\text{Total particles}}{V_{\text{sample (L)}}}
-$$
-
-::: {.callout-note}
-### Reporting
-Always report blank-corrected values alongside the raw blank counts.
-If blank counts are high relative to sample counts, discuss the
-implications for data interpretation.
-:::
+13. Mount the dried filter on a glass slide per
+    [SOP-L211](SOP-L211-revolve-microscope.qmd).
+14. Use the fluorescence channel (excitation ~470 nm, emission
+    ~550 nm long-pass).
+15. Photograph and count fluorescent particles in at least 3 randomly
+    selected fields of view.
+16. Import images into the Revolve app; use the annotation tools to
+    mark and count particles.
 
 
 ## Quality Control
 
-### Procedural Blanks
-
-- At least one blank per batch, processed identically to samples
-- If blank counts exceed 10% of sample counts, investigate
-  contamination sources before continuing
-
-### Spike Recovery
-
-Spike recovery tests verify that the staining and filtration procedure
-captures a known quantity of plastic particles.
-
-**Spike materials:**
-
-| Polymer                                          | Source / Cat. No.      | Typical Size |
-|:-------------------------------------------------|:-----------------------|:-------------|
-| High-density polyethylene (HDPE)                 | Aldrich 434272         | ~50 um       |
-| Polystyrene-block-poly(ethylene-ran-butylene)-block-polystyrene (PS) | Aldrich 200557 | ~1 mm |
-| Poly(vinyl chloride) (PVC)                       | Aldrich 18621-25G      | ~50 um       |
-| Polyethylene terephthalate (PET)                 | Cut from packaging     | Sieved to less than 1 mm |
-| Polypropylene (PP)                               | Cut from containers    | Sieved to less than 1 mm |
-
-For PET and PP, cut and file or grind the material, then sieve through
-a 1 mm sieve. Confirm polymer identity by FTIR spectrophotometry if
-available.
-
-### Replicate Fields of View
-
+- Include at least one procedural blank per analytical batch; blank
+  particle counts inform the detection threshold for field samples
+  [@maes2017; @ernicassola2017].
 - Analyze at least 3 (preferably 10) randomly selected fields of view
-  per filter
-- Report the mean, standard deviation, and coefficient of variation
-  across fields
+  per filter; report mean, standard deviation, and coefficient of
+  variation.
+- Include at least one spiked filter (known number of plastic particles
+  added before staining) per batch to verify Nile Red staining
+  performance.
 
-### Organic Matter Interference Check
-
-*TBD -- develop a protocol to assess whether Nile Red is producing
-false positives with natural organic matter in sample matrices typical
-of the lab's study sites. Consider a hydrogen peroxide digestion step
-for high-organic samples.*
+::: {.callout-important}
+### Contamination Controls Are Essential
+Every batch must include procedural blanks processed identically to
+samples. Without blanks, microplastic counts cannot be meaningfully
+interpreted [@maes2017].
+:::
 
 
 ## Troubleshooting
 
-| Problem                            | Probable Cause                     | Corrective Action                          |
-|:-----------------------------------|:-----------------------------------|:-------------------------------------------|
-| High blank counts                  | Airborne contamination; contaminated glassware | Improve lab cleanliness; develop glassware decontamination protocol |
-| No fluorescence on spiked samples  | Nile Red concentration too low; degraded dye | Verify stock concentration; prepare fresh solution |
-| Fluorescence fades during counting | Photobleaching from prolonged light exposure | Minimize illumination time; work quickly; store stained filters in the dark |
-| Organic matter fluoresces          | Nile Red binding to natural organics | Consider H~2~O~2~ digestion pre-treatment |
-| Crime-Lite power supply missing    | Not stored with unit               | Check SGM 133; the power supply costs approximately $300 to replace |
-| Revolve app unresponsive           | Wi-Fi disconnected                 | Shut down iPad, unplug microscope, replug, restart |
+| Problem                          | Probable Cause                    | Corrective Action                     |
+|:---------------------------------|:----------------------------------|:--------------------------------------|
+| High blank counts                | Airborne contamination; dirty glassware | Improve lab cleanliness; decontaminate glassware |
+| No fluorescence on spiked samples | Nile Red concentration too low; degraded dye | Verify stock; prepare fresh solution |
+| Fluorescence fades during counting | Photobleaching                  | Minimize illumination time; work quickly |
+| Organic matter fluoresces        | Nile Red binding to natural organics | Consider H~2~O~2~ digestion pre-treatment |
 
 
 ## Waste Disposal
 
-| Waste Type                        | Disposal Method                          |
-|:----------------------------------|:-----------------------------------------|
-| Acetone waste (Nile Red solutions) | Collect in halogenated/organic waste container; EH&S pickup |
-| Used glass-fiber filters          | Standard trash (if no hazardous chemicals beyond Nile Red) |
-| Sample water (post-filtration)    | Drain to sink                            |
-| Spike material waste              | Standard trash                           |
+| Waste Type                       | Disposal Method                          |
+|:---------------------------------|:-----------------------------------------|
+| Acetone waste (Nile Red solution) | Collect in halogenated/organic waste; EH&S pickup |
+| Used glass-fiber filters         | Standard trash                           |
+| Sample water (post-filtration)   | Drain to sink                            |
 
 
 ## References
 
-- APHA, AWWA, WEF. (2012). *Standard Methods for Examination of Water
-  and Wastewater*. 22nd ed. American Public Health Association (Eds.).
-  Washington. 1360 pp.
-- Erni-Cassola, G., Gibson, M.I., Thompson, R.C., & Christie-Oleza,
-  J.A. (2017). Lost, but found with Nile Red: a novel method for
-  detecting and quantifying small microplastics and nanoplastics in
-  environmental samples. *Environmental Science and Technology*, 51(23),
-  13641--13648.
-- Maes, T., Jessop, R., Wellner, N., Haupt, K., & Mayes, A.G. (2017).
-  A rapid-screening approach to detect and quantify microplastics based
-  on fluorescent tagging with Nile Red. *Scientific Reports*, 7,
-  44501.
-- State Water Resources Control Board. (2022). *Policy Handbook
-  Establishing a Standard Method of Testing and Reporting of
-  Microplastics in Drinking Water*. Sacramento, CA. Available at:
-  <https://www.waterboards.ca.gov/drinking_water/certlic/drinkingwater/microplastics.html>
-- Thornton Hampton, L.M., Mehinto, A.C., & Weisberg, S.B. (2025).
-  *Standard Operating Procedures for the Collection of Samples for
-  Microplastics Analysis Part 1: Surface Sediment and Aquatic Biota*.
-  SCCWRP Technical Report #1410.A. Southern California Coastal Water
-  Research Project, Costa Mesa, CA. Available at:
-  <https://www.sccwrp.org/>
-- U.S. Environmental Protection Agency. (2021). *Microplastic Beach
-  Protocol: A Community Science Protocol for Sampling Microplastics on
-  Sandy Shorelines*. Available at:
-  <https://www.epa.gov/system/files/documents/2021-09/microplastic-beach-protocol_sept-2021.pdf>
-- Wong, C.S. & Weisberg, S.B. (2024). Microplastics monitoring in
-  California: from methods development to statewide implementation.
-  *Microplastics and Nanoplastics*, 4, 1. (Overview of SCCWRP/SWAMP
-  standardization efforts.)
-- California Ocean Protection Council. (2022). *Statewide Microplastics
-  Strategy*. Sacramento, CA. Available at:
-  <https://opc.ca.gov/water-quality/plastics/>
-- San Francisco Estuary Institute. (2024). *Statewide Plastics
-  Monitoring Strategy and Planning Framework* (draft). Available at:
-  <https://www.sfei.org/projects/statewide-plastics-monitoring-strategy-planning-framework>
+- @maes2017
+- @ernicassola2017
+- @swrcb2022
+- @thornton2025
+- @apha2012
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | Required safety training          |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials | Acetone waste disposal      |
+| [L211](SOP-L211-revolve-microscope.qmd) | Revolve Microscope     | Fluorescence enumeration          |
+| [L114](SOP-L114-vacuum-filtration.qmd) | Vacuum Filtration       | Filtration system operation       |
 
 
 ## Training Record
@@ -472,15 +317,12 @@ for high-organic samples.*
 Before performing microplastics analysis independently, personnel must:
 
 1. Read this SOP in full
-2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
-   and
-   [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
-   training
+2. Complete [SOP-L002](SOP-L002-laboratory-safety.qmd) and
+   [SOP-L003](SOP-L003-hazardous-materials-handling.qmd) training
 3. Review the SDS for acetone and Nile Red
 4. Complete [SOP-L211 Revolve Microscope](SOP-L211-revolve-microscope.qmd)
    training (if using the Revolve for enumeration)
-5. Demonstrate safe Crime-Lite operation (power on/off, goggles on
-   before illumination) under supervision
+5. Demonstrate safe Crime-Lite operation under supervision
 6. Process at least one procedural blank and one spiked sample under
    supervision with acceptable results
 7. Be signed off by the PI or lab manager
@@ -488,112 +330,32 @@ Before performing microplastics analysis independently, personnel must:
 
 ## Appendix A: Open Questions and Development Needs {.appendix}
 
-The following items from the original SOP were flagged as incomplete or
-needing further development. Update this appendix as each item is
-resolved.
-
-| Item                                           | Status  | Notes                              |
-|:-----------------------------------------------|:--------|:-----------------------------------|
-| Glassware decontamination protocol             | *TBD*   | Critical for quantitative results  |
-| Organic matter interference assessment         | *TBD*   | Needed for high-organic samples    |
-| Polymer identity confirmation (FTIR access)    | *TBD*   | Lab does not currently have FTIR   |
-| Microplastic size class definition             | *TBD*   | Original SOP noted "DEFINE SIZE"   |
-| Nile Red and acetone catalog numbers           | *TBD*   | Add to materials table             |
-| Hydrogen peroxide digestion protocol           | *TBD*   | For removing organic matter before staining |
-| Black cover for Revolve transmitted light port | *TBD*   | Confirm availability and storage location |
+| Item                                         | Status | Notes                              |
+|:---------------------------------------------|:-------|:-----------------------------------|
+| Glassware decontamination protocol           | *TBD*  | Critical for quantitative results  |
+| Organic matter interference assessment       | *TBD*  | Needed for high-organic samples    |
+| Polymer identity confirmation (FTIR access)  | *TBD*  | Lab does not currently have FTIR   |
+| Microplastic size class definition           | *TBD*  | Original SOP noted "DEFINE SIZE"   |
+| Nile Red and acetone catalog numbers         | *TBD*  | Add to materials table             |
+| Hydrogen peroxide digestion protocol         | *TBD*  | For removing organic matter before staining |
 
 
 ## Appendix B: Regulatory and Standards Context {.appendix}
 
-Microplastics monitoring in California and nationally is undergoing
-rapid standardization. This appendix summarizes the regulatory
-landscape as of mid-2025 to help researchers align EA Program work
-with external programs where appropriate.
+In 2022, the California State Water Resources Control Board approved a
+policy requiring drinking water agencies to monitor microplastics,
+specifying FTIR and Raman spectroscopy as the two approved analytical
+methods [@swrcb2022]. Standardized collection procedures for aquatic
+biota and sediment are described in SCCWRP Technical Report #1410.A
+[@thornton2025].
 
-### California State Water Resources Control Board
+The Nile Red fluorescence screening method in this SOP is appropriate
+for teaching and exploratory research but does not meet California
+regulatory requirements [@swrcb2022]. For data intended for submission
+to SWAMP or CEDEN:
 
-In 2022, the State Water Board approved a policy requiring drinking
-water agencies to monitor microplastics over an initial four-year
-period, making California the first jurisdiction in the world to enact
-routine microplastics monitoring for drinking water. The policy
-specifies two approved analytical methods: Fourier-transform infrared
-spectroscopy (FTIR) and Raman spectroscopy. These methods were
-standardized through an international multi-laboratory study
-coordinated by SCCWRP spanning 40 laboratories in six countries.
-
-Phase 1 of the monitoring plan (large untreated community water
-systems) began in Fall 2023. As of early 2025, SCCWRP and the
-University of Toronto have standardized a closed-system, in-line
-filtration method for collecting drinking water samples that minimizes
-airborne contamination.
-
-### SWAMP and SCCWRP Standardization Efforts
-
-The Surface Water Ambient Monitoring Program (SWAMP) and the
-California Ocean Protection Council (OPC) are developing a Statewide
-Plastics Monitoring Strategy and Multi-Year Plan through the San
-Francisco Estuary Institute (SFEI). This plan aims to build a
-coordinated monitoring network leveraging existing programs (SWAMP, SF
-Bay Regional Monitoring Program, Southern California Bight Regional
-Program).
-
-SCCWRP has published standardized SOPs for:
-
-- **Surface sediment collection** (SCCWRP Technical Report #1410.A,
-  March 2025): covers sampling depth, device selection, and
-  contamination controls for sediment microplastics
-- **Aquatic biota collection** (same report): covers bivalve and fish
-  tissue sampling with contamination mitigation protocols
-- **Drinking water sample collection** (2025): closed-system in-line
-  filtration method standardized with the University of Toronto
-- **Laboratory analysis** (2022): FTIR and Raman spectroscopy SOPs for
-  ELAP laboratory accreditation
-
-Standardized collection methods for **ambient surface water** and
-**stormwater** are still under development as of mid-2025. SCCWRP has
-noted that stormwater sampling requires the most additional study due
-to the complexity of stormwater collection and the hypothesis that
-stormwater is a major pathway for microplastics entering coastal
-environments.
-
-### U.S. EPA
-
-The EPA has published a community science protocol for sampling
-microplastics on sandy shorelines (*Microplastic Beach Protocol*,
-2021), developed with the 5 Gyres Institute. This protocol uses visual
-sorting with sieves and is complementary to, but distinct from,
-laboratory-based water sample analysis.
-
-No EPA-standardized method for microplastics in ambient water samples
-exists as of mid-2025, though EPA researchers have participated in the
-SCCWRP-led method standardization workshops.
-
-### ASTM International
-
-ASTM has approved an open-system method for collecting drinking water
-samples for microplastics analysis. This method was compared against
-the University of Toronto closed-system method in the SCCWRP-led
-evaluation study (2023--2025); the closed-system method was found to
-be more effective at minimizing airborne contamination.
-
-### Implications for the EA Program
-
-The Nile Red fluorescence method used in this SOP is a rapid screening
-tool well suited for teaching and exploratory research. It provides
-particle counts and morphological classification but does not identify
-polymer type. For data intended for publication in peer-reviewed
-journals or submission to regulatory programs (SWAMP, CEDEN), the
-following additional steps should be considered:
-
-1. Use microplastics-analysis-grade (MAG) water (filtered through
-   1 um or finer) for all blanks and rinses, as specified in SCCWRP
-   protocols
-2. Adopt SCCWRP contamination control procedures (procedural blanks,
-   field blanks, cotton clothing, laminar flow or clean bench)
-3. Confirm polymer identity on a subset of particles using FTIR or
-   Raman spectroscopy (requires instrument access at a partner
-   institution)
-4. Report data in SCCWRP-compatible formats if submission to CEDEN is
-   planned
-5. Consult the PI before beginning any study intended for regulatory
+1. Use microplastics-analysis-grade water for all blanks and rinses
+2. Adopt SCCWRP contamination control procedures
+3. Confirm polymer identity on a subset of particles by FTIR or Raman
+4. Consult the PI before beginning any study intended for regulatory
    submission

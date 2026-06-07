@@ -10,13 +10,17 @@ author:
 approved-by: "Marc Los Huertos"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "1.0"
+revision: "1.1"
 
 revision-history:
   - version: "1.0"
     date: "2025-05-14"
     author: "Marc Los Huertos"
     changes: "Initial release; consolidated from former L25, L27, and L28"
+  - version: "1.1"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section"
 ---
 
 ## Purpose
@@ -60,6 +64,62 @@ registry as the lab's needs evolve, without rewriting the core SOP
 | New Students      | Complete training before independent use    |
 
 
+## Definitions
+
+- **Absorbance (A):** The negative base-10 logarithm of transmittance:
+  $A = -\log_{10}(T)$; directly proportional to analyte concentration
+  within the linear range of the instrument (Beer-Lambert law)
+  [@hach_dr3900].
+- **Beer-Lambert law:** The relationship between absorbance, path
+  length, and concentration: $A = \varepsilon c l$, where $\varepsilon$
+  is the molar absorptivity, $c$ is concentration, and $l$ is the
+  optical path length; the physical basis for all colorimetric
+  quantification [@apha2012].
+- **Blank (reagent blank):** A sample containing all reagents except
+  the analyte; used to zero the instrument and correct for background
+  absorbance contributed by the reagent matrix [@apha2012].
+- **Continuing calibration verification (CCV):** A known-concentration
+  mid-range standard analyzed at regular intervals during a run to
+  confirm that factory-programmed calibration curves remain accurate;
+  acceptance criterion is ±10% of the stated value [@hach_dr3900].
+- **Detection limit (MDL):** The minimum analyte concentration
+  reliably distinguished from a blank; method-specific and listed in
+  the Method Registry (§7); the blank must read within the MDL of zero
+  at the start of each session [@apha2012].
+- **DR3900:** The Hach benchtop spectrophotometer; wavelength range
+  320--1100 nm; uses stored Hach programs or user-defined methods;
+  supports 10 mm square, 1-inch round, and 16 mm round cells
+  [@hach_dr3900].
+- **DR900:** The Hach portable colorimeter; battery-operated; uses
+  the same stored-program approach as the DR3900; limited to a subset
+  of Hach methods compatible with the 1-inch round cell format
+  [@hach_dr900].
+- **Hach method number:** A unique numeric identifier for each Hach
+  reagent-kit and instrument-program combination; used to select the
+  correct stored program on the DR3900 or DR900 and to ensure that
+  the correct reagent is paired with the correct calibration curve
+  [@hach_water_analysis2024].
+- **Method Registry:** The table in §7 of this SOP listing all
+  validated Hach methods in use in the EA Program laboratory, with
+  analyte, chemistry, program number, reagent catalog number,
+  instrument compatibility, range, sample volume, reaction time, key
+  interferences, and validation status.
+- **Powder pillow:** A heat-sealed foil packet containing a
+  pre-weighed, factory-prepared reagent mixture; added directly to
+  the sample to initiate the color-forming reaction; eliminates manual
+  reagent preparation and reduces sources of error [@hach_water_analysis2024].
+- **RPD (relative percent difference):** |A - B| / ((A + B) / 2) × 100;
+  used to assess duplicate precision; acceptable RPD is less than 20%
+  for concentrations above 5 × the detection limit [@apha2012].
+- **TNT plus vial:** A Hach proprietary pre-dosed reagent vial
+  containing all required reagents sealed in glass; used with the
+  DR3900 for total-nutrient digestion methods (e.g., total phosphorus,
+  total nitrogen) [@hach_water_analysis2024].
+- **Zeroing:** The process of inserting a reagent blank into the sample
+  cell and pressing Zero to set the baseline absorbance to zero for the
+  selected program; required before each analytical batch [@hach_dr3900].
+
+
 ## Safety and Hazards
 
 ::: {.callout-warning}
@@ -67,175 +127,93 @@ registry as the lab's needs evolve, without rewriting the core SOP
 
 - **Chemical:** Hach reagent powder pillows and liquid reagents contain
   a variety of chemicals depending on the method. Some contain acids
-  (e.g., sulfuric acid in the TNT plus vials), heavy metal indicators
+  (e.g., sulfuric acid in TNT plus vials), heavy metal indicators
   (e.g., cadmium in older nitrate methods), or oxidizers. Always
   review the SDS for each reagent kit before first use.
-- **Physical:** The DR3900 digestion reactor (DRB200) operates at
-  105--150 C; burn risk from hot vials. Some methods require a
-  digestion step.
-- **Biological:** Water samples may contain pathogens; handle with
-  gloves.
+- **Thermal:** COD and total nutrient digestions use the DRB200 reactor
+  block at 150 °C. Use heat-resistant gloves when handling heated vials.
+- **Glassware:** Glass vials can break during handling or if heated
+  unevenly. Handle with care; wear safety glasses.
 :::
 
 ### Required PPE
 
-- [ ] Nitrile gloves
-- [ ] Safety glasses (required for all reagent handling and digestion steps)
+- [ ] Safety glasses
 - [ ] Lab coat
-- [ ] Heat-resistant gloves (when handling hot digestion vials)
+- [ ] Nitrile gloves
 
 ### Emergency Procedures
 
-For reagent splashes to skin or eyes, flush immediately with water for
-at least 15 minutes. Consult the reagent SDS for specific first aid.
-Refer to
-[SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd).
+For reagent splashes to skin or eyes, flush with water for at least
+15 minutes. Refer to
+[SOP-L004 Chemical Spill Response](SOP-L004-chemical-spill-response.qmd)
+for spill cleanup. For burns from the reactor block, apply cool running
+water and seek first aid.
 
 
-## Equipment and Materials
+## Equipment
 
-### Instruments
-
-| Item                              | Location         | Notes                          |
-|:----------------------------------|:-----------------|:-------------------------------|
-| Hach DR3900 Benchtop Spectrophotometer | Lab bench, SGM 133 | Wavelength range 320--1100 nm; stored programs for Hach methods |
-| Hach DR900 Portable Colorimeter   | Field kit        | LED-based; stored programs for Hach methods; battery-powered |
-| Hach DRB200 Digital Reactor Block | Lab bench        | For COD, total phosphorus, total nitrogen, and other digestion methods; *TBD -- confirm if available* |
-| Sample cells (10 mL, 25 mL, 1-inch round) | Lab     | Must match the method and instrument |
-| Light shield / adapter            | With DR3900      | For 13 mm and 16 mm round vials (TNT plus) |
-
-### General Consumables
-
-| Item                                  | Notes                              |
-|:--------------------------------------|:-----------------------------------|
-| Hach reagent kits (see Method Registry, Section 7) | Store per kit instructions; check expiration dates |
-| DI water (Type II or better)          | For blanks and dilutions           |
-| Lint-free wipes (Kimwipes)            | For cleaning sample cell exterior  |
-| Silicone oil and applicator cloth     | For 1-inch round cells (reduces light scattering) |
-| Graduated cylinders and volumetric pipettes | For measured sample volumes   |
-| Timer                                 | For reaction times                 |
-| Waste containers                      | Labeled by waste stream            |
+| Item                          | Notes                                            |
+|:------------------------------|:-------------------------------------------------|
+| Hach DR3900 benchtop spectrophotometer | SGM 133 [@hach_dr3900]                 |
+| Hach DR900 portable colorimeter | Field use; see [SOP-F208](../field_sops/SOP-F208-portable-colorimeter-field.qmd) |
+| Hach DRB200 reactor block     | For COD and total nutrient digestions (150 °C)   |
+| Sample cells (1-inch round, 10 mm square, 16 mm round) | Matched to Hach method; keep clean and scratch-free |
+| Lint-free wipes (Kimwipes)    | For cleaning cell exterior before reading        |
+| Silicone oil and applicator cloth | For 1-inch round cells to minimize light scatter |
+| Timer / stopwatch             | For reaction time control                        |
+| DI water (squeeze bottle)     | For blanks and cell rinsing                      |
+| Waste container (sealable)    | For used reagent vials and solutions             |
 
 
-## Procedure -- Instrument Operation
+## Procedure
 
-### DR3900 Startup and Program Selection
+### Startup and Instrument Check
 
-1. Turn on the DR3900 using the power switch on the back panel
-2. Allow the instrument to complete its self-check (approximately 30
-   seconds)
-3. From the home screen, select **Stored Programs**
-4. Search by program number (see Method Registry, Section 7) or by
-   analyte name
-5. Select the correct program. The display will show the method
-   wavelength, sample cell type, and measurement units.
+1. Turn on the DR3900 and allow it to complete its self-check (approximately
+   30 seconds).
+2. Verify the lamp status indicator shows "Ready."
+3. Select the stored program for your analyte by program number (see
+   §7, Method Registry) [@hach_dr3900].
 
-### DR900 Startup and Program Selection
+### Zeroing
 
-1. Press the power button on the DR900
-2. Select **Stored Programs** from the menu
-3. Enter the program number or scroll to the analyte name
-4. The display will confirm the method, wavelength, and sample cell type
+1. Fill a clean sample cell with DI water to the fill line.
+2. Wipe the cell exterior with a lint-free cloth. Apply silicone oil for
+   1-inch round cells.
+3. Insert the cell, close the lid, and press **Zero**. The display must
+   read 0.00 (within the method detection limit). If it does not, clean
+   the cell and re-zero.
 
-### Zeroing the Instrument (Blank)
+### Sample Analysis
 
-Every Hach method requires a blank (zero) reading before measuring
-samples.
+1. Fill a clean cell to the fill line with the water sample.
+2. Add the reagent (powder pillow or TNT vial) per the method instructions.
+3. Cap, invert, and mix as directed. Start the timer for the required
+   reaction time.
+4. When the reaction time is complete, wipe the cell exterior (apply
+   silicone oil for 1-inch round cells).
+5. Insert the cell, close the lid, and press **Read**.
+6. Record the result, analyte, program number, sample ID, units, date,
+   and time in the lab notebook.
+7. Rinse the cell three times with DI water before the next sample.
 
-1. Prepare the blank according to the specific method instructions:
-   most methods use DI water in a clean sample cell; some methods use
-   a reagent blank (sample plus all reagents except the color-developing
-   reagent).
-2. Wipe the outside of the sample cell with a lint-free tissue. For
-   1-inch round cells, apply a thin coat of silicone oil and wipe with
-   the oiling cloth.
-3. Insert the blank into the cell holder, aligning the orientation mark
-   with the arrow on the instrument
-4. Close the light shield and press **Zero**. The display should read
-   0.000 mg/L (or the appropriate unit).
+### Shutdown
 
-### General Measurement Workflow
-
-The following workflow applies to all Hach methods. Chemistry-specific
-details (reagent addition, reaction time, interferences) are in the
-Method Registry (Section 7).
-
-1. Collect or pour the required sample volume into a clean sample cell
-   (the volume is method-specific; see Section 7)
-2. Add the reagent(s) per the method instructions (powder pillow, liquid
-   dropper, or TNT plus vial; see Section 7)
-3. Mix as directed (swirl, invert, shake) and start the timer for the
-   specified reaction time
-4. While waiting, prepare the blank (Section 6.3)
-5. After the reaction time has elapsed (and before the maximum hold time
-   expires), wipe and insert the sample cell
-6. Press **Read**. Record the result, units, sample ID, date, time,
-   and method number in the lab notebook.
-7. If the reading exceeds the method range, dilute the sample with DI
-   water, re-run, and multiply the result by the dilution factor
-
-::: {.callout-important}
-Always read the method-specific Hach procedure document (included in
-each reagent kit box or available at
-[hach.com/procedures](https://www.hach.com/resources/procedures))
-before running a method for the first time. This SOP provides the
-general framework; the Hach procedure document is the definitive
-reference for reagent handling, timing, and interferences for each
-chemistry.
-:::
-
-### Using TNT Plus Vials (DR3900 Only)
-
-Many newer Hach methods use pre-dosed TNT plus vials, which reduce
-reagent handling and waste [@hach_dr3900]:
-
-1. Select the appropriate stored program for the TNT method
-2. Remove the cap from the TNT vial
-3. Pipette the specified sample volume into the vial using the included
-   or indicated pipette
-4. Cap, invert to mix (number of inversions specified per method),
-   and start the timer
-5. After the reaction time, wipe the vial and insert into the DR3900
-   using the appropriate adapter
-6. Press **Zero** with the blank vial (included in the TNT kit), then
-   read the sample
-
-### Using the DRB200 Reactor (Digestion Methods)
-
-Some methods (total phosphorus, total nitrogen, COD) require a
-high-temperature digestion step:
-
-1. Preheat the DRB200 to the temperature specified by the method (e.g.,
-   105 C for total phosphorus, 150 C for COD)
-2. Add sample and reagents to the digestion vial per the method
-   instructions
-3. Cap tightly and place in the reactor
-4. Digest for the specified time (typically 30 minutes to 2 hours)
-5. Remove vials using heat-resistant gloves and allow to cool to room
-   temperature (or cool in a rack as specified)
-6. Proceed with the color-development step and read on the DR3900
-
-::: {.callout-warning}
-### Hot Vial Safety
-Never open digestion vials while hot. Pressure can build during
-digestion. Allow vials to cool to room temperature or to the
-temperature specified by the method before opening or reading.
-:::
+1. Remove all samples and reagents from the instrument compartment.
+2. Wipe the cell compartment with a lint-free tissue if any liquid is
+   present.
+3. Log the run in the instrument logbook (date, analyst, analytes run,
+   and any instrument issues).
+4. Turn off the DR3900 if the session is complete.
 
 
 ## Method Registry
 
-The table below lists the Hach methods currently used or planned for use
-in the EA Program laboratory. Each row contains all the
-chemistry-specific information needed to run the analysis using the
-general workflow in Section 6.
-
-::: {.callout-note}
-This registry is a living document. Add new methods as reagent kits are
-acquired. For each new method, record the Hach method number, program
-number, reagent catalog number, range, reaction time, key interferences,
-and the date the method was validated in the lab.
-:::
+The tables below list all Hach methods currently validated in the EA
+Program laboratory. "Active" methods have been verified with known
+standards; "TBD" methods are pending validation. Add new methods to the
+registry per §7.4 before routine use.
 
 ### Nutrients
 
@@ -259,47 +237,46 @@ and the date the method was validated in the lab.
 | Manganese | PAN | 290 | Check specific kit | DR3900 | 0.006--0.700 mg/L Mn | 10 mL | 2 min | Fe above 5 mg/L | *TBD* |
 | Copper | Bicinchoninate | 135 | 2105969 (pillows) | DR3900, DR900 | 0.04--5.00 mg/L Cu | 10 mL | 2 min | Fe above 10 mg/L | *TBD* |
 | Zinc | Zincon | 780 | Check specific kit | DR3900 | 0.02--3.00 mg/L Zn | 10 mL | Immediate | Cu, Pb, Co above 5 mg/L | *TBD* |
-| Lead | LeadTrak (dithizone) | 277 | 2877200 (AccuVac) | DR3900 | 5--150 ug/L Pb | 25 mL | 1 min | Cu, Hg, Bi, Sn | *TBD* |
+| Lead | LeadTrak (dithizone) | 277 | 2877200 (AccuVac) | DR3900 | 5--150 µg/L Pb | 25 mL | 1 min | Cu, Hg, Bi, Sn | *TBD* |
 | Chromium (Cr^6+^) | DPC | 090 | Check specific kit | DR3900, DR900 | 0.010--0.700 mg/L Cr | 10 mL | 5 min | Fe above 1 mg/L | *TBD* |
 
 ### Other Parameters
 
 | Analyte | Hach Method | Program No. | Reagent / Cat. No. | Instrument | Range | Sample Vol. | Reaction Time | Key Interferences | Status |
 |:--------|:------------|:------------|:-------------------|:-----------|:------|:------------|:--------------|:------------------|:-------|
+| Hardness (total) | CalMagVer 3 | 105 | 2429800 (pillows) | DR3900, DR900 | 10--4000 mg/L as CaCO~3~ | 2 mL | Immediate | Mn above 4 mg/L | *TBD* |
+| Chloride | Mercuric thiocyanate | 070 | 2268500 (pillows) | DR3900, DR900 | 0.1--25.0 mg/L Cl^-^ | 10 mL | Immediate | High turbidity | *TBD* |
 | Silica | Silicomolybdate | 656 | 2429600 (pillows) | DR3900 | 1--100 mg/L SiO~2~ | 10 mL | 10 min | PO~4~; sulfide | *TBD* |
 | Sulfate | SulfaVer 4 | 680 | 2106769 (pillows) | DR3900, DR900 | 2--70 mg/L SO~4~ | 10 mL | 5 min | Silica | *TBD* |
 | COD | Dichromate reactor | 430 | TNT821/822/823 | DR3900 + DRB200 | 3--1500 mg/L | 2 mL | 2 hr dig. | Cl^-^ above 2000 mg/L | *TBD* |
 
 ### Adding a New Method to the Registry
 
-When the lab acquires a new Hach reagent kit or needs to analyze a new
-parameter:
-
 1. Obtain the Hach procedure document for the method (from the kit box
-   or [hach.com](https://www.hach.com/resources/procedures))
-2. Review the SDS for all reagents in the kit
+   or [hach.com](https://www.hach.com/resources/procedures)).
+2. Review the SDS for all reagents in the kit.
 3. Fill in a new row in the appropriate table above with all required
-   fields
+   fields.
 4. Run the method on at least 3 known standard concentrations spanning
    the method range to verify that the instrument's stored program
-   produces results within +/- 10% of the standard value
-5. Run DI water blanks to confirm zero reading
+   produces results within ±10% of the standard value.
+5. Run DI water blanks to confirm zero reading.
 6. Change the status from *TBD* to **Active** once validation is
-   complete
-7. Record the validation data, date, and analyst in the QC log
+   complete.
+7. Record the validation data, date, and analyst in the QC log.
 
 
 ## Quality Control and Acceptance Criteria
 
 ### Every Analytical Session
 
-- **Blank:** Run a DI water blank at the start of each session. The
-  blank must read within the method's stated detection limit of zero.
+- **Blank:** Run a DI water blank at the start of each session; must
+  read within the method MDL of zero [@apha2012].
 - **Standard check:** Run one mid-range Hach standard at the start and
-  end of each session. Acceptance: +/- 10% of the stated value.
-- **Duplicates:** Analyze at least 10% of samples in duplicate.
-  Acceptable RPD: less than 20% for concentrations above 5 times the
-  detection limit.
+  end of each session; acceptance: ±10% of the stated value
+  [@hach_dr3900].
+- **Duplicates:** Analyze at least 10% of samples in duplicate;
+  acceptable RPD less than 20% above 5 × the detection limit.
 
 ### Calibration Verification
 
@@ -308,127 +285,58 @@ not require user calibration under normal conditions [@hach_dr3900;
 @hach_dr900]. However:
 
 - Run a multi-point verification using Hach-supplied standards at least
-  annually or when the instrument is serviced
-- If a standard check deviates by more than 10%, clean the sample cell,
-  re-zero, and re-read. If the problem persists, contact Hach technical
-  support.
-- *TBD -- establish a schedule for annual verification and record in
-  the instrument log*
-
-### Reagent Management
-
-- Record the lot number and expiration date of each reagent kit when
-  opened
-- Do not use expired reagents
-- Store reagents per the kit instructions (most powder pillows at room
-  temperature; some TNT kits require refrigeration)
-- Keep an inventory and reorder when stock falls below one kit per
-  active method
-
-
-## Data Recording and Calculations
-
-### Dilution Corrections
-
-$$
-C_{\text{original}} = C_{\text{measured}} \times DF
-$$
-
-where $DF$ is the dilution factor (e.g., 10 mL sample diluted to
-100 mL total = $DF$ of 10).
-
-### Unit Conversions
-
-| From                   | To                     | Multiply by |
-|:-----------------------|:-----------------------|:------------|
-| mg/L NO~3~-N           | mg/L NO~3~^-^          | 4.427       |
-| mg/L NH~3~-N           | mg/L NH~4~^+^          | 1.288       |
-| mg/L PO~4~-P           | mg/L PO~4~^3-^         | 3.066       |
-| ug/L                   | mg/L                   | 0.001       |
-
-```{r}
-#| label: unit-conversions
-#| echo: true
-
-# Common Hach unit conversions
-convert_n_no3 <- function(mg_L_NO3_N) mg_L_NO3_N * 4.427
-convert_n_nh4 <- function(mg_L_NH3_N) mg_L_NH3_N * 1.288
-convert_p_po4 <- function(mg_L_PO4_P) mg_L_PO4_P * 3.066
-
-# Example
-cat(sprintf("2.5 mg/L NO3-N = %.1f mg/L NO3\n", convert_n_no3(2.5)))
-cat(sprintf("0.8 mg/L NH3-N = %.1f mg/L NH4+\n", convert_n_nh4(0.8)))
-cat(sprintf("0.42 mg/L PO4-P = %.2f mg/L PO4\n", convert_p_po4(0.42)))
-```
+  annually or when the instrument is serviced.
+- If a standard check deviates by more than 10%, clean the cell,
+  re-zero, and re-read. If the problem persists, contact Hach
+  technical support.
 
 
 ## Waste Disposal
 
-| Waste Type                        | Disposal Method                          |
-|:----------------------------------|:-----------------------------------------|
-| Used powder pillow wrappers       | Standard trash (non-hazardous)           |
-| Used TNT vials (acid-containing)  | Labeled waste container; EH&S hazardous waste |
-| Cadmium reduction reagent waste   | Heavy metal waste; EH&S hazardous waste  |
-| Other reagent waste               | Consult SDS; collect in appropriate container |
-| DI water rinses                   | Drain                                    |
-| Sample waste (non-hazardous water)| Drain with copious water                 |
-
-::: {.callout-important}
-The cadmium reduction nitrate method (NitraVer 5) generates cadmium
-waste, which is a regulated heavy metal. Collect all cadmium-containing
-waste in a designated container and dispose through EH&S. Consider
-switching to the cadmium-free chromotropic acid TNT method for routine
-analyses.
-:::
+| Waste Type                          | Disposal Method                          |
+|:------------------------------------|:-----------------------------------------|
+| Used powder pillow packets and caps | Standard trash (verify SDS; most are non-hazardous) |
+| Cadmium-containing reagent waste    | Hazardous waste; EH&S pickup             |
+| Reactor block digestion waste (COD) | Collect in labeled acid waste container  |
+| Used sample cells (glass)           | Rinse thoroughly; reuse or recycle       |
+| Rinse water (DI)                    | Drain                                    |
 
 
 ## References
+
+- @hach_dr3900
+- @hach_dr900
+- @hach_water_analysis2024
+- @apha2012
 
 ::: {#refs}
 :::
 
 
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                      |
+|:------|:---------------------------------------|:----------------------------------|
+| [F208](../field_sops/SOP-F208-portable-colorimeter-field.qmd) | Portable Colorimeter (Field) | Field use of the DR900   |
+| [L002](SOP-L002-laboratory-safety.qmd) | Laboratory Safety        | Required safety training          |
+| [L003](SOP-L003-hazardous-materials-handling.qmd) | Hazardous Materials | Reagent waste disposal      |
+| [L215](SOP-L215-hach-dr3900-spectrophotometer.qmd) | Hach DR3900 Instrument | Instrument startup and shutdown  |
+
+
 ## Training Record
 
-Before performing Hach colorimetric analyses independently, personnel
-must:
+Before running analyses on the DR3900 or DR900 independently,
+personnel must:
 
-1. Read this SOP, [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd),
-   and [SOP-L003 Hazardous Materials Handling](SOP-L003-hazardous-materials-handling.qmd)
-2. Review the SDS for the specific reagent kit(s) they will use
-3. Read the Hach procedure document for the specific method(s) they
-   will run
-4. Observe a trained operator perform a complete analysis (blank,
-   standard check, samples) on the DR3900 or DR900
-5. Perform a supervised analysis with acceptable QC results (blank
-   within detection limit, standard within 10%, duplicates within 20%
-   RPD)
-6. Be signed off by the PI or lab manager for each specific method
-
-
-## Appendix A: DR3900 vs. DR900 Comparison {.appendix}
-
-| Feature              | DR3900 (Benchtop)              | DR900 (Portable)               |
-|:---------------------|:-------------------------------|:-------------------------------|
-| Light source         | Tungsten and deuterium lamps   | LED array                      |
-| Wavelength range     | 320--1100 nm (continuous)      | Discrete LED wavelengths       |
-| Cell types           | 10 mm, 1-inch round, 16 mm TNT | 1-inch round                  |
-| Stored programs      | 200+                           | 90+                            |
-| User programs        | Yes                            | Limited                        |
-| Power                | AC                             | 4 AA batteries                 |
-| Best for             | Lab bench; full method library; TNT plus vials | Field screening; grab samples |
-| Limitations          | Not portable                   | Fewer methods; no TNT vials; no UV wavelengths |
-
-::: {.callout-note}
-If a method is available on both instruments, use the DR3900 for
-reportable data. The DR900 is best used for field screening and
-preliminary results that will be confirmed on the benchtop instrument.
-:::
-
-
-## Appendix B: Quick Reference Cards {.appendix}
-
-*TBD -- create laminated quick-reference cards for the most commonly
-used methods (reactive P, nitrate, ammonia, total iron) to post at the
-instrument bench. Each card should list: program number, sample volume,
-reagent addition steps, reaction time, and range.*
+1. Read this SOP and [SOP-L215](SOP-L215-hach-dr3900-spectrophotometer.qmd)
+   in full
+2. Complete [SOP-L002 Laboratory Safety](SOP-L002-laboratory-safety.qmd)
+   training
+3. Review the SDS for all reagent kits to be used
+4. Observe a trained operator perform startup, blank zeroing, sample
+   analysis, and a standard check for at least two analytes
+5. Run a full session (blank, standard check, samples, duplicate)
+   under supervision with acceptable QC results
+6. Add at least one new method to the registry and validate it before
+   using it on real samples
+7. Be signed off by the lab manager or PI

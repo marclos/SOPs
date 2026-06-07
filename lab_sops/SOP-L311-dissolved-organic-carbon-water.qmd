@@ -9,13 +9,17 @@ author:
     affiliation: "EA Program, Pomona College"
 date: last-modified
 date-format: "YYYY-MM-DD"
-revision: "0.1"
+revision: "0.2"
 
 revision-history:
   - version: "0.1"
     date: "2026-05-21"
     author: "Marc Los Huertos"
     changes: "Initial release"
+  - version: "0.2"
+    date: "2026-06-07"
+    author: "Marc Los Huertos"
+    changes: "Added Definitions section"
 ---
 
 ## Purpose
@@ -32,7 +36,7 @@ The NPOC method acidifies the sample and sparges with carrier gas to
 remove inorganic carbon (CO~2~, HCO~3~^-^, CO~3~^2-^) before
 combustion. The remaining carbon is measured as NPOC, which for most
 natural waters is operationally equivalent to DOC when the sample has
-been filtered through 0.45 um [@apha2012, Section 5310B].
+been filtered through 0.45 µm [@apha2012, Section 5310B].
 
 For instrument operation, startup, and shutdown, see
 [SOP-L204 Shimadzu TOC-L](SOP-L204-shimadzu-toc-l.qmd). For
@@ -42,7 +46,7 @@ water-extractable DOC from soils, see
 
 ## Scope
 
-- **Applies to:** Filtered (0.45 um) water samples from surface water,
+- **Applies to:** Filtered (0.45 µm) water samples from surface water,
   groundwater, stormwater, effluent, and precipitation, analyzed for
   DOC in NPOC mode on the Shimadzu TOC-L
 - **Does not apply to:** Total organic carbon in unfiltered water (use
@@ -64,10 +68,70 @@ water-extractable DOC from soils, see
 | New Students       | Complete training before independent use               |
 
 
+## Definitions
+
+- **Calibration blank:** Deionized water (18.2 MΩ·cm) of verified DOC
+  less than 0.05 mg C/L; used as the zero point for calibration and
+  as the system blank to verify background carbon from the instrument
+  and reagents.
+- **CCV (continuing calibration verification):** A mid-range KHP
+  standard analyzed at regular intervals during an analytical run to
+  confirm calibration stability; acceptance criterion is 90--110%
+  recovery; if outside this range, re-calibrate and re-run affected
+  samples [@apha2012].
+- **Chromophoric dissolved organic matter (CDOM):** The fraction of
+  DOC that absorbs UV/visible light; derived primarily from aromatic
+  humic and fulvic acids; a surrogate indicator of DOC concentration
+  in optically characterized waters [@thurman1985].
+- **Dissolved organic carbon (DOC):** Organic carbon that passes
+  through a 0.45 µm filter; in natural waters, DOC includes humic
+  substances, fulvic acids, amino acids, carbohydrates, and other
+  soluble organic compounds; the operationally defined quantity
+  measured as NPOC by the Shimadzu TOC-L [@thurman1985; @apha2012].
+- **Field blank:** A sample of deionized water processed through the
+  field collection equipment (bottles, filters, cooler) and returned
+  to the laboratory for analysis; used to detect contamination
+  introduced during sample collection and transport [@sharp1993].
+- **Humic substances:** High-molecular-weight, polydisperse aromatic
+  compounds derived from the decomposition of plant and microbial
+  material; typically comprise 40--80% of DOC in natural fresh waters
+  [@thurman1985].
+- **IC (inorganic carbon):** Carbon present as dissolved CO~2~,
+  bicarbonate (HCO~3~^-^), and carbonate (CO~3~^2-^); removed from
+  water samples by acidification and sparging before NPOC measurement.
+- **KHP (potassium hydrogen phthalate, KC~8~H~5~O~4~):** The primary
+  calibration standard for TOC analysis; a pure, non-hygroscopic
+  organic acid weighed accurately to prepare standards of known carbon
+  concentration; 1.0000 g KHP = 0.4711 g C.
+- **Method blank:** Deionized water acidified and processed identically
+  to field samples, including any filtration and preservation steps;
+  used to detect contamination from reagents and equipment; must read
+  less than 0.2 mg C/L [@apha2012].
+- **NPOC (non-purgeable organic carbon):** The organic carbon
+  remaining in a sample after acidification (typically with HCl or
+  H~3~PO~4~) and sparging with carrier gas to remove IC and volatile
+  organic carbon (VOC); the quantity reported as DOC by the Shimadzu
+  TOC-L [@apha2012, Section 5310B].
+- **Particulate organic carbon (POC):** Organic carbon retained on a
+  0.45 µm filter; not measured by this SOP; requires separate filter
+  collection and combustion analysis.
+- **Pre-combusted glass vial:** A TOC autosampler vial heated to
+  450 °C for at least 4 hours to destroy residual organic carbon from
+  the glass or manufacturing process; used to prevent contamination of
+  samples from the container.
+- **PVDF (polyvinylidene fluoride) filter:** A 0.45 µm syringe filter
+  with low organic carbon leaching; preferred for DOC sample
+  filtration; cellulose acetate filters must not be used because they
+  leach DOC [@kaplan1994].
+- **TOC (total organic carbon):** The sum of DOC and POC; in this SOP,
+  only DOC (the filtered, NPOC fraction) is measured.
+
+
 ## Safety and Hazards
 
 All safety requirements from
 [SOP-L204](SOP-L204-shimadzu-toc-l.qmd) Section 4 apply.
+
 Additional hazards specific to this method:
 
 ::: {.callout-warning}
@@ -99,163 +163,104 @@ Additional hazards specific to this method:
 
 ### Consumables
 
-| Item                                  | Notes                          |
-|:--------------------------------------|:-------------------------------|
-| Pre-combusted glass vials (40 mL, with PTFE-lined caps) | Combust at 450 C for 4 hours per [SOP-L111](SOP-L111-muffle-furnace.qmd); or purchase pre-combusted |
-| Autosampler vials (8 mL or 40 mL)    | Pre-combusted or acid-washed   |
-| 0.45 um filters (PVDF or PES)        | Do NOT use cellulose acetate (leaches DOC) [@kaplan1994] |
-| Syringe filters (0.45 um, 25 mm)     | PVDF; discard first 2--3 mL of filtrate |
-| Graduated pipettes or micropipettes  | For acid and standard additions |
+| Item                                       | Notes                          |
+|:-------------------------------------------|:-------------------------------|
+| Pre-combusted glass vials (40 mL, PTFE-lined caps) | Combust at 450 °C for 4 hours per [SOP-L111](SOP-L111-muffle-furnace.qmd) |
+| Autosampler vials (8 mL or 40 mL)         | Pre-combusted or acid-washed   |
+| 0.45 µm filters (PVDF or PES)             | Do NOT use cellulose acetate [@kaplan1994] |
+| Syringe filters (0.45 µm, 25 mm, PVDF)    | Discard first 2--3 mL of filtrate |
 
 ### Reagents
 
 | Reagent                               | Notes                          |
 |:--------------------------------------|:-------------------------------|
-| KHP stock standard (1,000 mg C/L)     | 2.125 g KHP per 1 L DI water; prepare fresh monthly; store at 4 C [@apha2012] |
-| 2 M HCl (Trace Metal grade)          | For sample acidification       |
-| Deionized water (18.2 MOhm)          | From Milli-Q; verify DOC less than 0.05 mg/L |
+| KHP stock standard (1000 mg C/L)     | 2.125 g KHP per 1 L DI water; prepare fresh monthly; store at 4 °C [@apha2012] |
+| 2 M HCl (Trace Metal grade)          | For sample acidification and preservation |
+| Deionized water (18.2 MΩ·cm)         | Verify DOC less than 0.05 mg/L before each session |
 
 ::: {.callout-important}
-Prepare the 1,000 mg C/L KHP stock solution fresh monthly or verify
-against a certified reference material (CRM) before use. Degraded
-stock causes a systematic low bias across the calibration.
+Prepare the 1000 mg C/L KHP stock fresh monthly or verify against a
+certified reference material (CRM) before use. Degraded stock causes
+a systematic low bias across the calibration.
 :::
 
 
 ## Sample Collection and Preservation
 
-Proper sample handling is critical for DOC; contamination from fingers,
-plastic containers, and atmospheric CO~2~ can bias results
-[@sharp1993].
+Proper sample handling is critical; contamination from fingers, plastic
+containers, and atmospheric CO~2~ can bias results [@sharp1993].
 
-| Parameter           | Requirement                                     |
-|:--------------------|:------------------------------------------------|
-| Container           | Pre-combusted amber glass (40 mL) with PTFE-lined cap; or acid-washed HDPE if glass is not available |
-| Filtration          | Filter through 0.45 um within 24 hours of collection; PVDF or PES membrane (not cellulose acetate) |
-| Preservation        | Acidify to pH less than 2 with 2 M HCl (approximately 2 drops per 40 mL) immediately after filtration |
-| Storage             | 4 C in the dark                                 |
-| Holding time        | 28 days from collection (acidified) [@apha2012] |
-
-::: {.callout-note}
-For field collection procedures, see
-[SOP-F300 Surface Water Sampling](../field_sops/SOP-F300-surface-water-sampling.qmd).
-Bottles for DOC should be filled with minimal headspace to reduce
-CO~2~ exchange.
-:::
+- Collect samples in pre-combusted glass bottles. Do not use plastic
+  bottles for DOC samples.
+- Filter through 0.45 µm PVDF syringe filters within 4 hours of
+  collection; discard the first 2--3 mL of filtrate.
+- Acidify filtered samples to pH ≤ 2 with 2 M HCl (approximately
+  100 µL per 40 mL sample) to suppress microbial activity.
+- Store acidified samples at 4 °C in the dark; analyze within 28 days
+  [@apha2012].
+- Cap vials immediately after filling to minimize atmospheric CO~2~
+  contamination.
 
 
 ## Procedure
 
-### Preparing Calibration Standards
+### Calibration
 
-1. From the 1,000 mg C/L KHP stock, prepare a working calibration
-   series by serial dilution with deionized water. A typical series
-   for natural water DOC:
+Prepare a 5-point calibration curve in the expected sample
+concentration range [@apha2012]:
 
-   | Standard | Concentration (mg C/L) |
-   |:---------|:----------------------:|
-   | Blank    | 0                      |
-   | S1       | 0.5                    |
-   | S2       | 1.0                    |
-   | S3       | 2.5                    |
-   | S4       | 5.0                    |
-   | S5       | 10.0                   |
-   | S6       | 25.0                   |
-   | S7       | 50.0                   |
+| Level | Concentration (mg C/L) | Preparation               |
+|:------|:-----------------------|:--------------------------|
+| 0     | 0.00                   | Acidified DI water blank  |
+| 1     | 0.50                   | Dilute from 1000 mg/L KHP |
+| 2     | 1.00                   | Dilute from 1000 mg/L KHP |
+| 3     | 5.00                   | Dilute from 1000 mg/L KHP |
+| 4     | 10.00                  | Dilute from 1000 mg/L KHP |
+| 5     | 25.00                  | Dilute from 1000 mg/L KHP |
 
-2. Prepare standards in pre-combusted glass volumetric flasks. Rinse
-   each flask 3 times with deionized water before use.
-3. Transfer standards to autosampler vials. Acidify each standard
-   with 2 M HCl to match the sample matrix (same acid volume per
-   volume as the samples).
+Adjust the range to match expected sample concentrations. Load
+standards into pre-combusted autosampler vials and enter into the
+Sample Table in LabSolutions TOC.
 
-::: {.callout-tip}
-For low-DOC samples (less than 5 mg/L, typical of oligotrophic lakes
-and groundwater), use only the 0--10 mg/L range and omit the 25 and
-50 mg/L standards. A narrower range improves precision at low
-concentrations.
-:::
+### Setting Up the Sample Table
 
-### Preparing Samples
-
-1. If samples were not filtered in the field, filter through 0.45 um
-   PVDF syringe filters into pre-combusted glass vials. Discard the
-   first 2--3 mL of filtrate (filter blank rinse).
-2. Verify that samples have been acidified to pH less than 2. If not
-   previously acidified, add 2 M HCl dropwise until pH paper
-   indicates pH less than 2 (typically 2--4 drops per 40 mL).
-3. Allow acidified samples to reach room temperature before loading
-   into the autosampler (cold samples produce air bubbles in the
-   syringe).
-4. Transfer samples to autosampler vials if they are not already in
-   compatible vials. Fill to the level specified in the autosampler
-   manual (typically at least 10 mL for a 40 mL vial position, or
-   5 mL for an 8 mL position).
-
-### Instrument Setup
-
-1. Start the TOC-L per [SOP-L204](SOP-L204-shimadzu-toc-l.qmd)
-   Section 7.1 or 7.2 (cold start or from standby)
-2. In the Method Editor, set:
-   - **Measurement mode:** NPOC
-   - **Injection volume:** 50 uL (default; adjust if needed)
-   - **Number of injections:** 3 minimum (set maximum to 5 with
-     automatic outlier exclusion)
-   - **Sparge time:** 1.5 minutes (default; increase to 3 minutes for
-     high-alkalinity samples with IC above 50 mg/L)
-   - **Acidification:** Automatic, using the IC reagent (25% H~3~PO~4~)
-     dispensed by the instrument. The instrument adds a fixed volume
-     (typically 15 uL of 2 M HCl equivalent) to each injection.
-3. If TN is also being measured, confirm TN is enabled in the Method
-   Editor
-
-### Sample Table and Run Sequence
-
-Enter the following sequence in the Sample Table:
-
-| Position | Sample Type                 | Notes                          |
-|:---------|:----------------------------|:-------------------------------|
-| 1--3     | Deionized water blanks      | System conditioning (discard results) |
-| 4--6     | Deionized water blanks      | Reported blanks; must be less than 0.1 mg/L C |
-| 7        | Calibration verification (mid-range, e.g., 5 mg/L) | Recovery must be 90--110% |
-| 8--14    | Calibration standards (low to high) | Build the calibration curve |
-| 15       | Method blank (if applicable) | E.g., DI water acidified with the same HCl used for samples |
-| 16--25   | Samples                     | In order of loading             |
-| 26       | Continuing calibration verification (CCV) | Every 10--15 samples; 5 or 10 mg/L |
-| 27       | Deionized water blank       | Monitor for carryover           |
-| 28--37   | Samples                     | Continue                        |
-| 38       | CCV                         | End-of-run verification         |
-| 39--41   | Deionized water blanks      | Final system flush              |
+1. Open LabSolutions TOC and start a new analysis.
+2. Enter calibration standards (type = Standard), blanks (type =
+   Blank), CCV standards, and samples.
+3. Set the measurement mode to **NPOC** for all samples and blanks.
+4. Set the number of injections per sample to 3; the software reports
+   the mean and coefficient of variation (CV).
+5. Enter dilution factors for any samples that have been diluted
+   before the run.
 
 ### Running the Analysis
 
-1. Load all vials into the autosampler, verifying that rack positions
-   match the Sample Table
-2. Confirm the ASI-L rinse reservoir is full
-3. Click **Start**
-4. Monitor the first few injections to verify normal peak shape and
-   baseline stability
-5. The run proceeds unattended; the autosampler advances automatically
+1. Load all vials into the autosampler; verify rack positions match
+   the Sample Table.
+2. Confirm the ASI-L rinse reservoir is full.
+3. Click **Start** and monitor the first few injections for normal
+   peak shape and baseline stability.
+4. The run proceeds unattended; the autosampler advances automatically.
 
 ### Data Review and Export
 
-1. After the run, open the Data Browser
+1. After the run, open the Data Browser.
 2. Check each result:
-   - Replicate injection CV must be less than 2%
-   - Blank values must be less than 0.1 mg/L C (flag run if higher)
-   - CCV recovery must be 90--110%; if it drifts outside this range,
-     re-calibrate and re-run affected samples
-3. If a sample exceeds the calibration range, dilute and re-run
+   - Replicate injection CV must be less than 2%.
+   - Blank values must be less than 0.1 mg C/L.
+   - CCV recovery must be 90--110%; re-calibrate and re-run affected
+     samples if outside this range.
+3. Dilute and re-run any sample exceeding the calibration range.
 4. Export results to CSV per [SOP-L204](SOP-L204-shimadzu-toc-l.qmd)
-   Section 7.9
-5. Record the run in the instrument logbook
+   Section 7.9.
+5. Record the run in the instrument logbook.
 
 
 ## Calculations
 
 The TOC-L software reports NPOC concentration directly in mg C/L,
-corrected for dilution factor if entered in the Sample Table. For
-reporting as DOC:
+corrected for dilution factor if entered in the Sample Table. Report
+as DOC:
 
 $$
 \text{DOC (mg C/L)} = \text{NPOC}_{\text{reported}} - \text{NPOC}_{\text{method blank}}
@@ -267,7 +272,7 @@ $$
 \text{DOC (mg C/L)} = (\text{NPOC}_{\text{reported}} - \text{NPOC}_{\text{blank}}) \times D
 $$
 
-where $D$ is the dilution factor (e.g., 2 for a 1:1 dilution).
+where $D$ is the dilution factor.
 
 ### R Code for Batch Processing
 
@@ -276,43 +281,22 @@ where $D$ is the dilution factor (e.g., 2 for a 1:1 dilution).
 #| echo: true
 #| eval: false
 
-# ===========================================================================
-# SOP-L311: DOC (NPOC) -- Batch calculation from TOC-L CSV export
-# ===========================================================================
-
-# ---- 1. Read the TOC-L CSV export ----------------------------------------
-# Adjust the filename and column names to match your LabSolutions export
+# SOP-L311: DOC (NPOC) -- batch calculation from TOC-L CSV export
 raw <- read.csv("TOC-L_export.csv", stringsAsFactors = FALSE)
 
-# Expected columns (rename as needed):
-#   SampleID, NPOC_mg_L, CV_pct, Dilution
-
-# ---- 2. Identify blanks and CCV ------------------------------------------
 blanks <- raw[grepl("^Blank|^DI|^MQ", raw$SampleID, ignore.case = TRUE), ]
 ccv    <- raw[grepl("^CCV|^CVS|^Check", raw$SampleID, ignore.case = TRUE), ]
 
 mean_blank <- mean(blanks$NPOC_mg_L, na.rm = TRUE)
-
 cat(sprintf("Mean method blank: %.3f mg C/L\n", mean_blank))
-cat(sprintf("CCV recoveries: %s\n",
-            paste(sprintf("%.1f%%",
-                          ccv$NPOC_mg_L / ccv$Dilution * 100),
-                  collapse = ", ")))
 
-# ---- 3. Calculate blank-corrected DOC ------------------------------------
 samples <- raw[!grepl("^Blank|^DI|^MQ|^CCV|^CVS|^Check|^Std",
                        raw$SampleID, ignore.case = TRUE), ]
-
 samples$DOC_mg_L <- (samples$NPOC_mg_L - mean_blank) * samples$Dilution
 samples$DOC_mg_L[samples$DOC_mg_L < 0] <- 0
+samples$QC_flag <- ifelse(samples$CV_pct > 2, "CV>2%", "")
 
-# ---- 4. Flag QC issues ---------------------------------------------------
-samples$QC_flag <- ""
-samples$QC_flag[samples$CV_pct > 2] <- "CV>2%"
-
-cat("\nResults:\n")
-print(samples[, c("SampleID", "NPOC_mg_L", "Dilution",
-                   "DOC_mg_L", "QC_flag")],
+print(samples[, c("SampleID", "NPOC_mg_L", "Dilution", "DOC_mg_L", "QC_flag")],
       row.names = FALSE)
 ```
 
@@ -321,46 +305,43 @@ print(samples[, c("SampleID", "NPOC_mg_L", "Dilution",
 
 ### Instrument QC
 
-Per [SOP-L204](SOP-L204-shimadzu-toc-l.qmd) Section 8:
+Per [SOP-L204](SOP-L204-shimadzu-toc-l.qmd):
 
-- System blanks less than 0.1 mg/L C
-- Calibration r^2^ at least 0.999
+- System blank less than 0.1 mg C/L
+- Calibration $r^2 \geq 0.999$
 - Replicate injection CV less than 2%
 - CCV recovery 90--110%
 
 ### Method QC
 
-| QC Element                    | Frequency            | Acceptance Criteria            |
-|:------------------------------|:---------------------|:-------------------------------|
-| Method blank (acidified DI)   | 1 per batch          | Less than 0.2 mg/L C           |
-| Field blank (from SOP-F300)   | 1 per sampling event | Less than 0.5 mg/L C           |
-| Laboratory duplicate          | 1 per 10 samples     | RPD less than 10%              |
-| Certified reference material  | 1 per batch (when available) | Recovery 90--110%       |
-| Matrix spike                  | 1 per 20 samples     | Recovery 80--120%              |
+| QC Element               | Frequency            | Acceptance Criteria            |
+|:-------------------------|:---------------------|:-------------------------------|
+| Method blank             | 1 per batch          | Less than 0.2 mg C/L           |
+| Field blank              | 1 per sampling event | Less than 0.5 mg C/L           |
+| Laboratory duplicate     | 1 per 10 samples     | RPD less than 10%              |
+| CRM (when available)     | 1 per batch          | Recovery 90--110%              |
+| Matrix spike             | 1 per 20 samples     | Recovery 80--120%              |
 
 ### Common Contamination Sources
 
-DOC is easily contaminated. The most common sources and their
-prevention [@kaplan1994; @sharp1993]:
-
-| Source                        | Prevention                                |
-|:------------------------------|:------------------------------------------|
-| Fingers touching vial interiors | Always wear gloves; handle vials by the exterior only |
-| Cellulose acetate filters     | Use PVDF or PES filters exclusively       |
-| Detergent residue on glassware | Use pre-combusted glass; or acid-wash and rinse with DI |
-| Atmospheric CO~2~ absorption  | Minimize headspace in vials; cap immediately |
-| Degraded DI water             | Verify DI water DOC less than 0.05 mg/L before each session |
-| Old or degraded KHP stock     | Prepare fresh monthly; refrigerate        |
+| Source                       | Prevention                                |
+|:-----------------------------|:------------------------------------------|
+| Fingers touching vial interiors | Always wear gloves; handle by exterior only |
+| Cellulose acetate filters    | Use PVDF or PES filters exclusively [@kaplan1994] |
+| Detergent residue on glassware | Pre-combust glass; acid-wash and rinse with DI |
+| Atmospheric CO~2~ absorption | Minimize headspace; cap immediately       |
+| Degraded DI water            | Verify DI DOC less than 0.05 mg/L before each session |
+| Old or degraded KHP stock    | Prepare fresh monthly; refrigerate        |
 
 
 ## Waste Disposal
 
-| Waste Type                    | Disposal Method                          |
-|:------------------------------|:-----------------------------------------|
-| Acidified sample waste        | Neutralize and drain, or collect per [SOP-L006](SOP-L006-waste-disposal.qmd) |
-| Calibration standard waste    | Drain (dilute KHP, non-hazardous)        |
-| Used syringe filters          | Standard trash                           |
-| Pre-combusted glass vials     | Rinse and reuse, or glass recycling      |
+| Waste Type                 | Disposal Method                               |
+|:---------------------------|:----------------------------------------------|
+| Acidified sample waste     | Neutralize and drain, or collect per [SOP-L006](SOP-L006-waste-disposal.qmd) |
+| Calibration standard waste | Drain (dilute KHP, non-hazardous)             |
+| Used syringe filters       | Standard trash                                |
+| Pre-combusted glass vials  | Rinse and reuse, or glass recycling           |
 
 
 ## References
@@ -392,10 +373,8 @@ Before performing this analysis independently, personnel must:
 2. Complete instrument training per
    [SOP-L204](SOP-L204-shimadzu-toc-l.qmd) Section 14
 3. Demonstrate competence preparing KHP calibration standards
-4. Demonstrate proper sample filtration technique (PVDF filter, first-
-   rinse discard)
-5. Perform a supervised DOC run with acceptable QC results (blanks,
-   CCV, duplicate RPD)
-6. Process one batch through the R calculation code and verify results
-   against the LabSolutions export
-7. Be signed off by the instrument manager or PI
+4. Demonstrate proper sample filtration technique (PVDF filter,
+   first-rinse discard)
+5. Run a complete batch (calibration, blanks, CCV, samples) under
+   supervision with acceptable QC results
+6. Be signed off by the PI or instrument manager
