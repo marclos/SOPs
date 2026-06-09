@@ -51,6 +51,7 @@
 .sop-meta-badge {
   display: flex;
   align-items: center;
+  justify-content: space-between;   // <-- add this line
   gap: 1rem;
   background: #E6F0FA;
   border-left: 4px solid #0057B8;
