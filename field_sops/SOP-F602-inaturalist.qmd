@@ -223,6 +223,88 @@ For birds, frogs, and insects, a sound recording can be as useful as
 directly. Hold the phone steady and minimize background noise.
 :::
 
+### Bulk Uploading Observations via CSV
+
+For observations recorded outside the app (for example, transcribed
+from a field notebook, exported from another platform, or compiled in
+a spreadsheet during data entry), iNaturalist accepts a bulk CSV
+import. This is useful when you have many records to create at once and
+do not want to enter them one at a time. The importer creates the
+observation records only; it does not upload photos or sound files, so
+media must be attached afterward (see below).
+
+#### Preparing the CSV
+
+1. Build the spreadsheet with up to eight columns, in this order. Only
+   the taxon column is mandatory.
+
+| Column        | Format / example          | Notes                                      |
+|:--------------|:--------------------------|:-------------------------------------------|
+| Taxon name    | text (e.g., `Quercus agrifolia`) | Mandatory. Use the scientific name for reliable matching. |
+| Date observed | `YYYY-MM-DD HH:MM`        | Use day-level precision or finer for research use. |
+| Description   | text                      | Free-text notes (habitat, behavior, abundance). |
+| Place name    | text                      | Optional named locality.                   |
+| Latitude      | decimal degrees (`34.1064`) | Use a decimal point, not a comma.        |
+| Longitude     | decimal degrees (`-117.7120`) | Use a decimal point, not a comma.      |
+| Tags          | `tag,tag`                 | Comma-separated tags.                      |
+| Geoprivacy    | `open`, `obscured`, or `private` | Set to `obscured` for sensitive taxa. |
+
+2. Keep the file under 10,000 rows. Split larger datasets into
+   multiple files.
+3. Wrap any field that contains a comma in double quotes so it is not
+   misread as a column break.
+4. Confirm that coordinates use decimal points. Spreadsheets configured
+   for some locales export decimal commas, which the importer rejects.
+
+#### Importing
+
+1. Go to the import page at
+   <https://www.inaturalist.org/observations/import#csv_import> (or
+   from the upload page, click **More import options** and choose
+   **CSV**).
+2. Choose your file and upload it.
+3. Open **Edit Observations** to review the created records. Use
+   **Batch Edit** to select multiple observations, attach photos or
+   sound files, and apply a shared location from the map.
+4. Verify dates, coordinates, and identifications, then save.
+
+::: {.callout-warning}
+### CSV Imports Do Not Include Media
+The CSV importer creates observation records without photos or sounds.
+An observation with no media cannot reach Research Grade and is treated
+as Casual, so it will be excluded from most research exports and from
+GBIF. Attach media through Batch Edit after import if the records are
+intended for analysis.
+:::
+
+::: {.callout-tip}
+### Large or Photo-Linked Datasets: Use the API
+For large batches, or when you need to match many photos to the
+correct records automatically, the spreadsheet importer becomes
+impractical. In those cases, script the upload against the iNaturalist
+API (<https://api.inaturalist.org>). The `rinat` package is read-only
+(it retrieves data but does not create observations), so creating
+observations programmatically requires direct authenticated calls,
+for example with `httr2` in R:
+
+```{r}
+#| label: inat-api-upload
+#| echo: true
+#| eval: false
+
+library(httr2)
+
+# Requires an OAuth API token from your iNaturalist account.
+# Create the observation, then POST the photo to /observation_photos
+# using the returned observation id. See the API reference for the
+# full request schema before running against your account.
+```
+
+Test any upload script on a handful of records first, and never use it
+to create observations for organisms you did not personally encounter
+(see Responsible Use).
+:::
+
 ### Contributing Identifications
 
 Identifying other people's observations is as valuable as making your
