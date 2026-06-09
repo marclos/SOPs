@@ -1,0 +1,40 @@
+$if(title)$
+<header id="title-block-header" class="quarto-title-block default">
+  <div class="quarto-title">
+    <h1 class="title">$title$</h1>
+  </div>
+        
+$if(sop-number)$
+  <div class="sop-meta-badge">
+    <span class="sop-number">$sop-number$</span>
+    <span class="sop-revision">Revision&nbsp;$if(revision)$$revision$$else$—$endif$</span>
+  </div>
+$endif$
+              
+  <div class="quarto-title-meta">
+    $if(by-author)$
+    <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+      $for(by-author)$
+      <p class="author">$by-author.name.literal$</p>
+      $if(by-author.affiliations)$
+      $for(by-author.affiliations)$
+      <p class="affiliation">$it.name$</p>
+      $endfor$
+      $endif$
+      $endfor$
+    </div>
+  </div>
+  $endif$
+  $if(date)$
+    <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">$date$</p>
+      </div>
+    </div>
+    $endif$
+  </div>
+</header>
+$endif$
