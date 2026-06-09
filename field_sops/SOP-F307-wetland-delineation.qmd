@@ -1,0 +1,660 @@
+---
+# =============================================================================
+# SOP-F307: Wetland Delineation
+# =============================================================================
+title: "Wetland Delineation"
+sop-number: "SOP-F307"
+author:
+  - name: "Marc Los Huertos"
+    affiliation: "EA Program, Pomona College"
+date: last-modified
+date-format: "YYYY-MM-DD"
+revision: "0.1"
+
+revision-history:
+  - version: "0.1"
+    date: "2026-06-08"
+    author: "Marc Los Huertos"
+    changes: "Initial release"
+---
+
+## Purpose
+
+This SOP describes the field and office procedures for conducting a
+wetland delineation using the three-parameter approach established by
+the US Army Corps of Engineers (USACE). A jurisdictional wetland must
+exhibit all three criteria simultaneously: hydrophytic vegetation,
+hydric soils, and wetland hydrology [@usace1987]. Delineation
+establishes the boundary between jurisdictional wetlands (and other
+waters of the US) and upland areas, which is a prerequisite for
+regulatory compliance under Section 404 of the Clean Water Act.
+
+Wetland delineation at EA Program sites supports baseline
+characterization, impact assessment, restoration planning, and student
+training in applied environmental science.
+
+
+## Scope
+
+- **Applies to:** Freshwater palustrine wetlands (marshes, swamps,
+  riparian wetlands, vernal pools, seeps) at EA Program field sites in
+  the Arid West region of California. This SOP follows the USACE Arid
+  West Regional Supplement [@usace2010regional], which supersedes the
+  1987 Manual for all delineations in this region.
+- **Does not apply to:** Tidal or estuarine wetlands (require separate
+  tidal methods); riverine waters regulated solely as ordinary high
+  water mark (OHWM) features; non-USACE state-level wetland
+  determinations under California law (e.g., Porter-Cologne Act), which
+  may apply different criteria.
+- **Location:** All EA Program wetland field sites
+
+
+## Responsibilities
+
+| Role              | Responsibility                                              |
+|:------------------|:------------------------------------------------------------|
+| PI / Field Lead   | Approve delineation design; coordinate permits and landowner access |
+| Trained Personnel | Conduct three-parameter assessment per this SOP             |
+| New Students      | Complete training before independent plot assessment        |
+
+
+## Definitions
+
+- **Dominant species:** A species contributing 50% or more of the
+  relative frequency or relative cover within a stratum; used in the
+  50/20 rule for hydrophytic vegetation determination.
+- **Facultative (FAC):** A wetland indicator status category applied
+  to plant species that occur in both wetland and upland habitats with
+  roughly equal frequency (34--66% occurrence in wetlands); neither
+  confirms nor denies wetland conditions when dominant.
+- **Facultative upland (FACU):** Plants that usually occur in uplands
+  (67--99% upland occurrence) but are occasionally found in wetlands;
+  their dominance is evidence against hydrophytic vegetation.
+- **Facultative wetland (FACW):** Plants that usually occur in wetlands
+  (67--99% wetland occurrence); their dominance is strong evidence for
+  hydrophytic vegetation.
+- **Hydric soil:** A soil that formed under conditions of saturation,
+  flooding, or ponding long enough to develop anaerobic conditions in
+  the upper part; identified by USACE hydric soil field indicators
+  (e.g., depleted matrix, redox concentrations, sulfidic odor); a
+  required criterion for wetland delineation [@usace1987].
+- **Hydrophytic vegetation:** Plant community dominated (by the 50/20
+  rule) by species with a wetland indicator status of OBL, FACW, or FAC;
+  a required criterion for wetland delineation.
+- **Obligate wetland (OBL):** Plant species that occur almost always
+  (> 99% of the time) in wetlands; their dominance is the strongest
+  evidence for hydrophytic vegetation.
+- **Ordinary high water mark (OHWM):** The line on the shore
+  established by the fluctuations of water leaving physical
+  characteristics such as a clear natural line impressed on the bank,
+  shelving, destruction of terrestrial vegetation, or presence of
+  litter and debris; used to define the lateral extent of jurisdictional
+  waters.
+- **Problem area:** A site where one or more of the three wetland
+  criteria are not clearly met or where atypical conditions (drought,
+  altered hydrology, recent disturbance) complicate standard
+  application of the three-parameter approach; requires additional
+  documentation and may require a USACE district determination.
+- **Sample plot (data point):** A defined area (typically 5 m radius
+  for vegetation; a single soil pit for soils; a 10 m radius for
+  hydrology indicators) within which all three wetland criteria are
+  assessed together.
+- **Upland:** An area that does not meet one or more of the three
+  required wetland criteria; not subject to Section 404 jurisdiction.
+- **Wetland boundary:** The line on the landscape separating areas that
+  meet all three wetland criteria from areas that do not; the primary
+  product of a wetland delineation.
+- **Wetland indicator status (WIS):** A USACE classification of plant
+  species by their probability of occurrence in wetlands: OBL
+  (obligate wetland), FACW (facultative wetland), FAC (facultative),
+  FACU (facultative upland), UPL (upland). Current designations are
+  maintained by the USACE National Wetland Plant List (NWPL).
+
+
+## Safety and Hazards
+
+::: {.callout-warning}
+### Hazards
+
+- **Physical:** Unstable substrates (soft muck, quicksand-like
+  conditions in saturated soils); risk of sinking, tripping on
+  submerged debris, or falling. Standing water may conceal holes and
+  channels.
+- **Biological:** Mosquitoes (disease vectors including West Nile
+  virus), ticks (Lyme disease, RMSF), venomous snakes, poison
+  oak/ivy (*Toxicodendron* spp.), stinging nettles, and waterborne
+  pathogens. Avoid direct skin contact with standing water.
+- **Environmental:** Heat stress in summer; hypothermia in winter and
+  spring. Wetlands offer little shade in open marsh environments.
+:::
+
+### Required PPE
+
+- [ ] Rubber boots or chest waders (knee boots minimum)
+- [ ] Nitrile gloves (for soil pit work)
+- [ ] Long sleeves and long pants (tick and mosquito protection)
+- [ ] Insect repellent (DEET or picaridin)
+- [ ] Sun protection (hat, sunscreen SPF 30+)
+- [ ] Personal flotation device (if water depth exceeds knee level or
+      if working from a watercraft)
+
+### Emergency Procedures
+
+Work in pairs at minimum. If a team member becomes stuck in soft
+substrate, distribute weight on a board, backpack, or rope and pull
+laterally rather than vertically. Refer to
+[SOP-F001 Field Safety](SOP-F001-field-safety.qmd).
+
+
+## Equipment and Materials
+
+| Item                                        | Notes                                          |
+|:--------------------------------------------|:-----------------------------------------------|
+| USACE 1987 Wetland Delineation Manual       | Required reference; bring to field             |
+| USACE Arid West Regional Supplement (2010) | Required for all CA Arid West delineations     |
+| Munsell Soil Color Charts (moist)          | See [SOP-F405](SOP-F405-soil-color-munsell.qmd) |
+| Soil auger or push probe (60 cm minimum)   | For reading soil profile to 50 cm depth        |
+| Tile spade or sharpshooter spade           | For opening soil pit                           |
+| 30 cm metric ruler                         | Depth to WTHS and horizon thickness            |
+| Flagging tape (two colors: wetland, upland) | For marking boundary and sample plots          |
+| GPS unit or smartphone with mapping app    | See [SOP-F006](SOP-F006-gps-site-navigation.qmd) |
+| 50 m fiberglass measuring tape             | Transect layout                                |
+| Plant identification keys (regional)       | *Jepson Manual* for California                 |
+| National Wetland Plant List (NWPL)         | Current WIS designations (usace.army.mil)      |
+| Hydric Soils Field Indicators guide        | USDA NRCS Field Indicators of Hydric Soils     |
+| Wetland delineation field data sheets      | See Appendix A                                 |
+| Clipboard, mechanical pencils, waterproof paper | Rite in the Rain recommended               |
+| Camera (waterproof or in dry bag)          | Photo-document each sample plot                |
+| Compass                                    | Transect bearings                              |
+| 10x hand lens                              | Plant identification                           |
+
+
+## Estimated Time
+
+| Task                                         | Time (2-person crew)        |
+|:---------------------------------------------|:----------------------------|
+| Office pre-work (maps, records, NWPL lookup) | 2--4 hours                  |
+| Site reconnaissance walk                     | 30--60 minutes              |
+| Sample plot assessment (per plot)            | 15--30 minutes              |
+| Boundary flagging and GPS waypoints          | 1--2 hours per 100 m boundary|
+| Field data compilation                       | 30--60 minutes              |
+| Office post-work (report, map, data entry)   | 4--8 hours                  |
+
+
+## Procedure
+
+### Step 1: Pre-Field Office Work
+
+Before entering the field, complete the following:
+
+1. Obtain and review available information:
+   - USFWS National Wetlands Inventory (NWI) maps
+     ([fws.gov/wetlands](https://www.fws.gov/wetlands/))
+   - USDA Web Soil Survey (websoilsurvey.nrcs.usda.gov) -- note mapped
+     hydric soils and map unit descriptions
+   - USGS topographic maps (7.5-minute quadrangles)
+   - Aerial/satellite imagery (Google Earth historical layers) --
+     look for inundation signatures, dark organic soils, and
+     characteristic vegetation patterns
+   - NOAA precipitation records for the region to assess whether
+     current year is a drought, normal, or wet year (relevant to
+     atypical situation determinations)
+
+2. Generate a base map at a scale appropriate for the site
+   (1:2,400 for small sites; 1:4,800 for large sites). Include
+   NWI polygons, soil map unit boundaries, topographic contours,
+   and property boundaries.
+
+3. Look up current wetland indicator status (WIS) for all plant
+   species expected at the site on the USACE National Wetland Plant
+   List ([plants.usace.army.mil](https://plants.usace.army.mil)).
+
+4. Identify the appropriate USACE district and confirm whether a
+   preliminary jurisdictional determination (PJD) or approved
+   jurisdictional determination (AJD) is ultimately required.
+
+### Step 2: Site Reconnaissance
+
+On arrival at the field site, conduct a reconnaissance walk before
+placing any sample plots:
+
+1. Walk the entire site perimeter and any internal drainages or basins
+   to develop a mental model of landscape position, drainage patterns,
+   and vegetation transitions.
+2. Identify probable wetland areas (standing or ponded water, dark
+   organic soils visible at surface, wet-adapted vegetation) and
+   probable upland areas (well-drained soils, upland vegetation).
+3. Identify any obvious disturbances (ditching, filling, altered
+   hydrology, grazing, invasive species) that could create problem
+   areas.
+4. Note the approximate location of vegetation transitions, which
+   are often close to the wetland boundary.
+5. Sketch a rough site map with probable wetland/upland zones and
+   planned transect routes.
+
+### Step 3: Establish Transects and Sample Plots
+
+1. Establish transects perpendicular to the suspected wetland
+   boundary, spaced to adequately characterize the site. For
+   EA Program sites, transects are typically spaced 25--50 m apart;
+   closer spacing is used in complex or small-scale boundaries.
+
+2. On each transect, place sample plots at:
+   - A clearly wetland location (well within the apparent wetland)
+   - A clearly upland location (well outside the apparent wetland)
+   - One or more locations straddling the suspected boundary
+
+3. Flag each sample plot center with flagging tape and record GPS
+   coordinates. Use a consistent color for wetland plots and a
+   different color for upland plots.
+
+4. Number all sample plots sequentially and record them on the
+   base map.
+
+### Step 4: Assess Hydrophytic Vegetation
+
+At each sample plot (approximately 5 m radius), assess vegetation
+in all strata present (tree, shrub/sapling, herb, woody vine):
+
+1. List all plant species in each stratum. Identify to species level
+   using regional keys (*Jepson Manual* for California).
+
+2. Estimate percent areal cover for each species within each stratum
+   to the nearest 5--10%.
+
+3. For each species, record the current wetland indicator status (WIS)
+   from the USACE NWPL for the Arid West region.
+
+4. Determine dominant species in each stratum using the **50/20 rule**:
+
+   a. Rank species within each stratum by decreasing percent cover.
+   b. Add species from highest to lowest cover until the cumulative
+      cover total reaches 50% or more of the total stratum cover.
+   c. Include one additional species if it contributes at least 20%
+      of the total stratum cover.
+   d. All species added in steps (b) and (c) are dominant species
+      for that stratum.
+
+5. Tally the number of dominant species that are OBL, FACW, or FAC
+   (hydrophytic) and the number that are FACU or UPL (upland).
+
+6. The **hydrophytic vegetation criterion is met** if more than 50% of
+   the dominant species across all strata are OBL, FACW, or FAC.
+
+::: {.callout-note}
+### FAC-Neutral Test
+
+In borderline cases where FAC species are dominant, apply the
+FAC-neutral test: exclude all FAC species and recalculate dominance
+using only OBL, FACW, FACU, and UPL species. If the remaining
+dominants are predominantly hydrophytic, the criterion is still met.
+The FAC-neutral test is described in the Arid West Regional Supplement
+[@usace2010regional].
+:::
+
+### Step 5: Assess Hydric Soils
+
+At each sample plot, excavate a soil pit to at least 50 cm depth
+(or to the water table or bedrock, whichever is shallower):
+
+1. Excavate with a sharpshooter spade. If the pit fills with water,
+   record the depth to water table and excavate no deeper.
+
+2. Describe the soil profile using the form in Appendix A:
+   - Horizon designation (A, B, C), depth (cm), and thickness
+   - Munsell color (matrix and mottles/redoximorphic features) per
+     [SOP-F405](SOP-F405-soil-color-munsell.qmd) -- record moist
+     colors only
+   - Texture (field ribbon test; see [SOP-F401](SOP-F401-soil-texture.qmd))
+   - Structure, consistence, roots
+
+3. Check for USDA NRCS Field Indicators of Hydric Soils (Version 8.2
+   or current). For the Western Mountains, Valleys, and Coast (WMVC)
+   region, the most applicable indicators include:
+
+   | Indicator Code | Name                          | Key Feature                                   |
+   |:---------------|:------------------------------|:----------------------------------------------|
+   | A1             | Histosol                      | Organic soil (Oi, Oe, or Oa horizon > 40 cm) |
+   | A2             | Histic epipedon               | Organic surface layer 20--40 cm               |
+   | A3             | Black histic                  | Black (10YR 2/1) organic layer >= 20 cm       |
+   | A11            | Depleted below dark surface   | Dark A over low-chroma (chroma <= 2) matrix   |
+   | F2             | Loamy gleyed matrix           | Gley hue matrix in loamy soils                |
+   | F3             | Depleted matrix               | > 60% low-chroma (chroma <= 2) matrix         |
+   | F6             | Redox dark surface            | Dark A over depleted or reduced matrix        |
+   | F8             | Redox depressions             | Redox concentrations in depressions           |
+
+4. The **hydric soil criterion is met** if one or more applicable
+   field indicators are present at the appropriate depth. For most
+   indicators in the Arid West Supplement, this means within the
+   upper 30 cm of the soil profile [@usace2010regional].
+
+::: {.callout-warning}
+### Problematic Hydric Soil Situations
+
+Soils in the Arid West may have low-chroma colors from parent material
+(e.g., some shales, volcanic tuffs) rather than from saturation. If
+in doubt, check for redox concentrations (bright orange/red Fe masses)
+as corroborating evidence, and note the soil series and parent material
+from Web Soil Survey.
+:::
+
+### Step 6: Assess Wetland Hydrology
+
+At each sample plot, document evidence of wetland hydrology. The
+USACE defines wetland hydrology as saturation within 30 cm of the
+surface for a continuous period of at least 5% of the growing season
+[@usace1987; @usace2010regional].
+
+1. Record depth to surface water or saturated soil (standing water
+   in the pit).
+
+2. Check for **primary hydrology indicators** (in order of reliability):
+
+   | Indicator                         | Description                                        |
+   |:----------------------------------|:---------------------------------------------------|
+   | Surface water                     | Standing water present at time of visit            |
+   | High water table                  | Water within 30 cm of surface in soil pit          |
+   | Saturation                        | Saturated soil within 30 cm (water oozes when squeezed) |
+
+3. Check for **secondary hydrology indicators** (two or more required
+   when primary indicators are absent):
+
+   | Indicator                         | Description                                        |
+   |:----------------------------------|:---------------------------------------------------|
+   | Water marks                       | Staining on tree trunks or structures              |
+   | Sediment deposits                 | Fresh mineral sediment on leaves or stems          |
+   | Drift lines                       | Lines of debris deposited by receding water        |
+   | Waterlogged soils                 | Confirmed by soil pit; no free water but saturated |
+   | Water-stained leaves              | Grayish-brown discoloration of litter              |
+   | Oxidized rhizospheres             | Orange halos around living roots in grey matrix    |
+   | FAC-neutral plant communities     | Vegetation dominance by OBL/FACW species           |
+   | Crayfish burrows                  | Chimney mounds indicating seasonal saturation      |
+
+4. For arid-region sites, pay particular attention to oxidized
+   rhizospheres (a primary indicator in the Arid West Supplement) and
+   drift/wrack lines along swales and basins.
+
+5. The **wetland hydrology criterion is met** if at least one primary
+   indicator is present, or at least two secondary indicators are
+   present, at the time of visit; or if the site has documented
+   evidence of seasonal or periodic inundation from well records or
+   gauges (see [SOP-F306](SOP-F306-wetland-hydrology-monitoring.qmd)).
+
+::: {.callout-note}
+### Arid-Region Hydrology Timing
+
+At arid and semi-arid sites, surface water and high water tables may
+only be present during a brief seasonal window. When conducting
+delineations outside the wet season, rely on secondary indicators
+and, where available, water level logger data from monitoring wells.
+Document the date of the visit and regional precipitation conditions
+in all field data sheets. See [SOP-F306](SOP-F306-wetland-hydrology-monitoring.qmd)
+for long-term hydrology monitoring methods.
+:::
+
+### Step 7: Apply the Three-Parameter Test
+
+At each sample plot, compile results from Steps 4--6:
+
+1. Record whether each of the three criteria is met (yes/no) on
+   the field data sheet (Appendix A).
+
+2. **A sample plot is classified as wetland if and only if all three
+   criteria are met.** If any criterion is absent, the plot is
+   classified as upland (or a transitional/problem area if two of
+   three are met).
+
+3. If two of three criteria are met, flag the plot as a potential
+   **problem area** and document the specific conditions. Common
+   problem area types include:
+   - Recently disturbed wetlands (vegetation removed, soil disturbed)
+   - Drought-year assessments (hydrology not apparent)
+   - Altered hydrology (ditched, drained, or impounded areas)
+   - Atypical vegetation (recent burn, mowing, herbicide)
+
+4. For problem areas, apply the appropriate USACE atypical situation
+   procedures as described in the Regional Supplement
+   [@usace2010regional].
+
+### Step 8: Flag and Map the Wetland Boundary
+
+1. Between each pair of adjacent wetland and upland sample plots on
+   a transect, locate the wetland boundary by walking perpendicular
+   to the transect and reassessing the three criteria at intermediate
+   points until the line of change is identified.
+
+2. Flag the wetland boundary with a distinct color (use a third color
+   different from the wetland and upland plot flags). Place flags
+   every 5--10 m or at every change in direction.
+
+3. Record GPS waypoints at each boundary flag using
+   [SOP-F006](SOP-F006-gps-site-navigation.qmd). Waypoint naming
+   convention: `WB_[transect]-[sequence]` (e.g., `WB_T1-01`).
+
+4. Photograph the boundary flags from multiple angles; include a
+   scale bar (person or measuring tape) in at least one photo per
+   transect.
+
+5. Sketch the boundary on the field base map, noting all sample plot
+   locations and transect lines.
+
+### Step 9: Field Quality Review
+
+Before leaving the site, complete the following checks:
+
+- [ ] All sample plots have GPS coordinates recorded
+- [ ] Every plot has complete data for all three criteria
+- [ ] All boundary flags are GPS-logged
+- [ ] At least two representative photographs per sample plot
+- [ ] Boundary is continuous between all transects (no gaps)
+- [ ] Problem areas are flagged and documented
+- [ ] Equipment has been decontaminated per
+      [SOP-F007](SOP-F007-field-decontamination.qmd)
+
+### Step 10: Post-Field Office Work
+
+1. Enter all field data into the project database within 48 hours
+   per [SOP-L803](../lab_sops/SOP-L803-data-entry-database.qmd).
+
+2. Import GPS waypoints and generate a georeferenced boundary map in
+   GIS software (see [SOP-L804](../lab_sops/SOP-L804-gis-spatial-data.qmd)).
+
+3. Overlay the delineated boundary on aerial imagery, NWI maps,
+   and soil survey maps to check for consistency; note and document
+   any discrepancies.
+
+4. Calculate wetland area (hectares) from the GIS boundary polygon.
+
+5. Compile the delineation report with:
+   - Site description and location map
+   - Methods summary (reference to this SOP)
+   - Summary table of all sample plots and three-parameter results
+   - Wetland boundary map
+   - Photographs
+   - Conclusions regarding jurisdictional status
+   - Any problem areas and how they were addressed
+
+6. Archive all raw field data sheets (scanned), GPS track files, GIS
+   shapefiles, and the final report per project data management
+   protocols.
+
+
+## Quality Control
+
+- A minimum of two observers must conduct the vegetation assessment
+  at each sample plot; independent species lists must be reconciled
+  before leaving the plot.
+- Munsell color readings must be made by two observers and must agree
+  within one value and one chroma step; discrepancies require a
+  consensus re-read per [SOP-F405](SOP-F405-soil-color-munsell.qmd).
+- GPS boundary waypoints must be collected with horizontal accuracy
+  < 3 m (WAAS-enabled or equivalent). Record DOP and fix type.
+- At 10% of sample plots, return the following day and re-assess the
+  hydrophytic vegetation criterion independently; dominant species
+  lists must agree within 10 percentage points cover.
+- Final delineation maps must be reviewed by the PI before submission
+  to any regulatory agency or inclusion in project reports.
+
+
+## Data Management
+
+1. Raw field data sheets must be scanned and uploaded to the project
+   folder within 48 hours of fieldwork.
+2. Enter tabular sample plot data into the project database using the
+   standardized template in Appendix B.
+3. GPS tracks and waypoints must be exported and backed up immediately
+   on return from the field.
+4. All GIS boundary files must be saved in both shapefile and GeoJSON
+   formats and versioned in the project Git repository.
+5. Version-control all analysis scripts and report documents per
+   [SOP-L801](../lab_sops/SOP-L801-rstudio-github.qmd).
+
+
+## References
+
+- @usace1987
+- @usace2010regional
+- @mitsch2015
+
+::: {#refs}
+:::
+
+
+## Related SOPs
+
+| SOP   | Title                                  | Relationship                             |
+|:------|:---------------------------------------|:-----------------------------------------|
+| [F001](SOP-F001-field-safety.qmd)      | Field Safety              | Required prerequisite                    |
+| [F006](SOP-F006-gps-site-navigation.qmd) | GPS and Site Navigation | Boundary waypoint collection             |
+| [F007](SOP-F007-field-decontamination.qmd) | Field Decontamination | Between-site gear decontamination       |
+| [F306](SOP-F306-wetland-hydrology-monitoring.qmd) | Wetland Hydrology Monitoring | Hydrology criterion support; long-term records |
+| [F405](SOP-F405-soil-color-munsell.qmd) | Soil Color (Munsell)    | Required for hydric soil assessment      |
+| [F407](SOP-F407-soil-profile-description.qmd) | Soil Profile Description | Soil pit documentation                |
+| [L803](../lab_sops/SOP-L803-data-entry-database.qmd) | Data Entry and Database Management | Post-field data entry  |
+| [L804](../lab_sops/SOP-L804-gis-spatial-data.qmd) | GIS and Spatial Data   | Boundary mapping and area calculation    |
+
+
+## Training Record
+
+Before conducting wetland delineations independently, personnel must:
+
+1. Read this SOP, [SOP-F001](SOP-F001-field-safety.qmd),
+   [SOP-F306](SOP-F306-wetland-hydrology-monitoring.qmd), and
+   [SOP-F405](SOP-F405-soil-color-munsell.qmd) in full
+2. Review the USACE 1987 Manual and Arid West Regional Supplement
+   [@usace1987; @usace2010regional]
+3. Complete at least one supervised delineation transect, including
+   independent application of the 50/20 rule and hydric soil field
+   indicators, with results reviewed by the PI
+4. Demonstrate Munsell color reading proficiency per
+   [SOP-F405](SOP-F405-soil-color-munsell.qmd) inter-observer
+   calibration requirements
+5. Successfully enter and map a practice delineation dataset in GIS
+6. Be signed off by the PI or field lead
+
+
+## Appendix A: Field Data Sheet {.appendix}
+
+Print double-sided on waterproof paper (Rite in the Rain). Complete one
+sheet per sample plot.
+
+---
+
+**Site:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Date:** \_\_\_\_\_\_\_\_\_
+**Observers:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Plot ID:** \_\_\_\_\_ **Transect:** \_\_\_\_\_ **GPS (lat/lon):** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Landscape position:** upland / footslope / toeslope / depression / flat / other: \_\_\_\_\_\_\_
+
+---
+
+### A. Hydrophytic Vegetation
+
+| Species | Stratum | % Cover | WIS |
+|:--------|:--------|:--------|:----|
+|         |         |         |     |
+|         |         |         |     |
+|         |         |         |     |
+|         |         |         |     |
+|         |         |         |     |
+
+**50/20 Rule Tally:**
+Dominants that are OBL/FACW/FAC: \_\_\_ / Total dominants: \_\_\_
+
+**Hydrophytic vegetation criterion met?** YES / NO / Problem area
+
+---
+
+### B. Hydric Soils
+
+**Depth to water table or bedrock:** \_\_\_\_\_ cm
+
+| Horizon | Depth (cm) | Munsell (moist) | Texture | Notes |
+|:--------|:-----------|:----------------|:--------|:------|
+|         |            |                 |         |       |
+|         |            |                 |         |       |
+|         |            |                 |         |       |
+
+**Hydric soil field indicator(s) present:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Hydric soil criterion met?** YES / NO / Problem area
+
+---
+
+### C. Wetland Hydrology
+
+**Primary indicators (check all present):**
+
+- [ ] Surface water (depth: \_\_\_ cm)
+- [ ] High water table (depth: \_\_\_ cm)
+- [ ] Saturation within 30 cm
+
+**Secondary indicators (check all present):**
+
+- [ ] Water marks    [ ] Sediment deposits    [ ] Drift lines
+- [ ] Water-stained leaves    [ ] Oxidized rhizospheres
+- [ ] Waterlogged soils    [ ] Crayfish burrows    [ ] FAC-neutral community
+
+**Wetland hydrology criterion met?** YES / NO / Problem area
+
+---
+
+### D. Determination
+
+**All three criteria met?** YES -- WETLAND / NO -- UPLAND / PROBLEM AREA
+
+**Notes / atypical situation documentation:**
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+---
+
+
+## Appendix B: Sample Plot Summary Table Template {.appendix}
+
+Enter into `data/raw/wetland_delineation_[site]_[date].csv`:
+
+```
+plot_id,transect,lat,lon,veg_criterion,soil_criterion,hydro_criterion,
+determination,dominant_species,hydric_indicator,primary_hydro_indicator,
+notes,observers,date
+```
+
+Column definitions are in the project data dictionary
+(`data/metadata/wetland_delineation_datadictionary.csv`).
+
+
+## Appendix C: Wetland Indicator Status Quick Reference {.appendix}
+
+| Code | Category             | Wetland Occurrence | Delineation Implication              |
+|:-----|:---------------------|:-------------------|:-------------------------------------|
+| OBL  | Obligate wetland     | > 99%              | Strong evidence for hydrophytic veg  |
+| FACW | Facultative wetland  | 67--99%            | Evidence for hydrophytic veg         |
+| FAC  | Facultative          | 34--66%            | Equivocal; apply FAC-neutral test    |
+| FACU | Facultative upland   | 1--33%             | Evidence against hydrophytic veg     |
+| UPL  | Upland               | < 1%               | Strong evidence against hydrophytic veg |
+
+Current WIS designations for the Arid West region are available at
+[plants.usace.army.mil](https://plants.usace.army.mil). Always use
+the regional list, not the national list, for California delineations.
