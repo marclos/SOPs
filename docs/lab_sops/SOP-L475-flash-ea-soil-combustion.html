@@ -2,16 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marc Los Huertos">
 <meta name="author" content="Kyle McCarty">
-<meta name="dcterms.date" content="2026-05-27">
+<meta name="dcterms.date" content="2026-06-07">
 
 <title>Flash EA Soil Combustion for IRMS Analysis – Biogeochemistry Lab Resource Page</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -23,42 +26,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -70,19 +58,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3a1aeaa6d640648adc1af01598da33dc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d4bead9c1c5dc71b7880c13a1b948ea5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3a1aeaa6d640648adc1af01598da33dc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-7effebab160d51878052acd146ea2b5f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-29fa7fe6533ba7100d8823ec240604ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-7effebab160d51878052acd146ea2b5f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -113,7 +100,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -363,10 +350,6 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -455,49 +438,36 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">1. Purpose</a></li>
-  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">2. Scope</a></li>
-  <li><a href="#responsibilities" id="toc-responsibilities" class="nav-link" data-scroll-target="#responsibilities">3. Responsibilities</a></li>
-  <li><a href="#safety-and-hazards" id="toc-safety-and-hazards" class="nav-link" data-scroll-target="#safety-and-hazards">4. Safety and Hazards</a>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose"><span class="header-section-number">1</span> Purpose</a></li>
+  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope"><span class="header-section-number">2</span> Scope</a></li>
+  <li><a href="#responsibilities" id="toc-responsibilities" class="nav-link" data-scroll-target="#responsibilities"><span class="header-section-number">3</span> Responsibilities</a></li>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions"><span class="header-section-number">4</span> Definitions</a></li>
+  <li><a href="#safety-and-hazards" id="toc-safety-and-hazards" class="nav-link" data-scroll-target="#safety-and-hazards"><span class="header-section-number">5</span> Safety and Hazards</a>
   <ul class="collapse">
-  <li><a href="#required-ppe" id="toc-required-ppe" class="nav-link" data-scroll-target="#required-ppe">Required PPE</a></li>
-  <li><a href="#emergency-procedures" id="toc-emergency-procedures" class="nav-link" data-scroll-target="#emergency-procedures">Emergency Procedures</a></li>
+  <li><a href="#required-ppe" id="toc-required-ppe" class="nav-link" data-scroll-target="#required-ppe"><span class="header-section-number">5.1</span> Required PPE</a></li>
+  <li><a href="#emergency-procedures" id="toc-emergency-procedures" class="nav-link" data-scroll-target="#emergency-procedures"><span class="header-section-number">5.2</span> Emergency Procedures</a></li>
   </ul></li>
-  <li><a href="#prerequisites-and-required-reading" id="toc-prerequisites-and-required-reading" class="nav-link" data-scroll-target="#prerequisites-and-required-reading">5. Prerequisites and Required Reading</a></li>
-  <li><a href="#required-materials" id="toc-required-materials" class="nav-link" data-scroll-target="#required-materials">6. Required Materials</a>
+  <li><a href="#required-materials" id="toc-required-materials" class="nav-link" data-scroll-target="#required-materials"><span class="header-section-number">6</span> Required Materials</a>
   <ul class="collapse">
-  <li><a href="#consumables-and-reagents-nc-dual-reactor" id="toc-consumables-and-reagents-nc-dual-reactor" class="nav-link" data-scroll-target="#consumables-and-reagents-nc-dual-reactor">6.1 Consumables and Reagents (NC Dual Reactor)</a></li>
-  <li><a href="#capsules-and-weighing-supplies" id="toc-capsules-and-weighing-supplies" class="nav-link" data-scroll-target="#capsules-and-weighing-supplies">6.2 Capsules and Weighing Supplies</a></li>
-  <li><a href="#sec-standards" id="toc-sec-standards" class="nav-link" data-scroll-target="#sec-standards">6.3 Standard Reference Materials</a></li>
+  <li><a href="#consumables-and-reagents-nc-dual-reactor" id="toc-consumables-and-reagents-nc-dual-reactor" class="nav-link" data-scroll-target="#consumables-and-reagents-nc-dual-reactor"><span class="header-section-number">6.1</span> Consumables and Reagents (NC Dual Reactor)</a></li>
+  <li><a href="#capsules-and-weighing-supplies" id="toc-capsules-and-weighing-supplies" class="nav-link" data-scroll-target="#capsules-and-weighing-supplies"><span class="header-section-number">6.2</span> Capsules and Weighing Supplies</a></li>
+  <li><a href="#sec-standards" id="toc-sec-standards" class="nav-link" data-scroll-target="#sec-standards"><span class="header-section-number">6.3</span> Standard Reference Materials</a></li>
   </ul></li>
-  <li><a href="#sample-preparation" id="toc-sample-preparation" class="nav-link" data-scroll-target="#sample-preparation">7. Sample Preparation</a>
+  <li><a href="#sample-preparation" id="toc-sample-preparation" class="nav-link" data-scroll-target="#sample-preparation"><span class="header-section-number">7</span> Sample Preparation</a>
   <ul class="collapse">
-  <li><a href="#drying-and-grinding" id="toc-drying-and-grinding" class="nav-link" data-scroll-target="#drying-and-grinding">7.1 Drying and Grinding</a></li>
-  <li><a href="#elemental-pre-screening" id="toc-elemental-pre-screening" class="nav-link" data-scroll-target="#elemental-pre-screening">7.2 Elemental Pre-screening</a></li>
-  <li><a href="#capsule-weighing" id="toc-capsule-weighing" class="nav-link" data-scroll-target="#capsule-weighing">7.3 Capsule Weighing</a></li>
+  <li><a href="#drying-and-grinding" id="toc-drying-and-grinding" class="nav-link" data-scroll-target="#drying-and-grinding"><span class="header-section-number">7.1</span> Drying and Grinding</a></li>
+  <li><a href="#elemental-pre-screening" id="toc-elemental-pre-screening" class="nav-link" data-scroll-target="#elemental-pre-screening"><span class="header-section-number">7.2</span> Elemental Pre-screening</a></li>
+  <li><a href="#sample-weighing" id="toc-sample-weighing" class="nav-link" data-scroll-target="#sample-weighing"><span class="header-section-number">7.3</span> Sample Weighing</a></li>
   </ul></li>
-  <li><a href="#instrument-warm-up-and-pre-analysis-checks" id="toc-instrument-warm-up-and-pre-analysis-checks" class="nav-link" data-scroll-target="#instrument-warm-up-and-pre-analysis-checks">8. Instrument Warm-Up and Pre-Analysis Checks</a>
-  <ul class="collapse">
-  <li><a href="#starting-a-cold-instrument" id="toc-starting-a-cold-instrument" class="nav-link" data-scroll-target="#starting-a-cold-instrument">8.1 Starting a Cold Instrument</a></li>
-  <li><a href="#gas-checks" id="toc-gas-checks" class="nav-link" data-scroll-target="#gas-checks">8.2 Gas Checks</a></li>
-  <li><a href="#instrument-status" id="toc-instrument-status" class="nav-link" data-scroll-target="#instrument-status">8.3 Instrument Status</a></li>
-  <li><a href="#purge-bake-out-and-temperature-ramp" id="toc-purge-bake-out-and-temperature-ramp" class="nav-link" data-scroll-target="#purge-bake-out-and-temperature-ramp">8.4 Purge, Bake-Out, and Temperature Ramp</a></li>
-  <li><a href="#background-checks" id="toc-background-checks" class="nav-link" data-scroll-target="#background-checks">8.5 Background Checks</a></li>
-  <li><a href="#zero-enrichment-onoff-tests" id="toc-zero-enrichment-onoff-tests" class="nav-link" data-scroll-target="#zero-enrichment-onoff-tests">8.6 Zero-Enrichment (On/Off) Tests</a></li>
-  <li><a href="#tuning" id="toc-tuning" class="nav-link" data-scroll-target="#tuning">8.7 Tuning</a></li>
-  </ul></li>
-  <li><a href="#sequence-preparation-in-isodat" id="toc-sequence-preparation-in-isodat" class="nav-link" data-scroll-target="#sequence-preparation-in-isodat">9. Sequence Preparation in Isodat</a></li>
-  <li><a href="#running-the-sequence" id="toc-running-the-sequence" class="nav-link" data-scroll-target="#running-the-sequence">10. Running the Sequence</a>
-  <ul class="collapse">
-  <li><a href="#approximate-run-times" id="toc-approximate-run-times" class="nav-link" data-scroll-target="#approximate-run-times">10.1 Approximate Run Times</a></li>
-  </ul></li>
-  <li><a href="#end-of-run-shutdown-and-cleanup" id="toc-end-of-run-shutdown-and-cleanup" class="nav-link" data-scroll-target="#end-of-run-shutdown-and-cleanup">11. End-of-Run Shutdown and Cleanup</a></li>
-  <li><a href="#data-reduction" id="toc-data-reduction" class="nav-link" data-scroll-target="#data-reduction">12. Data Reduction</a></li>
-  <li><a href="#qcqa-criteria" id="toc-qcqa-criteria" class="nav-link" data-scroll-target="#qcqa-criteria">13. QC/QA Criteria</a></li>
-  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">14. Troubleshooting</a></li>
-  <li><a href="#time-management-reminders" id="toc-time-management-reminders" class="nav-link" data-scroll-target="#time-management-reminders">15. Time Management Reminders</a></li>
-  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">16. Definitions</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">17. References</a></li>
+  <li><a href="#instrument-warm-up-and-pre-analysis-checks" id="toc-instrument-warm-up-and-pre-analysis-checks" class="nav-link" data-scroll-target="#instrument-warm-up-and-pre-analysis-checks"><span class="header-section-number">8</span> Instrument Warm-Up and Pre-Analysis Checks</a></li>
+  <li><a href="#sequence-design" id="toc-sequence-design" class="nav-link" data-scroll-target="#sequence-design"><span class="header-section-number">9</span> Sequence Design</a></li>
+  <li><a href="#running-the-analysis" id="toc-running-the-analysis" class="nav-link" data-scroll-target="#running-the-analysis"><span class="header-section-number">10</span> Running the Analysis</a></li>
+  <li><a href="#shutdown" id="toc-shutdown" class="nav-link" data-scroll-target="#shutdown"><span class="header-section-number">11</span> Shutdown</a></li>
+  <li><a href="#data-reduction" id="toc-data-reduction" class="nav-link" data-scroll-target="#data-reduction"><span class="header-section-number">12</span> Data Reduction</a></li>
+  <li><a href="#definitions-of-certification-levels" id="toc-definitions-of-certification-levels" class="nav-link" data-scroll-target="#definitions-of-certification-levels"><span class="header-section-number">13</span> Definitions of Certification Levels</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">14</span> References</a></li>
+  <li><a href="#related-sops" id="toc-related-sops" class="nav-link" data-scroll-target="#related-sops"><span class="header-section-number">15</span> Related SOPs</a></li>
+  <li><a href="#training-record" id="toc-training-record" class="nav-link" data-scroll-target="#training-record"><span class="header-section-number">16</span> Training Record</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/marclos/SOPs/edit/main/lab_sops/SOP-L475-flash-ea-soil-combustion.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marclos/SOPs/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="SOP-L475-flash-ea-soil-combustion.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -506,69 +476,55 @@ window.Quarto = {
 
 
 <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Flash EA Soil Combustion for IRMS Analysis</h1>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Marc Los Huertos </p>
+  <div class="quarto-title">
+    <h1 class="title">Flash EA Soil Combustion for IRMS Analysis</h1>
   </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Environmental Analysis, Pomona College
-          </p>
+        
+  <div class="sop-meta-badge">
+    <span class="sop-number">SOP-L475</span>
+    <span class="sop-revision">Revision&nbsp;1.1</span>
+  </div>
+              
+  <div class="quarto-title-meta">
+        <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+            <p class="author">Marc Los Huertos</p>
+                  <p class="affiliation">Environmental Analysis, Pomona College</p>
+                        <p class="author">Kyle McCarty</p>
+                  <p class="affiliation">Oxtoby Isotope Lab, Pomona College</p>
+                      </div>
+  </div>
+        <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2026-06-07</p>
       </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Kyle McCarty </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Oxtoby Isotope Lab, Pomona College
-          </p>
-      </div>
-  </div>
-
-<div class="quarto-title-meta">
-
-      
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026-05-27</p>
     </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+      </div>
 </header>
 
 
-<section id="purpose" class="level2">
-<h2 class="anchored" data-anchor-id="purpose">1. Purpose</h2>
-<p>This SOP describes the complete workflow for analyzing soil and sediment samples for <span class="math inline">\(\delta^{15}\)</span>N, <span class="math inline">\(\delta^{13}\)</span>C, and elemental C and N content using the Thermo Scientific Flash IRMS Elemental Analyzer (EA) coupled to the Delta V Isotope Ratio Mass Spectrometer (IRMS) through the ConFlo IV continuous-flow interface. It covers sample preparation, instrument warm-up, sequence creation, running the analysis, shutdown, and data reduction.</p>
+
+<section id="purpose" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="purpose"><span class="header-section-number">1</span> Purpose</h2>
+<p>This SOP describes the complete workflow for analyzing soil and sediment samples for <span class="math inline">\(\delta^{15}\)</span>N, <span class="math inline">\(\delta^{13}\)</span>C, and elemental C and N content using the Thermo Scientific Flash IRMS Elemental Analyzer (EA) coupled to the Delta V Isotope Ratio Mass Spectrometer (IRMS) through the ConFlo IV continuous-flow interface <span class="citation" data-cites="thermo_flashea thermo_deltav">(<a href="#ref-thermo_deltav" role="doc-biblioref">Thermo Fisher Scientific, 2008b</a>, <a href="#ref-thermo_flashea" role="doc-biblioref">2010a</a>)</span>. It covers sample preparation, instrument warm-up, sequence creation, running the analysis, shutdown, and data reduction.</p>
+<p>For general instrument operation, gas checks, and pre-analysis tests, see <a href="../lab_sops/SOP-L208-irms-general-instrument.html">SOP-L208</a>. For the full data correction workflow (blank, linearity, scale normalization, and drift correction), see <a href="../lab_sops/SOP-L414-soil-ea-irms.html">SOP-L414</a>.</p>
 </section>
-<section id="scope" class="level2">
-<h2 class="anchored" data-anchor-id="scope">2. Scope</h2>
+<section id="scope" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="scope"><span class="header-section-number">2</span> Scope</h2>
 <ul>
-<li><strong>Applies to:</strong> Soil, sediment, and plant tissue samples analyzed for carbon and nitrogen isotopic composition (<span class="math inline">\(\delta^{13}\)</span>C, <span class="math inline">\(\delta^{15}\)</span>N) and elemental concentrations (%C, %N) by combustion EA-IRMS.</li>
-<li><strong>Does not apply to:</strong> Sulfur isotope analysis (NCS mode requires a dedicated reactor and column; see separate SOP), GasBench carbonate analysis, TC/EA hydrogen and oxygen isotope analysis, or liquid samples.</li>
-<li><strong>Location:</strong> David W. and Claire B. Oxtoby Environmental Isotope Lab, SGM Rm 135, Pomona College. Sample preparation takes place in the wet lab, SGM Rm 133.</li>
+<li><strong>Applies to:</strong> Soil, sediment, and plant tissue samples analyzed for <span class="math inline">\(\delta^{13}\)</span>C, <span class="math inline">\(\delta^{15}\)</span>N, and elemental concentrations (%C, %N) by combustion EA-IRMS in NC (dual reactor) mode</li>
+<li><strong>Does not apply to:</strong> Sulfur isotope analysis (NCS mode), GasBench carbonate analysis (see <a href="../lab_sops/SOP-L415-carbonate-gasbench-irms.html">SOP-L415</a>), TC/EA hydrogen and oxygen isotope analysis, or liquid samples</li>
+<li><strong>Location:</strong> Sample preparation in SGM Rm 133; analysis in the Oxtoby Environmental Isotope Lab, SGM Rm 135</li>
 </ul>
 </section>
-<section id="responsibilities" class="level2">
-<h2 class="anchored" data-anchor-id="responsibilities">3. Responsibilities</h2>
+<section id="responsibilities" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="responsibilities"><span class="header-section-number">3</span> Responsibilities</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 24%">
-<col style="width: 75%">
+<col style="width: 25%">
+<col style="width: 74%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -587,7 +543,7 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Super-User</td>
-<td style="text-align: left;">May supervise trainees; perform minor maintenance</td>
+<td style="text-align: left;">Supervise trainees; perform minor maintenance</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Certified User</td>
@@ -595,13 +551,32 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Student Researcher</td>
-<td style="text-align: left;">Sample weighing, data reduction (no unsupervised runs)</td>
+<td style="text-align: left;">Sample weighing and data reduction (no unsupervised runs)</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="safety-and-hazards" class="level2">
-<h2 class="anchored" data-anchor-id="safety-and-hazards">4. Safety and Hazards</h2>
+<section id="definitions" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="definitions"><span class="header-section-number">4</span> Definitions</h2>
+<ul>
+<li><strong>Blank correction:</strong> Subtraction of the isotopic and elemental contribution of an empty tin capsule from each sample signal; necessary because capsule tin contributes a small amount of C and N <span class="citation" data-cites="paul2007 thermo_flashea">(<a href="#ref-paul2007" role="doc-biblioref">Paul et al., 2007</a>; <a href="#ref-thermo_flashea" role="doc-biblioref">Thermo Fisher Scientific, 2010a</a>)</span>.</li>
+<li><strong>Certified user:</strong> A student, staff, or faculty member qualified to prepare samples and run the IRMS without supervision, as designated by the lab PI.</li>
+<li><strong>ConFlo IV:</strong> Interface hub connecting the Flash EA and other peripherals to the Delta V IRMS; handles reference-gas delivery and peak switching <span class="citation" data-cites="thermo_conflo">(<a href="#ref-thermo_conflo" role="doc-biblioref">Thermo Fisher Scientific, 2008a</a>)</span>.</li>
+<li><strong><span class="math inline">\(\delta^{13}\)</span>C:</strong> Stable carbon isotope ratio expressed in per mil (‰) relative to Vienna Pee Dee Belemnite (VPDB): <span class="math inline">\(\delta^{13}C = (R_\text{sample}/R_\text{standard} - 1) \times 1000\)</span> where <span class="math inline">\(R = {}^{13}C/{}^{12}C\)</span> <span class="citation" data-cites="coplen2011">(<a href="#ref-coplen2011" role="doc-biblioref">Coplen, 2011</a>)</span>.</li>
+<li><strong><span class="math inline">\(\delta^{15}\)</span>N:</strong> Stable nitrogen isotope ratio expressed in per mil (‰) relative to atmospheric N<sub>2</sub> (AIR): <span class="math inline">\(\delta^{15}N = (R_\text{sample}/R_\text{standard} - 1) \times 1000\)</span> where <span class="math inline">\(R = {}^{15}N/{}^{14}N\)</span> <span class="citation" data-cites="coplen2011">(<a href="#ref-coplen2011" role="doc-biblioref">Coplen, 2011</a>)</span>.</li>
+<li><strong>Drift correction:</strong> Adjustment for systematic temporal change in measured <span class="math inline">\(\delta\)</span> values during a sequence, estimated from bracketing reference materials <span class="citation" data-cites="paul2007">(<a href="#ref-paul2007" role="doc-biblioref">Paul et al., 2007</a>)</span>.</li>
+<li><strong>Flash EA:</strong> The Thermo Scientific Flash IRMS Elemental Analyzer peripheral; combusts samples at 1020 °C in an O<sub>2</sub> pulse and separates N<sub>2</sub> and CO<sub>2</sub> chromatographically before delivery to the IRMS via the ConFlo IV <span class="citation" data-cites="thermo_flashea">(<a href="#ref-thermo_flashea" role="doc-biblioref">Thermo Fisher Scientific, 2010a</a>)</span>.</li>
+<li><strong>Isodat:</strong> Thermo Fisher software for analytical sequence design, instrument control, and raw isotope data export <span class="citation" data-cites="thermo_isodat">(<a href="#ref-thermo_isodat" role="doc-biblioref">Thermo Fisher Scientific, 2010b</a>)</span>.</li>
+<li><strong>Linearity correction:</strong> Adjustment applied to account for the dependence of measured <span class="math inline">\(\delta\)</span> values on peak amplitude at the detector <span class="citation" data-cites="paul2007">(<a href="#ref-paul2007" role="doc-biblioref">Paul et al., 2007</a>)</span>.</li>
+<li><strong>Reference material (RM):</strong> A substance with certified or consensus <span class="math inline">\(\delta\)</span> values used to anchor measured values to the VPDB or AIR scale; at least two RMs spanning the expected sample range are required for two-point scale normalization <span class="citation" data-cites="werner2001 coplen2011">(<a href="#ref-coplen2011" role="doc-biblioref">Coplen, 2011</a>; <a href="#ref-werner2001" role="doc-biblioref">Werner &amp; Brand, 2001</a>)</span>.</li>
+<li><strong>Scale normalization:</strong> Two-point (or multi-point) correction that maps measured <span class="math inline">\(\delta\)</span> values to the international isotope-ratio scale using certified reference materials <span class="citation" data-cites="paul2007 coplen2011">(<a href="#ref-coplen2011" role="doc-biblioref">Coplen, 2011</a>; <a href="#ref-paul2007" role="doc-biblioref">Paul et al., 2007</a>)</span>.</li>
+<li><strong>Super-user:</strong> A staff or faculty member qualified to run the IRMS and perform minor maintenance (gas replacement, reactor exchange, etc.).</li>
+<li><strong>Tin capsule:</strong> 5 × 9 mm pressed-tin container used to encapsulate solid samples; tin ignites in the O<sub>2</sub> pulse, raising combustion temperature briefly to ensure complete combustion.</li>
+<li><strong>Zero-enrichment test:</strong> Reference gas on/off pulses used to verify that the IRMS measures consistent <span class="math inline">\(\delta\)</span> values before analysis; performed during instrument warm-up.</li>
+</ul>
+</section>
+<section id="safety-and-hazards" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="safety-and-hazards"><span class="header-section-number">5</span> Safety and Hazards</h2>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -613,53 +588,43 @@ window.Quarto = {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><strong>Pressurized gases:</strong> He, O<sub>2</sub>, N<sub>2</sub>, CO<sub>2</sub>. Verify cylinder pressures before each session. He tank pressure should be above 500 psi, regulated to 50 psi.</li>
-<li><strong>Hot surfaces:</strong> The Flash EA combustion reactor operates at high temperatures. Use caution when handling ash fingers or reactor tubes.</li>
+<li><strong>Pressurized gases:</strong> He, O<sub>2</sub>, N<sub>2</sub>, CO<sub>2</sub>. Verify cylinder pressures before each session. He tank pressure must be above 500 psi, regulated to 50 psi.</li>
+<li><strong>Hot surfaces:</strong> The Flash EA combustion reactor operates above 1000 °C. Use caution when handling ash fingers or reactor tubes.</li>
 <li><strong>Sharps:</strong> Syringes, tweezers, and capsule-crimping tools can cause puncture or cut injuries.</li>
-<li><strong>Chemical reagents:</strong> Chromium oxide, silvered cobaltous/cobaltic oxide, reduced copper wires, and quartz wool are used in reactor packing. Consult SDS sheets before handling.</li>
+<li><strong>Chemical:</strong> Chromium oxide, silvered cobaltous/cobaltic oxide, and reduced copper used in the reactor packing are irritants; follow standard laboratory handling precautions.</li>
 </ul>
 </div>
 </div>
-<section id="required-ppe" class="level3">
-<h3 class="anchored" data-anchor-id="required-ppe">Required PPE</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Safety glasses</label></li>
-<li><label><input type="checkbox">Lab coat</label></li>
-<li><label><input type="checkbox">Nitrile gloves (available in the lab; donations welcome)</label></li>
-</ul>
-</section>
-<section id="emergency-procedures" class="level3">
-<h3 class="anchored" data-anchor-id="emergency-procedures">Emergency Procedures</h3>
-<p>In case of gas leak, fire, or injury, follow the procedures in <a href="../lab_sops/SOP-L002-laboratory-safety.html">SOP-L002 Laboratory Safety</a>. Contact the lab manager or Dr.&nbsp;Marc Los Huertos immediately.</p>
-</section>
-</section>
-<section id="prerequisites-and-required-reading" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites-and-required-reading">5. Prerequisites and Required Reading</h2>
-<p>Before using this SOP, you must be a certified IRMS user (see SOP-L75A, “Becoming an IRMS User”). In addition, review the following:</p>
-<ul>
-<li>SOP-L01: Laboratory Safety</li>
-<li>SOP-L75A: Becoming an IRMS User / User Handbook</li>
-<li>Thermo Scientific Flash EA and Delta V operating manuals (available in the lab)</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Important</span>User Responsibilities
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The Oxtoby Lab is <strong>not</strong> a service lab. The manager will ensure methods are working properly, but users are responsible for preparing their own samples, creating run sequences, overseeing runs, and conducting data reduction.</p>
+<p>The lab manager verifies that methods are working properly, but <strong>Certified Users</strong> are responsible for preparing their own samples, creating run sequences, overseeing runs, and conducting data reduction.</p>
 </div>
 </div>
+<section id="required-ppe" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="required-ppe"><span class="header-section-number">5.1</span> Required PPE</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Safety glasses</label></li>
+<li><label><input type="checkbox">Laboratory coat</label></li>
+<li><label><input type="checkbox">Nitrile gloves (especially when handling reactor packing materials)</label></li>
+</ul>
 </section>
-<section id="required-materials" class="level2">
-<h2 class="anchored" data-anchor-id="required-materials">6. Required Materials</h2>
-<section id="consumables-and-reagents-nc-dual-reactor" class="level3">
-<h3 class="anchored" data-anchor-id="consumables-and-reagents-nc-dual-reactor">6.1 Consumables and Reagents (NC Dual Reactor)</h3>
-<p>The table below lists the items needed for the NC dual-reactor configuration. You can save money by ordering from <a href="https://eaconsumables.com/">EA Consumables</a> instead of going through Thermo directly.</p>
+<section id="emergency-procedures" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="emergency-procedures"><span class="header-section-number">5.2</span> Emergency Procedures</h3>
+<p>Refer to <a href="../lab_sops/SOP-L208-irms-general-instrument.html">SOP-L208</a> for instrument-specific emergency procedures and <a href="../lab_sops/SOP-L002-laboratory-safety.html">SOP-L002</a> for general lab safety.</p>
+</section>
+</section>
+<section id="required-materials" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="required-materials"><span class="header-section-number">6</span> Required Materials</h2>
+<section id="consumables-and-reagents-nc-dual-reactor" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="consumables-and-reagents-nc-dual-reactor"><span class="header-section-number">6.1</span> Consumables and Reagents (NC Dual Reactor)</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 47%">
@@ -712,30 +677,25 @@ Note
 </tbody>
 </table>
 </section>
-<section id="capsules-and-weighing-supplies" class="level3">
-<h3 class="anchored" data-anchor-id="capsules-and-weighing-supplies">6.2 Capsules and Weighing Supplies</h3>
+<section id="capsules-and-weighing-supplies" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="capsules-and-weighing-supplies"><span class="header-section-number">6.2</span> Capsules and Weighing Supplies</h3>
 <ul>
 <li>Tin capsules (appropriate size for your sample mass)</li>
-<li>Tungsten oxide (WO<sub>3</sub>) – approximately 2 parts per sample for combustion aid (if required by your method)</li>
+<li>Tungsten oxide (WO<sub>3</sub>) – approximately 2 parts per sample for combustion aid (if required by method)</li>
 <li>Aluminum crucibles (for oven-drying soils)</li>
 <li>Weighing paper, cell wells, tweezers, spatulas</li>
 <li>Kimwipes, gloves</li>
 </ul>
 </section>
-<section id="sec-standards" class="level3">
-<h3 class="anchored" data-anchor-id="sec-standards">6.3 Standard Reference Materials</h3>
+<section id="sec-standards" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="sec-standards"><span class="header-section-number">6.3</span> Standard Reference Materials</h3>
 <p>Prepare calibrated internal standards for every batch. Confirm which standards you need <strong>before</strong> approaching the lab. Standards on hand (certified values):</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 38%">
-<col style="width: 35%">
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Reference Standard</th>
-<th style="text-align: center;"><span class="math inline">\(\delta^{13}\)</span>C (VPDB-LSVEC)</th>
-<th style="text-align: center;"><span class="math inline">\(\delta^{15}\)</span>N (Air-N<sub>2</sub>)</th>
+<th style="text-align: center;"><span class="math inline">\(\delta^{13}\)</span>C (VPDB)</th>
+<th style="text-align: center;"><span class="math inline">\(\delta^{15}\)</span>N (AIR)</th>
 </tr>
 </thead>
 <tbody>
@@ -771,6 +731,7 @@ Note
 </tr>
 </tbody>
 </table>
+<p><span class="citation" data-cites="werner2001 coplen2011">(<a href="#ref-coplen2011" role="doc-biblioref">Coplen, 2011</a>; <a href="#ref-werner2001" role="doc-biblioref">Werner &amp; Brand, 2001</a>)</span></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -786,29 +747,56 @@ Important
 </div>
 </section>
 </section>
-<section id="sample-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="sample-preparation">7. Sample Preparation</h2>
-<section id="drying-and-grinding" class="level3">
-<h3 class="anchored" data-anchor-id="drying-and-grinding">7.1 Drying and Grinding</h3>
+<section id="sample-preparation" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="sample-preparation"><span class="header-section-number">7</span> Sample Preparation</h2>
+<section id="drying-and-grinding" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="drying-and-grinding"><span class="header-section-number">7.1</span> Drying and Grinding</h3>
 <ol type="1">
-<li>Weigh soil or sediment cores into aluminum crucibles.</li>
+<li>Weigh soil or sediment samples into aluminum crucibles.</li>
 <li>Oven-dry at 105 °C until constant mass.</li>
 <li>Grind dried samples to a fine, homogeneous powder.</li>
 </ol>
 </section>
-<section id="elemental-pre-screening" class="level3">
-<h3 class="anchored" data-anchor-id="elemental-pre-screening">7.2 Elemental Pre-screening</h3>
-<p>Submit a subset of samples to elemental analysis (EA) to determine %C and %N. Use these results to calculate the target mass for isotopic analysis. An online calculator is available at <a href="http://stableisotopefacility.ucdavis.edu/sample-weight-calculator.html" class="uri">http://stableisotopefacility.ucdavis.edu/sample-weight-calculator.html</a>.</p>
+<section id="elemental-pre-screening" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="elemental-pre-screening"><span class="header-section-number">7.2</span> Elemental Pre-screening</h3>
+<p>Submit a subset of samples to elemental analysis (EA) to determine %C and %N before committing the full batch. This determines the correct sample mass to target the optimal signal range.</p>
 </section>
-<section id="capsule-weighing" class="level3">
-<h3 class="anchored" data-anchor-id="capsule-weighing">7.3 Capsule Weighing</h3>
+<section id="sample-weighing" class="level3" data-number="7.3">
+<h3 data-number="7.3" class="anchored" data-anchor-id="sample-weighing"><span class="header-section-number">7.3</span> Sample Weighing</h3>
+<p>The target sample mass depends on %C and %N concentrations <span class="citation" data-cites="thermo_flashea">(<a href="#ref-thermo_flashea" role="doc-biblioref">Thermo Fisher Scientific, 2010a</a>)</span>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Typical %C</th>
+<th style="text-align: left;">Target Sample Mass</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">&gt; 5% C</td>
+<td style="text-align: left;">3–5 mg</td>
+<td style="text-align: left;">Dilute if signal is too high</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1–5% C</td>
+<td style="text-align: left;">7–15 mg</td>
+<td style="text-align: left;">Standard range</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&lt; 1% C</td>
+<td style="text-align: left;">15–25 mg</td>
+<td style="text-align: left;">May require longer run times</td>
+</tr>
+</tbody>
+</table>
 <ol type="1">
-<li>Tare the microbalance with an empty tin capsule.</li>
-<li>Weigh the target mass of sample into the capsule (typically 0.5–20 mg, depending on %C and %N).</li>
-<li>If required by your method, add approximately 2 parts WO<sub>3</sub>.</li>
-<li>Crimp the capsule tightly into a ball, removing all air pockets. A poorly sealed capsule can introduce atmospheric N<sub>2</sub> and ruin the measurement.</li>
-<li>Place each capsule into a labeled cell well.</li>
-<li>Prepare standards and blanks in the same manner. The number of standards depends on your data-correction scheme, but plan for at least 2–3 replicates of each standard bracketing the sample set.</li>
+<li>Fold a tin capsule using tweezers (clean hands; no skin oils).</li>
+<li>Weigh the target sample mass into the capsule.</li>
+<li>Add WO<sub>3</sub> if required for combustion aids.</li>
+<li>Crimp the capsule tightly so no sample can escape during handling.</li>
+<li>Place crimped capsules in sequence order in a cell-well plate.</li>
+<li>Record the exact mass of each sample in the data reduction spreadsheet.</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -816,346 +804,182 @@ Important
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Tip</span>Tip: Clean Tweezers and Capsules
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Keep a detailed log of sample IDs, target masses, and actual masses. You will need this for data reduction.</p>
+<p>Oils and residue from fingers contaminate tin capsules, introducing C and N blanks. Handle capsules only with clean, dry tweezers <span class="citation" data-cites="thermo_flashea">(<a href="#ref-thermo_flashea" role="doc-biblioref">Thermo Fisher Scientific, 2010a</a>)</span>.</p>
 </div>
 </div>
 </section>
 </section>
-<section id="instrument-warm-up-and-pre-analysis-checks" class="level2">
-<h2 class="anchored" data-anchor-id="instrument-warm-up-and-pre-analysis-checks">8. Instrument Warm-Up and Pre-Analysis Checks</h2>
-<section id="starting-a-cold-instrument" class="level3">
-<h3 class="anchored" data-anchor-id="starting-a-cold-instrument">8.1 Starting a Cold Instrument</h3>
-<p>If the instrument has been powered down:</p>
+<section id="instrument-warm-up-and-pre-analysis-checks" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="instrument-warm-up-and-pre-analysis-checks"><span class="header-section-number">8</span> Instrument Warm-Up and Pre-Analysis Checks</h2>
+<p>See <a href="../lab_sops/SOP-L208-irms-general-instrument.html">SOP-L208</a> for the complete warm-up procedure, gas pressure verification, zero-enrichment test, and linearity check. The Flash EA should be at operating temperature and passing all pre-analysis tests before loading samples.</p>
+</section>
+<section id="sequence-design" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="sequence-design"><span class="header-section-number">9</span> Sequence Design</h2>
 <ol type="1">
-<li>Verify that all gas valves are open and compressed air is connected.</li>
-<li>Confirm the needle valve is closed.</li>
-<li>Turn on the system with the MAIN SWITCH.</li>
-<li>Power on the computer and launch Isodat.</li>
-<li>Switch on pumps at the Control Panel.</li>
-<li>In the MS State panel, switch on all heaters needed.</li>
-<li>In the Accessories toolbar of Isodat, access the ion source settings.</li>
-<li>Allow 24–48 hours for the instrument to stabilize.</li>
-</ol>
-</section>
-<section id="gas-checks" class="level3">
-<h3 class="anchored" data-anchor-id="gas-checks">8.2 Gas Checks</h3>
-<p>Verify pressures at both tank farms:</p>
+<li>Open Isodat on the acquisition computer <span class="citation" data-cites="thermo_isodat">(<a href="#ref-thermo_isodat" role="doc-biblioref">Thermo Fisher Scientific, 2010b</a>)</span>.</li>
+<li>Create a new sequence with the following elements in order:
 <ul>
-<li><strong>Tank Farm 1 (west wall, north):</strong> He (&gt;500 psi, regulated at 50 psi), N<sub>2</sub>, CO<sub>2</sub>, O<sub>2</sub>.</li>
-<li><strong>Tank Farm 2 (west wall, south):</strong> H<sub>2</sub>, CO, H<sub>2</sub>/He mix, H<sub>2</sub>/CO<sub>2</sub> mix, SO<sub>2</sub>.</li>
-</ul>
-<p>Confirm gas flows are within specification for the CN method.</p>
+<li><strong>Empty capsule blanks</strong> (4–6): establish blank baseline</li>
+<li><strong>Reference materials</strong> (2–3 each of two or more certified RMs): for scale normalization <span class="citation" data-cites="coplen2011">(<a href="#ref-coplen2011" role="doc-biblioref">Coplen, 2011</a>)</span></li>
+<li><strong>Conditioning samples</strong> (2–3): first samples in the run; typically sacrificial or low-priority</li>
+<li><strong>Unknown samples</strong> (bracketed by RMs every 10–12 unknowns)</li>
+<li><strong>Closing reference materials</strong> (2–3 of each RM): for drift correction <span class="citation" data-cites="paul2007">(<a href="#ref-paul2007" role="doc-biblioref">Paul et al., 2007</a>)</span></li>
+</ul></li>
+<li>Enter sample names, masses, and expected %C/%N for each row.</li>
+<li>Assign the correct Isodat method to the sequence.</li>
+<li>Save the sequence file before starting.</li>
+</ol>
 </section>
-<section id="instrument-status" class="level3">
-<h3 class="anchored" data-anchor-id="instrument-status">8.3 Instrument Status</h3>
+<section id="running-the-analysis" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="running-the-analysis"><span class="header-section-number">10</span> Running the Analysis</h2>
+<ol type="1">
+<li>Verify carrier gas pressure (He &gt; 500 psi, regulated to 50 psi).</li>
+<li>Load capsules into the autosampler carousel in sequence order.</li>
+<li>Press <strong>Start Sequence</strong> in Isodat.</li>
+<li>Monitor the first 3–4 samples to confirm:
 <ul>
-<li>No red or yellow warning lights on the IRMS front panel.</li>
-<li>Vacuum within acceptable range.</li>
-<li>High voltage (HV), box, and trap values reading back normally in Isodat.</li>
-</ul>
-</section>
-<section id="purge-bake-out-and-temperature-ramp" class="level3">
-<h3 class="anchored" data-anchor-id="purge-bake-out-and-temperature-ramp">8.4 Purge, Bake-Out, and Temperature Ramp</h3>
-<ol type="1">
-<li>Purge atmospheric gases from the system.</li>
-<li>Perform a column bake-out if the instrument has been idle.</li>
-<li>Initialize the temperature ramp for the combustion reactor.</li>
+<li>N<sub>2</sub> and CO<sub>2</sub> peaks are within the expected mass range</li>
+<li>Peak shapes are symmetric and well-separated</li>
+<li>Reference material <span class="math inline">\(\delta\)</span> values are within ±0.3‰ of expected values <span class="citation" data-cites="werner2001">(<a href="#ref-werner2001" role="doc-biblioref">Werner &amp; Brand, 2001</a>)</span></li>
+</ul></li>
+<li>If values are drifting, stop the run, identify the cause, and restart after correction.</li>
 </ol>
 </section>
-<section id="background-checks" class="level3">
-<h3 class="anchored" data-anchor-id="background-checks">8.5 Background Checks</h3>
-<p>Check residual gas backgrounds in the ion source. Elevated backgrounds can indicate leaks or contamination:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">m/z</th>
-<th style="text-align: left;">Species</th>
-<th style="text-align: left;">Possible Cause</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: left;">He<span class="math inline">\(^{2+}\)</span></td>
-<td style="text-align: left;">High He pressure or source tuning issue</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">18</td>
-<td style="text-align: left;">H<sub>2</sub>O<span class="math inline">\(^{+}\)</span></td>
-<td style="text-align: left;">Moisture leak or insufficient bake-out</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">28</td>
-<td style="text-align: left;">N<sub>2</sub><span class="math inline">\(^{+}\)</span></td>
-<td style="text-align: left;">Air leak</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">40</td>
-<td style="text-align: left;">Ar<span class="math inline">\(^{+}\)</span></td>
-<td style="text-align: left;">Air leak</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">44</td>
-<td style="text-align: left;">CO<sub>2</sub><span class="math inline">\(^{+}\)</span></td>
-<td style="text-align: left;">Residual CO<sub>2</sub> or combustion byproduct</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="zero-enrichment-onoff-tests" class="level3">
-<h3 class="anchored" data-anchor-id="zero-enrichment-onoff-tests">8.6 Zero-Enrichment (On/Off) Tests</h3>
-<p>Perform reference gas on/off tests to verify the instrument is within specification. Each on/off cycle takes approximately 10 minutes. You will almost always need multiple cycles before the instrument stabilizes.</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The instrument can drift out of specification even after initially meeting it, especially if it has been idle. Do not skip this step, and do not rush it.</p>
-</div>
-</div>
-</section>
-<section id="tuning" class="level3">
-<h3 class="anchored" data-anchor-id="tuning">8.7 Tuning</h3>
-<p>For continuous-flow analysis, tune the IRMS for <strong>linearity</strong> (consistent ion ratios across a range of signal intensities) rather than maximum sensitivity. This minimizes the dependence of measured <span class="math inline">\(\delta\)</span> values on peak amplitude.</p>
-</section>
-</section>
-<section id="sequence-preparation-in-isodat" class="level2">
-<h2 class="anchored" data-anchor-id="sequence-preparation-in-isodat">9. Sequence Preparation in Isodat</h2>
+<section id="shutdown" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="shutdown"><span class="header-section-number">11</span> Shutdown</h2>
 <ol type="1">
-<li>Open the Acquisition module in Isodat and create a new sequence file.</li>
-<li>Define the total number of positions (samples + standards + blanks). Each autosampler carousel holds 32 wells; up to three carousels can be stacked for 94 positions total.</li>
-<li>Select the appropriate method (e.g., the NC dual method). If no suitable method exists, contact the lab manager.</li>
-<li>Verify that <strong>Peak Center</strong> has a green check mark.</li>
-<li>Enter sample identifiers in the “Identifier 1” column.</li>
-<li>Use the autofill function to assign the method to all rows.</li>
+<li>After the final sample, allow the sequence to complete fully.</li>
+<li>Follow the shutdown procedure in <a href="../lab_sops/SOP-L208-irms-general-instrument.html">SOP-L208</a>.</li>
+<li>Export the raw data file from Isodat and save to the project directory.</li>
 </ol>
 </section>
-<section id="running-the-sequence" class="level2">
-<h2 class="anchored" data-anchor-id="running-the-sequence">10. Running the Sequence</h2>
+<section id="data-reduction" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="data-reduction"><span class="header-section-number">12</span> Data Reduction</h2>
+<p>Data reduction follows the protocol in <a href="../lab_sops/SOP-L414-soil-ea-irms.html">SOP-L414</a>, which covers:</p>
 <ol type="1">
-<li><p>Load the autosampler carousel(s) into the Flash EA.</p></li>
-<li><p>Double-check that each carousel position matches your sequence.</p></li>
-<li><p>Click <strong>Start</strong>.</p></li>
-<li><p>Save the sequence file using the lab naming convention:</p>
-<p><code>YYYYMMDD_Project_SequenceID_Username.seq</code></p></li>
-</ol>
-<section id="approximate-run-times" class="level3">
-<h3 class="anchored" data-anchor-id="approximate-run-times">10.1 Approximate Run Times</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Analysis</th>
-<th style="text-align: center;">Time per Sample (approx.)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(\delta^{15}\)</span>N only</td>
-<td style="text-align: center;">~4–5 min</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span class="math inline">\(\delta^{13}\)</span>C only</td>
-<td style="text-align: center;">~5–6 min</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NC dual method</td>
-<td style="text-align: center;">~7–8 min</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NCS triple analysis</td>
-<td style="text-align: center;">~11–12 min</td>
-</tr>
-</tbody>
-</table>
-<p>Times include an additional minute for peak centering and magnet switching.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Plan your time carefully.</strong> A full 94-sample run on the NC dual method takes roughly 12 hours. Make sure you have enough gas, enough time, and a plan for monitoring the run. Do not start a run you cannot finish.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="end-of-run-shutdown-and-cleanup" class="level2">
-<h2 class="anchored" data-anchor-id="end-of-run-shutdown-and-cleanup">11. End-of-Run Shutdown and Cleanup</h2>
-<ol type="1">
-<li>Confirm the sequence completed successfully in Isodat.</li>
-<li>Follow the instrument-specific shutdown procedure (contact the lab manager if unsure).</li>
-<li>Log your gas usage and note any issues in the lab logbook.</li>
-<li>Remove your samples and personal items from the lab.</li>
-<li><strong>Clean up after yourself.</strong> Dispose of Kimwipes, weighing papers, and other waste. Wipe down the balance and work surfaces.</li>
-<li><strong>Push in your chair.</strong> Keep the lab tidy and free of obstructions.</li>
+<li>Blank correction (empty tin capsule contributions) <span class="citation" data-cites="paul2007">(<a href="#ref-paul2007" role="doc-biblioref">Paul et al., 2007</a>)</span></li>
+<li>Linearity correction (<span class="math inline">\(\delta\)</span> vs.&nbsp;peak area regression)</li>
+<li>Two-point scale normalization to the VPDB / AIR scale using certified RMs <span class="citation" data-cites="coplen2011">(<a href="#ref-coplen2011" role="doc-biblioref">Coplen, 2011</a>)</span></li>
+<li>Drift correction (linear regression through bracketing RMs)</li>
+<li>Uncertainty estimation and quality flags</li>
 </ol>
 </section>
-<section id="data-reduction" class="level2">
-<h2 class="anchored" data-anchor-id="data-reduction">12. Data Reduction</h2>
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Data reduction workflow (placeholder)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Export raw results from Isodat as a CSV.</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Read into R and merge with your sample log (masses, IDs).</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Apply blank correction (if applicable).</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Apply linearity correction using the on/off test slope.</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Normalize delta values to the international scale using your</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#    bracketing standards (two-point or multi-point calibration).</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Calculate %C and %N from peak areas using standard curves.</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Flag any QC failures (see Section 13).</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Example skeleton ---</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>raw <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/raw/YYYYMMDD_Project_SeqID_User.csv"</span>)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify standards vs. samples</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>raw <span class="ot">&lt;-</span> raw <span class="sc">%&gt;%</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a> <span class="fu">mutate</span>(<span class="at">type =</span> <span class="fu">case_when</span>(</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>   <span class="fu">str_detect</span>(Identifier1, <span class="st">"LOCSS|HOCSS|Urea|USGS"</span>) <span class="sc">~</span> <span class="st">"standard"</span>,</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>   <span class="fu">str_detect</span>(Identifier1, <span class="st">"blank|BLK"</span>)              <span class="sc">~</span> <span class="st">"blank"</span>,</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>   <span class="cn">TRUE</span>                                               <span class="sc">~</span> <span class="st">"sample"</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a> ))</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Blank correction</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>blank_avg <span class="ot">&lt;-</span> raw <span class="sc">%&gt;%</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a> <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"blank"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a> <span class="fu">summarize</span>(<span class="fu">across</span>(<span class="fu">c</span>(Area28, Area44), mean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>raw <span class="ot">&lt;-</span> raw <span class="sc">%&gt;%</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a> <span class="fu">mutate</span>(</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>   <span class="at">Area28_corr =</span> Area28 <span class="sc">-</span> blank_avg<span class="sc">$</span>Area28,</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>   <span class="at">Area44_corr =</span> Area44 <span class="sc">-</span> blank_avg<span class="sc">$</span>Area44</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a> )</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Two-point normalization (example for d13C)</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>std_known <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a> <span class="at">Identifier1 =</span> <span class="fu">c</span>(<span class="st">"USGS40"</span>, <span class="st">"USGS41a"</span>),</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a> <span class="at">d13C_true   =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">26.39</span>, <span class="fl">36.55</span>)</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>std_measured <span class="ot">&lt;-</span> raw <span class="sc">%&gt;%</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a> <span class="fu">filter</span>(Identifier1 <span class="sc">%in%</span> std_known<span class="sc">$</span>Identifier1) <span class="sc">%&gt;%</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a> <span class="fu">group_by</span>(Identifier1) <span class="sc">%&gt;%</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a> <span class="fu">summarize</span>(<span class="at">d13C_meas =</span> <span class="fu">mean</span>(d13C_raw, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a> <span class="fu">left_join</span>(std_known, <span class="at">by =</span> <span class="st">"Identifier1"</span>)</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Linear regression: true = m * measured + b</span></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(d13C_true <span class="sc">~</span> d13C_meas, <span class="at">data =</span> std_measured)</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>raw <span class="ot">&lt;-</span> raw <span class="sc">%&gt;%</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a> <span class="fu">mutate</span>(<span class="at">d13C_calibrated =</span> <span class="fu">predict</span>(fit, <span class="at">newdata =</span> <span class="fu">tibble</span>(<span class="at">d13C_meas =</span> d13C_raw)))</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co"># Write results</span></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(raw, <span class="st">"data/processed/YYYYMMDD_Project_SeqID_calibrated.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The R code above is a starting template. Adapt it to your specific standards, correction scheme, and column names from Isodat. Consult the lab manager or your PI if you are unsure about the calibration approach.</p>
-</div>
-</div>
-</section>
-<section id="qcqa-criteria" class="level2">
-<h2 class="anchored" data-anchor-id="qcqa-criteria">13. QC/QA Criteria</h2>
-<ul>
-<li><strong>Blanks:</strong> Peak areas for blanks should be negligible relative to sample peaks. If blank areas exceed 5% of the smallest sample peak, investigate contamination.</li>
-<li><strong>Standard reproducibility:</strong> Replicate standards within a run should agree within 0.2 per mil for <span class="math inline">\(\delta^{13}\)</span>C and <span class="math inline">\(\delta^{15}\)</span>N.</li>
-<li><strong>Linearity:</strong> The slope of <span class="math inline">\(\delta\)</span> vs.&nbsp;amplitude from on/off tests should be small (instrument-specific threshold; consult the lab manager).</li>
-<li><strong>Drift:</strong> Compare early and late standards in the sequence. If drift exceeds 0.3 per mil, apply a drift correction or re-run.</li>
-</ul>
-</section>
-<section id="troubleshooting" class="level2">
-<h2 class="anchored" data-anchor-id="troubleshooting">14. Troubleshooting</h2>
+<section id="definitions-of-certification-levels" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="definitions-of-certification-levels"><span class="header-section-number">13</span> Definitions of Certification Levels</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 44%">
-<col style="width: 55%">
+<col style="width: 26%">
+<col style="width: 73%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Symptom</th>
-<th style="text-align: left;">Possible Cause / Action</th>
+<th style="text-align: left;">Level</th>
+<th style="text-align: left;">Capabilities</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">High m/z 28 background</td>
-<td style="text-align: left;">Air leak; check fittings and reactor seals</td>
+<td style="text-align: left;">Lab PI</td>
+<td style="text-align: left;">Unrestricted access; certify super-users</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">High m/z 18 background</td>
-<td style="text-align: left;">Moisture; extend bake-out time</td>
+<td style="text-align: left;">Super-User</td>
+<td style="text-align: left;">Independent operation; certify certified users; replace He, O<sub>2</sub> cylinders; change reactors</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Poor reproducibility on standards</td>
-<td style="text-align: left;">Capsule sealing issue; reactor exhaustion</td>
+<td style="text-align: left;">Certified User</td>
+<td style="text-align: left;">All steps from sample prep through data reduction; no unsupervised maintenance</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">No peaks in chromatogram</td>
-<td style="text-align: left;">Gas flow interrupted; check He supply</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Sequence stops mid-run</td>
-<td style="text-align: left;">Autosampler jam; check carousel alignment</td>
+<td style="text-align: left;">Student Researcher</td>
+<td style="text-align: left;">Sample prep and data reduction only, under supervision</td>
 </tr>
 </tbody>
 </table>
-<p>If you cannot resolve an issue, <strong>stop the run</strong> and contact the lab manager. Do not attempt reactor replacement or major maintenance unless you are a certified super-user.</p>
 </section>
-<section id="time-management-reminders" class="level2">
-<h2 class="anchored" data-anchor-id="time-management-reminders">15. Time Management Reminders</h2>
-<p>Running the IRMS takes a lot of time. Set aside multiple, relatively uninterrupted days. Key time sinks to plan for:</p>
+<section id="references" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="references"><span class="header-section-number">14</span> References</h2>
 <ul>
-<li>Instrument bake-out and stabilization (hours to overnight).</li>
-<li>Background and zero-enrichment checks (variable; budget at least 1–2 hours).</li>
-<li>Sample weighing (plan for 1–2 minutes per capsule when starting out).</li>
-<li>The actual analytical run (see <a href="#sec-standards" class="quarto-xref">Section&nbsp;6.3</a> for per-sample times).</li>
-<li>Data reduction (budget a full session).</li>
+<li><span class="citation" data-cites="thermo_flashea">Thermo Fisher Scientific (<a href="#ref-thermo_flashea" role="doc-biblioref">2010a</a>)</span></li>
+<li><span class="citation" data-cites="thermo_deltav">Thermo Fisher Scientific (<a href="#ref-thermo_deltav" role="doc-biblioref">2008b</a>)</span></li>
+<li><span class="citation" data-cites="thermo_conflo">Thermo Fisher Scientific (<a href="#ref-thermo_conflo" role="doc-biblioref">2008a</a>)</span></li>
+<li><span class="citation" data-cites="thermo_isodat">Thermo Fisher Scientific (<a href="#ref-thermo_isodat" role="doc-biblioref">2010b</a>)</span></li>
+<li><span class="citation" data-cites="werner2001">Werner &amp; Brand (<a href="#ref-werner2001" role="doc-biblioref">2001</a>)</span></li>
+<li><span class="citation" data-cites="coplen2011">Coplen (<a href="#ref-coplen2011" role="doc-biblioref">2011</a>)</span></li>
+<li><span class="citation" data-cites="paul2007">Paul et al. (<a href="#ref-paul2007" role="doc-biblioref">2007</a>)</span></li>
 </ul>
-<p>Instrument time is first-come, first-serve, with priority given to PIs. Schedule time with the lab technician (<a href="mailto:kyle.mccarty@pomona.edu">kyle.mccarty@pomona.edu</a>) in advance. Expect delays if you are scheduled immediately after another user.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-coplen2011" class="csl-entry" role="listitem">
+Coplen, T. B. (2011). Guidelines and recommended terms for expression of stable-isotope-ratio and gas-ratio measurement results. <em>Rapid Communications in Mass Spectrometry</em>, <em>25</em>(17), 2538–2560. <a href="https://doi.org/10.1002/rcm.5129">https://doi.org/10.1002/rcm.5129</a>
+</div>
+<div id="ref-paul2007" class="csl-entry" role="listitem">
+Paul, D., Skrzypek, G., &amp; F’orizs, I. (2007). Normalization of measured stable isotopic compositions to isotope reference scales – a review. <em>Rapid Communications in Mass Spectrometry</em>, <em>21</em>(18), 3006–3014. <a href="https://doi.org/10.1002/rcm.3185">https://doi.org/10.1002/rcm.3185</a>
+</div>
+<div id="ref-thermo_conflo" class="csl-entry" role="listitem">
+Thermo Fisher Scientific. (2008a). <em><span>ConFlo IV</span> universal interface: Operating manual</em>.
+</div>
+<div id="ref-thermo_deltav" class="csl-entry" role="listitem">
+Thermo Fisher Scientific. (2008b). <em>Delta <span>V</span> isotope ratio <span>MS</span>: Operating manual</em>.
+</div>
+<div id="ref-thermo_flashea" class="csl-entry" role="listitem">
+Thermo Fisher Scientific. (2010a). <em>Flash <span>IRMS</span> <span>EA</span>: Operating manual</em>.
+</div>
+<div id="ref-thermo_isodat" class="csl-entry" role="listitem">
+Thermo Fisher Scientific. (2010b). <em>Isodat 3.0 software: User guide</em>.
+</div>
+<div id="ref-werner2001" class="csl-entry" role="listitem">
+Werner, R. A., &amp; Brand, W. A. (2001). Referencing strategies and techniques in stable isotope ratio analysis. <em>Rapid Communications in Mass Spectrometry</em>, <em>15</em>(7), 501–519. <a href="https://doi.org/10.1002/rcm.258">https://doi.org/10.1002/rcm.258</a>
+</div>
+</div>
 </section>
-<section id="definitions" class="level2">
-<h2 class="anchored" data-anchor-id="definitions">16. Definitions</h2>
-<ul>
-<li><strong>ConFlo IV:</strong> The interface hub connecting all peripherals, reference gases, and the IRMS. It also handles dilution of sample and reference gases to keep signals within the working range.</li>
-<li><strong>Delta V IRMS:</strong> The ThermoFisher Delta V Isotope Ratio Mass Spectrometer in the Oxtoby Lab.</li>
-<li><strong>Flash IRMS EA:</strong> The elemental analyzer peripheral that combusts solid samples to produce N<sub>2</sub>, CO<sub>2</sub>, and (optionally) SO<sub>2</sub> for isotopic analysis.</li>
-<li><strong>Linearity:</strong> The relationship between measured <span class="math inline">\(\delta\)</span> values and signal amplitude. A well-tuned instrument shows minimal dependence of <span class="math inline">\(\delta\)</span> on peak size.</li>
-<li><strong>Super-User:</strong> A staff or faculty member qualified to run the IRMS and perform minor maintenance (gas replacement, reactor exchange, etc.).</li>
-<li><strong>User:</strong> A student, staff, or faculty member certified to prepare samples and run the IRMS without supervision.</li>
-<li><strong>Zero-Enrichment Test:</strong> Reference gas on/off pulses used to verify that the IRMS is measuring consistent <span class="math inline">\(\delta\)</span> values before analysis.</li>
-</ul>
+<section id="related-sops" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="related-sops"><span class="header-section-number">15</span> Related SOPs</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">SOP</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="../lab_sops/SOP-L002-laboratory-safety.html">L002</a></td>
+<td style="text-align: left;">Laboratory Safety</td>
+<td style="text-align: left;">General safety framework</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="../lab_sops/SOP-L208-irms-general-instrument.html">L208</a></td>
+<td style="text-align: left;">Delta V IRMS General Instrument</td>
+<td style="text-align: left;">Instrument startup and QC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="../lab_sops/SOP-L414-soil-ea-irms.html">L414</a></td>
+<td style="text-align: left;">Soil CN by Flash EA-IRMS</td>
+<td style="text-align: left;">Full data correction workflow</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="../lab_sops/SOP-L415-carbonate-gasbench-irms.html">L415</a></td>
+<td style="text-align: left;">Carbonate GasBench IRMS</td>
+<td style="text-align: left;">Complementary IRMS application</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">17. References</h2>
-<p>APHA, AWWA, &amp; WEF. (2012). <em>Standard Methods for Examination of Water and Wastewater</em> (22nd ed.). American Public Health Association.</p>
-<p>Werner, R. A., &amp; Brand, W. A. (2001). Referencing strategies and techniques in stable isotope ratio analysis. <em>Rapid Communications in Mass Spectrometry</em>, 15(7), 501–519.</p>
+<section id="training-record" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="training-record"><span class="header-section-number">16</span> Training Record</h2>
+<p>Before running analyses independently, personnel must:</p>
+<ol type="1">
+<li>Read this SOP and <a href="../lab_sops/SOP-L208-irms-general-instrument.html">SOP-L208</a> in full</li>
+<li>Be assigned a certification level by the Lab PI</li>
+<li>Observe a Super-User or Certified User run a complete sequence from sample loading through data reduction</li>
+<li>Run a supervised batch of at least 10 unknown samples with RM checks, achieving results within ±0.3‰ of expected values for both C and N</li>
+<li>Be signed off by the Lab PI or designated Super-User</li>
+</ol>
 
 
 </section>

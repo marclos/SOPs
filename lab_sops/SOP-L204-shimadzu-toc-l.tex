@@ -1,0 +1,1554 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  11pt,
+  letterpaper,
+]{article}
+\usepackage{xcolor}
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+% =============================================================================
+% SOP PDF Header/Footer Configuration + Title Page
+% =============================================================================
+% Included via include-in-header in _quarto.yml.
+% This file is RAW LATEX -- no Pandoc template variables allowed here.
+%
+% The macros \sopnumber, \soprevision, \soptitle, \sopauthor, and \sopdate
+% are defined with defaults below. They are overridden by the companion file
+% before-body.tex (included via template-partials) when the YAML fields are
+% present.
+% =============================================================================
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{tabularx}
+
+
+% Define EA Program colors
+\definecolor{eablue}{HTML}{0057B8}
+\definecolor{ealightblue}{HTML}{E6F0FA}
+
+% ---------------------------------------------------------------------------
+% Default macros (overridden by before-body.tex if YAML fields exist)
+% ---------------------------------------------------------------------------
+\newcommand{\sopnumber}{SOP-XXX}
+\newcommand{\soprevision}{--}
+\newcommand{\soptitle}{}
+\newcommand{\sopauthor}{}
+\newcommand{\sopdate}{}
+
+% Add period after section numbers without titlesec
+\makeatletter
+\def\@seccntformat#1{\csname the#1\endcsname.\quad}
+\makeatother
+
+% ---------------------------------------------------------------------------
+% Custom title page command
+% ---------------------------------------------------------------------------
+\newcommand{\maketitlepage}{%
+  \begin{titlepage}
+    \thispagestyle{empty}
+
+    % --- Top rule ---
+    {\color{eablue}\rule{\textwidth}{2pt}}
+
+    \vspace{12pt}
+
+    % --- Logo and institution block ---
+    \noindent
+    \begin{minipage}[t]{0.20\textwidth}
+      \vspace{0pt}
+      \IfFileExists{images/biogeochemistry_logo2.png}{%
+        \includegraphics[width=\linewidth]{images/biogeochemistry_logo2.png}%
+      }{%
+        \IfFileExists{../images/biogeochemistry_logo2.png}{%
+          \includegraphics[width=\linewidth]{../images/biogeochemistry_logo2.png}%
+        }{}%
+      }
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.75\textwidth}
+      \vspace{0pt}
+      \raggedleft
+      {\Large\textcolor{eablue}{\textbf{Environmental Analysis Program}}}\\[4pt]
+      {\large\textcolor{eablue}{Pomona College}}\\[2pt]
+      {\normalsize\textcolor{eablue}{Biogeochemistry Laboratory}}
+    \end{minipage}
+
+    \vspace{8pt}
+    {\color{eablue}\rule{\textwidth}{0.4pt}}
+
+    % --- SOP number badge ---
+    \vspace{40pt}
+    \begin{center}
+      \colorbox{eablue}{%
+        \makebox[0.5\textwidth]{%
+          \Large\textcolor{white}{\textbf{\sopnumber}}%
+        }%
+      }
+    \end{center}
+
+    % --- Title ---
+    \vspace{20pt}
+    \begin{center}
+      {\Huge\bfseries\linespread{1.5}\selectfont\textcolor{eablue}{\soptitle}}
+    \end{center}
+
+    \vspace{10pt}
+    \begin{center}
+      {\large Standard Operating Procedure}
+    \end{center}
+
+    % --- Push metadata table toward bottom ---
+    \vfill
+
+    % --- Metadata table ---
+    \begin{center}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabularx}{0.8\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{3.5cm}|X|}
+      \hline
+      \rowcolor{ealightblue}
+      SOP Number    & \sopnumber \\
+      \hline
+      Revision      & \soprevision \\
+      \hline
+      \rowcolor{ealightblue}
+      Author(s)     & \sopauthor \\
+      \hline
+      Date          & \sopdate \\
+      \hline
+      \rowcolor{ealightblue}
+      Organization  & EA Program, Pomona College \\
+      \hline
+    \end{tabularx}
+    \end{center}
+
+    \vspace{20pt}
+
+    % --- Confidentiality notice ---
+    \begin{center}
+      {\small\textsc{For Internal Use Only}}\\[4pt]
+      {\footnotesize This document is the property of the Environmental
+       Analysis Program at Pomona College.\\
+       Unauthorized distribution is not permitted.}
+    \end{center}
+
+    \vspace{10pt}
+
+    % --- Bottom rule ---
+    {\color{eablue}\rule{\textwidth}{2pt}}
+
+  \end{titlepage}
+}
+
+% ---------------------------------------------------------------------------
+% Header and Footer (pages after title page)
+% ---------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+
+% Header
+\fancyhead[L]{%
+  \small\textcolor{eablue}{\textbf{EA Program -- Pomona College}}%
+}
+\fancyhead[R]{%
+  \small\textcolor{eablue}{\sopnumber: \soptitle}%
+}
+
+% Footer
+\fancyfoot[L]{\small\textit{Rev.\ \soprevision\ (\today)}}
+\fancyfoot[C]{\small\textsc{For Internal Use Only}}
+\fancyfoot[R]{\small Page \thepage\ of \pageref{LastPage}}
+
+% Header/footer rules
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{eablue}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{eablue}\leaders\hrule height \footrulewidth\hfill}}
+
+% ---------------------------------------------------------------------------
+% First content page style (after title page)
+% ---------------------------------------------------------------------------
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[L]{%
+    \textcolor{eablue}{\textbf{EA Program -- Pomona College}}%
+  }
+  \fancyhead[R]{\small\textcolor{eablue}{\sopnumber}}
+  \fancyfoot[L]{\small\textit{Rev.\ \soprevision\ (\today)}}
+  \fancyfoot[C]{\small\textsc{For Internal Use Only}}
+  \fancyfoot[R]{\small Page \thepage\ of \pageref{LastPage}}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Shimadzu TOC-L Analyzer with TNM-L and SSM-5000A},
+  pdfauthor={Marc Los Huertos},
+  colorlinks=true,
+  linkcolor={eablue},
+  filecolor={Maroon},
+  citecolor={eablue},
+  urlcolor={eablue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Shimadzu TOC-L Analyzer with TNM-L and SSM-5000A}
+\author{Marc Los Huertos}
+\date{2026-06-22}
+\begin{document}
+
+\renewcommand{\sopnumber}{SOP-L204}
+\renewcommand{\soptitle}{Shimadzu TOC-L Analyzer with TNM-L and
+SSM-5000A}
+\renewcommand{\soprevision}{2.1}
+
+\renewcommand{\sopauthor}{Marc Los Huertos}
+
+\renewcommand{\sopdate}{2026-06-22}
+
+\maketitlepage
+
+\renewcommand{\maketitle}{}
+\renewcommand*\contentsname{Table of contents}
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+
+\section{Purpose}\label{purpose}
+
+This SOP describes the general operation, calibration, maintenance, and
+shutdown of the Shimadzu TOC-L total organic carbon analyzer and its
+companion modules: the TNM-L Total Nitrogen Module and the SSM-5000A
+Solid Sample Module. The TOC-L uses a 680 C combustion catalytic
+oxidation method, which is one of two principal approaches to TOC
+analysis (the other being wet chemical oxidation with persulfate); the
+high-temperature combustion method is preferred for environmental
+samples because it more completely oxidizes refractory organic matter
+such as humic substances (Sharp, 1993; Sugimura \& Suzuki, 1988).
+
+All instrument control is performed through the LabSolutions TOC
+software on the dedicated computer.
+
+This SOP covers the instrument itself. For application-specific sample
+preparation, measurement modes, and calculations, refer to the relevant
+analytical SOPs:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{SOP-L311-dissolved-organic-carbon-water.qmd}{SOP-L311 Dissolved
+  Organic Carbon in Water} (NPOC)
+\item
+  \href{SOP-L407-total-carbon.qmd}{SOP-L407 Total Carbon (Soils)} (SSM)
+\item
+  \href{SOP-L409-microbial-biomass-carbon.qmd}{SOP-L409 Microbial
+  Biomass Carbon} (CFE extracts)
+\item
+  \href{SOP-L418-water-extractable-doc.qmd}{SOP-L418 Water-Extractable
+  DOC} (soil extracts)
+\end{itemize}
+
+\section{Scope}\label{scope}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Applies to:} All use of the Shimadzu TOC-L analyzer, TNM-L
+  module, SSM-5000A module, and ASI-L autosampler in the EA Program
+  laboratory, operated through LabSolutions TOC software
+\item
+  \textbf{Does not apply to:} Manual or standalone operation without
+  computer control; instruments at other institutions; application-
+  specific sample preparation or data interpretation (see analytical
+  method SOPs)
+\item
+  \textbf{Location:} EA Program analytical laboratory, SGM 133
+\end{itemize}
+
+\section{Responsibilities}\label{responsibilities}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.2632}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.7368}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Role
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Responsibility
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Lab PI & Authorize instrument access, approve maintenance \\
+Instrument Manager & Perform preventive maintenance, replace
+consumables, manage software updates \\
+Trained Personnel & Operate the instrument per this SOP, log all runs \\
+New Students & Complete training before independent use \\
+\end{longtable}
+}
+
+\section{Definitions}\label{definitions}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Catalytic combustion:} Oxidation of organic carbon in the
+  sample at 680 °C over a platinum catalyst in the presence of oxygen;
+  the standard method used by the Shimadzu TOC-L for liquid samples.
+\item
+  \textbf{Dissolved organic carbon (DOC):} Organic carbon in a water or
+  soil extract sample that passes through a 0.45 µm filter; the NPOC
+  method is the standard approach for DOC measurement.
+\item
+  \textbf{IC (inorganic carbon):} Carbon present as carbonate,
+  bicarbonate, and dissolved CO\textsubscript{2}; removed by
+  acidification and sparging before NPOC measurement.
+\item
+  \textbf{NDIR detector (non-dispersive infrared detector):} A detector
+  that measures CO\textsubscript{2} concentration by its absorption of
+  infrared light at \textasciitilde4.3 µm; the detection element in the
+  Shimadzu TOC-L.
+\item
+  \textbf{NPOC (non-purgeable organic carbon):} The organic carbon
+  fraction remaining in a sample after acidification and sparging to
+  remove inorganic carbon and purgeable volatile organic carbon; the
+  operationally defined DOC measured by the Shimadzu TOC-L.
+\item
+  \textbf{SSM-5000A:} The Shimadzu Solid Sample Module that combusts
+  dried, ground solid materials (soils, sediments, plant tissue)
+  directly in ceramic boats at up to 900 °C for total carbon analysis.
+\item
+  \textbf{TC (total carbon):} The sum of all carbon forms (organic and
+  inorganic) in a sample; measured by direct combustion without
+  acidification.
+\item
+  \textbf{TOC (total organic carbon):} TC minus IC; in practice, usually
+  determined as NPOC for environmental samples.
+\item
+  \textbf{TON (total organic nitrogen):} Total nitrogen minus inorganic
+  nitrogen; measured simultaneously by the TNM-L module using
+  chemiluminescence detection of NO produced during combustion.
+\end{itemize}
+
+\section{Safety and Hazards}\label{safety-and-hazards}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Hazards}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Thermal:} The combustion furnace operates at 680 C in liquid
+  analysis mode and up to 900 C in SSM mode. Ceramic boats, combustion
+  tubes, and furnace surfaces can cause severe burns.
+\item
+  \textbf{Chemical:} Hydrochloric acid (2 M HCl) is used for
+  acidification and inorganic carbon sparging. Phosphoric acid (25\%) is
+  used as the IC reagent. Avoid skin and eye contact with both.
+\item
+  \textbf{Compressed gas:} The instrument requires high-purity carrier
+  gas (air or oxygen) supplied from a pressurized cylinder at
+  approximately 200 kPa. Follow all compressed gas safety procedures
+  (National Research Council, 2011).
+\item
+  \textbf{Electrical:} The instrument operates on high-voltage mains
+  power. Do not open instrument panels or attempt internal repairs.
+\item
+  \textbf{Ozone:} The TNM-L chemiluminescence detector uses an ozone
+  generator. The instrument vents ozone through an internal decomposer,
+  but ensure that the exhaust line is connected and unobstructed. If an
+  ozone odor is detected, shut down the TNM-L and ventilate the area.
+\end{itemize}
+
+\end{tcolorbox}
+
+\subsection{Required PPE}\label{required-ppe}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Safety glasses
+\item[$\square$]
+  Lab coat
+\item[$\square$]
+  Nitrile gloves (when handling acid, standards, or samples)
+\item[$\square$]
+  Heat-resistant gloves (when handling ceramic boats from the SSM)
+\end{itemize}
+
+\subsection{Emergency Procedures}\label{emergency-procedures}
+
+For acid splashes, flush the affected area with water for at least 15
+minutes. For burns from hot surfaces, apply cool running water and seek
+first aid. If ozone is detected, shut down the TNM-L, open windows, and
+leave the room until the odor dissipates. Refer to
+\href{SOP-L002-laboratory-safety.qmd}{SOP-L002 Laboratory Safety} and
+\href{SOP-L003-hazardous-materials-handling.qmd}{SOP-L003 Hazardous
+Materials Handling}.
+
+\section{Instrument Description}\label{instrument-description}
+
+\subsection{System Overview}\label{system-overview}
+
+The Shimadzu TOC-L is a combustion catalytic oxidation analyzer that
+quantifies carbon (and, with the TNM-L, nitrogen) in liquid samples
+(Shimadzu Corporation, 2019b). The system in the EA Program laboratory
+consists of four main components:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{TOC-L analyzer:} Combusts liquid samples at 680 C over a
+  platinum catalyst. The resulting CO\textsubscript{2} is measured by a
+  non-dispersive infrared (NDIR) detector. The analyzer supports
+  multiple measurement modes (TC, IC, TOC, NPOC, POC).
+\item
+  \textbf{TNM-L Total Nitrogen Module:} Measures total nitrogen (TN)
+  simultaneously with carbon analysis. Nitrogen compounds in the
+  combustion gas are converted to nitric oxide (NO), which is detected
+  by a chemiluminescence detector after reaction with ozone (Shimadzu
+  Corporation, 2019a). The TNM-L operates in parallel with the NDIR
+  carbon detector, so carbon and nitrogen data are acquired from the
+  same injection.
+\item
+  \textbf{SSM-5000A Solid Sample Module:} Accepts solid samples in
+  ceramic boats for direct combustion at up to 900 C. Connects to the
+  TOC-L for CO\textsubscript{2} detection. The TNM-L is not used during
+  SSM operation.
+\item
+  \textbf{ASI-L Autosampler:} Holds up to 93 sample vials (8 mL or 40
+  mL) for unattended sequential analysis of liquid samples. Includes an
+  automated rinse function between injections.
+\end{itemize}
+
+\subsection{Measurement Modes (Liquid
+Samples)}\label{measurement-modes-liquid-samples}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0531}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3363}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.6106}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mode
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Full Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What It Measures
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+TC & Total Carbon & All carbon (organic + inorganic) by direct
+combustion \\
+IC & Inorganic Carbon & Carbonate/bicarbonate carbon by acidification
+and sparging only \\
+TOC & Total Organic Carbon (by difference) & TOC = TC - IC; requires two
+sequential measurements \\
+NPOC & Non-Purgeable Organic Carbon & Sample is acidified and sparged to
+remove IC, then combusted; the most common mode for routine analysis
+(APHA et al., 2012, Section 5310B) \\
+POC & Purgeable Organic Carbon & Volatile organic carbon recovered
+during the sparging step; POC = TC - (NPOC + IC) \\
+TN & Total Nitrogen (TNM-L) & All nitrogen species measured
+simultaneously with any carbon mode \\
+\end{longtable}
+}
+
+\subsection{Detection Principles}\label{detection-principles}
+
+The TOC-L and TNM-L rely on two detectors operating in series on the
+same combustion gas stream:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{NDIR detector (carbon):} Infrared absorption by
+  CO\textsubscript{2} is proportional to the mass of carbon injected.
+  The detector is selective for CO\textsubscript{2} and insensitive to
+  other combustion gases.
+\item
+  \textbf{Chemiluminescence detector (nitrogen, TNM-L only):} NO in the
+  combustion gas reacts with ozone (O\textsubscript{3}) to produce
+  excited NO\textsubscript{2}*, which emits light as it returns to the
+  ground state. The emitted light intensity is proportional to the mass
+  of nitrogen injected (Walsh, 1989).
+\end{itemize}
+
+\section{Required Materials}\label{required-materials}
+
+\subsection{Instrument Components}\label{instrument-components}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4026}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5974}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Component
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notes
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Shimadzu TOC-L analyzer & With combustion furnace and NDIR detector \\
+TNM-L Total Nitrogen Module & Chemiluminescence detector for TN \\
+SSM-5000A Solid Sample Module & For direct combustion of solid
+samples \\
+ASI-L Autosampler & 93-position; 8 mL or 40 mL vials \\
+Dedicated computer & Running LabSolutions TOC software \\
+Carrier gas (high-purity air) & Regulated to 200 kPa (or per manual) \\
+Exhaust tubing & Connected to fume hood or building exhaust \\
+\end{longtable}
+}
+
+\subsection{Consumables}\label{consumables}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4819}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5181}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notes
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+TC catalyst (Pt on alumina beads) & Replace when blanks rise or
+sensitivity drops; typical life 3,000--5,000 injections \\
+IC reagent (25\% phosphoric acid) & For IC/NPOC acidification; check
+level weekly \\
+Combustion tubes (quartz) & Inspect monthly; replace if cracked or
+discolored \\
+Ceramic sample boats & For SSM; pre-combust at 900 C before first use \\
+Halogen scrubber & Replace every 6--12 months or per manufacturer
+schedule \\
+Dehumidifier / moisture trap & Drain weekly; more often in humid
+weather \\
+Autosampler vials and septa & Acid-washed for trace-level work; use
+pre-combusted glass vials for NPOC \\
+Syringe needle (instrument syringe) & Inspect for bends or clogs;
+replace as needed \\
+\end{longtable}
+}
+
+\subsection{Calibration Standards}\label{calibration-standards}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3583}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3083}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Standard
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Use
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Preparation
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Potassium hydrogen phthalate (KHP) & Primary TC/NPOC calibration & 2.125
+g/L = 1,000 mg C/L stock (APHA et al., 2012) \\
+Sodium bicarbonate / sodium carbonate & Primary IC calibration & See
+Shimadzu manual for concentrations \\
+Potassium nitrate (KNO\textsubscript{3}) & Primary TN calibration
+(TNM-L) & 7.218 g/L = 1,000 mg N/L stock \\
+Deionized water (18.2 MOhm) & Blanks, dilutions, and standard
+preparation & From Milli-Q; verify TOC less than 0.05 mg/L \\
+\end{longtable}
+}
+
+\section{Procedure}\label{procedure}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-important-color!10!white, colframe=quarto-callout-important-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Computer Control Only}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+All operations described below are performed through LabSolutions TOC.
+Do not adjust furnace temperature, gas flow, or other parameters using
+the instrument front panel unless directed by the instrument manager
+during troubleshooting.
+
+\end{tcolorbox}
+
+\subsection{Instrument Startup (Cold
+Start)}\label{instrument-startup-cold-start}
+
+A cold start applies when the instrument has been fully powered down
+(furnace off, gas closed). Allow approximately 60 minutes from power-on
+to running samples.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open the carrier gas cylinder valve. Verify the regulator output
+  pressure is set to 200 kPa at the instrument inlet. Check for leaks at
+  all fittings (listen for hissing; apply leak-detection solution if
+  uncertain).
+\item
+  Verify that the exhaust line from the TNM-L ozone decomposer is
+  connected and routed to the fume hood or building exhaust
+\item
+  Check consumable levels:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    IC reagent bottle (25\% phosphoric acid): refill if below the
+    minimum line
+  \item
+    Dehumidifier / moisture trap: drain if water is visible
+  \item
+    Rinse water reservoir on the ASI-L: fill with fresh deionized water
+  \end{itemize}
+\item
+  Power on the TOC-L main unit using the switch on the right side panel
+\item
+  If the TNM-L is needed, power on the TNM-L using the switch on its
+  rear panel
+\item
+  Power on the ASI-L autosampler
+\item
+  Turn on the dedicated computer and launch LabSolutions TOC
+\item
+  In LabSolutions TOC, verify that communication with all modules is
+  established. The status bar should show ``Warming Up''
+\item
+  \textbf{Wait for the furnace} to reach 680 C (approximately 20--30
+  minutes). The software status changes from ``Warming Up'' to ``Ready''
+\item
+  \textbf{Wait for the TNM-L} ozone generator and chemiluminescence
+  detector to stabilize (approximately 30--45 minutes after power-on;
+  the TNM-L status indicator changes to ``Ready'')
+\item
+  Run 3--5 injections of deionized water as system conditioning blanks
+  to flush the injection port, syringe, and combustion tube. Discard
+  these results.
+\item
+  Run 3 additional deionized water blanks and verify baseline stability:
+  TC blank values should be below 0.1 mg/L C; TN blank values should be
+  below 0.1 mg/L N
+\end{enumerate}
+
+\subsection{Instrument Startup (From
+Standby/Sleep)}\label{instrument-startup-from-standbysleep}
+
+When the instrument is in standby mode (furnace at temperature, gas
+flowing, software idle), startup is faster:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Launch LabSolutions TOC if not already open
+\item
+  Verify that the status bar shows ``Ready'' for the TOC-L and (if
+  applicable) the TNM-L
+\item
+  Check the IC reagent level and drain the moisture trap
+\item
+  Fill the ASI-L rinse reservoir with fresh deionized water
+\item
+  Run 3 deionized water conditioning blanks. If blanks are below 0.1
+  mg/L C and 0.1 mg/L N, proceed to calibration.
+\end{enumerate}
+
+\subsection{Standby and Sleep Modes}\label{standby-and-sleep-modes}
+
+Choose the appropriate idle mode based on how soon the instrument will
+be used again:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2045}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1705}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1477}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3864}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mode
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Furnace
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Carrier Gas
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+TNM-L
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+When to Use
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Active standby} & 680 C (on) & Flowing & On & Next run within 24
+hours \\
+\textbf{Reduced standby} & 680 C (on) & Flowing & Off & Next run within
+2--3 days; no TN needed \\
+\textbf{Sleep} & Off (cooling) & Closed & Off & No runs planned for 3+
+days \\
+\textbf{Full shutdown} & Off (cold) & Closed & Off & Extended break,
+maintenance, or relocation \\
+\end{longtable}
+}
+
+\subsubsection{Entering Active Standby}\label{entering-active-standby}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  After the final sample, run 3--5 deionized water blanks to flush the
+  system
+\item
+  Leave the furnace at 680 C and the carrier gas flowing
+\item
+  Leave the TNM-L powered on
+\item
+  Empty the autosampler rack and cover with a dust cover
+\item
+  The instrument manager may set the software to a low carrier gas flow
+  rate overnight to conserve gas (consult the manual for the minimum
+  flow that maintains a positive purge of the combustion tube)
+\end{enumerate}
+
+\subsubsection{Entering Reduced Standby}\label{entering-reduced-standby}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Flush the system with deionized water blanks as above
+\item
+  Power off the TNM-L (rear panel switch). This extends the ozone
+  decomposer lifetime.
+\item
+  Leave the TOC-L furnace at 680 C and gas flowing
+\item
+  Cover the autosampler
+\end{enumerate}
+
+\subsubsection{Entering Sleep Mode}\label{entering-sleep-mode}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Flush the system with deionized water blanks
+\item
+  Power off the TNM-L
+\item
+  In LabSolutions TOC, initiate a furnace cooldown (or simply power off
+  the TOC-L)
+\item
+  Once the furnace temperature drops below 200 C (approximately 90
+  minutes), close the carrier gas cylinder valve
+\item
+  Power off the ASI-L
+\item
+  Close LabSolutions TOC and shut down the computer
+\end{enumerate}
+
+\subsubsection{Full Shutdown}\label{full-shutdown}
+
+Follow the Sleep Mode steps, then:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Allow the furnace to cool to room temperature
+\item
+  Disconnect the carrier gas line if the instrument will be moved or
+  serviced
+\item
+  Empty the IC reagent bottle if the shutdown will exceed 30 days
+  (phosphoric acid can corrode the reagent lines over long idle periods)
+\item
+  Empty the ASI-L rinse reservoir to prevent microbial growth
+\item
+  Cover the instrument with a dust cover
+\end{enumerate}
+
+\subsection{Software Navigation}\label{software-navigation}
+
+LabSolutions TOC organizes work into the following areas:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Instrument Monitor:} Real-time display of furnace temperature,
+  carrier gas flow, detector signal (NDIR and chemiluminescence), and
+  system status
+\item
+  \textbf{Method Editor:} Define measurement mode (TC, IC, NPOC, TN,
+  etc.), injection volume, number of replicate injections, sparge time
+  (for NPOC), acidification volume, and calibration curve parameters
+\item
+  \textbf{Sample Table:} Enter sample IDs, vial positions, dilution
+  factors, and measurement method for each sample
+\item
+  \textbf{Calibration:} Build, view, and edit calibration curves. The
+  software fits curves by least-squares regression and reports
+  r\textsuperscript{2} and residuals.
+\item
+  \textbf{Data Browser:} Review completed runs, view peak integrations,
+  export results to CSV, and reprocess data
+\end{itemize}
+
+\subsection{Calibration}\label{calibration}
+
+Calibrate at the start of each analytical session or whenever the
+method, measurement mode, or concentration range changes. Carbon and
+nitrogen calibrations are built independently but can be run
+simultaneously if both detectors are active.
+
+\subsubsection{Carbon Calibration}\label{carbon-calibration}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Prepare a multi-point calibration series from KHP dissolved in
+  deionized water. Choose concentrations that bracket the expected
+  sample range (e.g., 0, 1, 5, 10, 25, 50, 100 mg/L C). Prepare fresh
+  daily or from a refrigerated stock per
+  \href{SOP-L020-reagent-standard-preparation.qmd}{SOP-L020} (APHA et
+  al., 2012).
+\item
+  For IC calibration, prepare standards from sodium bicarbonate/sodium
+  carbonate in deionized water
+\item
+  In LabSolutions TOC, open the Method Editor and select the measurement
+  mode (e.g., NPOC, TC, or TC-IC)
+\item
+  Enter calibration standard concentrations in the Calibration window
+\item
+  Load standards into the autosampler in order of increasing
+  concentration
+\item
+  Run the calibration sequence. The software will perform replicate
+  injections (typically 3) of each standard and fit a regression
+\item
+  Verify that r\textsuperscript{2} \(\geq\) 0.999 and that each standard
+  back- calculates to within 10\% of its nominal value (15\% at the
+  lowest standard is acceptable)
+\item
+  Save the calibration curve
+\end{enumerate}
+
+\subsubsection{Nitrogen Calibration
+(TNM-L)}\label{nitrogen-calibration-tnm-l}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Prepare a multi-point calibration series from KNO\textsubscript{3}
+  dissolved in deionized water (e.g., 0, 0.5, 1, 5, 10, 25, 50 mg/L N)
+\item
+  In the Method Editor, confirm that TN measurement is enabled alongside
+  the carbon mode
+\item
+  Enter TN calibration concentrations in the Calibration window
+\item
+  The TN calibration runs simultaneously with the carbon calibration if
+  both are loaded in the same sample table; otherwise, run the TN
+  standards as a separate sequence
+\item
+  Verify that r\textsuperscript{2} \(\geq\) 0.999 for the nitrogen curve
+\item
+  Save the calibration curve
+\end{enumerate}
+
+\subsection{Setting Up an Analytical Run (Liquid
+Samples)}\label{setting-up-an-analytical-run-liquid-samples}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  In the Method Editor, confirm the measurement mode, injection volume,
+  number of replicate injections, and (for NPOC mode) sparge time and
+  acid volume
+\item
+  In the Sample Table, enter the run sequence:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Calibration verification standard (mid-range) as the first sample
+  \item
+    Instrument blanks (deionized water) at the beginning, every 10--15
+    samples, and the end of the run
+  \item
+    Method blanks appropriate to the application (e.g., 0.5 M
+    K\textsubscript{2}SO\textsubscript{4} for soil extracts; consult the
+    analytical method SOP)
+  \item
+    Sample vials in the order they are loaded in the autosampler
+  \item
+    A final calibration verification standard
+  \end{enumerate}
+\item
+  Set the dilution factor for each sample if applicable
+\item
+  Verify that autosampler vial positions in the Sample Table match the
+  physical rack positions
+\item
+  Confirm that the rinse reservoir on the autosampler is filled with
+  deionized water
+\item
+  Click \textbf{Start} to begin the sequence
+\end{enumerate}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Replicate Injection Settings}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+The software default is 3 replicate injections per sample. If the
+coefficient of variation (CV) among replicates exceeds 2\%, the software
+can be configured to add up to 2 additional injections automatically
+(set in Method Editor under ``Maximum Injections''). The outlier
+replicate is excluded from the reported mean.
+
+\end{tcolorbox}
+
+\subsection{Setting Up a Solid Sample Run
+(SSM-5000A)}\label{setting-up-a-solid-sample-run-ssm-5000a}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  In LabSolutions TOC, switch to SSM mode
+\item
+  Pre-combust ceramic boats at 900 C in a muffle furnace
+  (\href{SOP-L111-muffle-furnace.qmd}{SOP-L111}) to remove residual
+  carbon. Allow boats to cool in a desiccator.
+\item
+  Weigh the solid sample into a clean ceramic boat. Record the mass to
+  0.01 mg.
+\item
+  In the Sample Table, enter the sample ID, boat number, and sample mass
+\item
+  Place the ceramic boat on the SSM sample port and push it into the
+  furnace when prompted by the software
+\item
+  The SSM combusts the sample; evolved CO\textsubscript{2} flows to the
+  TOC-L NDIR detector
+\item
+  The software reports carbon content in mg C or as a percentage of
+  sample mass
+\end{enumerate}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{TNM-L and SSM}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+The TNM-L chemiluminescence detector is not used during SSM solid sample
+analysis. Total nitrogen in solid samples requires a separate instrument
+(e.g., the Flash EA; see
+\href{SOP-L208-irms-general-instrument.qmd}{SOP-L208}).
+
+\end{tcolorbox}
+
+\subsection{Monitoring a Run in
+Progress}\label{monitoring-a-run-in-progress}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Use the Instrument Monitor to watch real-time peak shapes and detector
+  baselines
+\item
+  If a peak appears saturated (flat top), the sample exceeds the
+  calibration range. Pause the run, dilute the sample, and re-queue.
+\item
+  If the CV among replicate injections exceeds 2\%, investigate (air
+  bubble, particulates, insufficient sample volume) and consider
+  re-running.
+\item
+  If the system blank rises above 0.5 mg/L C or 0.5 mg/L N during a run,
+  the combustion tube or catalyst may need replacement. Complete the
+  current run, note affected samples, and consult Section 9.
+\end{enumerate}
+
+\subsection{Data Export}\label{data-export}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  After the run, open the Data Browser and review all results
+\item
+  Check that calibration verification standards recovered within
+  90--110\% of their nominal values
+\item
+  Export results to CSV: \textbf{File \textgreater{} Export}, including
+  sample ID, mode, mean concentration, SD, CV, and number of valid
+  injections
+\item
+  Save the LabSolutions TOC run file (.toc) to the instrument computer
+  and back up to the lab network drive
+\item
+  Record the run date, analyst, method, and file name in the instrument
+  logbook
+\end{enumerate}
+
+\section{Quality Control}\label{quality-control}
+
+QC procedures are tailored to each analytical method and are specified
+in the relevant method SOP. The following instrument-level QC applies to
+all runs (US Environmental Protection Agency, 2009):
+
+\begin{itemize}
+\tightlist
+\item
+  System blanks (deionized water) at the start of every session must
+  read below 0.1 mg/L C and 0.1 mg/L N
+\item
+  A calibration verification standard (mid-range) must be run at the
+  beginning and end of every sample sequence, with recovery within
+  90--110\%
+\item
+  Replicate injection CV must be below 2\% for liquid samples
+\item
+  All QC results are recorded in the instrument logbook and in the
+  exported data file
+\item
+  For additional QC requirements (method blanks, duplicates, matrix
+  spikes, continuing calibration verification frequency), refer to
+  \href{SOP-L802-quality-control.qmd}{SOP-L802 Quality Control}
+\end{itemize}
+
+\section{Maintenance}\label{maintenance}
+
+\subsection{Routine Maintenance
+Schedule}\label{routine-maintenance-schedule}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3158}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4035}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2807}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Task
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Frequency
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notes
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+System blank check & Before each analytical session & \\
+Drain moisture trap / dehumidifier & Weekly (more often in humid
+conditions) & Prevents water from reaching the NDIR detector \\
+Check IC reagent level & Weekly & Refill with fresh 25\%
+H\textsubscript{3}PO\textsubscript{4} when below the minimum line \\
+Inspect injection syringe needle & Weekly & Replace if bent, corroded,
+or clogged \\
+Check autosampler rinse reservoir & Before each session & Refill with
+fresh DI water \\
+Inspect combustion tube & Monthly or every 500 injections & Look for
+discoloration, cracks, or catalyst settling \\
+Replace TC catalyst & Every 3,000--5,000 injections or when blanks rise
+& Pt on alumina; record replacement date \\
+Replace halogen scrubber & Every 6--12 months & Prevents halide damage
+to the NDIR detector \\
+Replace TNM-L ozone decomposer & Annually & Degraded decomposer leaks
+ozone into the room \\
+Replace SSM combustion tube & As needed & Inspect after each batch of
+solids \\
+Carrier gas cylinder replacement & As needed & Monitor regulator
+pressure; order when below 500 psi \\
+Software and firmware updates & As released by Shimadzu & Coordinate
+with instrument manager \\
+\end{longtable}
+}
+
+\subsection{Catalyst Replacement
+Procedure}\label{catalyst-replacement-procedure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Allow the furnace to cool to room temperature (power off the TOC-L and
+  wait at least 3 hours, or use the forced-air cooling function if
+  available)
+\item
+  Wearing heat-resistant gloves and safety glasses, remove the
+  combustion tube from the furnace per the manufacturer's procedure
+\item
+  Dispose of the spent catalyst (Pt on alumina) as hazardous waste
+  (precious metal content; collect for EH\&S pickup per
+  \href{SOP-L006-waste-disposal.qmd}{SOP-L006})
+\item
+  Fill the combustion tube with fresh catalyst to the manufacturer's
+  specified depth (approximately 12 cm)
+\item
+  Add a thin layer of quartz wool above and below the catalyst bed
+\item
+  Reinstall the combustion tube. Reconnect all tubing and fittings.
+\item
+  Restart the furnace and allow it to reach 680 C
+\item
+  Run 20--30 deionized water conditioning injections to stabilize the
+  new catalyst. Blanks should decrease progressively to below 0.1 mg/L
+  C.
+\item
+  Run a calibration verification standard to confirm sensitivity before
+  resuming sample analysis
+\item
+  Record the replacement date, catalyst lot number, and conditioning
+  results in the instrument logbook
+\end{enumerate}
+
+\subsection{Combustion Tube Inspection and
+Replacement}\label{combustion-tube-inspection-and-replacement}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Remove the combustion tube as described in Section 9.2, step 2
+\item
+  Inspect for cracks, discoloration, or accumulation of non-volatile
+  residue on the inner walls
+\item
+  If the tube is damaged, replace with a new quartz combustion tube
+\item
+  Repack with catalyst and condition as in Section 9.2
+\end{enumerate}
+
+\subsection{Syringe and Needle
+Maintenance}\label{syringe-and-needle-maintenance}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Remove the syringe from the autosampler or manual injection port
+\item
+  Inspect the needle for bends, burrs, or corrosion
+\item
+  Flush the syringe barrel with deionized water, then with dilute HCl
+  (0.1 M), then with deionized water again
+\item
+  If the syringe plunger binds or the needle is damaged, replace the
+  entire syringe assembly
+\item
+  Reinstall and run 3 deionized water blanks to verify proper function
+\end{enumerate}
+
+\section{Troubleshooting}\label{troubleshooting}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3134}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2985}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3881}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Symptom
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Probable Cause
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Corrective Action
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Blank values increasing over time & Catalyst degradation; contaminated
+combustion tube & Replace catalyst; inspect and replace combustion
+tube \\
+Poor replicate precision (CV \textgreater{} 2\%) & Air bubble in
+syringe; particulates in sample; insufficient volume & Check syringe for
+air leaks; re-filter sample; verify vial volume \\
+NDIR signal saturated (flat-top peaks) & Sample exceeds calibration
+range & Dilute sample and re-run \\
+TNM-L ``Not Ready'' status persists & Ozone generator not warmed up;
+decomposer exhausted; exhaust blocked & Allow more warm-up; replace
+decomposer; check exhaust tubing \\
+No communication with instrument & Cable disconnected; software crash;
+instrument not powered on & Check cables; restart software; verify
+power \\
+Autosampler skips vials & Position mismatch; septa not pierced & Verify
+positions; check that septa are intact \\
+SSM signal noisy or irreproducible & Boat not fully inserted; sample
+mass too large; residual carbon on boat & Confirm position; reduce mass;
+pre-combust boats longer \\
+Carrier gas pressure alarm & Cylinder empty or regulator set incorrectly
+& Replace cylinder; adjust regulator \\
+Moisture trap fills rapidly & High humidity; furnace tube leak & Drain
+more frequently; inspect tube fittings for leaks \\
+IC reagent not dispensing & Reagent bottle empty; tubing kinked or
+clogged & Refill bottle; inspect and replace tubing \\
+\end{longtable}
+}
+
+\section{Waste Disposal}\label{waste-disposal}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4321}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5679}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Waste Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Disposal Method
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Acidified liquid waste (HCl/H\textsubscript{3}PO\textsubscript{4}) &
+Neutralize and dispose per
+\href{SOP-L006-waste-disposal.qmd}{SOP-L006} \\
+Spent TC catalyst (Pt on alumina) & Collect for EH\&S hazardous waste
+pickup (precious metal) \\
+Used combustion tubes (quartz) & Standard glass waste (broken-glass box)
+if not contaminated \\
+Used ceramic boats (SSM) & Clean and reuse, or standard trash \\
+Autosampler rinse water & Drain \\
+Calibration standard waste & Aqueous waste; drain if dilute \\
+\end{longtable}
+}
+
+\section{References}\label{references}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-apha2012}
+APHA, AWWA, \& WEF. (2012). \emph{Standard methods for the examination
+of water and wastewater} (22nd ed., p. 1360). American Public Health
+Association.
+
+\bibitem[\citeproctext]{ref-nrc2011prudent}
+National Research Council. (2011). \emph{Prudent practices in the
+laboratory: Handling and management of chemical hazards} (Updated).
+National Academies Press. \url{https://doi.org/10.17226/12654}
+
+\bibitem[\citeproctext]{ref-sharp1993}
+Sharp, J. H. (1993). The dissolved organic carbon controversy: An
+update. \emph{Oceanography}, \emph{6}(2), 45--50.
+\url{https://doi.org/10.5670/oceanog.1993.12}
+
+\bibitem[\citeproctext]{ref-shimadzu_tnml}
+Shimadzu Corporation. (2019a). \emph{{TNM-L} total nitrogen module: User
+manual}.
+
+\bibitem[\citeproctext]{ref-shimadzu_tocl}
+Shimadzu Corporation. (2019b). \emph{{TOC-L} series total organic carbon
+analyzer: User manual}.
+
+\bibitem[\citeproctext]{ref-sugimura1988}
+Sugimura, Y., \& Suzuki, Y. (1988). A high-temperature catalytic
+oxidation method for the determination of non-volatile dissolved organic
+carbon in seawater by direct injection of a liquid sample. \emph{Marine
+Chemistry}, \emph{24}(2), 105--131.
+\url{https://doi.org/10.1016/0304-4203(88)90043-6}
+
+\bibitem[\citeproctext]{ref-usepa2009method}
+US Environmental Protection Agency. (2009). \emph{Method 415.3, rev.
+1.1: Determination of total organic carbon and specific UV absorbance at
+254 nm in source water and drinking water} (EPA/600/R-09/122). Office of
+Research; Development, US EPA.
+
+\bibitem[\citeproctext]{ref-walsh1989}
+Walsh, T. W. (1989). Determination of dissolved nitrogen in estuarine
+waters using high-temperature combustion and chemiluminescence
+detection. \emph{Marine Chemistry}, \emph{26}(4), 295--311.
+\url{https://doi.org/10.1016/0304-4203(89)90036-4}
+
+\end{CSLReferences}
+
+\section{Related SOPs}\label{related-sops}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0833}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4688}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4479}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+SOP
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Title
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relationship
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\href{SOP-L003-hazardous-materials-handling.qmd}{L003} & Hazardous
+Materials Handling & Chemical safety for acids \\
+\href{SOP-L006-waste-disposal.qmd}{L006} & Waste Disposal & Catalyst and
+chemical waste disposal \\
+\href{SOP-L020-reagent-standard-preparation.qmd}{L020} & Reagent and
+Standard Preparation & KHP and KNO\textsubscript{3} standard prep \\
+\href{SOP-L111-muffle-furnace.qmd}{L111} & Muffle Furnace &
+Pre-combustion of ceramic boats \\
+\href{SOP-L311-dissolved-organic-carbon-water.qmd}{L311} & Dissolved
+Organic Carbon (Water) & NPOC application SOP \\
+\href{SOP-L407-total-carbon.qmd}{L407} & Total Carbon (Soils) & SSM
+application SOP \\
+\href{SOP-L409-microbial-biomass-carbon.qmd}{L409} & Microbial Biomass
+Carbon (CFE) & DOC extract application SOP \\
+\href{SOP-L418-water-extractable-doc.qmd}{L418} & Water-Extractable DOC
+& Soil extract application SOP \\
+\href{SOP-L802-quality-control.qmd}{L802} & Quality Control & QC
+requirements for all runs \\
+\end{longtable}
+}
+
+\section{Training Record}\label{training-record}
+
+Before operating this instrument independently, personnel must:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Read this SOP in full and the relevant sections of the Shimadzu TOC-L,
+  TNM-L, and SSM-5000A user manuals
+\item
+  Complete \href{SOP-L002-laboratory-safety.qmd}{SOP-L002 Laboratory
+  Safety} and \href{SOP-L003-hazardous-materials-handling.qmd}{SOP-L003
+  Hazardous Materials Handling} training
+\item
+  Observe a trained operator perform a complete session: cold start,
+  calibration (carbon and nitrogen), sample analysis, data export, and
+  transition to standby
+\item
+  Demonstrate competence preparing calibration standards (KHP and
+  KNO\textsubscript{3}) per
+  \href{SOP-L020-reagent-standard-preparation.qmd}{SOP-L020}
+\item
+  Perform a supervised analytical run with acceptable QC results (blanks
+  below 0.1 mg/L, calibration verification recovery 90--110\%, replicate
+  CV below 2\%)
+\item
+  Demonstrate entering and exiting standby and sleep modes
+\item
+  Be signed off by the instrument manager or PI
+\end{enumerate}
+
+
+
+
+\end{document}
